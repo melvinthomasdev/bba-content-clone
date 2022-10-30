@@ -1,0 +1,13 @@
+---
+- title: IIFE
+  slug: iife
+  page_type: lesson
+- title: Exercise - IIFE
+  slug: exercise-iife
+  page_type: exercise
+- title: Named IIFE
+  slug: named-iife
+  page_type: lesson
+- title: Exercise - Named IIFE
+  slug: exercise-named-iife
+  page_type: exercise

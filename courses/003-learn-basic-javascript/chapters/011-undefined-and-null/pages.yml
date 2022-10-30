@@ -1,0 +1,13 @@
+---
+- title: The undefined data type
+  slug: the-undefined-data-type
+  page_type: lesson
+- title: Exercise - undefined
+  slug: exercise-undefined
+  page_type: exercise
+- title: The null data type
+  slug: the-null-data-type
+  page_type: lesson
+- title: Exercise - null
+  slug: exercise-null
+  page_type: exercise

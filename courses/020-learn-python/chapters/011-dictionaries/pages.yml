@@ -1,0 +1,49 @@
+---
+- title: Creating Dictionaries
+  slug: creating-dictionaries
+  page_type: lesson
+- title: Exercise 1 - Creating Dictionaries
+  slug: exercise-1-creating-dictionaries
+  page_type: exercise
+- title: Accessing Dictionaries
+  slug: accessing-dictionaries
+  page_type: lesson
+- title: Exercise 1 - Accessing Dictionaries
+  slug: exercise-1-accessing-dictionaries
+  page_type: exercise
+- title: Exercise 2 - Accessing Dictionaries
+  slug: exercise-2-accessing-dictionaries
+  page_type: exercise
+- title: Inserting into Dictionaries
+  slug: inserting-into-dictionaries
+  page_type: lesson
+- title: Exercise 1 - Inserting into Dictionaries
+  slug: exercise-1-inserting-into-dictionaries
+  page_type: exercise
+- title: Deleting from Dictionaries
+  slug: deleting-from-dictionaries
+  page_type: lesson
+- title: Exercise 1 - Deleting from Dictionaries
+  slug: exercise-1-deleting-from-dictionaries
+  page_type: exercise
+- title: Exercise 2 - Deleting from Dictionaries
+  slug: exercise-2-deleting-from-dictionaries
+  page_type: exercise
+- title: Looping through Dictionaries
+  slug: looping-through-dictionaries
+  page_type: lesson
+- title: Exercise 1 - Looping through Dictionaries
+  slug: exercise-1-looping-through-dictionaries
+  page_type: exercise
+- title: Checking for keys in Dictionaries
+  slug: checking-for-keys-in-dictionaries
+  page_type: lesson
+- title: Exercise 1 - Checking for keys in Dictionaries
+  slug: exercise-1-checking-for-keys-in-dictionaries
+  page_type: exercise
+- title: Merging Dictionaries
+  slug: merging-dictionaries
+  page_type: lesson
+- title: Exercise 1 - Merging Dictionaries
+  slug: exercise-1-merging-dictionaries
+  page_type: exercise

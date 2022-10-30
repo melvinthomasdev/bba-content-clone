@@ -1,0 +1,7 @@
+---
+- title: COUNT with DISTINCT
+  slug: count-with-distinct
+  page_type: lesson
+- title: Exercise - COUNT with DISTINCT
+  slug: exercise-count-with-distinct
+  page_type: exercise

@@ -1,0 +1,28 @@
+---
+- title: Inserting records in a table
+  slug: inserting-records-in-a-table
+  page_type: lesson
+- title: Exercise - Inserting records in a table
+  slug: exercise-inserting-records-in-a-table
+  page_type: exercise
+- title: Inserting NULL records
+  slug: inserting-null-records
+  page_type: lesson
+- title: Exercise - Inserting NULL records
+  slug: exercise-inserting-null-records
+  page_type: exercise
+- title: Inserting multiple records
+  slug: inserting-multiple-records
+  page_type: lesson
+- title: Exercise - Inserting multiple records
+  slug: exercise-inserting-multiple-records
+  page_type: exercise
+- title: Inserting records in specific columns
+  slug: inserting-records-in-specific-columns
+  page_type: lesson
+- title: Exercise - Inserting records in specific columns
+  slug: exercise-inserting-records-in-specific-columns
+  page_type: exercise
+- title: Inserting records in a table - Summary
+  slug: inserting-records-summary
+  page_type: lesson

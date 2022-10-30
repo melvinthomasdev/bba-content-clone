@@ -1,0 +1,65 @@
+---
+- name: Getting started
+  slug: getting-started
+- name: Displaying on Screen
+  slug: displaying-on-screen
+- name: String
+  slug: string
+- name: Array
+  slug: array
+- name: Variables
+  slug: variables
+- name: Convert String into Array
+  slug: convert-string-into-array
+- name: If Else
+  slug: if-else
+- name: Range
+  slug: range
+- name: Hash
+  slug: hash
+- name: Comprehensive Exercises
+  slug: comprehensive-exercises-1
+- name: Number
+  slug: number
+- name: What is nil
+  slug: what-is-nil
+- name: Symbol
+  slug: symbol
+- name: Advanced Array
+  slug: advanced-array
+- name: Hash
+  slug: hash-2
+- name: Comments
+  slug: comments
+- name: Regular expressions
+  slug: regular-expressions
+- name: Comprehensive Exercises
+  slug: comprehensive-exercises-2
+- name: Class
+  slug: class
+- name: Instance Method
+  slug: instance-method
+- name: Instance Variable
+  slug: instance-variable
+- name: Returning value from a method
+  slug: returning-value-form-a-method
+- name: Initialize Method
+  slug: initialize-method
+- name: attr_reader writer and accessor
+  slug: attr-reader-writer-accessor
+- name: Required and default arguments
+  slug: required-and-default-arguments
+- name: dig, try and safe
+  slug: dig-try-safe
+- name: Blocks, Procs and Lambda
+  slug: blocks-procs-lambda
+- name: Module
+  slug: module
+- name: Enumerable
+  slug: enumerable
+- name: Inject
+  slug: inject
+- name: Symbol to proc
+  slug: symbol-to-proc
+- name: Ruby way
+  slug: ruby-way

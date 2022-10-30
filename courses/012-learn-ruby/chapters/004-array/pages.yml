@@ -1,0 +1,55 @@
+---
+- title: Working With Similar Items
+  slug: working-with-similar-items
+  page_type: lesson
+- title: Handle Each Item of an Array
+  slug: handle-each-item-of-an-array
+  page_type: lesson
+- title: Exercise - each to print each item
+  slug: exercise-each-to-print-each-item
+  page_type: exercise
+- title: Use each to double the number
+  slug: use-each-to-double-the-number
+  page_type: lesson
+- title: Exercise - Handle Each Item of an Array
+  slug: exercise-handle-each-item-of-an-array-2
+  page_type: exercise
+- title: Exercise - Handle Each Item of an Array
+  slug: exercise-handle-each-item-of-an-array-3
+  page_type: exercise
+- title: Find the Number of Items in an Array
+  slug: find-the-number-of-items-in-an-array
+  page_type: lesson
+- title: Exercise - Find the Count of Items in an Array
+  slug: exercise-find-the-count-of-items-in-an-array
+  page_type: exercise
+- title: Reverse an Array
+  slug: reverse-an-array
+  page_type: lesson
+- title: Exercise - Reverse an Array
+  slug: exercise-reverse-an-array
+  page_type: exercise
+- title: Add an Item to an Array
+  slug: add-an-item-to-an-array
+  page_type: lesson
+- title: Exercise - Add an Item to an Array
+  slug: exercise-add-an-item-to-an-array
+  page_type: exercise
+- title: Exercise - Add an Item to an Array
+  slug: exercise-add-an-item-to-an-array-1
+  page_type: exercise
+- title: Exercise - Add an Item to an Array
+  slug: exercise-add-an-item-to-an-array-3
+  page_type: exercise
+- title: Exercise - Add an Item to an Array
+  slug: exercise-add-an-item-to-an-array-4
+  page_type: exercise
+- title: Get Item From a Position in Array
+  slug: get-item-from-a-position-in-array
+  page_type: lesson
+- title: Exercise - Get Item From a Position in Array
+  slug: exercise-get-item-from-a-position-in-array
+  page_type: exercise
+- title: Exercise - Get Item From a Position in Array
+  slug: exercise-get-item-from-a-position-in-array-2
+  page_type: exercise

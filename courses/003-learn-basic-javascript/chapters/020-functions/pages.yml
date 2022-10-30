@@ -1,0 +1,10 @@
+---
+- title: Define a function
+  slug: define-a-function
+  page_type: lesson
+- title: Parameters and Arguments
+  slug: parameters-and-arguments
+  page_type: lesson
+- title: Exercise - Parameters and Arguments
+  slug: exercise-parameters-and-arguments
+  page_type: exercise

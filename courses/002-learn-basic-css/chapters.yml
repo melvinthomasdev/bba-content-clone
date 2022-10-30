@@ -1,0 +1,41 @@
+---
+- name: Getting Started
+  slug: getting-started
+- name: Jump into CSS
+  slug: jump-into-css
+- name: CSS Selectors
+  slug: css-selectors
+- name: Colors
+  slug: colors
+- name: CSS MCQ
+  slug: css-mcq-01
+- name: Sizing
+  slug: sizing
+- name: Spacing
+  slug: spacing
+- name: CSS MCQ
+  slug: css-mcq-02
+- name: Text Formatting
+  slug: text-formatting
+- name: Backgrounds
+  slug: backgrounds
+- name: Borders
+  slug: borders
+- name: Opacity
+  slug: opacity
+- name: Styling Links
+  slug: styling-links
+- name: Styling Lists
+  slug: styling-lists
+- name: Styling Tables
+  slug: styling-tables
+- name: Styling Forms
+  slug: styling-forms
+- name: CSS Box Model
+  slug: css-box-model
+- name: Display
+  slug: display
+- name: Position
+  slug: position
+- name: Float
+  slug: float

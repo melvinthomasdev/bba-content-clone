@@ -1,0 +1,19 @@
+---
+- title: Color Names
+  slug: color-names
+  page_type: lesson
+- title: Exercise - Color Names
+  slug: exercise-color-names
+  page_type: exercise
+- title: RGB Color Values
+  slug: rgb-color-values
+  page_type: lesson
+- title: Exercise - RGB Color Values
+  slug: exercise-rgb-color-values
+  page_type: exercise
+- title: HEX Color Values
+  slug: hex-color-values
+  page_type: lesson
+- title: Exercise - Hex Color Values
+  slug: exercise-hex-color-values
+  page_type: exercise

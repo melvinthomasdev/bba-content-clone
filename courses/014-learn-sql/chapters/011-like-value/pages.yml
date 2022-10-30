@@ -1,0 +1,19 @@
+---
+- title: Select all names starting with To
+  slug: select-all-names-starting-with-to
+  page_type: lesson
+- title: Select all names ending with r
+  slug: select-all-names-ending-with-r
+  page_type: lesson
+- title: Select all names containing ar
+  slug: select-all-names-containing-ar
+  page_type: lesson
+- title: Exercise - Select where LIKE
+  slug: exercise-select-where-like
+  page_type: exercise
+- title: Exercise - Select where LIKE
+  slug: exercise-select-where-like-2
+  page_type: exercise
+- title: Exercise - Select where LIKE - 3
+  slug: exercise-select-where-like-3
+  page_type: exercise

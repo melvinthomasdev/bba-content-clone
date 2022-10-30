@@ -1,0 +1,7 @@
+---
+- name: Basic
+  slug: javascript-practice-questions-basic
+- name: Intermediate
+  slug: javascript-practice-questions-intermediate
+- name: Advanced
+  slug: javascript-practice-questions-advanced

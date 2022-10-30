@@ -1,0 +1,31 @@
+---
+- title: Extract Object Property
+  slug: extract-object-property
+  page_type: lesson
+- title: Exercise - Object Destructuring
+  slug: exercise-object-destructuring
+  page_type: exercise
+- title: Set Variable Name Using Colon
+  slug: set-variable-name-using-colon
+  page_type: lesson
+- title: Exercise - Set Variable Name Using Colon
+  slug: exercise-set-variable-name-using-colon
+  page_type: exercise
+- title: Set Default Values
+  slug: set-default-values
+  page_type: lesson
+- title: Exercise - Set Default Values
+  slug: exercise-set-default-values
+  page_type: exercise
+- title: The Rest Pattern
+  slug: object-destructuring-rest-pattern
+  page_type: lesson
+- title: Exercise - The Rest Pattern
+  slug: exercise-object-destructuring-rest-pattern
+  page_type: exercise
+- title: Nested Destructuring
+  slug: nested-destructuring
+  page_type: lesson
+- title: Exercise - Nested Destructuring
+  slug: exercise-nested-destructuring
+  page_type: exercise

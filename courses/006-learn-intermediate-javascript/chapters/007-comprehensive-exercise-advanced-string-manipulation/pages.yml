@@ -1,0 +1,13 @@
+---
+- title: ComprehensiveExercise - Use Backticks
+  slug: comprehensive-exercise-use-backticks
+  page_type: assessment
+- title: ComprehensiveExercise - Use concat
+  slug: comprehensive-exercise-use-concat
+  page_type: assessment
+- title: ComprehensiveExercise - Use charAt
+  slug: comprehensive-exercise-use-char-at
+  page_type: assessment
+- title: ComprehensiveExercise - Extract Part of a String
+  slug: comprehensive-exercise-extract-part-of-string
+  page_type: assessment

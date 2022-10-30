@@ -1,0 +1,37 @@
+Instead of setting a width for
+the entire table, you can also
+provide a `width` to all the
+columns using the `td` selector:
+
+<Editor lang="css">
+<code>
+<panel lang="html">
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <td>Oliver</td>
+    <td>25</td>
+    <td>Male</td>
+  </tr>
+  <tr>
+    <td>Eve Smith</td>
+    <td>30</td>
+    <td>Female</td>
+  </tr>
+</table>
+</panel>
+<panel lang="css">
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td {
+  width: 100px;
+}
+</panel>
+</code>
+</Editor>

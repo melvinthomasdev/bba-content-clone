@@ -1,0 +1,7 @@
+---
+- title: Count students in each grade
+  slug: count-students-in-each-grade
+  page_type: lesson
+- title: Exercise - Count students in each course
+  slug: exercise-count-students-in-each-course
+  page_type: exercise

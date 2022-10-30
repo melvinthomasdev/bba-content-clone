@@ -1,0 +1,19 @@
+---
+- title: Make a Promise
+  slug: make-a-promise
+  page_type: lesson
+- title: Exercise - Make a Promise
+  slug: exercise-make-a-promise
+  page_type: exercise
+- title: Promise Without Delay
+  slug: promise-without-delay
+  page_type: lesson
+- title: Exercise - Promise Without Delay
+  slug: exercise-promise-without-delay
+  page_type: exercise
+- title: "`then`, `catch` and `finally` in Promise"
+  slug: then-catch-and-finally-in-promise
+  page_type: lesson
+- title: Exercise - `then`, `catch` and `finally` in Promise
+  slug: exercise-then-catch-and-finally-in-promise
+  page_type: exercise

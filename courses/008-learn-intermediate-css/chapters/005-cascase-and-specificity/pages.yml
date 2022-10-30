@@ -1,0 +1,25 @@
+---
+- title: Cascade
+  slug: cascade
+  page_type: lesson
+- title: Exercise - Cascade
+  slug: exercise-cascade
+  page_type: exercise
+- title: Specificity Hierarchy
+  slug: specificity-hierarchy
+  page_type: lesson
+- title: Exercise - Specificity Hierarchy
+  slug: exercise-specificity-hierarchy
+  page_type: exercise
+- title: Specificity Value
+  slug: specificity-value
+  page_type: lesson
+- title: Exercise - Specificity Value
+  slug: exercise-specificity-value
+  page_type: exercise
+- title: The !important rule
+  slug: important-rule
+  page_type: lesson
+- title: Exercise - The !important rule
+  slug: exercise-important-rule
+  page_type: exercise

@@ -1,24 +1,265 @@
+---
+- name: Learn Basic HTML
+  subheading: Learn HTML by actually writing HTML code
+  slug: learn-basic-html
+  published: true
+  custom_data:
+    type: html
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-basic-html-logo.png
+  home_logo: learn-basic-html-home_logo.svg
+- name: Learn Basic CSS
+  subheading: Learn CSS by actually writing CSS code
+  slug: learn-basic-css
+  published: true
+  custom_data:
+    type: css
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-basic-css-logo.png
+  home_logo: learn-basic-css-home_logo.svg
+- name: Learn Basic JavaScript
+  subheading: Learn JavaScript by actually writing JavaScript code
+  slug: learn-basic-javascript
+  published: true
+  custom_data:
+    type: javascript
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-basic-javascript-logo.png
+  home_logo: learn-basic-javascript-home_logo.svg
+- name: Learn HTML DOM
+  subheading: Learn HTML DOM by actually manipulating HTML DOM elements
+  slug: learn-htmldom
+  published: true
+  custom_data:
+    type: javascript
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-htmldom-logo.png
+  home_logo: learn-htmldom-home_logo.svg
+- name: Learn Intermediate HTML
+  subheading: Learn Intermediate HTML by actually writing HTML code
+  slug: learn-intermediate-html
+  published: false
+  custom_data:
+    type: html
+    upcoming: true
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-intermediate-html-logo.png
+  home_logo: learn-intermediate-html-home_logo.svg
+- name: Learn Intermediate JavaScript
+  subheading: Learn Intermediate JavaScript by actually writing JavaScript code
+  slug: learn-intermediate-javascript
+  published: true
+  custom_data:
+    type: javascript
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-intermediate-javascript-logo.png
+  home_logo: learn-intermediate-javascript-home_logo.svg
+- name: JavaScript - Practice Questions
+  subheading: Practice Javascript you have already learnt
+  slug: javascript-practicequestions
+  published: true
+  custom_data:
+    type: javascript
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: javascript-practicequestions-logo.png
+  home_logo: javascript-practicequestions-home_logo.svg
+- name: Learn Intermediate CSS
+  subheading: Learn Intermediate CSS by actually writing CSS code
+  slug: learn-intermediate-css
+  published: true
+  custom_data:
+    type: css
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-intermediate-css-logo.png
+  home_logo: learn-intermediate-css-home_logo.svg
+- name: Learn ReactJS
+  subheading: Learn React by actually writing React code
+  slug: learn-react
+  published: true
+  custom_data:
+    type: reactjs
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-react-logo.png
+  home_logo: learn-react-home_logo.svg
+- name: ReactJS - Practice Questions
+  subheading: Practice ReactJS you have already learnt
+  slug: reactjs-practicequestions
+  published: true
+  custom_data:
+    type: reactjs
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: reactjs-practicequestions-logo.png
+  home_logo: reactjs-practicequestions-home_logo.svg
+- name: Learn Advanced JavaScript
+  subheading: Learn Advanced JavaScript by actually writing JavaScript code
+  slug: learn-advanced-javascript
+  published: true
+  custom_data:
+    type: javascript
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-advanced-javascript-logo.png
+  home_logo: learn-advanced-javascript-home_logo.svg
 - name: Learn Ruby
   subheading: Learn Ruby by actually writing Ruby code
   slug: learn-ruby
   published: true
-  home_logo: ruby.svg
-  logo: ruby-header-image.png
   custom_data:
-    key: ruby
+    type: ruby
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-ruby-logo.png
+  home_logo: learn-ruby-home_logo.svg
+- name: Ruby - Practice Questions
+  subheading: Practice Ruby you have already learnt
+  slug: ruby-practicequestions
+  published: true
+  custom_data:
+    type: ruby
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: ruby-practicequestions-logo.png
+  home_logo: ruby-practicequestions-home_logo.svg
 - name: Learn SQL
   subheading: Learn SQL by actually writing SQL code
   slug: learn-sql
   published: true
-  home_logo: learn-sql.svg
-  logo: sql-header-image.png
   custom_data:
-    key: sql
-- name: Learn Javascript
-  subheading: Learn Javascript by actually writing Javascript code
-  slug: learn-javascript
+    type: sql
+    upcoming: false
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-sql-logo.png
+  home_logo: learn-sql-home_logo.svg
+- name: Learn TailwindCSS
+  subheading: Learn TailwindCSS by actually writing TailwindCSS code
+  slug: learn-tailwindcss
+  published: false
+  custom_data:
+    type: css
+    upcoming: true
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-tailwindcss-logo.png
+  home_logo: learn-tailwindcss-home_logo.svg
+- name: Learn Advanced CSS
+  subheading: Learn Advanced CSS
+  slug: learn-advanced-css
+  published: false
+  custom_data:
+    type: css
+    upcoming: true
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-advanced-css-logo.png
+  home_logo: learn-advanced-css-home_logo.svg
+- name: Build A Todo List
+  subheading: Learn how to build a Todo List
+  slug: build-todolist
+  published: false
+  custom_data:
+    type: project
+    upcoming: true
+    newCourse: false
+    courseColor: border-gray-600
+  logo: build-todolist-logo.png
+  home_logo: build-todolist-home_logo.svg
+- name: Building a calculator
+  subheading: Learn how to build a Calculator
+  slug: build-calculator
+  published: false
+  custom_data:
+    type: project
+    upcoming: true
+    newCourse: false
+    courseColor: border-gray-600
+  logo: build-calculator-logo.png
+  home_logo: build-calculator-home_logo.svg
+- name: Learn Web Fundamentals
+  subheading: Learn Web fundamentals to understand web in a better way
+  slug: learn-webfundamentals
+  published: false
+  custom_data:
+    type: web
+    upcoming: true
+    newCourse: false
+    courseColor: border-gray-600
+  logo: learn-webfundamentals-logo.png
+  home_logo: learn-webfundamentals-home_logo.svg
+- name: Learn Python
+  subheading: Learn Python by actually writing Python code
+  slug: learn-python
   published: true
-  home_logo: javascript.svg
-  logo: javascript-header-image.png
   custom_data:
-    key: javascript
+    type: python
+    upcoming: false
+    newCourse: true
+    courseColor: border-gray-600
+  logo: learn-python-logo.png
+  home_logo: learn-python-home_logo.svg
+- name: Data Structures using JavaScript
+  subheading: Learn Data Structures and Algorithms using JavaScript
+  slug: data-structures
+  published: false
+  custom_data:
+    type: javascript
+    upcoming: true
+    newCourse: false
+    courseColor: border-gray-600
+  logo: data-structures-logo.png
+  home_logo: data-structures-home_logo.svg
+- name: Data Structures - Practice Questions
+  subheading: Practice Data Structures and Algorithms using Javascript
+  slug: data-structures-practice-questions
+  published: false
+  custom_data:
+    type: javascript
+    upcoming: true
+    newCourse: false
+    courseColor: border-gray-600
+  logo: data-structures-practice-questions-logo.png
+  home_logo: data-structures-practice-questions-home_logo.svg
+- name: Building an Expense Tracker using Firebase
+  subheading: Learn how to build an Expense Tracker using Firebase
+  slug: build-expensetracker
+  published: false
+  custom_data:
+    type: project
+    upcoming: true
+    newCourse: false
+    courseColor: border-gray-600
+  logo: build-expensetracker-logo.png
+  home_logo: build-expensetracker-home_logo.svg
+- name: Build a Notes App using Serverless Functions
+  subheading: Learn how to build a notes app using serverless functions
+  slug: build-notesapp
+  published: false
+  custom_data:
+    type: project
+    upcoming: true
+    newCourse: false
+    courseColor: border-gray-600
+  logo: build-notesapp-logo.png
+  home_logo: build-notesapp-home_logo.svg

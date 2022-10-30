@@ -1,0 +1,25 @@
+---
+- title: Fix precision of decimal numbers
+  slug: to-fixed
+  page_type: lesson
+- title: Exercise - Fix precision of decimal numbers
+  slug: exercise-to-fixed
+  page_type: exercise
+- title: Get numbers from string
+  slug: parse-int
+  page_type: lesson
+- title: Exercise - Get numbers from string
+  slug: exercise-parse-int
+  page_type: exercise
+- title: Using parseInt with arguments
+  slug: parse-int-with-arguments
+  page_type: lesson
+- title: Exercise - Using parseInt with arguments
+  slug: exercise-parse-int-with-arguments
+  page_type: exercise
+- title: Get floating point number from a string
+  slug: parse-float
+  page_type: lesson
+- title: Exercise - Get floating point number from a string
+  slug: exercise-parse-float
+  page_type: exercise

@@ -1,0 +1,19 @@
+---
+- title: Selecting boolean data from rows
+  slug: selecting-boolean-data-from-rows
+  page_type: lesson
+- title: Exercise - Selecting boolean data from rows
+  slug: exercise-selecting-boolean-data-from-rows
+  page_type: exercise
+- title: Selecting non-column data from rows
+  slug: selecting-non-column-data-from-rows
+  page_type: lesson
+- title: Exercise - Selecting non-column data from rows
+  slug: exercise-selecting-non-column-data-from-rows
+  page_type: exercise
+- title: Selecting conditional data from rows
+  slug: selecting-conditional-data-from-rows
+  page_type: lesson
+- title: Exercise - Selecting conditional data from rows
+  slug: exercise-selecting-conditional-data-from-rows
+  page_type: exercise

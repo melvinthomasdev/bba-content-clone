@@ -1,0 +1,73 @@
+---
+- title: Get index of an element
+  slug: indexof-and-lastindexof
+  page_type: lesson
+- title: Exercise - Get index of an element
+  slug: exercise-indexof
+  page_type: exercise
+- title: Exercise - Get index of an element
+  slug: exercise-lastindexof
+  page_type: exercise
+- title: Search for an element
+  slug: includes
+  page_type: lesson
+- title: Exercise - Search for an element
+  slug: exercise-includes
+  page_type: exercise
+- title: Copy a portion of an array
+  slug: slice
+  page_type: lesson
+- title: Exercise - Copy a portion of an array
+  slug: exercise-slice-1
+  page_type: exercise
+- title: Exercise - Copy a portion of an array
+  slug: exercise-slice-2
+  page_type: exercise
+- title: Modify an array
+  slug: splice
+  page_type: lesson
+- title: Exercise - Modify an array
+  slug: exercise-splice
+  page_type: exercise
+- title: Copy elements into new array
+  slug: concat
+  page_type: lesson
+- title: Exercise - Copy elements into new array
+  slug: exercise-concat
+  page_type: exercise
+- title: Join all elements
+  slug: join
+  page_type: lesson
+- title: Exercise - Join all elements
+  slug: exercise-join
+  page_type: exercise
+- title: Execute function for each element
+  slug: foreach
+  page_type: lesson
+- title: Exercise - Execute function for each element
+  slug: exercise-foreach
+  page_type: exercise
+- title: Check elements on given condition
+  slug: filter
+  page_type: lesson
+- title: Exercise - Check elements on given condition
+  slug: exercise-filter
+  page_type: exercise
+- title: Execute a function and get new array
+  slug: map
+  page_type: lesson
+- title: Exercise - Execute a function and get new array
+  slug: exercise-map
+  page_type: exercise
+- title: Sort the array
+  slug: sort
+  page_type: lesson
+- title: Exercise - Sort the array
+  slug: exercise-sort
+  page_type: exercise
+- title: Execute a function and get a single value
+  slug: reduce
+  page_type: lesson
+- title: Exercise - Execute a function and get a single value
+  slug: exercise-reduce
+  page_type: exercise

@@ -1,0 +1,21 @@
+---
+- name: Getting Started
+  slug: getting-started
+- name: HTML Elements
+  slug: html-elements
+- name: HTML elements with attributes
+  slug: html-elements-with-attributes
+- name: Table Element
+  slug: table-element
+- name: HTML MCQ
+  slug: html-mcq-01
+- name: Form Attributes
+  slug: form-attributes
+- name: Form Elements
+  slug: form-elements
+- name: Input Types
+  slug: input-types
+- name: HTML Basic Structure
+  slug: html-basic-structure
+- name: HTML MCQ
+  slug: html-mcq-02

@@ -1,0 +1,19 @@
+---
+- title: Do Not Use For Loop
+  slug: do-not-use-for-loop
+  page_type: lesson
+- title: Two Spaces for Indentation
+  slug: two-spaces-for-indentation
+  page_type: lesson
+- title: Use Spaces Around Operators
+  slug: use-spaces-around-operators
+  page_type: lesson
+- title: Use UpperCamelCase for Class and Module Names
+  slug: use-uppercamelcase-for-class-and-module-names
+  page_type: lesson
+- title: Blank Line Between Method Definitions
+  slug: blank-line-between-method-definitions
+  page_type: lesson
+- title: Blank Line Between Classes
+  slug: blank-line-between-classes
+  page_type: lesson

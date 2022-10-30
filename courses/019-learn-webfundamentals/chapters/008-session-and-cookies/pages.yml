@@ -1,0 +1,13 @@
+---
+- title: Session
+  slug: session
+  page_type: lesson
+- title: Cookies
+  slug: cookies
+  page_type: lesson
+- title: Difference Between Session and Cookies
+  slug: difference-between-session-and-cookies
+  page_type: lesson
+- title: How it Works
+  slug: how-it-works
+  page_type: lesson

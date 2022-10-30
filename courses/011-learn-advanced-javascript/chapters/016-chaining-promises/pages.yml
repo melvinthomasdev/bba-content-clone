@@ -1,0 +1,19 @@
+---
+- title: Chaining Promises
+  slug: chaining-promises
+  page_type: lesson
+- title: Exercise - Chaining Promises
+  slug: exercise-chaining-promises
+  page_type: exercise
+- title: Returning Promises
+  slug: returning-promises
+  page_type: lesson
+- title: Exercise - Returning Promises
+  slug: exercise-returning-promises
+  page_type: exercise
+- title: Use `fetch` With Promises
+  slug: use-fetch-with-promises
+  page_type: lesson
+- title: Exercise - Use `fetch` with promises
+  slug: exercise-use-fetch-with-promises
+  page_type: exercise

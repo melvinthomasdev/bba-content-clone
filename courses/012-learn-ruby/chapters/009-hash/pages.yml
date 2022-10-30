@@ -1,0 +1,40 @@
+---
+- title: Key Value Pair
+  slug: key-value-pair
+  page_type: lesson
+- title: Exercise - Key Value Pair
+  slug: exercise-key-value-pair
+  page_type: exercise
+- title: Get Value Using Key
+  slug: get-value-using-key
+  page_type: lesson
+- title: Exercise - Get value using key
+  slug: exercise-get-value-using-key
+  page_type: exercise
+- title: Exercise - Get value using key
+  slug: exercise-get-value-using-key-2
+  page_type: exercise
+- title: Add Data to a Hash
+  slug: add-data-to-a-hash
+  page_type: lesson
+- title: Exercise - Add Data to a Hash
+  slug: exercise-add-data-to-a-hash
+  page_type: exercise
+- title: Add Data to a Hash Using Key
+  slug: add-data-to-a-hash-using-key
+  page_type: lesson
+- title: Exercise - Add Data to a Hash Using Key
+  slug: exercise-add-data-to-a-hash-using-key
+  page_type: exercise
+- title: Access All Keys
+  slug: access-all-keys
+  page_type: lesson
+- title: Exercise - Access All Keys
+  slug: exercise-access-all-keys
+  page_type: exercise
+- title: Loop Over All Keys and Values
+  slug: loop-over-all-key-and-values
+  page_type: lesson
+- title: Exercise - Use each to print all items
+  slug: exercise-use-each-to-print-all-items
+  page_type: exercise
