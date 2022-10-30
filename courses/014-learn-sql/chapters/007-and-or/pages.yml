@@ -1,0 +1,19 @@
+---
+- title: Select using AND condition
+  slug: select-using-and-condition
+  page_type: lesson
+- title: Exercise - Select using AND condition
+  slug: exercise-select-using-and-condition
+  page_type: exercise
+- title: Select using OR condition
+  slug: select-where-and-or
+  page_type: lesson
+- title: Exercise - Select using OR condition
+  slug: exercise-select-using-or-condition
+  page_type: exercise
+- title: Select using both AND and OR
+  slug: select-using-both-and-and-or
+  page_type: lesson
+- title: Exercise - Select where AND and OR
+  slug: exercise-select-where-and-and-or
+  page_type: exercise

@@ -1,0 +1,25 @@
+---
+- title: Run Function After Time Delay
+  slug: run-function-after-time-delay
+  page_type: lesson
+- title: Exercise - Run Function After Time Delay
+  slug: exercise-run-function-after-time-delay
+  page_type: exercise
+- title: Cancel a timer function
+  slug: cancel-a-timer-function
+  page_type: lesson
+- title: Exercise - Cancel a timer function
+  slug: exercise-cancel-a-timer-function
+  page_type: exercise
+- title: Run function at fixed time intervals
+  slug: run-function-at-fixed-time-intervals
+  page_type: lesson
+- title: Exercise - Run function at fixed time intervals
+  slug: exercise-run-function-at-fixed-time-intervals
+  page_type: exercise
+- title: Stop the SetInterval Method
+  slug: stop-the-setinterval-method
+  page_type: lesson
+- title: Exercise - Stop the SetInterval Method
+  slug: exercise-stop-the-setinterval-method
+  page_type: exercise

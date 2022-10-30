@@ -1,0 +1,16 @@
+---
+- title: Single Line Comment
+  slug: single-line-comment
+  page_type: lesson
+- title: Exercise - Single Line Comment
+  slug: exercise-single-line-comment
+  page_type: exercise
+- title: Multiple Line Comment
+  slug: multiple-line-comment
+  page_type: lesson
+- title: Exercise - Multiple Line Comment
+  slug: exercise-multiple-line-comment
+  page_type: exercise
+- title: Exercise - Multiple Line Comment
+  slug: exercise-multiple-line-comment-2
+  page_type: exercise

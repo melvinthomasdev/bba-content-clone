@@ -1,0 +1,13 @@
+---
+- title: SQL comments
+  slug: sql-comments
+  page_type: lesson
+- title: Exercise - SQL comments
+  slug: exercise-sql-comments
+  page_type: exercise
+- title: SQL multiline comments
+  slug: sql-multiline-comments
+  page_type: lesson
+- title: Exercise - SQL multiline comments
+  slug: exercise-sql-multiline-comments
+  page_type: exercise

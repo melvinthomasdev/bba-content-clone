@@ -1,0 +1,31 @@
+---
+- title: Non-existent Property
+  slug: non-existent-property
+  page_type: lesson
+- title: Exercise - Non-existent Property
+  slug: exercise-non-existent-property
+  page_type: exercise
+- title: Optional Chaining
+  slug: optional-chaining
+  page_type: lesson
+- title: Exercise - Optional Chaining
+  slug: exercise-optional-chaining
+  page_type: exercise
+- title: Short Circuiting
+  slug: short-circuiting
+  page_type: lesson
+- title: Exercise - Short Circuiting
+  slug: exercise-short-circuiting
+  page_type: exercise
+- title: Other Variants of Optional Chaining
+  slug: other-variants-of-optional-chaining
+  page_type: lesson
+- title: Exercise - Other Variants of Optional Chaining
+  slug: exercise-other-variants-of-optional-chaining-1
+  page_type: exercise
+- title: Exercise - Other Variants of Optional Chaining
+  slug: exercise-other-variants-of-optional-chaining-2
+  page_type: exercise
+- title: Exercise - Other Variants of Optional Chaining
+  slug: exercise-other-variants-of-optional-chaining-3
+  page_type: exercise

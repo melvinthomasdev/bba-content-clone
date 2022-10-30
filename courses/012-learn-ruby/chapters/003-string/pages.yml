@@ -1,0 +1,94 @@
+---
+- title: Joining Strings
+  slug: joining-strings
+  page_type: lesson
+- title: Exercise - Joining Strings
+  slug: exercise-joining-strings
+  page_type: exercise
+- title: Reversing a String
+  slug: reversing-a-string
+  page_type: lesson
+- title: Exercise - Reversing a String
+  slug: exercise-reversing-a-string
+  page_type: exercise
+- title: Convert All Letters in String to Capital Letters
+  slug: convert-all-letters-in-string-to-capital-letters
+  page_type: lesson
+- title: Exercise - Convert All Letters in String to Capital Letters
+  slug: exercise-convert-all-letters-in-string-to-capital-letters
+  page_type: exercise
+- title: Convert All Letters in String to Small Letters
+  slug: convert-all-letters-in-string-to-small-letters
+  page_type: lesson
+- title: Exercise - Convert All Letters in String to Small Letters
+  slug: exercise-convert-all-letters-in-string-to-small-letters
+  page_type: exercise
+- title: Remove Extra Spaces in String
+  slug: remove-extra-spaces-in-string
+  page_type: lesson
+- title: Convert a Number Into a String
+  slug: convert-a-number-into-a-string
+  page_type: lesson
+- title: Exercise - Convert a Number into a String
+  slug: exercise-convert-a-number-into-a-string
+  page_type: exercise
+- title: Convert a String Into a Number
+  slug: convert-a-string-into-a-number
+  page_type: lesson
+- title: Exercise - Convert a String Into a Number
+  slug: exercise-convert-a-string-into-a-number
+  page_type: exercise
+- title: Capitalize the First Letter of a String
+  slug: capitalize-the-first-letter-of-a-string
+  page_type: lesson
+- title: Exercise - Capitalize the First Letter of a String
+  slug: exercise-capitalize-the-first-letter-of-a-string
+  page_type: exercise
+- title: Running Methods One After Another
+  slug: running-methods-one-after-another
+  page_type: lesson
+- title: First position is zero not 1
+  slug: first-position-is-zero-not-1
+  page_type: lesson
+- title: Exercise - First position is zero not 1
+  slug: exercise-first-position-is-zero-not-1
+  page_type: exercise
+- title: Last position is -1
+  slug: last-position-is-1
+  page_type: lesson
+- title: Exercise - Last position is -1
+  slug: exercise-last-position-is-1
+  page_type: exercise
+- title: Check for the Starting Characters in a String
+  slug: check-for-the-starting-characters-in-a-string
+  page_type: lesson
+- title: Exercise - Check for the Starting Characters in a String
+  slug: exercise-check-if-string-starts-with-a-specific-character
+  page_type: exercise
+- title: Check if a String is included in another String
+  slug: check-if-a-string-is-included-in-another-string
+  page_type: lesson
+- title: Exercise - Check if a String is included in another String
+  slug: exercise-check-if-a-string-is-included-in-another-string
+  page_type: exercise
+- title: Convert String to Characters
+  slug: convert-string-to-characters
+  page_type: lesson
+- title: Exercise - Convert String to Characters
+  slug: exercise-convert-string-to-characters
+  page_type: exercise
+- title: Interpolation using double quoted string
+  slug: interpolation-using-double-quoted-string
+  page_type: lesson
+- title: Exercise - Interpolation using double quoted string
+  slug: exercise-interpolation-using-double-quoted-string
+  page_type: exercise
+- title: What is escape sequence
+  slug: what-is-escape-sequence
+  page_type: lesson
+- title: Get a Part of the String
+  slug: get-a-part-of-the-string
+  page_type: lesson
+- title: Exercise - Get a Part of the String
+  slug: exercise-get-a-part-of-the-string
+  page_type: exercise

@@ -1,0 +1,31 @@
+---
+- title: Rest parameter
+  slug: rest-parameter
+  page_type: lesson
+- title: Exercise - Rest parameter
+  slug: exercise-rest-parameter
+  page_type: exercise
+- title: Spread operator
+  slug: spread-operator
+  page_type: lesson
+- title: Exercise - Spread operator
+  slug: exercise-spread-operator
+  page_type: exercise
+- title: Use Spread operator to copy arrays and objects
+  slug: use-spread-operator-to-copy-arrays-and-objects
+  page_type: lesson
+- title: Exercise - Use Spread operator to copy arrays and objects
+  slug: exercise-use-spread-operator-to-copy-arrays-and-objects
+  page_type: exercise
+- title: Use Spread operator to combine multiple arrays
+  slug: use-spread-operator-to-combine-multiple-arrays
+  page_type: lesson
+- title: Exercise - Use Spread operator to combine multiple arrays
+  slug: exercise-use-spread-operator-to-combine-multiple-arrays
+  page_type: exercise
+- title: Use Spread operator to split strings
+  slug: use-spread-operator-to-split-strings
+  page_type: lesson
+- title: Exercise - Use Spread operator to split strings
+  slug: exercise-use-spread-operator-to-split-strings
+  page_type: exercise

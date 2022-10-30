@@ -1,0 +1,43 @@
+---
+- title: Repeating Statements
+  slug: repeating-statements
+  page_type: lesson
+- title: Exercise 1 - Repeating statements
+  slug: exercise-1-repeating-statements
+  page_type: exercise
+- title: If condition within Loops
+  slug: if-condition-within-loops
+  page_type: lesson
+- title: Exercise 1 - If condition within Loops
+  slug: exercise-1-if-condition-within-loops
+  page_type: exercise
+- title: Skip statements using continue
+  slug: skip-statements-using-continue
+  page_type: lesson
+- title: Exercise 1 - Skip statements using continue
+  slug: exercise-1-skip-statements-using-continue
+  page_type: exercise
+- title: Stopping the loop using break
+  slug: stopping-the-loop-using-break
+  page_type: lesson
+- title: Exercise 1 - Stopping the loop using break
+  slug: exercise-1-stopping-the-loop-using-break
+  page_type: exercise
+- title: Generating numbers using Range
+  slug: generating-numbers-using-range
+  page_type: lesson
+- title: Exercise 1 - Generating numbers using Range
+  slug: exercise-1-generating-numbers-using-range
+  page_type: exercise
+- title: Iterating two lists
+  slug: iterating-two-lists
+  page_type: lesson
+- title: Exercise 1 - Iterating two lists
+  slug: exercise-1-iterating-two-lists
+  page_type: exercise
+- title: Iterating Nested Lists
+  slug: iterating-nested-lists
+  page_type: lesson
+- title: Exercise 1 - Iterating Nested Lists
+  slug: exercise-1-iterating-nested-lists
+  page_type: exercise

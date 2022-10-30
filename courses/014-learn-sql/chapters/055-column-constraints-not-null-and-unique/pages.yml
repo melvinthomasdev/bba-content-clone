@@ -1,0 +1,19 @@
+---
+- title: NOT NULL Constraint
+  slug: not-null-constraint
+  page_type: lesson
+- title: Exercise - NOT NULL Constraint
+  slug: exercise-not-null-constraint
+  page_type: exercise
+- title: UNIQUE Constraint
+  slug: unique-constraint
+  page_type: lesson
+- title: Exercise - UNIQUE Constraint
+  slug: exercise-unique-constraint
+  page_type: exercise
+- title: Combining constraints
+  slug: combining-constraints
+  page_type: lesson
+- title: Exercise - Combining constraints
+  slug: exercise-combining-constraints
+  page_type: exercise

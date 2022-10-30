@@ -1,0 +1,16 @@
+---
+- title: What is symbol
+  slug: what-is-symbol
+  page_type: lesson
+- title: Convert a String Into a Symbol
+  slug: convert-a-string-into-a-symbol
+  page_type: lesson
+- title: Convert a Symbol Into a String
+  slug: convert-a-symbol-into-a-string
+  page_type: lesson
+- title: Symbols are immutable
+  slug: symbols-are-immutable
+  page_type: lesson
+- title: What's the use of symbols
+  slug: what-s-the-use-of-symbols
+  page_type: lesson

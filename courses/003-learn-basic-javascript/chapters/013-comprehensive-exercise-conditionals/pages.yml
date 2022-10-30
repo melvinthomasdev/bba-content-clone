@@ -1,0 +1,13 @@
+---
+- title: ComprehensiveExercise - Using If Else
+  slug: comprehensive-exercise-using-if-and-else
+  page_type: assessment
+- title: ComprehensiveExercise - Using If Else If
+  slug: comprehensive-exercise-using-if-else-and-if
+  page_type: assessment
+- title: ComprehensiveExercise - Using Switch Statement
+  slug: comprehensive-exercise-using-switch-statement
+  page_type: assessment
+- title: ComprehensiveExercise - Using Ternary Operator
+  slug: comprehensive-exercise-using-ternary-operator
+  page_type: assessment

@@ -1,0 +1,25 @@
+---
+- title: Global Scope
+  slug: global-scope
+  page_type: lesson
+- title: Exercise - Global Scope
+  slug: exercise-global-scope
+  page_type: exercise
+- title: Local Scope
+  slug: local-scope
+  page_type: lesson
+- title: Exercise - Local Scope
+  slug: exercise-local-scope
+  page_type: exercise
+- title: Scope nesting
+  slug: scope-nesting
+  page_type: lesson
+- title: Exercise - Scope nesting
+  slug: exercise-scope-nesting
+  page_type: exercise
+- title: Hoisting
+  slug: hoisting
+  page_type: lesson
+- title: Exercise - Hoisting
+  slug: exercise-hoisting
+  page_type: exercise

@@ -1,0 +1,40 @@
+---
+- title: What are Itertools?
+  slug: what-are-itertools
+  page_type: lesson
+- title: Zip Longest
+  slug: zip-longest
+  page_type: lesson
+- title: Exercise 1 - Zip Longest
+  slug: exercise-1-zip-longest
+  page_type: exercise
+- title: Cycle
+  slug: cycle
+  page_type: lesson
+- title: Exercise 1 - Cycle
+  slug: exercise-1-cycle
+  page_type: exercise
+- title: Chain
+  slug: chain
+  page_type: lesson
+- title: Exercise 1 - Chain
+  slug: exercise-1-chain
+  page_type: exercise
+- title: Compress
+  slug: compress
+  page_type: lesson
+- title: Exercise 1 - Compress
+  slug: exercise-1-compress
+  page_type: exercise
+- title: Groupby
+  slug: groupby
+  page_type: lesson
+- title: Exercise 1 - Groupby
+  slug: exercise-1-groupby
+  page_type: exercise
+- title: Starmap
+  slug: starmap
+  page_type: lesson
+- title: Exercise 1 - Starmap
+  slug: exercise-1-starmap
+  page_type: exercise

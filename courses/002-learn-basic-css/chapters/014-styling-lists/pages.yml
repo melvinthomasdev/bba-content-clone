@@ -1,0 +1,22 @@
+---
+- title: Styling Lists
+  slug: styling-lists
+  page_type: lesson
+- title: Exercise - Styling Unordered Lists
+  slug: exercise-styling-unordered-lists
+  page_type: exercise
+- title: Exercise - Styling Ordered Lists
+  slug: exercise-styling-ordered-lists
+  page_type: exercise
+- title: List Marker Image
+  slug: list-marker-image
+  page_type: lesson
+- title: Exercise - List Marker Image
+  slug: exercise-list-marker-image
+  page_type: exercise
+- title: List Marker Position
+  slug: list-marker-position
+  page_type: lesson
+- title: Exercise - List Marker Position
+  slug: exercise-list-marker-position
+  page_type: exercise

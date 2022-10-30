@@ -1,0 +1,16 @@
+---
+- title: Subqueries
+  slug: subqueries
+  page_type: lesson
+- title: Exercise - Subqueries - 1
+  slug: exercise-subqueries-1
+  page_type: exercise
+- title: Exercise - Subqueries - 2
+  slug: exercise-subqueries-2
+  page_type: exercise
+- title: Subqueries with multiple results
+  slug: subqueries-with-multiple-results
+  page_type: lesson
+- title: Exercise - Subqueries with multiple results
+  slug: exercise-subqueries-with-multiple-results
+  page_type: exercise

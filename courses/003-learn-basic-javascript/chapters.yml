@@ -1,0 +1,41 @@
+---
+- name: Getting Started
+  slug: getting-started
+- name: Display output on the screen
+  slug: display-output-on-screen
+- name: Single and Multiple line comments
+  slug: single-and-multiple-line-comments
+- name: String
+  slug: string
+- name: Number
+  slug: number
+- name: Comprehensive Exercise - Comment String Number
+  slug: comprehensive-exercise-comment-string-number
+- name: Object
+  slug: object
+- name: Comprehensive Exercise - Object
+  slug: comprehensive-exercise-object
+- name: Array
+  slug: array
+- name: Comprehensive Exercise - Array
+  slug: comprehensive-exercise-array
+- name: undefined and null
+  slug: undefined-and-null
+- name: Conditionals
+  slug: conditionals
+- name: Comprehensive Exercise - Conditionals
+  slug: comprehensive-exercise-conditionals
+- name: True and False
+  slug: true-and-false
+- name: Logical Operations
+  slug: logical-operations
+- name: Comprehensive Exercise - Logical Operations
+  slug: comprehensive-exercise-logical-operations
+- name: Loops
+  slug: loops
+- name: Comprehensive Exercise - Loops
+  slug: comprehensive-exercise-loops
+- name: Type Conversions
+  slug: type-conversions
+- name: Functions
+  slug: functions

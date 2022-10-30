@@ -1,0 +1,16 @@
+---
+- title: PRIMARY KEY
+  slug: primary-key
+  page_type: lesson
+- title: PRIMARY KEY - Continued
+  slug: primary-key-continued
+  page_type: lesson
+- title: Exercise - PRIMARY KEY
+  slug: exercise-primary-key
+  page_type: exercise
+- title: PRIMARY KEY with multiple columns
+  slug: primary-key-multiple-columns
+  page_type: lesson
+- title: Exercise - PRIMARY KEY with multiple columns
+  slug: exercise-primary-key-multiple-columns
+  page_type: exercise

@@ -1,0 +1,19 @@
+---
+- title: Maximum age
+  slug: maximum-age
+  page_type: lesson
+- title: Exercise - Maximum marks
+  slug: exercise-maximum-marks
+  page_type: exercise
+- title: Exercise - Maximum marks in Python
+  slug: exercise-maximum-marks-in-python
+  page_type: exercise
+- title: Minimum marks
+  slug: minimum-marks
+  page_type: lesson
+- title: Exercise - Minimum age
+  slug: exercise-minimum-age
+  page_type: exercise
+- title: Exercise - Minimum age of high achievers
+  slug: exercise-minimum-age-of-high-achievers
+  page_type: exercise

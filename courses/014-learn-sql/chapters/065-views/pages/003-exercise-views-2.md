@@ -1,0 +1,26 @@
+Write a set of SQL statements to:
+
+1. Create a VIEW `booksVolumeSeries` that contains these two columns: `name`, `nextVolumeId`. The data should be the name and the nextVolumeId for all the books where nextVolumeId is present.
+
+2. Use the VIEW `booksVolumeSeries` in combination with `books` to get the name of the book and the name of the next volume for all the books that have a next volume. The headers should be set as `bookName` and `nextVolumeName` respectively.
+
+
+
+<Editor lang="sql" dbName="students2-v3.db" type="exercise" checkForViews="booksVolumeSeries">
+<code>
+
+</code>
+
+<solution>
+CREATE VIEW booksVolumeSeries AS
+SELECT name,
+       nextVolumeId
+FROM   books
+WHERE  nextVolumeId IS NOT NULL;
+
+SELECT booksVolumeSeries.name as bookName,
+       books.name as nextVolumeName
+FROM   booksVolumeSeries JOIN books
+ON     booksVolumeSeries.nextVolumeId = books.id;
+</solution>
+</Editor>

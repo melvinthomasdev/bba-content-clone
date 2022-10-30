@@ -1,0 +1,43 @@
+---
+- title: Catch errors using try...catch
+  slug: try-catch
+  page_type: lesson
+- title: Exercise - Catch errors using try...catch
+  slug: exercise-error-handling-try-catch
+  page_type: exercise
+- title: Synchronous Working of try...catch
+  slug: synchronous-working-of-try-catch
+  page_type: lesson
+- title: Exercise - Synchronous Working of try...catch
+  slug: exercise-synchronous-working-of-try-catch
+  page_type: exercise
+- title: Error Object in try...catch
+  slug: error-object-in-try-catch
+  page_type: lesson
+- title: Exercise - Error Object in try...catch
+  slug: exercise-error-object-in-try-catch
+  page_type: exercise
+- title: Verify JSON with try...catch
+  slug: verify-json-with-try-catch
+  page_type: lesson
+- title: Exercise - Verify JSON with try...catch
+  slug: exercise-verify-json-with-try-catch
+  page_type: exercise
+- title: The importance of `throw`
+  slug: throw
+  page_type: lesson
+- title: Exercise - "The Importance of `throw`"
+  slug: exercise-importance-of-throw
+  page_type: exercise
+- title: Rethrow Errors
+  slug: rethrow-errors
+  page_type: lesson
+- title: Exercise - Rethrow Errors
+  slug: exercise-rethrow-errors
+  page_type: exercise
+- title: Using try...catch...finally
+  slug: try-catch-finally
+  page_type: lesson
+- title: Exercise - Using try...catch...finally
+  slug: exercise-try-catch-finally
+  page_type: exercise

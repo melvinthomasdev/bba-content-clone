@@ -1,0 +1,17 @@
+Display **name**, **age** and **marks** for a student
+whose **marks** is an odd number.
+
+
+
+<Editor lang="sql" dbName="students1.db" type="exercise">
+<code>
+SELECT
+FROM
+</code>
+
+<solution>
+SELECT name, age, marks
+FROM students
+WHERE marks % 2 = 1
+</solution>
+</Editor>
