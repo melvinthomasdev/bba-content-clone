@@ -3,8 +3,6 @@ require_relative './config_rules/course_name_present'
 require_relative './config_rules/course_slug_present'
 require_relative './config_rules/course_published_present'
 require_relative './config_rules/course_image_exists'
-require_relative './config_rules/course_slugs_unique'
-require_relative './config_rules/courses_metadata_matches_course_directories'
 require_relative './config_rules/chapter_name_present'
 require_relative './config_rules/chapter_slug_present'
 require_relative './config_rules/chapter_slugs_unique'
@@ -14,7 +12,7 @@ require_relative './config_rules/page_slug_present'
 require_relative './config_rules/page_type_present'
 require_relative './config_rules/page_slugs_unique'
 require_relative './config_rules/pages_data_matches_page_files'
-require_relative './config_rules/page_editor_tags_valid'
+require_relative './config_rules/page_codeblock_tags_valid'
 require_relative './config_rules/page_image_tags_valid'
 
 module Src
@@ -27,7 +25,6 @@ module Src
     def process
       puts "Gathering config".blue
       set_directories
-      set_course_metadata_config
       set_course_directories
       puts "Validating config".blue
       validate_course_data
@@ -49,62 +46,81 @@ module Src
       @databases_path = File.join(assets_path, "databases")
     end
 
-    def set_course_metadata_config
-      courses_config_path = File.join(app_root, "courses.yml")
-      if !File.exist?(courses_config_path)
-        raise "courses.yml does not exist"
-      end
-      @course_metadata_config = YAML.load_file(courses_config_path)
-    rescue Psych::SyntaxError => e
-      raise "Error parsing courses.yml: #{e}"
-    end
 
     def set_course_directories
       @course_directories = Dir[File.join(app_root, "courses", "*")].select { |f| File.directory? f }
     end
 
     def validate_course_data
-      course_metadata_config.each_with_index do |course_data, course_index|
+
+      course_directories.each_with_index do |course_directory, course_index|
+        ###################### course_metadata_validation ######################
+        course_data = load_course_data(course_directory)
+        course_assets_config = load_course_assets_config(course_directory)
         validate_course_name_present(course_data, course_index)
         validate_course_slug_present(course_data, course_index)
         validate_course_published_present(course_data, course_index)
-        validate_course_logo_exists_if_specified(course_data, course_index) if course_data["logo"]
-        validate_course_home_logo_exists_if_specified(course_data, course_index) if course_data["home_logo"]
-      end
-      validate_uniqueness_of_course_slugs
-      validate_course_metadata_config_matches_course_directories
-      course_directories.each do |course_directory|
+        validate_course_logo_exists_if_specified(course_data, course_index, course_directory, course_assets_config) if course_data["logo"]
+        validate_course_home_logo_exists_if_specified(course_data, course_index, course_directory, course_assets_config) if course_data["home_logo"]
+
+        ##################### chapters_config_validation ######################
         chapters_config = load_chapters_config(course_directory)
         chapter_directories = Dir[File.join(course_directory, "chapters", "*")].select { |f| File.directory? f }
         course_base_directory_name = File.basename(course_directory)
 
+        validate_uniqueness_of_chapter_slugs(chapters_config, course_base_directory_name)
         chapters_config.each_with_index do |chapter_data, chapter_index|
           validate_chapter_name_present(chapter_data, chapter_index, course_base_directory_name)
           validate_chapter_slug_present(chapter_data, chapter_index, course_base_directory_name)
         end
-        validate_uniqueness_of_chapter_slugs(chapters_config, course_base_directory_name)
         validate_chapters_data_matches_chapter_directories(chapters_config, chapter_directories, course_base_directory_name)
 
+        ##################### pages_config_validation ######################
         chapter_directories.each do |chapter_directory|
           pages_config = load_pages_config(chapter_directory, course_base_directory_name)
           page_files = Dir[File.join(chapter_directory, "pages", "*.md")].select { |f| File.file? f }
-
           chapter_base_directory_name = File.basename(chapter_directory)
+
+          validate_uniqueness_of_page_slugs(pages_config, course_base_directory_name, chapter_base_directory_name)
           pages_config.each_with_index do |page_data, page_index|
             validate_page_title_present(page_data, page_index, course_base_directory_name, chapter_base_directory_name)
             validate_page_slug_present(page_data, page_index, course_base_directory_name, chapter_base_directory_name)
             validate_page_type_present(page_data, page_index, course_base_directory_name, chapter_base_directory_name)
           end
-
-          validate_uniqueness_of_page_slugs(pages_config, course_base_directory_name, chapter_base_directory_name)
           validate_pages_data_matches_page_files(pages_config, page_files, course_base_directory_name, chapter_base_directory_name)
 
           page_files.each do |page_file|
-            validate_page_editor_tags(page_file, course_base_directory_name, chapter_base_directory_name)
-            validate_page_image_tags(page_file, course_base_directory_name, chapter_base_directory_name)
+            validate_page_codeblock_tags(page_file, course_base_directory_name, chapter_base_directory_name, course_assets_config)
+            validate_page_image_tags(page_file, course_base_directory_name, chapter_base_directory_name, course_assets_config)
           end
         end
       end
+    end
+
+    def load_course_data(course_directory)
+      course_metadata_path = File.join(course_directory, "metadata.yml")
+      course_base_directory_name = File.basename(course_directory)
+
+      if !File.exist?(course_metadata_path)
+        raise "metadata.yml does not exist in #{course_base_directory_name}"
+      end
+
+      YAML.load_file(course_metadata_path)
+    rescue Psych::SyntaxError => e
+      raise "Error parsing metadata.yml in #{course_base_directory_name}: #{e}"
+    end
+
+    def load_course_assets_config(course_directory)
+      course_assets_path = File.join(course_directory, "assets.yml")
+      course_base_directory_name = File.basename(course_directory)
+
+      if !File.exist?(course_assets_path)
+        raise "assets.yml does not exist in #{course_base_directory_name}"
+      end
+
+      YAML.load_file(course_assets_path)
+    rescue Psych::SyntaxError => e
+      raise "Error parsing assets.yml in #{course_base_directory_name}: #{e}"
     end
 
     def load_chapters_config(course_directory)
@@ -145,20 +161,12 @@ module Src
       Src::ConfigRules::CoursePublishedPresent.new(course_data, course_index).process
     end
 
-    def validate_course_logo_exists_if_specified(course_data, course_index)
-      Src::ConfigRules::CourseImageExists.new(course_data, course_index, "logo", images_path).process
+    def validate_course_logo_exists_if_specified(course_data, course_index, course_directory, course_assets_config)
+      Src::ConfigRules::CourseImageExists.new(course_data, course_index, "logo", images_path, course_directory, course_assets_config).process
     end
 
-    def validate_course_home_logo_exists_if_specified(course_data, course_index)
-      Src::ConfigRules::CourseImageExists.new(course_data, course_index, "home_logo", images_path).process
-    end
-
-    def validate_uniqueness_of_course_slugs
-      Src::ConfigRules::CourseSlugsUnique.new(course_metadata_config).process
-    end
-
-    def validate_course_metadata_config_matches_course_directories
-      Src::ConfigRules::CoursesMetadataMatchesCourseDirectories.new(course_metadata_config, course_directories).process
+    def validate_course_home_logo_exists_if_specified(course_data, course_index, course_directory, course_assets_config)
+      Src::ConfigRules::CourseImageExists.new(course_data, course_index, "home_logo", images_path, course_directory, course_assets_config).process
     end
 
     def validate_chapter_name_present(chapter_data, chapter_index, course_base_directory_name)
@@ -197,12 +205,12 @@ module Src
       Src::ConfigRules::PagesDataMatchesPageFiles.new(pages_data, page_files, course_base_directory_name, chapter_base_directory_name).process
     end
 
-    def validate_page_editor_tags(page_file, course_base_directory_name, chapter_base_directory_name)
-      Src::ConfigRules::PageEditorTagsValid.new(page_file, course_base_directory_name, chapter_base_directory_name, databases_path).process
+    def validate_page_codeblock_tags(page_file, course_base_directory_name, chapter_base_directory_name, course_assets_config)
+      Src::ConfigRules::PageCodeblockTagsValid.new(page_file, course_base_directory_name, chapter_base_directory_name, databases_path, course_assets_config).process
     end
 
-    def validate_page_image_tags(page_file, course_base_directory_name, chapter_base_directory_name)
-      Src::ConfigRules::PageImageTagsValid.new(page_file, course_base_directory_name, chapter_base_directory_name, images_path).process
+    def validate_page_image_tags(page_file, course_base_directory_name, chapter_base_directory_name, course_assets_config)
+      Src::ConfigRules::PageImageTagsValid.new(page_file, course_base_directory_name, chapter_base_directory_name, images_path, course_assets_config).process
     end
   end
 end
