@@ -1,0 +1,19 @@
+---
+- title: Mixin modules
+  slug: mixin-modules
+  page_type: lesson
+- title: Utility of Modules
+  slug: utility-of-modules
+  page_type: lesson
+- title: Instance Method Over Module Method
+  slug: instance-method-over-module-method
+  page_type: lesson
+- title: Last Module Wins
+  slug: last-module-wins
+  page_type: lesson
+- title: Ancestors
+  slug: ancestors
+  page_type: lesson
+- title: Modules Are Not Copy Paste
+  slug: modules-are-not-copy-paste
+  page_type: lesson

@@ -1,0 +1,49 @@
+---
+- title: Margin
+  slug: margin
+  page_type: lesson
+- title: Side Margins
+  slug: side-margins
+  page_type: lesson
+- title: Exercise - Side Margins
+  slug: side-margins-ex1
+  page_type: exercise
+- title: Margin Shorthand Property
+  slug: margin-shorthand-property
+  page_type: lesson
+- title: Exercise - Margin Shorthand Property
+  slug: exercise-margin-shorthand-property
+  page_type: exercise
+- title: Exercise - Margin Shorthand Property
+  slug: exercise-margin-shorthand-property-2
+  page_type: exercise
+- title: Negative Margins
+  slug: negative-margins
+  page_type: lesson
+- title: Exercise - Negative Margins
+  slug: exercise-negative-margins
+  page_type: exercise
+- title: Auto Margins
+  slug: auto-margins
+  page_type: lesson
+- title: Exercise - Auto Margins
+  slug: exercise-auto-margins
+  page_type: exercise
+- title: Padding
+  slug: padding
+  page_type: lesson
+- title: Padding on Sides
+  slug: padding-on-sides
+  page_type: lesson
+- title: Exercise - Padding Individual Properties
+  slug: exercise-padding-individual-properties
+  page_type: exercise
+- title: Padding Shorthand Property
+  slug: padding-shorthand-property
+  page_type: lesson
+- title: Exercise - Padding Shorthand Property
+  slug: exercise-padding-shorthand-property
+  page_type: exercise
+- title: Exercise - Padding Shorthand Property
+  slug: exercise-padding-shorthand-property-2
+  page_type: exercise

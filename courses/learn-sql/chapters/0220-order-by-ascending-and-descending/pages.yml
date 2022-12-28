@@ -1,0 +1,13 @@
+---
+- title: Order students by marks in descending order
+  slug: order-students-by-marks-in-descending-order
+  page_type: lesson
+- title: Exercise - Order students by grades in descending order
+  slug: exercise-order-students-by-grades-in-descending-order
+  page_type: exercise
+- title: Order students by less age and more marks
+  slug: order-students-by-less-age-and-more-marks
+  page_type: lesson
+- title: Exercise - Order students by grade and id
+  slug: exercise-order-students-by-grade-and-id
+  page_type: exercise

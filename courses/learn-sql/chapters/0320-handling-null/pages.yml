@@ -1,0 +1,13 @@
+---
+- title: IFNULL
+  slug: ifnull
+  page_type: lesson
+- title: Exercise - IFNULL
+  slug: exercise-ifnull
+  page_type: exercise
+- title: COALESCE
+  slug: coalesce
+  page_type: lesson
+- title: Exercise - COALESCE
+  slug: exercise-coalesce
+  page_type: exercise

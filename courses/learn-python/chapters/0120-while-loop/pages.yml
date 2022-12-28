@@ -1,0 +1,19 @@
+---
+- title: Repeating instructions using a While loop
+  slug: repeating-instructions-using-a-while-loop
+  page_type: lesson
+- title: Exercise 1 - Repeating instructions using a While loop
+  slug: exercise-1-repeating-instructions-using-a-while-loop
+  page_type: exercise
+- title: While loop for Lists
+  slug: while-loop-for-lists
+  page_type: lesson
+- title: Exercise 1 - While loop for Lists
+  slug: exercise-1-while-loop-for-lists
+  page_type: exercise
+- title: Nested While loops
+  slug: nested-while-loops
+  page_type: lesson
+- title: Exercise 1 - Nested While loops
+  slug: exercise-1-nested-while-loops
+  page_type: exercise

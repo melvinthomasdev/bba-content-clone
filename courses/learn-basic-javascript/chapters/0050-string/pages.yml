@@ -1,0 +1,22 @@
+---
+- title: Create string
+  slug: create-string
+  page_type: lesson
+- title: Exercise - Create string
+  slug: exercise-create-string
+  page_type: exercise
+- title: Joining strings
+  slug: joining-strings
+  page_type: lesson
+- title: Exercise - Joining strings
+  slug: exercise-joining-strings-1
+  page_type: exercise
+- title: Exercise - Joining strings
+  slug: exercise-joining-strings-2
+  page_type: exercise
+- title: Template Strings
+  slug: template-strings
+  page_type: lesson
+- title: Exercise - Template Strings
+  slug: exercise-template-strings
+  page_type: exercise

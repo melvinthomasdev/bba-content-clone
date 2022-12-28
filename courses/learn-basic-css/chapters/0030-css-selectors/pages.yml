@@ -1,0 +1,25 @@
+---
+- title: Element Selectors
+  slug: element-selectors
+  page_type: lesson
+- title: Exercise - Element Selectors
+  slug: exercise-element-selectors
+  page_type: exercise
+- title: Class Selectors
+  slug: class-selectors
+  page_type: lesson
+- title: Exercise - Class Selectors
+  slug: exercise-class-selectors
+  page_type: exercise
+- title: ID Selectors
+  slug: id-selectors
+  page_type: lesson
+- title: Exercise - ID Selectors
+  slug: exercise-id-selectors
+  page_type: exercise
+- title: Universal Selector
+  slug: universal-selector
+  page_type: lesson
+- title: Exercise - Universal Selector
+  slug: exercise-universal-selector
+  page_type: exercise

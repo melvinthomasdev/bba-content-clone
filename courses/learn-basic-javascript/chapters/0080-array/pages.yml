@@ -1,0 +1,34 @@
+---
+- title: Create array
+  slug: create-array
+  page_type: lesson
+- title: Exercise - array
+  slug: exercise-array
+  page_type: exercise
+- title: Reading from array
+  slug: reading-from-array
+  page_type: lesson
+- title: Exercise - Reading from array
+  slug: exercise-reading-from-array
+  page_type: exercise
+- title: Adding to array
+  slug: adding-to-array
+  page_type: lesson
+- title: Exercise - Adding to array
+  slug: exercise-adding-to-array
+  page_type: exercise
+- title: Updating array element
+  slug: updating-array-element
+  page_type: lesson
+- title: Exercise - Updating array element
+  slug: exercise-updating-array-element
+  page_type: exercise
+- title: Array Indexes
+  slug: array-indexes
+  page_type: lesson
+- title: Array Length
+  slug: array-length
+  page_type: lesson
+- title: Array Naming Conventions
+  slug: array-naming-conventions
+  page_type: lesson

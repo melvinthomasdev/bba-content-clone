@@ -1,3 +1,67 @@
 ---
-- name: Python sample course
-  slug: python-sample-course
+- name: Getting started
+  slug: getting-started
+- name: Data Types
+  slug: data-types
+- name: Operators
+  slug: operators
+- name: Variables
+  slug: variables
+- name: If Else statements
+  slug: if-else-statements
+- name: Comprehensive Exercises I
+  slug: comprehensive-exercises-i
+- name: String formatting
+  slug: string-formatting
+- name: Lists and Tuples
+  slug: lists-and-tuples
+- name: Iterating over lists
+  slug: iterating-over-lists
+- name: Sets
+  slug: sets
+- name: Dictionaries
+  slug: dictionaries
+- name: While Loop
+  slug: while-loop
+- name: Comprehensive Exercises II
+  slug: comprehensive-exercises-ii
+- name: Comments
+  slug: comments
+- name: Functions
+  slug: functions
+- name: Function arguments
+  slug: function-arguments
+- name: Lambdas
+  slug: lambdas
+- name: Working with Strings
+  slug: working-with-strings
+- name: More about Lists
+  slug: more-about-lists
+- name: Handling Exceptions
+  slug: handling-exceptions
+- name: Working with Collections
+  slug: working-with-collections
+- name: Working with the datetime module
+  slug: working-with-the-datetime-module
+- name: Decorators
+  slug: decorators
+- name: Classes and Objects
+  slug: classes-and-objects
+- name: Inheritance
+  slug: inheritance
+- name: Overloading operators in Python
+  slug: overloading-operators-in-python
+- name: Generators
+  slug: generators
+- name: More about decorators
+  slug: more-about-decorators
+- name: Bitwise Operators
+  slug: bitwise-operators
+- name: Creating and raising Exceptions
+  slug: creating-and-raising-exceptions
+- name: Iterators
+  slug: iterators
+- name: Modifying iterables with Itertools
+  slug: modifying-iterables-with-itertools
+- name: Measuring code performance
+  slug: measuring-code-performance

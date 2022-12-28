@@ -1,0 +1,13 @@
+---
+- title: Select where less than or equal to
+  slug: select-where-less-than-or-equal-to
+  page_type: lesson
+- title: Exercise - Select where less than or equal to
+  slug: exercise-select-where-less-than-or-equal-to
+  page_type: exercise
+- title: Select where greater than or equal to
+  slug: select-where-greater-than-or-equal-to
+  page_type: lesson
+- title: Exercise - Select where greater than or equal to
+  slug: exercise-select-where-greater-than-or-equal-to
+  page_type: exercise

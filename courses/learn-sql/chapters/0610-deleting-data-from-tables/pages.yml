@@ -1,0 +1,13 @@
+---
+- title: Deleting specific data from table
+  slug: deleting-specific-data-from-table
+  page_type: lesson
+- title: Exercise - Deleting specific data from table
+  slug: exercise-deleting-specific-data-from-table
+  page_type: exercise
+- title: Deleting all data from table
+  slug: deleting-all-data-from-table
+  page_type: lesson
+- title: Exercise - Deleting all data from table
+  slug: exercise-deleting-all-data-from-table
+  page_type: exercise

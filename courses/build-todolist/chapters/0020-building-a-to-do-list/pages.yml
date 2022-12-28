@@ -1,0 +1,22 @@
+---
+- title: Feature Requests
+  slug: feature-requests
+  page_type: lesson
+- title: Adding a List Item
+  slug: adding-a-list-item
+  page_type: lesson
+- title: Adding Multiple List Items
+  slug: adding-multiple-list-items
+  page_type: lesson
+- title: Adding Items at Top of List
+  slug: adding-items-at-top-of-list
+  page_type: lesson
+- title: Adding Style to the App
+  slug: adding-style-to-the-app
+  page_type: lesson
+- title: Removing a List Item
+  slug: removing-a-list-item
+  page_type: lesson
+- title: Editing a List Item
+  slug: editing-a-list-item
+  page_type: lesson

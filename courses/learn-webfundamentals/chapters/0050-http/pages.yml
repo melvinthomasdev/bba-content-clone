@@ -1,0 +1,16 @@
+---
+- title: Basics and History
+  slug: basics-and-history
+  page_type: lesson
+- title: Stateless
+  slug: stateless
+  page_type: lesson
+- title: Methods or Verbs
+  slug: methods-or-verbs
+  page_type: lesson
+- title: Headers
+  slug: headers
+  page_type: lesson
+- title: Response Codes
+  slug: response-codes
+  page_type: lesson

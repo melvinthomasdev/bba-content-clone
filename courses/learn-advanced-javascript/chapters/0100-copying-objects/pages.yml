@@ -1,0 +1,25 @@
+---
+- title: Shallow Cloning
+  slug: shallow-cloning
+  page_type: lesson
+- title: Exercise - Shallow Cloning
+  slug: exercise-shallow-cloning
+  page_type: exercise
+- title: Comparing Objects
+  slug: comparing-objects
+  page_type: lesson
+- title: Exercise - Comparing Objects
+  slug: exercise-comparing-objects
+  page_type: exercise
+- title: Deep Cloning
+  slug: deep-cloning
+  page_type: lesson
+- title: Exercise - Deep Cloning
+  slug: exercise-deep-cloning
+  page_type: exercise
+- title: Clone Nested Objects
+  slug: clone-nested-objects
+  page_type: lesson
+- title: Exercise - Clone Nested Objects
+  slug: exercise-clone-nested-objects
+  page_type: exercise

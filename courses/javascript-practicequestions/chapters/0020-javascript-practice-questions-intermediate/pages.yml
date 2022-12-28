@@ -1,0 +1,58 @@
+---
+- title: ComprehensiveExercise - Convert time format
+  slug: comprehensive-exercise-convert-given-seconds-to-hours-minutes-and-seconds
+  page_type: assessment
+- title: ComprehensiveExercise - Extract book name by the borrower
+  slug: comprehensive-exercise-extract-book-name-by-borrower
+  page_type: assessment
+- title: ComprehensiveExercise - Add an element to array
+  slug: comprehensive-exercise-add-element-to-array
+  page_type: assessment
+- title: ComprehensiveExercise - Find sum of numbers in the array
+  slug: comprehensive-exercise-find-sum-of-numbers-in-array
+  page_type: assessment
+- title: ComprehensiveExercise - Return object with issues grouped by severity
+  slug: comprehensive-exercise-return-object-with-issues-grouped-by-severity
+  page_type: assessment
+- title: ComprehensiveExercise - Find Hexadecimal And Convert to Decimal
+  slug: comprehensive-exercise-find-hexadecimal-and-convert-to-decimal
+  page_type: assessment
+- title: ComprehensiveExercise - Find the Type of Parameter
+  slug: comprehensive-exercise-find-type-of-parameter-passed
+  page_type: assessment
+- title: ComprehensiveExercise - Access code in inner function
+  slug: comprehensive-exercise-access-code-in-inne-function
+  page_type: assessment
+- title: ComprehensiveExercise - Add and Round the Floating Point Numbers
+  slug: comprehensive-exercise-add-and-round-floating-point-numbers
+  page_type: assessment
+- title: ComprehensiveExercise - Add Vacation Start Date, if missing
+  slug: comprehensive-exercise-add-date-property-if-missing
+  page_type: assessment
+- title: ComprehensiveExercise - Convert from UTF-16
+  slug: comprehensive-exercise-convert-utf-16-to-string
+  page_type: assessment
+- title: ComprehensiveExercise - Convert the bases
+  slug: comprehensive-exercise-convert-the-bases
+  page_type: assessment
+- title: ComprehensiveExercise - Find the Highest Score
+  slug: comprehensive-exercise-find-the-highest-score
+  page_type: assessment
+- title: ComprehensiveExercise - Make it Ordinal
+  slug: assessment-make-it-ordinal
+  page_type: assessment
+- title: ComprehensiveExercise - Get number of days in a month
+  slug: comprehensive-exercise-get-number-of-days-in-month
+  page_type: assessment
+- title: ComprehensiveExercise - Find the best bowling average
+  slug: comprehensive-exercise-find-the-best-bowling-average
+  page_type: assessment
+- title: ComprehensiveExercise - Flatten the Array
+  slug: comprehensive-exercise-flatten-the-array
+  page_type: assessment
+- title: ComprehensiveExercise - Finding Nemo
+  slug: comprehensive-exercise-finding-nemo
+  page_type: assessment
+- title: ComprehensiveExercise - Folding a Piece of Paper
+  slug: comprehensive-exercise-folding-a-piece-of-paper
+  page_type: assessment

@@ -1,0 +1,16 @@
+---
+- title: What is null
+  slug: what-is-null
+  page_type: lesson
+- title: Select where NULL
+  slug: select-where-null
+  page_type: lesson
+- title: Exercise - Select where NULL
+  slug: exercise-select-where-null
+  page_type: exercise
+- title: Select where NOT NULL
+  slug: select-where-not-null
+  page_type: lesson
+- title: Exercise - Select where NOT NULL
+  slug: exercise-select-where-not-null
+  page_type: exercise

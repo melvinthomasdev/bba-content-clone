@@ -1,0 +1,25 @@
+---
+- title: Adding Array element - push
+  slug: adding-array-element-1
+  page_type: lesson
+- title: Exercise - Adding Array element - push
+  slug: exercise-adding-array-element-1
+  page_type: exercise
+- title: Adding Array element - unshift
+  slug: adding-array-element-2
+  page_type: lesson
+- title: Exercise - Adding Array element - unshift
+  slug: exercise-adding-array-element-2
+  page_type: exercise
+- title: Removing Array element - pop
+  slug: removing-array-element-1
+  page_type: lesson
+- title: Exercise - Removing Array element - pop
+  slug: exercise-removing-array-element-1
+  page_type: exercise
+- title: Removing Array element - shift
+  slug: removing-array-element-shift
+  page_type: lesson
+- title: Exercise - Removing Array element - shift
+  slug: exercise-removing-array-element-2
+  page_type: exercise

@@ -1,0 +1,25 @@
+---
+- title: Filter records with even values
+  slug: filter-even-numbers
+  page_type: lesson
+- title: Filter using arithmetic
+  slug: filter-using-arithmetic
+  page_type: lesson
+- title: Exercise - Filter using arithmetic
+  slug: exercise-filter-using-arithmetic-1
+  page_type: exercise
+- title: Exercise - Filter using arithmetic
+  slug: exercise-filter-using-arithmetic-2
+  page_type: exercise
+- title: Modulo operation
+  slug: modulo-operation
+  page_type: lesson
+- title: Exercise - Filter using arithmetic
+  slug: exercise-filter-using-arithmetic-5
+  page_type: exercise
+- title: Order using arithmetic
+  slug: order-using-arithmetic
+  page_type: lesson
+- title: Exercise - Order using arithmetic
+  slug: exercise-order-using-arithmetic
+  page_type: exercise

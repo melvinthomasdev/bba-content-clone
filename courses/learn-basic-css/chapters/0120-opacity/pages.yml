@@ -1,0 +1,13 @@
+---
+- title: Opacity
+  slug: opacity
+  page_type: lesson
+- title: Exercise - Opacity
+  slug: exercise-opacity
+  page_type: exercise
+- title: Opacity using RGBA
+  slug: opacity-using-rgba
+  page_type: lesson
+- title: Exercise - Opacity using RGBA
+  slug: exercise-opacity-using-rgba
+  page_type: exercise

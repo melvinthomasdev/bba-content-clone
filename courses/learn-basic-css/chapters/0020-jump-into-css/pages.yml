@@ -1,0 +1,25 @@
+---
+- title: First look at CSS
+  slug: first-look-at-css
+  page_type: lesson
+- title: Exercise - Write your first CSS code
+  slug: exercise-write-your-first-css-code
+  page_type: exercise
+- title: Selectors
+  slug: selectors
+  page_type: lesson
+- title: Exercise - Selectors
+  slug: exercise-selectors
+  page_type: exercise
+- title: Properties & Values
+  slug: properties-values
+  page_type: lesson
+- title: Exercise - Properties & Values
+  slug: exercise-properties-values
+  page_type: exercise
+- title: CSS Comments
+  slug: css-comments
+  page_type: lesson
+- title: Exercise - CSS Comments
+  slug: exercise-css-comments
+  page_type: exercise

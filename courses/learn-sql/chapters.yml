@@ -1,9 +1,131 @@
 ---
+- name: Getting Started
+  slug: getting-started
+- name: Select
+  slug: select
 - name: Select and filter
   slug: select-and-filter
+- name: Less than and greater than
+  slug: less-than-greater-than
+- name: Less than and greater than with equal to
+  slug: less-than-greater-than-with-equal-to
+- name: Comments
+  slug: comments
+- name: AND & OR
+  slug: and-or
+- name: BETWEEN & NOT BETWEEN
+  slug: between-and-not-between
+- name: IN & NOT IN
+  slug: in-and-not-in
 - name: NULL value
   slug: null-value
+- name: LIKE value
+  slug: like-value
+- name: NOT LIKE value
+  slug: not-like-value
+- name: DISTINCT operator
+  slug: distinct-operator
+- name: Select specific column
+  slug: select-specific-column
+- name: COUNT operator
+  slug: count-operator
+- name: AS operator
+  slug: as-operator
+- name: COUNT & DISTINCT
+  slug: count-distinct
 - name: SUM and AVG
   slug: sum-and-average
-- name: SQL sample course
-  slug: sql-sample-course
+- name: MAX and MIN
+  slug: max-and-min
+- name: Select multiple data
+  slug: select-multiple-data
+- name: ORDER BY
+  slug: order-by
+- name: ORDER BY - Ascending and Descending
+  slug: order-by-ascending-and-descending
+- name: ORDER BY - More use cases
+  slug: order-by-more-use-cases
+- name: LIMIT
+  slug: limit
+- name: LIMIT with ordering and offset
+  slug: limit-with-ordering-and-offset
+- name: Using LENGTH
+  slug: using-length
+- name: Date functions
+  slug: date-functions
+- name: Arithmetic - Operations on columns
+  slug: arithmetic-operations-on-columns
+- name: Arithmetic - Filtering and Ordering
+  slug: arithmetic-filtering-and-ordering
+- name: Selecting modified data from rows
+  slug: selecting-modified-data-from-rows
+- name: Combining data from columns
+  slug: combining-data-from-columns
+- name: Handling NULL
+  slug: handling-null
+- name: GROUP BY - with COUNT
+  slug: group-by-with-count
+- name: GROUP BY - with other aggregate functions
+  slug: group-by-with-other-aggregate-functions
+- name: GROUP BY - more use cases
+  slug: group-by-more-use-cases
+- name: GROUP BY - multiple columns
+  slug: group-by-multiple-columns
+- name: GROUP BY - GROUP_CONCAT
+  slug: group-by-group-concat
+- name: JOINS - INNER JOIN
+  slug: joins-inner-join
+- name: JOINS - OUTER JOIN
+  slug: joins-outer-join
+- name: JOINS - SELF JOIN
+  slug: joins-self-join
+- name: JOINS - Multiple tables
+  slug: joins-multiple-tables
+- name: JOINS - Filtering and Ordering
+  slug: joins-filtering-and-ordering
+- name: JOINS - Grouping
+  slug: joins-grouping
+- name: JOINS - Complex grouping
+  slug: joins-complex-grouping
+- name: JOINS - Cartesian Product
+  slug: joins-cartesian-product
+- name: UNION
+  slug: union
+- name: INTERSECT and EXCEPT
+  slug: intersection-and-except
+- name: Subqueries
+  slug: subqueries
+- name: Subqueries in FROM clause
+  slug: subqueries-in-from-clause
+- name: Correlated subqueries
+  slug: correlated-subqueries
+- name: Subqueries - EXISTS operator
+  slug: subqueries-with-exists-operator
+- name: Creating tables
+  slug: creating-tables
+- name: Inserting data in tables
+  slug: inserting-data-in-tables
+- name: Executing multiple statements
+  slug: executing-multiple-statements
+- name: Column constraints - NOT NULL and UNIQUE
+  slug: column-constraints-not-null-and-unique
+- name: Column constraints - DEFAULT and CHECK
+  slug: column-constraints-default-and-check
+- name: Table constraints - PRIMARY KEY
+  slug: table-constraints-primary-key
+- name: PRIMARY KEY - AUTOINCREMENT
+  slug: primary-key-autoincrement
+- name: Table constraints - FOREIGN KEY
+  slug: table-constraints-foreign-key
+- name: Updating data in tables
+  slug: updating-data-in-tables
+- name: Deleting data from tables
+  slug: deleting-data-from-tables
+- name: Adding and updating columns
+  slug: adding-and-updating-columns
+- name: Renaming and deleting tables
+  slug: renaming-and-deleting-tables
+- name: SQL statements with subqueries
+  slug: sql-statements-with-subqueries
+- name: VIEWS
+  slug: views

@@ -1,0 +1,10 @@
+---
+- title: What is CORS
+  slug: what-is-cors
+  page_type: lesson
+- title: CORS Diagram
+  slug: diagram-cors
+  page_type: lesson
+- title: Need for CORS
+  slug: need-for-cors
+  page_type: lesson

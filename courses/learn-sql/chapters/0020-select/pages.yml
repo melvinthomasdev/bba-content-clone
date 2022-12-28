@@ -1,0 +1,7 @@
+---
+- title: SELECT *
+  slug: select-all
+  page_type: lesson
+- title: Exercise - Select *
+  slug: exercise-select-all
+  page_type: exercise

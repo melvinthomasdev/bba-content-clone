@@ -1,0 +1,34 @@
+---
+- title: What are Exceptions?
+  slug: what-are-exceptions
+  page_type: lesson
+- title: Try and except
+  slug: try-and-except
+  page_type: lesson
+- title: Exercise 1 - Try and except
+  slug: exercise-1-try-and-except
+  page_type: exercise
+- title: Capturing Types of Exceptions
+  slug: capturing-types-of-exceptions
+  page_type: lesson
+- title: Exercise 1 - Capturing Types of Exceptions
+  slug: exercise-1-capturing-types-of-exceptions
+  page_type: exercise
+- title: Fetching the error message
+  slug: fetching-the-error-message
+  page_type: lesson
+- title: Exercise 1 - Fetching the error message
+  slug: exercise-1-fetching-the-error-message
+  page_type: exercise
+- title: Else Block
+  slug: else-block
+  page_type: lesson
+- title: Exercise 1 - Else Block
+  slug: exercise-1-else-block
+  page_type: exercise
+- title: The finally block
+  slug: the-finally-block
+  page_type: lesson
+- title: Exercise 1 - The finally block
+  slug: exercise-1-the-finally-block
+  page_type: exercise

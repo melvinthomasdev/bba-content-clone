@@ -1,0 +1,25 @@
+---
+- title: Date object
+  slug: date-object
+  page_type: lesson
+- title: Exercise - Date object
+  slug: exercise-date-object
+  page_type: exercise
+- title: Convert Date into string
+  slug: convert-date-into-string
+  page_type: lesson
+- title: Exercise - Convert Date into string
+  slug: exercise-convert-date-into-string
+  page_type: exercise
+- title: Get Time Values
+  slug: get-time-values
+  page_type: lesson
+- title: Exercise - Get Time Values
+  slug: exercise-get-time-values
+  page_type: exercise
+- title: Set Time Values
+  slug: set-time-values
+  page_type: lesson
+- title: Exercise - Set Time Values
+  slug: exercise-set-time-values
+  page_type: exercise

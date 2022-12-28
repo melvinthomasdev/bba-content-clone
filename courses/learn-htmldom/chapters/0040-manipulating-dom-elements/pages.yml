@@ -1,0 +1,100 @@
+---
+- title: Updating Text Using textContent
+  slug: updating-text-using-textcontent
+  page_type: lesson
+- title: Exercise - Updating Text Using textContent
+  slug: exercise-updating-text-using-textcontent
+  page_type: exercise
+- title: Updating Text Using InnerText
+  slug: updating-text-using-innertext
+  page_type: lesson
+- title: Exercise - Updating Text Using InnerText
+  slug: exercise-updating-text-using-innertext
+  page_type: exercise
+- title: textContent vs innerText
+  slug: textcontent-vs-innertext
+  page_type: lesson
+- title: Updating HTML Inside an Element
+  slug: updating-html-inside-an-element
+  page_type: lesson
+- title: Exercise - Updating HTML Inside an Element
+  slug: exercise-updating-html-inside-an-element
+  page_type: exercise
+- title: Updating HTML Using OuterHTML
+  slug: updating-html-using-outerhtml
+  page_type: lesson
+- title: Exercise - Updating HTML Using OuterHTML
+  slug: exercise-updating-html-using-outerhtml
+  page_type: exercise
+- title: InnerHTML vs OuterHTML
+  slug: innerhtml-vs-outerhtml
+  page_type: lesson
+- title: Adding Class to an Element
+  slug: adding-class-to-an-element
+  page_type: lesson
+- title: Exercise - Adding Class to an Element
+  slug: exercise-adding-class-to-an-element
+  page_type: exercise
+- title: Exercise - Adding Class to an Element
+  slug: exercise-adding-class-to-an-element-2
+  page_type: exercise
+- title: Removing Class from an Element
+  slug: removing-class-from-an-element
+  page_type: lesson
+- title: Exercise - Removing Class from an Element
+  slug: exercise-removing-class-from-an-element
+  page_type: exercise
+- title: Exercise - Removing Class from an Element
+  slug: exercise-removing-class-from-an-element-2
+  page_type: exercise
+- title: Creating Elements Using CreateElement
+  slug: creating-html-elements-using-createelement
+  page_type: lesson
+- title: Exercise - Creating Elements Using CreateElement
+  slug: exercise-creating-html-elements-using-createelement
+  page_type: exercise
+- title: Append HTML Element
+  slug: append-html-element
+  page_type: lesson
+- title: Exercise - Append HTML Element
+  slug: exercise-append-html-element
+  page_type: exercise
+- title: Exercise - Append HTML Element
+  slug: exercise-append-html-element-2
+  page_type: exercise
+- title: Insert HTML Element Using InsertBefore
+  slug: insert-html-element-using-insertbefore
+  page_type: lesson
+- title: Exercise - Insert HTML Element Using InsertBefore
+  slug: exercise-insert-html-element-using-insertbefore
+  page_type: exercise
+- title: Remove HTML Element
+  slug: remove-html-element
+  page_type: lesson
+- title: Exercise - Remove HTML Element
+  slug: exercise-remove-html-element
+  page_type: exercise
+- title: Changing Page Styles
+  slug: changing-page-styles
+  page_type: lesson
+- title: Exercise - Changing Page Styles
+  slug: exercise-changing-page-styles
+  page_type: exercise
+- title: Changing Multiple Page Styles
+  slug: changing-multiple-page-styles
+  page_type: lesson
+- title: Exercise - Changing Multiple Page Styles
+  slug: exercise-changing-multiple-page-styles
+  page_type: exercise
+- title: Get Attributes for an Element
+  slug: get-attributes-for-an-element
+  page_type: lesson
+- title: Exercise - Get Attributes for an Element
+  slug: exercise-get-attributes-for-an-element
+  page_type: exercise
+- title: Set Attributes for an Element
+  slug: set-attributes-for-an-element
+  page_type: lesson
+- title: Exercise - Set Attributes for an Element
+  slug: exercise-set-attributes-for-an-element
+  page_type: exercise

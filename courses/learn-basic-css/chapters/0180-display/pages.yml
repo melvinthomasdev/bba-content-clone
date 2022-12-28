@@ -1,0 +1,28 @@
+---
+- title: Display Property
+  slug: display-property
+  page_type: lesson
+- title: Display Block
+  slug: display-block
+  page_type: lesson
+- title: Exercise - Display Block
+  slug: exercise-display-block
+  page_type: exercise
+- title: Display Inline
+  slug: display-inline
+  page_type: lesson
+- title: Exercise - Display Inline
+  slug: exercise-display-inline
+  page_type: exercise
+- title: Display Inline Block
+  slug: display-inline-block
+  page_type: lesson
+- title: Exercise - Display Inline Block
+  slug: exercise-display-inline-block
+  page_type: exercise
+- title: Display None
+  slug: display-none
+  page_type: lesson
+- title: Exercise - Display None
+  slug: exercise-display-none
+  page_type: exercise

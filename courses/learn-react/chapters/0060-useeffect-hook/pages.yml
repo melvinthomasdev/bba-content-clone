@@ -1,0 +1,7 @@
+---
+- title: The useEffect Hook
+  slug: the-useeffect-hook
+  page_type: lesson
+- title: Adding a Cleanup function
+  slug: adding-a-cleanup-function
+  page_type: lesson

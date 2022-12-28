@@ -1,0 +1,40 @@
+---
+- title: Input Element
+  slug: input-element
+  page_type: lesson
+- title: Exercise - Input Element
+  slug: exercise-input-element
+  page_type: exercise
+- title: Label Element
+  slug: label-elements
+  page_type: lesson
+- title: Exercise - Label Element
+  slug: exercise-label-element
+  page_type: exercise
+- title: Textarea Element
+  slug: textarea-element
+  page_type: lesson
+- title: Exercise - Textarea Element
+  slug: exercise-textarea-element
+  page_type: exercise
+- title: Select Element
+  slug: select-element
+  page_type: lesson
+- title: Exercise - Select Element
+  slug: exercise-select-element
+  page_type: exercise
+- title: Button Element
+  slug: button-element
+  page_type: lesson
+- title: Exercise - Button Element
+  slug: exercise-button-element
+  page_type: exercise
+- title: Fieldset Element
+  slug: fieldset-element
+  page_type: lesson
+- title: Exercise - Fieldset Element
+  slug: exercise-fieldset-element
+  page_type: exercise
+- title: Form Structure
+  slug: form-structure
+  page_type: lesson

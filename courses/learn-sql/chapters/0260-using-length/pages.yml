@@ -1,0 +1,19 @@
+---
+- title: Selecting LENGTH
+  slug: selecting-length
+  page_type: lesson
+- title: Exercise - Selecting LENGTH of course names
+  slug: exercise-selecting-length-of-course-names
+  page_type: exercise
+- title: Filter using LENGTH
+  slug: filter-using-length
+  page_type: lesson
+- title: Exercise - Select students with double digit marks
+  slug: exercise-select-students-with-double-digit-marks
+  page_type: exercise
+- title: Order using LENGTH
+  slug: order-using-length
+  page_type: lesson
+- title: Exercise - Order students by length of course names
+  slug: exercise-order-students-by-length-of-course-names
+  page_type: exercise

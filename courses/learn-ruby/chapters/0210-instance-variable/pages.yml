@@ -1,0 +1,10 @@
+---
+- title: Is My Coffee Hot or Cold
+  slug: is-my-coffee-hot-or-cold
+  page_type: lesson
+- title: Direction of Car
+  slug: direction-of-car
+  page_type: lesson
+- title: Exercise - instance-variable-exercise
+  slug: exercise-instance-variable-exercise
+  page_type: exercise

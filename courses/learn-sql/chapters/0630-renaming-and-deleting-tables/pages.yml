@@ -1,0 +1,13 @@
+---
+- title: Renaming tables
+  slug: renaming-tables
+  page_type: lesson
+- title: Exercise - Renaming tables
+  slug: exercise-renaming-tables
+  page_type: exercise
+- title: Deleting tables
+  slug: deleting-tables
+  page_type: lesson
+- title: Exercise - Deleting tables
+  slug: exercise-deleting-tables
+  page_type: exercise
