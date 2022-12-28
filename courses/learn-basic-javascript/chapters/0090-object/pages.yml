@@ -1,0 +1,73 @@
+---
+- title: Create object
+  slug: create-object
+  page_type: lesson
+- title: Object with multiple properties
+  slug: object-with-multiple-properties
+  page_type: lesson
+- title: Exercise - Object creation
+  slug: exercise-object-creation
+  page_type: exercise
+- title: Get Object Values - Dot notation
+  slug: get-object-values-dot-notation
+  page_type: lesson
+- title: Exercise - Get Object Values - Dot notation
+  slug: exercise-get-object-values-dot-notation
+  page_type: exercise
+- title: Get Object Values - Bracket notation
+  slug: get-object-values-bracket-notation
+  page_type: lesson
+- title: Exercise - Get Object Values - Bracket notation
+  slug: exercise-get-object-values-bracket-notation
+  page_type: exercise
+- title: Add object property using dot notation
+  slug: add-object-property-using-dot-notation
+  page_type: lesson
+- title: Exercise - Add object property using dot notation
+  slug: exercise-add-object-property-using-dot-notation
+  page_type: exercise
+- title: Add object property using bracket notation
+  slug: add-object-property-using-bracket-notation
+  page_type: lesson
+- title: Exercise - Add object property using bracket notation
+  slug: exercise-add-object-property-using-bracket-notation
+  page_type: exercise
+- title: Update object property using dot notation
+  slug: update-object-property-using-dot-notation
+  page_type: lesson
+- title: Exercise - Update object property using dot notation
+  slug: exercise-update-object-property-using-dot-notation
+  page_type: exercise
+- title: Update object property using bracket notation
+  slug: update-object-property-using-bracket-notation
+  page_type: lesson
+- title: Exercise - Update object property using bracket notation
+  slug: exercise-update-object-property-using-bracket-notation
+  page_type: exercise
+- title: Exercise - Update object property using dot and bracket notations
+  slug: exercise-update-object-property-using-dot-and-bracket-notations
+  page_type: exercise
+- title: Get Object Keys - Object.keys()
+  slug: get-object-keys-using-object-keys
+  page_type: lesson
+- title: Exercise - Get Object Keys - Object.keys()
+  slug: exercise-get-object-keys-using-object-keys
+  page_type: exercise
+- title: Get Object Values - Object.values()
+  slug: get-object-values-using-object-values
+  page_type: lesson
+- title: Exercise - Get Object Values - Object.values()
+  slug: exercise-get-object-values-using-object-values
+  page_type: exercise
+- title: Get Object Keys and Values - Object.entires()
+  slug: get-keys-and-values-of-object
+  page_type: lesson
+- title: Exercise - Get Object Keys and Values - Object.entires()
+  slug: exercise-get-keys-and-values-of-object
+  page_type: exercise
+- title: Object Property Shorthand
+  slug: object-property-shorthand
+  page_type: lesson
+- title: Object Naming Conventions
+  slug: object-naming-conventions
+  page_type: lesson

@@ -1,0 +1,28 @@
+---
+- title: URL and URI
+  slug: url-and-uri
+  page_type: lesson
+- title: WWW
+  slug: www
+  page_type: lesson
+- title: Internet
+  slug: internet
+  page_type: lesson
+- title: ISP
+  slug: isp
+  page_type: lesson
+- title: W3C
+  slug: w3c
+  page_type: lesson
+- title: IP Address
+  slug: ip-address
+  page_type: lesson
+- title: Server
+  slug: server
+  page_type: lesson
+- title: Browser and How It Works
+  slug: browser-and-how-it-works
+  page_type: lesson
+- title: Front End Technologies
+  slug: front-end-technologies
+  page_type: lesson

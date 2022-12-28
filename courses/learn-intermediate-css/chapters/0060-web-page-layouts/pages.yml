@@ -1,0 +1,16 @@
+---
+- title: CSS Page Layouts
+  slug: css-page-layouts
+  page_type: lesson
+- title: Fixed Layout
+  slug: fixed-layout
+  page_type: lesson
+- title: Fluid Layout
+  slug: fluid-layout
+  page_type: lesson
+- title: Adaptive Layout
+  slug: adaptive-layout
+  page_type: lesson
+- title: Responsive Layout
+  slug: responsive-layout
+  page_type: lesson

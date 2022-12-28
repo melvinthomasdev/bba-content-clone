@@ -1,7 +1,7 @@
 ---
 name: Learn Python
-subheading: Learn python by actually writing python code
+subheading: Learn Python by actually writing Python code
 slug: learn-python
-published: false
-home_logo: javascript.svg
+published: true
+home_logo: python.svg
 logo: python-header-image.png

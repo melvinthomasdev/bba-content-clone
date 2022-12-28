@@ -1,0 +1,28 @@
+---
+- title: AND
+  slug: logical-and
+  page_type: lesson
+- title: Exercise - AND
+  slug: exercise-logical-and
+  page_type: exercise
+- title: OR
+  slug: logical-or
+  page_type: lesson
+- title: Exercise - OR
+  slug: exercise-logical-or
+  page_type: exercise
+- title: NOT
+  slug: logical-not
+  page_type: lesson
+- title: Exercise - NOT
+  slug: exercise-logical-not
+  page_type: exercise
+- title: NOT vs Inequality operators
+  slug: logical-not-vs-inequality
+  page_type: lesson
+- title: Nullish Coalescing operator
+  slug: nullish-coalescing-operator
+  page_type: lesson
+- title: Exercise - Nullish Coalescing Operator
+  slug: exercise-nullish-coalescing-operator
+  page_type: exercise

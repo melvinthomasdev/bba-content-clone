@@ -1,0 +1,16 @@
+---
+- title: FOREIGN KEY
+  slug: foreign-key
+  page_type: lesson
+- title: FOREIGN KEY - Validations
+  slug: foreign-key-validations
+  page_type: lesson
+- title: FOREIGN KEY - Multiple foreign keys
+  slug: foreign-key-multiple
+  page_type: lesson
+- title: Exercise - FOREIGN KEY - 1
+  slug: exercise-foreign-key-1
+  page_type: exercise
+- title: Exercise - FOREIGN KEY - 2
+  slug: exercise-foreign-key-2
+  page_type: exercise

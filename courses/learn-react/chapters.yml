@@ -1,0 +1,15 @@
+---
+- name: Getting started
+  slug: getting-started
+- name: Intro to React
+  slug: intro-to-react
+- name: Props
+  slug: props
+- name: Logic and Modularization
+  slug: logic-and-modularization
+- name: The useState Hook
+  slug: usestate-hook
+- name: The useEffect Hook
+  slug: useeffect-hook
+- name: React Best Practices
+  slug: react-best-practices

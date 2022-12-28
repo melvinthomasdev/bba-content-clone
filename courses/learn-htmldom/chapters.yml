@@ -1,0 +1,13 @@
+---
+- name: Getting started
+  slug: getting-started
+- name: Document Object Model
+  slug: document-object-model
+- name: Selecting DOM Elements
+  slug: selecting-dom-elements
+- name: Manipulating DOM Elements
+  slug: manipulating-dom-elements
+- name: Browser Events
+  slug: browser-events
+- name: Comprehensive Exercises
+  slug: assessments

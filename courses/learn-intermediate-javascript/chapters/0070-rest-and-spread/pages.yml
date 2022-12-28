@@ -1,0 +1,40 @@
+---
+- title: Iterables
+  slug: iterables
+  page_type: lesson
+- title: Spread operator
+  slug: spread-operator
+  page_type: lesson
+- title: Exercise - Spread operator
+  slug: exercise-spread-operator
+  page_type: exercise
+- title: Spread operator and Arrays
+  slug: spread-operator-and-arrays
+  page_type: lesson
+- title: Exercise - Spread operator and Arrays
+  slug: exercise-spread-operator-and-arrays
+  page_type: exercise
+- title: Spread Operator and Objects
+  slug: spread-operator-and-objects
+  page_type: lesson
+- title: Exercise - Spread Operator and Objects
+  slug: exercise-spread-operator-and-objects
+  page_type: exercise
+- title: Overriding properties with Spread Operator
+  slug: overriding-properties-with-spread-operator
+  page_type: lesson
+- title: Exercise - Overriding properties with Spread Operator
+  slug: exercise-overriding-properties-with-spread-operator
+  page_type: exercise
+- title: Use Spread operator to split strings
+  slug: use-spread-operator-to-split-strings
+  page_type: lesson
+- title: Exercise - Use Spread operator to split strings
+  slug: exercise-use-spread-operator-to-split-strings
+  page_type: exercise
+- title: Rest parameter
+  slug: rest-parameter
+  page_type: lesson
+- title: Exercise - Rest parameter
+  slug: exercise-rest-parameter
+  page_type: exercise

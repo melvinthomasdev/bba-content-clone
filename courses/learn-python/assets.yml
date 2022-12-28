@@ -1,5 +1,35 @@
 ---
 images:
-- javascript.svg
+- python.svg
 - python-header-image.png
+- decimal.png
+- ops.png
+- ops2.png
+- ifelse.png
+- list.png
+- intersection.png
+- difference.png
+- union.png
+- subset.png
+- dict.png
+- while.png
+- rectangle.png
+- rhombus.png
+- cuboid.png
+- class.png
+- objects.png
+- subclass.png
+- multiple_inheritance.png
+- generator.png
+- or.png
+- bitwise.png
+- bit_mapping.png
+- and_image.png
+- and.png
+- or_operation.png
+- xor.png
+- xor_op.png
+- not.png
+- lshift.png
+- rshift.png
 databases: []

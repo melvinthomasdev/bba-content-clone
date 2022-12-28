@@ -1,0 +1,13 @@
+---
+- title: Basics of JSX
+  slug: basics-of-jsx
+  page_type: lesson
+- title: Root Elements and React Fragments
+  slug: root-elements-and-react-fragments
+  page_type: lesson
+- title: Components
+  slug: components
+  page_type: lesson
+- title: Embedding JS in JSX
+  slug: embedding-js-in-jsx
+  page_type: lesson

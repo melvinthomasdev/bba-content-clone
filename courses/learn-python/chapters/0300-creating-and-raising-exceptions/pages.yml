@@ -1,0 +1,25 @@
+---
+- title: Raising an Exception
+  slug: raising-an-exception
+  page_type: lesson
+- title: Exception class
+  slug: exception-class
+  page_type: lesson
+- title: Exercise 1 - Exception class
+  slug: exercise-1-exception-class
+  page_type: exercise
+- title: Creating a new Exception type
+  slug: creating-a-new-exception-type
+  page_type: lesson
+- title: Exercise 1 - Creating a new Exception type
+  slug: exercise-1-creating-a-new-exception-type
+  page_type: exercise
+- title: Customizing our Exception
+  slug: customizing-our-exception
+  page_type: lesson
+- title: Reraising an Exception
+  slug: reraising-an-exception
+  page_type: lesson
+- title: Exercise 1 - Reraising an Exception
+  slug: exercise-1-reraising-an-exception
+  page_type: exercise

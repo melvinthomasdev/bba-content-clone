@@ -1,0 +1,7 @@
+---
+- title: GROUP BY over multiple columns
+  slug: group-by-multiple-columns
+  page_type: lesson
+- title: Exercise - GROUP BY over multiple columns
+  slug: exercise-group-by-multiple-columns
+  page_type: exercise

@@ -1,0 +1,31 @@
+---
+- title: Number to String
+  slug: number-to-string
+  page_type: lesson
+- title: Exercise 1 - Number to String
+  slug: exercise-1-number-to-string
+  page_type: exercise
+- title: String Formatting
+  slug: string-formatting
+  page_type: lesson
+- title: Exercise 1 - String Formatting
+  slug: exercise-1-string-formatting
+  page_type: exercise
+- title: F-strings
+  slug: f-strings
+  page_type: lesson
+- title: Exercise 1 - F-strings
+  slug: exercise-1-f-strings
+  page_type: exercise
+- title: Calculations within F-Strings
+  slug: calculations-within-fstrings
+  page_type: lesson
+- title: Exercise 1 - Calculations within F-Strings
+  slug: exercise-1-calculations-within-fstrings
+  page_type: exercise
+- title: Padding numbers using F-Strings
+  slug: padding-numbers-using-fstrings
+  page_type: lesson
+- title: Exercise 1 - Padding numbers using F-Strings
+  slug: exercise-1-padding-numbers-using-fstrings
+  page_type: exercise

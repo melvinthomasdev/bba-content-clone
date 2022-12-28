@@ -1,0 +1,13 @@
+---
+- title: Viewport
+  slug: viewport
+  page_type: lesson
+- title: Exercise - Viewport
+  slug: exercise-viewport
+  page_type: exercise
+- title: Title
+  slug: title
+  page_type: lesson
+- title: Exercise - Title
+  slug: exercise-title
+  page_type: exercise

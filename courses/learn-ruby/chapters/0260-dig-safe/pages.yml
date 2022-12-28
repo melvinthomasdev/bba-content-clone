@@ -1,0 +1,19 @@
+---
+- title: "`dig` in Ruby Hashes"
+  slug: dig-in-ruby-hashes
+  page_type: lesson
+- title: Exercise - `dig` in Ruby Hashes
+  slug: exercise-dig-in-ruby-hashes
+  page_type: exercise
+- title: "`dig` in Ruby Arrays"
+  slug: dig-in-ruby-arrays
+  page_type: lesson
+- title: Exercise - `dig` in Ruby Arrays
+  slug: exercise-dig-in-ruby-arrays
+  page_type: exercise
+- title: Safe Navigation Operator
+  slug: safe-navigation-operator
+  page_type: lesson
+- title: Exercise - Safe Navigation Operator
+  slug: exercise-safe-navigation-operator
+  page_type: exercise

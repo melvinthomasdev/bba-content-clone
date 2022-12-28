@@ -1,0 +1,43 @@
+---
+- title: The If Condition
+  slug: the-if-condition
+  page_type: lesson
+- title: Difference between = and ==
+  slug: difference-between-single-equals-and-double-equals
+  page_type: lesson
+- title: Exercise - The if Condition
+  slug: exercise-the-if-condition
+  page_type: exercise
+- title: The if else Condition
+  slug: the-if-else-condition
+  page_type: lesson
+- title: Exercise - if else Condition
+  slug: exercise-if-else-condition
+  page_type: exercise
+- title: If else with Multiple Conditions
+  slug: if-else-with-multiple-conditions
+  page_type: lesson
+- title: Exercise - Multiple Conditions
+  slug: exercise-multiple-conditions
+  page_type: exercise
+- title: Using elsif
+  slug: using-elsif
+  page_type: lesson
+- title: Exercise - Using elsif
+  slug: exercise-using-elsif
+  page_type: exercise
+- title: String vs Integer
+  slug: string-vs-integer
+  page_type: lesson
+- title: Inline if Condition
+  slug: inline-if-condition
+  page_type: lesson
+- title: Ternary Operator
+  slug: ternary-operator
+  page_type: lesson
+- title: Exercise - Ternary Operator
+  slug: exercise-ternary-operator
+  page_type: exercise
+- title: Exercise - Ternary Operator
+  slug: exercise-ternary-operator-2
+  page_type: exercise

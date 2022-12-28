@@ -1,0 +1,10 @@
+---
+- title: Props Basics
+  slug: props-basics
+  page_type: lesson
+- title: The Spread Syntax
+  slug: the-spread-syntax
+  page_type: lesson
+- title: The Children Prop
+  slug: the-children-prop
+  page_type: lesson

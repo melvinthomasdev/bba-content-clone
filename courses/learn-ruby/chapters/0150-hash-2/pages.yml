@@ -1,0 +1,28 @@
+---
+- title: Use New to Create a Hash
+  slug: use-new-to-create-a-hash
+  page_type: lesson
+- title: Select Some Elements of the Hash
+  slug: select-some-elements-of-the-hash
+  page_type: lesson
+- title: Exercise - Select Some Elements of the Hash
+  slug: exercise-select-some-elements-of-the-hash
+  page_type: exercise
+- title: Remove Some Elements From the Hash
+  slug: remove-some-elements-from-the-hash
+  page_type: lesson
+- title: Exercise - Remove Some Elements From the Hash
+  slug: exercise-remove-some-elements-from-the-hash
+  page_type: exercise
+- title: Default Value in Hash
+  slug: default-value-in-hash
+  page_type: lesson
+- title: Exercise - Default Value in Hash
+  slug: exercise-default-value-in-hash
+  page_type: exercise
+- title: Default Value in Hash Using new
+  slug: default-value-in-hash-using-new
+  page_type: lesson
+- title: Merge to Add More Data to Hash
+  slug: use-merge-to-add-more-data-to-hash
+  page_type: lesson
