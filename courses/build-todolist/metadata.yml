@@ -3,5 +3,10 @@ name: Build A Todo List
 subheading: Learn how to build a Todo List
 slug: build-todolist
 published: false
+custom_data:
+  type: project
+  upcoming: true
+  newCourse: false
+  courseColor: border-gray-600
 home_logo: react-gray-bg.svg
 logo: practicequestions-header-image.png

@@ -3,5 +3,10 @@ name: Learn Web Fundamentals
 subheading: Learn Web fundamentals to understand web in a better way
 slug: learn-webfundamentals
 published: false
+custom_data:
+  type: web
+  upcoming: true
+  newCourse: false
+  courseColor: border-gray-600
 home_logo: web-fundamentals-gray-bg.svg
 logo: practicequestions-header-image.png

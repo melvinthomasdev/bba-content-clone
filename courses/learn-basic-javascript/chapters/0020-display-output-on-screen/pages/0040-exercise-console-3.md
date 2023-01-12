@@ -1,6 +1,4 @@
 In this exercise,
-use `console.log` to calculate
-and
 show the result of **50 / 10**.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">

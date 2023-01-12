@@ -6,8 +6,11 @@ A String which only contains a valid number will get converted to a Number.
 
 <codeblock language="javascript" type="lesson">
 <code>
-console.log("2");
-console.log(Number("2"));
+const string = "2";
+console.log(string);
+
+const number = Number(string);
+console.log(number);
 </code>
 </codeblock>
 
@@ -15,7 +18,9 @@ Empty strings get converted to 0.
 
 <codeblock language="javascript" type="lesson">
 <code>
-console.log(Number(""));
+let emptyString = "";
+emptyString = Number(emptyString);
+console.log(emptyString);
 </code>
 </codeblock>
 
@@ -23,7 +28,9 @@ Non-empty Strings which don't contain a valid number get converted to `NaN`.
 
 <codeblock language="javascript" type="lesson">
 <code>
-console.log(Number("2abc"));
+let invalidNumberString = "2abc";
+invalidNumberString = Number(invalidNumberString)
+console.log(invalidNumberString);
 </code>
 </codeblock>
 
@@ -33,8 +40,13 @@ console.log(Number("2abc"));
 
 <codeblock language="javascript" type="lesson">
 <code>
-console.log(Number(true));
-console.log(Number(false));
+let booleanTrue = true;
+booleanTrue = Number(booleanTrue);
+console.log(booleanTrue);
+
+let booleanFalse = false;
+booleanFalse = Number(booleanFalse);
+console.log(booleanFalse);
 </code>
 </codeblock>
 
@@ -48,6 +60,7 @@ console.log(Number(null));
 console.log(Number(undefined));
 </code>
 </codeblock>
+
 
 Calling `Number()` on `NaN` returns `NaN` itself.
 

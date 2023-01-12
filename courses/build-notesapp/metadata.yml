@@ -3,5 +3,10 @@ name: Build a Notes App using Serverless Functions
 subheading: Learn how to build a notes app using serverless functions
 slug: build-notesapp
 published: false
+custom_data:
+  type: project
+  upcoming: true
+  newCourse: false
+  courseColor: border-gray-600
 home_logo: web-fundamentals-gray-bg.svg
 logo: practicequestions-header-image.png

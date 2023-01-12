@@ -13,9 +13,3 @@ display **I love ice cream**.
 console.log("I love ice cream");
 </code>
 </codeblock>
-
-Change **ice cream** in the editor
-given above to a food of
-your choice
-and
-then click on 'Run Code'.

@@ -1,49 +1,10 @@
 ---
-- title: ComprehensiveExercise - Join strings separated by a space
-  slug: comprehensive-exercise-join-strings-separated-by-a-space
+- title: ComprehensiveExercise - Calculate Grade Using If and Else
+  slug: challenge-calculate-grade-using-if-and-else-js
   page_type: assessment
-- title: ComprehensiveExercise - Increment a number and divide it
-  slug: comprehensive-exercise-increment-a-number-and-divide-it
+- title: ComprehensiveExercise - Properly Format Google Office Address
+  slug: challenge-properly-format-google-office-address-js
   page_type: assessment
-- title: ComprehensiveExercise - Get remainder and check equality
-  slug: comprehensive-exercise-get-remainder-and-check-equality
-  page_type: assessment
-- title: ComprehensiveExercise - Use Template Strings
-  slug: comprehensive-exercise-use-template-strings
-  page_type: assessment
-- title: ComprehensiveExercise - Add and Read Array Elements
-  slug: comprehensive-exercise-add-and-read-array-elements
-  page_type: assessment
-- title: ComprehensiveExercise - Update and Read Array Elements
-  slug: comprehensive-exercise-update-and-read-array-elements
-  page_type: assessment
-- title: ComprehensiveExercise - Add, Update and Read Array Elements
-  slug: comprehensive-exercise-add-update-and-read-array-elements
-  page_type: assessment
-- title: ComprehensiveExercise - Add property to object
-  slug: comprehensive-exercise-add-property-to-object
-  page_type: assessment
-- title: ComprehensiveExercise - Add and Show Object Property
-  slug: comprehensive-exercise-add-show-object-property
-  page_type: assessment
-- title: ComprehensiveExercise - Add and Show Object Property
-  slug: comprehensive-exercise-bracket-notation-add-show-property
-  page_type: assessment
-- title: ComprehensiveExercise - Using If and Else
-  slug: comprehensive-exercise-using-if-and-else
-  page_type: assessment
-- title: ComprehensiveExercise - Using If Else If
-  slug: comprehensive-exercise-using-if-else-and-if
-  page_type: assessment
-- title: ComprehensiveExercise - Using Switch Statement
-  slug: comprehensive-exercise-using-switch-statement
-  page_type: assessment
-- title: ComprehensiveExercise - Using Ternary Operator
-  slug: comprehensive-exercise-using-ternary-operator
-  page_type: assessment
-- title: ComprehensiveExercise - Using AND-OR
-  slug: comprehensive-exercise-using-and-or
-  page_type: assessment
-- title: ComprehensiveExercise - Using NOT
-  slug: comprehensive-exercise-using-not
+- title: ComprehensiveExercise - Build Pizza Price Calculator
+  slug: challenge-build-pizza-price-calculator-js
   page_type: assessment

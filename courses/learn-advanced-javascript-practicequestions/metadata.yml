@@ -1,0 +1,12 @@
+---
+name: Advanced JavaScript - Practice Questions
+subheading: Practice Advanced JavaScript you have already learnt
+slug: learn-advanced-javascript-practicequestions
+published: true
+custom_data:
+  type: javascript
+  upcoming: false
+  newCourse: false
+  courseColor: border-gray-600
+home_logo: javascript.svg
+logo: javascript-header-image.png

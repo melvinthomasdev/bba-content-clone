@@ -21,3 +21,7 @@
   slug: timeouts-and-intervals
 - name: Date
   slug: date
+- name: LocalStorage and sessionStorage
+  slug: local-and-session-storage
+- name: Comprehensive Exercises
+  slug: comprehensive-exercises

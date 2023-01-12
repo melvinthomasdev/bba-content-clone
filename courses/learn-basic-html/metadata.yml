@@ -1,7 +1,12 @@
 ---
-name: Learn Basic HTML Now
+name: Learn Basic HTML
 subheading: Learn HTML by actually writing HTML code
 slug: learn-basic-html
 published: true
+custom_data:
+  type: html
+  upcoming: false
+  newCourse: false
+  courseColor: border-gray-600
 home_logo: html5.svg
 logo: html-header-image.png

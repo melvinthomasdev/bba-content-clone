@@ -3,5 +3,10 @@ name: Learn SQL
 subheading: Learn SQL by actually writing SQL code
 slug: learn-sql
 published: true
+custom_data:
+  type: sql
+  upcoming: false
+  newCourse: false
+  courseColor: border-gray-600
 home_logo: learn-sql.svg
 logo: sql-header-image.png

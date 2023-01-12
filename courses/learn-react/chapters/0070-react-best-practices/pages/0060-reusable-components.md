@@ -76,6 +76,54 @@ application. Code reusability will also make your application easier to
 maintain. Rather than updating the UI in multiple places, you will only need to
 update a single component.
 
+## PropTypes and Usage
+
+In C programming, to define a function, you are required to specify the type of each function parameter in the function definition. This ensures that only the correct type of arguments are passed to any given function.
+
+But in JavaScript, you need not specify the parameter type while writing a function. There are several ups and downs to this, one of the downs being difficulty in tracking some errors caused by type mismatch of the arguments passed and the required type.
+
+`PropTypes` are React's mechanism to add type checking to component props.
+
+The above `Button` component implements `PropTypes`. Toward the end of the code, an object is assigned to `Button.propTypes`. The keys of the object are the props passed to the `Button` component and the values are the validators for the corresponding prop.
+To use `PropTypes` validators in a component, first of all, `PropTypes` must be imported from `prop-types`.
+
+Below are the validators for the basic data types:
+
+- `PropTypes.any`: The prop can be of any data type
+- `PropTypes.bool`: The prop should be a Boolean
+- `PropTypes.number`: The prop should be a number
+- `PropTypes.string`: The prop should be a string
+- `PropTypes.func`: The prop should be a function
+- `PropTypes.array`: The prop should be an array
+- `PropTypes.object`: The prop should be an object
+- `PropTypes.symbol`: The prop should be a symbol
+
+Then assign `Component.propTypes` an object with props as keys and validators as values. Here the `Component` is `Button`, hence `Button.propTypes`.
+
+Enforcing `PropTypes` validation helps in debugging errors due to mismatches between the expected type and the type of props received.
+
+On passing a prop of unexpected type, a console log is created, that warns the developer of the mismatch.
+
+For example, consider a state variable `isButtonDisabled` being passed to the `Button` component as `<Button disabled={isButtonDisabled} />` and `PropTypes` was not used. Also, assume that somewhere in the code before the developer had accidentally set the value of `isButtonDisabled` as `"false"` instead of `false`. i.e. `disabled="false"` in effect.
+
+Since a string value is truthy in JavaScript the `Button` will remain disabled, with no errors thrown. Developers might be able to figure out the issue once they go through the last assignment of `isButtonDisabled`.
+
+But if `PropTypes` was used like in the code above, the console log would read
+
+```Warning: Failed prop type: Invalid prop `disabled` of type `string` supplied to `Button`, expected `boolean`.```
+
+This would help the developer figure out that the `disabled` prop was passed the wrong value, even without looking at the code.
+
+**Note**: It is to be noted that you are required to add `PropTypes` in reusable components only. i.e. Let's say you created a custom table in a large component and you felt it would be better to move the custom table to a separate component file and import it into the parent component. You might be tempted to add `PropTypes` validations to this new component. But you shouldn't.
+
+You might argue that the custom table takes a couple of props, so isn't it a good idea to use `PropTypes` validation?
+
+The reason why you shouldn't add such validations is that you could spend the time writing such validation to work elsewhere. Since the component is used only once, writing code carefully is just enough.
+
+From a technical standpoint, there are no harmful implications to this addition but the time that might be spent on writing all the prop types might be a premature optimization that we are doing right now.
+
+Stressing this point again - **use `PropTypes` validations in reusable components only.**
+
 ## Things to keep in mind while creating a reusable component
 
 - It is important that you do not put logic which is specific to a particular

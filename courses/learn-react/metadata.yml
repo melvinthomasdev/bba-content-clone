@@ -3,5 +3,10 @@ name: Learn ReactJS
 subheading: Learn React by actually writing React code
 slug: learn-react
 published: true
+custom_data:
+  type: reactjs
+  upcoming: false
+  newCourse: false
+  courseColor: border-gray-600
 home_logo: react.svg
 logo: reactjs-header-image.png

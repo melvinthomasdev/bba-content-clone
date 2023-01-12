@@ -107,3 +107,6 @@ const totalExpense = 36000;
 console.log(`Your balance is ${totalIncome - totalExpense}`);
 </code>
 </codeblock>
+
+Looking at all the above benefits of using backticks `` ` ``,
+we will continue to use it across academy.

@@ -3,5 +3,10 @@ name: Building a calculator
 subheading: Learn how to build a Calculator
 slug: build-calculator
 published: false
+custom_data:
+  type: project
+  upcoming: true
+  newCourse: false
+  courseColor: border-gray-600
 home_logo: javascript-gray-bg.svg
 logo: practicequestions-header-image.png

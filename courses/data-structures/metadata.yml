@@ -3,5 +3,10 @@ name: Data Structures using JavaScript
 subheading: Learn Data Structures and Algorithms using JavaScript
 slug: data-structures
 published: false
+custom_data:
+  type: javascript
+  upcoming: true
+  newCourse: false
+  courseColor: border-gray-600
 home_logo: javascript-gray-bg.svg
 logo: practicequestions-header-image.png

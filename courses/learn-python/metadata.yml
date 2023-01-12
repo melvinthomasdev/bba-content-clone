@@ -3,5 +3,10 @@ name: Learn Python
 subheading: Learn Python by actually writing Python code
 slug: learn-python
 published: true
+custom_data:
+  type: python
+  upcoming: false
+  newCourse: true
+  courseColor: border-gray-600
 home_logo: python.svg
 logo: python-header-image.png

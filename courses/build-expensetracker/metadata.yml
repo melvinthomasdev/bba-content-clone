@@ -3,5 +3,10 @@ name: Building an Expense Tracker using Firebase
 subheading: Learn how to build an Expense Tracker using Firebase
 slug: build-expensetracker
 published: false
+custom_data:
+  type: project
+  upcoming: true
+  newCourse: false
+  courseColor: border-gray-600
 home_logo: web-fundamentals-gray-bg.svg
 logo: practicequestions-header-image.png

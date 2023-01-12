@@ -1,4 +1,4 @@
-Jamie is preparing for an English his test in school. He has to learn the opposites of a list of words. Help Jaime by preparing the following text for him.
+Jamie is preparing for an English test in his school. He has to learn the opposites of a list of words. Help Jaime by preparing the following text for him.
 
 Given two lists, one with the words and the other with its opposites, print a line for each pair as **The opposite of *word* is *opposite_word*.**
 

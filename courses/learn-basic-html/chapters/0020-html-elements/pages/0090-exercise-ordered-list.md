@@ -1,7 +1,5 @@
 Display **Apple**, **Orange** and **Banana** in an ordered list, in that order.
 
-Hint: Use the `<ol>` element to create an ordered list.
-
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
 

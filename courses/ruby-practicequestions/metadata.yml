@@ -3,5 +3,10 @@ name: Ruby - Practice Questions
 subheading: Practice Ruby you have already learnt
 slug: ruby-practicequestions
 published: true
+custom_data:
+  type: ruby
+  upcoming: false
+  newCourse: false
+  courseColor: border-gray-600
 home_logo: ruby.svg
 logo: practicequestions-header-image.png
