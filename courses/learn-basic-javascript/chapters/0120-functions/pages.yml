@@ -1,0 +1,55 @@
+---
+- title: Define a function
+  slug: define-a-function
+  page_type: lesson
+- title: Use the Arrow Function
+  slug: use-the-arrow-function
+  page_type: lesson
+- title: Parameters and Arguments
+  slug: parameters-and-arguments
+  page_type: lesson
+- title: Exercise - Parameters and Arguments
+  slug: exercise-parameters-and-arguments
+  page_type: exercise
+- title: Default Parameters
+  slug: default-parameters
+  page_type: lesson
+- title: Exercise - Default Parameters
+  slug: exercise-default-parameters
+  page_type: exercise
+- title: return Statement
+  slug: return-statement
+  page_type: lesson
+- title: Exercise - return Statement
+  slug: exercise-return-statement
+  page_type: exercise
+- title: return Statement for terminating functions
+  slug: return-to-terminate
+  page_type: lesson
+- title: Exercise - return Statement for terminating functions
+  slug: exercise-return-to-terminate
+  page_type: exercise
+- title: Arrow Function Shorthand
+  slug: arrow-function-shorthand
+  page_type: lesson
+- title: Exercise - Arrow Function Shorthand
+  slug: exercise-arrow-function-shorthand
+  page_type: exercise
+- title: Function as a Property of an Object
+  slug: function-as-a-property-of-an-object
+  page_type: lesson
+- title: Exercise - Function as a Property of an Object
+  slug: exercise-function-as-a-property-of-an-object
+  page_type: exercise
+- title: Shorthand for Method
+  slug: shorthand-for-method
+  page_type: lesson
+- title: Exercise - Shorthand for Method
+  slug: exercise-shorthand-for-method
+  page_type: exercise
+- title: Function Naming Conventions
+  slug: function-naming-conventions
+  page_type: lesson
+- title: Function Challenge
+  slug: function-challenge
+  page_type: lesson

@@ -3,6 +3,10 @@
   slug: getting-started
 - name: String Methods
   slug: string-methods
+- name: Single and Multiple line comments
+  slug: single-and-multiple-line-comments
+- name: Variable Declarations
+  slug: variable-declarations
 - name: Math Object
   slug: math-object
 - name: Number Methods

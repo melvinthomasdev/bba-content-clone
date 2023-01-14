@@ -1,0 +1,12 @@
+---
+name: Learn Basic Java
+subheading: Learn Java by actually writing Java code.
+slug: learn-basic-java
+published: false
+custom_data:
+  type: java
+  upcoming: true
+  newCourse: true
+  courseColor: border-gray-600
+home_logo: web-fundamentals-gray-bg.svg
+logo: java-logo.png

@@ -1,0 +1,19 @@
+---
+- title: Platform Independence
+  slug: platform-independence
+  page_type: lesson
+- title: Java Development Kit (J.D.E.).
+  slug: java-development-kit
+  page_type: lesson
+- title: Java Runtime Environment (J.R.E.).
+  slug: java-runtime-environment
+  page_type: lesson
+- title: Java Virtual Machine (J.V.M.).
+  slug: java-virtual-machine
+  page_type: lesson
+- title: Just In Time Compiler (J.I.T.).
+  slug: just-in-time-compiler
+  page_type: lesson
+- title: Javac and Java.
+  slug: javac-and-java
+  page_type: lesson

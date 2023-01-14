@@ -1,0 +1,10 @@
+---
+- title: For Loops
+  slug: for-loops
+  page_type: lesson
+- title: While Loops
+  slug: while-loops
+  page_type: lesson
+- title: Do...While Loops
+  slug: do-while-loops
+  page_type: lesson
