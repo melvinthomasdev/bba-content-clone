@@ -1,0 +1,10 @@
+---
+- title: Public
+  slug: public
+  page_type: lesson
+- title: Static
+  slug: static
+  page_type: lesson
+- title: Void
+  slug: void
+  page_type: lesson

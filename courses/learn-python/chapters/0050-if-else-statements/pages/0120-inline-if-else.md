@@ -7,5 +7,3 @@ to_do = "Go to sleep" if day == "Sunday" else "Go to work"
 print(to_do)
 </code>
 </codeblock>
-
-Some additional content here.

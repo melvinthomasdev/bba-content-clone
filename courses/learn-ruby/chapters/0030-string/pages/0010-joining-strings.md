@@ -11,3 +11,5 @@ greeting = greeting_style + " " + name
 puts greeting
 </code>
 </codeblock>
+
+Joining two or more strings or any other data types together is called **Concatenation** in Computer Science, so the above operation can also be stated as `"concatenate these two strings to make a single bigger string"`.

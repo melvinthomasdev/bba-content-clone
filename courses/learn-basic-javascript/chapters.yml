@@ -3,8 +3,6 @@
   slug: getting-started
 - name: Display output on the screen
   slug: display-output-on-screen
-- name: Single and Multiple line comments
-  slug: single-and-multiple-line-comments
 - name: Variables
   slug: variables
 - name: String
@@ -13,10 +11,10 @@
   slug: number
 - name: undefined and null
   slug: undefined-and-null
-- name: Array
-  slug: array
 - name: Object
   slug: object
+- name: Array
+  slug: array
 - name: Conditionals
   slug: conditionals
 - name: Logical Operations
