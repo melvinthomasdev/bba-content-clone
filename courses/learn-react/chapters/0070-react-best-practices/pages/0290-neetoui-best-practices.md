@@ -53,3 +53,14 @@ The primary button is on the left and the secondary button is on the right
 In similar cases, where there are two buttons with a primary action and a
 secondary action displayed in the same line, keep the primary button on the left
 and the secondary button on the right.
+
+## Missing icons in the neeto-icons repository
+
+Let's say you are working on a product that requires an icon that you couldn't find in `neeto-icons`, https://neetoui.neeto.com/?path=/docs/foundation-iconography--page.
+
+You might feel the urge to download an open-source icon and use it in your product.
+But when working on a neeto product your first thought should be - Is the missing resource useful to just me or could it be useful to others too? i.e. Is this a general icon that could be useful to other products also or is it an icon that's very specific to your product?
+
+If you feel that the icon is a general icon, then you should raise an issue in the `neeto-icons` repository - https://github.com/bigbinary/neeto-icons.
+
+Otherwise, if the icon is very product specific, then you should add that icon to `app/assets/images` directory in your product.
