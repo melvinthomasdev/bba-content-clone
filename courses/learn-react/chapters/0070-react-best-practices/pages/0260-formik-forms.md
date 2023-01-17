@@ -2,11 +2,10 @@ At BigBinary we use [Formik](https://formik.org/) for all forms. It takes care
 of validation, errors and the form submission without compromising with
 flexibility and performance.
 
-## Validation in Formik using submitted state
+## Validation in Formik
 
 In Formik, validation is performed based on a validation schema. You can change
 when validation occurs using the `validateOnChange` and `validateOnBlur` props.
-By default, validation occurs when we change some values inside a form field. But we want to run validation only after submit button has been clicked.
 
 If `validateOnChange` is true then the validation runs if the value inside a
 field is changed. It is `true` by default.
@@ -29,22 +28,17 @@ Refer to the
 [official documentation](https://formik.org/docs/guides/validation) of Formik
 for more information on this.
 
-From a UX perspective, we do not want the validation to run unless the submit
-button is clicked. So how do we make sure that happens? Updating either or both
-of the validation props to `false` does not solve the issue.
+From a UX perspective, we want the validation to run as soon as an input is entered, rather than waiting until the form is submitted. This type of validation is called eager validation.
 
-We can fix this by maintaining a flag, in the form of a React state, inside the Form component, called `submitted` which will be set to `false` by default. When the submit button is clicked we can update `submitted` value to `true`. Then we can pass this state to the as validation props to the `Formik` component.
+Here, the first validation only happens when the user leaves the input field(`onBlur` event) and then if the input is invalid, then we aggressively show inline validations until the input is valid. The main goal of eager validation is to provide a better user experience by catching errors early and preventing the user from having to submit a form multiple times.
 
-This will ensure that the validation occurs only after submit button has been
-clicked. After the submit button is clicked and the flag is set to true, then
-the validation will occur if a form field is updated or the form is interacted
-with.
+By resorting to the default Formik settings, i.e, with both `validateOnBlur` and `validateOnChange` set to `true`, we will be able to incorporate eager validation into our application.
 
 Take a look at the login form from
 [Wheel](https://github.com/bigbinary/wheel/blob/master/app/javascript/src/components/Authentication/Login.jsx):
 
 ```jsx
-import React, { useState } from "react";
+import React from "react";
 
 import { Form, Formik } from "formik";
 import { Button } from "neetoui";
@@ -66,7 +60,6 @@ import {
 } from "./constants";
 
 const Login = ({ history }) => {
-  const [submitted, setSubmitted] = useState(false);
   const authDispatch = useAuthDispatch();
   const userDispatch = useUserDispatch();
 
@@ -91,8 +84,6 @@ const Login = ({ history }) => {
         </h2>
         <Formik
           initialValues={LOGIN_FORM_INITIAL_VALUES}
-          validateOnBlur={submitted}
-          validateOnChange={submitted}
           onSubmit={handleSubmit}
           validationSchema={LOGIN_FORM_VALIDATION_SCHEMA}
         >
@@ -122,7 +113,6 @@ const Login = ({ history }) => {
                 className="h-8"
                 loading={isSubmitting}
                 disabled={isSubmitting}
-                onClick={() => setSubmitted(true)}
               />
             </Form>
           )}
@@ -156,10 +146,8 @@ Login.propTypes = {
 export default Login;
 ```
 
-In the above component, there is a `submitted` state which is `false` initially
-then it is set to `true` once the submit button is clicked. This flag is passed
-to the the `validateOnBlur` and `validateOnChange` props in the `Formik`
-component. So, as a result, `validateOnBlur` and `validateOnChange` props will be set to true after submit button is clicked and validation will occur.
+In the above component, even if we do not state it explicitly, the `validateOnBlur` and `validateOnChange` props in the `Formik`
+component are set to true.
 
 ## Formik cancel button type
 
