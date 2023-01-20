@@ -5,8 +5,10 @@
   slug: document-object-model
 - name: Selecting DOM Elements
   slug: selecting-dom-elements
-- name: Manipulating DOM Elements
-  slug: manipulating-dom-elements
+- name: Manipulating DOM Elements Part 1
+  slug: manipulating-dom-elements-part-1
+- name: Manipulating DOM Elements Part 2
+  slug: manipulating-dom-elements-part-2
 - name: Browser Events
   slug: browser-events
 - name: Comprehensive Exercises

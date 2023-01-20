@@ -1,0 +1,49 @@
+---
+- title: Updating Text Using textContent
+  slug: updating-text-using-textcontent
+  page_type: lesson
+- title: Exercise - Updating Text Using textContent
+  slug: exercise-updating-text-using-textcontent
+  page_type: exercise
+- title: Updating Text Using InnerText
+  slug: updating-text-using-innertext
+  page_type: lesson
+- title: Exercise - Updating Text Using InnerText
+  slug: exercise-updating-text-using-innertext
+  page_type: exercise
+- title: textContent vs innerText
+  slug: textcontent-vs-innertext
+  page_type: lesson
+- title: Updating HTML Inside an Element
+  slug: updating-html-inside-an-element
+  page_type: lesson
+- title: Exercise - Updating HTML Inside an Element
+  slug: exercise-updating-html-inside-an-element
+  page_type: exercise
+- title: Updating HTML Using OuterHTML
+  slug: updating-html-using-outerhtml
+  page_type: lesson
+- title: Exercise - Updating HTML Using OuterHTML
+  slug: exercise-updating-html-using-outerhtml
+  page_type: exercise
+- title: InnerHTML vs OuterHTML
+  slug: innerhtml-vs-outerhtml
+  page_type: lesson
+- title: Adding Class to an Element
+  slug: adding-class-to-an-element
+  page_type: lesson
+- title: Exercise - Adding Class to an Element
+  slug: exercise-adding-class-to-an-element
+  page_type: exercise
+- title: Exercise - Adding Class to an Element
+  slug: exercise-adding-class-to-an-element-2
+  page_type: exercise
+- title: Removing Class from an Element
+  slug: removing-class-from-an-element
+  page_type: lesson
+- title: Exercise - Removing Class from an Element
+  slug: exercise-removing-class-from-an-element
+  page_type: exercise
+- title: Exercise - Removing Class from an Element
+  slug: exercise-removing-class-from-an-element-2
+  page_type: exercise
