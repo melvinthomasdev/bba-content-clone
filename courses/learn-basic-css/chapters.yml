@@ -11,6 +11,8 @@
   slug: css-mcq-01
 - name: Sizing
   slug: sizing
+- name: Comprehensive Exercise 01
+  slug: css-comprehensive-exercise-01
 - name: Spacing
   slug: spacing
 - name: CSS MCQ
@@ -21,8 +23,8 @@
   slug: backgrounds
 - name: Borders
   slug: borders
-- name: Comprehensive Exercise 01
-  slug: css-comprehensive-exercise-01
+- name: Comprehensive Exercise 02
+  slug: css-comprehensive-exercise-02
 - name: Opacity
   slug: opacity
 - name: Styling Links
