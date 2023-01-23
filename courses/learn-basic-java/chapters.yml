@@ -3,8 +3,8 @@
   slug: getting-started
 - name: Introduction
   slug: java-introduction
-- name: How Java executes
-  slug: how-java-executes
+- name: Platform Independence
+  slug: platform-independence
 - name: Public, Static and void
   slug: public-static-void
 - name: Input/Output

@@ -1,0 +1,10 @@
+- The Just-In-Time (JIT) compiler is an essential part of the JRE i.e. Java Runtime Environment, that is responsible for performance optimization of java based applications at run time. 
+- The compiler is one of the key aspects in deciding the performance of an application for both parties i.e. the end-user and the application developer.
+- At run time, the JVM loads the class files, the semantics of each are determined, and appropriate computations are performed. 
+- The additional processor and memory usage during interpretation make a Java application perform slowly as compared to a native application.
+- The JIT compiler aids in improving the performance of Java programs by compiling bytecode into native machine code at run time.
+- The JIT compiler is enabled throughout, while it gets activated when a method is invoked. For a compiled method, the JVM directly calls the compiled code, instead of interpreting it. 
+- Theoretically speaking, If compiling did not require any processor time or memory usage, the speed of a native compiler and that of a Java compiler would have been the same.
+- JIT compilation requires processor time and memory usage. 
+- When the java virtual machine first starts up, thousands of methods are invoked. 
+- Compiling all these methods can significantly affect startup time, even if the end result is a very good performance optimization.

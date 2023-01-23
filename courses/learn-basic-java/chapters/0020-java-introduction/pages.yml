@@ -20,3 +20,6 @@
 - title: Byte Code
   slug: byte-code
   page_type: lesson
+- title: How Java executes?
+  slug: how-java-executes
+  page_type: lesson
