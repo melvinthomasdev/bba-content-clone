@@ -5,7 +5,7 @@
   slug: java-introduction
 - name: Platform Independence
   slug: platform-independence
-- name: Public, Static and void
+- name: Public, static, void and private
   slug: public-static-void
 - name: Input/Output
   slug: input-output

@@ -1,3 +1,4 @@
+<panel>
   <h1>
     What is a Java file?
   </h1>
@@ -5,16 +6,15 @@
     extension is a Java file. This code will not run directly on the system since it is
     written in Java, it needs to be converted to the language system understands (0s
     and 1s).
-<panel>
   <p>Following is an example of Java file `Example.java` and it's contents:</p>
-  <codeblock language="html" type="lesson">
-<code>
-public class Example {
+  <codeblock language="java" type="lesson">
+    <code>
+      public class Main {
         public static void main(String[] args) {
           System.out.println("Hello World from Java");
-          <!-- Prints the string to the console. -->
+          //Prints the string to the console.
         }
       }
-</code>
-</codeblock>
+    </code>
+  </codeblock>
 </panel>
