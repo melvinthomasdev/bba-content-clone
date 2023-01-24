@@ -1,0 +1,10 @@
+---
+- title: Axios
+  slug: axios
+  page_type: lesson
+- title: Path and Query Parameters
+  slug: path-and-query-parameters
+  page_type: lesson
+- title: Modular APIs
+  slug: modular-apis
+  page_type: lesson

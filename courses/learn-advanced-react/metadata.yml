@@ -1,0 +1,12 @@
+---
+name: Advanced ReactJS
+subheading: Learn Advanced Concepts in ReactJS
+slug: advanced-react-js
+published: true
+custom_data:
+  type: reactjs
+  upcoming: false
+  newCourse: false
+  courseColor: border-gray-600
+home_logo: react.svg
+logo: reactjs-header-image.png
