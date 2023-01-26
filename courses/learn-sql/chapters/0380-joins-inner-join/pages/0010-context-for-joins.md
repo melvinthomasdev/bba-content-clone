@@ -45,7 +45,7 @@ FROM   students
 Now we have a problem. How do we know which student is taking which course.
 To solve this problem, we need to understand what is a primary key.
 
-In USA there are [48,110 people](http://howmanyofme.com/people/john_smith/) with name "John Smith".
+In USA there are [44,935 people](https://www.microblife.in/how-many-john-smiths-are-there-in-the-world/#how-many-john-smiths-are-there-in-the-world) with name "John Smith".
 Then how do we identify which John Smith we are dealing with when they open bank account.
 Well each John Smith is given a unique number. In USA it is their social security number.
 Also the passport number of each John Smith would be different.
