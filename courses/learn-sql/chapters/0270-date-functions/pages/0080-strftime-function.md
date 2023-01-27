@@ -3,7 +3,7 @@ Let's say we just need the month part of the current timestamp.
 STRFTIME is a SQL function that can be used over DATETIME to extract specific information.
 Look at the example below.
 
-<codeblock language="sql" dbName="clean-slate.db" type="lesson">
+<codeblock language="sql" dbName="clean-slate.db" type="lesson" cache="false">
 <code>
 SELECT STRFTIME('%m', DATETIME('Now'))
 </code>
@@ -11,7 +11,7 @@ SELECT STRFTIME('%m', DATETIME('Now'))
 
 Let's say we need the current hour. The query would look like this:
 
-<codeblock language="sql" dbName="clean-slate.db" type="lesson">
+<codeblock language="sql" dbName="clean-slate.db" type="lesson" cache="false">
 <code>
 SELECT STRFTIME('%H', DATETIME('Now'))
 </code>
@@ -74,7 +74,7 @@ You can also combine one or more date parameters to get information the way you 
 Suppose we want the time stamp in format `DD/MM/YYYY HH:MM:SS`.
 Look at the query below
 
-<codeblock language="sql" dbName="clean-slate.db" type="lesson">
+<codeblock language="sql" dbName="clean-slate.db" type="lesson" cache="false">
 <code>
 SELECT STRFTIME('%d/%m/%Y %H:%M:%S', DATETIME('Now')) AS timestamp
 </code>

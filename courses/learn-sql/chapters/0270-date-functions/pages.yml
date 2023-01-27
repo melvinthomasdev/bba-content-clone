@@ -6,7 +6,7 @@
   slug: time-function
   page_type: lesson
 - title: Exercise - Date and Time functions
-  slug: exercise-date-and-time-function
+  slug: exercise-date-function
   page_type: exercise
 - title: DATETIME function
   slug: datetime-function
@@ -14,15 +14,12 @@
 - title: DATETIME function - Modifiers
   slug: datetime-function-modifiers
   page_type: lesson
-- title: Exercise - DATETIME function
-  slug: exercise-datetime-function-1
-  page_type: exercise
-- title: Exercise - DATETIME function
-  slug: exercise-datetime-function-2
-  page_type: exercise
 - title: STRFTIME Function
   slug: strftime-function
   page_type: lesson
 - title: Exercise - STRFTIME Function
   slug: exercise-strftime-function
+  page_type: exercise
+- title: Exercise - DATE functions
+  slug: exercise-date-functions-final
   page_type: exercise
