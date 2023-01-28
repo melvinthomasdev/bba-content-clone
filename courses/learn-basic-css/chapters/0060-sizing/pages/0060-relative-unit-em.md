@@ -2,7 +2,7 @@ When length of an element is specified using `em`,
 it is calculated based on the **font size**
 of the element. If this element has no `font-size` specified,
 the length is calculated based on the
-**font size** of its nearest parent HTML element.
+**font size** of its nearest parent element.
 
 As a default, `1em = 16px`.
 
@@ -10,65 +10,76 @@ As a default, `1em = 16px`.
 <code>
 <panel language="html">
 <div>
-  Font size in em
+  Relative unit 'em'
 </div>
 </panel>
 <panel language="css">
-html {
-  font-size: 16px; /* Default */
-}
 div {
   width: 10em;
   height: 10em;
+  /* 10em = 10*font-size = 10*20px = 200px */
   background-color: orange;
-  font-size: 1em;
+  font-size: 20px;
 }
 </panel>
 </code>
 </codeblock>
 
-The width and height
-of the `div` depends on its `font-size`.
-
-Width is calculated as:
-
-```
-10em = 10*font-size = 10*1em = 10*16px = 160px
-```
-
-In the above example, `html` element is the parent element.
-If you change the parent element's `font-size`,
-the div's `font-size` is no longer `16px`:
+In the above example, the width and height
+of the `div` were calculated based on the `div`'s `font-size`.
 
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
-<div>
-  Font size in em
+<div id="parent">
+  <h1 id="child">
+    Relative unit 'em'
+  </h1>
 </div>
 </panel>
 <panel language="css">
-html {
-  font-size: 10px;
+#parent {
+  font-size: 15px;
 }
-div {
+#child {
   width: 10em;
   height: 10em;
+  /* 10em = 10*font-size-of-parent = 10*15px = 150px */
   background-color: orange;
-  font-size: 1em;
 }
 </panel>
 </code>
 </codeblock>
 
-Font size of div is calculated as:
+In the above example, the width and height of the `h1` were calculated based on the `font-size`
+of its parent element (`div`), as `font-size` was not specified
+for the child element (`h1`).
 
-```
-1em = 1*parent-font-size = 1*10px = 10px
-```
+<codeblock language="css" type="lesson">
+<code>
+<panel language="html">
+<div id="parent">
+  <h1 id="child"> Relative unit 'em' </h1>
+</div>
+</panel>
+<panel language="css">
+#parent {
+  font-size: 20px;
+}
+#child {
+  width: 5em;
+  height: 5em;
+  /* 
+  font-size = 1 em = 1*20px = 20px
+  width & height = 5em = 5*font-size = 5*20px = 100px
+  */
+  font-size: 1em;
+  background-color: peachpuff;
+}
+</panel>
+</code>
+</codeblock>
 
-And hence the width of this div is:
-
-```
-10em = 10*font-size = 10*10px = 100px
-```
+In the above example, the width and height of `h1` was calculated based on `h1`'s font size.
+Though one thing different here is that, the font-size itself is given in `em`. 
+So the font-size value of `h1` now depends on the font-size of its parent element.
