@@ -9,6 +9,8 @@
   slug: string
 - name: Number
   slug: number
+- name: Comprehensive Exercise 1
+  slug: comprehensive-exercise-1
 - name: undefined and null
   slug: undefined-and-null
 - name: Object
