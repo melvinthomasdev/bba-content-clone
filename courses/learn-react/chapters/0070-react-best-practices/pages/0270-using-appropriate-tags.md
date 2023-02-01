@@ -51,6 +51,58 @@ const TaskList = ({ tasks }) => (
 In the above component `table` is a top level HTML tag which encloses it's
 children. In such a case, Fragments needn't be used as it doesn't add any value.
 
+```jsx
+// Bad
+return (
+  <div>
+    <Button label="Save changes" />
+    <Button label="Discard" />
+  </div>
+);
+
+// Bad
+return (
+  <React.Fragment>
+    <Button label="Save changes" />
+    <Button label="Discard" />
+  </React.Fragment>
+);
+
+// Good
+return (
+  <>
+    <Button label="Save changes" />
+    <Button label="Discard" />
+  </>
+);
+```
+
+Note that you should not use the shorthand inside loops. This will not allow us to add `key` prop to the component. So, it will introduce some unanticipated bugs and performance problems.
+
+```jsx
+// Bad
+<div>
+  {users.map(user => (
+    <>
+      <ChildComponent1 user={user} />
+      <ChildComponent2 user={user} />
+    </>
+  ))}
+</div>;
+
+// Good
+import React, { Fragment } from "react";
+
+<div>
+  {users.map(user => (
+    <Fragment key={user.id}>
+      <ChildComponent1 user={user} />
+      <ChildComponent2 user={user} />
+    </Fragment>
+  ))}
+</div>;
+```
+
 React fragments aren't a substitute for the `div` tag. `div` is used to define a
 division inside the React DOM tree. It is used when there is a need to group a
 list of DOM elements within one block. Fragments cannot be used here as they are

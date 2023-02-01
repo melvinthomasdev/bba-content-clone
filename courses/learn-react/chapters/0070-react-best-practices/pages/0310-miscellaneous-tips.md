@@ -318,6 +318,29 @@ delegated to a new `Table` component declared inside the `Dashboard` component's
 directory and the `Table` component can be imported and used inside the
 `Dashboard` component.
 
+## When not to create a new component
+
+When the JSX code is tightly coupled with its parent component, do not try to move it to a new file. We will need to pass in every dependent value to it as props and it will make the code harder to read. This is an example:
+
+```jsx
+const ParentComponent = () => {
+  // multiple states and value declarations
+  return (
+    <ChildComponent
+      user={user}
+      setUser={setUser}
+      order={order}
+      setOrder={setOrder}
+      // ...and so on
+    />
+  );
+};
+```
+
+Here, the initialization & management of the states `user`, `order`, etc are done on `ParentComponent` while its usage is on `ChildComponent`. The reader will need to continuously navigate between this files while working on some features related to this. It will be counter productive.
+
+But do note that like everything else in the field of Software Engineering, there are exceptions to this rule too. Like there can be cases where the component's presentation layer is becoming too large such that it affects readability and more than that makes it less debuggable. In such cases, it would very much make sense to create sub-components.
+
 ## Avoid code repetition
 
 Code repetition is a bad practice and it should be avoided. The biggest
@@ -504,7 +527,6 @@ const [state, setState] = useState(true);
 return (
   <p>Block</p>
 );
-
 
 // Correct - blank lines should be added before return statements
 const [state, setState] = useState(true);
