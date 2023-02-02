@@ -10,13 +10,13 @@ And in such cases, React provides a special prop called `children` to the `Custo
 
 ```jsx
 {/* App.jsx */}
-const CustomContainer = ({ children }) => (
+const CustomContainer = {( children )} => (
   <div className="container">
     {children}
   </div>
 )
 
-const Child = ({ text }) => (
+const Child = {( text )} => (
   <span>
     {text}
   </span>
@@ -38,21 +38,21 @@ Take this example of a set of components that drill down props:
 
 ```jsx
 {/* AppContainer.jsx */}
-const AppContainer = ({name, email, number}) => (
+const AppContainer = {( name, email, number )} => (
   <div className="appContainer">
     <SideBar name={name} email={email} number={number}/>
     App Contents
   </div>
 )
 
-const Sidebar = ({name, email, number}) => (
+const Sidebar = {( name, email, number )} => (
   <div className="sideBar">
     <UserSection name={name} email={email} number={number}/>
     Sidebar Contents
   </div>
 )
 
-const UserSection = ({name, email, number}) => (
+const UserSection = {( name, email, number )} => (
   <div className="userSection">
     Name: {name}
     Email: {email}
@@ -66,7 +66,7 @@ The `SideBar` doesn't need to relay the props down to the `UserSection` when the
 
 ```jsx
 {/* AppContainer.jsx */}
-const AppContainer = ({name, email, number}) => (
+const AppContainer = {( name, email, number )} => (
   <div className="appContainer">
     <SideBar>
       <UserSection name={name} email={email} number={number}/>
@@ -75,14 +75,14 @@ const AppContainer = ({name, email, number}) => (
   </div>
 )
 
-const Sidebar = ({children}) => (
+const Sidebar = {( children )} => (
   <div className="sideBar">
     {children}
     Sidebar Contents
   </div>
 )
 
-const UserSection = ({name, email, number}) => (
+const UserSection = {( name, email, number )} => (
   <div className="userSection">
     Name: {name}
     Email: {email}

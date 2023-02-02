@@ -2,7 +2,7 @@ When you need to pass along lots of props to a child component as shown:
 
 ```jsx
 {/* Container.jsx */}
-const Container = ({users, darkMode, isAdmin, text}) => (
+const Container = {( users, darkMode, isAdmin, text )} => (
   <div className="container">
     <UserCards
       users={users}
@@ -29,7 +29,7 @@ If you need to use a few and pass on the rest, you can also partially spread you
 
 ```jsx
 {/* Container.jsx */}
-const Container = ({text, ...cardProps}) => (
+const Container = {( text, ...cardProps )} => (
   <div className="container">
     <UserCards {...cardProps}/>
     {text}

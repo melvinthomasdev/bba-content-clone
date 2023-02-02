@@ -2,13 +2,16 @@ An Effect is defined by React as a "side effect caused by rendering".
 
 It allows us to initialize or synchronize your React code with your server-side code, external APIs or third-party widgets.
 
-The syntax is as simple as `useState(function, dependancies)`.
+The syntax is as simple as `useState(function, dependencies)`.
 
 * The "function" is the side effect that runs when needed.
-* The "dependancies" are the array of conditions that determine when the function should run.
-  * If no dependacies are given, the function runs on every render. This is inefficient and not recommended in most cases.
+* The "dependencies" are the array of conditions that determine when the function should run.
+* If no dependencies are given, the function runs on every render. This is inefficient and not recommended in most cases.
   * If dependencies are an empty array `[]`, the function runs just once on mount.
-  * If dependancies contain variables like `[v1, v2]`, the function runs once on mount and every time either v1 or v2 changes.
+  * If dependencies contain variables like `[v1, v2]`, the function runs once on mount and every time either v1 or v2 changes.
+
+For more information on dependency arrays, you can jump to this section of our advanced guide.
+<!-- TODO: Link to the advanced guide once published  -->
 
 Here's a simple example where we initialize contacts based on an external API called `fetchContacts`:
 
@@ -17,7 +20,7 @@ Here's a simple example where we initialize contacts based on an external API ca
 import {fetchContacts} from "./utils"
 import ContactsList from "./ContactsList"
 
-const ContactsContainer = ({ userId }) => {
+const ContactsContainer = {( userId )} => {
   const [contacts, setContacts]
 
   const getContacts = async () => {

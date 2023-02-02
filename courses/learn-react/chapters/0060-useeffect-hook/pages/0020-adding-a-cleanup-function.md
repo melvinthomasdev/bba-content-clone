@@ -1,5 +1,19 @@
 If we need to add a cleanup function, we just need to return a function from our effect.
-This cleanup function will run once your component unmounts. Below are a few common uses for the cleanup function.
+
+You can use the following syntax to do so: 
+
+```jsx
+useEffect(() => {
+  // function effects
+  const cleanupFunction = () => {
+    // cleanup function definition
+  }
+  return cleanupFunction
+}, [])
+```
+
+This cleanup function will run once your component unmounts.
+Here are a few common uses for the cleanup function.
 
 ## Clearing Timers
 

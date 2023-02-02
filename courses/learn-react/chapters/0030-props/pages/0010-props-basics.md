@@ -8,7 +8,7 @@ const Users = () => (
 )
 
 {/* Child */}
-const UserCard = ({ name, customClass }) => (
+const UserCard = {( name, customClass )} => (
   <p className={customClass}>
     Hello {name}
   </p>
@@ -40,7 +40,7 @@ When destructuring, you can also assign default values and change the name of ce
 
 ```jsx
 {/* UserCard.jsx */}
-const UserCard = ({ name = "User", customClass: pClass  }) => (
+const UserCard = {( name = "User", customClass: pClass )} => (
   <p className={pClass}>
     Hello {name}
   </p>
@@ -56,7 +56,7 @@ You can even combine defaulting and renaming in a single attribute like so:
 
 ```jsx
 {/* UserCard.jsx */}
-const UserCard = ({ name, customClass: pClass = "defaultClass" }) => (
+const UserCard = {( name, customClass: pClass = "defaultClass" )} => (
   <p className={pClass}>
     Hello {name}
   </p>

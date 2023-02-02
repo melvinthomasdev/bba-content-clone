@@ -1,10 +1,22 @@
 ---
-- title: The useState Hook
-  slug: the-usestate-hook
+- title: useState Basics
+  slug: usestate-basics
   page_type: lesson
-- title: Event Handling
-  slug: event-handling
+- title: Updating Using Previous State
+  slug: updating-using-previous-state
   page_type: lesson
-- title: State Management
-  slug: state-management
+- title: Lifting a State
+  slug: lifting-a-state
+  page_type: lesson
+- title: Using Inputs with State
+  slug: using-inputs-with-state
+  page_type: lesson
+- title: Avoiding Multiple States
+  slug: avoiding-multiple-states
+  page_type: lesson
+- title: Handling Object States
+  slug: handling-object-states
+  page_type: lesson
+- title: Handling Array States
+  slug: handling-array-states
   page_type: lesson

@@ -2,6 +2,6 @@
 - title: Using Ramda
   slug: using-ramda
   page_type: lesson
-- title: Updating Using Previous State
-  slug: updating-using-previous-state
+- title: Why Update Using Previous State
+  slug: why-update-using-previous-state
   page_type: lesson

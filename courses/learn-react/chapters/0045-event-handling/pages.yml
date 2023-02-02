@@ -1,0 +1,10 @@
+---
+- title: Event Handlers
+  slug: event-handlers
+  page_type: lesson
+- title: Event Propagation
+  slug: event-propagation
+  page_type: lesson
+- title: The Event Object
+  slug: the-event-object
+  page_type: lesson

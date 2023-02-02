@@ -5,8 +5,16 @@
   slug: intro-to-react
 - name: Props
   slug: props
-- name: Logic and Modularization
-  slug: logic-and-modularization
+- name: Conditional Rendering
+  slug: conditional-rendering
+- name: Rendering Data Arrays
+  slug: rendering-data-arrays
+- name: Imports and Exports
+  slug: imports-and-exports
+- name: Naming Conventions
+  slug: naming-conventions
+- name: Event Handling
+  slug: event-handling
 - name: The useState Hook
   slug: usestate-hook
 - name: The useEffect Hook
