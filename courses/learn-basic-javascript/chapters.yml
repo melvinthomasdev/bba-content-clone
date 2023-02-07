@@ -17,6 +17,8 @@
   slug: object
 - name: Array
   slug: array
+- name: Comprehensive Exercise 2
+  slug: comprehensive-exercise-2
 - name: Conditionals
   slug: conditionals
 - name: Logical Operations
