@@ -53,6 +53,8 @@
   slug: dig-safe
 - name: Blocks, Procs and Lambda
   slug: blocks-procs-lambda
+- name: Inheritance
+  slug: inheritance
 - name: Module
   slug: module
 - name: Enumerable

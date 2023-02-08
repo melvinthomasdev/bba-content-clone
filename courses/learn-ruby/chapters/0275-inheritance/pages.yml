@@ -1,0 +1,15 @@
+- title: Inheritance Introduction
+  slug: inheritance-intro
+  page_type: lesson
+- title: Inheritance Classes
+  slug: inheritance-classes
+  page_type: lesson
+- title: Inheritance Defination
+  slug: inheritance-defination
+  page_type: lesson
+- title: Understanding Super
+  slug: inheritance-super
+  page_type: lesson
+- title: Inheriting Initialize method
+  slug: inheriting-initialize-method
+  page_type: lesson
