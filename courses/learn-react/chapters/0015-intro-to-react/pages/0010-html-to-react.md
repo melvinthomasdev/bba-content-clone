@@ -6,7 +6,7 @@ You have used HTML and CSS to built good looking webpages and then later added J
 </code>
 </codeblock>
 Let us do a challenge.
-To start with, we have an empty `div` above with an `id` value of `root`. What we need to acheive is to add a `h1` inside the div with the content "We are from BB Academy" with a `id` value of `main-heading` and a `class` value of `heading`.
+To start with, we have an empty `div` above with an `id` value of `root`. We need add a `h1` inside this div with the content "We are from BB Academy" with an `id` value of `main-heading` and a `class` value of `heading`.
 
 ## First with HTML
 
@@ -63,4 +63,4 @@ ReactRoot.render(mainHeading);
 </code>
 </codeblock>
 
-In the next lesson, we will compare the React code above with the plain JavaScript code.
+In the next lesson, we will discuss in detail the React code by comparing it with the plan JS code.

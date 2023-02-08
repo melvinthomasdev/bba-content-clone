@@ -2,6 +2,7 @@
 images:
 - react.svg
 - reactjs-header-image.png
+- react-vs-plain-js.gif
 - state-update-in-unmounted-component.png
 - selected-input-field.jpg
 - required-input.jpg

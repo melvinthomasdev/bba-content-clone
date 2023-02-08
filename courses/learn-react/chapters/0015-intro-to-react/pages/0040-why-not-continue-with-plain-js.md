@@ -61,12 +61,29 @@ We will then make sure the current time is updated every second by executing the
                 <button>Submit</button>
             </form>
         </div>;
-        ReactDOM.render(contentUpdatedUsingReact, reactSection)
+        const ReactRoot = ReactDOM.createRoot(reactSection);
+        ReactRoot.render(contentUpdatedUsingReact);
     }
     setInterval(updateTime, 1000);
 </script>
+</panel>
+<panel language="css">
+#plain-js-section-red {
+    color: crimson;
+}
 
+#plain-js-section-red input {
+    border: 3px solid crimson;
+}
 
+#react-section-blue {
+  color: midnightblue   
+}
+
+#react-section-blue input {
+    border: 3px solid midnightblue;
+    margin-right: 3px;
+}
 </panel>
 </code>
 </codeblock>
@@ -81,6 +98,9 @@ One way to fix this is, if we decided to only update the `p` element with the ti
 That is exactly what happens with React. Now try, typing in the `input` created by React(blue). It persists! Thanks to the fact, that React internally verifies what has changed or differed and only updates that.
 
 The below gif clearly show which elements gets updated each time the `updateTime` function is executed.
+
+<image>react-vs-plain-js.gif</image>
+
 In the case of Plain JS, you can see the whole `container` div gets updated but whereas in the case of React, only the paragraph element gets updated.
 
 This is one of the main benefits that DOM Manipulation with React provides over plain JS.
