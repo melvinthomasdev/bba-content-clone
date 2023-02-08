@@ -1,0 +1,15 @@
+---
+- title: HTML to React
+  slug: html-to-react
+  page_type: lesson
+- title: Plain JS DOM manipulation vs React
+  slug: plain-js-dom-manipulation-vs-react
+  page_type: lesson
+- title: Write React with ease using JSX
+  slug: write-react-with-ease-using-jsx
+  page_type: lesson
+- title: Why not continue with plain JS
+  slug: why-not-continue-with-plain-js
+  page_type: lesson
+
+
