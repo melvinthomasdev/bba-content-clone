@@ -2,7 +2,7 @@ JSX is a syntax through which you can write HTML-like code inside JavaScript.
 
 React is almost always used in combination with JSX and thus, has become a necessary first step for budding React developers.
 
-Let us rewrite the previous exampleReact example using JSX.
+Let us rewrite the React code in the previous example using JSX.
 The commented code is using React's `createElement` directly and the one not is using `jsx`.
 
 <codeblock language="javascript" type="lesson">
@@ -29,7 +29,7 @@ The commented code is using React's `createElement` directly and the one not is 
   */
 
   // using jsx
-  const mainHeading = <h1>We are from BB Academy</h1>
+  const mainHeading = <h1 id="main-heading" className="heading">We are from BB Academy</h1>
 
   const ReactRoot = ReactDOM.createRoot(root);
   ReactRoot.render(mainHeading);
@@ -83,7 +83,7 @@ A few examples of such conversions are shown below:
   </ul>
 </div>
 ```
-At all times, the jsx we are writing need to be conveted to corresponding `React.createElement` as the browser does not understand JSX natively. For our above code, this convertion or compiling is handled by a JS compiler called Babel.
+At all times, the JSX we are writing need to be conveted to corresponding `React.createElement` as the browser does not understand JSX natively. For our above code, this convertion or compiling is handled by a JS compiler called Babel.
 
 Similar to how we loaded the `React` and `ReactDOM` definitions from the script, we have loaded everything we need from `Babel` using the third script above and also told which script need to be converted by adding a `type` attribute to script with a value `text/babel`. 
 

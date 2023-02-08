@@ -1,6 +1,6 @@
 Let us look at example to understand one major benefit React has over using plain JavaScript to manipulate DOM.
 
-We are going to add the below set of code into both the divs (plain-js-section-red,react-section-blue).
+We are going to add the below set of code into both the `divs` (`plain-js-section-red`,`react-section-blue`).
 
 ```html
     <div class="container">
@@ -14,9 +14,9 @@ We are going to add the below set of code into both the divs (plain-js-section-r
     </div>
 ```
 
-We will have the current time retrived using JavaScript `Date` method and add it to the above `p` element. 
-We will then make sure the current time is updated every second by executing the same using a [setInterval method](https://academy.bigbinary.com/learn-intermediate-javascript/timeouts-and-intervals/run-function-at-fixed-time-intervals).
-(For this example, we will be writing our JavaScript inside the HTML itself.)
+- We will have the current time retrived using JavaScript `Date` method and add it to the above `p` element. 
+- We will then make sure the current time is updated every second by executing the same using a [setInterval method](https://academy.bigbinary.com/learn-intermediate-javascript/timeouts-and-intervals/run-function-at-fixed-time-intervals).
+
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -32,10 +32,12 @@ We will then make sure the current time is updated every second by executing the
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <!-- Babel -->
 <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+
 <script type="text/babel">
     const htmlDomSection = document.getElementById("plain-js-section-red");
     const reactSection = document.getElementById("react-section-blue");
-
+    const ReactRoot = ReactDOM.createRoot(reactSection);
+    
     const updateTime = () => {
         const time = new Date().toLocaleTimeString();
 
@@ -53,15 +55,15 @@ We will then make sure the current time is updated every second by executing the
         htmlDomSection.innerHTML = contentUpdatedUsingPlainJS;
 
         const contentUpdatedUsingReact = 
-        <div class="container">
+        <div className="container">
             <h1>We are from BB Academy (React)</h1>
-            <p class="current-time">{time}</p>
+            <p className="current-time">{time}</p>
             <form>
                 <input type="text"/>
                 <button>Submit</button>
             </form>
         </div>;
-        const ReactRoot = ReactDOM.createRoot(reactSection);
+
         ReactRoot.render(contentUpdatedUsingReact);
     }
     setInterval(updateTime, 1000);
@@ -88,14 +90,19 @@ We will then make sure the current time is updated every second by executing the
 </code>
 </codeblock>
 
-If you see the actions we took looks almost similar and so are the output at the first look. Now try, typing in the `input` created by plain JS (red).
+The actions we took looks almost similar and so are the output at the first look. 
 
-You would have noticed, the content typed into the plain JS input (red) is getting cleared off.
+Now try typing in the `input` created by plain JS (red). You would notice that the content typed into the plain JS input (red) is getting cleared off.
 
-Everytime the function `updateTime` is executed by setInterval, in the plain JS DOM manipulation, we updated all the elements inside `contentUpdatedUsingPlainJS`, therefore while you are typing in, a second passes, setInterval calls function `updateTime` and the input element is updated.
-One way to fix this is, if we decided to only update the `p` element with the time by selecting it with class value `current-time`. But what if code could automatically decide the only data that has changed and update just that?
+Everytime the function `updateTime` is executed by setInterval, in the plain JS DOM manipulation, we update all the elements inside `contentUpdatedUsingPlainJS`, therefore while you are typing in, one second passes and setInterval calls function `updateTime` and the input element is updated.
 
-That is exactly what happens with React. Now try, typing in the `input` created by React(blue). It persists! Thanks to the fact, that React internally verifies what has changed or differed and only updates that.
+One way to fix this is if we decided to only update the `p` element with the time by selecting it with its class value of `current-time`. 
+
+But what if code could automatically find out the only data that has changed and update just that?
+
+That is exactly what happens with React. Now try, typing in the `input` created by React(blue. 
+
+It persists! Thanks to the fact, that React internally verifies what has changed or differed and only updates that.
 
 The below gif clearly show which elements gets updated each time the `updateTime` function is executed.
 
