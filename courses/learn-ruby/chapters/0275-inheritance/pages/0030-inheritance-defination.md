@@ -1,7 +1,7 @@
 
-So now we know the class which inherits the behaviors is called sub-class and the class it inherits from is called the super-class. **Inheritance** refers to this ability of an class to take on one or more characteristics from other classes.
+So now we know that the class which inherits behaviours is called sub-class and the class it inherits from is called the super-class. **Inheritance** refers to this ability of an class to take on one or more characteristics from other classes.
 
-To further understand, let's look at another example:
+To further understand, let's look at the next example on **EnginePoweredVehicle**:
 
 <image>inheritance_example_2.png</image>
 
@@ -52,12 +52,12 @@ class EnginePoweredVehicle < Vehicle
 end
 
 class Car < EnginePoweredVehicle
-  def has_automatic_transmission
-    true
+  def has_automatic_transmission(is_automatic)
+    is_automatic ? "It's an automatic" : "It's an manual"
   end
 
-  def body_type
-    "SUV"
+  def body_type(body)
+    "The car body type is #{body}"
   end
 end
 
@@ -70,5 +70,6 @@ puts jeep.maximum_torque_in_nm(320)
 puts jeep.is_turbocharged(true)
 puts jeep.body_type("SUV")
 puts jeep.number_of_wheels(4)
+puts jeep.has_automatic_transmission(true)
 </code>
 </codeblock>

@@ -54,7 +54,7 @@ puts ferrari.runs_on("Ferrari", "petrol")
 
 But, when we call with `super()`, it doesn’t pass any arguments to the parent. You can use `super()` when you just want to call the method inherited from Parent without passing any arguments.
 
-And obviously, you can use `super(arg1, arg2, …)` to pass only some specified arguments to the inherited method.
+And, you can use `super(arg1, arg2, …)` to pass only some specified arguments to the inherited method.
 
 <codeblock language="ruby" type="lesson">
 <code>

@@ -1,4 +1,4 @@
-Let's look at a simple example, to see how `initialize` method could be inherited from parent class:
+Let's look at a simple example, to understand how `initialize` method could be inherited from parent class:
 
 <codeblock language="ruby" type="lesson">
 <code>
@@ -28,4 +28,4 @@ puts tesla.drive
 </code>
 </codeblock>
 
-In the above code example, we could observe that the same `initialize` method is inherited by child classes from parent.
+In the above code example, we could observe that the `@driving` was written only once in parent class and could be used in child classes. So that means the same `initialize` method is inherited by child classes from parent.

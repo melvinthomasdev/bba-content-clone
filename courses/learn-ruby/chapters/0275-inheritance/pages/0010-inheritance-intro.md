@@ -103,7 +103,7 @@ A **Truck** may have some unique specifications, like how much **cargo_carrying_
 We could observe that we are repeating ourselves again & again,
 except few unqiue specifications. This is something we would always want to avoid while coding. Some specs are common across all the vehicles, like **number_of_wheels**, **number_of_seats**, **owner_name** and **year_of_manufacture**.
 
-So let's create a class **Vehicle** with all the common characteristics.
+So let's create a class **Vehicle** with all the common characteristics of a vehicle.
 
 ```
 class Vehicle
@@ -152,7 +152,7 @@ class Bicycle < Vehicle
 end
 ```
 
-As **Bicycle** inherits all the common methods(features) of a **Vehicle**, plus 2 more like `chain_manufacturer` and `additional_seating_at_carrier`. This is equivalent to writing:
+As **Bicycle** inherits all the common methods(features) of a **Vehicle**, plus 2 more like `chain_manufacturer` and `additional_seating_at_carrier`. So, the code written above and below are equivalent:
 
 ```
 class Bicycle
@@ -195,4 +195,4 @@ end
 
 <image>inheritance.png</image>
 
-Hold on to this and let's move to next page to understand further...
+Hold on to this and let's move on to the next page to understand further...

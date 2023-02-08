@@ -1,4 +1,4 @@
-We can call **Vehicle** class a super-class of **Bicycle** or **Bicycle** a sub-class of **Vehicle**. Similarly **Truck** and **Car** are sub-class of **EnginePoweredVehicle**. Let looks at a diagram and an example code, for more clarity.
+We can call **Vehicle** class a super-class of **Bicycle** or **Bicycle** as a sub-class of **Vehicle**. Similarly, **Truck** and **Car** are sub-class of **EnginePoweredVehicle**. Let looks at a diagram and an example code, for more clarity.
 
 <image>classes.png</image>
 
