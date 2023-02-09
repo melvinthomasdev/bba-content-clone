@@ -21,7 +21,8 @@ const displayTeamMembers = () => {
 Change the same function
 to print all the pets'
 names one by one on the console.
-Ensure that your function can
+Ensure that your function
+**displayTeamMembers** can
 take any array and print its values
 one by one on the screen.
 
@@ -53,17 +54,22 @@ Print this variable on the screen.
 <code>
 teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
 pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
+const total = 0;
 
-<!-- Write your code below this line  -->
+// Write your code below this line
 </code>
 
 <solution>
 teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
 pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
+const total = 0;
+
+// Write your code below this line
+
 const sumGroups = () => {
   return teamMembers.length + pets.length;
 }
-const total = sumGroups();
+total = sumGroups();
 console.log(total);
 </solution>
 </codeblock>
