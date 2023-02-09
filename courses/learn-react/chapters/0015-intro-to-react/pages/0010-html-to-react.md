@@ -1,26 +1,41 @@
-You have used HTML and CSS to built good looking webpages and then later added JS to achieve interactivity, and now we are about to learn React.
+Till now, you have used
+HTML and CSS to build good
+looking webpages. Later, we added
+JS to achieve interactivity.
+Now, we are about to learn React.
+
+Look at this code:
 
 <codeblock language="html" type="lesson">
 <code>
 <div id="root"></div>
 </code>
 </codeblock>
-Let us do a challenge.
-To start with, we have an empty `div` above with an `id` value of `root`. We need add a `h1` inside this div with the content "We are from BB Academy" with an `id` value of `main-heading` and a `class` value of `heading`.
 
-## First with HTML
+Here, let us try to do this:
+1. Select the root div element.
+2. Create an `h1` element.
+3. Append that `h1` element inside the `div`with the id `root`.
+
+## Firstly, let's make HTML Changes
+
+In this example given above,
+we have an empty `div` with an
+`id` value of `root`. We need to add
+an `h1` inside this `div` with the
+content **React will give you wings!**
+with an `id` value of `main-heading`
+and a `class` value of `heading`.
 
 <codeblock language="html" type="lesson">
 <code>
 <div id="root">
-  <h1 id="main-heading" class="heading">We are from BB Academy</h1>
+  <h1 id="main-heading" class="heading">React will give you wings!</h1>
 </div>
 </code>
 </codeblock>
 
-This would probably the first thing we all learned in HTML.
-
-## Now with JavaScript by manipulating the DOM
+## Now, let's use JavaScript to manipulate the DOM
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -30,7 +45,7 @@ This would probably the first thing we all learned in HTML.
 <panel language="javascript">
 const root = document.querySelector("#root");
 const mainHeading = document.createElement('h1');
-mainHeading.textContent = "We are from BB Academy";
+mainHeading.textContent = "React will give you wings!";
 mainHeading.id = 'main-heading';
 mainHeading.className = 'heading';
 root.appendChild(mainHeading);
@@ -38,7 +53,7 @@ root.appendChild(mainHeading);
 </code>
 </codeblock>
 
-## Now the same using React
+## Finally, let's build the same thing, using React
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -55,7 +70,7 @@ const root = document.querySelector("#root");
 const mainHeading = React.createElement('h1', {
   id: "main-heading",
   className: "heading",
-  children: "We are from BB Academy"
+  children: "React will give you wings!"
 });
 const ReactRoot = ReactDOM.createRoot(root);
 ReactRoot.render(mainHeading);
@@ -63,4 +78,14 @@ ReactRoot.render(mainHeading);
 </code>
 </codeblock>
 
-In the next lesson, we will discuss in detail the React code by comparing it with the plan JS code.
+You don't need to understand the
+React code for now. But note that in
+both the JavaScript code, as well as
+React, this part remains the same:
+
+```js
+const root = document.querySelector("#root");
+```
+
+This is how we are selecting the root
+`div` element.

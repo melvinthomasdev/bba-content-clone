@@ -2,11 +2,20 @@
 - title: HTML to React
   slug: html-to-react
   page_type: lesson
-- title: Plain JS DOM manipulation vs React
-  slug: plain-js-dom-manipulation-vs-react
+- title: Creating Elements with JS DOM manipulation vs React
+  slug: creating-elements-js-dom-manipulation-vs-react
+  page_type: lesson
+- title: Appending Elements with JS DOM manipulation vs React
+  slug: appending-elements-js-dom-manipulation-vs-react
   page_type: lesson
 - title: Write React with ease using JSX
   slug: write-react-with-ease-using-jsx
+  page_type: lesson
+- title: JSX Differences With HTML - Camelcase
+  slug: jsx-differences-camelcase
+  page_type: lesson
+- title: JSX Differences With HTML - Close All Tags
+  slug: jsx-differences-close-all-tags
   page_type: lesson
 - title: Why not continue with plain JS
   slug: why-not-continue-with-plain-js
