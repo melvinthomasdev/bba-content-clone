@@ -5,11 +5,11 @@ one on the console.
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
-teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
+const teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
 </code>
 
 <solution>
-teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
+const teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
 const displayTeamMembers = () => {
   teamMembers.forEach(teamMember => {
     console.log(teamMember);
@@ -28,13 +28,13 @@ one by one on the screen.
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
-teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
-pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
+const teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
+const pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
 </code>
 
 <solution>
-teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
-pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
+const teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
+const pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
 const displayTeamMembers = (group) => {
   group.forEach(groupMember => {
     console.log(groupMember);
@@ -52,17 +52,17 @@ Print this variable on the screen.
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
-teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
-pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
+const teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
+const pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
 const total = 0;
 
 // Write your code below this line
 </code>
 
 <solution>
-teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
-pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
-const total = 0;
+const teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
+const pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
+let total = 0;
 
 // Write your code below this line
 
