@@ -5,6 +5,9 @@ or remove an underline using the<br>
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
+<h1>
+  Limited Period Offer
+</h1>
 <h2>
   Item Price
 </h2>
@@ -21,6 +24,9 @@ or remove an underline using the<br>
 </a>
 </panel>
 <panel language="css">
+h1{
+  text-decoration: underline overline dotted red;
+}
 h2 {
   text-decoration: underline;
 }
