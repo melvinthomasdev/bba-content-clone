@@ -1,4 +1,7 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/helpers/prevent_conflict_markers.sh"
 
 bundle exec rake validate
+prevent_conflict_markers
+npx lint-staged

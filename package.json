@@ -7,10 +7,22 @@
   "author": "<akash.srivastava@bigbinary.com>",
   "license": "MIT",
   "devDependencies": {
-    "husky": "^8.0.1"
+    "cspell": "^5.13.3",
+    "husky": "^8.0.1",
+    "prettier": "^2.8.4"
   },
   "scripts": {
-    "prepare": "husky install",
-    "validate": "node validate.js"
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./courses/**/*.md": [
+      "prettier --write",
+      "cspell --config .cspell.json --unique --no-must-find-files -- --no-summary"
+    ]
   }
 }
