@@ -9,8 +9,8 @@ for the input fields:
 <panel language="html">
 <form>
   <h2>Sign In:</h2>
-  <input type="email" placeholder="Email ID" />
-  <input type="password" placeholder="Password" />
+  <input type="email" placeholder="Email ID">
+  <input type="password" placeholder="Password">
 </form>
 </panel>
 <panel language="css">

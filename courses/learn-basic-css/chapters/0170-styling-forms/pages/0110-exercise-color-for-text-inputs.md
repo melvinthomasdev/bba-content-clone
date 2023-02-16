@@ -8,7 +8,7 @@ for the text input and textarea fields:
 <panel language="html">
 <form>
   <div>
-    <input type="text" placeholder="Full Name" /><br>
+    <input type="text" placeholder="Full Name"><br>
     <textarea rows="5" placeholder="Comments"></textarea>
   </div>
 </form>

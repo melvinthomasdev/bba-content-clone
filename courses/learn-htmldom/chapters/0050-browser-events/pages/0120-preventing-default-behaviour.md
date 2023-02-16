@@ -12,7 +12,7 @@ anything inside it.
 <codeblock language="javascript" type="lesson">
 <code>
 <panel language="html">
-<input type = "text" placeholder = "cannot type here" />
+<input type = "text" placeholder = "cannot type here">
 </panel>
 <panel language="javascript">
 let myInput = document.querySelector('input');

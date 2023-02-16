@@ -3,7 +3,7 @@ The `<button>` element displays a button. In the example given below, the `<butt
 <codeblock language="html" type="lesson">
 <code>
 <form>
-  <input type="text" />
+  <input type="text">
   <button type="reset">Wipe it clean!</button>
 </form>
 </code>

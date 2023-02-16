@@ -4,13 +4,13 @@
 <code>
 <form>
   <label>Can you vote?</label>
-  <br />
+  <br>
   <input type="radio" id="vote1" value="no" name="vote">
   <label>No</label>
-  <br />
+  <br>
   <input type="radio" id="vote2" value="yes" name="vote">
   <label>Yes</label>
-  <br />
+  <br>
   <input type="radio" id="vote3" value="maybe" name="vote">
   <label>Maybe!</label>
 </form>

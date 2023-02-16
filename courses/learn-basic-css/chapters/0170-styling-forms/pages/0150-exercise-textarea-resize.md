@@ -6,7 +6,7 @@ resizing the second `textarea` in both directions:
 <code>
 <panel language="html">
 <form>
-  <textarea id="first" rows="3" placeholder="Your thoughts"></textarea><br />
+  <textarea id="first" rows="3" placeholder="Your thoughts"></textarea><br>
   <textarea id="second" rows="6" placeholder="Tell us about you in 60 words"></textarea>
 </form>
 </panel>

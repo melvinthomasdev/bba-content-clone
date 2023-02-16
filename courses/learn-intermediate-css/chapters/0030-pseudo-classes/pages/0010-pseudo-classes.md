@@ -12,8 +12,8 @@ Let's look at some examples below:
 <code>
 <panel language="html">
 <form>
-  <input type="text" id="name" placeholder="First name" />
-  <input type="text" placeholder="Last name" />
+  <input type="text" id="name" placeholder="First name">
+  <input type="text" placeholder="Last name">
   <button type="button">Submit</button>
 </form>
 </panel>

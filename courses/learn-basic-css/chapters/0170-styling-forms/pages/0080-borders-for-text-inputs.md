@@ -8,9 +8,9 @@ look using the `border` property:
 <code>
 <panel language="html">
 <form>
-  <input type="text" placeholder="First Name" />
+  <input type="text" placeholder="First Name">
   <br>
-  <input type="text" placeholder="Last Name" />
+  <input type="text" placeholder="Last Name">
   <br>
   <textarea rows="3" placeholder="Tell us about you"></textarea>
 </form>
@@ -40,9 +40,9 @@ for these fields using the
 <code>
 <panel language="html">
 <form>
-  <input type="text" placeholder="First Name" />
+  <input type="text" placeholder="First Name">
   <br>
-  <input type="text" placeholder="Last Name" />
+  <input type="text" placeholder="Last Name">
   <br>
   <textarea rows="3" placeholder="Tell us about you"></textarea>
 </form>

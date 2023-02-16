@@ -7,7 +7,7 @@ footer in a `nav` tag.
 	<h1>Whales</h1>
 </header>
 <main>
-	<img src = "#" />
+	<img src = "#">
 	<p>Whales are protected by international law.</p>
 </main>
 <footer>
@@ -24,7 +24,7 @@ footer in a `nav` tag.
 	<h1>Whales</h1>
 </header>
 <main>
-	<img src = "#" />
+	<img src = "#">
 	<p>Whales are protected by international law.</p>
 </main>
 <footer>

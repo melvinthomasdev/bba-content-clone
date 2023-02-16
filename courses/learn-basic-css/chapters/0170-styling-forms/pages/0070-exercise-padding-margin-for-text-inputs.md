@@ -9,7 +9,7 @@ textarea.
 <panel language="html">
 <form>
   <div>
-    <input type="text" placeholder="Full Name" />
+    <input type="text" placeholder="Full Name">
     <textarea rows="5" placeholder="Comments"></textarea>
   </div>
 </form>

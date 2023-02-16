@@ -4,8 +4,8 @@ uses `alt` as shown below:
 
 <codeblock language="html" type="lesson">
 <code>
-<img src="view-from-a-balcony.jpg" alt="The view from a balcony" width="400px"/>
-<img src="view-from-a-somewhere.jpg" alt="The view from a plane" width="235"/>
+<img src="view-from-a-balcony.jpg" alt="The view from a balcony" width="400px">
+<img src="view-from-a-somewhere.jpg" alt="The view from a plane" width="235">
 </code>
 </codeblock>
 

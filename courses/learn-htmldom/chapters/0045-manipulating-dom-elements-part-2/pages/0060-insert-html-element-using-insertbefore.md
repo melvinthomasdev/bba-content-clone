@@ -8,9 +8,9 @@ want to add an element before a certain element?
 <code>
 <panel language="html">
 <section>
-  <input type = "submit" class="warning" value = "Stop" />
-  <input type = "submit" class="warning" value = "Cancel" />
-  <input type = "submit" class="warning" value = "Delete" />
+  <input type = "submit" class="warning" value = "Stop">
+  <input type = "submit" class="warning" value = "Cancel">
+  <input type = "submit" class="warning" value = "Delete">
 </section>
 </panel>
 <panel language="css">

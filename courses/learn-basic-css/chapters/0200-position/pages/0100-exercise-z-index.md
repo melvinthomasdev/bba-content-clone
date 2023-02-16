@@ -8,9 +8,9 @@ the second image on top of the third one:
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<img id="first" src="har-ki-doon-valley-uttarakhand-square.jpg" alt="Har ki Doon Valley Uttarakhand"/>
-<img id="second" src="aliyar-dam-pollachi.jpg" alt="Aliyar Dam Pollachi"/>
-<img id="third" src="fort-kochi-beach-square.jpg" alt="Fort Kochi Beach"/>
+<img id="first" src="har-ki-doon-valley-uttarakhand-square.jpg" alt="Har ki Doon Valley Uttarakhand">
+<img id="second" src="aliyar-dam-pollachi.jpg" alt="Aliyar Dam Pollachi">
+<img id="third" src="fort-kochi-beach-square.jpg" alt="Fort Kochi Beach">
 </panel>
 <panel language="css">
 img {

@@ -20,10 +20,10 @@ Look at the example given below:
 <code>
 <panel language="html">
 <form id = "user-info">
-    <input type = "text" class = "user-input" value = "Name"/>
-    <input type = "text" class = "user-input" value = "Email"/>
-    <input type = "text" class = "user-input" value = "Address"/>
-    <input type = "submit" value = "submit" />
+    <input type = "text" class = "user-input" value = "Name">
+    <input type = "text" class = "user-input" value = "Email">
+    <input type = "text" class = "user-input" value = "Address">
+    <input type = "submit" value = "submit">
 </form>
 </panel>
 <panel language="javascript">

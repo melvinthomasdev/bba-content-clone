@@ -4,7 +4,7 @@ Change the code given below so that we can see the image here itself.
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
-<img width="400px"/>
+<img width="400px">
 </code>
 
 <solution>

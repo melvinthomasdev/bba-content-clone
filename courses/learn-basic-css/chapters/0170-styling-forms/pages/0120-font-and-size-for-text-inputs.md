@@ -6,7 +6,7 @@ Most of the HTML elements inherit the font family and font size from `body`, but
 <code>
 <panel language="html">
 <form>
-  <input type="text" placeholder="Your Name" />
+  <input type="text" placeholder="Your Name">
   <br>
   <textarea rows="4" placeholder="Your Bio"></textarea>
 </form>

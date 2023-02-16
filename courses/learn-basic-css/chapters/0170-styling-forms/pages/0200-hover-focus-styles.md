@@ -3,8 +3,8 @@ When you take your mouse over a text input or a button, the background or border
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
-<input type="text" id="email" placeholder="Email ID" />
-<input type="button" id="subscribe" value="Subscribe" />
+<input type="text" id="email" placeholder="Email ID">
+<input type="button" id="subscribe" value="Subscribe">
 </panel>
 <panel language="css">
 #email {
@@ -36,8 +36,8 @@ Also, when you tap on an input field or move focus to it using the `tab` key on 
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
-<input type="text" id="email" placeholder="Email ID" />
-<input type="button" id="subscribe" value="Subscribe" />
+<input type="text" id="email" placeholder="Email ID">
+<input type="button" id="subscribe" value="Subscribe">
 </panel>
 <panel language="css">
 #email {

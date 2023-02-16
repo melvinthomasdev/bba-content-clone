@@ -6,7 +6,7 @@ Give a minimum height of `50px` to the `div` element and a minimum height of `40
 <div>
   A road trip, sometimes spelled roadtrip, is a long-distance journey on the road. Typically, road trips are long distances traveled by automobile.
 </div>
-<img src="aliyar-dam-pollachi.jpg" alt="Aliyar Dam Pollachi" />
+<img src="aliyar-dam-pollachi.jpg" alt="Aliyar Dam Pollachi">
 </panel>
 <panel language="css">
 div {

@@ -4,7 +4,7 @@ If we use the `input` selector for styling, the changes will apply to all types 
 <code>
 <panel language="html">
 <form>
-  <input type="text" placeholder="Your Name" /><br>
+  <input type="text" placeholder="Your Name"><br>
   <input type="radio" id="male" name="gender" value="male">
   <label for="male">Male</label>
   <input type="radio" id="female" name="gender" value="female">
@@ -33,7 +33,7 @@ using the attribute selector:
 <code>
 <panel language="html">
 <form>
-  <input type="text" placeholder="Your Name" /><br>
+  <input type="text" placeholder="Your Name"><br>
   <input type="radio" id="male" name="gender" value="male">
   <label for="male">Male</label>
   <input type="radio" id="female" name="gender" value="female">

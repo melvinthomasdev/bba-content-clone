@@ -12,7 +12,7 @@ Look at the example given below:
 <panel language="html">
 <div>
 
-  <img src="aliyar-dam-pollachi.jpg" alt="Aliyar Dam Pollachi"/>
+  <img src="aliyar-dam-pollachi.jpg" alt="Aliyar Dam Pollachi">
   <p>
     A dam is a barrier that stops or restricts the flow of surface water or underground streams. Reservoirs created by dams not only suppress floods but also provide water for activities such as irrigation, human consumption, industrial use, aquaculture, and navigability.
   </p>
@@ -54,7 +54,7 @@ Look at the solution given below:
 <code>
 <panel language="html">
 <div class="clearfix">
-  <img src="aliyar-dam-pollachi.jpg" alt="Aliyar Dam Pollachi"/>
+  <img src="aliyar-dam-pollachi.jpg" alt="Aliyar Dam Pollachi">
   <p>
     A dam is a barrier that stops or restricts the flow of surface water or underground streams. Reservoirs created by dams not only suppress floods but also provide water for activities such as irrigation, human consumption, industrial use, aquaculture, and navigability.
   </p>

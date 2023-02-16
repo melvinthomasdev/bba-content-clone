@@ -12,14 +12,14 @@ Also, remember to add appropriate labels to each radio input:
 <code>
 <form>
   <label>What is your strength?</label>
-  <br />
+  <br>
 </form>
 </code>
 
 <solution>
 <form>
   <label>What is your strength?</label>
-  <br />
+  <br>
   <input type="radio" value="writing" name="skill">
   <label>writing</label>
   <input type="radio" value="reading" name="skill">

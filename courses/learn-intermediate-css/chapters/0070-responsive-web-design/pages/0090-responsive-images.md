@@ -16,7 +16,7 @@ smaller than the original image width.
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
-<img src="mumbai-02.jpg" />
+<img src="mumbai-02.jpg">
 </panel>
 <panel language="css">
 img {

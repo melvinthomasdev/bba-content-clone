@@ -5,9 +5,9 @@ Look at some examples below:
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
-<input type="button" value="Next" />
-    <input type="reset" value="Reset" /><br>
-    <input type="submit" value="Submit" />
+<input type="button" value="Next">
+    <input type="reset" value="Reset"><br>
+    <input type="submit" value="Submit">
 </panel>
 <panel language="css">
 input[type="button"] {

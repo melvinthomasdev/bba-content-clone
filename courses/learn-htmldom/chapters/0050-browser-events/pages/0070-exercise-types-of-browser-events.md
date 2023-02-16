@@ -7,7 +7,7 @@ below it.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<input type="text" placeholder="About You" />
+<input type="text" placeholder="About You">
 <p>Key Count: <span></span></p>
 </panel>
 <panel language="javascript">

@@ -4,7 +4,7 @@ Set the width of both `input` and `textarea` to `300px`. Give a height of `30px`
 <code>
 <panel language="html">
 <form>
-    <input type="email" placeholder="Email ID" /><br>
+    <input type="email" placeholder="Email ID"><br>
     <textarea placeholder="Comment"></textarea>
 </form>
 </panel>

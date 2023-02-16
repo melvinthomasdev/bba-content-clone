@@ -4,7 +4,7 @@ element with the value `https://www.nasa.gov/sites/default/files/thumbnails/imag
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<img />
+<img>
 </panel>
 <panel language="css">
 img {

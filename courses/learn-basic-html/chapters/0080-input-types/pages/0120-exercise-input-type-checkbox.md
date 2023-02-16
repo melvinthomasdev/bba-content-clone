@@ -12,14 +12,14 @@ Add all this after the `br` element.
 <code>
 <form>
   <label>Languages you know:</label>
-  <br />
+  <br>
 </form>
 </code>
 
 <solution>
 <form>
   <label>Languages you know:</label>
-  <br />
+  <br>
   <input type="checkbox" value="English">
   <label>English</label>
   <input type="checkbox" value="Mandarin">

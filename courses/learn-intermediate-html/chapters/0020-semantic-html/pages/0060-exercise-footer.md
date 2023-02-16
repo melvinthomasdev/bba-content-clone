@@ -15,12 +15,12 @@ message in the footer tag.
     <fieldset>
         <legend>Fruit:</legend>
         <label>Name: </label>
-        <input type="text"/>
-        <br/>
+        <input type="text">
+        <br>
         <label>Quantity: </label>
-        <input type="number"/>
-        <br/>
-        <input type="submit"/>
+        <input type="number">
+        <br>
+        <input type="submit">
     </fieldset>
     <p>Copyright © Fruit Factory 2021</p>
 Add all the links in the
@@ -32,7 +32,7 @@ a `footer` tag:
     <head>
     </head>
     <body>
-        <img src = "#" />
+        <img src = "#">
         <h1>5 Reasons why HTML is the King!</h1>
         <p>In this study, we'll list 10 reasons why HTML is one of the most important languages invented on the web.</p>
         <ol>
@@ -67,12 +67,12 @@ a `footer` tag:
     <fieldset>
         <legend>Fruit:</legend>
         <label>Name: </label>
-        <input type="text"/>
-        <br/>
+        <input type="text">
+        <br>
         <label>Quantity: </label>
-        <input type="number"/>
-        <br/>
-        <input type="submit"/>
+        <input type="number">
+        <br>
+        <input type="submit">
     </fieldset>
 	<footer>
     	<p>Copyright © Fruit Factory 2021</p>

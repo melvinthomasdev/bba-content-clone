@@ -11,7 +11,7 @@ using the `margin` property:
 <form>
   <div>
     <label>Your Name</label><br>
-    <input type="text" placeholder="Your Name" />
+    <input type="text" placeholder="Your Name">
   </div>
   <div>
     <label>Your Bio</label><br>

@@ -8,7 +8,7 @@ occupy all the available space:
 <form>
   <h2>Message Box</h2>
   <div id="message-box">
-    <input id="message-input" type="text" placeholder="Type your message" />
+    <input id="message-input" type="text" placeholder="Type your message">
     <button id="message-button" type="button">Send</button>
   </div>
 </form>

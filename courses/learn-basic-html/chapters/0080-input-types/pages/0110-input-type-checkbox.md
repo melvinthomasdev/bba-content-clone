@@ -4,16 +4,16 @@
 <code>
 <form>
   <label>Fruits you like:</label>
-  <br />
+  <br>
   <input type="checkbox" name="fruit" value="apple">
   <label>Apple</label>
-  <br />
+  <br>
   <input type="checkbox" name="fruit" value="banana">
   <label>Banana</label>
-  <br />
+  <br>
   <input type="checkbox" name="fruit" value="orange">
   <label>Orange</label>
-  <br />
+  <br>
 </form>
 </code>
 </codeblock>
@@ -40,16 +40,16 @@ to be different as shown below:
 <code>
 <form>
   <label>Fruits you like:</label>
-  <br />
+  <br>
   <input type="checkbox" name="food" value="apple">
   <label>Apple</label>
-  <br />
+  <br>
   <input type="checkbox" name="choice" value="banana">
   <label>Banana</label>
-  <br />
+  <br>
   <input type="checkbox" name="fruit" value="orange">
   <label>Orange</label>
-  <br />
+  <br>
 </form>
 </code>
 </codeblock>

@@ -6,9 +6,9 @@ images appear next to each other:
 <code>
 <panel language="html">
 <div>
-  <img src="har-ki-doon-valley-uttarakhand.jpg" alt="Har ki Doon Valley Uttarakhand"/>
-  <img src="mumbai-01.jpg" alt="Mumbai"/>
-  <img src="fort-kochi-beach.jpg" alt="Fort Kochi Beach"/>
+  <img src="har-ki-doon-valley-uttarakhand.jpg" alt="Har ki Doon Valley Uttarakhand">
+  <img src="mumbai-01.jpg" alt="Mumbai">
+  <img src="fort-kochi-beach.jpg" alt="Fort Kochi Beach">
 </div>
 </panel>
 <panel language="css">

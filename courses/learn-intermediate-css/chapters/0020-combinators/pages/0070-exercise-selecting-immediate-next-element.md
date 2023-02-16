@@ -6,7 +6,7 @@ image element:
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<img src="waterfall.jpg" alt="waterfall"/>
+<img src="waterfall.jpg" alt="waterfall">
   <span>Caption: Waterfall</span>
   <p>
     <span>A waterfall</span> is a point in a river or stream where water flows over a vertical drop or a series of steep drops. Waterfalls also occur where meltwater drops over the edge of a tabular iceberg or ice shelf.

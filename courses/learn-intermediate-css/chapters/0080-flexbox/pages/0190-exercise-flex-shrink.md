@@ -7,7 +7,7 @@ panel is resized:
 <panel language="html">
 <article>
   <div class="image">
-    <img src="https://images.pexels.com/photos/1171581/pexels-photo-1171581.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=80" />
+    <img src="https://images.pexels.com/photos/1171581/pexels-photo-1171581.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=80">
   </div>
   <p>
     Lotus is often colloquially called a water lily. Lotus plants are adapted to grow in the flood plains of slow-moving rivers and delta areas. Stands of lotus drop hundreds of thousands of seeds every year to the bottom of the pond.

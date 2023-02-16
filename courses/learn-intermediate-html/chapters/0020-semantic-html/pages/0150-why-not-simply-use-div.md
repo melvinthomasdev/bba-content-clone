@@ -13,7 +13,7 @@ Wait, don't imagine, let us show you:
     <head>
     </head>
     <body>
-        <img src = "#" />
+        <img src = "#">
         <h1>5 Reasons why HTML is the King!</h1>
         <p>In this study, we'll list 10 reasons why HTML is one of the most important languages invented on the web.</p>
         <ol>

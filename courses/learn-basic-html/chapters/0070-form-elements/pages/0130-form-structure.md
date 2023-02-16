@@ -14,34 +14,34 @@ as follows:
 <code>
 <form>
   <label>Name: </label>
-  <input type="text" />
-  <br /><br />
+  <input type="text">
+  <br><br>
   <fieldset>
     <legend>Address:</legend>
     <label>City:</label>
-    <input type="text" />
-    <br />
+    <input type="text">
+    <br>
     <label>State: </label>
-    <input type="text" />
-    <br />
+    <input type="text">
+    <br>
     <label>Country: </label>
-    <input type="text" />
-    <br />
+    <input type="text">
+    <br>
   </fieldset>
-  <br />
+  <br>
   <label>Review:</label>
-  <br />
+  <br>
   <textarea rows="3" cols="30"></textarea>
-  <br /><br />
+  <br><br>
   <label>Favorite color: </label>
   <select>
     <option value="apple">Red</option>
     <option value="orange">Green</option>
     <option value="mango">Blue</option>
   </select>
-  <br /><br />
+  <br><br>
   <button type="reset">Reset</button>
-  <input type="submit" />
+  <input type="submit">
 </form>
 </code>
 </codeblock>

@@ -5,9 +5,9 @@ The text fields and textareas in forms can be styled in multiple ways using `wid
 <panel language="html">
 <form>
     <p>Rounded corners:</p>
-    <input id="input1" type="text" placeholder="Type something" />
+    <input id="input1" type="text" placeholder="Type something">
     <p>Only bottom border:</p>
-    <input id="input2" type="text" placeholder="Type something" />
+    <input id="input2" type="text" placeholder="Type something">
     <p>Larger font size and background color:</p>
     <textarea placeholder="Type something"></textarea>
 </form>

@@ -8,9 +8,9 @@ properties:
 <code>
 <panel language="html">
 <form>
-  <input type="text" placeholder="First Name" />
+  <input type="text" placeholder="First Name">
   <br>
-  <input type="text" placeholder="Last Name" />
+  <input type="text" placeholder="Last Name">
   <br>
   <textarea rows="3" placeholder="Tell us about you"></textarea>
 </form>

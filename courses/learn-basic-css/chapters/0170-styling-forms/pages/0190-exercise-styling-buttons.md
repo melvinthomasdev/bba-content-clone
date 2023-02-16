@@ -10,7 +10,7 @@ font size of `1em`:
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<input type="button" value="Click me" />
+<input type="button" value="Click me">
 </panel>
 <panel language="css">
 

@@ -5,10 +5,10 @@ The `<input type="reset">` resets all the form data to their default values.
 <form>
   <label>Username:</label>
   <input type="text">
-  <br />
+  <br>
   <label>Password:</label>
   <input type="password">
-  <br />
+  <br>
   <input type="submit">
   <input type="reset">
 </form>

@@ -5,7 +5,7 @@ Create an input of type **reset** in the form, below all the other input element
 <form>
   <label>Locale:</label>
   <input type="text">
-  <br />
+  <br>
   <input type="submit">
 </form>
 </code>
@@ -14,7 +14,7 @@ Create an input of type **reset** in the form, below all the other input element
 <form>
   <label>Locale:</label>
   <input type="text">
-  <br />
+  <br>
   <input type="submit">
   <input type="reset">
 </form>

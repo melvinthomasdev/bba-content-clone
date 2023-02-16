@@ -14,7 +14,7 @@ The `img` element uses the `src` attribute to find where the image is located.
 
 <codeblock language="html" type="lesson">
 <code>
-<img src="view-from-a-balcony.png" />
+<img src="view-from-a-balcony.png">
 </code>
 </codeblock>
 

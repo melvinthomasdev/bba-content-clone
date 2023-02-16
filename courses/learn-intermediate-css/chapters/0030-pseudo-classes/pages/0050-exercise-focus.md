@@ -5,7 +5,7 @@ to the text input **email** on focus:
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<input type="email" id="email" placeholder="Email ID" />
+<input type="email" id="email" placeholder="Email ID">
 </panel>
 <panel language="css">
 #email {

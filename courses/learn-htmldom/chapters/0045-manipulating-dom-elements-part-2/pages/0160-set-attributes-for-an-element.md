@@ -6,7 +6,7 @@ method.
 <code>
 <panel language="html">
 <div>
-    <img />
+    <img>
 </div>
 </panel>
 <panel language="css">

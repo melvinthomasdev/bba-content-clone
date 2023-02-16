@@ -13,7 +13,7 @@ using the `:focus` pseudo-class:
 <panel language="html">
 <form>
   <h3>Register:</h3>
-  <input type="text" id="name" placeholder="Full name" />
+  <input type="text" id="name" placeholder="Full name">
   <button type="button">Submit</button>
 </form>
 </panel>
