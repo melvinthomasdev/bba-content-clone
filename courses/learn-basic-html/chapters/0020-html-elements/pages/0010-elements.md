@@ -4,8 +4,6 @@ An HTML document is made up of different HTML **elements**. Each HTML element ty
 2. Content
 3. Closing tag
 
-<a/> <!-- Empty tag to end list -->
-
 Let us take the example of an `<h1>` element:
 
 <codeblock language="html" type="lesson">

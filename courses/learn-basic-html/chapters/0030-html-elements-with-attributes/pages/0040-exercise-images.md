@@ -8,6 +8,6 @@ Change the code given below so that we can see the image here itself.
 </code>
 
 <solution>
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" width="400px"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" width="400px">
 </solution>
 </codeblock>

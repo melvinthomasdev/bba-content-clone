@@ -1,4 +1,4 @@
-The `br` element is used to create a line break in your text. It is a self-closing tag and so looks like this, `<br/>`.
+The `br` element is used to create a line break in your text. It is one of the void element. Void elements only have a start tag. We should specify an end tags for them and so looks like this `<br>`.
 
 A line break will force the text to start from a new line without creating a new paragraph. `br` tags can be used to display text where we need to show the information in different lines, but the lines are not contextually separate.
 
