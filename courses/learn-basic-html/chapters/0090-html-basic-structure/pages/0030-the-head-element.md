@@ -6,6 +6,7 @@ Given below are a few important elements which help store this information:
 - `<link>` element, which is used to add external resources, such as CSS files.
 - `<script>` element, which is used to embed JavaScript code.
 
+<a/> <!-- Empty tag to end list -->
 
 ```html
 <head>
