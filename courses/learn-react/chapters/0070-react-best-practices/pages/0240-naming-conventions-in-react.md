@@ -167,7 +167,7 @@ backend as a payload along with a POST/PUT request should contain snake_case
 variable names. For example,
 
 ```jsx
-const handleSubmit = async event => {
+const handleSubmit = async (event) => {
   event.preventDefault();
   setLoading(true);
   try {
@@ -205,12 +205,12 @@ For example:
 
 ```js
 // Incorrect function name
-const redirectToLoginPage = data => {
+const redirectToLoginPage = (data) => {
   if (!data.globalProps.user.authenticated) return history.push(routes.login);
 };
 
 // Correct function name
-const shouldRedirectToLoginPage = data => {
+const shouldRedirectToLoginPage = (data) => {
   if (!data.globalProps.user.authenticated) return history.push(routes.login);
 };
 ```
@@ -226,7 +226,7 @@ In the above mentioned example, the function name `redirectToLoginPage` sounds l
   localstorage like so:
 
 ```javascript
-const getFromLocalStorage = key => JSON.parse(localStorage.getItem(key));
+const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 ```
 
 ## Naming buttons
@@ -260,7 +260,7 @@ const Display = () => {
   const [filteredUsers, setFilteredUsers] = useState([]);
 
   const filterUser = () => {
-    const selectedItems = userList.filter(user => user.age > 25);
+    const selectedItems = userList.filter((user) => user.age > 25);
     setFilteredUsers(selectedItems);
   };
 
@@ -379,7 +379,8 @@ As the project grows the number of routes and length of a route increases, there
 For example, consider the following function:
 
 ```jsx
-const buildProjectDetailsFormRoute = projectId => `/projects/${projectId}/details/form`
+const buildProjectDetailsFormRoute = (projectId) =>
+  `/projects/${projectId}/details/form`;
 ```
 
 Some conventions need to be followed for these functions:
@@ -446,14 +447,30 @@ const Dashboard = () => {
 };
 ```
 
-Now, these names do tell what these functions do. Also, this keyword should be used only when a function is returning some JSX for rendering in the UI.
+Now, these names do tell what these functions do. The `render` prefix is commonly used in React to name functions that return elements that are meant to be rendered to the screen. These elements might not always be `JSX` elements. It can return string or other values. Let us see one such case.
+
+```jsx
+const Dashboard = () => {
+  //rest of the the component
+  const renderDarkModeButtonLabel = () =>
+    isDarkMode ? t("dashboard.theme.dark") : t("dashboard.theme.light");
+
+  return (
+    <div>
+      <Button label={renderDarkModeButtonLabel()} />
+    </div>
+  );
+};
+```
+
+In the above case, the `renderDarkModeButtonLabel` function conditionally returns a translation for the button label. Since the label would be directly rendered to screen, it is safe to prefix the function with the `render` keyword. However, we should ensure adherence to appropriate usage of the `render` keyword and avoid its overuse.
 
 Let's consider another example. There is a method named as `renderUserOptions` which does some operations on a `users` array. The output from this function will be used by a `Select` component for properly populating its options. The code will be, like so:
 
 ```jsx
 const Dashboard = () => {
   //rest of the component
-  const renderUserOptions = users => {
+  const renderUserOptions = (users) => {
     return [
       //code for structuring users
     ];
@@ -467,12 +484,12 @@ const Dashboard = () => {
 };
 ```
 
-Here we can see that this `renderUserOptions` function is not returning any `JSX`. It's just helping the `Select` component by building data, and not rendering data. So a better name would be something like `buildUserOptions` rather than `renderUserOptions`, like so:
+Here we can see that this `renderUserOptions` function is not returning any element that can be directly rendered to UI. It's just helping the `Select` component by building data, and not rendering data. So a better name would be something like `buildUserOptions` rather than `renderUserOptions`, like so:
 
 ```jsx
 const Dashboard = () => {
   //rest of the component
-  const buildUserOptions = users => {
+  const buildUserOptions = (users) => {
     return [
       //code for some structuring
     ];
@@ -486,6 +503,8 @@ const Dashboard = () => {
 };
 ```
 
+In a nutshell, the `render` prefix is typically used for functions that return elements that will be directly rendered to the UI. The purpose of the function is to define the structure and content of the UI components. On the other hand, the `build` prefix is often used for functions that construct or assemble data structures or objects that will be used by the UI, but are not directly rendered to the screen.
+
 ## Use camelCase in iterator name
 
 If we are iterating through an array then we should use camelCase while naming the iterator. Let's say we have an array of objects named `MENUBAR_BLOCKS`. We can iterate through this array like this:
@@ -493,7 +512,7 @@ If we are iterating through an array then we should use camelCase while naming t
 ```jsx
 // snake_case - Not correct
 {
-  MENUBAR_BLOCKS.map(menubar_block => (
+  MENUBAR_BLOCKS.map((menubar_block) => (
     <NeetoMenuBar.Block
       active={menubar_block.active}
       count={menubar_block.count}
@@ -505,7 +524,7 @@ If we are iterating through an array then we should use camelCase while naming t
 
 // camelCase - correct
 {
-  MENUBAR_BLOCKS.map(menubarBlock => (
+  MENUBAR_BLOCKS.map((menubarBlock) => (
     <NeetoMenuBar.Block
       active={menubarBlock.active}
       count={menubarBlock.count}
@@ -557,7 +576,7 @@ For example, consider a function that deletes a note. We can name this function 
 ```jsx
 const deleteNote = () => {
   // rest of the code
-}
+};
 ```
 
 If the function handles the events triggered by some actions like `click`, `submit`, etc then we should prefix the function name with the `handle` keyword.
@@ -567,7 +586,7 @@ Let's say we have added the above-mentioned function to a button's `click` event
 ```jsx
 const handleDeleteNote = () => {
   //rest of the code
-}
+};
 ```
 
 The `on` keyword is used in the React events. We should prefix `on` keyword with function which emits an event.
@@ -621,7 +640,7 @@ Using JSX we can add HTML in React easily. Generally `.jsx` file extension is us
 Let's say we have a variable called `columnData` in a `utils.js` file, like so:
 
 ```js
-export const columnData = setShowAlert => [
+export const columnData = (setShowAlert) => [
   {
     title: "Name",
     dataIndex: "firstName",
@@ -640,13 +659,13 @@ export const columnData = setShowAlert => [
 Now say in the `columnData` variable we want to use JSX and return some HTML code. In that case, we can use the `.jsx` extension in the file name. We can rename the file as `utils.jsx` and can use the JSX in `columnData`, like so:
 
 ```jsx
-export const columnData = setShowAlert => [
+export const columnData = (setShowAlert) => [
   {
     title: "Name",
     dataIndex: "firstName",
     key: "firstName",
     width: "30%",
-    render: firstName => (
+    render: (firstName) => (
       <div className="flex space-x-3">
         <Avatar
           size="large"
