@@ -110,3 +110,6 @@
 - title: Debugging and Profiling React components
   slug: debugging-and-profiling-react-components
   page_type: lesson
+- title: i18next Plurals
+  slug: i18next-plurals
+  page_type: lesson
