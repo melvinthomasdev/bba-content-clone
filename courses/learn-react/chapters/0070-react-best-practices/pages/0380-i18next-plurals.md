@@ -1,5 +1,7 @@
 Before reading this lesson make sure that you are thorough with the contents in
-the [Locale translations in React](/locale-translations-in-react) lesson.
+the
+[Locale translations in React](/learn-react/react-best-practices/locale-translations-in-react)
+lesson.
 
 ## How to pluralize translations?
 
