@@ -1,93 +1,57 @@
-As you build larger and more complex components, sometimes you'll find yourself needing to nest your custom components like so:
+As you build larger and more complex components, sometimes you'll find yourself
+needing to nest your custom components like so:
 
 ```jsx
-<CustomContainer>
-  <Child />
-</CustomContainer>
+<Parent>
+  <h1>This is a child of the Parent component</h1>
+  <CustomChild />
+</Parent>
 ```
 
-And in such cases, React provides a special prop called `children` to the `CustomContainer` component that contains its contents, which in this case is just `<Child />`.
+The contents of the `Parent` component are what we call its "children", which in
+this case is:
 
 ```jsx
-{/* App.jsx */}
-const CustomContainer = {( children )} => (
-  <div className="container">
-    {children}
-  </div>
-)
+<h1>This is a child of the Parent component</h1>
+<CustomChild />
+```
 
-const Child = {( text )} => (
-  <span>
-    {text}
-  </span>
-)
+To access the children of your custom components, React provides a special prop
+called `children` that you can use like so:
+
+```jsx
+{
+  /* App.jsx */
+}
+const Parent = ({ children }) => <div className="container">{children}</div>;
+
+const Child = ({ text }) => <span>{text}</span>;
 
 const App = () => (
-  <CustomContainer>
+  <Parent>
     <Child text="child 1" />
     <Child text="child 2" />
-  </CustomContainer>
-)
+  </Parent>
+);
 ```
 
-## Splitting Components
+In the above example, the two `Child` components are passed to the `Parent` as
+part of the `children` prop and get rendered within its `container` div.
 
-As mentioned in the previous chapter, when you find yourself passing all the props down the line for every other component, it's advisable to split your components and pass children as JSX.
+This "children" prop can include Booleans, Numbers, String, other React elements
+or even an array of any of these types recursively. It allows us to compose
+complex elements without increasing the number of props all the time.
 
-Take this example of a set of components that drill down props:
+It increases code readability by allowing the `Child` to be used in other places
+or allow the `Parent` to include other children
 
-```jsx
-{/* AppContainer.jsx */}
-const AppContainer = {( name, email, number )} => (
-  <div className="appContainer">
-    <SideBar name={name} email={email} number={number}/>
-    App Contents
-  </div>
-)
+We also separate concerns by extracting the `Product` UI to a child component.
+Now the `Products` page renders a list of products and the `Product` component
+renders a product UI. This separation of concerns makes it easier for someone
+going through the code to tell what each component is meant for.
 
-const Sidebar = {( name, email, number )} => (
-  <div className="sideBar">
-    <UserSection name={name} email={email} number={number}/>
-    Sidebar Contents
-  </div>
-)
+Here are some references you can check out if you wish to learn more about the
+usage of the `children` prop:
 
-const UserSection = {( name, email, number )} => (
-  <div className="userSection">
-    Name: {name}
-    Email: {email}
-    Phone Number: {number}
-  </div>
-)
-
-```
-
-The `SideBar` doesn't need to relay the props down to the `UserSection` when the `AppContainer` can do the same. We can rewrite the code using the `children` prop like so:
-
-```jsx
-{/* AppContainer.jsx */}
-const AppContainer = {( name, email, number )} => (
-  <div className="appContainer">
-    <SideBar>
-      <UserSection name={name} email={email} number={number}/>
-    </SideBar>
-    App Contents
-  </div>
-)
-
-const Sidebar = {( children )} => (
-  <div className="sideBar">
-    {children}
-    Sidebar Contents
-  </div>
-)
-
-const UserSection = {( name, email, number )} => (
-  <div className="userSection">
-    Name: {name}
-    Email: {email}
-    Phone Number: {number}
-  </div>
-)
-
-```
+- [Children in JSX - React docs](https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx)
+- [Children API - React docs](https://reactjs.org/docs/react-api.html#reactchildren)

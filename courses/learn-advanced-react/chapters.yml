@@ -3,6 +3,10 @@
   slug: getting-started
 - name: Handling Asynchronous Code
   slug: handling-asynchronous-code
+- name: Path and Query Parameters
+  slug: path-and-query-parameters
+- name: React Routing
+  slug: react-routing
 - name: Advanced State Management
   slug: advanced-state-management
 - name: Advanced Hooks
@@ -13,3 +17,7 @@
   slug: code-optimization
 - name: Locale Translations
   slug: locale-translations
+- name: Semantic HTML
+  slug: semantic-html
+- name: Compound Components
+  slug: compound-components

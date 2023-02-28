@@ -20,3 +20,6 @@
 - title: Handling Array States
   slug: handling-array-states
   page_type: lesson
+- title: Avoiding Dynamic Type Switch
+  slug: avoiding-dynamic-type-switch
+  page_type: lesson
