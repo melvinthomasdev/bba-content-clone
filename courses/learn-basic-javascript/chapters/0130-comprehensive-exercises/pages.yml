@@ -1,10 +1,19 @@
 ---
-- title: ComprehensiveExercise - Calculate Grade Using If and Else
-  slug: challenge-calculate-grade-using-if-and-else-js
+- title: ComprehensiveExercise - Calculate Grade
+  slug: challenge-calculate-grade-js
   page_type: assessment
-- title: ComprehensiveExercise - Properly Format Google Office Address
-  slug: challenge-properly-format-google-office-address-js
+- title: ComprehensiveExercise - Properly Format Office Address
+  slug: challenge-properly-format-office-address-js
   page_type: assessment
 - title: ComprehensiveExercise - Build Pizza Price Calculator
   slug: challenge-build-pizza-price-calculator-js
+  page_type: assessment
+- title: ComprehensiveExercise - Greetings
+  slug: challenge-greetings-js
+  page_type: assessment
+- title: ComprehensiveExercise - Addition in array
+  slug: challenge-addition-in-array-js
+  page_type: assessment
+- title: ComprehensiveExercise - Conditional sum or product
+  slug: challenge-conditional-sum-or-product-js
   page_type: assessment

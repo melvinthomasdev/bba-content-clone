@@ -14,28 +14,84 @@ items:
 |Chicken Pizza| 7|
 |Cookies | 20|
 
-Write a program that will
+Write a function that will
 print the total cost like this:
+`Total cost of your order is xxxxx.`
 
-```
-Total cost of your order is xxxxx.
-```
-
-<codeblock language="javascript" type="exercise" testMode="fixedInput">
+<codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 // Build Pizza Price Calculator
 </code>
 
 <solution>
-menu = { "veggie_pizza": 7, "chicken_pizza": 10, "cookies": 3 }
-order = { "veggie_pizza": 5, "chicken_pizza": 7, "cookies": 20 }
+const givenMenu = {
+	"veggie_pizza": 7,
+	"chicken_pizza": 10,
+	"cookies": 3
+};
+const givenOrder = {
+	"veggie_pizza": 5,
+	"chicken_pizza": 7,
+	"cookies": 20
+};
 
-const veggie_pizza_cost = menu["veggie_pizza"] * order["veggie_pizza"]
-const chicken_pizza_cost = menu["chicken_pizza"] * order["chicken_pizza"]
-const cookies_cost = menu["cookies"] * order["cookies"]
+function priceCalculator(menu, order) {
+	const total_veggie_pizza_cost = menu["veggie_pizza"] * order["veggie_pizza"];
+	const total_chicken_pizza_cost = menu["chicken_pizza"] * order["chicken_pizza"];
+	const total_cookies_cost = menu["cookies"] * order["cookies"];
 
-const total_cost = veggie_pizza_cost + chicken_pizza_cost + cookies_cost
+	const total_order_cost = total_veggie_pizza_cost + total_chicken_pizza_cost + total_cookies_cost;
 
-console.log(`Total cost of your order is ${total_cost}`)
+	return `Total cost of your order is ${total_order_cost}`;
+};
+
+priceCalculator(givenMenu, givenOrder);
 </solution>
+<testcases>
+<caller>
+console.log(priceCalculator(newMenu, newOrder));
+</caller>
+<testcase>
+<i>
+const newMenu = {
+	"veggie_pizza": 20,
+	"chicken_pizza": 24,
+	"cookies": 10
+};
+const newOrder = {
+	"veggie_pizza": 12,
+	"chicken_pizza": 9,
+	"cookies": 21
+};
+</i>
+</testcase>
+<testcase>
+<i>
+const newMenu = {
+	"veggie_pizza": 50,
+	"chicken_pizza": 80,
+	"cookies": 4
+};
+const newOrder = {
+	"veggie_pizza": 14,
+	"chicken_pizza": 11,
+	"cookies": 25
+};
+</i>
+</testcase>
+<testcase>
+<i>
+const newMenu = {
+	"veggie_pizza": 180,
+	"chicken_pizza": 240,
+	"cookies": 40
+};
+const newOrder = {
+	"veggie_pizza": 5,
+	"chicken_pizza": 8,
+	"cookies": 9
+};
+</i>
+</testcase>
+</testcases>
 </codeblock>
