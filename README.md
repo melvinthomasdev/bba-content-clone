@@ -6,15 +6,15 @@ You can fork this repository and use it as a template for your own courses.
 
 ## Format
 
-### 1. `assets` directory ###
-This directory contains the unique assets for the courses. It contains the following sub-directories:
+### 1. `assets` directory
+This directory contains unique assets for the courses. It contains the following sub-directories:
 
 - `images`: This contains all the images used in the course. The images can be used in the markdown files in `pages` and also in `metadata.yml` in courses as home logos and logos.
 
 - `databases`: This contains the `.db` files used in the course pages when an editor makes use of `sql` and needs a database as a base for running/testing queries.
 
 
-### 2. `courses` directory ###
+### 2. `courses` directory
 This directory contains the courses data.
 Each course should be stored in a separate directory inside `courses`, with a preferrably slugified name/reference to a course, but there is no restriction.
 
@@ -115,6 +115,39 @@ Each page should be stored in a separate markdown (`.md`) file inside `pages`, w
 Additionally, the names of page files should be in the same order as they would be in `pages.yml`. For example, if you have 2 pages with slugs `convert-a-string-into-an-array` and `exercise-string-to-array` in that order, then a valid naming scheme for the page files can be  `1-convert-a-string-into-an-array` and `2-exercise-string-to-array`.
 
 Each markdown file in `pages` should contain just the content of the page in markdown fashion.
+
+### 3. `codeblock`
+
+We write our example and exercise code inside `<codeblock></codeblock>`. The attributes used with it include:
+
+#### 3.1. `<codeblock language="html" >`
+
+The attribute `language` is used to specify which programming language is utilized inside the code block.
+
+#### 3.2. `<codeblock type="exercise" >`
+
+The attribute `type` is used to specify whether it is a `lesson` or an `exercise`.
+
+#### 3.2. `<codeblock testMode="fixedInput" >`
+
+The `testMode` attribute is used to specify the mode of testing a solution to a `exercise`.
+
+The value of `testMode` could either be `fixedInput` or `multipleInput`.
+
+While `fixedInput` is used when a exercise has a fixed solution, `multipleInput`is used when we use testcases.
+
+### 4. `panel`
+
+When a single language is not sufficient to run the code, we use multiple `<panel>` tags inside our `<codeblock>`.
+For example, if we need HTML, CSS and JS to run our code, then we need to use panels for HTML, CSS and JS inside the `codeblock`.
+Its attributes include:
+
+#### 4.1. `<panel language="css" >`
+Similar to `codeblock`, the `language` attribute in `panel` is used to specify the choice of programming language.
+
+#### 4.2. `<panel hidden="true">`
+The `hidden` attribute is used to hide the code panel.
+For example, we might have added some CSS which is for styling the result. It might not specifically relate to the learnings in the lesson. In this case, we can hide the CSS `panel` using the `hidden` attribute.
 
 ## Commit hook validations
 
