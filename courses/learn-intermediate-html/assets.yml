@@ -2,4 +2,17 @@
 images:
 - html5.svg
 - html-header-image.png
+- cat-image.avif
+- cat-image.jpg
+- cat-image.webp
+- birds-small.jpg
+- birds-medium.jpg
+- birds.jpg
+- white-peacock.jpg
+- dog-image.jpg
+- dog-image-small.jpg
+- dog-image-medium.jpg
+audios:
+- birds-chirping.mp3
+- birds-chirping.wav
 databases: []

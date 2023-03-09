@@ -2,11 +2,20 @@
 - title: Picture
   slug: picture
   page_type: lesson
+- title: Source
+  slug: source
+  page_type: lesson
+- title: When to use Picture
+  slug: picture-use
+  page_type: lesson
 - title: Exercise - Picture
   slug: exercise-picture
   page_type: exercise
 - title: Audio
   slug: audio
+  page_type: lesson
+- title: Attributes of Audio
+  slug: audio-attributes
   page_type: lesson
 - title: Exercise - Audio
   slug: exercise-audio
@@ -14,11 +23,20 @@
 - title: Video
   slug: video
   page_type: lesson
+- title: Attributes of Video
+  slug: video-attributes
+  page_type: lesson
 - title: Exercise - Video
   slug: exercise-video
   page_type: exercise
 - title: iFrame
   slug: iframe
+  page_type: lesson
+- title: Attributes of iFrame
+  slug: iframe-attributes
+  page_type: lesson
+- title: Security concerns of iFrame
+  slug: iframe-security
   page_type: lesson
 - title: Exercise - iFrame
   slug: exercise-iframe
