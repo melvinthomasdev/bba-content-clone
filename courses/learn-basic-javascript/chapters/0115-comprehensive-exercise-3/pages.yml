@@ -1,10 +1,10 @@
 ---
-- title: Exercise 1
-  slug: exercise-1
+- title: Challenge - My Penguin
+  slug: challenge-my-penguin-js
   page_type: assessment
-- title: Exercise 2
-  slug: exercise-2
+- title: Challenge - Book Fair
+  slug: challenge-book-fair-js
   page_type: assessment
-- title: Exercise 3
-  slug: exercise-3
+- title: Challenge - Wedding Guest
+  slug: challenge-wedding-guest-js
   page_type: assessment

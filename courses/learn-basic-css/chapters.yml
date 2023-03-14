@@ -23,12 +23,12 @@
   slug: backgrounds
 - name: Borders
   slug: borders
-- name: Comprehensive Exercise 02
-  slug: css-comprehensive-exercise-02
 - name: Opacity
   slug: opacity
 - name: Styling Links
   slug: styling-links
+- name: Comprehensive Exercise 02
+  slug: css-comprehensive-exercise-02
 - name: Styling Lists
   slug: styling-lists
 - name: Styling Tables

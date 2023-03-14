@@ -5,9 +5,12 @@
    - creator = Mort Walker
    - can-fly = false
    - can-swim = true
-3. Print the penguin's name to the console as part of a welcome message, like "Hello, I'm a penguin and my name is [NAME HERE]!"
-4. myPenguin["isAquatic"] or myPenguin["origin"], print whichever is truthy value.
-5. If your penguin can fly print "I can fly!" to the console. If it can swim, print "I can swim! if neither print "No flying or swimming for me!".
+3. Print the penguin's name to the console as part of a welcome message, like
+   "Hello, I'm a penguin and my name is [NAME HERE]!"
+4. myPenguin["isAquatic"] or myPenguin["origin"], print whichever is truthy
+   value.
+5. If your penguin can fly print "I can fly!" to the console. If it can swim,
+   print "I can swim! if neither print "No flying or swimming for me!".
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -24,21 +27,22 @@ const myBird = {
 };
 
 const birdDetails = (bird) => {
-	console.log(`Hello, I'm a bird and my name is ${bird.name}!`);
+console.log(`Hello, I'm a bird and my name is ${bird.name}!`);
 
-	//nullish coalescing operator
-	console.log(bird["isAquatic"] ?? bird["origin"]);
+    //nullish coalescing operator
+    console.log(bird["isAquatic"] ?? bird["origin"]);
 
-	//If else statement
-	if (bird["can-fly"]) {
-		console.log("I can fly!");
-	} else if (bird["can-swim"]) {
-		console.log("I can swim!");
-	} else {
-		console.log("No flying or swimming for me!");
-	};
-};
-birdDetails(myBird);
+    //If else statement
+    if (bird["can-fly"]) {
+    	console.log("I can fly!");
+    } else if (bird["can-swim"]) {
+    	console.log("I can swim!");
+    } else {
+    	console.log("No flying or swimming for me!");
+    };
+
+}; birdDetails(myBird);
+
 </solution>
 <testcases>
 <caller>

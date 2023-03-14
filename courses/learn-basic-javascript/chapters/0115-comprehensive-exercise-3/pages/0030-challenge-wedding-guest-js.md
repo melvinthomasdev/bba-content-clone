@@ -1,4 +1,6 @@
-- Given is an array of objects, where each object stores details of a wedding guest.
+- Given is an array of objects, where each object stores details of a wedding
+  guest.
+
 ```
 [
   {
@@ -33,6 +35,7 @@
   }
 ]
 ```
+
 - Print `X will have veg meal.`, for the guest who prefers veg.
 - Print `Y will have steak.`, for the guest who prefers non-veg.
 - Print `Z will have a combo meal.`, for those who prefer mixed meal.
@@ -74,25 +77,14 @@ const guestList = [{
 	}
 ]
 
-const mealPreference = (guestArray) => {
-	//Using for..of loop
-	for (const guest of guestArray) {
-		const mealPreference = guest["meal-preference"];
-		//Using switch statement
-		switch (mealPreference) {
-			case "mixed":
-				console.log(`${guest["name"]} will have a combo meal. \n`);
-				break;
-			case "non-veg":
-				console.log(`${guest["name"]} will have steak. \n`);
-				break;
-			default:
-				console.log(`${guest["name"]} will have veg meal. \n`);
-				break;
-		}
-	}
-};
+const mealPreference = (guestArray) => { //Using for..of loop for (const guest
+of guestArray) { const mealPreference = guest["meal-preference"]; //Using switch
+statement switch (mealPreference) { case "mixed":
+console.log(`${guest["name"]} will have a combo meal. \n`); break; case
+"non-veg": console.log(`${guest["name"]} will have steak. \n`); break; default:
+console.log(`${guest["name"]} will have veg meal. \n`); break; } } };
 mealPreference(guestList);
+
 </solution>
 <testcases>
 <caller>

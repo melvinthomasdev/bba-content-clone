@@ -23,19 +23,22 @@
   is-available = false
 ```
 
-1. From the data-set given above, create an array of objects, each object describes a book and has properties for:
+1. From the data-set given above, create an array of objects, each object
+   describes a book and has properties for:
    - title (a string),
    - author (a string),
    - already-read (a boolean indicating if you read it yet).
-   - is-available (a boolean indicating whether the book is available in the market)
-2. Update the given program such that it takes the data-set and for each book and logs the book title and book author like so: 
-`"The Hobbit" by J.R.R. Tolkien.`.
-3. For each book, if you read it, log a string like 
-`You already read "The Hobbit" by J.R.R. Tolkien`.
-4. If you did not read it and it is available, log a string like 
-`You can read "The Hobbit" by J.R.R. Tolkien next as it is available.`
-5. If you did not read it and it is not available, log a string like 
-`You have not read "The Lord of the Rings" by J.R.R. Tolkien and it is not available.`
+   - is-available (a boolean indicating whether the book is available in the
+     market)
+2. Update the given program such that it takes the data-set and for each book
+   and logs the book title and book author like so:
+   `"The Hobbit" by J.R.R. Tolkien.`.
+3. For each book, if you read it, log a string like
+   `You already read "The Hobbit" by J.R.R. Tolkien`.
+4. If you did not read it and it is available, log a string like
+   `You can read "The Hobbit" by J.R.R. Tolkien next as it is available.`
+5. If you did not read it and it is not available, log a string like
+   `You have not read "The Lord of the Rings" by J.R.R. Tolkien and it is not available.`
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -79,15 +82,17 @@ const nextBook = (bookArray) => {
 	for (const book of bookList) {
 		console.log(`"${book.title}" by ${book.author}.\n`);
 
-		if (book["already-read"]) {
-			console.log(`You already read "${book.title}" by ${book.author}.\n`);
-		} else if (!book["already-read"] && !book["is-available"]) {
-			console.log(`You have not read "${book.title}" by ${book.author} and it is not available.\n`);
-		} else {
-			console.log(`You can read "${book.title}" by ${book.author} next as it is available.\n`);
-		};
-	}
+    	if (book["already-read"]) {
+    		console.log(`You already read "${book.title}" by ${book.author}.\n`);
+    	} else if (!book["already-read"] && !book["is-available"]) {
+    		console.log(`You have not read "${book.title}" by ${book.author} and it is not available.\n`);
+    	} else {
+    		console.log(`You can read "${book.title}" by ${book.author} next as it is available.\n`);
+    	};
+    }
+
 }
+
 </solution>
 <testcases>
 <caller>
