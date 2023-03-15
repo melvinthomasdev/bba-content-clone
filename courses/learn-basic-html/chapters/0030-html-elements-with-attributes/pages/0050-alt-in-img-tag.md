@@ -2,10 +2,10 @@ There is another important thing to note about
 the `img` tags. You'll notice that the `img` tag
 uses `alt` as shown below:
 
-<codeblock language="html" type="lesson">
+<codeblock language="html" type="lesson" images="view-from-a-plane.jpg">
 <code>
 <img src="view-from-a-balcony.jpg" alt="The view from a balcony" width="400px">
-<img src="view-from-a-somewhere.jpg" alt="The view from a plane" width="235">
+<img src="view-from-a-somewhere.jpg" alt="The view from a plane" width="235px">
 </code>
 </codeblock>
 
@@ -28,5 +28,5 @@ or the link that you have used for the
 image is not correct. Here, we have mistakenly
 provided a wrong image name. In the code editor
 given above, change the `src` value. Change
-it to `view-from-a-plane.jpg`
+it from 'view-from-a-somewhere.jpg' to `view-from-a-plane.jpg`
 and you'll see the image loading properly.
