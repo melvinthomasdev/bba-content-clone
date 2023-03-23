@@ -149,6 +149,11 @@ Similar to `codeblock`, the `language` attribute in `panel` is used to specify t
 The `hidden` attribute is used to hide the code panel.
 For example, we might have added some CSS which is for styling the result. It might not specifically relate to the learnings in the lesson. In this case, we can hide the CSS `panel` using the `hidden` attribute.
 
+### 5. Writing code snippet
+
+While writing code snippet you should mention the language name, for example **javascript**
+should be ` ```js `.
+
 ## Commit hook validations
 
 To make sure the data is valid, we have a commit hook that runs validations on the data on each commit made to the repository. If the data is not valid, the hook will fail.
