@@ -1,0 +1,10 @@
+---
+- title: Challenge - Star Wars
+  slug: challenge-star-wars-js
+  page_type: assessment
+- title: Challenge - List of Songs
+  slug: challenge-list-of-songs-js
+  page_type: assessment
+- title: Challenge - Array of Numbers
+  slug: challenge-array-of-numbers-js
+  page_type: assessment
