@@ -114,7 +114,7 @@ Now we'll look at another case, where we don't have to display the count along
 with the pluralized word, i.e. just "article" or "articles". If you just need to
 display either one of the forms, follow the steps below:
 
-1. Export the following constants from the `src/common/constants.js` file:
+1. Export the following constants from the `src/constants.js` file:
 
 ```js
 export const SINGULAR = { count: 1 };
