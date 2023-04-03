@@ -1,6 +1,6 @@
 ---
-- title: Root Elements and React Fragments
-  slug: root-elements-and-react-fragments
+- title: Basics of JSX
+  slug: basics-of-jsx
   page_type: lesson
 - title: Components
   slug: components
@@ -10,7 +10,4 @@
   page_type: lesson
 - title: Prefer ES6 Arrow Functions
   slug: prefer-es6-arrow-functions
-  page_type: lesson
-- title: Inline Functions
-  slug: inline-functions
   page_type: lesson

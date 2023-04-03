@@ -2,6 +2,9 @@
 - title: Props Basics
   slug: props-basics
   page_type: lesson
+- title: Boolean Props
+  slug: boolean-props
+  page_type: lesson
 - title: The Spread Syntax
   slug: the-spread-syntax
   page_type: lesson

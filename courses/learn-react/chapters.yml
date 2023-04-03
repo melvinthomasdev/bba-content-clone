@@ -1,10 +1,10 @@
 ---
 - name: Getting started
   slug: getting-started
-- name: Intro to React
-  slug: intro-to-react
-- name: Basics of React
-  slug: basics-of-react
+- name: Your First Component
+  slug: your-first-component
+- name: JSX Under the Hood
+  slug: jsx-under-the-hood
 - name: Props
   slug: props
 - name: Conditional Rendering
