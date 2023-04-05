@@ -11,3 +11,6 @@
 - title: Inline Functions
   slug: inline-functions
   page_type: lesson
+- title: Stopping Event Propagation
+  slug: stopping-event-propagation
+  page_type: exercise

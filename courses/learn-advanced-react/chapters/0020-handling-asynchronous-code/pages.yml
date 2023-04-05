@@ -5,6 +5,15 @@
 - title: Try, Catch and Finally
   slug: try-catch-and-finally
   page_type: lesson
+- title: Converting Promises
+  slug: converting-promises
+  page_type: exercise
+- title: Using Try/Catch with React
+  slug: using-try-catch-with-react
+  page_type: exercise
+- title: Using Finally
+  slug: using-finally
+  page_type: exercise
 - title: Axios
   slug: axios
   page_type: lesson
@@ -20,6 +29,9 @@
 - title: Promise.all
   slug: promise-all
   page_type: lesson
+- title: Using Promise.all
+  slug: using-promise-all
+  page_type: exercise
 - title: Using State to Store a Response
   slug: using-state-to-store-a-response
   page_type: lesson

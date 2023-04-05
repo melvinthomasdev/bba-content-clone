@@ -14,3 +14,6 @@
 - title: Keys Under the Hood
   slug: keys-under-the-hood
   page_type: lesson
+- title: Rendering an Array
+  slug: rendering-an-array
+  page_type: exercise

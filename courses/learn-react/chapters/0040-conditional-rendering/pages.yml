@@ -17,3 +17,6 @@
 - title: Optional Chaining
   slug: optional-chaining
   page_type: lesson
+- title: Refactor Conditional Code
+  slug: refactor-conditional-code
+  page_type: exercise

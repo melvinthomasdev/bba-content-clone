@@ -23,3 +23,6 @@
 - title: Avoiding Dynamic Type Switch
   slug: avoiding-dynamic-type-switch
   page_type: lesson
+- title: Inserting a State
+  slug: inserting-a-state
+  page_type: exercise

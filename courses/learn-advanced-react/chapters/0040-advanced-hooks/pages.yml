@@ -2,6 +2,12 @@
 - title: useContext Hook
   slug: usecontext-hook
   page_type: lesson
+- title: Using Context
+  slug: using-context
+  page_type: exercise
 - title: useReducer Hook
   slug: usereducer-hook
   page_type: lesson
+- title: Using Reducers
+  slug: using-reducers
+  page_type: exercise

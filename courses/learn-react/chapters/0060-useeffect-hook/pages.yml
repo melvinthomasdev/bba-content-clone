@@ -5,3 +5,9 @@
 - title: Adding a Cleanup function
   slug: adding-a-cleanup-function
   page_type: lesson
+- title: Using an Effect
+  slug: using-an-effect
+  page_type: exercise
+- title: Using Array Dependencies
+  slug: using-array-dependencies
+  page_type: exercise

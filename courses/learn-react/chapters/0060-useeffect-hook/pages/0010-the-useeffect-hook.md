@@ -10,6 +10,12 @@ The syntax is as simple as `useState(function, dependencies)`.
   * If dependencies are an empty array `[]`, the function runs just once on mount.
   * If dependencies contain variables like `[v1, v2]`, the function runs once on mount and every time either v1 or v2 changes.
 
+One important thing to note is that we cannot pass an array or an object as a dependency.
+
+React uses a shallow comparison to check if the dependency’s reference has changed but arrays and objects change reference on every render causing an infinite loop.
+
+The simplest way to solve this is by breaking the array or object down into primitives and passing them but this technique won't work on larger non-primitives. We will explain more robust methods in the advanced guide.
+
 For more information on dependency arrays, you can jump to this section of our advanced guide.
 <!-- TODO: Link to the advanced guide once published  -->
 
