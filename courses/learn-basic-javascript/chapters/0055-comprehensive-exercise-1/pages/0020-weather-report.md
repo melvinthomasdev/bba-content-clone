@@ -1,24 +1,37 @@
-Sam cannot resist intense cold, he starts shivering at 15°c. The current temperature is 25°c. Every half an hour temperature drops by 1°c. Update the function to find out how long before Sam starts shivering?
-Expected Output: `Sam will start shivering in x hours.`
+Sam cannot resist intense cold,
+he starts shivering at `shiveringTemperature`.
+The current temperature provided
+will be `initialTemperature`.
+
+Every half an hour temperature
+drops by certain degree provided
+by hourlyTemperatureDecrease.
+
+Update the function to find
+out how long before Sam starts
+shivering and log it to the console.
+
+Expected Output: 
+`Sam will start shivering in x hours.`
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
-const timeTillShivering = () => {
-  //Write your code here
-}
-</code>
-<solution>
-let shiveringTemperatureSam = 15;
-let initialTemperatureSam = 25;
-let hourlyTemperatureDecreaseSam = 2;
 const timeTillShivering = (
-  shiveringTemperature, 
+  shiveringTemperature,
   initialTemperature,
   hourlyTemperatureDecrease
   ) => {
+  //Write your code here
+};
+</code>
+<solution>
+const timeTillShivering = (
+  shiveringTemperature,
+  initialTemperature,
+  hourlyTemperatureDecrease
+) => {
   return `Sam will start shivering in ${(initialTemperature-shiveringTemperature)/hourlyTemperatureDecrease} hours.`;
 };
-timeTillShivering(shiveringTemperatureSam, initialTemperatureSam, hourlyTemperatureDecreaseSam)
 </solution>
 <testcases>
 <caller>
