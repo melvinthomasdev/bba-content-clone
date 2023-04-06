@@ -83,7 +83,7 @@ const car = {
   fuelType: fuelTypes[1],
 };
 
-console.log(`It is a ${car.model} car that runs on ${car.fuelType} and has ${seatingCapacity} seats.`);
+console.log(`It is a ${car.model} car that runs on ${car.fuelType} and has ${car.seatingCapacity} seats.`);
 </code>
 </codeblock>
 
