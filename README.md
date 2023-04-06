@@ -166,3 +166,128 @@ yarn install
 ```
 
 After this, the hook will be set up and will run on each commit. The error messages, if a validation fails are quite verbose and should be self-explanatory. They are mostly related to the validations mentioned in the Format section.
+
+
+# Style Guide
+
+## Language Styling
+
+(a) Use UK English
+
+(b) Focus on clarity
+
+(c) Avoid pedantic language - (should be explained with examples)
+
+(d) Avoid repetition
+
+(e) Write in the active voice: a healthy mix of 'we' and 'you'. For reference, check out the writing style in http://learnyouahaskell.com/syntax-in-functions#pattern-matching
+
+(f) Experimental: Ventilated Prose Style of writing (reference: https://github.com/bigbinary/bb-academy-web/blob/master/doc/writing-style.md)
+
+(g) Avoid writing in parentheses.
+
+(h) Avoid run-on sentences. Also, avoid hanging sentences and starting sentences with an ellipsis. Ellipsis is the three dots that we sometimes see in informal writing. All of these styles of writing create incomplete sentences. We need to stay clear of this.
+https://en.wikipedia.org/wiki/Ellipsis
+
+## Content
+
+(a) Should not be opinionated
+
+(b) Examples should be universal (e.g. ice cream is understood by most everyone around the globe)
+
+(c) External links should be avoided and used only as a last resort
+
+(d) Use '-' for starting list items
+
+(e) If a code example is going to result in an error, mention it before the example.
+
+(f) Ensure that the code doesn't run off the edges in the code editor. Try to keep the whole code inside the code editor edges.
+
+(g) To add image xyz.jpg on a page, write this in your md file:
+<image>xyz.jpg</image>
+Look at db/courses/ruby/40-array/220-subset.md for example
+That same image file should exist in app/assets/images/courses/<course_name>/
+
+(h) No code editor in a chapter should be without some introductory text.
+
+(i) Try to keep the use of jargons at a bay. These turn students away. Use them only when really necessary, for example, when you need to reference the topic in later chapters.
+
+(j) Highlighting Code: Backticks for any code, or even mentions of method or property names, for example `addEventListener`
+
+(k) Highlighting non-Code: Bold for anything that isn't code but needs highlighting. This even includes values like 32px. Don't mix this with quotes or anything else. Just use Bold text.
+
+(l) Use caseSensitiveOutput = true in the <editor> tag when you want to test for case in the output
+
+(m) To give images styling, use the `containerClasses` and `imageClasses` props. You can look up their usage in other lessons. Do a global search to look for them.
+
+## Creating a new Course
+
+(i) All courses exist in the `courses` folder in the root folder.
+
+(ii) The `constant.rb` file is where you'll find the single source of truth for data on the courses. This is also from where the application would pick up the details of your course. You can find it as `/config/initializers/constant.rb`.
+
+(iii) Course name should match the one you provide in the `constant.rb` file.
+
+(iv) All courses need a `TOC.yml` file. You can pick up the syntax from TOCs from other courses in the application.
+
+(v) All courses need a header image. This should be located in `/app/assets/images/common`.
+
+## Conventions
+
+(i) File naming starts with 100 and continues forward with multiples of 10. So, the first file in the module could be names like this: '100-design-instruments' and the next one would be '110-design-instruments-ex1'. We use hyphens as delimiters in our filenames.
+
+However, in the practice questions section, file naming continues forward with multiples of 5. So, the first file in the practice questions module could be like this: '100-comprehensive-exercise-ex1' and the next one '105-comprehensive-exercise-ex1'.
+
+The reason for starting filenames with 100:
+a. In GitHub, we can have file naming issues, for example, files starting with '10' will come before files starting with '2'. Whereas, when we start filenames with 100, we get a leeway of 100 files before this issue recurs.
+b. Starting names of subsequent filenames with multiples of 10 or 5 (In the case of practice questions) gives the course creators the benefit that they can add more files between these files without having to change all the other filenames.
+c. Avoiding zero indexing: Instead of starting with 100, the numbering starts with 110. This way, we can avoid the problems associated with starting the count from 0. If we start the count from 100, our 10th module will be 190 instead of 200. This can cause issues if the course creator is not vigilant.
+
+(ii) Slug naming: Slugs should have all lowercase letters. Hyphens should be used as delimiters. Example: 'exercise-text-color'
+
+(iii) Title naming:
+
+(iv) Exercise file naming:
+
+(v) Variable naming: Try to ensure good variable names by naming variables for their utility. For example, instead of
+let var1 = "lion"
+you can say
+let animal = "lion"
+
+Apart from this, we can use some standard names throughout the academy:
+(a) Eve Smith
+(b) Sam Smith
+(c) Renu Sen
+(d) Lao Xun
+(e) Linh Tran
+(f) Chinua Achebe
+(g) Carlos Alberti
+
+(vi) Text Wrapping:
+All lines of code that exceed editor width get wrapped by default to avoid horizontal scrolling.
+If there is a specific case where the content creator wants content to not be wrapped, add an additional property wrapText='false' to the editor instance.
+
+(vii) Adding code in lesson title
+You can use backticks (``) to add code in the lesson titles. If you do use backticks in the title, it is required to use double quotes around the complete lesson title.
+
+## Editing Checklist
+
+- Check the module for language clarity, conceptual correctness, grammatical consistency and typos
+- Check the code blocks for correctness, formatting and good coding style
+- Check the code blocks in exercises for correct solution
+- Check the code blocks in exercises for hints
+- Check the chapters for correct titles and slugs
+- Check the filenames
+- Check deployment
+
+## Miscellaneous
+
+Single Action --> Design the chapter in such a way that the student has to perform a single action at the end.
+If it feels like there should be more than actions, split them in two chapters.
+Practice exercise chapters can be standalone chapters and they can have multiple action points.
+
+No Scroll --> (Try to) Write only so much that the text and the exercise can be completely displayed in a single 1080p screen. Scrolling should be avoided.
+
+Focus on practical chapters first, theory at the last. --> For e.g. the introductory section in JS is to be created later after we have created and launched a practical version of the course.
+
+Mobile Design/mobile screen considerations --> Not our concern right now. This will be charted once web is over.
