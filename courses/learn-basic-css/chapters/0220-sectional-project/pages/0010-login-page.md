@@ -7,8 +7,4 @@ to test!
 
 
 
-Here is a [link](https://academy.bigbinary.com/projects/login-form)
-to the CSS sectional project. Use this
-[neetoCode](https://neetocode.com/create/webpage/bigbinary-workshop/HCJ-IBH) to recreate this project.
-Use your creativity and make it even better. We
-know you'll do great!
+Visit the [Basic CSS Project Page](https://academy.bigbinary.com/projects/login-form) to read more and start building.

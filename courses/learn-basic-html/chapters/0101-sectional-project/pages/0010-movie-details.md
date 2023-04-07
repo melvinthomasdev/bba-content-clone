@@ -7,9 +7,4 @@ to test!
 
 
 
-
-Here is a [link](https://academy.bigbinary.com/projects/movie-details)
-to the HTML sectional project. Use this
-[neetoCode](https://neetocode.com/create/webpage/bigbinary-workshop/HCJ-ORN) to recreate this project.
-Use your creativity and make it even better. We
-know you'll do great!
+Visit the [Basic HTML Project Page](https://academy.bigbinary.com/projects/movie-details) to read more and start building.
