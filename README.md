@@ -292,7 +292,7 @@ Focus on practical chapters first, theory at the last. --> For e.g. the introduc
 
 Mobile Design/mobile screen considerations --> Not our concern right now. This will be charted once web is over.
 
-## With respect to comprehensive excercise content creation:
+## With respect to comprehensive exercise content creation:
 
 - Use examples and questions that are universally known to a large number of people in the world. Make the context interesting with the standard things like car, cat, dog etc. (Taken from our about section)
 - Keep the question statements concise and to the point. Try to reduce the length of the question statements without sacrificing clarity. Clarity is always the top priority.
