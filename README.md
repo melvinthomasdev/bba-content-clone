@@ -291,3 +291,55 @@ No Scroll --> (Try to) Write only so much that the text and the exercise can be 
 Focus on practical chapters first, theory at the last. --> For e.g. the introductory section in JS is to be created later after we have created and launched a practical version of the course.
 
 Mobile Design/mobile screen considerations --> Not our concern right now. This will be charted once web is over.
+
+## With respect to comprehensive excercise content creation:
+
+- Use examples and questions that are universally known to a large number of people in the world. Make the context interesting with the standard things like car, cat, dog etc. (Taken from our about section)
+- Keep the question statements concise and to the point. Try to reduce the length of the question statements without sacrificing clarity. Clarity is always the top priority.
+- Instead of starting statements with "Print the value" or "Return the value," reframe the question to something like "Write a code to print the value."
+- If we need to specify a specific format for the output, use statements:
+
+  - Good: 
+    ```md
+      "print the text in the format"
+    ``` 
+  - Avoid: 
+     ```md
+       print as such or print like
+     ```
+- Instead of using X or Y, use the name of the value in the question.
+
+   - Good: 
+      ```md
+        "The Average speed of Team India was [Average Speed] feet per second."
+        "Write a function that calculates the area of a rectangle with a length of [Length] units and a width of [Width] units."
+      ``` 
+    - Avoid: 
+       ```md
+         The Average speed of Team India was X feet per second
+         Write a function that calculates the area of a rectangle with a length of X units and a width of Y units.
+       ```
+ - In solutions, always try to store values in variables instead of directly logging them, unless there is a specific reason to do so.
+
+    -  Good:
+       ```js
+        return `Sam will start shivering in ${(initialTemperature-shiveringTemperature)/hourlyTemperatureDecrease} hours.`;
+       ```
+    - Avoid:
+      ```js
+        const hoursRemainingForShivering = (currentTemperature - shiveringTemperature) / hourlyTemperatureDecrease;
+        console.log(`${name} will start shivering in ${hoursRemainingForShivering} hours.`);
+      ```
+- Avoid addressing the user in the question statements:
+
+   - Good: 
+   ```md
+     "If the given user has read the book, log to the console .."
+     "If the input is a palindrome, the function should return true."
+   ```
+  - Avoid
+  ```md
+     If you have read the book, log to the console ..      
+     If you input a palindrome, the function should return true.
+  ```
+
