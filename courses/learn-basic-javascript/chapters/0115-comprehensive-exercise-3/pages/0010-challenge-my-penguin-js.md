@@ -1,16 +1,19 @@
-1. Create an object named myPenguin .
+1. Create an object named `myPenguin`.
 2. Add the following properties:
-   - name = Alfred
-   - origin = Boner's Ark
-   - creator = Mort Walker
-   - can-fly = false
-   - can-swim = true
-3. Print the penguin's name to the console as part of a welcome message, like
-   "Hello, I'm a penguin and my name is [NAME HERE]!"
-4. myPenguin["isAquatic"] or myPenguin["origin"], print whichever is truthy
-   value.
-5. If your penguin can fly print "I can fly!" to the console. If it can swim,
-   print "I can swim! if neither print "No flying or swimming for me!".
+- name = Alfred
+- origin = Boner's Ark
+- creator = Mort Walker
+- can-fly = false
+- can-swim = true
+3. Print the penguin's name to the console
+as part of a welcome message, as such:
+`Hello, I'm a penguin and my name is [NAME HERE]!`
+4. myPenguin["habitat"] or myPenguin["origin"],
+print whichever is truthy value.
+5. If your penguin can fly print 
+`I can fly!` to the console.
+If it can swim, print `I can swim!` or else
+print `No flying or swimming for me!`.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -27,22 +30,22 @@ const myBird = {
 };
 
 const birdDetails = (bird) => {
-console.log(`Hello, I'm a bird and my name is ${bird.name}!`);
+  console.log(`Hello, I'm a bird and my name is ${bird.name}!`);
 
-    //nullish coalescing operator
-    console.log(bird["isAquatic"] ?? bird["origin"]);
+  //nullish coalescing operator
+  console.log(bird["isAquatic"] ?? bird["habitat"]);
 
-    //If else statement
-    if (bird["can-fly"]) {
-    	console.log("I can fly!");
-    } else if (bird["can-swim"]) {
-    	console.log("I can swim!");
-    } else {
-    	console.log("No flying or swimming for me!");
-    };
+  //If else statement
+  if (bird["can-fly"]) {
+    console.log("I can fly!");
+  } else if (bird["can-swim"]) {
+    console.log("I can swim!");
+  } else {
+    console.log("No flying or swimming for me!");
+  };
+};
 
-}; birdDetails(myBird);
-
+birdDetails(myBird);
 </solution>
 <testcases>
 <caller>
@@ -63,7 +66,7 @@ const newPenguin = {
 <i>
 const newPenguin = {
 	"name": "Blagden",
-	"origin": "The Inheritance Cycle",
+	"habitat": "Tundra",
 	"creator": "Christopher Paolini",
 	"can-fly": true,
 	"can-swim": false
@@ -85,10 +88,20 @@ const newPenguin = {
 <i>
 const newPenguin = {
 	"name": "Donald Duck",
-	"origin": "The Wise Little Hen",
+	"habitat": "Antarctic",
 	"creator": "Dick Lundy",
 	"can-fly": false,
 	"can-swim": true
+}
+</i>
+</testcase>
+<testcase>
+<i>
+const newPenguin = {
+	"name": "Donald Duck",
+	"creator": "Dick Lundy",
+	"can-fly": false,
+	"can-swim": true,
 }
 </i>
 </testcase>
