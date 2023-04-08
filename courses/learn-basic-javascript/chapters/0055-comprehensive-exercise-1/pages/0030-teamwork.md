@@ -1,20 +1,11 @@
-Ram, Yusuf and Chris are
-competing as a team for India
-in olympics relay race. 
+Ram, Yusuf and Chris are competing as a team for India in the Olympics relay race. Each has to do 1 lap then pass the baton.
 
-Each has to do 1 lap then
-pass the baton.
-
-Average speeds of all three
-given are `averageSpeedRam`,
-`averageSpeedYusuf`, and 
-`averageSpeedChris` respectively.
+The average speed of each of them are given in the variables `averageSpeedRam`, `averageSpeedYusuf`, and `averageSpeedChris` respectively.
 
 Update the function such that
 it logs to the console the
-average speed of Team India
-as such:
-`The Average speed of Team India was X feet per second.`
+average speed of Team India in the format: 
+`The Average speed of Team India was [Average Speed] feet per second.`
 
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
@@ -33,7 +24,8 @@ const getAverageSpeeds = (
   averageSpeedYusuf,
   averageSpeedChris
 ) => {
-  console.log(`The Average speed of Team India was ${(averageSpeedRam + averageSpeedYusuf + averageSpeedChris)/3} feet per second.`);
+  const averageSpeed = (averageSpeedRam + averageSpeedYusuf + averageSpeedChris)/3;
+  console.log(`The Average speed of Team India was ${averageSpeed} feet per second.`);
 };
 
 </solution>

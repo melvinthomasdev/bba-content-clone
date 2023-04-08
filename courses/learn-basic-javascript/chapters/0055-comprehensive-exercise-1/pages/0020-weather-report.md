@@ -1,61 +1,61 @@
-Sam cannot resist intense cold,
-he starts shivering at `shiveringTemperature`.
-The current temperature provided
-will be `initialTemperature`.
+Different people have different resistance to temparature change. You need to find out how long does it take before the person starts shivering. 
 
-Every half an hour temperature
-drops by certain degree provided
-by hourlyTemperatureDecrease.
+* You are given variables, `personName`, `currentTemperature` and the `shiveringTemperature` (temperature at which the person will start shivering) 
 
-Update the function to find
-out how long before Sam starts
-shivering and log it to the console.
+* If every half an hour temperature drops by certain degree provided by `hourlyTemperatureDecrease` variable.
 
-Expected Output: 
-`Sam will start shivering in x hours.`
+* Find out how many hours will it take before the person starts shivering, store it to a variable called `hoursRemainingForShivering` and then log it to the console in the format:
+`[name] will start shivering in [hoursRemainingForShivering] hours`
+
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const timeTillShivering = (
+  name,
   shiveringTemperature,
-  initialTemperature,
+  currentTemperature,
   hourlyTemperatureDecrease
   ) => {
-  //Write your code here
+  // Write your code here
 };
 </code>
 <solution>
 const timeTillShivering = (
+  name,
   shiveringTemperature,
-  initialTemperature,
+  currentTemperature,
   hourlyTemperatureDecrease
 ) => {
-  return `Sam will start shivering in ${(initialTemperature-shiveringTemperature)/hourlyTemperatureDecrease} hours.`;
+   const hoursRemainingForShivering = (currentTemperature - shiveringTemperature) / hourlyTemperatureDecrease;
+   console.log(`${name} will start shivering in ${hoursRemainingForShivering} hours.`);
 };
 </solution>
 <testcases>
 <caller>
-console.log(timeTillShivering(shiveringTemperature, initialTemperature, hourlyTemperatureDecrease));
+timeTillShivering(name, shiveringTemperature, currentTemperature, hourlyTemperatureDecrease);
 </caller>
 <testcase>
 <i>
-let shiveringTemperature = 20;
-let initialTemperature = 30;
-let hourlyTemperatureDecrease = 2;
+const name = "Raghav";
+const shiveringTemperature = 20;
+const currentTemperature = 30;
+const hourlyTemperatureDecrease = 2;
 </i>
 </testcase>
 <testcase>
 <i>
-let shiveringTemperature = 5;
-let initialTemperature = 45;
-let hourlyTemperatureDecrease = 2;
+const name = "Jatin";
+const shiveringTemperature = 5;
+const currentTemperature = 45;
+const hourlyTemperatureDecrease = 2;
 </i>
 </testcase>
 <testcase>
 <i>
-let shiveringTemperature = 7;
-let initialTemperature = 32;
-let hourlyTemperatureDecrease = 2;
+const name = "Sam";
+const shiveringTemperature = 7;
+const currentTemperature = 32;
+const hourlyTemperatureDecrease = 2;
 </i>
 </testcase>
 </testcases>
