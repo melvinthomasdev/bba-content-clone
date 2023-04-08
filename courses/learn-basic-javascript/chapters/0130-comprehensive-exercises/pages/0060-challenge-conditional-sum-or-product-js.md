@@ -25,7 +25,7 @@ const sumOrProductOfN = (num, operator) => {
 		}
 		return product;
 	} else {
-		return "Enter a valid Input";
+		return "Not a valid Input";
 	}
 };
 sumOrProductOfN(8, 'sum');
