@@ -33,7 +33,8 @@ const checkout = async () => {
   console.log(message);
 
   const status = await showOrderStatus;
-  console.log(message);
+  console.log(status);
 }
+checkout();
 </solution>
 </codeblock>
