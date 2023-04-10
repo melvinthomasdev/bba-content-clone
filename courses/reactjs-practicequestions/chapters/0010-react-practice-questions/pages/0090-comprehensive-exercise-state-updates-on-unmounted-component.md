@@ -4,8 +4,8 @@ Solution 1 is a basic solution which attempts to hotfix the hook with an edge ca
 
 Solution 2 attempts to abstract away the solution in a custom hook.
 
-Question: [Link](https://neetocode.com/create/react/academy/dd8a8dee-f750-4eba-81e7-05fa89623b62)
+Question: [Link](https://neetocode.com/create/react/academy/JSX-LQM)
 
-Solution - 1: [Link](https://neetocode.com/create/react/academy/5ba76e6e-482d-41f0-a08b-c8207d3067dc)
+Solution - 1: [Link](https://neetocode.com/create/react/academy/JSX-UVM)
 
-Solution - 2: [Link](https://neetocode.com/create/react/academy/b996c730-695a-4abe-8401-3809387eea8a)
+Solution - 2: [Link](https://neetocode.com/create/react/academy/JSX-BQL)

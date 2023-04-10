@@ -2,6 +2,6 @@
 
 Attempt the sandbox below. You can verify your answer by referring to the solution.
 
-Question: [Link](https://neetocode.com/create/react/academy/5eb1132c-a683-4fcc-9070-879cd9429b5b)
+Question: [Link](https://neetocode.com/create/react/academy/JSX-Q1A)
 
-Solution: [Link](https://neetocode.com/create/react/academy/516910b3-52ca-4823-8755-4d88e62b117b)
+Solution: [Link](https://neetocode.com/create/react/academy/JSX-XYF)
