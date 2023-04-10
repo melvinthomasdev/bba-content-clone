@@ -294,6 +294,9 @@ Mobile Design/mobile screen considerations --> Not our concern right now. This w
 
 ## With respect to comprehensive exercise content creation:
 
+- When raising a pull request (PR) with a question, mention the JavaScript concepts used in the solution along with the lesson number in which they were discussed. This will help in two ways:
+   - Ensuring that the concepts were covered in the lessons leading up to the question.
+   - Determining if the question covers enough concepts to be marked as comprehensive."  
 - Use examples and questions that are universally known to a large number of people in the world. Make the context interesting with the standard things like car, cat, dog etc. (Taken from our about section)
 - Keep the question statements concise and to the point. Try to reduce the length of the question statements without sacrificing clarity. Clarity is always the top priority.
 - Instead of starting statements with "Print the value" or "Return the value," reframe the question to something like "Write a code to print the value."
@@ -330,7 +333,7 @@ Mobile Design/mobile screen considerations --> Not our concern right now. This w
         const hoursRemainingForShivering = (currentTemperature - shiveringTemperature) / hourlyTemperatureDecrease;
         console.log(`${name} will start shivering in ${hoursRemainingForShivering} hours.`);
       ```
-- Avoid addressing the user in the question statements:
+- To maintain a consistent pattern, avoid addressing the user in the question statements, as we may not be able to do so in all of the questions.
 
    - Good: 
    ```md
