@@ -324,15 +324,15 @@ Mobile Design/mobile screen considerations --> Not our concern right now. This w
        ```
  - In solutions, always try to store values in variables instead of directly logging them, unless there is a specific reason to do so.
 
-    -  Good:
+    - Good:
        ```js
-        return `Sam will start shivering in ${(initialTemperature-shiveringTemperature)/hourlyTemperatureDecrease} hours.`;
+         const hoursRemainingForShivering = (currentTemperature - shiveringTemperature) / hourlyTemperatureDecrease;
+         console.log(`${name} will start shivering in ${hoursRemainingForShivering} hours.`);
        ```
     - Avoid:
-      ```js
-        const hoursRemainingForShivering = (currentTemperature - shiveringTemperature) / hourlyTemperatureDecrease;
-        console.log(`${name} will start shivering in ${hoursRemainingForShivering} hours.`);
-      ```
+       ```js
+         return `Sam will start shivering in ${(initialTemperature-shiveringTemperature)/hourlyTemperatureDecrease} hours.`;
+       ```
 - To maintain a consistent pattern, avoid addressing the user in the question statements, as we may not be able to do so in all of the questions.
 
    - Good: 
