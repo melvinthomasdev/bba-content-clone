@@ -300,8 +300,27 @@ Mobile Design/mobile screen considerations --> Not our concern right now. This w
 - Use examples and questions that are universally known to a large number of people in the world. Make the context interesting with the standard things like car, cat, dog etc. (Taken from our about section)
 - Keep the question statements concise and to the point. Try to reduce the length of the question statements without sacrificing clarity. Clarity is always the top priority.
 - Instead of starting statements with "Print the value" or "Return the value," reframe the question to something like "Write a code to print the value."
+- When the input values are objects, rather than providing details about their properties in a sentence, it is recommended to use a table to explain them more clearly and effectively."
+  - Good
+     ```
+      If the details of a book are provided in the below format:
+     ```
+      |Key | Value |
+      |--|--|
+      |title |Malgudi Days |
+      |author |R. K. Narayan |
+      |alreadyRead |true |
+      |isAvailable |true| 
+     
+     ```
+      Write a code to ..
+     ```
+  - Avoid
+     ```
+      The `bookDetails` variable is an object that contains different details of a book, 
+       like `title`, `author` and user specific details like `alreadyRead `and `isAvailable`.
+     ``` 
 - If we need to specify a specific format for the output, use statements:
-
   - Good: 
     ```md
       "print the text in the format"
@@ -309,6 +328,15 @@ Mobile Design/mobile screen considerations --> Not our concern right now. This w
   - Avoid: 
      ```md
        print as such or print like
+     ```
+- Prefer using the term `provided` instead of `given` in place like:
+  - Good:
+     ```
+      If the details of a country are provided in the below format:
+     ```
+  - Avoid:
+     ```
+      If the details of a country are given in the below format:
      ```
 - Instead of using X or Y, use the name of the value in the question.
 
