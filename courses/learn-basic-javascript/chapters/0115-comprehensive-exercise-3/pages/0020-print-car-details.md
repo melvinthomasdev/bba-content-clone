@@ -1,15 +1,24 @@
-The `carDetails` variable is an object that contains different details of a car and it will have a different value each time the code is executed.
+If the details of a car are provided in the below format:
 
-Your task is to write a code that does the following:
+|Key | Value |
+|--|--|
+|name |Tata Nexon |
+|manufacturer |Tata |
+|countryOfOrigin | India |
+|colour | blue|
+|supportElectricOption| true|
+|electricOptionNotAvailableNow| false |
 
-* You need to log the value of either `carDetails.supportElectricOption` or `carDetails.electricOptionNotAvailableNow`, depending on which one is truthy to the console.
+Write a code that takes in these car details to perform the following actions:
+
+* You need to print the value of either `carDetails.supportElectricOption` or `carDetails.electricOptionNotAvailableNow`, depending on which one is truthy to the console.
 
 * Add a check to make sure the below conditions is executed only if the car is Electric.
 
-* Log the welcome message:
+* If it is electric, then print the welcome message:
 `Electric cars are the future! The car we are presenting now is called [Name Here].`
 
-* Log to the console these statements based on the associated conditions:  
+* You need to print the following statements based on the associated conditions:  
 	
 	* If the car manufacturer's origin is in India: `This car is made in India.`
 	* If not: `The country of origin is [Name of the country].`

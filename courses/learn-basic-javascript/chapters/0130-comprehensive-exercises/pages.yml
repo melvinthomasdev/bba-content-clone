@@ -2,9 +2,6 @@
 - title: ComprehensiveExercise - Calculate Grade
   slug: challenge-calculate-grade-js
   page_type: assessment
-- title: ComprehensiveExercise - Properly Format Office Address
-  slug: challenge-properly-format-office-address-js
-  page_type: assessment
 - title: ComprehensiveExercise - Build Pizza Price Calculator
   slug: challenge-build-pizza-price-calculator-js
   page_type: assessment

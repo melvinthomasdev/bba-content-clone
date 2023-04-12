@@ -337,12 +337,12 @@ Mobile Design/mobile screen considerations --> Not our concern right now. This w
 
    - Good: 
    ```md
-     "If the given user has read the book, log to the console .."
+     "If the given user has read the book, print .."
      "If the input is a palindrome, the function should return true."
    ```
   - Avoid
   ```md
-     If you have read the book, log to the console ..      
+     If you have read the book, print ..      
      If you input a palindrome, the function should return true.
   ```
 

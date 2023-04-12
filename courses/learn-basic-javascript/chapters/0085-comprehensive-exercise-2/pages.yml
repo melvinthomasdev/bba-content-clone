@@ -1,10 +1,10 @@
 ---
-- title: Aerial dianosaurs
-  slug: aerial-dinosaurs
+- title: Calculate and Display the Facts
+  slug: calculate-and-display-the-facts
   page_type: assessment
-- title: Assessment
-  slug: assessment
+- title: Print Company Details
+  slug: print-company-details
   page_type: assessment
-- title: Roll call
-  slug: roll-call
+- title: Even Roll Call
+  slug: even-roll-call
   page_type: assessment

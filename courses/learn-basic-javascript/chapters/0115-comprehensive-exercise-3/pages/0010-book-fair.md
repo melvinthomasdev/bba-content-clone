@@ -1,15 +1,27 @@
-The `bookDetails` variable is an object that contains different details of a book, like `title`, `author` and user specific details like `alreadyRead` and `isAvailable`. The `bookDetails` variable will have a different value each time the code is executed.
+If the details of a book are provided in the below format:
 
-* For each book, write a code that logs to the console the book title and book author in the format:
+|Key | Value |
+|--|--|
+|title |Malgudi Days |
+|author |R. K. Narayan |
+|alreadyRead |true |
+|isAvailable |true|
+
+Write a code that takes in these book details to perform the following actions:
+
+* For each book, print the book title and book author in the format:
    `[Book Name] by [Author Name]`.
 
-* Log to the console more statements, based on the given conditions:
+* You need to print these additional statements to the console based on the provided conditions:
 
 	* If the user has read it: `You have already read [Book Name] by [Author Name]`.
  
 	* If the user has not yet read it and it is available.": `Since [Book Name] by [Author Name] is available, you can read it next`
 
 	* If the user has not yet read it, but it is not available: `Currently, $[Book Name] by [Author Name] is unavailable. You can plan to read it next once it becomes available.`
+
+Make sure your code is flexible enough to work with any value of the `bookDetails` variable that meets these requirements.
+
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>

@@ -1,11 +1,10 @@
-Write a code to log to the console the result obtained from the calculation of the given two numbers, based on the given operator. 
-
+Write a code to print the result obtained from the calculation of the provided two numbers, based on the provided operator. 
 
 * The `valueOne` and `valueTwo` variables are numbers to which you need to apply the `operator` variable. 
 
 * The supported operators are `+`, `-`, `*`, and `/`. 
 
-* For anything else received, log to the console `Invalid Operator`. 
+* For anything else received, print `Invalid Operator`. 
 
 Make sure your code is flexible enough to work with any value of the `valueOne`, `valueTwo` and `operator` variable that meets these requirements.
 
