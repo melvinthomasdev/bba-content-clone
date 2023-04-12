@@ -8,7 +8,7 @@ We'll handle these one at a time. Let's begin
 with displaying the numerals on
 the calculator display:
 
-(1) To distinguish a button with a numeral
+(1) To distinguish a button having a numeral
 from other buttons, use the `isNan()`
 function.
 
