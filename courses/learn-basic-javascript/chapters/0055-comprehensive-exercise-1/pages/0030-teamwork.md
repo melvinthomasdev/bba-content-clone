@@ -31,41 +31,41 @@ const getAverageSpeeds = (
 </solution>
 <testcases>
 <caller>
-getAverageSpeeds(firstAverageSpeed, secondAverageSpeed, thirdAverageSpeed)
+getAverageSpeeds(averageSpeedRam, averageSpeedYusuf, averageSpeedChris)
 </caller>
 <testcase>
 <i>
-let firstAverageSpeed = 42;
-let secondAverageSpeed = 21;
-let thirdAverageSpeed = 43;
+let averageSpeedRam = 42;
+let averageSpeedYusuf = 21;
+let averageSpeedChris = 43;
 </i>
 </testcase>
 <testcase>
 <i>
-let firstAverageSpeed = 33;
-let secondAverageSpeed = 38;
-let thirdAverageSpeed = 32;
+let averageSpeedRam = 33;
+let averageSpeedYusuf = 38;
+let averageSpeedChris = 32;
 </i>
 </testcase>
 <testcase>
 <i>
-let firstAverageSpeed = 43;
-let secondAverageSpeed = 39;
-let thirdAverageSpeed = 36;
+let averageSpeedRam = 43;
+let averageSpeedYusuf = 39;
+let averageSpeedChris = 36;
 </i>
 </testcase>
 <testcase>
 <i>
-let firstAverageSpeed = 39;
-let secondAverageSpeed = 40;
-let thirdAverageSpeed = 40;
+let averageSpeedRam = 39;
+let averageSpeedYusuf = 40;
+let averageSpeedChris = 40;
 </i>
 </testcase>
 <testcase>
 <i>
-let firstAverageSpeed = 35;
-let secondAverageSpeed = 41;
-let thirdAverageSpeed = 38;
+let averageSpeedRam = 35;
+let averageSpeedYusuf = 41;
+let averageSpeedChris = 38;
 </i>
 </testcase>
 </testcases>
