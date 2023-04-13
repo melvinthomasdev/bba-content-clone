@@ -16,8 +16,8 @@ React uses a shallow comparison to check if the dependency’s reference has cha
 
 The simplest way to solve this is by breaking the array or object down into primitives and passing them but this technique won't work on larger non-primitives. We will explain more robust methods in the advanced guide.
 
-For more information on dependency arrays, you can jump to this section of our advanced guide.
-<!-- TODO: Link to the advanced guide once published  -->
+<!-- For more information on dependency arrays, you can jump to this section of our advanced guide. -->
+<!-- TODO: Link to courses/learn-advanced-react/chapters/0060-code-optimization/pages/0050-dependency-arrays in the advanced guide once published  -->
 
 Here's a simple example where we initialize contacts based on an external API called `fetchContacts`:
 
