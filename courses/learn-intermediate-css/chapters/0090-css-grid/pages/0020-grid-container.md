@@ -5,7 +5,7 @@ good to know while working with grid, like **Grid Cell**, **Grid Lines** and
 
 **Grid Container:**
 
-<image>grid.png</image>
+<image>grid_container.png</image>
 
 <codeblock language="css" type="lesson">
 <code>

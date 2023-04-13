@@ -1,7 +1,7 @@
 The `grid-gap` property specifies the width of the space between rows and
 columns in a grid layout.
 
-<image>grid_gap.png</image>
+<image>grid_gap_image.png</image>
 
 <codeblock language="css" type="lesson">
 <code>
