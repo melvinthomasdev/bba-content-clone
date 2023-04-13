@@ -57,7 +57,7 @@ const currentUser = () => (
 ```
 
 - Children opens up more patterns like Compound Components. Refer to the
-  [Compound React components chapter](/react-best-practices/compound-react-components)
+  [Compound React components chapter](https://academy.bigbinary.com/learn-react/react-best-practices/compound-react-components)
   for more info on compound components and how to use them.
 
 ## When to create child components
