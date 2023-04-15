@@ -1,4 +1,4 @@
-Write a function `findPerfectSquare` that takes the given number as input and returns true if the number is a perfect square, and false otherwise.
+Write a function `findPerfectSquare` that takes the given number as input and returns "true" if the number is a perfect square, and "false" otherwise.
 
 Note: A perfect square is a number that can be expressed as the product of an integer with itself (e.g. 4 = 2 * 2, 9 = 3 * 3, 16 = 4 * 4, etc.).
 
