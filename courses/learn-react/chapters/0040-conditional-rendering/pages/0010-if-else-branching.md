@@ -1,4 +1,4 @@
-In React, you will often need to render different content depending on certain conditions. For those situations, you can the JavaScript branching statements you normally use such as `if...else`, `? :`, `&&`.
+In React, you will often need to render different content depending on certain conditions. For those situations, you can use the JavaScript branching statements that you normally use, such as `if...else`, `? :`, `&&`.
 
 The simplest one is the `if/else` statement.
 
