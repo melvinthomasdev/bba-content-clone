@@ -26,10 +26,18 @@ console.log(localStorage.length);
 localStorage.removeItem('sport');
 console.log(localStorage.getItem('sport'));
 
-localStorage.clear();
 console.log(localStorage.length);
 </code>
 </codeblock>
+
+```js
+localStorage.clear()
+```
+
+**Caution:** Do not run `localStorage.clear()` in the codeblock
+or in the **console** of this webpage, this will lead
+to clearing all your previous progress in BigBinary Academy,
+as we are currently using localStorage to store your progress.
 
 
 **sessionStorage:**
@@ -47,7 +55,9 @@ console.log(sessionStorage.getItem('name'));
 sessionStorage.clear();
 console.log(sessionStorage.length);
 </code>
-</codeblock> To view the `LocalStorage` and `sessionStorage` in your browser:
+</codeblock>
+
+      To view the `LocalStorage` and `sessionStorage` in your browser:
 
    - Chrome and Brave: Go to `Developer tools` > `Application` tab.
 
