@@ -60,13 +60,26 @@ button:active {
   Right now, simply look at it and move on to understanding the concept.
 */
 
-let quotes = ['beautiful', 'sad', 'green', 'strong', 'crazy', 'meaningful', 'fun'];
-let randomizer = document.getElementById('random-expression');
+const quotes = ['beautiful', 'sad', 'green', 'strong', 'crazy', 'meaningful', 'fun'];
+
+// selects the element which has the id "random-expression" and assigns it to the variable "randomizer".
+// As you can see from the above HTML code, in this example, the element is a `button element`.
+const randomizer = document.getElementById('random-expression');
+
+// selects the element which has the id "adjective" and assigns it to the variable "adjective".
+// As you can see from the above HTML code, in this example, the element is a `span element`.
 let adjective = document.getElementById('adjective');
+
 const handleClick = () => {
-  let randomExpression = quotes[Math.floor(Math.random() * quotes.length)];
+  // selects a quote randomly out of the array "quotes" and assigns it to the variable "randomExpression"
+  const randomExpression = quotes[Math.floor(Math.random() * quotes.length)];
+
+  // inserts the "randomExpression" value as the text content of the span element (one with id: "adjective")
   adjective.innerText = randomExpression;
+
 }
+
+// adds a method to call the function `handleClick` when someone clicks the button element.
 randomizer.addEventListener('click', handleClick);
 </panel>
 </code>

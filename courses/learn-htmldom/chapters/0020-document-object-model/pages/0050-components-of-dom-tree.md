@@ -29,20 +29,25 @@ using the `Node.nodeName` property:
   The following code will make sense as you study more in the course.
   Right now, simply look at it and move on to understanding the concept.
 */
+
 let container = document.querySelector(".container");
+
 let domTree = "";
 
 recursiveDomTreeBuilder = (parentNode) => {
   for(let child of parentNode.childNodes) {
     if(!child.hasChildNodes()) {
       domTree += `${child.nodeName}<br>`;
+
     } else {
       domTree += `${child.nodeName}<br>`;
+
       recursiveDomTreeBuilder(child);
     }
   }
 }
 recursiveDomTreeBuilder(container);
+
 container.innerHTML = domTree;
 </panel>
 </code>

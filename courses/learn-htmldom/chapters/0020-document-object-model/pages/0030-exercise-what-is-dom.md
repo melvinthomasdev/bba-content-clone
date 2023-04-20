@@ -42,6 +42,7 @@ p {
 </panel>
 <panel language="javascript">
 let tagName = "div";
+
 console.log(document.getElementsByTagName(tagName));
 </panel>
 </code>

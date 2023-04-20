@@ -26,7 +26,9 @@ h2 {
   The following code will make sense as you study more in the course.
   Right now, simply look at it and move on to understanding the concept.
 */
-let titleText = document.getElementById("title-text");
+
+const titleText = document.getElementById("title-text");
+
 titleText.style.color = titleText.innerText;
 </panel>
 </code>

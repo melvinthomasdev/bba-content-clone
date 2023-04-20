@@ -30,7 +30,10 @@ the HTML element.
   Right now, simply look at it and move on to understanding the concept.
 */
 
-let currentElement = document.getElementById("current-element");
+// selects the element which has the id "current-element" and assigns it to the variable "currentElement"
+const currentElement = document.getElementById("current-element");
+
+// inserts the quoted text as the text content of the p tag (with id: "current-element")
 currentElement.innerText = `This is a ${currentElement.tagName} tag`;
 </panel>
 </code>

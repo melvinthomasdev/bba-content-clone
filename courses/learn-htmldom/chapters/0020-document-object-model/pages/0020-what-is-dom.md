@@ -60,7 +60,9 @@ in the console:
   Right now, simply look at it and move on to understanding the concept.
 */
 
+// selects the first p tag and assigns it to the variable "pElement".
 const pElement = document.querySelector('p');
+
 console.log(pElement);
 </panel>
 </code>
