@@ -1,15 +1,18 @@
 ---
+- title: OR
+  slug: logical-or
+  page_type: exercise
+- title: Exercise - OR
+  slug: exercise-logical-or
+  page_type: exercise
 - title: AND
   slug: logical-and
-  page_type: lesson
+  page_type: exercise
 - title: Exercise - AND
   slug: exercise-logical-and
   page_type: exercise
-- title: OR
-  slug: logical-or
-  page_type: lesson
-- title: Exercise - OR
-  slug: exercise-logical-or
+- title: Comprehensive Exercise - Logical operations (AND/OR)
+  slug: comprehensive-exercise-logical-operations-and-or
   page_type: exercise
 - title: NOT
   slug: logical-not
