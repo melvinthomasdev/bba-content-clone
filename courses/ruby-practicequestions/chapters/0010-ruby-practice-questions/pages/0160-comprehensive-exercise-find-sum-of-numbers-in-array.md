@@ -39,5 +39,10 @@ list = [12, -15, 19, 58]
 list = [20, 20, 29, 18]
 </i>
 </testcase>
+<testcase>
+<i>
+list = []
+</i>
+</testcase>
 </testcases>
 </codeblock>
