@@ -7,8 +7,6 @@ the following four sports:
 - baseball
 - hockey
 
-<a></a>
-
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 sports_i_like = []
