@@ -52,3 +52,29 @@ the elements of the array `measurements`
 are of different data types.
 Such an array is known as
 a **heterogeneous array**.
+
+We can also have arrays
+of composite data type
+such as array of arrays
+or objects.
+
+Let us have a look
+at few examples below:
+
+<codeblock language="javascript" type="lesson">
+<code>
+const arrayOfArrays =[
+  [1, 2, 3, 4, 5],
+  ["Peter", "Mary", "May", "Ben"],
+  [true, false, true, false]
+];
+
+const arrayOfObjects = [
+  {one: 1, two: 2},
+  {fruit: "apple", vegetable: "onion"}
+];
+
+console.log(arrayOfArrays);
+console.log(arrayOfObjects);
+</code>
+</codeblock>
