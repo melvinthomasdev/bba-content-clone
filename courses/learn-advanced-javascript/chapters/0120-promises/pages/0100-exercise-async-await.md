@@ -8,7 +8,7 @@ both `placeOrder` and `showOrderStatus`
 such that `showOrderStatus` should be
 invoked only after the completion of `placeOrder`.
 
-<codeblock type="exercise" language="javascript" runAsync="true" timeOut="2000" testMode="fixedInput">
+<codeblock type="exercise" language="javascript" evaluateAsync="true" timeOut="2000" testMode="fixedInput">
 <code>
 const placeOrder = new Promise(resolve =>
   setTimeout(() => resolve("Order Placed"), 3000)

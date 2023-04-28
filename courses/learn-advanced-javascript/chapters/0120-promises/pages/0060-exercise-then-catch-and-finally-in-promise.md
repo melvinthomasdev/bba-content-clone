@@ -3,7 +3,7 @@ add `.finally()` to display the message -
 **"Transfer processed"** regardless of
 if the `Promise` gets resolved or rejected.
 
-<codeblock type="exercise" language="javascript" runAsync="true" timeOut="5000" testMode="fixedInput">
+<codeblock type="exercise" language="javascript" evaluateAsync="true" timeOut="5000" testMode="fixedInput">
 <code>
 const transferMoney = ({ to, amount }) => new Promise((resolve, reject) => {
   setTimeout(() => {

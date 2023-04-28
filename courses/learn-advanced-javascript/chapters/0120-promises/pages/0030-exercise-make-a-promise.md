@@ -12,7 +12,7 @@ The message should not be shown
 if the value of `noOfItems`
 is lesser than `5`.
 
-<codeblock type="exercise" language="javascript" runAsync="true" timeOut="2000" testMode="fixedInput">
+<codeblock type="exercise" language="javascript" evaluateAsync="true" timeOut="2000" testMode="fixedInput">
 <code>
 const placeOrder = noOfItems => {
   setTimeout(() => {
