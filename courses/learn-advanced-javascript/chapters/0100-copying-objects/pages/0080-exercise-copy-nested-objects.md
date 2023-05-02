@@ -1,7 +1,7 @@
-Deep clone all the properties of the `bird` object
-into the `birdClone` object.
-`bird.features` and `birdClone.features`
-should not be shallow clones.
+Deep copy all the properties of the `bird` object
+into the `birdCopy` object.
+`bird.features` and `birdCopy.features`
+should not be shallow copied.
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
@@ -14,9 +14,9 @@ const bird = {
   rare: false
 };
 
-const birdClone = ;
+const birdCopy = ;
 
-console.log(birdClone);
+console.log(birdCopy);
 </code>
 
 <solution>
@@ -29,8 +29,8 @@ const bird = {
   rare: false
 };
 
-const birdClone = JSON.parse(JSON.stringify(bird));
+const birdCopy = JSON.parse(JSON.stringify(bird));
 
-console.log(birdClone);
+console.log(birdCopy);
 </solution>
 </codeblock>

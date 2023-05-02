@@ -6,6 +6,10 @@ the `bird2` variable.
 Use `console.log()` to
 show the comparison.
 
+Also, create another variable `bird3` whose value is equal to `bird1` when equality is checked.
+Again, use `console.log()` to show the comparison.
+
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird1 = { name: "Sparrow" };
@@ -17,5 +21,7 @@ console.log();
 const bird1 = { name: "Sparrow" };
 const bird2 = { name: "Sparrow" };
 console.log(bird1 === bird2);
+const bird3 = bird1;
+console.log(bird1 === bird3);
 </solution>
 </codeblock>

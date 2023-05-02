@@ -1,9 +1,9 @@
 ---
-- title: Shallow Cloning
-  slug: shallow-cloning
+- title: Shallow Copy
+  slug: shallow-copy
   page_type: lesson
-- title: Exercise - Shallow Cloning
-  slug: exercise-shallow-cloning
+- title: Exercise - Shallow Copy
+  slug: exercise-shallow-copy
   page_type: exercise
 - title: Comparing Objects
   slug: comparing-objects
@@ -11,15 +11,15 @@
 - title: Exercise - Comparing Objects
   slug: exercise-comparing-objects
   page_type: exercise
-- title: Deep Cloning
-  slug: deep-cloning
+- title: Deep Copy
+  slug: deep-copy
   page_type: lesson
-- title: Exercise - Deep Cloning
-  slug: exercise-deep-cloning
+- title: Exercise - Deep Copy
+  slug: exercise-deep-copy
   page_type: exercise
-- title: Clone Nested Objects
-  slug: clone-nested-objects
+- title: Copy Nested Objects
+  slug: copy-nested-objects
   page_type: lesson
-- title: Exercise - Clone Nested Objects
-  slug: exercise-clone-nested-objects
+- title: Exercise - Copy Nested Objects
+  slug: exercise-copy-nested-objects
   page_type: exercise

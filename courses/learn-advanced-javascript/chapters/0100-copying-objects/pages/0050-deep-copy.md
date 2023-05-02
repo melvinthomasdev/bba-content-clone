@@ -1,18 +1,20 @@
 Previously, we learned that when
-we create a shallow clone of an object,
+we create a shallow copy of an object,
 we are simply copying the address of
 the memory location of where
 the object's data is stored.
 
 In this chapter we are going to create
-a deep clone of an object.
+a deep copy of an object.
 This means that there will be two
 different memory locations that
-contains the same data.
+contains the same data, both of 
+which can be updated independently.
 
 We can use the spread operator - `...`
-to create a deep clone of an object.
+to create a deep copy of an object.
 
+Let's take a look at an example:
 <codeblock language="javascript" type="lesson">
 <code>
 const user = { name: "Sam" };
@@ -56,13 +58,12 @@ In the example given above:
 
 In the example given above,
 `userCopy` is known as a
-**deep clone** of `user`.
+**deep copy** of `user`.
 
 In the example given above,
-we create a deep clone
+we create a deep copy
 using the `...` operator
-and
-change the value of
+and change the value of
 the `name` property,
 using two statements.
 Practically, we can do this
@@ -82,8 +83,8 @@ console.log(userCopy.name);
 </code>
 </codeblock>
 
-Cloning an array using the `...` operator
-also creates a deep clone.
+Copying an array using the `...` operator
+also creates a deep copy.
 
 <codeblock language="javascript" type="lesson">
 <code>

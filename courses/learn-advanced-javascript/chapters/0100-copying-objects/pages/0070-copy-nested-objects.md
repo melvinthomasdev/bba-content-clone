@@ -14,30 +14,30 @@ const user = {
   age: 32
 };
 
-const userClone = { ...user };
+const userCopy = { ...user };
 
-userClone.name.firstName = "Oliver";
+userCopy.name.firstName = "Oliver";
 console.log(user.name);
-console.log(userClone.name);
+console.log(userCopy.name);
 </code>
 </codeblock>
 
-Here, changing the `userClone.name.firstName` property
+Here, changing the `userCopy.name.firstName` property
 also changes it in the `user.name.firstName` property.
 This is because, the `name` property
-of both `user` and `userClone`
+of both `user` and `userCopy`
 hold the same address.
 In other words,
-`user.name` is a shallow clone
-of `userClone.name`.
+`user.name` is a shallow copy
+of `userCopy.name`.
 
 This means that,
 when we use the `...` operator
-to create a clone of an object,
-any nested objects will be shallow cloned.
+to create a copy of an object,
+any nested objects will be shallow copied.
 
-If we don't want our cloned object to contain
-shallow clones of the nested objects,
+If we don't want our copied object to contain
+shallow copies of the nested objects,
 we need to use a different
 approach for cloning:
 
@@ -51,11 +51,11 @@ const user = {
   age: 32
 };
 
-const userClone = JSON.parse(JSON.stringify(user));
+const userCopy = JSON.parse(JSON.stringify(user));
 
-userClone.name.firstName = "Oliver";
+userCopy.name.firstName = "Oliver";
 console.log(user.name);
-console.log(userClone.name);
+console.log(userCopy.name);
 </code>
 </codeblock>
 
@@ -67,6 +67,6 @@ Then, the `JSON.parse` converts
 that JSON string back into an object.
 
 Now, when we make a change to the
-`userClone.name.firstName` property,
+`userCopy.name.firstName` property,
 the change does not affect
 the `user.name.firstName` property.

@@ -1,6 +1,5 @@
-Cloning means to make a copy of something.
-In JavaScript, cloning a primitive data type
-such as a number, string or boolean
+In JavaScript, copying a **primitive** data
+type such as a number, string or boolean
 is pretty straightforward.
 
 <codeblock language="javascript" type="lesson">
@@ -20,14 +19,16 @@ In the example given above:
 - When we declare the `count` variable,
   i.e., `let count = 10`,
   we store the value `10` in a memory location.
-  Every time we use the variable `count`
+
+- Every time we use the variable `count`
   it refers to this memory location.
 
 - When we assign `count` to `countCopy`,
   i.e., `let countCopy = count`,
   we store the value of `copy`, i.e.,`10`
   in a different memory location.
-  Every time we use the variable `countCopy`
+
+- Every time we use the variable `countCopy`
   it refers to this new memory location.
 
 - In short, we have two memory locations
@@ -39,10 +40,10 @@ In the example given above:
   when we changed the value of `count` to `23`,
   the value of `countCopy` remained `10`.
 
-In JavaScript, cloning composite data types
-such as objects and arrays,
-is not as straightforward as
-cloning primitive data types.
+In JavaScript, copying **composite** data types
+such as objects and arrays, is not as
+straightforward as copying **primitive**
+data types.
 
 Look at the example given below:
 
@@ -55,26 +56,28 @@ console.log(user.name);
 </codeblock>
 
 In the example given above,
+- `user` variable has a value
+  which is a composite data type
+  (Object).
 
-- When we create the object `user`,
-  i.e., `const user = { name: "Sam" }`,
-  the object value `{ name: "Sam" }`
-  is stored in a memory location.
-  The address of this memory location
-  is stored in `user`.
+- The object value `{ name: "Sam" }`
+  is stored in the memory and `user`
+  only holds the address to that
+  memory location.
 
 - When we use the variable `user`,
-  we are not referring to
-  the value `{ name: "Sam" }`,
-  we are referring to the address
-  of the memory location
-  where that value is stored.
+  we are not referring to the
+  value `{ name: "Sam" }`, we are
+  referring to the address of
+  memory location where that
+  value is stored.
 
-This means that when we clone
-a composite data type,
-we are cloning the address of
-the memory location of where
-that data is stored.
+This means that when we copy
+a composite data type, we are
+copying the **address** of 
+the memory location where the
+data is stored.
+
 Consider the following example:
 
 <codeblock language="javascript" type="lesson">
@@ -91,28 +94,26 @@ console.log(userCopy.name);
 
 In the example given above:
 
-- We assign the address of where
-  `{ name: "Sam" }` is stored
-  to `user`.
-
 - When we assign `user` to `userCopy`
   like `const userCopy = user`,
-  we assign the address stored in `user`
+  we assign the address of the 
+  memory location stored in `user`
   to `userCopy`.
 
 - Hence, the change `userCopy.name = "Oliver"`
   will affect both `userCopy.name`
   as well as `user.name`.
-  This is because we are making a change
-  in the same memory location that is
-  stored in both `user` and `userCopy`.
+
+- This is because we are making a change
+  in the same memory location shared by both
+  `user` and `userCopy`.
 
 In the example given above,
 `userCopy` is known as a
-**shallow clone** of `user`.
+**shallow copy** of `user`.
 
-Cloning an array using the `=` operator,
-also creates a shallow clone.
+Similarly, copying an array using the `=` operator,
+also creates a shallow copy.
 
 <codeblock language="javascript" type="lesson">
 <code>

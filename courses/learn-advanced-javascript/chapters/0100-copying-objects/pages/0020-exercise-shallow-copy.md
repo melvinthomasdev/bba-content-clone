@@ -1,4 +1,4 @@
-Create a shallow clone of `bird1`
+Create a **shallow copy** of `bird1`
 and
 assign it to `bird2` variable.
 

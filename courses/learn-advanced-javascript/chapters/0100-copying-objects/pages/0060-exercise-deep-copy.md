@@ -1,4 +1,4 @@
-Create a deep clone of `bird`
+Create a deep copy of `bird`
 and
 assign it to `updatedBird`.
 Also, modify the value of
