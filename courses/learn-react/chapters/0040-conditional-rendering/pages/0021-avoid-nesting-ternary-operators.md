@@ -1,6 +1,4 @@
-Nesting ternary operators leads to poor code readability.
-
-If you have a block of code like this:
+Nesting ternary operators can often lead to poor code readability. If you have a block of code as shown below:
 
 ```jsx
 {/* ProfilePicture.jsx */}
@@ -22,7 +20,7 @@ const ProfilePicture = {( isLoading, isAdmin, name, imageSource )} => {
 }
 ```
 
-It's often best to just use a couple of guard clauses to improve readability like so:
+As a rule of thumb, it's often best to just use a couple of guard clauses to improve readability like so:
 
 ```jsx
 {/* ProfilePicture.jsx */}
@@ -38,3 +36,23 @@ const ProfilePicture = {( isLoading, isAdmin, name, imageSource )} => {
   )
 }
 ```
+
+This isn't to say that nested ternary operators are always bad.
+
+They can sometimes improve code readability over the alternatives like when you're nested inside JSX as shown below : 
+
+```jsx
+const notification = ({type, sender, code, message}) => (
+  <NotificationBase>
+    {(type == ALERT) ? (
+      <AlertNotification type={type}/>
+    ) : (type == MESSAGE) ? (
+      <MessageNotification sender={sender} message={message} />
+    ) : (type == SURVEY) ? (
+      <SurveyNotification type={type} code={code} />
+    ) : null}
+  </NotificationBase>
+)
+```
+
+But in most cases, avoid nesting ternary operators.
