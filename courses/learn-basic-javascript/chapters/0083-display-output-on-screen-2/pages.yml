@@ -1,0 +1,10 @@
+---
+- title: Visualise object and array data better in the console
+  slug: console-table
+  page_type: lesson
+- title: Exercise - Display array in console
+  slug: exercise-console-table-1
+  page_type: exercise
+- title: Exercise - Display object in console
+  slug: exercise-console-table-2
+  page_type: exercise

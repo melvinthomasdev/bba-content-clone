@@ -1,10 +1,8 @@
-In this exercise,
-show the result of
-**20 - 10** on the screen.
+In this exercise, show the result of **20 - 10** on the screen.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
-console.log(1 + 2);
+// Write your code here
 </code>
 
 <solution>

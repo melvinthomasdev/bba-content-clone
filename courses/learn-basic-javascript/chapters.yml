@@ -17,6 +17,8 @@
   slug: object
 - name: Array
   slug: array
+- name: Display output on the screen 2
+  slug: display-output-on-screen-2
 - name: Comprehensive Exercise 2
   slug: comprehensive-exercise-2
 - name: Conditionals
