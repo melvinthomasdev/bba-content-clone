@@ -40,4 +40,4 @@ p {
 
 Note that while pseudo-classes
 start with a single colon `:`,
-pseudo-elements start with double colon `::`.
+pseudo-elements start with a double colon `::`.
