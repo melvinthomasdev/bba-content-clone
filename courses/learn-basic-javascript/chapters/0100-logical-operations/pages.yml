@@ -1,13 +1,13 @@
 ---
 - title: OR
   slug: logical-or
-  page_type: exercise
+  page_type: lesson
 - title: Exercise - OR
   slug: exercise-logical-or
   page_type: exercise
 - title: AND
   slug: logical-and
-  page_type: exercise
+  page_type: lesson
 - title: Exercise - AND
   slug: exercise-logical-and
   page_type: exercise
