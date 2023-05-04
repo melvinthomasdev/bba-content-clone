@@ -7,7 +7,6 @@ Write a query to display the names of all courses followed by these 4 data items
 3. sum of all marks scored by students in the course
 
 4. average of marks scored by students in the course
-<br><br>
 
 Set the headers for the 5 columns as `courseName`, `maximumMarks`, `minimumMarks`, `sumOfMarks` and `averageMarks` respectively.
 
@@ -15,14 +14,14 @@ Set the headers for the 5 columns as `courseName`, `maximumMarks`, `minimumMarks
 
 <codeblock language="sql" dbName="students2-v3.db" type="exercise" testMode="fixedInput">
 <code>
-SELECT 
+SELECT
 FROM
 ON
 GROUP BY
 </code>
 
 <solution>
-SELECT   courses.name AS courseName, 
+SELECT   courses.name AS courseName,
          MAX(students.marks) AS maximumMarks,
          MIN(students.marks) AS minimumMarks,
          SUM(students.marks) AS sumOfMarks,

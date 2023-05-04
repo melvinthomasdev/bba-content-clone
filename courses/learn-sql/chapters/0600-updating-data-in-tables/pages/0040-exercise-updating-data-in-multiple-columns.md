@@ -5,7 +5,6 @@ We have a table `books` below. Write an SQL statement to:
 2. add `'Sold Out - '` in the beginning of the `name`
 
 3. update `publisherName` to `HYDRA Corp.`
-<br><br>
 
 for all the `books` whose `publisherName` is `HYDRA Inc.`
 
