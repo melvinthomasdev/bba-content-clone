@@ -2,33 +2,33 @@
 - title: Truthy and Falsy Values
   slug: truthy-and-falsy-values
   page_type: lesson
-- title: if statement
+- title: if Statement
   slug: if-statement
   page_type: lesson
-- title: Exercise - if statement
+- title: Exercise - if Statement
   slug: exercise-if-statement
   page_type: exercise
-- title: else statement
+- title: else Statement
   slug: else-statement
   page_type: lesson
-- title: Exercise - else statement
+- title: Exercise - else Statement
   slug: exercise-else-statement
   page_type: exercise
-- title: else if statement
+- title: else if Statement
   slug: else-if-statement
   page_type: lesson
-- title: Exercise - else if statement
+- title: Exercise - else if Statement
   slug: exercise-else-if-statement
   page_type: exercise
-- title: switch statement
+- title: switch Statement
   slug: switch-statement
   page_type: lesson
-- title: Exercise - switch statement
+- title: Exercise - switch Statement
   slug: exercise-switch-statement
   page_type: exercise
-- title: Ternary operator
+- title: Ternary Operator
   slug: ternary-operator
   page_type: lesson
-- title: Exercise - Ternary operator
+- title: Exercise - Ternary Operator
   slug: exercise-ternary-operator
   page_type: exercise

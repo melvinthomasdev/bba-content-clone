@@ -20,10 +20,10 @@
 - title: Exercise - NOT
   slug: exercise-logical-not
   page_type: exercise
-- title: NOT vs Inequality operators
+- title: NOT vs Inequality Operators
   slug: logical-not-vs-inequality
   page_type: lesson
-- title: Nullish Coalescing operator
+- title: Nullish Coalescing Operator
   slug: nullish-coalescing-operator
   page_type: lesson
 - title: Exercise - Nullish Coalescing Operator

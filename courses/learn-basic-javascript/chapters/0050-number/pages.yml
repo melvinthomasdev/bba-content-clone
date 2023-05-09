@@ -1,22 +1,22 @@
 ---
-- title: Store number
+- title: Store Number
   slug: store-number
   page_type: lesson
-- title: Exercise - Store number
+- title: Exercise - Store Number
   slug: exercise-store-number
   page_type: exercise
 - title: NaN
   slug: nan
   page_type: lesson
-- title: Increase or decrease a number by one
+- title: Increase or Decrease a Number by One
   slug: increase-or-decrease-a-number-by-one
   page_type: lesson
-- title: Exercise - Increase or decrease a number by one
+- title: Exercise - Increase or Decrease a Number by One
   slug: exercise-increase-or-decrease-a-number-by-one
   page_type: exercise
-- title: Get the remainder
+- title: Get the Remainder
   slug: get-the-remainder
   page_type: lesson
-- title: Exercise - Get the remainder
+- title: Exercise - Get the Remainder
   slug: exercise-get-the-remainder
   page_type: exercise

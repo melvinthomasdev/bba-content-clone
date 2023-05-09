@@ -1,59 +1,59 @@
 ---
-- title: Get index of an element
+- title: Get Index of an Element
   slug: indexof-and-lastindexof
   page_type: lesson
-- title: Exercise - Get index of an element
+- title: Exercise - Get Index of an Element
   slug: exercise-indexof
   page_type: exercise
-- title: Exercise - Get index of an element
+- title: Exercise - Get Index of an Element
   slug: exercise-lastindexof
   page_type: exercise
-- title: Check for inclusion of an element
+- title: Check for Inclusion of an Element
   slug: includes
   page_type: lesson
 - title: Exercise - Search for an element
   slug: exercise-includes
   page_type: exercise
-- title: Slice an array
+- title: Slice an Array
   slug: slice
   page_type: lesson
-- title: Exercise - Copy a portion of an array
+- title: Exercise - Copy a Portion of an Array
   slug: exercise-slice-1
   page_type: exercise
-- title: Exercise - Copy a portion of an array
+- title: Exercise - Copy a Portion of an Array
   slug: exercise-slice-2
   page_type: exercise
-- title: Modify an array
+- title: Modify an Array
   slug: splice
   page_type: lesson
-- title: Exercise - Modify an array
+- title: Exercise - Modify an Array
   slug: exercise-splice
   page_type: exercise
-- title: Concatenate elements into new array
+- title: Concatenate Elements Into New Array
   slug: concat
   page_type: lesson
-- title: Exercise - Copy elements into new array
+- title: Exercise - Copy Elements Into New Array
   slug: exercise-concat
   page_type: exercise
-- title: Join all elements
+- title: Join all Elements
   slug: join
   page_type: lesson
-- title: Exercise - Join all elements
+- title: Exercise - Join all Elements
   slug: exercise-join
   page_type: exercise
-- title: Execute function for each element
+- title: Execute Function for Each Element
   slug: foreach
   page_type: lesson
-- title: Exercise - Execute function for each element
+- title: Exercise - Execute Function for Each Element
   slug: exercise-foreach
   page_type: exercise
-- title: Map a function and get a new array
+- title: Map a Function and Get a New Array
   slug: map
   page_type: lesson
-- title: Exercise - Execute a function and get new array
+- title: Exercise - Execute a function and Get New Array
   slug: exercise-map
   page_type: exercise
-- title: Exercise - Difference between map and forEach
+- title: Exercise - Difference Between map and forEach
   slug: exercise-map-and-foreach
   page_type: exercise
 - title: Find element of an Array
@@ -65,21 +65,21 @@
 - title: Filter elements based on given condition
   slug: filter
   page_type: lesson
-- title: Exercise - Check elements on given condition
+- title: Exercise - Check Elements on Given Condition
   slug: exercise-filter
   page_type: exercise
-- title: Sort the array
+- title: Sort the Array
   slug: sort
   page_type: lesson
-- title: Exercise - Sort the array
+- title: Exercise - Sort the Array
   slug: exercise-sort
   page_type: exercise
-- title: Reduce an array into a single value
+- title: Reduce an Array into a Single Value
   slug: reduce
   page_type: lesson
-- title: Exercise - Execute a function and get a single value
+- title: Exercise - Execute a Function and Get a Single Value
   slug: exercise-reduce
   page_type: exercise
-- title: Usage of Underscore in functions
+- title: Usage of Underscore in Functions
   slug: usage-of-underscore
   page_type: lesson

@@ -5,16 +5,16 @@
 - title: Exercise - Run Function After Time Delay
   slug: exercise-run-function-after-time-delay
   page_type: exercise
-- title: Cancel a timer function
+- title: Cancel a Timer Function
   slug: cancel-a-timer-function
   page_type: lesson
-- title: Exercise - Cancel a timer function
+- title: Exercise - Cancel a Timer Function
   slug: exercise-cancel-a-timer-function
   page_type: exercise
-- title: Run function at fixed time intervals
+- title: Run Function at Fixed Time Intervals
   slug: run-function-at-fixed-time-intervals
   page_type: lesson
-- title: Exercise - Run function at fixed time intervals
+- title: Exercise - Run Function at Fixed Time Intervals
   slug: exercise-run-function-at-fixed-time-intervals
   page_type: exercise
 - title: Stop the SetInterval Method

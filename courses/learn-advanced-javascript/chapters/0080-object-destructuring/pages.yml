@@ -5,10 +5,10 @@
 - title: Exercise - Object Destructuring
   slug: exercise-object-destructuring
   page_type: exercise
-- title: Renaming destructured property
+- title: Renaming Destructured Property
   slug: renaming-destructured-property
   page_type: lesson
-- title: Exercise - Renaming destructured property
+- title: Exercise - Renaming Destructured Property
   slug: exercise-renaming-destructured-property
   page_type: exercise
 - title: Destructuring with Computed Properties

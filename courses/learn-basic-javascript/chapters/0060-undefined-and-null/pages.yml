@@ -1,11 +1,11 @@
 ---
-- title: The undefined data type
+- title: The undefined Data Type
   slug: the-undefined-data-type
   page_type: lesson
 - title: Exercise - undefined
   slug: exercise-undefined
   page_type: exercise
-- title: The null data type
+- title: The null Data Type
   slug: the-null-data-type
   page_type: lesson
 - title: Exercise - null

@@ -5,10 +5,10 @@
 - title: Exercise - Create Map
   slug: exercise-create-map
   page_type: exercise
-- title: Add data to map
+- title: Add Data to Map
   slug: add-data-to-map
   page_type: lesson
-- title: Exercise - Add data to map
+- title: Exercise - Add Data to Map
   slug: exercise-add-data-to-map
   page_type: exercise
 - title: Fetch Data From a Map
@@ -17,10 +17,10 @@
 - title: Exercise - Fetch Data From a Map
   slug: exercise-fetch-data-from-a-map
   page_type: exercise
-- title: Check If Map Has Your Data
+- title: Check if Map has Your Data
   slug: check-if-map-has-your-data
   page_type: lesson
-- title: Exercise - Check If Map Has Your Data
+- title: Exercise - Check if Map has Your Data
   slug: exercise-check-if-map-has-your-data
   page_type: exercise
 - title: Size of the Map

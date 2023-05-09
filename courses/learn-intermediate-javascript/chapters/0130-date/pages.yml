@@ -1,14 +1,14 @@
 ---
-- title: Date object
+- title: Date Object
   slug: date-object
   page_type: lesson
-- title: Exercise - Date object
+- title: Exercise - Date Object
   slug: exercise-date-object
   page_type: exercise
-- title: Convert Date into string
+- title: Convert Date into String
   slug: convert-date-into-string
   page_type: lesson
-- title: Exercise - Convert Date into string
+- title: Exercise - Convert Date into String
   slug: exercise-convert-date-into-string
   page_type: exercise
 - title: Get Time Values

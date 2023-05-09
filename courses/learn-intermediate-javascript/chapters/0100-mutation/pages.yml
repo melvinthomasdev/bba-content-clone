@@ -8,15 +8,15 @@
 - title: Exercise - Avoid Mutation with `.sort()`
   slug: exercise-avoid-mutation-with-sort
   page_type: exercise
-- title: Exercise - Avoid Mutation while removing array elements
+- title: Exercise - Avoid Mutation While Removing Array Elements
   slug: exercise-avoid-mutation-while-removing-array-elements
   page_type: exercise
-- title: Exercise - Avoid Mutation while adding array elements
+- title: Exercise - Avoid Mutation While Adding Array Elements
   slug: exercise-avoid-mutation-while-adding-array-elements
   page_type: exercise
-- title: Exercise - Avoid Mutation while updating an array
+- title: Exercise - Avoid Mutation While Updating an Array
   slug: exercise-avoid-mutation-while-updating-an-array
   page_type: exercise
-- title: Exercise - Avoid Mutation while updating properties
+- title: Exercise - Avoid Mutation while Updating Properties
   slug: exercise-avoid-mutation-while-updating-properties
   page_type: exercise

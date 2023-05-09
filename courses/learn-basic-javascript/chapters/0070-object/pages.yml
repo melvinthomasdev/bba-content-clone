@@ -1,50 +1,50 @@
 ---
-- title: Create object
+- title: Create Object
   slug: create-object
   page_type: lesson
-- title: Object with multiple properties
+- title: Object with Multiple Properties
   slug: object-with-multiple-properties
   page_type: lesson
-- title: Exercise - Object creation
+- title: Exercise - Object Creation
   slug: exercise-object-creation
   page_type: exercise
-- title: Get Object Values - Dot notation
+- title: Get Object Values - Dot Notation
   slug: get-object-values-dot-notation
   page_type: lesson
-- title: Exercise - Get Object Values - Dot notation
+- title: Exercise - Get Object Values - Dot Notation
   slug: exercise-get-object-values-dot-notation
   page_type: exercise
-- title: Get Object Values - Bracket notation
+- title: Get Object Values - Bracket Notation
   slug: get-object-values-bracket-notation
   page_type: lesson
-- title: Exercise - Get Object Values - Bracket notation
+- title: Exercise - Get Object Values - Bracket Notation
   slug: exercise-get-object-values-bracket-notation
   page_type: exercise
-- title: Add object property using dot notation
+- title: Add Object Property using Dot Notation
   slug: add-object-property-using-dot-notation
   page_type: lesson
-- title: Exercise - Add object property using dot notation
+- title: Exercise - Add Object Property using Dot Notation
   slug: exercise-add-object-property-using-dot-notation
   page_type: exercise
-- title: Add object property using bracket notation
+- title: Add Object Property using Bracket Notation
   slug: add-object-property-using-bracket-notation
   page_type: lesson
-- title: Exercise - Add object property using bracket notation
+- title: Exercise - Add Object Property using Bracket Notation
   slug: exercise-add-object-property-using-bracket-notation
   page_type: exercise
-- title: Update object property using dot notation
+- title: Update Object Property using Dot Notation
   slug: update-object-property-using-dot-notation
   page_type: lesson
-- title: Exercise - Update object property using dot notation
+- title: Exercise - Update Object Property using Dot Notation
   slug: exercise-update-object-property-using-dot-notation
   page_type: exercise
-- title: Update object property using bracket notation
+- title: Update Object Property using Bracket Notation
   slug: update-object-property-using-bracket-notation
   page_type: lesson
-- title: Exercise - Update object property using bracket notation
+- title: Exercise - Update Object Property using Bracket Notation
   slug: exercise-update-object-property-using-bracket-notation
   page_type: exercise
-- title: Exercise - Update object property using dot and bracket notations
+- title: Exercise - Update Object Property using Dot and Bracket Notations
   slug: exercise-update-object-property-using-dot-and-bracket-notations
   page_type: exercise
 - title: Get Object Keys - Object.keys()

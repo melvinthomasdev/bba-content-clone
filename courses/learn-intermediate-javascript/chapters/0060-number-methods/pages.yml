@@ -1,19 +1,19 @@
 ---
-- title: Fix precision of decimal numbers
+- title: Fix Precision of Decimal Numbers
   slug: to-fixed
   page_type: lesson
-- title: Exercise - Fix precision of decimal numbers
+- title: Exercise - Fix Precision of Decimal Numbers
   slug: exercise-to-fixed
   page_type: exercise
-- title: Get numbers from string
+- title: Get Numbers From String
   slug: parse-int
   page_type: lesson
-- title: Exercise - Get numbers from string
+- title: Exercise - Get Numbers From String
   slug: exercise-parse-int
   page_type: exercise
-- title: Get floating point number from a string
+- title: Get Floating Point Number From a String
   slug: parse-float
   page_type: lesson
-- title: Exercise - Get floating point number from a string
+- title: Exercise - Get Floating Point Number From a String
   slug: exercise-parse-float
   page_type: exercise

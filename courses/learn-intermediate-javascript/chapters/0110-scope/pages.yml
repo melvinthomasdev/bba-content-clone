@@ -5,7 +5,7 @@
 - title: Exercise - Global Scope
   slug: exercise-global-scope
   page_type: exercise
-- title: Global and Window objects
+- title: Global and Window Objects
   slug: global-and-window-objects
   page_type: lesson
 - title: Local Scope
@@ -14,10 +14,10 @@
 - title: Exercise - Local Scope
   slug: exercise-local-scope
   page_type: exercise
-- title: Scope nesting
+- title: Scope Nesting
   slug: scope-nesting
   page_type: lesson
-- title: Exercise - Scope nesting
+- title: Exercise - Scope Nesting
   slug: exercise-scope-nesting
   page_type: exercise
 - title: Hoisting

@@ -1,5 +1,5 @@
 ---
-- title: Define a function
+- title: Define a Function
   slug: define-a-function
   page_type: lesson
 - title: Use the Arrow Function
@@ -23,10 +23,10 @@
 - title: Exercise - return Statement
   slug: exercise-return-statement
   page_type: exercise
-- title: return Statement for terminating functions
+- title: return Statement for Terminating Functions
   slug: return-to-terminate
   page_type: lesson
-- title: Exercise - return Statement for terminating functions
+- title: Exercise - return Statement for Terminating Functions
   slug: exercise-return-to-terminate
   page_type: exercise
 - title: Arrow Function Shorthand

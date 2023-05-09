@@ -1,17 +1,17 @@
 ---
-- title: Create string
+- title: Create String
   slug: create-string
   page_type: lesson
-- title: Exercise - Create string
+- title: Exercise - Create String
   slug: exercise-create-string
   page_type: exercise
-- title: Joining strings
+- title: Joining Strings
   slug: joining-strings
   page_type: lesson
-- title: Exercise - Joining strings
+- title: Exercise - Joining Strings
   slug: exercise-joining-strings-1
   page_type: exercise
-- title: Exercise - Joining strings
+- title: Exercise - Joining Strings
   slug: exercise-joining-strings-2
   page_type: exercise
 - title: Template Strings
