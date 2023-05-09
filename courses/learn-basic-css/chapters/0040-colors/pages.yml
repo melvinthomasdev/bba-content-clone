@@ -17,3 +17,9 @@
 - title: Exercise - Hex Color Values
   slug: exercise-hex-color-values
   page_type: exercise
+- title: HSL color system
+  slug: hsl-color-system
+  page_type: lesson
+- title: Exercise - HSL color system
+  slug: exercise-hsl-color-system
+  page_type: exercise

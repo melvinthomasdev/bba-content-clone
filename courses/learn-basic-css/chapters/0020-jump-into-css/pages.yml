@@ -23,3 +23,9 @@
 - title: Exercise - CSS Comments
   slug: exercise-css-comments
   page_type: exercise
+- title: Inline Style
+  slug: inline-style
+  page_type: lesson
+- title: Exercise - Inline Style
+  slug: exercise-inline-style
+  page_type: exercise
