@@ -56,6 +56,12 @@
 - title: Exercise - Difference between map and forEach
   slug: exercise-map-and-foreach
   page_type: exercise
+- title: Find element of an Array
+  slug: find
+  page_type: lesson
+- title: Exercise - Find element of an Array
+  slug: exercise-find
+  page_type: exercise
 - title: Filter elements based on given condition
   slug: filter
   page_type: lesson
