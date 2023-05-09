@@ -1,6 +1,6 @@
 **justify-content** property aligns the grid items along the row or X-axis.
 
-Lets look at some examples for `justify-content` property with all possible
+Let's look at some examples for `justify-content` property with all possible
 values:
 
 **justify-content: start** aligns the grid with the start edge of the grid

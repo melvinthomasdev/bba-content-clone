@@ -40,14 +40,11 @@
 - title: Align Content
   slug: align-content
   page_type: lesson
-- title: Grid Auto Flow
-  slug: grid-auto-flow
+- title: Justify Items
+  slug: justify-items
   page_type: lesson
-- title: Justify Item
-  slug: justify-item
-  page_type: lesson
-- title: Align Item
-  slug: align-item
+- title: Align Items
+  slug: align-items
   page_type: lesson
 - title: Justify Self
   slug: justify-self
@@ -60,4 +57,19 @@
   page_type: lesson
 - title: Grid Row
   slug: grid-row
+  page_type: lesson
+- title: Fractional unit
+  slug: fractional-unit
+  page_type: lesson
+- title: MinMax
+  slug: min-max
+  page_type: lesson
+- title: Repeat
+  slug: repeat
+  page_type: lesson
+- title: Auto-fit vs Auto-fill
+  slug: auto-fit-auto-fill
+  page_type: lesson
+- title: Grid Auto Flow
+  slug: grid-auto-flow
   page_type: lesson

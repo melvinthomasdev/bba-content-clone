@@ -28,6 +28,9 @@ Let's look at an example:
 .container > div:nth-child(1n) {
   background-color: #5bc292;
 }
+.container > div:nth-child(2n) {
+  background-color: #f26561;
+}
 .container > div {
   display: flex;
   justify-content: center;
@@ -43,7 +46,7 @@ In the above example we applied `display: grid` property to the `container`, and
 used `grid-template-columns` and `grid-template-rows` to define the number and
 size of the items in the rows and columns.
 
-Lets see how changing the value of `grid-template-columns` and
+Let's see how changing the value of `grid-template-columns` and
 `grid-template-rows`, we can change the whole layout of the page by controlling
 rows and columns.
 
@@ -70,6 +73,9 @@ rows and columns.
 /*Additional CSS for styling*/
 .container > div:nth-child(1n) {
   background-color: #5bc292;
+}
+.container > div:nth-child(2n) {
+  background-color: #f26561;
 }
 .container > div {
   display: flex;

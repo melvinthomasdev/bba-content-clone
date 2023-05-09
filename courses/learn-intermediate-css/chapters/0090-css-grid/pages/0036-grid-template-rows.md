@@ -4,7 +4,7 @@ The number and heights of the **rows** in a grid layout are specified by the
 Each value in the values list, which is separated by spaces, indicates the
 height of the corresponding row.
 
-Lets look at some examples:
+Let's look at some examples:
 
 ```css
 .container {

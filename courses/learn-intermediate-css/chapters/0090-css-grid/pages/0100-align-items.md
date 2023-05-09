@@ -1,54 +1,13 @@
-**align-content** property aligns the grid items along the column or Y-axis.
+**align-items** property gets applied to all the grid items inside the container
+along the column or Y-axis.
 
-Let's look at some examples for `align-content` property with all possible
-values `start`, `end`, `center`, `space-around`, `space-between` and
-`space-evenly`.
+Let's look at some examples for `align-items` property with all possible values
+`start`, `end`, `center` and `stretch`.
 
-**align-content: start** aligns the grid with the start edge of the grid
-container.
+**align-items: start** aligns the grid items with the start edge of its own
+cell.
 
-<codeblock language="css" type="lesson">
-<code>
-<panel language="html" hidden=true>
-<div class="container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-</div>
-</panel>
-<panel language="css" hidden=true>
-/*CSS related to the topic*/
-.container {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 100px;
-  grid-gap: 5px;
-  justify-content: center;
-  align-content: start;
-  height: 110vh;
-}
-/*Additional CSS for styling*/
-.container > div:nth-child(1n) {
-  background-color: #92d2b4;
-}
-.container > div:nth-child(2n) {
-  background-color: #f26561;
-}
-.container > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  color: #00000;
-}
-</panel>
-</code>
-</codeblock>
-
-**align-content: end** aligns the grid with the end edge of the grid container.
+<image>align-item-start-1.png</image>
 
 <codeblock language="css" type="lesson">
 <code>
@@ -69,52 +28,10 @@ container.
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px;
   grid-gap: 5px;
-  align-content: end;
   justify-content: center;
-  height: 110vh;
-}
-/*Additional CSS for styling*/
-.container > div:nth-child(1n) {
-  background-color: #92d2b4;
-}
-.container > div:nth-child(2n) {
-  background-color: #f26561;
-}
-.container > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  color: #00000;
-}
-</panel>
-</code>
-</codeblock>
-
-**align-content: center** aligns the grid to the center of the grid container.
-
-<codeblock language="css" type="lesson">
-<code>
-<panel language="html" hidden=true>
-<div class="container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-</div>
-</panel>
-<panel language="css" hidden=true>
-/*CSS related to the topic*/
-.container {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 100px;
-  grid-gap: 5px;
   align-content: center;
-  justify-content: center;
-  height: 110vh;
+  align-items: start;
+  height: 100vh;
 }
 /*Additional CSS for styling*/
 .container > div:nth-child(1n) {
@@ -128,14 +45,15 @@ container.
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  color: #00000;
+  color: #000000;
 }
 </panel>
 </code>
 </codeblock>
 
-**align-content: space-around** places equal amount of space between each grid
-item and half-sized spaces on the ends.
+**align-items: end** aligns the grid with the end edge of its own cell.
+
+<image>align-item-end-1.png</image>
 
 <codeblock language="css" type="lesson">
 <code>
@@ -156,9 +74,10 @@ item and half-sized spaces on the ends.
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px;
   grid-gap: 5px;
-  align-content: space-around;
   justify-content: center;
-  height: 110vh;
+  align-content: center;
+  align-items: end;
+  height: 100vh;
 }
 /*Additional CSS for styling*/
 .container > div:nth-child(1n) {
@@ -172,14 +91,15 @@ item and half-sized spaces on the ends.
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  color: #00000;
+  color: #000000;
 }
 </panel>
 </code>
 </codeblock>
 
-**align-content: space-between** places equal amount of space between each grid
-item, with no space at the ends.
+**align-items: center** aligns the grid to the center of its own cell.
+
+<image>align-item-center-1.png</image>
 
 <codeblock language="css" type="lesson">
 <code>
@@ -200,9 +120,10 @@ item, with no space at the ends.
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px;
   grid-gap: 5px;
-  align-content: space-between;
   justify-content: center;
-  height: 110vh;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
 }
 /*Additional CSS for styling*/
 .container > div:nth-child(1n) {
@@ -216,14 +137,16 @@ item, with no space at the ends.
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  color: #00000;
+  color: #000000;
 }
 </panel>
 </code>
 </codeblock>
 
-**align-content: space-evenly** places equal amount of space between the grid
-items, including the ends.
+**align-items: stretch** **(Default)** this occupies the whole height of the
+cell.
+
+<image>align-item-stretch-1.png</image>
 
 <codeblock language="css" type="lesson">
 <code>
@@ -244,14 +167,16 @@ items, including the ends.
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px;
   grid-gap: 5px;
-  align-content: space-evenly;
   justify-content: center;
-  height: 110vh;
+  align-content: center;
+  align-items: stretch;
+  height: 100vh;
 }
 /*Additional CSS for styling*/
 .container > div:nth-child(1n) {
   background-color: #92d2b4;
 }
+
 .container > div:nth-child(2n) {
   background-color: #f26561;
 }
@@ -260,7 +185,7 @@ items, including the ends.
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  color: #00000;
+  color: #000000;
 }
 </panel>
 </code>
