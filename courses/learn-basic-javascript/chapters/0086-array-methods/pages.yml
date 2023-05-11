@@ -23,3 +23,6 @@
 - title: Exercise - Removing Array Element - shift
   slug: exercise-removing-array-element-2
   page_type: exercise
+- title: Array Length
+  slug: array-length
+  page_type: lesson
