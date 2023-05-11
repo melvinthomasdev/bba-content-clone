@@ -8,7 +8,13 @@
 - title: Exercise - if Statement
   slug: exercise-if-statement
   page_type: exercise
-- title: else Statement
+- title: if statement condition
+  slug: if-statement-condition
+  page_type: lesson
+- title: Exercise - if statement condition
+  slug: exercise-if-statement-condition
+  page_type: exercise
+- title: else statement
   slug: else-statement
   page_type: lesson
 - title: Exercise - else Statement
