@@ -17,6 +17,9 @@
 - title: Exercise - ID Selectors
   slug: exercise-id-selectors
   page_type: exercise
+- title: Exercise - Class and ID Selectors
+  slug: exercise-class-and-id-selectors
+  page_type: exercise
 - title: Universal Selector
   slug: universal-selector
   page_type: lesson
