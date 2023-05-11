@@ -11,6 +11,12 @@
 - title: Exercise - Label Element
   slug: exercise-label-element
   page_type: exercise
+- title: Placeholder
+  slug: placeholder
+  page_type: lesson
+- title: Exercise - Placeholder
+  slug: exercise-placeholder
+  page_type: exercise
 - title: Textarea Element
   slug: textarea-element
   page_type: lesson
