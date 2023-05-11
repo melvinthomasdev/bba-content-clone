@@ -18,7 +18,7 @@ module Src
         rule_verified = true
 
         page_file_basename = File.basename(page_file)
-        page_content = File.read(page_file)
+        page_content = File.read(page_file, encoding: 'utf-8')
 
         image_tags = page_content.scan(/(<image.*>(.*)<\/image>)/)
         image_tags.each do |image_tag, image_name|

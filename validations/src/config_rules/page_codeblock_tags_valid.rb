@@ -21,7 +21,7 @@ module Src
         rule_verified = true
 
         page_file_basename = File.basename(page_file)
-        page_content = File.read(page_file)
+        page_content = File.read(page_file, encoding: 'utf-8')
 
         codeblock_tags = page_content.scan(/(<codeblock.*>)/)
         codeblock_tags.flatten.each do |codeblock_tag|
@@ -82,7 +82,7 @@ module Src
             end
           end
 
-          
+
         rescue StandardError => e
           @error_message = "Error while parsing codeblock tag: #{codeblock_tag} on page: #{page_file_basename} in chapter #{chapter_base_directory_name} in course #{course_base_directory_name} : error: #{e.message}"
           return false
