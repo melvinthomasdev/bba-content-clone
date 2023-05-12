@@ -1,5 +1,7 @@
-The `<source>` tag is used to specify the available file sources, it is used in
-`<picture>`, `<audio>` and `<video>` tags as well.
+The `<source>` tag is used to specify
+the available file sources, it is used in
+`<picture>`, `<audio>` and `<video>`
+tags as well.
 
 Let's look at an example:
 
@@ -19,6 +21,11 @@ Let's look at an example:
 </code>
 </codeblock>
 
-New image formats like `avif` and `webp` are not supported by old browsers. Here
-the browser renders the first supported image file format it encounters. Thus,
-having multiple source files also ensures the older browsers are also supported.
+New image formats like `avif` and
+`webp` are not supported by old
+browsers. Here
+the browser renders the first
+supported image file format it
+encounters. Thus, having multiple source
+files also ensures the older browsers
+are also supported.

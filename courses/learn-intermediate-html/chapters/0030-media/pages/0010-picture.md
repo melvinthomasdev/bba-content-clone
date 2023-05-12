@@ -1,5 +1,6 @@
-A `<picture>` tag can be used to give flexibility to developers for displaying
-images.
+A `<picture>` tag can be used to give
+flexibility to developers for working
+with images.
 
 Let's look at an example:
 
@@ -13,5 +14,14 @@ Let's look at an example:
 </code>
 </codeblock>
 
-In the above example, we have 3 different **bird** images, depending on the
-width of the screen, the image with the best suited resolution gets rendered.
+In the above example, we have 3
+different **bird** images. The first one
+will be displayed when the the
+available width is 0 pixels to 550 pixels.
+The second image gets displayed when
+the available width is 551 pixels to 780 pixels.
+
+Depending
+on the width of the screen, the image
+with the best suited resolution
+gets rendered.

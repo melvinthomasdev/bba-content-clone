@@ -1,9 +1,17 @@
-A **picture** tag can be used when we have a scenario, where we want to display
-a different image depending on certain conditions, such as:
+A **picture** tag can be used when
+we have a scenario, where we want to display
+a different image depending
+on certain conditions. Let's see some
+situations when we can use the `picture` tag:
 
-**Screen width:** Similar to responsive webpage, we could load a smaller or
-larger image depending on the screen width, there by improving performance and
-faster page render.
+**Screen width:** Our webpage needs to load
+on different screen sizes. When our user
+views the webpage on a mobile, we should
+show them a smaller image. Whereas when
+they view our webpage on a large screen like
+a desktop, we should show them a larger image.
+This way, we can improve performance and
+have a faster page render.
 
 <codeblock language="html" type="lesson">
 <code>
