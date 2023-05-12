@@ -21,12 +21,16 @@
   slug: text-formatting
 - name: Backgrounds
   slug: backgrounds
+- name: CSS MCQ
+  slug: css-mcq-03
 - name: Borders
   slug: borders
 - name: Opacity
   slug: opacity
 - name: Styling Links
   slug: styling-links
+- name: CSS MCQ
+  slug: css-mcq-04
 - name: Comprehensive Exercise 02
   slug: css-comprehensive-exercise-02
 - name: Styling Lists
