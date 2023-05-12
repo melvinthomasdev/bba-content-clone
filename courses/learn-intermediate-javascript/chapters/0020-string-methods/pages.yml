@@ -77,3 +77,12 @@
 - title: ComprehensiveExercise - Extract Part of a String
   slug: comprehensive-exercise-extract-part-of-string-2
   page_type: assessment
+- title: Replacing substring
+  slug: replacing-substring
+  page_type: lesson
+- title: Exercise - Replacing substring 1
+  slug: exercise-replacing-substring-1
+  page_type: exercise
+- title: Exercise - Replacing substring 2
+  slug: exercise-replacing-substring-2
+  page_type: exercise
