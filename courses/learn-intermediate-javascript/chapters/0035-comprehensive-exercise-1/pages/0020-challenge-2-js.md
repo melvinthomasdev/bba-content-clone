@@ -1,11 +1,20 @@
-- Given is a name and and email:
-  - Name = Albert Einstein
-  - Email = albert.einstein@gmail.com
+Create a program `getAbbreviation` that
+accepts a parameter `name` which will be
+a string consisting of a full-name and
+returns abbreviated version of the name.
+For example:
+`Albert Einstein` when provided should
+return `Albert E.`
 
-- Write a program such that it takes these name and gives it's abbreviated form.
-`Albert E.`
-- Also write a program that takes the email and gives a masked version of it.
-`albe...@gmail.com`
+Create another program `getMaskedEmail` 
+that accepts a parameter `email` and
+outputs the masked version of the email,
+where we can see the first 3 characters
+in the email and the domain.
+
+For example:
+`albert.einstein@gmail.com` when provided
+should return `alb...@gmail.com`.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -13,25 +22,19 @@
 </code>
 
 <solution>
-const abbreviation = (fullName) => {
-const nameArray = fullName.split(" ");
+const getAbbreviation = (fullName) => {
+  const nameArray = fullName.split(" ");
 	return `${nameArray[0]} ${nameArray[1].charAt(0)}.`
 };
 
-const maskedEmail = (email) => {
-	return `${email.slice(0,4)}...${email.slice(email.indexOf('@'))}`
-}
-
-const name = "Albert Einstein";
-const email = "albert.einstein@gmail.com";
-
-abbreviation(name);
-maskedEmail(email);
+const getMaskedEmail = (email) => {
+	return `${email.slice(0,3)}...${email.slice(email.indexOf('@'))}`
+};
 </solution>
 <testcases>
 <caller>
-console.log(abbreviation(newName));
-console.log(maskedEmail(newEmail));
+console.log(getAbbreviation(newName));
+console.log(getMaskedEmail(newEmail));
 </caller>
 <testcase>
 <i>

@@ -1,6 +1,10 @@
-- Create a function which takes 2 arguments, one is a keyword and another a command.
-- The keyword should be present only once in the command string.
-- Return the task in command string after the keyword.
+- Create a function `getTaskFromCommand` 
+which accepts 2 parameters, `keyword` 
+and `command`.
+- The keyword will be present only ONCE
+in the command string.
+- Return the task in `command` string
+which follows the `keyword`.
 
 For example:
 ```
@@ -9,12 +13,6 @@ String = "Hey Buzz remind me to go to infinity and beyond"
 ```
 Result from the above example is `remind me to go to infinity and beyond`.
 
-Use the following to test the function.
-```
-keyword = "Alexa"
-command = "Alexa remind me to Call Arun tomorrow"
-
-```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -23,30 +21,24 @@ command = "Alexa remind me to Call Arun tomorrow"
 
 <solution>
 const getTaskFromCommand = (command, keyword) => {
-	const commandString = command.split(keyword + ' ');
-	console.log(commandString[commandString.length-1]);
+	const commandStringArray = command.split(keyword + ' ');
+	return commandStringArray[1];
 };
-
-const keyword = "Alexa";
-const command = "Alexa remind me to Call Arun tomorrow";
-
-
-getTaskFromCommand(command, keyword);
 </solution>
 <testcases>
 <caller>
-getTaskFromCommand(newCommand, newKeyword);
+console.log(getTaskFromCommand(testCommand, testKeyword));
 </caller>
 <testcase>
 <i>
-const newKeyword = "Hey Google";
-const newCommand = "Yeah, let me set the reminder. Hey Google remind me to create the JS Intermediate Challenge."
+let testCommand = "Yeah, let me set the reminder. Hey Google remind me to create the JS Intermediate Challenge.";
+let testKeyword = "Hey Google";
 </i>
 </testcase>
 <testcase>
 <i>
-const newKeyword = "Siri";
-const newCommand = "Wait, I might forget about the match. Hey Siri set an Alarm for 8:30 PM about the football match"
+const testCommand = "Wait, I might forget about the match. Hey Siri set an Alarm for 8:30 PM about the football match";
+const testKeyword = "Siri";
 </i>
 </testcase>
 </testcases>
