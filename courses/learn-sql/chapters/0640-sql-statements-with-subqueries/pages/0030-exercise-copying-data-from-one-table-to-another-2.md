@@ -4,23 +4,23 @@ Write a set of SQL statements to:
 
 1. create a new table `courses` with the following columns, data types and constraints.
 
-    <table>
-        <tr>
-            <th width='33%'>column</th>
-            <th width='33%'>data type</th>
-            <th width='33%'>constraint</th>
-        </tr>
-        <tr>
-            <td width='33%'>id</td>
-            <td width='33%'>INTEGER</td>
-            <td width='33%'>NOT NULL, PRIMARY KEY, AUTOINCREMENT</td>
-        </tr>
-        <tr>
-            <td width='33%'>name</td>
-            <td width='33%'>TEXT</td>
-            <td width='33%'>NOT NULL</td>
-        </tr>
-    </table>
+<table>
+    <tr>
+        <th width='33%'>column</th>
+        <th width='33%'>data type</th>
+        <th width='33%'>constraint</th>
+    </tr>
+    <tr>
+        <td width='33%'>id</td>
+        <td width='33%'>INTEGER</td>
+        <td width='33%'>NOT NULL, PRIMARY KEY, AUTOINCREMENT</td>
+    </tr>
+    <tr>
+        <td width='33%'>name</td>
+        <td width='33%'>TEXT</td>
+        <td width='33%'>NOT NULL</td>
+    </tr>
+</table>
 
 2. Extract `distinct` names of all not-null `unique` `course`s students are enrolled in, from `students` table, and insert them in the newly created `courses` table.
 
