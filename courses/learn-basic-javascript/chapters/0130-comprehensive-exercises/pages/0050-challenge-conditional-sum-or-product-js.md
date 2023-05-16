@@ -1,63 +1,66 @@
-- Write a program that accepts two parameter a number `n` and a string with values either "sum" or "product".
-- Based on the second parameter, find and print to the screen, the sum or product of 1...n.
-- If user enters any other value than `sum` or `product` log `Not a valid Input` to the console.
-- Use the given code to test your solution.
+Create a program `sumOrProductOfN`
+that accepts two parameters a
+number `n` and a string `operator`
+with values which can be
+either `sum` or `product`.
+
+Based on the `operator` parameter,
+find and print to the screen,
+the `sum` or `product` of 1 to `n`.
+
+If user enters any other value than 
+`sum` or `product` log `Not a valid Input`
+to the console.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
-sumOrProductOfN(8, 'sum');
-sumOrProductOfN(60, 'product');
-sumOrProductOfN(41, 'hello');
+// Write your code here
 </code>
-
 <solution>
-const sumOrProductOfN = (num, operator) => {
+const sumOrProductOfN = (n, operator) => {
 	if (operator === 'sum') {
 		let sum = 0;
-		for (i = num; i > 0; i--) {
+		for (i = n; i > 0; i--) {
 			sum += i;
 		}
-		return sum;
+		console.log(sum);
 	} else if (operator === 'product') {
 		let product = 1;
-		for (i = num; i > 0; i--) {
+		for (i = n; i > 0; i--) {
 			product *= i;
 		}
-		return product;
+		console.log(product);
 	} else {
-		return "Not a valid Input";
+		console.log("Not a valid Input");
 	}
 };
-sumOrProductOfN(8, 'sum');
-sumOrProductOfN(60, 'product');
-sumOrProductOfN(41, 'hello');
 </solution>
 <testcases>
 <caller>
-console.log(sumOrProductOfN(number, newOperator));
+sumOrProductOfN(testNumber, testOperator);
 </caller>
 <testcase>
 <i>
-const number = 12;
-const newOperator = "product";
+const testNumber = 12;
+const testOperator = "product";
 </i>
 </testcase>
 <testcase>
 <i>
-const number = 32;
-const newOperator = "sum";
+const testNumber = 32;
+const testOperator = "sum";
 </i>
 </testcase>
 <testcase>
 <i>
-const number = 1;
-const newOperator = "alert";
+const testNumber = 1;
+const testOperator = "alert";
 </i>
 </testcase>
 <testcase>
 <i>
-const number = 5;
-const newOperator = "prompt";
+const testNumber = 5;
+const testOperator = "prompt";
 </i>
 </testcase>
 </testcases>
