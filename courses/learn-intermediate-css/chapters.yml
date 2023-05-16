@@ -19,3 +19,5 @@
   slug: flexbox
 - name: CSS Grid
   slug: css-grid
+- name: CSS Reset
+  slug: css-reset
