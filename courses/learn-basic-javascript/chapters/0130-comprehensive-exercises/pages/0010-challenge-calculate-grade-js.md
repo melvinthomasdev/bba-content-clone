@@ -3,13 +3,13 @@
 * If the score is more than 60 and less than 81, then grade is **B**.
 * If the score is 60 or less than 60, then grade is **C**.
 
-Based on the above conditions write a function to take the grade and print accordingly:
-`You got X grade.`
-Use the following scores to check the program.
-- 88
-- 43
-- 66
-- 41
+Based on the above conditions 
+create a function `getGrade` 
+that accepts two parameters 
+`score` and `name` 
+The function should log
+`[name] got X grade.`
+accordingly to the console.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -17,7 +17,7 @@ Use the following scores to check the program.
 </code>
 
 <solution>
-const getGrade = (score) => {
+const getGrade = (score, name) => {
 	let grade = null;
 
 	if (score === 100) {
@@ -30,35 +30,35 @@ const getGrade = (score) => {
 		grade = "C";
 	}
 
-	return `You got ${grade} grade.`;
+	console.log(`${name} got ${grade} grade.`);
 };
-getGrade(88);
-getGrade(43);
-getGrade(66);
-getGrade(41);
 </solution>
 <testcases>
 <caller>
-console.log(getGrade(grade));
+getGrade(testScore, testName);
 </caller>
 <testcase>
 <i>
-grade = 50;
+let testScore = 50;
+let testName = "Tom";
 </i>
 </testcase>
 <testcase>
 <i>
-grade = 68;
+let testScore = 68;
+let testName = "Henry";
 </i>
 </testcase>
 <testcase>
 <i>
-grade = 60;
+let testScore = 60;
+let testName = "Jon";
 </i>
 </testcase>
 <testcase>
 <i>
-grade = 75;
+let testScore = 75;
+let testName = "Ed";
 </i>
 </testcase>
 </testcases>
