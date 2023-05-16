@@ -1,32 +1,81 @@
-Given is an array of numbers `[58, 44, 30, 98, 86, 9, 5, 86, 92, 60]`
+Given is an array `arrayOfNumber`
+which, as the name suggests, is an
+array of numbers.
 
-- Create a `sumArray` function that takes an array of number as a parameter, and
-  calculate the sum of all its numbers
-- Make a new array `multipleOf3` that contains each number which is a multiple
-  by 3.
-- Create a new array that contains only even numbers.
-- Create a new array that should have true for even number and false for odd
-  numbers.
+Create a function `arrayOperationsNumber`
+which accepts `arrayOfNumber` as a
+parameter and consists of the following:-
+ 
+- Logs the sum of all numbers in
+`arrayOfNumber` to the console.
+
+- Create a new array from `arrayOfNumber`
+in which all the elements of the array
+are a multiple of 3.
+
+- Create a new array from `arrayOfNumber` 
+which contains only **even** numbers and
+log it to the console.
+
+- Create a new array from `arrayOfNumber`
+that contains `true` for **even** numbers 
+and `false` for **odd** numbers and log it
+to the console.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 // Write code here
 </code>
 <solution>
-let numberArray = [58, 44, 30, 98, 86, 9, 5, 86, 92, 60];
+const arrayOperationsNumber = inputArray => {
+  let sum = 0;
+  inputArray.map(number => sum += number);
 
-const sumArray = inputArray => { let sum = 0; inputArray.map(number => sum +=
-number); return sum; };
+  const arrayMultipleOf3 = inputArray.filter(
+    number => number % 3 === 0
+  );
 
-const multipleOf3 = numbers.filter(number => return number % 3 === 0);
+  const evenNumbersArray = inputArray.filter(
+    number => number % 2 === 0
+  );
 
-const evenNumbersArray = numbers.filter(number => number % 2 === 0);
+  const oddEvenArray = inputArray.map((num)=>{
+    if (num % 2 === 0){
+      return true;
+    } else {
+      return false;
+    }
+  });
 
-const oddEvenArray = numbers.map((num)=>{ if (num % 2 === 0){ return true } else
-{ return false } });
-
-console.log(sumArray(numberArray)); console.log(multipleOf3);
-console.log(evenNumbersArray); console.log(oddEvenArray);
-
+  console.log(sum);
+  console.log(arrayMultipleOf3);
+  console.log(evenNumbersArray);
+  console.log(oddEvenArray);
+}
 </solution>
+<testcases>
+<caller>
+arrayOperationsNumber(testArray);
+</caller>
+<testcase>
+<i>
+const testArray = [4, 5, 88, 21, 3, 28]
+</i>
+</testcase>
+<testcase>
+<i>
+const testArray = [6, 10, 81, 1, 37, 2]
+</i>
+</testcase>
+<testcase>
+<i>
+const testArray = [41, 50, 91, 46, 3, 1]
+</i>
+</testcase>
+<testcase>
+<i>
+const testArray = [0, 31, 83, 71, 44, 26]
+</i>
+</testcase>
+</testcases>
 </codeblock>
