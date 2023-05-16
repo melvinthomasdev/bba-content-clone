@@ -65,3 +65,9 @@
 - title: Exercise - Selecting Child Element
   slug: exercise-selecting-child-element-2
   page_type: exercise
+- title: Selecting Elements Using dataset
+  slug: selecting-elements-using-dataset
+  page_type: lesson
+- title: Exercise - Selecting Elements Using dataset
+  slug: exercise-selecting-elements-using-dataset
+  page_type: exercise
