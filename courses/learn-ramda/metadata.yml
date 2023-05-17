@@ -3,5 +3,10 @@ name: Learn RamdaJS
 subheading: Learn RamdaJS with examples
 slug: learn-ramdajs
 published: true
+custom_data:
+  type: ramdajs
+  upcoming: false
+  newCourse: true
+  courseColor: border-gray-600
 home_logo: ramda.svg
 logo: ramda.svg
