@@ -1,0 +1,13 @@
+---
+- title: Assoc
+  slug: assoc
+  page_type: lesson
+- title: Exercise - Assoc
+  slug: exercise-assoc
+  page_type: exercise
+- title: assocPath
+  slug: assoc-path
+  page_type: lesson
+- title: Exercise - assocPath
+  slug: exercise-assoc-path
+  page_type: exercise

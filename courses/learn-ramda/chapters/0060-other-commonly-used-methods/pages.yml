@@ -1,0 +1,43 @@
+---
+- title: Pipe and Compose
+  slug: pipe-and-compose
+  page_type: lesson
+- title: Exercise - Pipe and Compose
+  slug: exercise-pipe-and-compose
+  page_type: exercise
+- title: Gap Operator (__)
+  slug: gap-operator
+  page_type: lesson
+- title: Exercise - Gap Operator
+  slug: exercise-gap-operator
+  page_type: exercise
+- title: fromPairs and toPairs
+  slug: from-pairs-and-to-pairs
+  page_type: lesson
+- title: Exercise - fromPairs and toPairs
+  slug: exercise-from-pairs-and-to-pairs
+  page_type: exercise
+- title: Equals
+  slug: equals
+  page_type: lesson
+- title: Exercise - Equals
+  slug: exercise-equals
+  page_type: exercise
+- title: Clone
+  slug: clone
+  page_type: lesson
+- title: Exercise - Clone
+  slug: exercise-clone
+  page_type: exercise
+- title: Keys and Values
+  slug: keys-and-values
+  page_type: lesson
+- title: Exercise - Keys and Values
+  slug: exercise-keys-and-values
+  page_type: exercise
+- title: Pluck
+  slug: pluck
+  page_type: lesson
+- title: Exercise - Pluck
+  slug: exercise-pluck
+  page_type: exercise

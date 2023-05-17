@@ -1,0 +1,19 @@
+---
+- title: Functional Programming
+  slug: functional-programming
+  page_type: lesson
+- title: Currying
+  slug: currying
+  page_type: lesson
+- title: Introduction to Ramda.JS
+  slug: introduction-to-ramda-js
+  page_type: lesson
+- title: Attempting the exercises
+  slug: attempting-the-exercises
+  page_type: lesson
+- title: Exercise - Currying
+  slug: exercise-currying
+  page_type: exercise
+- title: Function Composition in Ramda
+  slug: function-composition-in-ramda
+  page_type: lesson

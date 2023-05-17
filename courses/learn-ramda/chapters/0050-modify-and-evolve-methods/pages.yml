@@ -1,0 +1,19 @@
+---
+- title: Modify
+  slug: modify
+  page_type: lesson
+- title: Exercise - Modify
+  slug: exercise-modify
+  page_type: exercise
+- title: modifyPath
+  slug: modifypath
+  page_type: lesson
+- title: Exercise - modifyPath
+  slug: exercise-modifypath
+  page_type: exercise
+- title: Evolve
+  slug: evolve
+  page_type: lesson
+- title: Exercise - Evolve
+  slug: exercise-evolve
+  page_type: exercise

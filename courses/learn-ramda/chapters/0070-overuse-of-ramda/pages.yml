@@ -1,0 +1,16 @@
+---
+- title: When not to use Ramda
+  slug: when-not-to-use-ramda
+  page_type: lesson
+- title: Filter
+  slug: filter
+  page_type: lesson
+- title: Merge, Modify and Assoc
+  slug: merge-modify-and-assoc
+  page_type: lesson
+- title: Pipe
+  slug: pipe
+  page_type: lesson
+- title: Conclusion
+  slug: conclusion
+  page_type: lesson

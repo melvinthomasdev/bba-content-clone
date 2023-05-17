@@ -1,0 +1,16 @@
+---
+- title: mergeLeft and mergeRight
+  slug: merge-left-and-merge-right
+  page_type: lesson
+- title: Exercise - mergeLeft and mergeRight
+  slug: exercise-merge-left-and-merge-right
+  page_type: exercise
+- title: mergeDeepLeft and mergeDeepRight
+  slug: merge-deep-left-and-merge-deep-right
+  page_type: lesson
+- title: Exercise - mergeDeepLeft and mergeDeepRight
+  slug: exercise-merge-deep-left-and-merge-deep-right
+  page_type: exercise
+- title: Preferring Left vs Right Merge
+  slug: preferring-left-vs-right-merge
+  page_type: lesson

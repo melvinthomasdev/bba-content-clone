@@ -1,0 +1,15 @@
+---
+- name: Getting started
+  slug: getting-started
+- name: Introduction
+  slug: introduction
+- name: Association methods
+  slug: association-methods
+- name: Merge methods
+  slug: merge-methods
+- name: Modify and Evolve Methods
+  slug: modify-and-evolve-methods
+- name: Other methods
+  slug: other-commonly-used-methods
+- name: Overuse of Ramda
+  slug: overuse-of-ramda
