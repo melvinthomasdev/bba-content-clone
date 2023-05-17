@@ -6,7 +6,7 @@ List all cars that are manufactured in the given region.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
-const getCarsByRegion = ({ manufactures, region }) =>
+const getCarsByRegion = ({ manufacturers, region }) =>
   // write your code here
 </code>
 
