@@ -8,5 +8,5 @@ custom_data:
   upcoming: false
   newCourse: true
   courseColor: border-gray-600
-home_logo: ramda.svg
-logo: ramda.svg
+home_logo: ramda-logo.svg
+logo: ramda-logo.svg
