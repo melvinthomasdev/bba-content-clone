@@ -8,11 +8,17 @@
 - title: Exercise - Variables
   slug: exercise-variables
   page_type: exercise
+- title: Exercise - Variables 2
+  slug: exercise-variables-2
+  page_type: exercise
 - title: const and let
   slug: const-and-let
   page_type: lesson
 - title: Exercise - const and let
   slug: exercise-const-and-let
+  page_type: exercise
+- title: Exercise - const and let 2
+  slug: exercise-const-and-let-2
   page_type: exercise
 - title: Declaration without const or let
   slug: declaration-without-const-or-let
@@ -35,6 +41,9 @@
 - title: Exercise - Store true or false
   slug: exercise-store-true-or-false
   page_type: exercise
+- title: Exercise - Store true or false 2
+  slug: exercise-store-true-or-false-2
+  page_type: exercise
 - title: Expressions
   slug: expressions
   page_type: lesson
@@ -47,9 +56,15 @@
 - title: Exercise - Storing result of Expressions
   slug: exercise-storing-result-of-expressions
   page_type: exercise
+- title: Exercise - Storing result of Expressions 2
+  slug: exercise-storing-result-of-expressions-2
+  page_type: exercise
 - title: Checking Equality
   slug: checking-equality
   page_type: lesson
 - title: Exercise - Checking Equality
   slug: exercise-checking-equality
+  page_type: exercise
+- title: Exercise - Checking Equality 2
+  slug: exercise-checking-equality-2
   page_type: exercise

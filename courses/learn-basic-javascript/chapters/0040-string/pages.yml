@@ -5,6 +5,9 @@
 - title: Exercise - Create String
   slug: exercise-create-string
   page_type: exercise
+- title: Exercise - Create string 2
+  slug: exercise-create-string-2
+  page_type: exercise
 - title: Joining Strings
   slug: joining-strings
   page_type: lesson
@@ -19,4 +22,7 @@
   page_type: lesson
 - title: Exercise - Template Strings
   slug: exercise-template-strings
+  page_type: exercise
+- title: Exercise - Template Strings 2
+  slug: exercise-template-strings-2
   page_type: exercise

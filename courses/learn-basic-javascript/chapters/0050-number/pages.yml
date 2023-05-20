@@ -5,6 +5,9 @@
 - title: Exercise - Store Number
   slug: exercise-store-number
   page_type: exercise
+- title: Exercise - Store number 2
+  slug: exercise-store-number-2
+  page_type: exercise
 - title: NaN
   slug: nan
   page_type: lesson

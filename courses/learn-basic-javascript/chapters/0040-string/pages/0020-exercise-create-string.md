@@ -1,5 +1,4 @@
-Store the string `apple`
-in the variable `fruitName`.
+Store the string `apple` in the variable `fruitName`.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
