@@ -11,7 +11,7 @@ A variable declared using `let`,
 whose value hasn't
 been assigned yet,
 has `undefined` as
-its default value.
+it's default value.
 
 <codeblock language="javascript" type="lesson">
 <code>

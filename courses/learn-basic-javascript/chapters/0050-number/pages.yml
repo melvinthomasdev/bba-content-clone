@@ -23,9 +23,15 @@
 - title: Exercise - Increase or Decrease a Number by One
   slug: exercise-increase-or-decrease-a-number-by-one
   page_type: exercise
+- title: Exercise - Increase or Decrease a Number by One 2
+  slug: exercise-increase-or-decrease-a-number-by-one-2
+  page_type: exercise
 - title: Get the Remainder
   slug: get-the-remainder
   page_type: lesson
 - title: Exercise - Get the Remainder
   slug: exercise-get-the-remainder
+  page_type: exercise
+- title: Exercise - Get the Remainder 2
+  slug: exercise-get-the-remainder-2
   page_type: exercise
