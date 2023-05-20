@@ -19,10 +19,10 @@
   slug: array
 - name: Display output on the screen 2
   slug: display-output-on-screen-2
-- name: Comprehensive Exercise 2
-  slug: comprehensive-exercise-2
 - name: Array Methods
   slug: array-methods
+- name: Comprehensive Exercise 2
+  slug: comprehensive-exercise-2
 - name: Conditionals
   slug: conditionals
 - name: Logical Operations
@@ -33,5 +33,8 @@
   slug: comprehensive-exercise-3
 - name: Functions
   slug: functions
+- name: Navigate through Array
+  slug: navigate-through-array
 - name: Comprehensive Exercises
   slug: comprehensive-exercises
+  

@@ -1,0 +1,13 @@
+---
+- title: Execute Function for Each Element
+  slug: foreach
+  page_type: lesson
+- title: Exercise - Execute Function for Each Element
+  slug: exercise-foreach
+  page_type: exercise
+- title: Filter elements based on given condition
+  slug: filter
+  page_type: lesson
+- title: Exercise - Check Elements on Given Condition
+  slug: exercise-filter
+  page_type: exercise
