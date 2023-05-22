@@ -130,11 +130,15 @@ The attribute `type` is used to specify whether it is a `lesson` or an `exercise
 
 #### 3.2. `<codeblock testMode="fixedInput" >`
 
-The `testMode` attribute is used to specify the mode of testing a solution to a `exercise`.
+The `testMode` attribute is used to specify the mode of testing a solution to an `exercise`.
 
 The value of `testMode` could either be `fixedInput` or `multipleInput`.
 
 While `fixedInput` is used when a exercise has a fixed solution, `multipleInput`is used when we use testcases.
+
+#### 3.3. `<codeblock matchSolutionCode="true" >`
+
+The `matchSolutionCode` attribute can be used to test solution to an `exercise`, when we want to match the solution code instead of the output.
 
 ### 4. `panel`
 
