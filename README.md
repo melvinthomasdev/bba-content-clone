@@ -182,9 +182,9 @@ After this, the hook will be set up and will run on each commit. The error messa
 
 (e) Write in the active voice: a healthy mix of 'we' and 'you'. For reference, check out the writing style in http://learnyouahaskell.com/syntax-in-functions#pattern-matching
 
-(f) Experimental: Ventilated Prose Style of writing (reference: https://github.com/bigbinary/bb-academy-web/blob/master/doc/writing-style.md)
+(f) Experimental: Ventilated Prose Style of writing (reference: https://www.bigbinary.com/books/how-we-work/ventilated-prose-for-writing-blog)
 
-(g) Avoid writing in parentheses.
+(g) Avoid writing in parentheses, or using i.e. or etc. among other writing constructs. Try to create smaller, more legible sentences.
 
 (h) Avoid run-on sentences. Also, avoid hanging sentences and starting sentences with an ellipsis. Ellipsis is the three dots that we sometimes see in informal writing. All of these styles of writing create incomplete sentences. We need to stay clear of this.
 https://en.wikipedia.org/wiki/Ellipsis
