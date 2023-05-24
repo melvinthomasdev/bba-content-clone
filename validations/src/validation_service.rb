@@ -76,10 +76,18 @@ module Src
         validate_chapters_data_matches_chapter_directories(chapters_config, chapter_directories, course_base_directory_name)
 
         ##################### pages_config_validation ######################
-        chapter_directories.each do |chapter_directory|
+        chapter_directories.each_with_index do |chapter_directory,chapter_index|
+          is_chapter_having_pages = chapters_config[chapter_index]["has_pages"]
+          chapter_files = Dir[File.join(chapter_directory, "*.md")].select { |f| File.file? f }
+          chapter_base_directory_name = File.basename(chapter_directory)
+          chapter_files.each do |chapter_file|
+            validate_page_codeblock_tags(chapter_file, course_base_directory_name, chapter_base_directory_name, course_assets_config)
+            validate_page_image_tags(chapter_file, course_base_directory_name, chapter_base_directory_name, course_assets_config)
+          end
+          next unless is_chapter_having_pages.nil? || is_chapter_having_pages
+
           pages_config = load_pages_config(chapter_directory, course_base_directory_name)
           page_files = Dir[File.join(chapter_directory, "pages", "*.md")].select { |f| File.file? f }
-          chapter_base_directory_name = File.basename(chapter_directory)
 
           validate_uniqueness_of_page_slugs(pages_config, course_base_directory_name, chapter_base_directory_name)
           pages_config.each_with_index do |page_data, page_index|
