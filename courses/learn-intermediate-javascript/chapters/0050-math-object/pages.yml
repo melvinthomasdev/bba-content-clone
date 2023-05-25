@@ -41,3 +41,9 @@
 - title: Exercise - Removing Fractional Part of Number
   slug: exercise-removing-fractional-part-of-number
   page_type: exercise
+- title: Generating a Random Number
+  slug: generating-a-random-number
+  page_type: lesson
+- title: Exercise - Generating a Random Number
+  slug: exercise-generating-a-random-number
+  page_type: exercise
