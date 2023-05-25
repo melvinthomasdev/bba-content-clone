@@ -122,15 +122,15 @@ We write our example and exercise code inside `<codeblock></codeblock>`. The att
 
 #### 3.1. `<codeblock language="html" >`
 
-The attribute `language` is used to specify which programming language is utilized inside the code block.
+The attribute `language` is used to specify which programming language is utilized inside the code block. This is a required attribute.
 
 #### 3.2. `<codeblock type="exercise" >`
 
-The attribute `type` is used to specify whether it is a `lesson` or an `exercise`.
+The attribute `type` is used to specify whether it is a `lesson` or an `exercise`. This is a required attribute.
 
 #### 3.2. `<codeblock testMode="fixedInput" >`
 
-The `testMode` attribute is used to specify the mode of testing a solution to an `exercise`.
+The `testMode` attribute is used to specify the mode of testing a solution to an `exercise`. This is a required attribute.
 
 The value of `testMode` could either be `fixedInput` or `multipleInput`.
 
@@ -138,7 +138,47 @@ While `fixedInput` is used when a exercise has a fixed solution, `multipleInput`
 
 #### 3.3. `<codeblock matchSolutionCode="true" >`
 
-The `matchSolutionCode` attribute can be used to test solution to an `exercise`, when we want to match the solution code instead of the output.
+The `matchSolutionCode` attribute can be used to test solution to an `exercise`, when we want to match the solution code instead of the output. It is considered to be false when not specified. This only works for javascript exercises as of now.
+
+#### 3.4. `<codeblock showTestCaseOutput="false" >`
+
+The `showTestCaseOutput` attribute determines if in exercises involving test cases, the expected output should be shown to the candidate or not. It is considered to be true when not specified. If explicitly set to false, the expected output will not be shown to the candidate. This only works for multipleInput exercises (exercises involving test cases).
+
+#### 3.5. `<codeblock evaluateAsync="true" >`
+
+The `showTestCaseOutput` attribute determines if you want to evaluate the javascript code written by a student asynchronously or not. It is considered to be false when not specified. If explicitly set to true, the javascript code will be evaluated asynchronously. Code involving promises, async/await, etc. cannot be evaluated in a linear single thread fashion. So we convert the candidate code into non-async code using Abstract Syntax Trees (AST) and then evaluate it. This only works for javascript exercises. Use it in javascript exercises where you feel the candidate code might involve async code.
+
+#### 3.6. `<codeblock showSolution="false" >`
+
+The `showSolution` attribute determines if you want to show the candidate the solution to the exercise or not. It is considered to be true when not specified. If explicitly set to false, the solution button on the editor toolbar will not be shown to the candidate.
+
+#### 3.7. `<codeblock packages="ramda, moment" >`
+
+The `packages` attribute determines what other npm packages should be loaded while running the javascript code written by the student. It is considered to be empty when not specified. If explicitly set to a comma separated list of npm package names, those packages will be loaded while running the student's  code. This only works for javascript editors. Right now, only `ramda` is supported. If you come across a use case where you need to load other packages, please reach out to neetoCourse dev team to check if that package can be supported or not.
+
+#### 3.8. `<codeblock images="view-from-a-plane.jpg, view-from-a-chopper.jpg" >`
+
+The `images` attribute what images should be loaded while running the student's code. It is considered to be empty when not specified. If explicitly set to a comma separated list of image names, those images will be loaded while running the student's  code. This works for javascript/html/css editors. The images should be present in the `images` directory of the chapter. Usually, when saving content in neetoCourse, the logic automatically scans if an editor should be preloaded with an image/ a set of images or not. But there can be explicit cases. For example, you may provide a directive to a student with an image without src, and ask them to change the src to one of the other images. For the changed code to load the image correctly in the browser that displays resultant html, the editor needs to know about the images it has to keep ready. In such cases, you can use the `images` attribute.
+
+#### 3.9. `<codeblock dbName="students1.db" >`
+
+The `dbName` attribute specifies what sqlite db to load for display and to run queries on when it is an SQL editor. It is a required attribute if you set `language="sql"` on a codeblock. The db should be present in the `assets/databases` directory in the repository root, and should be mentioned in the assets.yml file in the course root.
+
+#### 3.10. `<codeblock dbName="students1.db" displayDbOnly="true" >`
+
+The `displayDbOnly` attribute specifies if the db should be loaded only for display purposes or not. It is considered to be false when not specified. If explicitly set to true, only the database tables will show up. This means that there will be no editor that shows up and the student will not be able to run queries on the db. This only works for SQL editors.
+
+#### 3.11. `<codeblock dbName="students1.db" focusTableBeforeRun="students" >`
+
+The `focusTableBeforeRun` attribute specifies what table should be shown (focussed on) to the student when the db loads up below the editor. By default, the first table in the list of tables in the db is shown. The other tables can be accessed using tabs. When explicitly specified, the table mentioned in the attribute will be focussed to the student. This only works for SQL editors.
+
+#### 3.12. `<codeblock dbName="students1.db" focusTableAfterRun="students" >`
+
+The `focusTableAfterRun` attribute specifies what table should be shown (focussed on) to the student when a query by the student is run successfully on the db. By default, the query output tab is shown. The other tables can be accessed using tabs. But you can think of a case where you expect the candidate's query to change some state in a table that's not the first in the list of tables. For better UX, we may want to focus on that table if the query is run successfully. When explicitly specified, the table mentioned in the attribute will be focussed to the student post the query run. This only works for SQL editors.
+
+#### 3.13. `<codeblock dbName="students1.db" checkForViews="studentsData" >`
+
+The `checkForViews` attribute specifies which SQL views to check for when the student's query is run. It is considered to be empty when not specified. If explicitly set to a comma separated list of view names, those views will be checked for when the student's query is run. If the student's query does not match the expected output of the view, the student's query is considered to be wrong. This only works for SQL exercise editors.
 
 ### 4. `panel`
 
@@ -258,22 +298,22 @@ That same image file should exist in app/assets/images/courses/<course_name>/
       |title |Malgudi Days |
       |author |R. K. Narayan |
       |alreadyRead |true |
-      |isAvailable |true| 
-     
+      |isAvailable |true|
+
      ```
       Write a code to ..
      ```
   - Avoid
      ```
-      The `bookDetails` variable is an object that contains different details of a book, 
+      The `bookDetails` variable is an object that contains different details of a book,
        like `title`, `author` and user specific details like `alreadyRead `and `isAvailable`.
-     ``` 
+     ```
 - If we need to specify a specific format for the output, use statements:
-  - Good: 
+  - Good:
     ```md
       "print the text in the format"
-    ``` 
-  - Avoid: 
+    ```
+  - Avoid:
      ```md
        print as such or print like
      ```
@@ -288,12 +328,12 @@ That same image file should exist in app/assets/images/courses/<course_name>/
      ```
 - Instead of using X or Y, use the name of the value in the question.
 
-   - Good: 
+   - Good:
       ```md
         "The Average speed of Team India was [Average Speed] feet per second."
         "Write a function that calculates the area of a rectangle with a length of [Length] units and a width of [Width] units."
-      ``` 
-    - Avoid: 
+      ```
+    - Avoid:
        ```md
          The Average speed of Team India was X feet per second
          Write a function that calculates the area of a rectangle with a length of X units and a width of Y units.
@@ -311,14 +351,14 @@ That same image file should exist in app/assets/images/courses/<course_name>/
        ```
 - To maintain a consistent pattern, avoid addressing the user in the question statements, as we may not be able to do so in all of the questions.
 
-   - Good: 
+   - Good:
    ```md
      "If the given user has read the book, print .."
      "If the input is a palindrome, the function should return true."
    ```
   - Avoid
   ```md
-     If you have read the book, print ..      
+     If you have read the book, print ..
      If you input a palindrome, the function should return true.
   ```
 ### Comprehensive Exercise:
