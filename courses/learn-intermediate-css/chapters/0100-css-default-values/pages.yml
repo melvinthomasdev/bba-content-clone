@@ -7,3 +7,9 @@
 - title: Font Family
   slug: font-family
   page_type: lesson
+- title: Background
+  slug: background
+  page_type: lesson
+- title: Border
+  slug: border
+  page_type: lesson

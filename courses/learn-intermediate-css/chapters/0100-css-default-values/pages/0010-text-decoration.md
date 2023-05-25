@@ -21,7 +21,7 @@ p{
 </code>
 </codeblock>
 
-While we can set each property a value, there are some defaults values as well, like:
+While we can set each property a value, there are some **default values** as well, like:
 
 ```css
 text-decoration-color: currentcolor
