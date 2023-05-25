@@ -1,4 +1,4 @@
-Our goal here at BigBinary Books is to make learning easier.
+Our goal here at BigBinary Academy is to make learning easier.
 Without your feedback, we will not be able to improve it.
 Send an email to hello@bigbinary.com with your feedback.
 
