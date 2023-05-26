@@ -8,6 +8,9 @@
 - title: Lifting a State
   slug: lifting-a-state
   page_type: lesson
+- title: Always Use an Initial State
+  slug: always-use-an-initial-state
+  page_type: lesson
 - title: Using Inputs with State
   slug: using-inputs-with-state
   page_type: lesson
