@@ -11,3 +11,18 @@ The `<ul>` element is used to display a bulleted list of items. Each item, in tu
 </ul>
 </code>
 </codeblock>
+
+Other elements are also allowed to be placed inside `<li>` elements.
+
+For example, we can place headings inside list items in this manner.
+
+<codeblock language="html" type="lesson">
+<code>
+<h2>Menu</h2>
+<ul>
+  <li><h3>Home</h3></li>
+  <li><h3>About</h3></li>
+  <li><h3>Courses</h3></li>
+</ul>
+</code>
+</codeblock>
