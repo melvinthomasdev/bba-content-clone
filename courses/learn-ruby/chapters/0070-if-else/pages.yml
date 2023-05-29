@@ -5,6 +5,9 @@
 - title: Difference between = and ==
   slug: difference-between-single-equals-and-double-equals
   page_type: lesson
+- title: Difference between == and ===
+  slug: difference-between-double-equals-and-triple-equals
+  page_type: lesson
 - title: Exercise - The if Condition
   slug: exercise-the-if-condition
   page_type: exercise
