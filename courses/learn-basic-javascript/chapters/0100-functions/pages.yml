@@ -53,3 +53,9 @@
 - title: Function Challenge
   slug: function-challenge
   page_type: lesson
+- title: Callback Functions
+  slug: callback-functions
+  page_type: lesson
+- title: Exercise- Callback Functions
+  slug: exercise-callback-functions
+  page_type: exercise
