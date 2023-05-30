@@ -1,19 +1,18 @@
-Create a variable`distance`,
+Create a variable`distanceInKM`,
 which stores the number
-`1054.4` as distance
-between Washington DC and
-Miami beach in miles.
+`1,435.9` as distance
+between Delhi and
+Mumbai in kilometers.
 
-Print the variable `distance`
+Print the variable `distanceInKM`
 to the console.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
-// Write code here
+
 </code>
 <solution>
-const distance = 1054.4;
-
+const distanceInKM = 1,435.9;
 console.log(distance);
 </solution>
 </codeblock>
@@ -28,14 +27,14 @@ the console
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
-const firstName = "Mangalassery";
-const lastName = "Neelakandan";
-// Write code here
+const firstName = "Arjun";
+const lastName = "S";
+// Write your code here
 </code>
 <solution>
-const firstName = "Mangalassery";
-const lastName = "Neelakandan";
-const fullName = firstName + " " + lastName;
+const firstName = "Arjun";
+const lastName = "S";
+const fullName = Arjun + " " + S;
 
 console.log(fullName);
 </solution>
@@ -62,8 +61,8 @@ to the console.
 const excerptFromMoviePlot = "A Mr.Potato Head doll is set in front of the poster.The VOICE OVER of ANDY, a 6-year-old boy, can be heard acting out all the voices of the scene. A GROUP OF TOYS have been crowded together in front of the "BANK" box. Andy's hand lowers a CERAMIC PIGGY BANK in front of Mr.Potato Head and shakes out a pile of coins to the floor.  Mr.Potato Head kisses the coins.""
 </code>
 <solution>
-let dollName = "Mr.Potato Head";
-let ownerName = "Andy";
+const dollName = "Mr.Potato Head";
+const ownerName = "Andy";
 
 const excerptFromMoviePlot = `A ${dollName} doll is set in front of the poster.The VOICE OVER of ${ownerName}, a 6-year-old boy, can be heard acting out all the voices of the scene. A GROUP OF TOYS have been crowded together in front of the "BANK" box. ${ownerName}'s hand lowers a CERAMIC PIGGY BANK in front of ${dollName} and shakes out a pile of coins to the floor.  ${dollName} kisses the coins.`
 
@@ -71,29 +70,14 @@ console.log(excerptFromMoviePlot);
 </solution>
 </codeblock>
 
-In the movie "In Harihar Nagar" 
-Mahadevan, Govindan Kutty,
-Appukuttan, and Thomas Kutty
-received a treasure
-bag containing 103 gold
-coins instead of money.
-
-They decided to divide the
-treasure equally among themselves
-and donate any extra coins
-to charity.
-
-Create appropriate JavaScript
-function to find the number
-of coins that will be extra.
-
-Store this in a variable
-`charity` and print the value
-of this variable to the console.
+Four friends, Amar, Akbar, Antony, and John received a treasure bag containing 103 gold coins instead of money.
+They decided to divide the treasure equally among themselves and donate any extra coins to charity.
+Create appropriate JavaScript function to find the number of coins that will be extra.
+Store this in a variable `charity` and print the value of this variable to the console.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
-// Write code here
+// Write your code here
 </code>
 <solution>
 const totalGoldCoins = 103;
@@ -104,21 +88,17 @@ console.log(charity);
 </solution>
 </codeblock>
 
-Following up from the previous
-questions, later they decided
-to give 1 more coin to charity.
-Using the correct operator,
-increase the `charity` variable value
-by 1 and print it to the console.
+Following up from the previous questions, later they decided to give 1 more coin to charity.
+Using the correct operator, increase the `charity` variable value by 1 and print it to the console.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
-// Write code here
+const charity = 3;
+// Write your code here
 </code>
 <solution>
 let charity = 3;
 charity += 1;
-
 console.log(charity);
 </solution>
 </codeblock>
