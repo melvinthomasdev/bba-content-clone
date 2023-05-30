@@ -1,0 +1,28 @@
+---
+- slug: swiping-for-coffee
+  name: Swiping for coffee
+  has_pages: false
+- slug: buying-online
+  name: Buying Online
+  has_pages: false
+- slug: settlement
+  name: Settlement
+  has_pages: false
+- slug: authorization
+  name: Authorization
+  has_pages: false
+- slug: merchant-account
+  name: Merchant Account
+  has_pages: false
+- slug: credit-card-processor
+  name: Credit Card Processor
+  has_pages: false
+- slug: price-discrimination
+  name: Price Discrimination
+  has_pages: false
+- slug: resellers
+  name: Resellers
+  has_pages: false
+- slug: chargebacks
+  name: Chargebacks
+  has_pages: false

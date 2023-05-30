@@ -1,0 +1,31 @@
+---
+- slug: response-should-be-valid-json-even-when-things-go-wrong
+  name: Response should be valid JSON even when things go wrong
+  has_pages: false
+- slug: return-400-when-invalid-request-payload
+  name: Return 400 when invalid request payload
+  has_pages: false
+- slug: return-422-when-the-input-data-is-invalid
+  name: Return 422 when the input data is invalid
+  has_pages: false
+- slug: return-401-when-the-user-is-not-authenticated
+  name: Return 401 when the user is not authenticated
+  has_pages: false
+- slug: return-403-when-the-user-is-not-authorized
+  name: Return 403 when the user is not authorized
+  has_pages: false
+- slug: return-404-when-no-record-is-found
+  name: Return 404 when no record is found
+  has_pages: false
+- slug: return-500-when-an-error-is-encountered
+  name: Return 500 when an error is encountered
+  has_pages: false
+- slug: success-key-not-needed-in-response
+  name: Success key not needed in response
+  has_pages: false
+- slug: do-not-use-redirect-in-api
+  name: Do not use redirect in API
+  has_pages: false
+- slug: return-200-when-it-s-all-good
+  name: Return 200 when it's all good
+  has_pages: false

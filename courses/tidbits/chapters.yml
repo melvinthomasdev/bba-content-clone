@@ -1,0 +1,7 @@
+---
+- slug: introduction
+  name: Introduction
+  has_pages: false
+- slug: how-to-check-if-redirect-from-http-to-https-is-working
+  name: How to check if redirect from http to https is working
+  has_pages: false
