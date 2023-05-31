@@ -24,7 +24,7 @@ Running the last command to install `webpacker` might have upgraded the
 v5.x then it might lead to compatibility issues with `webpack-dev-server` v^4.x.
 
 To workaround this issue, please follow the steps mentioned in
-[setting a specific Webpacker version section](/learn-rubyonrails/new-ruby-on-rails-application#setting-a-specific-Webpacker-version).
+[setting a specific Webpacker version section](/learn-rubyonrails/building-a-new-ruby-on-rails-application#setting-a-specific-webpacker-version).
 
 After re-installing the compatible versions for `webpacker` and
 `webpack-dev-server` check if the correct versions are installed using the
