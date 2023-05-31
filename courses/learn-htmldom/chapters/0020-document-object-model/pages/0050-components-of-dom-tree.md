@@ -63,4 +63,4 @@ The comment is also a node.
 The DOM tree will look
 something like this:
 
-<image>text-and-comment-nodes-in-dom-tree.png</image>
+![Text and comment nodes in DOM tree](https://ucarecdn.com/dc13c1b6-eabe-4dfe-b7b5-ddbcbafdb137/ "Text and comment nodes in DOM tree")
