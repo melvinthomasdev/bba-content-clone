@@ -1,0 +1,16 @@
+---
+- slug: procedural-code-vs-object-oriented-code
+  name: Procedural code vs Object Oriented code
+  has_pages: false
+- slug: behavior-and-state
+  name: Behavior and State
+  has_pages: false
+- slug: converting-procedural-style-code-to-object-oriented-code
+  name: Converting procedural style code to Object Oriented Code
+  has_pages: false
+- slug: extract-statements-into-methods-for-clarity
+  name: Extract statements into methods for clarity
+  has_pages: false
+- slug: don-t-use-instance-variables-as-global-variables
+  name: Don't use instance variables as global variables
+  has_pages: false
