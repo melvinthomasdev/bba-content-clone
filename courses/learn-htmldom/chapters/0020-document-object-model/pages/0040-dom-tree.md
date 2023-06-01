@@ -13,6 +13,7 @@ of an HTML page:
     </body>
 </html>
 </code>
+</codeblock>
 
 ![DOM tree](https://ucarecdn.com/3a33f3d7-a5bc-4bc8-a206-0aac5e524aea/ "DOM tree")
 

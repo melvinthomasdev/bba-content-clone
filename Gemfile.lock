@@ -20,7 +20,6 @@ PLATFORMS
   x86_64-darwin-22
 
 DEPENDENCIES
-  colorize (~> 0.8.1)
   neeto-course-config-validator!
   pry
   rake (~> 13)
