@@ -3,4 +3,7 @@ name: Learn Object Oriented Programming
 subheading: Learn the basics object oriented programming concepts
 slug: learn-object-oriented-programming
 published: true
+custom_data:
+  type: misc
 home_logo: learn-oopc.png
+logo: learn-oopc.png

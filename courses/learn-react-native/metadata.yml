@@ -3,4 +3,7 @@ name: Learn React Native
 subheading: Learn React Native From Scratch
 slug: learn-react-native
 published: true
+custom_data:
+  type: misc
 home_logo: learn-react-native.png
+logo: learn-react-native.png

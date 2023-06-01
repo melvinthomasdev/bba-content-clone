@@ -3,4 +3,7 @@ name: Learn Ruby on Rails
 subheading: Learn the basics of building a Ruby on Rails application
 slug: learn-rubyonrails
 published: true
+custom_data:
+  type: rubyonrails
 home_logo: learn-rubyonrails.png
+logo: learn-rubyonrails.png

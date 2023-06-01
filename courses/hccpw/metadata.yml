@@ -3,4 +3,7 @@ name: How Credit Card Processing Works
 subheading: Learn how credit card processing works
 slug: hccpw
 published: true
+custom_data:
+  type: misc
 home_logo: how-credit-card-processing-works.png
+logo: how-credit-card-processing-works.png
