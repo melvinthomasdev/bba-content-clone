@@ -32,7 +32,7 @@ gem 'counter_culture'
 Now after adding the functionality to "star" comments, add a new column to your
 `tasks` table with the name `starred_comments_count`. You can run the necessary
 migrations, to achieve the same, as we saw in the
-[chapter](https://www.bigbinary.com/learn-rubyonrails-book/using-counter-cache-to-display-comment-counts)
+[chapter](/learn-rubyonrails/using-counter-cache-to-display-comment-counts)
 introducing `counter_cache`.
 
 After adding the column, you can modify the `Comment` model in

@@ -2,7 +2,7 @@ While making API requests if there's a requirement for a parent key in the paylo
 
 ## What are API connectors?
 
-As the application grows, the number of APIs to interact with the server will also increase. Keeping in mind the principle of modularity and reusability, we create API connector files where we define a function for each API endpoint defined in the server. For more details about how to build API connectors check [this](https://www.bigbinary.com/books/learn-rubyonrails-book/building-and-organizing-apis#organizing-apis) chapter from `Learn Ruby on Rails Book`.
+As the application grows, the number of APIs to interact with the server will also increase. Keeping in mind the principle of modularity and reusability, we create API connector files where we define a function for each API endpoint defined in the server. For more details about how to build API connectors check [this](/learn-rubyonrails/building-and-organizing-apis#organizing-apis) chapter from `Learn Ruby on Rails Book`.
 
 Let's understand with an example. Let's say we have an API endpoint `/tasks` which accepts a POST request and it creates a task according to the payload. For this endpoint we will make a file `tasks.js` inside `apis` directory and add the following lines:
 

@@ -72,7 +72,7 @@ Navigate to coupons Dashboard and click on the `First purchase discount` coupon.
 We could see the `Promotion Codes` section and click on the
 `Add a promotion code` button.
 
-[<image>add_promotion_code.png</image>](/images/books/handling-stripe-subscriptions/add_promotion_code.png).
+<image>add_promotion_code.png</image>.
 
 Enter promotion code details as shown below and save it.
 

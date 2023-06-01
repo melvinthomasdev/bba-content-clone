@@ -28,7 +28,7 @@ Now visit http://localhost:3000/tasks and we will see a list of tasks.
 we do not need to explicitly import modules in Rails due to to the concept of
 `autoloading` implemented in Rails. If you're curious to know more about the
 autoloading feature, then you can go through the
-[Loading behaviour of Ruby on Rails in depth](https://www.bigbinary.com/learn-rubyonrails-book/loading-behavior-of-ruby-on-rails-in-depth)
+[Loading behaviour of Ruby on Rails in depth](/learn-rubyonrails/loading-behavior-of-ruby-on-rails-in-depth)
 chapter which addresses this topic in detail and then come back to where you
 left.
 

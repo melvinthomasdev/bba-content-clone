@@ -3,7 +3,7 @@ to take to deploy to Heroku.
 
 But to make your application work in Heroku, you would have to complete the
 upcoming chapter
-["Configure Sidekiq in Heroku"](https://www.bigbinary.com/learn-rubyonrails-book/sidekiq-in-heroku)
+["Configure Sidekiq in Heroku"](/learn-rubyonrails/sidekiq-in-heroku)
 and execute the steps mentioned there to make our Sidekiq workers run as
 intended.
 

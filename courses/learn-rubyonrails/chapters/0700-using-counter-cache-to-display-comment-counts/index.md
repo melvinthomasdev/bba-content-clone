@@ -306,4 +306,4 @@ by Rails, directly. These situations may arise when you want to introduce a
 conditional counter cache or if you want to customize the name of your counter
 cache column. In these scenarios, the `counter_culture` gem will prove to be
 beneficial. You can read more about this gem in the
-[counter culture in-depth chapter.](https://www.bigbinary.com/learn-rubyonrails-book/counter-culture)
+[counter culture in-depth chapter.](/learn-rubyonrails/counter-culture)

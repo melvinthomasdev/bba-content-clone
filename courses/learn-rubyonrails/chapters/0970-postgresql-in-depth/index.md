@@ -154,7 +154,7 @@ end
 
 One more key step required in transitioning to `PostgreSQL` is to setup the
 database configuration as mentioned in the chapter named
-["Configuring and connecting to a database"](https://www.bigbinary.com/learn-rubyonrails/configuring-and-connecting-to-a-database#using-databaseyml).
+["Configuring and connecting to a database"](/learn-rubyonrails/configuring-and-connecting-to-a-database#using-databaseyml).
 
 We at BigBinary use the `devise` gem in most of our projects. The
 [devise gem](https://github.com/heartcombo/devise) is a very popular

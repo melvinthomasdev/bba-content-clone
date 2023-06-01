@@ -35,4 +35,4 @@ It only works if there exists a route defined by the browser router within the a
 
 Use the `<a>` tag only if you need to navigate to an external page.
 
-If you'd like to dive deeper into the usage of the React Router Dom, check out [this page from our LRRB book.](https://www.bigbinary.com/books/learn-rubyonrails-book/basics-of-react-router-dom)
+If you'd like to dive deeper into the usage of the React Router Dom, check out [this page from our LRRB book.](/learn-rubyonrails/basics-of-react-router-dom)

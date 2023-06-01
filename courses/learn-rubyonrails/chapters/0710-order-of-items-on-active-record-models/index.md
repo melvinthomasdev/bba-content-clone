@@ -79,7 +79,7 @@ end
 
 Let's take a look at the User model in our Granite application. If you recall we
 updated the User model in
-[Adding comments to a task](https://www.bigbinary.com/learn-rubyonrails-book/adding-comments-to-tasks)
+[Adding comments to a task](/learn-rubyonrails/adding-comments-to-tasks)
 chapter to:
 
 ```ruby

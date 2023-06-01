@@ -105,7 +105,7 @@ workflows:
 
 **Note** that to ensure linting and formatting is strictly done using the
 configs mentioned in the
-[linting and formatting chapter](https://www.bigbinary.com/learn-rubyonrails-book/linting-and-formatting-code),
+[linting and formatting chapter](/learn-rubyonrails/linting-and-formatting-code),
 we added relevant tasks in CircleCI too.
 
 If the CircleCI build fails, then you will get an email for the same. Or you can

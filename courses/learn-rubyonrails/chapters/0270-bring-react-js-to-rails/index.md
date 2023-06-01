@@ -53,7 +53,7 @@ bundle exec rails webpacker:install:react # enter y when prompted
 Please **note** that the overwrite made by the above command has removed a
 couple of entries from the `plugins` section of `babel.config.js` which was
 added while
-[setting up the react environment](https://www.bigbinary.com/learn-rubyonrails/setting-up-react-environment).
+[setting up the react environment](/learn-rubyonrails/setting-up-react-environment).
 
 Let's first complete setting up the React-Webpacker pipeline by running the
 following command:

@@ -599,7 +599,7 @@ import "../../lib/dayjs";
 import "lib/days";
 ```
 
-To know more about Webpack alias please check [this chapter](https://academy.bigbinary.com/learn-react/react-best-practices/create-alias-for-commonly-used-directories) from React best practices. As the project grows and we extend multiple third party packages adding an alias for the `lib` directory helps in using the `lib` folder in different files efficiently. We should always define an alias for commonly used directories like `lib`, `apis`, etc. There are many use cases of the `lib` directory which are listed in [this section](https://www.bigbinary.com/books/learn-rubyonrails-book/more-rails-content-and-goodies#the-lib-folder-and-its-use-cases) of `Learn Ruby on Rails book`.
+To know more about Webpack alias please check [this chapter](https://academy.bigbinary.com/learn-react/react-best-practices/create-alias-for-commonly-used-directories) from React best practices. As the project grows and we extend multiple third party packages adding an alias for the `lib` directory helps in using the `lib` folder in different files efficiently. We should always define an alias for commonly used directories like `lib`, `apis`, etc. There are many use cases of the `lib` directory which are listed in [this section](/learn-rubyonrails/more-rails-content-and-goodies#the-lib-folder-and-its-use-cases) of `Learn Ruby on Rails book`.
 
 ## Positional parameters vs Named parameters
 
