@@ -23,13 +23,13 @@ except KeyError:
 except IndexError:
   print("Index does not exist in List")
 else:
-  print("No Error Occured")
+  print("No Error Occurred")
 finally:
   print("Runs irrespective of occurrence of error.")
 </code>
 </codeblock>
 
-This is an example with no error occuring:
+This is an example with no error occurring:
 
 <codeblock language="python" type="lesson">
 <code>
@@ -51,7 +51,7 @@ except KeyError:
 except IndexError:
   print("Index does not exist in List")
 else:
-  print("No Error Occured")
+  print("No Error Occurred")
 finally:
   print("Runs irrespective of occurrence of error.")
 </code>

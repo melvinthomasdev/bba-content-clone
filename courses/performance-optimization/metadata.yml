@@ -1,0 +1,9 @@
+---
+name: Performance Optimization
+subheading: Optimize your Ruby, Rails and PostgreSQL applications
+slug: performance-optimization
+published: true
+custom_data:
+  type: misc
+home_logo: performance-optimization.png
+logo: performance-optimization.png

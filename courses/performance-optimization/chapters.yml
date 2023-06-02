@@ -1,0 +1,13 @@
+---
+- slug: ruby-code-practices
+  name: Ruby code practices
+  has_pages: false
+- slug: rails-code-practices
+  name: Rails code practices
+  has_pages: false
+- slug: ruby-pg-extras-setup-and-usage
+  name: ruby-pg-extras gem setup and usage
+  has_pages: false
+- slug: pg-database-analysis
+  name: Postgres database analysis through ruby-pg-extras gem
+  has_pages: false
