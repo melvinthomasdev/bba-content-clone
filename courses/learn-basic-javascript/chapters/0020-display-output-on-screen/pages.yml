@@ -2,9 +2,9 @@
 - title: Show Message in console
   slug: console
   page_type: lesson
-- title: Exercise - Show Message in console
-  slug: exercise-console-1
+- title: Exercise 1 - Show Message in console
+  slug: exercise-1-console
   page_type: exercise
-- title: Exercise - Show Message in console
-  slug: exercise-console-2
+- title: Exercise 2 - Show Message in console
+  slug: exercise-2-console
   page_type: exercise

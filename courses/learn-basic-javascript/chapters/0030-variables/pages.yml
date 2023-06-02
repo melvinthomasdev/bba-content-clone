@@ -8,8 +8,8 @@
 - title: Exercise - Variables
   slug: exercise-variables
   page_type: exercise
-- title: Exercise - Variables 2
-  slug: exercise-variables-2
+- title: Exercise 2 - Variables
+  slug: exercise-2-variables
   page_type: exercise
 - title: const and let
   slug: const-and-let
@@ -17,8 +17,8 @@
 - title: Exercise - const and let
   slug: exercise-const-and-let
   page_type: exercise
-- title: Exercise - const and let 2
-  slug: exercise-const-and-let-2
+- title: Exercise 2 - const and let
+  slug: exercise-2-const-and-let
   page_type: exercise
 - title: Declaration without const or let
   slug: declaration-without-const-or-let
@@ -41,8 +41,8 @@
 - title: Exercise - Store true or false
   slug: exercise-store-true-or-false
   page_type: exercise
-- title: Exercise - Store true or false 2
-  slug: exercise-store-true-or-false-2
+- title: Exercise 2 - Store true or false
+  slug: exercise-2-store-true-or-false
   page_type: exercise
 - title: Expressions
   slug: expressions
@@ -56,8 +56,8 @@
 - title: Exercise - Storing result of Expressions
   slug: exercise-storing-result-of-expressions
   page_type: exercise
-- title: Exercise - Storing result of Expressions 2
-  slug: exercise-storing-result-of-expressions-2
+- title: Exercise 2 - Storing result of Expressions
+  slug: exercise-2-storing-result-of-expressions
   page_type: exercise
 - title: Checking Equality
   slug: checking-equality
@@ -65,8 +65,8 @@
 - title: Exercise - Checking Equality
   slug: exercise-checking-equality
   page_type: exercise
-- title: Exercise - Checking Equality 2
-  slug: exercise-checking-equality-2
+- title: Exercise 2 - Checking Equality
+  slug: exercise-2-checking-equality
   page_type: exercise
 - title: JS Challenge 1 - Chapter 2 & 3
   slug: js-challenge-1

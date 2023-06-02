@@ -8,8 +8,8 @@
 - title: Exercise - Object Creation
   slug: exercise-object-creation
   page_type: exercise
-- title: Exercise - Object Creation 2
-  slug: exercise-object-creation-2
+- title: Exercise 2 - Object Creation
+  slug: exercise-2-object-creation
   page_type: exercise
 - title: Get Object Values - Dot Notation
   slug: get-object-values-dot-notation
@@ -17,8 +17,8 @@
 - title: Exercise - Get Object Values - Dot Notation
   slug: exercise-get-object-values-dot-notation
   page_type: exercise
-- title: Exercise - Get Object Values - Dot Notation 2
-  slug: exercise-get-object-values-dot-notation-2
+- title: Exercise 2 - Get Object Values - Dot Notation
+  slug: exercise-2-get-object-values-dot-notation
   page_type: exercise
 - title: Get Object Values - Bracket Notation
   slug: get-object-values-bracket-notation
@@ -26,8 +26,8 @@
 - title: Exercise - Get Object Values - Bracket Notation
   slug: exercise-get-object-values-bracket-notation
   page_type: exercise
-- title: Exercise - Get Object Values - Bracket Notation 2
-  slug: exercise-get-object-values-bracket-notation-2
+- title: Exercise 2 - Get Object Values - Bracket Notation
+  slug: exercise-2-get-object-values-bracket-notation
   page_type: exercise
 - title: Add Object Property using Dot Notation
   slug: add-object-property-using-dot-notation
@@ -35,8 +35,8 @@
 - title: Exercise - Add Object Property using Dot Notation
   slug: exercise-add-object-property-using-dot-notation
   page_type: exercise
-- title: Exercise - Add Object Property using Dot Notation 2
-  slug: exercise-add-object-property-using-dot-notation-2
+- title: Exercise 2 - Add Object Property using Dot Notation
+  slug: exercise-2-add-object-property-using-dot-notation
   page_type: exercise
 - title: Add Object Property using Bracket Notation
   slug: add-object-property-using-bracket-notation
@@ -44,8 +44,8 @@
 - title: Exercise - Add Object Property using Bracket Notation
   slug: exercise-add-object-property-using-bracket-notation
   page_type: exercise
-- title: Exercise - Add Object Property using Bracket Notation 2
-  slug: exercise-add-object-property-using-bracket-notation-2
+- title: Exercise 2 - Add Object Property using Bracket Notation
+  slug: exercise-2-add-object-property-using-bracket-notation
   page_type: exercise
 - title: Update Object Property using Dot Notation
   slug: update-object-property-using-dot-notation

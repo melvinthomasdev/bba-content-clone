@@ -5,8 +5,8 @@
 - title: Exercise - Store Number
   slug: exercise-store-number
   page_type: exercise
-- title: Exercise - Store number 2
-  slug: exercise-store-number-2
+- title: Exercise 2 - Store number
+  slug: exercise-2-store-number
   page_type: exercise
 - title: NaN
   slug: nan
@@ -23,8 +23,8 @@
 - title: Exercise - Increase or Decrease a Number by One
   slug: exercise-increase-or-decrease-a-number-by-one
   page_type: exercise
-- title: Exercise - Increase or Decrease a Number by One 2
-  slug: exercise-increase-or-decrease-a-number-by-one-2
+- title: Exercise 2 - Increase or Decrease a Number by One
+  slug: exercise-2-increase-or-decrease-a-number-by-one
   page_type: exercise
 - title: Get the Remainder
   slug: get-the-remainder
@@ -32,8 +32,8 @@
 - title: Exercise - Get the Remainder
   slug: exercise-get-the-remainder
   page_type: exercise
-- title: Exercise - Get the Remainder 2
-  slug: exercise-get-the-remainder-2
+- title: Exercise 2 - Get the Remainder
+  slug: exercise-2-get-the-remainder
   page_type: exercise
 - title: JS Challenge 2 - Chapters 3 & 4
   slug: js-challenge-2

@@ -5,8 +5,8 @@
 - title: Exercise - undefined
   slug: exercise-undefined
   page_type: exercise
-- title: Exercise - undefined 2
-  slug: exercise-undefined-2
+- title: Exercise 2 - undefined
+  slug: exercise-2-undefined
   page_type: exercise
 - title: The null Data Type
   slug: the-null-data-type
@@ -14,6 +14,6 @@
 - title: Exercise - null
   slug: exercise-null
   page_type: exercise
-- title: Exercise - null 2
-  slug: exercise-null-2
+- title: Exercise 2 - null
+  slug: exercise-2-null
   page_type: exercise
