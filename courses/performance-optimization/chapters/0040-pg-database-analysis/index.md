@@ -1,4 +1,4 @@
-## Checking Cache hit ratio\
+## Checking Cache hit ratio
 
 **Analysis Code**
 
@@ -142,6 +142,7 @@ This command displays the number of sequential scans recorded against all tables
 ## Checking other postgres health stats
 
 1. Locks
+
 **Analysis Code**
 
 ```ruby
@@ -159,6 +160,7 @@ procpid | relname | transactionid | granted | query_snippet         | mode      
 ```
 
 2. Bloat
+
 **Analysis Code**
 
 ```Ruby
@@ -185,6 +187,7 @@ This command displays an estimation of table "bloat" – space allocated to a re
         |   index  |   public  |   companies::index_companies_on_domains  |   3  |   16 kB  |
 
 3. Vacuum Stats
+
 **Analysis Code**
 
 ```ruby

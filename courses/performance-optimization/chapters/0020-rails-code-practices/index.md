@@ -74,7 +74,7 @@ end
 User.create(new_users)
 ```
 
-## Prefer `#size` over `#count`
+## Prefer #size over #count
 
 `ActiveRecord::Relation#size` shall be preferred over `ActiveRecord::Calculations#count` since `#count` always performs query even if relation is loaded whereas `#size` will return length on loaded relation is already loaded otherwise will use `#count`
 
