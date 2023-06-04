@@ -1,15 +1,15 @@
 ---
-- title: Links
-  slug: links
-  page_type: lesson
-- title: Exercise - Links
-  slug: exercise-links
-  page_type: exercise
 - title: Images
   slug: images
   page_type: lesson
 - title: Exercise - Images
   slug: exercise-images
+  page_type: exercise
+- title: Links
+  slug: links
+  page_type: lesson
+- title: Exercise - Links
+  slug: exercise-links
   page_type: exercise
 - title: "`alt` in `img` Tag"
   slug: alt-in-img-tag
