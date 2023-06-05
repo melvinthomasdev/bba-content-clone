@@ -264,7 +264,7 @@ That same image file should exist in app/assets/images/courses/<course_name>/
 
 (m) To give images styling, use the `containerClasses` and `imageClasses` props. You can look up their usage in other lessons. Do a global search to look for them.
 
-## Code Block:
+## Writing code in the Code Block:
 
 - Always use `const` to declare variables unless we are reassigning them.
 
@@ -282,6 +282,13 @@ That same image file should exist in app/assets/images/courses/<course_name>/
     ```md
     // inserts the "randomExpression" value to the inner text of "adjective" element. adjective.innerText = randomExpression;
     ```
+### Writing Ruby code:
+
+- Ruby code written in the code block gets executed using [judge0](https://github.com/judge0/judge0) which is an online code execution system. Currently Judge0 only supports **Ruby 2.7.0**.
+
+- Therefore, avoid using syntax which are not supported by Ruby 2.7.0.
+
+- For example, Ruby added instance method `#except` to Hash in the version 3.0 and so the same won't be supported in the code as of now.
 
 ## Exercises:
 
