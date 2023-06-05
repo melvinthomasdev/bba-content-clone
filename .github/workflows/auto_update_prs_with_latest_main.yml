@@ -1,0 +1,21 @@
+name: PR-autoupdate-from-main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Auto:
+    name: Auto-update
+    runs-on: ubuntu-latest
+    steps:
+      - uses: bigbinary/pr-auto-update@v2.2.2
+        with:
+          github_token: ${{ secrets.AUTOREBASE_TOKEN }}
+          skip_labels: |
+            cypress-happy-path-run
+            cypress-run
+            cypress-triggered
+            cypress-happy-path-triggered
+            pause-auto-update
