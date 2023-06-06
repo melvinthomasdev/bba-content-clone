@@ -16,7 +16,7 @@ def most_common_character(str)
   count_hash = form_count_hash(str)
   most_common, most_common_count = count_hash.max_by{|_,v| v}
   chars_with_same_count = find_chars_with_same_count(
-    count_hash.except(most_common),
+    count_hash.reject { |key, _| key == most_common },
     most_common_count
   )
   return most_common if chars_with_same_count.empty?
@@ -42,32 +42,32 @@ puts most_common_character(str)
 </caller>
 <testcase>
 <i>
-str = "abcddefg"
+str = "accomplishment"
 </i>
 </testcase>
 <testcase>
 <i>
-str = "heggbdeff"
+str = "opportunity"
 </i>
 </testcase>
 <testcase>
 <i>
-str = "KABBAAB"
+str = "concentration"
 </i>
 </testcase>
 <testcase>
 <i>
-str = "aFsFeeccfFfa"
+str = "electroencephalograph"
 </i>
 </testcase>
 <testcase>
 <i>
-str = "afdsafdsafe"
+str = "antidisestablishmentarianism"
 </i>
 </testcase>
 <testcase>
 <i>
-str = "zzzzffffddddsasae"
+str = "uncharacteristically"
 </i>
 </testcase>
 </testcases>
