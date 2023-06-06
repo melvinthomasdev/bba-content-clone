@@ -19,8 +19,8 @@ end
 
 <solution>
 def full_name(person)
-  first_name = person[:first_name"]
-  last_name = person[:last_name"]
+  first_name = person[:first_name]
+  last_name = person[:last_name]
 
   "#{first_name} #{last_name}".strip
 end

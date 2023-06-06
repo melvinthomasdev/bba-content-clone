@@ -4,12 +4,16 @@ Given two numbers `month` and `year`, the method should return the number of day
 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
+require 'date'
+
 def days_count(month, year)
   # Write your code here
 end
 </code>
 
 <solution>
+require 'date'
+
 def days_count(month, year)
   Date.new(year, month + 1).prev_day.day
 end

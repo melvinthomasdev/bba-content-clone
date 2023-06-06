@@ -17,7 +17,7 @@ end
 
 <testcases>
 <caller>
-get_property(obj, property)
+puts get_property(obj, property)
 </caller>
 <testcase>
 <i>
