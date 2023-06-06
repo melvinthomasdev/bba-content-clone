@@ -20,8 +20,6 @@ In the `src` folder we can have folders and files as follows:
 
 - **utils/constants** - The `utils` or `constants` folder can be placed at any nested level in the closest scope. If we have only one file inside the `utils` or `constants` folder then we should use a file with a name like `utils.js`, `utils.jsx`, `constants.js`, `constants.jsx`, etc. We can use these files at any nested level in the closest scope same as the `utils` or `constants` folder.
 
-Watch this video for better understanding: https://youtu.be/As9BzWsGJfY
-
 - _All these folders should be of lower case._
 - _There could be more folders depending on the requirement._
 
