@@ -34,7 +34,7 @@ In the example given above,
 we only pass one key-value pair,
 i.e., `["name", "Sam Smith"]`.
 The `"name"` is the key
-and `"Same Smith"` is the value.
+and `"Sam Smith"` is the value.
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -43,7 +43,7 @@ const mapWithRandomProps = new Map([
   [true, "Property with boolean key"],
   [12.34, "Property with float key"],
   [{ name: "Adam" }, "Property with object key"],
-  [[ 1, 2, 3, 4 ], "Property with object key"],
+  [[ 1, 2, 3, 4 ], "Property with array key"],
 ]);
 
 console.log(mapWithRandomProps);

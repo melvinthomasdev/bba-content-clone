@@ -2,7 +2,6 @@ Given an array, flatten the array.
 
 1. Eg. An array [[6], [12], [25]] becomes [6, 12, 25]
 2. Eg. An array [1, [2]] become [1,2]
-3. Return stringified object.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
