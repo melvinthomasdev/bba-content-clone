@@ -23,6 +23,8 @@ message in the footer tag.
         <input type="submit">
     </fieldset>
     <p>Copyright © Fruit Factory 2021</p>
+</code>
+</codeblock>
 Add all the links in the
 bottom part of the code in
 a `footer` tag:
