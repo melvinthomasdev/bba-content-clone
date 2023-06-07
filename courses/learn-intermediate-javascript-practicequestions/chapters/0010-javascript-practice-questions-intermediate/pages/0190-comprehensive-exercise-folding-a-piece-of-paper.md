@@ -1,6 +1,7 @@
 The function `foldingPaper` should return the thickness (in meters) of a piece of paper after folding it n number of times.
 
 1. The paper starts off with a thickness of 0.0005m.
+2. After each fold, the thickness changes by 2^n.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>

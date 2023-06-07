@@ -1,6 +1,6 @@
 Finish the method definition given below.
 
-Given a string `sentence` as input, the method should remove all vowels from the it, and then return the resultant sentence.
+Given a string `sentence` as input, the method should remove all the vowels from it, and then return the resultant sentence.
 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>

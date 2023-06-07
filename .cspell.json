@@ -545,7 +545,10 @@
         "autovacuum",
         "Wayanad",
         "Ladakh",
-        "Reykjavík"
+        "Reykjavík",
+        "disemvowel",
+        "aeiou",
+        "AEIOU"
     ],
     // flagWords - list of words to be always considered incorrect
     // This is useful for offensive words and common spelling errors.
