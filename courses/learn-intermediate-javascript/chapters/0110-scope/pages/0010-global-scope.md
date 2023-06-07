@@ -37,7 +37,7 @@ can print values in the output.
 However, `age` is inside the `showAge` function.
 It does not belong to the global scope.
 It instead belongs to the **local scope** of the function `showAge`.
-That is why we were not access `age` in the third `console.log` statement.
+That is why we were not able to access `age` in the third `console.log` statement.
 
 Do note that,
 we can also access `name` within the `showAge` function.

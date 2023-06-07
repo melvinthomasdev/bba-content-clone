@@ -542,7 +542,10 @@
         "transactionid",
         "schemaname",
         "satisfa",
-        "autovacuum"
+        "autovacuum",
+        "Wayanad",
+        "Ladakh",
+        "Reykjavík"
     ],
     // flagWords - list of words to be always considered incorrect
     // This is useful for offensive words and common spelling errors.

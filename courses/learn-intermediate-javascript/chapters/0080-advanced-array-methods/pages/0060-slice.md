@@ -22,7 +22,7 @@ as shown in the example above.
 We can pass negative values as arguments
 to the `slice()` method.
 A negative value means the index is
-equal to the length of the string
+equal to the length of the array
 minus the absolute value of that argument.
 
 <codeblock language="javascript" type="lesson">

@@ -1,6 +1,6 @@
 Given an object with vacation details, return the same after adding a `startDate` property, in the format of `"Fri Dec 07 2018"` as per the year and day input passed to it.
 
-1. Only add `staryDate` property if it's not present in the object.
+1. Only add `startDate` property if it's not present in the object.
 2. Try using [Logical nullish](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment) assignment.
 3. Month should always be set as `December`.
 4. Return stringified object.
