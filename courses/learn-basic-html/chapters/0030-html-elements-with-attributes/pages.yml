@@ -44,3 +44,9 @@
 - title: Exercise - Link to Parts of Same Page
   slug: exercise-link-to-parts-of-same-page
   page_type: exercise
+- title: HTMLElement.dataset
+  slug: html-element-dataset
+  page_type: lesson
+- title: Exercise - HTMLElement.dataset
+  slug: exercise-html-element-dataset
+  page_type: exercise

@@ -38,9 +38,3 @@
 - title: Exercise - The div Element
   slug: exercise-the-div-element
   page_type: exercise
-- title: HTMLElement.dataset
-  slug: html-element-dataset
-  page_type: lesson
-- title: Exercise - HTMLElement.dataset
-  slug: exercise-html-element-dataset
-  page_type: exercise
