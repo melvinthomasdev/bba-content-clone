@@ -1,47 +1,42 @@
-`isNaN()` method is used
-to check if a value is
-`NaN`.
+`isNaN()` method checks
+whether a value is **NaN**
+when converted to
+a number.
 
-Let us take a look at an
-example.
+- The method accepts
+a parameter and tries
+to convert it into
+a number.
+- The method
+gives an output **true**
+if the converted value is
+**NaN**, and **false**
+if it is **not NaN**.
 
+Now consider the following examples:
 <codeblock language="javascript" type="lesson">
 <code>
-const number = 2;
-
-console.log(isNaN(number));
-</code>
-</codeblock>
-
-In the above code, we can
-see that `isNaN()` accepts
-one parameter, checks if that
-value is not a number, and
-provides a an output.
-
-Output will be Boolean **false**
-if the value is of the data-type
-**Number**, and **true** if
-the value is of any other
-data-type.
-
-Syntax of using `isNaN()` is as
-follows:
-`isNaN(value)`
-
-Let us take a look at another
-example.
-
-<codeblock language="javascript" type="lesson">
-<code>
-// Checking a variable storing string value
-const string = "Hello!";
-console.log(isNaN(string));
-
-// Passing a string directly to the method
 console.log(isNaN("Good Morning!"));
 
-// Checking a number wrapped in a string
-console.log(isNaN("2"));
+const string = "Hello!";
+console.log(string, isNaN(string));
+
+console.log(`"2"`, isNaN("2"));
+
+console.log(`false`, isNaN(false));
+
+console.log(`0`, isNaN(0));
+
+console.log(`""`, isNaN(""));
 </code>
 </codeblock>
+
+In JavaScript, when we convert 
+`""`, `true` and `false` to number,
+we get 0, 1 and 0 respectively.
+Since these are numbers,
+`isNaN` gives **false** as an output.
+
+We will be learning how to
+convert a value to a Number
+in an upcoming chapter.
