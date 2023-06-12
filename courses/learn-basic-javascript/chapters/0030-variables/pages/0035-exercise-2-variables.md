@@ -15,9 +15,9 @@ values to the console.
 </code>
 <solution>
 const morningWish = "Good Morning!";
-const morningWish = "Good Afternoon!";
+const afternoonWish = "Good Afternoon!";
 
 console.log(morningWish);
-console.log(morningWish);
+console.log(afternoonWish);
 </solution>
 </codeblock>
