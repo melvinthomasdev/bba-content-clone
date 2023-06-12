@@ -12,7 +12,7 @@ Complete the method definition given below.
 8. Try out the question on Saturday, and make sure your solution works!
 
 <br/>
-<codeblock language="ruby" type="exercise" testMode="multipleInput">
+<codeblock language="ruby" type="exercise" testMode="multipleInput" cache="false">
 <code>
 def set_reminder(messages, extract_reminder_text)
  # write your code here
