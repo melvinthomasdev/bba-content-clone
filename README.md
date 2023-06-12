@@ -180,6 +180,10 @@ The `focusTableAfterRun` attribute specifies what table should be shown (focusse
 
 The `checkForViews` attribute specifies which SQL views to check for when the student's query is run. It is considered to be empty when not specified. If explicitly set to a comma separated list of view names, those views will be checked for when the student's query is run. If the student's query does not match the expected output of the view, the student's query is considered to be wrong. This only works for SQL exercise editors.
 
+#### 3.14. `<codeblock language="ruby" cache="false" >`
+
+The `cache` attribute specifies if we want to save the expected output of solution against an exercise saved or not. It is considered to be true when not specified. If explicitly set to false, the expected output of the solution will not be saved against the exercise. It is turned on by default for the sake of speed in evaluation. Expected output against a solution once processed through judge0, is expected to be always the same, so it is saved in the db so that each future evaluation of exercises is faster by avoiding not running solution code through judge0. Exceptions are a few cases where the code involves generating random numbers, deals with date/time or expects the student to print an arbitrary value. In these cases, saving the expected output of code might fail in evaluation, so we can turn off caching of output code by setting this attribute to false in such cases.
+
 ### 4. `panel`
 
 When a single language is not sufficient to run the code, we use multiple `<panel>` tags inside our `<codeblock>`.
