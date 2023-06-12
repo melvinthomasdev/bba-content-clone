@@ -1077,7 +1077,7 @@ default: &default
   redis_url: <%= ENV['REDISTOGO_URL'] || ENV['REDIS_URL'] || 'redis://localhost:6379/1' %>
 ```
 
-## Creating schedule.yml
+## Creating scheduled_jobs.yml
 
 We will create a scheduler file containing the cron syntax for different
 environments and workers.
@@ -1091,7 +1091,7 @@ the default time, i.e., at 10 AM or preferred time, if set by the user.
 Let's create the scheduler file:
 
 ```bash
-touch config/schedule.yml
+touch config/scheduled_jobs.yml
 ```
 
 Open the file and paste the following lines into it:
@@ -1139,7 +1139,7 @@ purely a "YAML" way of inheriting existing keys.
 ## Adding logic to schedule cron jobs
 
 We have already written down when and what needs to be enqueued, in our
-`schedule.yml` file.
+`scheduled_jobs.yml` file.
 
 Thus in the Sidekiq initializer, we have to add logic that will read the content
 from our scheduler file and will enqueue based on the cron defined for the
@@ -1163,7 +1163,7 @@ end
 Sidekiq.configure_server do |config|
   config.redis = { url:  Rails.application.secrets.redis_url, size: 9 }
   unless Rails.env.test? || Rails.env.production?
-    schedule_file = "config/schedule.yml"
+    schedule_file = "config/scheduled_jobs.yml"
 
     if File.exists?(schedule_file)
       Sidekiq::Cron::Job.load_from_hash! YAML.load_file(schedule_file)[Rails.env]
