@@ -217,12 +217,12 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 ### Installing a Node.js version using nvm
 
-Currently, we use Node.js `v16.5` in our `wheel` project. You can install the
+Currently, we use Node.js `v18.12` in our `wheel` project. You can install the
 same version by running the following:
 
 ```bash
-nvm install 16.5
-nvm alias default 16.5
+nvm install 18.12
+nvm alias default 18.12
 ```
 
 If you're not a fan of `nvm`, then [n](https://github.com/tj/n) is a good

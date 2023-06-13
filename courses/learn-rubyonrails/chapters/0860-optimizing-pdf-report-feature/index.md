@@ -312,18 +312,14 @@ google:
   credentials:
     type: "service_account"
     project_id: <%= Rails.application.secrets.gcs[:credentials][:project_id] %>
-    private_key_id:
-      <%= Rails.application.secrets.gcs[:credentials][:private_key_id] %>
-    private_key:
-      <%= Rails.application.secrets.gcs[:credentials][:private_key]&.dump %>
-    client_email:
-      <%= Rails.application.secrets.gcs[:credentials][:client_email] %>
+    private_key_id: <%= Rails.application.secrets.gcs[:credentials][:private_key_id] %>
+    private_key: <%= Rails.application.secrets.gcs[:credentials][:private_key]&.dump %>
+    client_email: <%= Rails.application.secrets.gcs[:credentials][:client_email] %>
     client_id: <%= Rails.application.secrets.gcs[:credentials][:client_id] %>
     auth_uri: "https://accounts.google.com/o/oauth2/auth"
     token_uri: "https://oauth2.googleapis.com/token"
     auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
-    client_x509_cert_url:
-      <%= Rails.application.secrets.gcs[:credentials][:client_url] %>
+    client_x509_cert_url: <%= Rails.application.secrets.gcs[:credentials][:client_url] %>
 ```
 
 In the above mentioned `storage.yml` file, we are specifying to use the disk
@@ -822,21 +818,22 @@ method will be invoked when some data is received by the channel.
 
 ## Add alias for channels folder
 
-Let's add the alias for the `channels` directory. Update the `alias.js` file
+Let's add the alias for the `channels` directory. Update the `resolve.js` file
 like so:
 
-```js {9}
+```javascript{9}
+// Rest of the code if any
+
 module.exports = {
-  resolve: {
-    alias: {
-      apis: "src/apis",
-      utils: "src/utils",
-      common: "src/common",
-      components: "src/components",
-      constants: "src/constants",
-      channels: "src/channels",
-    },
+  alias: {
+    apis: absolutePath("src/apis"),
+    common: absolutePath("src/common"),
+    components: absolutePath("src/components"),
+    constants: absolutePath("src/constants"),
+    utils: absolutePath("src/utils"),
+    channels: absolutePath("src/channels"),
   },
+  // Rest of the code if any
 };
 ```
 
@@ -849,8 +846,10 @@ Install the `file-saver` and `framer-motion` like so:
 
 ```bash
 yarn add file-saver
-yarn add framer-motion
+yarn add framer-motion@6.5.1
 ```
+
+Please note that we are utilizing version `6.5.1` of `framer-motion`. This is because starting from version 7, `framer-motion` requires a minimum supported version of `react@18`, whereas we are currently using `react@17`.
 
 Now let's work on the progress bar. Create a file called `ProgressBar.jsx` in
 the `Common` directory, like so:
@@ -865,7 +864,7 @@ Add the code in the `ProgressBar.jsx`, like so:
 import React from "react";
 
 import classNames from "classnames";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 
 const ProgressBar = ({ progress }) => (
   <div className="relative h-5 w-full overflow-hidden rounded-full bg-gray-200">

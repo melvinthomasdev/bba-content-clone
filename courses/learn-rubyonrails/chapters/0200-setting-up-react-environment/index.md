@@ -190,14 +190,9 @@ errors that are caught from our `try-catch` block.
 One can use `js-logger` in such cases. `js-logger` is a lightweight JavaScript
 Logger that has zero dependencies.
 
-To install `js-logger` , run the following command:
+During the setup of Webpacker, we had already installed the necessary packages, specifically `js-logger` and `babel-plugin-js-logger`.
 
-```bash
-yarn add js-logger
-yarn add babel-plugin-js-logger
-```
-
-To initialize `js-logger` , run the following command from root of project:
+To initialize `js-logger`, run the following command from root of project:
 
 ```bash
 mkdir -p ./app/javascript/src/common
@@ -225,18 +220,20 @@ then you can do so using the following command:
 curl -o "./app/javascript/src/common/logger.js" "https://raw.githubusercontent.com/bigbinary/wheel/main/app/javascript/src/common/logger.js"
 ```
 
-Add "js-logger", to `plugins` key in `babel.config.js` so as to make logger
-function work:
+Typically, you would need to manually add the `js-logger` plugin to your `babel.config.js` file. However, our provided `babel.config.js` file from `wheel` already includes the `js-logger` plugin, as shown below. Therefore, there is no need for you to modify the `babel.config.js` file.
 
 ```javascript {2}
   plugins: [
-      "js-logger",
-      'babel-plugin-macros',
-      '@babel/plugin-syntax-dynamic-import',
-      isTestEnv && 'babel-plugin-dynamic-import-node',
-      '@babel/plugin-transform-destructuring',
-      ...
-  ]
+    "js-logger",
+    "babel-plugin-macros",
+    "@babel/plugin-transform-runtime",
+    isTestEnv
+      ? "babel-plugin-dynamic-import-node" // tests run in node environment
+      : "@babel/plugin-syntax-dynamic-import",
+    isProductionEnv && [
+      "babel-plugin-transform-react-remove-prop-types",
+      { removeImport: true },
+  ],
 ```
 
 Then, invoke `initializeLogger()` from `App.jsx` as follows:
@@ -315,40 +312,20 @@ import authAPI from "../../apis/auth";
 We can define an alias for the `apis` folder so that it can be accessed from any
 component without having to do relative import.
 
-To do so, run the following command:
+To do so, edit `resolve.js` as follows:
 
-```bash
-touch ./config/webpack/alias.js
-```
+```javascript {5,6,7}
+// Rest of the code if any
 
-Paste the following into `alias.js`:
-
-```javascript
 module.exports = {
-  resolve: {
-    alias: {
-      apis: "src/apis",
-      common: "src/common",
-      components: "src/components",
-    },
+  alias: {
+    apis: absolutePath("src/apis"),
+    common: absolutePath("src/common"),
+    components: absolutePath("src/components"),
   },
+  // Rest of the code if any
 };
 ```
-
-Then, add the following lines to `config/webpack/environment.js` to include the
-custom configuration we created to resolve aliases:
-
-```javascript {3-4}
-const { environment } = require("@rails/webpacker");
-
-const aliasConfig = require("./alias");
-environment.config.merge(aliasConfig);
-
-module.exports = environment;
-```
-
-Adding this to `environment.js` makes it available in all environments like
-`development`, `production` etc.
 
 Now, you can `import` from `apis` folder without having to resolve the entire
 path each time.

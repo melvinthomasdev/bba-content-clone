@@ -69,14 +69,13 @@ jobs:
       - checkout
       - node/install:
           install-yarn: true
-          node-version: "16.5"
+          node-version: "18.12"
       - run: node --version
       - run: gem install bundler:2.2.20
       #install sqlite dependency
       - run: sudo apt update && sudo apt install zlib1g-dev libsqlite3-dev
       # Bundle install
-      - run:
-          bundle check --path=vendor/bundle || bundle install
+      - run: bundle check --path=vendor/bundle || bundle install
           --path=vendor/bundle --jobs=4 --retry=3
       # Yarn install
       - run: yarn install --cache-folder vendor/node_modules
@@ -90,7 +89,7 @@ jobs:
       - run: cp config/database.yml.ci config/database.yml
       - run: bundle exec rails db:create db:schema:load --trace
       # Generate assets
-      - run: chmod a+x ./bin/webpack && ./bin/webpack
+      - run: chmod a+x ./bin/webpacker && ./bin/webpacker
       - run: bundle exec rails webpacker:compile
       # Unit tests
       - run:
@@ -169,7 +168,7 @@ jobs:
       - checkout
       - node/install:
           install-yarn: true
-          node-version: "16.5"
+          node-version: "18.12"
       - run: node --version
       - run: gem install bundler:2.2.20
       # install postgresql dependency
@@ -241,6 +240,7 @@ invoke our Git hooks.
 You might've to manually correct some Rubocop offenses in the pointed out files.
 
 Example:
+
 <image>git-hooks-rubocop-non-correctable-offenses.png</image>
 
 Once everything is done, re-push to the GitHub branch with CircleCI tracks and

@@ -169,29 +169,6 @@ We can run the following command to simulate such a compilation locally:
 SECRET_KEY_BASE=`cat config/master.key.sample` RAILS_ENV=production RAILS_SERVE_STATIC_FILES=off bundle exec rails assets:precompile
 ```
 
-## Webpacker module and version issues
-
-Node.js `v16.5` doesn’t support lower versions of the `node-sass` package. We
-need at least `node-sass` version `6.xx`.
-
-But sometimes older `@rails/webpacker` package comes bundled with lower versions
-of `node-sass`.
-
-Another issue is that the npm `webpacker` module's version is incremented very
-slowly and is very prone to breaking changes once released.
-
-That's why we stick onto a specific Webpacker version in our application.
-
-While creating the new Rails application if the `@rails/webpacker` package
-installed is not version `5.4.0` then please update the version manually to
-`@rails/webpacker@5.4.0`.
-
-You can check default installed Webpacker version by running:
-
-```bash
-yarn why @rails/webpacker
-```
-
 ## Downside of not running Webpack development server during development
 
 When you don't have a Webpack development server running, then while trying to
@@ -232,7 +209,7 @@ debug since it's only a single terminal window showing all the errors.
 
 Whereas, upon running a Webpack development server, all compilation errors or
 changes in static assets are reflected in only the terminal running the
-`webpack-dev-server`.
+`webpacker-dev-server`.
 
 This will make debugging easier since the errors specific to the frontend side
 will be logged in the terminal running Webpack development server and the errors

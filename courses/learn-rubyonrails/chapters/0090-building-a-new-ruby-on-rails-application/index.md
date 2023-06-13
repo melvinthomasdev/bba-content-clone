@@ -45,7 +45,7 @@ rails _7.0.3.1_ new granite --skip-turbolinks
 It will produce a long output and might take some time to complete. It is
 downloading and setting up required files from the internet.
 
-## Setting a specific Webpacker version
+## Setting up Shakapacker
 
 First, we need to run the `yarn install` command to generate the Yarn lockfile,
 like so:
@@ -55,7 +55,7 @@ yarn install
 ```
 
 Remove the `app/javascript` directory as it has some unwanted files. When we
-install `webpacker` it will create the `app/javascript` folder with the required
+install `shakapacker` it will create the `app/javascript` folder with the required
 files.
 
 Remove the `app/javascript` folder with the following command:
@@ -64,42 +64,162 @@ Remove the `app/javascript` folder with the following command:
 rm -rf app/javascript
 ```
 
-To install `webpacker`, add the `webpacker` gem towards the end of the file
+To install `shakapacker`, add the `shakapacker` gem towards the end of the file
 named `Gemfile`, like so:
 
 ```rb
-# For compiling and bundling JavaScript. Read more: https://github.com/rails/webpacker
-gem "webpacker"
+# For compiling and bundling JavaScript. Read more: https://github.com/shakacode/shakapacker
+gem "shakapacker"
 ```
 
 Run the following command from the terminal to install the newly added gem that
-is `webpacker`:
+is `shakapacker`:
 
 ```bash
 bundle install
 ```
 
-Now, we can set up the base for `webpacker` by running the following command
+Now, we can set up the base for `shakapacker` by running the following command
 from the terminal:
 
 ```bash
 bin/rails webpacker:install
 ```
 
-Then, run the following command from the root of the project, in the terminal:
+For those wondering, [Shakapacker](https://github.com/shakacode/shakapacker) is a tool that helps bundle JavaScript files using webpack 5+.
+It is a successor to [Webpacker](https://github.com/rails/webpacker) and is based on version 6 of Webpacker. For the sake of simplicity we would using the terms `Webpacker` and `Shakapacker` interchangeably.
+
+The default configurations sets the source path `app/javascript` as the `source_entry_path`
+in `config/webpacker.yml`. We need to set a subdirectory of the `source_path`, namely `packs`, to
+be the `source_entry_path`. Also, we need to make other minor modifications in the webpack configuration. To incorporate all these, let's replace the contents of `config/webpacker.yml` with webpacker configuration from the [Wheel repository](https://raw.githubusercontent.com/bigbinary/wheel/main/webpacker.yml) by executing the following command from the root of the app:
 
 ```bash
-yarn remove @rails/webpacker webpack-dev-server webpack webpack-cli
-yarn add @rails/webpacker@5.4.0
-yarn add -D webpack-dev-server@3.11.2 --exact
+curl -o "config/webpacker.yml" "https://raw.githubusercontent.com/bigbinary/wheel/main/config/webpacker.yml"
 ```
 
-If you're curious about why we use a specific version of `webpacker` module, you
-can give
-[this section](/learn-rubyonrails/webpacker-in-depth#webpacker-module-and-version-issues)
-a read and come back. The `webpack-dev-server` package also needs to be a
-specific version that can work in conjunction with this Webpacker version. Else
-it will complain about installing `webpack-cli`.
+Now, let's move the file `app/javascript/application.js` to `app/javascript/packs/application.js`
+as per the configuration set in `webpacker.yml`.
+
+```bash
+mkdir -p ./app/javascript/packs/
+mv ./app/javascript/application.js ./app/javascript/packs/application.js
+```
+
+Next, let's add `.browserlistrc` file to the application.
+
+```bash
+echo "cover 95%" > .browserslistrc
+```
+
+The browserslist configuration controls the outputted JavaScript so that the emitted code
+will be compatible with the browsers specified. `cover 95%` selects the smallest set of popular
+browser versions with collective usage over 95% of the audience worldwide.
+
+To ensure a single configuration and avoid redundancy, let's remove the following three lines that specify the browserlist configuration inside the `package.json` file, considering that we already have a separate `.browserlistrc` file.
+
+```json
+  "browserslist": [
+    "defaults"
+  ]
+```
+
+Let's now install the below packages to our project as a part of the webpack configuration:
+
+```bash
+yarn add @svgr/webpack babel-plugin-dynamic-import-node babel-plugin-macros babel-plugin-js-logger css-loader dotenv-webpack i18next ignore-loader mini-css-extract-plugin js-logger postcss postcss-flexbugs-fixes postcss-import postcss-loader postcss-preset-env process ramda sass sass-loader source-map-loader style-loader
+```
+
+Let's also add a `babel.config.js` file with base configurations at the root of the project. Execute the following command to download and use babel configuration from the [Wheel repository](https://raw.githubusercontent.com/bigbinary/wheel/main/babel.config.js).
+
+```bash
+curl -o "babel.config.js" "https://raw.githubusercontent.com/bigbinary/wheel/main/babel.config.js"
+```
+
+The `babel.config.js` file is used to configure Babel's behavior, including which presets
+and plugins to use, which files to include or exclude from the compilation process, and
+other settings.
+
+To ensure a single configuration and avoid redundancy, let's remove the following five lines that specify the babel configuration inside the `package.json` file, considering that we already have a separate `babel.config.js` file.
+
+```json
+  "babel": {
+    "presets": [
+      "./node_modules/shakapacker/package/babel/preset.js"
+    ]
+  }
+```
+
+## Customizing Shakapacker configuration
+
+Shakapacker gives us a default configuration file `config/webpack/webpack.config.js`.
+However, we need to customize this by modifying the webpack configuration, to suit our
+application.
+
+When setting up Webpacker, having files like `environment.js`, `development.js`,
+`production.js`, etc, allows us to configure different settings for different
+environments in the application.
+
+The `environment.js` file is used to configure settings that are common across all
+environments, such as which JavaScript packs to load and which plugins to use. By
+separating configuration into different files based on environment, developers can
+easily manage and maintain their Webpacker configuration without having to duplicate
+code or remember which settings apply in which environment.
+
+Let's import these customized configurations from `wheel` by running the below command:
+
+```bash
+raw_base_url="https://raw.githubusercontent.com/bigbinary/wheel/main"
+declare -a configs=(
+  "config/webpack/environment.js"
+  "config/webpack/development.js"
+  "config/webpack/production.js"
+  "config/webpack/test.js"
+  "config/webpack/rules.js"
+  "config/webpack/webpack.config.js"
+  "config/webpack/helpers/customize-default-rules.js"
+  "config/webpack/helpers/utils.js"
+)
+for config in "${configs[@]}"; do
+  echo "Downloading ${config}..."
+  curl --create-dirs -o "${config}" "${raw_base_url}/${config}"
+done
+```
+
+Let's also create a file `resolve.js` inside `config/webpack` to handle alias using the
+below command.
+
+```bash
+touch config/webpack/resolve.js
+cat << EOF > config/webpack/resolve.js
+const path = require("path");
+
+const absolutePath = basePath =>
+  path.resolve(__dirname, "..", "..", \`app/javascript/\${basePath}\`);
+
+module.exports = {
+  alias: {
+  },
+  extensions: [
+    ".ts",
+    ".mjs",
+    ".js",
+    ".sass",
+    ".scss",
+    ".css",
+    ".module.sass",
+    ".module.scss",
+    ".module.css",
+    ".png",
+    ".svg",
+    ".gif",
+    ".jpeg",
+    ".jpg",
+  ],
+};
+EOF
+```
+
+We will discuss more about alias in the coming chapters so you don't have to be concerned now.
 
 ## Update to stylesheet pack tag
 
@@ -109,17 +229,19 @@ The default Rails application ERB template file,
 ```erb
 <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 <%= javascript_importmap_tags %>
+<%= javascript_pack_tag "application" %>
 ```
 
 In that file, we need to replace `stylesheet_link_tag` with
-`stylesheet_pack_tag` and `javascript_importmap_tags` with `javascript_pack_tag`
-to attach CSS and JavaScript packs.
+`stylesheet_pack_tag` to attach CSS packs. We need to also remove
+`javascript_importmap_tags`. The JavaScript packs have already been linked
+using the `javascript_pack_tag`.
 
 Thus update it like so:
 
 ```erb {1,2}
-<%= stylesheet_pack_tag 'application' %>
-<%= javascript_pack_tag 'application' %>
+<%= stylesheet_pack_tag "application" %>
+<%= javascript_pack_tag "application" %>
 ```
 
 We will discuss in depth about why we need to do this replacement towards the
@@ -136,12 +258,12 @@ We can lock our application with a specific Ruby and Node.js version. This will
 help us to isolate the dependencies of Ruby and Node.js modules used in the
 application.
 
-In our application, we will use Node.js version `16.5` and Ruby version `3.1.2`.
+In our application, we will use Node.js version `18.12` and Ruby version `3.1.2`.
 
 Run the following commands from the terminal:
 
 ```bash
-echo "16.5" > .nvmrc > .node-version
+echo "18.12" > .nvmrc > .node-version
 echo "3.1.2" > .ruby-version
 ```
 
@@ -313,6 +435,7 @@ Use Ctrl-C to stop
 
 Open the browser and visit [http://localhost:3000](http://localhost:3000). We
 will see a page that would look like this:
+
 <image>new-rails-project-landing-page.png</image>
 
 ## Verify Ruby and NodeJS versions
@@ -323,7 +446,7 @@ terminal:
 
 ```bash
 rbenv version # should be 3.1.2
-nvm version # should be 16.5
+nvm version # should be v18.12.1
 ```
 
 Also from the root of the project run the following command to double-verify

@@ -493,7 +493,7 @@ provides, from its
 We will now add an API route to create a task using `POST` request in
 `app/javascript/src/apis/tasks.js`. In `tasks.js`, add the following code:
 
-```js {5,9}
+```javascript{5,9}
 import axios from "axios";
 
 const list = () => axios.get("/tasks");
@@ -525,7 +525,7 @@ in the payload. Rest will be automatically handled by the connector itself.
 
 So the updated code in `apis/tasks.js` will be:
 
-```js {5-8}
+```javascript{5-8}
 import axios from "axios";
 
 const list = () => axios.get("/tasks");
@@ -546,7 +546,7 @@ export default tasksApi;
 So here the parent key `task` is handled in the `create` function itself. And
 this simplifies the `handleSubmit` function in `Create.jsx` like so:
 
-```js {5}
+```javascript{5}
 const handleSubmit = async event => {
   event.preventDefault();
   setLoading(true);

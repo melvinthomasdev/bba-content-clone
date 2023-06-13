@@ -193,7 +193,7 @@ navitem, we get redirected to `/dashboard`.
 Update the `NavItem` with `name="Todos"` in
 `app/javascript/src/components/NavBar/index.jsx`, to the following content:
 
-```js {5}
+```javascript{5}
 // imports as it was
 const NavBar = () => {
   return (

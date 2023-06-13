@@ -311,7 +311,7 @@ mentioned in the `.nvmrc`. We can define the version for different engines in
 ```json
 {
   "engines": {
-    "node": "16.5",
+    "node": "18.12",
     "yarn": "1.22.x"
   },
   ...

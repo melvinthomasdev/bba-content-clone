@@ -239,13 +239,6 @@ module.exports = {};
 EOF
 ```
 
-Run the following command from the terminal to fetch the `babel` config from
-wheel:
-
-```bash
-curl -o "babel.config.js" "https://raw.githubusercontent.com/bigbinary/wheel/main/babel.config.js"
-```
-
 ## Prettier
 
 An unformatted JavaScript file is really hard to read.
@@ -401,6 +394,7 @@ But let's take the case where we missed out on adding the string literal comment
 as the first comment in the file in our `Gemfile`.
 
 In such a case we might get the following output in the terminal:
+
 <image>git-hooks-rubocop-fail-stringliteral.png</image>
 
 Rubocop shows an offense when it can't automatically fix the offense.

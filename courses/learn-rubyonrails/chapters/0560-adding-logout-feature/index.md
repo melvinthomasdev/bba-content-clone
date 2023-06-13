@@ -127,7 +127,7 @@ Let's open `apis/axios.js` and create a function to clear the default Axios
 headers when the user is logged out. Add the `resetAuthTokens` method at the end
 of the file and also update the export statement like so:
 
-```js {55-58,60}
+```javascript{55-58,60}
 import axios from "axios";
 import Toastr from "components/Common/Toastr";
 import { setToLocalStorage, getFromLocalStorage } from "utils/storage";
@@ -479,7 +479,7 @@ end
 Now, update the `Show` component to display the task owner name along with other
 task details. Add the following lines of code to the `Show` component:
 
-```js {9-12}
+```javascript{9-12}
 // previous imports
 
 const Show = () => {

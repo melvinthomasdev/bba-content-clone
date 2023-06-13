@@ -369,7 +369,7 @@ chapter of this book.
 
 The content of our `setAuthHeaders` method is as follows:
 
-```js {4-5}
+```javascript{4-5}
 // Remaining code
 export const setAuthHeaders = (setLoading = () => null) => {
   axios.defaults.headers = {

@@ -465,8 +465,8 @@ Update the perform method in `TaskLoggerJob`:
 
 ```ruby
   def perform(task)
-    msg = "A task was created with the following title: #{task.title}"
-    log = Log.create! task_id: task.id, message: msg
+    message = "A task was created with the following title: #{task.title}"
+    log = Log.create! task_id: task.id, message:
 
     puts log.message
   end

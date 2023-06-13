@@ -250,18 +250,19 @@ export { TOASTR_OPTIONS };
 ```
 
 Let's add a webpack alias for the constants directory. Append the following into
-the `alias` key in `config/webpack/alias.js`:
+the `alias` key in `config/webpack/resolve.js`:
 
 ```javascript {7}
+// Rest of the code if any
+
 module.exports = {
-  resolve: {
-    alias: {
-      apis: "src/apis",
-      common: "src/common",
-      components: "src/components",
-      constants: "src/constants",
-    },
+  alias: {
+    apis: absolutePath("src/apis"),
+    common: absolutePath("src/common"),
+    components: absolutePath("src/components"),
+    constants: absolutePath("src/constants"),
   },
+  // Rest of the code if any
 };
 ```
 
@@ -285,7 +286,7 @@ functions in a separate file for the following reasons:
 Now, update `app/javascript/src/components/Common/Toastr.jsx` with the following
 lines of code:
 
-```js {2,4,15,22}
+```javascript{2,4,15,22}
 import React from "react";
 import { toast } from "react-toastify";
 
@@ -373,19 +374,20 @@ that we can catch any errors while reading or parsing data. If any error occurs
 it will be logged to the console and an empty string will be returned.
 
 Now let's add a webpack alias for these helpers. Append the following into the
-`alias` key in `config/webpack/alias.js`:
+`alias` key in `config/webpack/resolve.js`:
 
 ```javascript {5}
+// Rest of the code if any
+
 module.exports = {
-  resolve: {
-    alias: {
-      apis: "src/apis",
-      utils: "src/utils",
-      common: "src/common",
-      components: "src/components",
-      constants: "src/constants",
-    },
+  alias: {
+    apis: absolutePath("src/apis"),
+    common: absolutePath("src/common"),
+    components: absolutePath("src/components"),
+    constants: absolutePath("src/constants"),
+    utils: absolutePath("src/utils"),
   },
+  // Rest of the code if any
 };
 ```
 
@@ -393,7 +395,7 @@ We can now use these helpers over native local storage functions in our
 `axios.js` file. Thus replace local storage statements with the following
 highlighted lines in `axios.js`:
 
-```js {2,14-15}
+```javascript{2,14-15}
 import axios from "axios";
 import { setToLocalStorage, getFromLocalStorage } from "utils/storage";
 
@@ -437,7 +439,7 @@ Similarly let's actually write the interceptors in our project specific
 
 Open `app/javascript/src/apis/axios.js` and add the following lines of code.
 
-```js {2,5,26-54}
+```javascript{2,5,26-54}
 import axios from "axios";
 import Toastr from "components/Common/Toastr";
 import { setToLocalStorage, getFromLocalStorage } from "utils/storage";
