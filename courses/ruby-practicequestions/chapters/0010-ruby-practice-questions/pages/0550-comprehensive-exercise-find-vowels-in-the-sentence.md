@@ -1,6 +1,6 @@
 Complete the method definition below.
 
-Given a string `sentence`, the method should return an array of all the unique vowels present in the sentence, sorted in alphabetical order and in lowercase. If no vowels are present in the sentence, the method should return an empty array.
+Given a string `sentence`, the method should return an array of all the unique vowels present in the sentence, sorted in alphabetical order and in lowercase. The method should return **No Vowels Found**, if no vowels are present in the sentence.
 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
@@ -12,7 +12,8 @@ end
 <solution>
 def find_vowels(sentence)
   vowels = %w[ a e i o u ]
-  vowels.map{|vowel| vowel if sentence.downcase.count(vowel) > 0 }.compact
+  result = vowels.map{|vowel| vowel if sentence.downcase.count(vowel) > 0 }.compact
+  result.length > 0 ? result : "No Vowels Found"
 end
 </solution>
 
