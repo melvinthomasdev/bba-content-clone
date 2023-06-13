@@ -247,7 +247,7 @@ def test_shouldnt_create_task_without_title
     headers: @creator_headers
   assert_response :unprocessable_entity
   response_json = response.parsed_body
-  assert_equal "Title can't be blank", response_json['error']
+  assert_equal "Title can't be blank, Title is invalid", response_json["error"]
 end
 
 def test_creator_can_update_any_task_fields

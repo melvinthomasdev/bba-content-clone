@@ -53,12 +53,15 @@ callbacks and observe the behavior.
 
 Open `task.rb` file and add following lines of code:
 
-```ruby {4,9-11}
+```ruby {4,12-14}
 class Task < ApplicationRecord
   # previous code
 
   before_validation :set_title
-  validates :title, presence: true, length: { maximum: 50 }
+  validates :title,
+    presence: true,
+    length: { maximum: MAX_TITLE_LENGTH },
+    format: { with: VALID_TITLE_REGEX }
 
   private
 

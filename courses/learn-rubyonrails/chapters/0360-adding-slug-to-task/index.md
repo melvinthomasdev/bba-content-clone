@@ -150,9 +150,15 @@ existing in our database.
 
 Let's fix this by adding the following line into the Task model:
 
-```ruby {3}
+```ruby {9}
 class Task < ApplicationRecord
-  validates :title, presence: true, length: { maximum: 50 }
+  MAX_TITLE_LENGTH = 125
+  VALID_TITLE_REGEX = /\A.*[a-zA-Z0-9].*\z/i
+
+  validates :title,
+    presence: true,
+    length: { maximum: MAX_TITLE_LENGTH },
+    format: { with: VALID_TITLE_REGEX }
   validates :slug, uniqueness: true
 end
 ```
@@ -459,9 +465,15 @@ call in our migration to query task records and update their slugs.
 
 Add the following lines of code to the `Task` model:
 
-```ruby {5-15}
+```ruby {11-21}
 class Task < ApplicationRecord
-  validates :title, presence: true, length: { maximum: 50 }
+  MAX_TITLE_LENGTH = 125
+  VALID_TITLE_REGEX = /\A.*[a-zA-Z0-9].*\z/i
+
+  validates :title,
+    presence: true,
+    length: { maximum: MAX_TITLE_LENGTH },
+    format: { with: VALID_TITLE_REGEX }
   validates :slug, uniqueness: true
 
   private
@@ -718,9 +730,15 @@ Thus `before_create` is the right choice of a callback over here.
 
 Now let's add the `before_create` callback into our `Task` model:
 
-```ruby {5}
+```ruby {11}
 class Task < ApplicationRecord
-  validates :title, presence: true, length: { maximum: 50 }
+  MAX_TITLE_LENGTH = 125
+  VALID_TITLE_REGEX = /\A.*[a-zA-Z0-9].*\z/i
+
+  validates :title,
+    presence: true,
+    length: { maximum: MAX_TITLE_LENGTH },
+    format: { with: VALID_TITLE_REGEX }
   validates :slug, uniqueness: true
 
   before_create :set_slug
@@ -751,9 +769,15 @@ it shouldn't ever change.
 
 To make it immutable, we need to add a custom validation like so:
 
-```ruby {4,20-24}
+```ruby {10,26-30}
 class Task < ApplicationRecord
-  validates :title, presence: true, length: { maximum: 50 }
+  MAX_TITLE_LENGTH = 125
+  VALID_TITLE_REGEX = /\A.*[a-zA-Z0-9].*\z/i
+
+  validates :title,
+    presence: true,
+    length: { maximum: MAX_TITLE_LENGTH },
+    format: { with: VALID_TITLE_REGEX }
   validates :slug, uniqueness: true
   validate :slug_not_changed
 
@@ -932,9 +956,15 @@ end
 
 Now, let's replace our hardcoded error message with `t()` method call:
 
-```ruby {22}
+```ruby {28}
 class Task < ApplicationRecord
-  validates :title, presence: true, length: { maximum: 50 }
+  MAX_TITLE_LENGTH = 125
+  VALID_TITLE_REGEX = /\A.*[a-zA-Z0-9].*\z/i
+
+  validates :title,
+    presence: true,
+    length: { maximum: MAX_TITLE_LENGTH },
+    format: { with: VALID_TITLE_REGEX }
   validates :slug, uniqueness: true
   validate :slug_not_changed
 

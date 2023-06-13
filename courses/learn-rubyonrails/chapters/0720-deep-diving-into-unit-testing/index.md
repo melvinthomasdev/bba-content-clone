@@ -99,7 +99,7 @@ From the second time onwards, once we update the task in the database then the
 `updated_at` attribute's value should not be equal to the `created_at`
 attribute's value.
 
-## Testing association and length
+## Testing association, length and format
 
 Let's add some more test cases:
 
@@ -124,12 +124,32 @@ class TaskTest < ActiveSupport::TestCase
     @task.title = 'a' * (Task::MAX_TITLE_LENGTH + 1)
     assert_not @task.valid?
   end
+
+  def test_validation_should_accept_valid_titles
+    valid_titles = %w[title title_1 title! -title- _title_ /title 1]
+
+    valid_titles.each do |title|
+      @task.title = title
+      assert @task.valid?
+    end
+  end
+
+  def test_validation_should_reject_invalid_title
+    invalid_titles = %w[/ *** __ ~ ...]
+
+    invalid_titles.each do |title|
+      @task.title = title
+      assert @task.invalid?
+    end
+  end
 end
 ```
 
 In the first test case, we have ensured that every task should have a user
 association to be valid. The second test case validates that the maximum length
-of the task's title should be 125 characters only.
+of the task's title should be 125 characters only. The third test case checks
+whether the titles are of valid format, i.e, they have at least one alphanumeric
+character. The fourth test case check whether titles are of invalid format.
 
 ## Setup method and mutation
 

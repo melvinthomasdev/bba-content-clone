@@ -197,6 +197,24 @@ class Task < ApplicationRecord
 end
 ```
 
+## Adding format validation to title field
+
+To ensure that a task's title has at least one alphanumeric character, you can use the `format` validator method in Ruby on Rails. Here's how you can add this validation to the title field in the Task model:
+
+```rb
+class Task < ApplicationRecord
+  MAX_TITLE_LENGTH = 125
+  VALID_TITLE_REGEX = /\A.*[a-zA-Z0-9].*\z/i
+
+  validates :title,
+    presence: true,
+    length: { maximum: MAX_TITLE_LENGTH },
+    format: { with: VALID_TITLE_REGEX }
+end
+```
+
+In the code above, the `format` validator is used to enforce the presence of at least one alphanumeric character in the title field. `.*` matches any number of characters including alphanumeric, whitespace, and punctuation. `[a-zA-Z0-9]` matches any alphanumeric character. Together, `.*[a-zA-Z0-9].*` matches strings with at least one alphanumeric character and the `with` option help us to specify this regular expression.
+
 Let's commit these changes:
 
 ```bash
