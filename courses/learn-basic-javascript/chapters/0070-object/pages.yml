@@ -74,10 +74,10 @@
 - title: Exercise - Get Object Values - Object.values()
   slug: exercise-get-object-values-using-object-values
   page_type: exercise
-- title: Get Object Keys and Values - Object.entires()
+- title: Get Object Keys and Values - Object.entries()
   slug: get-keys-and-values-of-object
   page_type: lesson
-- title: Exercise - Get Object Keys and Values - Object.entires()
+- title: Exercise - Get Object Keys and Values - Object.entries()
   slug: exercise-get-keys-and-values-of-object
   page_type: exercise
 - title: Object Property Shorthand

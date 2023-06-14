@@ -1,76 +1,64 @@
 Create a variable`distanceInKM`,
 which stores the number
-`1,435.9` as distance
+`1435.9` as distance
 between Delhi and
 Mumbai in kilometers.
 
-Print the variable `distanceInKM`
-to the console.
+Display the variable `distanceInKM` in the console.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 
 </code>
 <solution>
-const distanceInKM = 1,435.9;
+const distanceInKM = 1435.9;
 console.log(distance);
 </solution>
 </codeblock>
 
-Join the variables `firstName`
+Create two variables `firstName` and `lastName` and store to it the values "Sam" and "Smith" respectively.
+Then join the variables `firstName`
 and `lastName`, separated by a
 space and assign it to a new
 variable named `fullName`.
 
-Print variable `fullName` to
-the console
+Display the value of the variable `fullName` in the console
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
-const firstName = "Arjun";
-const lastName = "S";
+const firstName = "Sam";
+const lastName = "Smith";
 // Write your code here
 </code>
 <solution>
-const firstName = "Arjun";
-const lastName = "S";
-const fullName = Arjun + " " + S;
-
+const firstName = "Sam";
+const lastName = "Smith";
+const fullName = `${firstName} ${lastName}`;
 console.log(fullName);
 </solution>
 </codeblock>
 
-Fix the issues with the below
+If you notice, the names, "Thanos" and "Captain America" are repeated multiple times. To fix that store them in a variable and use these variables in the `excerptFromMoviePlot` text instead.
+
+Also, fix all other issues with the below
 code, according to the best
-practices learnt so far 
-
-Additionally if you notice
-the 2 lead character names 
-"Andy" and "Mr.Potato Head"
-are repeated multiple times. 
-
-To fix that store their names
-in a variable and use these
-variables in the
-`excerptFromMoviePlot` text
-before logging it
-to the console.
+practices learnt so far and then display the value of excerptFromMoviePlot in the console.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
-const excerptFromMoviePlot = "A Mr.Potato Head doll is set in front of the poster.The VOICE OVER of ANDY, a 6-year-old boy, can be heard acting out all the voices of the scene. A GROUP OF TOYS have been crowded together in front of the "BANK" box. Andy's hand lowers a CERAMIC PIGGY BANK in front of Mr.Potato Head and shakes out a pile of coins to the floor.  Mr.Potato Head kisses the coins.""
+const excerptFromMoviePlot = "As Earth faces its gravest threat yet, the Avengers reunite to thwart the diabolical plans of Thanos, a powerful intergalactic warlord.  Iron Man, Captain America, Thor, Black Widow, Hulk, and new allies like Captain Marvel embark on a perilous journey across time and space, seeking to reverse the catastrophic "Snap", with sacrifices made and alliances tested, Captain America must rally the Avengers to stand against the relentless might of Thanos and protect the universe from his tyrannical reign.
 </code>
 <solution>
-const dollName = "Mr.Potato Head";
-const ownerName = "Andy";
+const mainVillain = "Thanos";
+const captain = "Captain America";
 
-const excerptFromMoviePlot = `A ${dollName} doll is set in front of the poster.The VOICE OVER of ${ownerName}, a 6-year-old boy, can be heard acting out all the voices of the scene. A GROUP OF TOYS have been crowded together in front of the "BANK" box. ${ownerName}'s hand lowers a CERAMIC PIGGY BANK in front of ${dollName} and shakes out a pile of coins to the floor.  ${dollName} kisses the coins.`
+const excerptFromMoviePlot = `As Earth faces its gravest threat yet, the Avengers reunite to thwart the diabolical plans of ${mainVillain}, a powerful intergalactic warlord.  Iron Man, ${captain}, Thor, Black Widow, Hulk, and new allies like Captain Marvel embark on a perilous journey across time and space, seeking to reverse the catastrophic "Snap", with sacrifices made and alliances tested, ${captain} must rally the Avengers to stand against the relentless might of ${mainVillain} and protect the universe from his tyrannical reign.`
 
 console.log(excerptFromMoviePlot);
 </solution>
 </codeblock>
 
-Four friends, Amar, Akbar, Antony, and John received a treasure bag containing 103 gold coins instead of money.
+Four friends, Sam, Smith, Even, and Renu received a treasure bag containing 103 gold coins instead of money.
 They decided to divide the treasure equally among themselves and donate any extra coins to charity.
 Create appropriate JavaScript function to find the number of coins that will be extra.
 Store this in a variable `charity` and print the value of this variable to the console.

@@ -1,54 +1,21 @@
-In the code given below,
-use a variable named `count`
-to store the number of burgers.
-Its initial value should be `1`.
+Create two variables
+`fruitName` and `fruitQuantity`.
+Store value `apple` to
+`fruitName` and `5` to
+`fruitQuantity`.
 
-The value of the `count` variable should be
-changed according to the required output.
-For example,
-before `console.log(price * 5)`,
-change the value of `count` to `5`
-then rewrite that statement to
-`console.log(price * count)`.
-
-Make similar changes to
-all other statements that display
-the price of burgers.
+Later change the value
+of `fruitQuantity` to
+`6`.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
-const price = 83;
-
-console.log("Price of 1 burger:");
-console.log(price * 1);
-
-console.log("Price of 5 burgers:");
-console.log(price * 5);
-
-console.log("Price of 120 burgers:");
-console.log(price * 120);
-
-console.log("Price of 42 burgers:");
-console.log(price * 42);
+// Write code here
 </code>
-
 <solution>
-const price = 83;
-let count = 1;
+const fruitName = "apple";
+let fruitQuantity = 5;
 
-console.log("Price of 1 burger:");
-console.log(price * count);
-
-console.log("Price of 5 burgers:");
-count = 5;
-console.log(price * count);
-
-console.log("Price of 120 burgers:");
-count = 120;
-console.log(price * count);
-
-console.log("Price of 42 burgers:");
-count = 42;
-console.log(price * count);
+fruitQuantity = 6;
 </solution>
 </codeblock>

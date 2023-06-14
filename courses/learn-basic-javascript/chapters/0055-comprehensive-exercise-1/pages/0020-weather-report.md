@@ -2,7 +2,7 @@ Different people have different resistance to temparature change. You need to fi
 
 * You are given variables, `personName`, `currentTemperature` and the `shiveringTemperature` (temperature at which the person will start shivering) 
 
-* If every half an hour temperature drops by certain degree provided by `hourlyTemperatureDecrease` variable.
+* If every hour temperature drops by certain degree provided by `hourlyTemperatureDecrease` variable.
 
 * Find out how many hours will it take before the person starts shivering, store it to a variable called `hoursRemainingForShivering` and then log it to the console in the format:
 `[name] will start shivering in [hoursRemainingForShivering] hours`

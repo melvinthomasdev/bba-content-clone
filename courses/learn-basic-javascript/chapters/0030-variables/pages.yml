@@ -1,7 +1,4 @@
 ---
-- title: Data Types
-  slug: data-types
-  page_type: lesson
 - title: Variables
   slug: variables
   page_type: lesson
@@ -11,8 +8,14 @@
 - title: Exercise 2 - Variables
   slug: exercise-2-variables
   page_type: exercise
-- title: const and let
-  slug: const-and-let
+- title: Naming Variables
+  slug: naming-variables
+  page_type: lesson
+- title: const
+  slug: const
+  page_type: lesson
+- title: let
+  slug: let
   page_type: lesson
 - title: Exercise - const and let
   slug: exercise-const-and-let
@@ -23,17 +26,26 @@
 - title: Declaration without const or let
   slug: declaration-without-const-or-let
   page_type: lesson
+- title: Data Types
+  slug: data-types
+  page_type: lesson
 - title: typeof
   slug: typeof
   page_type: lesson
-- title: Naming Variables
-  slug: naming-variables
+- title: Expressions
+  slug: expressions
   page_type: lesson
-- title: Naming Convention
-  slug: naming-convention
+- title: Storing Result of Expressions
+  slug: storing-result-of-expressions
   page_type: lesson
-- title: Changing Data Type
-  slug: changing-data-type
+- title: Exercise - Storing Result of Expressions
+  slug: exercise-storing-result-of-expressions
+  page_type: exercise
+- title: Exercise 2 - Storing Result of Expressions
+  slug: exercise-2-storing-result-of-expressions
+  page_type: exercise
+- title: Expressions and Parentheses
+  slug: expressions-and-parentheses
   page_type: lesson
 - title: Boolean
   slug: boolean
@@ -44,21 +56,6 @@
 - title: Exercise 2 - Store true or false
   slug: exercise-2-store-true-or-false
   page_type: exercise
-- title: Expressions
-  slug: expressions
-  page_type: lesson
-- title: Expressions and Parentheses
-  slug: expressions-and-parentheses
-  page_type: lesson
-- title: Storing result of Expressions
-  slug: storing-result-of-expressions
-  page_type: lesson
-- title: Exercise - Storing result of Expressions
-  slug: exercise-storing-result-of-expressions
-  page_type: exercise
-- title: Exercise 2 - Storing result of Expressions
-  slug: exercise-2-storing-result-of-expressions
-  page_type: exercise
 - title: Checking Equality
   slug: checking-equality
   page_type: lesson
@@ -68,6 +65,12 @@
 - title: Exercise 2 - Checking Equality
   slug: exercise-2-checking-equality
   page_type: exercise
+- title: Naming Convention
+  slug: naming-convention
+  page_type: lesson
+- title: Changing Data Type
+  slug: changing-data-type
+  page_type: lesson
 - title: JS Challenge 1 - Chapter 2 & 3
   slug: js-challenge-1
   page_type: exercise

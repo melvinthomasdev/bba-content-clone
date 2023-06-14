@@ -1,15 +1,65 @@
-A `switch` statement is used
-when we have multiple
-equality conditions leading to
-different results.
+When you have a number of conditions to evaluate for a given expression, using an `if else` might not be the best method.
 
-To build a switch statement:
+Let us look at an example where, based on the value of  the variable `languageCode`, we print the name of the language.
+
+<codeblock language="javascript" type="lesson">
+<code>
+let languageCode = 'en';
+
+// Using if else
+
+if (languageCode === 'hi') {
+    console.log("Hindi");
+} else if (languageCode === 'de') {
+    console.log("German (Standard)");
+} else if (languageCode === 'en') {
+    console.log("English");
+} else if (languageCode === 'fr') {
+    console.log("French (Standard)");
+} else if (languageCode === 'es') {
+    console.log("Spanish (Spain)");
+} else {
+    console.log("Sorry, we do not support the given language as of now");
+}
+
+languageCode = 'hi';
+
+// Using switch case
+
+switch(languageCode) {
+  case "hi":
+    console.log("Hindi");
+    break;
+  case "de":
+    console.log("German (Standard)")
+    break;
+  case "en":
+    console.log("English");
+    break;
+  case "fr":
+    console.log("French (Standard)");
+    break;
+  case "es":
+    console.log("Spanish (Spain)");
+    break;
+  default:
+    console.log("Sorry, we do not support the given language as of now");
+    break;
+}
+
+</code>
+</codeblock>
+
+As you can see, the switch case method seems more readable when there are a lot of conditions being evaluated for a given expression, in this case the value of the variable `languageCode`.
+
+
+**Let us break down the switch case code:**
 
 - We pass an expression
   to the `switch` statement,
-  i.e., within the parentheses
+  that is, within the parentheses
   of `switch()`. We can call this
-  the **switch expression**.
+  the **switch expression**. 
 
 - It is followed by a number of
   **cases**. Each **case** contains
@@ -33,13 +83,7 @@ To build a switch statement:
   does not match with any of the **cases**,
   then the **default** code block is executed.
 
-In the example given below,
-we get the role of a person
-in a company, based on their name.
-When the value of `name`
-matches with a case,
-the code block of that
-case is executed.
+In another example given below, we get the role of a person in a company, based on their name. When the value of `name` matches with a case, the code block of that case is executed.
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -62,23 +106,13 @@ switch(name) {
 </code>
 </codeblock>
 
-The above code displays **"This is the admin."**
-because the value of the `name` variable
-is equal to the value of the case **"Anna"**
-and the code block for that case
-contains `console.log("This is the admin.")`
-followed by a `break` statement.
+The above code displays **This is the admin.** because the value of the `name` variable is equal to the value of the case **Anna** and the code block for that case contains `console.log("This is the admin.")` followed by a `break` statement.
 
-The `break` statement is used to
-exit the execution
-of a `switch` statement.
-If the `break` statement is not present
-at the end of a code block,
-then the `switch` statement
-continues execution to the next case block,
-irrespective of whether
-the value of `name` is
-matched with that case or not.
+**break Statement**
+
+- The `break` statement is used to exit the execution of a `switch` statement. 
+- If the `break` statement is not present at the end of a code block the `switch` statement continues its execution to the next case block.
+- As you can see in the below example, this happens irrespective of whether the condition, here the value of `name` is matched with that case or not.
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -89,9 +123,9 @@ switch(name) {
     console.log("This is the owner.");
     break;
   case "Anna":
-    console.log("This is the admin.");
+    console.log("This is the admin."); // This will be executed
     case "Mike":
-    console.log("This is the manager.");
+    console.log("This is the manager."); // This also will be executed
     break;
   default:
     console.log("This person does not have a role.");
@@ -100,44 +134,4 @@ switch(name) {
 </code>
 </codeblock>
 
-The above code displays both
-**"This is the admin."** and **"This is the manager."**
-because the code block
-for the case **"Anna"**
-does not contain a `break` statement.
-You can try removing
-all the `break` statements and
-see the result for different
-values of the `name` variable.
-
-In the example given below,
-since the value of `name`
-does not match with any case value,
-then the code block of
-the **default** case gets executed
-and we ge the output -
-**"This person does not have a role."**
-
-<codeblock language="javascript" type="lesson">
-<code>
-const name = "Peter";
-
-switch(name) {
-  case "Oliver":
-    console.log("This is the owner.");
-    break;
-  case "Anna":
-    console.log("This is the admin.");
-    break;
-  case "Mike":
-    console.log("This is the manager.");
-    break;
-  default:
-    console.log("This person does not have a role.");
-    break;
-}
-</code>
-</codeblock>
-
-The `default` block should always
-be written after all the **cases**.
+If the given expression does not match with any case value, then the code block of the **default** case gets executed. The encouraged practice is to always write the  `default` block after all the **cases**. 

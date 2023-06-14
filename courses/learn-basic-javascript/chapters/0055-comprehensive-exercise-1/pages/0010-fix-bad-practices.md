@@ -31,7 +31,7 @@ numberOfPeople = 5
 // Area formula of a rectangle is length * breadth.
 const A = 12
 const b = 15
-console.log(`Area of the rectangle is ${a*b}cm².`)
+console.log(`Area of the rectangle is ${a*b}cm²`)
 </code>
 <solution>
 // we do not commonly start variable names with capital letter except for specific situations like mathematical notation.
@@ -41,7 +41,7 @@ console.log(`Area of the rectangle is ${a*b}cm².`)
 const lengthInCm = 12;
 const breadthInCm = 15;
 
-console.log(`Area of a rectangle is ${lengthInCm * breadthInCm}cm²`);
+console.log(`Area of the rectangle is ${lengthInCm * breadthInCm}cm²`);
 </solution>
 </codeblock>
 

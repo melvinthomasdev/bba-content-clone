@@ -32,6 +32,9 @@
 - title: Exercise - switch Statement
   slug: exercise-switch-statement
   page_type: exercise
+- title: switch statement fall through method
+  slug: switch-statement-fall-through-method
+  page_type: lesson
 - title: Ternary Operator
   slug: ternary-operator
   page_type: lesson

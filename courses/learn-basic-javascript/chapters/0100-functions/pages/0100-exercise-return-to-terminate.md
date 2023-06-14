@@ -3,7 +3,7 @@ with one parameter - `user`.
 If the `user.age` is not defined,
 stop further execution of the function.
 If the value of `user.age` is `18` or higher,
-display `"You are eligible."`
+display `"You are eligible"`
 and
 increment the value of `eligibleUsersCount`,
 otherwise display `"You are not eligible."`.

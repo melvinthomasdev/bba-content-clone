@@ -1,26 +1,27 @@
-Create two variables
-`fruitName` and `fruitQuantity`.
-Add value of `apple` to
-`fruitName` and `5` to
-`fruitQuantity`.
+In the code given below, create a variable named `fullName` and assign it a value `Sam Smith`.
 
-Later change the value
-of `fruitQuantity` to
-`6`.
+Create two other variables named `timeInMinutes` and `runs` with the initial value of `0`.
 
-At the end, print the values of both variables to the console.
+Then change the value of `timeInMinutes` to 50 and `runs` to `100`.
+
+At the end, print the values of `fullName`, `timeInMinutes` and `runs` in that order.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
-// Write code here
+// Write your code here
 </code>
+
 <solution>
-const fruitName = "apple";
-let fruitQuantity = 5;
+const fullName = "Sam Smith";
 
-fruitQuantity = 6;
+let timeInMinutes = 0;
+let runs = 0;
 
-console.log(fruitName);
-console.log(fruitQuantity);
+timeInMinutes = 50;
+runs = 100;
+
+console.log(fullName);
+console.log(timeInMinutes);
+console.log(runs);
 </solution>
 </codeblock>
