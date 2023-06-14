@@ -10,9 +10,9 @@ In the `src` folder we can have folders and files as follows:
 
 1. **apis** - All the backend calls are to be made from the apis folder. We can
    have multiple files specific to each component.
-2. **hooks** - This folder contains global reusable hooks.
+2. **hooks** - This folder contains all the custom hooks.
 3. **stores** - This folder contains all the state management stores.
-4. **components** - This folder contains all the react components. If we have a component specific hook, store, etc then we use the `commons`, `hooks`, and `stores` folder inside the component folder.
+4. **components** - This folder contains all the react components. And, all the reusable components should be stored in the `commons` folder within the `components` folder.
 5. **lib** - This will contain all the files related to third-party libraries that we override or initialize.
 6. **translations** - This folder will contain all the translations related files.
 7. **routes.js** - This file contains all the project level routes
