@@ -53,3 +53,15 @@
 - title: Exercise - Get Item From a Position in Array
   slug: exercise-get-item-from-a-position-in-array-2
   page_type: exercise
+- title: Find the count of equal items in an Array
+  slug: find-the-count-of-equal-items-in-an-array
+  page_type: lesson
+- title: Exercise - Find the count of equal items in an Array
+  slug: exercise-find-the-count-of-equal-items-in-an-array
+  page_type: exercise
+- title: Find the count of equal items in an Array - 2
+  slug: find-the-count-of-equal-items-in-an-array-2
+  page_type: lesson
+- title: Exercise - Find the count of equal items in an Array - 2
+  slug: exercise-find-the-count-of-equal-items-in-an-array-2
+  page_type: exercise
