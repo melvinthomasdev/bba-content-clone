@@ -299,6 +299,9 @@
 - slug: activerecord-transactions-in-depth
   name: ActiveRecord Transactions in depth
   has_pages: false
+- slug: advanced-sidekiq-actions
+  name: Advanced Sidekiq actions
+  has_pages: false
 - slug: webpacker-in-depth
   name: Webpacker in Depth
   has_pages: false
