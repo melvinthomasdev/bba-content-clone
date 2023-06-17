@@ -20,6 +20,9 @@
 - title: Exercise - Class and ID Selectors
   slug: exercise-class-and-id-selectors
   page_type: exercise
+- title: Naming Convention
+  slug: naming-convention
+  page_type: lesson
 - title: Universal Selector
   slug: universal-selector
   page_type: lesson
