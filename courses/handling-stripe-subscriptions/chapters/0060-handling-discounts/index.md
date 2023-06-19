@@ -5,9 +5,9 @@ We all must have seen `promotion codes` or `discount codes` like `FLAT5PROMO` or
 customers to get a discount on the total invoiced amount on their purchase.
 
 In Stripe,
-[coupons](https://stripe.com/docs/billing/subscriptions/discounts#creating-coupons)
+[coupons](https://stripe.com/docs/billing/subscriptions/coupons#creating-coupons)
 and
-[promotion codes](https://stripe.com/docs/billing/subscriptions/discounts/codes)
+[promotion codes](https://stripe.com/docs/billing/subscriptions/coupons#promotion-codes)
 are two distinct entities. Coupons are a discount entity that is responsible for
 reducing the total invoice amount charged to a customer when they buy a
 subscription and these are not accessible to customers directly.
@@ -38,14 +38,14 @@ Now, the question is how we can create coupons in Stripe?
 **Creating coupons**
 
 We can
-[create coupons](https://stripe.com/docs/billing/subscriptions/discounts#creating-coupons)
+[create coupons](https://stripe.com/docs/billing/subscriptions/coupons#creating-coupons)
 via **[Stripe Dashboard](https://dashboard.stripe.com/test/coupons)** or
 **[Stripe API](https://stripe.com/docs/api#coupons)**.
 
 Let's start creating coupon via **Dashboard**:
 
 We have already registered for the Stripe account. Now, login to Stripe
-[Dashboard](https://dashboard.stripe.com/test) and then navigate to
+[Dashboard](https://dashboard.stripe.com/test/dashboard) and then navigate to
 [Coupons](https://dashboard.stripe.com/test/coupons) page.
 
 <image>coupons.png</image>
@@ -132,9 +132,9 @@ coupon is applicable only for one time in a subscription.
 ## Applying discounts to an existing subscription
 
 We have already discussed what are
-[coupons](https://stripe.com/docs/billing/subscriptions/discounts#creating-coupons)
+[coupons](https://stripe.com/docs/billing/subscriptions/coupons#creating-coupons)
 and
-[promotion codes](https://stripe.com/docs/billing/subscriptions/discounts/codes)
+[promotion codes](https://stripe.com/docs/billing/subscriptions/coupons#promotion-codes)
 in detail. Now, we will see how we can apply coupons to an existing
 subscription.
 
@@ -212,14 +212,14 @@ request we are sending to apply promotion code via our application.
 ```bash
 $ curl https://api.stripe.com/v1/subscriptions/sub_JJnCr4PJF6cZCb \
 > -u sk_test_51IUPamDdkrcdQOlhs2b...VV2OQeFjRe1004Oahe9N3: \
-> -X PUT
+> -X POST
 > -d "promotion_code"="promo_1IhAIAHjDjtSi1tHPmjvLNxY"
 ```
 
 ## Applying discounts to a customer
 
 Instead of applying
-[coupon](https://stripe.com/docs/billing/subscriptions/discounts#creating-coupons)
+[coupon](https://stripe.com/docs/billing/subscriptions/coupons#creating-coupons)
 to a subscription, we can apply it to a customer also.
 
 Let's say, we have an existing customer Oliver. We have analyzed that he is a

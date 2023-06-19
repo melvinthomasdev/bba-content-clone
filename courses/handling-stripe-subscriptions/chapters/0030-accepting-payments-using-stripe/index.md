@@ -77,8 +77,7 @@ Stripe's end.
 
 If the customer is subscribing for the first time, then a checkout session can
 be created by providing the email that the customer had provided. We will look
-into how to implement a checkout session in this manner in the
-[upcoming section](/handling-stripe-subscriptions/accepting-payments-using-stripe#steps-to-create-a-checkout-session).
+into how to implement a checkout session in this manner in the upcoming section.
 
 This will ensure that Stripe automatically pre-populates the email field in the
 Stripe hosted checkout page and disables it, such that the customer can't change
@@ -90,9 +89,7 @@ one already in Stripe, since their emails are same.
 
 We can let Stripe know that the current customer is the same as the one already
 existing at Stripe's end by passing `Stripe's Customer ID` when creating the
-checkout session itself. We will look into the implementation details in the
-[upcoming section](/handling-stripe-subscriptions/accepting-payments-using-stripe#steps-to-create-a-checkout-session)
-regarding this case.
+checkout session itself. We will look into the implementation details in the upcoming section regarding this case.
 
 Another caveat is that the amount of customization that we can do on the Stripe
 hosted checkout page is limited to a few buttons and colors. So branding is also
@@ -124,7 +121,7 @@ limited.
   }
 
   Stripe.api_key = Figaro.env.stripe_secret_key
-  Stripe.api_version = '2020-08-27'
+  Stripe.api_version = '2022-11-15'
   ```
 
   For `Node.js`, we can use the following initializer in each of the components:
@@ -133,7 +130,7 @@ limited.
   import Stripe from "stripe";
 
   const stripe = new Stripe(process.env.stripe_secret_key, {
-    apiVersion: "2020-08-27",
+    apiVersion: "2022-11-15",
   });
   ```
 
@@ -169,7 +166,7 @@ limited.
 
   session = Stripe::Checkout::Session.create(checkout_options)
 
-  render status: :ok, json: { sessionId: session.id }
+  redirect session.url, :see_other
   ```
 
 - Optional step: If we want to avoid customer duplication at Stripe's end when
@@ -187,13 +184,6 @@ limited.
                           end)
   ```
 
-- Redirect customers to Stripe hosted checkout form using the checkout session
-  ID received from the backend. Which would look something like this:
-  ```js
-  const { error: stripeError } = stripe.redirectToCheckout({
-    sessionId: checkoutAPIData?.sessionId,
-  });
-  ```
 - Monitor and provision the checkout, and provide access to the application.
   Think `asynchronous`! Stripe checkouts or more accurately card payments, are
   often not synchronous. Therefore we need to leverage Stripe webhook events to
@@ -272,6 +262,18 @@ look into what makes Stripe Elements a popular choice among some developers.
     );
   };
   ```
+
+- The above way of importing and using the `loadStripe` method is valid. But it
+  can be optimized by dynamically importing the `@stripe/stripe-js` library. It
+  allows you to defer loading the library until it is actually needed, reducing
+  the initial loading time of your application. This can be particularly useful
+  if the Stripe library is not used on every page or in every scenario of your
+  application.
+
+```js
+const stripeJs = () => import("@stripe/stripe-js");
+const { loadStripe } = await stripeJs();
+```
 
 - The next step is to create a `CheckoutForm` component where we get the
   reference of both the stripe object as well as elements using the `useStripe`

@@ -19,6 +19,7 @@ $ curl https://api.stripe.com/v1/checkout/sessions \
 > -u sk_test_51IUPamDdkrcdQOlhs2b...VV2OQeFjRe1004Oahe9N3: \
 > -d "payment_method_types[]"="card" \
 > -d "line_items[][quantity]"=1 \
+> -d "line_items[][price]"="price_1N8zXtS..." \
 > -d mode=subscription \
 > -d success_url="https://example.com/success" \
 > -d cancel_url="https://example.com/cancel"
@@ -46,6 +47,7 @@ $ curl https://api.stripe.com/v1/checkout/sessions \
 > -d "payment_method_types[]"="card" \
 > -d "billing_address_collection"="required" \
 > -d "line_items[][quantity]"=1 \
+> -d "line_items[][price]"="price_1N8zXtS..." \
 > -d mode=subscription \
 > -d success_url="https://example.com/success" \
 > -d cancel_url="https://example.com/cancel"

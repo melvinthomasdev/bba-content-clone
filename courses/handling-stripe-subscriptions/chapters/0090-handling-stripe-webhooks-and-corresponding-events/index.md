@@ -38,8 +38,7 @@ webhooks work by making a `POST` request with JSON webhook data to our
 designated endpoint when an event, or specific events we choose, are fired from
 Stripe's end.
 
-Let's add a webhook endpoint via
-[Stripe Dashboard](/https://dashboard.stripe.com/test/webhooks).
+Let's add a webhook endpoint via [Stripe Dashboard](https://dashboard.stripe.com/test/webhooks).
 
 <image>webhook.png</image>
 

@@ -65,6 +65,6 @@ Let's see how we can cancel a `PaymentIntent` using the
 
 ```bash
 curl https://api.stripe.com/v1/payment_intents/pi_3JPjdsLyyYrd44Ag1uGEWz9d/cancel \
-> -u sk_test_51IUPamDdkrcdQOlhs2b...VV2OQeFjRe1004Oahe9N3:: \
+> -u sk_test_51IUPamDdkrcdQOlhs2b...VV2OQeFjRe1004Oahe9N3: \
 > -X POST
 ```

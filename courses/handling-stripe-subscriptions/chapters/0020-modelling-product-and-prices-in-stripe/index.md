@@ -56,7 +56,7 @@ product page in Stripe Dashboard as shown below:
 
 If we want to create products and prices using API then we need a Stripe
 `API key` or `Secret Key` from the
-[Stripe Dashboard](https://dashboard.stripe.com/test/dashboard). For our case,
+[Stripe Dashboard](https://dashboard.stripe.com/test/apikeys). For our case,
 the `API key` is `sk_test_51IUPamDdkrcdQOlhs2b...VV2OQeFjRe1004Oahe9N3`.
 
 Now, let's see how we can send a `POST` request to create a

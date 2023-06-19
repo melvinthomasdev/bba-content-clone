@@ -52,12 +52,12 @@ The changelog is a list of backwards-incompatible updates in the Stripe API.
 As described above, new additions and forward-compatible changes don’t need a
 new API version and thus will not appear in this list.
 
-As an example, let's take a look at the latest `2020-08-27` release's changelog:
+As an example, let's take a look at the latest `2022-11-15` release's changelog:
 
-- On subscription schedules, `phases.plans` has been renamed to `phases.items`.
-- `tax_percent` property has been removed in favour of the new `tax rates` API.
-- Checkout Sessions no longer include the display_items property. Use the
-  `line_items` property instead.
+- Charge no longer auto-expands refunds by default. You can expand the list but
+  for performance reasons we recommended against doing so unless needed.
+- The `charges` property on PaymentIntent has been removed. You can use the
+  `latest_charge` property instead.
 
 The API changelogs for each Stripe API version, can be found in more details in
 their [API changelog section](https://stripe.com/docs/upgrades#api-changelog).
@@ -90,7 +90,7 @@ Rails.configuration.stripe = {
 }
 
 Stripe.api_key = ENV['stripe_secret_key']
-Stripe.api_version = '2020-08-27'
+Stripe.api_version = '2022-11-15'
 ```
 
 We can view the current API version by visiting the Stripe dashboard's
