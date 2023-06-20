@@ -38,3 +38,9 @@
 - title: Exercise - Use each to print all items
   slug: exercise-use-each-to-print-all-items
   page_type: exercise
+- title: Value omission in Ruby Hash Literals
+  slug: value-omission-in-ruby-hash-literals
+  page_type: lesson
+- title: Exercise - Value omission in Ruby Hash Literals
+  slug: exercise-value-omission-in-ruby-hash-literals
+  page_type: exercise
