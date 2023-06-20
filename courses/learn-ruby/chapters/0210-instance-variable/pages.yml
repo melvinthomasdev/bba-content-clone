@@ -8,3 +8,9 @@
 - title: Exercise - instance-variable-exercise
   slug: exercise-instance-variable-exercise
   page_type: exercise
+- title: Class level instance variable
+  slug: class-level-instance-variable
+  page_type: lesson
+- title: Exercise - Class level instance variable
+  slug: exercise-class-level-instance-variable
+  page_type: lesson
