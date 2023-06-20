@@ -30,3 +30,8 @@ we need **selectors**.
 In the above example, we used
 `body`, `h1` and `p` as
 the **Selectors**.
+
+Note that a different text
+color has been applied to
+the h1 element by using the
+`h1` selector.

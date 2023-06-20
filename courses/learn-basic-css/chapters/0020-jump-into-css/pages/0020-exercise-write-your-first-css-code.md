@@ -1,4 +1,4 @@
-Change the color of the paragraph text to `blue`
+Change the color of the paragraph text to `blue`.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>

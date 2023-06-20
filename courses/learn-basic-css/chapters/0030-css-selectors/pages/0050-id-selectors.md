@@ -36,4 +36,4 @@ p {
 </code>
 </codeblock>
 
-In the above example, the `h2` element with the `id` **'title'** is affected by the styles. Note that the other `h2` elements remain unchanged.
+In the above example, the `h2` element with the `id` **title** is affected by the styles. Note that the other `h2` elements remain unchanged.

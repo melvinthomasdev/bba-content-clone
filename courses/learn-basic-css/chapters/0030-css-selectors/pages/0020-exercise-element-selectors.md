@@ -1,4 +1,4 @@
-Set the `color` of all links to `orange` using the element selector
+Set the `color` of all links to `orange` using the element selector.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>

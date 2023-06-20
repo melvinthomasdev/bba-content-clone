@@ -43,13 +43,13 @@ to understand better:
 </panel>
 <panel  language="css">
 .purple {
-  color: hsl(300, 100%, 25%)
+  color: hsl(300, 100%, 25%);
 }
 .blue {
-  color: hsl(210, 45%, 20%)
+  color: hsl(210, 45%, 20%);
 }
 .green {
-  color: hsl(150, 50%, 70%)
+  color: hsl(150, 50%, 70%);
 }
 </panel>
 </code>

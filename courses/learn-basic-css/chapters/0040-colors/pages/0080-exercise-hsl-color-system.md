@@ -20,7 +20,7 @@ yellow `hsl(60, 80%, 90%)`.
 <solution>
 #heading {
   background-color: hsl(0, 0%, 0%);
-  color: hsl(60, 80%, 90%)
+  color: hsl(60, 80%, 90%);
 }
 </solution>
 </codeblock>

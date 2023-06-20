@@ -35,4 +35,4 @@ p {
 </code>
 </codeblock>
 
-In the above example, the `h2` elements with the `class` **'heading'** are affected by the styles applied. Note that the other `h2` element without that class remains unchanged.
+In the above example, the `h2` elements with the `class` **heading** are affected by the styles applied. Note that the other `h2` element without that class remains unchanged.

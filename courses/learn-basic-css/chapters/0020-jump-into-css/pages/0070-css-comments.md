@@ -1,4 +1,4 @@
-Similar to other languages, CSS comments are ignored by the browser. You can add comments in CSS to explain the code to yourself or other developers where needed.
+CSS comments are ignored by the browser. You can add comments in CSS to explain the code to yourself or other developers where needed.
 
 CSS comments start with `/*` and end with `*/`. They can be single line or span across multiple lines.
 
