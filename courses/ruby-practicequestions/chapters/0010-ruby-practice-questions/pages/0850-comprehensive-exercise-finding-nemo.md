@@ -15,7 +15,7 @@ end
 def find_nemo(str)
   nemo_index = str.downcase.split(' ').find_index('nemo')
   if nemo_index
-    return "I found Nemo at #{nemo_index + 1}"
+    return "I found Nemo at #{nemo_index + 1}!"
   else
     "I can't find Nemo :("
   end

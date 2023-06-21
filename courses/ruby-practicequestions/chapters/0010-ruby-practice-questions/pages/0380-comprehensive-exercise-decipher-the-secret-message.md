@@ -4,8 +4,9 @@ Given a coded message `message` and a key, the method should decipher the code a
 
 1. Not all words in the coded message are part of the decoded message.
 2. Each word in the message will have a number as prefix.
-3. Any word that has a prefix number that is perfectly divisible by the key, then the word following the prefix number is part of the decoded message
+3. Any word that has a prefix number that is perfectly divisible by the key, then the word following the prefix number is part of the decoded message.
 4. The final decoded message will be returned as a string.
+5. Ensure there are no unnecessary trailing or leading whitespaces.
 
 <br>
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
@@ -24,7 +25,7 @@ def enigma_function(message, key)
     decoded_message += " #{word}" if word.to_i % key == 0
   end
 
-  decoded_message.gsub(/[0-9]/, '')
+  decoded_message.gsub(/[0-9]/, '').strip
 end
 </solution>
 
