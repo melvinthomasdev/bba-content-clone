@@ -5,6 +5,7 @@ slug: build-expensetracker
 published: false
 custom_data:
   type: project
+  courseType: project
   upcoming: true
   newCourse: false
   courseColor: border-gray-600

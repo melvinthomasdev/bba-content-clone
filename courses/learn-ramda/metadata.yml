@@ -5,6 +5,7 @@ slug: learn-ramdajs
 published: true
 custom_data:
   type: ramdajs
+  courseType: lesson
   upcoming: false
   newCourse: true
   courseColor: border-gray-600

@@ -5,6 +5,7 @@ slug: learn-intermediate-html
 published: false
 custom_data:
   type: html
+  courseType: lesson
   upcoming: true
   newCourse: false
   courseColor: border-gray-600

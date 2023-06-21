@@ -1,10 +1,11 @@
 ---
-name: Basic JavaScript - Practice Questions
+name: Basic JavaScript
 subheading: Practice Basic JavaScript you have already learnt
 slug: learn-basic-javascript-practicequestions
 published: true
 custom_data:
   type: javascript
+  courseType: lesson
   upcoming: false
   newCourse: false
   courseColor: border-gray-600

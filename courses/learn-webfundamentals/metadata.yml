@@ -5,6 +5,7 @@ slug: learn-webfundamentals
 published: false
 custom_data:
   type: web
+  courseType: lesson
   upcoming: true
   newCourse: false
   courseColor: border-gray-600

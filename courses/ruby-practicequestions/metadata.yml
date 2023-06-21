@@ -1,10 +1,11 @@
 ---
-name: Ruby - Practice Questions
+name: Ruby
 subheading: Practice Ruby you have already learnt
 slug: ruby-practicequestions
 published: true
 custom_data:
   type: ruby
+  courseType: practice-questions
   upcoming: false
   newCourse: false
   courseColor: border-gray-600

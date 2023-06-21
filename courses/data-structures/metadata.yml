@@ -5,6 +5,7 @@ slug: data-structures
 published: false
 custom_data:
   type: javascript
+  courseType: lesson
   upcoming: true
   newCourse: false
   courseColor: border-gray-600

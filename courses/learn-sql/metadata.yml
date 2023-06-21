@@ -5,6 +5,7 @@ slug: learn-sql
 published: true
 custom_data:
   type: sql
+  courseType: lesson
   upcoming: false
   newCourse: false
   courseColor: border-gray-600

@@ -1,10 +1,11 @@
 ---
-name: Intermediate JavaScript - Practice Questions
+name: Intermediate JavaScript
 subheading: Practice Intermediate JavaScript you have already learnt
 slug: learn-intermediate-javascript-practicequestions
 published: true
 custom_data:
   type: javascript
+  courseType: practice-questions
   upcoming: false
   newCourse: false
   courseColor: border-gray-600

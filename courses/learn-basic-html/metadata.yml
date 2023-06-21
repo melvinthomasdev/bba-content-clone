@@ -5,6 +5,7 @@ slug: learn-basic-html
 published: true
 custom_data:
   type: html
+  courseType: lesson
   upcoming: false
   newCourse: false
   courseColor: border-gray-600

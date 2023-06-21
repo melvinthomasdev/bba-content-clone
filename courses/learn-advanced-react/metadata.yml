@@ -5,6 +5,7 @@ slug: advanced-react-js
 published: true
 custom_data:
   type: reactjs
+  courseType: lesson
   upcoming: false
   newCourse: false
   courseColor: border-gray-600

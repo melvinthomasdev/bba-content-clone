@@ -1,10 +1,11 @@
 ---
-name: Data Structures - Practice Questions
+name: Data Structures
 subheading: Practice Data Structures and Algorithms using Javascript
 slug: data-structures-practice-questions
 published: false
 custom_data:
   type: javascript
+  courseType: practice-questions
   upcoming: true
   newCourse: false
   courseColor: border-gray-600

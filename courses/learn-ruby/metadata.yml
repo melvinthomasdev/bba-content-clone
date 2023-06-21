@@ -5,6 +5,7 @@ slug: learn-ruby
 published: true
 custom_data:
   type: ruby
+  courseType: lesson
   upcoming: false
   newCourse: false
   courseColor: border-gray-600

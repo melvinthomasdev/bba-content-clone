@@ -1,10 +1,11 @@
 ---
-name: ReactJS - Practice Questions
+name: ReactJS
 subheading: Practice ReactJS you have already learnt
 slug: reactjs-practicequestions
 published: true
 custom_data:
   type: reactjs
+  courseType: practice-questions
   upcoming: false
   newCourse: false
   courseColor: border-gray-600

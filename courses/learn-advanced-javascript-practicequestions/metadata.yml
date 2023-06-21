@@ -1,10 +1,11 @@
 ---
-name: Advanced JavaScript - Practice Questions
+name: Advanced JavaScript
 subheading: Practice Advanced JavaScript you have already learnt
 slug: learn-advanced-javascript-practicequestions
 published: true
 custom_data:
   type: javascript
+  courseType: practice-questions
   upcoming: false
   newCourse: false
   courseColor: border-gray-600

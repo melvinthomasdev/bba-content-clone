@@ -5,6 +5,7 @@ slug: learn-python
 published: true
 custom_data:
   type: python
+  courseType: lesson
   upcoming: false
   newCourse: true
   courseColor: border-gray-600

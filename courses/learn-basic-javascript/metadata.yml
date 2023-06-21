@@ -5,6 +5,7 @@ slug: learn-basic-javascript
 published: true
 custom_data:
   type: javascript
+  courseType: lesson
   upcoming: false
   newCourse: false
   courseColor: border-gray-600

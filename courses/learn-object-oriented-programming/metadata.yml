@@ -5,5 +5,6 @@ slug: learn-object-oriented-programming
 published: true
 custom_data:
   type: misc
+  courseType: lesson
 home_logo: learn-oopc.png
 logo: learn-oopc.png
