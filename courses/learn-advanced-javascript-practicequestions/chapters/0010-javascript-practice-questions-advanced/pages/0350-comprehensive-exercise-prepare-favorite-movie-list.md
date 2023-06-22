@@ -1,7 +1,5 @@
 A group of people was asked to tell the name of the latest Indian movie that they really loved. From the given list of survey answers, find an alphabetically sorted unique list of these movie names.
 
-1. Return stringified object.
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getIndianMovies = surveyAnswers => {
@@ -12,7 +10,7 @@ const getIndianMovies = surveyAnswers => {
 <solution>
 const getIndianMovies = surveyAnswers => {
   const result = surveyAnswers.map(a => a.favoriteIndianMovie).sort();
-  return JSON.stringify([...new Set(result)]);
+  return [...new Set(result)];
 }
 </solution>
 

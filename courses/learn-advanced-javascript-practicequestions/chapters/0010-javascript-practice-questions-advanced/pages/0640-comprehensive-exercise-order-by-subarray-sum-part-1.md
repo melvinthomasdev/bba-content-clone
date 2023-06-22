@@ -1,7 +1,5 @@
 The function `orderBySum` should convert the array of arrays that contain only numeric values by the ascending order of the sum of the elements within each subarray.
 
-- Return stringified object.
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const orderBySum = arr => {
@@ -12,7 +10,7 @@ const orderBySum = arr => {
 <solution>
 const findSum = arr => arr.reduce((sum, value) => sum + value);
 
-const orderBySum = arr => JSON.stringify([...arr].sort((a,b) => findSum(a) - findSum(b)));
+const orderBySum = arr => [...arr].sort((a,b) => findSum(a) - findSum(b));
 </solution>
 
 <testcases>

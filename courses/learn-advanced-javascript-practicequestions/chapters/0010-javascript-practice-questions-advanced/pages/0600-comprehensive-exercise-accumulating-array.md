@@ -12,7 +12,7 @@ const accumulatingArray = arr => {
 <solution>
 const accumulatingArray = arr => {
   let prefixSum = 0;
-  return JSON.stringify(arr.map((value) => (prefixSum += value)));
+  return arr.map((value) => (prefixSum += value));
 };
 </solution>
 

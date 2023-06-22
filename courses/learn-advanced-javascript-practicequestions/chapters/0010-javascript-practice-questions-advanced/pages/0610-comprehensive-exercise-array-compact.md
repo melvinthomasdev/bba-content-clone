@@ -1,7 +1,5 @@
 The function `compactArray` should clear the array from all unnecessary elements, like `false`, `undefined`, empty strings, `0`, and `null`.
 
-1. Return stringified object.
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const compactArray = arr => {
@@ -10,7 +8,7 @@ const compactArray = arr => {
 </code>
 
 <solution>
-const compactArray = arr => JSON.stringify(arr.filter(el => el));
+const compactArray = arr => arr.filter(el => el);
 </solution>
 
 <testcases>

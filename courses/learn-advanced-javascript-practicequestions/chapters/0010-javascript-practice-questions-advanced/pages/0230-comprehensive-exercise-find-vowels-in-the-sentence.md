@@ -3,7 +3,6 @@ The function `findVowels` should return the vowels found in the given sentence.
 1. Make sure to return only one instance of any vowel found in the `sentence` string given as input.
 2. Returned vowels should be alphabetically sorted and in lower case.
 3. If no vowels are present return an empty array.
-4. Return stringified object.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -18,7 +17,7 @@ const findVowels = sentence => {
   [...sentence].forEach(letter => {
       vowelFreq[letter] += 1;
   });
-  return JSON.stringify(Object.keys(vowelFreq).filter(vowel => vowelFreq[vowel] > 0));
+  return Object.keys(vowelFreq).filter(vowel => vowelFreq[vowel] > 0);
 }
 </solution>
 

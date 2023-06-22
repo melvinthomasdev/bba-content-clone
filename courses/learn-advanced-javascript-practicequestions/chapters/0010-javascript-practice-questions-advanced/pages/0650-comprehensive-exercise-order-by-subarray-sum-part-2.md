@@ -12,7 +12,7 @@ const orderBySum = arr => {
 <solution>
 const findSum = arr => arr.reduce((sum, value) => sum + value);
 
-const orderBySum = arr => JSON.stringify([...arr].sort((a,b) => findSum(b) - findSum(a)));
+const orderBySum = arr => [...arr].sort((a,b) => findSum(b) - findSum(a));
 </solution>
 
 <testcases>

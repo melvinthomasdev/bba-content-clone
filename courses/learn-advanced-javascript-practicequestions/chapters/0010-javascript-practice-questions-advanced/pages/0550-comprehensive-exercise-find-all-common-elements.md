@@ -1,7 +1,6 @@
 The function `commonElements` should return the common elements.
 
 1. If either one of the arrays is empty, return the non-empty array.
-2. Return stringified object.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -12,11 +11,11 @@ const commonElements = ({ arr1, arr2 }) => {
 
 <solution>
 const commonElements = ({ arr1, arr2 }) => {
-  if (arr1.length === 0) return JSON.stringify(arr2);
+  if (arr1.length === 0) return arr2;
 
-  if (arr2.length === 0) return JSON.stringify(arr1);
+  if (arr2.length === 0) return arr1;
 
-  return JSON.stringify(arr1.filter((el) => arr2.includes(el)));
+  return arr1.filter((el) => arr2.includes(el));
 };
 </solution>
 

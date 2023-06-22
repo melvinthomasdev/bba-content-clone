@@ -1,7 +1,6 @@
 The function `splitByOddAndEven` should separate a single array into sub-arrays: one containing odd numbers, the other containing even numbers.
 
 1. If array contains only even or odd, return the array. Eg. [1,3,5] -> [1,3,5]
-2. Return stringified object.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -14,11 +13,11 @@ const splitByOddAndEven = arr => {
 const splitByOddAndEven = arr => {
   const odd = arr.filter((number) => number % 2 === 1);
   const even = arr.filter((number) => number % 2 === 0);
-  if (odd.length > 0 && even.length > 0) return JSON.stringify([even, odd]);
+  if (odd.length > 0 && even.length > 0) return [even, odd];
 
-  if (even.length === 0) return JSON.stringify(odd);
+  if (even.length === 0) return odd;
 
-  return JSON.stringify(even);
+  return even;
 };
 </solution>
 

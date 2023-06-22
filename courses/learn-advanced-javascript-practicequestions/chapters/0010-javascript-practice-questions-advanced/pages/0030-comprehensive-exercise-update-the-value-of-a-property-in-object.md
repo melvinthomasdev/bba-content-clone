@@ -3,8 +3,7 @@ update the property in the given object.
 
 1. If the property is not present,
 add the given property.
-2. Return the stringified object.
-3. You must use two spaces in the output JSON string
+2. You must use two spaces in the output JSON string
 for readability purposes.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
@@ -16,13 +15,11 @@ const updateObject = ({ obj, property, value }) => {
 
 <solution>
 const updateObject = ({ obj, property, value }) =>
-  JSON.stringify(
+  (
     {
       ...obj,
       [property]: value,
-    },
-    null,
-    2
+    }
   );
 </solution>
 

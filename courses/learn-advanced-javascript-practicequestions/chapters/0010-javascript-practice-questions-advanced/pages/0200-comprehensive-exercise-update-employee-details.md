@@ -1,7 +1,6 @@
 Given details of an employee, the function should return an updated version with the `experience` property incremented and a new property `age` calculated from `yearOfBirth` property added to it.
 
 1. If the 'experience' property is missing, then add it with an initial value of `1`.
-2. Return stringified object.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -18,7 +17,7 @@ const updatedEmployeeDetails = employeeDetailsAtJoining => {
       age: currentYear - employeeDetailsAtJoining.yearOfBirth,
       experience: employeeDetailsAtJoining.experience ? employeeDetailsAtJoining.experience + 1 : 1
   };
-  return JSON.stringify(employeeDetailsAtJoining);
+  return employeeDetailsAtJoining;
 }
 </solution>
 

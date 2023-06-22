@@ -1,7 +1,5 @@
 The function `keysAndValues` should return the keys and values as separate arrays.
 
-1. Return stringified object.
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const keysAndValues = obj => {
@@ -10,8 +8,7 @@ const keysAndValues = obj => {
 </code>
 
 <solution>
-const keysAndValues = obj =>
-  JSON.stringify([Object.keys(obj), Object.values(obj)]);
+const keysAndValues = obj => [Object.keys(obj), Object.values(obj)];
 </solution>
 
 <testcases>

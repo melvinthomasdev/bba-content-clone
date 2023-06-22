@@ -1,7 +1,5 @@
 For a list of participants, and a given condition, we should find a list of only those who pass the given condition.
 
-1. Return stringified object.
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const removeUnMatched = ({ participants, condition }) => {
@@ -11,7 +9,7 @@ const removeUnMatched = ({ participants, condition }) => {
 
 <solution>
 const removeUnMatched = ({ participants, condition }) =>
-  JSON.stringify(participants.filter(condition));
+  participants.filter(condition);
 </solution>
 
 <testcases>

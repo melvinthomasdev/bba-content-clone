@@ -3,7 +3,6 @@ Given an object with vacation details, return the same after adding a `startDate
 1. Only add `startDate` property if it's not present in the object.
 2. Try using [Logical nullish](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment) assignment.
 3. Month should always be set as `December`.
-4. Return stringified object.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -16,7 +15,7 @@ const addMissingProperty = ({ vacationDetails, day, year }) => {
 const addMissingProperty = ({ vacationDetails, day, year }) => {
   let startDate = vacationDetails.startDate
   startDate ??= new Date(year, 11, day).toDateString();
-  return JSON.stringify({
+  return ({
     ...vacationDetails,
     startDate
   });

@@ -1,7 +1,5 @@
 The function `sortCapitals` should return an alphabetically sorted list based on the capitals of each state.
 
-1. Return stringified object.
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const sortCapitals = states => {
@@ -11,7 +9,7 @@ const sortCapitals = states => {
 
 <solution>
 const sortCapitals = states =>
-  JSON.stringify(
+  (
     [...states].sort((state1, state2) => {
       if (state1.capital < state2.capital) return -1;
 

@@ -1,7 +1,6 @@
 The function `splitArray` should return sub-arrays, where each of their maximum length should be equal to `maxlen` parameter passed as one of the input.
 
-1. Return stringified object.
-2. Do **not** use any loop. Only higher order functions like `map`, `filter` etc are allowed.
+1. Do **not** use any loop. Only higher order functions like `map`, `filter` etc are allowed.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -20,7 +19,7 @@ const splitArray = ({ arr, maxlen }) => {
     .forEach(() => {
       result.push(tempArr.splice(0, maxlen));
     });
-  return JSON.stringify(result);
+  return result;
 };
 </solution>
 

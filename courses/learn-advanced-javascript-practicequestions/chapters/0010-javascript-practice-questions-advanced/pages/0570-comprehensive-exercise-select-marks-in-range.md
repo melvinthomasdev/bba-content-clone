@@ -11,7 +11,7 @@ const marksInRange = ({ marksArr,upperLimit,lowerLimit }) => {
 
 <solution>
 const marksInRange = ({ marksArr, upperLimit, lowerLimit }) =>
-  JSON.stringify(
+  (
     marksArr.filter(e => e.marks >= lowerLimit && e.marks <= upperLimit)
   );
 </solution>

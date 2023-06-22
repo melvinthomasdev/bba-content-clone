@@ -1,7 +1,5 @@
 Update the locations where the marketing campaigns have already run, based on the list of location Ids. Also add a few new locations which were missed earlier, right after the second location in the list.
 
-1. Return stringified object.
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const updateCampaignDetails = ({ campainDetails, completedLocationIds, newLocations }) => {
@@ -18,7 +16,7 @@ const updateCampaignDetails = ({ campainDetails, completedLocationIds, newLocati
     return {...location, completed: true};
   });
   updatedCampainDetails.splice(2,0,newLocations);
-  return JSON.stringify(updatedCampainDetails);
+  return updatedCampainDetails;
 }
 </solution>
 

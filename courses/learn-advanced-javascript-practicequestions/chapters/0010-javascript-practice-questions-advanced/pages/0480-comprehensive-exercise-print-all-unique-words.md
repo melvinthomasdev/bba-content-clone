@@ -1,7 +1,5 @@
 Given two sentences, return a list with all the unique words.
 
-1. Return stringified object.
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const uniqueWords = ({ s1,s2 }) => {
@@ -12,7 +10,7 @@ const uniqueWords = ({ s1,s2 }) => {
 <solution>
 const uniqueWords = ({ s1, s2 }) => {
   const result = [...new Set([...s1.split(" "),...s2.split(" ")])];
-  return JSON.stringify(result);
+  return result;
 };
 </solution>
 

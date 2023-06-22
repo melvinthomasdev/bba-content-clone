@@ -1,7 +1,6 @@
 We have the latest details of the number of respondents for a Practice Question Challenge. We need to evaluate the total number of questions they answered in each section. This value should be set to a newly created `totalCount` property.
 
 1. The section properties will have values at all times.
-2. Return stringified object.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -18,7 +17,7 @@ const setTotalCount = respondentDetails => {
       totalCount: respondent.html + respondent.css + respondent.javascript
     };
   })
-  return JSON.stringify(result);
+  return result;
 }
 </solution>
 

@@ -1,7 +1,6 @@
 Given a list of integers, calculate the ratios of its elements that are positive, negative, and zero.
 
 1. Print decimal value with 4 digits.
-2. Return stringified object.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -23,7 +22,7 @@ const integerRatios = arr => {
   const positivesRatio = (positives / arr.length).toFixed(4);
   const negativesRatio = (negatives / arr.length).toFixed(4);
   const zerosRatio = (zeros / arr.length).toFixed(4);
-  return JSON.stringify({
+  return ({
     positive: positivesRatio,
     negative: negativesRatio,
     zero: zerosRatio,

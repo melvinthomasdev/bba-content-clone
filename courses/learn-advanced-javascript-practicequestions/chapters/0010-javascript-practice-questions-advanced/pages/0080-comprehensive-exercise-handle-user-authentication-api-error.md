@@ -8,7 +8,7 @@ Some of the users in the application are yet to do some major security updates, 
 ```
 
 1. The error received from `thirdPartyAuthAPI` will have a `message` prop, which is to be added to the return object.
-2. Return stringified object. (No need to alter the return statement already given in the function)
+2. No need to alter the return statement already given in the function.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -26,7 +26,7 @@ const authUser  = ({ userId, userName, thirdPartyAuthAPI }) => {
     if (response.status === 'success')
       return response.loginToken;
   } catch (error) {
-    return JSON.stringify({
+    return ({
       status: 'error',
       message: error.message
     });

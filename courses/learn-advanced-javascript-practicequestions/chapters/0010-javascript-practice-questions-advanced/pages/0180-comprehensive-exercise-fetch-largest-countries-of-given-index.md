@@ -15,7 +15,6 @@ Given an array of countries, sorted according to their land area. Complete the d
 
 1. The strings `i` & `j` will be of the format (1st, 2nd, 3rd etc)
 2. The countries' array will be constant for all test cases.
-3. Return stringified object.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -26,7 +25,7 @@ const getCountries = ({ countries, i, j }) => {
 
 <solution>
 const getCountries = ({ countries, i, j }) =>
-  JSON.stringify({
+  ({
     newList: countries.slice(parseInt(i) - 1, parseInt(j)),
     countries,
   });

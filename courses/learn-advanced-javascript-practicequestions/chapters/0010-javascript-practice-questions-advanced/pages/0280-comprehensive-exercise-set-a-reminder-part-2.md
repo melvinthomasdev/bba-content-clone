@@ -2,7 +2,7 @@ Create a reminder function, which adds the given reminder to the specific day th
 
 1. All the input sentences will be in lowercase.
 2. Create a `Map` object with names of days as keys, and an array of reminder strings as values.
-3. Convert the `Map` object to an array, then JSON.stringify and return the output
+3. Convert the `Map` object to an array, then return the output.
 4. Use the `extractReminderText()` given as an input to extract the reminder text from the message passed.
 5. Remove the day keyword from the message. (tomorrow, today, monday etc)
 6. Go through the test cases, to get an idea of expected keywords.
@@ -93,7 +93,7 @@ const setReminder = ({ messageArray, extractReminderText }) => {
       }
     });
   });
-  return JSON.stringify([...reminders]);
+  return [...reminders];
 };
 </solution>
 

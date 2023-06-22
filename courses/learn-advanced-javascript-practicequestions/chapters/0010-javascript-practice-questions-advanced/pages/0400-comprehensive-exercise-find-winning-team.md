@@ -1,7 +1,6 @@
 From a given list of teams and the points scored in each round, find the team with the highest total points.
 
 1. Assuming there won't be a tie.
-2. Return stringified object.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -22,7 +21,7 @@ const findWinningTeam = teams => {
     ,0);
     return winner.totalPoints < totalPoints ? {name: team.name, totalPoints } : winner
   },winningTeam);
-  return JSON.stringify(winningTeam);
+  return winningTeam;
 }
 </solution>
 
