@@ -15,11 +15,11 @@ const removeVowelsRegex = str => str.replace(/[aeiou]/gi, '')
 */
 
 // solution without regex
-const removeVowels = str => str.toLowerCase().split("").filter(filterVowels).join("")
+const removeVowels = str => str.split("").filter(filterVowels).join("")
 
 const vowels = ["a","e","i","o","u"];
 
-const filterVowels = char => !vowels.includes(char);
+const filterVowels = char => !vowels.includes(char || char.toLowerCase());
 </solution>
 
 <testcases>
