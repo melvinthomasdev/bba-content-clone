@@ -44,11 +44,11 @@ In the example given above:
   As we saw in the previous chapter,
   this means that all the indexes
   from `5` to `8` will contain
-  the value `null`.
+  the value `undefined`.
 
 - After that, when we checked
   the value of `sports.length`,
   we got the value `10`
   because
-  even the `null` elements
+  even the `undefined` elements
   were counted.
