@@ -2,7 +2,7 @@ Given is a h1 tag with
 some text.
 
 Using hsl color system change
-it's `background-color`
+its `background-color`
 to black `hsl(0, 0%, 0%)`
 and font `color` to 
 yellow `hsl(60, 80%, 90%)`.
