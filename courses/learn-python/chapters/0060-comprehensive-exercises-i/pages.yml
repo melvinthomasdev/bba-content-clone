@@ -1,4 +1,7 @@
 ---
+- title: About
+  slug: about-comprehensive-exercise
+  page_type: lesson
 - title: ComprehensiveExercise - Display report card remarks using if else
   slug: display-report-card-remarks-using-if-else
   page_type: assessment

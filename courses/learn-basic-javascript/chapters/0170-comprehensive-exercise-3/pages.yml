@@ -1,4 +1,7 @@
 ---
+- title: About
+  slug: about-comprehensive-exercise
+  page_type: lesson
 - title: Book Fair
   slug: book-fair
   page_type: assessment

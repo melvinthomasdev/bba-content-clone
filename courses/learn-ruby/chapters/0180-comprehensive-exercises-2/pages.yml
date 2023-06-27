@@ -1,4 +1,7 @@
 ---
+- title: About
+  slug: about-comprehensive-exercise
+  page_type: lesson
 - title: ComprehensiveExercise - Find All Cities With High Rain
   slug: comprehensive-exercise-find-all-cities-with-high-rain
   page_type: assessment

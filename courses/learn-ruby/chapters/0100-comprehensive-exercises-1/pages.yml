@@ -1,4 +1,7 @@
 ---
+- title: About
+  slug: about-comprehensive-exercise
+  page_type: lesson
 - title: ComprehensiveExercise - Calculate Grade Using If and Else
   slug: challenge-calculate-grade-using-if-and-else
   page_type: assessment

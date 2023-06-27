@@ -1,4 +1,7 @@
 ---
+- title: About
+  slug: about-comprehensive-exercise
+  page_type: lesson
 - title: ComprehensiveExercise - Calculate Grade
   slug: challenge-calculate-grade-js
   page_type: assessment

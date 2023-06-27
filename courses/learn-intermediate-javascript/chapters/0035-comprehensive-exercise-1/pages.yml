@@ -1,4 +1,7 @@
 ---
+- title: About
+  slug: about-comprehensive-exercise
+  page_type: lesson
 - title: Challenge AI commands
   slug: challenge-ai-commands-js
   page_type: assessment

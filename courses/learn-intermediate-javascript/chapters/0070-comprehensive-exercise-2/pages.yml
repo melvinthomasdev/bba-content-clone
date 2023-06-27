@@ -1,4 +1,7 @@
 ---
+- title: About
+  slug: about-comprehensive-exercise
+  page_type: lesson
 - title: ComprehensiveExercise - Sum of N numbers
   slug: challenge-sum-of-n-numbers-js
   page_type: assessment

@@ -1,4 +1,7 @@
 ---
+- title: About
+  slug: about-comprehensive-exercise
+  page_type: lesson
 - title: Calculate and Display the Facts
   slug: calculate-and-display-the-facts
   page_type: assessment
