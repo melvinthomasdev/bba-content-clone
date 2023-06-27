@@ -17,8 +17,8 @@ flex: <flex-grow> <flex-shrink> <flex-basis>
 flex: 1 1 auto;
 ```
 
-`flex-grow` is 1<br>
-`flex-shrink` is 1<br>
+`flex-grow` is 1
+`flex-shrink` is 1
 `flex-basis` is auto
 
 <codeblock language="css" type="lesson">
@@ -55,8 +55,8 @@ flex: 1 1 auto;
 flex: 0 1;
 ```
 
-`flex-grow` is 0<br>
-`flex-shrink` is 1<br>
+`flex-grow` is 0
+`flex-shrink` is 1
 `flex-basis` not specified
 
 <codeblock language="css" type="lesson">
@@ -93,8 +93,8 @@ flex: 0 1;
 flex: 0 100px;
 ```
 
-`flex-grow` is 0<br>
-`flex-shrink` is not specified<br>
+`flex-grow` is 0
+`flex-shrink` is not specified
 `flex-basis` is 100px
 
 <codeblock language="css" type="lesson">
@@ -131,8 +131,8 @@ flex: 0 100px;
 flex: 2;
 ```
 
-`flex-grow` is 2<br>
-`flex-shrink` is not specified<br>
+`flex-grow` is 2
+`flex-shrink` is not specified
 `flex-basis` is not specified
 
 <codeblock language="css" type="lesson">
@@ -170,8 +170,8 @@ flex: 2;
 flex: 50%;
 ```
 
-`flex-grow` is not specified<br>
-`flex-shrink` is not specified<br>
+`flex-grow` is not specified
+`flex-shrink` is not specified
 `flex-basis` is 50%
 
 <codeblock language="css" type="lesson">

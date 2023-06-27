@@ -1,8 +1,8 @@
 Add following margins to the orange `div` using four individual properties:
 
-Top margin - `30px`<br>
-Bottom margin - `40px`<br>
-Left margin - `10px`<br>
+Top margin - `30px`
+Bottom margin - `40px`
+Left margin - `10px`
 Right margin - `100px`
 
 <codeblock language="css" type="exercise" testMode="fixedInput">

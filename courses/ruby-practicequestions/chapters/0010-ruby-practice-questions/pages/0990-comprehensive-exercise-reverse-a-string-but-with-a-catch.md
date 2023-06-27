@@ -7,7 +7,6 @@ However there are a few rules to follow in order to make the challenge interesti
 - The UPPERCASE/lowercase positions must be kept in the same order as the original string.
 - Spaces must be kept in the same order as the original string.
 
-<br>
 Take a look at the test cases for examples.
 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">

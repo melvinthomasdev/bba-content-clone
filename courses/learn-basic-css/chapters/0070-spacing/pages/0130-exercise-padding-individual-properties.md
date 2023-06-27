@@ -1,8 +1,8 @@
 Add following padding values to the `p` element using four individual properties:
 
-Top padding - `30px`<br>
-Bottom padding - `40px`<br>
-Left padding - `25px`<br>
+Top padding - `30px`
+Bottom padding - `40px`
+Left padding - `25px`
 Right padding - `25px`
 
 <codeblock language="css" type="exercise" testMode="fixedInput">

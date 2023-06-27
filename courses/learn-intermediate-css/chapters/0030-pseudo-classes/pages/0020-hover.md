@@ -10,7 +10,8 @@ appending `:hover` to the selector:
 </p>
 <a href="#" id="link1">
   Link 1
-</a><br></br>
+</a>
+<br></br>
 <a href="#" id="link2">
   Link 2
 </a>

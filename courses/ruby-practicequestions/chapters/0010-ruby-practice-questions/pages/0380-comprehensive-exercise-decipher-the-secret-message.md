@@ -8,7 +8,6 @@ Given a coded message `message` and a key, the method should decipher the code a
 4. The final decoded message will be returned as a string.
 5. Ensure there are no unnecessary trailing or leading whitespaces.
 
-<br>
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def enigma_function(message, key)

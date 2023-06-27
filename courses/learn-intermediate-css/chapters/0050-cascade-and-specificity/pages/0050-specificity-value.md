@@ -26,10 +26,10 @@ combination of selectors:
 #menu .nav > ul > li
 ```
 
-`#menu` - ID Selector: Value - **100** <br>
-`.nav` - Class Selector: Value - **10** <br>
-`ul` - Element Selector: Value - **1** <br>
-`li` - Element Selector: Value - **1** <br>
+`#menu` - ID Selector: Value - **100**
+`.nav` - Class Selector: Value - **10**
+`ul` - Element Selector: Value - **1**
+`li` - Element Selector: Value - **1**
 
 So, the specificity value of this
 selector is `100 + 10 + 1 + 1` = **`112`**

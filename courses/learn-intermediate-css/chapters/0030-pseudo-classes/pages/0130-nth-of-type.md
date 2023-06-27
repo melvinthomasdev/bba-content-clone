@@ -40,6 +40,6 @@ not get the desired results.
 
 Try using these in the example above:
 
-**`:nth-of-type(n+2)`** - Selects all elements of the type starting from the 2nd one<br>
-**`:nth-child(3n)`** - Selects every 3rd element of the type<br>
+**`:nth-of-type(n+2)`** - Selects all elements of the type starting from the 2nd one
+**`:nth-child(3n)`** - Selects every 3rd element of the type
 **`:nth-child(3n-2)`** - Selects every 3rd element of the type starting from the first one

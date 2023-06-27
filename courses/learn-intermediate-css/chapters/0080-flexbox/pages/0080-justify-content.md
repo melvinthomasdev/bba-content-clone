@@ -93,22 +93,22 @@ and
 
 This is what each of the values does:
 
-`flex-start`<br>
+`flex-start`
 Items are placed at the beginning of the container, which is the default value.
 
-`flex-end`<br>
+`flex-end`
 Items are placed at the end of the container.
 
-`center`<br>
+`center`
 Items are placed in the center.
 
-`space-between`<br>
+`space-between`
 There is as much space between the items as can be evenly distributed.
 
-`space-around`<br>
+`space-around`
 The spaces between the items are double the space on both ends of the container.
 
-`space-evenly`<br>
+`space-evenly`
 There is equal space between the items and at both the ends.
 
 Try setting the `flex-direction`

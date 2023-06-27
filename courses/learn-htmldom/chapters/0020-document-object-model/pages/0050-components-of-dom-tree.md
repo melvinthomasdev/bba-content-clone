@@ -22,7 +22,11 @@ using the `Node.nodeName` property:
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<div class="container"><p>All Node Names should be visible.</p><!-- Comments are nodes too --><div>The extra text nodes are created because of the whitespace between the elements.</div></div>
+<div class="container">
+  <p>All Node Names should be visible.</p>
+  <!-- Comments are nodes too -->
+  <div>The extra text nodes are created because of the whitespace between the elements.</div>
+</div>
 </panel>
 <panel language="javascript">
 /*

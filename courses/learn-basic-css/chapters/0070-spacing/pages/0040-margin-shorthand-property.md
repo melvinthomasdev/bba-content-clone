@@ -13,9 +13,9 @@ separated by spaces:
 margin: 10px 20px 30px 40px;
 ```
 
-`10px` is top margin<br>
-`20px` is right margin<br>
-`30px` is bottom margin<br>
+`10px` is top margin
+`20px` is right margin
+`30px` is bottom margin
 `40px` is left margin
 
 Values get assigned in the clockwise direction starting from the top.

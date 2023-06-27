@@ -83,19 +83,19 @@ using the `align-items` property:
 
 This is what each of the values does:
 
-`flex-start`<br>
+`flex-start` 
 Items are aligned at the beginning of the container.
 
-`flex-end`<br>
+`flex-end` 
 Items are aligned at the end of the container.
 
-`center`<br>
+`center` 
 Items are aligned in the center.
 
-`baseline`<br>
+`baseline` 
 Items are aligned such that the bottom of all elements are in a line.
 
-`stretch`<br>
+`stretch` 
 Items are stretched full width in case of the `column` direction, and full height in case of the `row` direction.
 
 Here's what this property does

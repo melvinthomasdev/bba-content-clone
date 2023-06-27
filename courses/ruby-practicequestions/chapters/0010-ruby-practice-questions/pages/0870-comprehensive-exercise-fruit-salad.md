@@ -6,7 +6,6 @@ Given an array of fruits as strings `fruits`, the method `fruit_salad` should pe
 - Sort the chunks that were sliced in previous step alphabetically.
 - Join the alphabetically sorted chunks and return a string.
 
-<br>
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def fruit_salad(fruits)

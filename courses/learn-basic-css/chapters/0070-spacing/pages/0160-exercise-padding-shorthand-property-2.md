@@ -1,7 +1,7 @@
 Add following padding values to the `p` element using `padding` shorthand property with only two values:
 
-Top & bottom padding - `2em`<br>
-Right & left padding - `2.5em`<br>
+Top & bottom padding - `2em`
+Right & left padding - `2.5em`
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>

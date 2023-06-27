@@ -5,8 +5,6 @@ Write a query to display the datetime timestamps of
 
 both in the format `DD/MM/YYYY HH:MM`. Example: `27/01/2023 12:18`
 
-<br>
-
 Set headers for values as `time4DaysLater` and `timeCurrentDayStart` respectively.
 
 <codeblock language="sql" dbName="students1.db" type="exercise" testMode="fixedInput" cache="false">

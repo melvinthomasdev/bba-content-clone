@@ -5,8 +5,8 @@ with `20px` offset at the
 top and bottom.
 
 Use the `inset` property
-to set these values:<br>
-Top & Bottom: `20px`<br>
+to set these values:
+Top & Bottom: `20px`
 Right & Left: `0px`
 
 <codeblock language="css" type="exercise" testMode="fixedInput">

@@ -7,7 +7,6 @@ Some absolute units are:
 - Centimeters, `cm`
 - Inches, `in`
 
-<br>
 Look at the code given below:
 
 <codeblock language="css" type="lesson">

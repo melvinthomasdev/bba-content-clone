@@ -16,9 +16,9 @@ separated by spaces:
 inset: 10px 20px 30px 40px;
 ```
 
-`10px` is `top`<br>
-`20px` is `right`<br>
-`30px` is `bottom`<br>
+`10px` is `top`
+`20px` is `right`
+`30px` is `bottom`
 `40px` is `left`
 
 Values get assigned in the clockwise direction starting from the `top`.
@@ -29,8 +29,8 @@ Values get assigned in the clockwise direction starting from the `top`.
 inset: 10px 20px 30px;
 ```
 
-`10px` is `top` <br>
-`20px` is `right` as well as `left` <br>
+`10px` is `top`
+`20px` is `right` as well as `left`
 `30px` is `bottom`
 
 ## Two values
@@ -39,7 +39,7 @@ inset: 10px 20px 30px;
 inset: 10px 20px;
 ```
 
-`10px` is `top` and `bottom`<br>
+`10px` is `top` and `bottom`
 `20px` is `right` and `left`
 
 ## One value

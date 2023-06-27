@@ -1,5 +1,5 @@
 We can underline text, strike through it
-or remove an underline using the<br>
+or remove an underline using the
 `text-decoration` property.
 
 <codeblock language="css" type="lesson">

@@ -5,7 +5,6 @@ Given an array `arr` as input, the method should return a new array containing a
 1. Eg. An array [[6], [12], [25]] becomes [6, 12, 25]
 2. Eg. An array [1, [2]] become [1,2]
 
-<br>
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def flatten_array(arr)

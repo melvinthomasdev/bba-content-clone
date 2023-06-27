@@ -9,7 +9,6 @@ Given an input string `str`, the method `is_valid?` should return `true` if the 
 2. If str = "abcc", the string is also valid, because we can remove 1 "c" and have one of each character remaining in the string.
 3. However, if str = "abccc", the string is not valid, because removing one character does not result in the same frequency of characters.
 
-<br>
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def is_valid?(str)

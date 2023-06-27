@@ -1,7 +1,7 @@
 Add following margins to the orange `div` using `margin` shorthand property with only 3 values:
 
-Right & Left margin - `100px`<br>
-Top margin - `30px`<br>
+Right & Left margin - `100px`
+Top margin - `30px`
 Bottom margin - `40px`
 
 <codeblock language="css" type="exercise" testMode="fixedInput">

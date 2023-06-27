@@ -77,8 +77,8 @@ li:nth-child(odd) {
 Try all these values in the
 example that follows:
 
-**`:nth-child(n+3)`** - Selects all matching child elements starting from 3rd one<br>
-**`:nth-child(3n)`** - Selects every 3rd matching child element<br>
+**`:nth-child(n+3)`** - Selects all matching child elements starting from 3rd one
+**`:nth-child(3n)`** - Selects every 3rd matching child element
 **`:nth-child(3n-2)`** - Selects every 3rd matching child element starting from the first one
 
 

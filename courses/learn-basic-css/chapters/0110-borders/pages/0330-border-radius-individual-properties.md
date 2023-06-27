@@ -1,10 +1,11 @@
 You can specify border radius for each corner individually
 using the properties:
-
-`border-top-left-radius`<br>
-`border-top-right-radius`<br>
-`border-bottom-left-radius`<br>
-`border-bottom-right-radius`
+```css
+border-top-left-radius
+border-top-right-radius
+border-bottom-left-radius
+border-bottom-right-radius
+```
 
 <codeblock language="css" type="lesson">
 <code>
