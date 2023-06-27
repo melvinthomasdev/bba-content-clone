@@ -23,6 +23,9 @@
 - title: Exercise 2 - const and let
   slug: exercise-2-const-and-let
   page_type: exercise
+- title: Declaring Multiple Variables in a Single Line
+  slug: declaring-multiple-variables
+  page_type: lesson
 - title: Declaration without const or let
   slug: declaration-without-const-or-let
   page_type: lesson

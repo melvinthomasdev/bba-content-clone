@@ -24,11 +24,15 @@ console.log(speed);
 </codeblock>
 
 The first line in the above example `const speed = 40;` can be split into two parts.
+
 **declaration**
 `const speed`
+
 - This part where we create the variable is called declaration.
+
 **initialization**
 `= 40`;
+
 - The second part of assigning the created (declared) variable an initial value is called initialization.
 
 We will be writing `declaring a variable` instead of `creating a variable` from now on. 
