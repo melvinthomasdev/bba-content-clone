@@ -10,16 +10,21 @@ end
 </code>
 
 <solution>
-def longest_word(sentence)
+def find_longest_word(sentence)
   words = sentence.split(' ')
-  words.sort_by!(&:length)
-  words[-1]
+  longest_word = ""
+  words.map { |word|
+    word.length > longest_word.length ?
+    longest_word = word : longest_word
+  }
+
+  puts longest_word
 end
 </solution>
 
 <testcases>
 <caller>
-puts longest_word(sentence)
+find_longest_word(sentence)
 </caller>
 <testcase>
 <i>
