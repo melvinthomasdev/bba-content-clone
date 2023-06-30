@@ -16,7 +16,7 @@ by passing an argument to the constructor.
 The argument can be the number of milliseconds that has passed
 since `January 1, 1970, 00:00:00 UTC` to the specific date and time,
 or
-it can be a string that represents the specific data and time.
+it can be a string that represents the specific date and time.
 In the example below,
 we are passing a date as a string using the `YYYY-MM-DD` format.
 

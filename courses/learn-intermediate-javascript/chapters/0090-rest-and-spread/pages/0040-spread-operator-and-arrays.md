@@ -19,7 +19,7 @@ into `studentMarksCopy`.
 In addition,
 we can also add other elements to an array,
 along with the spread operator,
-as show in the example below.
+as shown in the example below.
 
 <codeblock language="javascript" type="lesson">
 <code>

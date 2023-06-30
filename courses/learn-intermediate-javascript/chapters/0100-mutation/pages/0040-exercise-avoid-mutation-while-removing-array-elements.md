@@ -1,4 +1,4 @@
-Store the all of the elements
+Store all of the elements
 from the `users` array
 in `updatedUsers`,
 excluding the object that

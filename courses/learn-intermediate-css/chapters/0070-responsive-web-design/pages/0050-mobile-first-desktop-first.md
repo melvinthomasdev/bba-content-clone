@@ -52,7 +52,9 @@ ul {
 }
 </panel>
 </code>
-</codeblock>First, resize the output panel to a
+</codeblock>
+
+First, resize the output panel to a
 smaller width and then start increasing
 the width. At **420px**, let's introduce
 a media query to stack **col2**
