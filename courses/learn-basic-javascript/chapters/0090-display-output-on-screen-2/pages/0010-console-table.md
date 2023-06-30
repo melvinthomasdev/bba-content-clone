@@ -17,3 +17,7 @@ console.log(car);
 console.table(car);
 </code>
 </codeblock>
+
+If the **table** isn't showing up properly for you,
+then try running the same code in your browser's **console**
+to see how the table would look like.
