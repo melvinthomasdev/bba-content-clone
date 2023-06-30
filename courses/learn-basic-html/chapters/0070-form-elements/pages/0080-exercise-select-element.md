@@ -10,16 +10,16 @@ matches the values.
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
 <form>
-
+  <!-- Write code here -->
 </form>
 </code>
 
 <solution>
 <form>
   <select name="countries">
-      <option value="nepal">Nepal</option>
-      <option value="bhutan">Bhutan</option>
-      <option value="namibia">Namibia</option>
+    <option value="Nepal">Nepal</option>
+    <option value="Bhutan">Bhutan</option>
+    <option value="Namibia">Namibia</option>
   </select>
 </form>
 </solution>

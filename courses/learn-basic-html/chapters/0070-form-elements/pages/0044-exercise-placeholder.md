@@ -1,11 +1,14 @@
-Create a **Login** form using `<input>` element and `placeholder` attribute only. User should be able to enter *Email* and *Password*.
+We have a **Login** form.
+
+Add `<input>` elements with
+`placeholder` attributes for
+"First Name" and "Last Name".
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
 <form>
   <h2>Login</h2>
-
-
+  <!-- Write code here -->
   <button type="submit">Submit</button>
 </form>
 </code>
@@ -13,8 +16,8 @@ Create a **Login** form using `<input>` element and `placeholder` attribute only
 <solution>
 <form>
   <h2>Login</h2>
-  <input type="email" placeholder="Email"/>
-  <input type="password" placeholder="Password"/>
+  <input placeholder="First Name"/>
+  <input placeholder="Last Name"/>
   <button type="submit">Submit</button>
 </form>
 </solution>
