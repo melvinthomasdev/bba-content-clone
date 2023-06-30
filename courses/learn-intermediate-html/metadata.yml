@@ -2,11 +2,11 @@
 name: Learn Intermediate HTML
 subheading: Learn Intermediate HTML by actually writing HTML code
 slug: learn-intermediate-html
-published: false
+published: true
 custom_data:
   type: html
   courseType: lesson
-  upcoming: true
+  upcoming: false
   newCourse: false
   courseColor: border-gray-600
 home_logo: html5.svg
