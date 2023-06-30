@@ -11,15 +11,13 @@ Use the given array to test your code:
 const array = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 
 function findBiggestDifference(inputArray) {
-  let biggestDifference = -Infinity;
-  for (let i = 0; i < inputArray.length - 1; i++) {
-    let difference = Math.abs(inputArray[i] - inputArray[i+1]);
-    if (difference > biggestDifference) {
-      biggestDifference = difference;
-    }
-  }
+  const biggestDifference = inputArray.slice(1).reduce((maxDifference, currentElement) => {
+    const difference = Math.abs(currentElement - inputArray[inputArray.indexOf(currentElement) - 1]);
+    return difference > maxDifference ? difference : maxDifference;
+  }, -Infinity);
+
   return biggestDifference;
-};
+}
 
 findBiggestDifference(array);
 </solution>

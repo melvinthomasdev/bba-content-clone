@@ -21,9 +21,9 @@ const addThree = (number) => number + 3;
 const addThreeToArray = (inputArray) => {
 	const newArray = [];
 	//As DRY principle states not to repeat ourself, we will be using the already created addThree function.
-	for(index in inputArray){
-		newArray[index] = addThree(inputArray[index]);
-	};
+  inputArray.forEach((element, index) => {
+		newArray[index] = addThree(element)
+  })
 	console.log(newArray);
 };
 </solution>

@@ -11,3 +11,6 @@
 - title: Challenge - Array of Numbers
   slug: challenge-array-of-numbers-js
   page_type: assessment
+- title: ComprehensiveExercise - Biggest Difference
+  slug: challenge-biggest-difference-js
+  page_type: assessment

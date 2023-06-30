@@ -1,5 +1,4 @@
-Given is a variable `message`
-which stores a string.
+Given a variable `message` a string value, as an argument.
 
 Create a program `comprehensiveExercise`
 which takes `message`  as a parameter
@@ -41,9 +40,9 @@ const comprehensiveExercise = (message) => {
 
 	console.log(message.indexOf("tell"));
 
-	console.log(message.indexOf("the"));
+	console.log(message.split(" ").includes("the"));
 
-	console.log(message.indexOf("The"));
+	console.log(message.split(" ").includes("The"));
 
 	console.log(message.slice(12, 15) === "you");
 
@@ -56,18 +55,18 @@ const comprehensiveExercise = (message) => {
 	const newMessage = message.replace("greatest", "worst");
 	console.log(newMessage);
 
-	for (const character of message) {
-		console.log(character);
-	};
+  [...message].forEach((character) => {
+    console.log(character);
+  });
 
-	let messageArray = message.split(" ");
-	for (const character of messageArray) {
-		console.log(character);
-	};
+  message.split(" ").forEach((word) => {
+    console.log(word);
+  });
 
-	for (let i = 0; i < 6; i++) {
-		console.log(`The character at index ${i} is '${message[i]}'`)
-	}
+	const indices = [0, 1, 2, 3, 4, 5];
+  indices.forEach((index) => {
+    console.log(`The character at index ${index} is '${message[index]}'`);
+  });
 }
 </solution>
 <testcases>
