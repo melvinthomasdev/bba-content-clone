@@ -268,6 +268,8 @@ That same image file should exist in app/assets/images/courses/<course_name>/
 
 (m) To give images styling, use the `containerClasses` and `imageClasses` props. You can look up their usage in other lessons. Do a global search to look for them.
 
+(n) For courses where you use **console** to show the solution, write `Display values on the screen` instead of `Print the values`.
+
 ## Writing code in the Code Block:
 
 - Always use `const` to declare variables unless we are reassigning them.
