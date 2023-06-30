@@ -12,7 +12,7 @@ end
 
 <solution>
 def reverse_and_match(word, list)
-  list.any?{|match| match.casecmp(word.reverse) == 0 } ? word.reverse : false
+  list.find{|match| match.reverse.casecmp(word) == 0} || false
 end
 </solution>
 
