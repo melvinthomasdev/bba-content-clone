@@ -9,7 +9,6 @@ Complete the method definition given below.
 5. Remove the day keyword from the message.(tomorrow, today, monday etc)
 6. Go through the test cases, to get an idea of expected keywords.
 7. Week starts at Sunday.
-8. Try out the question on Saturday, and make sure your solution works!
 
 <br/>
 <codeblock language="ruby" type="exercise" testMode="multipleInput" cache="false">

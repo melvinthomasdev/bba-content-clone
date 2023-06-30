@@ -12,13 +12,20 @@ end
 </code>
 
 <solution>
-def extract_reminder_text(message)
-  reminder_words_regex = /reminder |remind |reminders /
-  connection_words_regex = /me |about |to /
-  message_after_reminder = message.downcase.split(reminder_words_regex)[1].strip
-  return message_after_reminder.capitalize unless (message_after_reminder =~ connection_words_regex)
+CONNECTING_WORDS = ["me", "about", "to"]
 
-  message_after_reminder.split(connection_words_regex).last.capitalize
+def extract_reminder_text(message)
+  sentence_after_reminder_keyword = message.split(/reminders|remind/i).last
+
+  if sentence_after_reminder_keyword. include? "to"
+    return sentence_after_reminder_keyword.split("to").last.strip.capitalize
+  end
+
+  reminder_text = sentence_after_reminder_keyword.split.reject { |word|
+    CONNECTING_WORDS.include? word.downcase
+  }
+
+  reminder_text.join(" ").capitalize
 end
 </solution>
 
