@@ -403,7 +403,7 @@ c. Avoiding zero indexing: Instead of starting with 100, the numbering starts wi
 
 (ii) Slug naming: Slugs should have all lowercase letters. Hyphens should be used as delimiters. Example: 'exercise-text-color'
 
-(iii) Title naming:
+(iii) Title naming: Lower case all words with 3 or less letters. Headings should follow **title case**.
 
 (iv) Exercise file naming:
 
