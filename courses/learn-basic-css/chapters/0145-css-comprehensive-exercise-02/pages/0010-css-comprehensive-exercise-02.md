@@ -1,9 +1,19 @@
-Using the CSS knowledge that you have gained
-through chapters 1 to 11, attempt to build
-the following:
+Build the below **profile card** using the
+CSS knowledge that you have gained
+so far.
+
+Use the image link: [https://ucarecdn.com/cdabb55b-931a-49fc-8f69-4339c3fc2607/](https://ucarecdn.com/cdabb55b-931a-49fc-8f69-4339c3fc2607/) to get the image of the dog. We have added an image element in the below codeblock with the same link.
 
 <image>dog-card.gif</image>
 
-It's a profile card that can be built
-using the CSS knowledge you've picked up.
-Use this [link](https://images.unsplash.com/photo-1497994139250-caecb78f9df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80) to get the image of the dog.
+You can use the below codeblock to create the challenge:
+
+<codeblock language="css" type="lesson">
+<code>
+<panel language="html" >
+<img src="https://ucarecdn.com/cdabb55b-931a-49fc-8f69-4339c3fc2607/" width="400">
+</panel>
+<panel language="css">
+</panel>
+</code>
+</codeblock>
