@@ -4,13 +4,14 @@ After each invocation,
 a message is shown using
 `console.log()`
 
-Rewrite the code to make sure that
-the message shown after each invocation
-of `placeOrder` is only shown after
-the execution of the function is completed.
-The message should not be shown
-if the value of `noOfItems`
-is lesser than `5`.
+Please rewrite the code to ensure that:
+
+- The message `Order#[number] will be dispatched soon`
+gets displayed, once the `placeOrder` function has
+finished executing.
+
+- Incase, `noOfItems` is less than `5`, only the message
+`Minimum 5 items required.` gets displayed.
 
 <codeblock type="exercise" language="javascript" evaluateAsync="true" timeOut="2000" testMode="fixedInput">
 <code>
