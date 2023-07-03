@@ -86,6 +86,12 @@
 - title: Exercise - Replacing substring 2
   slug: exercise-replacing-substring-2
   page_type: exercise
+- title: String Split Method
+  slug: string-split-method
+  page_type: lesson
+- title: Exercise String Split Method
+  slug: exercise-string-split-method
+  page_type: exercise
 - title: JS Challenge 1
   slug: js-challenge-1
   page_type: assessment
