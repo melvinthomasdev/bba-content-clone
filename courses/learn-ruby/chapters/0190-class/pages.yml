@@ -26,3 +26,9 @@
 - title: Exercise - Check classname using is-a
   slug: exercise-check-classname-using-is-a
   page_type: exercise
+- title: Class methods
+  slug: class-methods
+  page_type: lesson
+- title: Exercise - Class methods
+  slug: exercise-class-methods
+  page_type: exercise
