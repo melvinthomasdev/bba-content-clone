@@ -25,7 +25,7 @@ In the example given above:
 
 - When we assign `count` to `countCopy`,
   i.e., `let countCopy = count`,
-  we store the value of `copy`, i.e.,`10`
+  we store the value of `count`, i.e.,`10`
   in a different memory location.
 
 - Every time we use the variable `countCopy`

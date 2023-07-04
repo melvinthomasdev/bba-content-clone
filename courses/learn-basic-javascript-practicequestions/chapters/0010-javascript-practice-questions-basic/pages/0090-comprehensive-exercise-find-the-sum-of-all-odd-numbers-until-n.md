@@ -1,20 +1,23 @@
 Find the sum of all odd numbers from `1` to `n`.
 
-1. Input will be the limit n.
-2. Return the sum of all the odd numbers from `1` to `n`.
-3. Do **NOT** use `do..while` or any other looping constructs. Use higher-order functions like `map`, `filter`, etc.
+- Input will be the limit `n`.
+-  Return the sum of all the odd numbers from `1` to `n`.
+-  `n` should **NOT** be included in the sum.
+-  Do **NOT** use `do..while` or any other looping constructs.
+Use higher-order functions like `map`, `filter`, etc.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const sumOfOddNumbers = n => {
-  // write your code here
   // Refer: https://stackoverflow.com/a/20066663
+  // write your code here
 }
 </code>
 
 <solution>
-// Refer: https://stackoverflow.com/a/20066663
 const sumOfOddNumbers = n => {
+  // Refer: https://stackoverflow.com/a/20066663
+  // write your code here
   const oddNumbersTillLimit = Array.apply(null, { length: n })
     .map(Number.call, num => Number(num))
     .filter(num => num % 2);
