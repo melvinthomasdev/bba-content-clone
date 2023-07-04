@@ -26,11 +26,23 @@ additionalSubstring = "house"
 "The clubhouse can't even handle me right now"
 ```
 
-<codeblock language="javascript" type="exercise" testMode="multipleInput">
+<codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
+const inputString = "Let me sing a teeny story";
+const originalSubstring = "teeny";
+const additionalSubstring = "tiny";
+
 // Write your code here
+
+updateString(inputString,
+  originalSubstring,
+  additionalSubstring);
 </code>
 <solution>
+const inputString = "Let me sing a teeny story";
+const originalSubstring = "teeny";
+const additionalSubstring = "tiny";
+
 const updateString = (
   inputString,
   originalSubstring,
@@ -43,41 +55,9 @@ const updateString = (
 
   console.log(newString);
 };
+
+updateString(inputString,
+  originalSubstring,
+  additionalSubstring);
 </solution>
-<testcases>
-<caller>
-updateString(
-  testString,
-  testSubstringOne,
-  testSubstringTwo);
-</caller>
-<testcase>
-<i>
-const testString = "I'm blue da ba de ba"
-const testSubstringOne = "blue"
-const testSubstringTwo = "red"
-</i>
-</testcase>
-<testcase>
-<i>
-const testString = "I'm happy and I know it"
-const testSubstringOne = "happy"
-const testSubstringTwo = "amazing"
-</i>
-</testcase>
-<testcase>
-<i>
-const testString = "Party rock is in the house tonight!"
-const testSubstringOne = "house"
-const testSubstringTwo = "boat"
-</i>
-</testcase>
-<testcase>
-<i>
-const testString = "Yeah okay alright"
-const testSubstringOne = "Yeah"
-const testSubstringTwo = "Nope"
-</i>
-</testcase>
-</testcases>
 </codeblock>

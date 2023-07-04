@@ -15,6 +15,7 @@ to the console.
 const getEvenStrings = arrayOfStrings => {
   let evenStringArray = arrayOfStrings.reduce((accumulator, currentValue) => {
     currentValue.length % 2 == 0 ? accumulator.push(currentValue) : null;
+    return accumulator;
   }, []);
   console.log(evenStringArray);
 }

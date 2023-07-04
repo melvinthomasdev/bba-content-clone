@@ -7,7 +7,7 @@ Later replace the word
 `tonight` with `tomorrow`
 and log it to the console.
 
-<codeblock language="javascript" type="exercise" testMode="multipleInput">
+<codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code here
 </code>
