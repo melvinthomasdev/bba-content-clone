@@ -41,3 +41,33 @@
 - title: Exercise - Input Type - Button
   slug: exercise-input-type-button
   page_type: exercise
+- title: Input Type - Email
+  slug: input-type-email
+  page_type: lesson
+- title: Exercise - Input Type - Email
+  slug: exercise-input-type-email
+  page_type: exercise
+- title: Input Type - Date
+  slug: input-type-date
+  page_type: lesson
+- title: Exercise - Input Type - Date
+  slug: exercise-input-type-date
+  page_type: exercise
+- title: Input Type - File
+  slug: input-type-file
+  page_type: lesson
+- title: Exercise - Input Type - File
+  slug: exercise-input-type-file
+  page_type: exercise
+- title: Input Type - Tel
+  slug: input-type-tel
+  page_type: lesson
+- title: Exercise - Input Type - Tel
+  slug: exercise-input-type-tel
+  page_type: exercise
+- title: Input Type - Number
+  slug: input-type-number
+  page_type: lesson
+- title: Exercise - Input Type - Number
+  slug: exercise-input-type-number
+  page_type: exercise
