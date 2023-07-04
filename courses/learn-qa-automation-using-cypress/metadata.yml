@@ -6,5 +6,5 @@ published: true
 custom_data:
   type: cypress
   courseType: lesson
-home_logo: learn-qa-automation-using-cypress.png
-logo: learn-qa-automation-using-cypress.png
+home_logo: qa-automation-using-cypress-logo.png
+logo: qa-automation-using-cypress-logo.png
