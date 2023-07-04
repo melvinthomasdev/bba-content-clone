@@ -1,5 +1,6 @@
-Access the **dataset** attribute
-of "car-three", and log it
+Access the dataset attribute
+value of the `li` element with
+the id `car-three` and log it
 to the console.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
@@ -9,7 +10,7 @@ to the console.
 <ul>
   <li id="car-one" data-car-one="range-rover">Range Rover</li>
   <li id="car-two" data-car-two="audi">Audi</li>
-  <li id="car-three" data-car-three="rolls-royce">Rolls Royce<li>
+  <li id="car-three" data-car-three="rolls-royce">Rolls Royce</li>
 </ul>
 </div>
 </panel>
@@ -18,21 +19,10 @@ to the console.
 </panel>
 </code>
 <solution>
-<panel language="html">
-<div id="cars">
-<ul>
-  <li id="car-one" data-car-one="range-rover">Range Rover</li>
-  <li id="car-two" data-car-two="audi">Audi</li>
-  <li id="car-three" data-car-three="rolls-royce">Rolls Royce<li>
-</ul>
-</div>
-</panel>
-<panel language="javascript">
-const el = document.querySelector('#car-three');
+const divElement = document.querySelector('#car-three');
 
-const carThreeName = el.dataset["rolls-royce"];
+const carThreeName = divElement.dataset.carThree;
 
 console.log(carThreeName);
-</panel>
 </solution>
 </codeblock>
