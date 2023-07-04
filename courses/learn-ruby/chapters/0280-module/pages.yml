@@ -17,3 +17,9 @@
 - title: Modules Are Not Copy Paste
   slug: modules-are-not-copy-paste
   page_type: lesson
+- title: Nested Hash Configuration
+  slug: nested-hash-configuration
+  page_type: lesson
+- title: Exercise - Nested Hash Configuration
+  slug: exercise-nested-hash-configuration
+  page_type: exercise
