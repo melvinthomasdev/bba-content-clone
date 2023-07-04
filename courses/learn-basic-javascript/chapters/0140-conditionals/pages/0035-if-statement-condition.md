@@ -53,7 +53,7 @@ const employee = {
 }
 
 if(employee.name) {
-  console.log("Name of the employee is `${employee.name}`.")
+  console.log(`Name of the employee is ${employee.name}.`)
 }
 </code>
 </codeblock>
