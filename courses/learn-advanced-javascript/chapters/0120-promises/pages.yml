@@ -29,3 +29,12 @@
 - title: Exercise - Async/Await
   slug: exercise-async-await
   page_type: exercise
+- title: Fetch API
+  slug: fetch-api
+  page_type: lesson
+- title: Fetch Options
+  slug: fetch-options
+  page_type: lesson
+- title: Fetch with Async/Await
+  slug: fetch-with-async-await
+  page_type: lesson
