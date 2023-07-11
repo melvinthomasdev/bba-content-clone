@@ -12,7 +12,7 @@ Use **dot notation** to add the properties.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const bird = {
-  type: "sparrow"
+  type: "owl"
 };
 
 console.log(bird);
@@ -20,7 +20,7 @@ console.log(bird);
 
 <solution>
 const bird = {
-  type: "sparrow"
+  type: "owl"
 };
 
 bird.canFly = true;

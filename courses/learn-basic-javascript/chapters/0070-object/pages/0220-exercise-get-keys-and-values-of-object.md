@@ -7,7 +7,7 @@ Use `console.log` to show the values.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const bird = {
-  type: "sparrow",
+  type: "owl",
   canFly: true,
   numberOfClaws: 4
 };
@@ -17,7 +17,7 @@ console.log();
 
 <solution>
 const bird = {
-  type: "sparrow",
+  type: "owl",
   canFly: true,
   numberOfClaws: 4
 };

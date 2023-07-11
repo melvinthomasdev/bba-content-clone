@@ -1,40 +1,40 @@
 The following code throws an error
-because `bird2` does not have
-the property `actions`.
-Add optional chaining to `bird2.actions["make-sound"]()`
-to make sure that the `["make-sound"]()` method
-is only invoked if `bird2.actions` exists.
+because `car2` does not have
+the property `engine`.
+Add optional chaining to `car2.engine["turn-off"]()`
+to make sure that the `["turn-off"]()` method
+is only invoked if `car2.engine` exists.
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
-const bird1 = {
-  name: "Sparrow",
-  actions: {
-    "make-sound": () => console.log("Chirp chirp"),
+const car1 = {
+  brand: "Toyota",
+  engine: {
+    "turn-off": () => console.log("Engine turned off"),
   }
-}
+};
 
-const bird2 = {
-  name: "Humming Bird",
-}
+const car2 = {
+  brand: "Honda",
+};
 
-bird1.actions["make-sound"]();
-bird2.actions["make-sound"]();
+car1.engine["turn-off"]();
+car2.engine["turn-off"]();
 </code>
 
 <solution>
-const bird1 = {
-  name: "Sparrow",
-  actions: {
-    "make-sound": () => console.log("Chirp chirp"),
+const car1 = {
+  brand: "Toyota",
+  engine: {
+    "turn-off": () => console.log("Engine turned off"),
   }
-}
+};
 
-const bird2 = {
-  name: "Humming Bird",
-}
+const car2 = {
+  brand: "Honda",
+};
 
-bird1.actions["make-sound"]();
-bird2.actions?.["make-sound"]();
+car1.engine["turn-off"]();
+car2.engine?.["turn-off"]();
 </solution>
 </codeblock>

@@ -8,7 +8,7 @@ to the end of the
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
-const birds = ["sparrow", "crow", "eagle"];
+const birds = ["owl", "crow", "eagle"];
 const insects = ["honeybee", "wasp", "ant"];
 const livingThings = ;
 
@@ -16,7 +16,7 @@ console.log(livingThings);
 </code>
 
 <solution>
-const birds = ["sparrow", "crow", "eagle"];
+const birds = ["owl", "crow", "eagle"];
 const insects = ["honeybee", "wasp", "ant"];
 const livingThings = [...birds, ...insects, "dog", "cat"];
 

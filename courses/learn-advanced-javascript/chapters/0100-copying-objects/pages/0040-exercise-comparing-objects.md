@@ -12,14 +12,14 @@ Again, use `console.log()` to show the comparison.
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
-const bird1 = { name: "Sparrow" };
-const bird2 = { name: "Sparrow" };
+const bird1 = { name: "Owl" };
+const bird2 = { name: "Owl" };
 console.log();
 </code>
 
 <solution>
-const bird1 = { name: "Sparrow" };
-const bird2 = { name: "Sparrow" };
+const bird1 = { name: "Owl" };
+const bird2 = { name: "Owl" };
 console.log(bird1 === bird2);
 const bird3 = bird1;
 console.log(bird1 === bird3);

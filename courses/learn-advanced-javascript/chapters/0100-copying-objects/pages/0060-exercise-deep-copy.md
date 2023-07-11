@@ -7,7 +7,7 @@ Also, modify the value of
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird = {
-  name: "Sparrow",
+  name: "Owl",
   canFly: true,
   claws: 4,
 };
@@ -19,7 +19,7 @@ console.log(updatedBird);
 
 <solution>
 const bird = {
-  name: "Sparrow",
+  name: "Owl",
   canFly: true,
   claws: 4,
 };

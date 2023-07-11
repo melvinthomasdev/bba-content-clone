@@ -11,7 +11,7 @@ Use **dot notation** to update the object.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const bird = {
-  type: "sparrow",
+  type: "owl",
   canFly: true,
   numberOfClaws: 5
 };
@@ -21,7 +21,7 @@ console.log(bird);
 
 <solution>
 const bird = {
-  type: "sparrow",
+  type: "owl",
   canFly: true,
   numberOfClaws: 5
 };

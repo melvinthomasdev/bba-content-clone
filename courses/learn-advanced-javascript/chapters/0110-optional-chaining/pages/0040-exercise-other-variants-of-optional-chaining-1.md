@@ -1,42 +1,42 @@
 The following code throws an error
-because `bird2.actions` does not have
-the method `sing`.
-Add optional chaining to `bird2.actions.sing()`
-so that the `sing` method
+because `car2.engine` does not have
+the method `start`.
+Add optional chaining to `car2.engine.start()`
+so that the `start` method
 is only invoked if it exists.
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
-const bird1 = {
-  name: "Sparrow",
-  actions: {
-    sing: () => console.log("Chirp chirp"),
+const car1 = {
+  brand: "Toyota",
+  engine: {
+    start: () => console.log("Engine started"),
   }
 };
 
-const bird2 = {
-  name: "Humming Bird",
-  actions: {}
+const car2 = {
+  brand: "Honda",
+  engine: {}
 };
 
-bird1.actions.sing();
-bird2.actions.sing();
+car1.engine.start();
+car2.engine.start();
 </code>
 
 <solution>
-const bird1 = {
-  name: "Sparrow",
-  actions: {
-    sing: () => console.log("Chirp chirp"),
+const car1 = {
+  brand: "Toyota",
+  engine: {
+    start: () => console.log("Engine started"),
   }
 };
 
-const bird2 = {
-  name: "Humming Bird",
-  actions: {}
+const car2 = {
+  brand: "Honda",
+  engine: {}
 };
 
-bird1.actions.sing();
-bird2.actions.sing?.();
+car1.engine.start();
+car2.engine.start?.();
 </solution>
 </codeblock>

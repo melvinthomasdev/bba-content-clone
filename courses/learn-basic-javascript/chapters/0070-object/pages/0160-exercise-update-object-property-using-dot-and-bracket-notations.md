@@ -12,7 +12,7 @@ only where it's necessary.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const bird = {
-  type: "sparrow",
+  type: "owl",
   canFly: true,
   "number-of-claws": 5
 };
@@ -22,7 +22,7 @@ console.log(bird);
 
 <solution>
 const bird = {
-  type: "sparrow",
+  type: "owl",
   canFly: true,
   "number-of-claws": 5
 };

@@ -1,24 +1,24 @@
 Take a look at the following example
-that has two objects `bird` and `insect`.​
+that has two objects `dog` and `wolf`.​
 
 <codeblock language="javascript" type="lesson">
 <code>
-const bird = {
-  name: "Sparrow",
-  makeSound() {
-    console.log(`${this.name} goes chirp`)
+const dog = {
+  name: "Dog",
+  bark() {
+    console.log(`${this.name} goes woof`);
   },
 };
 
-const insect = {
-  name: "Cricket",
-  makeSound() {
-    console.log(`${this.name} goes chirp`)
+const wolf = {
+  name: "Wolf",
+  bark() {
+    console.log(`${this.name} goes woof`);
   },
 };
 
-bird.makeSound();
-insect.makeSound();
+dog.bark();
+wolf.bark();
 </code>
 </codeblock>
 
@@ -28,7 +28,7 @@ that performs the same task -
 display the sound made by the animal
 represented in the object.
 
-We can extract the `makeSound` function
+We can extract the `bark` function
 and
 invoke it by providing context
 to the `this` keyword
@@ -36,21 +36,21 @@ using the `call()` method.
 
 <codeblock language="javascript" type="lesson">
 <code>
-const bird = { name: "Sparrow" };
+const dog = { name: "Dog" };
 
-const insect = { name: "Cricket" };
+const wolf = { name: "Wolf" };
 
-const makeSound = function () {
-  console.log(`${this.name} goes chirp`);
+const bark = function () {
+  console.log(`${this.name} goes woof`);
 }
 
-makeSound.call(bird);
-makeSound.call(insect);
+bark.call(dog);
+bark.call(wolf);
 </code>
 </codeblock>
 
 In the above example,
-we invoke `makeSound` using the `call()` method.
+we invoke `bark` using the `call()` method.
 We pass the object that the `this` keyword
 inside the function should refer to
 as an argument of the `call()` method.
@@ -71,7 +71,9 @@ const displayGreeting = function (projectName) {
 
 displayGreeting.call(user, project.name);
 </code>
-</codeblock>In the example above,
+</codeblock>
+
+In the example above,
 `displayGreeting.call(user, project.name)`
 passes two arguments.
 The first argument `user`,

@@ -4,7 +4,7 @@ given in the table below:
 
 | Key      | Value     |
 | -------- | --------- |
-| type     | "sparrow" |
+| type     | "owl" |
 | canFly   | true      |
 | legCount | 2         |
 
@@ -19,7 +19,7 @@ console.log(bird);
 
 <solution>
 const bird = {
-  type: "sparrow",
+  type: "owl",
   canFly: true,
   legCount: 2
 };

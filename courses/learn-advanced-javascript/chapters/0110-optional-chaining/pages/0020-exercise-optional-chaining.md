@@ -10,7 +10,7 @@ is `null` or `undefined`.
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird = {
-  name: "Sparrow",
+  name: "Owl",
   abilities: null,
 }
 
@@ -23,7 +23,7 @@ if (bird.abilities.canFly) {
 
 <solution>
 const bird = {
-  name: "Sparrow",
+  name: "Owl",
   abilities: null,
 }
 

@@ -6,7 +6,7 @@ should not be shallow copied.
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird = {
-  name: "Sparrow",
+  name: "Owl",
   features: {
     canFly: true,
     claws: 4
@@ -21,7 +21,7 @@ console.log(birdCopy);
 
 <solution>
 const bird = {
-  name: "Sparrow",
+  name: "Owl",
   features: {
     canFly: true,
     claws: 4

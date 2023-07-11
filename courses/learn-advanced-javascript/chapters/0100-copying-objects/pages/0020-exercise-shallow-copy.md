@@ -9,14 +9,14 @@ show the value of the `bird1.name` property.
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
-const bird1 = { name: "Sparrow" };
+const bird1 = { name: "Owl" };
 const bird2 = ;
 
 console.log(bird1.name);
 </code>
 
 <solution>
-const bird1 = { name: "Sparrow" };
+const bird1 = { name: "Owl" };
 const bird2 = bird1;
 
 bird2.name = "Eagle";

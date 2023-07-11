@@ -103,7 +103,7 @@ fruits = ["Mango", "Grapes", "Strawberry"];
 
 console.log(fruits);
 
-const birds = [ "Parrot", "Sparrow", "Cuckoo"];
+const birds = [ "Parrot", "Owl", "Cuckoo"];
 
 // Reassigning bird with another object
 // This will show an error

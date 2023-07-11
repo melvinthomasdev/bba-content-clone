@@ -8,13 +8,13 @@ using a template string.
 
 For the code below,
 the output should be
-**"Sparrow has these colors - brown, black, yellow"**.
+**"Owl has these colors - brown, black, gray"**.
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird = {
-  name: "Sparrow",
-  colors: ["brown", "black", "yellow"],
+  name: "Owl",
+  colors: ["brown", "black", "gray"],
   displayNameAndColors() {},
 }
 
@@ -23,8 +23,8 @@ bird.displayNameAndColors();
 
 <solution>
 const bird = {
-  name: "Sparrow",
-  colors: ["brown", "black", "yellow"],
+  name: "Owl",
+  colors: ["brown", "black", "gray"],
   displayNameAndColors() {
     console.log(`${this.name} has these colors - ${this.colors.join(", ")}`);
   },

@@ -1,10 +1,10 @@
 Add a method `makeSound` to the object `bird`.
-The method should display **"Chirp chirp"** on invocation.
+The method should display **"Hoot hoot"** on invocation.
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird = {
-  name: "Sparrow",
+  name: "Owl",
   claws: 4
 }
 
@@ -13,11 +13,11 @@ bird.makeSound();
 
 <solution>
 const bird = {
-  name: "Sparrow",
+  name: "Owl",
   claws: 4
 }
 
-bird.makeSound = () => console.log("Chirp chirp");
+bird.makeSound = () => console.log("Hoot hoot");
 
 bird.makeSound();
 </solution>

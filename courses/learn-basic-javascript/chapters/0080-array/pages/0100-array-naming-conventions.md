@@ -83,7 +83,7 @@ should be avoided.
 const fruits = ["Apple", "Banana", "Orange"];
 
 // This is not a good name. bird is not a plural word
-const bird = ["Crow", "Sparrow", "Pigeon"];
+const bird = ["Crow", "Owl", "Pigeon"];
 
 // This is a bad name.
 // "sentences" is a plural word but the value is not an array
