@@ -41,6 +41,12 @@
 - title: Exercise - Aside
   slug: exercise-aside
   page_type: exercise
+- title: Span
+  slug: span
+  page_type: lesson
+- title: Exercise - Span
+  slug: exercise-span
+  page_type: exercise
 - title: Why Not Simply Use Div
   slug: why-not-simply-use-div
   page_type: lesson
