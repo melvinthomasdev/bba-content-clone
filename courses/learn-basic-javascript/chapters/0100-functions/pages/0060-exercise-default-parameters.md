@@ -1,16 +1,10 @@
-- Define a function
-  `displayPackageInfo`
-  with two parameters
-  `orderID`
-  and
-  `status`.
+- Update the function `displayPackageInfo`
+  to have two two arguments
+  `orderID` and `status`.
 
-- If the value of `orderID`
-  is **"ABC123"**
-  and the value of `status`
-  is **"on the way"**,
+- Based on the arguments received,
   the function should display
-  **"Your package #ABC123 is on the way"**
+  `Your package <orderID> is <status>`
   using a template string.
 
 - The default value of `status`
@@ -19,16 +13,16 @@
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const displayPackageInfo = () => {
-  console.log();
-}
+  // write your code here
+};
 
-displayPackageInfo("ABC123", "on the way");
+displayPackageInfo("ABC123");
 </code>
 
 <solution>
 const displayPackageInfo = (orderID, status = "to be dispatched") => {
   console.log(`Your package #${orderID} is ${status}`);
-}
+};
 
 displayPackageInfo("ABC123");
 </solution>
