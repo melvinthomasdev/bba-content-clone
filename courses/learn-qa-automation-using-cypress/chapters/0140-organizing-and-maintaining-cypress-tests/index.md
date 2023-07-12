@@ -65,31 +65,45 @@ There are different ways we can avoid repetitive code. Consider using following
 ways to avoid repetitive code:
 
 - Custom commands e.g. cy.login() for most of the application's functionalities
-  login is first step
+  login is the first step
 - Utility functions
-- Loops (If same assertion logic is used for multiple elements)
+- Loops (If the same assertion logic is used for multiple elements)
 
-**5. Maintaining paths**
+**5. Maintaining API paths**
 
 We can create a separate file for storing all the routes and import them
-whenever required. For storing them, we can create `routes.js` file under
-constants folder. Remember these will be `variables` or functions and not an
-`object`. Please refer the below example:
+whenever required. For storing them, we can create `routes.js` file under the constants folder.
 
 ```javascript
 // cypress/constants/routes.js
 
-export const newSignupPath = "/signups/new";
-export const signupOtpPath = "/api/v1/signups/otp_generation";
-export const loginPath = "/login";
+const apiRoutes = {
+  articles: {
+    index: "/api/v1/articles",
+    show: id => `/api/v1/articles/${id}`,
+    bulkUpdate: "/api/v1/articles/bulk_update",
+  },
+  groups: {
+    index: "/api/v1/groups",
+    show: id => `/api/v1/groups/${id}`,
+  },
+  settings: "/api/v1/settings",
+};
+
+export default apiRoutes;
 ```
 
-**6. Add files which we don't want to commit or track in `.gitignore`**
+```javascript
+// Usage
+import apiRoutes from "Constants/routes";
+// ...
+cy.apiRequest({ method: "GET", url: apiRoutes.articles.index });
+cy.apiRequest({ method: "DELETE", url: apiRoutes.articles.show("1234") });
+```
 
-We would want to ignore some files that are created along with time or during
-the installation of cypress like _`node_modules`, `videos`, `screenshots`_ etc.
-These files are important but can be ignored while committing our changes into
-the repository. Such files can be added in `.gitignore`.
+**6. Add files that we don't want to commit or track in `.gitignore`**
+
+We would want to ignore some files that are created along with time or during the installation of Cypress like _node_modules_`, `videos`, `screenshots`_ etc. These files are important but can be ignored while committing our changes to the repository. Such files can be added in `.gitignore`.
 
 **7. Use webpack aliases**
 
@@ -111,7 +125,7 @@ import { agentsTexts } from "Texts/agents.js";
 Often we need to use some random data to perform integration testing. And there
 comes a npm package,`faker` which helps us to generate random data very easily.
 Instead of directly importing `faker` into the test file, we can create a
-`fake.js` file in fixtures folder and import the fake data in our tests.
+`fake.js` file in the fixtures folder and import the fake data into our tests.
 
 ```javascript
 // Fixtures/faker.js
@@ -149,10 +163,7 @@ describe("Create new tags", () => {
 
 **9. Use `within()` for narrowing the scope of cypress**
 
-Whenever multiple elements with same selector is present, we can select the
-desired element using `within()` to narrow the scope. e.g. Let's say, there is
-table of canned responses list. Each row has an edit, and delete button. So, to
-select one of them, we first need to get the element with name and then use
+Whenever multiple elements with the same selector are present, we can select the desired element using `within()` to narrow the scope. e.g. Let's say, there is a table of canned responses list. Each row has an edit, and delete button. So, to select one of them, we first need to get the element with the name and then use
 `within()` to narrow down the scope. Each row contains only one edit button, so
 the correct edit button is selected.
 
@@ -163,3 +174,33 @@ cy.contains(cannedResponseSelectors.tableRow, cannedResponseName).within(() => {
   cy.get(cannedResponseSelectors.editButton).click();
 });
 ```
+
+**10. Group variables based on the context**
+
+Let's say we have a test to create and edit an article. So we need one article's details for creating an article and another article's details for editing. So, we can group them based on the context.
+
+```javascript
+describe("Articles", () => {
+  // Incorrect
+  const title1 = faker.words();
+  const title2 = faker.words();
+  const description1 = faker.sentence();
+  const description2 = faker.sentence();
+
+  // Correct
+  const article = {
+    title: faker.words(),
+    description: faker.sentence(),
+  };
+  const updatedArticle = {
+    title: faker.words(),
+    description: faker.sentence(),
+  };
+
+  it("should be able to create an article", () => {
+    articleUtils.createArticle(article);
+  });
+});
+```
+
+In the above snippet, if we use `title1`, and `title2` in the same test, it will be difficult to understand which article's details are being used. But, if we use `article.title` and `updatedArticle.title`, it will make the test case more readable.

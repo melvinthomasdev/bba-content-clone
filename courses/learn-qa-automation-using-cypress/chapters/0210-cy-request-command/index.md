@@ -40,7 +40,7 @@
 - Body is usually a data that we want to send along with the request.
 - It can be of type string, json object, array or a file(video/audio)
 
-# what do we get in response?
+# What do we get in response?
 
 - Response only contains three main things:
 
@@ -125,8 +125,11 @@ cy.apiRequest({
   body: {
     // request body
   },
+  failOnStatusCode: false,
 });
 ```
+
+`failOnStatusCode` flag is used to tell the Cypress to not fail the test if the `status code is not 200`. By default, the test will fail if the `status code is not 200`.
 
 # Example of searching and deleting data using request.
 
@@ -172,4 +175,71 @@ cy.apiRequest({
 });
 
 // reload if you want the data to appear in UI.
+```
+
+# When to use request?
+
+We already discussed how to use the request method in the above section. Now, let's see when to use the request method. Let's say we need to add a test case for editing an article. But we cannot edit an article without creating it. Consider we already have another test case for creating an article. So we don't have to create the article via UI which is a time taking process. Instead, we can create an article via request and then edit it via UI. This will save a lot of time. We will create the article via request in the `before` hook and then edit it via UI in the `it` block. Also, at the end of the test, we can delete the article via request in the `after` hook. This will make sure that the article is deleted after the test is completed.
+
+```javascript
+describe(() => {
+  beforeEach(() => {
+    cy.apiRequest({
+      method: "POST",
+      url: "<URL to create an article>",
+      body: { data: { title: "Article Title", body: "Article Body" } },
+    });
+
+    cy.reloadAndWait(2);
+  });
+
+  it(() => {
+    // edit the article via UI
+  });
+
+  afterEach(() => {
+    cy.apiRequest({
+      method: "GET",
+      url: "<URL to search all the data>",
+      qs: { "data[search_string]": "Article Title" },
+    }).then(({ body }) => {
+      const dataDetails = body.data[0];
+
+      cy.apiRequest({
+        method: "PATCH",
+        url: "<URL to delete the data>",
+        body: { data: { ids: [dataDetails.id] } },
+      });
+    });
+  });
+});
+```
+
+Note: We should define these request methods as utility functions. So that we can reuse them in other tests as well.
+
+In the above test case, we have used `cy.reloadAndWait(2)` after calling the `cy.apiRequest` method. This is because if we do something using the request method, it will get reflected in the UI only after reloading the page. So, we need to reload the page and wait for the network requests to get completed. Here is the implementation of `cy.reloadAndWait` method:
+
+```javascript
+Cypress.Commands.add("reloadAndWait", requestCount => {
+  requestCount && cy.interceptApi("fetchRequests", requestCount);
+  cy.reload();
+  requestCount && cy.waitForMultipleRequest(requestCount);
+});
+```
+
+Now, consider we have to create more data. In that case, we might need to call request methods multiple times. But we don't have to reload the page every time. We need to reload only after completing all the request methods.
+
+```javascript
+beforeEach(() => {
+  // Incorrect
+  articleUtils.createArticleViaRequest(articleDetails);
+  cy.reloadAndWait(4);
+  categoryUtils.createCategoryViaRequest(categoryDetails);
+  cy.reloadAndWait(4);
+
+  // Correct
+  articleUtils.createArticleViaRequest(articleDetails);
+  categoryUtils.createCategoryViaRequest(categoryDetails);
+  cy.reloadAndWait(4);
+});
 ```

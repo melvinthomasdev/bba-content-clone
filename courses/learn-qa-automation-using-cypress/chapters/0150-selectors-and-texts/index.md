@@ -1,4 +1,4 @@
-- Create a separate folder "constants" under cypress. In "constants" folder,
+- Create a separate folder "constants" under cypress. In the "constants" folder,
   create two folders - "selectors" and "texts" and store all the selectors and
   texts respectively in those folders. Please refer:
 
@@ -14,7 +14,7 @@
   name can be `loginSelectors`, placed at `constants/selectors/login.js`. It can
   have keys as `emailTextField`, `passwordTextField` and `submitButton`.
 
-Please refer another example below:
+Please refer to another example below:
 
 ```javascript
 // constants/selectors/signup.js
@@ -30,7 +30,7 @@ export const signupSelectors = {
 
 - Avoid prefixing the key with the name of the test file name as we already
   prefixed the selector object with it.
-- Please refer the example below:
+- Please refer to the example below:
 
 ```javascript
 // Incorrect
@@ -44,7 +44,7 @@ export const clientsSelectors = {
 };
 ```
 
-- Avoid repeating same selectors in multiple files. Instead create a common file
+- Avoid repeating the same selectors in multiple files. Instead, create a common file
   and keep all of them in common selectors. The best possible scenario for this
   is header elements. The header elements might be required in multiple test
   specs. However, we can keep them under `selectors/common.js` with an object
@@ -72,19 +72,25 @@ export const clientsSelectors = {
 export const commonTexts = {
   generalError: "Something went wrong.",
 };
+```
 
+```javascript
 //constants/texts/login.js
 export const loginTexts = {
   heading: "Sign In",
   passwordRequiredMessage: "Password is required",
   emailRequiredMessage: "Email is required",
 };
+
+export const loginErrorTexts = {
+  nameRequired: "Name is required",
+  emailRequired: "Email is required",
+};
 ```
 
 ### Importing selectors and texts variables
 
-- We need to import variables from selectors and texts. Please refer the example
-  below:
+- We need to import variables from selectors and texts. Please refer to the example below:
 
 ```javascript
 import {
@@ -98,10 +104,9 @@ import { profileSettingsTexts } from "../../constants/texts/profileSettings";
 
 ### Aliases
 
-Our tests are organized functionality wise. We need to specify relative path
-i.e. `../../`. If they are deeply nested, it becomes to difficult to specify
-path. When we move any file to other location, we need to update them again. So,
-it's better to use the aliases instead. Webpack aliases allows us to create
+Our tests are organized functionality-wise. We need to specify relative path
+i.e. `../../`. If they are deeply nested, it becomes too difficult to specify the path. When we move any file to another location, we need to update them again. So,
+it's better to use the aliases instead. Webpack aliases allow us to create
 aliases to import or require certain modules more easily. Instead of doing:
 
 ```javascript
@@ -130,14 +135,11 @@ Now we can do
 import { commonSelectors } from "Selectors/common";
 ```
 
-The problem mentioning the directory using combination of dots and slashes is
-that this is very error prone. Using aliases makes code clean and readable. It
-is worth noting that here at BigBinary, we use the convention of capitalizing
-the path alias for Cypress.
+The problem with mentioning the directory using a combination of dots and slashes is that this is very error-prone. Using aliases makes code clean and readable. It is worth noting that here at BigBinary, we use the convention of capitalizing the path alias for Cypress.
 
 ### Usage
 
-Take a look at the code block given below :-
+Take a look at the code block given below:-
 
 ```javascript
 import { gettingStartedPath } from "Constants/routes";
@@ -154,11 +156,9 @@ describe("Logout", { tags: "Fixed" }, () => {
 });
 ```
 
-Here we have imported selectors and texts from properly aliased import
-statements. We can also see proper usage of Selectors within get commands,
-likewise we can also see proper usage of Texts.
+Here we have imported selectors and texts from properly aliased import statements. We can also see the proper usage of Selectors within get commands, likewise, we can also see the proper usage of Texts.
 
-For reference these are the selector file content :-
+For reference, these are the selector file content:-
 
 ```javascript
 // constants/selectors/common

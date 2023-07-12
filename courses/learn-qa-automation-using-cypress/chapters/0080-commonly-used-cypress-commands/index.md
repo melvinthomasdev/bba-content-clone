@@ -58,6 +58,15 @@ The text passed to `.type()` may include any of the
 These sequences can simulate a wide range of keyboard keys like `enter`,
 `arrow keys`, `backspace`, etc.
 
+Multiple keys can be pressed simultaneously by passing in a key combination using `+` as a separator.
+
+```js
+cy.get('[data-cy="description"]').type("{shift+enter}");
+cy.get("body").type("{cmd+s}");
+```
+
+The modifier keys will change based on the OS. For example, on Windows, the modifier key is `{ctrl}` instead of `{cmd}`.
+
 ### fixture
 
 Used to load a fixed set of data located in a file. It takes in a path to a file
@@ -221,6 +230,38 @@ cy.get("form").within(form => {
   // submit() is used to submit the form
 });
 ```
+
+### each
+
+Iterate through an array like structure (arrays or objects with a length property). It takes a callback function as an argument. The callback function receives the current element as an argument.
+
+```js
+cy.get("li").each((li, index, list) => {
+  // li is the current list element
+  // index is the index of the current element
+  // list is the entire list of elements
+  cy.wrap(li).click();
+});
+
+cy.wrap([1, 2, 3]).each((number, index, list) => {
+  // number is the current number
+  // index is the index of the current number
+  // list is the entire list of numbers
+  cy.wrap(number).should("be.gt", 0);
+});
+```
+
+Here are the reasons why we should use `cy.each`:
+
+- Improved Readability: The `cy.each()` method provides a clear and expressive way to iterate over elements, making your code more readable and self-explanatory. It enhances the maintainability of your tests, as it is easier for others (including future you) to understand the intention and logic behind the iteration.
+
+- Automatic Command Chaining: `cy.each()` automatically chains each iteration, ensuring that Cypress commands are executed in the intended sequence. This eliminates the need for managing complex asynchronous behaviour manually, as Cypress handles the command queuing and execution for you.
+
+- Consistent Test Execution: Cypress ensures that each iteration completes before moving on to the next one. This helps maintain a consistent state and avoids race conditions that might occur when using traditional for loops. It ensures that all assertions and commands within the loop are executed in the expected order.
+
+- Synchronization with Cypress Retry: Cypress automatically retries certain commands until they pass or time out. When using `cy.each()`, this retry behaviour is applied to each iteration individually. If an assertion within a specific iteration fails, Cypress will retry that iteration until it passes or times out, without affecting the subsequent iterations. This makes your tests more resilient to intermittent failures caused by synchronization issues.
+
+- Improved Error Messages: When an assertion or command within a `cy.each()` iteration fails, Cypress provides detailed error messages that clearly indicate which iteration encountered the failure. This makes it easier to locate and debug issues, as you can identify the specific iteration causing the problem.
 
 ## Nature of Cypress commands
 
