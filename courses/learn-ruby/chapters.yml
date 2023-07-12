@@ -59,6 +59,8 @@
   slug: module
 - name: Enumerable
   slug: enumerable
+- name: Singletons in ruby
+  slug: singletons-in-ruby
 - name: Inject
   slug: inject
 - name: Symbol to proc

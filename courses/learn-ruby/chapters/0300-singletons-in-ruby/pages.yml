@@ -1,0 +1,13 @@
+---
+- title: Understanding Singleton Classes
+  slug: understanding-singleton-classes
+  page_type: lesson
+- title: Creating a Class with Only One Instance
+  slug: creating-a-class-with-only-one-instance
+  page_type: lesson
+- title: Practical Use Cases of Singleton pattern
+  slug: practical-use-cases-of-singleton-pattern
+  page_type: lesson
+- title: Exercise - shopping cart
+  slug: exercise-shopping-cart
+  page_type: exercise
