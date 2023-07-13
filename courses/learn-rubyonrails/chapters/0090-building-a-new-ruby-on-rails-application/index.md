@@ -69,10 +69,9 @@ named `Gemfile`, like so:
 
 ```rb
 # For compiling and bundling JavaScript. Read more: https://github.com/shakacode/shakapacker
-gem "shakapacker"
+gem "shakapacker", "~> 6.6.0"
 ```
-
-Run the following command from the terminal to install the newly added gem that
+We have specified the `shakapacker` version to be 6.6.0 or higher, excluding version 7.0.0 and any subsequent versions due to the introduction of breaking changes starting from v7. Run the following command from the terminal to install the newly added gem that
 is `shakapacker`:
 
 ```bash
