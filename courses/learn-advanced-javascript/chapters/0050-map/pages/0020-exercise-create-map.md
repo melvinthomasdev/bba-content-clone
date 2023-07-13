@@ -17,9 +17,9 @@ console.log(iceCream);
 
 <solution>
 const iceCream = new Map([
- [{ flavor: "Chocolate", topping: "Almond" }, "250"],
- [{ flavor: "Chocolate", topping: "Raisins" }, "240"],
- [{ flavor: "Vanilla", topping: "Choco Chips" }, "180"],
+ [{ flavor: "Chocolate", topping: "Almond" }, 250],
+ [{ flavor: "Chocolate", topping: "Raisins" }, 240],
+ [{ flavor: "Vanilla", topping: "Choco Chips" }, 180],
 ]);
 console.log(iceCream);
 </solution>
