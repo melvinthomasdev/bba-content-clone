@@ -79,18 +79,17 @@ following tags for categorizing specs.
 
 - **Fixed**: For regression specs
 - **Happy-Path**: For Happy path specs
-- **WIP**: For work-in-progress specs.
 
-We use **Fixed** tag for regression specs and **Happy-Path** for happy path
-specs. When we update/add new tests, and run Cypress, some of the unrelated test
-suites having **Fixed** tag may fail. So instead of fixing the problem in the
-same GitHub issue, we change the tag of the failing tests to **WIP** tag and
-create a new issue for the failing tests. The test suites having **WIP** tag
-will be ignored when running Cypress and the failing tests must be resolved
-later.
+We use **Fixed** tag for regression specs and **Happy-Path** for happy path specs.
 
 ```js
 describe("Login", { tags: ["Fixed"] }, () => {
+...
+});
+```
+
+```js
+describe("Login", { tags: ["Happy-Path"] }, () => {
 ...
 });
 ```
@@ -112,4 +111,26 @@ The following configuration selectively run test suites with **Fixed** tag.
   },
   ...
 }
+```
+
+## How to skip test cases
+
+When we update/add new tests/features, and run Cypress, some of the unrelated test
+suites having **Fixed** tag may fail. So we will have to skip this test from running
+until the known issue has been resolved. For this and other cases where we have to skip a test,
+we rename our file extension to `*.wip.spec.js` where `wip` stands for **"Work In Progress"**.
+We have configured the cypress configuration to ignore specs with this extension.
+
+```js
+// cypress-tests/cypress.config.js
+
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+  ...
+  e2e: {
+    ...
+    excludeSpecPattern: ["cypress/e2e/**/*.wip.spec.js"]
+  }
+})
 ```
