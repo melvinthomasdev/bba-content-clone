@@ -11,6 +11,8 @@
   slug: cascade-and-specificity
 - name: CSS Variables
   slug: css-variables
+- name: CSS Nesting
+  slug: css-nesting
 - name: Web Page Layouts
   slug: web-page-layouts
 - name: Responsive Web Design
