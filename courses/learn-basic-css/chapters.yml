@@ -27,6 +27,8 @@
   slug: borders
 - name: Opacity
   slug: opacity
+- name: Display
+  slug: display
 - name: Styling Links
   slug: styling-links
 - name: CSS MCQ
@@ -41,8 +43,6 @@
   slug: styling-forms
 - name: CSS Box Model
   slug: css-box-model
-- name: Display
-  slug: display
 - name: Position
   slug: position
 - name: Float

@@ -8,9 +8,18 @@
 - title: Exercise - Styling Links like buttons
   slug: exercise-styling-links-like-buttons
   page_type: exercise
+- title: Spacing around links
+  slug: spacing-around-links
+  page_type: lesson
 - title: Styling Links using States
   slug: styling-links-using-states
   page_type: lesson
+- title: More Examples - Styling Links using States
+  slug: example-styling-links-using-states
+  page_type: lesson
 - title: Exercise - Styling Links using States
   slug: exercise-styling-links-using-states
+  page_type: exercise
+- title: Exercise 2 - Styling Links using States
+  slug: exercise-styling-links-using-states-2
   page_type: exercise
