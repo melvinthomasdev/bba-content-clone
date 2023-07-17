@@ -5,6 +5,9 @@
 - title: Exercise - Images
   slug: exercise-images
   page_type: exercise
+- title: Exercise - Images 2
+  slug: exercise-images-02
+  page_type: exercise
 - title: Links
   slug: links
   page_type: lesson
@@ -19,9 +22,6 @@
   page_type: lesson
 - title: Exercise - `alt` in `img` Tag
   slug: exercise-alt-in-img-tag
-  page_type: exercise
-- title: Exercise - `alt` in `img` Tag
-  slug: exercise-alt-in-img-tag-02
   page_type: exercise
 - title: Attributes
   slug: attributes
