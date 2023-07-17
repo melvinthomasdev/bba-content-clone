@@ -29,6 +29,12 @@
 - title: Exercise - Auto Margins
   slug: exercise-auto-margins
   page_type: exercise
+- title: Auto Margins with Width
+  slug: auto-margins-with-width
+  page_type: lesson
+- title: Exercise - Auto Margins with Width
+  slug: exercise-auto-margins-with-width
+  page_type: exercise
 - title: Padding
   slug: padding
   page_type: lesson
