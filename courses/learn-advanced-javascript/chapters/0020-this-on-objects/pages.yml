@@ -1,4 +1,7 @@
 ---
+- title: Open in neetoCode
+  slug: open-in-neeto-code
+  page_type: lesson
 - title: "`this` in Methods"
   slug: this-in-methods
   page_type: lesson
