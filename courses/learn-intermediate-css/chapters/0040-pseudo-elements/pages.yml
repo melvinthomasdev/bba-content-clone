@@ -23,3 +23,9 @@
 - title: Exercise - The 'after' Pseudo-element
   slug: exercise-after-pseudo-element
   page_type: exercise
+- title: Initial Letter
+  slug: initial-letter
+  page_type: lesson
+- title: Exercise - Initial Letter
+  slug: exercise-initial-letter
+  page_type: exercise
