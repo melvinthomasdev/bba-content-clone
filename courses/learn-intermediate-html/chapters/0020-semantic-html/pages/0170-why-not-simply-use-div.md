@@ -51,25 +51,26 @@ Wait, don't imagine, let us show you:
   display: flex;
   justify-content: space-around;
   list-style: none;
+  font-weight: 700
 }
-.nav > li {
-  padding: 5px;
-  font-weight: 700;
-}
+
 .header {
   display: flex;
   justify-content: center;
 }
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .footer {
   display: flex;
   justify-content: center;
   font-weight: 700;
 }
+
 .highlight {
   color: blue;
   font-weight: 700;
@@ -131,25 +132,26 @@ according to best practices.
   display: flex;
   justify-content: space-around;
   list-style: none;
+  font-weight: 700
 }
-.nav > li {
-  padding: 5px;
-  font-weight: 700;
-}
+
 .header {
   display: flex;
   justify-content: center;
 }
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .footer {
   display: flex;
   justify-content: center;
   font-weight: 700;
 }
+
 .highlight {
   color: blue;
   font-weight: 700;
@@ -184,7 +186,7 @@ according to best practices.
       </ul>
     </main>
     <footer class="footer">
-      <p>Created by: <span class="highlight">Bigbinary Academy</span></p>
+      <p>Created by: <span class="highlight">BigBinary Academy</span></p>
     </footer>
   </body>
 </html>
@@ -196,6 +198,7 @@ according to best practices.
   list-style: none;
   font-weight: 700;
 }
+
 .header {
   display: flex;
   justify-content: center;
@@ -205,11 +208,13 @@ according to best practices.
   flex-direction: column;
   align-items: center;
 }
+
 .footer {
   display: flex;
   justify-content: center;
   font-weight: 700;
 }
+
 .highlight {
   color: blue;
   font-weight: 700;
