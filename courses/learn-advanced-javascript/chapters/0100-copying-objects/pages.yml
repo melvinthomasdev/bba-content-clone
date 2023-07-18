@@ -23,3 +23,9 @@
 - title: Exercise - Copy Nested Objects
   slug: exercise-copy-nested-objects
   page_type: exercise
+- title: Structured Clone
+  slug: structured-clone
+  page_type: lesson
+- title: Exercise- Structured Clone
+  slug: exercise-structured-clone
+  page_type: exercise
