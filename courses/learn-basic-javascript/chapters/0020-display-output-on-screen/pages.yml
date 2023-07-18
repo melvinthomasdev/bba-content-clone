@@ -1,4 +1,7 @@
 ---
+- title: Open in neetoCode
+  slug: open-in-neeto-code
+  page_type: lesson
 - title: Show Message in console
   slug: console
   page_type: lesson

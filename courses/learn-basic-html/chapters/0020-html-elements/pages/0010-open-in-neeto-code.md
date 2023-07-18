@@ -9,19 +9,17 @@ which opens your code in the neetoCode code editor.
 
 **Open the code editor in neetoCode**
 and
-
 **go through the steps provided in the comments below**:
 
-
-<codeblock language="javascript" type="lesson">
+<codeblock language="html" type="lesson">
 <code>
-/*
+<!--
 - Sign in with the same Google account
   on both BB Academy and neetoCode.
 - As shown in the image above, click on the arrow icon
   to open the code snippets as a new project in your neetoCode
   account, with the lesson name added as the project name.
-- Go through the page and familiarize yourself with the JavaScript Tab view.
-*/
+- Go through the page and familiarize yourself with the HTML Tab view.
+-->
 </code>
 </codeblock>

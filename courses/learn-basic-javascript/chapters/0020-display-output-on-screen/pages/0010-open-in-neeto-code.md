@@ -9,9 +9,7 @@ which opens your code in the neetoCode code editor.
 
 **Open the code editor in neetoCode**
 and
-
 **go through the steps provided in the comments below**:
-
 
 <codeblock language="javascript" type="lesson">
 <code>
