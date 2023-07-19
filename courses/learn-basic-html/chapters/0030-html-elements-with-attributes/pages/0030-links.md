@@ -24,5 +24,10 @@ The `<a>` element is used to create a link to a web page. Here are some examples
 </code>
 </codeblock>
 
-As you can see, the `<a>` element contains `href`. When we click the link, the `href` identifies the web page to which the browser will now take us.
-We ca
+As you can see, the `<a>` element contains `href`.
+When we click the link, the `href` identifies the
+web page to which the browser will now take us.
+
+We can add any element within `<a>` tags to
+make it work like a link. Some commonly used
+elements are images, text, and divs or spans.
