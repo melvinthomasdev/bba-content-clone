@@ -41,11 +41,11 @@
 - title: Exercise - Join all Elements
   slug: exercise-join
   page_type: exercise
-- title: Map a Function and Get a New Array
-  slug: map
+- title: Filter elements based on given condition
+  slug: filter
   page_type: lesson
-- title: Exercise - Execute a function and Get New Array
-  slug: exercise-map
+- title: Exercise - Check Elements on Given Condition
+  slug: exercise-filter
   page_type: exercise
 - title: Exercise - Difference Between map and forEach
   slug: exercise-map-and-foreach
