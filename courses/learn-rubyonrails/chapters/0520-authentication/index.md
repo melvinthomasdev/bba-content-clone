@@ -118,10 +118,11 @@ Add following line to `User` model:
 
 ```ruby {3}
 class User < ApplicationRecord
+  MAX_NAME_LENGTH = 35
   has_many :assigned_tasks, foreign_key: :assigned_user_id, class_name: "Task"
   has_secure_password
 
-  validates :name, presence: true, length: { maximum: 35 }
+  validates :name, presence: true, length: { maximum: MAX_NAME_LENGTH }
 end
 ```
 
@@ -141,11 +142,14 @@ Let's add validations to our newly added fields, `email` and `password`:
 
 ```ruby {6-7}
 class User < ApplicationRecord
+  MAX_NAME_LENGTH = 35
+  MIN_PASSWORD_LENGTH = 6
+
   has_many :assigned_tasks, foreign_key: :assigned_user_id, class_name: "Task"
   has_secure_password
 
-  validates :name, presence: true, length: { maximum: 35 }
-  validates :password, length: { minimum: 6 }, if: -> { password.present? }
+  validates :name, presence: true, length: { maximum: MAX_NAME_LENGTH }
+  validates :password, length: { minimum: MIN_PASSWORD_LENGTH }, if: -> { password.present? }
   validates :password_confirmation, presence: true, on: :create
 end
 ```
@@ -178,18 +182,20 @@ Add the following changes to the `user` model to validate the `email` field:
 
 ```ruby {2-3,8-11,15-21}
 class User < ApplicationRecord
+  MAX_NAME_LENGTH = 35
+  MIN_PASSWORD_LENGTH = 6
   VALID_EMAIL_REGEX = /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i.freeze
   MAX_EMAIL_LENGTH = 255
 
   has_many :assigned_tasks, foreign_key: :assigned_user_id, class_name: "Task"
   has_secure_password
 
-  validates :name, presence: true, length: { maximum: 35 }
+  validates :name, presence: true, length: { maximum: MAX_NAME_LENGTH }
   validates :email, presence: true,
                     uniqueness: { case_sensitive: false },
                     length: { maximum: MAX_EMAIL_LENGTH },
                     format: { with: VALID_EMAIL_REGEX }
-  validates :password, length: { minimum: 6 }, if: -> { password.present? }
+  validates :password, length: { minimum: MIN_PASSWORD_LENGTH }, if: -> { password.present? }
   validates :password_confirmation, presence: true, on: :create
 
   before_save :to_lowercase

@@ -718,9 +718,10 @@ Add the following line into the `user.rb` file:
 
 ```ruby {2}
 class User < ApplicationRecord
+  MAX_NAME_LENGTH = 255
   has_many :assigned_tasks, foreign_key: :assigned_user_id, class_name: "Task"
 
-  validates :name, presence: true, length: { maximum: 35 }
+  validates :name, presence: true, length: { maximum: MAX_NAME_LENGTH }
 end
 ```
 
