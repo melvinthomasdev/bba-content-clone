@@ -7,6 +7,10 @@ upcoming chapter
 and execute the steps mentioned there to make our Sidekiq workers run as
 intended.
 
+## Utilizing neetoDeploy for Application Deployment
+
+All candidates undergoing orientation at BigBinary are required to utilize [neetoDeploy](https://www.neeto.com/neetodeploy) for application deployment instead of Heroku. To facilitate this process, kindly post a message in the designated orientation Slack channel, addressing the responsible individual overseeing the orientation, requesting the essential documentation for deploying the application on neetoDeploy.
+
 ## PostgreSQL database setup
 
 We at BigBinary use [PostgreSQL](https://www.postgresql.org/) database on
