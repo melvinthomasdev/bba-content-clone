@@ -30,51 +30,17 @@ is assigned an array of three values -
 These values are called
 the **elements** of the `fruits` array.
 
-In the example given above,
-since all elements of the `fruits` array
-are of the same data type,
-i.e., string,
-the array is known as
-a **homogeneous array**.
+Arrays in JavaScript are special
+kind of objects.
+Similar to an object,
+it can hold a mix of different
+data types.
 
 Consider the following example:
-
 <codeblock language="javascript" type="lesson">
 <code>
-const measurements = [12, "34cm", 567.89];
+const mixedArray = [1, "hello", true, null, undefined];
 
-console.log(measurements);
-</code>
-</codeblock>
-
-In the example given above,
-the elements of the array `measurements`
-are of different data types.
-Such an array is known as
-a **heterogeneous array**.
-
-We can also have arrays
-of composite data type
-such as array of arrays
-or objects.
-
-Let us have a look
-at few examples below:
-
-<codeblock language="javascript" type="lesson">
-<code>
-const arrayOfArrays =[
-  [1, 2, 3, 4, 5],
-  ["Peter", "Mary", "May", "Ben"],
-  [true, false, true, false]
-];
-
-const arrayOfObjects = [
-  {one: 1, two: 2},
-  {fruit: "apple", vegetable: "onion"}
-];
-
-console.log(arrayOfArrays);
-console.log(arrayOfObjects);
+console.log(mixedArray);
 </code>
 </codeblock>

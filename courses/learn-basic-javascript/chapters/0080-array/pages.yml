@@ -26,6 +26,9 @@
 - title: Array Indexes
   slug: array-indexes
   page_type: lesson
+- title: Array Magic - Mixing Different Data Types
+  slug: mixing-different-data-types
+  page_type: lesson
 - title: Array Naming Conventions
   slug: array-naming-conventions
   page_type: lesson
