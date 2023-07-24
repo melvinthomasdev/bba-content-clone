@@ -85,27 +85,44 @@ settings and reload. It does the same job:
 
 ## Install recommended extensions
 
-VSCode provides many extensions which can improve our coding experience. We have
-a list of VSCode extensions that we recommend using, like so:
+VSCode provides many extensions which can improve our coding experience. Here are some VS Code extensions that we recommend using to enhance productivity:
 
-```json
-[
-  "bradlc.vscode-tailwindcss",
-  "kaiwood.endwise",
-  "rebornix.ruby",
-  "redhat.vscode-yaml",
-  "editorconfig.editorconfig",
-  "dbaeumer.vscode-eslint",
-  "streetsidesoftware.code-spell-checker",
-  "CraigMaslowski.erb",
-  "eamodio.gitlens"
-]
-```
+- [bradlc.vscode-tailwindcss](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): For getting tailwind classes IntelliSense
+
+- [kaiwood.endwise](https://marketplace.visualstudio.com/items?itemName=kaiwood.endwise): Automatically add end when we open a do block in ruby
+
+- [rebornix.ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.ruby): Ruby language support & Basic IntelliSense
+
+- [redhat.vscode-yaml](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml): YAML Language support
+
+- [editorconfig.editorconfig](https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig): Override user/workspace settings with settings found in .editorconfig files
+
+- [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Integrates ESLint into VS Code and shows errors and warnings while writing the code.
+
+- [streetsidesoftware.code-spell-checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Spell checker which detects typos in code. It automatically comprehends camelCase, snake_case, and other coding styles & splits words accordingly.
+
+- [CraigMaslowski.erb](https://marketplace.visualstudio.com/items?itemName=CraigMaslowski.erb): Syntax highlighting for erb files
+
+- [eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=CraigMaslowski.erb): Integrates several git features to vscode.
 
 Install all the above-mentioned extension using the following command:
 
 ```bash
 curl -s "https://raw.githubusercontent.com/bigbinary/wheel/main/.scripts/setup_vscode.sh" | ruby -
+```
+
+Here are some optional settings you can set to VS Code globally. You can press `Cmd + Shift + P` and input `>Preferences: Open User Settings (JSON)` to open `settings.json` file.
+
+Add these lines in the file as settings:
+
+```json
+"editor.renderWhitespace": "all",
+"files.trimTrailingWhitespace": true,
+"files.trimFinalNewlines": true,
+"editor.tabSize": 2,
+"editor.bracketPairColorization.enabled": true,
+"files.insertFinalNewline": true,
+"terminal.integrated.scrollback": 1000000
 ```
 
 ## Spell checking in VSCode
