@@ -143,7 +143,7 @@ And gives an output similar to the following one:
 ## Inbuilt Ruby autoload mechanism
 
 Ruby has a built-in
-[autoload](https://ruby-doc.org/core-3.1.2/Module.html#method-i-autoload)
+[autoload](https://ruby-doc.org/3.2.2/Module.html#method-i-autoload)
 mechanism. This lets us tell Ruby in advance which file will define a particular
 constant, without going to the expense of loading that file immediately. Only
 when we refer to that constant for the first time does Ruby actually load the

@@ -41,7 +41,7 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 Now restart the terminal and run the following:
 
 ```bash
-rbenv install 3.1.2
+rbenv install 3.2.2
 rbenv rehash
 ```
 
@@ -71,15 +71,15 @@ Thus let's set the global version of the `ruby` command to be a `rbenv` specific
 version, like so:
 
 ```bash
-rbenv global 3.1.2
+rbenv global 3.2.2
 ```
 
 Now that we have set the global Ruby version to be an `rbenv` specific version,
 let's verify the same, by running the following commands:
 
 ```bash
-rbenv version # version should be 3.1.2
-ruby -v # version should be 3.1.2
+rbenv version # version should be 3.2.2
+ruby -v # version should be 3.2.2
 ```
 
 In M1 Mac, we need to install the shared mime info, if it doesn't already exist:
@@ -93,7 +93,7 @@ brew install shared-mime-info
 Now install Ruby on Rails gem:
 
 ```bash
-gem install rails --no-document -v 7.0.3.1
+gem install rails --no-document -v 7.0.5
 ```
 
 Flag `--no-document` disables document generation.

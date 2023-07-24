@@ -39,7 +39,7 @@ Run this command to generate a new Rails application with a specific Rails
 version:
 
 ```bash
-rails _7.0.3.1_ new granite --skip-turbolinks
+rails _7.0.5_ new granite --skip-turbolinks
 ```
 
 It will produce a long output and might take some time to complete. It is
@@ -257,13 +257,13 @@ We can lock our application with a specific Ruby and Node.js version. This will
 help us to isolate the dependencies of Ruby and Node.js modules used in the
 application.
 
-In our application, we will use Node.js version `18.12` and Ruby version `3.1.2`.
+In our application, we will use Node.js version `18.12` and Ruby version `3.2.2`.
 
 Run the following commands from the terminal:
 
 ```bash
 echo "18.12" > .nvmrc > .node-version
-echo "3.1.2" > .ruby-version
+echo "3.2.2" > .ruby-version
 ```
 
 These files will be read by `rbenv` and `nvm` to auto-set the versions.
@@ -419,14 +419,14 @@ The output would look like this:
 
 ```text
 => Booting Puma
-=> Rails 7.0.4 application starting in development
+=> Rails 7.0.6 application starting in development 
 => Run `bin/rails server --help` for more startup options
 Puma starting in single mode...
-* Puma version: 5.6.5 (ruby 3.1.2-p20) ("Birdie's Version")
+* Puma version: 6.3.0 (ruby 3.2.2-p53) ("Mugi No Toki Itaru")
 *  Min threads: 5
 *  Max threads: 5
 *  Environment: development
-*          PID: 16385
+*          PID: 94444
 * Listening on http://127.0.0.1:3000
 * Listening on http://[::1]:3000
 Use Ctrl-C to stop
@@ -444,7 +444,7 @@ are the required versions or not, by running the following commands from the
 terminal:
 
 ```bash
-rbenv version # should be 3.1.2
+rbenv version # should be 3.2.2
 nvm version # should be v18.12.1
 ```
 
@@ -452,7 +452,7 @@ Also from the root of the project run the following command to double-verify
 that Ruby is set to the required version:
 
 ```bash
-ruby -v # should be 3.1.2
+ruby -v # should be 3.2.2
 ```
 
 Another final point of verification is the version line in the `Gemfile`, which
@@ -460,7 +460,7 @@ can be found at the root of the project. The following line with required
 version should be present within the `Gemfile`:
 
 ```ruby
-ruby "3.1.2"
+ruby "3.2.2"
 ```
 
 If the Ruby version is not matching the `rbenv` set version, then it means that

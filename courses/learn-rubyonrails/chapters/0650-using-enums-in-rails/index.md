@@ -310,6 +310,6 @@ Using suffixes and prefixes in this manner helps remove any confusions regarding
 the usage of certain queries.
 
 You can read more about `Enums` from the official
-[Rails documentation for ActiveRecord::Enum](https://api.rubyonrails.org/v7.0.3.1/classes/ActiveRecord/Enum.html).
+[Rails documentation for ActiveRecord::Enum](https://api.rubyonrails.org/v7.0.5/classes/ActiveRecord/Enum.html).
 
 There is **nothing to commit** in this chapter.

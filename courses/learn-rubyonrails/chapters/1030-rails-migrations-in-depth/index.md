@@ -56,7 +56,7 @@ on the database.
 
 The `<<~` squiggly symbol is a plain ruby syntax for writing long multi-line
 indented content. Ruby calls it
-["Here Documents" or heredocs](https://ruby-doc.org/core-3.1.2/doc/syntax/literals_rdoc.html#label-Here+Documents+-28heredocs-29)
+["Here Documents" or heredocs](https://ruby-doc.org/3.2.2/syntax/literals_rdoc.html#label-Here+Document+Literals)
 in short.
 
 This migration script will add a new exclusion constraint

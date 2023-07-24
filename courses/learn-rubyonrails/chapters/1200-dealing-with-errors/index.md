@@ -9,7 +9,7 @@ error can appear:
 ```bash
 WARNING: You don’t have /Users/id/.gem/ruby/2.6.0/bin in your PATH,
 	 gem executables will not run.
-Successfully installed rails-7.0.3.1
+Successfully installed rails-7.0.5
 ```
 
 To fix this, verify that `rbenv` path is added in the `.zshrc` using the
@@ -95,11 +95,11 @@ than the one being used globally. To fix this you should first set the desired
 Ruby version as the global version and then install the `rails` gem in that
 version.
 
-For example, to set the global ruby version to `3.1.2`, run the following
+For example, to set the global ruby version to `3.2.2`, run the following
 command:
 
 ```bash
-rbenv global 3.1.2
+rbenv global 3.2.2
 gem install rails
 ```
 

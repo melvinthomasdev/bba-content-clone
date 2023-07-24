@@ -417,7 +417,7 @@ Let's fire up the console once again using the `rails console` command:
 ```bash
 rails console
 Running via Spring preloader in process 25412
-Loading development environment (Rails 7.0.3.1)
+Loading development environment (Rails 7.0.5)
 
 irb(main):001:0> Task.find_by(slug: "my-first-task")
   Task Load (0.2ms)  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."slug" = ? LIMIT ?  [["slug", "my-first-task"], ["LIMIT", 1]]

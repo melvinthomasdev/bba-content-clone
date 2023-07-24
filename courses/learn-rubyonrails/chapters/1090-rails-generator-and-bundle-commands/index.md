@@ -128,7 +128,7 @@ Let us see another scenario where `bundle exec` can be useful. Consider you are
 about to undertake a project that uses Ruby version 3.1.3. Let us say you need
 to use a gem called `foreman` to manage proc-files in your project. After a bit
 of inspection, you learn that the `foreman` gem is already installed in your
-system globally for a specific ruby version, say 3.1.2. So if you proceed to run
+system globally for a specific ruby version, say 3.2.2. So if you proceed to run
 any foreman command, under the impression that `foreman` is available to use
 system-wide, you will be greeted with an error, like so:
 
@@ -137,11 +137,11 @@ $ foreman start -f Procfile.dev.SSO
 rbenv: foreman: command not found
 
 The foreman command exists in these Ruby versions:
-  3.1.2
+  3.2.2
 ```
 
 When `foreman` was installed previously, it was for the specific Ruby version
-3.1.2. This is essentially how `rbenv` works. So now when you use the gem for
+3.2.2. This is essentially how `rbenv` works. So now when you use the gem for
 Ruby version 3.1.3, it raises an error since `foreman` is not installed for
 v3.1.3.
 

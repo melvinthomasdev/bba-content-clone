@@ -26,7 +26,7 @@ We will be using `simplecov` gem for our test coverage.
 
 [SimpleCov](https://github.com/simplecov-ruby/simplecov) is a code coverage
 analysis tool for Ruby. It uses
-[Ruby's built-in Coverage](https://ruby-doc.org/stdlib-3.1.2/libdoc/coverage/rdoc/Coverage.html)
+[Ruby's built-in Coverage](https://ruby-doc.org/3.2.2/exts/coverage/Coverage.html)
 library to gather code coverage data.
 
 Add `simplecov` to your Gemfile and run `bundle install`:

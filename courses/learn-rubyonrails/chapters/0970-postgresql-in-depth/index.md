@@ -65,7 +65,7 @@ error mentioning "function gen_random_uuid() does not exist". We first need to
 enable the `pgcrypto` extension for the database.
 
 Follow the next steps to enable the `pgcrypto` extension and add UUID primary
-keys to your Rails 7.0.3.1 application.
+keys to your Rails 7.0.5 application.
 
 ### Add a migration
 

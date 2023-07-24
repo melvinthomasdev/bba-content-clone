@@ -837,7 +837,7 @@ The official Rails guide has a section on
 [ActiveModel::Dirty](https://api.rubyonrails.org/classes/ActiveModel/Dirty.html),
 [ActiveRecord::Persistence](https://api.rubyonrails.org/classes/ActiveRecord/Persistence.html)
 and
-[ActiveModel::Errors](https://api.rubyonrails.org/v7.0.3.1/classes/ActiveModel/Errors.html).
+[ActiveModel::Errors](https://api.rubyonrails.org/v7.0.5/classes/ActiveModel/Errors.html).
 Please read the official documentation if you want to dive deeper into these
 concepts.
 
@@ -924,7 +924,7 @@ for translate, which is a
 
 In every controller, we can use `t()` method without including any additional
 modules since
-[AbstractController::Translation](https://api.rubyonrails.org/v7.0.3.1/classes/AbstractController/Translation.html)
+[AbstractController::Translation](https://api.rubyonrails.org/v7.0.5/classes/AbstractController/Translation.html)
 is already included in
 [ActionController::Base](https://api.rubyonrails.org/classes/ActionController/Base.html).
 
@@ -939,7 +939,7 @@ thus all of our controllers can access the methods defined in
 Unlike controllers, instances of `ApplicationRecord` (or more specifically,
 models) don't have reference to `t()` methods out of the box. We need to
 manually include the module
-[ActionView::Helpers::TranslationHelper](https://api.rubyonrails.org/v7.0.3.1/classes/ActionView/Helpers/TranslationHelper.html)
+[ActionView::Helpers::TranslationHelper](https://api.rubyonrails.org/v7.0.5/classes/ActionView/Helpers/TranslationHelper.html)
 to use `t()` in our models.
 
 Instead of including `ActionView::Helpers::TranslationHelper` in every model,

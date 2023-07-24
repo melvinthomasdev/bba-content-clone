@@ -32,7 +32,7 @@ class TasksController < ApplicationController
 end
 ```
 
-In Ruby 3.1.2, we can omit the values in hash literals and keyword arguments.
+In Ruby 3.2.2, we can omit the values in hash literals and keyword arguments.
 
 For example, `{ x: , y: }` is a syntax sugar of `{ x: x, y: y }`. Similarly
 `foo( x:, y: )` is a syntax sugar of `foo( x: x, y: y )`.

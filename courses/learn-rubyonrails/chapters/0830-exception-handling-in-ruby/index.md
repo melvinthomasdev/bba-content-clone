@@ -16,7 +16,7 @@ If we execute that code then we will see the error:
 
 Notice that Ruby is saying that it is a `RuntimeError`. Here is Ruby's official
 documentation about
-[RuntimeError](https://ruby-doc.org/core-3.1.2/RuntimeError.html). Above code
+[RuntimeError](https://ruby-doc.org/3.2.2/RuntimeError.html). Above code
 can also be written like this:
 
 ```ruby

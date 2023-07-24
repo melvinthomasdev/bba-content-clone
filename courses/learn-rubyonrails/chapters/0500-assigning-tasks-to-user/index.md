@@ -124,7 +124,7 @@ end
 ```
 
 To learn more about how the `select` method works, you can refer to the
-[official documentation](https://api.rubyonrails.org/v7.0.3.1/classes/ActiveRecord/QueryMethods.html#method-i-select)
+[official documentation](https://api.rubyonrails.org/v7.0.5/classes/ActiveRecord/QueryMethods.html#method-i-select)
 from Rails.
 
 Now we need to update `routes.rb`:

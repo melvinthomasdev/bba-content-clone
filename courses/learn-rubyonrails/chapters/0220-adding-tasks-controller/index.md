@@ -108,7 +108,7 @@ end
 As we can see `ApplicationController` in turn inherits from
 `ActionController::Base`, which defines a number of helpful methods. We can take
 a look at the
-[API documentation](https://api.rubyonrails.org/v7.0.3.1/classes/ActionController.html)
+[API documentation](https://api.rubyonrails.org/v7.0.5/classes/ActionController.html)
 to understand in detail.
 
 Since `ApplicationController` is the base controller from which all other
@@ -123,7 +123,7 @@ Let's open "rails console":
 ```bash
 $ bundle exec rails console
 Running via Spring preloader in process 10511
-Loading development environment (Rails 7.0.3.1)
+Loading development environment (Rails 7.0.5)
 irb(main):001:0>
 ```
 

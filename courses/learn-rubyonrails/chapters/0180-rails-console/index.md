@@ -154,7 +154,7 @@ find out where this `save` method is defined:
 
 ```ruby
 >> Task.first.method(:save).source_location
-==> ["/Users/user.name/.rbenv/versions/3.1.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/suppressor.rb", 43]
+==> ["/Users/user.name/.rbenv/versions/3.2.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.4.1/lib/active_record/suppressor.rb", 43]
 ```
 
 ## User helper
@@ -205,7 +205,7 @@ By default when console starts then prompt like this:
 ```bash
 $ bundle exec rails console
 Running via Spring preloader in process 77597
-Loading development environment (Rails 7.0.3.1)
+Loading development environment (Rails 7.0.5)
 irb(main):001:0> a = 1
 irb(main):002:0> b = 2
 irb(main):003:0> c = 3
@@ -216,7 +216,7 @@ We can also ask console to have simple prompt:
 ```bash
 $ bundle exec rails console -- --simple-prompt
 Running via Spring preloader in process 77680
-Loading development environment (Rails 7.0.3.1)
+Loading development environment (Rails 7.0.5)
 >> a = 1
 >> b = 2
 >> c = 3
