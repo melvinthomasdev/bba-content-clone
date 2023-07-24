@@ -1,9 +1,21 @@
-The `br` element is used to create a line break in your text.
-It is one of the void elements that only have a start tag.
-We don't need to specify the end tags for them. So it looks like this `<br>`.
+The `<br>` element is used to
+introduce a line break in your text.
+Unlike most HTML elements, it does
+not require a closing tag.
 
-A line break will force the text to start from a new line without creating a new paragraph. `br` tags can be used to display text where we need to show the information in different lines, but the lines are not contextually separate.
+By using the `<br>` element,
+you can force the text to start
+on a new line without creating
+a new paragraph.
+This is particularly useful when
+you want to display information
+in different lines.
 
+Any content following the `<br>`
+tag will be displayed as a new line
+on the screen.
+
+Let us have a look at an example:
 <codeblock language="html" type="lesson">
 <code>
 <h2>Address written with a p tag</h2>

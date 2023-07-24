@@ -53,3 +53,6 @@
 - title: Exercise - HTMLElement.dataset
   slug: exercise-html-element-dataset
   page_type: exercise
+- title: Void Elements
+  slug: void-elements
+  page_type: lesson
