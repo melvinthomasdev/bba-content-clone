@@ -48,4 +48,6 @@ images:
 - issue_refund.png
 - dashboard-api-version.png
 - stripe-developer-digest-newsletter.png
+- create-payment-link.png
+- customize-payment-link.png
 databases: []

@@ -8,6 +8,9 @@
 - slug: accepting-payments-using-stripe
   name: Accepting payments using stripe
   has_pages: false
+- slug: additional-payment-methods
+  name: Additional ways to accept payments using Stripe
+  has_pages: false
 - slug: working-with-a-subscription
   name: Working with a subscription
   has_pages: false
