@@ -107,6 +107,20 @@ variable, underscore(`_`), to retrieve the result of the last expression.
 We can see in the above example we are using the `_` to access the last
 expressions value.
 
+## Group statements in ActiveRecord
+
+In Rails, `group` statements enable you to perform grouping and aggregation operations on data fetched from the database. Group statements allow you to mimic the behavior of the SQL `GROUP BY` clause, providing a convenient way to summarize and analyze data based on specific attributes or columns.
+
+Let's try to group the tasks by the hour of the `created_at` timestamp to see the number of tasks created in each hour.
+
+```ruby
+> Task.group("DATE(created_at)").count
+  Task Count (0.8ms)  SELECT COUNT(*) AS "count_all", DATE(created_at) AS "date_created_at" FROM "tasks" GROUP BY DATE(created_at)
+=> {Mon, 30 Mar 2020=>1}    
+```
+
+We can see that it returns a hash where the keys represent the dates extracted from the `created_at` datetime attribute, and the values represent the number of records that have the same date. As there is currently only one instance of the `Task` model, the count is one. However, creating and saving more tasks will demonstrate the full usefulness of `group` statements. You can learn more about `group` statements in the [official docs](https://guides.rubyonrails.org/active_record_querying.html#group). 
+
 ## Use c as a shortcut
 
 Rails console can be started by either of the following two commands:
