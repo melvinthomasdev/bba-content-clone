@@ -20,7 +20,7 @@ their children.
 Look at the following code:
 
 ```javascript
-<h1 id = "title">This is not tough!</h1>
+<h1 id="title">This is not tough!</h1>
 <p>It's really easy.</p>
 ```
 

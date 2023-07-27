@@ -17,27 +17,27 @@ and
 <panel language="html">
 <h3>Flex Direction: Row</h3>
 <div class="container row">
-  <div class = "inner-div">1</div>
-  <div class = "inner-div">2</div>
-  <div class = "inner-div">3</div>
+  <div class="inner-div">1</div>
+  <div class="inner-div">2</div>
+  <div class="inner-div">3</div>
 </div>
 <h3>Flex Direction: Row Reverse</h3>
 <div class="container row-rev">
-  <div class = "inner-div">1</div>
-  <div class = "inner-div">2</div>
-  <div class = "inner-div">3</div>
+  <div class="inner-div">1</div>
+  <div class="inner-div">2</div>
+  <div class="inner-div">3</div>
 </div>
 <h3>Flex Direction: Column</h3>
 <div class="container col">
-  <div class = "inner-div">1</div>
-  <div class = "inner-div">2</div>
-  <div class = "inner-div">3</div>
+  <div class="inner-div">1</div>
+  <div class="inner-div">2</div>
+  <div class="inner-div">3</div>
 </div>
 <h3>Flex Direction: Column Reverse</h3>
 <div class="container col-rev">
-  <div class = "inner-div">1</div>
-  <div class = "inner-div">2</div>
-  <div class = "inner-div">3</div>
+  <div class="inner-div">1</div>
+  <div class="inner-div">2</div>
+  <div class="inner-div">3</div>
 </div>
 </panel>
 <panel language="css">

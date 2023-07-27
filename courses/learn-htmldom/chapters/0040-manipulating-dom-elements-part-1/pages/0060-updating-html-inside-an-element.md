@@ -11,7 +11,7 @@ its `innerHTML` property.
     <span>in </span>
     <span>this </span>
     <span>ecosystem</span>
-    <img src = "shih-tzu-dog-01.jpg" width = "350px">
+    <img src="shih-tzu-dog-01.jpg" width="350px">
 </p>
 </panel>
 <panel language="javascript">

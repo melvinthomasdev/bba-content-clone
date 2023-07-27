@@ -12,7 +12,7 @@ can put in a `footer`.
 <main>
     <h2>Is everyone fine on the spaceship?</h2>
     <p>There have been rumors about the safety of the space pilots.</p>
-    <img src = "">
+    <img src="">
     <p>We need to ensure that no harm comes to these people.</p>
 </main>
     <p> Copyright 1999-2022 by Ref DT. All Rights Reserved. </p>
@@ -34,7 +34,7 @@ in a footer as shown below:
 <div>
     <h2>Is everyone fine on the spaceship?</h2>
     <p>There have been rumors about the safety of the space pilots.</p>
-    <img src = "">
+    <img src="">
     <p>We need to ensure that no harm comes to these people.</p>
 </div>
 <footer>
@@ -54,7 +54,7 @@ Take a look at the following example:
     <head>
     </head>
     <body>
-        <img src = "#">
+        <img src="#">
         <h1>5 Reasons why HTML is the King!</h1>
         <p>In this study, we'll list 10 reasons why HTML is one of the most important languages invented on the web.</p>
         <ol>
@@ -79,7 +79,7 @@ using the `footer` tag.
     <head>
     </head>
     <body>
-        <img src = "#">
+        <img src="#">
         <h1>5 Reasons why HTML is the King!</h1>
         <p>In this study, we'll list 10 reasons why HTML is one of the most important languages invented on the web.</p>
         <ol>

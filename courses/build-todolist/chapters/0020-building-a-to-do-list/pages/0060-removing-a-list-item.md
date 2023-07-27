@@ -20,12 +20,12 @@ We'll use the `remove` method.
 <codeblock language="javascript" type="lesson">
 <code>
 <panel language="html">
-<div class = "container">
-  <section id = "user-input">
-    <input type = "text" placeholder = "Add a todo item"/>
-    <input type = "submit" value = "Add">
+<div class="container">
+  <section id="user-input">
+    <input type="text" placeholder="Add a todo item"/>
+    <input type="submit" value="Add">
   </section>
-  <section id = "to-do-list">
+  <section id="to-do-list">
     <ul>
     </ul>
   </section>

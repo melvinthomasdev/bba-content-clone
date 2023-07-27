@@ -6,19 +6,19 @@ For this, we use the `class` attribute.
 <code>
 <h1>Let's Learn</h1>
 
-<p class = "brilliant-learning-resources">
+<p class="brilliant-learning-resources">
   Google
-  <a href="https://google.com" class = "link-to-the-resource">Click Here</a>
+  <a href="https://google.com" class="link-to-the-resource">Click Here</a>
 </p>
 
-<p class = "brilliant-learning-resources">
+<p class="brilliant-learning-resources">
   Wikipedia
-  <a href="https://www.wikipedia.org/" class = "link-to-the-resource">Click Here</a>
+  <a href="https://www.wikipedia.org/" class="link-to-the-resource">Click Here</a>
 </p>
 
-<p class = "brilliant-learning-resources">
+<p class="brilliant-learning-resources">
   Dictionary
-  <a href="https://www.dictionary.com/" class = "link-to-the-resource">Click Here</a>
+  <a href="https://www.dictionary.com/" class="link-to-the-resource">Click Here</a>
 </p>
 </code>
 </codeblock>

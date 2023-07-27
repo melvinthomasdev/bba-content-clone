@@ -5,9 +5,9 @@ Look at the code given below:
 <panel language="html">
 <h2 class="all-headings">No control over when this text changed!</h2>
 <h2 class="all-headings">Complete control over when this text changes</h2>
-<button value = "xx-large">Large Text</button>
-<button value = "large">Normal Text</button>
-<button value = "xx-small">Small Text</button>
+<button value="xx-large">Large Text</button>
+<button value="large">Normal Text</button>
+<button value="xx-small">Small Text</button>
 </panel>
 <panel language="javascript">
 let unControlledHeading = document.querySelectorAll(".all-headings")[0];

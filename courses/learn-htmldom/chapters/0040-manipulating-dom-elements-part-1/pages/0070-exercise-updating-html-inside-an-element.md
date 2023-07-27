@@ -5,7 +5,7 @@ with the id **root** using the
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<div id = "root">
+<div id="root">
   <h2>Another Day</h2>
   <p>Another awakening</p>
 </div>

@@ -6,7 +6,7 @@ the `article` element.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<article id = "main-article">
+<article id="main-article">
   <h2>Uncharted Territories</h2>
 </article>
 </panel>

@@ -10,10 +10,10 @@ Set the `class` attribute of all the headings to **subjects**.
 </code>
 
 <solution>
-<h2 class = "subjects">HTML</h2>
-<h2 class = "subjects">CSS</h2>
-<h2 class = "subjects">JavaScript</h2>
-<h2 class = "subjects">Ruby</h2>
-<h2 class = "subjects">Python</h2>
+<h2 class="subjects">HTML</h2>
+<h2 class="subjects">CSS</h2>
+<h2 class="subjects">JavaScript</h2>
+<h2 class="subjects">Ruby</h2>
+<h2 class="subjects">Python</h2>
 </solution>
 </codeblock>

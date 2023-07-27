@@ -7,9 +7,9 @@ Default value for this property is **both** which allows resizing in both vertic
 <panel language="html">
 <form>
   <p>Try dragging the resizer and notice that you can resize it only vertically:</p>
-  <textarea id = "vertical-resizer" rows="4" placeholder="Your Comments Here"></textarea>
+  <textarea id="vertical-resizer" rows="4" placeholder="Your Comments Here"></textarea>
   <p>Try dragging the resizer and notice that you can resize it only horizontally:</p>
-  <textarea id = "horizontal-resizer" rows="4" placeholder="Your Comments Here"></textarea>
+  <textarea id="horizontal-resizer" rows="4" placeholder="Your Comments Here"></textarea>
 </form>
 </panel>
 <panel language="css">

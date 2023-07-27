@@ -9,7 +9,7 @@ if you want to take a look.
 <panel language="html">
 <label for="result">
   Result:
-<input type="text" id = "result">
+<input type="text" id="result">
 </label>
 </panel>
 <panel language="javascript">

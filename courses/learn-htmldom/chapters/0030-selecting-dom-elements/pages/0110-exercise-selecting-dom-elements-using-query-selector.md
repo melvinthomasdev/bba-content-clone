@@ -20,8 +20,8 @@ of selectors.
 <panel language="html">
 <section>
   <div>Tag</div>
-  <div class = "div-class">Class</div>
-  <div class = "div-class" id = "div-id">ID</div>
+  <div class="div-class">Class</div>
+  <div class="div-class" id="div-id">ID</div>
 </section>
 </panel>
 <panel language="css">

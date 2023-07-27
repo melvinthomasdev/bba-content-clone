@@ -19,8 +19,8 @@ with all the links inside the
     <div>
         <h2>Examinations and Results</h2>
 		<ul>
-			<li><a href = "/exams">Exams</li>
-			<li><a href = "/results">Results</li>
+			<li><a href="/exams">Exams</li>
+			<li><a href="/results">Results</li>
 		</ul>
     </div>
     <div>
@@ -47,8 +47,8 @@ with all the links inside the
 <div>
 	<h2>Examinations and Results</h2>
 	<ul>
-		<li><a href = "/exams">Exams</li>
-		<li><a href = "/results">Results</li>
+		<li><a href="/exams">Exams</li>
+		<li><a href="/results">Results</li>
 	</ul>
 </div>
 <div>

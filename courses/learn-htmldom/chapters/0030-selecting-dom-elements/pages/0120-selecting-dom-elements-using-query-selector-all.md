@@ -18,8 +18,8 @@ you can convert it to an array using
 <panel language="html">
 <h2>Interesting Choice of Words</h2>
 <p>A paragraph that states nothing new.</p>
-<p class = "interesting-paragraph">A paragraph that could have been interesting.</p>
-<p id = "brutal-paragraph"><span>This</span> paragraph <span>doesn't</span> inspire.</p>
+<p class="interesting-paragraph">A paragraph that could have been interesting.</p>
+<p id="brutal-paragraph"><span>This</span> paragraph <span>doesn't</span> inspire.</p>
 </panel>
 <panel language="javascript">
 let allParagraphs = document.querySelectorAll('p');

@@ -8,7 +8,7 @@ should increase to `300px`.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<img src = "shih-tzu-dog-03.jpg">
+<img src="shih-tzu-dog-03.jpg">
 </img>
 </panel>
 <panel language="css">

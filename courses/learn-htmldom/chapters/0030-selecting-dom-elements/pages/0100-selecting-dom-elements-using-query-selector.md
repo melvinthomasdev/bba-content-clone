@@ -13,8 +13,8 @@ id name or any complex selector too.
 <panel language="html">
 <h2>Interesting Choice of Words</h2>
 <p>A paragraph that states nothing new.</p>
-<p class = "interesting-paragraph">A paragraph that could have been interesting.</p>
-<p id = "brutal-paragraph">This paragraph <span>doesn't</span> inspire.</p>
+<p class="interesting-paragraph">A paragraph that could have been interesting.</p>
+<p id="brutal-paragraph">This paragraph <span>doesn't</span> inspire.</p>
 </panel>
 <panel language="javascript">
 let firstParagraph = document.querySelector('p');

@@ -10,9 +10,9 @@ Check if the buttons are working:
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<button id = "hide-text">Hide the text</button>
+<button id="hide-text">Hide the text</button>
 <p>Is this text visible?</p>
-<button id = "show-text">Show the text</button>
+<button id="show-text">Show the text</button>
 </panel>
 <panel language="javascript">
 let hideText = document.querySelector("#hide-text");

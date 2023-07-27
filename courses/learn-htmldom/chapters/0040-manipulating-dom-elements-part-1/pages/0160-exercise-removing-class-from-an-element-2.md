@@ -7,7 +7,7 @@ property.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<div class = "company-border company-card">
+<div class="company-border company-card">
   <h3>Shell Corporate Inc.</h3>
   <p>Legitimate Businesses for the common folk.</p>
 </div>

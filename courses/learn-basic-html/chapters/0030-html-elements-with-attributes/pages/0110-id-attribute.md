@@ -6,12 +6,12 @@ For this, we use the `id` attribute.
 <code>
 <h1>Countries</h1>
 
-<p class = "countries" id = "malaysia">
+<p class="countries" id="malaysia">
   Malaysia
   <a href="https://www.malaysia.travel/">Travel</a>
 </p>
 
-<p class = "countries" id = "egypt">
+<p class="countries" id="egypt">
   Egypt
   <a href="http://egypt.travel/">Travel</a>
 </p>

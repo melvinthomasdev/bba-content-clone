@@ -4,7 +4,7 @@ element using the `classList` property.
 <codeblock language="javascript" type="lesson">
 <code>
 <panel language="html">
-<h1 class = "highlight complete">Our app will take you places!</h1>
+<h1 class="highlight complete">Our app will take you places!</h1>
 </panel>
 <panel language="css">
 .highlight {

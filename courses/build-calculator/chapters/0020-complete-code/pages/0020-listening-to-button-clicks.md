@@ -20,31 +20,31 @@ the section `actions`.
 <panel language="html">
 <div class="container">
   <div class="calculator">
-    <p id = "result">0</p>
+    <p id="result">0</p>
     <section id="actions">
       <section class="action-values">
-        <button class = "action-value numeral" id = "numeral-one">1</button>
-        <button class = "action-value numeral" id = "numeral-two">2</button>
-        <button class = "action-value numeral" id = "numeral-three">3</button>
-        <button class = "action-value numeral" id = "numeral-four">4</button>
-        <button class = "action-value numeral" id = "numeral-five">5</button>
-        <button class = "action-value numeral" id = "numeral-six">6</button>
-        <button class = "action-value numeral" id = "numeral-seven">7</button>
-        <button class = "action-value numeral" id = "numeral-eight">8</button>
-        <button class = "action-value numeral" id = "numeral-nine">9</button>
-        <button class = "action-value" id = "decimal-point">.</button>
-        <button class = "action-value numeral" id = "numeral-zero">0</button>
-        <button class = "action-value" id = "action-equals">=</button>
+        <button class="action-value numeral" id="numeral-one">1</button>
+        <button class="action-value numeral" id="numeral-two">2</button>
+        <button class="action-value numeral" id="numeral-three">3</button>
+        <button class="action-value numeral" id="numeral-four">4</button>
+        <button class="action-value numeral" id="numeral-five">5</button>
+        <button class="action-value numeral" id="numeral-six">6</button>
+        <button class="action-value numeral" id="numeral-seven">7</button>
+        <button class="action-value numeral" id="numeral-eight">8</button>
+        <button class="action-value numeral" id="numeral-nine">9</button>
+        <button class="action-value" id="decimal-point">.</button>
+        <button class="action-value numeral" id="numeral-zero">0</button>
+        <button class="action-value" id="action-equals">=</button>
       </section>
       <section class="action-buttons">
-        <button class = "action-button" id = "clear-all">C</button>
-        <button class = "action-button" id = "action-remainder">%</button>
-        <button class = "action-button" id = "action-add">+</button>
-        <button class = "action-button" id = "action-subtract">-</button>
-        <button class = "action-button" id = "action-divide">÷</button>
-        <button class = "action-button" id = "action-multiply">×</button>
-        <button class = "action-button" id = "action-backspace">Del</button>
-        <button class = "action-button" id = "action-exponent">Exp</button>
+        <button class="action-button" id="clear-all">C</button>
+        <button class="action-button" id="action-remainder">%</button>
+        <button class="action-button" id="action-add">+</button>
+        <button class="action-button" id="action-subtract">-</button>
+        <button class="action-button" id="action-divide">÷</button>
+        <button class="action-button" id="action-multiply">×</button>
+        <button class="action-button" id="action-backspace">Del</button>
+        <button class="action-button" id="action-exponent">Exp</button>
       </section>
     </section>
   </div>

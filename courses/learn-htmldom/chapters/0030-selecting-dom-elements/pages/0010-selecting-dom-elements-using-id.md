@@ -19,10 +19,10 @@ a DOM object with properties.
 <codeblock language="javascript" type="lesson">
 <code>
 <panel language="html">
-<h2 class = "heading">The most inspiring words</h2>
-<p class = "textual-details" id = "win-inspiration">Win!</p>
-<p class = "textual-details" id = "movie-reference">You are the one!</p>
-<p class = "textual-details" id = "work-inspiration">Deadline!</p>
+<h2 class="heading">The most inspiring words</h2>
+<p class="textual-details" id="win-inspiration">Win!</p>
+<p class="textual-details" id="movie-reference">You are the one!</p>
+<p class="textual-details" id="work-inspiration">Deadline!</p>
 </panel>
 <panel language="javascript">
 let currentInspiration = document.getElementById('win-inspiration');

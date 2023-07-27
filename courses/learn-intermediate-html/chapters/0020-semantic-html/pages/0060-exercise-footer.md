@@ -34,7 +34,7 @@ a `footer` tag:
     <head>
     </head>
     <body>
-        <img src = "#">
+        <img src="#">
         <h1>5 Reasons why HTML is the King!</h1>
         <p>In this study, we'll list 10 reasons why HTML is one of the most important languages invented on the web.</p>
         <ol>
@@ -45,12 +45,12 @@ a `footer` tag:
             <li>An HTML only website can load really fast</li>
         </ol>
         <footer>
-			<a href = "/jobs">Careers</a>
-			<a href = "/contact">Contact</a>
-			<a href = "/about">About</a>
-			<a href = "/path">Path</a>
-			<a href = "/interviews">Interviews</a>
-			<a href = "/news">News</a>
+			<a href="/jobs">Careers</a>
+			<a href="/contact">Contact</a>
+			<a href="/about">About</a>
+			<a href="/path">Path</a>
+			<a href="/interviews">Interviews</a>
+			<a href="/news">News</a>
         </footer>
     </body>
 </html>

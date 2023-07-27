@@ -6,9 +6,9 @@ setting the `order` value to 1:
 <code>
 <panel language="html">
 <div class="container">
-  <img id="img1" src="pangarchulla-peak-joshimath.jpg" alt = "Pangarchulla Peak Joshimath">
-  <img src="parunthumpara-peermedu.jpg" alt = "Parunthumpara Peermedu">
-  <img src="fort-kochi-beach.jpg" alt = "Fort Kochi Beach">
+  <img id="img1" src="pangarchulla-peak-joshimath.jpg" alt="Pangarchulla Peak Joshimath">
+  <img src="parunthumpara-peermedu.jpg" alt="Parunthumpara Peermedu">
+  <img src="fort-kochi-beach.jpg" alt="Fort Kochi Beach">
 </div>
 </panel>
 <panel language="css">

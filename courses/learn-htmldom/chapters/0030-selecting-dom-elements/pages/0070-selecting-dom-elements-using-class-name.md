@@ -10,9 +10,9 @@ None of the array methods will work though.
 <codeblock language="javascript" type="lesson">
 <code>
 <panel language="html">
-<h2 class = "heading">The most inspiring words</h2>
-<p class = "inspirational-words">Win!</p>
-<p class = "inspirational-words">You are the one!</p>
+<h2 class="heading">The most inspiring words</h2>
+<p class="inspirational-words">Win!</p>
+<p class="inspirational-words">You are the one!</p>
 <p>Deadline!</p>
 </panel>
 <panel language="javascript">

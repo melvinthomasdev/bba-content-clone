@@ -4,7 +4,7 @@ HTML element using its `textContent` property.
 <codeblock language="javascript" type="lesson">
 <code>
 <panel language="html">
-<p id = "message">Congratulations</p>
+<p id="message">Congratulations</p>
 </panel>
 <panel language="javascript">
 let message = document.querySelector('#message');

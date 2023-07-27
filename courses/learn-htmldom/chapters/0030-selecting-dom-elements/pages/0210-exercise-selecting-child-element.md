@@ -13,7 +13,7 @@ the second value of the `children` list.
     <p>This is nested text.</p>
   </section>
   <p>This paragraph should have a border.</p>
-  <a href = "#">Third Child Element</a>
+  <a href="#">Third Child Element</a>
 </div>
 </panel>
 <panel language="javascript">

@@ -4,8 +4,8 @@ and show it in the console.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<div class = "container">
-  <section id = "view-point">
+<div class="container">
+  <section id="view-point">
     <h2>Important Viewpoint</h2>
     <p>No one is above the law</p>
   </section>

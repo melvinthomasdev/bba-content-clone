@@ -6,7 +6,7 @@ inside the `main` tag.
 <header>
 		<h1>Lorem Ipsum</h1>
 	</header>
-	<img src = "#" alt = "image description">
+	<img src="#" alt="image description">
 	<h2>Lorem Ipsum</h2>
 	<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
 </code>
@@ -16,7 +16,7 @@ inside the `main` tag.
 	<h1>Lorem Ipsum</h1>
 </header>
 <main>
-	<img src = "#" alt = "image description">
+	<img src="#" alt="image description">
 	<h2>Lorem Ipsum</h2>
 	<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
 </main>

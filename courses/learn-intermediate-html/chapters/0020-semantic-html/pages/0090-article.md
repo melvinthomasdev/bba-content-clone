@@ -16,9 +16,9 @@ Look at the following example:
     <h2>A new sun rises for the endangered frog species</h2>
     <p>
         A sudden increase in funding for the efforts to sustain the endangered frog species of the world has brought new life to the whole program.
-        <a href = "#">Read More</a>
+        <a href="#">Read More</a>
     </p>
-    <img src = "https://cff2.earth.com/uploads/2019/06/10163715/Poison-dart-frogs-are-able-to-develop-a-mental-map.jpg" width = "200px">
+    <img src="https://cff2.earth.com/uploads/2019/06/10163715/Poison-dart-frogs-are-able-to-develop-a-mental-map.jpg" width="200px">
 </article>
 </code>
 </codeblock>

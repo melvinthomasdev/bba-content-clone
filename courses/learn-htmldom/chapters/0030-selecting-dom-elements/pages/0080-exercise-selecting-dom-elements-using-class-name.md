@@ -13,13 +13,13 @@ Use only the `getElementsByClassName` selector.
 <code>
 <panel language="html">
 <p>
-  <span class = "full-moon">🌕</span>
-  <span class = "star">⭐</span>
-  <span class = "star">⭐</span>
-  <span class = "full-moon">🌕</span>
-  <span class = "star">⭐</span>
-  <span class = "star">⭐</span>
-  <span class = "full-moon">🌕</span>
+  <span class="full-moon">🌕</span>
+  <span class="star">⭐</span>
+  <span class="star">⭐</span>
+  <span class="full-moon">🌕</span>
+  <span class="star">⭐</span>
+  <span class="star">⭐</span>
+  <span class="full-moon">🌕</span>
 </p>
 </panel>
 <panel language="css">

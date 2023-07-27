@@ -30,8 +30,8 @@ that we just added in the text input element.
 <codeblock language="javascript" type="lesson">
 <code>
 <panel language="html">
-<input type = "text" placeholder = "Add a todo item"/>
-<input type = "submit" value = "Add">
+<input type="text" placeholder="Add a todo item"/>
+<input type="submit" value="Add">
 </panel>
 <panel language="css">
 p {

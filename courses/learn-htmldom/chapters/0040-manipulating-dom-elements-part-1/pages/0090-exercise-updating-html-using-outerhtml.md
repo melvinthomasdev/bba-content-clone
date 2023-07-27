@@ -5,7 +5,7 @@ holding the text **I have been changed!**.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<div id = "root">
+<div id="root">
   <h2>Original Work</h2>
   <p>Completely original writing!</p>
 </div>
