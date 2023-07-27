@@ -15,5 +15,8 @@
   slug: exercise-this-is-not-bound
   page_type: exercise
 - title: Arrow Function and `this`
-  slug: arrow-function-and-this
+  slug: arrow-function-and-this-1
   page_type: lesson
+- title: Exercise - Arrow Function and `this`
+  slug: exercise-arrow-function-and-this-1
+  page_type: exercise
