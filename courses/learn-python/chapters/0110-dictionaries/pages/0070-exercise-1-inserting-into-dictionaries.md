@@ -33,6 +33,6 @@ food_preferences["Marcus"] = "veg"
 food_preferences["Shekhar"] = "non-veg"
 
 # Print the dictionary
-print(preferences)
+print(food_preferences)
 </solution>
 </codeblock>
