@@ -9,7 +9,7 @@ to the console.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
-// Write code here 
+// Write code here
 </code>
 <solution>
 const getEvenStrings = arrayOfStrings => {
@@ -37,7 +37,6 @@ const testStringArray = ["Stingray", "Clownfish", "Shark", "Rattlesnake", "Cobra
 <testcase>
 <i>
 const testStringArray = ["Grizzly Bear", "Black Bear", "Polar Bear", "White Tiger", "Royal Bengal Tiger", "Siberian Tiger"];
-};
 </i>
 </testcase>
 </testcases>
