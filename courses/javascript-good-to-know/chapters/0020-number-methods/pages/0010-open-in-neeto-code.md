@@ -17,10 +17,10 @@ and
 <code>
 /*
 - Sign in with the same Google account
-  on both BB Academy and neetoCode.
 - As shown in the image above, click on the arrow icon
   to open the code snippets as a new project in your neetoCode
   account, with the lesson name added as the project name.
+  on both BB Academy and neetoCode.
 - Go through the page and familiarize yourself with the JavaScript Tab view.
 */
 </code>
