@@ -8,7 +8,7 @@ Use the image link: [https://ucarecdn.com/cdabb55b-931a-49fc-8f69-4339c3fc2607/]
 
 You can use the below codeblock to create the challenge:
 
-<codeblock language="css" type="lesson">
+<codeblock language="css" type="exercise" testMode="fixedInput" showRunCodeButton="false" >
 <code>
 <panel language="html" >
 <img src="https://ucarecdn.com/cdabb55b-931a-49fc-8f69-4339c3fc2607/" width="400">

@@ -15,7 +15,7 @@ the rectangles.
 
 You can use the below codeblock to create the challenge:
 
-<codeblock language="css" type="lesson">
+<codeblock language="css" type="exercise" testMode="fixedInput" showRunCodeButton="false" >
 <code>
 <panel language="html" >
 Red is beautiful.
