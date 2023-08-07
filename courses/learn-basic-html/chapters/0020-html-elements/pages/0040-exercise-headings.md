@@ -1,4 +1,4 @@
-Put "Hello World!" inside an `<h1>` element.
+Put **Hello World!** inside an `<h1>` element.
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>

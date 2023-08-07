@@ -20,6 +20,7 @@ Let us have a look at an example:
 <code>
 <h2>Address written with a p tag</h2>
 <p>128, Najafgarh Road, Nangloi, New Delhi</p>
+
 <h2>Address written with br tags in a p tag</h2>
 <p>128, Najafgarh Road,<br> Nangloi, <br> New Delhi</p>
 </code>

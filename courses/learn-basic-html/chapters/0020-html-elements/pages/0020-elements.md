@@ -12,12 +12,11 @@ Let us take the example of an `<h1>` element:
 </code>
 </codeblock>
 
-The `<h1>` at the beginning is called the **opening tag**, the 'Hello, World!' text is the **content** and the `</h1>` at the end is called the **closing tag**.
+The `<h1>` at the beginning is called the **opening tag**, the **Hello, World!** text is the **content** and the `</h1>` at the end is called the **closing tag**.
 
 <codeblock language="html" type="lesson">
 <code>
 <h1>This is a heading</h1>
-<br>
 <h1>This is another heading</h1>
 </code>
 </codeblock>

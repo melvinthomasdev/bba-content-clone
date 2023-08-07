@@ -30,13 +30,3 @@ For
 making these links work, we need to
 make them point to the `id` of
 a part of the same page.
-
-Also note that
-we need to use the `#` symbol before
-the `id` name in the link's `href`. So,
-for the internal link to point to
-the `micronation` section, we need to
-make the link's `href` point to the
-id of the `micronation` section.
-Something like this:
-`href="#micronation"`.
