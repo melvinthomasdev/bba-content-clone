@@ -71,3 +71,6 @@
 - title: Exercise - Selecting Elements Using dataset
   slug: exercise-selecting-elements-using-dataset
   page_type: exercise
+- title: HTML DOM Challenge - Selection
+  slug: html-dom-challenge-selection
+  page_type: exercise
