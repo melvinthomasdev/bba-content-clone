@@ -1,6 +1,7 @@
-The `min-height` property in CSS is used to
-set the minimum height of an element,
-ensuring it does not shrink below a certain height.
+If the content inside the element is larger
+than the value of min-height, the `min-height`
+property has no effect, and the element's `height`
+expands based on its content.
 
 <codeblock language="css" type="lesson">
 <code>
@@ -11,8 +12,6 @@ ensuring it does not shrink below a certain height.
     As the sun sets over Toronto, the skyline transforms into a captivating display of twinkling lights. The cityscape comes alive with a kaleidoscope of colors, illuminating the darkening horizon.
 
     The CN Tower takes center stage, its spire gleaming like a beacon in the night sky. The tranquil waters of Lake Ontario mirror this enchanting spectacle, adding to the city's allure under the moonlit sky.
-
-    Amidst the radiant skyline, a sense of community thrives as residents and visitors gather along the waterfront, savoring the cool breeze and the warm glow of the city lights.
   </p>
 </div>
 </panel>
@@ -36,4 +35,7 @@ p {
 </code>
 </codeblock>
 
-In the above example, we have applied the `min-height` property to the `p` element.
+In the above example, the paragraph content is
+larger than the `min-height`, which is set to `150px`.
+In this case, the `p` element will expand its
+`height` to fit the content adequately.

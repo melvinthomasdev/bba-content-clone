@@ -1,4 +1,4 @@
-Give a maximum width of `50%` to the `div` element
+Give a maximum width of `50%` to the `div` element.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>

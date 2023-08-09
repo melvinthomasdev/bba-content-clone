@@ -1,43 +1,36 @@
-The `max-height` property
-is used to define the
-maximum height of an element.
-
-If the content is smaller than the
-value of the `max-height`,
-this property has no effect.
-But, if the content is larger than the
-`max-height` value,
-the content overflows.
-
-When both `max-height` and `height` are defined,
-the smaller of the two values is applied, as can
-be seen in the code example given below:
+The `max-height` property in CSS is used to set
+the maximum height of an element, allowing us to
+restrict how tall the element can grow.
 
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
-<p id="first">
-  Web design encompasses many different skills and disciplines in the production and maintenance of websites.
-</p>
-<p id="second">
-  Web design encompasses many different skills and disciplines in the production and maintenance of websites.
-</p>
+<div class=main>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Toronto_skyline_%282800881676%29.jpg" alt="Toronto skyline">
+  <p>
+    As the sun sets over Toronto, the skyline transforms into a captivating display of twinkling lights. The cityscape comes alive with a kaleidoscope of colors, illuminating the darkening horizon.
+  </p>
+</div>
 </panel>
 <panel language="css">
-#first {
-  height: 100px;
-  max-height: 200px;
-  /* Least value is applied */
-  background-color: yellow;
+.main {
+  margin: 20px auto;
+  width: 600px;
 }
-#second {
-  height: 100px;
-  max-height: 25px;
-  /* Least value is applied */
-  background-color: orange;
+img {
+  height: 300px;
+  width: 600px;
+}
+p {
+  width: 550px;
+  border: 5px solid red;
+  padding: 20px;
+  margin-top: 20px;
+  max-height: 150px;
 }
 </panel>
 </code>
 </codeblock>
 
-The `p` tag with `first` id and a background color of yellow, gets a height of 100px because that is the smaller value between the `max-height` and `height` values. And, the `p` tag with id `second` and a background color of orange, gets a height of 25px because of the same reason.
+In the above example, we have applied the `max-height`
+property to the `p` element. This way, we can control its height.

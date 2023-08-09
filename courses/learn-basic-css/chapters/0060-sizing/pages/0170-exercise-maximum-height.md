@@ -1,4 +1,4 @@
-Give a maximum height of `30px` to the `div` element
+Give a maximum height of `30px` to the `div` element:
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>

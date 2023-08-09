@@ -50,7 +50,13 @@
 - title: Maximum Height
   slug: maximum-height
   page_type: lesson
-- title: Exercise - Maximum Height for div
+- title: Maximum Height 1
+  slug: maximum-height-1
+  page_type: lesson
+- title: Maximum Height 2
+  slug: maximum-height-2
+  page_type: lesson
+- title: Exercise - Maximum Height
   slug: exercise-maximum-height
   page_type: exercise
 - title: Exercise - Maximum Height
@@ -59,7 +65,13 @@
 - title: Maximum Width
   slug: maximum-width
   page_type: lesson
-- title: Exercise - Maximum Width for div
+- title: Maximum Width 1
+  slug: maximum-width-1
+  page_type: lesson
+- title: Maximum Width 2
+  slug: maximum-width-2
+  page_type: lesson
+- title: Exercise - Maximum Width
   slug: exercise-maximum-width
   page_type: exercise
 - title: Exercise - Maximum Width
@@ -68,11 +80,23 @@
 - title: Minimum Height
   slug: minimum-height
   page_type: lesson
+- title: Minimum Height 1
+  slug: minimum-height-1
+  page_type: lesson
+- title: Minimum Height 2
+  slug: minimum-height-2
+  page_type: lesson
 - title: Exercise - Minimum Height
   slug: exercise-minimum-height
   page_type: exercise
 - title: Minimum Width
   slug: minimum-width
+  page_type: lesson
+- title: Minimum Width 1
+  slug: minimum-width-1
+  page_type: lesson
+- title: Minimum Width 2
+  slug: minimum-width-2
   page_type: lesson
 - title: Exercise - Min Width
   slug: exercise-min-width
