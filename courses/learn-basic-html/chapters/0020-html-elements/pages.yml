@@ -5,6 +5,9 @@
 - title: Elements
   slug: elements
   page_type: lesson
+- title: Exercise - Elements
+  slug: exercise-elements
+  page_type: exercise
 - title: Headings
   slug: headings
   page_type: lesson
@@ -17,6 +20,9 @@
 - title: Exercise - Paragraph
   slug: exercise-paragraph
   page_type: exercise
+- title: List Items
+  slug: list-items
+  page_type: lesson
 - title: Unordered List
   slug: unordered-list
   page_type: lesson
@@ -37,6 +43,9 @@
   page_type: exercise
 - title: The div Element
   slug: the-div-element
+  page_type: lesson
+- title: The div Element 1
+  slug: the-div-element-1
   page_type: lesson
 - title: Exercise - The div Element
   slug: exercise-the-div-element

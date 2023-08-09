@@ -1,4 +1,5 @@
-Separate the following code in three different divs so that the similar parts of your HTML are grouped together:
+Separate the following code using three different div elements
+so that the similar parts of your HTML are grouped together:
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
