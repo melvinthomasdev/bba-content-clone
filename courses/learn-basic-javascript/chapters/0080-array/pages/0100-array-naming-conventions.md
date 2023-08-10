@@ -81,12 +81,15 @@ should be avoided.
 <code>
 // This is a good name. "fruits" is plural and descriptive
 const fruits = ["Apple", "Banana", "Orange"];
+console.log(fruits);
 
 // This is not a good name. bird is not a plural word
 const bird = ["Crow", "Owl", "Pigeon"];
+console.log(bird);
 
 // This is a bad name.
 // "sentences" is a plural word but the value is not an array
 const sentences = "This variable contains only a string and hence should not have a plural name. A better name would be paragraph or message.";
+console.log(sentences);
 </code>
 </codeblock>
