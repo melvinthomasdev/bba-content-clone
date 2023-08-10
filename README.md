@@ -188,6 +188,10 @@ The `checkForViews` attribute specifies which SQL views to check for when the st
 
 The `cache` attribute specifies if we want to save the expected output of solution against an exercise saved or not. It is considered to be true when not specified. If explicitly set to false, the expected output of the solution will not be saved against the exercise. It is turned on by default for the sake of speed in evaluation. Expected output against a solution once processed through judge0, is expected to be always the same, so it is saved in the db so that each future evaluation of exercises is faster by avoiding not running solution code through judge0. Exceptions are a few cases where the code involves generating random numbers, deals with date/time or expects the student to print an arbitrary value. In these cases, saving the expected output of code might fail in evaluation, so we can turn off caching of output code by setting this attribute to false in such cases.
 
+#### 3.16 `codeblock language="javascript" foldLines="1-3, 4-9"`
+
+The `foldLines` specifies the ranges of lines that should be folded on default load of the editor. You can specify one or more ranges, separated by comma. Each range should be specified as `startLine-endLine`. For example, `1-3, 4-9` will fold lines 1 to 3 and 4 to 9. This only works for editors that don't have panels. For editors with panels, you can use the `foldLines` attribute on the `panel` tag.
+
 ### 4. `panel`
 
 When a single language is not sufficient to run the code, we use multiple `<panel>` tags inside our `<codeblock>`.
@@ -200,6 +204,9 @@ Similar to `codeblock`, the `language` attribute in `panel` is used to specify t
 #### 4.2. `<panel hidden="true">`
 The `hidden` attribute is used to hide the code panel.
 For example, we might have added some CSS which is for styling the result. It might not specifically relate to the learnings in the lesson. In this case, we can hide the CSS `panel` using the `hidden` attribute.
+
+#### 4.3. `<panel foldLines="1-3, 4-9">`
+Similar to `codeblock`, the `foldLines` attribute is used to fold the lines of code on default load of the editor.
 
 ### 5. Writing code snippet
 
