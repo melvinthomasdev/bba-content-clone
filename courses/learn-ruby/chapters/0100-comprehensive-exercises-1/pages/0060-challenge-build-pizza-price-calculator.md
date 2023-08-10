@@ -1,18 +1,18 @@
 Given below is the
 menu of a pizza restaurant:
 
-|Veggie Pizza| $7 |
-|Chicken Pizza| $10 |
-|Cookies| $3 |
+- Veggie Pizza: $7
+- Chicken Pizza: $10
+- Cookies: $3
 
 Mary is having a party
 and
 she has ordered the following
 items:
 
-|Veggie Pizza| 5|
-|Chicken Pizza| 7|
-|Cookies | 20|
+- 5 Veggie Pizzas
+- 7 Chicken Pizzas
+- 20 Cookies
 
 Write a program that will
 print the total cost like this:
