@@ -156,39 +156,43 @@ The `showSolution` attribute determines if you want to show the candidate the so
 
 The `showRunCodeButton` attribute determines if you want to show the candidate the run code button on the editor toolbar or not. It is considered to be true when not specified. If explicitly set to false, the run code button on the editor toolbar will not be shown to the candidate.
 
-#### 3.8. `<codeblock packages="ramda, moment" >`
+#### 3.8. `<codeblock formatCodeByDefault="false" >`
+
+The `formatCodeByDefault` attribute determines whether you want to apply formatting to the solution code by default. It is considered to be true when not specified. If explicitly set to false, the solution code will not be formatted by default.
+
+#### 3.9. `<codeblock packages="ramda, moment" >`
 
 The `packages` attribute determines what other npm packages should be loaded while running the javascript code written by the student. It is considered to be empty when not specified. If explicitly set to a comma separated list of npm package names, those packages will be loaded while running the student's  code. This only works for javascript editors. Right now, only `ramda` is supported. If you come across a use case where you need to load other packages, please reach out to neetoCourse dev team to check if that package can be supported or not.
 
-#### 3.9. `<codeblock images="view-from-a-plane.jpg, view-from-a-chopper.jpg" >`
+#### 3.10. `<codeblock images="view-from-a-plane.jpg, view-from-a-chopper.jpg" >`
 
 The `images` attribute what images should be loaded while running the student's code. It is considered to be empty when not specified. If explicitly set to a comma separated list of image names, those images will be loaded while running the student's  code. This works for javascript/html/css editors. The images should be present in the `images` directory of the chapter. Usually, when saving content in neetoCourse, the logic automatically scans if an editor should be preloaded with an image/ a set of images or not. But there can be explicit cases. For example, you may provide a directive to a student with an image without src, and ask them to change the src to one of the other images. For the changed code to load the image correctly in the browser that displays resultant html, the editor needs to know about the images it has to keep ready. In such cases, you can use the `images` attribute.
 
-#### 3.10. `<codeblock dbName="students1.db" >`
+#### 3.11. `<codeblock dbName="students1.db" >`
 
 The `dbName` attribute specifies what sqlite db to load for display and to run queries on when it is an SQL editor. It is a required attribute if you set `language="sql"` on a codeblock. The db should be present in the `assets/databases` directory in the repository root, and should be mentioned in the assets.yml file in the course root.
 
-#### 3.11. `<codeblock dbName="students1.db" displayDbOnly="true" >`
+#### 3.12. `<codeblock dbName="students1.db" displayDbOnly="true" >`
 
 The `displayDbOnly` attribute specifies if the db should be loaded only for display purposes or not. It is considered to be false when not specified. If explicitly set to true, only the database tables will show up. This means that there will be no editor that shows up and the student will not be able to run queries on the db. This only works for SQL editors.
 
-#### 3.12. `<codeblock dbName="students1.db" focusTableBeforeRun="students" >`
+#### 3.13. `<codeblock dbName="students1.db" focusTableBeforeRun="students" >`
 
 The `focusTableBeforeRun` attribute specifies what table should be shown (focussed on) to the student when the db loads up below the editor. By default, the first table in the list of tables in the db is shown. The other tables can be accessed using tabs. When explicitly specified, the table mentioned in the attribute will be focussed to the student. This only works for SQL editors.
 
-#### 3.13. `<codeblock dbName="students1.db" focusTableAfterRun="students" >`
+#### 3.14. `<codeblock dbName="students1.db" focusTableAfterRun="students" >`
 
 The `focusTableAfterRun` attribute specifies what table should be shown (focussed on) to the student when a query by the student is run successfully on the db. By default, the query output tab is shown. The other tables can be accessed using tabs. But you can think of a case where you expect the candidate's query to change some state in a table that's not the first in the list of tables. For better UX, we may want to focus on that table if the query is run successfully. When explicitly specified, the table mentioned in the attribute will be focussed to the student post the query run. This only works for SQL editors.
 
-#### 3.14. `<codeblock dbName="students1.db" checkForViews="studentsData" >`
+#### 3.15. `<codeblock dbName="students1.db" checkForViews="studentsData" >`
 
 The `checkForViews` attribute specifies which SQL views to check for when the student's query is run. It is considered to be empty when not specified. If explicitly set to a comma separated list of view names, those views will be checked for when the student's query is run. If the student's query does not match the expected output of the view, the student's query is considered to be wrong. This only works for SQL exercise editors.
 
-#### 3.15. `<codeblock language="ruby" cache="false" >`
+#### 3.16. `<codeblock language="ruby" cache="false" >`
 
 The `cache` attribute specifies if we want to save the expected output of solution against an exercise saved or not. It is considered to be true when not specified. If explicitly set to false, the expected output of the solution will not be saved against the exercise. It is turned on by default for the sake of speed in evaluation. Expected output against a solution once processed through judge0, is expected to be always the same, so it is saved in the db so that each future evaluation of exercises is faster by avoiding not running solution code through judge0. Exceptions are a few cases where the code involves generating random numbers, deals with date/time or expects the student to print an arbitrary value. In these cases, saving the expected output of code might fail in evaluation, so we can turn off caching of output code by setting this attribute to false in such cases.
 
-#### 3.16 `codeblock language="javascript" foldLines="1-3, 4-9"`
+#### 3.17 `codeblock language="javascript" foldLines="1-3, 4-9"`
 
 The `foldLines` specifies the ranges of lines that should be folded on default load of the editor. You can specify one or more ranges, separated by comma. Each range should be specified as `startLine-endLine`. For example, `1-3, 4-9` will fold lines 1 to 3 and 4 to 9. This only works for editors that don't have panels. For editors with panels, you can use the `foldLines` attribute on the `panel` tag.
 
