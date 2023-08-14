@@ -1,7 +1,6 @@
 In the code given below, create a variable named `priceOfPencil`.
 Then assign the value `5` to that variable.
-and
-use the variable name
+Use the variable name
 wherever the price of a pencil
 is used.
 
