@@ -4,7 +4,7 @@ stores the value of
 **3**.
 Create another variable
 `secondNumber` which
-stores the value **5**
+stores the value **5**.
 
 Increase the value of
 `firstNumber` by one.
