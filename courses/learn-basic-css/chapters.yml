@@ -7,22 +7,22 @@
   slug: css-selectors
 - name: Colors
   slug: colors
-- name: CSS MCQ
-  slug: css-mcq-01
+- name: CSS Quiz
+  slug: css-quiz-01
 - name: Sizing
   slug: sizing
 - name: Comprehensive Exercise 01
   slug: css-comprehensive-exercise-01
 - name: Spacing
   slug: spacing
-- name: CSS MCQ
-  slug: css-mcq-02
+- name: CSS Quiz
+  slug: css-quiz-02
 - name: Text Formatting
   slug: text-formatting
 - name: Backgrounds
   slug: backgrounds
-- name: CSS MCQ
-  slug: css-mcq-03
+- name: CSS Quiz
+  slug: css-quiz-03
 - name: Borders
   slug: borders
 - name: Opacity
@@ -31,8 +31,8 @@
   slug: display
 - name: Styling Links
   slug: styling-links
-- name: CSS MCQ
-  slug: css-mcq-04
+- name: CSS Quiz
+  slug: css-quiz-04
 - name: Comprehensive Exercise 02
   slug: css-comprehensive-exercise-02
 - name: Styling Lists
