@@ -45,7 +45,7 @@ perform the following steps:
 const pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
 // Write your code below this line
 
-removeTeamMember(pets);
+removeLastMember(pets);
 </code>
 
 <solution>
@@ -56,7 +56,7 @@ const removeLastMember = (list) => {
   console.log(list);
 };
 
-removeTeamMember(pets);
+removeLastMember(pets);
 </solution>
 </codeblock>
 

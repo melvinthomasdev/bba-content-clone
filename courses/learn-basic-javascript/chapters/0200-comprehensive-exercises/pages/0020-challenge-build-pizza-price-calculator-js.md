@@ -51,7 +51,7 @@ function priceCalculator(menu, order) {
 	const total_cookies_cost = menu["chocolate_cookie"] * order["chocolate_cookie"];
 	const total_shake_cost = menu["vanilla_shake"] * order["vanilla_shake"];
 
-	const total_order_cost = total_veggie_pizza_cost + total_chicken_pizza_cost + total_cookies_cost;
+	const total_order_cost = total_veggie_pizza_cost + total_chicken_pizza_cost + total_cookies_cost + total_shake_cost;
 
 	console.log(`Total cost of your order is ${total_order_cost}`);
 };
@@ -66,7 +66,7 @@ const testMenu = {
 	"veggie_pizza": 20,
 	"chicken_pizza": 24,
 	"chocolate_cookie": 10,
-  "vanilla_shake": $15
+  "vanilla_shake": 15
 };
 const testOrder = {
 	"veggie_pizza": 12,
@@ -82,7 +82,7 @@ const testMenu = {
 	"veggie_pizza": 50,
 	"chicken_pizza": 80,
 	"chocolate_cookie": 4,
-  "vanilla_shake": $10
+  "vanilla_shake": 10
 };
 const testOrder = {
 	"veggie_pizza": 14,
