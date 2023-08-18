@@ -5,8 +5,8 @@
 - title: Exercise - Images
   slug: exercise-images
   page_type: exercise
-- title: Exercise - Images 2
-  slug: exercise-images-02
+- title: Exercise - Display image
+  slug: exercise-display-image
   page_type: exercise
 - title: Links
   slug: links
@@ -14,6 +14,12 @@
 - title: Exercise - Links
   slug: exercise-links
   page_type: exercise
+- title: Creating links with HTML Elements
+  slug: creating-links-with-html-elements
+  page_type: lesson
+- title: Exercise - Creating links with HTML Elements
+  slug: exercise-creating-links-with-html-elements
+  page_type: lesson
 - title: "`alt` in `img` Tag"
   slug: alt-in-img-tag
   page_type: lesson
@@ -32,6 +38,9 @@
 - title: Exercise - Attributes
   slug: exercise-attributes
   page_type: exercise
+- title: Adding multiple attributes to HTML Elements
+  slug: adding-multiple-attributes-to-html-elements
+  page_type: lesson
 - title: Class Attribute
   slug: class-attribute
   page_type: lesson

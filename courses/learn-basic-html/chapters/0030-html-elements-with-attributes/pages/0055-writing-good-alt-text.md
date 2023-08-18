@@ -1,21 +1,15 @@
-A **good** **`alt`** text provides a concise and descriptive summary
-of the image, by conveying relevant details and context. While,
-a `alt` text is considered **bad** if it lacks information, duplicates
-existing text, or provide inaccurate or unrelated descriptions.
+A **good** `alt` text is a brief
+and
+descriptive summary of an image.
+It should provide relevant
+details and context of the image.
 
-In case of **decorative images** the alt text should be **empty**, as these
-images don't add any information to the content of a page and therefore
-should be ignored by screen readers.
+A **bad** `alt` text lacks information,
+duplicates existing text, or provides
+inaccurate or unrelated descriptions.
 
-Examples of decorative images:
-
-1. Images that act as corners, spacers, and borders.
-2. Images that are placed next to text, to serve as **ambience**.
-
-Writing phrases like **image of** or **photo of** in alt text is not needed,
-as screen readers announce the type of content before reading the alt text.
-
-Let's look at some examples of good and bad **alt text**:
+Let's look at some examples of good and 
+bad `alt` text:
 
 <codeblock language="html" type="lesson">
 <code>
@@ -55,3 +49,11 @@ Bad
 <img src="#"  alt="https://ucarecdn.com/ef793589-6678-4b55-b0b3-8346dfcfea44/" width="10%">
 </code>
 </codeblock>
+
+## Note
+For decorative images, it is recommended
+to leave the alt text empty.
+
+Decorative images don't add any information
+to the page content and are meant to be
+ignored by screen readers.

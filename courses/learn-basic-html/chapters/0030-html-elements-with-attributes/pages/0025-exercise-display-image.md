@@ -4,10 +4,10 @@ so that the image becomes visible.
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
-<img scr="view-from-a-balcony.png" alt="view from a balcony" width="150px">
+<img scr="https://ucarecdn.com/b9721aee-1c09-4d0c-9bcb-8969afe2751e/-/resize/400x/">
 </code>
 
 <solution>
-<img src="view-from-a-balcony.png" alt="view from a balcony" width="150px">
+<img src="https://ucarecdn.com/b9721aee-1c09-4d0c-9bcb-8969afe2751e/-/resize/400x/">
 </solution>
 </codeblock>
