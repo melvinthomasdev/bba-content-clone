@@ -41,6 +41,12 @@
 - title: Exercise - Ternary Operator
   slug: exercise-ternary-operator
   page_type: exercise
+- title: Exercise - Positive or Negative number
+  slug: exercise-positive-or-negative-number
+  page_type: exercise
+- title: Exercise - Find Maximum Number
+  slug: exercise-find-maximum-number
+  page_type: exercise
 - title: JS Challenge - Array methods and Conditionals
   slug: js-challenge-array-methods-conditionals
   page_type: exercise
