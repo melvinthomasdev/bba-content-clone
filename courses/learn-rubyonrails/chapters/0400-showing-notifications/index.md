@@ -252,7 +252,7 @@ export { TOASTR_OPTIONS };
 Let's add a webpack alias for the constants directory. Append the following into
 the `alias` key in `config/webpack/resolve.js`:
 
-```javascript {7}
+```javascript {8}
 // Rest of the code if any
 
 module.exports = {
@@ -376,7 +376,7 @@ it will be logged to the console and an empty string will be returned.
 Now let's add a webpack alias for these helpers. Append the following into the
 `alias` key in `config/webpack/resolve.js`:
 
-```javascript {5}
+```javascript {9}
 // Rest of the code if any
 
 module.exports = {
