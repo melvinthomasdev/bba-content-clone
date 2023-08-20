@@ -11,6 +11,12 @@
 - title: Naming Variables
   slug: naming-variables
   page_type: lesson
+- title: Naming Variables - camelCase
+  slug: naming-variables-camelcase
+  page_type: lesson
+- title: Exercise - Naming Variables - camelCase
+  slug: exercise-naming-variables-camelcase
+  page_type: exercise
 - title: const
   slug: const
   page_type: lesson
