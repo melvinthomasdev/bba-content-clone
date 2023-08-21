@@ -47,6 +47,12 @@
 - title: Exercise - Class Attribute
   slug: exercise-class-attribute
   page_type: exercise
+- title: Adding multiple class
+  slug: adding-multiple-class
+  page_type: lesson
+- title: Exercise - Adding multiple class
+  slug: exercise-adding-multiple-class
+  page_type: exercise
 - title: ID Attribute
   slug: id-attribute
   page_type: lesson
