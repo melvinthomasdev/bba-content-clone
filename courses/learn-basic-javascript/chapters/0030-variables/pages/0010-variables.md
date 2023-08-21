@@ -53,11 +53,8 @@ In the above example:
   We say that the value `120`
   is assigned to the variable `length`.
 
-- Once the variable is created,
-  we can use the variable name,
-  i.e., `length` in the example above,
-  wherever we need to use the value
-  that is assigned to it.
+- Now that we have the variable `length`,
+  let's replace `120` with this variable.
 
 - `const` is a keyword
   used to create a variable.
