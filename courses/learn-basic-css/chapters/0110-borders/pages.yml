@@ -20,6 +20,9 @@
 - title: Exercise - Border Style with Four Values
   slug: exercise-border-style-four-values
   page_type: exercise
+- title: Border Style - Final exercise
+  slug: border-style-final-exercise
+  page_type: exercise
 - title: Border Width
   slug: border-width
   page_type: lesson
@@ -38,6 +41,9 @@
 - title: Exercise - Border Width with Four Values
   slug: exercise-border-width-four-values
   page_type: exercise
+- title: Border Width - Final Exercise
+  slug: border-width-final-exercise
+  page_type: exercise
 - title: Border Color
   slug: border-color
   page_type: lesson
@@ -55,6 +61,9 @@
   page_type: exercise
 - title: Exercise - Border Color with Four Values
   slug: exercise-border-color-four-values
+  page_type: exercise
+- title: Border Color - Final Exercise
+  slug: border-color-final-exercise
   page_type: exercise
 - title: Border Sides
   slug: border-sides
@@ -76,6 +85,9 @@
   page_type: exercise
 - title: Exercise - Border Shorthand Property for Individual Side
   slug: exercise-border-shorthand-individual-side
+  page_type: exercise
+- title: Side border - Final exercise
+  slug: side-border-final-exercise
   page_type: exercise
 - title: Rounded Corners
   slug: rounded-corners
@@ -100,4 +112,7 @@
   page_type: lesson
 - title: Exercise - Border Radius Individual Properties
   slug: exercise-border-radius-individual-properties
+  page_type: exercise
+- title: Border Radius - Final exercise
+  slug: border-radius-final-exercise
   page_type: exercise
