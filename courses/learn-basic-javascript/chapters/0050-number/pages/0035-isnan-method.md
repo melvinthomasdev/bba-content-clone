@@ -16,7 +16,8 @@ an output **false**.
 Now consider the following examples:
 <codeblock language="javascript" type="lesson">
 <code>
-console.log(isNaN("Good Morning!"));
+const greeting = "Good Morning!";
+console.log(greeting, isNaN(greeting));
 
 const string = "Hello!";
 console.log(string, isNaN(string));
