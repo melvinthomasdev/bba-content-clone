@@ -47,6 +47,12 @@
 - title: Exercise - Find Maximum Number
   slug: exercise-find-maximum-number
   page_type: exercise
-- title: JS Challenge - Array methods and Conditionals
+- title: JS Challenge - Array methods and Conditionals Part 1
   slug: js-challenge-array-methods-conditionals
+  page_type: exercise
+- title: JS Challenge - Array methods and Conditionals Part 2
+  slug: js-challenge-array-methods-conditionals-part-2
+  page_type: exercise
+- title: JS Challenge - Array methods and Conditionals Part 3
+  slug: js-challenge-array-methods-conditionals-part-3
   page_type: exercise
