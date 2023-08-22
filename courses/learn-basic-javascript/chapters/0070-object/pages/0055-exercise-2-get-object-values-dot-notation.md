@@ -8,15 +8,15 @@ primary language spoken.
 Properties of the object are
 as follows:
 
-| Key         | Value     |
-| ----------- | --------- |
-| punjab      | "Punjabi" |
-| gujrat      | "Gujrati" |
-| maharashtra | "Marathi" |
-| karnataka   | "Kannad"  |
-| tamilNadu   | "Tamil"   |
+| Key         | Value      |
+| ----------- | ---------- |
+| punjab      | "Punjabi"  |
+| gujarat     | "Gujarati" |
+| maharashtra | "Marathi"  |
+| karnataka   | "Kannada"  |
+| tamilNadu   | "Tamil"    |
 
-Later, log the value of `gujrat`
+Later, log the value of `gujarat`
 and `tamilNadu` to the console
 using dot notation.
 
@@ -25,15 +25,15 @@ using dot notation.
 // Write your code here
 </code>
 <solution>
-const statesOfIndia ={
+const statesOfIndia = {
   punjab: "Punjabi",
-  gujrat: "Gujrati",
+  gujarat: "Gujarati",
   maharashtra: "Marathi",
-  karnataka: "Kannad",
+  karnataka: "Kannada",
   tamilNadu: "Tamil"
 };
 
-console.log(statesOfIndia.gujrat);
+console.log(statesOfIndia.gujarat);
 console.log(statesOfIndia.tamilNadu);
 </solution>
 </codeblock>
