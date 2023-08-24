@@ -1,4 +1,4 @@
-Set `customer.lastName` to `R R Martin` in the given object `book`. Make sure that `firstName` doesn't get deleted.
+Set `author.lastName` to `R R Martin` in the given object `book`. Make sure that `firstName` doesn't get deleted.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" packages="ramda">
 <code>
