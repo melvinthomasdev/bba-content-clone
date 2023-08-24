@@ -11,3 +11,6 @@
 - title: Exercise - Execute a function and Get New Array
   slug: exercise-map
   page_type: exercise
+- title: Difference between forEach and map
+  slug: difference-foreach-map
+  page_type: lesson
