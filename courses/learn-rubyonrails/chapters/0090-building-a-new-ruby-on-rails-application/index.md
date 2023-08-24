@@ -17,7 +17,7 @@ React.js.
 
 ## Live application
 
-[Here's](https://granite-production.neetoreviewapp.net/) the working demo of the
+[Here's](https://granite-production.neetodeployapp.com/) the working demo of the
 application.
 
 Use the following credentials to login:
