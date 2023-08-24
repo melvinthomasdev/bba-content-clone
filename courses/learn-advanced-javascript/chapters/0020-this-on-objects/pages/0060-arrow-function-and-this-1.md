@@ -55,6 +55,6 @@ admin.displayGreeting();
 </code>
 </codeblock>
 
-"In the above code, in the arrow function method,
+In the above code, in the arrow function method,
 `this.fullName` refers to`window.fullName` which
 we have defined as **Sam Smith**.
