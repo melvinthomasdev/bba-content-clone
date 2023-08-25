@@ -15,7 +15,7 @@ or `nil`.
 
 In other words, if the boolean equivalent of value inside the left-hand side of
 the `conditional assignment operator` is true then the value resulting from the
-left-hand side expression will not be assigned to the variable on left-hand
+right-hand side expression will not be assigned to the variable on left-hand
 side.
 
 For example:
