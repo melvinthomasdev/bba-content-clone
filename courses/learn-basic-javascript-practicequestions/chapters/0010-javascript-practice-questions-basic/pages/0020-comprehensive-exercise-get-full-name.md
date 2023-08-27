@@ -24,13 +24,14 @@ const getFullName = person => {
 <solution>
 const getFullName = person => {
   const { firstName, lastName } = person;
-  if(!firstName && !lastName)
+
+  if (!firstName && !lastName)
     return " ";
 
-  if(firstName && lastName)
-    return `${firstName} ${lastName}`
+  if (firstName && lastName)
+    return `${firstName} ${lastName}`;
 
-  return `${firstName || lastName}`
+  return `${firstName || lastName}`;
 }
 </solution>
 
