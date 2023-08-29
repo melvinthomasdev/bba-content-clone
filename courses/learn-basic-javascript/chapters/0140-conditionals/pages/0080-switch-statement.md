@@ -124,8 +124,8 @@ switch(name) {
     break;
   case "Anna":
     console.log("This is the admin."); // This will be executed
-    case "Mike":
-    console.log("This is the manager."); // This also will be executed
+  case "Mike":
+    console.log("This is the manager."); // This will also be executed
     break;
   default:
     console.log("This person does not have a role.");

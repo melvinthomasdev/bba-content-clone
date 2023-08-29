@@ -2,7 +2,7 @@ Update the locations where the marketing campaigns have already run, based on th
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
-const updateCampaignDetails = ({ campainDetails, completedLocationIds, newLocations }) => {
+const updateCampaignDetails = ({ campaignDetails, completedLocationIds, newLocations }) => {
   // write your code here
 }
 </code>

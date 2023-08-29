@@ -41,6 +41,18 @@ console.log(person);
 </code>
 </codeblock>
 
+In the code below, the information
+about a car is stored in two
+separate variables.
+
+<codeblock language="javascript" type="lesson">
+<code>
+const carModel = 2011;
+const carFuelType = "diesel";
+console.log(`It is a ${carModel} car that runs on ${carFuelType}`);
+</code>
+</codeblock>
+
 Moving forward, in the Academy,
 we will be preferring to use
 objects to store values of
@@ -51,19 +63,11 @@ For example:
 
 <codeblock language="javascript" type="lesson">
 <code>
-//The following two lines are not preferred
-const carModel = 2011;
-const carFuelType = "diesel";
-console.log(`It is a ${carModel} car that runs on ${carFuelType}`);
-
-/*
-The following is preferred and
-should be used instead of the lines above
-*/
 const car = {
   model: 2011,
   fuelType: "diesel"
 };
+
 console.log(`It is a ${car.model} car that runs on ${car.fuelType}`);
 </code>
 </codeblock>
