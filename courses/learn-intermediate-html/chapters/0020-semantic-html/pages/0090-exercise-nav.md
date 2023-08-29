@@ -34,7 +34,7 @@ footer in a `nav` tag.
 			<li><a href="/about">Minke Whale</a></li>
 			<li><a href="/products">Grey Whales</a></li>
 		</ul>
-	<nav>
+	</nav>
 </footer>
 </solution>
 </codeblock>
