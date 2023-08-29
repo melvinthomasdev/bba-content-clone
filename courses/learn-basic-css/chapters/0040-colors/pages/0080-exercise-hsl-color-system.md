@@ -1,12 +1,11 @@
-Given is a h1 tag with
+Given is an h1 tag with
 some text.
 
-Using hsl color system change
-its `background-color`
-to black `hsl(0, 0%, 0%)`
-and font `color` to 
+Using the hsl color system, change
+its `background-color` to black `hsl(0, 0%, 0%)`
+and the font `color` to
 yellow `hsl(60, 80%, 90%)`.
-
+Make sure you use the id selector **heading**.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
