@@ -62,18 +62,21 @@ gained so far, do the following:
 </code>
 <solution>
 .ice-cream {
+  /* Write your code here */
   list-style-type: lower-roman;
   list-style-position: inside;
 }
 
 .sports {
+  /* Write your code here */
   list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif');
 }
 
 .footer {
   border-top: 1px solid grey;
   text-align: center;
-  list-style: none;
+  /* Write your code here */
+  list-style-type: none;
 }
 </solution>
 </codeblock>
