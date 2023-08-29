@@ -16,7 +16,7 @@ The `<h1>` at the beginning is called the **opening tag**, the **Hello, World!**
 
 <codeblock language="html" type="lesson">
 <code>
-<h1>This is a heading</h1>
-<h1>This is another heading</h1>
+<h1>HTML is fun!</h1>
+<h1>Internet is fun!</h1>
 </code>
 </codeblock>
