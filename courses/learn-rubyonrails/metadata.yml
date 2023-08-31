@@ -8,3 +8,4 @@ custom_data:
   courseType: lesson
 home_logo: rubyonrails-logo.png
 logo: rubyonrails-logo.png
+show_google_login: false
