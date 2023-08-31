@@ -1,4 +1,5 @@
-Set the width of both `input` and `textarea` to `300px`. Give a height of `30px` to the text field and `80px` to the textarea:
+Set the width of both `input` and `textarea` to `300px`.
+Give a height of `30px` to the input and `80px` to the textarea:
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
