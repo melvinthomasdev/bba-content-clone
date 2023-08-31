@@ -17,7 +17,7 @@ turned into links:
 <!-- Using Text as a Link -->
 <a href="https://www.bigbinary.com">Click here to visit Bigbinary website</a>
 <!-- Using Div as a link -->
-<a href="https://academy.bigbinary.com">
+<a href="https://bigbinaryacademy.com/">
   <div>Click here to go to BB Academy website</div>
 </a>
 <!-- Using Images as a Link -->

@@ -1,7 +1,7 @@
 This section of the guide assumes you have prior knowledge of promises, async
 functions, the try-catch blocks and the fetch API. If you'd like a refresher,
 please refer to
-[this guide ](https://academy.bigbinary.com/learn-advanced-javascript/promises/asynchronous-and-callbacks)
+[this guide ](https://courses.bigbinaryacademy.com/learn-advanced-javascript/promises/asynchronous-and-callbacks/)
 made by our folk here at BigBinary.
 
 Axios is an HTTP client-side library that allows you to make HTTP requests much

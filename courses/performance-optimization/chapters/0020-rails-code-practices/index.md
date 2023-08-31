@@ -2,7 +2,7 @@
 
 Fixing the N+1 queries raised in test and logged in development mode under Bullet.log from Bullet.
 
-Ref. - [N+1 Query and memoization](https://academy.bigbinary.com/learn-rubyonrails/n-1-queries)
+Ref. - [N+1 Query and memoization](https://courses.bigbinaryacademy.com/learn-rubyonrails/n-1-queries/)
 
 ## Avoid .all queries, use pagination
 

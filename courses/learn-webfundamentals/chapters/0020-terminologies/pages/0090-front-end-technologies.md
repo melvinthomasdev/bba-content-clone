@@ -6,13 +6,13 @@ The front-end of a web application is built using three main technologies. **HTM
 
 HTML, or HyperText Markup Language, is the primary language that the web understands. When you load a website, an HTML file is loaded into the browser. This HTML file contains what we see on the page. HTML uses tags to denote different elements such as lists, headings, paragraphs etc.
 
-You can learn more about HTML on [BigBinary academy](https://academy.bigbinary.com/learn-html)
+You can learn more about HTML on [BigBinary academy](https://courses.bigbinaryacademy.com/learn-basic-html/)
 
 ### **CSS**
 
 CSS, or Cascading Style Sheets, helps in making your website look pretty. You can add colors, custom fonts, and layout the elements of your website however you want them to look. You can even create animations and shapes with CSS!
 
-You can learn more about CSS on [BigBinary academy](https://academy.bigbinary.com/learn-css)
+You can learn more about CSS on [BigBinary academy](https://courses.bigbinaryacademy.com/learn-basic-css/)
 
 ### **JavaScript**
 

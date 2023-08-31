@@ -333,7 +333,7 @@ Here we can add an `index.js` file to `components/Tasks` to reduce the number of
 import statements in `App.jsx` and also to make things look cleaner.
 
 These conventions are documented in
-[this chapter](https://academy.bigbinary.com/learn-react/pages/structuring-code)
+[this chapter](https://courses.bigbinaryacademy.com/learn-react/react-best-practices/structuring-code/)
 in our React Best Practices Book.
 
 Create a new file `index.js` in `app/javascript/src/components/Tasks` and add

@@ -81,4 +81,4 @@ If you wish to dive deeper into React's virtual DOM, check out these resources:
 - [Official guide on how the UI tree is updated](https://beta.reactjs.org/learn/preserving-and-resetting-state)
 
 If you need a refresher on HTML DOMs, we recommend going through
-[this course](https://academy.bigbinary.com/learn-htmldom) first.
+[this course](https://courses.bigbinaryacademy.com/learn-htmldom/) first.

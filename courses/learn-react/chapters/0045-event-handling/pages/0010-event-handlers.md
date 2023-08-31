@@ -18,7 +18,7 @@ const AlertButton = () => {
 export default AlertButton;
 ```
 
-[As mentioned previously](https://academy.bigbinary.com/learn-react/naming-conventions/naming-functions),
+[As mentioned previously](https://courses.bigbinaryacademy.com/learn-react/naming-conventions/naming-functions/),
 we use generally use the prefix `handle` when creating named event handlers such
 as the `handleClick` function shown above.
 

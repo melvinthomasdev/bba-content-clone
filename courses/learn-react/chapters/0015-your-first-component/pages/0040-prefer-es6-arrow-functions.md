@@ -27,5 +27,5 @@ represents the object that defined it. When you use the `function` keyword,
 the code error-prone.
 
 If you'd like to dive deeper, here's
-[a page from our advanced JavaScript guide](https://academy.bigbinary.com/learn-advanced-javascript/this-on-objects/arrow-function-and-this)
+[a page from our advanced JavaScript guide](https://courses.bigbinaryacademy.com/learn-advanced-javascript/this-on-objects/arrow-function-and-this-1/)
 that explains it well.

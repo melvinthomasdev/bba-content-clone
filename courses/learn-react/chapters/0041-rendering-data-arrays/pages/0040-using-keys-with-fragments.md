@@ -1,4 +1,4 @@
-[As shown previously](https://academy.bigbinary.com/learn-react/jsx-under-the-hood/root-elements-and-fragments),
+[As shown previously](https://courses.bigbinaryacademy.com/learn-react/jsx-under-the-hood/root-elements-and-fragments/),
 these fragments can also be written without the special syntax by importing them
 from React as such:
 

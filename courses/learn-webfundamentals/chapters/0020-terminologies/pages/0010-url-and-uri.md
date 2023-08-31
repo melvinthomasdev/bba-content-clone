@@ -36,8 +36,8 @@ A resource can be an `HTML` page, a `JavaScript` file, a `CSS` document, an imag
 
 Let's check some following examples of URLs.
 
-* https://academy.bigbinary.com/
-* https://academy.bigbinary.com/learn-sql
+* https://courses.bigbinaryacademy.com/
+* https://courses.bigbinaryacademy.com/learn-sql/
 * https://bigbinary.com?utm_source=academy
 * https://pbs.twimg.com/profile_images/511244255294001152/v5phEU1O_400x400.jpeg
 
@@ -132,9 +132,9 @@ The absolute URL is the full URL where all the specific parts are present like w
 
 e.g.
 
-Absolute URL: [https://academy.bigbinary.com/learn-html](https://academy.bigbinary.com/learn-html)
+Absolute URL: [https://courses.bigbinaryacademy.com/learn-basic-html](https://courses.bigbinaryacademy.com/learn-basic-html)
 
-Relative URL: `/learn-html`
+Relative URL: `/learn-basic-html`
 
 When we enter any website address in the address bar, browser needs an absolute URL. The relative URLs can be used on web page as browser has domain details of the web page.
 
@@ -144,6 +144,6 @@ On a last note, It is considered as one of best practice to use semantic URLs i.
 
 e.g.
 
-[https://academy.bigbinary.com/learn-sql](https://academy.bigbinary.com/learn-sql)
+[https://courses.bigbinaryacademy.com/learn-sql/](https://courses.bigbinaryacademy.com/learn-sql/)
 
 The above URL is a semantic URL. It clearly conveys that user will get to learn about SQL.

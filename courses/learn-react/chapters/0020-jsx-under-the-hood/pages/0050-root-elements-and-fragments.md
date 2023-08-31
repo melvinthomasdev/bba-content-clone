@@ -1,5 +1,5 @@
 As explained
-[on the first page](https://academy.bigbinary.com/learn-react/your-first-component/basics-of-jsx),
+[on the first page](https://courses.bigbinaryacademy.com/learn-react/your-first-component/basics-of-jsx/),
 all JSX code requires a root element.
 
 If you were to incorrectly try and return two tags together as shown below, it

@@ -23,5 +23,5 @@ A new array was created
 by concatenating the two arrays.
 
 Contrast this with
-[push](https://academy.bigbinary.com/learn-ruby/pages/use-push-to-add-an-item-to-an-array)
+[push](https://courses.bigbinaryacademy.com/learn-ruby/array/add-an-item-to-an-array/)
 which changes the original array.

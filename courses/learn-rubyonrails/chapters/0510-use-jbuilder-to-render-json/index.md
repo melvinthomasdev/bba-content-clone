@@ -158,7 +158,7 @@ can use a block to declare a nested JSON object with assigned user details.
 
 If you'd like to learn more about the `do..end` block in Ruby, then please go
 through the
-[Ruby block lesson](https://academy.bigbinary.com/learn-ruby/pages/ruby-blocks)
+[Ruby block lesson](https://courses.bigbinaryacademy.com/learn-ruby/blocks-procs-lambda/ruby-blocks/)
 in BigBinary Academy.
 
 All `.jbuilder` view files end up outputting a JSON response. The

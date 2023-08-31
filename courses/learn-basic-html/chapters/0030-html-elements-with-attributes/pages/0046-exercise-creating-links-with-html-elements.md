@@ -5,7 +5,7 @@ such that it takes us to
 BB Academy's basic HTML
 course using the following
 link:
-`https://academy.bigbinary.com/learn-basic-html`
+`https://courses.bigbinaryacademy.com/learn-basic-html/`
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
@@ -13,7 +13,7 @@ link:
 </code>
 <solution>
 <!-- Write code here -->
-<a href="https://academy.bigbinary.com/learn-basic-html">
+<a href="https://courses.bigbinaryacademy.com/learn-basic-html/">
   <div>Take a look at our basic HTML course</div>
 </a>
 </solution>

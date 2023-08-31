@@ -4,7 +4,10 @@ course.
 
 You can use the following links to
 learn these skills:
-[Learn HTML](https://academy.bigbinary.com/learn-html)
-[Learn HTML DOM](https://academy.bigbinary.com/learn-htmldom)
-[Learn CSS](https://academy.bigbinary.com/learn-css)
-[Learn JavaScript](https://academy.bigbinary.com/learn-javascript)
+[Learn Basic HTML](https://courses.bigbinaryacademy.com/learn-basic-html/)
+[Learn HTML DOM](https://courses.bigbinaryacademy.com/learn-htmldom/)
+[Learn Basic CSS](https://courses.bigbinaryacademy.com/learn-basic-css/)
+[Learn Basic JavaScript](https://courses.bigbinaryacademy.com/learn-basic-javascript/)
+
+
+https://courses.bigbinaryacademy.com/learn-basic-html/

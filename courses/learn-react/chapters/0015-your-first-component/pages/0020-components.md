@@ -3,7 +3,7 @@ to return some JSX we'd built earlier. They are independent and reusable
 snippets of code.
 
 Here's a simple React component written with
-[an ES6 function](https://academy.bigbinary.com/learn-react/your-first-component/prefer-es6-arrow-functions):
+[an ES6 function](https://courses.bigbinaryacademy.com/learn-react/your-first-component/prefer-es6-arrow-functions/):
 
 ```jsx
 const HelloWorld = () => <h1 className="headerBlock">Hello World!</h1>;

@@ -320,7 +320,7 @@ good time to use `index.js` so that we don’t have to add multiple imports but
 rather keep it down to a single import.
 
 These conventions are documented in
-[this chapter](https://academy.bigbinary.com/learn-react/react-best-practices/structuring-code)
+[this chapter](https://courses.bigbinaryacademy.com/learn-react/react-best-practices/structuring-code/)
 in our React Best Practices Book.
 
 Create a new file `index.js` in `app/javascript/src/components/Authentication`

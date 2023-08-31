@@ -26,13 +26,13 @@ upcoming chapters. Stay tuned!
 - [Functional Programming course](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#functional-programming)
   by freeCodeCamp
 
-- [Basic JavaScript course](https://academy.bigbinary.com/learn-basic-javascript)
+- [Basic JavaScript course](https://courses.bigbinaryacademy.com/learn-basic-javascript/)
   by BigBinary Academy
 
-- [Intermediate JavaScript course](https://academy.bigbinary.com/learn-intermediate-javascript)
+- [Intermediate JavaScript course](https://courses.bigbinaryacademy.com/learn-intermediate-javascript/)
   by BigBinary Academy
 
-- [Advanced JavaScript course](https://academy.bigbinary.com/learn-advanced-javascript)
+- [Advanced JavaScript course](https://courses.bigbinaryacademy.com/learn-advanced-javascript/)
   by BigBinary Academy
 
 - [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg)
@@ -70,7 +70,7 @@ upcoming chapters. Stay tuned!
 Teaching React.js is beyond the scope of this book. Here are some free materials
 to learn React.js.
 
-- [ReactJS course](https://academy.bigbinary.com/learn-react) by BigBinary
+- [ReactJS course](https://courses.bigbinaryacademy.com/learn-react/) by BigBinary
   Academy
 
 - [ReactJS tutorial](https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)

@@ -8,7 +8,7 @@ Let's have some fun, we will try to load BB Academy home page inside the iframe:
   <code>
     <div style="width: 100%">
       <iframe
-        src="https://academy.bigbinary.com"
+        src="https://bigbinaryacademy.com/"
         width="100%"
         height="360"
       ></iframe>

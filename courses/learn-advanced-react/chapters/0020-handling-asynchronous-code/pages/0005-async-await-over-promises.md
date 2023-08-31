@@ -1,6 +1,6 @@
 Note: This page assumes you understand what JavaScript promises are. If not, we
 recommend going through
-[this chapter in our JavaScript guide](https://academy.bigbinary.com/learn-advanced-javascript#promises).
+[this chapter in our JavaScript guide](https://courses.bigbinaryacademy.com/learn-advanced-javascript/#promises).
 
 When writing asynchronous functions, we highly recommend using the async/await
 syntax rather than promise chains or callbacks.

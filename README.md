@@ -399,7 +399,7 @@ That same image file should exist in app/assets/images/courses/<course_name>/
 
 (i) All courses exist in the `courses` folder in the root folder. Look at the Format section to understand how to create a new course in the repository.
 
-(ii) This is just a repository of the content of the courses. The actual course data is saved on neetoCourse, and pulled from it to show it on the course website, which in this case is https://academy.bigbinary.com.
+(ii) This is just a repository of the content of the courses. The actual course data is saved on neetoCourse, and pulled from it to show it on the course website, which in this case is https://courses.bigbinaryacademy.com.
 
 (iii) If you have added a new course in this repository and want it to be live, first of all, you need to merge the new course changes to `main`. Then you need to talk to an admin on https://bigbinary-academy.neetocourse.com to create an actual course. Once the admin creates the course on neetoCourse, they'll connect the created course to the directory of the newly created course in this repository. neetoCourse will then sync up all the course data from this repository and show it on the course website. This might take a few minutes from the time the admin creates the course. The admin will let you know once the course is live. For now, the admin is @akashdotsrivastava.
 

@@ -7,4 +7,4 @@ to test!
 
 
 
-Visit the [Basic CSS Project Page](https://academy.bigbinary.com/projects/login-form) to read more and start building.
+Visit the [Basic CSS Project Page](https://courses.bigbinaryacademy.com/projects/login-form/) to read more and start building.

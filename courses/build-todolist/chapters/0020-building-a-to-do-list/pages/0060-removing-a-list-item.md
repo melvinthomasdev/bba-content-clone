@@ -14,7 +14,7 @@ There are many ways of removing a list
 item. We could simply hide it using
 `display:none` or `visibility:hidden` in
 the CSS. Or we could remove it altogether
-from the DOM using the [remove](https://academy.bigbinary.com/learn-htmldom/pages/remove-html-elements) method.
+from the DOM using the [remove](https://courses.bigbinaryacademy.com/learn-htmldom/manipulating-dom-elements-part-2/remove-html-element/) method.
 We'll use the `remove` method.
 
 <codeblock language="javascript" type="lesson">

@@ -5,4 +5,4 @@ to test!
 
 <image>htmldom-sectional-project-battleship.gif</image>
 
-Visit the [Basic HTML DOM Project Page](https://academy.bigbinary.com/projects/battleship-game) to read more and start building.
+Visit the [Basic HTML DOM Project Page](https://courses.bigbinaryacademy.com/projects/battleship-game/) to read more and start building.

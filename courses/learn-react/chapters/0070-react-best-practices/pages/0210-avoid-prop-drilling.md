@@ -288,5 +288,5 @@ have used the context provider inside the `Main` component which is usually the
 component where the routes for other components are defined.
 
 To learn more about the React context API, please refer to the
-[`useContext hook chapter`](https://academy.bigbinary.com/learn-react/pages/usecontext-hook)
+[`useContext hook chapter`](https://courses.bigbinaryacademy.com/advanced-react-js/advanced-hooks/usecontext-hook/)
 in the ReactJS course at BigBinary Academy.
