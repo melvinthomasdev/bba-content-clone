@@ -1,9 +1,10 @@
-You are given an array of numbers.
-
-Complete the function `getPositiveNumbers`
-so that it takes in an array as an argument
-and returns a new array containing only
-the positive numbers.
+Update the function `getPositiveNumbers`
+to accept an array of numbers as an
+argument
+and
+display to the console,
+a new array containing only
+the positive numbers, including zero.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -13,7 +14,7 @@ function getPositiveNumbers(numbers) {
 </code>
 <solution>
 function getPositiveNumbers(numbers) {
-  const positiveNumbers = numbers.filter(number => number > 0);
+  const positiveNumbers = numbers.filter(number => number >= 0);
   console.log(positiveNumbers);
 }
 </solution>
