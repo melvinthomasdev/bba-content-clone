@@ -4,7 +4,7 @@ Consider the following example:
 <code>
 const transferMoney = ({ to, amount, callback }) => {
   setTimeout(() => {
-    console.log(`Transferred ${amount} to ${to}`);
+    console.log(`Transferring ${amount} to ${to}`);
     callback();
   }, 5000);
 }
@@ -48,7 +48,7 @@ without the callback function.
 <code>
 const transferMoney = ({ to, amount }) => new Promise(resolve => {
   setTimeout(() => {
-    console.log(`Transferred ${amount} to ${to}`)
+    console.log(`Transferring ${amount} to ${to}`)
     resolve();
   }, 5000);
 });
@@ -97,7 +97,7 @@ We can use `.then()` for this.
 <code>
 const transferMoney = ({ to, amount }) => new Promise(resolve => {
   setTimeout(() => {
-    console.log(`Transferred ${amount} to ${to}`)
+    console.log(`Transferring ${amount} to ${to}`)
     resolve();
   }, 5000);
 });
@@ -138,7 +138,7 @@ const transferMoney = ({ to, amount }) =>
         console.log("Limit exceeded");
         reject();
       } else {
-        console.log(`Transferred ${amount} to ${to}`);
+        console.log(`Transferring ${amount} to ${to}`);
         resolve();
       }
     }, 5000);
@@ -167,7 +167,7 @@ const transferMoney = ({ to, amount }) =>
         console.log("Limit exceeded");
         reject();
       } else {
-        console.log(`Transferred ${amount} to ${to}`);
+        console.log(`Transferring ${amount} to ${to}`);
         resolve();
       }
     }, 5000);
@@ -200,7 +200,7 @@ const transferMoney = ({ to, amount }) =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
       if (amount > 5000) reject("Limit exceeded");
-      else resolve(`Transferred ${amount} to ${to}`);
+      else resolve(`Transferring ${amount} to ${to}`);
     }, 5000);
   });
 
