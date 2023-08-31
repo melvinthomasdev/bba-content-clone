@@ -1,4 +1,9 @@
-The function `makeItOrdinal` should return an ordinal array given an input array of numbers.
+Complete the function `makeItOrdinal` that
+takes an array of numbers as input and
+returns an array of corresponding ordinals.
+
+For instance, if the input array is `[1, 2, 3]`,
+the function should return `['1st', '2nd', '3rd']`.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
