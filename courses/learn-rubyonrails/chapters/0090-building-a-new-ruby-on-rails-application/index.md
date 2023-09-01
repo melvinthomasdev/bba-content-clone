@@ -125,7 +125,7 @@ To ensure a single configuration and avoid redundancy, let's remove the followin
 Let's now install the below packages to our project as a part of the webpack configuration:
 
 ```bash
-yarn add @svgr/webpack babel-plugin-dynamic-import-node babel-plugin-macros babel-plugin-js-logger css-loader dotenv-webpack i18next ignore-loader mini-css-extract-plugin js-logger postcss postcss-flexbugs-fixes postcss-import postcss-loader postcss-preset-env process ramda sass sass-loader source-map-loader style-loader
+yarn add @svgr/webpack@^8.1.0 babel-plugin-dynamic-import-node@^2.3.3 babel-plugin-macros@^3.1.0 babel-plugin-js-logger@^1.0.17 css-loader@^6.8.1 dotenv-webpack@^8.0.1 i18next ignore-loader@^0.1.2 mini-css-extract-plugin@^2.7.6 js-logger@^1.6.1 postcss@^8.4.29 postcss-flexbugs-fixes@^5.0.2 postcss-import@^15.1.0 postcss-loader@^7.3.3 postcss-preset-env@^9.1.2 process@^0.11.10 ramda sass@^1.66.1 sass-loader@^13.3.2 source-map-loader@^4.0.1 style-loader@^3.3.3
 ```
 
 Let's also add a `babel.config.js` file with base configurations at the root of the project. Execute the following command to download and use babel configuration from the [Wheel repository](https://raw.githubusercontent.com/bigbinary/wheel/main/babel.config.js).

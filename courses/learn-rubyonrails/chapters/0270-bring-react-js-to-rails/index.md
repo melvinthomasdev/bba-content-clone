@@ -8,7 +8,7 @@ Ruby on Rails application and hook it into the webpacker compilation system.
 Add the following line to the end of the `Gemfile`:
 
 ```ruby
-gem 'react-rails'
+gem 'react-rails', "~> 2.7.1"
 ```
 
 Then install the newly added gem:
@@ -26,8 +26,8 @@ environment.
 First let's install react and some other required npm packages:
 
 ```bash
-yarn add react react-dom @babel/preset-react prop-types \
-  css-loader style-loader mini-css-extract-plugin css-minimizer-webpack-plugin
+yarn add react@^17.0.1 react-dom@^17.0.1 @babel/preset-react@^7.22.5 \
+  prop-types@^15.8.1 mini-css-extract-plugin css-minimizer-webpack-plugin
 ```
 
 Let's complete setting up the React-Webpacker pipeline by running the
@@ -35,6 +35,12 @@ following command:
 
 ```bash
 bundle exec rails generate react:install
+```
+
+Executing the command above installs the most recent edition of `react_ujs`, which brings about certain disruptive modifications. To revert, let's downgrade it to version `^2.6.2` using the subsequent command:
+
+```bash
+yarn add react_ujs@^2.6.2
 ```
 
 And now we have successfully added React.js support to our application.
@@ -87,7 +93,6 @@ import "stylesheets/application";
 const componentRequireContext = require.context("src", true);
 const ReactRailsUJS = require("react_ujs");
 ReactRailsUJS.useContext(componentRequireContext);
-ReactRailsUJS.mountComponents();
 ```
 
 We are retaining the declaration with `src` folder because `src` folder is the
