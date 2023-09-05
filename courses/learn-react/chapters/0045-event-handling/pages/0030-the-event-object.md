@@ -4,7 +4,7 @@ If we need to stop the propagation shown in the previous page, we can use `e.sto
 
 ```jsx
 {/* PageIndex.jsx */}
-const IsolatedButton = {( onClick, children )} => (
+const IsolatedButton = ({ onClick, children }) => (
   <button onClick={e => {
     e.stopPropagation();
     onClick();
@@ -13,7 +13,7 @@ const IsolatedButton = {( onClick, children )} => (
   </button>
 )
 
-const PageIndex = {( pageNumber )} => (
+const PageIndex = ({ pageNumber }) => (
   <div onClick={() => alert('Clicked the container div')}>
     <IsolatedButton onClick={() => alert('< Previous Page')}>
       Previous Page

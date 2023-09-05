@@ -3,7 +3,7 @@ You can also shorten the previously shown example using the logical and operator
 
 ```jsx
 {/* ProfilePicture.jsx */}
-const ProfilePicture = {( isAdmin, name )} => {
+const ProfilePicture = ({ isAdmin, name }) => {
   return (
     isAdmin && (
       <div className="adminProfile">

@@ -4,7 +4,7 @@ In certain situations where we need to render one of two possibilities, we can m
 
 ```jsx
 {/* ProfilePicture.jsx */}
-const ProfilePicture = {( isAdmin, name, imageSource )} => {
+const ProfilePicture = ({ isAdmin, name, imageSource }) => {
   return (
     <div className={isAdmin ? "adminProfile" : "userProfile"}>
       <img src={imageSource} />

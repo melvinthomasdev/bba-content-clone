@@ -26,7 +26,7 @@ Here's a simple example where we initialize contacts based on an external API ca
 import {fetchContacts} from "./utils"
 import ContactsList from "./ContactsList"
 
-const ContactsContainer = {( userId )} => {
+const ContactsContainer = ({ userId }) => {
   const [contacts, setContacts]
 
   const getContacts = async () => {

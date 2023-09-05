@@ -4,7 +4,7 @@ Here's a simple demonstration of the propagation in action:
 
 ```jsx
 {/* PageIndex.jsx */}
-const PageIndex = {( page, setPage )} => (
+const PageIndex = ({ page, setPage }) => (
   <div onClick={() => alert('Clicked the container div')}>
     <button onClick={() => alert('< Previous Page')}>
       Previous Page

@@ -10,7 +10,7 @@ If you have a single component in a file that you wish to make available within 
 
 ```jsx
 {/* WelcomeText.jsx */}
-const WelcomeText = {( name )} => (
+const WelcomeText = ({ name }) => (
   <div> Welcome {name}! </div>
 )
 

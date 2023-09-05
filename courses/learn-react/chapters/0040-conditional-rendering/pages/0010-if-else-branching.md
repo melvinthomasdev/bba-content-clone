@@ -6,7 +6,7 @@ Let's say you have a profile nameplate that needs to show whether the person is 
 
 ```jsx
 {/* ProfilePicture.jsx */}
-const ProfilePicture = {( isAdmin, name )} => {
+const ProfilePicture = ({ isAdmin, name }) => {
   if(isAdmin) {
     return (
       <div className="adminProfile">
@@ -26,7 +26,7 @@ In the above example, `if(isAdmin) { return ... }` is what we call a "Guard Clau
 
 ```jsx
 {/* ProfilePicture.jsx */}
-const ProfilePicture = {( isAdmin, name )} => {
+const ProfilePicture = ({ isAdmin, name }) => {
   if(isAdmin){
     return (
       <div className="adminProfile">
@@ -48,7 +48,7 @@ You could also assign the value to a variable and return that like so:
 
 ```jsx
 {/* ProfilePicture.jsx */}
-const ProfilePicture = {( isAdmin, name )} => {
+const ProfilePicture = ({ isAdmin, name }) => {
   let contents = (
     <div className="userProfile">
       {name}: User

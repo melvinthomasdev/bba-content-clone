@@ -37,7 +37,7 @@ However, you can also export a single component using a named export as shown be
 
 ```jsx
 {/* WelcomeText.jsx */}
-const WelcomeText = {( name )} => (
+const WelcomeText = ({ name }) => (
   <div> Welcome {name}! </div>
 )
 

@@ -56,13 +56,13 @@ const App = () => {
   )
 }
 
-const NextPageButton = {( advancePage )} => (
+const NextPageButton = ({ advancePage }) => (
   <button onClick={advancePage}>
     Go to next page >
   </button>
 )
 
-const PageNumberDisplay = {( page )} => (
+const PageNumberDisplay = ({ page }) => (
   <span>
     Page #{page}
   </span>

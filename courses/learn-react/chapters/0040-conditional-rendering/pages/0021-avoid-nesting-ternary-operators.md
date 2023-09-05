@@ -2,7 +2,7 @@ Nesting ternary operators can often lead to poor code readability. If you have a
 
 ```jsx
 {/* ProfilePicture.jsx */}
-const ProfilePicture = {( isLoading, isAdmin, name, imageSource )} => {
+const ProfilePicture = ({ isLoading, isAdmin, name, imageSource }) => {
   return (
     isLoading ? (
       <Loader />
@@ -24,7 +24,7 @@ As a rule of thumb, it's often best to just use a couple of guard clauses to imp
 
 ```jsx
 {/* ProfilePicture.jsx */}
-const ProfilePicture = {( isLoading, isAdmin, name, imageSource )} => {
+const ProfilePicture = ({ isLoading, isAdmin, name, imageSource }) => {
   if(isLoading) return <Loader />
   if(!isAdmin) return <div className="profileBasic">{name}</div>
 
@@ -39,7 +39,7 @@ const ProfilePicture = {( isLoading, isAdmin, name, imageSource )} => {
 
 This isn't to say that nested ternary operators are always bad.
 
-They can sometimes improve code readability over the alternatives like when you're nested inside JSX as shown below : 
+They can sometimes improve code readability over the alternatives like when you're nested inside JSX as shown below :
 
 ```jsx
 const notification = ({type, sender, code, message}) => (
