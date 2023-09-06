@@ -69,7 +69,7 @@ is `resolve`.
 Note that all of the below implementations
 are the same:
 
-<codeblock language="javascript" type="lesson">
+<codeblock language="javascript" type="exercise" showRunCodeButton="false" testMode="fixedInput">
 <code>
 const moneyResolver = resolve => {
   // handle promise
