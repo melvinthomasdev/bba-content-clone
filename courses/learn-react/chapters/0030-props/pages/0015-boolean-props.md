@@ -13,7 +13,7 @@ In the above example, since `required` is false, you can simply omit it to set
 beware that the value of `undefined` is not suitable for all cases.
 
 Similarly, the value of the `loading` prop is true. You can simply mention
-`required` rather than pass `required={true}`.
+`loading` rather than pass `loading={true}`.
 
 Using this technique also referred to as "implicit declaration of props", we can
 refactor the above example like so:
