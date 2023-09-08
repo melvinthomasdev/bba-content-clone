@@ -26,6 +26,9 @@
 - title: Async/Await
   slug: async-await
   page_type: lesson
+- title: Adding try...catch
+  slug: adding-try-catch
+  page_type: lesson
 - title: Exercise - Async/Await
   slug: exercise-async-await
   page_type: exercise
