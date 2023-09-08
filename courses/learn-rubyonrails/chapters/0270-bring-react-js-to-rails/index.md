@@ -37,10 +37,10 @@ following command:
 bundle exec rails generate react:install
 ```
 
-Executing the command above installs the most recent edition of `react_ujs`, which brings about certain disruptive modifications. To revert, let's downgrade it to version `^2.6.2` using the subsequent command:
+Executing the command above installs the most recent edition of `react_ujs`, which brings about certain disruptive modifications. To revert, let's downgrade it to version `2.6.2` using the subsequent command:
 
 ```bash
-yarn add react_ujs@^2.6.2
+yarn add react_ujs@2.6.2
 ```
 
 And now we have successfully added React.js support to our application.
