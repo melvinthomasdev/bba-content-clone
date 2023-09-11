@@ -91,7 +91,7 @@ VSCode provides many extensions which can improve our coding experience. Here ar
 
 - [kaiwood.endwise](https://marketplace.visualstudio.com/items?itemName=kaiwood.endwise): Automatically add end when we open a do block in ruby
 
-- [rebornix.ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.ruby): Ruby language support & Basic IntelliSense
+- [Shopify.ruby-lsp](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp): Ruby language support & Basic IntelliSense
 
 - [redhat.vscode-yaml](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml): YAML Language support
 
