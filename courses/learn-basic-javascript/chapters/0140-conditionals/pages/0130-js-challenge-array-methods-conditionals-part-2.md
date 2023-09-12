@@ -10,8 +10,8 @@ Marvel franchise.
 ```
 - Use an appropriate datatype of your choice.
 - Assign this value to a variable that is properly named.
-- Make sure they are added in the order of **release date**(NOT in chronological order).
-- Log to the console, the index position of the movie **Captain Marvel**.
+- Make sure they are added in the **alphabetical order**.
+- Log the second movie from the list to the console.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
@@ -19,13 +19,13 @@ Marvel franchise.
 </code>
 <solution>
 const marvelCharacters = [
-  "Iron Man",
-  "Thor",
   "Black Widow",
   "Captain Marvel",
-  "Guardians of the Galaxy Vol. 1"
+  "Guardians of the Galaxy Vol. 1",
+  "Iron Man",
+  "Thor"
 ];
 
-console.log(marvelCharacters.indexOf("Captain Marvel"));
+console.log(marvelCharacter[1]);
 </solution>
 </codeblock>
