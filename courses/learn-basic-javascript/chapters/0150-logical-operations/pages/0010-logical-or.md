@@ -38,7 +38,7 @@ const guest = {
   role: "volunteer"
 };
 
-if (guest.role === "faculty" || "volunteer") {
+if (guest.role === "faculty" || guest.role === "volunteer") {
   console.log(`Access granted`);
 } else {
   console.log(`Access denied`);
@@ -64,7 +64,7 @@ Look at the code snippet below which
 is taken from the solution that we have provided:
 
 ```js
-if(guest.role === "faculty" || "volunteer") {
+if (guest.role === "faculty" || guest.role === "volunteer") {
   console.log(`Access granted`);
 } else {
   console.log(`Access denied`);
