@@ -184,6 +184,8 @@ Now we can use the instance variable `@tasks` to display our list of tasks.
 Instance variables from within a controller is directly accessible in the
 corresponding view files.
 
+You may have noticed that within the `TaskController`, we haven't added any `require` statements to bring in the `Task` model. This is facilitated by a functionality provided by the Rails framework called `autoloading`, which eliminates the necessity for explicit module imports. We will explore the intricacies of this feature in the forthcoming chapter.
+
 Replace the content of `app/views/tasks/index.html.erb` file with the following:
 
 ```ruby

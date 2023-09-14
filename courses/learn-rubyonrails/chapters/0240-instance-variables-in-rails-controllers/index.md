@@ -1,8 +1,6 @@
-Now let's try to display list of tasks from the database.
+We previously explored how a list of tasks is presented using the following controller code:
 
-Open `app/controllers/tasks_controller` and let's change the `index` action:
-
-```ruby {3}
+```ruby
 class TasksController < ApplicationController
   def index
     @tasks = Task.all
@@ -10,47 +8,21 @@ class TasksController < ApplicationController
 end
 ```
 
-Open `app/views/tasks/index.html.erb` file and let's pass `@tasks`:
+In the corresponding `index.html.erb` file, we employ the `@tasks` variable to iterate through each task and display its title:
 
 ```ruby
+<h1>ToDo</h1>
+<ul>
 <% @tasks.each do |task| %>
-  <p>
-    <%= task.id %>
-    <%= task.title %>
-  </p>
+  <li><%= task.title %></li>
 <% end %>
+</ul>
 ```
 
-Now visit http://localhost:3000/tasks and we will see a list of tasks.
+In this context, variables prefixed with `@` in Rails controllers are referred to as instance variables. These instance variables possess the unique property of being automatically available in our Rails views.
 
-**Note:** You may have noticed we haven't added any import statements in
-`TaskController` and still we have access to the `Task` model. This is because
-we do not need to explicitly import modules in Rails due to to the concept of
-`autoloading` implemented in Rails. If you're curious to know more about the
-autoloading feature, then you can go through the
-[Loading behaviour of Ruby on Rails in depth](/learn-rubyonrails/loading-behavior-of-ruby-on-rails-in-depth)
-chapter which addresses this topic in detail and then come back to where you
-left.
+Hence, in the `index.html.erb` file, we can directly access and utilize the `@tasks` instance variable.
 
-## Instance variables in view files
+It's important to note that any instance variable created in a controller becomes accessible in the corresponding view file. Conversely, variables that are not defined as instance variables in the controller will not be accessible in the views.
 
-In the controller we set `@tasks` which is used in the view file. A variable set
-in Rails controller starting with `@` sign are called **instance variables**.
-
-The specialty of instance variables is that they're available in our Rails
-views. We don't need to pass them explicitly to our Rails views.
-
-That's why in the `index.html.erb` we are able to refer to `@tasks`.
-
-Any instance variable created in a controller is available in the view file.
-
-If the variable in the controller is not an instance variable (all variables
-without @ sign are not instance variables) then those variable will not be
-available in the views.
-
-Now let's commit these changes:
-
-```bash
-git add -A
-git commit -m "Added instance variables in Tasks controller"
-```
+There is **nothing to commit** in this chapter. This chapter primarily focused on elucidating the concept of instance variables in Rails, highlighting their automatic availability in views.
