@@ -292,7 +292,7 @@ This doesn't mean that we shouldn't utilize the global `src/utils` folder. If a 
 
 ## Keep useState at top
 
-We should keep the `useState` hook towards the top of the component. `useState` is the most commonly used hook in the component. We should keep all the `useState` hooks together and at the top of the component. After `useState` hooks, all the other hooks should be kept followed by the other custom variable definitions. We should use a new line after each group so that each group can be clearly identified. This hierarchal structure gives us a visual segregation in the component and it makes it easier to find the required state or variable.
+We should generally keep the `useState` hook towards the top of the component. `useState` is the most commonly used hook in the component, and this practice enhances code readability. All `useState` hooks should be grouped together and placed at the top of the component. Following the `useState` hooks, other hooks can be used, and custom variable definitions can follow them. Each group should be separated by a new line to provide clear visual segregation within the component, making it easier to find the required state or variable.
 
 For example:
 
@@ -327,9 +327,9 @@ const Dashboard = () => {
 };
 ```
 
-There can be a case where the initial value for the `useState` hook is dependent on some other hook. In that case, we can use other hooks before `useState` hook.
+However, there can be exceptions where the initial value for a `useState` hook depends on some other hook or context. In such cases, it's acceptable to use other hooks before the `useState` hook.
 
-For example:
+For example, when using the `useLocation` hook from a router library to initialize a state variable:
 
 ```jsx
 const Dashboard = () => {
@@ -339,6 +339,26 @@ const Dashboard = () => {
   // rest of the component
 };
 ```
+
+In this scenario, we use the `useLocation` hook to determine the initial value for `selectedTab`, and this exception improves the logic and maintainability of the component.
+
+Another case is when utilizing a theme context to set the initial state based on the theme
+
+```jsx
+const Dashboard = () => {
+  // Access the theme from the context
+  const { theme } = useContext(ThemeContext);
+
+  // Use the theme to set the initial state
+  const [backgroundColor, setBackgroundColor] = useState(
+    theme === 'light' ? '#FFFFFF' : '#000000'
+  );
+
+  // rest of the component
+};
+```
+
+In this theme context example, we use the `useContext` hook to access the theme and then use it to determine the initial value for the `backgroundColor` state variable.
 
 ## Passing props the right way
 
