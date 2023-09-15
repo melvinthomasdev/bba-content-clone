@@ -23,6 +23,15 @@
 - title: Exercise - Template Strings
   slug: exercise-template-strings
   page_type: exercise
-- title: Exercise 2 - Template Strings
-  slug: exercise-2-template-strings
+- title: String Interploation
+  slug: string-interploation
+  page_type: lesson
+- title: Exercise - String Interploation
+  slug: exercise-string-interploation
   page_type: exercise
+- title: Multi-line Template Strings
+  slug: multiline-template-strings
+  page_type: lesson
+- title: Exercise - Multi-line Template Strings
+  slug: exercise-multiline-template-strings
+  page_type: lesson
