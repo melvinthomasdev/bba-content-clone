@@ -36,19 +36,11 @@ we can only use `String()`.
 Using `toString()` in such cases
 will give us an error.
 
-In the example given below,
-the first `console.log` displays the string
+We will learn more about the
+difference between `toString()`
 and
-the second `console.log` results in an error.
-
-<codeblock language="javascript" type="lesson">
-<code>
-console.log(String(null));
-console.log(null.toString());
-</code>
-</codeblock>
-
-You can replace `null` with `undefined`,
-in the example given above
-and
-see the changes in the output.
+`String()` methods in 
+[**toString() vs String() method**](https://courses.bigbinaryacademy.com/learn-intermediate-javascript/string-methods/tostring-vs-string-method/)
+lesson in our 
+intermediate JavaScript
+course.
