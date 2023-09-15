@@ -303,6 +303,22 @@ That same image file should exist in app/assets/images/courses/<course_name>/
     ```md
     // inserts the "randomExpression" value to the inner text of "adjective" element. adjective.innerText = randomExpression;
     ```
+
+- Make sure that our code has semi-colons everywhere they are needed.
+   - Correct:
+   ```js
+    if (true) {
+      console.log("This will print to the console.");
+    };
+    ```
+
+  - Incorrect:
+   ```js
+    if (true) {
+      console.log("This will print to the console.")
+    }
+    ```
+
 ### Writing Ruby code:
 
 - Ruby code written in the code block gets executed using [judge0](https://github.com/judge0/judge0) which is an online code execution system. Currently Judge0 only supports **Ruby 2.7.0**.

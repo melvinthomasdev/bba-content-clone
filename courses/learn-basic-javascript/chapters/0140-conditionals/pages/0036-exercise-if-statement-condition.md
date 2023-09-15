@@ -35,13 +35,13 @@ const employeeThree = {
 };
 
 if(employeeOne.isAdmin) {
-  console.log(`${employeeOne.name} has admin access.`)
+  console.log(`${employeeOne.name} has admin access.`);
 };
 if(employeeTwo.isAdmin) {
-  console.log(`${employeeTwo.name} has admin access.`)
+  console.log(`${employeeTwo.name} has admin access.`);
 };
 if(employeeThree.isAdmin) {
-  console.log(`${employeeThree.name} has admin access.`)
+  console.log(`${employeeThree.name} has admin access.`);
 };
 </solution>
 </codeblock>
