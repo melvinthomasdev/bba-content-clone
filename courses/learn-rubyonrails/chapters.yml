@@ -47,8 +47,8 @@
 - slug: rails-models
   name: Rails Models
   has_pages: false
-- slug: side-project-task-1
-  name: Side project - Task 1
+- slug: project-blog-worthy-task-1
+  name: Project BlogWorthy - Task 1
   has_pages: false
 - slug: rails-console
   name: Rails console
@@ -74,8 +74,8 @@
 - slug: model-validations
   name: Model validations
   has_pages: false
-- slug: side-project-task-2
-  name: Side project - Task 2
+- slug: project-blog-worthy-task-2
+  name: Project BlogWorthy - Task 2
   has_pages: false
 - slug: bring-react-js-to-rails
   name: Bring React.js to Rails
@@ -101,8 +101,8 @@
 - slug: displaying-list-of-tasks
   name: Displaying list of tasks
   has_pages: false
-- slug: side-project-task-3
-  name: Side project - Task 3
+- slug: project-blog-worthy-task-3
+  name: Project BlogWorthy - Task 3
   has_pages: false
 - slug: adding-slug-to-task
   name: Adding slug to task
@@ -137,8 +137,8 @@
 - slug: class-methods-and-scopes
   name: Class methods and scopes
   has_pages: false
-- slug: side-project-task-4
-  name: Side project - Task 4
+- slug: project-blog-worthy-task-4
+  name: Project BlogWorthy - Task 4
   has_pages: false
 - slug: user-model
   name: User model
@@ -167,8 +167,8 @@
 - slug: adding-logout-feature
   name: Adding logout feature
   has_pages: false
-- slug: side-project-task-5
-  name: Side project - Task 5
+- slug: project-blog-worthy-task-5
+  name: Project BlogWorthy - Task 5
   has_pages: false
 - slug: testing-user-model
   name: Testing User model
@@ -200,8 +200,8 @@
 - slug: starring-tasks
   name: Starring tasks
   has_pages: false
-- slug: side-project-task-6
-  name: Side project - Task 6
+- slug: project-blog-worthy-task-6
+  name: Project BlogWorthy - Task 6
   has_pages: false
 - slug: n-1-queries
   name: N+1 Queries
