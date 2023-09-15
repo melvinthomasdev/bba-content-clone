@@ -20,6 +20,9 @@
 - title: Exercise - Footer
   slug: exercise-footer
   page_type: exercise
+- title: Exercise - 2 - Footer
+  slug: exercise-2-footer
+  page_type: exercise
 - title: Nav
   slug: nav
   page_type: lesson
