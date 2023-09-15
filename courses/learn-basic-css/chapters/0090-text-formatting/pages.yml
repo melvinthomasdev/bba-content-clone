@@ -50,6 +50,12 @@
 - title: Exercise - Specific Font
   slug: exercise-specific-font
   page_type: exercise
+- title: Google Fonts
+  slug: google-fonts
+  page_type: lesson
+- title: Default Web Fonts
+  slug: default-web-fonts
+  page_type: lesson
 - title: Text Formatting Challenge
   slug: text-formatting-challenge
   page_type: exercise
