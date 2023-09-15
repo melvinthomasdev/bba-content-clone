@@ -29,7 +29,7 @@ Merritt Wever
 10
 ```
 
-<codeblock language="javascript" type="lesson" showSolution="false">
+<codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 // Write your code here
 </code>
