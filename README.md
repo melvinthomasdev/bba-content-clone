@@ -420,7 +420,7 @@ c. Avoiding zero indexing: Instead of starting with 100, the numbering starts wi
 
 (iii) Title naming: Lower case all words with 3 or less letters. Headings should follow **title case**.
 
-(iv) Exercise file naming:
+(iv) Exercise file naming: All exercise file names should have `exercise-` as a prefix.
 
 (v) Variable naming: Try to ensure good variable names by naming variables for their utility. For example, instead of
 let var1 = "lion"

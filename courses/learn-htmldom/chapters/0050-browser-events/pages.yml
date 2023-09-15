@@ -5,8 +5,14 @@
 - title: Listening to Browser Events
   slug: listening-to-browser-events
   page_type: lesson
-- title: Exercise - Listening to Browser Events
-  slug: exercise-listening-to-browser-events
+- title: Exercise - Listening to Browser Events 1
+  slug: exercise-listening-to-browser-events-1
+  page_type: exercise
+- title: Adding event listener to items in a list
+  slug: adding-event-listener-to-items-in-a-list
+  page_type: lesson
+- title: Exercise - Adding event listener to items in a list
+  slug: exercise-adding-event-listener-to-items-in-a-list
   page_type: exercise
 - title: Event Handler Properties
   slug: event-handler-properties
