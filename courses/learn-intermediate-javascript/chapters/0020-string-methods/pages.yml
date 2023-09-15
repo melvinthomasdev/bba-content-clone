@@ -95,6 +95,15 @@
 - title: Exercise String Split Method
   slug: exercise-string-split-method
   page_type: exercise
-- title: JS Challenge 1
-  slug: js-challenge-1
+- title: toString() vs String() method
+  slug: tostring-vs-string-method
+  page_type: lesson
+- title: toString() method - Value limitation
+  slug: tostring-method-value-limitation
+  page_type: lesson
+- title:  toString() method - Null/Undefined limitation
+  slug: tostring-method-null-undefined-limitation
+  page_type: lesson
+- title: JS Challenge - String methods
+  slug: js-challenge-string-methods
   page_type: assessment

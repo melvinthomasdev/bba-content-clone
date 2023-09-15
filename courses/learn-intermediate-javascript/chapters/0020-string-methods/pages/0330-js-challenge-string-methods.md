@@ -1,4 +1,5 @@
-Given a credit card number. Update the function `maskCardNumber` to return these numbers with only the last 4 digits displayed and the rest replaced with `*`. The length of the card number can vary.
+## Challenge 1
+Update the function `maskCardNumber` to return the `cardNumber` with only the last 4 digits displayed and the rest replaced with `*`. The length of the card number can vary.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
@@ -19,6 +20,8 @@ const cardNumber = '5555 5555 5555 4444';
 console.log(maskCardNumber(cardNumber));
 </solution>
 </codeblock>
+
+## Challenge 2
 
 It should be written `JavaScript` and not `javascript`.
 Update the function `fixJavaScript` to return the fixed version of the below excerpt from an interview with Brendan Eich, the founder of JavaScript before he sees it.
@@ -45,6 +48,8 @@ console.log(fixJavaScript(interviewExcerpt));
 </solution>
 </codeblock>
 
+## Challenge 3
+
 Update function `trimUnits` such that it clears out the unit mentioned (`px`, `em`, `cm` etc) and returns the numerical value.
 For example: `4px` should return 4. The length of all units will be given as `unitLength`.
 
@@ -64,5 +69,18 @@ const trimUnits = (unitValue, unitLength) => {
 const unitValue = "12rem";
 const unitLength = 3;
 console.log(trimUnits(unitValue, unitLength));
+</solution>
+</codeblock>
+
+## Challenge 4
+Fix the error in the code below
+by using the correct method:
+
+<codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
+<code>
+console.log(undefined.toString());
+</code>
+<solution>
+console.log(String(undefined));
 </solution>
 </codeblock>
