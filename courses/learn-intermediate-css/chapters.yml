@@ -25,3 +25,5 @@
   slug: css-reset
 - name: CSS Default Values
   slug: css-default-values
+- name: Resolving CSS errors
+  slug: resolving-css-errors
