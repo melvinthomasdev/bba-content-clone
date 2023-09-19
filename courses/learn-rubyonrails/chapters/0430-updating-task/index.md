@@ -180,7 +180,7 @@ To do so, add the following lines to `tasks.js`:
 ```javascript {12-15,21}
 import axios from "axios";
 
-const list = () => axios.get("/tasks");
+const fetch = () => axios.get("/tasks");
 
 const show = slug => axios.get(`/tasks/${slug}`);
 
@@ -195,7 +195,7 @@ const update = ({ slug, payload }) =>
   });
 
 const tasksApi = {
-  list,
+  fetch,
   show,
   create,
   update,

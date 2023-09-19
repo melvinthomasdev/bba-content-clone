@@ -164,7 +164,7 @@ Now update `tasks.js` with the following content:
 ```javascript {5,14}
 import axios from "axios";
 
-const list = () => axios.get("/tasks");
+const fetch = () => axios.get("/tasks");
 
 const show = slug => axios.get(`/tasks/${slug}`);
 
@@ -174,7 +174,7 @@ const create = payload =>
   });
 
 const tasksApi = {
-  list,
+  fetch,
   show,
   create,
 };
@@ -203,7 +203,7 @@ const Dashboard = ({ history }) => {
     try {
       const {
         data: { tasks },
-      } = await tasksApi.list();
+      } = await tasksApi.fetch();
       setTasks(tasks);
       setLoading(false);
     } catch (error) {

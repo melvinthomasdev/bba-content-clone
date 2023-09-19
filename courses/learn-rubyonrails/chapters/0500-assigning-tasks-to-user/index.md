@@ -152,10 +152,10 @@ Now let's add the following code to it:
 ```javascript
 import axios from "axios";
 
-const list = () => axios.get("/users");
+const fetch = () => axios.get("/users");
 
 const usersApi = {
-  list,
+  fetch,
 };
 
 export default usersApi;
@@ -281,7 +281,7 @@ const Create = ({ history }) => {
     try {
       const {
         data: { users },
-      } = await usersApi.list();
+      } = await usersApi.fetch();
       setUsers(users);
       setUserId(users[0].id);
       setPageLoading(false);
@@ -439,7 +439,7 @@ const Edit = ({ history }) => {
     try {
       const {
         data: { users },
-      } = await usersApi.list();
+      } = await usersApi.fetch();
       setUsers(users);
     } catch (error) {
       logger.error(error);

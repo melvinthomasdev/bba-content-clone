@@ -44,9 +44,9 @@ In `tasks.js`, paste the following content.
 ```js
 import axios from "axios";
 
-const list = () => axios.get("/tasks");
+const fetch = () => axios.get("/tasks");
 
-const tasksApi = { list };
+const tasksApi = { fetch };
 
 export default tasksApi;
 ```
@@ -81,7 +81,7 @@ const Dashboard = () => {
     try {
       const {
         data: { tasks },
-      } = await tasksApi.list();
+      } = await tasksApi.fetch();
       setTasks(tasks);
       setLoading(false);
     } catch (error) {

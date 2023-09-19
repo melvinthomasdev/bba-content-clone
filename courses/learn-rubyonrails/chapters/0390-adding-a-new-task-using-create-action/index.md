@@ -496,12 +496,12 @@ We will now add an API route to create a task using `POST` request in
 ```javascript{5,9}
 import axios from "axios";
 
-const list = () => axios.get("/tasks");
+const fetch = () => axios.get("/tasks");
 
 const create = payload => axios.post("/tasks", payload);
 
 const tasksApi = {
-  list,
+  fetch,
   create,
 };
 
@@ -528,7 +528,7 @@ So the updated code in `apis/tasks.js` will be:
 ```javascript{5-8}
 import axios from "axios";
 
-const list = () => axios.get("/tasks");
+const fetch = () => axios.get("/tasks");
 
 const create = payload =>
   axios.post("/tasks", {
@@ -536,7 +536,7 @@ const create = payload =>
   });
 
 const tasksApi = {
-  list,
+  fetch,
   create,
 };
 

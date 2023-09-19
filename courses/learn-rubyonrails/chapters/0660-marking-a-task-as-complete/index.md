@@ -494,7 +494,7 @@ const Dashboard = ({ history }) => {
         data: {
           tasks: { pending, completed },
         },
-      } = await tasksApi.list();
+      } = await tasksApi.fetch();
       setPendingTasks(pending);
       setCompletedTasks(completed);
     } catch (error) {

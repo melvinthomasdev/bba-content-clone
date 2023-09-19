@@ -437,7 +437,7 @@ const Edit = ({ history }) => {
     try {
       const {
         data: { users },
-      } = await usersApi.list();
+      } = await usersApi.fetch();
       setUsers(users);
     } catch (error) {
       logger.error(error);

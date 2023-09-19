@@ -96,7 +96,7 @@ to `app/javascript/src/apis/tasks.js`:
 ```javascript {17,24}
 import axios from "axios";
 
-const list = () => axios.get("/tasks");
+const fetch = () => axios.get("/tasks");
 
 const show = slug => axios.get(`/tasks/${slug}`);
 
@@ -113,7 +113,7 @@ const update = ({ slug, payload }) =>
 const destroy = slug => axios.delete(`/tasks/${slug}`);
 
 const tasksApi = {
-  list,
+  fetch,
   show,
   create,
   update,
@@ -143,7 +143,7 @@ const Dashboard = ({ history }) => {
     try {
       const {
         data: { tasks },
-      } = await tasksApi.list();
+      } = await tasksApi.fetch();
       setTasks(tasks);
       setLoading(false);
     } catch (error) {
