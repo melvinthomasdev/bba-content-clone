@@ -1495,10 +1495,20 @@ class Preference < ApplicationRecord
     numericality: { only_integer: true },
     inclusion: {
       in: 0..23,
-      message: t("preference.notification_delivery_hour.range")
+      message: I18n.t("preference.notification_delivery_hour.range")
     }
 end
 ```
+
+You may have observed that, in contrast to our other models, we employ `I18n.t()` instead of `t()` for internationalization handling in the `Preference` model. If we were to use the helper method `t()` here, it would result in the following error:
+
+```bash
+`method_missing': undefined method `t' for Preference:Class (NoMethodError)
+```
+
+As this error message suggests, the `t()` method would not be accessible within the code block passed to the `validates` method. The `validates` method is defined at the [class level](https://github.com/rails/rails/blob/b3df4f25ac3ff9f12da3aaa7441e7c082289c293/activemodel/lib/active_model/validations/validates.rb#L106-L128), meaning that any code placed inside the `validates` block doesn't have direct access to the specific instance being validated. Consequently, instance-specific methods like `t`, found in `TranslationHelper`, are not directly accessible within the `validates` block. This is why we have opted to use `I18n.t`, which is the translate method available through the `I18n` module.
+
+There is an alternative approach that allows for direct access to the `t` method from `TranslationHelper`. To access instance-specific data or methods, such as `t`, you can define custom validation methods that are invoked within the context of an instance.
 
 ## Testing PreferencesController
 
