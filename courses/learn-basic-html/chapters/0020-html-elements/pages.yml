@@ -20,9 +20,6 @@
 - title: Exercise - Paragraph
   slug: exercise-paragraph
   page_type: exercise
-- title: List Items
-  slug: list-items
-  page_type: lesson
 - title: Unordered List
   slug: unordered-list
   page_type: lesson
