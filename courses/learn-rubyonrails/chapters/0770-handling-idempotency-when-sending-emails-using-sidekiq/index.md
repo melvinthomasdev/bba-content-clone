@@ -1502,7 +1502,7 @@ end
 
 You may have observed that, in contrast to our other models, we employ `I18n.t()` instead of `t()` for internationalization handling in the `Preference` model. If we were to use the helper method `t()` here, it would result in the following error:
 
-```bash
+```
 `method_missing': undefined method `t' for Preference:Class (NoMethodError)
 ```
 

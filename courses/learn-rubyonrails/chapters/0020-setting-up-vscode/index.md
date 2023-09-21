@@ -18,7 +18,7 @@ Most of us in BigBinary use VSCode as our daily tool for editing files. Thus if
 you ever wanted to check out how to do something faster or better in VSCode,
 then your colleagues are always there to help you out!
 
-## Enable code command
+## Enabling code command
 
 To run VSCode from terminal, we need to add `code` command in to our `PATH`.
 
@@ -83,27 +83,27 @@ settings and reload. It does the same job:
 }
 ```
 
-## Install recommended extensions
+## Installing recommended extensions
 
-VSCode provides many extensions which can improve our coding experience. Here are some VS Code extensions that we recommend using to enhance productivity:
+VSCode provides many extensions which can improve our coding experience. Here are some VSCode extensions that we recommend using to enhance productivity:
 
-- [bradlc.vscode-tailwindcss](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): For getting tailwind classes IntelliSense
+- [bradlc.vscode-tailwindcss](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): Provides IntelliSense for Tailwind CSS classes.
 
-- [kaiwood.endwise](https://marketplace.visualstudio.com/items?itemName=kaiwood.endwise): Automatically add end when we open a do block in ruby
+- [kaiwood.endwise](https://marketplace.visualstudio.com/items?itemName=kaiwood.endwise): Automatically adds `end` when opening a `do` block in Ruby.
 
-- [Shopify.ruby-lsp](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp): Ruby language support & Basic IntelliSense
+- [Shopify.ruby-lsp](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp): Offers Ruby language support and basic IntelliSense.
 
-- [redhat.vscode-yaml](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml): YAML Language support
+- [redhat.vscode-yaml](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml): Provides support for YAML language.
 
-- [editorconfig.editorconfig](https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig): Override user/workspace settings with settings found in .editorconfig files
+- [editorconfig.editorconfig](https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig): Overrides user/workspace settings with configurations from `.editorconfig` files.
 
-- [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Integrates ESLint into VS Code and shows errors and warnings while writing the code.
+- [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Integrates ESLint into VSCode, displaying errors and warnings while coding.
 
-- [streetsidesoftware.code-spell-checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Spell checker which detects typos in code. It automatically comprehends camelCase, snake_case, and other coding styles & splits words accordingly.
+- [streetsidesoftware.code-spell-checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Detects typos in code, accommodating various coding styles like camelCase and snake_case.
 
-- [CraigMaslowski.erb](https://marketplace.visualstudio.com/items?itemName=CraigMaslowski.erb): Syntax highlighting for erb files
+- [CraigMaslowski.erb](https://marketplace.visualstudio.com/items?itemName=CraigMaslowski.erb): Provides syntax highlighting for ERB files.
 
-- [eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=CraigMaslowski.erb): Integrates several git features to vscode.
+- [eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=CraigMaslowski.erb): Integrates multiple Git features into VSCode.
 
 Install all the above-mentioned extension using the following command:
 
@@ -111,7 +111,7 @@ Install all the above-mentioned extension using the following command:
 curl -s "https://raw.githubusercontent.com/bigbinary/wheel/main/.scripts/setup_vscode.sh" | ruby -
 ```
 
-Here are some optional settings you can set to VS Code globally. You can press `Cmd + Shift + P` and input `>Preferences: Open User Settings (JSON)` to open `settings.json` file.
+Here are some optional settings you can set to VSCode globally. You can press `Cmd + Shift + P` and input `>Preferences: Open User Settings (JSON)` to open `settings.json` file.
 
 Add these lines in the file as settings:
 
@@ -169,7 +169,7 @@ formatted every time changes are saved.
 }
 ```
 
-## Enable Rosetta in VSCode
+## Enabling Rosetta in VSCode
 
 We can check if Rosetta is enabled in our VSCode terminal by running the command
 `arch` on our VSCode terminal. If it outputs `i386` we are good and can skip
