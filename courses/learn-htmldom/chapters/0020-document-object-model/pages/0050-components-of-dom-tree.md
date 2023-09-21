@@ -40,7 +40,7 @@ let domTree = "";
 
 recursiveDomTreeBuilder = (parentNode) => {
   for(let child of parentNode.childNodes) {
-    if(!child.hasChildNodes()) {
+    if (!child.hasChildNodes()) {
       domTree += `${child.nodeName}<br>`;
 
     } else {

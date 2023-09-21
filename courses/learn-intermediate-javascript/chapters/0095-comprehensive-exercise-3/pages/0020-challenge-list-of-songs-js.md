@@ -36,7 +36,7 @@ const songNameOperations = songNames => {
 
   let songNamesWithVowel = songNames.filter((songName) => {
     songName = songName.toLowerCase();
-    if(songName.includes('a' || 'e' || 'i' || 'o' || 'u')) {
+    if (songName.includes('a' || 'e' || 'i' || 'o' || 'u')) {
       return true;
     } else {
       return false
@@ -44,7 +44,7 @@ const songNameOperations = songNames => {
   });
 
   let namesWithoutFirstVowel = songNames.filter((word)=>{
-    if( word.startsWith("a" || "e" || "i" || "o" || "u")) {
+    if ( word.startsWith("a" || "e" || "i" || "o" || "u")) {
       return false
     } else { 
       return true

@@ -111,7 +111,7 @@ h2, h3 {
 // Second Method - Listening on event on the parent element
 let secondParentDiv = document.querySelector('#second-parent');
 secondParentDiv.addEventListener("click", (e) => {
-    if(e.target.classList.contains("circle")) {
+    if (e.target.classList.contains("circle")) {
         e.target.style.backgroundColor = "green";
     }
 });

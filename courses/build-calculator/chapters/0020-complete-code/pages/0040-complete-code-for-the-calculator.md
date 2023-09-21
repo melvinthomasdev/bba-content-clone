@@ -117,7 +117,7 @@ let firstNumber = 0,
   currentOperator, priorCalculation, insertDecimal = false;
 actions.addEventListener("click", (event) => {
   let btnVal = event.target.textContent;
-  if(!isNaN(btnVal)) {
+  if (!isNaN(btnVal)) {
     handleNumerals(event);
   }
   switch (btnVal) {
@@ -146,13 +146,13 @@ actions.addEventListener("click", (event) => {
   }
 });
 handleNumerals = (event) => {
-  if(insertDecimal & resultDisplay.textContent == 0) {
+  if (insertDecimal & resultDisplay.textContent == 0) {
     resultDisplay.textContent += '.' + event.target.textContent;
     insertDecimal = false;
-  } else if(insertDecimal & resultDisplay.textContent != 0) {
+  } else if (insertDecimal & resultDisplay.textContent != 0) {
     resultDisplay.textContent += '.' + event.target.textContent;
     insertDecimal = false;
-  } else if(resultDisplay.textContent == 0 || priorCalculation) {
+  } else if (resultDisplay.textContent == 0 || priorCalculation) {
     resultDisplay.textContent = event.target.textContent;
     priorCalculation = false;
   } else {
@@ -161,8 +161,8 @@ handleNumerals = (event) => {
   insertDecimal = false;
 }
 handleOperations = (operator) => {
-  if(operator === "C") resultDisplay.textContent = "0";
-  if(operator === "=") {
+  if (operator === "C") resultDisplay.textContent = "0";
+  if (operator === "=") {
     priorCalculation = true;
     secondNumber = Number(resultDisplay.textContent);
     switch (currentOperator) {
@@ -189,8 +189,8 @@ handleOperations = (operator) => {
     secondNumber = 0;
     currentOperator = '';
   }
-  if(operator === "Del") {
-    if(resultDisplay.textContent.length === 1) {
+  if (operator === "Del") {
+    if (resultDisplay.textContent.length === 1) {
       resultDisplay.textContent = "0";
     } else {
       resultDisplay.textContent = resultDisplay.textContent.slice(0, -1);
@@ -206,7 +206,7 @@ handleMathOperations = (operator) => {
 }
 
 handleDecimal = () => {
-  if(!insertDecimal) {
+  if (!insertDecimal) {
     insertDecimal = true;
   }
 }

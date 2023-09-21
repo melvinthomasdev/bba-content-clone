@@ -28,7 +28,7 @@ const sumOrProduct = (
   callback
 ) => {
   let result = 0;
-  if(string === "sum") {
+  if (string === "sum") {
     result = firstNumber + secondNumber;
   } else {
     result = firstNumber * secondNumber;

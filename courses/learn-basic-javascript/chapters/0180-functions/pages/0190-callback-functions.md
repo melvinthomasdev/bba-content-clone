@@ -5,7 +5,7 @@ Let us have a look at an example:
 <codeblock language="javascript" type="lesson">
 <code>
 const validateSolution = (solution, statusMessage) => {
-  if(solution === 11) {
+  if (solution === 11) {
     statusMessage(true);
   } else {
     statusMessage(false);

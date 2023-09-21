@@ -28,11 +28,11 @@ Let's take a look at an example:
 
 <codeblock language="javascript" type="lesson">
 <code>
-if(true) {
+if (true) {
   console.log("This will print, as the condition is a truthy value.");
 };
 
-if(false) {
+if (false) {
   console.log("This will not print, as the condition is not a truthy value.");
 };
 </code>
@@ -53,7 +53,7 @@ const employee = {
   name: "Sam"
 };
 
-if(employee.name) {
+if (employee.name) {
   console.log(`Name of the employee is ${employee.name}.`);
 };
 </code>

@@ -34,13 +34,13 @@ const employeeThree = {
   isAdmin: false
 };
 
-if(employeeOne.isAdmin) {
+if (employeeOne.isAdmin) {
   console.log(`${employeeOne.name} has admin access.`);
 };
-if(employeeTwo.isAdmin) {
+if (employeeTwo.isAdmin) {
   console.log(`${employeeTwo.name} has admin access.`);
 };
-if(employeeThree.isAdmin) {
+if (employeeThree.isAdmin) {
   console.log(`${employeeThree.name} has admin access.`);
 };
 </solution>

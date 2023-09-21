@@ -125,7 +125,7 @@ button:active {
 let actions = document.getElementById("actions");
 
 actions.addEventListener("click", (event) => {
-  if(event.target.nodeName === "BUTTON") {
+  if (event.target.nodeName === "BUTTON") {
     console.log("Click Registered");
   }
 });

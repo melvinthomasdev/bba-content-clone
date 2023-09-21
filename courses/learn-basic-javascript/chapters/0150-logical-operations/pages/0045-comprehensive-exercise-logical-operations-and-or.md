@@ -38,7 +38,7 @@ const givenString = "hi";
 const givenBoolean = true;
 
 const logicalOperation = (inputNumber, inputString, inputBoolean) => {
-  if(inputNumber <= 10 && inputString.length >= 5 || inputBoolean) {
+  if (inputNumber <= 10 && inputString.length >= 5 || inputBoolean) {
     console.log(true);
   } else {
     console.log(false);

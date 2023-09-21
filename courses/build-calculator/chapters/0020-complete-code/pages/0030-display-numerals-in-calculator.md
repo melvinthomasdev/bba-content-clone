@@ -135,11 +135,11 @@ let actions = document.getElementById("actions");
 let result = document.getElementById("result");
 
 actions.addEventListener("click", (event) => {
-  if(event.target.nodeName === "BUTTON") {
-    if(!isNaN(event.target.textContent)) {
+  if (event.target.nodeName === "BUTTON") {
+    if (!isNaN(event.target.textContent)) {
       result.textContent += event.target.textContent;
       console.log("Number pressed");
-    } else if(event.target.textContent === "C") {
+    } else if (event.target.textContent === "C") {
       result.textContent = "0";
     }
     console.log("Click Registered");

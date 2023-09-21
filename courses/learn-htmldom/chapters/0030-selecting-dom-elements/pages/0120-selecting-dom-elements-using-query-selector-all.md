@@ -29,7 +29,7 @@ allParagraphs.forEach(para => {
 // A complex selector
 let inspirationConfirmation = document.querySelectorAll('#brutal-paragraph>span');
 inspirationConfirmation.forEach(word => {
-  if(word.textContent === "doesn't") word.textContent = "does";
+  if (word.textContent === "doesn't") word.textContent = "does";
 });
 </panel>
 </code>

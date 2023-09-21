@@ -50,7 +50,7 @@ for(let i = 0; i < 60; i++) {
 <solution>
 let root = document.querySelector('#root');
 root.addEventListener("click", (e) => {
-  if(e.target.tagName === "BUTTON") {
+  if (e.target.tagName === "BUTTON") {
     e.target.classList.add("sunshine");
   }
 });

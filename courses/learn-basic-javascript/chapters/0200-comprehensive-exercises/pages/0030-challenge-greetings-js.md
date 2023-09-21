@@ -19,7 +19,7 @@ the `message` as argument.
 </code>
 <solution>
 const greetings = (message, callback) => {
-  if(callback == console.log){
+  if (callback == console.log){
     return callback(message);
   } else {
     console.log("Provide correct callback.")
