@@ -196,6 +196,10 @@ The `cache` attribute specifies if we want to save the expected output of soluti
 
 The `foldLines` specifies the ranges of lines that should be folded on default load of the editor. You can specify one or more ranges, separated by comma. Each range should be specified as `startLine-endLine`. For example, `1-3, 4-9` will fold lines 1 to 3 and 4 to 9. This only works for editors that don't have panels. For editors with panels, you can use the `foldLines` attribute on the `panel` tag.
 
+#### 3.18 `<codeblock language="reactjs" showConsole="false">`
+
+The `showConsole` attribute specifies if we want to hide the console in the case of Reactjs codeblocks. For example, `showConsole="false"` will hide the console. The console will be shown by default.
+
 ### 4. `panel`
 
 When a single language is not sufficient to run the code, we use multiple `<panel>` tags inside our `<codeblock>`.
