@@ -13,10 +13,11 @@ Make sure you use the id selector **heading**.
 <h1 id="heading">HSL color system</h1>
 </panel>
 <panel language="css">
-// Write code here
+<!-- Write code below --> 
 </panel>
 </code>
 <solution>
+<!-- Write code below --> 
 #heading {
   background-color: hsl(0, 0%, 0%);
   color: hsl(60, 80%, 90%);

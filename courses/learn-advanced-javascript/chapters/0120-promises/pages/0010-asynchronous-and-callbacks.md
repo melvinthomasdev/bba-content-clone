@@ -3,7 +3,7 @@ Consider the following example:
 <codeblock language="javascript" type="lesson">
 <code>
 const transferMoney = ({ to, amount }) =>
-  setTimeout(() => console.log(`Transferred ${amount} to ${to}`), 5000);
+  setTimeout(() => console.log(`Transferring ${amount} to ${to}`), 5000);
 
 const onSuccess = () => console.log("Transfer Complete");
 
@@ -40,7 +40,7 @@ is completed.
 <code>
 const transferMoney = ({ to, amount, callback }) => {
   setTimeout(() => {
-    console.log(`Transferred ${amount} to ${to}`);
+    console.log(`Transferring ${amount} to ${to}`);
     callback();
   }, 5000);
 }

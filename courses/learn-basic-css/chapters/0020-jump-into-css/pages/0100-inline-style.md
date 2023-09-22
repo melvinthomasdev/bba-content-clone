@@ -8,7 +8,7 @@ style attribute.
 Let's take a look at an example:
 <codeblock language="html" type="lesson">
   <code>
-    <h1 style="color:white; background-color: blue; font-size:14px; font-family:arial,sans-serif;">
+    <h1 style="color:white; background-color: blue; font-size:14px; font-family:arial,sans-serif">
       Inline style
     </h1>
   </code>

@@ -40,10 +40,11 @@ following text:
 
 ### Note:
 - Each unordered list item should
-  be a link with href set as **#**.
-- The image link is not working,
-  so we should be able to see the
-  alternate text.
+be a link with href set as **#**.
+- Since, there is no proper link
+for the images,
+we should see the alternate text
+in their place.
 
 After the container `div`, 
 create another `div` with an **ID**
@@ -71,11 +72,11 @@ with the following text:
   </ul>
   <ol>
     <li>Define the project requirements</li>
-    <li>Create a basic setup</li>
+    <li>Create basic setup</li>
     <li>Code the website using basic HTML</li>
   </ol>
   <br>
-  <img src="scenery.jpg" alt="A beautiful landscape">
+  <img src="#" alt="A beautiful landscape">
   <table>
     <caption>Monthly Expenses</caption>
     <thead>
@@ -106,14 +107,13 @@ with the following text:
       <tr>
         <td>Total:</td>
         <td>$300</td>
-        <td></td>
       </tr>
     </tfoot>
   </table>
 </div>
 
 <div id="footer">
-  <p>© 2023 Bigbinary. All rights reserved.</p>
+  <p>© 2023 BigBinary. All rights reserved.</p>
 </div>
 
 </solution>

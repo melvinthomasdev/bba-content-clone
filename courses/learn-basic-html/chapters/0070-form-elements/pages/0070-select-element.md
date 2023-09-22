@@ -5,10 +5,10 @@ our forms, we use the `<select>` element.
 <code>
 <form>
   <select>
-      <option value="apple">Apple</option>
-      <option value="orange">Orange</option>
-      <option value="mango">Mango</option>
-      <option value="papaya">Papaya</option>
+    <option value="apple">Apple</option>
+    <option value="orange">Orange</option>
+    <option value="mango">Mango</option>
+    <option value="papaya">Papaya</option>
   </select>
 </form>
 </code>
@@ -23,10 +23,10 @@ a proper name to our drop-down list:
 <code>
 <form>
   <select name="fruit">
-      <option value="apple">Apple</option>
-      <option value="orange">Orange</option>
-      <option value="mango">Mango</option>
-      <option value="papaya">Papaya</option>
+    <option value="apple">Apple</option>
+    <option value="orange">Orange</option>
+    <option value="mango">Mango</option>
+    <option value="papaya">Papaya</option>
   </select>
 </form>
 </code>
