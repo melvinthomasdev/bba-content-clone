@@ -41,6 +41,24 @@
 - title: Exercise - Button Element
   slug: exercise-button-element
   page_type: exercise
+- title: Button Type - Submit
+  slug: button-type-submit
+  page_type: lesson
+- title: Exercise - Button Type - Submit
+  slug: exercise-button-type-submit
+  page_type: exercise
+- title: Button Type - Reset
+  slug: button-type-reset
+  page_type: lesson
+- title: Exercise - Button Type - Reset
+  slug: exercise-button-type-reset
+  page_type: exercise
+- title: Button Type - Button
+  slug: button-type-button
+  page_type: lesson
+- title: Exercise - Button Type - Button
+  slug: exercise-button-type-button
+  page_type: exercise
 - title: Fieldset Element
   slug: fieldset-element
   page_type: lesson
