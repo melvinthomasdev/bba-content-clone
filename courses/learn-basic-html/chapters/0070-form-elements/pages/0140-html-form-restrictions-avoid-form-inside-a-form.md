@@ -21,20 +21,16 @@ element inside another `<form>` element.
 **Correct Form Structure:**
 <codeblock language="html" type="lesson">
 <code>
-<div class="outer-form">
-  <form action="/outer" method="post">
-    <label for="outer-name">Outer Form Name:</label>
-    <input type="text" id="outer-name" name="outer-name">
-    <button type="submit">Submit</button>
-  </form>
-</div>
+<form class="outer-form" action="/outer" method="post">
+  <label for="outer-name">Outer Form Name:</label>
+  <input type="text" id="outer-name" name="outer-name">
+  <button type="submit">Submit</button>
+</form>
 
-<div class="inner-form">
-  <form action="/inner" method="post">
-    <label for="inner-name">Inner Form Name:</label>
-    <input type="text" id="inner-name" name="inner-name">
-    <button type="submit">Submit</button>
-  </form>
-</div>
+<form class="inner-form" action="/inner" method="post">
+  <label for="inner-name">Inner Form Name:</label>
+  <input type="text" id="inner-name" name="inner-name">
+  <button type="submit">Submit</button>
+</form>
 </code>
 </codeblock>

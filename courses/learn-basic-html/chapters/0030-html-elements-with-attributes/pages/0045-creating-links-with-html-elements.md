@@ -16,9 +16,9 @@ turned into links:
 <code>
 <!-- Using Text as a Link -->
 <a href="https://www.bigbinary.com">Click here to visit Bigbinary website</a>
-<!-- Using Div as a link -->
+<!-- Using p tag as a link -->
 <a href="https://bigbinaryacademy.com/">
-  <div>Click here to go to BB Academy website</div>
+  <p>Click here to go to BB Academy website</p>
 </a>
 <!-- Using Images as a Link -->
 <p> Click on the below Gift Image to see more Gift photos at Unsplash</p>

@@ -1,4 +1,4 @@
-Create a `div` element
+Create a `p` element
 with the text
 `Take a look at our basic HTML course`
 such that it takes us to
@@ -14,7 +14,7 @@ link:
 <solution>
 <!-- Write code here -->
 <a href="https://courses.bigbinaryacademy.com/learn-basic-html/">
-  <div>Take a look at our basic HTML course</div>
+  <p>Take a look at our basic HTML course</p>
 </a>
 </solution>
 </codeblock>

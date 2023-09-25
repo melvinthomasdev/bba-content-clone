@@ -6,10 +6,7 @@ Below the heading, add a paragraph
 with the following text:
 `Hello! I am a web developer passionate about HTML and CSS. This is my website where I share my knowledge and experiences.`
 
-Create a `div` below the paragraph
-with class set as `container`.
-
-Inside this `div` create the following:
+Then, create the following:
 
 1. Create an unordered list with
    the following three list items:
@@ -46,13 +43,9 @@ for the images,
 we should see the alternate text
 in their place.
 
-After the container `div`, 
-create another `div` with an **ID**
-set as `footer`.
-
-Inside the footer, add a paragraph
-with the following text:
-`© 2023 Bigbinary. All rights reserved.`
+Now, add a paragraph with the following
+text: `© 2023 Bigbinary. All rights reserved.`,
+as footer.
 
 <codeblock language="html" type="exercise" testMode="fixedInput" matchSolutionCode="true">
 <code>
@@ -64,57 +57,52 @@ with the following text:
 
 <p>Hello! I am a web developer passionate about HTML and CSS. This is my website where I share my knowledge and experiences.</p>
 
-<div class="container">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  <ol>
-    <li>Define the project requirements</li>
-    <li>Create basic setup</li>
-    <li>Code the website using basic HTML</li>
-  </ol>
-  <br>
-  <img src="#" alt="A beautiful landscape">
-  <table>
-    <caption>Monthly Expenses</caption>
-    <thead>
-      <tr>
-        <th>Category</th>
-        <th>Amount</th>
-        <th>Date</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Groceries</td>
-        <td>$150</td>
-        <td>2023-08-02</td>
-      </tr>
-      <tr>
-        <td>Clothes</td>
-        <td>$100</td>
-        <td>2023-08-02</td>
-      </tr>
-      <tr>
-        <td>Entertainment</td>
-        <td>$50</td>
-        <td>2023-08-02</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td>Total:</td>
-        <td>$300</td>
-      </tr>
-    </tfoot>
-  </table>
-</div>
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+<ol>
+  <li>Define the project requirements</li>
+  <li>Create basic setup</li>
+  <li>Code the website using basic HTML</li>
+</ol>
+<br>
+<img src="#" alt="A beautiful landscape">
+<table>
+  <caption>Monthly Expenses</caption>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Amount</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Groceries</td>
+      <td>$150</td>
+      <td>2023-08-02</td>
+    </tr>
+    <tr>
+      <td>Clothes</td>
+      <td>$100</td>
+      <td>2023-08-02</td>
+    </tr>
+    <tr>
+      <td>Entertainment</td>
+      <td>$50</td>
+      <td>2023-08-02</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total:</td>
+      <td>$300</td>
+    </tr>
+  </tfoot>
+</table>
 
-<div id="footer">
-  <p>© 2023 BigBinary. All rights reserved.</p>
-</div>
-
+<p>© 2023 BigBinary. All rights reserved.</p>
 </solution>
 </codeblock>

@@ -2,7 +2,6 @@ Avoid using the following
 HTML elements directly inside
 a `<form>`:
 - p
-- div
 - h1 to h6
 - a
 
@@ -28,15 +27,13 @@ Let us have a look at the same example
 with correct form structure:
 <codeblock language="html" type="lesson">
 <code>
-<div class="form-container">
-  <form action="/submit" method="post">
-    <caption>Personal Information</caption>
-    <br>
-    <label for="first-name">First Name:</label>
-    <input id="first-name" type="text" />
-    <button type="submit">Submit</button>
-  </form>
-  <a href="#">Rules</a>
-</div>
+<form action="/submit" method="post">
+  <caption>Personal Information</caption>
+  <br>
+  <label for="first-name">First Name:</label>
+  <input id="first-name" type="text" />
+  <button type="submit">Submit</button>
+</form>
+<a href="#">Rules</a>
 </code>
 </codeblock>
