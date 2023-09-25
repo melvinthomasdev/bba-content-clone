@@ -1,23 +1,11 @@
-In the previous exercise,
-we created a pop-up dialog
-box to display Log Out
-status.
-
-However, this dialog box
-doesn't have any functionality
-and it doesn't do anything on
-it's own.
-This makes it feel
-incomplete, doesn't it?
-
-To make a `<dialog>` element
-functional,
+To control a `<dialog>`
+element,
 we can use JavaScript.
 
 JavaScript provides two
 built-in methods for the
 `<dialog>` element:
-- `open()`: This method opens
+- `show()`: This method opens
   the dialog box,
   making it visible.
 - `close()`: This method closes
@@ -28,10 +16,9 @@ interactivity by allowing
 users to open and close
 the dialog box as desired.
 
-Let us take a look at the
-the upgraded dialog box in
-the code example below:
-
+Let us take a look at an example
+where we use JavaScript to control
+the dialog element:
 <codeblock language="javascript" type="lesson">
 <code>
 <panel language="html">
