@@ -1,7 +1,7 @@
 Using the `&&` operator
 in the `if` condition,
 check if the value of the
-`personName` variable is `"Sam Smith"`
+`name` variable is **Sam Smith**
 and the value of the
 `isAdmin` variable is `true`.
 
@@ -13,7 +13,7 @@ should get executed.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
-const personName = "Sam Smith";
+const name = "Sam Smith";
 const isAdmin = true;
 
 if () {
@@ -24,10 +24,10 @@ if () {
 </code>
 
 <solution>
-const personName = "Sam Smith";
+const name = "Sam Smith";
 const isAdmin = true;
 
-if (personName === "Sam Smith" && isAdmin) {
+if (name === "Sam Smith" && isAdmin) {
   console.log("Your coupon's value is: 100");
 } else {
   console.log("Your coupon's value is: 50");

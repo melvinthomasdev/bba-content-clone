@@ -1,14 +1,17 @@
 Using your knowledge on
 conditionals, try solving
 the challenge described
-below. Try not to scroll
+below.
+Try not to scroll
 down or take a peek at
 the solution.
 
-We have grade and attendance
-of a student.
-The student will get a discount of ₹3000
-on their course fee only if:
+We have grade and internship
+status of a student.
+
+The student will get a discount
+of 3000 on their course fee if
+the following conditions are met:
 - Student have scored 75 or above.
 - Student has done an internship.
 
@@ -20,7 +23,7 @@ the discount and log to
 the console
 `Your course fee is: [courseFee].`
 or else log
-`Your course fee is: [discountedFee]. We have discounted ₹3000 of it.`
+`Your course fee after discount is: [discountedFee].`
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
@@ -41,7 +44,7 @@ const student = {
 };
 if (student.marks >= 75 && student.internshipDone) {
   const discountedFee = courseFee - courseDiscountAmount;
-  console.log(`Your course fee is: ${discountedFee}.`);
+  console.log(`Your course fee after discount is: ${discountedFee}.`);
 } else {
   console.log(`Your course fee is: ${courseFee}.`);
 }
@@ -49,28 +52,30 @@ if (student.marks >= 75 && student.internshipDone) {
 </codeblock>
 
 Here, there is a possibility that
-some of us solved the problem chaining 
-if statements as seen in the code 
-given below:
+some of us solved the problem by
+using multiple if statements inside
+one another as seen in the code 
+given below.
 
 ```js
 if (student.marks >= 75) {
   if (student.internshipDone){
     const discountedFee = courseFee - courseDiscountAmount;
-    console.log(`Your course fee is: ${discountedFee}.`);
+    console.log(`Your course fee after discount is: ${discountedFee}.`);
   }
 } else {
-    console.log(`Your course fee is: ${courseFee}.`);
-  }
+  console.log(`Your course fee is: ${courseFee}.`);
+}
 ```
 
 Now take a look at the code snippet
 below which is taken from the
-solution the we have provided:
+solution that we have provided:
+
 ```js
 if (student.marks >= 75 && student.internshipDone) {
   const discountedFee = courseFee - courseDiscountAmount;
-  console.log(`Your course fee is: ${discountedFee}.`);
+  console.log(`Your course fee after discount is: ${discountedFee}.`);
 } else {
   console.log(`Your course fee is: ${courseFee}.`);
 }
