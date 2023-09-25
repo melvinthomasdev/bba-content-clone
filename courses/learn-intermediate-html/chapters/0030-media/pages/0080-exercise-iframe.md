@@ -1,5 +1,13 @@
-Create a iframe for **BigBinary home page** with a `title`, `width` as 100%,
-`height` of 360px and no `frameborder`.
+Create an iframe with **title**
+set as `BigBinary home page`.
+
+Add **width** as `100%`
+and
+**height** as `360px`.
+
+Add no **frameborder**
+and
+**source** as `https://www.bigbinary.com/`.
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
