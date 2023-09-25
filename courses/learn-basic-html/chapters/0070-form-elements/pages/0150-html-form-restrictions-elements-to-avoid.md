@@ -6,7 +6,8 @@ a `<form>`:
 - h1 to h6
 - a
 
-**Avoid this:**
+Let us take a look at an
+incorrect form structure example:
 <codeblock language="html" type="lesson">
 <code>
 <form action="/submit" method="post">
@@ -18,7 +19,13 @@ a `<form>`:
 </code>
 </codeblock>
 
-**Instead, do this:**
+In the code above, we've placed `<h1>`
+and
+`<p>` tags inside a `<form>` element,
+which isn't the correct structure for a form.
+
+Let us have a look at the same example
+with correct form structure:
 <codeblock language="html" type="lesson">
 <code>
 <div class="form-container">
