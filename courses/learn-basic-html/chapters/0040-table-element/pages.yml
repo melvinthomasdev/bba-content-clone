@@ -35,3 +35,9 @@
 - title: Exercise - Table Body
   slug: exercise-table-body
   page_type: exercise
+- title: HTML Challenge - Table
+  slug: html-challenge-table
+  page_type: exercise
+- title: HTML Challenge - Tables, Headings and Images
+  slug: html-challenge-tables-headings-images
+  page_type: exercise

@@ -71,3 +71,6 @@
 - title: Void Elements
   slug: void-elements
   page_type: lesson
+- title: HTML Challenge - Image and Links
+  slug: html-challenge-image-links
+  page_type: exercise
