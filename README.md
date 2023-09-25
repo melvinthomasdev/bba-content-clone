@@ -473,6 +473,74 @@ You can use backticks (``) to add code in the lesson titles. If you do use backt
 - Check the filenames
 - Check deployment
 
+## Managing chapters
+
+In the process of editing a course, it may be necessary to add new chapters or reorder existing ones. This guide outlines best practices and provides instructions for utilizing the `chapter_shifter` script to streamline these tasks. Here is a demo video of the script in action: https://vimeo.com/866861766/3f2c2669b3.
+
+### Adding a new chapter to a course
+
+There are cases where we might have to add a new chapter in between the existing chapters.
+
+Example: If there are 5 chapters, then on adding a new chapter and making it say the 2nd chapter, we have to increment the chapter numbers of all previous chapters indexed from 2-5 to 3-6.
+
+In such cases, we can make use of the `chapter_shifter` script to do the job automatically for us.
+
+Follow these steps VERY STRICTLY when you're adding a new chapter to course:
+
+- Manually create a new folder under the desired course without mentioning any chapter number in folder name.
+- Don't run `chapter_shifter` script yet!
+- Make a PR after adding content to new chapter.
+- If you get any review comments, then make the changes locally and push it.
+- Once done assign it to the tech lead.
+- If everything looks good, the tech lead will give you a go sign for running the `chapter_shifter` script.
+- Let's say that the lead gave the go sign to run the `chapter_shifter` script today night.
+- Then if you are seeing the comment the next morning, then the first thing you need to do is rebase with the latest `main` branch.
+- Only run the `chapter_shifter` script once you rebase with `main`.
+- The idea is, before running the `chapter_shifter` script, we have to be up to date with `main`.
+
+The following are the reasons on why we need to follow this pattern:
+
+- If you run the `chapter_shifter` script in the initial stages itself, then rebasing can get tricky.
+- The reason is that if you shift chapter numbers and you're editing chapter 47 in your local repo, the corresponding chapter might be number 46 in `main`.
+- This has the potential to create havoc during rebase if `main` branch had modified chapter 46.
+- In order to avoid such a situation. Please take care to follow the above steps.
+
+The following are the steps to use the chapter shifter script:
+
+- Step1: Add a new directory with the name of the new chapter, in the desired course. Add the necessary contents in the directory.
+- Step2: Once you get the go sign from the tech lead as per above instructions, use the following syntax for running that script from the **root** of the project:
+```
+ruby scripts/chapter_shifter.rb course-name new-chapter-name desired-chapter-number
+```
+Example usage:
+```
+ruby scripts/chapter_shifter.rb learn-rubyonrails rails-history 5
+```
+Make the PR immediately, so as to avoid any conflicts.
+### Reordering chapters
+
+In certain situations, it may be necessary to rearrange the order of existing chapters within a course. 
+
+Example: if there are six chapters, and you wish to move the second chapter to the fourth position, you must first remove the second chapter. This involves decrementing the chapter numbers of all subsequent chapters, re-indexing them from 3-6 to 2-5. Following this, you can add the removed chapter back into the course as the fourth chapter using the steps outlined in the previous section.
+
+In such cases, we can make use of the `chapter_shifter` script with the `--reverse` option to do the removal part automatically for us.
+
+The considerations for creating a new chapter, as mentioned earlier, should also be applied here. It is essential to merge the PR with the `main` branch as promptly as possible.
+
+To use the chapter shifter script with the `--reverse` option, follow these steps:
+
+- Step 1: Ensure that chapter that you are intending to reverse is already present in the course.
+- Step 2: Use the following syntax for running that script from the **root** of the project:
+```
+ruby scripts/chapter_shifter.rb --reverse course-name non-numbered-chapter-name chapter-number
+```
+
+Example usage:
+```
+ruby scripts/chapter_shifter.rb --reverse learn-rubyonrails rails-history 5
+```
+Make the PR immediately, so as to avoid any conflicts.
+
 ## Miscellaneous
 
 Single Action --> Design the chapter in such a way that the student has to perform a single action at the end.
