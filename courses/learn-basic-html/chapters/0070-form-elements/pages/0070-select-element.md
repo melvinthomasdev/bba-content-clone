@@ -22,7 +22,7 @@ a proper name to our drop-down list:
 <codeblock language="html" type="lesson">
 <code>
 <form>
-  <select name="fruit">
+  <select name="fruits">
     <option value="apple">Apple</option>
     <option value="orange">Orange</option>
     <option value="mango">Mango</option>
