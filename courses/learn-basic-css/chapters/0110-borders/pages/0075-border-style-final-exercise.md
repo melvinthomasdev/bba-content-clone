@@ -31,12 +31,6 @@ Make the following changes:
 </div>
 </panel>
 <panel language="css">
-p {
-  padding: 10px;
-}
-</panel>
-</code>
-
 body {
   margin: 0;
   padding: 0;
@@ -74,8 +68,9 @@ body {
   margin-bottom: 10px;
 }
 /* Write code below */
+</panel>
+</code>
 <solution>
-
 body {
   margin: 0;
   padding: 0;
