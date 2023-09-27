@@ -13,9 +13,7 @@ Write a code that takes in these car details to perform the following actions:
 
 * You need to print the value of either `carDetails.supportElectricOption` or `carDetails.electricOptionNotAvailableNow`, depending on which one is truthy to the console.
 
-* Add a check to make sure the below conditions is executed only if the car is Electric.
-
-* If it is electric, then print the welcome message:
+* Print the following welcome message to the console only if the car is Electric:
 `Electric cars are the future! The car we are presenting now is called [Name Here].`
 
 * You need to print the following statements based on the associated conditions:  
@@ -38,29 +36,22 @@ const displayCarDetails = (carDetails) => {
 
 <solution>
 const displayCarDetails = (carDetails) => {
-  console.log(`Electric cars are the future! The car we are presenting now is called ${carDetails.name}.`);
-
-  //nullish coalescing operator
-  console.log(carDetails.supportElectricOption ?? carDetails.electricOptionNotAvailableNow);
-
-  //If else statement
-  if (carDetails.supportElectricOption) {
-    if (carDetails.countryOfOrigin === "India") {
-      console.log("This car is made in India.");
-    } else {
-      console.log(`The country of origin is ${carDetails.countryOfOrigin}.`);
-    }
-
-    //If, else if, else statement
-    if (carDetails.colour === "black") {
-      console.log("The car's colour is metallic black.");
-    } else if (carDetails.colour === "white") {
-      console.log("The car's colour is snow blush.");
-    } else {
-      console.log("This car's colour is neither black nor white.");
-    }
-  }
-};
+	// write your code here
+	if (carDetails.supportElectricOption) console.log(carDetails.supportElectricOption);
+	if (carDetails.electricOptionNotAvailableNow) console.log(carDetails.electricOptionNotAvailableNow);
+	if (carDetails.supportElectricOption) console.log(`Electric cars are the future! The car we are presenting now is called ${carDetails.name}.`);
+	
+	if (carDetails.countryOfOrigin === "India") {
+	  console.log(`This car is made in India.`);
+	} else {
+	  console.log(`The country of origin is ${carDetails.countryOfOrigin}.`);
+	}
+	
+	if (carDetails.colour === "black") console.log(`The car's colour is metallic black.`);
+	if (carDetails.colour === "white") console.log(`The car's colour is snow blush.`);
+	if (carDetails.colour !== "black" && carDetails.colour !== "white") console.log(`This car is neither black nor white.`);
+	
+}
 </solution>
 <testcases>
 <caller>
@@ -86,7 +77,7 @@ const carDetails = {
 	countryOfOrigin: "India",
 	colour: "white",
 	supportElectricOption: true,
-	electricOptionNotAvailableAsof2023: false
+	electricOptionNotAvailableNow: false
 }
 </i>
 </testcase>
@@ -98,7 +89,7 @@ const carDetails = {
 	countryOfOrigin: "USA",
 	colour: "red",
 	supportElectricOption: true,
-	electricOptionNotAvailableAsof2023: false
+	electricOptionNotAvailableNow: false
 }
 </i>
 </testcase>
@@ -110,7 +101,7 @@ const carDetails = {
 	countryOfOrigin: "Somewhere",
 	colour: "Purple",
 	supportElectricOption: false,
-	electricOptionNotAvailableAsof2023: true
+	electricOptionNotAvailableNow: true
 }
 </i>
 </testcase>
@@ -122,7 +113,7 @@ const carDetails = {
 	countryOfOrigin: "India",
 	colour: "black",
 	supportElectricOption: false,
-	electricOptionNotAvailableAsof2023: true
+	electricOptionNotAvailableNow: true
 }
 </i>
 </testcase>
