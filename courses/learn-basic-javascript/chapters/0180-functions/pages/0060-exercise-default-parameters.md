@@ -4,7 +4,7 @@
 
 - Based on the arguments received,
   the function should display
-  `Your package <orderID> is <status>`
+  `Your package #<orderID> is <status>`
   using a template string.
 
 - The default value of `status`
