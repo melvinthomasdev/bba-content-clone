@@ -136,5 +136,8 @@ body {
   cursor: pointer;
   transition: background-color 0.2s;
 }
+.submit-button:hover {
+  background-color: #e74c3c;
+}
 </solution>
 </codeblock>
