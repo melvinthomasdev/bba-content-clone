@@ -8,11 +8,10 @@ table headings and table body elements.
 - Add a new row for fruit `Apple`
 with emoji `🍎`.
 - Include columns for `Sr. No.`,
-`Fruit name` and `Emoji`.
+`Fruit Name` and `Emoji`.
 
 <codeblock language="html" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
-<panel language="html">
 <div class="page">
   <h1>Welcome to HTML Table Challenge</h1>
   <table>
@@ -48,38 +47,6 @@ with emoji `🍎`.
     </tr>
   </table>
 </div>
-</panel>
-<panel language="css" hidden="true">
-.page {
-  display: flex;
-  flex-direction: column;
-  align-items: center
-}
-table {
-  font-size: 3rem;
-  border: 3px solid black;
-  font-family: Lato;
-  margin: 0 auto;
-}
-
-th, td {
-  border: 3px solid black;
-  box-shadow: 0px 0px 2px black;
-}
-
-.emoji {
-  background-color: lightskyblue;
-}
-
-th {
-  background-color: black;
-  color: snow;
-}
-
-.fruit-name {
-  background-color: lightcoral;
-}
-</panel>
 </code>
 <solution>
 <div class="page">
@@ -88,7 +55,7 @@ th {
     <caption>Fruit Cart</caption>
     <thead>
       <th>Sr. No.</th>
-      <th>Fruit</th>
+      <th>Fruit Name</th>
       <th>Emoji</th>
     </thead>
     <tbody>
