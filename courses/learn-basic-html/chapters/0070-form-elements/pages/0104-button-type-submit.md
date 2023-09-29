@@ -22,5 +22,6 @@ Let us take a look at the example:
 </code>
 </codeblock>
 
-Within a form, a `<button>` element
-is of the type `submit` by default.
+If the **type** attribute is not added
+to a `<button>` element,
+its default type will be `submit`.
