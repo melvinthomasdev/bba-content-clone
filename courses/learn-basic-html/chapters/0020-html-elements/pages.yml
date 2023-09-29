@@ -32,6 +32,15 @@
 - title: Exercise - Ordered List
   slug: exercise-ordered-list
   page_type: exercise
+- title: HTML elements allowed inside list items
+  slug: html-elements-allowed-inside-list-items
+  page_type: lesson
+- title: Exercise 1 - HTML elements allowed inside list items
+  slug: exercise-1-html-elements-allowed-inside-list-items
+  page_type: exercise
+- title: Exercise 2 - HTML elements allowed inside list items
+  slug: exercise-2-html-elements-allowed-inside-list-items
+  page_type: exercise
 - title: Line Break
   slug: line-break
   page_type: lesson
