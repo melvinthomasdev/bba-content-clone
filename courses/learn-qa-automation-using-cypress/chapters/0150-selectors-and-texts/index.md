@@ -1,4 +1,4 @@
-- Create a separate folder "constants" under cypress. In the "constants" folder,
+ Create a separate folder "constants" under cypress. In the "constants" folder,
   create two folders - "selectors" and "texts" and store all the selectors and
   texts respectively in those folders. Please refer:
 

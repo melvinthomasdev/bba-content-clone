@@ -23,7 +23,7 @@ fileName.jpg
 fileName.jpeg
 ```
 
-- So, whenever we want to store an object in fixtures and use it in our test
+So, whenever we want to store an object in fixtures and use it in our test
   cases, we can create a `json` file.
 
 For example, consider a `json` file under cypress folder which holds credentials
@@ -81,7 +81,7 @@ Fortunately, you don't have to make your code do backflips. With Cypress, we can
 better handle these situations. We can use `aliases` for sharing context. To
 alias something, you can use the `.as()` command.
 
-Let's look at our previous example with aliases
+Let's look at our previous example with aliases.
 
 ```javascript
 // Proper method

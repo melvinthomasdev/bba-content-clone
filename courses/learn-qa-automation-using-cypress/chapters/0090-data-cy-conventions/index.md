@@ -16,13 +16,13 @@ by the test code.
 There are no particular conventions for adding `data-cy`, but here in BigBinary
 we have set our own conventions for better code readability.
 
-### `data-cy` must be added in a particular format
+### data-cy must be added in a particular format
 
 ```javascript
 data-cy="functionality-name-field-name-type-of-the-field"
 ```
 
-### Pass `data-cy` as a prop
+### Pass data-cy as a prop
 
 When we use `cy` as attribute we use hyphen i.e. `data-cy`. But, in a react
    application we need to it pass as a prop to another component. In some cases,
@@ -56,7 +56,7 @@ data-cy="ace-invoice-icon"
 
 ```
 
-### Adding `data-cy` for different elements:
+### Adding data-cy for different elements
 
 - `data-cy` for labels e.g. Adding data-cy to a label, say "Email" label:
 
@@ -160,4 +160,4 @@ data-cy to those elements and we can use the selectors available for that
 element. e.g. The dropdowns in the _neeto_ are custom dropdowns and `data-cy`
 cannot be added to such elements.
 
-**`Note:` We should try to maintain `data-cy` whenever possible.**
+ We should try to use `data-cy` whenever possible.

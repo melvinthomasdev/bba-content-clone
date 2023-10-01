@@ -1,6 +1,6 @@
 ## Four logical parts of a test case
 
-- We can divide our test case into three to four logical parts.
+We can divide our test case into three to four logical parts.
 
 1. **_Setup_** - Action to be performed before actual test part. e.g navigate to
    a section via navbar. The common part of the `setup` can be added in `before`
@@ -44,12 +44,8 @@ and empty line.
 
 Refer to the example in the following section to get the proper idea.
 
-For example,
-
-Suppose we want to create a new task, we can write a test case covering all the
-scenarios:
-
-We can start with the cancel functionality, validations, create a new task, edit
+For example, Suppose we want to create a new task, we can write a test case covering all the
+scenarios.  We can start with the cancel functionality, validations, create a new task, edit
 a new task and delete a new task.
 
 Please refer to the code below to get a proper idea.

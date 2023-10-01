@@ -74,7 +74,7 @@ This will open up your default browser and start running the tests.
 
 ## Using tags to selectively run spec files
 
-There is an option to add tags to the test suite. In Bigbinary, we use the
+There is an option to add tags to the test suite. In BigBinary, we use the
 following tags for categorizing specs.
 
 - **Fixed**: For regression specs

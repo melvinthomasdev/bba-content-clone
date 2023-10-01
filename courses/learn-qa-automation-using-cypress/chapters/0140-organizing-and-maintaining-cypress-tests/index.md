@@ -3,11 +3,11 @@
 Avoid adding empty line after each command. There should be logical separation
 between the code statements.
 
-e.g. Test to add and delete an article
+Here is an example of a test case named "Test to add and delete an article".
+
+### Incorrect method
 
 ```javascript
-// incorrect method
-
 cy.get(navSelectors.articlesTab).click();
 
 navigateToNewArticlePage();
@@ -19,9 +19,11 @@ cy.get(articleSelectors.saveChangeButton).click();
 cy.get(navSelectors.articlesTab).click();
 // delete article
 deleteArticle(title);
+```
 
-// correct method
+### Correct method
 
+```javascript
 // add article
 cy.get(navSelectors.articlesTab).click();
 navigateToNewArticlePage();

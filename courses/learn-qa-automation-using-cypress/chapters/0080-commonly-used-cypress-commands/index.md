@@ -101,7 +101,7 @@ An alias can be created for DOM elements, intercepts, and fixtures.
 ### visit
 
 Used to visit a remote URL. It is considered best practice to set the `baseUrl`
-in Cypress configuration files. At Bigbinary, we add the `baseUrl` in
+in Cypress configuration files. At BigBinary, we add the `baseUrl` in
 configuration files. With the `baseUrl` specified, only the path needs to be
 passed to the `cy.visit()` command as Cypress appends the `baseUrl` with the
 path.
@@ -166,7 +166,8 @@ Used to invoke a function on the previously yielded subject. Needs to be
 chained. We pass in the function name as the argument.
 
 ```js
-cy.get("[data-cy='modal']").invoke("show"); // Invoke the jQuery 'show' function
+// Invoke the jQuery 'show' function
+cy.get("[data-cy='modal']").invoke("show");
 ```
 
 ### should
@@ -174,18 +175,14 @@ cy.get("[data-cy='modal']").invoke("show"); // Invoke the jQuery 'show' function
 Used to create an assertion. Assertions are automatically retried until they
 pass or time out.
 
-#### Syntax
-
 ```js
 .should(chainers)
 .should(chainers, value)
 .should(chainers, method, value)
 .should(callbackFn)
-```
 
-#### Usage
+// usage
 
-```js
 cy.get("[data-cy='error']").should("be.empty"); // Assert that '.error' is empty
 ```
 
@@ -309,7 +306,9 @@ there are some different types of commands: queries, assertions and actions.
 Take this chain of commands for example
 
 ```js
-cy.get('[data-cy="todo-app"]').find(".todo-list li").should("have.length", 1);
+cy.get('[data-cy="todo-app"]')
+  .find(".todo-list li")
+  .should("have.length", 1);
 ```
 
 Here
