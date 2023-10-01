@@ -1,4 +1,4 @@
-### Software Testing
+## Basics
 
 Software Testing is a process to check whether the actual software product
 matches expected requirements and to ensure that the software product is
@@ -7,7 +7,7 @@ manual or automated tools to evaluate one or more properties of interest. The
 purpose of software testing is to identify errors, gaps, or missing requirements
 in contrast to actual requirements.
 
-### Why is testing important?
+## Why is testing important?
 
 Errors made by us humans, when executed can lead to software failures. Some
 errors and mistakes are minor but some are quite dangerous and require constant
@@ -24,7 +24,7 @@ understand why software testing is important.
 Before understanding the testing process, let's first understand some basic
 terminologies.
 
-### Terminologies:
+## Terminologies:
 
 **White-box Testing**
 
@@ -147,7 +147,7 @@ Stubbing, like mocking, means creating a stand-in, but a stub only mocks the
 behavior, but not the entire object. This is used when your implementation only
 interacts with a certain behavior of the object.
 
-### How to test a software?
+## How to test a software?
 
 There are 2 ways to test software.
 

@@ -1,6 +1,6 @@
 ---
-- slug: software-testing-terminologies
-  name: Software Testing Terminologies
+- slug: software-testing-introduction
+  name: Software Testing Introduction
   has_pages: false
 - slug: js-and-file-naming-conventions
   name: JS and File Naming Conventions
