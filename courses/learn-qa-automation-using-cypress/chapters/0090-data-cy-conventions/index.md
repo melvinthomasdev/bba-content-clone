@@ -11,18 +11,20 @@ it's not coupled to the behavior or styling of an element.
 Additionally, it makes it clear to everyone that this element is used directly
 by the test code.
 
-### Conventions for adding `data-cy`
+## Conventions for adding data-cy
 
 There are no particular conventions for adding `data-cy`, but here in BigBinary
 we have set our own conventions for better code readability.
 
-1. `data-cy` must be added in the following format:
+### `data-cy` must be added in a particular format
 
 ```javascript
 data-cy="functionality-name-field-name-type-of-the-field"
 ```
 
-2. When we use `cy` as attribute we use hyphen i.e. `data-cy`. But, in a react
+### Pass `data-cy` as a prop
+
+When we use `cy` as attribute we use hyphen i.e. `data-cy`. But, in a react
    application we need to it pass as a prop to another component. In some cases,
    data-cy might not work, in that case we can use dataCy:
 
@@ -40,7 +42,9 @@ data-cy="functionality-name-field-name-type-of-the-field"
     ...
 ```
 
-3. Everything should be in lowercase while adding `data-cy`. e.g. Consider we
+### Use lowercase
+
+Everything should be in lowercase while adding `data-cy`. e.g. Consider we
    want to add `data-cy` to the application's icon, say _AceInvoiceIcon_:
 
 ```javascript
@@ -52,7 +56,7 @@ data-cy="ace-invoice-icon"
 
 ```
 
-4. Adding `data-cy` for different elements:
+### Adding `data-cy` for different elements:
 
 - `data-cy` for labels e.g. Adding data-cy to a label, say "Email" label:
 
@@ -135,7 +139,9 @@ data-cy="team-member-delete"
 data-cy="team-member-delete-button"
 ```
 
-4. Sometimes the element is very common throughout the whole application, in
+### Handling special case
+
+Sometimes the element is very common throughout the whole application, in
    such cases `data-cy` values for these elements can be kept in
    `selectors/common`. e.g. In neeto products, the heading selector is very
    common part for different pages in the application. Hence, the `data-cy`
@@ -145,11 +151,13 @@ data-cy="team-member-delete-button"
 data-cy="heading"
 ```
 
-5. _neeto_ applications: In neeto apps, we are using neetoUI component library.
-   In neetoUI, data-cy can be added or already added to most of the elements.
-   However, it uses some external libraries as well. In such cases, we can't add
-   data-cy to those elements and we can use the selectors available for that
-   element. e.g. The dropdowns in the _neeto_ are custom dropdowns and `data-cy`
-   cannot be added to such elements.
+### Using data-cy with neetoUI library elements
+
+In neeto applications, we are using neetoUI component library.
+In neetoUI, data-cy can be added or already added to most of the elements.
+However, it uses some external libraries as well. In such cases, we can't add
+data-cy to those elements and we can use the selectors available for that
+element. e.g. The dropdowns in the _neeto_ are custom dropdowns and `data-cy`
+cannot be added to such elements.
 
 **`Note:` We should try to maintain `data-cy` whenever possible.**

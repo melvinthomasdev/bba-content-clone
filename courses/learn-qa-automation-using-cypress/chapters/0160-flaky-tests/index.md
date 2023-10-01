@@ -7,7 +7,7 @@ on the second try the test passes, then it is a flaky test.
 
 ## Causes of flaky tests
 
-**1. DOM Rerendered on Request**
+### DOM Rerendered on Request
 
 When there is an API request happening for example on a button click and the DOM
 gets updated or is re-rendered after the request. If we happen to click on any
@@ -41,7 +41,7 @@ cy.wait("@request");
 cy.get("next-btn").click();
 ```
 
-**2. Race conditions**
+### Race conditions
 
 When a page is loaded, the DOM is rendered. Let's say that during that time t1,
 an element got created. After that, the event listeners for the element are
@@ -85,7 +85,7 @@ is not retried.
 When we need to fire the click element irrespective of it's state e.g. whether
 it is disabled/enabled, we should use `click({force: true})`.
 
-**3. Incorrect Logic Handling**
+### Incorrect Logic Handling
 
 These are the tests which will fail on the retries as well but will pass on some
 builds and fails on another. The assertions based on random data cause this

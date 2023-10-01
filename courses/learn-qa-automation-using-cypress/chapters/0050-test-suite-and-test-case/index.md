@@ -1,4 +1,4 @@
-### Test Suite
+## Test Suite
 
 - **_describe_** is a Cypress method for grouping one or more related tests.
 - Each **_describe_** block represents a test suite. Every time we start writing
@@ -17,7 +17,7 @@ describe("Test suite", () => {
   description of the test suite, and a _callback function_ for wrapping the
   actual test.
 
-### Test Case
+## Test Case
 
 - A test case can be written using **_it_** block.
 - A test suite can contain one or more test cases. A test suite can consist
@@ -41,7 +41,7 @@ describe("Test suite", () => {
 });
 ```
 
-### Conventions for _describe_ and _it_ block
+## Conventions for _describe_ and _it_ block
 
 - The description of a `describe` block must start with uppercase
 - The description of **_describe_** block should be short.

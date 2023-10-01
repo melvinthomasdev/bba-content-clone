@@ -1,11 +1,11 @@
-### What is Cypress?
+## What is Cypress
 
-Cypress is a next generation front end testing tool built for the modern web. It
-addresses key issues that both developers and QA engineers face when testing
-modern applications.
+Cypress is an end-to-end testing tool for the web.
 
-Cypress comes fully baked, batteries included. Here is a list of things it can
-do that no other testing framework can:
+## Features of Cypress
+
+Cypress comes with lots of features fully baked into it. Let's go through some of them.
+
 
 - **Time Travel:** Cypress takes snapshots as your tests run. Hover over
   commands in the

@@ -207,7 +207,7 @@ to avoid such ordering issues we issue intercepts only when we need them. This
 technique has the added advantage of helping us keep track of all the requests
 and it's routes.
 
-### Handle multiple request.
+### Handling multiple requests
 
 Let's consider that multiple requests are happening after we click on the save
 button. For example, let's consider there is one request to update the blog and

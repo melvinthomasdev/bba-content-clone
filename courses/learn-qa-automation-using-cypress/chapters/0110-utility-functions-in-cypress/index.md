@@ -29,7 +29,7 @@ describe("Login", () => {
 });
 ```
 
-### Commands vs Utility Functions
+## Commands vs Utility Functions
 
 Doesn't it seem that both `utility function` or a `command` does the similar
 thing? Maybe yes. But which one to prefer `utility function` or a `command` ?

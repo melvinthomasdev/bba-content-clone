@@ -14,7 +14,7 @@ Keep in mind when writing code to test a feature, have all it’s tests within a
 single `it` block so as to reduce the cost of running automated cypress tests as
 is mentioned in the **Test Suite and Test Case** chapter.
 
-### The Setup
+## Setup
 
 Before testing a feature there are some necessary steps that should be taken.
 All these steps must be contained within a `beforeEach` block or `before` block.
@@ -32,7 +32,7 @@ beforeEach(() => {
 });
 ```
 
-### The Test body
+## Test body
 
 When writing tests, figure out the basic functionalities of the feature to be
 tested and ensure that the tests account for all these functionalities. Since we
@@ -43,7 +43,7 @@ functions would be
 - Editing a tag
 - Deleting a tag
 
-### Testing Create tag function
+## Testing Create tag function
 
 ```javascript
 // verify create tag pane view
@@ -103,7 +103,7 @@ export const verifyTagDetails = tagName => {
 };
 ```
 
-### Testing Edit tag function
+## Testing Edit tag function
 
 ```javascript
 // edit tag
@@ -128,7 +128,7 @@ Here we have tested :-
   **past state** and also checks the present tag details to be conforming with
   what we have entered in the form.
 
-### Testing the Delete function.
+## Testing the Delete function
 
 <image>delete-tag-modal.png</image>
 
@@ -151,7 +151,7 @@ Here we have tested :-
 - The `delete tag` function. As usual we assert the toastr message content, then
   we search for the deleted tag and asserts that it doesn't exist.
 
-### The Teardown
+## Teardown
 
 As we've already learned after each test we must restore the state of the app.
 This is very important because, if we skipped this step, then other tests might
@@ -169,7 +169,7 @@ afterEach(() => {
 });
 ```
 
-### Point to remember
+## Point to remember
 
 <image>form-with-required-category-field.png</image>
 

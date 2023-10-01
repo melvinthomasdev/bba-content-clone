@@ -1,3 +1,5 @@
+## Four logical parts of a test case
+
 - We can divide our test case into three to four logical parts.
 
 1. **_Setup_** - Action to be performed before actual test part. e.g navigate to
@@ -31,7 +33,7 @@ All the test scenarios (both positive and negative) for a functionality can be
 written in a single test case. We can separate the test scenarios by a comment
 and empty line.
 
-### Reasons to keep all the scenarios in a single test case?
+## Reasons to keep all the scenarios in a single test case
 
 1. To reduce the overall test execution time. Most of the applications which we
    work on are powered by front-end frameworks like react. So to test all the

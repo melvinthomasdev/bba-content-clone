@@ -4,7 +4,7 @@
 
 ![](https://i.imgur.com/xIMQtdo.png)
 
-### Selectors
+## Selectors
 
 - In a selector file, create an object for storing all the related DOM selectors
   and export that object in other files where we need to use it.
@@ -58,7 +58,7 @@ export const clientsSelectors = {
   using generic classes. And in some cases, we may need to use them with some
   parent element to make them specific. e.g. `.content-body-wrapper .heading`.
 
-### Texts
+## Texts
 
 - We will follow the same conventions as selectors for storing the texts as
   well.
@@ -88,7 +88,7 @@ export const loginErrorTexts = {
 };
 ```
 
-### Importing selectors and texts variables
+## Importing selectors and texts variables
 
 - We need to import variables from selectors and texts. Please refer to the example below:
 
@@ -102,7 +102,7 @@ import { commonTexts } from "../../constants/texts/common";
 import { profileSettingsTexts } from "../../constants/texts/profileSettings";
 ```
 
-### Aliases
+## Aliases
 
 Our tests are organized functionality-wise. We need to specify relative path
 i.e. `../../`. If they are deeply nested, it becomes too difficult to specify the path. When we move any file to another location, we need to update them again. So,
@@ -137,7 +137,7 @@ import { commonSelectors } from "Selectors/common";
 
 The problem with mentioning the directory using a combination of dots and slashes is that this is very error-prone. Using aliases makes code clean and readable. It is worth noting that here at BigBinary, we use the convention of capitalizing the path alias for Cypress.
 
-### Usage
+## Usage
 
 Take a look at the code block given below:-
 

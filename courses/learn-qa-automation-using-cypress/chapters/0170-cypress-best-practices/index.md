@@ -1,4 +1,4 @@
-**1. Login programmatically**
+## Login programmatically
 
 To test most of the functionalities, many of the web applications need the user
 to be logged in.
@@ -13,7 +13,7 @@ cy.loginViaUI("username", "password"); // incorrect
 cy.login("username", "password"); // correct, we are logging in programmatically here
 ```
 
-**2. Use proper selectors**
+## Use proper selectors
 
 Every test we write will include selectors for elements. The CSS classes might
 change or be removed. We must use selectors that are resilient to changes.
@@ -50,7 +50,7 @@ doesn't contain the string "Sign up for free". Hence we can ensure the test
 passes only when an element containing the necessary content exists within the
 selected DOM element.
 
-**3. Don’t assign command’s return values**
+## Don’t assign command’s return values
 
 Don’t assign command’s return values to variables.
 
@@ -68,14 +68,14 @@ cy.visit("https://example.cypress.io");
 a.first().click();
 ```
 
-**4. Don't test external sites**
+## Don't test external sites
 
 - **Anti-Pattern:** Trying to visit or interact with sites or servers which we
   do not control.
 - **Best Practice:** Only test what we can control. When necessary, always use
   cy.request() to talk to 3rd party servers via their APIs.
 
-**5. Make every test independent of each other**
+## Make every test independent of each other
 
 - **Anti-Pattern:** Coupling multiple tests together i.e. making tests depend on
   previous/other tests.
@@ -83,7 +83,7 @@ a.first().click();
   one another and still pass. In Cypress, we can run tests in parallel. All the
   tests can pass only if they are not dependent on each other.
 
-**6. Avoid single assertion tests**
+## Avoid single assertion tests
 
 We are testing behavior of the application, we are doing integration testing,
 not unit testing.
@@ -91,12 +91,12 @@ not unit testing.
 **Anti-Pattern:** Acting like we're writing unit tests. **Best Practice:** Add
 multiple assertions and don't worry about it.
 
-**7. Don’t clean state using `after` or `afterEach` hooks**
+## Don’t clean state using `after` or `afterEach` hooks
 
 - **Anti-Pattern:** Using `after` or `afterEach` hooks to clean up state.
 - **Best Practice:** Clean up state before tests are run.
 
-**8. Don't use wait for arbitrary time period**
+## Don't use wait for arbitrary time period
 
 - **Anti-Pattern:** Waiting for arbitrary time periods using cy.wait(Number).
 - **Best Practice:** Use intercepts (route aliases are deprecated) or assertions
@@ -112,13 +112,13 @@ cy.intercept("url").as("requestInterceptor");
 cy.wait("@requestInterceptor");
 ```
 
-**9. Start Web Servers prior to running cypress**
+## Start Web Servers prior to running cypress
 
 **Anti-Pattern:** Trying to start a web server from within Cypress scripts with
 cy.exec() or cy.task() **Best Practice:** Start a web server prior to running
 Cypress.
 
-**10. Set a global baseUrl**
+## Set a global baseUrl
 
 - **Anti-Pattern:** Using cy.visit() without setting a baseUrl.
 - **Best Practice:** Set a baseUrl in your configuration file (cypress.json by
@@ -133,7 +133,7 @@ Cypress.
 }
 ```
 
-**11. Avoid `{ force: true }`**
+## Avoid `{ force: true }`
 
 Cypress is an automation tool where it simulates the user behavior. If we use
 `force: true` on any event, it overrides the actionable checks Cypress applies
@@ -146,7 +146,7 @@ surrounding elements first before actually asserting the element. And even if it
 still doesn't work, we can try a plugin called
 [Cypress Real Events](https://github.com/dmtrKovalenko/cypress-real-events).
 
-**12. Use `cy.contains()` along with a selector**
+## Use `cy.contains()` along with a selector**
 
 When we use `cy.contains()` to select an element with some text or to assert.
 
@@ -168,8 +168,7 @@ For example,
 cy.contains("[data-cy='sign-up-link']", "Sign up for free").click();
 ```
 
-**13. Avoid chaining of array elements with `.eq()`, `.first()` etc. in the test
-case**
+## Avoid chaining of array elements with `.eq()`, `.first()` etc. in the test case
 
 Whenever there's an array of elements and we want to use any specific element
 from that array, let's say first or last element we can specify it in with the
@@ -195,7 +194,7 @@ cy.get("[data-cy=check-box]:eq(0)").should("be.visible").check();
 cy.get("[data-cy=check-box]:nth-child(1)").should("be.visible").check();
 ```
 
-**14. Use `scrollIntoView()` to detect partially visible elements**
+## Use `scrollIntoView()` to detect partially visible elements
 
 Cypress sometimes fails to detect an element even if it exists and maybe
 partially visible as well. In such cases, we can use `scrollIntoView` with
@@ -209,7 +208,7 @@ cy.get(clientsPageConfig.submitButton).scrollIntoView().click();
 cy.get(clientsPageConfig.submitButton).scrollIntoView({ easing: "linear" });
 ```
 
-**15. Use `loginPath` instead of `rootUrl` for login test**
+## Use `loginPath` instead of `rootUrl` for login test
 
 While writing login test visit **loginPath** instead of **rootUrl** as visiting
 **rootUrl** for testing login functionality might not work in every environment
@@ -227,8 +226,7 @@ describe("Login", () => {
 });
 ```
 
-**16. No need of common assertions for actionable elements before performing
-actions**
+## No need of common assertions for actionable elements before performing actions
 
 Whenever we want to perform any action on elements like button or input field
 e.g. `click` or `type` on them respectively. Asserting on them with
@@ -244,8 +242,7 @@ cy.get("[data-cy=submit-modal-button]").should("be.visible").click();
 cy.get("[data-cy=submit-modal-button]").click();
 ```
 
-**17. Custom commands should be purely functional and should not have code
-pertaining to verifications.**
+## Custom commands should be purely functional and should not have code pertaining to verifications
 
 <image>custom-commands-functional.png</image>
 
@@ -258,7 +255,7 @@ visible on page.
 
 <image>use-visible-instead-of-exist.png</image>
 
-**19. Enable Retries:**
+## Enable Retries
 
 Retries should be enabled. This helps in determining the tests which are flaky.
 We can set this configuration in cypress.json like this.
@@ -275,7 +272,7 @@ We can set this configuration in cypress.json like this.
 Ensure that we are using `beforeEach` and not `before` hooks in our tests, as
 `before` hooks are not retried.
 
-**20. Github related:**
+## GitHub related
 
 - Ensure to pull the latest code (always should be in sync) from github before
   creating a branch.

@@ -1,4 +1,4 @@
-**1. Avoid adding empty line after each statement**
+## Avoid adding empty line after each statement
 
 Avoid adding empty line after each command. There should be logical separation
 between the code statements.
@@ -36,17 +36,15 @@ deleteArticle(title);
 Here we have introduced a new line to separate code blocks having different test
 logic, and have combined cypress commands pertaining to the same test logic.
 
-**2. Avoid writing comments**
+## Avoid writing comments
 
 Avoid writing comments in the code unless it is really needed. The code should
 be self explanatory.
 
-**3. Importing external files before internal files**
+## Importing external files before internal files
 
 Always keep import statements for external libraries before importing internal
 files.
-
-e.g.
 
 ```javascript
 import faker from "faker";
@@ -59,7 +57,7 @@ import { groupsSelectors } from "../../constants/selectors/groups";
 import { groupIndexTexts } from "../../constants/texts/groups";
 ```
 
-**4. Avoiding Repetitive Code**
+## Avoiding Repetitive Code
 
 There are different ways we can avoid repetitive code. Consider using following
 ways to avoid repetitive code:
@@ -69,7 +67,7 @@ ways to avoid repetitive code:
 - Utility functions
 - Loops (If the same assertion logic is used for multiple elements)
 
-**5. Maintaining API paths**
+## Maintaining API paths
 
 We can create a separate file for storing all the routes and import them
 whenever required. For storing them, we can create `routes.js` file under the constants folder.
@@ -101,11 +99,11 @@ cy.apiRequest({ method: "GET", url: apiRoutes.articles.index });
 cy.apiRequest({ method: "DELETE", url: apiRoutes.articles.show("1234") });
 ```
 
-**6. Add files that we don't want to commit or track in `.gitignore`**
+## Add files that we don't want to commit or track in .gitignore
 
 We would want to ignore some files that are created along with time or during the installation of Cypress like _node_modules_`, `videos`, `screenshots`_ etc. These files are important but can be ignored while committing our changes to the repository. Such files can be added in `.gitignore`.
 
-**7. Use webpack aliases**
+## Use webpack aliases
 
 `webpack.config.js` file, which describes how the cypress files and assets
 should be transformed and what kind of output should be generated.
@@ -120,7 +118,7 @@ import { agentsSelectors } from "Selectors/agents.js";
 import { agentsTexts } from "Texts/agents.js";
 ```
 
-**8. Importing fakers from fixtures**
+## Importing fakers from fixtures
 
 Often we need to use some random data to perform integration testing. And there
 comes a npm package,`faker` which helps us to generate random data very easily.
@@ -161,7 +159,7 @@ describe("Create new tags", () => {
 });
 ```
 
-**9. Use `within()` for narrowing the scope of cypress**
+## Use `within()` for narrowing the scope of cypress
 
 Whenever multiple elements with the same selector are present, we can select the desired element using `within()` to narrow the scope. e.g. Let's say, there is a table of canned responses list. Each row has an edit, and delete button. So, to select one of them, we first need to get the element with the name and then use
 `within()` to narrow down the scope. Each row contains only one edit button, so
@@ -175,7 +173,7 @@ cy.contains(cannedResponseSelectors.tableRow, cannedResponseName).within(() => {
 });
 ```
 
-**10. Group variables based on the context**
+## Group variables based on the context
 
 Let's say we have a test to create and edit an article. So we need one article's details for creating an article and another article's details for editing. So, we can group them based on the context.
 

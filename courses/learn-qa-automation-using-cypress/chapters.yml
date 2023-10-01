@@ -8,8 +8,8 @@
 - slug: introduction-to-cypress
   name: Introduction to Cypress
   has_pages: false
-- slug: how-to-run-cypress-tests
-  name: How to run Cypress tests
+- slug: running-cypress-tests
+  name: Running Cypress tests
   has_pages: false
 - slug: test-suite-and-test-case
   name: Test Suite and Test Case

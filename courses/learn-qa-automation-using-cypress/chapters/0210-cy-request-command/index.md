@@ -1,14 +1,14 @@
-# What is request?
+## What is request?
 
 - A request is a way to communicate between a server and a browser.
 - A request is sent to a server and then the server responds with the
   appropriate data back to the browser, also known as a client.
 
-# What is required for a request?
+## What is required for a request?
 
 - For a request to be made mainly below things needs to be considered:
 
-**1. HTTP Method (method)**
+## HTTP Method (method)
 
 - There are many types of methods but mainly we use four of them:
   1. `GET` : Indicates that some data is required from a server. This is the
@@ -18,14 +18,15 @@
   3. `PUT` : Indicates that we want to modify the existing data in some way.
   4. `DELETE` : Indicates that we want to delete some existing data.
 
-**2. URL**
+## URL
 
 - URL is a path that we usually type in a browser like `http://google.com`
 - It can also contain query parameter at the end. In
   `http://google.com?name=bigbinary&location=pune` we are adding two query
   parameters `name(bigbinary)` and `location(pune)`.
 
-**3. Headers**
+
+## Headers
 
 - Header is also known as a metadata for a request like what kind of content is
   being sent or what kind of content is accepted (visit
@@ -35,7 +36,7 @@
 - Using these cookies and headers server identifies which user is sending a
   request.
 
-**4. Body / Payload**
+## Body / Payload
 
 - Body is usually a data that we want to send along with the request.
 - It can be of type string, json object, array or a file(video/audio)
@@ -44,18 +45,18 @@
 
 - Response only contains three main things:
 
-**1. Status**
+## Status
 
 - Status is a code that shows whether a response is successful or something went
   wrong. If request was a success it will return `200` as a status. (visit
   [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) for all the
   available status codes and their meanings)
 
-**2. Response Headers**
+## Response Headers
 
 - It is same as a request header but contains the metadata about response.
 
-**3. Body / Payload**
+## Body / Payload
 
 - Whenever a data needs to be returned from a server usually you get it in the
   form of body/payload.

@@ -39,7 +39,7 @@ module.exports = defineConfig({
 });
 ```
 
-### Browser
+## Browser
 
 - _**chromeWebSecurity**_ allows enable Chromium-based browser's Web Security
   for same-origin policy and insecure mixed content.
@@ -47,7 +47,7 @@ module.exports = defineConfig({
 Set the value as `false`, as some of specs we may write have to navigate to any
 superdomain without cross-origin errors with or without `cy.origin()`.
 
-### Retries
+## Retries
 
 - _**runMode**_ allows you to define the number of test retries when running
   cypress run.
@@ -57,7 +57,7 @@ superdomain without cross-origin errors with or without `cy.origin()`.
 Set the value as `1` for both of them. By default the value is `0`. **Do not
 increase the value as that adds to the cost of running the tests on CI.**
 
-### Timeouts
+## Timeouts
 
 - _**execTimeout**_ is the time, in milliseconds, to wait for a system command
   to finish executing during a `cy.exec()` command.
@@ -78,7 +78,7 @@ seconds), _requestTimeout_ to `10000` (10 seconds).
 **The values for these timeouts should not be increased to higher value as that
 adds to our cost of running the tests on CI.**
 
-### Viewport
+## Viewport
 
 - _**viewportHeight**_ is the height in pixels for the application under tests'
   viewport. Default value is `660`.
@@ -88,7 +88,7 @@ adds to our cost of running the tests on CI.**
 The values for these viewport differs from requirement and is set to `960`
 _viewportHeight_ and `1200` _viewportWidth_ in the config.
 
-### E2E Options
+## E2E Options
 
 - _**setupNodeEvents**_ is a function in which node events can be registered and
   config can be modified. Used to setup Cypress plugins like @cypress/grep.

@@ -1,7 +1,7 @@
 Hooks are helpful to manage tests in an efficient way. It helps us to set
 conditions before/after test conditions and also reduce the redundant code.
 
-### before() Hook:
+## before() Hook
 
 - **_before()_** : If we want to execute some steps **only once** before all the
   test cases in a test suite, we can use the before() cypress hook to group all
@@ -19,7 +19,7 @@ describe("Test suite", () => {
 });
 ```
 
-### beforeEach() Hook:
+## beforeEach() Hook
 
 - **_beforeEach()_** : If we want to execute some steps **before each** of the
   test cases in a Test Suite, we can use the beforeEach() block to group all
@@ -36,7 +36,7 @@ describe("Test suite", () => {
 });
 ```
 
-### afterEach() Hook:
+## afterEach() Hook
 
 - **_afterEach()_** : If we want to execute some steps **after each** of the
   test cases in a test suite. We can use the afterEach() block to group all
@@ -55,7 +55,7 @@ describe("Test suite", () => {
 });
 ```
 
-### after() Hook:
+## after() Hook
 
 - **_after()_** : If we want to execute some steps **only once** after all the
   test cases. We can use the after() block to group all those test steps. It can

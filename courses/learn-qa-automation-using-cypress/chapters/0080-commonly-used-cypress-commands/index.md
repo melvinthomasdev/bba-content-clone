@@ -8,7 +8,7 @@ This chapter only explains the basic usage of each of these commands, to get to
 know more about its functionality, refer to the
 [official Cypress docs](https://docs.cypress.io/api/table-of-contents).
 
-## Commands
+## List of Commands
 
 ### get
 
