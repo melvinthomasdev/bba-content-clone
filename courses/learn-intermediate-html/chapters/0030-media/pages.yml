@@ -20,6 +20,12 @@
 - title: Exercise - Audio
   slug: exercise-audio
   page_type: exercise
+- title: Source element in audio
+  slug: source-element-in-audio
+  page_type: lesson
+- title: Exercise - Source element in audio
+  slug: exercise-source-element-in-audio
+  page_type: exercise
 - title: Video
   slug: video
   page_type: lesson

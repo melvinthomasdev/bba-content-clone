@@ -3,8 +3,7 @@ various formats, like `wav`, `ogg` and `mp3`.
 
 <codeblock language="html" type="lesson">
 <code>
-<audio controls>
-  <source src="https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav" type="audio/wav">
+<audio src="https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav" controls>
 </audio>
 </code>
 </codeblock>
