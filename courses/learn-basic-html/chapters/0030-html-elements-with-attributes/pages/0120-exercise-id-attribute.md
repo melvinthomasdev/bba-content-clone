@@ -7,7 +7,7 @@ Give the `id` attribute the value of **emotion-name** in the `<h2>` element belo
 </code>
 
 <solution>
-<h2 div id="emotion-name">Empathy</h2>
+<h2 id="emotion-name">Empathy</h2>
 <p>An empathetic response is a much better response.</p>
 </solution>
 </codeblock>
