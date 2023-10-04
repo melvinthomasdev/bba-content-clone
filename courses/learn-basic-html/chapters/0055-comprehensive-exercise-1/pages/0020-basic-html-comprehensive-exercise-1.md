@@ -44,8 +44,8 @@ we should see the alternate text
 in their place.
 
 Now, add a paragraph with the following
-text: `© 2023 Bigbinary. All rights reserved.`,
-as footer.
+text:
+`© 2023 Bigbinary. All rights reserved.`
 
 <codeblock language="html" type="exercise" testMode="fixedInput" matchSolutionCode="true">
 <code>
