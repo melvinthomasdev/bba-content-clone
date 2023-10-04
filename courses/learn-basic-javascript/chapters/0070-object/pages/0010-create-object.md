@@ -14,7 +14,7 @@ that are are related.
 Take a look at the below image to see
 what an **object** looks like.
 
-![javaScript object](https://ucarecdn.com/ef31d86e-6d8e-4042-96dd-d70a3115adb7/)
+![javaScript object](https://ucarecdn.com/1b37cf46-3a65-4c02-b89b-f389135ba74a/jsbestpractices.png)
 
 In the example given below,
 we are storing the **fuelType** of a car
