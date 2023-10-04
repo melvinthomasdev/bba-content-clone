@@ -23,7 +23,7 @@ terminologies.
 
 ### White-box Testing
 
-In white-box testing, the tester is aware of  the inner workings of the software.
+In white-box testing, the tester is aware of the inner workings of the software.
 One of the basic goals of white-box testing is to verify working flow for an application.
 When a software engineer who built the application does testing then that's a "white-box testing".
 
@@ -66,7 +66,7 @@ maintained for all kinds of user tasks and processes. This type of testing
 approach starts from the end user’s perspective and simulates a real-world
 scenario.
 
-For example, on a sign-up form, you can expect a user to perform one or more of
+For example, on a sign-up form, we can expect a user to perform one or more of
 these actions:
 
 - Enter a blank email and password
@@ -74,7 +74,7 @@ these actions:
 - Enter an invalid email and password
 - Click a sign-up button
 
-You can use end-to-end testing to verify that all these actions work as a user
+We can use end-to-end testing to verify that all these actions work as a user
 might expect.
 
 ### Happy Path Testing
@@ -107,7 +107,7 @@ latest code changes are done.
 ### Assertion
 
 An assertion is used in automated testing to assert the expected behavior of the
-test. An assertion fails if the result is different than what you expected it to
+test. An assertion fails if the result is different than what we expected it to
 be. This is a key concept in functional testing. Assertions are commonly used in
 Unit testing, but the same concept applies to other forms of automated tests.
 
@@ -120,7 +120,7 @@ fail. Often this depends on the data passed to the Test
 ### Test Scenario
 
 A sequence of activities performed in a system, such as logging in, signing up a
-customer, ordering products, and printing an invoice. You can combine test cases
+customer, ordering products, and printing an invoice. We can combine test cases
 to form a scenario especially at higher test levels.
 
 ### Test Suite
@@ -131,14 +131,14 @@ collection of test scripts.
 ### Mocking
 
 Mocking means creating a fake version of an external or internal service that
-can stand-in for the real one, helping your tests run more quickly and more
+can stand-in for the real one, helping our tests run more quickly and more
 reliably. When our implementation interacts with an object's properties, rather
 than its function or behavior, a mock can be used.
 
 ### Stubbing
 
 Stubbing, like mocking, means creating a stand-in, but a stub only mocks the
-behavior, but not the entire object. This is used when your implementation only
+behavior, but not the entire object. This is used when our implementation only
 interacts with a certain behavior of the object.
 
 ## How to test a software?

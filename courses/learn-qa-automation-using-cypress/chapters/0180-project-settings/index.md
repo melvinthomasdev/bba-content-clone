@@ -29,7 +29,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       return require("./cypress/plugins/index")(on, config);
     },
-    baseUrl: "http://yourlocalappurl:portNumber",
+    baseUrl: "http://localAppUrl:portNumber",
     specPattern: "cypress/e2e/**/*.spec.js",
     // experimentalSessionAndOrigin flag will be removed when migrating to
     // Cypress v12.x, as it will become a global feature
@@ -41,7 +41,7 @@ module.exports = defineConfig({
 
 ## Browser
 
-- _**chromeWebSecurity**_ allows enable Chromium-based browser's Web Security
+- _**chromeWebSecurity**_ Enables Chromium-based browser's Web Security
   for same-origin policy and insecure mixed content.
 
 Set the value as `false`, as some of specs we may write have to navigate to any
@@ -49,9 +49,9 @@ superdomain without cross-origin errors with or without `cy.origin()`.
 
 ## Retries
 
-- _**runMode**_ allows you to define the number of test retries when running
+- _**runMode**_ allows us to define the number of test retries when running
   cypress run.
-- _**openMode**_ allows you to define the number of test retries when running
+- _**openMode**_ allows us to define the number of test retries when running
   cypress open.
 
 Set the value as `1` for both of them. By default the value is `0`. **Do not
@@ -120,7 +120,7 @@ troubleshooting failures and deploying fixes.
 
 Enable this feature in Cypress dashboard by:
 
-1. Go to your project from cypress dashboard.
+1. Navigate to the project from cypress dashboard.
 2. Click "Project Settings" on the left sidebar.
 3. Scroll to the Smart Orchestration section.
 4. Toggle "**Run failed specs first**" on.
@@ -135,7 +135,7 @@ changes.
 
 Enable this feature in Cypress dashboard by:
 
-1. Go to your project from cypress dashboard.
+1. Navigate to the project from cypress dashboard.
 2. Click "Project Settings" on the left sidebar.
 3. Scroll to the Smart Orchestration section.
 4. Toggle "**Cancel run on test failure**" on.

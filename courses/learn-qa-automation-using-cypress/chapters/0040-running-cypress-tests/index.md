@@ -41,16 +41,16 @@ $ tree
   great place to put reusable behavior such as custom commands.
 - **plugins**: This folder includes the index.js file. This file will be
   automatically imported every time before the execution of every spec(test)
-  file. Plugins enable you to tap into, modify, or extend the internal behavior
+  file. Plugins enable us to tap into, modify, or extend the internal behavior
   of Cypress.
 
 ## Running Cypress tests on wheel
 
-Set up the [wheel](https://github.com/bigbinary/wheel) repository on your local
+Set up the [wheel](https://github.com/bigbinary/wheel) repository on the local
 machine according to the local development setup section in the README.md file.
 
 After setting up the project, run the application. Move into the cypress-tests
-directory in the root of your project directory. Then run `yarn install` to
+directory in the root of our project directory. Then run `yarn install` to
 install the required dependencies.
 
 ```bash
@@ -70,7 +70,7 @@ click on login.spec.js.
 
 <image>cypress-window.png</image>
 
-This will open up your default browser and start running the tests.
+This will open up our default browser and start running the tests.
 
 ## Using tags to selectively run spec files
 
@@ -97,7 +97,7 @@ describe("Login", { tags: ["Happy-Path"] }, () => {
 If we open the cypress/config folder, we can see cypress configuration files for
 different environments like development, review and staging.
 
-To selectively run test suites in the development environment you can define
+To selectively run test suites in the development environment we can define
 **grepTags** under the **env** key in config.development.json.
 
 The following configuration selectively run test suites with **Fixed** tag.

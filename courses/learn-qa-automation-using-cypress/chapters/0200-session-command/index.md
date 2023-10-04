@@ -13,12 +13,12 @@
 const login = (email, password) => {
   cy.session(["Login", email], () => {
     // perform login
-    cy.visit('/login');
+    cy.visit("/login");
     cy.clearAndType(loginSelectors.emailTextField, email);
     cy.clearAndType(loginSelectors.passwordTextField, password);
     cy.get(loginSelectors.submitButton).click();
-  })
-}
+  });
+};
 
 it("test", () => {
   login("user1@test.com", "password1");
@@ -37,34 +37,32 @@ it("test", () => {
 
 ```javascript
 export const login = (email, password) => {
-
   // clear session details
   Cypress.session.clearAllSavedSessions();
 
   // perform login
   cy.visit("/login");
   cy.clearAndType(loginSelectors.emailTextField, email);
-    cy.clearAndType(loginSelectors.passwordTextField, password);
+  cy.clearAndType(loginSelectors.passwordTextField, password);
   cy.get(loginSelectors.submitButton).click();
-
 };
 ```
 
-- Here, for each user login, you need to clear session details from the previous user.
+- Here, for each user login, we need to clear session details from the previous user.
 - Also, logging in with another user will perform all the authentication steps from scratch.
 
 ## How is it used now?
 
-- First of all, to enable the session in Cypress you need to add the below entry in `cypress.config.js`.
+- First of all, to enable the session in Cypress we need to add the below entry in `cypress.config.js`.
 
 ```javascript
-  experimentalSessionAndOrigin: true
+experimentalSessionAndOrigin: true;
 ```
 
 - Now we can write authentication with the session command
+
 ```javascript
 export const login = (email, password) => {
-
   cy.session(["Login", email], () => {
     // perform login
     cy.visit("/login");
@@ -72,7 +70,6 @@ export const login = (email, password) => {
     cy.clearAndType(loginSelectors.passwordTextField, password);
     cy.get(loginSelectors.submitButton).click();
   });
-
 };
 ```
 

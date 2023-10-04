@@ -12,7 +12,7 @@
 
 - There are many types of methods but mainly we use four of them:
   1. `GET` : Indicates that some data is required from a server. This is the
-     default method when you type a URL in a browser.
+     default method when we type a URL in a browser.
   2. `POST` : Indicates that the new data needs to be entered into a server and
      usually has a body.
   3. `PUT` : Indicates that we want to modify the existing data in some way.
@@ -24,7 +24,6 @@
 - It can also contain query parameter at the end. In
   `http://google.com?name=bigbinary&location=pune` we are adding two query
   parameters `name(bigbinary)` and `location(pune)`.
-
 
 ## Headers
 
@@ -58,17 +57,15 @@
 
 ## Body / Payload
 
-- Whenever a data needs to be returned from a server usually you get it in the
+- Whenever a data needs to be returned from a server, we get it in the
   form of body/payload.
 
 # How to track a request in browser?
 
-- There are different ways to get into developer tools in the browser that you
+- There are different ways to get into developer tools in the browser that we
   might need to look online.
-- You need to visit the `Network` tab and refresh the page. It will show you the
-  list of all the request that are being sent.
-- Once you click a particular request you will be able to locate different
-  things using below diagrams:
+- Visit the network tab and refresh the page to view the list of all the requests being sent.
+- We can locate different information such as headers, payload etc upon clicking on a particular request as shown in the below diagrams:
 
 <image>request-and-headers.png</image>
 
@@ -79,10 +76,10 @@
 # How do we use it?
 
 - In order to make request, cypress gives us a default command called
-  `cy.request`. Which, by default will not handle authentication for you.
-- When you authenticate using UI, the authentication details are stored as
+  `cy.request`. Which, by default will not handle authentication for us.
+- When we authenticate using UI, the authentication details are stored as
   cookies in the browser.
-- To pass the authentication details, with every request you need to also
+- To pass the authentication details with every request, we need to also
   include cookies in the request headers, which is done automatically by browser
   but this will not work in case of manual request made by `cy.request`.
 - Therefore, we have introduced a new custom command called `apiRequest` shown
@@ -101,7 +98,7 @@ Cypress.Commands.add("apiRequest", options =>
 );
 ```
 
-- To use this properly, post every login you need to get headers from any
+- To use this properly, post every login we need to get headers from any
   request and set it's alias as `requestHeaders` as shown below
 
 ```javascript
@@ -112,7 +109,7 @@ cy.wait("@fetchInitialData").then(({ request }) =>
 
 - Now every request made using `apiRequest` will use headers created during
   login.
-- Apart from this you can use parameter from
+- Apart from this we can use parameter from
   [cypress document](https://docs.cypress.io/api/commands/request) to fill other
   details like body, method and url.
 
@@ -134,8 +131,8 @@ cy.apiRequest({
 
 # Example of searching and deleting data using request.
 
-- Apart from setting alias right after login, first you need to search the id of
-  the data that you want to delete from a server by using below method:
+- Apart from setting alias right after login, first we need to search the id of
+  the data that we want to delete from a server by using below method:
 
 ```javascript
 cy.apiRequest({
@@ -146,7 +143,7 @@ cy.apiRequest({
 ```
 
 - This will return all the data that matches query parameters.
-- From that data you can segregate `Id` of the data that you want to delete and
+- From that data we can segregate `Id` of the data that we want to delete and
   make a delete request.
 
 ```javascript
@@ -157,8 +154,7 @@ cy.apiRequest({
 });
 ```
 
-- If you combine both above functions than you end up with below function which
-  will search and delete data.
+- We can combine the above two functions as shown below to search and delete data.
 
 ```javascript
 cy.apiRequest({
@@ -175,7 +171,7 @@ cy.apiRequest({
   });
 });
 
-// reload if you want the data to appear in UI.
+// reload for data to appear in the UI.
 ```
 
 # When to use request?

@@ -121,7 +121,7 @@ Cypress.
 ## Set a global baseUrl
 
 - **Anti-Pattern:** Using cy.visit() without setting a baseUrl.
-- **Best Practice:** Set a baseUrl in your configuration file (cypress.json by
+- **Best Practice:** Set a baseUrl in the configuration file (cypress.json by
   default)
 
 ```javascript
@@ -146,7 +146,7 @@ surrounding elements first before actually asserting the element. And even if it
 still doesn't work, we can try a plugin called
 [Cypress Real Events](https://github.com/dmtrKovalenko/cypress-real-events).
 
-## Use `cy.contains()` along with a selector**
+## Use `cy.contains()` along with a selector
 
 When we use `cy.contains()` to select an element with some text or to assert.
 

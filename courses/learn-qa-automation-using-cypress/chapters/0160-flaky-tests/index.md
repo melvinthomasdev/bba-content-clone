@@ -13,15 +13,14 @@ When there is an API request happening for example on a button click and the DOM
 gets updated or is re-rendered after the request. If we happen to click on any
 element which will be updated, we will see this error.
 
-```javascript
 This DOM element likely became detached somewhere between the previous and current command.
 
 Common situations why this happens:
 
-Your JS framework re-rendered asynchronously
-Your app code reacted to an event firing and removed the element
-You typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.
-```
+1. JS framework re-rendered asynchronously.
+2. App code reacted to an event firing and removed the element.
+
+We typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.
 
 To prevent the flakiness in these types of tests, we can add a delay by using
 `intercept` command.

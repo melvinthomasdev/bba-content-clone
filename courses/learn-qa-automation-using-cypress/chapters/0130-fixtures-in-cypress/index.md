@@ -24,7 +24,7 @@ fileName.jpeg
 ```
 
 So, whenever we want to store an object in fixtures and use it in our test
-  cases, we can create a `json` file.
+cases, we can create a `json` file.
 
 For example, consider a `json` file under cypress folder which holds credentials
 for login into the application.
@@ -77,9 +77,9 @@ describe("Admin login", () => {
 });
 ```
 
-Fortunately, you don't have to make your code do backflips. With Cypress, we can
+Fortunately, we don't have to make our code do backflips. With Cypress, we can
 better handle these situations. We can use `aliases` for sharing context. To
-alias something, you can use the `.as()` command.
+alias something, we can use the `.as()` command.
 
 Let's look at our previous example with aliases.
 
@@ -101,8 +101,8 @@ describe("Admin login", () => {
 });
 ```
 
-Keep it in your mind that `.as()` is an asynchronous method. So you must use
-other asynchronous commands such as `.then()` to access what you've aliased
+Remember that `.as()` is an asynchronous method. So we must use
+other asynchronous commands such as `.then()` to access what we've aliased.
 
 So now if we want to use fixture data in multiple tests, we can simply do that
 by using the alias.

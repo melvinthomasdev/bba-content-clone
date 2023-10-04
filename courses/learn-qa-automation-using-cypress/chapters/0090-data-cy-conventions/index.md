@@ -1,6 +1,5 @@
 Targeting the element by tag, class or id is very volatile and highly subject to
-change. You may swap out the element, you may refactor CSS and update ID's, or
-you may add or remove classes that affect the style of the element.
+change. We may swap out the element, refactor CSS and update IDs, or add or remove classes that affect the style of the element.
 
 Instead, adding the `data-cy` attribute to the element gives us a targeted
 selector that's only used for testing.
@@ -24,9 +23,9 @@ data-cy="functionality-name-field-name-type-of-the-field"
 
 ### Pass data-cy as a prop
 
-When we use `cy` as attribute we use hyphen i.e. `data-cy`. But, in a react
-   application we need to it pass as a prop to another component. In some cases,
-   data-cy might not work, in that case we can use dataCy:
+When we use `cy` as an attribute we use hyphen i.e. `data-cy`. But, in a react
+application we need to pass it as a prop to another component. In some cases,
+data-cy might not work, in that case we can use dataCy:
 
 ```javascript
   <Button
@@ -45,7 +44,7 @@ When we use `cy` as attribute we use hyphen i.e. `data-cy`. But, in a react
 ### Use lowercase
 
 Everything should be in lowercase while adding `data-cy`. e.g. Consider we
-   want to add `data-cy` to the application's icon, say _AceInvoiceIcon_:
+want to add `data-cy` to the application's icon, say _AceInvoiceIcon_:
 
 ```javascript
 // Incorrect
@@ -142,10 +141,10 @@ data-cy="team-member-delete-button"
 ### Handling special case
 
 Sometimes the element is very common throughout the whole application, in
-   such cases `data-cy` values for these elements can be kept in
-   `selectors/common`. e.g. In neeto products, the heading selector is very
-   common part for different pages in the application. Hence, the `data-cy`
-   value for this element can be generic.
+such cases `data-cy` values for these elements can be kept in
+`selectors/common`. e.g. In neeto products, the heading selector is very
+common part for different pages in the application. Hence, the `data-cy`
+value for this element can be generic.
 
 ```javascript
 data-cy="heading"
@@ -160,4 +159,4 @@ data-cy to those elements and we can use the selectors available for that
 element. e.g. The dropdowns in the _neeto_ are custom dropdowns and `data-cy`
 cannot be added to such elements.
 
- We should try to use `data-cy` whenever possible.
+We should try to use `data-cy` whenever possible.

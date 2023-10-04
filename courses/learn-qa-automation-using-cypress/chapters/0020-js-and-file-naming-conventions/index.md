@@ -2,7 +2,7 @@
 
 1. Before starting, we can install some JS extensions like 'Prettier' and
    'ESLint' if not installed already so that most of our JS conventions will be
-   taken care of. You can find the links below: -
+   taken care of. We can find the links below: -
    - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 2. Some people follow indentation of 4 spaces. But in BigBinary, we follow
