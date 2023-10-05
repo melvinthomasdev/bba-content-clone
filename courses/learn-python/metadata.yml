@@ -4,7 +4,7 @@ subheading: Learn Python by actually writing Python code
 slug: learn-python
 published: true
 custom_data:
-  type: python
+  type: misc
   courseType: lesson
   upcoming: false
   newCourse: true

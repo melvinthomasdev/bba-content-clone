@@ -4,7 +4,7 @@ subheading: Cypress practices followed at BigBinary
 slug: learn-qa-automation-using-cypress
 published: true
 custom_data:
-  type: cypress
+  type: misc
   courseType: lesson
 home_logo: qa-automation-using-cypress-logo.png
 logo: qa-automation-using-cypress-logo.png
