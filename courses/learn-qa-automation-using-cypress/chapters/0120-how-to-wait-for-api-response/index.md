@@ -37,8 +37,7 @@ describe("Blog", () => {
 });
 ```
 
-This test may work fine on local. But it will leads to flaky test cases which
-fail randomly. The reason is we don't know the exact time duration to wait for
+This test may work fine locally, but it will lead to flaky test cases that fail randomly. The reason is we don't know the exact time duration to wait for
 the request. Sometimes, the request can take more than `1000ms`. In that case,
 the test will fail. So what if we change the waiting to `10000ms(10 sec)`? It
 will be enough for an API to get the response. But it will increase the
@@ -92,7 +91,7 @@ request that starts with `api/v1`. But there are some problems that we may face
 if we go with this method. Before explaining that, we should know the working of
 `intercept`.
 
-Intercept is a kind of event listener. Once we define an intercept with an alias
+Intercept is a kind of an event listener. Once we define an intercept with an alias
 for a request, then it will consider all the API requests that match the URL as
 a part of that intercept throughout the spec. So in our case, the intercept will
 match all the requests that start with `api/v1` and its alias will be
@@ -202,8 +201,7 @@ attaches itself to the 3rd request which we were intending to skip. This happens
 because the search request itself isn't triggered soon after the command since
 it is debounced and hence the intercept considers the 3rd request as the latest
 matching request. Now since we aren't waiting for the search request response,
-the rest of the test loses it's integrity making the test flaky or failing. So
-to avoid such ordering issues we issue intercepts only when we need them. This
+the rest of the test loses it's integrity making the test flaky or failing. We issue intercepts only when we need them to avoid such ordering issues. This
 technique has the added advantage of helping us keep track of all the requests
 and it's routes.
 
@@ -294,9 +292,7 @@ corresponding request in the logs. So just make sure that all the requests in
 the spec have a tag attached to them in the logs.
 
 A question people may have is why are we using glob pattern to match the URL
-when we can use the particular URL for each intercept? Well, oftentimes a simple
-action like a form submit button click or edit button click results in several
-requests, which for all we must add an intercept and wait for them. If we are
+when we can use the particular URL for each intercept? Often, a seemingly simple action like clicking a form submit button or an edit button triggers multiple requests, each of which requires an intercept and a subsequent wait. If we are
 using a particular URL for each intercept then we would first need intimate
 knowledge of the API calls and their routing, we would also repeat the code for
 each request. In such cases using the glob pattern to match all such API calls

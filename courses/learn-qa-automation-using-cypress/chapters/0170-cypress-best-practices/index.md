@@ -88,8 +88,8 @@ a.first().click();
 We are testing behavior of the application, we are doing integration testing,
 not unit testing.
 
-**Anti-Pattern:** Acting like we're writing unit tests. **Best Practice:** Add
-multiple assertions and don't worry about it.
+- **Anti-Pattern:** Acting like we're writing unit tests.
+- **Best Practice:** Add multiple assertions and don't worry about it.
 
 ## Don’t clean state using `after` or `afterEach` hooks
 
@@ -114,9 +114,10 @@ cy.wait("@requestInterceptor");
 
 ## Start Web Servers prior to running cypress
 
-**Anti-Pattern:** Trying to start a web server from within Cypress scripts with
-cy.exec() or cy.task() **Best Practice:** Start a web server prior to running
-Cypress.
+- **Anti-Pattern:** Trying to start a web server from within Cypress scripts with
+  cy.exec() or cy.task()
+- **Best Practice:** Start a web server prior to running
+  Cypress.
 
 ## Set a global baseUrl
 
@@ -255,7 +256,7 @@ visible on page.
 
 <image>use-visible-instead-of-exist.png</image>
 
-## Enable Retries
+## Enable retries
 
 Retries should be enabled. This helps in determining the tests which are flaky.
 We can set this configuration in cypress.json like this.

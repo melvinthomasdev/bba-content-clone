@@ -36,8 +36,7 @@ and empty line.
 ## Reasons to keep all the scenarios in a single test case
 
 1. To reduce the overall test execution time. Most of the applications which we
-   work on are powered by front-end frameworks like react. So to test all the
-   scenarios we don't need to refresh the page, and hence it takes less time.
+   work on are powered by front-end frameworks like react. We can avoid unnecessary page refreshes for testing various scenarios, resulting in shorter testing times.
 2. Cypress dashboard treats each `it` block as a separate test. Cypress
    dashboard service charges us for each test. If we have less tests, we will be
    charged less comparatively.
@@ -45,7 +44,7 @@ and empty line.
 Refer to the example in the following section to get the proper idea.
 
 For example, Suppose we want to create a new task, we can write a test case covering all the
-scenarios.  We can start with the cancel functionality, validations, create a new task, edit
+scenarios. We can start with the cancel functionality, validations, create a new task, edit
 a new task and delete a new task.
 
 Please refer to the code below to get a proper idea.

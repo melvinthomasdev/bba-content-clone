@@ -128,7 +128,7 @@ Here we have tested :-
   **past state** and also checks the present tag details to be conforming with
   what we have entered in the form.
 
-## Testing the Delete function
+## Testing the delete function
 
 <image>delete-tag-modal.png</image>
 
@@ -173,9 +173,8 @@ afterEach(() => {
 
 <image>form-with-required-category-field.png</image>
 
-Take a look at this screenshot; Here we can see there exist a field for
+Take a look at the above screenshot. Here we can see there exist a field for
 selecting category, this implies that before we create/publish an article there
 must exist at least one category. So in effect whilst writing tests for this
 `form`, there must exist a function to add and assert the existence of a
-category in the setup. Such steps must be taken to take care of everything
-necessary to initiate a proper test of any feature.
+category in the setup. Taking these steps ensures a comprehensive and proper initiation of feature testing.

@@ -16,7 +16,7 @@
 
 ## Comments
 
-1. Commenting involves placing Human Readable Descriptions inside Test files
+1. Commenting involves placing human readable descriptions inside test files
    describing what the test is about.
 
 ```javascript
@@ -53,10 +53,8 @@ it("should change articles state", { tags: "Fixed" }, () => {
 
 ## Function arguments conventions
 
-Consider there is function which accepts more than 2 arguments. The problem with
-such kind of functions are we have to memorize the order of those parameters.
-Also we might not need to pass all the parameters. So we have to pass `null`
-values to keep the order.
+Consider there is function which accepts more than 2 arguments. The challenge with functions like these is that we need to remember the order of their parameters.
+Additionally, we might not always need to provide values for all parameters, which can lead to situations where we have to pass `null` values just to maintain the parameter order.
 
 ```js
 function login(email, password="welcome", isAdmin){

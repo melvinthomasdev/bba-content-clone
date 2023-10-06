@@ -22,7 +22,7 @@ describe("Test suite", () => {
 - A test case can be written using **_it_** block.
 - A test suite can contain one or more test cases. A test suite can consist
   positive and negative test cases related to a functionality. This means that
-  **_describe_** can have one to more **_it_** blocks.
+  **_describe_** can have one or more **_it_** blocks.
 
 ```javascript
 describe("Test suite", () => {

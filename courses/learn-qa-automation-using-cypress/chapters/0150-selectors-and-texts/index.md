@@ -1,6 +1,6 @@
- Create a separate folder "constants" under cypress. In the "constants" folder,
-  create two folders - "selectors" and "texts" and store all the selectors and
-  texts respectively in those folders. Please refer:
+Create a separate folder "constants" under cypress. In the "constants" folder,
+create two folders - "selectors" and "texts" and store all the selectors and
+texts respectively in those folders. Please refer:
 
 ![](https://i.imgur.com/xIMQtdo.png)
 
@@ -9,9 +9,8 @@
 - In a selector file, create an object for storing all the related DOM selectors
   and export that object in other files where we need to use it.
 - Always use meaningful variable names for storing selectors, and also keys in
-  the object. It helps us to to locate them easily and make the tests more
-  readable. For example, if we need to test login functionality. The selector
-  name can be `loginSelectors`, placed at `constants/selectors/login.js`. It can
+  the object. It helps us to locate them easily and make the tests more
+  readable. For example, if we need to test login functionality, the selector name can be `loginSelectors` placed at `constants/selectors/login.js`. It can
   have keys as `emailTextField`, `passwordTextField` and `submitButton`.
 
 Please refer to another example below:

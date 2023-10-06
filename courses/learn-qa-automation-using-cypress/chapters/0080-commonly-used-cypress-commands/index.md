@@ -250,15 +250,15 @@ cy.wrap([1, 2, 3]).each((number, index, list) => {
 
 Here are the reasons why we should use `cy.each`:
 
-- Improved Readability: The `cy.each()` method provides a clear and expressive way to iterate over elements, making our code more readable and self-explanatory. It enhances the maintainability of our tests, as it is easier for others (including us in the future) to understand the intention and logic behind the iteration.
+- Improved readability: The `cy.each()` method provides a clear and expressive way to iterate over elements, making our code more readable and self-explanatory. It enhances the maintainability of our tests, as it is easier for others (including us in the future) to understand the intention and logic behind the iteration.
 
-- Automatic Command Chaining: `cy.each()` automatically chains each iteration, ensuring that Cypress commands are executed in the intended sequence. This eliminates the need for managing complex asynchronous behaviour manually, as Cypress handles the command queuing and execution for us.
+- Automatic command chaining: `cy.each()` automatically chains each iteration, ensuring that Cypress commands are executed in the intended sequence. This eliminates the need for managing complex asynchronous behaviour manually, as Cypress handles the command queuing and execution for us.
 
-- Consistent Test Execution: Cypress ensures that each iteration completes before moving on to the next one. This helps maintain a consistent state and avoids race conditions that might occur when using traditional for loops. It ensures that all assertions and commands within the loop are executed in the expected order.
+- Consistent test execution: Cypress ensures that each iteration completes before moving on to the next one. This helps maintain a consistent state and avoids race conditions that might occur when using traditional for loops. It ensures that all assertions and commands within the loop are executed in the expected order.
 
-- Synchronization with Cypress Retry: Cypress automatically retries certain commands until they pass or time out. When using `cy.each()`, this retry behaviour is applied to each iteration individually. If an assertion within a specific iteration fails, Cypress will retry that iteration until it passes or times out, without affecting the subsequent iterations. This makes our tests more resilient to intermittent failures caused by synchronization issues.
+- Synchronization with Cypress retry: Cypress automatically retries certain commands until they pass or time out. When using `cy.each()`, this retry behaviour is applied to each iteration individually. If an assertion within a specific iteration fails, Cypress will retry that iteration until it passes or times out, without affecting the subsequent iterations. This makes our tests more resilient to intermittent failures caused by synchronization issues.
 
-- Improved Error Messages: When an assertion or command within a `cy.each()` iteration fails, Cypress provides detailed error messages that clearly indicate which iteration encountered the failure. This makes it easier to locate and debug issues, as we can identify the specific iteration causing the problem.
+- Improved error messages: When an assertion or command within a `cy.each()` iteration fails, Cypress provides detailed error messages that clearly indicate which iteration encountered the failure. This makes it easier to locate and debug issues, as we can identify the specific iteration causing the problem.
 
 ## Nature of Cypress commands
 

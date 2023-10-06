@@ -7,7 +7,7 @@ on the second try the test passes, then it is a flaky test.
 
 ## Causes of flaky tests
 
-### DOM Rerendered on Request
+### DOM rerendered on request
 
 When there is an API request happening for example on a button click and the DOM
 gets updated or is re-rendered after the request. If we happen to click on any
@@ -84,7 +84,7 @@ is not retried.
 When we need to fire the click element irrespective of it's state e.g. whether
 it is disabled/enabled, we should use `click({force: true})`.
 
-### Incorrect Logic Handling
+### Incorrect logic handling
 
 These are the tests which will fail on the retries as well but will pass on some
 builds and fails on another. The assertions based on random data cause this
@@ -112,7 +112,7 @@ cy.get(contactsPageSelectors.tableRowCheckBox).then(checkboxes => {
 });
 ```
 
-**4. External Libraries**
+**4. External libraries**
 
 If we are using an external library, like faker in our project, it can also
 cause test failures. For instance, special characters need to be correctly
