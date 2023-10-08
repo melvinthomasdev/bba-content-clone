@@ -125,7 +125,7 @@ export default authApi;
 
 Let's open `apis/axios.js` and create a function to clear the default Axios
 headers when the user is logged out. Add the `resetAuthTokens` method at the end
-of the file and also update the export statement like so:
+of the file and also update the export statement like this:
 
 ```javascript{55-58,60}
 import axios from "axios";
@@ -337,7 +337,7 @@ end
 ```
 
 Similarly we should update the `Task` model and add a `belongs_to` association
-called `task_owner` like so:
+called `task_owner` like this:
 
 ```ruby {2}
 class Task < ApplicationRecord
@@ -422,7 +422,7 @@ It's generally frowned upon to use `Model.new` for creating new records.
 Whenever possible use the already available association or instance variables
 itself.
 
-Update the `create` method of `TasksController` like so:
+Update the `create` method of `TasksController` like this:
 
 ```ruby {4-8}
 class TasksController < ApplicationController

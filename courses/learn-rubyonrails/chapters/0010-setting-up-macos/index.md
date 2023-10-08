@@ -60,7 +60,7 @@ In this book, we will not be installing Xcode. Hence no need to download Xcode
 from App Store. In this section, we will be installing Xcode command line
 developer tools.
 
-We can install Xcode command line developer tools like so:
+We can install Xcode command line developer tools like this:
 
 ```bash
 xcode-select --install

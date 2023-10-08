@@ -19,7 +19,7 @@ const squareOf = num => {
 };
 ```
 
-We can rewrite the display function in the above code snippet like so:
+We can rewrite the display function in the above code snippet like this:
 
 ```javascript
 const squareOf = num => num ** 2;
@@ -38,10 +38,10 @@ Unless you want reference to the `this` keyword binding of the function, always 
 
 ```js
 // Incorrect
-<Avatar onClick={function noRefCheck() {}} /> 
- 
+<Avatar onClick={function noRefCheck() {}} />
+
 // Correct
-<Avatar onClick={() => {}} /> 
+<Avatar onClick={() => {}} />
 ```
 
 ## How to use inline functions?

@@ -9,7 +9,7 @@ backend code are in the same repository.
 ## Deleting Rails views
 
 As we will be sending JSON responses from controllers we don't need this
-`tasks/index.html.erb` file. We can remove this file like so:
+`tasks/index.html.erb` file. We can remove this file like this:
 
 ```bash
 rm app/views/tasks/index.html.erb

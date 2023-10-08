@@ -140,7 +140,7 @@ other application logic.
 So as we had discussed in the technical design, we need to handle the report of
 the tasks within the `tasks` namespace. And we have already addressed that the
 response will be JSON format itself. So here we can add nested resource under
-tasks. Like so:
+tasks. like this:
 
 ```rb
 resources :tasks, except: %i[new edit], param: :slug do
@@ -176,7 +176,7 @@ bundle exec rails routes | less
 ```
 
 So if we had run the above command with the routes that we had added in the last
-section, then we'd be seeing routes like so:
+section, then we'd be seeing routes like this:
 
 | Prefix Verb      | URI Pattern                                 | Controller#Action |
 | ---------------- | ------------------------------------------- | ----------------- |
@@ -217,7 +217,7 @@ So few things we can devise from the above routes is that:
 - `download` is a `collection` under `report`.
 - `report` is scoped under `tasks` module.
 
-Thus let's update the routes to take into account above requirements, like so:
+Thus let's update the routes to take into account above requirements, like this:
 
 ```rb
 resources :tasks, except: %i[new edit], param: :slug do
@@ -382,7 +382,7 @@ invoking `ActionController::Base#renderer`. For example:
 ApplicationController.renderer
 ```
 
-It allows you to call the `render` method directly, like so:
+It allows you to call the `render` method directly, like this:
 
 ```rb
 ApplicationController.renderer.render template: "..."

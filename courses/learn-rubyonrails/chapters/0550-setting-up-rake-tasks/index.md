@@ -335,7 +335,7 @@ is being added to that column. This will ensure that the latest schema is loaded
 before the request to add data to the new column is processed and any errors due
 to stale Active Record cache can be avoided.
 
-The example above can be fixed like so:
+The example above can be fixed like this:
 
 ```ruby {10}
 class CreateJobLevels < ActiveRecord::Migration

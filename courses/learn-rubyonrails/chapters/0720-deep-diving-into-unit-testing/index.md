@@ -436,7 +436,7 @@ a user's name to "Sam".
 
 Let's say that `@user` is defined in the `setup` method of the test file.
 
-In our test case we might be tempted to write the test case like so:
+In our test case we might be tempted to write the test case like this:
 
 ```ruby
 def test_background_worker_should_update_name
@@ -453,7 +453,7 @@ database.
 Hence our assertion will fail.
 
 That's why it's a good practice to use `@user.reload.name` instead of
-`@user.name` to check the updated column values, like so:
+`@user.name` to check the updated column values, like this:
 
 ```ruby
 def test_background_worker_should_update_name
@@ -629,7 +629,7 @@ previous test.
 Ideally in a good test suite the order of running tests shouldn't matter. That's
 how good tests are written without any state leakage.
 
-One of the ways to set seed value while running test suite, is like so:
+One of the ways to set seed value while running test suite, is like this:
 
 ```bash
 SEED=12345 PARALLEL_WORKERS=0 bundle exec rails test -v
@@ -724,7 +724,7 @@ parallelization:
 ```
 
 Create a new file named `parallelization_enabler.rb` in the `test/support`
-directory like so:
+directory like this:
 
 ```bash
 touch test/support/parallelization_enabler.rb
@@ -772,7 +772,7 @@ After adding the above-mentioned code, every time a new process is forked
 `New Process is forked` will be printed in the output. The number of forks
 depends on the number of processors in the machine.
 
-Let's run the `comment_test.rb` file like so:
+Let's run the `comment_test.rb` file like this:
 
 ```bash
 bundle exec rails test test/models/comment_test.rb
@@ -819,7 +819,7 @@ the parallelization for the whole test suite, as follow:
 
 - Remove the above-highlighted lines from the `comment_test.rb` and
   `test_helper.rb` files.
-- Remove the `parallelization_enabler.rb` file like so:
+- Remove the `parallelization_enabler.rb` file like this:
 
 ```bash
 rm -rf test/support/parallelization_enabler.rb
@@ -888,7 +888,7 @@ version of the test file name. If two test classes have the same name then it
 can result in a test failure. Because the wrong `setup` method will be invoked
 and the required variable will not be set for the test.
 
-For example, consider a file called `organization_test.rb`, like so:
+For example, consider a file called `organization_test.rb`, like this:
 
 ```ruby
 require "test_helper"
@@ -904,7 +904,7 @@ class OrganizationTest < ActiveSupport::TestCase
 end
 ```
 
-Consider a second file called `category_test.rb`, like so:
+Consider a second file called `category_test.rb`, like this:
 
 ```ruby
 require "test_helper"
@@ -923,7 +923,7 @@ end
 Both of above mentioned files work perfectly fine and the test suite will also
 run successfully. Now say by mistake we named the `CategoryTest` as
 `OrganizationTest` while keeping the file name as `category_test.rb`, then the
-`test_checks_the_oliver_user` test will fail, like so:
+`test_checks_the_oliver_user` test will fail, like this:
 
 <image>wrong-class-name-example.png</image>
 
@@ -980,7 +980,7 @@ test "should raise an error when the slug is duplicated" do
 end
 ```
 
-and the `setup` method gets modified like so:
+and the `setup` method gets modified like this:
 
 ```ruby
 setup do
@@ -1105,7 +1105,7 @@ only for the particular test case where it's actually necessary and then
 reverting the value of the env variable back to its original value before
 finishing the test case.
 
-We can update `test_update_the_env_value` like so:
+We can update `test_update_the_env_value` like this:
 
 ```ruby
 def test_update_the_env_value
@@ -1122,7 +1122,7 @@ We can also use the `teardown` method from `minitest`. The `teardown` is a
 method that runs after every test case and thus can be used for cleanup
 operations.
 
-We can define the `teardown` method like so right after the `setup` method.
+We can define the `teardown` method like this right after the `setup` method.
 Always keep the `teardown` method towards the top of the test file:
 
 ```ruby
@@ -1140,7 +1140,7 @@ forget to revert it back to its original state. To avoid such cases, using the
 variable only for a block. Outside the `stub` block, all the variables are
 unchanged.
 
-We can define a `stub` method like so:
+We can define a `stub` method like this:
 
 ```ruby
 def test_update_the_env_value
@@ -1184,7 +1184,7 @@ Then install the newly added gem:
 bundle install
 ```
 
-Let's first run the test suite normally like so:
+Let's first run the test suite normally like this:
 
 ```bash
 bundle exec rails test
@@ -1198,7 +1198,7 @@ The output will look something like this:
 We can see that the above test run fails. The test suite started with some
 random seed value which is `24892` in our case. We will use this seed value of
 the failed test run with the `minitest-bisect` command to run the tests in the
-same order like so:
+same order like this:
 
 ```bash
 bundle exec minitest_bisect --seed 24892

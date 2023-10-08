@@ -98,7 +98,7 @@ By default `before_action` filter will call the specified method before any or
 specified actions are executed.
 
 If we don't want to run the method before all the actions, then we can pass in a
-hash as an argument, like so:
+hash as an argument, like this:
 
 ```ruby
 before_action :load_task!, only: %i[show update]
@@ -159,7 +159,7 @@ because the method will return an exception n case a task is not found. It is a
 Ruby convention for method names to end with a bang operator if they raise an
 exception.
 
-Now, update the tasks resources in `config/routes.rb` file, like so:
+Now, update the tasks resources in `config/routes.rb` file, like this:
 
 ```ruby
 resources :tasks, except: %i[new edit destroy], param: :slug
@@ -290,7 +290,7 @@ const Edit = ({ history }) => {
 export default Edit;
 ```
 
-Add the new export in `Tasks/index.js` file, like so:
+Add the new export in `Tasks/index.js` file, like this:
 
 ```jsx
 // previous code as it was...

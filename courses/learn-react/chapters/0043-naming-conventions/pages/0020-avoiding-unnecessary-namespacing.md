@@ -43,7 +43,7 @@ import CreateForm from "./Form/Create";
 
 ### Constants
 
-A constant defined inside `Form/Create/constants.js`, like so:
+A constant defined inside `Form/Create/constants.js`, like this:
 
 ```js
 const CREATE_FORM_INITIAL_VALUES = {

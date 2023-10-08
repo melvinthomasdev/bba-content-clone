@@ -47,7 +47,7 @@ json.review_count @book.reviews.count
 json.average_rating @book.reviews.average(:rating).to_f.round(1)
 ```
 
-The corresponding controller code will look like so:
+The corresponding controller code will look like this:
 
 ```rb
 class BooksController < ApplicationController
@@ -97,7 +97,7 @@ end
 ```
 
 We have added an instantiation of `book_carrier` in the `show` action. Now a
-cleaner Jbuilder file for the same will look like so.
+cleaner Jbuilder file for the same will look like this.
 
 ```rb
 json.extract! @book,

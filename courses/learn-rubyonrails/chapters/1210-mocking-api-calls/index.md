@@ -13,7 +13,7 @@ using `stub` we can even stub ENV variables, in
 [this](/learn-rubyonrails/deep-diving-into-unit-testing#env-variables-and-flaky-tests)
 section.
 
-An example for `stub` would look like so:
+An example for `stub` would look like this:
 
 ```ruby
 def test_update_the_env_value
@@ -41,7 +41,7 @@ In `Minitest`, we can initialize a mock object with the command
 `Minitest::Mock.new`. We can use a method called `expect()` to set a method name
 and value which is expected to be called by the test method.
 
-Let's see an example for `mock` like so:
+Let's see an example for `mock` like this:
 
 ```ruby
 def test_confirms_the_payment_status
@@ -54,7 +54,7 @@ end
 
 In the above example, we have mocked a `booking` object which is expecting a
 call to `payment_completed?` method. We have passed this `booking` object to a
-function called `confirm_order` which calls and verifies the payment like so:
+function called `confirm_order` which calls and verifies the payment like this:
 
 ```ruby
 def confirm_order(booking)
@@ -164,7 +164,7 @@ requests to `Stripe` API to know the status of payments. While testing this
 service we don't want to make actual requests to the `Stripe` server. We will be
 mocking this `Stripe` API request.
 
-Let's first define a method called `stripe_payment_status_response` like so:
+Let's first define a method called `stripe_payment_status_response` like this:
 
 ```ruby
 def stripe_payment_status_response(user,result)
@@ -178,7 +178,7 @@ We have defined a method that returns a response just like an actual response.
 We have also passed the `user`, and `result` arguments so that we can update the
 response object accordingly.
 
-Let's define the `mock` method like so:
+Let's define the `mock` method like this:
 
 ```ruby
 def mock_stripe_payment_status(user, result, method, status)

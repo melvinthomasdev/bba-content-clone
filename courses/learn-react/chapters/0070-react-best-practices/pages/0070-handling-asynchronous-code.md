@@ -75,7 +75,7 @@ const fetchData = () =>
 
 Making an API request is an asynchronous operation and ideally it should be
 wrapped inside a try/catch block. Now consider a scenario where fetchData is
-called inside another asynchronous function like so:
+called inside another asynchronous function like this:
 
 ```javascript
 const setData = async () => {
@@ -309,7 +309,7 @@ We should not manipulate the response data before storing it. We should store th
 
 Let's understand with an example. Let's say we have a component where we are requesting `members` and these `members` are used by two components `Table` and `Select`. This `Select` component needs to restructure the `members` array to populate its `options` prop properly.
 
-The structure of `members` from backend response is like so:
+The structure of `members` from backend response is like this:
 
 ```js
 members = [
@@ -321,7 +321,7 @@ members = [
 ]
 ```
 
-The structure of `members` required by the `Select` component is like so:
+The structure of `members` required by the `Select` component is like this:
 
 ```js
 members = [
@@ -335,7 +335,7 @@ members = [
 
 The `Table` component requires the `members` in the same structure as sent by the server.
 
-The code will look like so:
+The code will look like this:
 
 ```jsx
 const Dashboard = () => {
@@ -367,7 +367,7 @@ const Dashboard = () => {
 
 As per the statement, `setMembers(formatMembersForSelect(members));`, we have manipulated the backend response before storing it into the state called `members`, and this is an anti-pattern. We should store the `members` state with the exact same data, that was sent by the server. Here the formatting is a necessity only for the Select component. Thus only when passing the value to the Select component, we should format it, rather than storing the formatted value in the state itself. Also, we due to this formatting, we lost the initial structure of `members` data. The `Table` component which requires `members` in the same structure as sent by the server will not work properly anymore.
 
-So the correct code will be, like so:
+So the correct code will be, like this:
 
 ```jsx
 const Dashboard = () => {

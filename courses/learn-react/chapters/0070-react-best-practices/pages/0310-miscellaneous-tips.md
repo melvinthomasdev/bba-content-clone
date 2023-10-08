@@ -1,6 +1,6 @@
 ## Button vs anchor tag for routing
 
-People often use the button element for in-app navigation in React like so:
+People often use the button element for in-app navigation in React like this:
 
 ```jsx
 <button onClick={() => history.push("/about")}>About</button>
@@ -149,7 +149,7 @@ a large component this can lead to some performance drop.
 
 Hence it is a good practice to keep the presentation layer i.e. the component
 clean. Extract the constants out of the component and move them to a constants
-file like so:
+file like this:
 
 ```jsx
 // Login.jsx
@@ -272,7 +272,7 @@ In the above example, the function is checking if the user exists and if it does
 not then it redirects to the login otherwise it returns `false`. It is not a
 good pattern because the `if` condition does not belong inside the function. The
 condition should be moved out and if the condition is not satisfied then the
-`redirectToLoginPage` function should be called like so:
+`redirectToLoginPage` function should be called like this:
 
 ```javascript
 const redirectToLoginPage = () => {
@@ -402,7 +402,7 @@ assignGradeAndPrintResult(marksObtained);
 
 In the above example, the `printResult` function is invoked regardless of the
 marks obtained. In such cases the `printResult` function could have been invoked
-once, and that should be before the if/else blocks even starts, like so:
+once, and that should be before the if/else blocks even starts, like this:
 
 ```javascript
 function assignGradeAndPrintResult(marksObtained) {
@@ -418,7 +418,7 @@ function assignGradeAndPrintResult(marksObtained) {
 ## Rendering strings and blank spaces in JSX
 
 One of the common mistakes that developers make is using template literals
-inside curly braces in JSX like so:
+inside curly braces in JSX like this:
 
 ```jsx
 import React from "react";
@@ -434,7 +434,7 @@ export default Display;
 
 In the above code it is not required to use template literals because anything
 inside curly braces in JSX is evaluated as an expression. Hence the above code
-could be written correctly like so:
+could be written correctly like this:
 
 ```jsx
 import React from "react";
@@ -448,7 +448,7 @@ const Display = () => {
 export default Display;
 ```
 
-To render a blank character, you should use `&nbsp;` escape character like so:
+To render a blank character, you should use `&nbsp;` escape character like this:
 
 ```jsx
 import React from "react";
@@ -474,7 +474,7 @@ false. For example:
 
 In the above example, the value of `required` prop is true. Rather than passing
 `required={true}` you can simply mention `required`. This is also called
-implicit declaration of props. Above example can be refactored like so:
+implicit declaration of props. Above example can be refactored like this:
 
 ```jsx
 <Table required loading columns={["header", "value"]} />
@@ -559,7 +559,7 @@ export default dayjs;
 
 We have extended the `dayjs` instance with `relativeTime` plugin. We can add all the required extensions inside this `dayjs.js` file. Now, we need to import the above mentioned file into the entry or root point of the application, like App.jsx.
 
-We can import the `dayjs.js` file like so:
+We can import the `dayjs.js` file like this:
 
 ```js
 import "lib/dayjs"; // eslint-disable-line
@@ -569,7 +569,7 @@ We didn't import the module like `import dayjs from "lib/dayjs"` because we don'
 
 After making the above import we have extended the `dayjs` instance with the `relativeTime` plugin. Now let's say we want to use this `dayjs` instance in some other file, like say `utils.js`.
 
-We can import and use the `dayjs` instance in `utils.js` like so:
+We can import and use the `dayjs` instance in `utils.js` like this:
 
 ```js
 import dayjs from "dayjs";
@@ -579,7 +579,7 @@ export const calculateCreatedAgo = date => dayjs(date).fromNow();
 
 As you can see in the above code block we have imported `dayjs` from the node modules path itself rather than from `lib/dayjs`. That is because we have already extended the `dayjs` properties globally and can use them with any `dayjs` instance. The `fromNow()` method used in the above example is included in the `relativeTime` plugin. As we had already extended `relativeTime` with `dayjs` we can use `fromNow()` with `dayjs` as shown in the above example.
 
-In the above example for importing the `dayjs` file from the `lib` directory, we have used the "lib/dayjs" path. This is because we have added alias for `lib` in the Webpack config file like so:
+In the above example for importing the `dayjs` file from the `lib` directory, we have used the "lib/dayjs" path. This is because we have added alias for `lib` in the Webpack config file like this:
 
 ```js
 resolve: {
@@ -589,7 +589,7 @@ resolve: {
 }
 ```
 
-After defining the alias for the lib folder we can import from lib like so:
+After defining the alias for the lib folder we can import from lib like this:
 
 ```jsx
 // Incorrect import
@@ -643,7 +643,7 @@ In the case of positional parameters, the arguments are ambiguous whereas in the
 
 - We can define cleaner default arguments, for example:
 
-Let's say we have set a default value for the `includeInactive` parameter, like so:
+Let's say we have set a default value for the `includeInactive` parameter, like this:
 
 ```js
 // Positional parameters
@@ -657,7 +657,7 @@ const listUsers = ({ projectId, includeInactive = true, withContactInfo }) => {
 };
 ```
 
-Now after defining the default argument we can invoke the function like so:
+Now after defining the default argument we can invoke the function like this:
 
 ```js
 // Positional parameters

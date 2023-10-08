@@ -1,4 +1,4 @@
-The function `getNewsletterList` should return an alphabetically sorted single-dimensional array of newsletters for the given departments in `departmentNamesList` list. The newsletters for some departments are defined in the map named as `departmentNewsletterList` like so:
+The function `getNewsletterList` should return an alphabetically sorted single-dimensional array of newsletters for the given departments in `departmentNamesList` list. The newsletters for some departments are defined in the map named as `departmentNewsletterList` like this:
 
 ```js
 const departmentNewsletterObject = {

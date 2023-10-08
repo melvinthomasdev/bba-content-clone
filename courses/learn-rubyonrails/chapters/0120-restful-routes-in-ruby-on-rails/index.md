@@ -110,9 +110,10 @@ declare a singular version of it using `resource`.
 
 Rails recommends we use singular resource when we do not have an identifier. For
 example, the URL for the profile page is, typically, `/profile` and not
-`/profile/495`. In such cases, we do not need certain routes.
+`/profile/495`. That is because when we visit `/profile` we need to show the
+profile of the currently logged in user.
 
-For example, if we define a resource like this in `config/routes.rb`:
+Let's see an example with singular resource.
 
 ```ruby
 resource :profile
@@ -203,7 +204,7 @@ Collection routes apply to the whole collection. For example, if a RESTful
 resource called books represents a collection of book objects then a collection
 route called "destroy_multiple" will create the `books/destroy_multiple` path.
 
-A collection route can be added like so:
+A collection route can be added like this.
 
 ```ruby
 resources :books do
@@ -217,9 +218,7 @@ The above code will add a `delete_multiple` RESTful action in the
 `books_controller` and GET requests on `books/destroy_multiple` will be routed
 to the `delete_multiple` action.
 
-You can use get, patch, put, post, or delete HTTP verbs here. If you do not have
-multiple collection routes, you can also pass `:on` to a route, eliminating the
-block like so:
+The above code could also be written like this.
 
 ```ruby
 resources :books do
@@ -229,30 +228,28 @@ end
 
 ### Member routes
 
-A member route applies to a member of the collection. For example, if a RESTful
-resource called users represents a collection of user objects and each user
-object can be represented by `user/:id` where `id` is the resource identifier
-for a user object, then a member route called "report" will create the
-`users/:id/report` path.
+A member route applies to a member of the collection.
+Let's say that a user has many accounts and you want to list all the accounts of a user.
+In this case the path would look like `users/:id/accounts` path.
 
-A member route can be added like so:
+A member route can be added like this.
 
 ```ruby
 resources :users do
   member do
-    get "report"
+    get "accounts"
   end
 end
 ```
 
-The above code will add a `report` RESTful action in the `users_controller` and
-GET requests on `users/:id/report` will be routed to the `report` action.
+The above code will add a `accounts` RESTful action in the `UsersController` and
+GET requests on `users/:id/accounts` will be routed to the `accounts` action.
 
-Just as with member routes, you can pass `:on` to eliminate the block like so:
+Just as with member routes, you can pass `:on` to eliminate the block like this.
 
 ```ruby
 resources :users do
-  get "ban", on: :member
+  get "accounts", on: :member
 end
 ```
 
@@ -263,8 +260,11 @@ operation concerns a single object from a collection of objects.
 To learn about routing in depth, you can refer to the in-depth
 [chapter about Rails routing](/learn-rubyonrails/rails-routing-in-depth).
 
-There shouldn't be any changes to the application in this chapter. So let us
-clean up any accidental changes.
+
+We haven't made any changes in our project. So there is nothing to commit in
+this chapter.
+Let's clean up any accidental changes.
+
 
 ```bash
 git clean -fd

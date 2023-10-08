@@ -5,7 +5,7 @@ Rails server from the terminal using the `bundle exec rails server -p 3000`
 command.
 
 We can also use an alias, that is `s` for `server`, in the above mentioned
-command to run a Rails server in the shortened format, like so:
+command to run a Rails server in the shortened format, like this:
 
 ```bash
 bundle exec rails s -p 3000

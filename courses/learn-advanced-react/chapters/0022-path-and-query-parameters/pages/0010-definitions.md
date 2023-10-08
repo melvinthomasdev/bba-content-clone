@@ -4,18 +4,18 @@ The insertion of data within the URL of an API endpoint can generally be done in
 
 Path parameters are parts of the URL itself.
 
-In our example, we can append the user ID or anything that uniquely identifies the user to the URL like so: `https://example.com/api/user/123456`.
+In our example, we can append the user ID or anything that uniquely identifies the user to the URL like this: `https://example.com/api/user/123456`.
 
 It is more generally represented as the URL `https://example.com/api/user/:id` where `:id` is what we call the path parameter and identifies the user we're fetching data on.
 
-A URL can have multiple path parameters like so:
+A URL can have multiple path parameters like this:
 
   - `https://example.com/api/user/:id/task/:task_id`
   - `https://example.com/api/user/:first_name/:last_name`
 
 ## Query parameters
 
-Query parameters are key-value pairs that are appended to a URL after a question mark like so: `https://example.com/api/user?id=123456`.
+Query parameters are key-value pairs that are appended to a URL after a question mark like this: `https://example.com/api/user?id=123456`.
 
 It can be generally represented as `https://example.com/api/user?key=value`.
 

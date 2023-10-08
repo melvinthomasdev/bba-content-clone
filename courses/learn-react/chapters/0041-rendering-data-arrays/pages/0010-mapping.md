@@ -1,6 +1,6 @@
 When you need to render many similar components, you can use JavaScript's arrays and the `map()` method to iterate through the data within the array and generate corresponding React elements.
 
-Let's say you have an HTML list of contacts with their locations you'd like to render in a component like so:
+Let's say you have an HTML list of contacts with their locations you'd like to render in a component like this:
 
 ```jsx
 {/* ContactsList.jsx */}

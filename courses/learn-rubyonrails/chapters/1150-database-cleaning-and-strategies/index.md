@@ -48,7 +48,7 @@ gem by adding it to the `Gemfile` and running the `bundle install` command.
 
 It supports all three database cleaning strategies that we discussed in the
 previous section. For example, once this gem is installed, you can use it to
-clean your database using the `transaction` strategy like so:
+clean your database using the `transaction` strategy like this:
 
 ```ruby
 def clean_database
@@ -64,7 +64,7 @@ database.
 clean the database without waiting for any confirmation.
 
 You can also specify the database cleaning strategy at the top of you module and
-then call the `clean` method on `DatabaseCleaner` like so:
+then call the `clean` method on `DatabaseCleaner` like this:
 
 ```ruby
 Database_cleaner.strategy = :transaction
@@ -76,7 +76,7 @@ end
 
 The `database_cleaner` gem also provides various customization options. For
 example, if you are using the `truncation` strategy to clean your database, you
-can provide the table names to be truncated as options like so:
+can provide the table names to be truncated as options like this:
 
 ```ruby
 def clean_database

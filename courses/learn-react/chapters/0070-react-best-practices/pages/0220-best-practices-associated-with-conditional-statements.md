@@ -61,7 +61,7 @@ In the above code, each `if` statement is a guard block that evaluates a conditi
 
 Let's consider one more example. We have a user object which has `firstName` and `lastName` properties. We want to combine the `firstName` and `lastName` with a space if both values are present. If only one of them is present then just return that value. If none of the values are present return an empty string.
 
-The code will look like so:
+The code will look like this:
 
 ```js
 const getName = user => {
@@ -82,7 +82,7 @@ const getName = user => {
 };
 ```
 
-We can improve the above mentioned `getName` function with guard clauses. We can use multiple guard clauses to exit early and keep the core logic towards the end of the function. The updated code will look like so:
+We can improve the above mentioned `getName` function with guard clauses. We can use multiple guard clauses to exit early and keep the core logic towards the end of the function. The updated code will look like this:
 
 ```js
 const getName = user => {
@@ -115,7 +115,7 @@ export default Display;
 
 In the above code we have used a ternary operator to check if `loading` is true
 and based on that returning a value. Rather than doing so, we refactor the code
-like so:
+like this:
 
 ```jsx
 import React, { useState } from "react";
@@ -215,7 +215,7 @@ return (
 );
 ```
 
-It is better to use an if/else statement instead of nesting ternary operators, like so:
+It is better to use an if/else statement instead of nesting ternary operators, like this:
 
 ```jsx
 if (isItemsLoading) {

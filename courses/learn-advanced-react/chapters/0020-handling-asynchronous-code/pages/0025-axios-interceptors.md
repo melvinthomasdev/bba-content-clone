@@ -5,7 +5,7 @@ action based on the response such as logging errors or logout out on 401.
 
 To add an interceptor, just add a `requestHandler` to the `axios` object. For
 example, if you want to add an authorization header to all `requests` that need
-to be made, you can add a request interceptor like so:
+to be made, you can add a request interceptor like this:
 
 ```javascript
 const requestHandler = request => {
@@ -50,7 +50,7 @@ If your response handler hits a status code of 401: Unauthorized, make sure the
 user is redirected to the login route If you maintain any authentication states
 on the client side, reset them too.
 
-The above example can be modified to logout the user on 401 like so:
+The above example can be modified to logout the user on 401 like this:
 
 ```javascript
 const responseSuccessHandler = response => {

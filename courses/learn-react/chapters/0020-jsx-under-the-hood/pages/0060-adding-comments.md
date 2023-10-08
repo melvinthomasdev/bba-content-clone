@@ -52,7 +52,7 @@ The closing bracket `}` becomes part of the comment and is ignored, causing an
 error due to an unbound closure.
 
 If you prefer using `//` ensure that the line doesn't contain the closing
-bracket like so:
+bracket like this:
 
 ```jsx
 <>

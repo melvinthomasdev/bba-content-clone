@@ -2,7 +2,7 @@
 
 We can use optional chaining or `?.` operator when we are not sure if certain properties will be there in the object or not. If the object contains the required property it will return the value of that property. But if the object does not contain the required property then the execution of that statement will stop immediately and `undefined` will be returned.
 
-For example, consider an object like so:
+For example, consider an object like this:
 
 ```js
 const candidate = {
@@ -19,7 +19,7 @@ const candidate = {
 };
 ```
 
-Now we can access the college name of the candidate using dot operator like so:
+Now we can access the college name of the candidate using dot operator like this:
 
 ```js
 candidate.education.college.name;
@@ -29,7 +29,7 @@ Let's say educational details are optional. So there can be a case when the `can
 
 One solution for this problem is to use multiple `if` or `&&` conditions. But a better and cleaner solution is using optional chaining.
 
-In the above mentioned object we can access the college name using optional chaining like so:
+In the above mentioned object we can access the college name using optional chaining like this:
 
 ```js
 candidate?.education?.college?.name;
@@ -43,7 +43,7 @@ We should be careful while using optional chaining. If we overuse the optional c
 
 We have also overused the optional chaining in the above example in part `college?.name`. If college details are present there has to be a name for the college. If we get some error after removing optional chaining from the `college?.name` that means there are some data entries where the college's name is not present. Adding optional chaining in `college.name` will remove the error but it will suppress the underlying issue that why there are college details without the name.
 
-So the correct example will be like so:
+So the correct example will be like this:
 
 ```js
 candidate?.education?.college.name;

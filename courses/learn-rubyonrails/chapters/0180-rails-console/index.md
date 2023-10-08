@@ -8,7 +8,7 @@ We can start the Rails console using the following command:
 bundle exec rails console
 ```
 
-The above command would show a console like so:
+The above command would show a console like this.
 
 ```ruby
 irb(main):001:0>
@@ -87,7 +87,7 @@ model then that change would not be reflected in the console. One solution is to
 above code block or reload the application itself by executing `reload!`
 command. If none of those works in reloading the latest values from the
 database, then the final solution is to exit the console and start the console
-again from scratch.
+again from the scratch.
 
 ## Getting value of the last expression
 
@@ -116,10 +116,10 @@ Let's try to group the tasks by the hour of the `created_at` timestamp to see th
 ```ruby
 > Task.group("DATE(created_at)").count
   Task Count (0.8ms)  SELECT COUNT(*) AS "count_all", DATE(created_at) AS "date_created_at" FROM "tasks" GROUP BY DATE(created_at)
-=> {Mon, 30 Mar 2020=>1}    
+=> {Mon, 30 Mar 2020=>1}
 ```
 
-We can see that it returns a hash where the keys represent the dates extracted from the `created_at` datetime attribute, and the values represent the number of records that have the same date. As there is currently only one instance of the `Task` model, the count is one. However, creating and saving more tasks will demonstrate the full usefulness of `group` statements. You can learn more about `group` statements in the [official docs](https://guides.rubyonrails.org/active_record_querying.html#group). 
+We can see that it returns a hash where the keys represent the dates extracted from the `created_at` datetime attribute, and the values represent the number of records that have the same date. As there is currently only one instance of the `Task` model, the count is one. However, creating and saving more tasks will demonstrate the full usefulness of `group` statements. You can learn more about `group` statements in the [official docs](https://guides.rubyonrails.org/active_record_querying.html#group).
 
 ## Use c as a shortcut
 
@@ -236,5 +236,4 @@ Loading development environment (Rails 7.0.5)
 >> c = 3
 ```
 
-There is **nothing to commit** in this chapter since all we had done was work in
-the Rails console.
+We haven't made any changes in our project. So there is nothing to commit in this chapter.

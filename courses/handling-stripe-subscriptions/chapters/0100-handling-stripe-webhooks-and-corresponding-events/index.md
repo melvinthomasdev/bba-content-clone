@@ -135,7 +135,7 @@ header = request.env['HTTP_STRIPE_SIGNATURE']
 
 Next, we need to pass in the payload, signature, and the webhook endpoint
 secrets to the `construct_event` function from the Stripe library. In rails, we
-can create a function like so:
+can create a function like this:
 
 ```ruby
 def verify_webhook_signature
@@ -514,7 +514,7 @@ the `--events` flag.
 
 This is useful if we only care about or want to test specific events. This flag
 accepts a comma-separated list of events. In our case, we primarily only need to
-track the checkout and subscription related events, like so:
+track the checkout and subscription related events, like this:
 
 ```bash
 stripe listen --events 'checkout.session.completed','customer.subscription.updated','customer.subscription.deleted'

@@ -12,7 +12,7 @@ const IntroText = ({ user: {name, eventsCount} }) => (
 export default IntroText;
 ```
 
-If you wish to translate the contents of the `p` tag along with the `strong` HTML tag, we can use the `Trans` component from the `react-i18next` library like so:
+If you wish to translate the contents of the `p` tag along with the `strong` HTML tag, we can use the `Trans` component from the `react-i18next` library like this:
 
 ```jsx
 import React from "react";

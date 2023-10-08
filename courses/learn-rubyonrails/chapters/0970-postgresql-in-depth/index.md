@@ -14,7 +14,7 @@ these changes in the Granite application.
 
 ### Update Gemfile to use PostgreSQL
 
-We had already added the `pg` gem for the `production` environment, like so:
+We had already added the `pg` gem for the `production` environment, like this:
 
 ```ruby {3}
 gem 'jbuilder', '~> 2.7'
@@ -25,7 +25,7 @@ gem 'bcrypt', '~> 3.1.13'
 ```
 
 You can modify the `Gemfile` entry for `pg` and make it available for all
-environments, like so:
+environments, like this:
 
 ```ruby {3}
 gem 'jbuilder', '~> 2.7'

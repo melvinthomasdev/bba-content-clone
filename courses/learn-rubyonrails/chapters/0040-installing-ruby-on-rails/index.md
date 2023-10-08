@@ -68,7 +68,7 @@ system-level `ruby` command has different permissions and paths, compared to the
 `ruby` command installed via `rbenv`.
 
 Thus let's set the global version of the `ruby` command to be a `rbenv` specific
-version, like so:
+version, like this:
 
 ```bash
 rbenv global 3.2.2
@@ -130,7 +130,7 @@ installed. `ruby-build` is an `rbenv` plugin that provides the `rbenv install`
 command to compile and install different versions of Ruby on UNIX-like systems.
 
 You can check if `ruby-build` is installed system-wide under homebrew using
-`which` command like so:
+`which` command like this:
 
 ```bash
 which ruby-build
@@ -149,7 +149,7 @@ Otherwise you will receive the following error:
 ruby-build not found.
 ```
 
-If `ruby-build` is not installed, then you should install it like so:
+If `ruby-build` is not installed, then you should install it like this:
 
 ```bash
 brew install ruby-build

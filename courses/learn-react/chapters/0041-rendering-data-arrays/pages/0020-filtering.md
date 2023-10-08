@@ -1,6 +1,6 @@
 Using array methods, it's also easy to filter certain contacts using the `filter()` method.
 
-We can select the American contacts only by filtering before mapping like so:
+We can select the American contacts only by filtering before mapping like this:
 
 ```jsx
 {/* ContactsList.jsx */}

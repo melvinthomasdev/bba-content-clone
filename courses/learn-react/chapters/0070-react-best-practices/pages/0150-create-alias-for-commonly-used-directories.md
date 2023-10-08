@@ -108,7 +108,7 @@ import Dashboard from "Components/Dashboard/index";
 import Dashboard from "Components/Dashboard";
 ```
 
-We can also provide an alias for modules. For example, we can define an alias for `@bigbinary/neetoui` using `resolve.alias` like so:
+We can also provide an alias for modules. For example, we can define an alias for `@bigbinary/neetoui` using `resolve.alias` like this:
 
 ```js
 resolve: {
@@ -118,7 +118,7 @@ resolve: {
 }
 ```
 
-Now we can make import using alias like so:
+Now we can make import using alias like this:
 
 ```jsx
 import { MenuBar } from "neetoui/layouts";

@@ -13,7 +13,7 @@ Namespaces are used to organize a group of controllers. For example, you may
 wish to organize a group of controllers that are only accessible by the admin of
 your app, under the `Admin::` namespace. You can do so by placing your
 controllers in `app/controllers/admin` directory and editing your `routes.rb`
-file like so:
+file like this:
 
 ```ruby
 namespace :admin do
@@ -33,7 +33,7 @@ end
 
 This will create `Admin::ArticlesController` which will respond to the RESTful
 routes under `/admin/articles` with the prefix `admin` to the path method used
-to identify the resources like so:
+to identify the resources like this:
 
 | Prefix             | VERB   | URI Pattern         | Controller#Action      |
 | ------------------ | ------ | ------------------- | ---------------------- |
@@ -47,7 +47,7 @@ to identify the resources like so:
 |                    | DELETE | /admin/articles/:id | admin/articles#destroy |
 
 You can also add a namespace to classes using a `scope resolution operation` or
-`::` like so:
+`::` like this:
 
 ```ruby
 class Admin::ArticlesController < ApplicationController
@@ -199,7 +199,7 @@ scope "/admin", as: "admin", module: "admin" do
 end
 ```
 
-Both the snippets will generate the routes for the resource `articles` like so:
+Both the snippets will generate the routes for the resource `articles` like this:
 
 | Prefix             | VERB   | URI Pattern         | Controller#Action      |
 | ------------------ | ------ | ------------------- | ---------------------- |

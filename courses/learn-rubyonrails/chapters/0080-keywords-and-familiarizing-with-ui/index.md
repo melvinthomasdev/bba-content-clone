@@ -16,7 +16,7 @@ section in the chapter.
 
 <image>table-of-contents.png</image>
 
-You can also press `cmd + f` or `ctrl +f` keys to search for keywords inside the
+You can also press `/` to search for keywords inside the
 table of contents.
 
 ## Searching within the book
@@ -29,7 +29,7 @@ Type in the keywords you wish to search and you will get a list of items
 matching search parameters. You can click on any of the search items and you
 will be directed to the relevant section within the book.
 
-You can also use the`cmd + k` or `ctrl + k` shortcut keys to open the search
+You can also use `/` shortcut keys to open the search
 dialog box. To navigate through the search results, you can either use the mouse
 pointer or `up` and `down` arrow keys. When you press the `enter` key on one of
 the results, you will be taken to the exact paragraph within the book which

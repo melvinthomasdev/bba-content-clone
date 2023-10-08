@@ -547,7 +547,7 @@ to update their password from UI. Let's say we don't require any password
 confirmation when updating with a new password.
 
 So if we want to test this logic, then the first instinct might be to write a
-controller test case like so:
+controller test case like this:
 
 ```rb
 def test_should_update_user_password

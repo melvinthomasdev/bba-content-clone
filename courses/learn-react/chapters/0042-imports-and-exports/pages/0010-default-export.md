@@ -6,7 +6,7 @@ Thus we have import and export statements. As the names suggest, they allow us t
 
 The most commonly used method of importing and exporting components is the default method as shown below:
 
-If you have a single component in a file that you wish to make available within other files, just add a line `export default ComponentName` where ComponentName is the name of the component you wish to export like so:
+If you have a single component in a file that you wish to make available within other files, just add a line `export default ComponentName` where ComponentName is the name of the component you wish to export like this:
 
 ```jsx
 {/* WelcomeText.jsx */}

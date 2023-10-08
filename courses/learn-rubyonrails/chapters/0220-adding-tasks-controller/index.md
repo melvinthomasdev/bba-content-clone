@@ -170,7 +170,7 @@ Now that we have our tasks created, we can pass the list of tasks to our view
 file to display it.
 
 First we need to query the list of tasks in our tasks controller and make them
-available for our view file like so:
+available for our view file like this:
 
 ```ruby{3}
 class TasksController < ApplicationController

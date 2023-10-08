@@ -44,7 +44,7 @@ So, as mentioned above we have two `Route` for paths `/about` and `/contact`.
 will be rendered for the `/contact` path.
 
 Now, let's say that in the `About` component we use another `BrowserRouter` and
-define a `Link` for `Contact` component, like so:
+define a `Link` for `Contact` component, like this:
 
 ```jsx
 import { BrowserRouter, Link } from "react-router-dom";
@@ -73,7 +73,7 @@ The `Switch` component renders the first matching child `<Route>` or
 matching `<Route>` or `<Redirect>` at a time.
 
 For example, let's say we have defined some routes for `About`, `User`, and
-`NoMatch` components, like so:
+`NoMatch` components, like this:
 
 ```jsx
 <BrowserRouter>
@@ -86,7 +86,7 @@ For example, let's say we have defined some routes for `About`, `User`, and
 Now, if we go to `/about` path then all three components that are `About`,
 `User`, and `NoMatch` will render because they all match the current location's
 path. If we want to render only one component for the matching path then we
-should use the `Switch` component, like so:
+should use the `Switch` component, like this:
 
 ```jsx
 <BrowserRouter>
@@ -174,7 +174,7 @@ component. There are two solutions to this problem. We can move the `Dashboard`
 component route above the `Home` component route or we can use the exact prop in
 the `Home` component route.
 
-We can solve the above-mentioned problem using the exact prop like so:
+We can solve the above-mentioned problem using the exact prop like this:
 
 ```jsx
 <BrowserRouter>
@@ -190,7 +190,7 @@ the current location's path.
 
 We should not use the exact prop in the routes if there are nested routes.
 
-For example, let's say we have defined the routes like so:
+For example, let's say we have defined the routes like this:
 
 ```jsx
 <BrowserRouter>
@@ -252,7 +252,7 @@ component and mounting the new component instead of just updating the existing
 one. So this approach can be inefficient and will cause performance issues.
 
 For passing custom props in the `Dashboard` component we can use the `render`
-prop which accepts the inline functions for rendering, like so:
+prop which accepts the inline functions for rendering, like this:
 
 ```jsx
 <Route path="/dashboard" render={() => <Dashboard user={user} />} />
@@ -419,7 +419,7 @@ logged into your browser.
 
 The `useParams` hook gives us an object of key-value pairs of URL parameters.
 Using the `useParams` hook we can access the parameter of the current route,
-like so:
+like this:
 
 ```jsx
 // component rendered for "/article/:slug" path

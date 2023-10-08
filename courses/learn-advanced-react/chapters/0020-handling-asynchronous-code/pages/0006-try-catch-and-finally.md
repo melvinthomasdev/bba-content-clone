@@ -28,7 +28,7 @@ const fetchUserData = async userId => {
 
 There are exceptions when you can skip the try/catch block. When using an
 asynchronous function that uses a `try/catch` block inside another asynchronous
-function, you can skip the error catching in the top-level function like so:
+function, you can skip the error catching in the top-level function like this:
 
 ```javascript
 import axios from "axios";
@@ -56,7 +56,7 @@ block so the parent block could catch the error.
 ## The Finally Block
 
 Remember to use the `finally` block for operations that need to be performed
-regardless of the result of the asynchronous operation like so:
+regardless of the result of the asynchronous operation like this:
 
 ```jsx
 import React, { useState, useEffect } from "react";

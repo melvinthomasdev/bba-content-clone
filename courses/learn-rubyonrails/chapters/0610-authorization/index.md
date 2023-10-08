@@ -58,7 +58,7 @@ Now, install the gem:
 bundle install
 ```
 
-Include `Pundit` in the `ApplicationController` class like so:
+Include `Pundit` in the `ApplicationController` class like this:
 
 ```ruby{2}
 class ApplicationController < ActionController::Base
@@ -220,7 +220,7 @@ end
 
 This raises an exception. But Pundit allows us to rescue the exception with a
 method of our choice. So, let's add the exception handling for `Pundit` inside
-the `application_controller.rb` file like so:
+the `application_controller.rb` file like this:
 
 ```ruby {3, 9-11}
 class ApplicationController < ActionController::Base
@@ -259,7 +259,7 @@ en:
 ```
 
 Let's use the `authorization.denied` translation string. Update the
-`application_controller.rb` file like so:
+`application_controller.rb` file like this:
 
 ```rb {5}
 class ApplicationController < ActionController::Base

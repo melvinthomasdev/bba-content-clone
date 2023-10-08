@@ -21,7 +21,7 @@ At this point, it’s safe to provision your product for your customer.
 
 ### Failed subscription flow
 
-The pseudo-code for a failed subscription flow looks like so:
+The pseudo-code for a failed subscription flow looks like this:
 
 - Payment fails for the initial checkout session based payment or automatic
   charge attempt.

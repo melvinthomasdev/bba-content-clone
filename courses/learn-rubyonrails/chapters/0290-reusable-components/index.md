@@ -803,7 +803,7 @@ Now copy and paste the following lines to
 ```
 
 Finally, we need to import these stylesheets in `stylesheets/application.scss`,
-like so:
+like this:
 
 ```scss
 //Previous code
@@ -871,7 +871,7 @@ conditionally from React. For example in our `Tooltip` component we can specify
 the `direction` prop to specify which of the `top`, `bottom`, `left` or `right`
 modifier's styles get applied on our `Tooltip` component.
 
-For example We can pass `bottom` value to the `direction` prop like so:
+For example We can pass `bottom` value to the `direction` prop like this:
 
 ```jsx
 <Tooltip content="Bottom Tooltip" direction="bottom">

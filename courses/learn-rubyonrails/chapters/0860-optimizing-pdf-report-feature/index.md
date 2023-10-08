@@ -107,7 +107,7 @@ end
 Similarly, you should also change the type of `id` field to `uuid` for the table
 `active_storage_variant_records`.
 
-Now run the migration to reflect the changes in database, like so:
+Now run the migration to reflect the changes in database, like this:
 
 ```bash
 bundle exec rails db:migrate
@@ -126,7 +126,7 @@ so:
 gem "google-cloud-storage"
 ```
 
-Then install the newly added gem, like so:
+Then install the newly added gem, like this:
 
 ```bash
 bundle install
@@ -185,14 +185,14 @@ Let's first handle the env variables.
 
 It's a common standard across most projects to store the ENV variables in `.env`
 files. In order to handle the `.env` files, we need to add a gem. Let's add the
-`dotenv` gem, at the end of `Gemfile`, like so:
+`dotenv` gem, at the end of `Gemfile`, like this:
 
 ```rb
 # To load the environment variables
 gem "dotenv-rails"
 ```
 
-Install the newly added gem, like so:
+Install the newly added gem, like this:
 
 ```bash
 bundle install
@@ -225,14 +225,14 @@ Remove the below mentioned line from `.gitignore` file:
 Once a change is made to `.gitignore` file we should immediately stage and
 commit that change.
 
-So let's stage and commit the `.gitignore` file, like so:
+So let's stage and commit the `.gitignore` file, like this:
 
 ```bash
 git add .gitignore
 git commit -m "Removed env file from gitignore"
 ```
 
-Now, create a `.env` file at the root of the project, like so:
+Now, create a `.env` file at the root of the project, like this:
 
 ```sh
 touch .env
@@ -254,7 +254,7 @@ GCS_CLIENT_URL=value from downloaded file
 ```
 
 Please note that the value of `private_key` contains newline escape character
-that is `\n` so we have to use the double quotes, like so:
+that is `\n` so we have to use the double quotes, like this:
 
 ```
 GCS_PRIVATE_KEY="value from downloaded file"
@@ -266,7 +266,7 @@ one mentioned above.
 Now we have added the env variables, let's use these env variables in our
 project.
 
-Open the `secrets.yml` file and add the highlighted lines, like so:
+Open the `secrets.yml` file and add the highlighted lines, like this:
 
 ```yml {4-13}
 default: &default # rest of the values as it was
@@ -294,7 +294,7 @@ production:
   <<: *default
 ```
 
-Update the `config/storage.yml` file like so:
+Update the `config/storage.yml` file like this:
 
 ```yml
 test:
@@ -361,7 +361,7 @@ end
 
 The attached `report` is an Active Storage table.
 
-Update the `reports_worker.rb` file, like so:
+Update the `reports_worker.rb` file, like this:
 
 ```rb {12-19}
 class ReportsWorker
@@ -430,7 +430,7 @@ section.
 ## Updating environments to use 3rd party provider
 
 To use the Google cloud service in the production environment, update the
-`production.rb` file, like so:
+`production.rb` file, like this:
 
 ```rb
 Rails.application.configure do
@@ -440,7 +440,7 @@ end
 ```
 
 The next code block needn't be added in `granite`. To test the Google cloud
-service in local environment we can update the `development.rb` file, like so:
+service in local environment we can update the `development.rb` file, like this:
 
 ```rb
 Rails.application.configure do
@@ -526,14 +526,14 @@ which we will be using throughout the chapter.
 
 ## Setup Action Cable to send live notifications
 
-Create the `channels` and `application_cable` directories, like so:
+Create the `channels` and `application_cable` directories, like this:
 
 ```bash
 mkdir app/channels
 mkdir app/channels/application_cable
 ```
 
-Create the `connection.rb` file, like so:
+Create the `connection.rb` file, like this:
 
 ```bash
 touch app/channels/application_cable/connection.rb
@@ -570,7 +570,7 @@ We are verifying the user who is trying to make the connection using their
 `email` and `auth_token`. If the user is not found then we will reject the
 connection request using the `reject_unauthorized_connection`.
 
-Create a `channel.rb` file, like so:
+Create a `channel.rb` file, like this:
 
 ```bash
 touch app/channels/application_cable/channel.rb
@@ -591,7 +591,7 @@ like our `application_controller.rb` class from which all other controllers
 inherit.
 
 Let's create a channel for sending report generations's notification that is
-`report_download_channel.rb`, like so:
+`report_download_channel.rb`, like this:
 
 ```bash
 touch app/channels/report_download_channel.rb
@@ -617,7 +617,7 @@ data that is streamed with the given `pubsub_token`. We will discuss more about
 
 ## Move hardcoded messages to translations file
 
-Now let's add some notification messages to the `en.yml` file, like so:
+Now let's add some notification messages to the `en.yml` file, like this:
 
 ```yml
 en:
@@ -630,7 +630,7 @@ en:
 ```
 
 Update the `reports_worker.rb` file to send the live notifications about PDF
-file generation, like so:
+file generation, like this:
 
 ```rb {3,6,15,18,26}
 class ReportsWorker
@@ -667,7 +667,7 @@ We are broadcasting the messages by using the `user_id` as `pubsub_token`. If
 the user uses the same `pubsub_token`, that is `user_id`, while connecting to
 the channel, the broadcasted messages will be received by the user.
 
-Update the `create` action from the `reports_controller.rb`, like so:
+Update the `create` action from the `reports_controller.rb`, like this:
 
 ```rb {2}
 def create
@@ -688,7 +688,7 @@ that.
 Also, remove the `report_path` method from the `reports_controller.rb` because
 we have delegated the job of handling generated files to Active Storage.
 
-Update the `config/cable.yml` file to make Action Cable work, like so:
+Update the `config/cable.yml` file to make Action Cable work, like this:
 
 ```yml {2,3}
 development:
@@ -709,20 +709,20 @@ mv app/javascript/channels app/javascript/src
 ```
 
 If there is no such folder then let's create one using the following command,
-like so:
+like this:
 
 ```sh
 mkdir app/javascript/src/channels
 ```
 
 Create an `index.js` file if it doesn't already exist inside the
-`app/javascript/src/channels` directory, like so:
+`app/javascript/src/channels` directory, like this:
 
 ```bash
 touch app/javascript/src/channels/index.js
 ```
 
-Update the `index.js` file we just created, like so:
+Update the `index.js` file we just created, like this:
 
 ```js
 // Load all the channels within this directory and all subdirectories.
@@ -732,13 +732,13 @@ const channels = require.context(".", true, /_channel\.js$/);
 channels.keys().forEach(channels);
 ```
 
-Now, let's create a `consumer.js` file inside the `channels` directory, like so:
+Now, let's create a `consumer.js` file inside the `channels` directory, like this:
 
 ```bash
 touch app/javascript/src/channels/consumer.js
 ```
 
-Update the `consumer.js` file, like so:
+Update the `consumer.js` file, like this:
 
 ```js
 // Action Cable provides the framework to deal with WebSockets in Rails.
@@ -765,7 +765,7 @@ which we can subscribe to different channels.
 Now, let's add the channel in the frontend through which we can communicate with
 the `ReportDownloadChannel` which we had built in the backend.
 
-Create the `reportDownloadChannel.js` file, like so:
+Create the `reportDownloadChannel.js` file, like this:
 
 ```bash
 touch app/javascript/src/channels/reportDownloadChannel.js
@@ -819,7 +819,7 @@ method will be invoked when some data is received by the channel.
 ## Add alias for channels folder
 
 Let's add the alias for the `channels` directory. Update the `resolve.js` file
-like so:
+like this:
 
 ```javascript{9}
 // Rest of the code if any
@@ -842,7 +842,7 @@ module.exports = {
 Now we will be using two new packages that are `file-saver` to save the PDF file
 and `framer-motion` to create the progress bar animation.
 
-Install the `file-saver` and `framer-motion` like so:
+Install the `file-saver` and `framer-motion` like this:
 
 ```bash
 yarn add file-saver
@@ -852,13 +852,13 @@ yarn add framer-motion@6.5.1
 Please note that we are utilizing version `6.5.1` of `framer-motion`. This is because starting from version 7, `framer-motion` requires a minimum supported version of `react@18`, whereas we are currently using `react@17`.
 
 Now let's work on the progress bar. Create a file called `ProgressBar.jsx` in
-the `Common` directory, like so:
+the `Common` directory, like this:
 
 ```bash
 touch app/javascript/src/components/Common/ProgressBar.jsx
 ```
 
-Add the code in the `ProgressBar.jsx`, like so:
+Add the code in the `ProgressBar.jsx`, like this:
 
 ```jsx
 import React from "react";
@@ -893,7 +893,7 @@ value of `progress`, the width of a `div` increases and appears to us like a
 progress bar.
 
 Now let's move on to the `DownloadReport` component. Fully update the
-`DownloadReport` component like so:
+`DownloadReport` component like this:
 
 ```jsx
 import React, { useEffect, useState } from "react";
@@ -1010,7 +1010,7 @@ That's a lot of changes. Let's summarize the working of the PDF report feature.
 
 ## Testing Action Cable
 
-Create a file called `connection_test.rb`, like so:
+Create a file called `connection_test.rb`, like this:
 
 ```bash
 touch test/channels/application_cable/connection_test.rb
@@ -1020,7 +1020,7 @@ The test case names should be pretty self-explanatory of what we are testing
 here.
 
 Test the Action Cable functionalities with the current user by updating the code
-in `connection_test.rb` file, like so:
+in `connection_test.rb` file, like this:
 
 ```rb
 require "test_helper"
@@ -1052,13 +1052,13 @@ end
 ```
 
 Create a new file called `report_download_channel_test.rb` to test the
-`ReportDownloadChannel`, like so:
+`ReportDownloadChannel`, like this:
 
 ```bash
 touch test/channels/report_download_channel_test.rb
 ```
 
-Update the code in `report_download_channel_test.rb` file, like so:
+Update the code in `report_download_channel_test.rb` file, like this:
 
 ```rb
 require "test_helper"

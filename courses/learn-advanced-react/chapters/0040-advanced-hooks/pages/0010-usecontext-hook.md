@@ -23,7 +23,7 @@ const Component4 = ({user}) =>
   <h2>{`Greetings from the bottom level component, ${user}`}</h2>
 ```
 
-In the trivial example above, the prop `user` had to pass through 2 components that didn't even utilize the prop before reaching its target `Component4`. 
+In the trivial example above, the prop `user` had to pass through 2 components that didn't even utilize the prop before reaching its target `Component4`.
 
 The easiest way to solve prop drilling is by simply moving the state definition to where it's needed and thus avoiding the need to pass it along.
 
@@ -33,7 +33,7 @@ If you wish to see a more detailed explanation of prop drilling, [this video by 
 
 ## Creating a Context
 
-To create a context, you must Import `createContext` and initialize it like so:
+To create a context, you must Import `createContext` and initialize it like this:
 
 ```jsx
 import { useState, createContext } from "react";

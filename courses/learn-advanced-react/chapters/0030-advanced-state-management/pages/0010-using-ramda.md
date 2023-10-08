@@ -31,7 +31,7 @@ arr = [1,2,3,4,5]
 const func = remove(1,2) // returns a curried function.
 ```
 
-Now we could pass in any array to `func` and curry it to `remove(1,2)`, like so:
+Now we could pass in any array to `func` and curry it to `remove(1,2)`, like this:
 
 ```js
 func(arr) // returns [3,4,5].
@@ -245,7 +245,7 @@ mergeDeepLeft({id: 2, customer: {name: "Oliver"}}, ORDER);
 */
 ```
 
-The same inputs given to the merge function would overwrite the nested objects like so:
+The same inputs given to the merge function would overwrite the nested objects like this:
 
 ```js
 merge({id: 2, customer: {name: "Oliver"}}, ORDER);
@@ -288,7 +288,7 @@ All non-primitive properties are copied to the new object by reference.
 
 If you wish to manually copy an object along with all its nested sub-objects, the `clone` method can be of great help.
 
-Cloning the `ORDER` constant using vanilla ES6 would look like so:
+Cloning the `ORDER` constant using vanilla ES6 would look like this:
 
 ```jsx
 const orderCopy = {

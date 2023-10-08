@@ -1,5 +1,5 @@
 As you build larger and more complex components, sometimes you'll find yourself
-needing to nest your custom components like so:
+needing to nest your custom components like this:
 
 ```jsx
 <Parent>
@@ -17,7 +17,7 @@ this case is:
 ```
 
 To access the children of your custom components, React provides a special prop
-called `children` that you can use like so:
+called `children` that you can use like this:
 
 ```jsx
 {

@@ -13,7 +13,7 @@ statements that must be executed together or not at all.
 ## Transactions in Active Record
 
 Rails provides `transaction` as a class method under the `ActiveRecord::Base`
-class. We can use the method like so:
+class. We can use the method like this:
 
 ```ruby
 ActiveRecord::Base.transaction do
@@ -155,7 +155,7 @@ triggering ROLLBACK. So you should be ready to catch those exceptions in your
 application code.
 
 Let's say we have a transaction that creates a new `Account` and updates another
-account like so:
+account like this:
 
 ```ruby
 Account.transaction do
@@ -172,7 +172,7 @@ wrong.
 value and the transaction would keep running.
 
 If for some reason we want to use the non-bang version of these methods, then we
-can always raise an exception manually to check the return value like so:
+can always raise an exception manually to check the return value like this:
 
 ```ruby
 Account.transaction do

@@ -11,7 +11,7 @@ Take the previously shown example of a contact list:
 </ul>
 ```
 
-If the above example were to be re-arranged during runtime like so:
+If the above example were to be re-arranged during runtime like this:
 
 ```jsx
 <ul>
@@ -32,7 +32,7 @@ can't know the contents of each line haven't been modified without keys.
 Keys allow React to know which elements have changed or not when comparing
 differences by just comparing keys rather than the entire element.
 
-The above example with index keys added like so:
+The above example with index keys added like this:
 
 ```jsx
 <ul>

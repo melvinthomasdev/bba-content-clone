@@ -74,7 +74,7 @@ The following are the steps that you need to keep in mind:
   So how to do it? Create a variable named as `resourceNameApi`, which is an
   object consisting of all the actions defined. Eg:
   `const registrationsApi = { create, destroy };`. Now we default export this
-  variable only, like so: `export default registrationsApi`. This is done to
+  variable only, like this: `export default registrationsApi`. This is done to
   enhance the intellisense. Now we can simply type in `registrationsApi`, and if
   your text editor is configured properly, then it will auto-import the API.
   Cool right?

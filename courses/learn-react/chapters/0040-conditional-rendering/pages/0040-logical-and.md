@@ -1,5 +1,5 @@
 You can also shorten the previously shown example using the logical and operator
-(&&) like so:
+(&&) like this:
 
 ```jsx
 {/* ProfilePicture.jsx */}
@@ -44,7 +44,7 @@ not get rendered. However, 0 is a special exception that gets rendered as the
 number "0" within the div.
 
 To prevent this, ensure that the expression before the `&&` always returns a
-boolean like so:
+boolean like this:
 
 ```jsx
 function App() {

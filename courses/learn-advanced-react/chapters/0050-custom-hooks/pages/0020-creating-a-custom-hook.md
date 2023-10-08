@@ -24,7 +24,7 @@ const FriendCard = ({ userURL }) => {
 
 The code above runs just fine. But what if there was another unrelated section of code that required this same functionality?
 
-Rather than building the same state and effect in another component, we can avoid the repetition by creating a new custom hook called `useFetch` and placing it within a hooks folder at the top level of our app like so:
+Rather than building the same state and effect in another component, we can avoid the repetition by creating a new custom hook called `useFetch` and placing it within a hooks folder at the top level of our app like this:
 
 ```
 ├── App.jsx

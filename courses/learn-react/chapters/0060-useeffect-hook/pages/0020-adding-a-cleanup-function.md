@@ -1,6 +1,6 @@
 If we need to add a cleanup function, we just need to return a function from our effect.
 
-You can use the following syntax to do so: 
+You can use the following syntax to do so:
 
 ```jsx
 useEffect(() => {
@@ -17,7 +17,7 @@ Here are a few common uses for the cleanup function.
 
 ## Clearing Timers
 
-We can use the cleanup function to clear timers like so:
+We can use the cleanup function to clear timers like this:
 
 ```jsx
 useEffect(() => {
@@ -31,7 +31,7 @@ useEffect(() => {
 
 ## Removing Listeners
 
-We can also remove event listeners using the cleanup function like so:
+We can also remove event listeners using the cleanup function like this:
 
 ```jsx
 useEffect(() => {

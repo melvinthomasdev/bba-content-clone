@@ -46,7 +46,7 @@ Let us see a hypothetical example to understand how we can use memoization in
 Rails. As per our Granite application, while deleting a user, we assign back the
 tasks assigned to that user to the task owner. Consider a scenario where we have
 an admin user and instead of assigning back the tasks to the task owner the
-tasks have to be assigned back to the admin, like so:
+tasks have to be assigned back to the admin, like this:
 
 ```ruby
 class UserDeletionService

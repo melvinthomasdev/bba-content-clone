@@ -89,7 +89,7 @@ const WelcomeComponent = () => {
 
 As shown in the transpiled code above, `<>` is just a replacement for
 `React.Fragment`. You can write the same JSX example above in it's long-form
-like so:
+like this:
 
 ```jsx
 <React.Fragment>

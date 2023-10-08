@@ -1,4 +1,4 @@
-A commonly made mistake among newcomers to React is to initialize the state without an initial value like so:
+A commonly made mistake among newcomers to React is to initialize the state without an initial value like this:
 
 ```jsx
 const Weather = () => {
@@ -18,11 +18,11 @@ const Weather = () => {
 }
 ```
 
-Setting a state without an initial value gives it a value of `undefined` by default. 
+Setting a state without an initial value gives it a value of `undefined` by default.
 
 While the above code runs just fine, the statement `const [weather, setWeather] = useState()` does not tell a reader whether the state is an integer, string, boolean, array, or some other type of value. This is something they have to decipher by going through the entire code which can be a hassle if your component is large.
 
-We can avoid this confusion by setting an initial value of the same type like so:
+We can avoid this confusion by setting an initial value of the same type like this:
 
 ```jsx
 const Weather = () => {

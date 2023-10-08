@@ -26,7 +26,7 @@ The above implementation might work if we are going to use a single instance of 
 2. Resource wastage: Multiple instances would consume additional memory and resources to maintain their individual caches, resulting in inefficient resource usage.
 3. Synchronization challenges: If multiple instances modify the cache concurrently, it can lead to synchronization issues and data inconsistencies.
 
-In this scenario, by using a singleton class, we can ensure that there is a single, shared instance of the cache manager throughout the application. 
+In this scenario, by using a singleton class, we can ensure that there is a single, shared instance of the cache manager throughout the application.
 
 ```ruby
 require 'singleton'
@@ -54,7 +54,7 @@ end
 
 In this example, we have a `CacheManager` class that includes the `Singleton` module. The class ensures that only one instance of the cache manager is created and shared across the application.
 
-Using the singleton class, we can store and retrieve cached data from anywhere in the application like so:
+Using the singleton class, we can store and retrieve cached data from anywhere in the application like this:
 
 ```ruby
 cache_manager = CacheManager.instance

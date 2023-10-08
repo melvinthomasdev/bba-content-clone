@@ -76,7 +76,7 @@ While adding it in OMZ plugins section works for most, some users have trouble
 getting it to work.
 
 If that is the case, download `z` and put it in your home directory so that it’s
-located at `~/z.sh`, like so:
+located at `~/z.sh`, like this:
 
 ```bash
 curl -o "${HOME}/z.sh" "https://raw.githubusercontent.com/rupa/z/master/z.sh"
@@ -163,7 +163,7 @@ Let's install it:
 brew install ripgrep
 ```
 
-Great! Now goto any project and search for any keyword like so:
+Great! Now goto any project and search for any keyword like this:
 
 ```bash
 rg "keyword"
@@ -177,7 +177,7 @@ done.
 There will be valid cases like say SSH'ing into a server, where `vim` can be
 your knight in shining armor.
 
-Install vim, like so:
+Install vim, like this:
 
 ```bash
 brew install vim

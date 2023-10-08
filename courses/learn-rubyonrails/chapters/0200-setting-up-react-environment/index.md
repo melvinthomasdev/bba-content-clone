@@ -50,7 +50,7 @@ rendered. This forms the basis for `react-router`.
 
 ## Axios
 
-Axios is a promise based HTTP client for the browser and Node.js. To install
+[Axios](https://axios-http.com) is a promise based HTTP client for the browser and Node.js. To install
 `axios` , run the following command:
 
 ```bash
@@ -58,16 +58,14 @@ yarn add axios
 ```
 
 HTTP requests can be sent easily by using different methods in `axios` .
-
-Example: `axios.get('https://httpbin.org/get')` will send a `GET` request to the
-URL specified.
+For example `axios.get('https://httpbin.org/get')` will send a `GET` request to the
+specified URL.
 
 The `axios` requests are mostly `async` in nature. Thus at BigBinary we always
 embed all `async` blocks within the `try-catch` blocks to ensure that the code
 catches any exceptions that might occur as part of the call.
 
-This is also a good practice in general which can moreover ensure an easier
-debugging experience for the developer.
+Adding `async` calls within `try-catch` block also helps in debugging.
 
 ### Axios headers and defaults
 
@@ -187,12 +185,12 @@ However, during API calls to server or while communicating with another external
 service, errors are bound to occur. In such cases, we might want to log the
 errors that are caught from our `try-catch` block.
 
-One can use `js-logger` in such cases. `js-logger` is a lightweight JavaScript
+We can use `js-logger` in such cases. `js-logger` is a lightweight JavaScript
 Logger that has zero dependencies.
 
 During the setup of Webpacker, we had already installed the necessary packages, specifically `js-logger` and `babel-plugin-js-logger`.
 
-To initialize `js-logger`, run the following command from root of project:
+To initialize `js-logger`, run the following command from the root of project:
 
 ```bash
 mkdir -p ./app/javascript/src/common

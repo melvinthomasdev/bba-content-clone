@@ -46,7 +46,7 @@ complete:
 
 ## Technical design
 
-Implementation of this feature can be done like so:
+Implementation of this feature can be done like this:
 
 - We will add an enum attribute called `progress` in the `Task` model. The value
   of this enum attribute will be a string.
@@ -163,7 +163,7 @@ def task_params
 end
 ```
 
-Now update the `update` action of `TasksController` like so:
+Now update the `update` action of `TasksController` like this:
 
 ```ruby
 def update
@@ -195,7 +195,7 @@ the `n+1` query issue and how to avoid it you can refer to the in-depth
 [n+1 queries and memoization chapter](/learn-rubyonrails/n+1-queries-and-memoization).
 
 We can avoid `n+1` queries by using the `includes` method to fetch the
-`assigned_user` like so:
+`assigned_user` like this:
 
 ```ruby {3}
 def index
@@ -314,7 +314,7 @@ json.task do
 end
 ```
 
-Similarly, fully update the `index.json.jbuilder` like so:
+Similarly, fully update the `index.json.jbuilder` like this:
 
 ```ruby
 json.tasks do
@@ -989,7 +989,7 @@ We should update the API connector for deleting a task and add a `quiet` query
 param to the task destroy API endpoint if the task is deleted from the
 dashboard.
 
-Update the `destroy` action in the `TasksController` like so:
+Update the `destroy` action in the `TasksController` like this:
 
 ```ruby {4}
 def destroy
@@ -1020,7 +1020,7 @@ const Dashboard = ({ history }) => {
 export default Dashboard;
 ```
 
-Finally update the tasks API connected file like so:
+Finally update the tasks API connected file like this:
 
 ```javascript {4-7}
 // previous code
@@ -1045,7 +1045,7 @@ en:
       immutable: "is immutable!"
 ```
 
-Let's update the `destroy` action of `TasksController` like so:
+Let's update the `destroy` action of `TasksController` like this:
 
 ```ruby {4}
 def destroy

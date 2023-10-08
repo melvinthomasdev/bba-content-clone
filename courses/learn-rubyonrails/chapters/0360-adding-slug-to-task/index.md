@@ -341,14 +341,14 @@ using `params[:id]`, which can cause confusion as we already have an `id` field
 in the Task model and since `slug` is actually not the `id` of a table.
 
 To avoid this confusion, Rails lets us override the default name by using
-`param` like so:
+`param` like this:
 
 ```ruby
 resources: tasks, param: :identifier_name
 ```
 
 After we override the param identifier name, we can use it in our controller
-action like so:
+action like this:
 
 ```ruby
 def show
@@ -767,7 +767,7 @@ don't need to ensure that the `slug` gets updated during update of the `title`
 corresponding to that Task. We need to keep `slug` immutable, meaning once set,
 it shouldn't ever change.
 
-To make it immutable, we need to add a custom validation like so:
+To make it immutable, we need to add a custom validation like this:
 
 ```ruby {10,26-30}
 class Task < ApplicationRecord

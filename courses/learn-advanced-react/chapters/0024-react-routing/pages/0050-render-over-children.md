@@ -1,6 +1,6 @@
 Please note that the information given here is regarding React Router version 5.
 
-As shown before, to add a route, we just need a `component` and `path` prop in the `Route` component, like so:
+As shown before, to add a route, we just need a `component` and `path` prop in the `Route` component, like this:
 
 ```jsx
 <Route path="/" component={Dashboard} />
@@ -8,7 +8,7 @@ As shown before, to add a route, we just need a `component` and `path` prop in t
 
 But how do you pass props into the `Dashboard` component if you need to?
 
-Although the easiest method is to just render an inline function with the props embedded like so:
+Although the easiest method is to just render an inline function with the props embedded like this:
 
 ```jsx
 <Route path="/" component={() => <Dashboard name={name} />} />

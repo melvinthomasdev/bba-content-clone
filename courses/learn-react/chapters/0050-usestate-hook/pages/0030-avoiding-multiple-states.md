@@ -24,7 +24,7 @@ const UserCardContainer = () => {
 ```
 
 Instead, reduce your states down to logical blocks that are commonly used.
-In the above example, since a user's name, email and profile picture are commonly used together, we can reduce it down to one "user" state and pass it along to the ProfileCard like so:
+In the above example, since a user's name, email and profile picture are commonly used together, we can reduce it down to one "user" state and pass it along to the ProfileCard like this:
 
 ```jsx
 {/* UserCardContainer.jsx */}

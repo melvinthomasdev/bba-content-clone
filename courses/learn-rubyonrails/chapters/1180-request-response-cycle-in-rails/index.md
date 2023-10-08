@@ -70,7 +70,7 @@ body of the response which can be any object that responds to an `each` method
 call.
 
 If we have to modify the above example to render a different response for a
-request on `/tasks` URL then we can do it like so:
+request on `/tasks` URL then we can do it like this:
 
 ```ruby
 class RackApp
@@ -90,7 +90,7 @@ be `Welcome to Rails`. In a nutshell, this is what a Rails application does. It
 receives a request then processes the request and returns a response.
 
 To use the `RackApp` application for processing requests and sending back
-responses, fully replace the content of `config.ru` file like so:
+responses, fully replace the content of `config.ru` file like this:
 
 ```ruby
 require_relative "rack_app"
@@ -232,7 +232,7 @@ instance of `ActionDispatch::Response`.
 
 Once the correct controller and action are derived, then the controller is
 invoked using the `dispatch` method which is implemented in
-`ActionController::Metal` like so:
+`ActionController::Metal` like this:
 
 ```ruby
 controller_class.dispatch(action, request, response)

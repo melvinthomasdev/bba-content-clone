@@ -1,6 +1,6 @@
 React component and their filenames should have the same "PascalCased" name.
 
-If you have a file containing a component called `ContactTable` like so :
+If you have a file containing a component called `ContactTable` like this :
 
 ```jsx
 const ContactTable = () => {
@@ -13,7 +13,7 @@ Refrain from naming the file `Table.jsx`, `Contacts.jsx`.
 
 However, If the filename is `index.jsx` then the component name should be the same as the folder name.
 
-For example, consider a folder structure like so:
+For example, consider a folder structure like this:
 
 ```js
 UserCard/
@@ -23,7 +23,7 @@ UserCard/
 └── utils.js
 ```
 
-This would be correct assuming the `index.jsx` file contains a `UserCard` component like so :
+This would be correct assuming the `index.jsx` file contains a `UserCard` component like this :
 
 ```jsx
 const UserCard = () => {

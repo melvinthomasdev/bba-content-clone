@@ -16,7 +16,7 @@ Similarly, the value of the `loading` prop is true. You can simply mention
 `loading` rather than pass `loading={true}`.
 
 Using this technique also referred to as "implicit declaration of props", we can
-refactor the above example like so:
+refactor the above example like this:
 
 ```jsx
 <ProfilePicture loading name="Oliver" />

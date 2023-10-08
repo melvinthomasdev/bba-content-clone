@@ -49,7 +49,7 @@ the code will throw an error at `tasks[0].content`.
 ## Checking whether array is empty
 
 In the example, we could fix the code by adding `&& tasks.length !== 0` to the
-condition, like so:
+condition, like this:
 
 ```jsx
 if (!tasks || tasks.length === 0) {

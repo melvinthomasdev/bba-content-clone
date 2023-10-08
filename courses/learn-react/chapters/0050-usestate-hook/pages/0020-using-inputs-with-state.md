@@ -1,4 +1,4 @@
-In React, input fields are almost always controlled by a state object like so:
+In React, input fields are almost always controlled by a state object like this:
 
 ```jsx
 {/* NameInputField.jsx */}

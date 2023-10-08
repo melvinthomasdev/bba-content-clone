@@ -22,7 +22,7 @@ const ProfilePicture = ({ isAdmin, name }) => {
 }
 ```
 
-In the above example, `if(isAdmin) { return ... }` is what we call a "Guard Clause". They are conditional statements that evaluate a condition and stops the execution of the code based on said condition. At BigBinary, we consider that to be the best practice over chaining if/else statements like so :
+In the above example, `if(isAdmin) { return ... }` is what we call a "Guard Clause". They are conditional statements that evaluate a condition and stops the execution of the code based on said condition. At BigBinary, we consider that to be the best practice over chaining if/else statements like this :
 
 ```jsx
 {/* ProfilePicture.jsx */}
@@ -44,7 +44,7 @@ const ProfilePicture = ({ isAdmin, name }) => {
 }
 ```
 
-You could also assign the value to a variable and return that like so:
+You could also assign the value to a variable and return that like this:
 
 ```jsx
 {/* ProfilePicture.jsx */}

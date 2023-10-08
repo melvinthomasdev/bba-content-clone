@@ -50,7 +50,7 @@ if (!tasks || tasks.length === 0) {
 
 But this workaround could confuse a reader on why a variable named `tasks` have a boolean value.
 
-A proper fix is to use an appropriate initial value like so:
+A proper fix is to use an appropriate initial value like this:
 
 ```jsx
 const [tasks, setTasks] = useState([]); //Changing the initial state from false to [] fixes the problem

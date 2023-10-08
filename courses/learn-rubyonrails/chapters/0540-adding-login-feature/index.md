@@ -394,7 +394,7 @@ export default App;
 Now that our dashboard component is rendered at `/` path instead of
 `/dashboard`, replace `history.push("/dashboard")` with `history.push("/")` in
 `Create` component, so as to redirect users to the correct URL from the
-`handleSubmit` function, like so:
+`handleSubmit` function, like this:
 
 ```jsx {9}
 /* previous code */
@@ -417,7 +417,7 @@ const Create = ({ history }) => {
 export default Create;
 ```
 
-Now make the same change in the `Edit` component as well, like so:
+Now make the same change in the `Edit` component as well, like this:
 
 ```jsx {8} {
 /* previous code */
@@ -649,7 +649,7 @@ is logged in or not before letting the user view the tasks list or access any
 data within the database. We will create a method for authentication and pass
 this method to the `before_action` filter.
 
-Update the `application_controller.rb` file like so:
+Update the `application_controller.rb` file like this:
 
 ```ruby
 class ApplicationController < ActionController::Base
@@ -727,7 +727,7 @@ The entry point into the application is not an API request and it is processed
 by the `index` action of the `HomeController` which inherits from the
 `ApplicationController`. We ought to skip the
 `authenticate_user_using_x_auth_token` filter in this case. Add a
-`skip_before_action` callback in the `home_controller.rb` file like so:
+`skip_before_action` callback in the `home_controller.rb` file like this:
 
 ```ruby {2}
 class HomeController < ApplicationController
@@ -749,7 +749,7 @@ it will be called before any other filters and controller actions. Our
 application should not invoke this method when the user sends a login request.
 
 To do so, we can use the `skip_before_action` filter inside the
-`SessionsController` like so:
+`SessionsController` like this:
 
 ```ruby {2}
 class SessionsController < ApplicationController
@@ -771,7 +771,7 @@ end
 ```
 
 We should also skip authentication during signup. Update the `UsersController`
-like so:
+like this:
 
 ```ruby {2}
 class UsersController < ApplicationController

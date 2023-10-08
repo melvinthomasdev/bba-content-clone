@@ -1,6 +1,6 @@
 Using React.js over Rails view was a hard decision for us here at BigBinary.
 [BigBinary](https://bigbinary.com) is a Ruby on Rails consulting company, and we
-have been using Ruby on Rails for more than ten years.
+have been using Ruby on Rails for more than thirteen years.
 
 Over the years we have seen the shift that more and more of our clients are
 asking for React.js to be the view layer of their applications instead of Rails

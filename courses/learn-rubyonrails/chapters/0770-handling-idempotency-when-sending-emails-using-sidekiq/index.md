@@ -1416,7 +1416,7 @@ end
 ```
 
 Update the `test_shouldnt_create_comment_without_task` inside the
-`CommentsControllerTest` like so:
+`CommentsControllerTest` like this:
 
 ```ruby
 def test_shouldnt_create_comment_without_task
@@ -1428,7 +1428,7 @@ end
 ```
 
 Update the `test_should_respond_with_not_found_error_if_user_is_not_present`
-inside the `SessionsControllerTest` like so:
+inside the `SessionsControllerTest` like this:
 
 ```ruby
 def test_should_respond_with_not_found_error_if_user_is_not_present

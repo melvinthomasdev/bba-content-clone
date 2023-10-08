@@ -163,7 +163,7 @@ For example:
 
 But usually, we don't have this `type` prop for the cancel button. And in this case, this is not right because this cancel button should reset the changes in the form values as we have canceled the edit operation. We can make this cancel button reset the values of the form by assigning the `type` prop a value of `reset`.
 
-In cases like these when the user is on the same page after clicking on the cancel button and form values needed to be reset we can update our cancel button to perform the reset action, like so:
+In cases like these when the user is on the same page after clicking on the cancel button and form values needed to be reset we can update our cancel button to perform the reset action, like this:
 
 ```jsx
 <Button type="reset" label="Cancel" />
@@ -185,7 +185,7 @@ There are some fields in the form which are required for the form submission. Th
 
 <image>required-input.jpg</image>
 
-We can have this same UI by using the asterisk mark in the label, like so:
+We can have this same UI by using the asterisk mark in the label, like this:
 
 ```js
 <Input label="Title*" name="title" />

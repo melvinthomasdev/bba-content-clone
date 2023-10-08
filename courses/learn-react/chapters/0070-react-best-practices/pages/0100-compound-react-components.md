@@ -68,7 +68,7 @@ to fix above code:
   component.
 - Should be good for static options.
 
-One way to fix the above code is using the React context API like so:
+One way to fix the above code is using the React context API like this:
 
 ```jsx
 import React, { useState, useContext } from "react";

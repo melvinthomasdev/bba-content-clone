@@ -1,6 +1,6 @@
 Event handlers receive only one argument which we usually call `e` for "event" by convention. This "event object" contains a few values and functions we can use in handling inputs.
 
-If we need to stop the propagation shown in the previous page, we can use `e.stopPropogation` like so:
+If we need to stop the propagation shown in the previous page, we can use `e.stopPropogation` like this:
 
 ```jsx
 {/* PageIndex.jsx */}
@@ -30,7 +30,7 @@ export default PageIndex
 
 The onClick event now runs `e.stopPropogation` first preventing any further bubbling to its parent `div` component before running its `onClick` function.
 
-We can also use the event object to get the value of an input field using `e.target.value` like so:
+We can also use the event object to get the value of an input field using `e.target.value` like this:
 
 ```jsx
 {/* NameInputField.jsx */}

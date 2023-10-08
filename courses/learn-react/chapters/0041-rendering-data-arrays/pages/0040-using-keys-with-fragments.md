@@ -18,7 +18,7 @@ const Home = () => (
 
 This is important to remember when you need to render a list of fragments as
 you're now able to assign a `key` to each fragment. If we didn't use the `<ul>`
-and `<li>` tags previously, we could have written it like so:
+and `<li>` tags previously, we could have written it like this:
 
 ```jsx
 {

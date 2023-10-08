@@ -1,6 +1,6 @@
-To use `react-router-dom`, you first need to add the `Browser Router` component which uses the HTML5 history API to keep the UI in sync with the URL. 
+To use `react-router-dom`, you first need to add the `Browser Router` component which uses the HTML5 history API to keep the UI in sync with the URL.
 
-To use the browser router, just import it from the `react-router-dom` and use place exactly one at the entry point of the application like so:
+To use the browser router, just import it from the `react-router-dom` and use place exactly one at the entry point of the application like this:
 
 ```jsx
 import { BrowserRouter } from "react-router-dom";
@@ -17,7 +17,7 @@ const App = () => (
 export default App
 ```
 
-And if you want to create a link to a route within your application, use the `Link` component as shown below: 
+And if you want to create a link to a route within your application, use the `Link` component as shown below:
 
 ```jsx
 import { Link } from "react-router-dom";

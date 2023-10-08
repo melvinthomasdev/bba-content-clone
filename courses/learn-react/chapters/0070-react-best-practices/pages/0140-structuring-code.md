@@ -114,7 +114,7 @@ A common mistake that should be avoided is creating folders for component when
 not required. For example, consider an arbitrary component called `Dashboard`.
 If the `Dashboard` component does not contain any forms or if it is build up of
 multiple components then it should not be declared inside the
-`components/Dashboard/index.jsx` file like so:
+`components/Dashboard/index.jsx` file like this:
 
 ```js
 Dashboard
@@ -189,7 +189,7 @@ import EmptyState from "components/commons/EmptyState";
 import Menubar from "components/commons/Menubar";
 ```
 
-Two components `EmptyState` and `Menubar` are imported from the same namespace that is `components/commons`. We can add an `index.js` file in that namespace to reduce the number of import statements, like so:
+Two components `EmptyState` and `Menubar` are imported from the same namespace that is `components/commons`. We can add an `index.js` file in that namespace to reduce the number of import statements, like this:
 
 ```js
 import EmptyState from "./EmptyState";
@@ -198,7 +198,7 @@ import Menubar from "./Menubar";
 export { EmptyState, Menubar };
 ```
 
-Now after adding the above `index.js` file we can update the import statements, like so:
+Now after adding the above `index.js` file we can update the import statements, like this:
 
 ```js
 import { EmptyState, Menubar } from "components/commons";
@@ -210,7 +210,7 @@ We should use the named exports only when we are exporting multiple entities fro
 
 For example, if there is only one file in `components/commons` that is `EmptyState.jsx` then there will be no `index.js` file in that module as mentioned in the above section. This `EmptyState.jsx` file is exporting only one component which is `EmptyState`.
 
-Now we can either make a named export or default export for the `EmptyState` component, like so:
+Now we can either make a named export or default export for the `EmptyState` component, like this:
 
 ```js
 //Named Export
@@ -226,7 +226,7 @@ export default EmptyState = () => {
 
 In the above-mentioned case, we should prefer the default export because there is only one export from this `EmptyState.jsx` file.
 
-We can import this `EmptyState` component if it's a default export, like so:
+We can import this `EmptyState` component if it's a default export, like this:
 
 ```js
 import EmptyState from "components/commons/EmptyState";
@@ -241,7 +241,7 @@ import { Table } from "neetoui";
 import { Container } from "neetoui";
 ```
 
-So there are two imports, importing entities from the same module. This should be converted into a single import statement as it makes the code look more compact and removes unnecessary lines of code. Thus we should be writing the above imports like so:
+So there are two imports, importing entities from the same module. This should be converted into a single import statement as it makes the code look more compact and removes unnecessary lines of code. Thus we should be writing the above imports like this:
 
 ```js
 import { Table, Container } from "neetoui";

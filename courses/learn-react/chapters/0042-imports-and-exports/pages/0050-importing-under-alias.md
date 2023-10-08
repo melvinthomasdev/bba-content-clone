@@ -1,6 +1,6 @@
 If you have a conflict between a third-party import and your component name, then you could use an alias to import the third-party entity.
 
-Consider a `Pane` component like so:
+Consider a `Pane` component like this:
 
 ```jsx
 {/* Pane.jsx */}

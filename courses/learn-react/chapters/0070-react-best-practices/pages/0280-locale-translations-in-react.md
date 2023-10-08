@@ -96,7 +96,7 @@ of `i18next.`
 **Step 3**: To use the translation strings inside React components, we can
 either use the `withTranslation` higher order component or the `useTranslation`
 hook from `react-i18next`. `withTranslation` higher order component can be used
-like so:
+like this:
 
 ```jsx
 import React from "react";
@@ -132,7 +132,7 @@ const Display = () => {
 export default Display;
 ```
 
-Now add the required translation string inside the `en.json` file like so:
+Now add the required translation string inside the `en.json` file like this:
 
 ```json
 {
@@ -145,7 +145,7 @@ Now add the required translation string inside the `en.json` file like so:
 In the previous section we saw how to translate a simple string. In this section
 we will take a look at how to translate strings with a dynamic part. Suppose the
 string to be translated contains a name or a number and the name is dynamic. In
-such a case, the string can be translated like so:
+such a case, the string can be translated like this:
 
 ```jsx
 import React from "react";
@@ -161,7 +161,7 @@ const Display = ({ userName }) => {
 export default Display;
 ```
 
-Now add the required translation inside the `en.json` file like so:
+Now add the required translation inside the `en.json` file like this:
 
 ```json
 {
@@ -189,7 +189,7 @@ export default Display;
 ```
 
 To translate a string which includes an HTML tag we can use the `Trans`
-component from the `react-i18next` library like so:
+component from the `react-i18next` library like this:
 
 ```jsx
 import React from "react";
@@ -212,7 +212,7 @@ If we break down the content of `Trans` component into children then the string
 position `1`. Keep the position of `strong` in mind as we will need to mention
 it inside the translation string.
 
-Add the required translation inside the `en.json` file like so:
+Add the required translation inside the `en.json` file like this:
 
 ```json
 {
@@ -222,7 +222,7 @@ Add the required translation inside the `en.json` file like so:
 
 There is an alternate syntax of the `Trans` component which we can use to save
 us the trouble of guessing the index numbers. Instead of the numbered tags
-inside the translation string we can use simpler named tags like so:
+inside the translation string we can use simpler named tags like this:
 
 ```jsx
 import React from "react";
@@ -247,7 +247,7 @@ the translation string will fallback to the value of `defaults` key.
 
 ## Localization best practices
 
-Many of the applications start their development by optimizing for users who speak English. So the project will have a single translation file, say `en.json`, where all the translations will be dumped. 
+Many of the applications start their development by optimizing for users who speak English. So the project will have a single translation file, say `en.json`, where all the translations will be dumped.
 
 Without any conventions on how to design these translation files, the project would unintentionally start to overfit the sentence structure of that language. Since different languages have different sentence structures, it would take a complete overhaul to extend the application to another language.
 
@@ -270,7 +270,7 @@ Here are some best practices to follow when you are localizing your app:
   </p>
   ```
 
-  When you are migrating to another language, say, for example, Hindi, it should be rendered like so:
+  When you are migrating to another language, say, for example, Hindi, it should be rendered like this:
 
   ```jsx
   <p>

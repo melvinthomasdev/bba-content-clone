@@ -109,7 +109,7 @@ we execute the rake `setup` task via the `release` process of Procfile then the
 database will be created and all migrations will be migrated but the seeding of
 the database will not take place because we have added a condition in the task
 file to populate data only if the environment is not production and staging,
-like so:
+like this:
 
 ```rb
 task populate_with_sample_data: [:environment] do

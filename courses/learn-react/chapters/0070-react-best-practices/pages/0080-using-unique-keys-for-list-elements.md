@@ -7,7 +7,7 @@ stable identity.
 We usually need to render a list of data received from the backend through a
 network call. Each element in the list may already have a unique ID. The best
 option is to use the respective IDs of each list element as keys to identify
-them uniquely like so:
+them uniquely like this:
 
 ```jsx
 const TaskList = ({ tasks }) => {
@@ -32,14 +32,14 @@ React uses this `key` to keep track of the changes. If we use the `index` as a k
 
 Let's understand this with an example.
 
-Let's say we have a list of fruits and we have used `index` as their key, like so:
+Let's say we have a list of fruits and we have used `index` as their key, like this:
 
 ```jsx
 <div key={0}>Apple</div>
 <div key={1}>Banana</div>
 ```
 
-Now we want to add an item at the end of this list, say `Mango`. The updated list will be like so:
+Now we want to add an item at the end of this list, say `Mango`. The updated list will be like this:
 
 ```jsx
 <div key={0}>Apple</div>
@@ -49,7 +49,7 @@ Now we want to add an item at the end of this list, say `Mango`. The updated lis
 
 With this addition, React will check for the changes. React will see that items with keys `0` and `1` are the same, meaning the `key` values of these list items haven't been updated. Thus React will add the third item in the UI and the rest of the items remain untouched.
 
-Now we want to add an item at the start of the list, like so:
+Now we want to add an item at the start of the list, like this:
 
 ```jsx
 <div key={0}>Watermelon</div>
@@ -60,7 +60,7 @@ Now we want to add an item at the start of the list, like so:
 
 With this update, all the `indexes` are changed and thus the keys of all the list items too will change. When React checks for changes it will see that all items with respect to their key's value are updated. This will cause React to re-render the whole list even though from our perspective we only added one new item into the list.
 
-We can avoid these types of re-renders using some unique `id` in the key, like so:
+We can avoid these types of re-renders using some unique `id` in the key, like this:
 
 ```jsx
 <div key="WA12">Watermelon</div>

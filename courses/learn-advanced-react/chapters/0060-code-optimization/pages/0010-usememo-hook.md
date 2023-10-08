@@ -1,6 +1,6 @@
 Memoization is an optimization technique where the result of a computationally expensive process is remembered so that it can be used later. Doing so saves us from running the expensive computation every time to get the result.
 
-Say there's a function within a component that calculates the factorial of a prop. Like so:
+Say there's a function within a component that calculates the factorial of a prop. like this:
 
 ```jsx
 import React, {useEffect, useState} from 'react';

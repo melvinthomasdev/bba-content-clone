@@ -224,7 +224,7 @@ the attribute names of our `@task` model instance, we can use the `extract!`
 method which extracts the mentioned attributes or hash elements from the passed
 object and turns them into keys of the JSON.
 
-We can write the above snippet like so using the extract method:
+We can write the above snippet like this using the extract method:
 
 ```ruby {2-5,8-10}
 json.task do
@@ -338,7 +338,7 @@ For example, a `GET /tasks` request without the format as JSON, will match with
 `tasks#index` block, instead of redirecting to `home#index` as we would expect.
 
 One way to solve this issue is to use a lambda to explicitly match to JSON
-requests. To implement that we need to update `config/routes.rb` like so:
+requests. To implement that we need to update `config/routes.rb` like this:
 
 ```ruby {2-8}
 Rails.application.routes.draw do

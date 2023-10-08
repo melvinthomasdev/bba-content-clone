@@ -1,4 +1,4 @@
-Instead of giving the state setter function a fixed value to replace the current state, we can use an alternate syntax and give it a function that takes the current state and outputs a new one like so:
+Instead of giving the state setter function a fixed value to replace the current state, we can use an alternate syntax and give it a function that takes the current state and outputs a new one like this:
 
 ```jsx
 setState(prevState => {
@@ -7,7 +7,7 @@ setState(prevState => {
 })
 ```
 
-The example shown in the previous page can be reworked to use this new syntax like so:
+The example shown in the previous page can be reworked to use this new syntax like this:
 
 ```jsx
 {/* PageIndex.jsx */}

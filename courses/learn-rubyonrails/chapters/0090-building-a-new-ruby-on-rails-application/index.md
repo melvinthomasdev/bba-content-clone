@@ -47,8 +47,7 @@ downloading and setting up required files from the internet.
 
 ## Setting up Shakapacker
 
-First, we need to run the `yarn install` command to generate the Yarn lockfile,
-like so:
+First, we need to run the `yarn install` command to generate the Yarn lockfile.
 
 ```bash
 yarn install
@@ -64,33 +63,34 @@ Remove the `app/javascript` folder with the following command:
 rm -rf app/javascript
 ```
 
-To install `shakapacker`, add the `shakapacker` gem towards the end of the file
-named `Gemfile`, like so:
+[Shakapacker](https://github.com/shakacode/shakapacker)
+is a tool that helps bundle JavaScript files using webpack 5+.
+It is a successor to [Webpacker](https://github.com/rails/webpacker) and is based on version 6 of Webpacker. For the sake of simplicity we would using the terms `Webpacker` and `Shakapacker` interchangeably.
+
+To install `shakapacker`, add the `shakapacker` gem at the end of the file
+named `Gemfile`.
 
 ```rb
 # For compiling and bundling JavaScript. Read more: https://github.com/shakacode/shakapacker
 gem "shakapacker", "~> 6.6.0"
 ```
-We have specified the `shakapacker` version to be 6.6.0 or higher, excluding version 7.0.0 and any subsequent versions due to the introduction of breaking changes starting from v7. Run the following command from the terminal to install the newly added gem that
-is `shakapacker`:
+
+We are aware that the latest version of shakapacker is v7. However we ran into some issues
+with that version. Hence we are locking shakapakcer to v6.
 
 ```bash
 bundle install
 ```
 
-Now, we can set up the base for `shakapacker` by running the following command
-from the terminal:
+Now, we can set up the base for `shakapacker` by running the following command.
 
 ```bash
 bin/rails webpacker:install
 ```
 
-For those wondering, [Shakapacker](https://github.com/shakacode/shakapacker) is a tool that helps bundle JavaScript files using webpack 5+.
-It is a successor to [Webpacker](https://github.com/rails/webpacker) and is based on version 6 of Webpacker. For the sake of simplicity we would using the terms `Webpacker` and `Shakapacker` interchangeably.
-
 The default configurations sets the source path `app/javascript` as the `source_entry_path`
 in `config/webpacker.yml`. We need to set a subdirectory of the `source_path`, namely `packs`, to
-be the `source_entry_path`. Also, we need to make other minor modifications in the webpack configuration. To incorporate all these, let's replace the contents of `config/webpacker.yml` with webpacker configuration from the [Wheel repository](https://raw.githubusercontent.com/bigbinary/wheel/main/webpacker.yml) by executing the following command from the root of the app:
+be the `source_entry_path`. We also need to make other minor modifications in the webpack configuration. To incorporate all these, let's replace the contents of `config/webpacker.yml` with webpacker configuration from the [Wheel repository](https://raw.githubusercontent.com/bigbinary/wheel/main/webpacker.yml) by executing the following command from the root of the app:
 
 ```bash
 curl -o "config/webpacker.yml" "https://raw.githubusercontent.com/bigbinary/wheel/main/config/webpacker.yml"
@@ -232,11 +232,11 @@ The default Rails application ERB template file,
 ```
 
 In that file, we need to replace `stylesheet_link_tag` with
-`stylesheet_pack_tag` to attach CSS packs. We need to also remove
-`javascript_importmap_tags`. The JavaScript packs have already been linked
-using the `javascript_pack_tag`.
+`stylesheet_pack_tag` to attach CSS packs.
+We need to replace `javascript_importmap_tags` with
+`javascript_pack_tag` to handle JavaScript files.
 
-Thus update it like so:
+After the change the `application.html.erb` would look like this.
 
 ```erb {1,2}
 <%= stylesheet_pack_tag "application" %>
@@ -246,7 +246,7 @@ Thus update it like so:
 We will discuss in depth about why we need to do this replacement towards the
 end of the book.
 
-If you're very curious and don't mind the verbosity/complexity at this early
+If you're very curious and don't mind the complexity at this early
 stage itself, then you can give
 [this section](/learn-rubyonrails/webpacker-in-depth#significance-of-stylesheet-pack-tag)
 a read to understand about Webpacker's CSS compilation in depth.
@@ -419,7 +419,7 @@ The output would look like this:
 
 ```text
 => Booting Puma
-=> Rails 7.0.6 application starting in development 
+=> Rails 7.0.6 application starting in development
 => Run `bin/rails server --help` for more startup options
 Puma starting in single mode...
 * Puma version: 6.3.0 (ruby 3.2.2-p53) ("Mugi No Toki Itaru")

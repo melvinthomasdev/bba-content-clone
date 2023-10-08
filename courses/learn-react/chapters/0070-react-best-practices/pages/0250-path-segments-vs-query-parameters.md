@@ -112,7 +112,7 @@ operation.
 
 ## How to send query params?
 
-We can define the query params in the options object of request using the `params` key, like so:
+We can define the query params in the options object of request using the `params` key, like this:
 
 ```js
 axios.get("https://example.com/api/user", {
@@ -120,25 +120,25 @@ axios.get("https://example.com/api/user", {
 });
 ```
 
-Axios will take care of handling the parameters and maintaining their type. Axios will serialize `options.params` object and add it to the query string. The resultant query string for the above mentioned Axios request will be like so:
+Axios will take care of handling the parameters and maintaining their type. Axios will serialize `options.params` object and add it to the query string. The resultant query string for the above mentioned Axios request will be like this:
 
 ```text
 https://example.com/api/user?name=Oliver&id=1
 ```
 
-We can utilize the above mentioned params in backend using the `params` hash. We can directly access the required param by using the `key` of that param in `params` hash. For example, we can access the `name` param, like so:
+We can utilize the above mentioned params in backend using the `params` hash. We can directly access the required param by using the `key` of that param in `params` hash. For example, we can access the `name` param, like this:
 
 ```rb
 params[:name] #Oliver
 ```
 
-We can directly use these params in say a `where` clause, like so:
+We can directly use these params in say a `where` clause, like this:
 
 ```rb
 User.where(id: params[:id], name: params[:name])
 ```
 
-We can also send an array of values in query params, like so:
+We can also send an array of values in query params, like this:
 
 ```js
 axios.get("https://example.com/api/user", {
@@ -148,13 +148,13 @@ axios.get("https://example.com/api/user", {
 });
 ```
 
-And array params can be accessed in the same way, like so:
+And array params can be accessed in the same way, like this:
 
 ```rb
 User.where(id: params[:ids])
 ```
 
-Now let's consider a special case when we need to send an array of values in the query params and also wanted to maintain the position of items in the array then we have to define a serializer for params. We can use the [qs](https://www.npmjs.com/package/qs) package to parse and serialize the params like so:
+Now let's consider a special case when we need to send an array of values in the query params and also wanted to maintain the position of items in the array then we have to define a serializer for params. We can use the [qs](https://www.npmjs.com/package/qs) package to parse and serialize the params like this:
 
 ```js
 axios.get("https://example.com/api/user", {
@@ -167,13 +167,13 @@ axios.get("https://example.com/api/user", {
 });
 ```
 
-The resultant query string for the above mentioned Axios request will be like so:
+The resultant query string for the above mentioned Axios request will be like this:
 
 ```text
 https://example.com/api/user?ids[0]=1&ids[1]=2&ids[2]=3
 ```
 
-And we can access the query params, like so:
+And we can access the query params, like this:
 
 ```rb
 User.where(id: params[:ids]) # users with [1, 2, 3] ids

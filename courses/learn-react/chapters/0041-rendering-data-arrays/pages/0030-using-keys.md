@@ -3,7 +3,7 @@ warning in the console stating that each child in a list should have a unique
 “key” prop.
 
 Keys are identifiers that help React keep track of the various elements in an
-array during modifications. They can be inserted like so:
+array during modifications. They can be inserted like this:
 
 ```jsx
 <li key={value}>
@@ -35,7 +35,7 @@ file or database.
 
 In the examples shown previously, we stored the contact data in a file called
 `constants.js`. We can modify the file to have an incremental counter as an id
-like so:
+like this:
 
 ```jsx
 {

@@ -297,7 +297,7 @@ are destroying 5000 records using the `destroy_all` method then it places the db
 in a transaction lock. So this will prevents any other db calls from being
 executed and will cause APIs to timeout during the time db is locked.
 
-So while using `destroy_all` method we should prefer using batches, like so:
+So while using `destroy_all` method we should prefer using batches, like this:
 
 ```rb
 Model.in_batches.destroy_all

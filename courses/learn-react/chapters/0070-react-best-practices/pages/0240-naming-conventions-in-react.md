@@ -10,7 +10,7 @@
 
 ## React component and filename should be same
 
-Let's consider a file called `Table.jsx` then the component name should be exactly same as filename that is `Table`, like so:
+Let's consider a file called `Table.jsx` then the component name should be exactly same as filename that is `Table`, like this:
 
 ```jsx
 // Incorrect
@@ -26,7 +26,7 @@ const Table = () => {
 
 If the filename is `index.jsx` then the component name should match the folder name.
 
-For example, consider a folder structure like so:
+For example, consider a folder structure like this:
 
 ```js
 Card
@@ -34,7 +34,7 @@ Card
     └── utils.js
 ```
 
-Now the correct component name inside `index.jsx` file will be like so:
+Now the correct component name inside `index.jsx` file will be like this:
 
 ```jsx
 // Incorrect
@@ -52,7 +52,7 @@ const Card = () => {
 
 If we have a conflict between some third-party import and the component name then we should prefer to import the third-party entity with an alias.
 
-Consider a file called `Pane.jsx` like so:
+Consider a file called `Pane.jsx` like this:
 
 ```jsx
 // Incorrect code
@@ -65,7 +65,7 @@ const Pane = () => {
 
 Now according to the filename, we have named the component `Pane` but this code will give an error as we have used the `Pane` name twice. Importing `Pane` from the `neetoui` library will lead to confusion and error as we have a component with a same name that is `Pane`. To solve such a situation we can import the third-party entities under an alias.
 
-In the above example, `Pane` can be imported as `NeetoUIPane` using the `as` keyword like so:
+In the above example, `Pane` can be imported as `NeetoUIPane` using the `as` keyword like this:
 
 ```jsx
 // Correct code
@@ -78,7 +78,7 @@ const Pane = () => {
 
 The alias name should be composed of the library name. In the above example, we have used `NeetoUI` based on the library name `neetoui`. If we are importing other files under an alias from the same `neetoui` library then the same alias should be used.
 
-For example, consider a file called `Card.jsx` like so:
+For example, consider a file called `Card.jsx` like this:
 
 ```jsx
 // Incorrect aliases
@@ -223,7 +223,7 @@ In the above mentioned example, the function name `redirectToLoginPage` sounds l
   certain tasks should be named `utils.js`.
 
   For example, a function which fetches the values stored in the browser
-  localstorage like so:
+  localstorage like this:
 
 ```javascript
 const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
@@ -308,13 +308,13 @@ Let's consider this folder structure:
 
 The component name inside `Form/Create/index.jsx` should be `Create` not `CreateForm` as Create folder is already in the `Form` namespace.
 
-Please note that while using this `Create` component outside the `Form` namespace, importing the component as `Create` can be confusing so we can import this component as `CreateForm` if required outside the `Form` namespace, like so:
+Please note that while using this `Create` component outside the `Form` namespace, importing the component as `Create` can be confusing so we can import this component as `CreateForm` if required outside the `Form` namespace, like this:
 
 ```js
 import CreateForm from "./Form/Create";
 ```
 
-We should also avoid this unnecessary namespacing while naming variables or functions. Let's say there is a variable defined inside `Form/Create/constants.js`, like so:
+We should also avoid this unnecessary namespacing while naming variables or functions. Let's say there is a variable defined inside `Form/Create/constants.js`, like this:
 
 ```js
 const CREATE_FORM_INITIAL_VALUES = {
@@ -330,7 +330,7 @@ const INITIAL_VALUES = {
 };
 ```
 
-Let's consider another example and figure out the problems in it. Consider a folder structure like so:
+Let's consider another example and figure out the problems in it. Consider a folder structure like this:
 
 ```js
 components
@@ -347,7 +347,7 @@ components
 
 - `CardDropdown.jsx` is in `Card` directory, but it has an unnecessary namespace. So the correct name will be `Dropdown.jsx`.
 
-So the correct file names will be like so:
+So the correct file names will be like this:
 
 ```js
 components
@@ -358,14 +358,14 @@ components
           └── utils.js
 ```
 
-We can import the `index.jsx` and `Dropdown.jsx` in other files like so:
+We can import the `index.jsx` and `Dropdown.jsx` in other files like this:
 
 ```jsx
 import Card from "components/Notes/Card";
 import Dropdown from "components/Notes/Card/Dropdown";
 ```
 
-If there are other imports with the same names and if the component names `Card` and `Dropdown` create confusion when imported outside the `Notes` namespace then we can import the `Card` and `Dropdown` with the prefix of their directory name like so:
+If there are other imports with the same names and if the component names `Card` and `Dropdown` create confusion when imported outside the `Notes` namespace then we can import the `Card` and `Dropdown` with the prefix of their directory name like this:
 
 ```jsx
 import NotesCard from "components/Notes/Card";
@@ -465,7 +465,7 @@ const Dashboard = () => {
 
 In the above case, the `renderDarkModeButtonLabel` function conditionally returns a translation for the button label. Since the label would be directly rendered to screen, it is safe to prefix the function with the `render` keyword. However, we should ensure adherence to appropriate usage of the `render` keyword and avoid its overuse.
 
-Let's consider another example. There is a method named as `renderUserOptions` which does some operations on a `users` array. The output from this function will be used by a `Select` component for properly populating its options. The code will be, like so:
+Let's consider another example. There is a method named as `renderUserOptions` which does some operations on a `users` array. The output from this function will be used by a `Select` component for properly populating its options. The code will be, like this:
 
 ```jsx
 const Dashboard = () => {
@@ -484,7 +484,7 @@ const Dashboard = () => {
 };
 ```
 
-Here we can see that this `renderUserOptions` function is not returning any element that can be directly rendered to UI. It's just helping the `Select` component by building data, and not rendering data. So a better name would be something like `buildUserOptions` rather than `renderUserOptions`, like so:
+Here we can see that this `renderUserOptions` function is not returning any element that can be directly rendered to UI. It's just helping the `Select` component by building data, and not rendering data. So a better name would be something like `buildUserOptions` rather than `renderUserOptions`, like this:
 
 ```jsx
 const Dashboard = () => {
@@ -541,7 +541,7 @@ In React we use camelCase while naming variables and the same goes with this cas
 
 While naming a constant variable in JavaScript we should use the upper snake case.
 
-Consider a `constants.js` file in which we want to define a constant variable, like so:
+Consider a `constants.js` file in which we want to define a constant variable, like this:
 
 ```jsx
 // camelCase - Incorrect
@@ -571,7 +571,7 @@ import { TABLE_COLUMNS } from "./constants.js";
 
 The function names should always be meaningful and self-explanatory. The name of the function should convey what the function is doing.
 
-For example, consider a function that deletes a note. We can name this function `deleteNote`, like so:
+For example, consider a function that deletes a note. We can name this function `deleteNote`, like this:
 
 ```jsx
 const deleteNote = () => {
@@ -581,7 +581,7 @@ const deleteNote = () => {
 
 If the function handles the events triggered by some actions like `click`, `submit`, etc then we should prefix the function name with the `handle` keyword.
 
-Let's say we have added the above-mentioned function to a button's `click` event. Then a better name for the function would be `handleDeleteNote` as it's handling a `click` event, like so:
+Let's say we have added the above-mentioned function to a button's `click` event. Then a better name for the function would be `handleDeleteNote` as it's handling a `click` event, like this:
 
 ```jsx
 const handleDeleteNote = () => {
@@ -637,7 +637,7 @@ In a big codebase, someone new who is trying to understand the code might make a
 
 Using JSX we can add HTML in React easily. Generally `.jsx` file extension is used for React component. But it's not mandatory that `.jsx` extension can only be used for a React component. We can use the `.jsx` file extension whenever the file contains some JSX.
 
-Let's say we have a variable called `columnData` in a `utils.js` file, like so:
+Let's say we have a variable called `columnData` in a `utils.js` file, like this:
 
 ```js
 export const columnData = (setShowAlert) => [
@@ -656,7 +656,7 @@ export const columnData = (setShowAlert) => [
 ];
 ```
 
-Now say in the `columnData` variable we want to use JSX and return some HTML code. In that case, we can use the `.jsx` extension in the file name. We can rename the file as `utils.jsx` and can use the JSX in `columnData`, like so:
+Now say in the `columnData` variable we want to use JSX and return some HTML code. In that case, we can use the `.jsx` extension in the file name. We can rename the file as `utils.jsx` and can use the JSX in `columnData`, like this:
 
 ```jsx
 export const columnData = (setShowAlert) => [

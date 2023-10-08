@@ -1,6 +1,6 @@
 While the previously shown method and examples are perfectly functional and very readable, we do repeat a lot of the code and thus it isn't very DRY (Don't Repeat Yourself).
 
-In certain situations where we need to render one of two possibilities, we can make the code a lot more concise using ternary operators like so:
+In certain situations where we need to render one of two possibilities, we can make the code a lot more concise using ternary operators like this:
 
 ```jsx
 {/* ProfilePicture.jsx */}

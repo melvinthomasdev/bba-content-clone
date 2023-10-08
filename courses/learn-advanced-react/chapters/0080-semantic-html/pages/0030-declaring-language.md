@@ -2,7 +2,7 @@ We should always use the language attribute in the `<html>` tag to declare the l
 
 The language property is inherited by all the children underneath it. Thus, adding the tag to the `<body>` element means the text in the head won't be covered.
 
-We can specify English as the language, like so:
+We can specify English as the language, like this:
 
 ```html
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ We can specify English as the language, like so:
 </html>
 ```
 
-If the page contains content in a different language, just add the language attribute to an element surrounding that content like so: 
+If the page contains content in a different language, just add the language attribute to an element surrounding that content like this:
 
 ```html
 <p>This is <span language="fr">une baguette française</span></p>

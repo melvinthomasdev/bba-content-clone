@@ -77,7 +77,7 @@ called thrice and it will in turn call `setCount` thrice after an interval of
 clicked, everytime `setCount` is called, the value of `count` it references to
 will be the old value due to closure.
 
-Let us also do a dry run like so:
+Let us also do a dry run like this:
 
 ```javascript
 // Component mounts
@@ -103,7 +103,7 @@ It is clear from the above examples that the count only increases by 1 when it
 should have increased by 3 when the button was clicked thrice.
 
 Now let us see how we can overcome the closure hell. In the above example,
-comment line number 7 and uncomment line number 8 like so:
+comment line number 7 and uncomment line number 8 like this:
 
 ```jsx
 import React, { useState } from "react";

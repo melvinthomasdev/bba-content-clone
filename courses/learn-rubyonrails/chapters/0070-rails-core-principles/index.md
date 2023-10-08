@@ -45,9 +45,9 @@ keep track of the different practices followed. That's why the Rails principle
 of **convention over configuration** is widely accepted.
 
 You can read more on this in the official
-[Rails page](https://rubyonrails.org/doctrine/#convention-over-configuration).
+[Rails Doctrine](https://rubyonrails.org/doctrine/#convention-over-configuration).
 
-However, at the same time, Rails doesn't restrict us to configure the
+However, Rails doesn't restrict us to configure the
 applications in our own custom way, if needed.
 
 To understand the Rails framework properly, we need to keep these two principles

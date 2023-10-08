@@ -219,7 +219,7 @@ need to send the following as query parameters to
 }
 ```
 
-We can do this by appending the query parameters like so:
+We can do this by appending the query parameters like this:
 
 ```plaintext
 https://example.com/api/v1/search?firstName=Oliver&lastName=Smith

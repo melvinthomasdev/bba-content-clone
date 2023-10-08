@@ -93,7 +93,7 @@ In such cases, it is considered a good practice to create a separate child
 component for the entity and then pass the traits as props to that component. In
 this case, the entity is a `Product`. We could create a generic component called
 `Product` which will render the UI for a product based on the props it receives
-like so:
+like this:
 
 ```jsx
 import React from "react";

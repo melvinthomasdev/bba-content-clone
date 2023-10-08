@@ -10,7 +10,7 @@ Or for another example, we can add an alternate text for images and this text wi
 
 HTML is made up of both semantic and non-semantic elements. Semantic HTML means using correct HTML elements for their correct purpose. Semantic elements are elements with a meaning. With the help of JavaScript and CSS, we can mold any HTML elements according to our needs. But using the correct HTML elements gives us access to the accessibility tools provided in the element.
 
-For example, we can define a button in two ways, like so:
+For example, we can define a button in two ways, like this:
 
 ```html
 <!-- Not semantically correct -->
@@ -40,7 +40,7 @@ Examples of semantic elements: `<form>`, `<table>`, and `<article>`, etc, clearl
 
 We should always use the lang attribute in the `<html>` tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
 
-We can specify English as the language, like so:
+We can specify English as the language, like this:
 
 ```html
 <!DOCTYPE html>
@@ -97,7 +97,7 @@ In neetoUI we have many different components and sub-components which are built 
 
 For example, in the [neetoUI Dropdown](https://neetoui.onrender.com/?path=/story/components-dropdown--default), we can use `<li>` tags, `<button>` tags, or any custom code for adding the options in the dropdown. But for this job, it's better to use the predefined `MenuItem.Button` sub-component which is using the `<button>` HTML tag under the hood.
 
-The code for dropdown will be, like so:
+The code for dropdown will be, like this:
 
 ```jsx
 // Bad

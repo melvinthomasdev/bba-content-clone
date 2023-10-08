@@ -77,7 +77,7 @@ const person = {
 
 modify("age", inc, person); //=> { name: "James", age: 21, pets: ["dog", "cat"] }
 
-// the above statement can also be written using a Ramda function `add` like so:
+// the above statement can also be written using a Ramda function `add` like this:
 modify("age", add(1), person); //=> { name: "James", age: 21, pets: ["dog", "cat"] }
 
 

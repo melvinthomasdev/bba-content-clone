@@ -81,7 +81,7 @@ setOrder(prevOrder => {
 
 Although the above code would work, it's very messy and long. And more than that if we are updating a much more deeply nested property, then the code would become unreadable.
 
-The above code can be written more elegantly by using the `assocPath` function, like so:
+The above code can be written more elegantly by using the `assocPath` function, like this:
 
 ```js
 // Ramda version of above code

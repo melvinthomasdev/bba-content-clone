@@ -94,7 +94,7 @@ Now every time you try to run an unsafe migration, you will be warned of the
 same. Please note that this does not happen when you try to run raw SQL queries.
 Strong Migrations cannot ensure safety for raw SQL statements. In case you have
 to execute raw SQL statements in your migrations, then it's better to explicitly
-assure its safety, like so:
+assure its safety, like this:
 
 ```rb
 class ExecuteSQL < ActiveRecord::Migration[7.0]

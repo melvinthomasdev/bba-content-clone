@@ -33,7 +33,7 @@ export default AppContainer;
 
 The `SideBar` doesn't need to relay the props down to the `UserSection` when the
 `AppContainer` can do the same. We can rewrite the code using the `children`
-prop shown on the previous page like so:
+prop shown on the previous page like this:
 
 ```jsx
 // AppContainer.jsx

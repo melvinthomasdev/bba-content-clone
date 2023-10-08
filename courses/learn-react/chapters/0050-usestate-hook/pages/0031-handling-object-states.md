@@ -31,7 +31,7 @@ const UserCardContainer = () => {
 
 It is important to remember that the spread operator is shallow and only one layer deep.
 
-In the example above, if the `name` were an object like so:
+In the example above, if the `name` were an object like this:
 
 ```jsx
 const [user, setUser] = useState({
@@ -56,7 +56,7 @@ const changeName = e => setUser(
 )
 ```
 
-You would leave the last name behind when the first name is created. Instead, you will need to spread the name object with the user object like so:
+You would leave the last name behind when the first name is created. Instead, you will need to spread the name object with the user object like this:
 
 ```jsx
 const changeName = e => setUser(

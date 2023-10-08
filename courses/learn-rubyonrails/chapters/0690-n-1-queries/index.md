@@ -24,7 +24,7 @@ Now, consider a scenario where you are required to fetch a list of all movies
 along with the reviews for each movie in the list.
 
 This can be done by querying the movies and then looping over the movies to get
-the reviews for each movie like so:
+the reviews for each movie like this:
 
 ```ruby
 Movie.all.map do |movie|
@@ -89,7 +89,7 @@ we saw in the previous example.
 2. Second query loads up data from the specified association.
 
 Previous example would look the exact same if we were to replace `includes` with
-`preload` like so:
+`preload` like this:
 
 ```ruby
 movies = Movie.preload(:reviews)
@@ -159,7 +159,7 @@ end
 ```
 
 You can query the `reviews` and `actors` along with the movies using the
-`includes` method like so:
+`includes` method like this:
 
 ```ruby
 Movie.includes(:reviews, :actors)
@@ -177,7 +177,7 @@ association specified inside the `includes` method.
 
 Suppose each movie has many actors and each actor belongs to a certain region.
 Can you visualize the nested associations in this case? We can use `includes` to
-load nested associations like so:
+load nested associations like this:
 
 ```ruby
 Movie.includes(actors: [:region])
@@ -223,7 +223,7 @@ row in table_1.
 
 ## Query with nested joins
 
-To see how we can make query with nested joins let's update the schema like so:
+To see how we can make query with nested joins let's update the schema like this:
 
 ```ruby
 class Movie < ApplicationRecord

@@ -39,7 +39,7 @@ const ClickerButton = () => {
 };
 ```
 
-It is better to extract the onClick function into a separate function like so:
+It is better to extract the onClick function into a separate function like this:
 
 ```jsx
 import { useState } from "react";

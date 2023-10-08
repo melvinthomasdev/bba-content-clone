@@ -137,7 +137,7 @@ ESLint plugin to check for any unnecessary fragments in your code.
 Often developers use inappropriate tags to serve a purpose they are not meant to
 serve by hacking the tag to behave like another. For example, styling a `div`
 tag as an `inline` component whereas to do so a `span` tag should be used. Or
-hacking a `div` tag to create a horizontal line like so:
+hacking a `div` tag to create a horizontal line like this:
 
 ```jsx
 import React from "react";
@@ -164,7 +164,7 @@ const Article = () => (
 ```
 
 The `div` tag in the above component which is acting like a horizontal line can
-be replaced with an `hr` tag like so:
+be replaced with an `hr` tag like this:
 
 ```jsx
 import React from "react";

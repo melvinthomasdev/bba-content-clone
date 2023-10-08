@@ -82,7 +82,7 @@ Here we are rescuing all `NameError` exceptions. However `NoMethodError` will
 also be rescued because `NoMethodError` is a subclass of `NameError`.
 
 For example, consider a `api_exceptions.rb` file where we are rescuing from all
-the exceptions like so:
+the exceptions like this:
 
 ```rb
 module ApiExceptions
@@ -106,7 +106,7 @@ So the `rescue_from ActiveRecord::RecordNotUnique` in the above example is
 redundant. The code will never reach this line because the `RecordNotUnique`
 exception will already be caught by the `rescue_from StandardError` statement.
 
-The correct way of rescuing the errors will be, like so:
+The correct way of rescuing the errors will be, like this:
 
 ```rb
 module ApiExceptions
@@ -283,7 +283,7 @@ rescue
 end
 ```
 
-The above code can also be written like so, since by default `StandardError` is
+The above code can also be written like this, since by default `StandardError` is
 raised:
 
 ```ruby
@@ -453,7 +453,7 @@ controllers will be having access to the methods defined in that concern. In
 that concern we have several `rescue_from` statements, which handles specific
 exceptions.
 
-Thus in our controller, we could write something like so, and both the success
+Thus in our controller, we could write something like this, and both the success
 and failure cases will be handled:
 
 ```rb
@@ -486,7 +486,7 @@ key and it makes the code cleaner. If for a given `id` no record is found by
 `find` method then the same exception will be raised that is
 `ActiveRecord::RecordNotFound`.
 
-So, in the above code block the `load_quiz!` method needs to be updated like so:
+So, in the above code block the `load_quiz!` method needs to be updated like this:
 
 ```rb
 def load_quiz!

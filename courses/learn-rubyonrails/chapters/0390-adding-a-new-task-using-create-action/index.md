@@ -100,7 +100,7 @@ exception will be available to rest of the controller classes.
 While we are at it, we should also create some helper methods to help us render
 a response.
 
-Update the `application_controller.rb` file like so:
+Update the `application_controller.rb` file like this:
 
 ```ruby
 class ApplicationController < ActionController::Base
@@ -174,7 +174,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-Add the translation for `generic_error` in `en.yml` file, like so:
+Add the translation for `generic_error` in `en.yml` file, like this:
 
 ```yml
 en:
@@ -229,7 +229,7 @@ right as it is not very DRY. We should add it as an instance method inside the
 from `ApplicationRecord` hence it will be available to all its child classes
 through inheritance.
 
-Update the `application_record.rb` file like so:
+Update the `application_record.rb` file like this:
 
 ```ruby {5-7}
 class ApplicationRecord < ActiveRecord::Base
@@ -247,7 +247,7 @@ the `errors` method. Ruby adds an implicit `self` in such a case. So `errors`
 will be called on the `self` object which will refer to the object which invokes
 `errors_to_sentence` method.
 
-Now update the `application_controller.rb` file like so:
+Now update the `application_controller.rb` file like this:
 
 ```ruby {10}
 class ApplicationController < ActionController::Base
@@ -271,7 +271,7 @@ end
 As you can see the code looks concise and easy to read now.
 
 Now, update the `create` action of the `TasksController` with the corresponding
-api responder, like so:
+api responder, like this:
 
 ```ruby
 def create
@@ -544,7 +544,7 @@ export default tasksApi;
 ```
 
 So here the parent key `task` is handled in the `create` function itself. And
-this simplifies the `handleSubmit` function in `Create.jsx` like so:
+this simplifies the `handleSubmit` function in `Create.jsx` like this:
 
 ```javascript{5}
 const handleSubmit = async event => {
@@ -620,7 +620,7 @@ en:
 ```
 
 Let's use that to show a response. Update the `create` action of
-`TasksController` with the translation, like so:
+`TasksController` with the translation, like this:
 
 ```ruby {4}
 def create

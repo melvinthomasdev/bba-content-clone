@@ -51,7 +51,7 @@ Since `ApplicationRecord` inherits from `ActiveRecord::Base` class,
 `ApplicationRecord`.
 
 For example, for the `UserNotification` class, we could have set the table name
-to `notifications`, like so:
+to `notifications`, like this:
 
 ```ruby
 class UserNotification < ApplicationRecord

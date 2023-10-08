@@ -237,7 +237,7 @@ class
 end
 ```
 
-In the migration class, we have to change the column type to string, like so:
+In the migration class, we have to change the column type to string, like this:
 
 ```ruby
 class AddContactMethodToCustomer < ActiveRecord::Migration

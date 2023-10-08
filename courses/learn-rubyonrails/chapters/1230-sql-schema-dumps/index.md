@@ -115,7 +115,7 @@ Example: Suppose you want to prevent overlapping booking slots in a scheduling
 application. Then in that case, we can either resort to moving the schema format
 fully to `:sql` or stick onto `:ruby` format itself and add the custom raw sql
 to take care of the constraints. In BigBinary we usually go with the latter. So
-in this case, we can create a migration like so:
+in this case, we can create a migration like this:
 
 ```rb
 class AddOverlapConstraintForBookingSlot < ActiveRecord::Migration[6.1]
@@ -160,7 +160,7 @@ END $$;
 ```
 
 We can add a method to execute this raw sql in the `test_helper.rb` file and
-invoke it within the file like so:
+invoke it within the file like this:
 
 ```rb
 def run_extra_sql

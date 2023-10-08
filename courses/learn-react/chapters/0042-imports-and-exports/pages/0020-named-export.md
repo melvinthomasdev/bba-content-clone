@@ -1,6 +1,6 @@
 If you need to export multiple entities from a single file, the default export cannot help as a file can only have one default export
 
-To export multiple components from a file, add a line `export {Component1, Component2}` where Component1 & Component2 are the names of the components you wish to export like so:
+To export multiple components from a file, add a line `export {Component1, Component2}` where Component1 & Component2 are the names of the components you wish to export like this:
 
 ```jsx
 {/* utils.jsx */}
@@ -46,4 +46,4 @@ export WelcomeText
 
 And import it as `import { WelcomeText } from './WelcomeText.jsx'` from an adjacent file.
 
-You can also have both default and named exports in a single file. Just import them like so: `import App, {Header, Footer} from './App.jsx'`.
+You can also have both default and named exports in a single file. Just import them like this: `import App, {Header, Footer} from './App.jsx'`.

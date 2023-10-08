@@ -12,7 +12,7 @@ const Display = props => {
 };
 ```
 
-In the above component, the props could have been destructured like so:
+In the above component, the props could have been destructured like this:
 
 ```jsx
 import React from "react";
@@ -89,7 +89,7 @@ user = { name: "Eve", age: 25, ...user };
 console.log(user); // { name: "Eve", age: null }
 ```
 
-Destructuring also lets you rename the destructured key like so:
+Destructuring also lets you rename the destructured key like this:
 
 ```jsx
 const { name: userName, age, location } = user;

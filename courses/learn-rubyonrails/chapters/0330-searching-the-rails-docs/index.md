@@ -56,7 +56,7 @@ class of that method. Now, let's see how to check implementation of
 `ActiveModel::Validations` module's `valid?` method.
 
 - First, we need to install the `pry-byebug` gem. Add the `pry-byebug` gem at
-  the end of the Gemfile, like so:
+  the end of the Gemfile, like this:
 
 ```rb
 gem "pry-byebug"
@@ -64,7 +64,7 @@ gem "pry-byebug"
 
 And run the command `bundle install` to install the newly added gem.
 
-- Let's start the Pry console with the environment, like so:
+- Let's start the Pry console with the environment, like this:
 
 ```bash
 bundle exec  pry -r ./config/environment
@@ -84,7 +84,7 @@ cd Validations
   to see all the available methods, classes, etc.
 
 - Now let's try `show-method valid?` command in the console. It will show the
-  `valid?` method's definition, like so:
+  `valid?` method's definition, like this:
 
 <image>pry-gem-output.png</image>
 
@@ -108,7 +108,7 @@ Sometimes we prefer to use Github to see how each of the methods is being
 utilized in Rails test suite.
 
 We can search for `valid?` method in the repository using the search bar on the
-top left corner like so:
+top left corner like this:
 
 <image>github-repo-search.png</image>
 
@@ -131,7 +131,7 @@ change the Rails version by changing the branch. After selecting the correct
 branch, press dot "." to open the `VSCode` web interface for the Github repo.
 
 Now we can directly use the global search tool and see the code for the required
-method. Let's try for the same `valid?` method like so:
+method. Let's try for the same `valid?` method like this:
 
 <image>github-vscode-search.png</image>
 
@@ -140,7 +140,7 @@ are sure about the required folder or file name where we want to search then we
 can filter out the occurrences of the searched keyword in that file only. We can
 click on the three dots menu button below the search bar and enter the file
 name. For example, if we need to search for the `valid?` method inside the
-`activemodel` gem then we can use the `*activemodel*` regex, like so:
+`activemodel` gem then we can use the `*activemodel*` regex, like this:
 
 <image>vscode-search-with-file.png</image>
 

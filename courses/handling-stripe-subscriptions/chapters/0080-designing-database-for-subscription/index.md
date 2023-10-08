@@ -26,7 +26,7 @@ which make use of Stripe in the backend.
 ## User table
 
 This user model will handle all customer specific details. Depending on the
-business logic, the use case of the `email` field would vary, like so:
+business logic, the use case of the `email` field would vary, like this:
 
 - In the cases where we only allow the user to subscribe once user is
   authenticated, this `email` would act as the authentication email. The email

@@ -14,7 +14,7 @@ const Container = ({ users, darkMode, isAdmin, text }) => (
 )
 ```
 
-you can always use the spread syntax to pass all props to a child like so:
+you can always use the spread syntax to pass all props to a child like this:
 
 ```jsx
 {/* Container.jsx */}
@@ -25,7 +25,7 @@ const Container = props => (
 )
 ```
 
-If you need to use a few and pass on the rest, you can also partially spread your components like so:
+If you need to use a few and pass on the rest, you can also partially spread your components like this:
 
 ```jsx
 {/* Container.jsx */}

@@ -4,7 +4,7 @@ Doing so saves us from running the expensive computation everytime to get the
 result.
 
 For example, consider an expensive function which always returns the same result
-given the same input like so:
+given the same input like this:
 
 ```javascript
 const expensiveFunction = (minimum, maximum) => {

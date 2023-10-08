@@ -88,7 +88,7 @@ useEffect(() => {
 ```
 
 This might allow for the sorting to happen before the fetch gives you an
-incorrect sort. The sort must always happen after the fetch like so:
+incorrect sort. The sort must always happen after the fetch like this:
 
 ```javascript
 const updateAndSortPosts = async () => {

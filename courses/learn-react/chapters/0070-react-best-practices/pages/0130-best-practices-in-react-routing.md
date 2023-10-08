@@ -51,7 +51,7 @@ To learn more about the `Link` API you can refer to the
 
 ## Prefer render prop over children in the router
 
-We can add a route in any React app using the `component` and `path` prop in the `Route` component, like so:
+We can add a route in any React app using the `component` and `path` prop in the `Route` component, like this:
 
 ```jsx
 <Route path="/" component={Dashboard} />
@@ -59,7 +59,7 @@ We can add a route in any React app using the `component` and `path` prop in the
 
 But how can we pass some props into this `Dashboard` component?
 
-We can pass props by rendering an inline function that renders the `Dashboard` component with the required props, like so:
+We can pass props by rendering an inline function that renders the `Dashboard` component with the required props, like this:
 
 ```jsx
 <Route path="/" component={() => <Dashboard name={name} />} />
@@ -76,7 +76,7 @@ For example:
 <Route path="/" render={() => <Dashboard name={name} />} />
 ```
 
-We can optionally pass the route props, that is `match`, `location`, and `history`, inside the `render` function, like so:
+We can optionally pass the route props, that is `match`, `location`, and `history`, inside the `render` function, like this:
 
 ```jsx
 <Route

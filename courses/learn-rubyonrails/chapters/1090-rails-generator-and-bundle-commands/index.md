@@ -130,7 +130,7 @@ to use a gem called `foreman` to manage proc-files in your project. After a bit
 of inspection, you learn that the `foreman` gem is already installed in your
 system globally for a specific ruby version, say 3.2.2. So if you proceed to run
 any foreman command, under the impression that `foreman` is available to use
-system-wide, you will be greeted with an error, like so:
+system-wide, you will be greeted with an error, like this:
 
 ```bash
 $ foreman start -f Procfile.dev.SSO
@@ -203,7 +203,7 @@ then you must only do so for the `rack` version which is being used by the
 application. If you update the `rack` version for `rack-test` gem as well then
 it can cause compatibility issues within `rack-test` gem's functionality.
 
-Hence the correct way to update the `rack` gem would be like so:
+Hence the correct way to update the `rack` gem would be like this:
 
 ```ruby
 bundle update rack
@@ -292,14 +292,14 @@ TestUnit:
   test_unit:policy
 ```
 
-You can also use `g` as an alias for `generator` in the above command, like so:
+You can also use `g` as an alias for `generator` in the above command, like this:
 
 ```bash
 bundle exec rails g
 ```
 
 To get more information about what a generator can do, you can add `--help` or
-`-h` to the generate command like so:
+`-h` to the generate command like this:
 
 ```bash
 bundle exec rails generate generator_name --help
@@ -504,7 +504,7 @@ A scaffold generator can be used to speed up the development process.
 
 It is worth mentioning the `-p` flag here. If you add this to the command it
 will simply do a test run and show you what files will be generated without
-actually generating them, like so:
+actually generating them, like this:
 
 ```bash
 bundle exec rails generate scaffold Task title:string -p
@@ -540,7 +540,7 @@ through all the changes and undoing them will be very time consuming and you
 might end up changing something you didn't intend do.
 
 Rails comes with an easy solution for this. You can reverse the changes
-introduced by a generator using the `destroy` command, like so:
+introduced by a generator using the `destroy` command, like this:
 
 ```bash
 bundle exec rails d scaffold Task title:string
@@ -583,14 +583,14 @@ You can also replace `console` with the alias `c` to invoke the console.
 4. **bundle exec rails test**
 
 This command lets you run the tests you have added in your Rails project. You
-can either all the tests at once, like so:
+can either all the tests at once, like this:
 
 ```bash
 bundle exec rails test -v
 ```
 
 Or you can run tests from a specific test file by passing the relative path of
-the test file to the above command, like so:
+the test file to the above command, like this:
 
 ```bash
 bundle exec rails test -v test/models/user_test.rb
@@ -624,14 +624,14 @@ the URLs in your application.
 
 Suppose the latest Rails release was 10 days ago and you want to use the Rails
 version from a commit different than the latest release. To do so you can update
-the `rails` gem line within `Gemfile` like so:
+the `rails` gem line within `Gemfile` like this:
 
 ```ruby
 gem "rails", git: "git://github.com/rails/rails.git", ref: commit_id
 ```
 
 Replace the `commit_id` with the commit id you wish to use. For example if the
-commit id is `a8d088f`, then update the `gemfile` like so:
+commit id is `a8d088f`, then update the `gemfile` like this:
 
 ```ruby
 gem "rails", git: "git://github.com/rails/rails.git", ref: "a8d088f"

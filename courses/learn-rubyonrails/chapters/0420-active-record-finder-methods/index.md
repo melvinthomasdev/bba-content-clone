@@ -69,7 +69,7 @@ against using them.
 
 One reason being that the method names can become cumbersome when querying
 multiple fields. For example, if we want to query `title` and `slug` together we
-can do so with finder methods like so:
+can do so with finder methods like this:
 
 ```ruby
 Task.find_by_title_and_slug("Task title", "task-title")
@@ -82,7 +82,7 @@ Task.find_by_slug_and_title("task-title", "Task Title")
 ```
 
 On the other hand we can achieve the same result using the `find_by` method as
-it takes in multiple arguments, like so:
+it takes in multiple arguments, like this:
 
 ```ruby
 Task.find_by(title: "Task Title", slug:"task-title")

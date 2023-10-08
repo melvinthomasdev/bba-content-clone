@@ -2,7 +2,7 @@ In the software development world, CRUD consists of four operations - create,
 read, update, and delete.
 
 - **Create**: This operation would create a brand new entity. In terms of
-  database, this would be `INSERT` statement.
+  database, this would be an `INSERT` statement.
 - **Read**: This operation would read something from the database and would not
   make any permanent changes to the database. In terms of database, this would
   be a `READ` operation.

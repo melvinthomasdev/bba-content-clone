@@ -1,7 +1,7 @@
 Let's say we have a new table called `courses` with `PRIMARY KEY` `id`, and other two columns `name` and `abbreviation`.
 In most real world scenarios, the primary key column is nothing but positive integers in increasing order for each new row, starting from `1`. For example, the first row has `id` 1, the next `2`, and so on.
 
-So, instead of adding the primary key value manually for each row, this seems like something the database should itself take care of, if needed.
+So, instead of adding the primary key value manually for each row, this seems like thismething the database should itself take care of, if needed.
 
 SQL provides an attribute called `AUTOINCREMENT` as an addition to the `PRIMARY KEY` constraint on a column, which automatically generates the appropriate PRIMARY KEY values. Note the `CREATE TABLE` statement below
 

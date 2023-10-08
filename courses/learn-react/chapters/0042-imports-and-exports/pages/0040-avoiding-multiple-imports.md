@@ -31,7 +31,7 @@ import Menubar from "./Menubar";
 export { EmptyState, Menubar };
 ```
 
-After adding the above `index.js` file we can reduce the number of import statements like so:
+After adding the above `index.js` file we can reduce the number of import statements like this:
 
 ```js
 import { EmptyState, Menubar } from "components/Common";

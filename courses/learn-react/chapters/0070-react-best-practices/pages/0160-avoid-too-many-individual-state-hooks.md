@@ -114,7 +114,7 @@ backend using an API.
 If the data received from the backend is an object containing the user details
 such as name and email then you should not have separate state variables for
 name and email. Instead you should save the entire user object in a single state
-variable. If need be you can destructure it later like so:
+variable. If need be you can destructure it later like this:
 
 ```jsx
 const User = ({ props }) => {

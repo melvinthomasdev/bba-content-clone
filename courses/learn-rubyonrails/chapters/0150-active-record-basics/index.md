@@ -40,9 +40,9 @@ But the above mentioned disadvantages are negligible comparing to the advantages
 it has in most cases. Writing raw SQL queries should be only be the last resort
 and that too only when you can't perform the same operation using ORM.
 
-## What is ActiveRecord?
+## What is Active Record?
 
-ActiveRecord is sub-system of Rails that is responsible for representing
+Active Record is sub-system of Rails that is responsible for representing
 business data, logic and the dealings with the database.
 
 `ActiveRecord::Base` is a Rails class that contains several helper methods that
@@ -90,9 +90,7 @@ to snake case (words separated by underscores). For example, model class
 ## Overriding table names
 
 In real life, we might end up in situations where we need to map the model to a
-table with a non-matching name. Even though it is against ruby conventions, it
-might be unavoidable.
-
+table with a non-matching name.
 Typically, this will happen when a database is shared by two applications. Both
 the applications would prefix the names of their tables with some keyword to
 avoid collisions. But we don't need that prefix in the name of our models.
@@ -163,5 +161,4 @@ The official Rails guide on Active Record has a section on
 [Convention over Configuration](https://guides.rubyonrails.org/active_record_basics.html#convention-over-configuration-in-active-record).
 Please read that article.
 
-There is **nothing to commit** in this chapter since all we had done was
-learning the basics of `ActiveRecord`.
+We haven't made any changes in our project. So there is nothing to commit in this chapter.

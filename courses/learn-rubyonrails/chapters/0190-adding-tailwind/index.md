@@ -1,9 +1,9 @@
-[Tailwind CSS](https://tailwindcss.com/) is a popular, highly customizable,
-low-level CSS framework for building modern designs for web applications.
+[Tailwind CSS](https://tailwindcss.com/) is a very popular
+CSS framework for building modern web applications.
 
 ## Learning Tailwind CSS
 
-At the bottom of the chapter we have added some references to learn
+At the bottom of this chapter we have added some references to learn
 `Tailwind CSS`. But to get an idea about the fundamentals, one can go through
 the
 [official Tailwind CSS documentation](https://tailwindcss.com/docs/utility-first),
@@ -144,5 +144,5 @@ Now let's commit these changes:
 
 ```bash
 git add -A
-git commit -m "Setup tailwindcss"
+git commit -m "Setup Tailwind CSS"
 ```

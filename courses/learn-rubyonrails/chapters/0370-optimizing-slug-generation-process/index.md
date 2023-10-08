@@ -298,7 +298,7 @@ Consider the following scenario:
 Here, we could make a call and allow this edge case to go through. But we are
 not going to give up yet. Let's try to handle this edge case too.
 
-For handling this edge case, one logic looks like so:
+For handling this edge case, one logic looks like this:
 
 - Check for existence of slugs that match "buy". This matches whole word or
   none. Thus the regex pattern would look like "buy$", where "$" denotes the end
@@ -332,7 +332,7 @@ Consider another scenario as follows:
 
 Let's try to handle this edge case too.
 
-For handling this edge case, one logic looks like so:
+For handling this edge case, one logic looks like this:
 
 - Check for existence of slugs that match "buy-apples". This matches whole word
   or none. Thus the regex pattern would look like "^buy-apples$", where "^"
@@ -380,7 +380,7 @@ SQLite allows creating new SQL functions in the database level using the
 `sqlite3_create_function()` family of interfaces.
 
 For doing this using Ruby, let's see check the custom DSL defined in the
-`sqlite3` gem, which looks like so:
+`sqlite3` gem, which looks like this:
 
 ```ruby
 def create_function name, arity, text_rep=Constants::TextRep::UTF8, &block
@@ -568,7 +568,7 @@ end
 ## count vs length vs size
 
 So if you had noticed, in one of the iterations of our `set_slug` method, we had
-used `size` method like so
+used `size` method like this
 ` count = Task.where("slug LIKE ?", "#{title_slug}%").size`. But why exactly did
 we use it over `count` and `length`? It's pretty straightforward:
 

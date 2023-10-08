@@ -16,7 +16,7 @@ const tasksApi = {
 export default tasksApi;
 ```
 
-Now when we want to create a new task we can invoke this `create` function with the required `payload`, like so:
+Now when we want to create a new task we can invoke this `create` function with the required `payload`, like this:
 
 ```jsx
 const createTask = async () => {
@@ -51,7 +51,7 @@ const tasksApi = {
 export default tasksApi;
 ```
 
-So the parent key `task` is handled in the `create` function itself. And this simplifies the `createTask` function like so:
+So the parent key `task` is handled in the `create` function itself. And this simplifies the `createTask` function like this:
 
 ```jsx
 const createTask = async () => {

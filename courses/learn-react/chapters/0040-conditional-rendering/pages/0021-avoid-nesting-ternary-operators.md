@@ -20,7 +20,7 @@ const ProfilePicture = ({ isLoading, isAdmin, name, imageSource }) => {
 }
 ```
 
-As a rule of thumb, it's often best to just use a couple of guard clauses to improve readability like so:
+As a rule of thumb, it's often best to just use a couple of guard clauses to improve readability like this:
 
 ```jsx
 {/* ProfilePicture.jsx */}

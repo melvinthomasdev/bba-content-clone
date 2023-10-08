@@ -36,7 +36,7 @@ The props object is the only argument to your component.
 
 ## Renaming and Default Values
 
-When destructuring, you can also assign default values and change the name of certain arguments like so:
+When destructuring, you can also assign default values and change the name of certain arguments like this:
 
 ```jsx
 {/* UserCard.jsx */}
@@ -52,7 +52,7 @@ In the above example
 * The `name` prop is defaulted to "User". It is important to note that it only defaults to "User" if the `name` prop is not used as an argument or if its value is explicitly set as `undefined` when the UserCard component is invoked. In all other cases, it will not use the default prop value, even if the argument's value is `""`, `0`, `false` or `null`.
 * `customClass` that is passed as a prop to the UserCard is renamed to `pClass` within the parameter list.
 
-You can even combine defaulting and renaming in a single attribute like so:
+You can even combine defaulting and renaming in a single attribute like this:
 
 ```jsx
 {/* UserCard.jsx */}

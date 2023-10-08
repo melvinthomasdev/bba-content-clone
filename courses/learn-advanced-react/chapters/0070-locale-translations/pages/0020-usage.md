@@ -2,7 +2,7 @@
 
 To use the translation strings inside React components, we can either use the `withTranslation` higher order component or the `useTranslation` hook from `react-i18next`.
 
-The `withTranslation`, higher order component can be used like so:
+The `withTranslation`, higher order component can be used like this:
 
 ```jsx
 import React from "react";
@@ -15,7 +15,7 @@ export default withTranslation()(WelcomeText);
 
 In the example above, the `WelcomeText` component is called inside the `withTranslation` higher-order component making the `t` method available as a prop inside.
 
-You can also use the `useTranslation` hook like so:
+You can also use the `useTranslation` hook like this:
 
 ```jsx
 import React from "react";
@@ -30,7 +30,7 @@ const WelcomeText = () => {
 export default WelcomeText;
 ```
 
-Regardless of the method used, you can now add the required translation string inside the `en.json` file like so:
+Regardless of the method used, you can now add the required translation string inside the `en.json` file like this:
 
 ```json
 {
@@ -42,7 +42,7 @@ The `t("welcome_text")` snippet will now be replaced by `"Welcome to NeetoCourse
 
 ## Interpolation in translation strings
 
-Suppose the string to be translated contains a name or a number and the name is dynamic. In such a case, the string can be translated with a dynamic part like so:
+Suppose the string to be translated contains a name or a number and the name is dynamic. In such a case, the string can be translated with a dynamic part like this:
 
 ```jsx
 import React from "react";
@@ -67,7 +67,7 @@ The required translation inside the `en.json` file should look like this:
 
 ## Using Singular/Plural Forms
 
-You can differentiate between the singular and plural form of a word via interpolation using the variable name `count` like so:
+You can differentiate between the singular and plural form of a word via interpolation using the variable name `count` like this:
 
 ```jsx
 import React from "react";

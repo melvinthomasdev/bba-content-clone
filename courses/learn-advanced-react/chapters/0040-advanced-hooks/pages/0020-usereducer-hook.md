@@ -33,13 +33,13 @@ const initialUsers = [
 
 ### The Reducer
 
-The reducer is a pure function that takes in the previous state and an action to give out a new state as the output like so: `(prevState, action) => newState`.
+The reducer is a pure function that takes in the previous state and an action to give out a new state as the output like this: `(prevState, action) => newState`.
 
 We call the reducer "pure" because they have perfectly predictable outputs and no side effects. It makes them very easy to debug and test, especially since they're not involved with React.
 
 The `action` argument generally has a `type` attribute that we use to determine what needs to be done to the state. Any other data we need can be added to this `action` object.
 
-Here's an example of a typical reducer: 
+Here's an example of a typical reducer:
 
 ```jsx
 const reducer = (state, action) => {
@@ -60,7 +60,7 @@ const reducer = (state, action) => {
 
 ### The useReducer Hook
 
-Once we have both the initializer and the reducer, we can construct the useReducer hook with the following syntax: 
+Once we have both the initializer and the reducer, we can construct the useReducer hook with the following syntax:
 
 `useReducer(reducer, initialState)`
 

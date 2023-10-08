@@ -47,7 +47,7 @@ the SQL statements. The most important ones are:
 
 ## Creating tasks table
 
-Let us start building our application. First, we need a new table to store the
+Let's start building our application. First, we need a new table to store the
 tasks data. For now, let's assume that we have only a title to be stored in a
 task.
 
@@ -133,9 +133,11 @@ git commit -m "Added migration script for creating tasks table"
 If we open `db/schema.rb` file then the very first three lines says this:
 
 ```text
-# This file is auto-generated from the current state of the database. Instead
-# of editing this file, please use the migrations feature of Active Record to
-# incrementally modify your database, and then regenerate this schema definition.
+# This file is auto-generated from the current state
+# of the database. Instead of editing this file,
+# please use the migrations feature of Active Record to
+# incrementally modify your database, and then
+# regenerate this schema definition.
 ```
 
 You will also notice that the definition for our `tasks` table structure is
@@ -487,7 +489,7 @@ we had discussed the whole story in this early chapter itself.
 We would suggest that you go through the chapters in a linear order. But If you
 are sure that you want to deep dive and learn in-depth about migrations, then
 you can refer to the
-[Rails migration in depth chapter](rails-migrations-in-depth) chapter in this
+[Rails migration in depth chapter](rails-migrations-in-depth) in this
 book and the
 [official documentation](https://guides.rubyonrails.org/active_record_migrations.html)
 for migrations in Rails, and come back.

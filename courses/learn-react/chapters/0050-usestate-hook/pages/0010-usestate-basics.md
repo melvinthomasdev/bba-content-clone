@@ -32,12 +32,12 @@ In the above example, the `page` is the state variable while `setPage` is its se
 
 When you "set a state" using the `setPage` function, you are replacing the constant `page` and re-rendering the component and with its children with the new value of `page`.
 
-While you could use any name for the state and its setter function, the convention most almost always used is to name the state and setState function like so:  `const [name, setName] = useState(initialValue)`.
+While you could use any name for the state and its setter function, the convention most almost always used is to name the state and setState function like this:  `const [name, setName] = useState(initialValue)`.
 
 Do remember to reserve the 'set' prefix for state hook setters.
 Using the 'set' prefix on non-state functions can be very confusing to people reading your code.
 
-It is also important to note that the useState hook (along with most other hooks) must be defined at the top of a component definition and cannot be defined inside a loop or conditional branch like so:
+It is also important to note that the useState hook (along with most other hooks) must be defined at the top of a component definition and cannot be defined inside a loop or conditional branch like this:
 
 ```jsx
 {/* PageIndex.jsx */}

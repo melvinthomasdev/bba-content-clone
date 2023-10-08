@@ -4,7 +4,7 @@ In JSX, values like `true`, `false`, `null` and `undefined` are valid children
 they will simply be ignored and not rendered.
 
 For example, if you only need to render admins while leaving the users out, you
-can do it like so:
+can do it like this:
 
 ```jsx
 const ProfilePicture = ({ isAdmin, name }) => {

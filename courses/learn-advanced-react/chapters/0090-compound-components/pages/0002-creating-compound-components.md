@@ -1,6 +1,6 @@
 Suppose we want to build a custom select component with identical behaviour,
 thus it contains a list of options and only one option can be selected at once.
-The regular way of going about it would be like so:
+The regular way of going about it would be like this:
 
 ```jsx
 import React from "react";
@@ -54,7 +54,7 @@ While the code above works just fine, a few issues we need to address are:
   accommodate for it.
 
 We can address these issues by converting the above `Select` and `Option`
-components into a compound component like so:
+components into a compound component like this:
 
 ```jsx
 import React, { useState, useContext } from "react";

@@ -118,7 +118,7 @@ the previous one.
 Combining the `useReducer` and `useContext` hook is a good alternative to state
 management libraries such as `Redux`.
 
-Declare a `userReducer` function in the `src/reducers` directory like so:
+Declare a `userReducer` function in the `src/reducers` directory like this:
 
 ```jsx
 const userReducer = (state, { type, payload }) => {
@@ -208,7 +208,7 @@ refer to the
 [create alias for commonly used directories](books/react-best-practices/create-alias-for-commonly-used-directories)
 chapter for more information on this.
 
-The user context in the above code can be consumed like so:
+The user context in the above code can be consumed like this:
 
 ```jsx
 // Main.jsx
@@ -237,7 +237,7 @@ const Navbar = () => {
 };
 ```
 
-Similarly the user context can be updated like so:
+Similarly the user context can be updated like this:
 
 ```jsx
 // Main.jsx

@@ -108,7 +108,7 @@ when the `pg` gem is installed without passing in any config, it will always
 look for the folder named as `postgres` without any versioning. And this
 difference in folder name results in the `Library not loaded` error.
 
-To fix this issue reinstall the `postgres` with the version, like so:
+To fix this issue reinstall the `postgres` with the version, like this:
 
 ```bash
 brew reinstall postgresql@14
@@ -127,13 +127,13 @@ see what all services your mac has. Go to `~/Library/LaunchAgents` or
 `launchctl` is a tool used for managing services in macOS. `launchctl` loads and
 unloads services that will start automatically at login.
 
-We can load the services at the time of login with `launchctl` like so:
+We can load the services at the time of login with `launchctl` like this:
 
 ```bash
 launchctl load $PATH_TO_LIST
 ```
 
-We can also unload the services, like so:
+We can also unload the services, like this:
 
 ```bash
 launchctl unload $PATH_TO_LIST
@@ -146,7 +146,7 @@ services without the knowledge of `.plist` file locations and the `launchctl`
 commands using Homebrew. Homebrew provides an interface to handle services with
 ease.
 
-We can start a `postgresql` service with Homebrew, like so:
+We can start a `postgresql` service with Homebrew, like this:
 
 ```bash
 brew services start postgresql
@@ -156,25 +156,25 @@ The above mentioned command runs the postgresql's `.plist` file using the
 `launchctl`.
 
 If the system has multiple versions of `postgresql`, then we will have to
-specify the version like so:
+specify the version like this:
 
 ```bash
 brew services start postgresql@14
 ```
 
-We can check all the versions installed for `postgresql`, like so:
+We can check all the versions installed for `postgresql`, like this:
 
 ```bash
 brew list --versions postgresql
 ```
 
-We can restart the service, like so:
+We can restart the service, like this:
 
 ```bash
 brew services restart postgresql@14
 ```
 
-We can check all the currently loaded services like so:
+We can check all the currently loaded services like this:
 
 ```bash
 brew services list
@@ -189,7 +189,7 @@ If you are using a macOS and if you are not able to setup PostgreSQL via
 Homebrew as mentioned in the above section, then
 [Postgres.app](http://postgresapp.com) is another option.
 
-The `config/database.yml` file for the `Postgres.app` should be like so:
+The `config/database.yml` file for the `Postgres.app` should be like this:
 
 ```yaml
 <% branch_name = `git symbolic-ref HEAD 2>/dev/null`.chomp.sub('refs/heads/', '') %>
@@ -310,7 +310,7 @@ failure when building the application.
 We can use the `yarn -v` command to find the current version of the `yarn` in
 the system. The `node` version should be exactly same as the version we have
 mentioned in the `.nvmrc`. We can define the version for different engines in
-`package.json`, like so:
+`package.json`, like this:
 
 ```json
 {
@@ -413,7 +413,7 @@ git remote -v
 ```
 
 The output will contain the initialized `heroku` remote, and would look
-something like so:
+something like this:
 
 ```bash
 heroku  https://git.heroku.com/agile-everglades-72910.git (fetch)

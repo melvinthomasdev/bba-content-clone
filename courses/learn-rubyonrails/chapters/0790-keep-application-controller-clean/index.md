@@ -235,7 +235,7 @@ end
 
 Now let's modify our current `application_controller` and include the concerns
 we created in the previous section. Fully replace the contents of
-`application_controller.rb` file like so:
+`application_controller.rb` file like this:
 
 ```ruby
 class ApplicationController < ActionController::Base

@@ -16,7 +16,7 @@ In the first scenario, assume that you have a search page that allows users to
 filter results by keyword and category. The URL might look something like
 `http://example.com/search?keyword=laptops&category=electronics`. In this
 example, the query string parameters are `keyword` and `category`. You can
-access these parameters in your controller like so:
+access these parameters in your controller like this:
 
 ```rb
 def search
@@ -89,7 +89,7 @@ for ensuring that you only receive the data that you expect.
 
 For example, suppose you have a form that includes a text field for the user's
 name and a checkbox for whether they want to receive email updates. You could do
-this in your controller like so:
+this in your controller like this:
 
 ```rb
 def create
@@ -142,7 +142,7 @@ Here we have mapped `hobbies` to an empty array.
 
 Let us consider another scenario where you may have to pass a nested array
 `skills` as a parameter, with `soft` and `hard` being its sub-arrays. This can
-be permitted in the controller like so:
+be permitted in the controller like this:
 
 ```rb {6-9}
 def create

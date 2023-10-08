@@ -16,9 +16,9 @@ const candidate = {
 };
 ```
 
-If you need to access the college name, you can use the dot operator like so: `candidate.college.name`. But let's say the `college` property is optional, thus, trying to access `college.name` could give an error stating "undefined is not an object".
+If you need to access the college name, you can use the dot operator like this: `candidate.college.name`. But let's say the `college` property is optional, thus, trying to access `college.name` could give an error stating "undefined is not an object".
 
-While the traditional approach is to use multiple `if` or `&&` conditions, a cleaner one is to use optional chaining like so:
+While the traditional approach is to use multiple `if` or `&&` conditions, a cleaner one is to use optional chaining like this:
 
 `candidate.college?.name;`
 

@@ -155,7 +155,7 @@ are there in the master branch of the repository.
 In the Granite project, we are using `SQLite` in the development environment but
 if we use `PostgreSQL` then we need to install `postgresql-client` in place of
 `libsqlite3-dev` in the `CircleCI` container and the `.circleci/config.yml`
-should be updated like so:
+should be updated like this:
 
 ```yaml {15}
 version: 2.1
@@ -178,7 +178,7 @@ jobs:
 
 If the project uses `PostgreSQL` in the development environment then we would
 have to provide some extra configurations like `host` and `user`, and update the
-`config/database.yml.ci` file like so:
+`config/database.yml.ci` file like this:
 
 ```yaml
 default: &default
@@ -226,7 +226,7 @@ This is quite possible to happen in the first run with CircleCI.
 The reason is that when we create a Rails application in the first place, a lot
 of Ruby files will be added, but no linting nor formatting is applied to it.
 
-Thus what we can do is to run Rubocop on all relevant files, like so, from our
+Thus what we can do is to run Rubocop on all relevant files, like this, from our
 terminal:
 
 ```bash
@@ -280,7 +280,7 @@ Redis on localhost". It can happen if we are testing some services which require
 the Redis server and we haven't added the Redis image to the CircleCI container.
 
 As we had mentioned above, we should specify the docker image for `redis` in the
-`.circleci/config.yml` like so:
+`.circleci/config.yml` like this:
 
 ```yml {10}
 version: 2.1

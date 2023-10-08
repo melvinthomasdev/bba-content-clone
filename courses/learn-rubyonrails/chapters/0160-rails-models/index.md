@@ -71,7 +71,7 @@ Please choose an alternative or use --skip-collision-check or --force to skip
 this check and run this generator again.
 ```
 
-This is because we already have created the files. Leave it for now. Let us use
+This is because we already have created the files. Leave it for now. We will use
 this command when we generate our next model.
 
 This command will generate model, migration, and test files for us and we

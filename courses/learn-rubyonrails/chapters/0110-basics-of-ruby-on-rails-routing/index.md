@@ -15,14 +15,18 @@ Assume we have defined a route like this:
 get "/articles" => "articles#list"
 ```
 
-But wait! What is the `=>` symbol?
-
+In the above case we are using `=>` symbol.
 The `=>` symbol is known as the `hashrocket`. It's used to denote Hash literals
-in Ruby. But with newer versions of Ruby and Rails, we prefer to use JSON styled
-Hash notation, where we use a colon.
+in Ruby.
 
-Still the `=>` can be found in many places, predominantly in the `routes.rb` and
-the `Gemfile`.
+Nowadays `hashrocket` style is less used and JSON style is mostly used.
+However we decided to include `hashrocket` style also since it's still very widely used.
+
+The above code could be written like this also.
+
+```ruby
+get "/articles", to: "articles#list"
+```
 
 Coming back to routing, here is how it will work:
 
@@ -125,5 +129,4 @@ Here are some must reads.
 - [Route Globbing](https://guides.rubyonrails.org/routing.html#route-globbing-and-wildcard-segments)
 - [Redirection](https://guides.rubyonrails.org/routing.html#redirection)
 
-We haven't made any changes in our project. So there is nothing to commit in
-this chapter.
+We haven't made any changes in our project. So there is nothing to commit in this chapter.

@@ -33,7 +33,7 @@ record. Rails knows this and infers the class name from the association name
 itself. If the association name is wrongly pluralized, then the inferred class
 will be wrongly pluralized too.
 
-The corresponding migration would look like so:
+The corresponding migration would look like this:
 
 ```ruby
 class CreateResults < ActiveRecord::Migration
@@ -76,7 +76,7 @@ Rails convention to name the association after the model.
 2. **foreign_key:** By convention, Rails assumes that the column used to hold
    the foreign key on this model is the name of the association with the suffix
    `_id` added. The :foreign_key option lets you set the name of the foreign key
-   directly if you are using an alias for the association name like so:
+   directly if you are using an alias for the association name like this:
 
 ```ruby
 class Student < ActiveRecord::Base
@@ -103,7 +103,7 @@ end
    that case, you can declare an optional association. For the optional
    association to work, there shouldn't be a not null constraint on the
    `foreign_key` column in the table for the declaring model. For such cases you
-   can declare the association like so:
+   can declare the association like this:
 
 ```ruby
 class Student < ActiveRecord::Base
@@ -195,7 +195,7 @@ end
    the foreign key on the other model is the name of this model with the suffix
    `_id` added. For example, if the name of the foreign key column in the
    results table is `st_id` instead of `student_id` then :foreign_key option
-   lets you set the name of the foreign key directly like so:
+   lets you set the name of the foreign key directly like this:
 
 ```ruby
 class Student < ActiveRecord::Base
@@ -250,7 +250,7 @@ end
 The association name should be plural because a parent record can have multiple
 associated records.
 
-The corresponding migration would look like so:
+The corresponding migration would look like this:
 
 ```ruby
 class CreateProjects < ActiveRecord::Migration[7.0]
@@ -294,7 +294,7 @@ convention.
    the foreign key on the other model is the name of this model with the suffix
    \_id added. For example, if the name of the foreign key column in the results
    table is `st_id` instead of `student_id` then :foreign_key option lets you
-   set the name of the foreign key directly like so:
+   set the name of the foreign key directly like this:
 
 ```ruby
 class Student < ActiveRecord::Base
@@ -353,7 +353,7 @@ with another model. This association indicates that each instance of the
 declaring model refers to zero or more instances of another model. For example,
 consider a hospital where a doctor can have many patients and a patient can have
 many doctors too. This many-to-many relationship can be declared using a
-`has_and_belongs_to_many` association like so:
+`has_and_belongs_to_many` association like this:
 
 ```ruby
 class Doctor < ApplicationRecord
@@ -424,7 +424,7 @@ Migrations should be atomic in the sense that a single migration should not
 affect multiple tables like in the example shown above. Above code is only for
 demonstration purposes.**
 
-You can also use the `create_join_tables` method to create a join table like so:
+You can also use the `create_join_tables` method to create a join table like this:
 
 ```ruby
 class CreateDoctorsPatientsJoinTable < ActiveRecord::Migration[7.0]
@@ -447,7 +447,7 @@ association:
 If the foreign key column in the join table that stores the doctor's id is
 called `physician_id` rather than `doctor_id` then, you can use the
 `:association_foreign_key` option inside the `Patient` model to set the name of
-the foreign key directly like so:
+the foreign key directly like this:
 
 ```ruby
 class Patient < ApplicationRecord
@@ -462,7 +462,7 @@ end
 If the foreign key column in the join table that stores the doctor's id is
 called `physician_id` rather than `doctor_id` then. you can use the :foreign_key
 option inside the `Doctor` model to set the name of the foreign key directly
-like so:
+like this:
 
 ```ruby
 class Doctor < ApplicationRecord
@@ -476,7 +476,7 @@ end
 
 For example, if a patient has many physicians, but the actual name of the model
 containing assemblies is Doctor, then you can use the `:class_name` option to
-explicitly specify the actual model name like so:
+explicitly specify the actual model name like this:
 
 ```ruby
 class Patient < ApplicationRecord
@@ -489,7 +489,7 @@ end
    override the default.
 
 For example, in the above example, if we wanted to name the join table
-`patients_doctors` then we could have used the join_table option like so:
+`patients_doctors` then we could have used the join_table option like this:
 
 ```ruby
 class Doctor < ApplicationRecord
@@ -528,7 +528,7 @@ class Patient < ApplicationRecord
 end
 ```
 
-The corresponding migration will look like so:
+The corresponding migration will look like this:
 
 ```ruby
 class CreateAppointments < ActiveRecord::Migration[7.0]
@@ -595,7 +595,7 @@ class AccountHistory < ApplicationRecord
 end
 ```
 
-The corresponding migration might look like so:
+The corresponding migration might look like this:
 
 ```ruby
 class CreateAccountHistories < ActiveRecord::Migration[7.0]
@@ -631,7 +631,7 @@ a polymorphic relation in Rails. Polymorphic associations declare a relationship
 between entities where one entity can belong to multiple entities.
 
 For example, in a company database, a picture can either belong to an employee
-or a product. The relevant association can be declared like so:
+or a product. The relevant association can be declared like this:
 
 ```ruby
 class Picture < ApplicationRecord
@@ -649,7 +649,7 @@ end
 
 To make this work, you need to declare both a foreign key column and a type
 column in the model that declares the polymorphic interface:.The corresponding
-migration can be declared like so:
+migration can be declared like this:
 
 ```ruby
 class CreatePictures < ActiveRecord::Migration[7.0]
@@ -675,7 +675,7 @@ end
 ```
 
 Rather than specifying the `imageable_id` and `imageable_type` columns in the
-above migration, we could have simplified it like so:
+above migration, we could have simplified it like this:
 
 ```ruby
 create_table :pictures do |t|
@@ -773,14 +773,14 @@ come back.
 
 Let us understand how we can leverage associations to create child records using
 parent records. In the Granite application, a user has many assigned_tasks. You
-can create a new assigned_task for a certain user like so:
+can create a new assigned_task for a certain user like this:
 
 ```ruby
 Task.create(task_attributes.merge(assigned_user_id: user.id))
 ```
 
 Or you can use the `assigned_tasks` association declared in the `User` model to
-create a new task for the user like so:
+create a new task for the user like this:
 
 ```ruby
 user.assigned_tasks.create(task_params)
@@ -801,7 +801,7 @@ replaced by the association name.
 
 There are several other methods as well which you can use in your code for
 performing CRUD operations on data. For example, you can use the getter and
-setter methods added by the `has_many` association in the User model like so:
+setter methods added by the `has_many` association in the User model like this:
 
 ```ruby
 user.assigned_tasks  # returns a collection of all assigned tasks of the user

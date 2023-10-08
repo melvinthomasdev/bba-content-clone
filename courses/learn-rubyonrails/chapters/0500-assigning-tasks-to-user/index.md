@@ -61,7 +61,7 @@ fields from the result set. In this case, the `select` method will fetch an
 `ActiveRecord::Relation` object containing the names and ids of all the users
 and store it in the `users` variable.
 
-The SQL query for the above mentioned `select` method will be like so:
+The SQL query for the above mentioned `select` method will be like this:
 
 ```rb
 SELECT id, name FROM users
@@ -112,7 +112,7 @@ So to conclude we should use `ActiveRecord#select` method when we want to select
 specific columns or properties from an array of objects or records and
 `Array#select` method when we want to select specific objects from an array of
 objects. As in the `index` action, we are selecting some specific columns from
-an array of records so the correct approach would be like so:
+an array of records so the correct approach would be like this:
 
 ```rb
 class UsersController < ApplicationController
@@ -614,7 +614,7 @@ brief look at it in the next section of this chapter.
 
 So far we have only been showing the task title in each of the tasks listed on
 the dashboard. To display task assignee's name along with the task title in
-dashboard update the `Row` component like so:
+dashboard update the `Row` component like this:
 
 ```jsx {19-24}
 import React from "react";

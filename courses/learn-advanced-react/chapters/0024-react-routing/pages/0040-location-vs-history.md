@@ -6,7 +6,7 @@ Similarly, when jumping to a new location from inside a function, developers som
 
 The `window.location` object in JavaScript has many properties of which, the `window.location.href` property returns the current page address or "URL".
 
-You can update the URL by assigning a new value to it like so:
+You can update the URL by assigning a new value to it like this:
 
 ```js
 const LinkButton = () => (
@@ -46,7 +46,7 @@ const LinkButton = () => {
 
 The `history.push` method pushes the `contacts` URL onto the history stack. It does not revisit the page and make a new HTTP request, making in-app navigation faster but preventing external links.
 
-If you need to, you can also send a state object over to the contacts component by passing it as a second argument to the `history.push` method like so: `() => history.push("/contacts", {country: "India"})`.
+If you need to, you can also send a state object over to the contacts component by passing it as a second argument to the `history.push` method like this: `() => history.push("/contacts", {country: "India"})`.
 
 Thus, the `history.push` is the preferred method of performing in-app navigation.
 
