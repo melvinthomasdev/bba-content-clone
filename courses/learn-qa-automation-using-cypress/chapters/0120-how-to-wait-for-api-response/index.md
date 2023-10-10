@@ -4,7 +4,7 @@ blog creation part. After successful creation, we will receive a toaster message
 
 ```js
 describe("Blog", () => {
-  it("verify manage blog operations", () => {
+  test("verify manage blog operations", () => {
     cy.clearAndType(blogSelectors.titleField, "Blog title");
     cy.clearAndType(blogSelectors.descriptionField, "Blog Description");
     cy.get(blogSelectors.saveButton).click();
@@ -24,7 +24,7 @@ can add a `wait()` after clicking the button like this.
 
 ```js
 describe("Blog", () => {
-  it("verify manage blog operations", () => {
+  test("verify manage blog operations", () => {
     cy.clearAndType(blogSelectors.titleField, "Blog title");
     cy.clearAndType(blogSelectors.descriptionField, "Blog Description");
     cy.get(blogSelectors.saveButton).click();
@@ -52,7 +52,7 @@ way to solve the above problem using `intercept`
 
 ```js
 describe("Blog", () => {
-  it("verify manage blog operations", () => {
+  test("verify manage blog operations", () => {
     cy.clearAndType(blogSelectors.titleField, "Blog title");
     cy.clearAndType(blogSelectors.descriptionField, "Blog Description");
     cy.intercept("POST", "/api/blog").as("addBlog");

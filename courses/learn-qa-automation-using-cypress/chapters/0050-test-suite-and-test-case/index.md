@@ -34,7 +34,7 @@ describe("Members", () => {
     ....
   })
 
-  it("should verify member operations", () => {
+  test("should verify member operations", () => {
     .....
 
   });
@@ -91,7 +91,7 @@ e.g. If we are handling 'customers' in a test suite, our test should look like:
 // correct
 
 describe("Manage customers", () => {
-  it("should verify customer operations", () => {
+  test("should verify customer operations", () => {
     ..
     ...
 
@@ -106,7 +106,7 @@ describe("Manage customers", () => {
 ```javascript
 //Incorrect
 
-it("should verify customer", () => {
+test("should verify customer", () => {
   ..
   ...
 

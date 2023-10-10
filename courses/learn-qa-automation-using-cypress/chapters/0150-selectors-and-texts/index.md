@@ -145,8 +145,8 @@ import { gettingStartedPath } from "Constants/routes";
 import { commonSelectors, navSelectors } from "Selectors/common";
 import { profileTexts } from "Texts/profile";
 
-describe("Logout", { tags: "Fixed" }, () => {
-  it("should verify logout functionality", { tags: "Fixed" }, () => {
+describe("Logout", { tags: "review" }, () => {
+  test("should verify logout functionality", () => {
     cy.get(navSelectors.myProfileNavbar).click();
     cy.contains(profileTexts.logout).invoke("click");
     cy.get(commonSelectors.heading).should("not.exist");

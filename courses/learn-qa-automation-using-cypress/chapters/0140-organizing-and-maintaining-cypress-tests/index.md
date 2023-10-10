@@ -149,7 +149,7 @@ export default fake;
 import fake from "Fixtures/fake";
 
 describe("Create new tags", () => {
-  it("should be able to create new tags", () => {
+  test("should be able to create new tags", () => {
     const streetAddress = fake.streetAddress;
     const url = fake.url;
     const city = fake.city;
@@ -197,7 +197,7 @@ describe("Articles", () => {
     description: faker.sentence(),
   };
 
-  it("should be able to create an article", () => {
+  test("should be able to create an article", () => {
     articleUtils.createArticle(article);
   });
 });

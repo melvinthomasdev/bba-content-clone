@@ -11,6 +11,9 @@
 - slug: running-cypress-tests
   name: Running Cypress tests
   has_pages: false
+- slug: selectively-run-test-cases
+  name: Selectively run test cases
+  has_pages: false
 - slug: test-suite-and-test-case
   name: Test Suite and Test Case
   has_pages: false

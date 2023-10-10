@@ -15,8 +15,8 @@ We can divide our test case into three to four logical parts.
 
 The simplest example could be to write a test case to add a customer:
 
-```javascript
-describe("Customers", () => {
+```js
+describe("Customers", { tags: ["review", "nightly"] }, () => {
   beforeEach(() => {
     /* Setup */
     //navigate to customers page
@@ -26,7 +26,7 @@ describe("Customers", () => {
     /* Teardown if any */
   });
 
-  it("should add a customer operations", () => {
+  test("should add a customer operations", () => {
     /* Exercise */
     // Commands to add customer
     /* Assertion */
@@ -68,7 +68,7 @@ import {
   navigateToEditTaskPage,
 } from "utils/defaultTasks";
 
-describe("New task", () => {
+describe("New task", { tags: ["review", "nightly"] }, () => {
   const taskName = fake.uniqueDepartment;
   const editTaskName = fake.uniqueDepartment;
 
@@ -85,7 +85,7 @@ describe("New task", () => {
     navigateToNewTaskPage();
   });
 
-  it("should verify new task operations", () => {
+  test("should verify new task operations", () => {
     // verify cancel button functionality
     cy.clearAndType(tasksSelectors.nameTextField, taskName);
     cy.get(tasksSelectors.cancelButton).click();

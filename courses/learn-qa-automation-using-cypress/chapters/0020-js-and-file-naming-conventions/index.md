@@ -20,7 +20,7 @@
    describing what the test is about.
 
 ```javascript
-it("should change articles state", { tags: "Fixed" }, () => {
+it("should change articles state", () => {
     // verify cancel button functionality of published state modal
     ...
 });

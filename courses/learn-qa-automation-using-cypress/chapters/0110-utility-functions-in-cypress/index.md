@@ -23,7 +23,7 @@ This is how we can use utility function in our test case:
 import { loginViaUI } from "Support/utils/common.js";
 
 describe("Login", () => {
-  it("should allow user to log in", () => {
+  test("should allow user to log in", () => {
     loginViaUI("username", "password");
   });
 });

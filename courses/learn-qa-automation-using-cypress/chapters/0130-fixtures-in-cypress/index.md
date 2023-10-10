@@ -42,7 +42,7 @@ This is how we will use the fixture file in our test:
 
 ```javascript
 describe("Login", () => {
-  it("should be able to login", () => {
+  test("should be able to login", () => {
     cy.visit("/");
     cy.fixture("credentials/admin").then(user => {
       cy.get("[data-cy='login-email-field']").type(user.email);
@@ -69,7 +69,7 @@ describe("Admin login", () => {
     });
   });
 
-  it("should be able to login", () => {
+  test("should be able to login", () => {
     cy.get("[data-cy='login-email-field']").type(userDetails.email);
     cy.get("[data-cy='login-password-field']").type(userDetails.password);
     cy.get("[data-cy='submit-button']").click();
@@ -91,7 +91,7 @@ describe("Admin login", () => {
     cy.fixture("credentials/admin").as("userDetails");
   });
 
-  it("should be able to login", () => {
+  test("should be able to login", () => {
     cy.get("@userDetails").then(userDetails => {
       cy.get("[data-cy='login-email-field']").type(userDetails.email);
       cy.get("[data-cy='login-password-field']").type(userDetails.password);
