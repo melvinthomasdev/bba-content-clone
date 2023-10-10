@@ -139,6 +139,46 @@ the previous command.
 Usually, contains returns the deepest element with the text with some
 [exceptions](https://docs.cypress.io/api/commands/contains#Preferences).
 
+**_When should we use cy.contains()?_**
+Sometimes, we need to select element with the text present in the page. In such
+scenarios, we might need to use `cy.contains()`. However, we need to ensure that
+the selected text is always present.
+
+If the content of the element gets changed, would we want the test to fail?
+
+- If the answer is yes: use cy.contains()
+- If the answer is no: use a data attribute.
+
+```javascript
+// Incorrect usage
+cy.contains("[data-cy='sign-up-link']", "Sign up for free").click();
+/* Here "Sign up for free" is a constant text and it's not going to change.
+ In this case, we can use cy.get() itself. */
+
+
+// Correct usage
+const memberName = "John Doe";
+...
+cy.contains("[data-cy='member-list-items']", memberName).should("be.visible");
+cy.contains("[data-cy='member-list-items']", memberName).click();
+```
+
+Here our test fails if the content of an element within the selected DOM element
+doesn't contain the string "Sign up for free". Hence we can ensure the test
+passes only when an element containing the necessary content exists within the
+selected DOM element.
+
+**Use `cy.contains()` along with a selector**
+
+```javascript
+// Incorrect method
+const memberName = "John Doe";
+cy.contains(memberName).click(); // Using cy.contains() without a selector
+
+// Correct method
+cy.contains("[data-cy='member-list-items']", memberName).click(); // Using cy.contains() with a selector
+```
+
 ### clearCookie
 
 Used to clear a specific browser cookie.

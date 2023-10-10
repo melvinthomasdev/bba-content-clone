@@ -25,7 +25,7 @@ describe("Test suite", () => {
   **_describe_** can have one or more **_it_** blocks.
 
 ```javascript
-describe("Test suite", () => {
+describe("Members", () => {
   beforeEach(() => {
     ....
   });
@@ -34,7 +34,7 @@ describe("Test suite", () => {
     ....
   })
 
-  it("test case", () => {
+  it("should verify member operations", () => {
     .....
 
   });

@@ -30,26 +30,6 @@ it will automatically prefer elements with: data-cy data-test
 We shall use data-cy to keep the consistency because it has the highest
 priority.
 
-**_When should we use cy.contains()?_**
-
-Sometimes, we need to select element with the text present in the page. In such
-scenarios, we might need to use `cy.contains()`. However, we need to ensure that
-the selected text is always present.
-
-If the content of the element gets changed, would we want the test to fail?
-
-- If the answer is yes: use cy.contains()
-- If the answer is no: use a data attribute.
-
-```javascript
-cy.contains("[data-cy='sign-up-link']", "Sign up for free").click();
-```
-
-Here our test fails if the content of an element within the selected DOM element
-doesn't contain the string "Sign up for free". Hence we can ensure the test
-passes only when an element containing the necessary content exists within the
-selected DOM element.
-
 ## Don’t assign command’s return values
 
 Don’t assign command’s return values to variables.
@@ -60,12 +40,12 @@ Don’t assign command’s return values to variables.
 
 ```javascript
 // DON’T DO THIS. IT DOES NOT WORK
-const a = cy.get("a");
+const getAnchor = cy.get("a");
 
 cy.visit("https://example.cypress.io");
 
 // nope, it fails
-a.first().click();
+getAnchor.first().click();
 ```
 
 ## Don't test external sites
@@ -85,7 +65,7 @@ a.first().click();
 
 ## Avoid single assertion tests
 
-We are testing behavior of the application, we are doing integration testing,
+We are testing the behavior of the application, which is an end-to-end testing,
 not unit testing.
 
 - **Anti-Pattern:** Acting like we're writing unit tests.
@@ -147,28 +127,6 @@ surrounding elements first before actually asserting the element. And even if it
 still doesn't work, we can try a plugin called
 [Cypress Real Events](https://github.com/dmtrKovalenko/cypress-real-events).
 
-## Use `cy.contains()` along with a selector
-
-When we use `cy.contains()` to select an element with some text or to assert.
-
-For example,
-
-```javascript
-cy.contains("Sign up for free").click();
-```
-
-But if the `Sign up for free` link is present multiple times on the same page,
-our test case might fail. To avoid our test case from failing, we can add a
-'selector' with `cy.contains()`, so cypress would know exactly which string to
-consider. So whenever possible pass the selector with the text inside the
-contains function.
-
-For example,
-
-```javascript
-cy.contains("[data-cy='sign-up-link']", "Sign up for free").click();
-```
-
 ## Avoid chaining of array elements with `.eq()`, `.first()` etc. in the test case
 
 Whenever there's an array of elements and we want to use any specific element
@@ -209,24 +167,6 @@ cy.get(clientsPageConfig.submitButton).scrollIntoView().click();
 cy.get(clientsPageConfig.submitButton).scrollIntoView({ easing: "linear" });
 ```
 
-## Use `loginPath` instead of `rootUrl` for login test
-
-While writing login test visit **loginPath** instead of **rootUrl** as visiting
-**rootUrl** for testing login functionality might not work in every environment
-because not all application redirects to the login page when visiting the
-rootUrl. Even if it redirects to login, we can still reduce the time required
-for the login page redirection.
-
-```javascript
-import { loginPath } from "Constants/routes";
-
-describe("Login", () => {
-  beforeEach(() => {
-    cy.visit(loginPath);
-  });
-});
-```
-
 ## No need of common assertions for actionable elements before performing actions
 
 Whenever we want to perform any action on elements like button or input field
@@ -264,8 +204,8 @@ We can set this configuration in cypress.json like this.
 ```json
 {
   "retries": {
-    "runMode": 2,
-    "openMode": 2
+    "runMode": 1,
+    "openMode": 0
   }
 }
 ```

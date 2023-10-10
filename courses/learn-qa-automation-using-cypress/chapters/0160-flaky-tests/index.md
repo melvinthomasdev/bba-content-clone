@@ -33,10 +33,9 @@ cy.get("next-btn").click();
 
 //Correct
 
-cy.intercept("request-url").as("request");
+cy.interceptApi("request");
 cy.get("btn").click();
 cy.wait("@request");
-
 cy.get("next-btn").click();
 ```
 

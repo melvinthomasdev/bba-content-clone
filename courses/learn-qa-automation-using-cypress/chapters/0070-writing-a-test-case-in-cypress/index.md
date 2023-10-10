@@ -17,14 +17,20 @@ The simplest example could be to write a test case to add a customer:
 
 ```javascript
 describe("Customers", () => {
-  it("should add a customer", () => {
+  beforeEach(() => {
     /* Setup */
     //navigate to customers page
+  });
+
+  afterEach(() => {
+    /* Teardown if any */
+  });
+
+  it("should add a customer operations", () => {
     /* Exercise */
     // Commands to add customer
     /* Assertion */
     // Assert that customer is added.
-    /* Teardown if any */
   });
 });
 ```

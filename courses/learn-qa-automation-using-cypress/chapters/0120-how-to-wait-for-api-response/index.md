@@ -149,23 +149,25 @@ Let's create a custom command for this.
 
 ```js
 Cypress.Commands.add("interceptApi", alias => {
-  cy.intercept({ url: "api/v1/**", times: 1 }).as(alias);
+  cy.intercept({ url: "api/v1/**", times: 1, resourceType: "xhr" }).as(alias);
 });
 ```
 
-Now we can use it like this.
+Here, we are using the prop `resourceType` with value `xhr` to make sure
+that we are intercepting only XHR requests.
+Now we can use the custom command like this.
 
 ```js
 // Proper method
 
 cy.interceptApi("searchRequest")
-....
+cy.clearAndType(commonSelectors.searchField, "science");
 cy.wait("@searchRequest");
 ....
 ....
-cy.interceptApi("fetchRequest")
-....
-cy.wait("@fetchRequest");
+cy.interceptApi("createPost")
+cy.get(commonSelectors.saveButton).click();
+cy.wait("@createPost");
 ```
 
 An interesting thing about the `times` prop is that if we aren't defining such a
@@ -318,7 +320,29 @@ cy.wait("@updateCommentsRequest");
 // correct method
 
 cy.interceptApi("updateRequest", 3);
-// command to click submit button
-...
+cy.get(commonSelectors.submitButton).click();
+cy.waitForMultipleRequest("@updateRequest", 3);
+```
+
+```javascript
+// incorrect method - intercepting all the requests at once
+cy.interceptApi("allRequests", 5);
+cy, get(blogSelectors.blogsList).click();
+cy.wait("@allRequests");
+cy.get(blogSelectors.addNewPost).click();
+cy.clearAndType(blogSelectors.titleField, "My first blog");
+cy.clearAndType(blogSelectors.descriptionField, "My first blog description");
+cy.get(commonSelectors.submitButton).click();
+cy.waitForMultipleRequest("@updateRequest", 3);
+
+// correct method - intercepting requests separately
+cy.interceptApi("fetchPosts");
+cy, get(blogSelectors.blogsList).click();
+cy.wait("@fetchPosts");
+cy.get(blogSelectors.addNewPost).click();
+cy.clearAndType(blogSelectors.titleField, "My first blog");
+cy.clearAndType(blogSelectors.descriptionField, "My first blog description");
+cy.interceptApi("updateRequest", 3);
+cy.get(commonSelectors.submitButton).click();
 cy.waitForMultipleRequest("@updateRequest", 3);
 ```
