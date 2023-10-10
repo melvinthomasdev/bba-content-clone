@@ -216,7 +216,24 @@ For example, we might have added some CSS which is for styling the result. It mi
 #### 4.3. `<panel foldLines="1-3, 4-9">`
 Similar to `codeblock`, the `foldLines` attribute is used to fold the lines of code on default load of the editor.
 
-### 5. Writing code snippet
+### 5. `domtestevents`
+
+When logic related to events like onClick , onHover , onChange etc. needs to be evaluated, we can use `<domtestevents>`
+
+#### 5.1. `<event>`
+Code present in `<event>` will be executed separately on both user code and solution code. After that, the final result will be compared and used for evaluation.
+
+#### 5.2. Usage
+```js
+<domtestevents>
+<event>
+document.getElementById('button').click();
+</event>
+</domtestevents>
+```
+In the above code snippet, we are adding an event to click the element with id as `button`. This will ensure the button will be clicked and the onClick action of that button will be performed before evaluation.
+
+### 6. Writing code snippet
 
 While writing code snippet you should mention the language name, for example **javascript**
 should be ` ```js `.
