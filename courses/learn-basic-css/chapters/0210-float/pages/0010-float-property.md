@@ -9,7 +9,7 @@ wrap around it:
 <code>
 <panel language="html">
 <div>
-  <img src="har-ki-doon-valley-uttarakhand.jpg" alt="Har ki Doon Valley Uttarakhand">
+  <img src="https://ucarecdn.com/55b63247-f656-40c6-bc5d-a21deb8ce149/" alt="Har ki Doon Valley Uttarakhand">
   <h1>Har Ki Doon</h2>
   <p>
     Har Ki Doon or Har Ki Dun is a cradle-shaped hanging valley in the Garhwal Himalayas of Uttarakhand, India. The region is surrounded with green Bugyals (High Altitude Meadows). It is surrounded by snow-covered peaks and alpine vegetation. It is connected to Baspa Valley by the Borasu Pass. (Credits: Wikipedia)

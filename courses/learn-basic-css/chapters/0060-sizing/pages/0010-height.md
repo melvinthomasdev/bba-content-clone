@@ -12,7 +12,7 @@ the height of the immediate parent element.
   The div given below is set to 200px height and the image is set to 50% of the height of the div
 </p>
 <div>
-  <img src="fort-kochi-beach.jpg" alt="Fort Kochi Beach">
+  <img src="https://ucarecdn.com/239a6179-8e6a-4aca-ac0a-aa93e6881d1e/" alt="Fort Kochi Beach">
 </div>
 </panel>
 <panel language="css">

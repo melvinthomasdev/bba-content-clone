@@ -9,8 +9,8 @@ the second image on top of the third one:
 <code>
 <panel language="html">
 <img id="first" src="har-ki-doon-valley-uttarakhand-square.jpg" alt="Har ki Doon Valley Uttarakhand">
-<img id="second" src="aliyar-dam-pollachi.jpg" alt="Aliyar Dam Pollachi">
-<img id="third" src="fort-kochi-beach-square.jpg" alt="Fort Kochi Beach">
+<img id="second" src="https://ucarecdn.com/64bbfc5d-0ecf-41ba-a724-85bd235b47c6/" alt="Aliyar Dam Pollachi">
+<img id="third" src="https://ucarecdn.com/239a6179-8e6a-4aca-ac0a-aa93e6881d1e/" alt="Fort Kochi Beach">
 </panel>
 <panel language="css">
 img {

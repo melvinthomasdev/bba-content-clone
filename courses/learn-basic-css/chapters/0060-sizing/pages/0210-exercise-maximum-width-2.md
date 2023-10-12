@@ -3,7 +3,7 @@ Give a maximum width of `150px` to the `img` element.
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<img src="mumbai-02.jpg" alt="Mumbai">
+<img src="https://ucarecdn.com/e2eb3032-ba00-4896-ae03-87d75ab63871/" alt="Mumbai">
 </panel>
 <panel language="css">
 
