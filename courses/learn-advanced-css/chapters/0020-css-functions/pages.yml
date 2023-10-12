@@ -1,0 +1,16 @@
+---
+- title: Open in neetoCode
+  slug: open-in-neeto-code
+  page_type: lesson
+- title: "`attr` Function"
+  slug: attr-function
+  page_type: lesson
+- title: Exercise - `attr` Function
+  slug: exercise-attr-function
+  page_type: exercise
+- title: "`calc` Function"
+  slug: calc-function
+  page_type: lesson
+- title: Exercise - `calc` Function
+  slug: exercise-calc-function
+  page_type: exercise
