@@ -9,7 +9,7 @@ Let us take a look at an
 incorrect form structure example:
 <codeblock language="html" type="lesson">
 <code>
-<form action="/submit" method="post">
+<form>
   <h2>Personal Information</h2>
   <p>First Name:</p>
   <input id="first-name" type="text" />
@@ -27,7 +27,7 @@ Let us have a look at the same example
 with correct form structure:
 <codeblock language="html" type="lesson">
 <code>
-<form action="/submit" method="post">
+<form>
   <caption>Personal Information</caption>
   <br>
   <label for="first-name">First Name:</label>

@@ -1,5 +1,4 @@
 Create a `select` element.
-Give it a `name` attribute with the value **currencies**.
 Add three options in it:
 - United States Dollar
 - Euro
@@ -21,7 +20,7 @@ should be **USD** for United States Dollar,
 <solution>
 <form>
   <!-- Write code here -->
-  <select name="currencies">
+  <select>
     <option value="USD">United States Dollar</option>
     <option value="EUR">Euro</option>
     <option value="JPY">Japanese Yen</option>

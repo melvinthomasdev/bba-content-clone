@@ -1,7 +1,6 @@
 Create a `select` element with 3 different
-options. Give the `select` element a **name**
-of **countries**. Give the 3 options inside the
-select element, values of **Nepal**, **Bhutan**
+options. Add 3 options with values of
+**Nepal**, **Bhutan**
 and **Namibia**.
 
 Also, make sure that the text inside the options
@@ -16,7 +15,7 @@ matches the values.
 
 <solution>
 <form>
-  <select name="countries">
+  <select>
     <option value="Nepal">Nepal</option>
     <option value="Bhutan">Bhutan</option>
     <option value="Namibia">Namibia</option>

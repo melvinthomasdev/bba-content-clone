@@ -4,18 +4,16 @@ set to "#" and the method to "post".
 - Below the heading add a label `Username:`
 with **for** attribute set as `username`.
 - Following the label add a text field
-with **id**, **name** and **placeholder**
+with **id** and **placeholder**
 attributes set as `username`.
 
 - Below the text field add a label `Password:`
-- Add password input field with **name**
-and
-**placeholder** attributes as `password`.
+- Add password input field with **placeholder**
+attribute as `password`.
 
 - Below password field add label `Address:`.
-- Add a textarea field with **name**
-and **placeholder** attributes set
-as `address`.
+- Add a textarea field with **placeholder**
+attribute set as `address`.
 - Add **rows** attribute set as `4`
 and
 **cols** set as `50`.
@@ -23,7 +21,6 @@ and
 - Below the address field add
 a label `Favourite Ice Cream Flavour:`
 - Create a dropdown menu for users
-**name** attribute set as `ice-cream`
 to select their favorite ice cream flavors.
 
 - Selections should have options for
@@ -37,8 +34,7 @@ the following flavours:
 as the flavour.
 
 - Add a label `Phone No.` and a telephone field
-with **name** and **placeholder** attributes
-set as `phone-no`.
+with **placeholder** attribute set as `phone-no`.
 - Below the phone number field add two buttons
 one with type `reset`
 and
@@ -47,7 +43,7 @@ another with type `submit`.
 <codeblock language="html" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 <panel language="html">
-# Write code below
+<!-- Write code below -->
 </panel>
 <panel language="css" hidden="true">
 form {
@@ -90,19 +86,20 @@ button[type="reset"] {
 </panel>
 </code>
 <solution>
+<!-- Write code below -->
 <form action="#" method="post">
   <caption>Identity</caption>
   <label for="username">Username:</label>
-  <input type="text" id="username" name="username" placeholder="username" />
+  <input type="text" id="username" placeholder="username" />
 
   <label>Password:</label>
-  <input type="password" name="password" placeholder="password" />
+  <input type="password" placeholder="password" />
 
   <label>Address:</label>
-  <textarea name="address" rows="4" cols="50" placeholder="address"></textarea>
+  <textarea rows="4" cols="50" placeholder="address"></textarea>
 
   <label>Favourite Ice Cream Flavour:</label>
-  <select name="ice-cream">
+  <select>
     <option value="Chocolate">Chocolate</option>
     <option value="Vanilla">Vanilla</option>
     <option value="Strawberry">Strawberry</option>
@@ -111,7 +108,7 @@ button[type="reset"] {
   </select>
 
   <label>Phone No.</label>
-  <input type="tel" name="phone-no" placeholder="phone-no" />
+  <input type="tel" placeholder="phone-no" />
 
   <button type="reset">Reset</button>
   <button type="submit">Submit</button>

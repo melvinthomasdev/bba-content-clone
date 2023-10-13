@@ -4,7 +4,7 @@ the value linked to that particular choice.
 <codeblock language="html" type="lesson">
 <code>
 <form>
-  <select name="fruits">
+  <select>
     <option value="apple">Apple</option>
     <option value="orange">Orange</option>
     <option value="mango">Mango</option>
