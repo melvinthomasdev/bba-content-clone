@@ -12,8 +12,8 @@ row and gives your code a good structure.
   <caption>Books</caption>
   <thead>
     <tr>
-        <th>Type</th>
-        <th>Count</th>
+      <th>Type</th>
+      <th>Count</th>
     </tr>
   </thead>
   <tr>

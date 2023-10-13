@@ -34,7 +34,6 @@ to an input field.
   <h4>Credit Card Information:</h4>
   <label>Credit Card Number: </label>
   <input type="text" placeholder="1234 5678 9012 3456"><br>
-  <button type="submit">Submit</button>
 </form>
 </code>
 </codeblock>

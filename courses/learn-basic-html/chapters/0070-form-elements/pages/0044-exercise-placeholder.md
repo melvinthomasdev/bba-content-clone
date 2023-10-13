@@ -8,8 +8,7 @@ Add `<input>` elements with
 <code>
 <form>
   <h2>Login</h2>
-  <!-- Write code here -->
-  <button type="submit">Submit</button>
+  <!-- Write code below -->
 </form>
 </code>
 
@@ -18,7 +17,6 @@ Add `<input>` elements with
   <h2>Login</h2>
   <input placeholder="First Name"/>
   <input placeholder="Last Name"/>
-  <button type="submit">Submit</button>
 </form>
 </solution>
 </codeblock>

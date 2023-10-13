@@ -11,8 +11,8 @@ give the table's HTML, a proper structure.
   <caption>Books</caption>
   <thead>
     <tr>
-        <th>Type</th>
-        <th>Count</th>
+      <th>Type</th>
+      <th>Count</th>
     </tr>
   </thead>
   <tbody>
