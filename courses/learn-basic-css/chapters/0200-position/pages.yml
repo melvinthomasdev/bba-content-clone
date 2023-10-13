@@ -53,6 +53,9 @@
 - title: Position Sticky
   slug: position-sticky
   page_type: lesson
+- title: Position Sticky with Offsets
+  slug: position-sticky-with-offsets
+  page_type: lesson
 - title: Position Sticky within Parent
   slug: position-sticky-within-parent
   page_type: lesson
