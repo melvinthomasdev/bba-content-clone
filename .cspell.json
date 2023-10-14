@@ -784,7 +784,18 @@
     "Zeyada",
     "Kowalski",
     "Pacifico",
-    "Rainforest"
+    "Rainforest",
+    "Zanskar",
+    "Munnar",
+    "Aliyar",
+    "Pollachi",
+    "Garhwal",
+    "Bugyals",
+    "Baspa",
+    "Borasu",
+    "roadtrip",
+    "Jawa",
+    "clearfix"
   ],
   // flagWords - list of words to be always considered incorrect
   // This is useful for offensive words and common spelling errors.

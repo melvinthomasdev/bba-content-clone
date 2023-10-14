@@ -7,8 +7,8 @@ for the **email** text input:
 <code>
 <panel language="html">
 <form>
-    <input type="email" placeholder="Email ID"><br>
-    <input type="button" value="Register">
+  <input type="email" placeholder="Email ID"><br>
+  <input type="button" value="Register">
 </form>
 </panel>
 <panel language="css">

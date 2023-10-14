@@ -16,11 +16,11 @@ value decreases it.
 </panel>
 <panel language="css">
 h1 {
-    letter-spacing: -3px;
-  }
-  p {
-    letter-spacing: 0.2em;
-  }
+  letter-spacing: -3px;
+}
+p {
+  letter-spacing: 0.2em;
+}
 </panel>
 </code>
 </codeblock>

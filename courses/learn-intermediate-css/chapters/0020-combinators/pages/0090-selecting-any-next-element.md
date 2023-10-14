@@ -23,18 +23,18 @@ descendant of the parent of the `h1` element:
 <code>
 <panel language="html">
 <div>
-    <p>
-    Source: Wikipedia
-    </p>
-    <h1>Lotus</h1>
-    <span>Binomial name: Nelumbo nucifera</span>
-    <p>
-    Lotus plants are adapted to grow in the flood plains of slow-moving rivers and delta areas. Stands of lotus drop hundreds of thousands of seeds every year to the bottom of the pond.
-    </p>
-    <p>
-    While some sprout immediately, and most are eaten by wildlife, the remaining seeds can remain dormant for an extensive period of time as the pond silts in and dries out.
-    <p>Test</p>
-    </p>
+  <p>
+  Source: Wikipedia
+  </p>
+  <h1>Lotus</h1>
+  <span>Binomial name: Nelumbo nucifera</span>
+  <p>
+  Lotus plants are adapted to grow in the flood plains of slow-moving rivers and delta areas. Stands of lotus drop hundreds of thousands of seeds every year to the bottom of the pond.
+  </p>
+  <p>
+  While some sprout immediately, and most are eaten by wildlife, the remaining seeds can remain dormant for an extensive period of time as the pond silts in and dries out.
+  <p>Test</p>
+  </p>
 </div>
 <p>More flowers coming soon</p>
 </panel>

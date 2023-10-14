@@ -3,7 +3,7 @@ Give an oval shape to this image:
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<img src="waterfall.jpg" alt="Waterfall">
+<img src="https://ucarecdn.com/e589a9db-3e4a-427f-b580-be77f0d5d60b/" alt="Waterfall">
 </panel>
 <panel language="css">
 img {

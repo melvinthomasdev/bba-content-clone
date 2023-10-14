@@ -7,8 +7,8 @@ any of the sizing units.
 <code>
 <panel language="html">
 <form>
-    <input type="text" placeholder="Your Name">
-    <textarea placeholder="Your Bio"></textarea>
+  <input type="text" placeholder="Your Name">
+  <textarea placeholder="Your Bio"></textarea>
 </form>
 </panel>
 <panel language="css">

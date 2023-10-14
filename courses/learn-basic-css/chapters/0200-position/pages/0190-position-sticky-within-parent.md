@@ -13,24 +13,24 @@ given below to see the difference:
 </panel>
 <panel language="css">
 body {
-      margin: 0;
-      min-height: 200vh;
-    }
+  margin: 0;
+  min-height: 200vh;
+}
 
-    #parent {
-      width: 250px;
-      height: 250px;
-      background-color: teal;
-      margin-top: 50px;
-    }
+#parent {
+  width: 250px;
+  height: 250px;
+  background-color: teal;
+  margin-top: 50px;
+}
 
-    #sticky {
-      background-color: orange;
-      width: 100px;
-      height: 100px;
-      position: sticky;
-      top: 0px;
-    }
+#sticky {
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  position: sticky;
+  top: 0px;
+}
 </panel>
 </code>
 </codeblock>

@@ -4,18 +4,18 @@ Remove the marker for these list items:
 <code>
 <panel language="html">
 <h3>
-    Planets of the Solar system
-  </h3>
-  <ul>
-    <li>Mercury</li>
-    <li>Venus</li>
-    <li>Earth</li>
-    <li>Mars</li>
-    <li>Jupiter</li>
-    <li>Saturn</li>
-    <li>Uranus</li>
-    <li>Neptune</li>
-  </ul>
+  Planets of the Solar system
+</h3>
+<ul>
+  <li>Mercury</li>
+  <li>Venus</li>
+  <li>Earth</li>
+  <li>Mars</li>
+  <li>Jupiter</li>
+  <li>Saturn</li>
+  <li>Uranus</li>
+  <li>Neptune</li>
+</ul>
 </panel>
 <panel language="css">
 

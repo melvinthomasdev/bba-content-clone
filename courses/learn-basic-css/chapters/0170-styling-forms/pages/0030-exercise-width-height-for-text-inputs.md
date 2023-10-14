@@ -5,8 +5,8 @@ Give a height of `30px` to the input and `80px` to the textarea:
 <code>
 <panel language="html">
 <form>
-    <input type="email" placeholder="Email ID"><br>
-    <textarea placeholder="Comment"></textarea>
+  <input type="email" placeholder="Email ID"><br>
+  <textarea placeholder="Comment"></textarea>
 </form>
 </panel>
 <panel language="css">

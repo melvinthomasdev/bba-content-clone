@@ -20,24 +20,24 @@ gained so far, do the following:
 <panel language="html">
 <div>
   <ol class="ice-cream">
-      <li>Butterscotch</li>
-      <li>Vanilla</li>
-      <li>Chocolate Chip</li>
-      <li>Strawberry</li>
-      <li>Pista</li>
+    <li>Butterscotch</li>
+    <li>Vanilla</li>
+    <li>Chocolate Chip</li>
+    <li>Strawberry</li>
+    <li>Pista</li>
   </ol>
 
   <ul class="sports">
-      <li>Football</li>
-      <li>Hockey</li>
-      <li>Volleyball</li>
-      <li>Basketball</li>
+    <li>Football</li>
+    <li>Hockey</li>
+    <li>Volleyball</li>
+    <li>Basketball</li>
   </ul>
 
   <ul class="footer">
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#" >Home</a></li>
-      <li><a href="#">About</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#" >Home</a></li>
+    <li><a href="#">About</a></li>
   </ul>
 </div>
 </panel>

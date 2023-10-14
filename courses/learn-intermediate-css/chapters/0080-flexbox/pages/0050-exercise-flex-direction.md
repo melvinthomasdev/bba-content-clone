@@ -16,7 +16,7 @@ with the help of the
   </p>
 </article>
 <article class="even">
-  <img src="waterfall.jpg" alt="Waterfall">
+  <img src="https://ucarecdn.com/e589a9db-3e4a-427f-b580-be77f0d5d60b/" alt="Waterfall">
   <p>
     A waterfall is a point in a river or stream where water flows over a vertical drop or a series of steep drops. Waterfalls also occur where meltwater drops over the edge of a tabular iceberg or ice shelf.
   </p>

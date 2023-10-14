@@ -26,11 +26,11 @@ relative element in the example given below:
 </panel>
 <panel language="css">
 #relative {
-    position: relative;
-    padding: 10px;
-    background-color: orange;
-    top: 60px;
-  }
+  position: relative;
+  padding: 10px;
+  background-color: orange;
+  top: 60px;
+}
 </panel>
 </code>
 </codeblock>

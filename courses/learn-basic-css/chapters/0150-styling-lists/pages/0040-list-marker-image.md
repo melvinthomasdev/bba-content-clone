@@ -6,14 +6,14 @@ place of the list item marker:
 <code>
 <panel language="html">
 <h3>
-    Most spoken languages of the world
-  </h3>
-  <ul>
-    <li>English</li>
-    <li>Mandarin Chinese</li>
-    <li>Hindi</li>
-    <li>Spanish</li>
-  </ul>
+  Most spoken languages of the world
+</h3>
+<ul>
+  <li>English</li>
+  <li>Mandarin Chinese</li>
+  <li>Hindi</li>
+  <li>Spanish</li>
+</ul>
 </panel>
 <panel language="css">
 ul {

@@ -3,7 +3,7 @@ Using the `border` shorthand property, set a `solid` border of `10px` of colour 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<img src="pangarchulla-peak-joshimath.jpg" alt="Pangarchulla Peak Joshimath">
+<img src="https://ucarecdn.com/c7d28661-e645-4717-a809-532f1550d68b/" alt="Pangarchulla Peak Joshimath">
 </panel>
 <panel language="css">
 img {
