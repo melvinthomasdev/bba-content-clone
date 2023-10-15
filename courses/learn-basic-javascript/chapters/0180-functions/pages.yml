@@ -1,6 +1,12 @@
 ---
+- title: Introduction to Functions
+  slug: intro-to-functions
+  page_type: lesson
 - title: Define a Function
   slug: define-a-function
+  page_type: lesson
+- title: Function Expression
+  slug: function-expression
   page_type: lesson
 - title: Use the Arrow Function
   slug: use-the-arrow-function
