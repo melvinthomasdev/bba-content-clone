@@ -4,7 +4,7 @@ set to "#" and the method to "post".
 - Below the heading add a label `Username:`
 with **for** attribute set as `username`.
 - Following the label add a text field
-with **id** and **placeholder**
+with **placeholder**
 attributes set as `username`.
 
 - Below the text field add a label `Password:`
@@ -90,7 +90,7 @@ button[type="reset"] {
 <form action="#" method="post">
   <caption>Identity</caption>
   <label for="username">Username:</label>
-  <input type="text" id="username" placeholder="username" />
+  <input type="text" placeholder="username" />
 
   <label>Password:</label>
   <input type="password" placeholder="password" />

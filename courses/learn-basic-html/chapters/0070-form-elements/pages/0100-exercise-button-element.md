@@ -9,8 +9,8 @@ Add a `<button>` element with the text **Submit** below the `<input>` in the cod
 
 <solution>
 <form>
-    <input type="text">
-    <button>Submit</button>
+  <input type="text">
+  <button>Submit</button>
 </form>
 </solution>
 </codeblock>

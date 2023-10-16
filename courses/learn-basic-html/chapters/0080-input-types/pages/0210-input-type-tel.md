@@ -6,7 +6,7 @@ number.
 <code>
 <form>
   <label for="contact">Enter Telephone No.:</label>
-  <input id="contact" type="tel">
+  <input type="tel">
 </form>
 </code>
 </codeblock>

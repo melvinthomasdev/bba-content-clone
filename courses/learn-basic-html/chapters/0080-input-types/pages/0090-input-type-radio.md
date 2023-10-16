@@ -5,13 +5,13 @@
 <form>
   <label>Can you vote?</label>
   <br>
-  <input type="radio" id="vote1" value="no" name="vote">
+  <input type="radio" value="no" name="vote">
   <label>No</label>
   <br>
-  <input type="radio" id="vote2" value="yes" name="vote">
+  <input type="radio" value="yes" name="vote">
   <label>Yes</label>
   <br>
-  <input type="radio" id="vote3" value="maybe" name="vote">
+  <input type="radio" value="maybe" name="vote">
   <label>Maybe!</label>
 </form>
 </code>
