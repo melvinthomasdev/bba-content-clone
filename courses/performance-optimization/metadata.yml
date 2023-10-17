@@ -8,3 +8,4 @@ custom_data:
   courseType: lesson
 home_logo: performance-optimization.png
 logo: performance-optimization.png
+show_reset_button: false

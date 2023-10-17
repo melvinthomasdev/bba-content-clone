@@ -8,3 +8,4 @@ custom_data:
   courseType: lesson
 home_logo: how-credit-card-processing-works.png
 logo: how-credit-card-processing-works.png
+show_reset_button: false

@@ -8,3 +8,4 @@ custom_data:
   courseType: lesson
 home_logo: qa-automation-using-cypress-logo.png
 logo: qa-automation-using-cypress-logo.png
+show_reset_button: false

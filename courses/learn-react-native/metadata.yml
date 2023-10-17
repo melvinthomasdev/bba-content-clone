@@ -8,3 +8,4 @@ custom_data:
   courseType: lesson
 home_logo: learn-react-native.png
 logo: learn-react-native.png
+show_reset_button: false

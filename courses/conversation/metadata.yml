@@ -8,3 +8,4 @@ custom_data:
   courseType: lesson
 home_logo: conversation-with-api-builders.png
 logo: conversation-with-api-builders.png
+show_reset_button: false

@@ -8,3 +8,4 @@ custom_data:
   courseType: lesson
 home_logo: handling-stripe-subscriptions.png
 logo: handling-stripe-subscriptions.png
+show_reset_button: false
