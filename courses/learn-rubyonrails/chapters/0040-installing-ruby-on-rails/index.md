@@ -1,6 +1,6 @@
 Before moving ahead with this section make sure that you are using the Intel
 build of brew. For that, you can to refer to
-[Uninstall arm64 brew](/learn-rubyonrails/setting-up-mac#uninstall-arm64-brew)
+[Uninstall arm64 brew](/learn-rubyonrails/setting-up-macos#uninstall-arm64-brew)
 section of the book. Also make sure you had installed Xcode command line tools
 as we had mentioned in previous chapter.
 

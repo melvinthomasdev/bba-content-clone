@@ -1,14 +1,14 @@
 In this chapter, we will learn about the basics of some components and hooks
 provided by the `react-router-dom` library. We will be using the `v5` version of
-the library in this book. It should be noted that the latest version `v6`, whose
-the default version that gets installed, differs from the previous version in
-terms of the functionality of some components.
+the library in this book. It's worth mentioning that the latest version, `v6`,
+which is the default installation, features functional differences in some
+components compared to the previous version.
 
 ## BrowserRouter component
 
 The `BrowserRouter` is a [router](https://v5.reactrouter.com/core/api/Router)
 implementation that uses HTML5 history API to keep the UI in sync with the URL.
-It should be a parent component used to store all the other components.
+It is the parent component used to store all the other components.
 
 Usually, `BrowserRouter` is used in the main component or at the entry point of
 the application. All the other components are added as the children for the
