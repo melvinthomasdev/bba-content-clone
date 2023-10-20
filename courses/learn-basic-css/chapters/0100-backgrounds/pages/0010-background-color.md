@@ -1,8 +1,8 @@
-We can add a background color
+We can add a background colour
 to an HTML element using the
 `background-color` property.
 
-Color can be specified using color names,
+Colour can be specified using colour names,
 HEX values or RGB values.
 
 <codeblock language="css" type="lesson">

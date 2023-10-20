@@ -1,4 +1,4 @@
-Add a background color of `#fdba74` to the `div` element:
+Add a background colour of `#fdba74` to the `div` element:
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
