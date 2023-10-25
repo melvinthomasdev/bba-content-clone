@@ -27,7 +27,7 @@ can set the axios headers synchronously.
 Paste the following contents into `App.jsx`:
 
 ```jsx
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {
@@ -101,7 +101,7 @@ import axios from "axios";
 
 axios.defaults.baseURL = "/";
 
-export const setAuthHeaders = (setLoading = () => null) => {
+export const setAuthHeaders = () => {
   axios.defaults.headers = {
     Accept: "application/json",
     "Content-Type": "application/json",
@@ -119,7 +119,7 @@ export const setAuthHeaders = (setLoading = () => null) => {
 };
 ```
 
-`setAuthHeaders` is a function invoked from `App.jsx`.
+`setAuthHeaders` is a function invoked from `application.js`.
 
 The CSRF token will be set in the `X-CSRF-TOKEN` header.
 
@@ -131,39 +131,22 @@ with authentication.
 
 These tokens will then be sent with every request to the backend server.
 
-The `setLoading` function is used to make sure that our `App.jsx` component is
-only rendered once these headers are set.
+Now we need to invoke the `setAuthHeaders` method in `application.js`, as its code executes prior to the initial rendering of the React component, making it the ideal location to handle initializations.
 
-We usually show a page loader while waiting for this process to be completed.
+Fully replace `app/javascript/packs/application.js` with the following code:
 
-Once the headers have been set, `setLoading(false)` removes the page loader and
-renders the desired component.
+```js
+/* eslint no-console:0 */
+// This file is automatically compiled by Webpack, along with any other files
+// present in this directory. You're encouraged to place your actual application logic in
+// a relevant structure within app/javascript and only use these pack files to reference
+// that code so it'll be compiled.
 
-Now we need to invoke this `setAuthHeaders` method from our entry point, which
-is `App.jsx`.
+import "../stylesheets/application.scss";
 
-Add the following code to `App.jsx`:
+const { setAuthHeaders } = require("apis/axios");
 
-```jsx
-import React, { useEffect, useState } from "react";
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
-import { setAuthHeaders } from "apis/axios";
-// previous code if any
-
-const App = () => {
-  const [loading, setLoading] = useState(true);
-  // previous code if any
-
-  useEffect(() => {
-    setAuthHeaders(setLoading);
-  }, []);
-
-  if (loading) {
-    return <h1>Loading...</h1>;
-  }
-
-  // previous code without changes
-};
+setAuthHeaders();
 ```
 
 ## JS Logger
@@ -234,42 +217,26 @@ Typically, you would need to manually add the `js-logger` plugin to your `babel.
   ],
 ```
 
-Then, invoke `initializeLogger()` from `App.jsx` as follows:
+Then, invoke `initializeLogger()` from `application.js` as follows:
 
-```jsx
-// previous imports
-import { initializeLogger } from "common/logger";
+```js
+/* eslint no-console:0 */
+// This file is automatically compiled by Webpack, along with any other files
+// present in this directory. You're encouraged to place your actual application logic in
+// a relevant structure within app/javascript and only use these pack files to reference
+// that code so it'll be compiled.
 
-const App = () => {
-  const [loading, setLoading] = useState(true);
+import "../stylesheets/application.scss";
 
-  useEffect(() => {
-    /*eslint no-undef: "off"*/
-    initializeLogger();
-    setAuthHeaders(setLoading);
-    // logger.info("Never use console.log");
-    // logger.error("Never use console.error");
-  }, []);
+const { setAuthHeaders } = require("apis/axios");
+const { initializeLogger } = require("common/logger");
 
-  if (loading) {
-    return <h1>Loading...</h1>;
-  }
-
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/" render={() => <div>Home</div>} />
-        <Route exact path="/about" render={() => <div>About</div>} />
-      </Switch>
-    </Router>
-  );
-};
-
-export default App;
+initializeLogger();
+setAuthHeaders();
 ```
 
 On running your server, you would see that `js-logger` won't log any of the
-messages in the browser console even if the logger statements are uncommented.
+messages in the browser console even if you add logger statements like `logger.info("Never use console.log");` in the `App.jsx` component.
 The reason is that we haven't mounted the `App.jsx` component into our Rails
 view pipeline yet.
 
@@ -279,8 +246,7 @@ We will talk more the mounting and how to do that in the
 Since no routes or components have been set in the Rails pipeline, it will by
 default show a welcome page that it comes shipped with.
 
-Currently there is no use case of logging from `App.jsx`. Thus we suggest to
-consider the above mentioned logger statements as examples only.
+Currently there is no use case of logging from `App.jsx`.
 
 ## CSRF token authenticity verification error
 
@@ -291,12 +257,6 @@ making requests to Rails server.
 Thus the first point to check would be `axios.js` file and check whether code to
 set default headers have been added or not. Compare your `axios.js` file with
 the code given in the [previous section](#axios-headers-and-defaults).
-
-Once that is verified, the next step is to check `App.jsx`, and verify that
-`setAuthHeaders(setLoading)` has been invoked from `useEffect`.
-
-Please refer the previous sections in this chapter itself to understand how to
-set Axios headers.
 
 ## Aliases
 

@@ -335,38 +335,20 @@ export { Login, Signup };
 
 then open `app/javascript/src/App.jsx` file and add the following lines:
 
-```jsx {3,9,10,16-17,41-47}
-import React, { useEffect, useState } from "react";
+```jsx {3,7,10,13-14,24-30}
+import React from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { either, isEmpty, isNil } from "ramda";
 import { ToastContainer } from "react-toastify";
-import { registerIntercepts, setAuthHeaders } from "apis/axios";
-import { initializeLogger } from "common/logger";
 import Dashboard from "components/Dashboard";
 import { CreateTask, ShowTask, EditTask } from "components/Tasks";
 import { Login, Signup } from "components/Authentication";
 import PrivateRoute from "components/Common/PrivateRoute";
 import { getFromLocalStorage } from "utils/storage";
-import PageLoader from "components/PageLoader";
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
   const authToken = getFromLocalStorage("authToken");
   const isLoggedIn = !either(isNil, isEmpty)(authToken);
-
-  useEffect(() => {
-    registerIntercepts();
-    initializeLogger();
-    setAuthHeaders(setLoading);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="h-screen">
-        <PageLoader />
-      </div>
-    );
-  }
 
   return (
     <Router>

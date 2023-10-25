@@ -401,7 +401,7 @@ import { setToLocalStorage, getFromLocalStorage } from "utils/storage";
 
 axios.defaults.baseURL = "/";
 
-const setAuthHeaders = (setLoading = () => null) => {
+const setAuthHeaders = () => {
   axios.defaults.headers = {
     Accept: "application/json",
     "Content-Type": "application/json",
@@ -448,7 +448,7 @@ const DEFAULT_ERROR_NOTIFICATION = "Something went wrong!";
 
 axios.defaults.baseURL = "/";
 
-const setAuthHeaders = (setLoading = () => null) => {
+const setAuthHeaders = () => {
   axios.defaults.headers = {
     Accept: "application/json",
     "Content-Type": "application/json",
@@ -526,36 +526,40 @@ Phew! That was a lot of code, but there is one more step that we have to do.
 We need to register these interceptors, as well as add a `ToastContainer` for
 the `react-toastify` popups to show up in.
 
+Fully replace `app/javascript/packs/application.js` with the following content:
+
+```javascript
+/* eslint no-console:0 */
+// This file is automatically compiled by Webpack, along with any other files
+// present in this directory. You're encouraged to place your actual application logic in
+// a relevant structure within app/javascript and only use these pack files to reference
+// that code so it'll be compiled.
+
+import "../stylesheets/application.scss";
+const componentRequireContext = require.context("src", true);
+
+const { registerIntercepts, setAuthHeaders } = require("apis/axios");
+const { initializeLogger } = require("common/logger");
+
+registerIntercepts();
+initializeLogger();
+setAuthHeaders();
+
+const ReactRailsUJS = require("react_ujs");
+ReactRailsUJS.useContext(componentRequireContext);
+```
+
 Fully replace `app/javascript/src/App.jsx` with the following content:
 
 ```javascript
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 import CreateTask from "components/Tasks/Create";
 import Dashboard from "components/Dashboard";
-import PageLoader from "components/PageLoader";
-import { registerIntercepts, setAuthHeaders } from "apis/axios";
-import { initializeLogger } from "common/logger";
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    initializeLogger();
-    registerIntercepts();
-    setAuthHeaders(setLoading);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="h-screen">
-        <PageLoader />
-      </div>
-    );
-  }
-
   return (
     <Router>
       <ToastContainer />

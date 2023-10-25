@@ -127,29 +127,15 @@ store the list of tasks fetched from the database in its state. It will pass
 down the lists of tasks to the `Table` component which will render a list of all
 tasks from our database.
 
-Finally, let's create a React route to render our `Dashboard` component. Inside
-our `App` component we will also import and add the reusable `PageLoader`
-component to be displayed in place of the hardcoded text when `loading` state is
-true.
+Finally, let's create a React route to render our `Dashboard` component.
 
 To do so, add the following lines to `App.jsx`:
 
 ```jsx
 // previous imports
 import Dashboard from "components/Dashboard";
-import PageLoader from "components/PageLoader";
 
 const App = () => {
-  // previous code without any changes
-
-  if (loading) {
-    return (
-      <div className="h-screen">
-        <PageLoader />
-      </div>
-    );
-  }
-
   return (
     <Router>
       <Switch>
@@ -162,30 +148,6 @@ const App = () => {
 
 export default App;
 ```
-
-## Importance of a PageLoader in the App Component
-
-React mounts child components before parent components. In such a case child
-components like `Dashboard` might try to invoke their `useEffect` hook upon
-mounting which will in turn call the `fetchTasks` function in this case.
-
-For fetching tasks we'd have to invoke the Axios APIs. The issue here is that in
-our backend we verify each API request and ensure that it has a valid auth token
-and email. These tokens are set in the headers of the request.
-
-For those headers to be set correctly for all Axios requests, we invoke the
-`setAuthHeaders` function in the `App` component itself since it's the entry
-point to all other components. Thus we have to ensure that all child components
-are mounted only once Axios headers are successfully set.
-
-To ensure that, we pass the `setLoading` function as an argument to
-`setAuthHeaders`. Initially, the `loading` state is set to `true` in the `App`
-component. Only once the `setAuthHeaders` function's execution is completed and
-auth headers are set for API requests, we set the `loading` state to `false`.
-
-Ultimately in the `App` component we have to show a `PageLoader` component when
-the `loading` state is `true`. That's exactly what we did in the previous
-section.
 
 Next let's update our `NavBar` component so that on clicking the `Todos`
 navitem, we get redirected to `/dashboard`.

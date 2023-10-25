@@ -316,7 +316,6 @@ import { CreateTask, ShowTask, EditTask } from "components/Tasks";
 import { ToastContainer } from "react-toastify";
 
 const App = () => {
-  // previous code if any
   return (
     <Router>
       <ToastContainer />

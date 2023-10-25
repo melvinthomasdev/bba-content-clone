@@ -371,7 +371,7 @@ The content of our `setAuthHeaders` method is as follows:
 
 ```javascript{4-5}
 // Remaining code
-export const setAuthHeaders = (setLoading = () => null) => {
+export const setAuthHeaders = () => {
   axios.defaults.headers = {
     Accept: "application/json",
     "Content-Type": "application/json",
