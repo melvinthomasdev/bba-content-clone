@@ -16,7 +16,7 @@ even if the content inside it is smaller.
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html" hidden="true">
-<div class="div-wrapper">
+<div class="main-container">
   <div class="first container">
     <div class="white-text">Div 1</div>
     <div>Width: 50%</div>
@@ -59,7 +59,7 @@ even if the content inside it is smaller.
 .container div {
   padding-left: 20px;
 }
-.div-wrapper {
+.main-container {
   background-color: #E5E8E7;
   padding: 40px 10px;
   border-radius: 5px;
