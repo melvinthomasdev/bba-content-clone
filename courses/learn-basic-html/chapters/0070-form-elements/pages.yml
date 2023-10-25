@@ -71,8 +71,8 @@
 - title: Form Structure
   slug: form-structure
   page_type: lesson
-- title: HTML Form Restrictions - Avoid Form inside a Form
-  slug: html-form-restrictions-avoid-form-inside-a-form
+- title: HTML Form Restrictions - Form Element
+  slug: html-form-restrictions-form-element
   page_type: lesson
 - title: HTML Form Restrictions - Elements to avoid
   slug: html-form-restrictions-elements-to-avoid
