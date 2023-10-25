@@ -355,15 +355,15 @@ const setToLocalStorage = ({ authToken, email, userId, userName }) => {
 };
 
 const getFromLocalStorage = key => {
-  let response = null;
   try {
     const value = localStorage.getItem(key);
-    response = value ? JSON.parse(value) : null;
+
+    return isPresent(value) ? JSON.parse(value) : null;
   } catch (error) {
     logger.error(error);
-    response = null;
+
+    return null;
   }
-  return response;
 };
 
 export { setToLocalStorage, getFromLocalStorage };
