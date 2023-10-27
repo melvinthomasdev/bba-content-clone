@@ -236,6 +236,9 @@ If there is a specific case where the content creator wants content to not be wr
 (vii) Adding code in lesson title
 You can use backticks (``) to add code in the lesson titles. If you do use backticks in the title, it is required to use double quotes around the complete lesson title.
 
+(viii) Use this address as the default address value throughout the Academy:
+`Office #803, 8th Floor, World Trade Center, Tower 2, Kharadi, Pune, Maharashtra`.
+
 ## Editing Checklist
 
 - Check the module for language clarity, conceptual correctness, grammatical consistency and typos
