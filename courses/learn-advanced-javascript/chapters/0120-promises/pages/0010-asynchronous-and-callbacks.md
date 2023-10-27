@@ -32,7 +32,7 @@ is called **asynchronous code**.
 We can use **callback functions**
 to make sure that
 `onSuccess`
-is invoked after we the execution of
+is invoked after the execution of
 `transferMoney({ to: "Sam", amount: 10000 })`
 is completed.
 
