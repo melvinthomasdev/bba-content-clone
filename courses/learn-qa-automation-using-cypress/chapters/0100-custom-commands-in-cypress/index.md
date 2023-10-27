@@ -23,7 +23,9 @@ Cypress.Commands.add("loginViaUI", (username, password) => {
 
 Cypress.Commands.add(
   "login",
-  (email = "oliver@example.com", password = "welcome", path = "/") => {
+  (email = "oliver@example.com",
+   password = "welcome",
+   path = "/") => {
     cy.request({
       url: loginPath,
       method: "POST",

@@ -346,18 +346,17 @@ there are some different types of commands: queries, assertions and actions.
 Take this chain of commands for example
 
 ```js
-cy.get('[data-cy="todo-app"]').find(".todo-list li").should("have.length", 1);
+cy.get('[data-cy="todo-app"]')
+  .find(".todo-list li")
+  .should("have.length", 1);
 ```
 
-Here
-
-- If the assertion that follows `cy.find()` passes, then the query finishes
-  successfully.
-- If the assertion that follows `cy.find()` fails, then Cypress will re-query
-  the application's DOM again - starting from the top of the list of chain. Then
-  Cypress will try the assertion against the elements yielded from
-  `cy.get().find()`. If the assertion still fails, Cypress continues retrying
-  until the `cy.find()` **timeout** is reached.
+Here If the assertion that follows `cy.find()` passes, then the query finishes successfully.
+If the assertion that follows `cy.find()` fails, then Cypress will re-query
+the application's DOM again - starting from the top of the list of chain. Then
+Cypress will try the assertion against the elements yielded from
+`cy.get().find()`. If the assertion still fails, Cypress continues retrying
+until the `cy.find()` **timeout** is reached.
 
 Retry-ability allows the test to complete each query as soon as the assertion
 passes, without hard-coding waits.

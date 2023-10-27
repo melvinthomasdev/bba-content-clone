@@ -6,7 +6,8 @@ blog creation part. After successful creation, we will receive a toaster message
 describe("Blog", () => {
   test("verify manage blog operations", () => {
     cy.clearAndType(blogSelectors.titleField, "Blog title");
-    cy.clearAndType(blogSelectors.descriptionField, "Blog Description");
+    cy.clearAndType(blogSelectors.descriptionField,
+                    "Blog Description");
     cy.get(blogSelectors.saveButton).click();
     cy.get(commonSelectors.toastrContainer).should(
       "have.text",
@@ -26,7 +27,8 @@ can add a `wait()` after clicking the button like this.
 describe("Blog", () => {
   test("verify manage blog operations", () => {
     cy.clearAndType(blogSelectors.titleField, "Blog title");
-    cy.clearAndType(blogSelectors.descriptionField, "Blog Description");
+    cy.clearAndType(blogSelectors.descriptionField,
+                    "Blog Description");
     cy.get(blogSelectors.saveButton).click();
     cy.wait(1000);
     cy.get(commonSelectors.toastrContainer).should(
@@ -54,7 +56,8 @@ way to solve the above problem using `intercept`
 describe("Blog", () => {
   test("verify manage blog operations", () => {
     cy.clearAndType(blogSelectors.titleField, "Blog title");
-    cy.clearAndType(blogSelectors.descriptionField, "Blog Description");
+    cy.clearAndType(blogSelectors.descriptionField,
+                    "Blog Description");
     cy.intercept("POST", "/api/blog").as("addBlog");
     cy.get(blogSelectors.saveButton).click();
     cy.wait("@addBlog");
@@ -331,7 +334,8 @@ cy, get(blogSelectors.blogsList).click();
 cy.wait("@allRequests");
 cy.get(blogSelectors.addNewPost).click();
 cy.clearAndType(blogSelectors.titleField, "My first blog");
-cy.clearAndType(blogSelectors.descriptionField, "My first blog description");
+cy.clearAndType(blogSelectors.descriptionField,
+                "My first blog description");
 cy.get(commonSelectors.submitButton).click();
 cy.waitForMultipleRequest("@updateRequest", 3);
 
@@ -341,7 +345,8 @@ cy, get(blogSelectors.blogsList).click();
 cy.wait("@fetchPosts");
 cy.get(blogSelectors.addNewPost).click();
 cy.clearAndType(blogSelectors.titleField, "My first blog");
-cy.clearAndType(blogSelectors.descriptionField, "My first blog description");
+cy.clearAndType(blogSelectors.descriptionField,
+                "My first blog description");
 cy.interceptApi("updateRequest", 3);
 cy.get(commonSelectors.submitButton).click();
 cy.waitForMultipleRequest("@updateRequest", 3);

@@ -99,13 +99,16 @@ case, it will lead to failure sometimes.
 cy.get(contactsPageSelectors.tableRowCheckBox).then(checkboxes => {
   if (checkboxes.length > 2) {
     cy.get(contactsPageSelectors.tableRowCheckBox).eq(0).click();
-    cy.get(contactsPageSelectors.tableRowCheckBox).should("be.checked");
+    cy.get(contactsPageSelectors.tableRowCheckBox)
+      .should("be.checked");
     cy.get(contactsPageSelectors.tableRowCheckBox).eq(0).click();
-    cy.get(contactsPageSelectors.tableRowCheckBox).should("not.be.checked");
+    cy.get(contactsPageSelectors.tableRowCheckBox)
+      .should("not.be.checked");
     cy.get(contactsPageSelectors.tableRowCheckBox).eq(1).click();
   } else {
     cy.get(contactsPageSelectors.tableRowCheckBox).eq(0).click();
-    cy.get(contactsPageSelectors.tableRowCheckBox).should("not.be.checked");
+    cy.get(contactsPageSelectors.tableRowCheckBox)
+      .should("not.be.checked");
     cy.get(contactsPageSelectors.tableRowCheckBox).eq(1).click();
   }
 });

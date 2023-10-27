@@ -1,7 +1,7 @@
 ## Test Suite
 
-- **_describe_** is a Cypress method for grouping one or more related tests.
-- Each **_describe_** block represents a test suite. Every time we start writing
+**_describe_** is a Cypress method for grouping one or more related tests.
+Each **_describe_** block represents a test suite. Every time we start writing
   a new suite of tests for a functionality, we wrap it in a **_describe_**
   block.
 
@@ -13,14 +13,14 @@ describe("Test suite", () => {
 });
 ```
 
-- As we can see **_describe_** block takes two arguments: a _string_ for
-  description of the test suite, and a _callback function_ for wrapping the
-  actual test.
+As we can see **_describe_** block takes two arguments: a _string_ for
+description of the test suite, and a _callback function_ for wrapping the
+actual test.
 
 ## Test Case
 
-- A test case can be written using **_it_** block.
-- A test suite can contain one or more test cases. A test suite can consist
+A test case can be written using **_it_** block.
+A test suite can contain one or more test cases. A test suite can consist
   positive and negative test cases related to a functionality. This means that
   **_describe_** can have one or more **_it_** blocks.
 
@@ -41,15 +41,15 @@ describe("Members", () => {
 });
 ```
 
-## Conventions for _describe_ and _it_ block
+## Conventions for describe and it block
 
-- The description of a `describe` block must start with uppercase
+- The description of a `describe` block must start with uppercase.
 - The description of **_describe_** block should be short.
 - Avoid using “_should_” or long statements in describe block.
 - It can simply be the functionality name.
 
-e.g. If we are testing 'signup' functionality, then the **_describe_** block
-should look like:
+If we are testing **signup** functionality, then the **_describe_** block
+should look like this.
 
 ```javascript
 describe("Signup", () => {
@@ -59,8 +59,8 @@ describe("Signup", () => {
 });
 ```
 
-e.g. If we are testing 'login' functionality, then the **_describe_** block
-should look like:
+If we are testing **login** functionality, then the **_describe_** block
+should look like this.
 
 ```javascript
 // Incorrect
@@ -85,7 +85,7 @@ describe("Login", () => {
 - We can start the description with _should_ or _must_. However, it's not
   mandatory to start with these keywords, just ensure that it is meaningful.
 
-e.g. If we are handling 'customers' in a test suite, our test should look like:
+If we are handling **customers** in a test suite, our test should look like this.
 
 ```javascript
 // correct
@@ -95,13 +95,14 @@ describe("Manage customers", () => {
     ..
     ...
 
-    // expected to cover create, edit and delete operations in this test case.
+    // expected to cover create, edit and delete
+    // operations in this test case.
 
   });
 });
 ```
 
-- Avoid using vague or generic description.
+Avoid using vague or generic description like this.
 
 ```javascript
 //Incorrect

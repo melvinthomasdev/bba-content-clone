@@ -1,6 +1,6 @@
-## Using tags to selectively run spec files
+## Use tags to selectively run spec files
 
-We can run specs selectively using the tags. There is an option to add tags to the test suite.
+We can run specs selectively using tags. There is an option to add tags to the test suite.
 For this, we are using the plugin [@cypress/grep](https://www.npmjs.com/package/@cypress/grep).
 
 Here is an example. Let's say we are running the test cases in 2 different environments.

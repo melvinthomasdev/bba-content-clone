@@ -46,7 +46,8 @@ describe("Login", () => {
     cy.visit("/");
     cy.fixture("credentials/admin").then(user => {
       cy.get("[data-cy='login-email-field']").type(user.email);
-      cy.get("[data-cy='login-password-field']").type(user.password);
+      cy.get("[data-cy='login-password-field']")
+        .type(user.password);
     });
     cy.get("[data-cy='submit-button']").click();
   });
@@ -94,7 +95,8 @@ describe("Admin login", () => {
   test("should be able to login", () => {
     cy.get("@userDetails").then(userDetails => {
       cy.get("[data-cy='login-email-field']").type(userDetails.email);
-      cy.get("[data-cy='login-password-field']").type(userDetails.password);
+      cy.get("[data-cy='login-password-field']")
+        .type(userDetails.password);
       cy.get("[data-cy='submit-button']").click();
     });
   });

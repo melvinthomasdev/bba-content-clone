@@ -1,8 +1,11 @@
 ## Basics
 
-Software Testing is a process to check whether the actual software product matches expected requirements and to ensure that the software product is defect-free. It involves the execution of software/system components using manual or automated tools to evaluate one or more properties of interest. Software testing aims to identify errors, gaps, or missing requirements in contrast to actual requirements.
+Software Testing is a process to check whether the software meets expected requirements.
+It involves the execution of software features using manual or automated tools to
+ensure that the expectations are met.
+Software testing aims to identify errors, gaps, or missing requirements in contrast to actual requirements.
 
-## Why is testing important?
+## Importance of testing
 
 Errors made by us humans, when executed can lead to software failures. Some
 errors and mistakes are minor but some are quite dangerous and require constant
@@ -19,12 +22,12 @@ understand why software testing is important.
 Before understanding the testing process, let's first understand some basic
 terminologies.
 
-## Terminologies:
+## Types of Testing
 
 ### White-box Testing
 
 In white-box testing, the tester is aware of the inner workings of the software.
-One of the basic goals of white-box testing is to verify working flow for an application.
+One of the basic goals of white-box testing is to verify work flow of an application.
 When a software engineer who built the application does testing then that's a "white-box testing".
 
 ### Black-box Testing
@@ -36,7 +39,7 @@ applications and it is entirely based on software requirements and
 specifications. It is also known as 'Behavioral Testing'.
 
 - The tester gets the requirements and specifications of the system.
-- Choose valid inputs (positive testing) and invalid inputs (negative testing).
+- Chooses valid inputs (positive testing) and invalid inputs (negative testing).
 - The tester determines expected outputs for all those inputs.
 - The tester constructs the test case and executes it.
 - Compares the actual output with the expected output.
@@ -49,8 +52,7 @@ objective is to test each unit of the software.
 
 ### Functional Testing
 
-The testing of the system's functionality and behavior; Functional tests verify
-that our application does what it's designed to do. More specifically, we are
+Functional tests verify that our application does what it's designed to do. More specifically, we are
 aiming to test each functional element of our software to verify that the output
 is correct. Functional testing covers _Unit testing_, _Component testing_, and
 _UI testing_ among others.
@@ -82,18 +84,13 @@ might expect.
 Happy path test (also, know as _golden path test_) is a well-defined test case
 using known input, which executes without exception and produces an expected
 output. Happy path testing can show that a system meets its functional
-requirements but it doesn't guarantee a graceful handling of error conditions or
-aid in finding hidden bugs.
+requirements but it doesn't guarantee that all error conditions are covered.
 
 Happy path testing does not duplicate real-world conditions and verifies only
-that the required functionality is in place and functions correctly. If valid
-alternatives exist, the happy path is then identified as the default scenario or
-the most likely positive alternative featuring no exceptional or error
-conditions.
+that the required functionality is in place and functions correctly. 
 
-For example, when we test the Login page, we know that when valid credentials
-are used to login, expected result is the user gets authenticated and gets
-logged into the website.
+For example while testing the login page if we test only the condition where user successfully
+logs in then that would "Happy Path" testing.
 
 ### Regression Testing
 
@@ -108,14 +105,13 @@ latest code changes are done.
 
 An assertion is used in automated testing to assert the expected behavior of the
 test. An assertion fails if the result is different than what we expected it to
-be. This is a key concept in functional testing. Assertions are commonly used in
-Unit testing, but the same concept applies to other forms of automated tests.
+be. This is a key concept in functional testing.
 
 ### Test Case
 
-A test case is the complete set of pre-requisites, required data, and expected
+A test case is a complete set of pre-requisites, required data, and expected
 outcomes for a given instance of a Test. A test case is designed to pass or to
-fail. Often this depends on the data passed to the Test
+fail.
 
 ### Test Scenario
 
@@ -141,15 +137,16 @@ Stubbing, like mocking, means creating a stand-in, but a stub only mocks the
 behavior, but not the entire object. This is used when our implementation only
 interacts with a certain behavior of the object.
 
-## How to test a software?
+## Manual and Automation Testing
 
-There are 2 ways to test software.
+There are two ways to test software.
 
 - **Manual testing** - In Manual testing, testers will write test cases and test
   the software manually. This form of testing involves a human performing all
   the test steps, recording the outcome, and analyzing the results. Manual
   testing can be quite challenging because it often involves repeating the same
   set of steps many times.
+
 - **Automation testing** - In Automation testing, the tester will write code and
   execute it to check the workflow of the application. Automated testing
   describes any form of testing where a computer runs the tests rather than a
@@ -161,6 +158,7 @@ There are 2 ways to test software.
 - **Positive Testing** is a type of testing which is performed on a software
   application by providing the valid data sets as an input. It checks whether
   the software application behaves as expected with positive inputs or not.
+
 - **Negative Testing** is a testing method performed on the software application by
   providing invalid or improper data sets as input. It checks whether the
   software application behaves as expected with the negative or unwanted user

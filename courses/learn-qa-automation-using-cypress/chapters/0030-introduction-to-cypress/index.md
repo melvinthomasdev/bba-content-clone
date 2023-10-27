@@ -1,6 +1,6 @@
 ## What is Cypress
 
-Cypress is an end-to-end testing tool for the web.
+Cypress is an end-to-end testing tool for the web applications.
 
 ## Features of Cypress
 

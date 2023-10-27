@@ -1,18 +1,19 @@
-## JS Conventions
+## JavaScript Conventions
 
-1. Before starting, we can install some JS extensions like 'Prettier' and
-   'ESLint' if not installed already so that most of our JS conventions will be
-   taken care of. We can find the links below: -
-   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-2. Some people follow indentation of 4 spaces. But in BigBinary, we follow
-   indentation of **2 spaces** consistently as we follow the same in Ruby on
-   Rails as well.
-3. Variables should always be in lower camel case. e.g.
-   `const firstName = Oliver`
-4. When declaring the variables prefer using `const` instead of `let`.
-5. `let` can be used when we are modifying the variable. If we are modifying the
-   object or an array `const` can still be used instead of `let`.
+If you are using [Visual Studio Code](https://code.visualstudio.com/) then
+download and install these two extensions.
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+Some people follow indentation of 4 spaces. But in BigBinary, we follow
+indentation of **2 spaces** consistently.
+
+Here are the conventions we would be following regarding the naming of variables and their usage.
+
+* Variables should always be in lower camel case. e.g.  `const firstName = Oliver`
+* When declaring the variables prefer using `const` instead of `let`.
+* `let` can be used when we are modifying the variable. If we are modifying the
+object or an array `const` can still be used instead of `let`.
 
 ## Comments
 
@@ -26,7 +27,7 @@ it("should change articles state", () => {
 });
 ```
 
-2. Sometimes the tests can be quite so large and long-winded that it's actual
+2. Sometimes the tests can be quite large and long-winded that it's actual
    function and use is not quite so apparent from the code itself. In such cases
    adding a comment describing the same would improve code readability vastly.
 3. When writing a comment we must ensure that it is meaningful and we must
@@ -42,7 +43,7 @@ it("should change articles state", () => {
 1. The name of the file must convey the test suite name. e.g. If we are adding
    test case file for login, name of file should be: **_login.spec.js_**
 2. All the spec files should be stored in **_e2e_** folder.
-3. Follow `JS` conventions for naming the files(i.e **_lowerCamelCase_**). e.g.
+3. Follow `JavaScript` conventions for naming the files(i.e **_lowerCamelCase_**). e.g.
    If we are creating spec file for creating a customer, the name of spec file
    should be: **_createCustomer.spec.js_**
 4. The **texts** and **selectors** folder should be stored in **_constants_**
