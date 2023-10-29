@@ -38,12 +38,6 @@
 - title: Exercise - Select Element 2
   slug: exercise-select-element-2
   page_type: exercise
-- title: Button Element
-  slug: button-element
-  page_type: lesson
-- title: Exercise - Button Element
-  slug: exercise-button-element
-  page_type: exercise
 - title: Button Type - Submit
   slug: button-type-submit
   page_type: lesson
@@ -55,12 +49,6 @@
   page_type: lesson
 - title: Exercise - Button Type - Reset
   slug: exercise-button-type-reset
-  page_type: exercise
-- title: Button Type - Button
-  slug: button-type-button
-  page_type: lesson
-- title: Exercise - Button Type - Button
-  slug: exercise-button-type-button
   page_type: exercise
 - title: Fieldset Element
   slug: fieldset-element
