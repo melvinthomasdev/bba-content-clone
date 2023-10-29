@@ -5,9 +5,15 @@
 - title: Exercise - Opacity
   slug: exercise-opacity
   page_type: exercise
+- title: Exercise - Opacity 2
+  slug: exercise-opacity-2
+  page_type: exercise
 - title: Opacity using RGBA
   slug: opacity-using-rgba
   page_type: lesson
 - title: Exercise - Opacity using RGBA
   slug: exercise-opacity-using-rgba
+  page_type: exercise
+- title: Exercise - Opacity using RGBA 2
+  slug: exercise-opacity-using-rgba-2
   page_type: exercise
