@@ -10,3 +10,9 @@
 - title: Exercise - Controlling Dialog element using JavaScript
   slug: exercise-controlling-dialog-element-using-javascript
   page_type: exercise
+- title: Fieldset - Form Attribute
+  slug: fieldset-form-attribute
+  page_type: lesson
+- title: Exercise - Fieldset - Form Attribute
+  slug: exercise-fieldset-form-attribute
+  page_type: exercise

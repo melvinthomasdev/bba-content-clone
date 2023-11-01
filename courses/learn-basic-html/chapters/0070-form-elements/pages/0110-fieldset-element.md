@@ -1,17 +1,30 @@
-The `<fieldset>` element groups related form elements. Inside the `<fieldset>`, a `<legend>` element sets the caption at the top.
+The `<fieldset>` element is used
+to group related form elements.
 
 <codeblock language="html" type="lesson">
 <code>
-<fieldset>
-  <legend>Location:</legend>
-  <label>City:</label>
-  <input type="text">
-  <br>
-  <label>State: </label>
-  <input type="text">
-  <br>
-  <label>Country: </label>
-  <input type="text">
-</fieldset>
+<form>
+  <label>First Name:</label>
+  <input type="text" placeholder="Sam" >
+
+  <label>Last Name:</label>
+  <input type="text" placeholder="Smith" >
+
+  <fieldset disabled>
+    <label>City:</label>
+    <br>
+    <input type="text" placeholder="Pune" >
+    <br>
+
+    <label>State:</label>
+    <br>
+    <input type="text" placeholder="Maharashtra" >
+    <br>
+
+    <label>Country:</label>
+    <br>
+    <input type="text" placeholder="India" >
+  </fieldset>
+</form>
 </code>
 </codeblock>

@@ -56,6 +56,12 @@
 - title: Exercise - Fieldset Element
   slug: exercise-fieldset-element
   page_type: exercise
+- title: Legend Element - Fieldset
+  slug: legend-element-fieldset
+  page_type: lesson
+- title: Exercise - Legend Element
+  slug: exercise-legend-element
+  page_type: exercise
 - title: Form Structure
   slug: form-structure
   page_type: lesson
