@@ -17,6 +17,15 @@
 - title: Exercise - Input type - Submit
   slug: exercise-input-type-submit
   page_type: exercise
+- title: Difference between Input Type - Submit and Button Type - Submit
+  slug: input-type-submit-vs-button-type-submit
+  page_type: lesson
+- title: Exercise 1 - Input type submit
+  slug: exercise-1-input-type-submit
+  page_type: exercise
+- title: Exercise 2 - Button type submit
+  slug: exercise-2-button-type-submit
+  page_type: exercise
 - title: Input Type - Reset
   slug: input-type-reset
   page_type: lesson
