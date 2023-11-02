@@ -21,16 +21,20 @@ const number = 3;
 
 <solution>
 const number = 3;
+
 switch (number) {
   case 1:
     console.log("This is number 1");
     break;
+
   case 2:
     console.log("This is number 2");
     break;
+
   case 3:
     console.log("This is number 3");
     break;
+
   default:
     console.log("This is an invalid number");
     break;

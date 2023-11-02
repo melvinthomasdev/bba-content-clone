@@ -30,18 +30,23 @@ switch(languageCode) {
   case "hi":
     console.log("Hindi");
     break;
+
   case "de":
     console.log("German (Standard)")
     break;
+
   case "en":
     console.log("English");
     break;
+
   case "fr":
     console.log("French (Standard)");
     break;
+
   case "es":
     console.log("Spanish (Spain)");
     break;
+
   default:
     console.log("Sorry, we do not support the given language as of now");
     break;
@@ -59,7 +64,7 @@ As you can see, the switch case method seems more readable when there are a lot 
   to the `switch` statement,
   that is, within the parentheses
   of `switch()`. We can call this
-  the **switch expression**. 
+  the **switch expression**.
 
 - It is followed by a number of
   **cases**. Each **case** contains
@@ -93,12 +98,15 @@ switch(name) {
   case "Oliver":
     console.log("This is the owner.");
     break;
+
   case "Anna":
     console.log("This is the admin.");
     break;
+
   case "Mike":
     console.log("This is the manager.");
     break;
+
   default:
     console.log("This person does not have a role.");
     break;
@@ -110,7 +118,7 @@ The above code displays **This is the admin.** because the value of the `name` v
 
 **break Statement**
 
-- The `break` statement is used to exit the execution of a `switch` statement. 
+- The `break` statement is used to exit the execution of a `switch` statement.
 - If the `break` statement is not present at the end of a code block the `switch` statement continues its execution to the next case block.
 - As you can see in the below example, this happens irrespective of whether the condition, here the value of `name` is matched with that case or not.
 
@@ -122,11 +130,14 @@ switch(name) {
   case "Oliver":
     console.log("This is the owner.");
     break;
+
   case "Anna":
     console.log("This is the admin."); // This will be executed
+
   case "Mike":
     console.log("This is the manager."); // This will also be executed
     break;
+
   default:
     console.log("This person does not have a role.");
     break;
@@ -134,4 +145,4 @@ switch(name) {
 </code>
 </codeblock>
 
-If the given expression does not match with any case value, then the code block of the **default** case gets executed. The encouraged practice is to always write the  `default` block after all the **cases**. 
+If the given expression does not match with any case value, then the code block of the **default** case gets executed. The encouraged practice is to always write the  `default` block after all the **cases**.

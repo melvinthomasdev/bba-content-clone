@@ -11,11 +11,13 @@ const rollNumberToCheck = 7901;
 
 switch(rollNumberToCheck) {
   case 8746: case 5649: case 3268: case 7901:
-    console.log("Congratulations, you have passed the test!"); 
+    console.log("Congratulations, you have passed the test!");
     break;
+
   case 4387: case 1752: case 6210: case 9834:
     console.log("Unfortunately, you did not pass the test. Better luck next time!");
     break;
+
   default:
     console.log("Provided roll number is invalid");
 };
