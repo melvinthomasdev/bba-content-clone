@@ -20,7 +20,6 @@ or a form element:
 </panel>
 <panel language="css">
 select {
-  width: 300px;
   padding: 15px;
   margin: 5px 0;
   width: 20em;
