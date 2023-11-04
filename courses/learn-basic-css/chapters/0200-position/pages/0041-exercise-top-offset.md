@@ -1,4 +1,5 @@
-Set `position:relative` for the `label`
+Set `position:relative` for the element
+with class `label`
 and
 make it move away from the top by `15px`:
 
