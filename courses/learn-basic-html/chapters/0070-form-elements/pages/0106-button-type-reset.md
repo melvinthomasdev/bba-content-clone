@@ -7,9 +7,9 @@ Take a look at this example:
 <codeblock language="html" type="lesson">
 <code>
 <form>
-  <label>Sample Name:</label>
+  <label>Sample Number:</label>
   <br>
-  <input type="text" placeholder="Sample reference number" />
+  <input type="number" placeholder="121203" />
   <br>
   <label>Experiment 1:</label>
   <br>

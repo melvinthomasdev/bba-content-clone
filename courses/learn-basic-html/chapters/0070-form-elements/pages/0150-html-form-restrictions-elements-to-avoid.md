@@ -11,8 +11,18 @@ incorrect form structure example:
 <code>
 <form>
   <h2>Personal Information</h2>
+  <br>
+
   <p>First Name:</p>
-  <input id="first-name" type="text" />
+  <br>
+  <input id="first-name" type="text" placeholder="Eve"/>
+  <br>
+
+  <p>Last Name:</p>
+  <br>
+  <input id="last-name" type="text" placeholder="Smith"/>
+  <br>
+
   <button type="submit">Submit</button>
 </form>
 </code>
@@ -30,8 +40,17 @@ with correct form structure:
 <form>
   <caption>Personal Information</caption>
   <br>
+
   <label for="first-name">First Name:</label>
-  <input id="first-name" type="text" />
+  <br>
+  <input id="first-name" type="text" placeholder="Eve"/>
+  <br>
+
+  <label for="last-name">Last Name:</label>
+  <br>
+  <input id="last-name" type="text" placeholder="Smith"/>
+  <br>
+
   <button type="submit">Submit</button>
 </form>
 <a href="#">Rules</a>

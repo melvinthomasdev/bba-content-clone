@@ -9,8 +9,8 @@ Create an input of type **password** in the form, below the label element:
 
 <solution>
 <form>
-  <label>Password: </label>
-  <input type="password">
+  <label>Password:</label>
+  <input type="password" >
 </form>
 </solution>
 </codeblock>

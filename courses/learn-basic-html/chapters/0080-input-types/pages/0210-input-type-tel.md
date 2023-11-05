@@ -5,8 +5,8 @@ number.
 <codeblock language="html" type="lesson">
 <code>
 <form>
-  <label for="contact">Enter Telephone No.:</label>
-  <input type="tel">
+  <label for="contact">Mobile Number:</label>
+  <input type="tel" placeholder="+91 012 3456 789">
 </form>
 </code>
 </codeblock>

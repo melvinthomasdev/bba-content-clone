@@ -3,7 +3,7 @@ The `<label>` element puts a label on other form elements. In the example given 
 <codeblock language="html" type="lesson">
 <code>
 <form>
-  <label>Name: </label>
+  <label>Name:</label>
   <input type="text">
 </form>
 </code>

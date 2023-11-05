@@ -3,7 +3,12 @@ The `<textarea>` element is for submitting large textual content. To control its
 <codeblock language="html" type="lesson">
 <code>
 <form>
-  <textarea rows="3" cols="30" placeholder="Enter description here"></textarea>
+  <label>Your Review:</label>
+  <br>
+  <textarea
+    rows="3"
+    cols="30"
+  >Add detailed review here</textarea>
 </form>
 </code>
 </codeblock>

@@ -3,8 +3,8 @@ Create an input of type **reset** in the form, below all the other input element
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
 <form>
-  <label>Locale:</label>
-  <input type="text">
+  <label>Name:</label>
+  <input type="text" placeholder="Eve Smith">
   <br>
   <input type="submit">
 </form>
@@ -12,8 +12,8 @@ Create an input of type **reset** in the form, below all the other input element
 
 <solution>
 <form>
-  <label>Locale:</label>
-  <input type="text">
+  <label>Name:</label>
+  <input type="text" placeholder="Eve Smith">
   <br>
   <input type="submit">
   <input type="reset">

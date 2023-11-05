@@ -1,90 +1,35 @@
-Group all the elements in
-the form concerned with
-**address** in a `fieldset`
+Group all the elements inside
+the form element using `fieldset`
 element.
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
+<h1>Choose a Color:</h1>
 <form>
-  <label>First Name:</label>
+  <input type="radio" name="color" value="red">
+  <label for="red">Red</label>
   <br>
-  <input type="text" placeholder="Sam" >
+  <input type="radio" name="color" value="blue">
+  <label for="blue">Blue</label>
   <br>
-
-  <label>Last Name:</label>
-  <br>
-  <input type="text" placeholder="Smith" >
-  <br>
-
-  <label>Gender:</label>
-  <br>
-  <input type="text" placeholder="Male" >
-  <br>
-
-  <label>Apartment/Office:</label>
-  <br>
-  <input type="text" placeholder="Office #803, World Trade Center, Tower 2" >
-  <br>
-
-  <label>Street/Area:</label>
-  <br>
-  <input type="text" placeholder="Kharadi" >
-  <br>
-
-  <label>City:</label>
-  <br>
-  <input type="text" placeholder="Pune" >
-  <br>
-
-  <label>Country:</label>
-  <br>
-  <input type="text" placeholder="India" >
-  <br>
-
-  <input type="submit">
+  <input type="radio" name="color"  value="green">
+  <label for="green">Green</label>
 </form>
 </code>
 
 <solution>
 <form>
-  <label>First Name:</label>
-  <br>
-  <input type="text" placeholder="Sam" >
-  <br>
-
-  <label>Last Name:</label>
-  <br>
-  <input type="text" placeholder="Smith" >
-  <br>
-
-  <label>Gender:</label>
-  <br>
-  <input type="text" placeholder="Male" >
-  <br>
-
   <fieldset>
-    <label>Apartment/Office:</label>
+    <legend>Choose a Color:</legend>
+    <input type="radio" name="color" value="red">
+    <label for="red">Red</label>
     <br>
-    <input type="text" placeholder="Office #803, World Trade Center, Tower 2" >
+    <input type="radio" name="color" value="blue">
+    <label for="blue">Blue</label>
     <br>
-
-    <label>Street/Area:</label>
-    <br>
-    <input type="text" placeholder="Kharadi" >
-    <br>
-
-    <label>City:</label>
-    <br>
-    <input type="text" placeholder="Pune" >
-    <br>
-
-    <label>Country:</label>
-    <br>
-    <input type="text" placeholder="India" >
-    <br>
+    <input type="radio" name="color"  value="green">
+    <label for="green">Green</label>
   </fieldset>
-
-  <input type="submit">
 </form>
 </solution>
 </codeblock>

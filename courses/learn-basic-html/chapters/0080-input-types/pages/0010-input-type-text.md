@@ -4,7 +4,7 @@
 <code>
 <form>
   <label>Name:</label>
-  <input type="text">
+  <input type="text" placeholder="Chinua Achebe">
 </form>
 </code>
 </codeblock>

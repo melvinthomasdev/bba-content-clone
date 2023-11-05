@@ -18,22 +18,26 @@ as follows:
   <br><br>
   <fieldset>
     <legend>Address:</legend>
+    <label>Apartment/Office:</label>
+    <br>
+    <input type="text" placeholder="Office #803, World Trade Center, Tower 2" >
     <label>City:</label>
-    <input type="text">
     <br>
-    <label>State: </label>
-    <input type="text">
+    <input type="text" placeholder="Pune">
     <br>
-    <label>Country: </label>
-    <input type="text">
+    <label>State:</label>
+    <input type="text" placeholder="Maharashtra">
+    <br>
+    <label>Country:</label>
+    <input type="text" placeholder="India">
     <br>
   </fieldset>
   <br>
   <label>Review:</label>
   <br>
-  <textarea rows="3" cols="30"></textarea>
+  <textarea rows="3" cols="30" placeholder="Add detailed review here"></textarea>
   <br><br>
-  <label>Favorite color: </label>
+  <label>Favorite color:</label>
   <select>
     <option value="apple">Red</option>
     <option value="orange">Green</option>

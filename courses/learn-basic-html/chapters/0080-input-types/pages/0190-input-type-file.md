@@ -9,7 +9,7 @@ device's storage.
 <codeblock language="html" type="lesson">
 <code>
 <form>
-  <input type="file" accept="image/png, image/jpeg" multiple><br>
+  <input type="file" accept="image/png, image/jpeg" placeholder="image.png/image.jpeg" multiple><br>
   <button>Submit</button>
 </form>
 </code>

@@ -12,7 +12,7 @@ The format for adding dates is `yyyy-mm-dd`.
 <code>
 <form>
   <label for="birth-date">Birthday:</label>
-  <input type="date" min="1950-01-01" max="2000-01-01"><br>
+  <input type="date" min="1950-01-01" max="2000-01-01" placeholder="YYYY-MM-DD"><br>
   <button>Submit</button>
 </form>
 </code>
