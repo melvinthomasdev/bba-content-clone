@@ -14,3 +14,18 @@
 - title: Exercise - `calc` Function
   slug: exercise-calc-function
   page_type: exercise
+- title: "`conic-gradient` Function"
+  slug: conic-gradient-function
+  page_type: lesson
+- title: Exercise - `conic-gradient` Function
+  slug: exercise-conic-gradient-function
+  page_type: exercise
+- title: "`counter` Function"
+  slug: counter-function
+  page_type: lesson
+- title: "`counter` Function 2"
+  slug: counter-function-2
+  page_type: lesson
+- title: Exercise - `counter` Function
+  slug: exercise-counter-function
+  page_type: exercise
