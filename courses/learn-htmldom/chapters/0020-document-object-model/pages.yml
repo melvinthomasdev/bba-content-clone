@@ -2,11 +2,14 @@
 - title: Are HTML and CSS enough
   slug: are-html-and-css-enough
   page_type: lesson
-- title: What Is DOM
-  slug: what-is-dom
+- title: DOM
+  slug: dom
   page_type: lesson
-- title: Exercise - What is DOM
-  slug: exercise-what-is-dom
+- title: HTML Element - Object Representation
+  slug: html-element-object-representation
+  page_type: lesson
+- title: Exercise - HTML Element - Object Representation
+  slug: exercise-html-element-object-representation
   page_type: exercise
 - title: DOM Tree
   slug: dom-tree

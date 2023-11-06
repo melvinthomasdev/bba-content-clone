@@ -1,20 +1,19 @@
-So, you know your HTML
+After learning HTML
 and
-CSS
-and
-can create a good looking webpage.
+CSS, we can now create
+a good looking webpage.
 
 That's great!
 
-But your webpages don't
+But, our webpages don't
 have any interactivity.
-For example,
-if you wanted to create
-a button that changes
-something on your webpage,
-you can't do that
-with just HTML and CSS.
 
+For example:
+If we want to create
+a button that changes
+something on our webpage,
+we can't do that
+with just HTML and CSS.
 
 Take a look at this example code:
 
@@ -24,7 +23,7 @@ Take a look at this example code:
 <p>Hello, <span id="adjective">beautiful</span> World!</p>
 <button id="random-expression">Change my world</button>
 </panel>
-<panel language="css">
+<panel language="css" hidden="true">
 p {
   font-family: Roboto;
   font-weight: 100;
@@ -56,18 +55,18 @@ button:active {
 </panel>
 <panel language="javascript">
 /*
-  The following code will make sense as you study more in the course.
+  The following code will make sense as we study more in the course.
   Right now, simply look at it and move on to understanding the concept.
 */
 
 const quotes = ['beautiful', 'sad', 'green', 'strong', 'crazy', 'meaningful', 'fun'];
 
-// selects the element which has the id "random-expression" and assigns it to the variable "randomizer".
-// As you can see from the above HTML code, in this example, the element is a `button element`.
+// Selects the element which has the id "random-expression" and assigns it to the variable "randomizer".
+// As we can see from the above HTML code, in this example, the element is a `button element`.
 const randomizer = document.getElementById('random-expression');
 
-// selects the element which has the id "adjective" and assigns it to the variable "adjective".
-// As you can see from the above HTML code, in this example, the element is a `span element`.
+// Selects the element which has the id "adjective" and assigns it to the variable "adjective".
+// As we can see from the above HTML code, in this example, the element is a `span element`.
 let adjective = document.getElementById('adjective');
 
 const handleClick = () => {
@@ -87,7 +86,7 @@ randomizer.addEventListener('click', handleClick);
 
 To allow the user to access
 and
-change your webpage content,
-you need to use
+change our webpage content,
+we need to use
 a programming language
 like **JavaScript**.
