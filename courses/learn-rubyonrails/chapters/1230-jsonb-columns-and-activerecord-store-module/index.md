@@ -154,10 +154,9 @@ whether you're using a `json`-type column or a text column to store your JSON
 data. If you're using a `json`-type column, then use `store_accessor`. If you're
 using a text column, then use `store`.
 
-## Considerations for storing JSON data in PostgreSQL database columns
+## JSON data storage best practices in PostgreSQL
 
-Storing JSON data in a PostgreSQL database column like JSONB may not be the best
-choice in the following scenarios:
+When storing JSON data in a PostgreSQL database column, like JSONB, careful considerations are essential, as it may not be the best option in the following situations:
 
 1. When you need to perform complex queries on the JSON data: While PostgreSQL
    provides some powerful functions for querying JSON data, it can be difficult

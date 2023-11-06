@@ -32,6 +32,9 @@
 - slug: basics-of-ruby-on-rails-routing
   name: Basics of Ruby on Rails routing
   has_pages: false
+- slug: overview-of-rails-parameters
+  name: Overview of Rails Parameters
+  has_pages: false
 - slug: restful-routes-in-ruby-on-rails
   name: RESTful routes in Ruby on Rails
   has_pages: false
@@ -173,6 +176,9 @@
 - slug: testing-user-model
   name: Testing User model
   has_pages: false
+- slug: debugging-test-failures
+  name: Debugging test failures
+  has_pages: false
 - slug: test-coverage
   name: Test coverage
   has_pages: false
@@ -284,9 +290,6 @@
 - slug: hsts-and-rails
   name: HSTS and Rails
   has_pages: false
-- slug: introducing-in-depth-chapters
-  name: Introducing in depth chapters
-  has_pages: false
 - slug: postgresql-in-depth
   name: PostgreSQL in depth
   has_pages: false
@@ -317,8 +320,8 @@
 - slug: rails-macros-and-metaprogramming
   name: Rails Macros and Metaprogramming
   has_pages: false
-- slug: summarizing-rails-naming-conventions
-  name: Summarizing Rails naming conventions
+- slug: rails-naming-conventions
+  name: Rails naming conventions
   has_pages: false
 - slug: generic-naming-patterns
   name: Generic naming patterns
@@ -347,14 +350,8 @@
 - slug: rails-routing-in-depth
   name: Rails routing in depth
   has_pages: false
-- slug: overview-of-rails-parameters
-  name: Overview of Rails Parameters
-  has_pages: false
 - slug: request-response-cycle-in-rails
   name: Request response cycle in Rails
-  has_pages: false
-- slug: debugging-test-failures
-  name: Debugging test failures
   has_pages: false
 - slug: dealing-with-errors
   name: Dealing with errors
@@ -371,9 +368,9 @@
 - slug: jsonb-columns-and-activerecord-store-module
   name: JSONB columns and ActiveRecord Store module
   has_pages: false
-- slug: more-rails-content-and-goodies
-  name: More Rails content and goodies
+- slug: more-rails-goodies
+  name: More Rails goodies
   has_pages: false
-- slug: other-reference-materials-to-go-through
-  name: Other reference materials to go through
+- slug: additional-reference-materials
+  name: Additional reference materials
   has_pages: false

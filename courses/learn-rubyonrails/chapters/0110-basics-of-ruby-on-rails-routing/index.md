@@ -83,7 +83,7 @@ In the above case when user visits `/books/the-fountainhead`, Rails will send
 the request to `show` action inside `BooksController` class.
 
 Also, Rails will make the request path segment corresponding to `:id` available
-in `params` method. The value of `params` behaves like a hash.
+in `params` method. The value of `params` behaves like a hash. We will learn more about the usage of `params` in the next [chapter](/learn-rubyonrails/overview-of-rails-parameters). 
 
 We can access the value of `:id` from `show` action like this:
 
