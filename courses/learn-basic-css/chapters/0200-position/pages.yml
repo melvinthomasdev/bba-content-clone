@@ -71,9 +71,24 @@
 - title: Position Sticky
   slug: position-sticky
   page_type: lesson
-- title: Position Sticky with Offsets
-  slug: position-sticky-with-offsets
+- title: Position Sticky with Top Offset
+  slug: position-sticky-with-top-offset
   page_type: lesson
+- title: Exercise - Position Sticky with Top Offset
+  slug: exercise-position-sticky-with-top-offset
+  page_type: exercise
+- title: Position Sticky with Bottom Offset
+  slug: position-sticky-with-bottom-offset
+  page_type: lesson
+- title: Exercise - Position Sticky with Bottom Offset
+  slug: exercise-position-sticky-with-bottom-offset
+  page_type: exercise
+- title: Position Sticky with Left and Right Offset
+  slug: position-sticky-with-left-and-right-offset
+  page_type: lesson
+- title: Exercise - Position Sticky with Left and Right Offset
+  slug: exercise-position-sticky-with-left-and-right-offset
+  page_type: exercise
 - title: Position Sticky within Parent
   slug: position-sticky-within-parent
   page_type: lesson
