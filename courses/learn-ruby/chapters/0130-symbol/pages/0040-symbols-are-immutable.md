@@ -7,3 +7,6 @@ We can't append anything to a symbol.
 puts :hello << "world"
 </code>
 </codeblock>
+
+The above code will throw an error as we are trying to modify the 
+symbol `:hello`.
