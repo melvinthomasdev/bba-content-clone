@@ -28,7 +28,7 @@ Let's see a couple of examples:
 <codeblock language="ruby" type="lesson">
 <code>
 puts (1..5) === 3
-puts /tr/ === "Guitar"
+puts /tar/ === "Guitar"
 puts Integer === 4
 </code>
 </codeblock>
@@ -36,13 +36,13 @@ puts Integer === 4
 In the first example, the "==="
 operator is used with a range
 object `(1..5)` and checks if
-the value 3 falls within that range.
+the value 3 falls within that 
+range. Since it does, Boolean 
+`true` is returned.
 
-Since it does, Boolean `true`
-is returned.
 In the second example, the "==="
 operator is used with a regular
-expression `/tr/` to match it
+expression `/tar/` to match it
 against the string "Guitar".
 Since the string contains the
 pattern defined by the regular
