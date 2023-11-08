@@ -5,7 +5,7 @@ Finish the method definition given below.
 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
-def remove_unmatched(participants, &condition)
+def remove_unmatched(participants, condition)
   # Write your code here
 end
 </code>
