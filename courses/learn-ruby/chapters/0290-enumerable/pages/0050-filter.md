@@ -75,3 +75,5 @@ array = ["France", "India", "England", "Australia"]
 puts selector(array)
 </code>
 </codeblock>
+
+It should be noted that the methods `select` and `find_all` are identical to `filter` in that they all serve to filter elements from an array or hash based on a specified condition.
