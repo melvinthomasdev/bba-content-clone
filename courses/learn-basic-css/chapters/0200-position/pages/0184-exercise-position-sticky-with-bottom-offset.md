@@ -128,7 +128,7 @@ body {
   list-style: none;
 }
 
-.nav > p {
+.nav > li {
   margin: 5px;
   padding: 5px;
 }
