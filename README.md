@@ -15,6 +15,7 @@ Refer to [this documentation](https://neetocoursehelp.neetokb.com/p/a-b68add58).
 
 ## Style guide
 
+Refer to [this documentation](/docs/style-guide.md).
 
 ## Miscellaneous
 
