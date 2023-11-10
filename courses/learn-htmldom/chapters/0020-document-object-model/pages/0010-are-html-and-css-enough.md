@@ -19,11 +19,16 @@ Take a look at this example code:
 
 <codeblock language="javascript" type="lesson">
 <code>
-<panel language="html">
+<panel language="html" hidden="true">
 <p>Hello, <span id="adjective">beautiful</span> World!</p>
-<button id="random-expression">Change my world</button>
+<button id="amazing-button">Make my world amazing</button>
+<button id="beautiful-button">Make my world beautiful</button>
 </panel>
 <panel language="css" hidden="true">
+* {
+  text-align: center;
+}
+
 p {
   font-family: Roboto;
   font-weight: 100;
@@ -36,13 +41,14 @@ span {
 }
 
 button {
-  background-color: lightgreen;
   border: 0;
   padding: 0.5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   font-family: Courier;
   font-size: 1.1rem;
   outline: none;
+  border-radius: 5px;
+  margin: 5px;
 }
 
 button:hover {
@@ -52,41 +58,44 @@ button:hover {
 button:active {
   transform: scale(0.98);
 }
+
+#beautiful-button {
+  background-color: lightgreen;
+}
+
+#amazing-button {
+  background-color: lightblue;
+}
 </panel>
-<panel language="javascript">
+<panel language="javascript" hidden="true">
 /*
   The following code will make sense as we study more in the course.
   Right now, simply look at it and move on to understanding the concept.
 */
 
-const quotes = ['beautiful', 'sad', 'green', 'strong', 'crazy', 'meaningful', 'fun'];
-
-// Selects the element which has the id "random-expression" and assigns it to the variable "randomizer".
-// As we can see from the above HTML code, in this example, the element is a `button element`.
-const randomizer = document.getElementById('random-expression');
-
-// Selects the element which has the id "adjective" and assigns it to the variable "adjective".
 // As we can see from the above HTML code, in this example, the element is a `span element`.
 let adjective = document.getElementById('adjective');
 
-const handleClick = () => {
-  // selects a quote randomly out of the array "quotes" and assigns it to the variable "randomExpression"
-  const randomExpression = quotes[Math.floor(Math.random() * quotes.length)];
+const handleBeautifulClick = () => {
+  adjective.innerText = "beautiful";
+};
 
-  // inserts the "randomExpression" value as the text content of the span element (one with id: "adjective")
-  adjective.innerText = randomExpression;
+const beautifulButton = document.getElementById("beautiful-button");
+beautifulButton.addEventListener('click', handleBeautifulClick);
 
-}
+const handleAmazingClick = () => {
+  adjective.innerText = "amazing";
+};
 
-// adds a method to call the function `handleClick` when someone clicks the button element.
-randomizer.addEventListener('click', handleClick);
+const amazingButton = document.getElementById("amazing-button");
+amazingButton.addEventListener('click', handleAmazingClick);
 </panel>
 </code>
 </codeblock>
 
 To allow the user to access
 and
-change our webpage content,
-we need to use
-a programming language
-like **JavaScript**.
+change our webpage content
+as shown in the example above,
+we need to use a programming
+language like **JavaScript**.
