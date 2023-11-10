@@ -2,6 +2,9 @@ Create an array named `geniuses`
 with the following elements:
 `"Tesla"`, `"Einstein"` and `"Newton"`.
 
+Log the value of the object
+`geniuses` to the console.
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const geniuses;

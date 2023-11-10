@@ -8,6 +8,9 @@
 - title: Exercise - if Statement
   slug: exercise-if-statement
   page_type: exercise
+- title: Exercise 2 - if Statement
+  slug: exercise-2-if-statement
+  page_type: exercise
 - title: if statement condition
   slug: if-statement-condition
   page_type: lesson
@@ -20,11 +23,17 @@
 - title: Exercise - else Statement
   slug: exercise-else-statement
   page_type: exercise
+- title: Exercise 2 - else Statement
+  slug: exercise-2-else-statement
+  page_type: exercise
 - title: else if Statement
   slug: else-if-statement
   page_type: lesson
 - title: Exercise - else if Statement
   slug: exercise-else-if-statement
+  page_type: exercise
+- title: Exercise 2 - else if Statement
+  slug: exercise-2-else-if-statement
   page_type: exercise
 - title: switch Statement
   slug: switch-statement

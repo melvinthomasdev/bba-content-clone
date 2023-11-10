@@ -18,8 +18,10 @@ the console.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
+// Write code below
 </code>
 <solution>
+// Write code below
 const menu = {
   burger: 40
 };

@@ -53,11 +53,17 @@
 - title: Exercise - Update Object Property using Dot Notation
   slug: exercise-update-object-property-using-dot-notation
   page_type: exercise
+- title: Exercise 2 - Update Object Property using Dot Notation
+  slug: exercise-2-update-object-property-using-dot-notation
+  page_type: exercise
 - title: Update Object Property using Bracket Notation
   slug: update-object-property-using-bracket-notation
   page_type: lesson
 - title: Exercise - Update Object Property using Bracket Notation
   slug: exercise-update-object-property-using-bracket-notation
+  page_type: exercise
+- title: Exercise 2 - Update Object Property using Bracket Notation
+  slug: exercise-2-update-object-property-using-bracket-notation
   page_type: exercise
 - title: Exercise - Update Object Property using Dot and Bracket Notations
   slug: exercise-update-object-property-using-dot-and-bracket-notations
@@ -68,17 +74,26 @@
 - title: Exercise - Get Object Keys - Object.keys()
   slug: exercise-get-object-keys-using-object-keys
   page_type: exercise
+- title: Exercise 2 - Get Object Keys - Object.keys()
+  slug: exercise-2-get-object-keys-using-object-keys
+  page_type: exercise
 - title: Get Object Values - Object.values()
   slug: get-object-values-using-object-values
   page_type: lesson
 - title: Exercise - Get Object Values - Object.values()
   slug: exercise-get-object-values-using-object-values
   page_type: exercise
+- title: Exercise 2 - Get Object Values - Object.values()
+  slug: exercise-2-get-object-values-using-object-values
+  page_type: exercise
 - title: Get Object Keys and Values - Object.entries()
   slug: get-keys-and-values-of-object
   page_type: lesson
 - title: Exercise - Get Object Keys and Values - Object.entries()
   slug: exercise-get-keys-and-values-of-object
+  page_type: exercise
+- title: Exercise 2 - Get Object Keys and Values - Object.entries()
+  slug: exercise-2-get-keys-and-values-of-object
   page_type: exercise
 - title: Object Property Shorthand
   slug: object-property-shorthand

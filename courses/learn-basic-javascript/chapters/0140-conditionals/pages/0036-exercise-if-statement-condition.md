@@ -34,6 +34,7 @@ const employeeThree = {
   isAdmin: false
 };
 
+// Write your code here
 if (employeeOne.isAdmin) {
   console.log(`${employeeOne.name} has admin access.`);
 };
