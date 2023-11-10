@@ -17,6 +17,9 @@
 - title: Styling Links with Pseudo-classes
   slug: styling-links-with-pseudo-classes
   page_type: lesson
+- title: Active State vs Focus State
+  slug: active-state-vs-focus-state
+  page_type: lesson
 - title: First and Last Child
   slug: first-last-child
   page_type: lesson
