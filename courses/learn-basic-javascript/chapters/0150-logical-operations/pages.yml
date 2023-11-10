@@ -8,11 +8,17 @@
 - title: Exercise - OR
   slug: exercise-logical-or
   page_type: exercise
+- title: Exercise 2 - OR
+  slug: exercise-2-logical-or
+  page_type: exercise
 - title: AND
   slug: logical-and
   page_type: lesson
 - title: Exercise - AND
   slug: exercise-logical-and
+  page_type: exercise
+- title: Exercise 2 - AND
+  slug: exercise-2-logical-and
   page_type: exercise
 - title: Comprehensive Exercise - Logical operations (AND/OR)
   slug: comprehensive-exercise-logical-operations-and-or
@@ -22,6 +28,9 @@
   page_type: lesson
 - title: Exercise - NOT
   slug: exercise-logical-not
+  page_type: exercise
+- title: Exercise 2 - NOT
+  slug: exercise-2-logical-not
   page_type: exercise
 - title: NOT vs Inequality Operators
   slug: logical-not-vs-inequality

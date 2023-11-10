@@ -36,18 +36,6 @@ const admin = {
 
 admin.displayGreeting();
 </code>
-</codeblock><codeblock language="javascript" type="lesson">
-<code>
-const admin = {
-  name: "Adam Smith",
-  age: 45,
-  displayGreeting () {
-    console.log("Hello everyone");
-  }
-}
-
-admin.displayGreeting();
-</code>
 </codeblock>
 
 We can also use the object property shorthand

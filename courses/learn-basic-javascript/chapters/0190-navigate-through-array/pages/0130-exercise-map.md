@@ -1,19 +1,23 @@
-Use the `map()` method
-to append **"@example.com"**
-to the end of each element
-of the `usernames` array
-and store the result in `emails`.
+Create a function `doubledNumbers`
+which accepts the array `numbers`
+as a parameter and returns a new
+array which has all the numbers
+multiplied by **2**.
 
+Log the resulting array to the
+console.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
-const usernames = ["sam.smith", "oliver", "adamSmith"];
-const emails = ;
-console.log(emails);
+const numbers = [1, 2, 3, 4, 5];
+// Write code below
 </code>
 
 <solution>
-const usernames = ["sam.smith", "oliver", "adamSmith"];
-const emails = usernames.map(username => `${username}@example.com`);
-console.log(emails);
+const numbers = [1, 2, 3, 4, 5];
+// Write code below
+
+const doubledNumbers = numbers.map((number) =>  number * 2);
+
+console.log(doubledNumbers);
 </solution>
 </codeblock>

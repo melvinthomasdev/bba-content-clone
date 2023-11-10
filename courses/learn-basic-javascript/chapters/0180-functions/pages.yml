@@ -5,6 +5,9 @@
 - title: Define a Function
   slug: define-a-function
   page_type: lesson
+- title: Exercise - Define a Function
+  slug: exercise-define-a-function
+  page_type: exercise
 - title: Function Expression
   slug: function-expression
   page_type: lesson
@@ -17,17 +20,26 @@
 - title: Exercise - Parameters and Arguments
   slug: exercise-parameters-and-arguments
   page_type: exercise
+- title: Exercise 2 - Parameters and Arguments
+  slug: exercise-2-parameters-and-arguments
+  page_type: exercise
 - title: Default Parameters
   slug: default-parameters
   page_type: lesson
 - title: Exercise - Default Parameters
   slug: exercise-default-parameters
   page_type: exercise
+- title: Exercise 2 - Default Parameters
+  slug: exercise-2-default-parameters
+  page_type: exercise
 - title: return Statement
   slug: return-statement
   page_type: lesson
 - title: Exercise - return Statement
   slug: exercise-return-statement
+  page_type: exercise
+- title: Exercise 2 - return Statement
+  slug: exercise-2-return-statement
   page_type: exercise
 - title: return Statement for Terminating Functions
   slug: return-to-terminate
@@ -41,6 +53,9 @@
 - title: Exercise - Arrow Function Shorthand
   slug: exercise-arrow-function-shorthand
   page_type: exercise
+- title: Exercise 2 - Arrow Function Shorthand
+  slug: exercise-2-arrow-function-shorthand
+  page_type: exercise
 - title: Function as a Property of an Object
   slug: function-as-a-property-of-an-object
   page_type: lesson
@@ -52,6 +67,9 @@
   page_type: lesson
 - title: Exercise - Shorthand for Method
   slug: exercise-shorthand-for-method
+  page_type: exercise
+- title: Exercise 2 - Shorthand for Method
+  slug: exercise-2-shorthand-for-method
   page_type: exercise
 - title: Function Naming Conventions
   slug: function-naming-conventions

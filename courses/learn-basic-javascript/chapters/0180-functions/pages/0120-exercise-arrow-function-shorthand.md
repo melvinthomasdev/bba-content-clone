@@ -1,23 +1,18 @@
-Define a function `calculateBalance`
-that takes three parameters -
-`income`, `expense` and `tax`.
-The function should return
-the result of subtracting both
-the values of `expense` and `tax`
-from the value of `income`.
-Use the arrow function shorthand.
+Update the following function
+using the arrow function shorthand.
 
-<codeblock type="exercise" language="javascript" testMode="fixedInput">
+<codeblock type="exercise" language="javascript" testMode="fixedInput" matchSolutionCode="true">
 <code>
-const calculateBalance = ;
+const product = (firstNumber, secondNumber) => {
+  return firstNumber * secondNumber;
+};
 
-console.log(calculateBalance(100000, 20000, 24000));
+product(12, 6);
 </code>
 
 <solution>
-const calculateBalance = (income, expense, tax) =>
-  income - expense - tax;
+const product = (firstNumber, secondNumber) => firstNumber * secondNumber;
 
-console.log(calculateBalance(100000, 20000, 24000));
+product(12, 6);
 </solution>
 </codeblock>
