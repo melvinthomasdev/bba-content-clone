@@ -14,11 +14,23 @@
 - title: Exercise - `calc` Function
   slug: exercise-calc-function
   page_type: exercise
-- title: "`conic-gradient` Function"
-  slug: conic-gradient-function
+- title: "`conic-gradient` Function Introduction"
+  slug: conic-gradient-function-intro
   page_type: lesson
-- title: Exercise - `conic-gradient` Function
-  slug: exercise-conic-gradient-function
+- title: Exercise - `conic-gradient` Function Introduction
+  slug: exercise-conic-gradient-function-intro
+  page_type: exercise
+- title: Conic Gradient with Start and Stop Values
+  slug: conic-gradient-start-stop
+  page_type: lesson
+- title: Exercise - Conic Gradient with Start and Stop Values
+  slug: exercise-conic-gradient-start-stop
+  page_type: exercise
+- title: Changing Starting Angle in Conic Gradient
+  slug: conic-gradient-changing-starting-angle
+  page_type: lesson
+- title: Exercise - Changing Starting Angle in Conic Gradient
+  slug: exercise-conic-gradient-changing-starting-angle
   page_type: exercise
 - title: "`counter` Function"
   slug: counter-function
