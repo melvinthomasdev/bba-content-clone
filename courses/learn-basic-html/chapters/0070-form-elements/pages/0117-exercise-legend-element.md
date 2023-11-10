@@ -2,7 +2,7 @@ Group the `input` and `label`
 for **review** in a `fieldset` element.
 
 Also, add a legend element with
-the caption **Review Section**:
+the text **Review Section**:
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
 <form>

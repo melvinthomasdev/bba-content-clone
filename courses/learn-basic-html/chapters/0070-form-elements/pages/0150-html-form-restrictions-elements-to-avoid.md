@@ -37,10 +37,9 @@ Let us have a look at the same example
 with correct form structure:
 <codeblock language="html" type="lesson">
 <code>
-<form>
-  <caption>Personal Information</caption>
-  <br>
+<h2>Personal Information</h2>
 
+<form>
   <label for="first-name">First Name:</label>
   <br>
   <input id="first-name" type="text" placeholder="Eve"/>

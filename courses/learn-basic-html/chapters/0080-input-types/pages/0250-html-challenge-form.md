@@ -1,44 +1,58 @@
-- Create a form with action attribute
-set to "#" and the method to "post".
-- Add a form heading `Identity`
-- Below the heading add a label `Username:`
-with **for** attribute set as `username`.
-- Following the label add a text field
-with **placeholder**
-attributes set as `username`.
+Add an `<h2>` element with the text **Identity**.
+Below the heading, add a form element.
 
-- Below the text field add a label `Password:`
-- Add password input field with **placeholder**
+Inside the form element,
+add the following:
+
+A Label with text `Username:` with **for**
+attribute set as `username`.
+
+Following the label, add a text field
+with **placeholder** attributes set as
+`username`.
+
+Below the text field, add a label `Password:`
+Add password input field with **placeholder**
 attribute as `password`.
 
-- Below password field add label `Address:`.
-- Add a textarea field with **placeholder**
+Below password field, add label `Address:`.
+Add a textarea field with **placeholder**
 attribute set as `address`.
-- Add **rows** attribute set as `4`
+Add **rows** attribute set as `4`
 and
 **cols** set as `50`.
 
-- Below the address field add
-a label `Favourite Ice Cream Flavour:`
-- Create a dropdown menu for users
-to select their favorite ice cream flavors.
+Below the address field,
+add a label with text
+`Favourite Ice Cream Flavour:`
 
-- Selections should have options for
+Create a dropdown menu for users
+to select their favorite ice cream flavors.
+Selections should have options for
 the following flavours:
- 1. Chocolate
- 2. Vanilla
- 3. Strawberry
- 4. Pista
- 5. Butterscotch
-- Option value should be the same
+  1. Chocolate
+  2. Vanilla
+  3. Strawberry
+  4. Pista
+  5. Butterscotch
+Option value should be the same
 as the flavour.
 
-- Add a label `Phone No.` and a telephone field
-with **placeholder** attribute set as `phone-no`.
-- Below the phone number field add two buttons
-one with type `reset`
+Add a label `Phone No.`,
 and
-another with type `submit`.
+a telephone field with **placeholder**
+attribute set as `phone-no`.
+
+Below the phone number field,
+add two buttons one with type
+`reset`
+and
+text `Reset`.
+
+Add another button with type
+`submit`
+and
+text `Submit`.
 
 <codeblock language="html" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
@@ -87,8 +101,8 @@ button[type="reset"] {
 </code>
 <solution>
 <!-- Write code below -->
+<h2>Identity</h2>
 <form action="#" method="post">
-  <caption>Identity</caption>
   <label for="username">Username:</label>
   <input type="text" placeholder="username" />
 

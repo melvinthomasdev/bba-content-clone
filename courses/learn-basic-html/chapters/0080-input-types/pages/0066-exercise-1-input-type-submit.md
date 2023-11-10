@@ -1,14 +1,11 @@
-
 Add a submit button above
 the closing tag of the form
 element.
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
+<h2>Test 01</h2>
 <form>
-  <caption>Test 01</caption>
-  <br>
-
   <label>First Name</label>
   <br>
   <input type="text" placeholder="Sam">
@@ -23,10 +20,8 @@ element.
 </code>
 
 <solution>
+<h2>Test 01</h2>
 <form>
-  <caption>Test 01</caption>
-  <br>
-
   <label>First Name</label>
   <br>
   <input type="text" placeholder="Sam">
