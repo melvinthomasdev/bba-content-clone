@@ -8,6 +8,6 @@ city_name = "Salt Lake City"
 
 array = city_name.split
 
-puts array
+puts array.to_s
 </code>
 </codeblock>

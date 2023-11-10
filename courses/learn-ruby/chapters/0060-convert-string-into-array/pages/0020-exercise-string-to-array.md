@@ -6,6 +6,10 @@ contents of the array.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 city_name = "rio de janeiro"
+
+array = 
+
+puts array
 </code>
 
 <solution>

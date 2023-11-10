@@ -8,6 +8,6 @@ things_i_like = "ice cream, chocolate, movies, beaches"
 
 items = things_i_like.split(",")
 
-puts items
+puts items.to_s
 </code>
 </codeblock>

@@ -8,8 +8,8 @@ array1 = [1, 2, 2, 3, 4, 4, 4, 5, 5, 6, 7, 7]
 
 array2 = array1.uniq
 
-puts array1
-puts array2
+puts array1.to_s
+puts array2.to_s
 </code>
 </codeblock>
 

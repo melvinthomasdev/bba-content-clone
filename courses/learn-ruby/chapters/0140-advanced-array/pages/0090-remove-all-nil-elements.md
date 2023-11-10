@@ -9,8 +9,8 @@ array1 = [1, 2, nil, 4, "6", nil, "John"]
 
 array2 = array1.compact
 
-puts array1
-puts array2
+puts array1.to_s
+puts array2.to_s
 </code>
 </codeblock>
 

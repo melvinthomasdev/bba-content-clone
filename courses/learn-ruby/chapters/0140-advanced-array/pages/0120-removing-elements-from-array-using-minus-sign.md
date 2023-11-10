@@ -6,8 +6,8 @@ from an array.
 <code>
 array1 = [1,2,3,4,5,6,7]
 array2 = array1 - [2,3]
-puts array1
-puts array2
+puts array1.to_s
+puts array2.to_s
 </code>
 </codeblock>
 

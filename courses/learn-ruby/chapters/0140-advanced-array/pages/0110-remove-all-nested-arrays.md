@@ -14,8 +14,8 @@ array1 = [1, [2, 3, 4], 5, 6, [7,8]]
 
 array2 = array1.flatten
 
-puts array1
-puts array2
+puts array1.to_s
+puts array2.to_s
 </code>
 </codeblock>
 

@@ -9,6 +9,10 @@ should have only two items -
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 friends = "John and Annie"
+
+array = 
+
+puts array
 </code>
 
 <solution>
