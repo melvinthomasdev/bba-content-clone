@@ -5,14 +5,13 @@ keywords that we will use throughout the book and how to use the UI.
 
 We have designed the book in a way that it is user-friendly and navigating
 through the book is extremely easy. Let's talk about the `Table of contents`
-first. It contains a list of all the chapters along with the sub-sections in
-each of the chapters.
+first. It contains a list of all the chapters each accompanied by its 
+respective lessons.
 
-If you look in the picture below, you can see that each item in the list
-contains the title of the chapter along with a list of all the sub-sections
-inside the chapter. Clicking on a title will take you to the respective chapter
-and clicking on a sub-section item will take you directly to that particular
-section in the chapter.
+Examining the image below reveals that every element within the list showcases 
+the chapter title and an inventory of lessons within. Selecting a title 
+navigates to the corresponding chapter, while selecting a lesson directly 
+accesses that particular lesson within the chapter.
 
 <image>table-of-contents.png</image>
 
