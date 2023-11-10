@@ -17,3 +17,9 @@
 - title: Exercise - Opacity using RGBA 2
   slug: exercise-opacity-using-rgba-2
   page_type: exercise
+- title: "`hsla` Function"
+  slug: hsla-function
+  page_type: lesson
+- title: Exercise - `hsla` Function
+  slug: exercise-hsla-function
+  page_type: exercise

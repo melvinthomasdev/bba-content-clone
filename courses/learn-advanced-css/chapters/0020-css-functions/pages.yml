@@ -41,3 +41,12 @@
 - title: Exercise - `counter` Function
   slug: exercise-counter-function
   page_type: exercise
+- title: "`cubic-bezier` Function"
+  slug: cubic-bezier-function
+  page_type: lesson
+- title: "`cubic-bezier` Function 2"
+  slug: cubic-bezier-function-2
+  page_type: lesson
+- title: Exercise - `cubic-bezier` Function
+  slug: exercise-cubic-bezier-function
+  page_type: exercise
