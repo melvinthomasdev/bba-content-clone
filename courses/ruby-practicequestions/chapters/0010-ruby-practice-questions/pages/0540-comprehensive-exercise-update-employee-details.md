@@ -4,8 +4,10 @@ Finish the method definition below.
 
 Given `employee_details_at_joining`, the method should calculate a new hash `updated_employee_details` that contains the same data as `employee_details_at_joining` but with the following changes:
 
-1. the `experience` value should incremented by 1 if it exists, otherwise a new key `experience` with value 1 should be added to the hash.
-2. a new key `age` should be added, calculated from `year_of_birth` key.
+1. a new key `age` should be added, calculated from `year_of_birth` key. 
+2. the `experience` value should incremented by 1 if it exists, otherwise a new key `experience` with value 1 should be added to the hash.
+
+Ensure that the key `age` is added to the object before `experience` in case the `experience` key is absent in the initial hash `employee_details_at_joining`.
 
 <br/>
 The method should then return a new hash containing both `employee_details_at_joining` and `updated_employee_details` in this format:
@@ -33,10 +35,11 @@ def update_employee_details(employee_details_at_joining)
 
   updated_details = {
     employee_details_at_joining: employee_details_at_joining,
-    updated_employee_details: employee_details_at_joining.merge({
-      age: employee_age,
-      experience: employee_experience
-    })
+    updated_employee_details: {
+      **employee_details_at_joining,
+      "age" => employee_age,
+      "experience" => employee_experience
+    }
   }
 end
 </solution>
