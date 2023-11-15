@@ -153,6 +153,42 @@ cy.get("[data-cy=check-box]:eq(0)").should("be.visible").check();
 cy.get("[data-cy=check-box]:nth-child(1)").should("be.visible").check();
 ```
 
+## Avoid unsafe chaining of commands
+
+The automatic retry in Cypress is one of its most effective ways to avoid flakiness,
+but retries are only applicable for queries and not commands. For example:
+```js
+cy.get('[data-cy="submit-form-button"]').click();
+``` 
+Here Cypress retries the `get()` query again and again until the timeout. But the `click()` action
+is only executed once and isn't retried if failed.
+
+That is why it's recommended to chain commands only at the end of each chain and **not** in the
+middle. Consider this example:
+
+```js
+cy.get('.inactive-field').click().type("Oliver Smith");
+```
+Here consider that the field changes its behaviour in the DOM once the click operation is completed
+changing the class name from `.inactive-field` to `.active-field`. This means that once the chain reaches
+the type action it fails and has to retry to find the element. But since retry stops propagating with
+the first action, i.e. the `click()` action, the whole chain fails.
+
+This practice is called unsafe chaining and should be avoided to cause flakiness in tests.
+
+```js
+// Incorrect
+
+cy.get('[data-cy="user-name-field"]').click().type("Oliver Smith");
+
+// Correct
+
+cy.get('[data-cy="user-name-field"]').click();
+cy.get('[data-cy="user-name-field"]').type("Oliver Smith");
+```
+
+***Note: All user events have the capability to update the DOM structure and this should be taken into consideration while writing tests to prevent flakiness***
+
 ## Use `scrollIntoView()` to detect partially visible elements
 
 Cypress sometimes fails to detect an element even if it exists and maybe
