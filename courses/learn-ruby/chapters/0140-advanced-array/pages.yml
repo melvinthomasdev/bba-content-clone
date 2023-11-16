@@ -59,6 +59,12 @@
 - title: Exercise - Loop Over Array Using Index
   slug: exercise-loop-over-items-using-index
   page_type: exercise
+- title: Loop Over Equal-Sized Array Chunks
+  slug: loop-over-equal-sized-array-chunks
+  page_type: lesson
+- title: Exercise - Loop Over Equal-Sized Array Chunks
+  slug: exercise-loop-over-equal-sized-array-chunks
+  page_type: exercise
 - title: Sort Items of Array
   slug: sort-items-of-array
   page_type: lesson
