@@ -11,8 +11,10 @@
   slug: div-element
 - name: CSS Quiz
   slug: css-quiz-01
-- name: Sizing
-  slug: sizing
+- name: Dimensions and Units
+  slug: dimensions-and-units
+- name: Restricting Height and Width
+  slug: restricting-height-and-width
 - name: Comprehensive Exercise 01
   slug: css-comprehensive-exercise-01
 - name: Spacing
