@@ -5,11 +5,17 @@
 - title: Exercise - Text Color
   slug: exercise-text-color
   page_type: exercise
+- title: Exercise - Text Color 2
+  slug: exercise-text-color-2
+  page_type: exercise
 - title: Text Alignment
   slug: text-alignment
   page_type: lesson
 - title: Exercise - Text Alignment
   slug: exercise-text-alignment
+  page_type: exercise
+- title: Exercise - Text Alignment 2
+  slug: exercise-text-alignment-2
   page_type: exercise
 - title: Text Decoration
   slug: text-decoration
@@ -17,11 +23,17 @@
 - title: Exercise - Text Decoration
   slug: exercise-text-decoration
   page_type: exercise
+- title: Exercise - Text Decoration 2
+  slug: exercise-text-decoration-2
+  page_type: exercise
 - title: Line Height
   slug: line-height
   page_type: lesson
 - title: Exercise - Line Height
   slug: exercise-line-height
+  page_type: exercise
+- title: Exercise - Line Height 2
+  slug: exercise-line-height-2
   page_type: exercise
 - title: Letter Spacing
   slug: letter-spacing
@@ -29,11 +41,17 @@
 - title: Exercise - Letter Spacing
   slug: exercise-letter-spacing
   page_type: exercise
+- title: Exercise - Letter Spacing 2
+  slug: exercise-letter-spacing-2
+  page_type: exercise
 - title: Font Size
   slug: font-size
   page_type: lesson
 - title: Exercise - Font Size
   slug: exercise-font-size
+  page_type: exercise
+- title: Exercise - Font Size 2
+  slug: exercise-font-size-2
   page_type: exercise
 - title: Font Weight
   slug: font-weight
@@ -41,14 +59,23 @@
 - title: Exercise - Font Weight
   slug: exercise-font-weight
   page_type: exercise
+- title: Exercise - Font Weight 2
+  slug: exercise-font-weight-2
+  page_type: exercise
 - title: Font Family
   slug: font-family
+  page_type: lesson
+- title: Exercise - Font Family
+  slug: exercise-font-family
   page_type: lesson
 - title: Specific Font
   slug: specific-font
   page_type: lesson
 - title: Exercise - Specific Font
   slug: exercise-specific-font
+  page_type: exercise
+- title: Exercise - Specific Font 2
+  slug: exercise-specific-font-2
   page_type: exercise
 - title: Google Fonts
   slug: google-fonts
