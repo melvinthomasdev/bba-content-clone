@@ -10,3 +10,32 @@ What does this code do? It is difficult to make sense of how this code works wit
 const forever21 = age => age >= 21 ? 21 : age + 1;
 ```
 This is cleaner and someone who looks at the code can understand what's happening. We don't need to use Ramda in every single function in our codebase.
+
+
+Consider the following cases
+```js
+//Using Ramda
+const isLoading = equals(status, 'loading');
+
+//Using Vanilla JS
+const isLoading = status === 'loading';
+```
+
+```js
+//Using Ramda
+const isLoading = or(isOrganizationLoading, isUserLoading);
+
+//Using Vanilla JS
+const isLoading = isOrganizationLoading || isUserLoading;
+```
+```js
+//Using Ramda
+const isNotShowing = not(isShowing);
+
+//Using Vanilla JS
+const isNotShowing = !isShowing;
+```
+
+The Ramda code versions may appear more readable, but they use functions that require some learning. The Vanilla JS versions directly use operators, which are widely familiar.
+
+Also, the Ramda functions `equals`, `or`, and `not` are not direct replacements for Vanilla JS `===,` `||` and `!`. These Ramda functions are curried functions and include additional logic, which makes them slower in performance.
