@@ -62,47 +62,74 @@ function until the `loadBalance` Promise is resolved.
 This ensures the balance is displayed before
 thanking the customer.
 
-Consider the example given below:
+Let's look at another example:
 
 <codeblock language="javascript" type="lesson">
 <code>
-const user = {
-  name: "Adam Smith",
-  balance: 100000,
+function fetchUserData(userId) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const userData = {
+        id: userId,
+        name: "Sam Smith",
+        age: 25,
+      };
+      resolve(userData);
+    }, 2000);
+  });
 }
 
-const transferMoney = ({ amount, receiver }) => new Promise((resolve, reject) =>
-  setTimeout(() => {
-    if (amount > user.balance) {
-      reject(new Error("Not enough balance"));
-    } else {
-      user.balance -= amount;
-      resolve(`${amount} transferred to ${receiver}`);
-    }
-  }, 5000)
-);
+async function displayUserInfo(userId) {
+  console.log("Fetching user data...");
+  const userData = await fetchUserData(userId);
+  console.log(`User ID: ${userData.id}`);
+  console.log(`Name: ${userData.name}`);
+  console.log(`Age: ${userData.age}`);
+}
 
-const getBalance = new Promise(resolve =>
-  setTimeout(() => resolve(user.balance), 2000)
-);
-
-transferMoney({ amount: 50000, receiver: "Sam Smith" })
-  .then(message => {
-    console.log(message);
-    return getBalance;
-  })
-  .then(balance => console.log(`The balance is ${balance}`))
-  .catch(error => console.log(error.message));
+displayUserInfo(123);
 </code>
 </codeblock>
 
-In the example given above,
-we use chaining promises to ensure
-two asynchronous operations are performed
-in a particular order.
-However the above code is harder to understand
-and
-can be made cleaner using `async/await`.
+In the above example, `fetchUserData` simulates
+an asynchronous API call for user data,
+and `displayUserInfo` utilizes `async/await`
+for handling the asynchronous operation.
+
+Let's look at an example:
+
+<codeblock language="javascript" type="lesson">
+<code>
+const transferMoney = async ({ to, amount }) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (amount > 5000) {
+        reject("Limit exceeded");
+      } else {
+        resolve(`Transferring ${amount} to ${to}`);
+      }
+    }, 2000);
+  });
+};
+
+const performMoneyTransfer = async () => {
+  const message = await transferMoney({ to: "Sam", amount: 1000 });
+  console.log(message);
+  console.log("Transfer Complete");
+};
+
+performMoneyTransfer();
+</code>
+</codeblock>
+
+In the above example, `transferMoney` is an
+async function representing a fund transfer,
+and `performMoneyTransfer` uses `async/await`
+to handle it.
+The transfer occurs only if the amount does
+not exceed the specified limit.
+
+Consider the example given below:
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -136,20 +163,6 @@ const performTransaction = async () => {
 performTransaction();
 </code>
 </codeblock>
-
-In the example given above,
-we invoke a function `performTransaction`
-that has the `async` keyword
-before the definition of the function.
-We need to define a function
-with the `async` keyword,
-if we are going to use
-`await` within that function.
-
-Adding `await` before a `Promise`
-ensures that the execution will only
-continue after the `Promise`
-is either resolved or rejected.
 
 In the example given above,
 in the `performTransaction` function,
