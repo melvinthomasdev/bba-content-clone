@@ -86,6 +86,8 @@ That same image file should exist in app/assets/images/courses/<course_name>/
     }
     ```
 
+- Make sure that every code block has a visible output.
+
 ### Writing Ruby code:
 
 - Ruby code written in the code block gets executed using [judge0](https://github.com/judge0/judge0) which is an online code execution system. Currently Judge0 only supports **Ruby 2.7.0**.
@@ -228,6 +230,11 @@ You can use backticks (``) to add code in the lesson titles. If you do use backt
 
 (viii) Use this address as the default address value throughout the Academy:
 `Office #803, 8th Floor, World Trade Center, Tower 2, Kharadi, Pune, Maharashtra`.
+
+(ix) Specify selectors to be used in CSS questions:
+When adding exercises dealing with CSS, specify which selector has to be used in the exercise question itself.
+For example:
+Change the font-size for the `ice-cream` class.
 
 ## Editing Checklist
 
