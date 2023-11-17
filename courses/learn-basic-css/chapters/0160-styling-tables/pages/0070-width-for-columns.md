@@ -1,7 +1,15 @@
-Instead of setting a width for
-the entire table, you can also
-provide a `width` to all the
-columns using the `td` selector:
+We can set the width of all the
+columns in a table element.
+
+A column is a vertical arrangement
+of cells in the table,
+and
+a common header defines it. 
+
+For example, in the code below,
+we have three columns with three
+headings:
+`Name`, `Age` and `Gender`.
 
 <codeblock language="css" type="lesson">
 <code>
@@ -35,3 +43,13 @@ td {
 </panel>
 </code>
 </codeblock>
+
+From the code above,
+we can observe that to
+set the width for all columns,
+we use the `td` selector.
+
+Once you set the width
+for all the cells,
+the same width will be set
+for the columns too.
