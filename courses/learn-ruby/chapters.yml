@@ -55,6 +55,8 @@
   slug: blocks-procs-lambda
 - name: Inheritance
   slug: inheritance
+- name: Encapsulation
+  slug: encapsulation
 - name: Module
   slug: module
 - name: Enumerable
