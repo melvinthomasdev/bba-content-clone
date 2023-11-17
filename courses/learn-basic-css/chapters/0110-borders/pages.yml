@@ -116,3 +116,12 @@
 - title: Border Radius - Final exercise
   slug: border-radius-final-exercise
   page_type: exercise
+- title: Outline
+  slug: outline
+  page_type: lesson
+- title: Exercise - Outline
+  slug: exercise-outline
+  page_type: exercise
+- title: Debugging CSS using Outline
+  slug: debugging-using-outline
+  page_type: lesson
