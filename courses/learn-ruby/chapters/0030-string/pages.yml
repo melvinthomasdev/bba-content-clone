@@ -77,6 +77,15 @@
 - title: Exercise - Convert String to Characters
   slug: exercise-convert-string-to-characters
   page_type: exercise
+- title: Compare Two Strings Ignoring Case
+  slug: compare-two-strings-ignoring-case
+  page_type: lesson
+- title: Compare Two Strings Considering Case
+  slug: compare-two-strings-considering-case
+  page_type: lesson
+- title: Exercise - Compare Two Strings
+  slug: exercise-compare-two-strings
+  page_type: exercise
 - title: Interpolation using double quoted string
   slug: interpolation-using-double-quoted-string
   page_type: lesson
