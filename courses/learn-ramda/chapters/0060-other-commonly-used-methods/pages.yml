@@ -41,3 +41,15 @@
 - title: Exercise - Pluck
   slug: exercise-pluck
   page_type: exercise
+- title: Omit
+  slug: omit
+  page_type: lesson
+- title: Exercise - Omit
+  slug: exercise-omit
+  page_type: exercise
+- title: IsEmpty
+  slug: is-empty
+  page_type: lesson
+- title: Exercise - IsEmpty
+  slug: exercise-is-empty
+  page_type: exercise
