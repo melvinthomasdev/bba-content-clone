@@ -1,4 +1,19 @@
 ---
+- slug: introduction-to-playwright
+  name: Introduction to Playwright
+  has_pages: false
 - slug: javascript-conventions
-  name: JavaScript Conventions
+  name: JavaScript conventions
+  has_pages: false
+- slug: folder-structure
+  name: Folder structure
+  has_pages: false
+- slug: test-organization-and-conventions
+  name: Test organization and conventions
+  has_pages: false
+- slug: playwright-hooks
+  name: Playwright hooks
+  has_pages: false
+- slug: locators
+  name: Locators
   has_pages: false
