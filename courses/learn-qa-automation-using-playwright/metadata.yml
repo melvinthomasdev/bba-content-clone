@@ -1,0 +1,11 @@
+---
+name: Learn QA Automation using Playwright
+subheading: Playwright practices followed at BigBinary
+slug: learn-qa-automation-using-playwright
+published: true
+custom_data:
+  type: misc
+  courseType: lesson
+home_logo: qa-automation-using-playwright-logo.png
+logo: qa-automation-using-playwright-logo.png
+show_reset_button: false
