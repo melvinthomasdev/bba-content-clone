@@ -4,19 +4,25 @@ of an HTML page:
 <codeblock language="html" type="lesson">
 <code>
 <html>
-    <head>
-        <title>Attack of the Machines</title>
-    </head>
-    <body>
-        <h1>Are you prepared for the attack of the machines?</h1>
-        <p>The day is coming when your <span style="font-weight: 700">toaster</span> might not agree with you. You should best prepare for it now.</p>
-    </body>
+  <head>
+    <title>Space Race!</title>
+  </head>
+  <body>
+    <h1>First Space mission</h1>
+    <p>
+      On Oct. 4, 1957, the U.S.S.R launched the first artificial satellite, <span style="font-weight: 700">Sputnik 1</span>, into space.
+    </p>
+
+    <h1>Second Space mission</h1>
+    <p>
+      On April 12, 1961, the Russian <span style="font-weight: 700">Lt. Yuri Gagarin</span> became the first human to orbit Earth in Vostok 1.
+    </p>
+  </body>
 </html>
 </code>
 </codeblock>
 
-![DOM tree](https://ucarecdn.com/3a33f3d7-a5bc-4bc8-a206-0aac5e524aea/ "DOM tree")
-
+![DOM tree](https://ucarecdn.com/4b193a2a-8bf2-46e6-9554-014a903d5c91/ "DOM tree")
 
 The `HTML` element is
 at the top
