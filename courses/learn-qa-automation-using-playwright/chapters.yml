@@ -11,9 +11,12 @@
 - slug: test-organization-and-conventions
   name: Test organization and conventions
   has_pages: false
-- slug: playwright-hooks
-  name: Playwright hooks
+- slug: modes-of-executing-tests
+  name: Modes of executing tests
   has_pages: false
 - slug: locators
   name: Locators
+  has_pages: false
+- slug: playwright-hooks
+  name: Playwright hooks
   has_pages: false

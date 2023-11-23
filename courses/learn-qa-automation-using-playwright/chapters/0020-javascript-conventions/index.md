@@ -4,7 +4,7 @@ Select meaningful and descriptive names that clearly communicate the purpose of 
 
 ## Naming files and folders
 
-Use lower camelCase for file names. Ensure that file names clearly represent the content or functionality of the file. For example, when creating a spec file to test the creation of a customer, it is recommended to name the spec file **createCustomer.spec.js**.
+Use lower camelCase for file names. Ensure that file names clearly represent the content or functionality of the file. For example, when creating a spec file to test the creation of a customer, it is recommended to name the spec file **createCustomer.spec.ts**.
 
 ## Naming classes
 
@@ -15,15 +15,14 @@ Use PascalCase for class names. Choose class names that clearly describe the pur
 1. Place single-line comments above the line of code it is explaining.
    Begin with a space after `//` for better readability.
 
-```js
-// This is a single-line comment
-let variable = 42;
-```
-
 2. Use multi-line comments block comments or explanations spanning multiple lines.
+
 3. Use TODO comments to highlight areas that need attention or improvement.
 
 ```js
+// This is a single-line comment
+let variable = 42;
+
 // TODO: Refactor this code for better performance
 ```
 

@@ -1,5 +1,3 @@
-## What is Playwright
-
 Playwright is an open-source framework for automating and testing web browsers. Playwright provides a set of APIs that allow developers to interact with web pages, emulate user actions, and perform end-to-end testing.
 
 Some of the features offered by Playwright includes:
