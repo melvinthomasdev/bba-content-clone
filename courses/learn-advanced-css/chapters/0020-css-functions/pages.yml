@@ -50,3 +50,45 @@
 - title: Exercise - `cubic-bezier` Function
   slug: exercise-cubic-bezier-function
   page_type: exercise
+- title: "`linear-gradient` Function Introduction"
+  slug: linear-gradient-function
+  page_type: lesson
+- title: Exercise - `linear-gradient` Function Introduction
+  slug: exercise-linear-gradient-function
+  page_type: exercise
+- title: "`linear-gradient` Direction"
+  slug: linear-gradient-direction
+  page_type: lesson
+- title: Exercise - `linear-gradient` Direction
+  slug: exercise-linear-gradient-direction
+  page_type: exercise
+- title: Diagonal Gradient
+  slug: diagonal-gradient
+  page_type: lesson
+- title: Exercise - Diagonal Gradient
+  slug: exercise-diagonal-gradient
+  page_type: exercise
+- title: Gradient at a Specific Angle
+  slug: linear-gradient-angle
+  page_type: lesson
+- title: Exercise - Gradient at a Specific Angle
+  slug: exercise-linear-gradient-angle
+  page_type: exercise
+- title: Gradient with Percentage Color Stops
+  slug: linear-gradient-percentage
+  page_type: lesson
+- title: Exercise - Gradient with Percentage Color Stops
+  slug: exercise-linear-gradient-percentage
+  page_type: exercise
+- title: "`max` Function"
+  slug: max-function
+  page_type: lesson
+- title: Exercise - `max` Function
+  slug: exercise-max-function
+  page_type: exercise
+- title: "`min` Function"
+  slug: min-function
+  page_type: lesson
+- title: Exercise - `min` Function
+  slug: exercise-min-function
+  page_type: exercise
