@@ -20,3 +20,9 @@
 - slug: playwright-hooks
   name: Playwright hooks
   has_pages: false
+- slug: page-object-models
+  name: Page Object Models
+  has_pages: false
+- slug: fixtures
+  name: Fixtures
+  has_pages: false

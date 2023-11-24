@@ -1,6 +1,6 @@
 ## Naming variables and functions
 
-Select meaningful and descriptive names that clearly communicate the purpose of both variables and functions. Utilize camelCase for naming variables and functions and use SCREAMING_SNAKE_CASE for constants. Ensure that variable and function names carry significance. Avoid resorting to hacky or cryptic names, as this practice undermines code maintainability. Use const by default, and only use let when you need to reassign the variable.
+Select meaningful and descriptive names that clearly communicate the purpose of both variables and functions. Utilize camelCase for naming variables and functions and use SCREAMING_SNAKE_CASE for constants. Ensure that variable and function names carry significance. Avoid resorting to hacky or cryptic names, as this practice undermines code maintainability. Use const by default, and only use let when we need to reassign the variable.
 
 ## Naming files and folders
 
@@ -62,7 +62,7 @@ const navigateToHomePage = () => {
 
 ## Function arguments
 
-Imagine you have a function that takes more than two arguments. Managing functions with numerous parameters can be challenging due to the need to recall the specific order of these parameters. Furthermore, there might be cases where not all parameters need values, resulting in the necessity to pass null values solely to maintain the correct parameter order.
+Imagine we have a function that takes more than two arguments. Managing functions with numerous parameters can be challenging due to the need to recall the specific order of these parameters. Furthermore, there might be cases where not all parameters need values, resulting in the necessity to pass null values solely to maintain the correct parameter order.
 
 A more effective approach is to define the arguments as an object.
 

@@ -1,8 +1,8 @@
-Hooks in playwright are functions that are executed before or after each test, test file, or test group. They can help you set up and tear down the environment for your tests, such as launching browsers, creating pages, logging in, cleaning up, etc.
+Hooks in playwright are functions that are executed before or after each test, test file, or test group. They can help us set up and tear down the environment for our tests, such as launching browsers, creating pages, logging in, cleaning up, etc.
 
 **test.beforeAll(hookFunction)**
 
-When called in the scope of a test file, it runs before all tests in the file. When called inside a test.describe() group, it runs before all tests in the group. You can use it to perform some global setup, such as launching a browser or creating a context.
+When called in the scope of a test file, it runs before all tests in the file. When called inside a test.describe() group, it runs before all tests in the group. We can use it to perform some global setup, such as launching a browser or creating a context.
 
 ```js
 test.describe("Test suite", () => {
@@ -18,7 +18,7 @@ test.describe("Test suite", () => {
 
 **test.afterAll(hookFunction)**
 
-When called in the scope of a test file, it runs after all tests in the file. When called inside a test.describe() group, it runs after all tests in the group. You can use it to perform some global teardown, such as closing the browser or deleting the context.
+When called in the scope of a test file, it runs after all tests in the file. When called inside a test.describe() group, it runs after all tests in the group. We can use it to perform some global teardown, such as closing the browser or deleting the context.
 
 ```js
 test.describe("Test suite", () => {
@@ -34,7 +34,7 @@ test.describe("Test suite", () => {
 
 **test.beforeEach(hookFunction)**
 
-When called in the scope of a test file, it runs before each test in the file. When called inside a test.describe() group, it runs before each test in the group. You can use it to perform some local setup, such as creating a page, navigating to a URL, or logging in.
+When called in the scope of a test file, it runs before each test in the file. When called inside a test.describe() group, it runs before each test in the group. We can use it to perform some local setup, such as creating a page, navigating to a URL, or logging in.
 
 ```js
 test.describe("Test suite", () => {
@@ -50,7 +50,7 @@ test.describe("Test suite", () => {
 
 **test.afterEach(hookFunction)**
 
-When called in the scope of a test file, it runs after each test in the file. When called inside a test.describe() group, it runs after each test in the group. You can use it to perform some local teardown, such as reverting the actions performed during a test, taking screenshots, clearing cookies, or logging out.
+When called in the scope of a test file, it runs after each test in the file. When called inside a test.describe() group, it runs after each test in the group. We can use it to perform some local teardown, such as reverting the actions performed during a test, taking screenshots, clearing cookies, or logging out.
 
 ```js
 test.describe("Test suite", () => {
