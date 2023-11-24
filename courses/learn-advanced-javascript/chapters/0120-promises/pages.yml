@@ -23,7 +23,13 @@
 - title: Exercise - Chaining Promises
   slug: exercise-chaining-promises
   page_type: exercise
-- title: Async/Await
+- title: "`async` Functions"
+  slug: async-functions
+  page_type: lesson
+- title: The `await` Keyword
+  slug: await-keyword
+  page_type: lesson
+- title: Async/Await Practical Examples
   slug: async-await
   page_type: lesson
 - title: Adding try...catch
