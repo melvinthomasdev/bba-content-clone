@@ -17,6 +17,9 @@
 - title: Exercise - Naming Variables - camelCase
   slug: exercise-naming-variables-camelcase
   page_type: exercise
+- title: Exercise 2 - Naming Variables - camelCase
+  slug: exercise-2-naming-variables-camelcase
+  page_type: exercise
 - title: const
   slug: const
   page_type: lesson

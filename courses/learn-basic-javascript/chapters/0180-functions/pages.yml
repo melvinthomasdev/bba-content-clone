@@ -8,6 +8,9 @@
 - title: Exercise - Define a Function
   slug: exercise-define-a-function
   page_type: exercise
+- title: Exercise 2 - Define a Function
+  slug: exercise-2-define-a-function
+  page_type: exercise
 - title: Function Expression
   slug: function-expression
   page_type: lesson

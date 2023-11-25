@@ -17,6 +17,9 @@
 - title: Exercise - isNaN Method
   slug: exercise-isnan-method
   page_type: exercise
+- title: Exercise 2 - isNaN Method
+  slug: exercise-2-isnan-method
+  page_type: exercise
 - title: Increase or Decrease a Number by One
   slug: increase-or-decrease-a-number-by-one
   page_type: lesson

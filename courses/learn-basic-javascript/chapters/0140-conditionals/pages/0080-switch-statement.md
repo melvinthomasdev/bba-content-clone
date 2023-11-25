@@ -92,18 +92,18 @@ In another example given below, we get the role of a person in a company, based 
 
 <codeblock language="javascript" type="lesson">
 <code>
-const name = "Anna";
+const name = "Eve";
 
 switch(name) {
-  case "Oliver":
+  case "Sam":
     console.log("This is the owner.");
     break;
 
-  case "Anna":
+  case "Eve":
     console.log("This is the admin.");
     break;
 
-  case "Mike":
+  case "Renu":
     console.log("This is the manager.");
     break;
 
@@ -114,7 +114,7 @@ switch(name) {
 </code>
 </codeblock>
 
-The above code displays **This is the admin.** because the value of the `name` variable is equal to the value of the case **Anna** and the code block for that case contains `console.log("This is the admin.")` followed by a `break` statement.
+The above code displays **This is the admin.** because the value of the `name` variable is equal to the value of the case **Eve** and the code block for that case contains `console.log("This is the admin.")` followed by a `break` statement.
 
 **break Statement**
 
@@ -124,17 +124,17 @@ The above code displays **This is the admin.** because the value of the `name` v
 
 <codeblock language="javascript" type="lesson">
 <code>
-const name = "Anna";
+const name = "Sam";
 
 switch(name) {
-  case "Oliver":
+  case "Eve":
     console.log("This is the owner.");
     break;
 
-  case "Anna":
+  case "Renu":
     console.log("This is the admin."); // This will be executed
 
-  case "Mike":
+  case "Lao":
     console.log("This is the manager."); // This will also be executed
     break;
 
