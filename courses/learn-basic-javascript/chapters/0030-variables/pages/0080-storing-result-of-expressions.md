@@ -1,3 +1,10 @@
+When we add an expression
+as a value to a variable,
+it first gets evaluated
+and
+then the result is stored
+in the variable.
+
 Consider the following example:
 
 <codeblock language="javascript" type="lesson">
@@ -8,28 +15,18 @@ console.log(sum);
 </codeblock>
 
 In the example given above,
-a single statement has two expressions:
+we are storing the result of
+an expression `23 + 45` as
+a value to the variable `sum`.
 
-- `23 + 45` is an expression.
-  `+` is the operator.
-  `23` and `45` are operands.
-  `23 + 45` evaluates to `68`.
-
-- `sum = 23 + 45` is an expression.
-  `=` is the operator.
-  `sum` and `23 + 45` are operands.
-  Since `23 + 45` evaluates to `68`,
-  the value `68` gets assigned to `sum`.
-
-In the example given above,
-we are assigning the result
-of an expression - `23 + 45`,
-to the variable `sum`.
-
-In the example given above,
-the expression `sum = 23 + 45`
-has two operators `=` and `+`.
-Since `+` has higher precedence over `=`,
-the sum was calculated first
+In the next line, we are logging
+the value of `sum` to the console.
+We see that the console displays
+**68**
 and
-then the result was stored in `sum`.
+not the expression `24 + 45` itself.
+
+This is because the expression is first
+evaluated, then the result of this
+evaluation, **68**, is stored as a value
+for the variable `sum`.
