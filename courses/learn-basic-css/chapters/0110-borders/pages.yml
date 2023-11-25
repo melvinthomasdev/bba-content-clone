@@ -122,6 +122,9 @@
 - title: Exercise - Outline
   slug: exercise-outline
   page_type: exercise
+- title: Adding Outline to an Element
+  slug: adding-outline-to-an-element
+  page_type: lesson
 - title: Debugging CSS using Outline
   slug: debugging-using-outline
   page_type: lesson
