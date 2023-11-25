@@ -1,18 +1,23 @@
-Create a `<label>` **First Name**, for an `<input>` text element and a `<label>` **Last Name** for another `<input>` text element.
+Create a `<label>` **First Name**,
+for an `<input>` element.
+
+Below this, add a `<label>` **Last Name**
+for another `<input>` element.
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
 <form>
-
+  <!-- Write code below this line-->
 </form>
 </code>
 
 <solution>
 <form>
+  <!-- Write code below this line-->
   <label>First Name</label>
-  <input type="text">
+  <input>
   <label>Last Name</label>
-  <input type="text">
+  <input>
 </form>
 </solution>
 </codeblock>

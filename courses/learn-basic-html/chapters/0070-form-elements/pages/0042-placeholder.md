@@ -7,7 +7,7 @@ as soon as the user starts typing.
 <code>
 <form>
   <label>Full Name:</label>
-  <input type="text" placeholder="Sam Smith">
+  <input placeholder="Sam Smith">
 </form>
 </code>
 </codeblock>
@@ -23,17 +23,17 @@ to an input field.
 
 <codeblock language="html" type="lesson">
 <code>
+<h2>Sign up</h2>
 <form>
-  <h2>Sign up</h2>
   <label>First Name:</label>
-  <input type="text" placeholder="Sam"><br>
+  <input placeholder="Sam"><br>
   <label>Last Name: </label>
-  <input type="text" placeholder="Smith"><br>
+  <input placeholder="Smith"><br>
   <label>Date of Birth:</label>
-  <input type="text" placeholder="DD/MM/YYYY"><br>
+  <input placeholder="DD/MM/YYYY"><br>
   <h4>Credit Card Information:</h4>
   <label>Credit Card Number:</label>
-  <input type="text" placeholder="1234 5678 9012 3456"><br>
+  <input placeholder="1234 5678 9012 3456"><br>
 </form>
 </code>
 </codeblock>

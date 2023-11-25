@@ -9,10 +9,10 @@ to the HTML elements:
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
 <h1 id="order-number">Order No: 1</h1>
-<p id="order-item">Cappuccino</p>
+<p id="order-item">Milk Tea</p>
 </code>
 <solution>
 <h1 id="order-number" data-order-number="1">Order No: 1</h1>
-<p id="order-item" data-item-code="5">Cappuccino</p>
+<p id="order-item" data-item-code="5">Milk Tea</p>
 </solution>
 </codeblock>

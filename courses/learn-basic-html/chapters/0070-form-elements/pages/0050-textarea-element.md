@@ -1,4 +1,9 @@
-The `<textarea>` element is for submitting large textual content. To control its size, the `rows` and `cols` attributes are utilized.
+The `<textarea>` element is for
+submitting large textual content.
+
+To control its size, the `rows`
+and
+`cols` attributes are utilized.
 
 <codeblock language="html" type="lesson">
 <code>

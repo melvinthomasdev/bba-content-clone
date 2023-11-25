@@ -9,12 +9,12 @@ Let us take a look at the example:
 <form id="form">
   <label>First Name:</label>
   <br>
-  <input type="text" placeholder="Renu" />
+  <input placeholder="Renu" />
   <br>
 
   <label>Last Name:</label>
   <br>
-  <input type="text" placeholder="Sen" />
+  <input placeholder="Sen" />
   <br>
 
   <button type="submit">Submit</button>

@@ -5,25 +5,25 @@ to group related form elements.
 <code>
 <form>
   <label>First Name:</label>
-  <input type="text" placeholder="Sam" >
+  <input placeholder="Sam" >
 
   <label>Last Name:</label>
-  <input type="text" placeholder="Smith" >
+  <input placeholder="Smith" >
 
   <fieldset disabled>
     <label>City:</label>
     <br>
-    <input type="text" placeholder="Pune" >
+    <input placeholder="Pune" >
     <br>
 
     <label>State:</label>
     <br>
-    <input type="text" placeholder="Maharashtra" >
+    <input placeholder="Maharashtra" >
     <br>
 
     <label>Country:</label>
     <br>
-    <input type="text" placeholder="India" >
+    <input placeholder="India" >
   </fieldset>
 </form>
 </code>

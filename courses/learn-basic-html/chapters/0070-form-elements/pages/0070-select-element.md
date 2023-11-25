@@ -5,10 +5,10 @@ our forms, we use the `<select>` element.
 <code>
 <form>
   <select>
-    <option value="apple">Apple</option>
-    <option value="orange">Orange</option>
-    <option value="mango">Mango</option>
-    <option value="papaya">Papaya</option>
+    <option value="apple">Apple 🍎</option>
+    <option value="orange">Orange 🍊</option>
+    <option value="mango">Mango 🥭</option>
+    <option value="banana">Banana 🍌</option>
   </select>
 </form>
 </code>

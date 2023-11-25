@@ -4,7 +4,7 @@ The `<label>` element puts a label on other form elements. In the example given 
 <code>
 <form>
   <label>Name:</label>
-  <input type="text">
+  <input>
 </form>
 </code>
 </codeblock>

@@ -8,22 +8,22 @@ the text **Review Section**:
 <form>
   <label>First Name:</label>
   <br>
-  <input type="text" placeholder="Sam" >
+  <input placeholder="Sam" >
   <br>
 
   <label>Last Name:</label>
   <br>
-  <input type="text" placeholder="Smith" >
+  <input placeholder="Smith" >
   <br>
 
   <label>Gender:</label>
   <br>
-  <input type="text" placeholder="Male" >
+  <input placeholder="Male" >
   <br>
 
   <label>Your Review:</label>
   <br>
-  <input type="text" placeholder="Write a headline for your review here" >
+  <input placeholder="Write a headline for your review here" >
   <br>
 
   <input type="submit">
@@ -34,24 +34,24 @@ the text **Review Section**:
 <form>
   <label>First Name:</label>
   <br>
-  <input type="text" placeholder="Sam" >
+  <input placeholder="Sam" >
   <br>
 
   <label>Last Name:</label>
   <br>
-  <input type="text" placeholder="Smith" >
+  <input placeholder="Smith" >
   <br>
 
   <label>Gender:</label>
   <br>
-  <input type="text" placeholder="Male" >
+  <input placeholder="Male" >
   <br>
 
   <fieldset>
     <legend>Review Section</legend>
     <label>Your Review:</label>
     <br>
-    <input type="text" placeholder="Write a headline for your review here" >
+    <input placeholder="Write a headline for your review here" >
     <br>
   </fieldset>
 

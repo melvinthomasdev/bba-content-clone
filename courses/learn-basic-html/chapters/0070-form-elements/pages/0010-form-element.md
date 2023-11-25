@@ -3,8 +3,8 @@ An HTML form is used to collect information that the user submits. The HTML `<fo
 <codeblock language="html" type="lesson">
 <code>
 <form>
-  <input type="text" placeholder="Enter your name here">
-  <button type="submit">Submit</button>
+  <input placeholder="Enter your name here">
+  <button type="button">Submit</button>
 </form>
 </code>
 </codeblock>

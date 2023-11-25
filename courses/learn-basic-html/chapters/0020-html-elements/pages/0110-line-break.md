@@ -19,9 +19,16 @@ Let us have a look at an example:
 <codeblock language="html" type="lesson">
 <code>
 <h2>Address written with a p tag</h2>
-<p>128, Najafgarh Road, Nangloi, New Delhi</p>
+<p>
+  Office #803, 8th Floor, World Trade Center, Tower 2, Kharadi, Pune, Maharashtra
+</p>
 
 <h2>Address written with br tags in a p tag</h2>
-<p>128, Najafgarh Road,<br> Nangloi, <br> New Delhi</p>
+<p>
+  Office #803, 8th Floor,<br>
+  World Trade Center, Tower 2,<br>
+  Kharadi, Pune,<br>
+  Maharashtra
+</p>
 </code>
 </codeblock>

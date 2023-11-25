@@ -4,31 +4,25 @@ element.
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
-<h1>Choose a Color:</h1>
+<h1>Choose a Seat:</h1>
 <form>
-  <input type="radio" name="color" value="red">
-  <label for="red">Red</label>
-  <br>
-  <input type="radio" name="color" value="blue">
-  <label for="blue">Blue</label>
-  <br>
-  <input type="radio" name="color"  value="green">
-  <label for="green">Green</label>
+  <select>
+    <option value="summer">First Class</option>
+    <option value="winter">Second Class</option>
+    <option value="rainy">Third Class</option>
+  </select>
 </form>
 </code>
 
 <solution>
+<h1>Choose a Seat:</h1>
 <form>
   <fieldset>
-    <legend>Choose a Color:</legend>
-    <input type="radio" name="color" value="red">
-    <label for="red">Red</label>
-    <br>
-    <input type="radio" name="color" value="blue">
-    <label for="blue">Blue</label>
-    <br>
-    <input type="radio" name="color"  value="green">
-    <label for="green">Green</label>
+    <select>
+      <option value="summer">First Class</option>
+      <option value="winter">Second Class</option>
+      <option value="rainy">Third Class</option>
+    </select>
   </fieldset>
 </form>
 </solution>

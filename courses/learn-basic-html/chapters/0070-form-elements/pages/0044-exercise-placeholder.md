@@ -1,13 +1,13 @@
 We have a **Login** form.
 
 Add `<input>` elements for
-"First Name" and "Last Name".
+`First Name` and `Last Name`.
 
 Add `placeholder` attribute
-with value "Eve" for
+with value `Eve` for
 **First Name**
 and
-"Smith" for **Last Name**:
+`Smith` for **Last Name**:
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>

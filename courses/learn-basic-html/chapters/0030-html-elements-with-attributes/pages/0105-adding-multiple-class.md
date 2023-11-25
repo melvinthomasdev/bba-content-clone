@@ -7,7 +7,7 @@ Let's look at an example:
 <codeblock language="html" type="lesson">
 <code>
 <panel language="html">
-<h1 class="title center">Here we are adding multiple classes to our heading</h1>
+<h1 class="title center">The Times of India</h1>
 </panel>
 <panel language="css" hidden="true">
 .title {

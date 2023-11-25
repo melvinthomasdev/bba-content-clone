@@ -6,22 +6,22 @@ element to your code:
 <form>
   <label>First Name:</label>
   <br>
-  <input type="text" placeholder="Sam" >
+  <input placeholder="Sam" >
 </form>
 <form>
   <label>Last Name:</label>
   <br>
-  <input type="text" placeholder="Smith" >
+  <input placeholder="Smith" >
 </form>
 <form>
   <label>Email:</label>
   <br>
-  <input type="text" placeholder="sam.smith@example.com" >
+  <input placeholder="sam.smith@example.com" >
 </form>
 <form>
   <label>Password:</label>
   <br>
-  <input type="text">
+  <input>
 </form>
 <button>Submit</button>
 </code>
@@ -39,22 +39,22 @@ a **correct form structure**:
 <form>
   <label>First Name:</label>
   <br>
-  <input type="text" placeholder="Sam" >
+  <input placeholder="Sam" >
   <br>
 
   <label>Last Name:</label>
   <br>
-  <input type="text" placeholder="Smith" >
+  <input placeholder="Smith" >
   <br>
 
   <label>Email:</label>
   <br>
-  <input type="text" placeholder="sam.smith@example.com" >
+  <input placeholder="sam.smith@example.com" >
   <br>
 
   <label>Password:</label>
   <br>
-  <input type="text">
+  <input>
   <br>
 
   <button>Submit</button>

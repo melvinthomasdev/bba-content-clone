@@ -8,17 +8,17 @@ text `Reset` below the
 <form>
   <label>Apartment/Suite:</label>
   <br>
-  <input type="text" placeholder="Office #803, World Trade Center, Tower 2"/>
+  <input placeholder="Office #803, World Trade Center, Tower 2"/>
   <br>
 
   <label>City:</label>
   <br>
-  <input type="text" placeholder="Pune"/>
+  <input placeholder="Pune"/>
   <br>
 
   <label>Country:</label>
   <br>
-  <input type="text" placeholder="India"/>
+  <input placeholder="India"/>
   <br>
 
   <button type="submit">Submit</button>
@@ -29,17 +29,17 @@ text `Reset` below the
 <form>
   <label>Apartment/Suite:</label>
   <br>
-  <input type="text" placeholder="Office #803, World Trade Center, Tower 2"/>
+  <input placeholder="Office #803, World Trade Center, Tower 2"/>
   <br>
 
   <label>City:</label>
   <br>
-  <input type="text" placeholder="Pune"/>
+  <input placeholder="Pune"/>
   <br>
 
   <label>Country:</label>
   <br>
-  <input type="text" placeholder="India"/>
+  <input placeholder="India"/>
   <br>
 
   <button type="submit">Submit</button>

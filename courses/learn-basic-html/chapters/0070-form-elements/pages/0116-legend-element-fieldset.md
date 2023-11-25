@@ -11,39 +11,39 @@ Let us take a look at an example:
 <form>
   <label>Name:</label>
   <br>
-  <input type="text" placeholder="Sam Smith">
+  <input placeholder="Sam Smith">
   <br>
 
-  <label for="email">Email:</label>
+  <label>Email:</label>
   <br>
-  <input type="email" placeholder="smith@example.com">
+  <input placeholder="smith@example.com">
   <br>
 
   <fieldset>
     <legend>Shipping Address</legend>
     <label>Apartment/Block:</label>
     <br>
-    <input type="text" name="Office #803, 8th Floor, World Trade Center, Tower 2, Kharadi">
+    <input placeholder="Office #803, 8th Floor, World Trade Center, Tower 2, Kharadi">
     <br>
 
     <label>City:</label>
     <br>
-    <input type="text" placeholder="Pune" >
+    <input placeholder="Pune" >
     <br>
 
     <label>State:</label>
     <br>
-    <input type="text" placeholder="Maharashtra" >
+    <input placeholder="Maharashtra" >
     <br>
 
     <label>Country:</label>
     <br>
-    <input type="text" placeholder="India">
+    <input placeholder="India">
     <br>
 
     <label>Zip Code:</label>
     <br>
-    <input type="number" placeholder="411014" >
+    <input placeholder="411014" >
     <br>
   </fieldset>
 

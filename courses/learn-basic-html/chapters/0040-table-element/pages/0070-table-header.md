@@ -11,7 +11,7 @@ row and gives your code a good structure.
   <caption>Students</caption>
   <thead>
     <tr>
-      <th>Personality Type</th>
+      <th>Personality</th>
       <th>Trait</th>
     </tr>
   </thead>
