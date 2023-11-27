@@ -26,3 +26,6 @@
 - slug: fixtures
   name: Fixtures
   has_pages: false
+- slug: annotations
+  name: Annotations
+  has_pages: false
