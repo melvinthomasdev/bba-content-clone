@@ -18,7 +18,7 @@ const transferMoney = ({ amount, receiver }) => new Promise((resolve, reject) =>
   }, 5000)
 );
 
-const getBalance = new Promise(resolve =>
+const getBalance = () => new Promise(resolve =>
   setTimeout(() => resolve(user.balance), 2000)
 );
 
@@ -26,7 +26,7 @@ transferMoney({ amount: 50000, receiver: "Sam Smith" })
   .then(message => console.log(message))
   .catch(error => console.log(error.message));
 
-getBalance
+getBalance()
   .then(balance => console.log(`The balance is ${balance}`));
 </code>
 </codeblock>
@@ -63,14 +63,14 @@ const transferMoney = ({ amount, receiver }) => new Promise((resolve, reject) =>
   }, 5000)
 );
 
-const getBalance = new Promise(resolve =>
+const getBalance = () => new Promise(resolve =>
   setTimeout(() => resolve(user.balance), 2000)
 );
 
 transferMoney({ amount: 50000, receiver: "Sam Smith" })
   .then(message => {
     console.log(message);
-    return getBalance;
+    return getBalance();
   })
   .then(balance => console.log(`The balance is ${balance}`))
   .catch(error => console.log(error.message));
@@ -115,14 +115,14 @@ const transferMoney = ({ amount, receiver }) => new Promise((resolve, reject) =>
   }, 5000)
 );
 
-const getBalance = new Promise(resolve =>
+const getBalance = () => new Promise(resolve =>
   setTimeout(() => resolve(user.balance), 2000)
 );
 
 transferMoney({ amount: 150000, receiver: "Sam Smith" })
   .then(message => {
     console.log(message);
-    return getBalance;
+    return getBalance();
   })
   .then(balance => console.log(`The balance is ${balance}`))
   .catch(error => console.log(error.message));
