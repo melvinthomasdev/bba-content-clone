@@ -29,3 +29,12 @@
 - slug: annotations
   name: Annotations
   has_pages: false
+- slug: test-isolation
+  name: Test isolation
+  has_pages: false
+- slug: test-configuration
+  name: Test configuration
+  has_pages: false
+- slug: debugging-flakiness
+  name: Debugging flakiness
+  has_pages: false

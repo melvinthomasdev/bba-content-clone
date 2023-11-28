@@ -4,4 +4,6 @@ images:
   - playwright-ui-mode.png
   - playwright-debug-mode.png
   - playwright-headless-mode.png
+  - playwright-page-closed-error.png
+  - playwright-afterhooks-execution.png
 databases: []
