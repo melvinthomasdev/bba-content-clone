@@ -1,6 +1,6 @@
 ---
-- title: Asynchronous Code and Callback Functions
-  slug: asynchronous-and-callbacks
+- title: Callback Functions
+  slug: callback-functions
   page_type: lesson
 - title: Make a Promise
   slug: make-a-promise

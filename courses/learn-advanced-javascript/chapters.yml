@@ -21,6 +21,8 @@
   slug: copying-objects
 - name: Optional Chaining
   slug: optional-chaining
+- name: Asynchronous Code
+  slug: asynchronous-code
 - name: Promises
   slug: promises
 - name: Debugging in JavaScript
