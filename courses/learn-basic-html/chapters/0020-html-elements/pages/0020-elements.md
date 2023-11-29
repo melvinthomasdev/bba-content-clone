@@ -13,10 +13,3 @@ Let us take the example of an `<h1>` element:
 </codeblock>
 
 The `<h1>` at the beginning is called the **opening tag**, the **Hello, World!** text is the **content** and the `</h1>` at the end is called the **closing tag**.
-
-<codeblock language="html" type="lesson">
-<code>
-<h1>HTML is fun!</h1>
-<h1>Internet is fun!</h1>
-</code>
-</codeblock>
