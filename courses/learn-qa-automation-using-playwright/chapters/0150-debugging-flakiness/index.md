@@ -1,6 +1,6 @@
 **Missing an await**
 
-Unlike Cypress, which seamlessly manages asynchrony within its syntax, Playwright relies on promises, and most of its methods return promises. The potential for code flakiness arises when we neglect to await the completion of promises. Omitting the await keyword is a primary culprit behind flaky tests in Playwright. Additionally, vigilant API monitoring is crucial for maintaining test stability.
+Unlike Cypress, which seamlessly manages asynchronicity within its syntax, Playwright relies on promises, and most of its methods return promises. The potential for code flakiness arises when we neglect to await the completion of promises. Omitting the await keyword is a primary culprit behind flaky tests in Playwright. Additionally, vigilant API monitoring is crucial for maintaining test stability.
 
 If any of the following scenarios occur, the most probable culprit would be not awaiting an asynchronous method:
 

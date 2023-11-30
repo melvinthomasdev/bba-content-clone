@@ -2,6 +2,12 @@
 - slug: introduction-to-playwright
   name: Introduction to Playwright
   has_pages: false
+- slug: prerequisites
+  name: Prerequisites
+  has_pages: false
+- slug: automating-the-qa-work-on-a-web-app-using-playwright
+  name: Automating the QA work on a web application using Playwright
+  has_pages: false
 - slug: javascript-conventions
   name: JavaScript conventions
   has_pages: false
