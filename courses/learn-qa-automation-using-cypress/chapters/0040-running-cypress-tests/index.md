@@ -16,6 +16,7 @@ $ tree
 │   ├── e2e
 │   ├── plugins
 │   ├── support
+│   │   └── utils
 │   ├── jsconfig.json
 │   ├── resolve.js
 │   └── webpack.config.js
@@ -36,18 +37,15 @@ $ tree
   throughout the tests. Usually, the data is stored in JSON format.
 - **e2e**: e2e folder includes all the test files. The test files are written
   with a .spec.js extension and the test file name format is testName.spec.js.
-- **support**: This folder contains index.js and commands.js files. This
-  index.js file is run before every single spec file. The support folder is a
-  great place to put reusable behavior such as custom commands.
+- **support**: This folder contains e2e.js and commands.js files. The
+  e2e.js file is run before every single spec file. The support folder is a
+  great place to put reusable behavior such as custom commands and utility functions.
 - **plugins**: This folder includes the index.js file. This file will be
   automatically imported every time before the execution of every spec(test)
   file. Plugins enable us to tap into, modify, or extend the internal behavior
   of Cypress.
 
-## Running Cypress tests on wheel
-
-Set up the [wheel](https://github.com/bigbinary/wheel) repository on the local
-machine according to the local development setup section in the README.md file.
+## Running Cypress tests on a neeto project
 
 After setting up the project, run the application. Move into the cypress-tests
 directory in the root of our project directory. Then run `yarn install` to
@@ -65,9 +63,8 @@ yarn cy:open
 ```
 
 We can see the Cypress window opening up. On the left side of the window, we can
-see the spec files created in the e2e folder. Under the authentication, folder
-click on login.spec.js.
+see the spec files created in the e2e folder. Click on any of the listed specs.
 
-<image>cypress-window.png</image>
+<image>cypress-test-window.png</image>
 
 This will open up our default browser and start running the tests.

@@ -178,3 +178,8 @@ selecting category, this implies that before we create/publish an article there
 must exist at least one category. So in effect whilst writing tests for this
 `form`, there must exist a function to add and assert the existence of a
 category in the setup. Taking these steps ensures a comprehensive and proper initiation of feature testing.
+
+
+## Additional resources
+- [Writing your first end-to-end-test](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
+- [Cypress official tutorials](https://docs.cypress.io/examples/tutorials)

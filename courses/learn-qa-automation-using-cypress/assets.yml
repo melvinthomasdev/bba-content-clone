@@ -1,14 +1,14 @@
 ---
 images:
-- qa-automation-using-cypress-logo.png
-- cypress-window.png
-- custom-commands-functional.png
-- use-visible-instead-of-exist.png
-- pane-form-component.png
-- name-taken-toastr-message.png
-- delete-tag-modal.png
-- form-with-required-category-field.png
-- request-and-headers.png
-- payload.png
-- response.png
+  - qa-automation-using-cypress-logo.png
+  - cypress-test-window.png
+  - custom-commands-functional.png
+  - use-visible-instead-of-exist.png
+  - pane-form-component.png
+  - name-taken-toastr-message.png
+  - delete-tag-modal.png
+  - form-with-required-category-field.png
+  - request-and-headers.png
+  - payload.png
+  - response.png
 databases: []
