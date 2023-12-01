@@ -32,6 +32,9 @@
 - slug: playwright-hooks
   name: Playwright hooks
   has_pages: false
+- slug: writing-our-first-playwright-test
+  name: Writing our first Playwright test
+  has_pages: false
 - slug: page-object-models
   name: Page Object Models
   has_pages: false

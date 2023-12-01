@@ -6,4 +6,7 @@ images:
   - playwright-headless-mode.png
   - playwright-page-closed-error.png
   - playwright-afterhooks-execution.png
+  - playwright-vscode-plugin-pick-locator-tool.png
+  - playwright-selector-login-screen.png
+  - playwright-find-selector-using-devtools.png
 databases: []
