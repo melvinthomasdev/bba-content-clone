@@ -92,3 +92,42 @@
 - title: Exercise - `min` Function
   slug: exercise-min-function
   page_type: exercise
+- title: "`radial-gradient` Function Introduction"
+  slug: radial-gradient-function
+  page_type: lesson
+- title: Exercise - `radial-gradient` Function Introduction
+  slug: exercise-radial-gradient-function
+  page_type: exercise
+- title: "`radial-gradient` Percentage Color Stops"
+  slug: radial-gradient-percentage
+  page_type: lesson
+- title: Exercise - `radial-gradient` Percentage Color Stops
+  slug: exercise-radial-gradient-percentage
+  page_type: exercise
+- title: "`radial-gradient` Shape"
+  slug: radial-gradient-shape
+  page_type: lesson
+- title: Exercise - `radial-gradient` Shape
+  slug: exercise-radial-gradient-shape
+  page_type: exercise
+- title: "`radial-gradient` Shape with Position"
+  slug: radial-gradient-shape-with-position
+  page_type: lesson
+- title: "`radial-gradient` Shape with Position 2"
+  slug: radial-gradient-shape-with-position-2
+  page_type: lesson
+- title: Exercise - `radial-gradient` Shape with Position
+  slug: exercise-radial-gradient-shape-with-position
+  page_type: exercise
+- title: "`radial-gradient` Size"
+  slug: radial-gradient-size
+  page_type: lesson
+- title: Exercise - `radial-gradient` Size
+  slug: exercise-radial-gradient-size
+  page_type: exercise
+- title: "`radial-gradient` Size Keywords"
+  slug: radial-gradient-size-keywords
+  page_type: lesson
+- title: Exercise - `radial-gradient` Size Keywords
+  slug: exercise-radial-gradient-size-keywords
+  page_type: exercise
