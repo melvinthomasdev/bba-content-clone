@@ -38,6 +38,12 @@
 - title: return Statement
   slug: return-statement
   page_type: lesson
+- title: Why return Statement
+  slug: why-return-statement
+  page_type: lesson
+- title: Why return Statement 2
+  slug: why-return-statement-2
+  page_type: lesson
 - title: Exercise - return Statement
   slug: exercise-return-statement
   page_type: exercise
