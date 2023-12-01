@@ -23,3 +23,15 @@
 - title: Exercise - HSL color system
   slug: exercise-hsl-color-system
   page_type: exercise
+- title: Multiple methods of adding color using CSS
+  slug: multiple-methods-of-adding-color-using-css
+  page_type: lesson
+- title: Exercise - Adding color using rgb
+  slug: exercise-adding-color-using-rgb
+  page_type: lesson
+- title: Exercise - Adding color using hex
+  slug: exercise-adding-color-using-hex
+  page_type: lesson
+- title: Exercise - Adding color using hsl
+  slug: exercise-adding-color-using-hsl
+  page_type: lesson
