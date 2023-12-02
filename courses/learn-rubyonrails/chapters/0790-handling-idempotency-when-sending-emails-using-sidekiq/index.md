@@ -14,7 +14,7 @@ These are the basic requirements of the feature :
 - If a user has disabled the email notification then that user should not be
   able to set preferred time to receive email.
 
-<image>handling-idempotency-when-sending-emails-using-sidekiq.png</image>
+<image alt="Mail delivery feature">handling-idempotency-when-sending-emails-using-sidekiq.png</image>
 
 ## Technical design
 
@@ -1333,7 +1333,7 @@ production:
   - mailers
 ```
 
-Please note that in order for the `deliver_later` method to utilise `sidekiq`,
+Please note that in order for the `deliver_later` method to utilize `sidekiq`,
 we also need to set `config.active_job.queue_adapter = :sidekiq` in
 `config/application.rb`, as we had already done in the previous chapter.
 

@@ -76,7 +76,7 @@ gem "shakapacker", "~> 6.6.0"
 ```
 
 We are aware that the latest version of shakapacker is v7. However we ran into some issues
-with that version. Hence we are locking shakapakcer to v6.
+with that version. Hence we are locking shakapacker to v6.
 
 ```bash
 bundle install
@@ -435,7 +435,7 @@ Use Ctrl-C to stop
 Open the browser and visit [http://localhost:3000](http://localhost:3000). We
 will see a page that would look like this:
 
-<image>new-rails-project-landing-page.png</image>
+<image alt="Rails new project landing page">new-rails-project-landing-page.png</image>
 
 ## Verify Ruby and NodeJS versions
 

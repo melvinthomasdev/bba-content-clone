@@ -40,11 +40,11 @@ Stripe's end.
 
 Let's add a webhook endpoint via [Stripe Dashboard](https://dashboard.stripe.com/test/webhooks).
 
-<image>webhook.png</image>
+<image alt="Webhook">webhook.png</image>
 
 Enter the details as shown below:
 
-<image>create_a_webhook.png</image>
+<image alt="Create a webhook">create_a_webhook.png</image>
 
 While adding a webhook endpoint, we should only select the events which we are
 planning to handle in our application. This is to prevent unnecessary load on

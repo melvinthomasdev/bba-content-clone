@@ -180,7 +180,7 @@ Rails manages this by using an automatically created, special table named
 timestamp associated with each executed migration scripts. The table and its
 values looks like this:
 
-<image>schema-migrations-table.png</image>
+<image alt="The schema_migrations table.">schema-migrations-table.png</image>
 
 Whenever we are running `rails db:migrate`, Rails cross checks
 `schema_migrations` and the files in `db/migrate` folder. It can therefore

@@ -24,9 +24,9 @@ These are the requirements of the feature.
 
 - The filename should be something sensible like `granite_task_report`.
 
-<image>report-download.png</image>
+<image alt="Report downloading feature">report-download.png</image>
 
-<image>report-pdf-example.png</image>
+<image alt="PDF report sample">report-pdf-example.png</image>
 
 ## Technical design
 

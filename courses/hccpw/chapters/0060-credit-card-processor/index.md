@@ -3,7 +3,7 @@ In order to find the best credit card processor for your company, you need to un
 ## Deception
 If you Google for “merchant account” or “credit card processor” you will find numerous businesses offering this service. However, many of those are actually fraudulent. For example let’s take a look at this advertisement:
 
-<image>credit-card-processor.jpg</image>
+<image alt="Screenshot - Advertisements on Google.com by services">credit-card-processor.jpg</image>
 
 The interchange fee imposed by Visa and MasterCard itself is more than 1.1% in most cases. Since a credit card processor has to make money on top of the interchange fee, it is highly unlikely that the fee being charged by this “credit card processor” is a mere 1.05%.
 
@@ -51,7 +51,7 @@ Business owners who use interchange plus are assured of the markup the credit ca
 
 For example, let’s take a look at the website [PetroleumMerchant.com](http://www.petroleummerchant.com/intercharge_plus.html). They advertise their rate as
 
-<image>interchange-plus-1.jpg</image>
+<image alt="Screenshot - Advertisements on Google.com by services">interchange-plus-1.jpg</image>
 
 One basis point is equivalent to 0.01%.
 
@@ -60,7 +60,7 @@ Here the credit card processor is stating that the total fee incurred by the bus
 ## Another example
 Let’s take a look at the rate offered by [Main Street Merchant Solutions](https://www.mainstreetmerchantsolutions.com/interchange_plus_merchant_accounts).
 
-<image>interchange-plus-2.jpg</image>
+<image alt="Screenshot - Rates offered by Main Street Merchant Solutions">interchange-plus-2.jpg</image>
 
 
 In this case the processor’s markup is (0.30% + $0.10 per transaction).
@@ -92,7 +92,7 @@ By some estimates, around 80% of the transaction do not qualify for ‘Qualified
 ## Braintree
 Let’s Take a Look at the Pricing at Braintree
 
-<image>braintree.jpg</image>
+<image alt="Screenshot - Advertisements on Google.com by services">braintree.jpg</image>
 
 As we can see, Braintree offers two different prices. One rate is for qualified transactions and another one for non-qualified transactions.
 

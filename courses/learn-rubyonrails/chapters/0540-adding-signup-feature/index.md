@@ -12,12 +12,12 @@ These are the goals we are trying to achieve in this chapter:
   password confirmation. The form should call the user creation API with the
   input data upon submission.
 
-  <image>signup-page.png</image>
+  <image alt="User signup page">signup-page.png</image>
 
 - Users should be able to see a toast message when the form submission is
   successful.
 
-  <image>signup-success-toaster.png</image>
+  <image alt="Signup Success Toastr">signup-success-toaster.png</image>
 
 ## Technical design
 

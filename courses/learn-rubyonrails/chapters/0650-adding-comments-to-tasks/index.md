@@ -14,7 +14,7 @@ application:
   posted.
 
 Here is how the feature will look like when implemented:
-<image>comments-feature.png</image>
+<image alt="Comments feature">comments-feature.png</image>
 
 ## Technical design
 

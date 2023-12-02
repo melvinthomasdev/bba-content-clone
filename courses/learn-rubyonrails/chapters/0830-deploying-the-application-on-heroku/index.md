@@ -99,7 +99,7 @@ This should return an output similar to:
 Sometimes the above mentioned `postgres` installation method leads to a
 `Library not loaded` error like this:
 
-<image>postgres-lib-not-loaded-error.png</image>
+<image alt="Library not loaded error">postgres-lib-not-loaded-error.png</image>
 
 The issue is that even after using command the `brew install postgres`, brew
 might install a specific version like version 14. Then all the `postgres`
@@ -603,14 +603,14 @@ Here are the instructions to set up review apps for PRs:
 - Visit https://dashboard.heroku.com/apps.
 - Click on the "New" pull-down menu and then select "Create new pipeline".
 
-  <image>create-new-pipeline.png</image>
+  <image alt="Create new pipeline">create-new-pipeline.png</image>
 
 - Enter the name of the pipeline as "granite-pipeline".
 - Select your `granite` repository and then click on "Connect".
 - Then click on "Create pipeline".
 - Now click on "Enable Review Apps".
 
-  <image>enable-review-apps.png</image>
+  <image alt="Enable review apps">enable-review-apps.png</image>
 
 - Check "Create new review apps for pull requests automatically".
 - Choose a region - "United States".
@@ -618,7 +618,7 @@ Here are the instructions to set up review apps for PRs:
 - Now when we send a pull request, Heroku will create a new review app for the
   corresponding PR.
 
-  <image>review-app-deployment.png</image>
+  <image alt="Review app deployment">review-app-deployment.png</image>
 
 - When you click on "View Deployment", the review app will open up in a new tab.
 

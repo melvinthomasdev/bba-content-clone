@@ -67,11 +67,11 @@
 - Visit the network tab and refresh the page to view the list of all the requests being sent.
 - We can locate different information such as headers, payload etc upon clicking on a particular request as shown in the below diagrams:
 
-<image>request-and-headers.png</image>
+<image alt="Request and Headers in Network tab">request-and-headers.png</image>
 
-<image>payload.png</image>
+<image alt="Analyzing request payload in the Network tab">payload.png</image>
 
-<image>response.png</image>
+<image alt="Analyzing response preview in the Network tab">response.png</image>
 
 # How do we use it?
 

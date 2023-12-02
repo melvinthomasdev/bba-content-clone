@@ -174,7 +174,7 @@ But we can configure Stripe to cancel the subscription immediately or at the end
 of the billing period from Stripe dashboard billing settings.
 
 The following are the billing settings available for handling disputes:
-<image>manage-disputes-billing.png</image>
+<image alt="Manage disputes billing">manage-disputes-billing.png</image>
 
 If we have set such a configuration to cancel immediately, then Stripe will
 automatically cancel the subscription in cases where such disputes are raised.

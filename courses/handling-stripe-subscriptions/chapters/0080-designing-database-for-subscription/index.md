@@ -7,7 +7,7 @@ which make use of Stripe in the backend.
 
 ## Schema design for subscription
 
-<image>designing-database-for-subscription.png</image>
+<image alt="Database design">designing-database-for-subscription.png</image>
 
 ## Conventions followed
 

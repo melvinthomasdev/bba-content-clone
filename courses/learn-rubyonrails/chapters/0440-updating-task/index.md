@@ -19,7 +19,7 @@ These are the requirements of this feature:
 - User should be redirected to the Dashboard once a task is successfully
   updated.
 
-<image>updating-a-task.png</image>
+<image alt="Updating a task feature">updating-a-task.png</image>
 
 ## Technical design
 

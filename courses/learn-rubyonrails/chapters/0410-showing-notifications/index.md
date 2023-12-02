@@ -24,7 +24,7 @@ Our notification feature should work in the following manner:
 - The notifications will be automatically shown upon getting a response from our
   server.
 
-<image>showing-notifications.png</image>
+<image alt="Showing notifications">showing-notifications.png</image>
 
 ## Technical design
 

@@ -25,23 +25,23 @@ Log into stripe [Dashboard](https://dashboard.stripe.com/test). Then click
 [products](https://dashboard.stripe.com/test/products) link and click on the
 `Add product` button.
 
-<image>products.png</image>
+<image alt="Products">products.png</image>
 
 Enter the product details along with `Monthly standard plan` pricing details as
 shown below and save them: Here we will enter the product name and product
 description and we will also provide information about the first pricing plan
 which is the "Standard pricing" of $19 per month.
 
-<image>create_a_product.png</image>
+<image alt="Create a product">create_a_product.png</image>
 
 Next, we will add a `Yearly standard plan`. To add a new price, click on the
 `Add another price` button.
 
-<image>add_price.png</image>
+<image alt="Add a price">add_price.png</image>
 
 Enter the pricing details as shown below and save them:
 
-<image>create_a_price.png</image>
+<image alt="Create a price">create_a_price.png</image>
 
 To add `Monthly pro plan` and `Yearly pro plan` pricing to the `FitDiet` product
 follow the same steps as mentioned above.
@@ -50,7 +50,7 @@ After creating the product and prices successfully in Stripe, store the
 `product` and `price IDs` for later use. We can get it by navigating to the
 product page in Stripe Dashboard as shown below:
 
-<image>product.png</image>
+<image alt="Product Details">product.png</image>
 
 ## Creating a product and prices via Stripe API
 

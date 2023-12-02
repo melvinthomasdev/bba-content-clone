@@ -126,7 +126,7 @@ In the above code snippet shown in last section, the highlighted line shows a
 line number after the file name. If we take a look at `task_test.rb` we can see
 that line 62 is the start of the test function which failed:
 
-<image>debugging-test-1.png</image>
+<image alt="Test Function">debugging-test-1.png</image>
 
 By running `rails test test/models/task_test.rb:62` we can see that `rails` runs
 only the method corresponding to the line number mentioned:

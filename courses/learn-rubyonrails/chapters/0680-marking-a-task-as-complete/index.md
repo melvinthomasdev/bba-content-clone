@@ -42,7 +42,7 @@ These are the expected changes:
 Our tasks list page will look like this when the feature implementation is
 complete:
 
-<image>task-progress-feature.png</image>
+<image alt="Tasks progress feature">task-progress-feature.png</image>
 
 ## Technical design
 

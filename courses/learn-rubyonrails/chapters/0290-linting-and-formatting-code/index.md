@@ -311,7 +311,7 @@ settings to take effect.
 At the bottom right side, you should will get a popup for installing the
 recommended extensions. Go ahead and click the `install` button:
 
-<image>vscode-extensions-recommendation-popup.png</image>
+<image alt="VSCode extensions recommendation.">vscode-extensions-recommendation-popup.png</image>
 
 After installation, all the extensions should be working out of the box with the
 required settings.
@@ -395,7 +395,7 @@ as the first comment in the file in our `Gemfile`.
 
 In such a case we might get the following output in the terminal:
 
-<image>git-hooks-rubocop-fail-stringliteral.png</image>
+<image alt="Rubocop string literal error.">git-hooks-rubocop-fail-stringliteral.png</image>
 
 Rubocop shows an offense when it can't automatically fix the offense.
 

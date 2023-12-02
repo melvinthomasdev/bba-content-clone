@@ -10,7 +10,7 @@ These are the basic requirements of this feature:
 - An unordered list of all tasks which will be displayed on the application home
   page.
 
-<image>displaying-list-of-tasks.png</image>
+<image alt="displaying list of tasks feature">displaying-list-of-tasks.png</image>
 
 ## Technical design
 

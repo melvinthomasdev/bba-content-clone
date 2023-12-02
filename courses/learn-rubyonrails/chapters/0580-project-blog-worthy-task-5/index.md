@@ -21,9 +21,9 @@ Let's incorporate the following functionalities into the application:
   an associated organization.
 - Modify the post listing page to show the name of the author just below the
   title and above the description on each post card.
-  <image>post-listing-with-user.png</image>
+  <image alt="Post listing page">post-listing-with-user.png</image>
 - Add the author's name in the modal that shows details about the post.
-  <image>show-post-with-user.png</image>
+  <image alt="Showing post">show-post-with-user.png</image>
 - You can now implement the Sign-up, Login, and Logout functionalities similar
   to what we had in the granite application.
 - Please ensure that the post listing page displays only the posts created by

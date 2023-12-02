@@ -43,11 +43,11 @@ our project. Two ways to set it up.
 Go to the `resources` tab, and in the `Add-ons` section type `Heroku Redis` in
 the search field and add it.
 
-<image>heroku-redis-addon.png</image>
+<image alt="Heroku Redis Add-on">heroku-redis-addon.png</image>
 
 Select the `Hobby Dev - Free` plan and click `Submit Order Form`.
 
-<image>heroku-redis-addon-plan.png</image>
+<image alt="Heroku Redis Add-on Plan">heroku-redis-addon-plan.png</image>
 
 ### Or using the Heroku CLI
 
@@ -166,7 +166,7 @@ the following:
 - In the app's list of dynos, click the `Edit` button and use the toggle switch
   to activate/de-activate a particular dyno.
 
-<image>heroku-dynos-dashboard.png</image>
+<image alt="Activate Heroku dynos using dashboard">heroku-dynos-dashboard.png</image>
 
 ## Gotchas with Sidekiq in Heroku
 
@@ -210,7 +210,7 @@ Here are the detailed steps to do so:
 - Add the following env variables whose values would be a username and a
   password of your choice.
 
-<image>heroku-config-vars.png</image>
+<image alt="Heroku Config Vars">heroku-config-vars.png</image>
 
 Now that we have setup the Heroku config vars, let's configure the routes.
 
@@ -396,11 +396,11 @@ environments.
 In the `development` environment we can directly access the Sidekiq Web UI
 without providing any credentials.
 
-<image>heroku-sidekiq-auth.png</image>
+<image alt="Heroku Sidekiq Auth">heroku-sidekiq-auth.png</image>
 
 A sample preview of the Sidekiq Web UI:
 
-<image>sidekiq-web-ui.png</image>
+<image alt="Sidekiq Web UI">sidekiq-web-ui.png</image>
 
 Now commit the changes that were made in this chapter:
 

@@ -48,12 +48,12 @@ We have already registered for the Stripe account. Now, login to Stripe
 [Dashboard](https://dashboard.stripe.com/test/dashboard) and then navigate to
 [Coupons](https://dashboard.stripe.com/test/coupons) page.
 
-<image>coupons.png</image>
+<image alt="Coupons">coupons.png</image>
 
 Click on the **Create a test coupon** button and enter the details as shown
 below:
 
-<image>create_a_coupon.png</image>
+<image alt="Create a Coupon">create_a_coupon.png</image>
 
 We have our first coupon, let's see how we can create **promotion codes**.
 
@@ -72,11 +72,11 @@ Navigate to coupons Dashboard and click on the `First purchase discount` coupon.
 We could see the `Promotion Codes` section and click on the
 `Add a promotion code` button.
 
-<image>add_promotion_code.png</image>.
+<image alt="Add Promotion Code">add_promotion_code.png</image>.
 
 Enter promotion code details as shown below and save it.
 
-<image>create_promotion_code.png</image>
+<image alt="Create a Promotion Code">create_promotion_code.png</image>
 
 ### Enabling promotion code in Checkout session
 
@@ -116,13 +116,13 @@ sending the
 [create checkout session API](https://stripe.com/docs/api/checkout/sessions/create)
 request as shown above.
 
-<image>checkout_session_with_promotion_code.png</image>
+<image alt="Checkout Session with promotion code">checkout_session_with_promotion_code.png</image>
 
 Oliver has a promotion code `FIRSTSUBSCRIPTIONPROMO` that we have created in the
 [Promotion Codes](#promotion-codes) section. Once he enters the promotion code,
 we will see that the total amount invoiced is reduced by 50%.
 
-<image>checkout_session_with_promotion_code_applied.png</image>
+<image alt="Checkout Session with promotion code applied">checkout_session_with_promotion_code_applied.png</image>
 
 After, subscribing successfully Oliver will be charged `$9.5` immediately. But
 for future months he will be charged `$19` because the coupon associated with
@@ -150,18 +150,18 @@ months.
 First, we will need to create a coupon `Flat 10%`. We will follow the same steps
 mentioned in the [create coupons](#creating-coupons) section to create it.
 
-<image>flat_10_coupon.png</image>
+<image alt="Coupon flat 10%">flat_10_coupon.png</image>
 
 After creating the coupon, navigate to the
 [subscriptions](https://dashboard.stripe.com/test/subscriptions) page and click
 on the `Update subscription` button on which we want to apply the coupon.
 
-<image>subscriptions.png</image>
+<image alt="Subscriptions">subscriptions.png</image>
 
 After the subscription page is rendered successfully, click on `Add Coupon`
 button and select `Flat 10%` coupon from the dropdown.
 
-<image>add_10_coupon.png</image>
+<image alt="Add coupon to a subscription">add_10_coupon.png</image>
 
 Once the coupon is applied successfully, we will see future invoice amount is
 reduced to `$17.10` and then click on the `Update subscription` button.
@@ -176,7 +176,7 @@ We will follow the steps mentioned in the
 [promotion codes](/handling-stripe-subscriptions/handling-discounts#applying-discounts-to-a-new-subscription)
 section to create it.
 
-<image>flat_10_promotion_code.png</image>
+<image alt="FLAT10PROMO">flat_10_promotion_code.png</image>
 
 We can apply promotion code on an existing subscription via
 [subscription update API](https://stripe.com/docs/api/subscriptions/update)
@@ -197,13 +197,13 @@ To get `Subscription ID`, navigate to
 [subscriptions](https://dashboard.stripe.com/test/subscriptions) page, click on
 the desired subscription and copy subscription ID.
 
-<image>subscription.png</image>
+<image alt="Subscription ID">subscription.png</image>
 
 To get `Promotion Code`, navigate to
 [coupons](https://dashboard.stripe.com/test/coupons) page, click on the desired
 coupon and copy `promotion code API ID`
 
-<image>flat_10_coupon_details.png</image>
+<image alt="Promotion Code">flat_10_coupon_details.png</image>
 
 Now, let's see the
 [subscription update API](https://stripe.com/docs/api/subscriptions/update)
@@ -230,7 +230,7 @@ customer.
 Now, we will create a coupon in Stripe with a 5% discount and duration
 `forever`.
 
-<image>create_flat_5_coupon.png</image>
+<image alt="Create a Flat 5 coupon">create_flat_5_coupon.png</image>
 
 Now, let's see how we can apply a coupon to a customer via
 [Dashboard](https://dashboard.stripe.com/test/customers).
@@ -240,7 +240,7 @@ click on the customer on which we want to apply the coupon. After the customer
 page is rendered successfully, click on the `Actions` button and then click on
 the `Apply coupon` button.
 
-<image>apply_coupon_to_customer.png</image>
+<image alt="Apply coupon to customer">apply_coupon_to_customer.png</image>
 
 Select the `Flat 5` coupon and then the coupon will be applied to a customer
 successfully.
@@ -250,7 +250,7 @@ Now, let's create a new subscription for Oliver. Navigate to
 click on the `Create Subscription` button. Enter subscription details as shown
 below.
 
-<image>create_yearly_subscription.png</image>
+<image alt="Create Yearly Subscription">create_yearly_subscription.png</image>
 
 We have selected **Yearly Standard Plan** worth of `$190/year` but the invoiced
 amount is `$185`. Now, the question is why subscription amount is reduced?
@@ -259,7 +259,7 @@ Oliver is having `Flat 5` coupon so when we created a subscription for him that
 discount also got applied to it. If we click on the `Override discount` button
 then we will see a list of available coupons.
 
-<image>applicable_coupons.png</image>
+<image alt="Applicable coupons">applicable_coupons.png</image>
 
 If we want to override the customer then we will need to select other coupons
 from the list of available coupons.
@@ -286,7 +286,7 @@ to Oliver's **Monthly Standard Plan**. Navigate to
 [coupons](https://dashboard.stripe.com/test/coupons) page and select the coupon
 we want to delete. Click on the `Delete coupon` button as shown below.
 
-<image>delete_subscription_coupon.png</image>
+<image alt="Delete subscription coupon">delete_subscription_coupon.png</image>
 
 Let's verify whether the discount is still applied to Oliver's **Monthly
 Standard Plan** or not? Navigate to
@@ -306,7 +306,7 @@ Navigate to [coupons](https://dashboard.stripe.com/test/coupons) page and select
 the customer coupon we want to delete. Click on `Delete coupon` button as shown
 below.
 
-<image>delete_customer_coupon.png</image>
+<image alt="Delete customer coupon">delete_customer_coupon.png</image>
 
 Let's verify whether discount is still applied to Oliver's **Yearly Standard
 Plan** or not? Navigate to
@@ -315,4 +315,4 @@ on the Oliver's subscription. We will see that the subscription next invoice
 amount is still `$185`. Deleting coupon does not remove the applicable discount
 from Oliver's subscription.
 
-<image>yearly_standard_subscription.png</image>
+<image alt="Yearly standard subscription">yearly_standard_subscription.png</image>

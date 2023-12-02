@@ -23,12 +23,12 @@ First, we need to go to the payment to be refunded on the
 [payments overview](https://dashboard.stripe.com/payments) page. Select the
 payment we need to refund and click on `Refund`.
 
-<image>refund.png</image>
+<image alt="Refund Payment">refund.png</image>
 
 By default, full refund will be issued. For a partial refund, we can enter a
 different amount. Select a reason for the refund and click `Refund`.
 
-<image>issue_refund.png</image>
+<image alt="Issue Refund">issue_refund.png</image>
 
 **Using API**
 

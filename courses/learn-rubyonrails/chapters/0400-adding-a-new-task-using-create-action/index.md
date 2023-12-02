@@ -15,7 +15,7 @@ created a user.
 
 We will add the select field once we are through with user creation.
 
-<image>adding-a-task-using-create-action.png</image>
+<image alt="Adding a task using create action feature">adding-a-task-using-create-action.png</image>
 
 ## Technical design
 

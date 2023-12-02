@@ -36,7 +36,7 @@ Let's say the above API request is sent without `billing_address_collection`
 parameter. Now, when a Checkout page is rendered we will only see the country or
 region field as shown below:
 
-<image>checkout_session_without_address.png</image>
+<image alt="Checkout Session Without Address Field">checkout_session_without_address.png</image>
 
 To enable address collection of customer's billing address we will need to pass
 `billing_address_collection` parameter with value `required` as shown below:
@@ -56,7 +56,7 @@ $ curl https://api.stripe.com/v1/checkout/sessions \
 When a checkout session page is rendered we can see the address field as shown
 below:
 
-<image>checkout_session_with_address.png</image>
+<image alt="Checkout Session With Address Field">checkout_session_with_address.png</image>
 
 To disable address collection we will either need to pass
 `billing_address_collection` parameter with value `auto` or send API request
@@ -69,7 +69,7 @@ Stripe account country. We can see our account details via
 [Dashboard settings](https://dashboard.stripe.com/settings/account) as shown
 below:
 
-<image>account_settings.png</image>
+<image alt="Account Settings">account_settings.png</image>
 
 Let's assume Stripe account's country is `India`. When customer checkouts to the
 session page, collection of address details is mandatory which means even if we

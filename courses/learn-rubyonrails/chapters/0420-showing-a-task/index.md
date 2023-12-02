@@ -14,7 +14,7 @@ These are the requirements of this feature:
   Do not get overwhelmed by the edit and delete buttons as well as the comment
   section. We will cover those features later in this book.
 
-<image>showing-task.png</image>
+<image alt="Showing a task feature">showing-task.png</image>
 
 ## Technical design
 

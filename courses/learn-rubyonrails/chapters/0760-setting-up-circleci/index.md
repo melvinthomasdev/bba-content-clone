@@ -207,7 +207,7 @@ is mentioned in the CircleCI's database config file that is `database.yml.ci`,
 the CircleCI will try to create the database with the `circleci` role and will
 fail with an error like this:
 
-<image>circleci-role-not-exist.png</image>
+<image alt="CircleCI role does not exist">circleci-role-not-exist.png</image>
 
 We don't have to make the above mentioned changes in our Granite app as we are
 using `SQLite` in the development env.
@@ -241,7 +241,7 @@ You might've to manually correct some Rubocop offenses in the pointed out files.
 
 Example:
 
-<image>git-hooks-rubocop-non-correctable-offenses.png</image>
+<image alt="Rubocop uncorrectable offenses.">git-hooks-rubocop-non-correctable-offenses.png</image>
 
 Once everything is done, re-push to the GitHub branch with CircleCI tracks and
 things should be working.

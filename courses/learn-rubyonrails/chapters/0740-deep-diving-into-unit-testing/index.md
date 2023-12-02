@@ -925,7 +925,7 @@ run successfully. Now say by mistake we named the `CategoryTest` as
 `OrganizationTest` while keeping the file name as `category_test.rb`, then the
 `test_checks_the_oliver_user` test will fail, like this:
 
-<image>wrong-class-name-example.png</image>
+<image alt="Test failure">wrong-class-name-example.png</image>
 
 The above test failed because of the wrong class name for the test file. In the
 above mentioned test, `setup` method of `OrganizationTest` class from
@@ -1192,8 +1192,8 @@ bundle exec rails test
 
 The output will look something like this:
 
-<image>flaky-tests-1.png</image>
-<image>flaky-tests-2.png</image>
+<image alt="flaky tests output 1">flaky-tests-1.png</image>
+<image alt="flaky tests output 2">flaky-tests-2.png</image>
 
 We can see that the above test run fails. The test suite started with some
 random seed value which is `24892` in our case. We will use this seed value of
@@ -1209,8 +1209,8 @@ of methods from the test suite to reproduce the same results with a minimum
 number of tests. The output of the `minitest-bisect` command will look something
 like this:
 
-<image>minitest-bisect-1.png</image>
-<image>minitest-bisect-2.png</image>
+<image alt="minitest-bisect output 1">minitest-bisect-1.png</image>
+<image alt="minitest-bisect output 1">minitest-bisect-2.png</image>
 
 We can see that it has found the culprit methods which are causing the random
 failures in the tests. The important part of this output is the statement

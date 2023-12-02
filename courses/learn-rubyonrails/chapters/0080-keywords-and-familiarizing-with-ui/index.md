@@ -13,7 +13,7 @@ the chapter title and an inventory of lessons within. Selecting a title
 navigates to the corresponding chapter, while selecting a lesson directly 
 accesses that particular lesson within the chapter.
 
-<image>table-of-contents.png</image>
+<image alt="Table of contents">table-of-contents.png</image>
 
 You can also press `/` to search for keywords inside the
 table of contents.
@@ -37,7 +37,7 @@ contains that keyword.
 To close the search dialog box, you can either click on the `close` icon on
 top-right corner of the dialog box or press the `ESC` key.
 
-<image>search-box.png</image>
+<image alt="Search dialog box">search-box.png</image>
 
 ## What is an example?
 
@@ -57,13 +57,13 @@ supposed to be copied to your project or if it is an example.
 The following is an example of the type of code that we DON'T want you to
 copy-paste into the application codebase:
 
-<image>example-code-snippet.png</image>
+<image alt="Example code snippet">example-code-snippet.png</image>
 
 But if we have explicitly mentioned to add to the codebase, then you should add
 it. The following is an example for the type of code we want you to copy-paste
 into the application:
 
-<image>copy-paste-code-snippet.png</image>
+<image alt="Copy paste code snippet">copy-paste-code-snippet.png</image>
 
 ## How to copy and paste code?
 

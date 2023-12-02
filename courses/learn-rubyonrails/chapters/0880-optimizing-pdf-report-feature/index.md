@@ -20,7 +20,7 @@ with progress notifications and to store it in Google Cloud storage.
 - We will add a progress bar in the UI to show the completion of the PDF report
   generation.
 
-<image>download-report-card.png</image>
+<image alt="PDF report">download-report-card.png</image>
 
 ## Technical design
 
@@ -145,7 +145,7 @@ Setup the Google cloud storage bucket as follows:
 - Select the project and go to the `Buckets` option using the side menu, like
   this:
 
-<image>gcs-bucket.png</image>
+<image alt="GCS buckets">gcs-bucket.png</image>
 
 - Click on create button and add the bucket with `granite-report` as the name.
   Select the default options for rest of the steps.
@@ -158,14 +158,14 @@ Generate the key file as follows:
 - Go to the `IAM and admin > Service accounts` option using sidebar menu as
   shown below:
 
-<image>gcs-service-account.png</image>
+<image alt="GCS service account">gcs-service-account.png</image>
 
 - Click on `Create service account` option at the top.
 
 - Add the `name` as `granite-<your_name>` and click on `CREATE AND CONTINUE`
   option. Then select the `Owner` role under the `Basic` option as shown below.
 
-<image>owner-service-account.png</image>
+<image alt="Owner service account">owner-service-account.png</image>
 
 - Then click on `Continue`. We can skip the last option and click on `Done`.
 

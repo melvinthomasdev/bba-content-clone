@@ -22,7 +22,7 @@ These are the requirements of the feature.
   be left transparent with white borders. This will let users identify starred
   tasks quickly.
 
-<image>tasks-starring-feature.png</image>
+<image alt="Task starring feature">tasks-starring-feature.png</image>
 
 ## Technical design
 

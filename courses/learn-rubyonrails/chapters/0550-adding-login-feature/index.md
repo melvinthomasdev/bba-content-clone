@@ -7,7 +7,7 @@ have the following changes:
 - We will have a login form requesting email and password in `/login` route. The
   page will look like this:
 
-  <image>login-page.png</image>
+  <image alt="User login">login-page.png</image>
 
 - Users once logged in will remain logged in until they log out manually. i.e.
   the session will never expire.
@@ -22,7 +22,7 @@ have the following changes:
 - We will display the logged-in user's name in our navigation bar as circled in
   this image:
 
-  <image>username-in-navbar.png</image>
+  <image alt="User name in navbar">username-in-navbar.png</image>
 
 ## Technical design
 

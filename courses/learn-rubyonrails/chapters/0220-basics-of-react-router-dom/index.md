@@ -19,7 +19,7 @@ component should be a child of `BrowserRouter` component. When we try to use
 we will get an error mentioning "You should not use <Route> outside a <Router>",
 like this:
 
-<image>router-error.png</image>
+<image alt="Router error">router-error.png</image>
 
 We should have only one `BrowserRouter` at the topmost level of the component
 hierarchy tree with all the other components nested inside it. We should have a

@@ -221,7 +221,7 @@ cy.get("[data-cy=submit-modal-button]").click();
 
 ## Custom commands should be purely functional and should not have code pertaining to verifications
 
-<image>custom-commands-functional.png</image>
+<image alt="Custom Commands to be purely functional">custom-commands-functional.png</image>
 
 **18. Assertions should check that the element is “visible” on page rather than
 “exists” on page**
@@ -230,7 +230,7 @@ Exist only checks that the element is present in DOM and not necessarily that
 the element is visible. We need to ensure in our assertions that the element is
 visible on page.
 
-<image>use-visible-instead-of-exist.png</image>
+<image alt="Use visible instead of exist">use-visible-instead-of-exist.png</image>
 
 ## Enable retries
 

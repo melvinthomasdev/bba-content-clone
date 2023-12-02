@@ -297,7 +297,7 @@ bundle exec rails t -v
 ```
 
 We would get the following output:
-<image>test-file-naming-suffix.png</image>
+<image alt="Test file naming without suffix">test-file-naming-suffix.png</image>
 
 You can see that the command outputs 0 runs even though we have a test file
 present. This is why it is important to suffix our test file's name with

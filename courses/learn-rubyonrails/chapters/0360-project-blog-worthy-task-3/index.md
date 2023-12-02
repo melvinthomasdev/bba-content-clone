@@ -13,7 +13,7 @@ This task will be mainly dealing with controllers and actions.
   card should display the title and a preview of the description. If the preview
   exceeds one line, it is recommended to truncate the excess description using
   an ellipsis to ensure a cleaner and more concise display.
-  <image>post-listing.png</image>
+  <image alt="Post listing page">post-listing.png</image>
 
 You can depend on
 [neetoui](https://neeto-ui.neeto.com/?path=/story/welcome--page) for assistance,

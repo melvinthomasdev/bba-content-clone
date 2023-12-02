@@ -31,14 +31,14 @@ Log into stripe [Dashboard](https://dashboard.stripe.com/test). Then, navigate
 to [products](https://dashboard.stripe.com/test/products) page and click on the
 `Add product` button.
 
-<image>products.png</image>
+<image alt="Products">products.png</image>
 
 Enter the product details along with `Basic option` pricing details as shown
 below and save them:
 
-<image>create_email_product.png</image>
+<image alt="Create Email Product">create_email_product.png</image>
 
-<image>email_basic_pricing.png</image>
+<image alt="Basic Pricing">email_basic_pricing.png</image>
 
 Now, let's see how we can add `Premium option` pricing in the `EmailService`
 product.
@@ -53,13 +53,13 @@ Let's navigate to the products dashboard and click on the **EmailService**
 product. Now, to add a new price, click on the `Add another price` button. Enter
 the pricing details as shown below and save them:
 
-<image>create_email_premium_price.png</image>
+<image alt="Premium Pricing">create_email_premium_price.png</image>
 
 After creating the product and prices successfully in Stripe, store the
 `product` and `price IDs` for later use. We can get it by navigating to the
 product page in Stripe Dashboard as shown below:
 
-<image>email_product.png</image>
+<image alt="Product Details">email_product.png</image>
 
 ### Creating a product and prices via Stripe API
 
@@ -188,7 +188,7 @@ Navigate to [subscriptions](https://dashboard.stripe.com/test/subscriptions)
 page and then click on the `Create Subscription` button. Enter subscription
 details as shown below and save them.
 
-<image>create_metered_subscription.png</image>
+<image alt="Create Yearly Subscription">create_metered_subscription.png</image>
 
 We have selected **Basic option** and the invoiced amount will be calculated on
 the basis of usage as shown in the _Invoice Summary_ section.
@@ -198,11 +198,11 @@ Now navigate back to
 the above created subscription. We will see the next invoice billing amount as
 `$15` because no usage is recorded for Oliver till now.
 
-<image>metered_billing_usage.png</image>
+<image alt="Basic option Subscription">metered_billing_usage.png</image>
 
 Also, copy the subscription item ID as shown below for later use.
 
-<image>subscription_item_id.png</image>
+<image alt="Subscription Item ID">subscription_item_id.png</image>
 
 ### Reporting usage via API
 
@@ -231,8 +231,8 @@ After successfully reporting usage, we will navigate back to
 the subscription for which you want to see the usage details and click on
 `View usage` button.
 
-<image>view_usage.png</image>
+<image alt="Subscription Usage">view_usage.png</image>
 
 We will see the current usage events as shown below:
 
-<image>current_usage.png</image>
+<image alt="Current Usage">current_usage.png</image>

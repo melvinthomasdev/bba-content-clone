@@ -96,7 +96,7 @@ Stripe.api_version = '2022-11-15'
 We can view the current API version by visiting the Stripe dashboard's
 `Developers` tab, which in test mode would be in
 [the developer test tab](https://dashboard.stripe.com/test/developers):
-<image>dashboard-api-version.png</image>
+<image alt="Dashboard API version">dashboard-api-version.png</image>
 
 The API version settings are set to our account. Our API version gets set the
 first time we make a Stripe API request.
@@ -156,4 +156,4 @@ language libraries in the Stripe Developer Digest.
 We can subscribe to it in the [Stripe developer website](https://stripe.dev/),
 by providing the email, in the field, which is usually at the bottom of the
 page:
-<image>stripe-developer-digest-newsletter.png</image>
+<image alt="Stripe Developer Digest">stripe-developer-digest-newsletter.png</image>

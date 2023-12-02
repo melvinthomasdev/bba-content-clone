@@ -8,10 +8,10 @@ following is the list of things we need in this feature:
 
 - We need a new dropdown in the task form showing the list of users. We should
   be able to select the task's assignee from this dropdown.
-  <image>user-dropdown.png</image>
+  <image alt="User dropdown">user-dropdown.png</image>
 
 - The task details page should show the name of its assignee.
-  <image>show-user-in-task-details.png</image>
+  <image alt="Assignee in task details">show-user-in-task-details.png</image>
 
 - Each task on the dashboard should contain the task assignee's name along with
   the task's title.

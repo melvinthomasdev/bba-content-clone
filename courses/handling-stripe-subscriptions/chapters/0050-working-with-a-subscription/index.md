@@ -99,7 +99,7 @@ customer's payment method fails.
 
 This is how the dashboard would look like:
 
-<image>manage-failed-payments-billing.png</image>
+<image alt="Manage failed payments">manage-failed-payments-billing.png</image>
 
 We can delegate the retry logic to Smart Retries feature in Stripe or we can set
 our own custom retry schedule which can be set to retry 1,3,5 or 7 days after

@@ -25,7 +25,7 @@ For example, if we need to look for `valid?` method we can directly search for
 it. Then we can select a particular search result and the documentation for that
 particular method will be shown like this:
 
-<image>rails-guide-search.png</image>
+<image alt="Rails guide search">rails-guide-search.png</image>
 
 After selecting the particular search result it shows all the documentation
 about the selected `valid?` method. Towards the very end of the documentation we
@@ -41,7 +41,7 @@ oriented. This guide has a menu from which we can select the required section.
 
 For example:
 
-<image>rails-guide-menu.png</image>
+<image alt="Edge guide menu">rails-guide-menu.png</image>
 
 ## Searching with pry
 
@@ -86,12 +86,12 @@ cd Validations
 - Now let's try `show-method valid?` command in the console. It will show the
   `valid?` method's definition, like this:
 
-<image>pry-gem-output.png</image>
+<image alt="Pry gem output">pry-gem-output.png</image>
 
 If the currently selected file doesn't have the required method then it will
 show the error like this:
 
-<image>pry-error.png</image>
+<image alt="Pry error">pry-error.png</image>
 
 So we should prefer using `pry` only when we know the exact location of the
 required method.
@@ -110,13 +110,13 @@ utilized in Rails test suite.
 We can search for `valid?` method in the repository using the search bar on the
 top left corner like this:
 
-<image>github-repo-search.png</image>
+<image alt="Github search in repository">github-repo-search.png</image>
 
 It will show all the different places where this `valid?` keyword is used. More
 than that we can also see the commits, issues, and discussions where this
 `valid?` keyword is being utilized, like this:
 
-<image>github-repo-search-result.png</image>
+<image alt="Github repository search results">github-repo-search-result.png</image>
 
 This search feature is not that enhanced because it doesn't take into account
 the regex values or non-alphanumeric characters and sometimes it's a bit hard to
@@ -133,7 +133,7 @@ branch, press dot "." to open the `VSCode` web interface for the Github repo.
 Now we can directly use the global search tool and see the code for the required
 method. Let's try for the same `valid?` method like this:
 
-<image>github-vscode-search.png</image>
+<image alt="Github VSCode search">github-vscode-search.png</image>
 
 In the VSCode search bar, we can filter out results by file name too. So if we
 are sure about the required folder or file name where we want to search then we
@@ -142,7 +142,7 @@ click on the three dots menu button below the search bar and enter the file
 name. For example, if we need to search for the `valid?` method inside the
 `activemodel` gem then we can use the `*activemodel*` regex, like this:
 
-<image>vscode-search-with-file.png</image>
+<image alt="Github VSCode search results">vscode-search-with-file.png</image>
 
 ## Open gem in VSCode locally
 

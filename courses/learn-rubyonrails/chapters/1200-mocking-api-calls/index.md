@@ -68,7 +68,7 @@ errors have occurred during that invocation using `verify` method.
 If we don't call the expected method that is `payment_completed?`, `verify`
 method will raise an error like this:
 
-<image>mock-test-error.png</image>
+<image alt="Mock error example">mock-test-error.png</image>
 
 ## Difference between stub and mock
 

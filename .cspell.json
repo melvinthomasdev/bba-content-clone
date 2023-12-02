@@ -819,6 +819,10 @@
     "licence",
     "bezier",
     "Bezier",
+    "upvote",
+    "upvotes",
+    "downvote",
+    "downvotes",
     "Doraemon"
   ],
   // flagWords - list of words to be always considered incorrect

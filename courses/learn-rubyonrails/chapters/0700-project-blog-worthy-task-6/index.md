@@ -9,7 +9,7 @@ functionality for users to upvote and downvote posts and necessary tests.
   a value of `upvotes` - `downvotes` and must dynamically change when a user
   clicks on the upvote or downvote button. Make sure the upvotes and downvotes
   values change on the Rails' side as well.
-  <image>post-listing-with-voting.png</image>
+  <image alt="Post listing page">post-listing-with-voting.png</image>
 - Implement the necessary logic to toggle the `is_blog_worthy` field in the
   `posts` table to `true` when the net vote count exceeds a defined threshold.
   If the net vote count falls short of this threshold, please ensure that the
@@ -21,7 +21,7 @@ functionality for users to upvote and downvote posts and necessary tests.
   indicating `blog-worthy` must be displayed on the front-end side. For example,
   if the threshold is set to 15 and the net vote becomes 16, then the tag should
   be shown as in the figure below.
-  <image>post-listing-with-blog-worthy-tag.png</image>
+  <image alt="Post listing page">post-listing-with-blog-worthy-tag.png</image>
 - Finally, add the necessary tests for models and controllers. Make sure your
   application is thoroughly tested. To ensure thorough testing, it is imperative
   to maintain a test coverage of 100% for all model and controller codes.

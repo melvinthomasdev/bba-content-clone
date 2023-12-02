@@ -120,12 +120,12 @@ open coverage/index.html
 
 We will get a test coverage report, which might look like the following image:
 
-<image>test-coverage-report-1.png</image>
+<image alt="Test coverage report 1">test-coverage-report-1.png</image>
 
 In cases where we don't have enough test cases, this is how the report would
 look like:
 
-<image>test-coverage-report-2.png</image>
+<image alt="Test coverage report 2">test-coverage-report-2.png</image>
 
 Run the following command from the terminal to make sure coverage reports are
 not tracked by Git:

@@ -2,7 +2,7 @@ Now that we’ve learnt how to work with cypress, let us see how we can build
 tests for features. As an example lets take a **Form** component existing within
 a **Pane** as the feature to be tested.
 
-<image>pane-form-component.png</image>
+<image alt="Pane Form Component">pane-form-component.png</image>
 
 Before writing the tests, take a moment to think how exactly manual testing of
 such UI features are done. Our objective with writing automated cypress tests is
@@ -78,7 +78,7 @@ Here we have tested :-
 - The uniqueness validation of the tags by asserting the toastr message content
   when we try to add a non unique tag.
 
-<image>name-taken-toastr-message.png</image>
+<image alt="Pane Form Component">name-taken-toastr-message.png</image>
 
 - The `create tag` function. We have asserted whether the added tag exists
   within the table to ensure that the `create tag` feature works properly.
@@ -130,7 +130,7 @@ Here we have tested :-
 
 ## Testing the delete function
 
-<image>delete-tag-modal.png</image>
+<image alt="Delete tag modal">delete-tag-modal.png</image>
 
 ```javascript
 // verify cancel button functionality of delete alert modal
@@ -171,7 +171,7 @@ afterEach(() => {
 
 ## Point to remember
 
-<image>form-with-required-category-field.png</image>
+<image alt="Form with required category">form-with-required-category-field.png</image>
 
 Take a look at the above screenshot. Here we can see there exist a field for
 selecting category, this implies that before we create/publish an article there

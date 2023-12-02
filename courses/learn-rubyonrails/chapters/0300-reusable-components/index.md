@@ -17,9 +17,9 @@ these components reusable with the help of props:
 - PageLoader
 - Tooltip
 
-<image>navbar-and-table-components.png</image>
+<image alt="Navbar and table components">navbar-and-table-components.png</image>
 
-<image>input-and-button-components.png</image>
+<image alt="Input and button components">input-and-button-components.png</image>
 
 ## Technical design
 

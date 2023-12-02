@@ -201,7 +201,7 @@ We have successfully added a new column to the dashboard which displays the
 count of comments under each task. Now, everything might seem to work fine until
 we inspect the server log.
 
-<image>counter-cache-n+1-queries.png</image>
+<image alt="N+1 queries.">counter-cache-n+1-queries.png</image>
 
 As you can see, a separate count query is executed for each task to get the
 number of comments. This can be inefficient, especially if you are displaying a
@@ -251,7 +251,7 @@ end
 That concludes the setup. Now, if you inspect the server log, you will see that
 the `comments` table is not queried at all.
 
-<image>counter-cache-added-server-log.png</image>
+<image alt="Server log after adding counter cache">counter-cache-added-server-log.png</image>
 
 Here's how it works:
 
