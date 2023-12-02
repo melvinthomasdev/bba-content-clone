@@ -22,7 +22,7 @@ of an HTML page:
 </code>
 </codeblock>
 
-![DOM tree](https://ucarecdn.com/4b193a2a-8bf2-46e6-9554-014a903d5c91/ "DOM tree")
+![DOM tree](https://ucarecdn.com/36c1d491-4ca7-4d03-a459-bd114fc7e958/ "DOM Tree")
 
 The `HTML` element is
 at the top

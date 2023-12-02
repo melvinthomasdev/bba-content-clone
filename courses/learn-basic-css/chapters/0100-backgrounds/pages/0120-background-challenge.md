@@ -1,7 +1,7 @@
 Using the CSS **background** knowledge that you have
 gained so far, write CSS to do the following:
 
-1. Add a background image https://upload.wikimedia.org/wikipedia/commons/f/fc/TheMatrixAnimated.gif.
+1. Add a background image https://upload.wikimedia.org/wikipedia/commons/f/fc/TheMatrixAnimated.gif
 
 2. Stop the crazy repeating background images.
 
