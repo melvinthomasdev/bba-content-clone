@@ -53,3 +53,6 @@
 - slug: debugging-flakiness
   name: Debugging flakiness
   has_pages: false
+- slug: adding-tests-for-tasks-and-global-setup
+  name: Adding tests for tasks and global setup
+  has_pages: false

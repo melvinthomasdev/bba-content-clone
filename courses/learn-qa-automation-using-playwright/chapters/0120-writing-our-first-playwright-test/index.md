@@ -48,7 +48,7 @@ In the tag for the element, find the best label available for using as a selecto
 
 <image>playwright-find-selector-using-devtools.png</image>
 
-## Figuring out the steps to be done in the step
+## Figuring out the steps to be done for the test
 
 Now that we know how to find the selectors, we should figure out the steps we should perform in order to login. For this page, it would be as follows.
 
