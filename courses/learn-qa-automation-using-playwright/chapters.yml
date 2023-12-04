@@ -41,6 +41,9 @@
 - slug: fixtures
   name: Fixtures
   has_pages: false
+- slug: poms-and-fixtures-practical-example
+  name: POMs and Fixtures - Practical example
+  has_pages: false
 - slug: annotations
   name: Annotations
   has_pages: false
