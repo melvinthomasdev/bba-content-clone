@@ -20,11 +20,11 @@
 - title: Relative Units
   slug: relative-units
   page_type: lesson
-- title: Relative Unit 'em'
-  slug: relative-unit-em
+- title: Relative Unit 'em' I
+  slug: relative-unit-em-i
   page_type: lesson
-- title: Relative Unit 'em' 2
-  slug: relative-unit-em-2
+- title: Relative Unit 'em' II
+  slug: relative-unit-em-ii
   page_type: lesson
 - title: Exercise - Relative Unit 'em'
   slug: exercise-relative-unit-em

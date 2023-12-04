@@ -14,3 +14,7 @@ our forms, we use the `<select>` element.
 </form>
 </code>
 </codeblock>
+
+`value` attribute within each `<option>` specifies the value linked to that particular choice.
+In the example above, when the **Apple** option is selected, the value **apple** and **fruit** are sent to the website as part of the data on form submission.
+
