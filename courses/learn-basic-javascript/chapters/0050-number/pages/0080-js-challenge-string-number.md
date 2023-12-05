@@ -79,13 +79,13 @@ below code and display the variable
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
-const excerptFromMoviePlot = "As Earth faces its gravest threat yet, the Avengers reunite to thwart the diabolical plans of Thanos, a powerful intergalactic warlord.  Iron Man, Captain America, Thor, Black Widow, Hulk, and new allies like Captain Marvel embark on a perilous journey across time and space, seeking to reverse the catastrophic "Snap", with sacrifices made and alliances tested, Captain America must rally the Avengers to stand against the relentless might of Thanos and protect the universe from his tyrannical reign.
+const excerptFromMoviePlot = "As Earth faces its gravest threat yet, the Avengers reunite to thwart the diabolical plans of Thanos, a powerful intergalactic warlord. Iron Man, Captain America, Thor, Black Widow, Hulk, and new allies like Captain Marvel embark on a perilous journey across time and space, seeking to reverse the catastrophic "Snap", with sacrifices made and alliances tested, Captain America must rally the Avengers to stand against the relentless might of Thanos and protect the universe from his tyrannical reign.
 </code>
 <solution>
 const villain = "Thanos";
 const hero = "Captain America";
 
-const excerptFromMoviePlot = `As Earth faces its gravest threat yet, the Avengers reunite to thwart the diabolical plans of ${villain}, a powerful intergalactic warlord.  Iron Man, ${hero}, Thor, Black Widow, Hulk, and new allies like Captain Marvel embark on a perilous journey across time and space, seeking to reverse the catastrophic "Snap", with sacrifices made and alliances tested, ${hero} must rally the Avengers to stand against the relentless might of ${villain} and protect the universe from his tyrannical reign.`
+const excerptFromMoviePlot = `As Earth faces its gravest threat yet, the Avengers reunite to thwart the diabolical plans of ${villain}, a powerful intergalactic warlord. Iron Man, ${hero}, Thor, Black Widow, Hulk, and new allies like Captain Marvel embark on a perilous journey across time and space, seeking to reverse the catastrophic "Snap", with sacrifices made and alliances tested, ${hero} must rally the Avengers to stand against the relentless might of ${villain} and protect the universe from his tyrannical reign.`
 
 console.log(excerptFromMoviePlot);
 </solution>
