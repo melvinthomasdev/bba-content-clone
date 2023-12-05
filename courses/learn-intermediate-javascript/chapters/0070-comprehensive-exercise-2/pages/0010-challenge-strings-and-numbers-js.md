@@ -42,7 +42,7 @@ function numberManipulation(input) {
 </solution>
 <testcases>
 <caller>
-comprehensiveExercise(input);
+numberManipulation(input);
 </caller>
 <testcase>
 <i>
