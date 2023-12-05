@@ -25,7 +25,7 @@ class `.precious-stone`:
   text-align: center
 }
 /* Write code below this line */
-.cartoon {
+.precious-stone {
   color: #ADD8E6;
 }
 </solution>
