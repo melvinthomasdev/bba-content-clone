@@ -56,3 +56,6 @@
 - slug: adding-tests-for-tasks-and-global-setup
   name: Adding tests for tasks and global setup
   has_pages: false
+- slug: completing-the-tests-for-the-tasks-page
+  name: Completing the tests for the tasks page
+  has_pages: false

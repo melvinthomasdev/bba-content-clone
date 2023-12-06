@@ -260,7 +260,6 @@ export default defineConfig({
       testMatch: "**/register.spec.ts",
     },
   ],
-
 });
 ```
 
@@ -347,7 +346,7 @@ Now we can add the `storageState` to our Playwright configuration
 
 import { defineConfig, devices } from "@playwright/test";
 
-export const STORAGE_STATE = "./auth/session.json"
+export const STORAGE_STATE = "./auth/session.json";
 
 export default defineConfig({
   testDir: "./e2e",
@@ -357,7 +356,6 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: "html",
   use: {
-
     trace: "on-first-retry",
     baseURL: "http://localhost:3000",
   },
@@ -374,7 +372,6 @@ export default defineConfig({
       dependencies: ["login"],
       testMatch: "**/*.spec.ts",
       testIgnore: "**/register.spec.ts",
-
     },
     {
       name: "Logged out tests",
@@ -404,7 +401,7 @@ test.describe("Login page", () => {
       password: "welcome",
       username: "Oliver Smith",
     });
-    page.context().storageState({ path: STORAGE_STATE });
+    await page.context().storageState({ path: STORAGE_STATE });
   });
 });
 ```
@@ -419,7 +416,7 @@ All the dependent tests should be logged in before they start executing leading 
 
 ## Global teardown
 
-We saw how global setup can help set some common things up before the execution of tests. The global teardown can help us perform cleanup tasks such as clearing temporary data, deleting unwanted files generated when running the tests and much more. 
+We saw how global setup can help set some common things up before the execution of tests. The global teardown can help us perform cleanup tasks such as clearing temporary data, deleting unwanted files generated when running the tests and much more.
 
 In our project we can see that a new file called `auth/session.json` is generated after each test, which is unwanted. Let's create a global teardown method to delete this file after the tests have completed execution.
 
@@ -444,7 +441,7 @@ test("Teardown", () => {
 });
 ```
 
-Let's also make the corresponding changes in the configuration file. 
+Let's also make the corresponding changes in the configuration file.
 
 ```ts
 // playwright.config.ts
