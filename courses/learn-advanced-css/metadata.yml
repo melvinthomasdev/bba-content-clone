@@ -6,7 +6,7 @@ published: true
 custom_data:
   type: css
   courseType: lesson
-  upcoming: true
+  upcoming: false
   newCourse: false
   courseColor: border-gray-600
 home_logo: css-gray-bg.svg
