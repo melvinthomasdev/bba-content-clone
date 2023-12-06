@@ -2,7 +2,7 @@
 name: Learn Advanced CSS
 subheading: Learn Advanced CSS
 slug: learn-advanced-css
-published: false
+published: true
 custom_data:
   type: css
   courseType: lesson
