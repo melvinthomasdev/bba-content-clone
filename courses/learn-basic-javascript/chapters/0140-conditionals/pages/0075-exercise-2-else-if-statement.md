@@ -11,7 +11,7 @@ it logs the following to the console:
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const participant = {
-  name: "Tommy",
+  name: "Sam",
   role: "volunteer"
 };
 
@@ -20,16 +20,17 @@ const participant = {
 
 <solution>
 const participant = {
-  name: "Tommy",
+  name: "Sam",
   role: "volunteer"
 };
 
 // Write code below
-if (participant.role == "guest") {
+if (participant.role === "admin") {
   console.log(`${participant.name} has access to admin area.`);
-} else if (participant.role == "volunteer){
+} else if (participant.role === "volunteer"){
   console.log(`${participant.name} has access to staff area.`);
-} else {
+}
+else {
   console.log(`${participant.name} has access to public area.`);
 };
 </solution>
