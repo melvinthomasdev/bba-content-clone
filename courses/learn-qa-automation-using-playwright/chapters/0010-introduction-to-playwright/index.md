@@ -16,4 +16,4 @@ Some of the features offered by Playwright includes:
 
 - **Multiple tabs:** Playwright facilitates the development of intricate testing scenarios that extend across multiple tabs.
 
-- **Trace viewer:** It is a GUI tool that helps us explore recorded Playwright traces after the script has ran. Traces are a great way for debugging our tests when they fail on CI.
+- **Trace viewer:** Trace viewer is a GUI tool that helps us explore recorded Playwright traces after the script has run. Traces are a great way to debug our tests when they fail on CI.
