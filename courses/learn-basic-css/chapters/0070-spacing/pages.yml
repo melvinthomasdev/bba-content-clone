@@ -74,3 +74,12 @@
 - title: Exercise 3 - Padding Shorthand Property
   slug: exercise-3-padding-shorthand-property
   page_type: exercise
+- title: Setting Margin and Padding Values in Percentages
+  slug: margin-padding-in-percentages
+  page_type: lesson
+- title: Exercise - Margin Values in Percentages
+  slug: exercise-margin-value-in-percentages
+  page_type: exercise
+- title: Exercise - Padding Values in Percentages
+  slug: exercise-padding-value-in-percentages
+  page_type: exercise
