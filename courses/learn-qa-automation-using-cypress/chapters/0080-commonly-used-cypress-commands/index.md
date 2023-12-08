@@ -71,7 +71,7 @@ The modifier keys will change based on the OS. For example, on Windows, the modi
 
 Used to load a fixed set of data located in a file. It takes in a path to a file
 within the fixtures folder. Read more on the directory structure of Cypress
-[here](/learn-qa-automation-using-cypress/how-to-run-cypress-tests#understanding-the-cypress-directory-structure).
+[here](https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests#Folder-structure).
 
 ```js
 cy.fixture("fixtures/oliver.json").then(oliver => {

@@ -2,7 +2,7 @@ As a project adds more features, the `application_controller.rb` file tends to
 gather more and more code and soon it becomes very big and very messy.
 
 Take a look at this
-[application_controller.rb](https://gist.github.com/neerajdotname/405df1c6f6b22ec9bfeb3a5fdb5d95a4)
+[application_controller.rb](https://gist.github.com/neerajsingh0101/405df1c6f6b22ec9bfeb3a5fdb5d95a4)
 before the refactoring was done.
 
 As we can see many disjoint entities exist within that file. In the first look
