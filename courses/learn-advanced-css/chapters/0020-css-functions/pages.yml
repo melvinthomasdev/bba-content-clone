@@ -32,14 +32,23 @@
 - title: Exercise - Changing Starting Angle in Conic Gradient
   slug: exercise-conic-gradient-changing-starting-angle
   page_type: exercise
-- title: "`counter` Function"
-  slug: counter-function
+- title: "`counter` Function Introduction"
+  slug: counter-function-intro
   page_type: lesson
-- title: "`counter` Function 2"
-  slug: counter-function-2
+- title: Counter reset
+  slug: counter-reset
+  page_type: lesson
+- title: Counter increment
+  slug: counter-increment
   page_type: lesson
 - title: Exercise - `counter` Function
   slug: exercise-counter-function
+  page_type: exercise
+- title: Counter List Style
+  slug: counter-list-style
+  page_type: lesson
+- title: Exercise - Counter List Style
+  slug: exercise-counter-list-style
   page_type: exercise
 - title: "`cubic-bezier` Function"
   slug: cubic-bezier-function

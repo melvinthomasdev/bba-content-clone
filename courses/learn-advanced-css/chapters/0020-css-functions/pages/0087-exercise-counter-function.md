@@ -1,12 +1,21 @@
-Use the `counter` function,
-along with `counter-reset`
-and `counter-increment`,
-to add numbering to the list.
+Create a counter named **framework-counter** using
+the `counter` function.
+Add a `counter-reset` with default value.
+Use the `counter-increment` default value to increment the numbering.
+
+This is an example of how the numbering should look like:
+
+**1. Red**
+
+**2. Blue**
+
+**3. Green**
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
 <h1>JS Frameworks:</h1>
+
 <div class="framework-list">
   <h2>Vue</h2>
   <h2>React</h2>
@@ -17,9 +26,11 @@ to add numbering to the list.
 .framework-list {
   margin-left: 20px;
 }
+
 h2 {
   margin: 10px 0;
 }
+
 h2::before {
   color: #0077b6;
   margin-right: 10px;
@@ -32,12 +43,14 @@ h2::before {
   counter-reset: framework-counter;
   margin-left: 20px;
 }
-.h2 {
+
+h2 {
   counter-increment: framework-counter;
   margin: 10px 0;
 }
-.h2::before {
-  content: counter(framework-counter) ". ";
+
+h2::before {
+  content: counter(framework-counter) ".";
   color: #0077b6;
   margin-right: 10px;
 }
