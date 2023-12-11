@@ -1,8 +1,14 @@
-**CSS variables**  are a way
-to store and reuse values
-in CSS stylesheets.
+CSS allows us to store
+and
+re-use values in our
+stylesheets.
 
-Let us have a look at an example:
+These values are stored
+as **CSS variables**.
+
+Let's explore an example
+where we are defining a
+**CSS variable**:
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
@@ -32,17 +38,12 @@ div > p {
 </code>
 </codeblock>
 
-In the above code we have
-defined a **css variables**
-named as `--primary-color`,
-`--secondary-color`,
-`--primary-font-weight`,
-`--secondary-font-weight`
-defined in the scope of
-*div* element, these
-variables are used
-by the child elements
-`h1` and `p`.
+In the above code, we defined
+the following **css variables**:
+- `--primary-color`
+- `--secondary-color`
+- `--primary-font-weight`
+- `--secondary-font-weight`
 
 Variable names should begin
 with double hyphen `--`,
@@ -52,16 +53,13 @@ by a hyphen `-`.
 
 Once you have defined a CSS
 variable, you can use it by
-referencing its name.
-
-Syntax to reference a **css variable**
-is as follows:
+referencing it as shown below:
 ```css
 property-name: var(--css-variable-name)
 ```
 
 Let us take a look at
-another example.
+another example:
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
@@ -80,10 +78,11 @@ h1 {
 </code>
 </codeblock>
 
-As we can see in the above code,
-we have defined the same variable
-`--primary-color` with a value
-of **blue** and referenced this
-variable when we are giving a
-**color** property to the
-`h1` tag.
+In the code above,
+we defined the variable
+`--primary-color` with the
+value - **blue**.
+
+Then we reference this variable,
+as a value for the **color**
+property of the `h1` tag.
