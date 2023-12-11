@@ -17,57 +17,60 @@
 - title: Exercise 2 - Width
   slug: exercise-2-width
   page_type: exercise
-- title: Relative Units
-  slug: relative-units
+- title: Units
+  slug: units
   page_type: lesson
-- title: Relative Unit 'em' I
-  slug: relative-unit-em-i
+- title: Pixels
+  slug: pixels
   page_type: lesson
-- title: Relative Unit 'em' II
-  slug: relative-unit-em-ii
+- title: Exercise - Pixels
+  slug: exercise-pixels
+  page_type: exercise
+- title: Exercise 2 - Pixels
+  slug: exercise-2-pixels
+  page_type: exercise
+- title: Percentages
+  slug: percentages
   page_type: lesson
-- title: Exercise - Relative Unit 'em'
-  slug: exercise-relative-unit-em
-  page_type: exercise
-- title: Exercise 2 - Relative Unit 'em' for div
-  slug: exercise-relative-unit-em-2
-  page_type: exercise
-- title: Exercise 3 - Relative Unit 'em' for div
-  slug: exercise-relative-unit-em-3
-  page_type: exercise
-- title: Relative Unit 'rem'
-  slug: relative-unit-rem
+- title: em - I
+  slug: em-i
   page_type: lesson
-- title: Exercise - Relative Unit 'rem'
-  slug: exercise-relative-unit-rem
-  page_type: exercise
-- title: Exercise 2 - Relative Unit 'rem'
-  slug: exercise-2-relative-unit-rem
-  page_type: exercise
-- title: Relative Unit 'vh'
-  slug: relative-unit-vh
+- title: em - II
+  slug: em-ii
   page_type: lesson
-- title: Exercise - Relative Unit 'vh'
-  slug: exercise-relative-unit-vh
+- title: Exercise - em
+  slug: exercise-em
   page_type: exercise
-- title: Exercise 2 - Relative Unit 'vh'
-  slug: exercise-2-relative-unit-vh
+- title: Exercise 2 - em for div
+  slug: exercise-2-em
   page_type: exercise
-- title: Relative Unit 'vw'
-  slug: relative-unit-vw
+- title: Exercise 3 - em for div
+  slug: exercise-3-em
+  page_type: exercise
+- title: rem
+  slug: rem
   page_type: lesson
-- title: Exercise - Relative Unit 'vw'
-  slug: exercise-relative-unit-vw
+- title: Exercise - rem
+  slug: exercise-rem
   page_type: exercise
-- title: Exercise 2 - Relative Unit 'vw'
-  slug: exercise-2-relative-unit-vw
+- title: Exercise 2 - rem
+  slug: exercise-2-rem
   page_type: exercise
-- title: Absolute Units
-  slug: absolute-units
+- title: vh
+  slug: vh
   page_type: lesson
-- title: Exercise - Absolute Units
-  slug: exercise-absolute-units
+- title: Exercise - vh
+  slug: exercise-vh
   page_type: exercise
-- title: Exercise 2 - Absolute Units
-  slug: exercise-2-absolute-units
+- title: Exercise 2 - vh
+  slug: exercise-2-vh
+  page_type: exercise
+- title: vw
+  slug: vw
+  page_type: lesson
+- title: Exercise - vw
+  slug: exercise-vw
+  page_type: exercise
+- title: Exercise 2 - vw
+  slug: exercise-2-vw
   page_type: exercise

@@ -1,9 +1,12 @@
-When we use absolute units to specify a length,
-the size is fixed and does not depend on the size of other elements.
+A **pixel** represents a unit of measurement
+commonly used for specifying exact sizes and
+dimensions on a display.
+Each pixel corresponds to a single dot on
+the screen, maintaining the same physical size
+regardless of screen resolution or surrounding elements.
 
-Some absolute units are:
+Some other absolute units are:
 
-- Pixels, `px`
 - Centimeters, `cm`
 - Inches, `in`
 
@@ -38,5 +41,3 @@ Look at the code given below:
 </panel>
 </code>
 </codeblock>
-
-The size of these elements do not change when you change their font size or parent element's size.

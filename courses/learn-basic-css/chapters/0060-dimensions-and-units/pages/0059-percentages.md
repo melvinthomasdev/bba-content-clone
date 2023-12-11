@@ -1,10 +1,3 @@
-When we use relative units to specify a length,
-it depends on the size of other elements.
-
-Let us look at some commonly used relative units:
-
-## Percentage - %
-
 When width, height or font size of an element is specified in `%`, it is relative to the parent element's width, height or font-size:
 
 <codeblock language="css" type="lesson">
