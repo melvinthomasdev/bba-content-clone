@@ -62,7 +62,7 @@ test.describe("Orders page", () => {
 
   test("should have the correct order count", async ({ page }) => {
     page.goto("/orders");
-    await assert(page.getByTestId("order")).toHaveCount(1);
+    await expect(page.getByTestId("order")).toHaveCount(1);
   });
 });
 ```
@@ -92,7 +92,7 @@ test.describe("Orders page", () => {
   test("should have the correct order count", async ({ page, ordersPage }) => {
     page.goto("/orders");
     await ordersPage.createNewOrder();
-    await assert(page.getByTestId("order")).toHaveCount(1);
+    await expect(page.getByTestId("order")).toHaveCount(1);
   });
 });
 ```
@@ -213,7 +213,7 @@ test("test without assertion", async ({ page }) => {
 
 test("test without assertion", async ({ page }) => {
   await page.getByTestId("add-task-button").click();
-  await assert(page.getByTestId("task-item")).toHaveCount(1);
+  await expect(page.getByTestId("task-item")).toHaveCount(1);
 });
 ```
 
@@ -309,7 +309,7 @@ visible on the screen. We may write the test like this.
 ```ts
 // Incorrect
 
-await assert(locator).not.toBeVisible();
+await expect(locator).not.toBeVisible();
 ```
 
 This works fine, but there is a better alternative available.
@@ -317,7 +317,7 @@ This works fine, but there is a better alternative available.
 ```ts
 // Correct
 
-await assert(locator).toBeHidden();
+await expect(locator).toBeHidden();
 ```
 
 This looks good in terms of readability. But there are cases when
@@ -329,11 +329,11 @@ ways.
 ```ts
 // Incorrect
 
-await assert(locator).not.toHaveCount(1);
+await expect(locator).not.toHaveCount(1);
 
 // Correct
 
-await assert(locator).toHaveCount(0);
+await expect(locator).toHaveCount(0);
 ```
 
 If no element if present on the screen both the assertions pass. But
@@ -394,8 +394,7 @@ that even people unfamiliar with Playwright can read.
 test("should be able to place an order", ({ page, loginPage, ordersPage }) => {
   await test.step("Step 1: Login to the application", loginPage.loginViaUI);
   await test.step("Step 2: Create new order", () =>
-    ordersPage.createOrders({ item: "Smartphone" })
-  );
+    ordersPage.createOrders({ item: "Smartphone" }));
   await test.step("Step 3: Assert a new order was created", async () => {
     const orders = page.getByTestId("order");
     await expect(orders).toHaveCount(1);
