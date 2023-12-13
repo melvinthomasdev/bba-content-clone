@@ -648,8 +648,9 @@ end
 ```
 
 To make this work, you need to declare both a foreign key column and a type
-column in the model that declares the polymorphic interface:.The corresponding
-migration can be declared like this:
+column in the model that declares the polymorphic interface.
+
+The corresponding migration can be declared like this:
 
 ```ruby
 class CreatePictures < ActiveRecord::Migration[7.0]
