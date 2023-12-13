@@ -6,11 +6,11 @@ Assign a minimum width of `200px` to the `.sidebar` class.
 <div class="container">
   <div class="sidebar">
     <ul>
-      <li><a href="javascript:void(0)">Home</a></li>
-      <li><a href="javascript:void(0)">About Us</a></li>
-      <li><a href="javascript:void(0)">Services</a></li>
-      <li><a href="javascript:void(0)">Contact</a></li>
-      <li><a href="javascript:void(0)">Privacy Policy</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
     </ul>
   </div>
   <div class="content">

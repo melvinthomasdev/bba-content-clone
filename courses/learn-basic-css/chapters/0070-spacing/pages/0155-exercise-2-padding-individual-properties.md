@@ -9,10 +9,10 @@ Apply the following padding values to the `a` elements:
 <code>
 <panel language="html">
 <div class="navbar">
-  <a class="home" href="javascript:void(0)">Home</a>
-  <a class="about" href="javascript:void(0)">About</a>
-  <a class="services" href="javascript:void(0)">Services</a>
-  <a class="contact" href="javascript:void(0)">Contact</a>
+  <a class="home" href="#">Home</a>
+  <a class="about" href="#">About</a>
+  <a class="services" href="#">Services</a>
+  <a class="contact" href="#">Contact</a>
 </div>
 </panel>
 <panel language="css">

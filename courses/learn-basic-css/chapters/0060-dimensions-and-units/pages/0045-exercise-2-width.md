@@ -9,10 +9,10 @@ Set a width of `200px` to the `.sidebar` class.
 
 <div class="sidebar">
   <ul>
-    <li><a href="javascript:void(0)">Men</a></li>
-    <li><a href="javascript:void(0)">Women</a></li>
-    <li><a href="javascript:void(0)">Kids</a></li>
-    <li><a href="javascript:void(0)">Special Sizes</a></li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Women</a></li>
+    <li><a href="#">Kids</a></li>
+    <li><a href="#">Special Sizes</a></li>
   </ul>
 </div>
 
