@@ -9,3 +9,4 @@ custom_data:
 home_logo: handling-stripe-subscriptions.png
 logo: handling-stripe-subscriptions.png
 show_reset_button: false
+position: 24

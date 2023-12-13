@@ -9,6 +9,7 @@ custom_data:
   upcoming: false
   newCourse: false
   courseColor: border-gray-600
-home_logo: html5.svg
+home_logo: javascript.svg
 logo: htmldom-header-image.png
 chapter_completion_image: celebration_javascript.gif
+position: 8
