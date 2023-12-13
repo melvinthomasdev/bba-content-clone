@@ -14,9 +14,6 @@
 - title: DOM Tree
   slug: dom-tree
   page_type: lesson
-- title: Components of DOM Tree
-  slug: components-of-dom-tree
-  page_type: lesson
 - title: DOM Methods and Properties
   slug: dom-methods-and-properties
   page_type: lesson
