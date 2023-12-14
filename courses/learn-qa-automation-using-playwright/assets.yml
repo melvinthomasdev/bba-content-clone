@@ -10,4 +10,5 @@ images:
   - playwright-selector-login-screen.png
   - playwright-find-selector-using-devtools.png
   - playwright-granite-signup-page.png
+  - playwright-granite-comments-section.png
 databases: []

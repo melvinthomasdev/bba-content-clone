@@ -62,3 +62,6 @@
 - slug: best-practices
   name: Best practices
   has_pages: false
+- slug: automating-the-comments-feature
+  name: Automating the comments feature
+  has_pages: false

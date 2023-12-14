@@ -394,7 +394,8 @@ that even people unfamiliar with Playwright can read.
 test("should be able to place an order", ({ page, loginPage, ordersPage }) => {
   await test.step("Step 1: Login to the application", loginPage.loginViaUI);
   await test.step("Step 2: Create new order", () =>
-    ordersPage.createOrders({ item: "Smartphone" }));
+    ordersPage.createOrders({ item: "Smartphone" })
+  );
   await test.step("Step 3: Assert a new order was created", async () => {
     const orders = page.getByTestId("order");
     await expect(orders).toHaveCount(1);
@@ -433,3 +434,40 @@ We have a set of utils and helper methods which have been defined in
 We should try and reuse this existing logic instead of repeating it,
 in each application. If a logic is applicable to multiple products we
 should extract it to the package as well.
+
+### 4. Use i18n locales when asserting texts
+
+In BigBinary, we have setup i18n in Playwright using the same
+translation strings that are being used in the products. When asserting
+strings, we should always use translations instead of hardcoded
+texts. This is because, the texts on screen are prone to
+changes as the application matures. This can lead to
+unintentional test failures for minor changes in the product
+leaving any major bugs in the product being uncaught due to
+early failures. Using i18n translations for textual assertions
+can make the tests more resilient towards minor changes in the
+product texts causing test failures.
+
+```ts
+// Incorrect
+
+await expect(
+  this.page.getByTestId("orders-count-label")
+).toContainText("1 Order");
+
+// Correct
+
+await expect(
+  this.page.getByTestId("orders-count-label")
+).toContainText(this.t("common.countOf.pendingOrders", { count: 1 }));
+```
+
+The above example shows how the same code can be written with
+and without i18n translations. Consider the case that the 
+developer decides to change the text from **"1 Order"** to 
+**"1 pending Order"**. They should be making this minor change
+in the same translation string. This means that once this 
+change occurs, asserting without i18n will cause the tests to
+fail requiring intervention from the automation team whereas
+the second approach using i18n will take this change into 
+account automatically.

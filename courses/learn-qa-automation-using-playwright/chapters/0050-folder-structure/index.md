@@ -10,7 +10,6 @@ $ tree
 │   │   ├── common.ts
 │   │   ├── routes.ts
 │   │   ├── selectors
-│   │   └── texts
 │   ├── fixtures
 │   ├── poms
 │   ├── tests
@@ -30,7 +29,6 @@ $ tree
 - **constants:** Contains constants used in Playwright tests.
 
   - **selectors:** Includes selectors for all components to be interacted with.
-  - **texts:** Contains messages and constant texts used in the application.
   - **routes.ts:** This file is used to store route constants.
 
 - **utils:** This folder contains essential utility functions that are made accessible for the tests.

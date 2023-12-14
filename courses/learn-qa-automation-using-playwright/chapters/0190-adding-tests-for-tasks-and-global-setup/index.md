@@ -364,7 +364,7 @@ export default defineConfig({
     {
       name: "login",
       use: { ...devices["Desktop Chrome"] },
-      testMatch: "**/login.setup.ts",
+      testMatch: "**/login.setup.ts", // Notice the updated spec name
     },
     {
       name: "Logged In tests",
