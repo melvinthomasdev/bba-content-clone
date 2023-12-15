@@ -11,6 +11,12 @@
 - title: Exercise - Class Selectors
   slug: exercise-class-selectors
   page_type: exercise
+- title: Adding Multiple Classes
+  slug: adding-multiple-classes
+  page_type: lesson
+- title: Exercise - Adding Multiple Classes
+  slug: exercise-adding-multiple-classes
+  page_type: exercise
 - title: ID Selectors
   slug: id-selectors
   page_type: lesson

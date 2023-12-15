@@ -35,18 +35,6 @@
 - title: Adding multiple attributes to HTML Elements
   slug: adding-multiple-attributes-to-html-elements
   page_type: lesson
-- title: Class Attribute
-  slug: class-attribute
-  page_type: lesson
-- title: Exercise - Class Attribute
-  slug: exercise-class-attribute
-  page_type: exercise
-- title: Adding multiple class
-  slug: adding-multiple-class
-  page_type: lesson
-- title: Exercise - Adding multiple class
-  slug: exercise-adding-multiple-class
-  page_type: exercise
 - title: ID Attribute
   slug: id-attribute
   page_type: lesson
