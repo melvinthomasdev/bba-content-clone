@@ -10,8 +10,8 @@ export default class LoginPage {
     this.page = page;
   }
 
-  login = async ({ username, password }) => {
-    await this.page.getByPlaceholder("Enter email").fill(username);
+  login = async ({ email, password }) => {
+    await this.page.getByPlaceholder("Enter email").fill(email);
     await this.page.getByPlaceholder("Enter password").fill(password);
     await this.page.getByRole("button", { name: "Submit" }).click();
   };

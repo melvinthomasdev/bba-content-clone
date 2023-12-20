@@ -385,7 +385,7 @@ await locator.click();
 ### 1. Use proper step blocks
 
 We should try and use proper `step` blocks to describe what a group of
-statements do in a step. We should prefix the the step description
+statements do in a step. We should prefix the step description
 with the proper step number as well. This helps us to identify the
 test failures much easily and also generates the reports in a format
 that even people unfamiliar with Playwright can read.
@@ -394,8 +394,7 @@ that even people unfamiliar with Playwright can read.
 test("should be able to place an order", ({ page, loginPage, ordersPage }) => {
   await test.step("Step 1: Login to the application", loginPage.loginViaUI);
   await test.step("Step 2: Create new order", () =>
-    ordersPage.createOrders({ item: "Smartphone" })
-  );
+    ordersPage.createOrders({ item: "Smartphone" }));
   await test.step("Step 3: Assert a new order was created", async () => {
     const orders = page.getByTestId("order");
     await expect(orders).toHaveCount(1);
@@ -451,23 +450,23 @@ product texts causing test failures.
 ```ts
 // Incorrect
 
-await expect(
-  this.page.getByTestId("orders-count-label")
-).toContainText("1 Order");
+await expect(this.page.getByTestId("orders-count-label")).toContainText(
+  "1 Order"
+);
 
 // Correct
 
-await expect(
-  this.page.getByTestId("orders-count-label")
-).toContainText(this.t("common.countOf.pendingOrders", { count: 1 }));
+await expect(this.page.getByTestId("orders-count-label")).toContainText(
+  this.t("common.countOf.pendingOrders", { count: 1 })
+);
 ```
 
 The above example shows how the same code can be written with
-and without i18n translations. Consider the case that the 
-developer decides to change the text from **"1 Order"** to 
+and without i18n translations. Consider the case that the
+developer decides to change the text from **"1 Order"** to
 **"1 pending Order"**. They should be making this minor change
-in the same translation string. This means that once this 
+in the same translation string. This means that once this
 change occurs, asserting without i18n will cause the tests to
 fail requiring intervention from the automation team whereas
-the second approach using i18n will take this change into 
+the second approach using i18n will take this change into
 account automatically.

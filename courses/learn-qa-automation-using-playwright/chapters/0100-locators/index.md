@@ -35,7 +35,7 @@ await page.getByAltText("logo").click();
 **page.getByTitle():** To locate an element by its title attribute.
 
 ```js
-await page.getByRole("button", { name: "Submit" }).click();
+await expect(page.getByTitle("Issues count")).toHaveText("25 issues");
 ```
 
 **page.getByTestId():** To locate an element based on its data-testid attribute (other attributes can be configured).
