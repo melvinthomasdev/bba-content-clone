@@ -38,9 +38,6 @@
 - title: ComprehensiveExercise - Split an Array into Odd and Even Chunks
   slug: comprehensive-exercise-split-an-array-into-odd-and-even-chunks
   page_type: assessment
-- title: ComprehensiveExercise - Check if an object is empty or not
-  slug: comprehensive-exercise-check-if-an-object-empty-or-not
-  page_type: assessment
 - title: ComprehensiveExercise - Join strings separated by a space
   slug: comprehensive-exercise-join-strings-separated-by-a-space
   page_type: assessment
