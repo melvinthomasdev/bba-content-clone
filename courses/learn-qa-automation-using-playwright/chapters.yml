@@ -65,3 +65,6 @@
 - slug: automating-the-comments-feature
   name: Automating the comments feature
   has_pages: false
+- slug: waiting-for-api-responses
+  name: Waiting for API responses
+  has_pages: false
