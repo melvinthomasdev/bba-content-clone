@@ -17,8 +17,6 @@
   slug: web-page-layouts
 - name: Responsive Web Design
   slug: responsive-web-design
-- name: Flexbox
-  slug: flexbox
 - name: CSS Grid
   slug: css-grid
 - name: CSS Reset

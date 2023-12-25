@@ -13,6 +13,8 @@
   slug: css-quiz-01
 - name: Dimensions and Units
   slug: dimensions-and-units
+- name: Debugging with CSS
+  slug: debugging-with-css
 - name: Restricting Height and Width
   slug: restricting-height-and-width
 - name: Comprehensive Exercise 01
@@ -27,14 +29,18 @@
   slug: backgrounds
 - name: CSS Quiz
   slug: css-quiz-03
-- name: Borders
-  slug: borders
-- name: Opacity
-  slug: opacity
 - name: Display
   slug: display
 - name: CSS Box Model
   slug: css-box-model
+- name: Position
+  slug: position
+- name: Flexbox
+  slug: flexbox
+- name: Borders
+  slug: borders
+- name: Opacity
+  slug: opacity
 - name: Styling Links
   slug: styling-links
 - name: CSS Quiz
@@ -47,8 +53,6 @@
   slug: styling-tables
 - name: Styling Forms
   slug: styling-forms
-- name: Position
-  slug: position
 - name: Float
   slug: float
 - name: Sectional Project
