@@ -202,27 +202,27 @@ collection and member routes.
 
 Collection routes apply to the whole collection. For example, if a RESTful
 resource called books represents a collection of book objects then a collection
-route called "destroy_multiple" will create the `books/destroy_multiple` path.
+route called "bulk_delete" will create the `books/bulk_delete` path.
 
 A collection route can be added like this.
 
 ```ruby
 resources :books do
   collection do
-    get "delete_multiple"
+    delete "bulk_delete"
   end
 end
 ```
 
-The above code will add a `delete_multiple` RESTful action in the
-`books_controller` and GET requests on `books/destroy_multiple` will be routed
-to the `delete_multiple` action.
+The above code will add a `bulk_delete` RESTful action in the
+`books_controller` and DELETE requests on `books/bulk_delete` will be routed
+to the `bulk_delete` action.
 
 The above code could also be written like this.
 
 ```ruby
 resources :books do
-  get "delete_multiple", on: :collection
+  delete "bulk_delete", on: :collection
 end
 ```
 
