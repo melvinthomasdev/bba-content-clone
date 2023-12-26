@@ -8,29 +8,14 @@
 - title: Exercise - Position Relative
   slug: exercise-position-relative
   page_type: exercise
-- title: Top Offset with Position Relative
-  slug: top-offset-with-position-relative
+- title: Offset with Position Relative
+  slug: offset-with-position-relative
   page_type: lesson
-- title: Exercise - Top Offset
-  slug: exercise-top-offset
+- title: Exercise - Offset with Position Relative
+  slug: exercise-offset-with-position-relative
   page_type: exercise
-- title: Bottom Offset with Position Relative
-  slug: bottom-offset-with-position-relative
-  page_type: lesson
-- title: Exercise - Bottom Offset
-  slug: exercise-bottom-offset
-  page_type: exercise
-- title: Left Offset with Position Relative
-  slug: left-offset-with-position-relative
-  page_type: lesson
-- title: Exercise - Left Offset
-  slug: exercise-left-offset
-  page_type: exercise
-- title: Right Offset with Position Relative
-  slug: right-offset-with-position-relative
-  page_type: lesson
-- title: Exercise - Right Offset
-  slug: exercise-right-offset
+- title: Exercise 2 - Offset with Position Relative
+  slug: exercise-2-offset-with-position-relative
   page_type: exercise
 - title: Difference between offsets and margins
   slug: difference-between-offsets-and-margins
