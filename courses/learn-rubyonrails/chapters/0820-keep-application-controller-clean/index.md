@@ -24,6 +24,8 @@ that directory. So let's try to use it.
 
 Using `concerns` is another form of keeping code DRY.
 
+Unlike `services`, which are designed for specific business actions, `concerns` are used to share behaviors across models or controllers, etc. This key distinction guides whether to implement a `concern` or a `service`.
+
 ## Moving functionality into a concern
 
 Let's extract the helper methods for sending back a response for API requests

@@ -410,14 +410,9 @@ when needed.
 
 ## Adding tests for the TodoNotificationService
 
-As we mentioned in the previous chapter, there is no Rails generator for
-`services`.
-
-So let's create the `services` directory and a testing file for
-`TodoNotificationService` in it:
+Let's create `todo_notification_service_test` file in the `tests/services` directory :
 
 ```bash
-mkdir -p test/services
 touch test/services/todo_notification_service_test.rb
 ```
 

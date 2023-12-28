@@ -233,6 +233,9 @@
 - slug: background-job-processing-using-sidekiq
   name: Background job processing using Sidekiq
   has_pages: false
+- slug: usage-of-service-objects-to-encapsulate-code
+  name: Usage of service objects to encapsulate code
+  has_pages: false
 - slug: handling-idempotency-when-sending-emails-using-sidekiq
   name: Handling idempotency when sending emails using Sidekiq
   has_pages: false

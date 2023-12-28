@@ -1206,20 +1206,11 @@ class TodoNotificationsJob
 end
 ```
 
-Let's create our `TodoNotificationService` to handle the heavy work.
-
-Rails do not provide any inbuilt generators to create services.
-
-Currently, we can only manually create the service as well as its test file.
-
-This service will take care of finding users with pending tasks, whose delivery
-time falls with the current execution time range, and invoke jobs which will
+Let's create our `TodoNotificationService` to handle the heavy work. This service will take care of finding users with pending tasks, whose delivery
+time falls with the current execution time range, and invoke workers which will
 send the mail to each user.
 
-Let's create the service:
-
 ```bash
-mkdir -p app/services
 touch app/services/todo_notification_service.rb
 ```
 
