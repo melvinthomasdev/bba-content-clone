@@ -186,19 +186,19 @@ And view file corresponding to the `show` action of `TasksController` is
 `app/views/tasks/show.json.jbuilder` where `show` is the action name and
 `json.jbuilder` are response type and file extension respectively.
 
-## Naming conventions in services, workers and carriers
+## Naming conventions in services, jobs and carriers
 
-All services, workers and carriers should reside within `app/services`,
-`app/workers` and `app/carriers` directories respectively. Their file names
-should use `snake_case` and should be suffixed with `_service`, `_worker` and
+All services, jobs and carriers should reside within `app/services`,
+`app/jobs` and `app/carriers` directories respectively. Their file names
+should use `snake_case` and should be suffixed with `_service`, `_job` and
 `_carrier` to clearly define their responsibilities.
 
-Since services, workers and carriers are all classes, they should follow the
+Since services, jobs and carriers are all classes, they should follow the
 general naming conventions of naming a class in Ruby i.e. their names should use
 `PascalCase` and match with their `camelized` file names.
 
-For example, in the Granite application, `TodoNotificationWorker` class is
-present inside `app/workers/todo_notification_worker.rb`.
+For example, in the Granite application, `TodoNotificationJob` class is
+present inside `app/jobs/todo_notification_job.rb`.
 
 ## Naming conventions and folder structure for tests
 

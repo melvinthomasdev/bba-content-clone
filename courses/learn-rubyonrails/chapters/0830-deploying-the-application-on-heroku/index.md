@@ -4,7 +4,7 @@ to take to deploy to Heroku.
 But to make your application work in Heroku, you would have to complete the
 upcoming chapter
 ["Configure Sidekiq in Heroku"](/learn-rubyonrails/sidekiq-in-heroku)
-and execute the steps mentioned there to make our Sidekiq workers run as
+and execute the steps mentioned there to make our Sidekiq jobs run as
 intended.
 
 ## Utilizing neetoDeploy for Application Deployment

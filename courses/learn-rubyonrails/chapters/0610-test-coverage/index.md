@@ -47,7 +47,7 @@ def enable_test_coverage
     add_group 'Controllers', 'app/controllers'
     add_group 'Uploaders', 'app/uploaders'
     add_group 'Helpers', 'app/helpers'
-    add_group 'Workers', 'app/workers'
+    add_group 'Jobs', 'app/jobs'
     add_group 'Services', 'app/services'
   end
 end
@@ -78,8 +78,7 @@ Controllers and Helpers etc.
 
 We can separate our source files into groups with the help of `add_group`.
 
-We have separated coverage listings for Models, Mailers, Controllers, Helpers,
-Workers and Services, etc.
+We have separated coverage listings for Models, Mailers, Controllers, Helpers, Jobs and Services, etc.
 
 Before running `simplecov` via tests, we need to make the change in the below
 mentioned line from `test/test_helper.rb`:

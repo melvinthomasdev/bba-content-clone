@@ -135,7 +135,6 @@ And gives an output similar to the following one:
  "granite/app/models/concerns"=>Object,
  "granite/app/policies"=>Object,
  "granite/app/services"=>Object,
- "granite/app/workers"=>Object,
  ...
 }
 ```

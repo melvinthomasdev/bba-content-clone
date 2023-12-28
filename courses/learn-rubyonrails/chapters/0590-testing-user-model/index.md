@@ -22,7 +22,7 @@ automatically creates a directory called `test`.
 
 The following is an example of the structure of the `test` directory:
 
-```bash
+```
 $ cd test
 $ tree
 .
@@ -34,11 +34,11 @@ $ tree
 │   └── tasks_controller_test.rb
 ├── helpers
 ├── integration
+├── jobs
 ├── mailers
 ├── models
 ├── system
 ├── services
-├── workers
 └── test_helper.rb
 ```
 
@@ -49,7 +49,7 @@ system tests are responsible to test the app as per user's experience on a
 browser and includes testing JavaScript code.
 
 In this book we won't be covering system tests. Rather we give more precedence
-to `model`, `controller`, `worker`, `carrier`, and `service` tests.
+to `model`, `controller`, `job`, `carrier`, and `service` tests.
 
 The `test_helper.rb` file holds the configuration for all the tests. This file
 will be loaded in all the test files to load the test configurations.

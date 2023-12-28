@@ -431,7 +431,7 @@ The above test case would work just fine without any issues because the `.count`
 method dynamically runs a raw SQL query to fetch count from the corresponding
 database.
 
-Now let's take a hypothetical example where we use a background worker to update
+Now let's take a hypothetical example where we use a background job to update
 a user's name to "Sam".
 
 Let's say that `@user` is defined in the `setup` method of the test file.
@@ -439,8 +439,8 @@ Let's say that `@user` is defined in the `setup` method of the test file.
 In our test case we might be tempted to write the test case like this:
 
 ```ruby
-def test_background_worker_should_update_name
-  background_worker.process # updates name to Sam in DB
+def test_background_job_should_update_name
+  background_job.process # updates name to Sam in DB
   assert_equal "Sam", @user.name
 end
 ```
@@ -456,8 +456,8 @@ That's why it's a good practice to use `@user.reload.name` instead of
 `@user.name` to check the updated column values, like this:
 
 ```ruby
-def test_background_worker_should_update_name
-  background_worker.process
+def test_background_job_should_update_name
+  background_job.process
   assert_equal "Sam", @user.reload.name
 end
 ```

@@ -77,7 +77,7 @@ called `dynos`. There are three types of dyno configurations:
 - Worker: Worker dynos can be of any process type declared in your Procfile,
   other than “web”. Usually, it's denoted using the `worker`. Worker dynos are
   typically used for background jobs, queueing systems, and timed jobs. Our
-  Sidekiq worker will use this type of dyno configuration.
+  Sidekiq job will use this type of dyno configuration.
 
 - One-off: One-off dynos are temporary dynos that can run detached, or with
   their input/output attached to your local terminal. For example, when you use

@@ -1,4 +1,4 @@
-In this chapter, we are going to create the test cases for the models, workers
+In this chapter, we are going to create the test cases for the models, jobs
 and services that we had created in the previous chapter.
 
 ## Adding tests for the User model
@@ -210,9 +210,9 @@ def test_last_notification_sent_date_cannot_be_in_past
 end
 ```
 
-## Adding tests for the TodoNotificationsWorker
+## Adding tests for the TodoNotificationsJob
 
-Open `test/workers/todo_notifications_worker_test.rb` and paste the following
+Open `test/jobs/todo_notifications_job_test.rb` and paste the following
 into it:
 
 ```ruby
@@ -220,23 +220,23 @@ into it:
 
 require 'test_helper'
 
-class TodoNotificationsWorkerTest < ActiveSupport::TestCase
+class TodoNotificationsJobTest < ActiveSupport::TestCase
   def setup
     @user = create(:task).assigned_user # assignee of the generated task
     default_mail_delivery_time = "#{Constants::DEFAULT_NOTIFICATION_DELIVERY_HOUR}:00 AM"
     travel_to DateTime.parse(default_mail_delivery_time)
   end
 
-  def test_todo_notification_worker_sends_email_to_users_with_pending_tasks
+  def test_todo_notification_job_sends_email_to_users_with_pending_tasks
     assert_difference -> { @user.user_notifications.count }, 1 do
-      TodoNotificationsWorker.perform_async
+      TodoNotificationsJob.perform_async
     end
   end
 end
 ```
 
 In the above test case, we have populated the required models in the `setup`
-method, and then tested whether our worker is actually sending mails
+method, and then tested whether our job is actually sending mails
 successfully, if it's the actual delivery time.
 
 As you can see, we are using the `travel_to` helper in our `setup` method.
@@ -245,7 +245,7 @@ As you can see, we are using the `travel_to` helper in our `setup` method.
 `Time.now`, `Date.today`, and `DateTime.now` to return the time or date passed
 into this method. The stubs are automatically removed at the end of the test.
 
-We know that the default mail delivery time is 10 AM. So if the worker runs at
+We know that the default mail delivery time is 10 AM. So if the job runs at
 this specific time, then it should be able to send the mail.
 
 Thus, in our test case, instead of waiting for the time in our system to be 10
@@ -273,27 +273,27 @@ That's the reason why we are asserting that the count in `user_notifications`
 for that particular user has been changed by one, given that we are only sending
 one mail.
 
-## Adding tests for the UserNotificationsWorker
+## Adding tests for the UserNotificationsJob
 
-Open `test/workers/user_notifications_worker_test.rb` and paste the following
+Open `test/jobs/user_notifications_job_test.rb` and paste the following
 into it:
 
 ```ruby
 require 'test_helper'
-class UserNotificationsWorkerTest < ActiveSupport::TestCase
+class UserNotificationsJobTest < ActiveSupport::TestCase
   def setup
     @user = create(:user)
   end
 
   def test_task_mailer_jobs_are_getting_processed
     assert_difference -> { @user.user_notifications.count }, 1 do
-      UserNotificationsWorker.perform_async(@user.id)
+      UserNotificationsJob.perform_async(@user.id)
     end
   end
 end
 ```
 
-Similar to how we tested `TodoNotificationsWorker`, here also we used the
+Similar to how we tested `TodoNotificationsJob`, here also we used the
 `assert_difference` method to check whether the mail has been successfully sent
 to the user.
 
@@ -338,7 +338,7 @@ module SidekiqHelper
   end
 
   def after_teardown
-    Sidekiq::Worker.clear_all
+    Sidekiq::Job.clear_all
     super
   end
 end
@@ -364,15 +364,15 @@ cause unexpected behavior for randomized or parallelized tests.
 Assume we have to test the presence of a job in the queue. In this case, we do
 not need to execute the job. We only need to enqueue it and then test whether
 the length of the queue is increased by one. Hence, the default `fake` mode
-would suffice over here. But one should note that the worker queues are global
+would suffice over here. But one should note that the Sidekiq job queues are global
 and will therefore persist between tests. So if you are writing another test
 case, that utilizes the same queue, but focuses on the execution of the job, it
-might be a good idea to clear the worker queue using `after_teardown` provided
+might be a good idea to clear the Sidekiq job queue using `after_teardown` provided
 above and then switch to the `inline` mode. Otherwise, your tests will bleed
 state, and your test suite will become order dependent. Using
 `Sidekiq::Testing.inline!` can help prevent flaky tests by ensuring that
 background jobs are processed immediately, rather than being enqueued for
-processing by Sidekiq workers.
+processing by Sidekiq jobs.
 
 It's generally a best practice to change the mode within the context of a block
 so that the change only affects the specific test or set of tests that you're
@@ -444,13 +444,13 @@ class TodoNotificationServiceTest < ActiveSupport::TestCase
     travel_to DateTime.parse(default_mail_delivery_time)
   end
 
-  def test_notification_worker_is_invoked_for_users_receiving_mail_for_first_time
+  def test_notification_job_is_invoked_for_users_receiving_mail_for_first_time
     assert_difference -> { @sam.user_notifications.count }, 1 do
       todo_notification_service.process
     end
   end
 
-  def test_notification_worker_is_invoked_for_users_according_to_delivery_hour_preference
+  def test_notification_job_is_invoked_for_users_according_to_delivery_hour_preference
     delivery_hour_in_future = Constants::DEFAULT_NOTIFICATION_DELIVERY_HOUR + 1
     @sam.preference.update(notification_delivery_hour: delivery_hour_in_future)
 
@@ -459,7 +459,7 @@ class TodoNotificationServiceTest < ActiveSupport::TestCase
     end
   end
 
-  def test_notification_worker_is_invoked_only_for_users_with_should_receive_email_enabled
+  def test_notification_job_is_invoked_only_for_users_with_should_receive_email_enabled
     @sam.preference.update(should_receive_email: false)
 
     assert_difference -> { UserNotification.count }, 1 do
@@ -467,7 +467,7 @@ class TodoNotificationServiceTest < ActiveSupport::TestCase
     end
   end
 
-  def test_notification_worker_is_invoked_only_for_users_yet_to_receive_notification_today
+  def test_notification_job_is_invoked_only_for_users_yet_to_receive_notification_today
     create(:user_notification, user: @sam)
 
     assert_difference -> { UserNotification.count }, 1 do

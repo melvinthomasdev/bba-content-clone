@@ -40,7 +40,7 @@ To implement this feature, we need to introduce the following changes:
 - Create a resource called `report`, namespaced within the module `tasks`, such
   that we can namespace the route like `tasks/report`.
 
-- Have two separate actions, one for generation of PDF using a Sidekiq worker,
+- Have two separate actions, one for generation of PDF using a Sidekiq job,
   and then one for sending the file as blob via JSON response.
 
 **On the frontend**
@@ -273,28 +273,28 @@ class Tasks::ReportsController < ApplicationController
 end
 ```
 
-## PDF generation worker
+## PDF generation job
 
 The amount of time required to generate the PDF purely depends on the number of
 tasks the user has and what all calculations we will be performing. Safe to say
 we can't let this logic hog up our request-response cycle. The main aim of a
 controller should be to respond as quickly as possible back to the client. Thus
-let's create a Sidekiq worker to take care of PDF report generation logic.
+let's create a Sidekiq job  to take care of PDF report generation logic.
 
 We will first add the necessary logic to our codebase and then walk through what
 we have added.
 
-Create the worker file:
+Create the job file:
 
 ```sh
-touch app/workers/reports_worker.rb
+touch app/jobs/reports_job.rb
 ```
 
 Now add the following content into that file:
 
 ```rb
-class ReportsWorker
-  include Sidekiq::Worker
+class ReportsJob
+  include Sidekiq::Job
 
   def perform(user_id, report_path)
     tasks = Task.accessible_to(user_id)
@@ -411,20 +411,20 @@ So in our case, we've specified three things:
 
 This will create the report content in string format. After that we created the
 PDF blob using `wicked_pdf` gem and save in `binary` format into a file, where
-the report path is passed from wherever the worker is invoked.
+the report path is passed from wherever the job is invoked.
 
-That pretty much wraps up the worker.
+That pretty much wraps up the job.
 
 ## Report controller
 
-Now it's time to make use of this worker and generate the pdf report. Let's add
+Now it's time to make use of this job and generate the pdf report. Let's add
 the necessary content for our controller first and then talk about each section.
 Add the following to `app/controllers/tasks/reports_controller.rb`:
 
 ```rb
 class Tasks::ReportsController < ApplicationController
   def create
-    ReportsWorker.perform_async(current_user.id, report_path)
+    ReportsJob.perform_async(current_user.id, report_path)
     render_notice(t("in_progress", action: "Report generation"))
   end
 

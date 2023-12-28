@@ -410,7 +410,7 @@ class TaskLoggerJobTest < ActiveJob::TestCase
 end
 ```
 
-Sidekiq provides a few modes of testing our workers. These are
+Sidekiq provides a few modes of testing our jobs. These are
 `Sidekiq::Testing.inline!`, `Sidekiq::Testing.fake!` and
 `Sidekiq::Testing.disable!`.
 
@@ -502,19 +502,19 @@ This fake testing mode operates in a way in which jobs are queued up in an array
 rather than being executed immediately. Jobs within the queue can be queried,
 inspected, and optionally “drained” to process enqueued jobs. This mode is
 activated(or is set by default) simply with the `fake!` directive. Testing this
-way promotes decoupled and faster tests, as the worker doesn’t have to perform
+way promotes decoupled and faster tests, as the background job doesn’t have to perform
 any actual work. But using this mode isn’t appropriate for full on integration
 testing or situations where you want to process jobs during a test.
 
 It is good for testing that the jobs have been enqueued properly and in other
 scenarios which don't require the result of execution.
 
-But when working on real applications, these jobs and workers perform some side
+But when working on real applications, these jobs perform some side
 effects and we would be required to assure that those are performed as intended.
 In such scenarios we can use the `inline` mode that runs the job immediately
 instead of enqueuing it. Inline testing mode performs enqueued jobs
 synchronously within the same process. So let's use inline mode for real testing
-which needs results of jobs after executing the worker.
+which needs results of jobs immediately after execution.
 
 By default the mode is `fake!`. In most tests, we would require a mix of the
 both the `inline!` as well as `fake!` modes. So let's set the `inline` mode

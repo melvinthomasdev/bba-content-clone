@@ -92,11 +92,11 @@ store. So an intuitive way would be to inspect the keys and their memory usage.
 .
 .
 17) "stat:failed:2023-03-31"
-18) "cron_job:todo_notifications_worker:jid_history"
-19) "cron_job:todo_notifications_worker"
+18) "cron_job:todo_notifications_job:jid_history"
+19) "cron_job:todo_notifications_job"
 20) "stat:processed:2023-03-31"
 21) "processes"
-22) "cron_job:todo_notifications_worker:enqueued"
+22) "cron_job:todo_notifications_job:enqueued"
 .
 .
 .
@@ -147,10 +147,10 @@ commands to see the corresponding values.
 Sometimes, the number of keys will be less but the memory may be overloaded. In
 this case, you can use the `MEMORY USAGE <key>` command to check the memory
 usage of a specific key. For example, to see the memory usage corresponding to
-key `cron_job:todo_notifications_worker:enqueued` use the following command:
+key `cron_job:todo_notifications_job:enqueued` use the following command:
 
 ```bash
-> MEMORY USAGE cron_job:todo_notifications_worker:enqueued
+> MEMORY USAGE cron_job:todo_notifications_job:enqueued
 (integer) 72739
 ```
 

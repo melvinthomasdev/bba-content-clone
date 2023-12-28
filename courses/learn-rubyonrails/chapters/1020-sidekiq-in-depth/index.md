@@ -6,7 +6,7 @@ Sidekiq provides an efficient and streamlined job processing workflow for handli
 
 ### Enqueuing Jobs
 
-The job processing workflow begins when a job is enqueued. To enqueue a job, you define a worker class that includes the `Sidekiq::Worker` module and implement the `perform` method inside it. The `perform` method contains the code that needs to be executed asynchronously. When you enqueue a job by calling the `perform_async` method on the worker class, Sidekiq serializes the job data and pushes it into the appropriate queue. 
+The job processing workflow begins when a job is enqueued. To enqueue a job, you define a job class that includes the `Sidekiq::Job` module and implement the `perform` method inside it. The `perform` method contains the code that needs to be executed asynchronously. When you enqueue a job by calling the `perform_async` method on the job class, Sidekiq serializes the job data and pushes it into the appropriate queue.
 
 ### Queues and Prioritization
 
@@ -18,7 +18,7 @@ Redis, an in-memory data structure store, acts as the message broker in the Side
 
 ### Sidekiq server
 
-Sidekiq server processes retrieve jobs from the Redis queue and execute them. These processes run with Rails booting, granting access to the full Rails API, including Active Record. The server creates worker instances and calls their `perform` method with the specified arguments. 
+Sidekiq server processes retrieve jobs from the Redis queue and execute them. These processes run with Rails booting, granting access to the full Rails API, including Active Record. The server creates job instances and calls their `perform` method with the specified arguments.
 
 ## Retry Set, Dead Set, and Scheduled Set in Sidekiq
 
@@ -135,16 +135,16 @@ In this code, a `Proc` object named `jobs_handler` is defined to handle the dele
 If you need to remove a specific cron job, you can utilize the destroy method of the `Sidekiq::Cron::Job` class. For example:
 
 ```ruby
-Sidekiq::Cron::Job.destroy("worker_name")
+Sidekiq::Cron::Job.destroy("job_name")
 ```
 
-By executing this command, the cron job with the specified worker name is destroyed. However, keep in mind that cron jobs can sometimes be present in the `RetrySet` and might run again. To prevent this, it is necessary to clear the job from the `RetrySet` as well, using the following command:
+By executing this command, the cron job with the specified name is destroyed. However, keep in mind that cron jobs can sometimes be present in the `RetrySet` and might run again. To prevent this, it is necessary to clear the job from the `RetrySet` as well, using the following command:
 
 ```ruby
-Sidekiq::RetrySet.new.scan('worker_name') { |job| job.display_class == 'worker_name'}.map(&:delete)
+Sidekiq::RetrySet.new.scan('job_name') { |job| job.display_class == 'job_name'}.map(&:delete)
 ```
 
-This code scans the `RetrySet` for jobs matching the worker name and deletes them, ensuring that the cron job is fully removed from the system. Similarly, you can use the same approach for killing or retrying jobs by modifying the condition. Additionally, you can apply this logic to other sets, such as `Sidekiq::DeadSet` or `Sidekiq::ScheduledSet`, if needed.
+This code scans the `RetrySet` for jobs matching the job name and deletes them, ensuring that the cron job is fully removed from the system. Similarly, you can use the same approach for killing or retrying jobs by modifying the condition. Additionally, you can apply this logic to other sets, such as `Sidekiq::DeadSet` or `Sidekiq::ScheduledSet`, if needed.
 
 By leveraging these advanced Sidekiq actions, you can fine-tune your background job processing and efficiently manage failures, deletion of specific jobs, and the removal of cron jobs from various sets. These techniques provide you with greater control and flexibility when working with Sidekiq in the Rails console or any other context where you need to interact with Sidekiq's API directly.
 

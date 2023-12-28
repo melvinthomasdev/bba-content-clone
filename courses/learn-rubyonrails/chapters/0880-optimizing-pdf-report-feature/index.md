@@ -40,7 +40,7 @@ To implement this feature we need to introduce the following changes:
 - Add `Connection`, `Channel`, and `ReportDownloadChannel` classes to setup the
   Action Cable.
 
-- Update the `reports_worker` to broadcast notification messages at different
+- Update the `reports_job` to broadcast notification messages at different
   stages of PDF generation using Action Cable sockets.
 
 **On the frontend**
@@ -361,11 +361,11 @@ end
 
 The attached `report` is an Active Storage table.
 
-Update the `reports_worker.rb` file, like this:
+Update the `reports_job.rb` file, like this:
 
 ```rb {12-19}
-class ReportsWorker
-  include Sidekiq::Worker
+class ReportsJob
+  include Sidekiq::Job
 
   def perform(user_id)
     tasks = Task.accessible_to(user_id)
@@ -388,7 +388,7 @@ end
 ```
 
 After adding the `report` association in the `user.rb` file we can access the
-report by using `user.report`. In the `reports_worker.rb` file after generating
+report by using `user.report`. In the `reports_job.rb` file after generating
 the PDF report, we are first checking if we already have a report file attached
 by using `current_user.report.attached?`, where
 [`attached?`](https://api.rubyonrails.org/classes/ActiveStorage/Attached/One.html#method-i-attached-3F)
@@ -629,12 +629,12 @@ en:
     attach: "Attaching the report to the user"
 ```
 
-Update the `reports_worker.rb` file to send the live notifications about PDF
+Update the `reports_job.rb` file to send the live notifications about PDF
 file generation, like this:
 
 ```rb {3,6,15,18,26}
-class ReportsWorker
-  include Sidekiq::Worker
+class ReportsJob
+  include Sidekiq::Job
   include ActionView::Helpers::TranslationHelper
 
   def perform(user_id)
@@ -671,7 +671,7 @@ Update the `create` action from the `reports_controller.rb`, like this:
 
 ```rb {2}
 def create
-  ReportsWorker.perform_async(current_user.id)
+  ReportsJob.perform_async(current_user.id)
 end
 ```
 
@@ -987,12 +987,12 @@ That's a lot of changes. Let's summarize the working of the PDF report feature.
   `generatePdf` function is invoked which makes a request to the backend to
   create the PDF report.
 
-- This report creation request starts the `ReportsWorker` in the backend. Now,
-  this `ReportsWorker` performs several operations like creation of the PDF
+- This report creation request starts the `ReportsJob` in the backend. Now,
+  this `ReportsJob` performs several operations like creation of the PDF
   report, uploading the report to some 3rd party storage service using Active
   Storage, and attaching the report to the user who requested the PDF report.
 
-- While creating the report, `ReportsWorker` broadcasts different messages and
+- While creating the report, `ReportsJob` broadcasts different messages and
   progress notifications using Action Cable. These broadcasted messages are
   collected by the `received` method inside the
   `subscribeToReportDownloadChannel` method in the frontend side.

@@ -23,8 +23,7 @@ To implement this feature, we need to introduce the following changes:
 **On the backend**
 
 - For scheduling periodic Sidekiq jobs, we can use the
-  [sidekiq-cron](https://github.com/ondrejbartas/sidekiq-cron) gem, which helps
-  us to schedule the worker, which will be sending the mail.
+  [sidekiq-cron](https://github.com/ondrejbartas/sidekiq-cron) gem, which will be sending the mail.
 
 - In the development environment, instead of sending an email to the user's
   email address, we can preview the email in our browser using the
@@ -81,29 +80,29 @@ To implement this feature, we need to introduce the following changes:
 - Similarly, add a function `updatePreference` in the `MyPreferences` container
   component which will update `notification_delivery_hour`.
 
-## Sidekiq worker
+## Sidekiq Job
 
 To send each batch of reminder emails, we will schedule a
-`TodoNotificationsWorker` to run every hour and delegate the job of finding the
+`TodoNotificationsJob` to run every hour and delegate the job of finding the
 recipients to a `TodoNotificationsService`.
 
-This service will ultimately invoke separate `UserNotificationWorker`'s for each
+This service will ultimately invoke separate `UserNotificationJob`'s for each
 recipient it finds.
 
-Let's say we use a single worker for sending all the emails. If this worker
+Let's say we use a single job for sending all the emails. If this job
 fails in the middle of sending the emails the whole email delivery system will
 be down. The rest of the users will not get any email. This is known as the
 single point of failure. To avoid this single point of failure we are using
-separate workers for each recipient. If a separate worker fails then it does not
-affect the rest of the workers and they can continue sending emails. Thus we can
-use separate workers and avoid a single point of failure and make our system
+separate jobs for each recipient. If a separate job fails then it does not
+affect the rest of the jobs and they can continue sending emails. Thus we can
+use separate jobs and avoid a single point of failure and make our system
 more reliable.
 
 We will also create a scheduler file to store cron values that will help
-schedule our `TodoNotificationsWorker` at the desired time interval for each
+schedule our `TodoNotificationsJob` at the desired time interval for each
 environment.
 
-The parent Sidekiq worker will then invoke `TodoNotificationsService`, which
+The parent Sidekiq Job will then invoke `TodoNotificationsService`, which
 will find all the users with pending tasks but no entries in a new table called
 `user_notifications`.
 
@@ -1080,7 +1079,7 @@ default: &default
 ## Creating scheduled_jobs.yml
 
 We will create a scheduler file containing the cron syntax for different
-environments and workers.
+environments and jobs.
 
 Cron is a standard Unix utility that is used to schedule commands for automatic
 execution at specific intervals.
@@ -1098,15 +1097,15 @@ Open the file and paste the following lines into it:
 
 ```yaml
 default: &default
-  todo_notifications_worker:
+  todo_notifications_job:
     cron: "0 * * * *"
-    class: "TodoNotificationsWorker"
+    class: "TodoNotificationsJob"
     queue: "default"
 
 development:
-  todo_notifications_worker:
+  todo_notifications_job:
     cron: "* * * * *"
-    class: "TodoNotificationsWorker"
+    class: "TodoNotificationsJob"
     queue: "default"
 
 test:
@@ -1120,7 +1119,7 @@ production:
 ```
 
 The `default` and `development` are two important keys in the YAML file. Each of
-those keys invoke a worker.
+those keys invoke a job.
 
 In the above code, you can see that the cron value for `default` and
 `development` are different. The reason is that in development we don't need to
@@ -1182,23 +1181,23 @@ If possible, we will be handling this case in the upcoming chapters.
 
 ## Adding TodoNotifications functionality
 
-Let's create the `TodoNotifications` worker:
+Let's create the `TodoNotifications` job:
 
 ```bash
-mkdir -p app/workers
-touch app/workers/todo_notifications_worker.rb
+mkdir -p app/jobs
+touch app/jobs/todo_notifications_job.rb
 ```
 
-The sole purpose of the `TodoNotificationsWorker` is process a
+The sole purpose of the `TodoNotificationsJob` is process a
 `TodoNotificationsService`, which will take care of other core functionalities.
 
-Open `app/workers/todo_notifications_worker.rb` and paste the following:
+Open `app/jobs/todo_notifications_job.rb` and paste the following:
 
 ```ruby
 # frozen_string_literal: true
 
-class TodoNotificationsWorker
-  include Sidekiq::Worker
+class TodoNotificationsJob
+  include Sidekiq::Job
 
   def perform
     todo_notification_service = TodoNotificationService.new
@@ -1214,7 +1213,7 @@ Rails do not provide any inbuilt generators to create services.
 Currently, we can only manually create the service as well as its test file.
 
 This service will take care of finding users with pending tasks, whose delivery
-time falls with the current execution time range, and invoke workers which will
+time falls with the current execution time range, and invoke jobs which will
 send the mail to each user.
 
 Let's create the service:
@@ -1249,7 +1248,7 @@ class TodoNotificationService
 
     def notify_users
       users_to_notify.each do |user|
-        UserNotificationsWorker.perform_async(user.id)
+        UserNotificationsJob.perform_async(user.id)
       end
     end
 
@@ -1289,28 +1288,28 @@ inside the class then you should declare it as an instance variable and
 initialize it in the `initialize` method. At BigBinary we use the
 `attr_accessor` macro to access the instance methods inside the class.
 
-Let's also create a separate worker, named `UserNotificationsWorker`.
+Let's also create a separate job, named `UserNotificationsJob`.
 
 As per our technical design, we need to ensure that mail delivery for one single
 user, doesn't break the whole delivery system.
 
-The first line of defense against this case, is to invoke a separate worker,
-which is `UserNotificationsWorker`, for each of the user.
+The first line of defense against this case, is to invoke a separate job,
+which is `UserNotificationsJob`, for each of the user.
 
-This way failure of one worker won't affect the other workers, given that
+This way failure of one job won't affect the other jobs, given that
 Sidekiq runs them in separate threads.
 
-Let's create `UserNotificationsWorker`:
+Let's create `UserNotificationsJob`:
 
 ```bash
-touch app/workers/user_notifications_worker.rb
+touch app/jobs/user_notifications_job.rb
 ```
 
-Open `app/workers/user_notifications_worker.rb` and paste the following:
+Open `app/jobs/user_notifications_job.rb` and paste the following:
 
 ```ruby
-class UserNotificationsWorker
-  include Sidekiq::Worker
+class UserNotificationsJob
+  include Sidekiq::Job
 
   def perform(user_id)
     TaskMailer.pending_tasks_email(user_id).deliver_later

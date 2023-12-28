@@ -281,7 +281,7 @@ Rspec:
   rspec:policy
 
 Sidekiq:
-  sidekiq:worker
+  sidekiq:job
 
 TestUnit:
   test_unit:channel
