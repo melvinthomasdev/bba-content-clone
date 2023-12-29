@@ -136,7 +136,6 @@ Now we need to invoke the `setAuthHeaders` method in `application.js`, as its co
 Fully replace `app/javascript/packs/application.js` with the following code:
 
 ```js
-/* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
@@ -220,7 +219,6 @@ Typically, you would need to manually add the `js-logger` plugin to your `babel.
 Then, invoke `initializeLogger()` from `application.js` as follows:
 
 ```js
-/* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference

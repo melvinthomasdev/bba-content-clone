@@ -529,7 +529,6 @@ the `react-toastify` popups to show up in.
 Fully replace `app/javascript/packs/application.js` with the following content:
 
 ```javascript
-/* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
