@@ -120,7 +120,7 @@ If we execute that method, then we can see all the directories which are getting
 autoloaded:
 
 ```ruby
-irb(main):002:0> Rails.autoloaders.main.root_dirs
+irb(main):002:0> Rails.autoloaders.main.__roots
 ```
 
 And gives an output similar to the following one:
