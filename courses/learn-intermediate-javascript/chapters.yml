@@ -1,26 +1,14 @@
 ---
 - name: Getting Started
   slug: getting-started
-- name: String Methods
-  slug: string-methods
 - name: Single and Multiple line comments
   slug: single-and-multiple-line-comments
-- name: Comprehensive Exercise 1
-  slug: comprehensive-exercise-1
-- name: Math Object
-  slug: math-object
-- name: Number Methods
-  slug: number-methods
-- name: Comprehensive Exercise 2
-  slug: comprehensive-exercise-2
 - name: Advanced Array Methods
   slug: advanced-array-methods
 - name: Rest and Spread
   slug: rest-and-spread
 - name: Comprehensive Exercise 3
   slug: comprehensive-exercise-3
-- name: Mutation
-  slug: mutation
 - name: Scope
   slug: scope
 - name: Timeouts and Intervals
