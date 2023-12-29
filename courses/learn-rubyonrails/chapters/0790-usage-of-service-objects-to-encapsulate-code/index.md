@@ -13,11 +13,11 @@ A task titled 'Update Rails Version' was created and self-assigned to Oliver Smi
 We can modify `TaskLoggerJob` to craft the appropriate message as follows:
 
  ```ruby
- class TaskLoggerJob < ApplicationJob
-  sidekiq_options queue: :default, retry: 3
-  queue_as :default
+ class TaskLoggerJob
+  include Sidekiq::Job
 
-  def perform(task)
+  def perform(task_id)
+    task = Task.find(task_id)
     task_owner = User.find(task.task_owner_id)
 
     if task.task_owner_id == task.assigned_user_id
@@ -102,11 +102,11 @@ Now, let's modify the `TaskLoggerJob` as follows:
 ```ruby
 # frozen_string_literal: true
 
-class TaskLoggerJob < ApplicationJob
-  sidekiq_options queue: :default, retry: 3
-  queue_as :default
+class TaskLoggerJob
+  include Sidekiq::Job
 
-  def perform(task)
+  def perform(task_id)
+    task = Task.find(task_id)
     message = LoggerMessageBuilderService.new(task).process!
 
     log = Log.create!(task_id: task.id, message:)

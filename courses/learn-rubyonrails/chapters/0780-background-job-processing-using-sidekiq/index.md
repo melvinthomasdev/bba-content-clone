@@ -10,20 +10,17 @@ background jobs one by one.
 
 Rails provides
 [Active Job](https://guides.rubyonrails.org/active_job_basics.html) to process
-background jobs and making them run on a variety of queueing applications.
-
-## Choosing a backend adapter
-
-Active Job has a built-in support for multiple queueing backends. Some of the
-prominent queueing backends are [Sidekiq](https://sidekiq.org),
+background jobs and has built-in support for multiple queueing backends such as [Sidekiq](https://sidekiq.org),
 [Resque](https://github.com/resque/resque) and
-[Delayed Job](https://github.com/collectiveidea/delayed_job).
-[Queue adapters section](https://edgeapi.rubyonrails.org/classes/ActiveJob/QueueAdapters.html)
+[Delayed Job](https://github.com/collectiveidea/delayed_job). The [Queue adapters section](https://edgeapi.rubyonrails.org/classes/ActiveJob/QueueAdapters.html)
 of the Rails guides has detailed information about all the queueing adapters
 supported by Rails by default.
 
-We'll use [Sidekiq](https://sidekiq.org/) as the queueing adapter for this
-application. Sidekiq uses Redis to store all the operational data. So let's
+## Sidekiq Jobs
+
+Although Rails provides Active Job, we are choosing to use [Sidekiq](https://sidekiq.org/) Jobs directly for its enhanced performance and feature set. Directly interfacing with Sidekiq bypasses the additional abstraction layer provided by Active Job, offering more granular control over job processing.
+
+Sidekiq uses Redis to store all the operational data. So let's
 setup Redis on the development machine. If you're using macOS, then Redis will
 be installed by the following command:
 
@@ -164,30 +161,38 @@ You'll notice that it creates two files `task_logger_job.rb` inside `app/jobs`
 directory and its corresponding test file `task_logger_job_test.rb` inside
 `test/jobs` directory.
 
-The job file should look like this:
+Once generated, the job file should look like this:
 
 ```ruby
 class TaskLoggerJob < ApplicationJob
 end
 ```
 
-`ApplicationJob`, just is an abstract class where we define configurations for
-all the jobs.. It inherits `ActiveJob::Base`. In short, it's analogous to
+`ApplicationJob` is just an abstract class where we define configurations for
+all the jobs. It inherits `ActiveJob::Base`. In short, it's analogous to
 `ApplicationRecord` that we have in case of models.
 
-`ActiveJob` internally invokes a method named `perform`. The method `perform` is
-responsible for executing the entire business logic of the job. Let's add
-`perform` method inside our `TaskLoggerJob` class:
+But as we said earlier, we won't be using `ActiveJob`, instead we will be using Sidekiq Job directly.
+
+So, let's replace the contents of `task_logger_job.rb` and remove the `application_job.rb` file:
 
 ```ruby
-class TaskLoggerJob < ApplicationJob
+class TaskLoggerJob
+  include Sidekiq::Job
+end
+```
+
+Now, let's define `perform` method within the job. This method is responsible for executing the job's entire business logic.
+
+```ruby
+class TaskLoggerJob
+  include Sidekiq::Job
+
   def perform
     puts "TaskLoggerJob is performed"
   end
 end
 ```
-
-We've just defined a new job.
 
 ## Executing the job
 
@@ -205,139 +210,32 @@ other Ruby class. The answer is that this class provides an ability to enqueue
 this job to the backend queue. Now in your Rails console, run the following:
 
 ```ruby
-TaskLoggerJob.perform_later
-> Enqueued TaskLoggerJob
+TaskLoggerJob.perform_async
 ```
 
 Notice the output here. Instead of printing the message from `perform` method of
-the job, it shows that the job is enqueued. Now go to the Sidekiq window where
-Sidekiq is running. You should observe that this job had run there and the
+the job, it displays the `ID` of the job being enqueued. Now go to the Sidekiq window where
+Sidekiq is running. You should observe that this job has run there and the
 message `"TaskLoggerJob is performed"` is printed there.
 
-Let's see what has happened here. We've called a method `perform_later`, which
-is a class method available on subclass of `ActiveJob::Base`. The already
-configured the application to work with Sidekiq. The details of the job are
+Let's see what has happened here. We've called a method `perform_async`, which
+is a class method available on subclass of `Sidekiq::Job`. The details of the job are
 stored in the Redis. Sidekiq picks up the job when it's available and executes
 the perform method. upon availability and executes the perform method.
 
-We can also define when we want to run the job by using `set` option:
+We can also define when we want to run the job by using `perform_at` or `perform_in` option:
 
 ```ruby
-# By providing `wait_until` option, we are asking
-# to not perform the job before the end of the day.
-TaskLoggerJob.set(wait_until: Time.zone.today.end_of_day).perform_later
+# By providing `perform_at` option, we are asking
+# to perform the job at the end of the day.
+TaskLoggerJob.perform_at(Time.zone.today.end_of_day)
 ```
 
 ```ruby
-# By providing `wait` option we are asking
+# By providing `perform_in` option we are asking
 # to perform after 1 minute.
-TaskLoggerJob.set(wait: 1.minute).perform_later
+TaskLoggerJob.perform_in(1.minute)
 ```
-
-## Active Job callbacks
-
-There could be cases when we want to execute the `perform` method synchronously.
-Calling `perform_now` method executes the job instantly:
-
-```ruby
-TaskLoggerJob.perform_now
-"TaskLoggerJob is performed"
-```
-
-Is there any difference between behaviors of `perform` and `perform_now`? The
-answer is yes. The method `perform_now` is wrapped by the Active Job callbacks.
-Similar to controllers and models, we can define the following callbacks inside
-our jobs:
-
-```msg
-before_enqueue
-around_enqueue
-after_enqueue
-before_perform
-around_perform
-after_perform
-```
-
-Let's add a `before_perform` and `after_perform` in our `TaskLoggerJob` class as
-follows:
-
-```ruby
-class TaskLoggerJob < ApplicationJob
-  # ... existing code
-  before_perform :print_before_perform_message
-  after_perform :print_after_perform_message
-
-  def print_before_perform_message
-    puts "Printing from inside before_perform callback"
-  end
-
-  def print_after_perform_message
-    puts "Printing from inside after_perform callback"
-  end
-end
-```
-
-Now reload Rails console and compare results between `perform` and
-`perform_now`:
-
-```ruby
-TaskLoggerJob.new.perform
-"TaskLoggerJob is performed"
-
-
-TaskLoggerJob.perform_now
-"Printing from inside before_perform callback"
-"TaskLoggerJob is performed"
-"Printing from inside after_perform callback"
-```
-
-Here we invoked `perform_now` and we are seeing the messages being printed in
-Rails console. This is because the task is being performed synchronously in
-Rails console itself.
-
-If we were to invoke `perform_later` then we would not be seeing all those
-messages in Rails console. We would see the message on Sidekiq window.
-
-The behavior however will be different in case of `before_enqueue` and
-`after_enqueue` callbacks. Since `perform_now` is run synchronously and there is
-no enqueueing of job, defining these callbacks will have no effect when
-`perform_now` is used.
-
-Let's verify this behavior. Inside `TaskLoggerJob`, remove all existing
-callbacks and add the following code:
-
-```ruby
-class TaskLoggerJob < ApplicationJob
-  before_enqueue :print_before_enqueue_message
-  after_enqueue :print_after_enqueue_message
-
-  def perform
-    puts "TaskLoggerJob is performed"
-  end
-
-  def print_before_enqueue_message
-    puts "Printing from inside before_enqueue callback"
-  end
-
-  def print_after_enqueue_message
-    puts "Printing from inside after_enqueue callback"
-  end
-end
-```
-
-Run the following code on Rails console:
-
-```ruby
-TaskLoggerJob.perform_now
-"TaskLoggerJob is performed"
-
-
-TaskLoggerJob.perform_later
-"Printing from inside before_enqueue callback"
-```
-
-You'll notice that the `before_enqueue` message got printed only in case when
-`perform_later` was called.
 
 ## Enqueuing jobs to Sidekiq
 
@@ -353,39 +251,26 @@ class Task < ApplicationRecord
   # Existing code ...
 
   def log_task_details
-    TaskLoggerJob.perform_later(self)
+    TaskLoggerJob.perform_async(self.id)
   end
 end
 ```
 
-Notice that we have passed an argument to `perform_later` method. The method
+Notice that we have passed an argument to `perform_async` method. The method
 `perform`, that we manually define inside the job can take any number and any
-type of argument. In the above case, we are considering a task record as an
+type of argument. In the above case, we are considering the `id` of the task as an
 argument to `perform` action.
 
 So let's clear all the actions that we have added in `TaskLoggerJob` and define
 `perform` action as follows:
 
 ```ruby
-class TaskLoggerJob < ApplicationJob
-  def perform(task)
-    puts "Created a task with following attributes :: #{task.attributes}"
-  end
-end
-```
+class TaskLoggerJob
+  include Sidekiq::Job
 
-Finally, we need to mention the default queue in which the task job needs to be
-added to. This will tell sidekiq to enqueue our task in the mentioned queue. We
-will also define the number of retries we want sidekiq to perform in case of
-failure:
-
-```ruby {2-3}
-class TaskLoggerJob < ApplicationJob
-  sidekiq_options queue: :default, retry: 3
-  queue_as :default
-
-  def perform(task)
-    puts "Created a task with following attributes :: #{task.attributes}"
+  def perform(task_id)
+    task = Task.find(task_id)
+    puts "Created a task with following attributes : #{task.attributes}"
   end
 end
 ```
@@ -401,12 +286,12 @@ refer them in their
 ## Testing Sidekiq jobs
 
 To write a Sidekiq test, first we need to require `sidekiq/testing` in
-`task_logger_job_test.rb`:
+`task_logger_job_test.rb` as well as replace `ActiveJob::TestCase` to `ActiveSupport::TestCase` as we are not using `Active Job` anymore:
 
-```ruby {2,5}
+```ruby {2,3}
 require "test_helper"
 require "sidekiq/testing"
-class TaskLoggerJobTest < ActiveJob::TestCase
+class TaskLoggerJobTest < ActiveSupport::TestCase
 end
 ```
 
@@ -415,7 +300,7 @@ Sidekiq provides a few modes of testing our jobs. These are
 `Sidekiq::Testing.disable!`.
 
 Requiring `sidekiq/testing` will automatically initialize the
-`Sidekiq::Testing.fake!` mode, where `fake` is the default mode.
+`Sidekiq::Testing.inline!` mode, where `inline` is the default mode.
 
 For the purpose of testing the `TaskLoggerJob`, let's create a `Log` model which
 will store the message and id of the task:
@@ -464,10 +349,11 @@ bundle exec rails db:test:prepare
 Update the perform method in `TaskLoggerJob`:
 
 ```ruby
-  def perform(task)
+  def perform(task_id)
+    task = Task.find(task_id)
     message = "A task was created with the following title: #{task.title}"
-    log = Log.create! task_id: task.id, message:
 
+    log = Log.create! task_id: task.id, message:
     puts log.message
   end
 ```
@@ -486,22 +372,19 @@ Let's add a `fake` test, which doesn't rely on the response or side effects part
 of our job:
 
 ```ruby
-  def test_logger_runs_once_after_creating_a_new_task
-    assert_enqueued_with(job: TaskLoggerJob, args: [@task])
-    perform_enqueued_jobs
-    assert_performed_jobs 1
+  def test_logger_runs_once_after_creating_a_task
+    Sidekiq::Testing.fake! do
+      assert_difference -> { TaskLoggerJob.jobs.size }, 1 do
+        TaskLoggerJob.perform_async(@task.id)
+      end
+    end
   end
 ```
-
-As the name suggests, `assert_enqueued_with` asserts that the job passed in the
-block has been enqueued with the given arguments. You can learn more about
-assert statements related to jobs from the official Rails
-[TestHelper documentation](https://edgeapi.rubyonrails.org/classes/ActiveJob/TestHelper.html#method-i-assert_enqueued_with).
 
 This fake testing mode operates in a way in which jobs are queued up in an array
 rather than being executed immediately. Jobs within the queue can be queried,
 inspected, and optionally “drained” to process enqueued jobs. This mode is
-activated(or is set by default) simply with the `fake!` directive. Testing this
+activated simply with the `fake!` directive. Testing this
 way promotes decoupled and faster tests, as the background job doesn’t have to perform
 any actual work. But using this mode isn’t appropriate for full on integration
 testing or situations where you want to process jobs during a test.
@@ -516,15 +399,13 @@ instead of enqueuing it. Inline testing mode performs enqueued jobs
 synchronously within the same process. So let's use inline mode for real testing
 which needs results of jobs immediately after execution.
 
-By default the mode is `fake!`. In most tests, we would require a mix of the
-both the `inline!` as well as `fake!` modes. So let's set the `inline` mode
-within the block/method as follows and perform the job:
+By default the mode is `inline!`. In most tests, we would require a mix of the
+both the `inline!` as well as `fake!` modes. So let's create a test in the `inline` mode as follows and perform the job:
 
 ```ruby
   def test_log_count_increments_on_running_task_logger
-    Sidekiq::Testing.inline!
     assert_difference "Log.count", 1 do
-      TaskLoggerJob.new.perform(@task)
+      TaskLoggerJob.new.perform(@task.id)
     end
   end
 ```
@@ -535,24 +416,27 @@ table and thus it's `count` is incremented when we perform the `TaskLoggerJob`.
 The final test file should look like this:
 
 ```ruby
+# frozen_string_literal: true
+
 require "test_helper"
 require "sidekiq/testing"
 
-class TaskLoggerJobTest < ActiveJob::TestCase
+class TaskLoggerJobTest < ActiveSupport::TestCase
   def setup
     @task = create(:task)
   end
 
-  def test_logger_runs_once_after_creating_a_new_task
-    assert_enqueued_with(job: TaskLoggerJob, args: [@task])
-    perform_enqueued_jobs
-    assert_performed_jobs 1
+  def test_logger_runs_once_after_creating_a_task
+    Sidekiq::Testing.fake! do
+      assert_difference -> { TaskLoggerJob.jobs.size }, 1 do
+        TaskLoggerJob.perform_async(@task.id)
+      end
+    end
   end
 
   def test_log_count_increments_on_running_task_logger
-    Sidekiq::Testing.inline!
     assert_difference "Log.count", 1 do
-      TaskLoggerJob.new.perform(@task)
+      TaskLoggerJob.new.perform(@task.id)
     end
   end
 end
