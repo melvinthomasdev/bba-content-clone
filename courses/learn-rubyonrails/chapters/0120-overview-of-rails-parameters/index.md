@@ -1,21 +1,21 @@
-In this chapter, we will learn in detail about the `params` hash provided by
+In this chapter, we will learn about the `params` provided by
 Rails.
 
 ## What are Parameters?
 
-In a typical Rails application, you might often want to use the parameters sent
-from the front end in your controller to perform various functionalities. These
+In a typical Rails application, we might often want to use the parameters sent
+from the frontend in your controller to perform various functionalities. These
 parameters can be either query string parameters that are sent as a part of a
 URL or parameters sent as a part of HTTP POST requests. Regardless of its
-origin, we can readily access these parameters in the Rails controller using the
-`params` hash.
+origin, we can readily access these parameters in the Rails controller using
+`params`.
 
 Let us see two cases where query string parameters are used with `params`.
 
 In the first scenario, assume that you have a search page that allows users to
 filter results by keyword and category. The URL might look something like
 `http://example.com/search?keyword=laptops&category=electronics`. In this
-example, the query string parameters are `keyword` and `category`. You can
+example, the query string parameters are `keyword` and `category`. We can
 access these parameters in your controller like this:
 
 ```rb
@@ -26,9 +26,9 @@ def search
 end
 ```
 
-In the second case, assume you have a resource for articles in your Rails
-application, and you want to create a route that allows users to view a specific
-article by its ID. You could define your route like this:
+In the second case, assume we have an application related to articles,
+and we want to create a route that allows users to view a specific
+article by its ID. We could define route like this:
 
 ```rb
 resources :articles, only: %i[show]
@@ -37,7 +37,7 @@ resources :articles, only: %i[show]
 This route will create a URL pattern like `/articles/:id`, where `:id` is a
 dynamic segment that represents the ID of the article.
 
-In your articles controller, you can access the `:id` parameter like this:
+In our articles controller, you can access the `:id` parameter like this:
 
 ```rb
 def show
@@ -45,7 +45,7 @@ def show
 end
 ```
 
-Now let us see an example where we can use `params` to access parameters that
+Now let's see an example where we can use `params` to access parameters that
 are passed in through a POST request.
 
 Suppose you have a form that includes a text field for the user's name and a
@@ -58,31 +58,37 @@ passed in the request:
 }
 ```
 
-You can access these parameters in your controller like this:
+We can access these parameters in our controller like this:
 
 ```rb
 def create
   user_name = params[:name]
-  # do something with the user's name
+  # do something with use_name
 end
 ```
 
-You can also access nested parameters. For example, if your form includes a
-field for the user's address, you could access the street address like this:
+We can also access nested parameters.
+For example, if our form includes a
+field for the user's address, we could access the street address like this:
 
 ```rb
 def create
   street_address = params[:address][:street]
-  # do something with the street address
+  # do something with the street_address
 end
 ```
 
 ## Require and Permit
 
-Though it is easier to consider `params` as a hash, due to their similarities,
-it is important to note that it is a method that returns an
-`ActionController::Parameters` object. The latter provides two methods, namely
-`require` and `permit`, to choose which attributes should be whitelisted for
+`params` looks like a hash.
+And it does behave like a hash.
+However `params` is an instance of
+[ActionController::Parameters](https://github.com/rails/rails/blob/0fb5f67ac413d62df64b8b59094b4fe85999b5c1/actionpack/lib/action_controller/metal/strong_parameters.rb#L140)
+class.
+
+
+`params` provides two important methods -
+`require` and `permit`. This governs which attributes should be whitelisted for
 mass updating and thus prevent accidentally exposing that which should not be
 exposed. This is useful for protecting your application from malicious input and
 for ensuring that you only receive the data that you expect.
