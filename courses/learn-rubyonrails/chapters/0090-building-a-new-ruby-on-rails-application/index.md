@@ -1,16 +1,17 @@
 ## What are we building?
 
-Let's learn Rails by building a simple web application. Let's name it `granite`,
-after a [type of rock](https://en.wikipedia.org/wiki/Granite).
+Let's learn Rails by building a simple web application. Let's name it `granite`.
+Granite is a
+[type of rock](https://en.wikipedia.org/wiki/Granite).
 
-The application will be a simple todos for a whole company of small size. The
+The application will be a simple todos for a company of small size. The
 application will have the following features.
 
 - Users will be able to prioritize the tasks by starring them. These starred
   tasks will be shown first in the list.
 - Users can toggle the task as pending or done.
-- Task creators can delete/edit the task.
-- Users can add comments to the tasks. These comments cannot be edited/deleted.
+- Task creators can edit or delete the task.
+- Users can add comments to the tasks. These comments cannot be edited or deleted.
 
 Our goal is to learn the process of writing a Ruby on Rails application with
 React.js.
@@ -45,6 +46,9 @@ rails _7.0.5_ new granite --skip-turbolinks
 It will produce a long output and might take some time to complete. It is
 downloading and setting up required files from the internet.
 
+_We are aware that the latest version of Rails is 7.1.2. We will be updating the book soon.
+Whenever we update the book we need to ensure that the whole thing works fine. Hence it's taking some time._
+
 ## Setting up Shakapacker
 
 First, we need to run the `yarn install` command to generate the Yarn lockfile.
@@ -67,8 +71,8 @@ rm -rf app/javascript
 is a tool that helps bundle JavaScript files using webpack 5+.
 It is a successor to [Webpacker](https://github.com/rails/webpacker) and is based on version 6 of Webpacker. For the sake of simplicity we would using the terms `Webpacker` and `Shakapacker` interchangeably.
 
-To install `shakapacker`, add the `shakapacker` gem at the end of the file
-named `Gemfile`.
+Let's install `shakapcker`. Let's open `Gemfile` and at the end of the file
+we need to add the following code.
 
 ```rb
 # For compiling and bundling JavaScript. Read more: https://github.com/shakacode/shakapacker
@@ -90,7 +94,11 @@ bin/rails webpacker:install
 
 The default configurations sets the source path `app/javascript` as the `source_entry_path`
 in `config/webpacker.yml`. We need to set a subdirectory of the `source_path`, namely `packs`, to
-be the `source_entry_path`. We also need to make other minor modifications in the webpack configuration. To incorporate all these, let's replace the contents of `config/webpacker.yml` with webpacker configuration from the [Wheel repository](https://raw.githubusercontent.com/bigbinary/wheel/main/webpacker.yml) by executing the following command from the root of the app:
+be the `source_entry_path`.
+We also need to make other minor modifications in the webpack configuration.
+To incorporate all these, let's replace the contents of `config/webpacker.yml` with webpacker configuration from the
+[Wheel repository](https://raw.githubusercontent.com/bigbinary/wheel/main/webpacker.yml)
+by executing the following command from the root of the app:
 
 ```bash
 curl -o "config/webpacker.yml" "https://raw.githubusercontent.com/bigbinary/wheel/main/config/webpacker.yml"
@@ -128,7 +136,9 @@ Let's now install the below packages to our project as a part of the webpack con
 yarn add @svgr/webpack@^8.1.0 babel-plugin-dynamic-import-node@^2.3.3 babel-plugin-macros@^3.1.0 babel-plugin-js-logger@^1.0.17 css-loader@^6.8.1 dotenv-webpack@^8.0.1 i18next ignore-loader@^0.1.2 mini-css-extract-plugin@^2.7.6 js-logger@^1.6.1 postcss@^8.4.29 postcss-flexbugs-fixes@^5.0.2 postcss-import@^15.1.0 postcss-loader@^7.3.3 postcss-preset-env@^9.1.2 process@^0.11.10 ramda sass@^1.66.1 sass-loader@^13.3.2 source-map-loader@^4.0.1 style-loader@^3.3.3
 ```
 
-Let's also add a `babel.config.js` file with base configurations at the root of the project. Execute the following command to download and use babel configuration from the [Wheel repository](https://raw.githubusercontent.com/bigbinary/wheel/main/babel.config.js).
+Let's also add a `babel.config.js` file with base configurations at the root of the project.
+Execute the following command to download and use babel configuration from the
+[Wheel repository](https://raw.githubusercontent.com/bigbinary/wheel/main/babel.config.js).
 
 ```bash
 curl -o "babel.config.js" "https://raw.githubusercontent.com/bigbinary/wheel/main/babel.config.js"
@@ -249,7 +259,7 @@ end of the book.
 If you're very curious and don't mind the complexity at this early
 stage itself, then you can give
 [this section](/learn-rubyonrails/webpacker-in-depth#significance-of-stylesheet-pack-tag)
-a read to understand about Webpacker's CSS compilation in depth.
+a read to understand about Webpacker's CSS compilation.
 
 ## Configuring default Ruby and Node.js versions
 
