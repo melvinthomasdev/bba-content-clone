@@ -16,7 +16,7 @@ def newsletter_list(department_newsletter_list, department_names_list)
   list = []
   department_names_list.each do |department_name|
     if department_newsletter_list.has_key? department_name
-      list << department_newsletter_list[department_name]
+      list << department_newsletter_list[department_name.to_sym]
     end
   end
 
@@ -27,10 +27,10 @@ end
 <testcases>
 <caller>
 department_newsletter_list = {
-  "Programming"=> ['frontend', 'backend', 'database', 'javascript', 'ruby'],
-  "QA"=> ['unit testing', 'regression testing', 'alpha testing', 'beta testing'],
-  "Marketing"=> ['outbound', 'inbound', 'digital', 'content', 'video'],
-  "Sales"=> ['inside', 'outside', 'client services', 'lead generation']
+  Programming: ['frontend', 'backend', 'database', 'javascript', 'ruby'],
+  QA: ['unit testing', 'regression testing', 'alpha testing', 'beta testing'],
+  Marketing: ['outbound', 'inbound', 'digital', 'content', 'video'],
+  Sales: ['inside', 'outside', 'client services', 'lead generation']
 }
 puts newsletter_list(department_newsletter_list, department_names_list)
 </caller>

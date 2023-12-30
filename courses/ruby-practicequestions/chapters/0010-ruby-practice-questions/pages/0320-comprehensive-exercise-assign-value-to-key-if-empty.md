@@ -13,7 +13,7 @@ end
 
 <solution>
 def update_data(data, key, value)
-  data[key] = value unless data[key]
+  data[key.to_sym] = value unless data[key.to_sym]
 
   data
 end
@@ -26,8 +26,8 @@ puts update_data(data, key, value)
 <testcase>
 <i>
 data = {
-  "name"=> "Alex",
-  "location"=> "Kochi",
+  name: "Alex",
+  location: "Kochi",
 }
 key = "age"
 value = 30
@@ -36,8 +36,8 @@ value = 30
 <testcase>
 <i>
 data = {
-  "item"=> "Pepsi",
-  "quantity"=> 120,
+  item: "Pepsi",
+  quantity: 120,
 }
 key = "quantity"
 value = 0
@@ -46,8 +46,8 @@ value = 0
 <testcase>
 <i>
 data = {
-  "name"=> "Stuart",
-  "location"=> "Pune",
+  name: "Stuart",
+  location: "Pune",
 }
 key = "location"
 value = ""
@@ -56,8 +56,8 @@ value = ""
 <testcase>
 <i>
 data = {
-  "name"=> "Juan",
-  "pto"=> 32,
+  name: "Juan",
+  pto: 32,
 }
 key = "pto"
 value = 0

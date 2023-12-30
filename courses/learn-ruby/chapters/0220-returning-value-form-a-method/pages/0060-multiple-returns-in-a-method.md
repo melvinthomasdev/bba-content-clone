@@ -5,8 +5,8 @@ A method can have many return statements. Let's start with the following code.
 class CapitalCityFinder
 
   def get_city(country)
-    data = { "France" => "Paris", "India" => "New Delhi", "England" => "London" }
-    city = data[country]
+    data = { France: "Paris", India: "New Delhi", England: "London" }
+    city = data[country.to_sym]
     return city
   end
 
@@ -28,10 +28,10 @@ Let's say that we want to return nil if the country is not present.
 class CapitalCityFinder
 
   def get_city(country)
-    data = { "France" => "Paris", "India" => "New Delhi", "England" => "London" }
-
+    data = { France: "Paris", India: "New Delhi", England: "London" }
+    
     return nil if country == nil
-    city = data[country]
+    city = data[country.to_sym]
     return city
   end
 

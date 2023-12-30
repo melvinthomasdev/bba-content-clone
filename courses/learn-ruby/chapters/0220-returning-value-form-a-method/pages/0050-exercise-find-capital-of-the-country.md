@@ -6,7 +6,7 @@ to use "puts" in any of the methods.
 <code>
 class CapitalLooker
   def find_capital(country)
-     hash = {"India" => "New Delhi", "France" => "Paris", "England" => "London"}
+     hash = {India: "New Delhi", France: "Paris", England: "London"}
   end
 
   def info(country)
@@ -20,8 +20,8 @@ puts looker.info("India")
 <solution>
 class CapitalLooker
   def find_capital(country)
-     hash = {"India" => "New Delhi", "France" => "Paris", "England" => "London"}
-     return hash[country]
+     hash = {India: "New Delhi", France: "Paris", England: "London"}
+     return hash[country.to_sym]
   end
 
   def info(country)

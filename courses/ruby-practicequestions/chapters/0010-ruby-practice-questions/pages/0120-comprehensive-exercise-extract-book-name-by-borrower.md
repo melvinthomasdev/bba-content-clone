@@ -15,11 +15,11 @@ end
 
 <solution>
 def get_borrower(books_record, borrower)
-  borrowed_book_details = books_record.find { |book_record| book_record["borrower"] == borrower }
+  borrowed_book_details = books_record.find { |book_record| book_record[:borrower] == borrower }
   return "No books borrowed" if borrowed_book_details.nil?
 
-  book = borrowed_book_details["book"]
-  date = borrowed_book_details["date"]
+  book = borrowed_book_details[:book]
+  date = borrowed_book_details[:date]
   return "#{borrower} borrowed '#{book}' on #{date}"
 end
 </solution>
@@ -32,19 +32,19 @@ puts get_borrower(borrowed_books, user_name)
 <i>
 borrowed_books = [
   {
-    "book"=> "Invisible Man",
-    "borrower"=> "oliver_smith",
-    "date"=> "10-May-2021",
+    book: "Invisible Man",
+    borrower: "oliver_smith",
+    date: "10-May-2021",
   },
   {
-    "book"=> "The Boy Who Harnessed the Wind",
-    "borrower"=> "anna_smith",
-    "date"=> "16-March-2021",
+    book: "The Boy Who Harnessed the Wind",
+    borrower: "anna_smith",
+    date: "16-March-2021",
   },
   {
-    "book"=> "The Book Thief",
-    "borrower"=> "sam_smith",
-    "date"=> "21-April-2020",
+    book: "The Book Thief",
+    borrower: "sam_smith",
+    date: "21-April-2020",
   }
 ]
 user_name = "oliver_smith"
@@ -54,19 +54,19 @@ user_name = "oliver_smith"
 <i>
 borrowed_books = [
   {
-    "book"=> "Invisible Man",
-    "borrower"=> "oliver_smith",
-    "date"=> "10-May-2021",
+    book: "Invisible Man",
+    borrower: "oliver_smith",
+    date: "10-May-2021",
   },
   {
-    "book"=> "The Boy Who Harnessed the Wind",
-    "borrower"=> "anna_smith",
-    "date"=> "16-March-2021",
+    book: "The Boy Who Harnessed the Wind",
+    borrower: "anna_smith",
+    date: "16-March-2021",
   },
   {
-    "book"=> "The Book Thief",
-    "borrower"=> "sam_smith",
-    "date"=> "21-April-2020",
+    book: "The Book Thief",
+    borrower: "sam_smith",
+    date: "21-April-2020",
   }
 ]
 user_name = "sam"
@@ -76,19 +76,19 @@ user_name = "sam"
 <i>
 borrowed_books = [
   {
-    "book"=> "Invisible Man",
-    "borrower"=> "oliver_smith",
-    "date"=> "10-May-2021",
+    book: "Invisible Man",
+    borrower: "oliver_smith",
+    date: "10-May-2021",
   },
   {
-    "book"=> "The Boy Who Harnessed the Wind",
-    "borrower"=> "anna_smith",
-    "date"=> "16-March-2021",
+    book: "The Boy Who Harnessed the Wind",
+    borrower: "anna_smith",
+    date: "16-March-2021",
   },
   {
-    "book"=> "The Book Thief",
-    "borrower"=> "sam_smith",
-    "date"=> "21-April-2020",
+    book: "The Book Thief",
+    borrower: "sam_smith",
+    date: "21-April-2020",
   }
 ]
 user_name = "anna"
@@ -98,19 +98,19 @@ user_name = "anna"
 <i>
 borrowed_books = [
   {
-    "book"=> "Invisible Man",
-    "borrower"=> "oliver_smith",
-    "date"=> "10-May-2021",
+    book: "Invisible Man",
+    borrower: "oliver_smith",
+    date: "10-May-2021",
   },
   {
-    "book"=> "The Boy Who Harnessed the Wind",
-    "borrower"=> "anna_smith",
-    "date"=> "16-March-2021",
+    book: "The Boy Who Harnessed the Wind",
+    borrower: "anna_smith",
+    date: "16-March-2021",
   },
   {
-    "book"=> "The Book Thief",
-    "borrower"=> "sam_smith",
-    "date"=> "21-April-2020",
+    book: "The Book Thief",
+    borrower: "sam_smith",
+    date: "21-April-2020",
   }
 ]
 user_name = "anna_smith"

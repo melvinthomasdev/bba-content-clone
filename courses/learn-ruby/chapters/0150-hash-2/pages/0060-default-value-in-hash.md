@@ -4,10 +4,10 @@ Let's see it in action:
 
 <codeblock language="ruby" type="lesson">
 <code>
-hash = { "name" => "John Smith",
-         "city" => "Chicago"}
+hash = { name: "John Smith",
+         city: "Chicago"}
 
-age = hash["age"]
+age = hash[:age]
 puts age
 </code>
 </codeblock>
@@ -23,12 +23,12 @@ to return some other default value.
 
 <codeblock language="ruby" type="lesson">
 <code>
-hash = { "name" => "John Smith",
-         "city" => "Chicago"}
+hash = { name: "John Smith",
+         city: "Chicago"}
 
 hash.default = 0
 
-age = hash["age"]
+age = hash[:age]
 puts age
 </code>
 </codeblock>

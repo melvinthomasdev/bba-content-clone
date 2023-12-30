@@ -15,7 +15,7 @@ end
 def update_campaign_details(campaign_details, completed_locations_id, new_locations)
   campaign_details.push(*new_locations)
   campaign_details.each do |campaign|
-    campaign["completed"] = true if completed_locations_id.include? campaign["id"]
+    campaign[:completed] = true if completed_locations_id.include? campaign[:id]
   end
 
   campaign_details
@@ -31,36 +31,37 @@ puts update_campaign_details(campaign_details, completed_locations_id, new_locat
 completed_locations_id = [1, 3]
 campaign_details = [
   {
-    "name"=> "Aizawl",
-    "state"=> "Mizoram",
-    "id"=> 1,
-    "completed"=> false
+    name: "Aizawl",
+    state: "Mizoram",
+    id: 1,
+    completed: false
   },
   {
-    "name"=> "Kochi",
-    "state"=> "Kerala",
-    "id"=> 2,
-    "completed"=> false
+    name: "Kochi",
+    state: "Kerala",
+    id: 2,
+    completed: false
   },
   {
-    "name"=> "Nagercoil",
-    "state"=> "Tamil Nadu",
-    "id"=> 3,
-    "completed"=> false
+    name: "Nagercoil",
+    state: "Tamil Nadu",
+    id: 3,
+    completed: false
   },
 ]
+
 new_locations = [
   {
-    "name"=> "Kurnool",
-    "state"=> "Andhra Pradesh",
-    "id"=> 4,
-    "completed"=> false
+    name: "Kurnool",
+    state: "Andhra Pradesh",
+    id: 4,
+    completed: false
   },
   {
-    "name"=> "Warangal",
-    "state"=> "Telangana",
-    "id"=> 5,
-    "completed"=> false
+    name: "Warangal",
+    state: "Telangana",
+    id: 5,
+    completed: false
   }
 ]
 </i>
@@ -70,36 +71,37 @@ new_locations = [
 completed_locations_id = [1, 3]
 campaign_details = [
   {
-    "name"=> "Thrissur",
-    "state"=> "Kerala",
-    "id"=> 1,
-    "completed"=> false
+    name: "Thrissur",
+    state: "Kerala",
+    id: 1,
+    completed: false
   },
   {
-    "name"=> " Alandur",
-    "state"=> "Tamil Nadu",
-    "id"=> 2,
-    "completed"=> false
+    name: "Alandur",
+    state: "Tamil Nadu",
+    id: 2,
+    completed: false
   },
   {
-    "name"=> "Agartala",
-    "state"=> "Tripura",
-    "id"=> 3,
-    "completed"=> false
+    name: "Agartala",
+    state: "Tripura",
+    id: 3,
+    completed: false
   },
 ]
+
 new_locations = [
   {
-    "name"=> "Tawang",
-    "state"=> "Arunachal Pradesh",
-    "id"=> 4,
-    "completed"=> false
+    name: "Tawang",
+    state: "Arunachal Pradesh",
+    id: 4,
+    completed: false
   },
   {
-    "name"=> "Kohima",
-    "state"=> "Nagaland",
-    "id"=> 5,
-    "completed"=> false
+    name: "Kohima",
+    state: "Nagaland",
+    id: 5,
+    completed: false
   }
 ]
 </i>

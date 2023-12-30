@@ -18,29 +18,28 @@ Salt Lake City, USA 84103
 ```
 
 
-
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 person = {
-  "name" => "john vanderbilt",
-  "city_name" => "salt lake city",
-  "country" => "usa",
-  "zip_code" => "84103"
+  name: "john vanderbilt",
+  city_name: "salt lake city",
+  country: "usa",
+  zip_code: "84103"
 }
 </code>
 
 <solution>
 person = {
-  "name" => "john vanderbilt",
-  "city_name" => "salt lake city",
-  "country" => "usa",
-  "zip_code" => "84103"
+  name: "john vanderbilt",
+  city_name: "salt lake city",
+  country: "usa",
+  zip_code: "84103"
 }
 
-person_name = person["name"]
-city_name = person["city_name"]
-country_name = person["country"]
-zip_code = person["zip_code"]
+person_name = person[:name]
+city_name = person[:city_name]
+country_name = person[:country]
+zip_code = person[:zip_code]
 
 name_parts = person_name.split
 first_line = []

@@ -9,20 +9,21 @@ pink color.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
-hash = { "red" => 50,
-         "yellow" => 40
+hash = { red: 50,
+         yellow: 40
          }
 
-point_for_pink = hash["pink"]
+point_for_pink = hash[:pink]
 puts point_for_pink
 </code>
 
 <solution>
-hash = { "red" => 50,
-         "yellow" => 40
+hash = { red: 50,
+         yellow: 40
          }
+         
 hash.default = 30
-point_for_pink = hash["pink"]
+point_for_pink = hash[:pink]
 puts point_for_pink
 </solution>
 </codeblock>

@@ -23,8 +23,8 @@ key is not there.
 
 <codeblock language="ruby" type="lesson">
 <code>
-hash = {"a" => "A", "b" => "B"}
-result = hash["c"]
+hash = {a: "A", b: "B"}
+result = hash[:c]
 puts result
 </code>
 </codeblock>

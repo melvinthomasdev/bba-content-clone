@@ -17,8 +17,8 @@ end
 def other_diseases(locations)
   diseases = []
   locations.each do |location|
-    if location["diseases"].include? "COVID-19"
-      diseases << location["diseases"]
+    if location[:diseases].include? "COVID-19"
+      diseases << location[:diseases]
     end
   end
   diseases.flatten!.uniq!
@@ -36,19 +36,19 @@ puts other_diseases(locations)
 <i>
 locations = [
   {
-    "id"=> 1,
-    "name"=> "Gotham",
-    "diseases"=> ['COVID-19', 'Disease-A', 'Disease-B']
+    id: 1,
+    name: "Gotham",
+    diseases: ['COVID-19', 'Disease-A', 'Disease-B']
   },
   {
-    "id"=> 2,
-    "name"=> "NeverLand",
-    "diseases"=> ['Disease-R', 'Disease-H', 'Disease-G']
+    id: 2,
+    name: "NeverLand",
+    diseases: ['Disease-R', 'Disease-H', 'Disease-G']
   },
   {
-    "id"=> '3',
-    "name"=> "Asgard",
-    "diseases"=> ['Disease-L', 'COVID-19', 'Disease-B']
+    id: 3,
+    name: "Asgard",
+    diseases: ['Disease-L', 'COVID-19', 'Disease-B']
   }
 ]
 </i>
@@ -57,24 +57,24 @@ locations = [
 <i>
 locations = [
   {
-    "id"=> '1',
-    "name"=> "Shire",
-    "diseases"=> ['Disease-G', 'Disease-A', 'Disease-L']
+    id: 1,
+    name: "Shire",
+    diseases: ['Disease-G', 'Disease-A', 'Disease-L']
   },
   {
-    "id"=> 2,
-    "name"=> "Galaxy",
-    "diseases"=> ['Disease-S', 'Disease-H', 'Disease-I']
+    id: 2,
+    name: "Galaxy",
+    diseases: ['Disease-S', 'Disease-H', 'Disease-I']
   },
   {
-    "id"=> 3,
-    "name"=> "Narnia",
-    "diseases"=> ['COVID-19', 'Disease-R', 'Disease-E']
+    id: 3,
+    name: "Narnia",
+    diseases: ['COVID-19', 'Disease-R', 'Disease-E']
   },
   {
-    "id"=> 3,
-    "name"=> "Somewhere",
-    "diseases"=> ['COVID-19', 'Disease-P', 'Disease-N']
+    id: 4,
+    name: "Somewhere",
+    diseases: ['COVID-19', 'Disease-P', 'Disease-N']
   }
 ]
 </i>

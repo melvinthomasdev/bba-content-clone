@@ -30,11 +30,11 @@ that the house number should be
 <codeblock language="ruby" type="lesson">
 <code>
 houses = {
-    "John" => 507,
-    "Sally" => 239,
-    "Adam" => 786,
-    "Nancy" => 324,
-    "Kelly" => 788
+    John: 507,
+    Sally: 239,
+    Adam: 786,
+    Nancy: 324,
+    Kelly: 788
 }
 
 houses2 = houses.reject do |key, value|

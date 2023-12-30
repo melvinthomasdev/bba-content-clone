@@ -15,7 +15,7 @@ end
 
 <solution>
 def add_missing_property(vacation_details, day, year)
-  vacation_details["start_date"] ||= Time.new(year, 11, day).strftime("%a %b %d %Y")
+  vacation_details[:start_date] ||= Time.new(year, 11, day).strftime("%a %b %d %Y")
 
   vacation_details
 end
@@ -28,11 +28,11 @@ puts add_missing_property(vacation_details, day, year)
 <testcase>
 <i>
 vacation_details = {
-  "trip_id"=> 5,
-  "destination"=> 'Wayanad',
-  "start_date"=> 'Fri Dec 07 2018',
-  "hotel_phone_number"=> "030303",
-  "hotel_email"=> "hij789@example.com"
+  trip_id: 5,
+  destination: 'Wayanad',
+  start_date: 'Fri Dec 07 2018',
+  hotel_phone_number: "030303",
+  hotel_email: "hij789@example.com"
 }
 day = 9
 year = 2020
@@ -41,10 +41,10 @@ year = 2020
 <testcase>
 <i>
 vacation_details = {
-  "trip_id"=> 4,
-  "destination"=> 'Ladakh',
-  "hotel_phone_number"=> "020202",
-  "hotel_email"=> "efg456@example.com"
+  trip_id: 4,
+  destination: 'Ladakh',
+  hotel_phone_number: "020202",
+  hotel_email: "efg456@example.com"
 }
 day = 15
 year = 2017
@@ -53,10 +53,10 @@ year = 2017
 <testcase>
 <i>
 vacation_details = {
-  "trip_id"=> 3,
-  "destination"=> 'Wakanda',
-  "hotel_phone_number"=> "025202",
-  "hotel_email"=> "abc@example.com"
+  trip_id: 3,
+  destination: 'Wakanda',
+  hotel_phone_number: "025202",
+  hotel_email: "abc@example.com"
 }
 day = 11
 year = 2016

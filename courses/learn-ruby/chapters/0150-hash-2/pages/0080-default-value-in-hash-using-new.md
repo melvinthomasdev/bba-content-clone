@@ -10,9 +10,9 @@ set using `Hash.new`.
 <codeblock language="ruby" type="lesson">
 <code>
 h = Hash.new(0)
-hash = h.merge({ "name" => "John Smith","city" => "Chicago"})
+hash = h.merge({ name: "John Smith", city: "Chicago"})
 
-age = hash["age"]
+age = hash[:age]
 puts age
 </code>
 </codeblock>

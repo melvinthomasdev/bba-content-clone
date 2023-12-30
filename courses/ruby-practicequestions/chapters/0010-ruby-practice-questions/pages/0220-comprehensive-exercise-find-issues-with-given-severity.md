@@ -13,7 +13,7 @@ end
 
 <solution>
 def filter_issues(issues, severity)
-  issues.select { |issue| issue["severity"] == severity }
+  issues.select { |issue| issue[:severity] == severity }
 end
 </solution>
 
@@ -25,29 +25,29 @@ puts filter_issues(issues, severity)
 <i>
 issues = [
   {
-    "title"=> "View is not symmetric",
-    "severity"=> "low",
-    "assignee"=> "Eric"
+    title: "View is not symmetric",
+    severity: "low",
+    assignee: "Eric"
   },
   {
-    "title"=> "Title color is not as per design",
-    "severity"=> "medium",
-    "assignee"=> "John"
+    title: "Title color is not as per design",
+    severity: "medium",
+    assignee: "John"
   },
   {
-    "title"=> "Oliver is not able to login",
-    "severity"=> "high",
-    "assignee"=> "Eric"
+    title: "Oliver is not able to login",
+    severity: "high",
+    assignee: "Eric"
   },
   {
-    "title"=> "Submit button is disabled",
-    "severity"=> "high",
-    "assignee"=> "John"
+    title: "Submit button is disabled",
+    severity: "high",
+    assignee: "John"
   },
   {
-    "title"=> "Table content overflowing",
-    "severity"=> "medium",
-    "assignee"=> "John"
+    title: "Table content overflowing",
+    severity: "medium",
+    assignee: "John"
   }
 ]
 severity = "medium"
@@ -57,29 +57,29 @@ severity = "medium"
 <i>
 issues = [
   {
-    "title"=> "View is not symmetric",
-    "severity"=> "low",
-    "assignee"=> "Eric"
+    title: "View is not symmetric",
+    severity: "low",
+    assignee: "Eric"
   },
   {
-    "title"=> "Title color is not as per design",
-    "severity"=> "medium",
-    "assignee"=> "John"
+    title: "Title color is not as per design",
+    severity: "medium",
+    assignee: "John"
   },
   {
-    "title"=> "Oliver is not able to login",
-    "severity"=> "high",
-    "assignee"=> "Eric"
+    title: "Oliver is not able to login",
+    severity: "high",
+    assignee: "Eric"
   },
   {
-    "title"=> "Submit button is disabled",
-    "severity"=> "high",
-    "assignee"=> "John"
+    title: "Submit button is disabled",
+    severity: "high",
+    assignee: "John"
   },
   {
-    "title"=> "Table content overflowing",
-    "severity"=> "medium",
-    "assignee"=> "John"
+    title: "Table content overflowing",
+    severity: "medium",
+    assignee: "John"
   }
 ]
 severity = "high"
@@ -89,29 +89,29 @@ severity = "high"
 <i>
 issues = [
   {
-    "title"=> "View is not symmetric",
-    "severity"=> "low",
-    "assignee"=> "Eric"
+    title: "View is not symmetric",
+    severity: "low",
+    assignee: "Eric"
   },
   {
-    "title"=> "Title color is not as per design",
-    "severity"=> "medium",
-    "assignee"=> "John"
+    title: "Title color is not as per design",
+    severity: "medium",
+    assignee: "John"
   },
   {
-    "title"=> "Oliver is not able to login",
-    "severity"=> "high",
-    "assignee"=> "Eric"
+    title: "Oliver is not able to login",
+    severity: "high",
+    assignee: "Eric"
   },
   {
-    "title"=> "Submit button is disabled",
-    "severity"=> "high",
-    "assignee"=> "John"
+    title: "Submit button is disabled",
+    severity: "high",
+    assignee: "John"
   },
   {
-    "title"=> "Table content overflowing",
-    "severity"=> "medium",
-    "assignee"=> "John"
+    title: "Table content overflowing",
+    severity: "medium",
+    assignee: "John"
   }
 ]
 severity = "low"

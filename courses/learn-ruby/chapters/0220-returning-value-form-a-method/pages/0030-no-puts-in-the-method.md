@@ -5,8 +5,8 @@ In the previous lesson we saw the code given below.
 class CapitalCityFinder
 
   def get_city(country_name)
-    data = { "France" => "Paris", "India" => "New Delhi", "England" => "London" }
-    city = data[country_name]
+    data = { France: "Paris", India: "New Delhi", England: "London" }
+    city = data[country_name.to_sym]
     return city
   end
 
@@ -31,8 +31,8 @@ the message after calling the method `info`.
 class CapitalCityFinder
 
   def get_city(country_name)
-    data = { "France" => "Paris", "India" => "New Delhi", "England" => "London" }
-    city = data[country_name]
+    data = { France: "Paris", India: "New Delhi", England: "London" }
+    city = data[country_name.to_sym]
     return city
   end
 

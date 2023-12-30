@@ -5,20 +5,20 @@ a value **6 ft**.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 hash = {
-  "first_name" => "John",
-  "last_name" => "Smith",
-  "age" => 25
+  first_name: "John",
+  last_name: "Smith",
+  age: 25
 }
 </code>
 
 <solution>
 hash = {
-  "first_name" => "John",
-  "last_name" => "Smith",
-  "age" => 25
+  first_name: "John",
+  last_name: "Smith",
+  age: 25
 }
 
-hash["height"] = "6 ft"
+hash[:height] = "6 ft"
 
 puts hash
 </solution>

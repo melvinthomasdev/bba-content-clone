@@ -12,7 +12,7 @@ end
 
 <solution>
 def sort_users(users)
-  users.sort_by { |user| user["clicks"] }
+  users.sort_by { |user| user[:clicks] }
 end
 </solution>
 
@@ -24,20 +24,20 @@ puts sort_users(users)
 <i>
 users = [
   {
-    "user"=> "Eric",
-    "clicks"=> 430,
+    user: "Eric",
+    clicks: 430,
   },
   {
-    "user"=> "Sam",
-    "clicks"=> 220,
+    user: "Sam",
+    clicks: 220,
   },
   {
-    "user"=> "John",
-    "clicks"=> 830,
+    user: "John",
+    clicks: 830,
   },
   {
-    "user"=> "Amy",
-    "clicks"=> 778,
+    user: "Amy",
+    clicks: 778,
   },
 ];
 </i>
@@ -46,44 +46,44 @@ users = [
 <i>
 users = [
   {
-    "user"=> "John",
-    "clicks"=> 23,
+    user: "John",
+    clicks: 23,
   },
   {
-    "user"=> "Maria",
-    "clicks"=> 20,
+    user: "Maria",
+    clicks: 20,
   },
   {
-    "user"=> "Bandon",
-    "clicks"=> 84,
+    user: "Bandon",
+    clicks: 84,
   },
   {
-    "user"=> "Rachel",
-    "clicks"=> 78,
+    user: "Rachel",
+    clicks: 78,
   },
-]
+];
 </i>
 </testcase>
 <testcase>
 <i>
 users = [
   {
-    "user"=> "John",
-    "clicks"=> 123,
+    user: "John",
+    clicks: 123,
   },
   {
-    "user"=> "Maria",
-    "clicks"=> 240,
+    user: "Maria",
+    clicks: 240,
   },
   {
-    "user"=> "Bandon",
-    "clicks"=> 857,
+    user: "Bandon",
+    clicks: 857,
   },
   {
-    "user"=> "Rachel",
-    "clicks"=> 100,
+    user: "Rachel",
+    clicks: 100,
   },
-]
+];
 </i>
 </testcase>
 </testcases>

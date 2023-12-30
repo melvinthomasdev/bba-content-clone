@@ -11,7 +11,7 @@ end
 
 <solution>
 def update_object(obj, property, value)
-  obj[property] = value
+  obj[property.to_sym] = value
 
   obj
 end
@@ -24,9 +24,9 @@ puts update_object(obj, property, value)
 <testcase>
 <i>
 obj = {
-  "id"=> 1,
-  "user_name"=> "oliver_smith",
-  "name"=> "Oliver Smith",
+  id: 1,
+  user_name: "oliver_smith",
+  name: "Oliver Smith",
 }
 property = "age"
 value = 32
@@ -35,9 +35,9 @@ value = 32
 <testcase>
 <i>
 obj = {
-  "id"=> 1,
-  "user_name"=> "oliver_smith",
-  "name"=> "Oliver Smith",
+  id: 1,
+  user_name: "oliver_smith",
+  name: "Oliver Smith",
 }
 property = "user_name"
 value = "sam_smith"
@@ -46,9 +46,9 @@ value = "sam_smith"
 <testcase>
 <i>
 obj = {
-  "id"=> 1,
-  "user_name"=> "oliver_smith",
-  "name"=> "Oliver Smith",
+  id: 1,
+  user_name: "oliver_smith",
+  name: "Oliver Smith",
 }
 property = "name"
 value = "Sam Smith"
@@ -57,9 +57,9 @@ value = "Sam Smith"
 <testcase>
 <i>
 obj = {
-  "id"=> 1,
-  "user_name"=> "oliver_smith",
-  "name"=> "Oliver Smith",
+  id: 1,
+  user_name: "oliver_smith",
+  name: "Oliver Smith",
 }
 property = "address"
 value = "432 Street, Downtown"

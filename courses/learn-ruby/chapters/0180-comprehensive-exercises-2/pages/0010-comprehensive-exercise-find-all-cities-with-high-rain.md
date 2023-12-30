@@ -19,23 +19,23 @@ than 100 days.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 data = {
-  "Houston" => 104,
-  "Atlanta" => 113,
-  "Austin" => 88,
-  "Baltimore" => 116,
-  "Boston" => 126,
-  "Dallas" => 81
+  Houston: 104,
+  Atlanta: 113,
+  Austin: 88,
+  Baltimore: 116,
+  Boston: 126,
+  Dallas: 81
 }
 </code>
 
 <solution>
 data = {
-  "Houston" => 104,
-  "Atlanta" => 113,
-  "Austin" => 88,
-  "Baltimore" => 116,
-  "Boston" => 126,
-  "Dallas" => 81
+  Houston: 104,
+  Atlanta: 113,
+  Austin: 88,
+  Baltimore: 116,
+  Boston: 126,
+  Dallas: 81
 }
 
 rainy_cities = data.select do |city_name, value|

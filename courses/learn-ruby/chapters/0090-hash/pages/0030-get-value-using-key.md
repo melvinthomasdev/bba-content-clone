@@ -24,11 +24,11 @@ city for USA.
 
 <codeblock language="ruby" type="lesson">
 <code>
-hash =  { "USA" => "Washington D.C.",
-          "England" => "London",
-          "France" => "Paris" }
+hash =  { USA: "Washington D.C.",
+          England: "London",
+          France: "Paris" }
 
-puts hash["USA"]
+puts hash[:USA]
 </code>
 </codeblock>
 
@@ -42,10 +42,10 @@ the country "France":
 
 <codeblock language="ruby" type="lesson">
 <code>
-hash =  { "USA" => "Washington D.C.",
-          "England" => "London",
-          "France" => "Paris" }
+hash =  { USA: "Washington D.C.",
+          England: "London",
+          France: "Paris" }
 
-puts hash["France"]
+puts hash[:France]
 </code>
 </codeblock>

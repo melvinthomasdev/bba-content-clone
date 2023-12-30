@@ -15,8 +15,8 @@ end
 
 <solution>
 def macbook_users(users)
-  users.select { |user| user["device"].downcase.include? "macbook" }
-       .map { |user| user["name"]}.join(', ')
+  users.select { |user| user[:device].downcase.include? "macbook" }
+       .map { |user| user[:name]}.join(', ')
 end
 </solution>
 
@@ -28,24 +28,24 @@ print macbook_users(users)
 <i>
 users = [
   {
-    "name"=> "Amy",
-    "device"=> "MacBook",
+    name: "Amy",
+    device: "MacBook",
   },
   {
-    "name"=> "Jeff",
-    "device"=> "Asus Zenbook 14",
+    name: "Jeff",
+    device: "Asus Zenbook 14",
   },
   {
-    "name"=> "Alex",
-    "device"=> "MacBook",
+    name: "Alex",
+    device: "MacBook",
   },
   {
-    "name"=> "Rachel",
-    "device"=> "iMac",
+    name: "Rachel",
+    device: "iMac",
   },
   {
-    "name"=> "John",
-    "device"=> "MacBook",
+    name: "John",
+    device: "MacBook",
   }
 ]
 </i>
@@ -54,24 +54,24 @@ users = [
 <i>
 users = [
   {
-    "name"=> "Chuck",
-    "device"=> "Asus Zenbook 14",
+    name: "Chuck",
+    device: "Asus Zenbook 14",
   },
   {
-    "name"=> "Bandon",
-    "device"=> "MacBook",
-  },
-    {
-    "name"=> "Maria",
-    "device"=> "iMac",
+    name: "Bandon",
+    device: "MacBook",
   },
   {
-    "name"=> "Thomas",
-    "device"=> "MacBook",
+    name: "Maria",
+    device: "iMac",
   },
   {
-    "name"=> "Stuart",
-    "device"=> "MacBook",
+    name: "Thomas",
+    device: "MacBook",
+  },
+  {
+    name: "Stuart",
+    device: "MacBook",
   }
 ]
 </i>
@@ -80,24 +80,24 @@ users = [
 <i>
 users = [
   {
-    "name"=> "Lindsay",
-    "device"=> "MacBook Pro 13",
+    name: "Lindsay",
+    device: "MacBook Pro 13",
   },
   {
-    "name"=> "Peter",
-    "device"=> "MacBook",
-  },
-    {
-    "name"=> "Victoria",
-    "device"=> "MacBook Pro 15",
+    name: "Peter",
+    device: "MacBook",
   },
   {
-    "name"=> "Erica",
-    "device"=> "Dell",
+    name: "Victoria",
+    device: "MacBook Pro 15",
   },
   {
-    "name"=> "Clark",
-    "device"=> "macbook pro 13",
+    name: "Erica",
+    device: "Dell",
+  },
+  {
+    name: "Clark",
+    device: "macbook pro 13",
   }
 ]
 </i>

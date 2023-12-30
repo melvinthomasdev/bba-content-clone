@@ -3,7 +3,7 @@ being created like this:
 
 <codeblock language="ruby" type="lesson">
 <code>
-hash = { "name" => "John Smith" }
+hash = { name: "John Smith" }
 puts hash
 </code>
 </codeblock>
@@ -25,7 +25,7 @@ add key and value, as shown below:
 <codeblock language="ruby" type="lesson">
 <code>
 hash3 = Hash.new
-hash3 = hash3.merge({ "name" => "John Smith" })
+hash3 = hash3.merge({ name: "John Smith" })
 puts hash3
 </code>
 </codeblock>

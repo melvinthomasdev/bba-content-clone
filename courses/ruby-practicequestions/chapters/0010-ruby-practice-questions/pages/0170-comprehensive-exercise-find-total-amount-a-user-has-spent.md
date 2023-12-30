@@ -13,7 +13,7 @@ end
 
 <solution>
 def total_expense(expenses)
-  expenses.inject(0) { |sum, expense| sum + expense["amount"] }
+  expenses.inject(0) { |sum, expense| sum + expense[:amount] }
 end
 </solution>
 
@@ -25,24 +25,24 @@ puts total_expense(expenses)
 <i>
 expenses = [
   {
-    "spent_on"=> "Movie",
-    "amount"=> 500,
+    spent_on: "Movie",
+    amount: 500,
   },
   {
-    "spent_on"=> "Tram",
-    "amount"=> 200,
+    spent_on: "Tram",
+    amount: 200,
   },
   {
-    "spend_on"=> "Lunch",
-    "amount"=> 290,
+    spent_on: "Lunch",
+    amount: 290,
   },
   {
-    "spent_on"=> "Groceries",
-    "amount"=> 3290,
+    spent_on: "Groceries",
+    amount: 3290,
   },
   {
-    "spent_on"=> "Fashion",
-    "amount"=> 8290,
+    spent_on: "Fashion",
+    amount: 8290,
   },
 ]
 </i>
@@ -51,24 +51,24 @@ expenses = [
 <i>
 expenses = [
   {
-    "spent_on"=> "Train",
-    "amount"=> 300,
+    spent_on: "Train",
+    amount: 300,
   },
   {
-    "spent_on"=> "Vegetables",
-    "amount"=> 800,
+    spent_on: "Vegetables",
+    amount: 800,
   },
   {
-    "spent_on"=> "Dairy",
-    "amount"=> 300,
+    spent_on: "Dairy",
+    amount: 300,
   },
   {
-    "spent_on"=> "Stationary",
-    "amount"=> 1200,
+    spent_on: "Stationary",
+    amount: 1200,
   },
   {
-    "spent_on"=> "Fuel",
-    "amount"=> 3200,
+    spent_on: "Fuel",
+    amount: 3200,
   },
 ]
 </i>

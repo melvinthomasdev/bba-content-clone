@@ -4,8 +4,8 @@ So far we have been using `puts` in our methods.
 <code>
 class CapitalCityFinder
   def info(country)
-    data = { "France" => "Paris", "India" => "New Delhi", "England" => "London" }
-    city = data[country]
+    data = { France: "Paris", India: "New Delhi", England: "London" }
+    city = data[country.to_sym]
     puts "The capital of #{country} is #{city}"
   end
 end
@@ -24,8 +24,8 @@ returns the city and method `info` builds the message and prints the message.
 class CapitalCityFinder
 
   def get_capital_city(country)
-    data = { "France" => "Paris", "India" => "New Delhi", "England" => "London" }
-    city = data[country]
+    data = { France: "Paris", India: "New Delhi", England: "London" }
+    city = data[country.to_sym]
     return city
   end
 

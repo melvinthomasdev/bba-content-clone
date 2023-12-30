@@ -13,7 +13,7 @@ end
 
 <solution>
 def do_all_users_have_credit_card(users)
-  users.all? { |user| user["credit_card"] }
+  users.all? { |user| user[:credit_card] }
 end
 </solution>
 
@@ -25,66 +25,32 @@ puts do_all_users_have_credit_card(users)
 <i>
 users = [
   {
-    "name"=> "Amy",
-    "credit_card"=> true,
+    name: "Amy",
+    credit_card: true,
   },
   {
-    "name"=> "Bandon",
-    "credit_card"=> true,
+    name: "Bandon",
+    credit_card: true,
   },
   {
-    "name"=> "Maria",
-    "credit_card"=> true,
+    name: "Maria",
+    credit_card: true,
   },
   {
-    "name"=> "Rachel",
-    "credit_card"=> true,
+    name: "Rachel",
+    credit_card: true,
   },
   {
-    "name"=> "Chuck",
-    "credit_card"=> true,
+    name: "Chuck",
+    credit_card: true,
   },
   {
-    "name"=> "Peter",
-    "credit_card"=> true,
+    name: "Peter",
+    credit_card: true,
   },
   {
-    "name"=> "Thomas",
-    "credit_card"=> true,
-  },
-]
-</i>
-</testcase>
-<testcase>
-<i>
-users = [
-  {
-    "name"=> "Amy",
-    "credit_card"=> true,
-  },
-  {
-    "name"=> "Bandon",
-    "credit_card"=> true,
-  },
-  {
-    "name"=> "Maria",
-    "credit_card"=> true,
-  },
-  {
-    "name"=> "Rachel",
-    "credit_card"=> false,
-  },
-  {
-    "name"=> "Chuck",
-    "credit_card"=> true,
-  },
-  {
-    "name"=> "Peter",
-    "credit_card"=> false,
-  },
-  {
-    "name"=> "Thomas",
-    "credit_card"=> true,
+    name: "Thomas",
+    credit_card: true,
   },
 ]
 </i>
@@ -93,32 +59,66 @@ users = [
 <i>
 users = [
   {
-    "name"=> "Amy",
-    "credit_card"=> false,
+    name: "Amy",
+    credit_card: true,
   },
   {
-    "name"=> "Bandon",
-    "credit_card"=> false,
+    name: "Bandon",
+    credit_card: true,
   },
   {
-    "name"=> "Maria",
-    "credit_card"=> false,
+    name: "Maria",
+    credit_card: true,
   },
   {
-    "name"=> "Rachel",
-    "credit_card"=> false,
+    name: "Rachel",
+    credit_card: false,
   },
   {
-    "name"=> "Chuck",
-    "credit_card"=> false,
+    name: "Chuck",
+    credit_card: true,
   },
   {
-    "name"=> "Peter",
-    "credit_card"=> false,
+    name: "Peter",
+    credit_card: false,
   },
   {
-    "name"=> "Thomas",
-    "credit_card"=> false,
+    name: "Thomas",
+    credit_card: true,
+  },
+]
+</i>
+</testcase>
+<testcase>
+<i>
+users = [
+  {
+    name: "Amy",
+    credit_card: false,
+  },
+  {
+    name: "Bandon",
+    credit_card: false,
+  },
+  {
+    name: "Maria",
+    credit_card: false,
+  },
+  {
+    name: "Rachel",
+    credit_card: false,
+  },
+  {
+    name: "Chuck",
+    credit_card: false,
+  },
+  {
+    name: "Peter",
+    credit_card: false,
+  },
+  {
+    name: "Thomas",
+    credit_card: false,
   },
 ]
 </i>

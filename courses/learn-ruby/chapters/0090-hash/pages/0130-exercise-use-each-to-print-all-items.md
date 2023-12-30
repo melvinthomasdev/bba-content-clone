@@ -1,7 +1,7 @@
 In this exercise,
 using `each do`,
 print who is staying
-in which room number.
+in which room number. Here, you can use hash-rocket syntax because the newer syntax doesn't automatically convert integer keys to symbols. You can keep the keys as integers or strings.
 
 This is how the output should look:
 

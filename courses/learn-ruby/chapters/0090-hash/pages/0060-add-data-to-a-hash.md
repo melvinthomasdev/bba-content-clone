@@ -7,11 +7,11 @@ has a `!` at the end.
 
 <codeblock language="ruby" type="lesson">
 <code>
-hash =  { "USA" => "Washington D.C.",
-          "England" => "London",
-          "France" => "Paris" }
+hash =  { USA: "Washington D.C.",
+          England: "London",
+          France: "Paris" }
 
-hash.merge!({ "Italy" => "Rome"})
+hash.merge!({ Italy: "Rome"})
 
 puts hash
 </code>

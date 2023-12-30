@@ -13,8 +13,8 @@ end
 
 <solution>
 def cars_by_region(manufacturers, region)
-  manufacturers.select { |manufacturer| manufacturer["region"] == region }
-    .map { |manufacturer| manufacturer["cars"] }
+  manufacturers.select { |manufacturer| manufacturer[:region] == region }
+    .map { |manufacturer| manufacturer[:cars] }
 end
 </solution>
 
@@ -26,34 +26,34 @@ puts cars_by_region(manufacturers, region)
 <i>
 manufacturers = [
   {
-    "name"=> "Ford",
-    "region"=> "USA",
-    "cars"=> ["Fusion", "EcoSport", "Explorer", "Ranger", "Edge", "Escape"],
+    name: "Ford",
+    region: "USA",
+    cars: ["Fusion", "EcoSport", "Explorer", "Ranger", "Edge", "Escape"],
   },
   {
-    "name"=> "Suzuki",
-    "region"=> "Asia",
-    "cars"=> ["Carry Truck", "Carry Dump Truck", "Jimny", "Landy"],
+    name: "Suzuki",
+    region: "Asia",
+    cars: ["Carry Truck", "Carry Dump Truck", "Jimny", "Landy"],
   },
   {
-    "name"=> "PSA Peugeot-Citroen",
-    "region"=> "Europe",
-    "cars"=> ["Peugeot 504", "Citroen GS", "Citroen CX", "Simca 1307-08", "Simca Horizon"],
+    name: "PSA Peugeot-Citroen",
+    region: "Europe",
+    cars: ["Peugeot 504", "Citroen GS", "Citroen CX", "Simca 1307-08", "Simca Horizon"],
   },
   {
-    "name"=> "Fiat-Chrysler",
-    "region"=> "Europe",
-    "cars"=> ["Alfa Romeo", "Pacifica", "Fiat 500X", "Fiat Egea"],
+    name: "Fiat-Chrysler",
+    region: "Europe",
+    cars: ["Alfa Romeo", "Pacifica", "Fiat 500X", "Fiat Egea"],
   },
   {
-    "name"=> "Honda",
-    "region"=> "Asia",
-    "cars"=> ["Civic", "Clarity", "CRV", "Freed", "S660", "Shuttle", "Legend"],
+    name: "Honda",
+    region: "Asia",
+    cars: ["Civic", "Clarity", "CRV", "Freed", "S660", "Shuttle", "Legend"],
   },
   {
-    "name"=> "Jeep",
-    "region"=> "USA",
-    "cars"=> ["Waggoneer", "Wrangler", "Cherokee", "Compass", "Renegade", "Gladiator"],
+    name: "Jeep",
+    region: "USA",
+    cars: ["Waggoneer", "Wrangler", "Cherokee", "Compass", "Renegade", "Gladiator"],
   },
 ]
 region = "USA"
@@ -63,34 +63,34 @@ region = "USA"
 <i>
 manufacturers = [
   {
-    "name"=> "Ford",
-    "region"=> "USA",
-    "cars"=> ["Fusion", "EcoSport", "Explorer", "Ranger", "Edge", "Escape"],
+    name: "Ford",
+    region: "USA",
+    cars: ["Fusion", "EcoSport", "Explorer", "Ranger", "Edge", "Escape"],
   },
   {
-    "name"=> "Suzuki",
-    "region"=> "Asia",
-    "cars"=> ["Carry Truck", "Carry Dump Truck", "Jimny", "Landy"],
+    name: "Suzuki",
+    region: "Asia",
+    cars: ["Carry Truck", "Carry Dump Truck", "Jimny", "Landy"],
   },
   {
-    "name"=> "PSA Peugeot-Citroen",
-    "region"=> "Europe",
-    "cars"=> ["Peugeot 504", "Citroen GS", "Citroen CX", "Simca 1307-08", "Simca Horizon"],
+    name: "PSA Peugeot-Citroen",
+    region: "Europe",
+    cars: ["Peugeot 504", "Citroen GS", "Citroen CX", "Simca 1307-08", "Simca Horizon"],
   },
   {
-    "name"=> "Fiat-Chrysler",
-    "region"=> "Europe",
-    "cars"=> ["Alfa Romeo", "Pacifica", "Fiat 500X", "Fiat Egea"],
+    name: "Fiat-Chrysler",
+    region: "Europe",
+    cars: ["Alfa Romeo", "Pacifica", "Fiat 500X", "Fiat Egea"],
   },
   {
-    "name"=> "Honda",
-    "region"=> "Asia",
-    "cars"=> ["Civic", "Clarity", "CRV", "Freed", "S660", "Shuttle", "Legend"],
+    name: "Honda",
+    region: "Asia",
+    cars: ["Civic", "Clarity", "CRV", "Freed", "S660", "Shuttle", "Legend"],
   },
   {
-    "name"=> "Jeep",
-    "region"=> "USA",
-    "cars"=> ["Waggoneer", "Wrangler", "Cherokee", "Compass", "Renegade", "Gladiator"],
+    name: "Jeep",
+    region: "USA",
+    cars: ["Waggoneer", "Wrangler", "Cherokee", "Compass", "Renegade", "Gladiator"],
   },
 ]
 region = "Asia"
@@ -100,34 +100,34 @@ region = "Asia"
 <i>
 manufacturers = [
   {
-    "name"=> "Ford",
-    "region"=> "USA",
-    "cars"=> ["Fusion", "EcoSport", "Explorer", "Ranger", "Edge", "Escape"],
+    name: "Ford",
+    region: "USA",
+    cars: ["Fusion", "EcoSport", "Explorer", "Ranger", "Edge", "Escape"],
   },
   {
-    "name"=> "Suzuki",
-    "region"=> "Asia",
-    "cars"=> ["Carry Truck", "Carry Dump Truck", "Jimny", "Landy"],
+    name: "Suzuki",
+    region: "Asia",
+    cars: ["Carry Truck", "Carry Dump Truck", "Jimny", "Landy"],
   },
   {
-    "name"=> "PSA Peugeot-Citroen",
-    "region"=> "Europe",
-    "cars"=> ["Peugeot 504", "Citroen GS", "Citroen CX", "Simca 1307-08", "Simca Horizon"],
+    name: "PSA Peugeot-Citroen",
+    region: "Europe",
+    cars: ["Peugeot 504", "Citroen GS", "Citroen CX", "Simca 1307-08", "Simca Horizon"],
   },
   {
-    "name"=> "Fiat-Chrysler",
-    "region"=> "Europe",
-    "cars"=> ["Alfa Romeo", "Pacifica", "Fiat 500X", "Fiat Egea"],
+    name: "Fiat-Chrysler",
+    region: "Europe",
+    cars: ["Alfa Romeo", "Pacifica", "Fiat 500X", "Fiat Egea"],
   },
   {
-    "name"=> "Honda",
-    "region"=> "Asia",
-    "cars"=> ["Civic", "Clarity", "CRV", "Freed", "S660", "Shuttle", "Legend"],
+    name: "Honda",
+    region: "Asia",
+    cars: ["Civic", "Clarity", "CRV", "Freed", "S660", "Shuttle", "Legend"],
   },
   {
-    "name"=> "Jeep",
-    "region"=> "USA",
-    "cars"=> ["Waggoneer", "Wrangler", "Cherokee", "Compass", "Renegade", "Gladiator"],
+    name: "Jeep",
+    region: "USA",
+    cars: ["Waggoneer", "Wrangler", "Cherokee", "Compass", "Renegade", "Gladiator"],
   },
 ]
 region = "Europe"

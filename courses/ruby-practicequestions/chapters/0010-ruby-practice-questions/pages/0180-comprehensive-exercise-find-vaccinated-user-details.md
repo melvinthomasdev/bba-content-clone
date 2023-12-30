@@ -12,7 +12,7 @@ end
 
 <solution>
 def vaccinated_users(users)
-  users_detail = users.select { |user| user["vaccinated"] }.map { |user| user["name"] }
+  users_detail = users.select { |user| user[:vaccinated] }.map { |user| user[:name] }
 
   users_detail.join(', ')
 end
@@ -26,24 +26,24 @@ puts vaccinated_users(users)
 <i>
 users = [
   {
-    "name"=> "Sam",
-    "vaccinated"=> false,
+    name: "Sam",
+    vaccinated: false,
   },
   {
-    "name"=> "Ann",
-    "vaccinated"=> true,
+    name: "Ann",
+    vaccinated: true,
   },
   {
-    "name"=> "Oliver",
-    "vaccinated"=> true,
+    name: "Oliver",
+    vaccinated: true,
   },
   {
-    "name"=> "Smith",
-    "vaccinated"=> false,
+    name: "Smith",
+    vaccinated: false,
   },
   {
-    "name"=> "Sam Smith",
-    "vaccinated"=> true,
+    name: "Sam Smith",
+    vaccinated: true,
   }
 ]
 </i>
@@ -52,23 +52,23 @@ users = [
 <i>
 users = [
   {
-    "name"=> "Sam",
-    "vaccinated"=> false,
+    name: "Sam",
+    vaccinated: false,
   },
   {
-    "name"=> "Ann",
-    "vaccinated"=> true,
+    name: "Ann",
+    vaccinated: true,
   },
   {
-    "name"=> "Oliver",
-    "vaccinated"=> true,
+    name: "Oliver",
+    vaccinated: true,
   },
   {
-    "name"=> "Smith",
-    "vaccinated"=> false,
+    name: "Smith",
+    vaccinated: false,
   },
   {
-    "name"=> "Sam Smith"
+    name: "Sam Smith",
   }
 ]
 </i>

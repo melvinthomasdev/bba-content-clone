@@ -22,9 +22,9 @@ puts property_exists?(obj, property)
 <testcase>
 <i>
 obj = {
-  "id"=> 1,
-  "user_name"=> "oliver_smith",
-  "name"=> "Oliver Smith",
+  id: 1,
+  user_name: "oliver_smith",
+  name: "Oliver Smith",
 }
 property = "age"
 </i>
@@ -32,9 +32,9 @@ property = "age"
 <testcase>
 <i>
 obj = {
-  "id"=> 1,
-  "user_name"=> "oliver_smith",
-  "name"=> "Oliver Smith",
+  id: 1,
+  user_name: "oliver_smith",
+  name: "Oliver Smith",
 }
 property = "user_name"
 </i>
@@ -42,9 +42,9 @@ property = "user_name"
 <testcase>
 <i>
 obj = {
-  "id"=> 1,
-  "user_name"=> "oliver_smith",
-  "name"=> "Oliver Smith",
+  id: 1,
+  user_name: "oliver_smith",
+  name: "Oliver Smith",
 }
 property = "address"
 </i>
@@ -52,9 +52,9 @@ property = "address"
 <testcase>
 <i>
 obj = {
-  "id"=> 1,
-  "user_name"=> "oliver_smith",
-  "name"=> "Oliver Smith",
+  id: 1,
+  user_name: "oliver_smith",
+  name: "Oliver Smith",
 }
 property = "name"
 </i>

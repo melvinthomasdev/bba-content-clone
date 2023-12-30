@@ -4,11 +4,11 @@ Here is an example:
 
 <codeblock language="ruby" type="lesson">
 <code>
-hash =  { "USA" => "Washington D.C.",
-          "England" => "London",
-          "France" => "Paris" }
+hash =  { USA: "Washington D.C.",
+          England: "London",
+          France: "Paris" }
 
-hash["Italy"] = "Rome"
+hash[:Italy] = "Rome"
 
 puts hash
 </code>

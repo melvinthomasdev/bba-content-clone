@@ -11,7 +11,7 @@ end
 
 <solution>
 def phone_numbers(users)
-  users.map { |user| user["phone"] }.join(", ")
+  users.map { |user| user[:phone] }.join(", ")
 end
 </solution>
 
@@ -23,66 +23,66 @@ puts phone_numbers(users)
 <i>
 users = [
   {
-    "user"=> "Eric",
-    "phone"=> "202-555-0164",
+    user: "Eric",
+    phone: "202-555-0164",
   },
   {
-    "user"=> "Sam",
-    "phone"=> "202-555-0164",
+    user: "Sam",
+    phone: "202-555-0164",
   },
   {
-    "user"=> "John",
-    "phone"=> "202-555-0143",
+    user: "John",
+    phone: "202-555-0143",
   },
   {
-    "user"=> "Amy",
-    "phone"=> "202-555-0143",
+    user: "Amy",
+    phone: "202-555-0143",
   },
-]
+];
 </i>
 </testcase>
 <testcase>
 <i>
 users = [
   {
-    "user"=> "John",
-    "phone"=> "202-555-0198",
+    user: "John",
+    phone: "202-555-0198",
   },
   {
-    "user"=> "Maria",
-    "phone"=> "202-555-0152",
+    user: "Maria",
+    phone: "202-555-0152",
   },
   {
-    "user"=> "Bandon",
-    "phone"=> "202-555-0143",
+    user: "Bandon",
+    phone: "202-555-0143",
   },
   {
-    "user"=> "Rachel",
-    "phone"=> "202-555-0164",
+    user: "Rachel",
+    phone: "202-555-0164",
   },
-]
+];
 </i>
 </testcase>
 <testcase>
 <i>
 users = [
   {
-    "user"=> "John",
-    "phone"=> "202-555-0143",
+    user: "John",
+    phone: "202-555-0143",
   },
   {
-    "user"=> "Maria",
-    "phone"=> "202-555-0198",
+    user: "Maria",
+    phone: "202-555-0198",
   },
   {
-    "user"=> "Bandon",
-    "phone"=> "202-555-0164",
+    user: "Bandon",
+    phone: "202-555-0164",
   },
   {
-    "user"=> "Rachel",
-    "phone"=> "202-555-0143",
+    user: "Rachel",
+    phone: "202-555-0143",
   },
-]
+];
 </i>
 </testcase>
 </testcases>

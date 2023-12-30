@@ -15,19 +15,19 @@ the **B** grade.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
-students = {  "John" => "C",
-              "Sally" => "B",
-              "Adam" => "A",
-              "Nancy" => "C",
-              "Kelly" => "A" }
+students = {  John: "C",
+              Sally: "B",
+              Adam: "A",
+              Nancy: "C",
+              Kelly: "A" }
 </code>
 
 <solution>
-students = {  "John" => "C",
-              "Sally" => "B",
-              "Adam" => "A",
-              "Nancy" => "C",
-              "Kelly" => "A" }
+students = {  John: "C",
+              Sally: "B",
+              Adam: "A",
+              Nancy: "C",
+              Kelly: "A" }
 
 ab_students = students.reject do |key, value|
   value == "C"

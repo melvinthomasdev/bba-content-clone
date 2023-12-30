@@ -14,7 +14,7 @@ end
 
 <solution>
 def pincodes(list)
-  list.map { |user| user["pincode"] }.compact
+  list.map { |user| user[:pincode] }.compact
 end
 </solution>
 
@@ -26,16 +26,16 @@ puts pincodes(list)
 <i>
 list = [
   {
-    "user"=> 'Eric',
-    "pincode"=> '010',
+    user: "Eric",
+    pincode: "010",
   },
   {
-    "user"=> "Sam",
-    "pincode"=> "030",
+    user: "Sam",
+    pincode: "030",
   },
   {
-    "user"=> "John",
-    "pincode"=> "040"
+    user: "John",
+    pincode: "040"
   }
 ]
 </i>
@@ -44,16 +44,16 @@ list = [
 <i>
 list = [
   {
-    "user"=> 'Amy',
-    "pincode"=> '010',
+    user: "Amy",
+    pincode: "010",
   },
   {
-    "user"=> "Thomas",
-    "pincode"=> "042",
+    user: "Thomas",
+    pincode: "042",
   },
   {
-    "user"=> "John",
-    "pincode"=> nil
+    user: "John",
+    pincode: nil
   },
 ]
 </i>
@@ -62,15 +62,15 @@ list = [
 <i>
 list = [
   {
-    "user"=> 'Bandon',
-    "pincode"=> '010',
+    user: "Bandon",
+    pincode: "010",
   },
   {
-    "user"=> "Maria",
-    "pincode"=> "042",
+    user: "Maria",
+    pincode: "042",
   },
   {
-    "user"=> "Adrian",
+    user: "Adrian",
   },
 ]
 </i>

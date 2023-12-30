@@ -15,11 +15,11 @@ end
 def group_by_severity(issues)
   grouped_issues = {}
   issues.each do |issue|
-    severity = issue["severity"]
+    severity = issue[:severity]
     if grouped_issues.has_key? severity
-      grouped_issues[severity] << issue["assignee"]
+      grouped_issues[severity] << issue[:assignee]
     else
-      grouped_issues[severity] = [] << issue["assignee"]
+      grouped_issues[severity] = [] << issue[:assignee]
     end
   end
 
@@ -35,29 +35,29 @@ puts group_by_severity(issues)
 <i>
 issues = [
   {
-    "title"=> "View is not symmetric",
-    "severity"=> "low",
-    "assignee"=> "Eric",
+    title: "View is not symmetric",
+    severity: "low",
+    assignee: "Eric",
   },
   {
-    "title"=> "Title color is not as per design",
-    "severity"=> "medium",
-    "assignee"=> "John",
+    title: "Title color is not as per design",
+    severity: "medium",
+    assignee: "John",
   },
   {
-    "title"=> "Oliver is not able to login",
-    "severity"=> "high",
-    "assignee"=> "Eric",
+    title: "Oliver is not able to login",
+    severity: "high",
+    assignee: "Eric",
   },
   {
-    "title"=> "Submit button is disabled",
-    "severity"=> "high",
-    "assignee"=> "John",
+    title: "Submit button is disabled",
+    severity: "high",
+    assignee: "John",
   },
   {
-    "title"=> "Table content overflowing",
-    "severity"=> "medium",
-    "assignee"=> "John",
+    title: "Table content overflowing",
+    severity: "medium",
+    assignee: "John",
   }
 ]
 </i>

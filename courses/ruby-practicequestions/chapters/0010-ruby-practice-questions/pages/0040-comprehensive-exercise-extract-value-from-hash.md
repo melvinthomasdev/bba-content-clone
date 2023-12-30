@@ -11,7 +11,7 @@ end
 
 <solution>
 def property(obj, k)
-  obj[k]
+  obj[k.to_sym]
 end
 </solution>
 
@@ -22,8 +22,8 @@ puts property(obj, k)
 <testcase>
 <i>
 obj = {
-  "name" => "Oliver",
-  "hobby" => "Writing"
+  name: "Oliver",
+  hobby: "Writing"
 }
 k = "name"
 </i>
@@ -37,8 +37,8 @@ k = "name"
 <testcase>
 <i>
 obj = {
-  "name" => "Oliver",
-  "hobby" => "Writing"
+  name: "Oliver",
+  hobby: "Writing"
 }
 k = "profession"
 </i>
@@ -46,8 +46,8 @@ k = "profession"
 <testcase>
 <i>
 obj = {
-  "name" => "Oliver",
-  "hobby" => "Writing"
+  name: "Oliver",
+  hobby: "Writing"
 }
 k = 'hobby'
 </i>

@@ -4,9 +4,9 @@ keys from a hash.
 
 <codeblock language="ruby" type="lesson">
 <code>
-hash =  { "USA" => "Washington D.C.",
-          "England" => "London",
-          "France" => "Paris" }
+hash =  { USA: "Washington D.C.",
+          England: "London",
+          France: "Paris" }
 
 all_keys = hash.keys
 

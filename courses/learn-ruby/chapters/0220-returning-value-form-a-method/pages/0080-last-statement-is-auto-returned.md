@@ -41,8 +41,8 @@ Let's see one more example. We had seen following code earlier.
 class CapitalCityFinder
 
   def get_capital_city(country)
-    data = { "France" => "Paris", "India" => "New Delhi", "England" => "London" }
-    city = data[country]
+    data = { France: "Paris", India: "New Delhi", England: "London" }
+    city = data[country.to_sym]
     return city
   end
 
@@ -65,8 +65,8 @@ Let's not use `return` for the last line and then let's see what the result is.
 class CapitalCityFinder
 
   def get_capital_city(country)
-    data = { "France" => "Paris", "India" => "New Delhi", "England" => "London" }
-    data[country]
+    data = { France: "Paris", India: "New Delhi", England: "London" }
+    city = data[country.to_sym]
   end
 
   def info(country)

@@ -1,6 +1,4 @@
-In this exercise,
-create a hash using the
-details given below:
+In this exercise, create a hash using the details given below, and use the newer syntax unless specifically instructed to use the hash-rocket syntax.
 
 |Key       |Value|
 |--|--|
@@ -23,9 +21,9 @@ puts hash
 
 <solution>
 hash = {
-  "first_name" => "John",
-  "last_name" => "Smith",
-  "age" => 25
+  first_name: "John",
+  last_name: "Smith",
+  age: 25
 }
 
 puts hash

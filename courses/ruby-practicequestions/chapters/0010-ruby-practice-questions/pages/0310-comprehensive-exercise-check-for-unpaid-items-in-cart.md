@@ -12,7 +12,7 @@ end
 
 <solution>
 def check_cart(cart)
-  cart.any? { |item| item["paymentStatus"] == false }
+  cart.any? { |item| item[:paymentStatus] == false }
 end
 </solution>
 
@@ -24,42 +24,20 @@ puts check_cart(cart)
 <i>
 cart = [
   {
-    "item"=> "Snacks",
-    "paymentStatus"=> false,
+    item: "Snacks",
+    paymentStatus: false,
   },
   {
-    "item"=> "Pen",
-    "paymentStatus"=> false,
+    item: "Pen",
+    paymentStatus: false,
   },
   {
-    "item"=> "Books",
-    "paymentStatus"=> true,
+    item: "Books",
+    paymentStatus: true,
   },
   {
-    "item"=> "Notepad",
-    "paymentStatus"=> true,
-  },
-];
-</i>
-</testcase>
-<testcase>
-<i>
-cart = [
-  {
-    "item"=> "Rice",
-    "paymentStatus"=> false,
-  },
-  {
-    "item"=> "Pasta",
-    "paymentStatus"=> true,
-  },
-  {
-    "item"=> "Flour",
-    "paymentStatus"=> true,
-  },
-  {
-    "item"=> "Cheese",
-    "paymentStatus"=> false,
+    item: "Notepad",
+    paymentStatus: true,
   },
 ];
 </i>
@@ -68,20 +46,42 @@ cart = [
 <i>
 cart = [
   {
-    "item"=> "Juice",
-    "paymentStatus"=> true,
+    item: "Rice",
+    paymentStatus: false,
   },
   {
-    "item"=> "Coffe Beans",
-    "paymentStatus"=> true,
+    item: "Pasta",
+    paymentStatus: true,
   },
   {
-    "item"=> "Sugar",
-    "paymentStatus"=> true,
+    item: "Flour",
+    paymentStatus: true,
   },
   {
-    "item"=> "Milk",
-    "paymentStatus"=> true,
+    item: "Cheese",
+    paymentStatus: false,
+  },
+];
+</i>
+</testcase>
+<testcase>
+<i>
+cart = [
+  {
+    item: "Juice",
+    paymentStatus: true,
+  },
+  {
+    item: "Coffee Beans",
+    paymentStatus: true,
+  },
+  {
+    item: "Sugar",
+    paymentStatus: true,
+  },
+  {
+    item: "Milk",
+    paymentStatus: true,
   },
 ];
 </i>

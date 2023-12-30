@@ -11,7 +11,7 @@ end
 
 <solution>
 def get_property(object, property)
-  object[property] || "Not found"
+  object[property.to_sym] || "Not found"
 end
 </solution>
 
@@ -22,9 +22,9 @@ puts get_property(obj, property)
 <testcase>
 <i>
 obj = {
-  "name"=> "Oliver",
-  "age"=> 28,
-  "address"=> "Main Street, New York, NY 10030",
+  name: "Oliver",
+  age: 28,
+  address: "Main Street, New York, NY 10030",
 }
 property = "name"
 </i>
@@ -32,9 +32,9 @@ property = "name"
 <testcase>
 <i>
 obj = {
-  "name"=> "Oliver",
-  "age"=> 28,
-  "address"=> "Main Street, New York, NY 10030",
+  name: "Oliver",
+  age: 28,
+  address: "Main Street, New York, NY 10030",
 }
 property = "age"
 </i>
@@ -42,9 +42,9 @@ property = "age"
 <testcase>
 <i>
 obj = {
-  "name"=> "Oliver",
-  "age"=> 28,
-  "address"=> "Main Street, New York, NY 10030",
+  name: "Oliver",
+  age: 28,
+  address: "Main Street, New York, NY 10030",
 }
 property = "phone"
 </i>
@@ -52,9 +52,9 @@ property = "phone"
 <testcase>
 <i>
 obj = {
-  "name"=> "Oliver",
-  "age"=> 28,
-  "address"=> "Main Street, New York, NY 10030",
+  name: "Oliver",
+  age: 28,
+  address: "Main Street, New York, NY 10030",
 }
 property = "id"
 </i>
@@ -62,9 +62,9 @@ property = "id"
 <testcase>
 <i>
 obj = {
-  "name"=> "Oliver",
-  "age"=> 28,
-  "address"=> "Main Street, New York, NY 10030",
+  name: "Oliver",
+  age: 28,
+  address: "Main Street, New York, NY 10030",
 }
 property = "address"
 </i>
