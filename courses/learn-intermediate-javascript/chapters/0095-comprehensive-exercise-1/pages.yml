@@ -4,13 +4,7 @@
   page_type: lesson
 - title: Challenge - Even Number Array
   slug: challenge-even-number-array-js
-  page_type: assessment
-- title: Challenge - List of Songs
-  slug: challenge-list-of-songs-js
-  page_type: assessment
+  page_type: assessment  
 - title: Challenge - Array of Numbers
   slug: challenge-array-of-numbers-js
-  page_type: assessment
-- title: ComprehensiveExercise - Biggest Difference
-  slug: challenge-biggest-difference-js
   page_type: assessment

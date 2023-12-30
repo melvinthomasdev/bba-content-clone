@@ -1,6 +1,16 @@
 ---
 - name: Getting Started
   slug: getting-started
+- name: String Methods
+  slug: string-methods
+- name: Comprehensive Exercise 1
+  slug: comprehensive-exercise-1
+- name: Math Object
+  slug: math-object
+- name: Number Methods
+  slug: number-methods
+- name: Comprehensive Exercise 2
+  slug: comprehensive-exercise-2  
 - name: this on Objects
   slug: this-on-objects
 - name: Closure
@@ -15,15 +25,5 @@
   slug: copying-objects
 - name: Debugging in JavaScript
   slug: debugging-in-javascript
-- name: String Methods
-  slug: string-methods
-- name: Comprehensive Exercise 1
-  slug: comprehensive-exercise-1
-- name: Math Object
-  slug: math-object
-- name: Number Methods
-  slug: number-methods
-- name: Comprehensive Exercise 2
-  slug: comprehensive-exercise-2
 - name: Mutation
   slug: mutation
