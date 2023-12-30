@@ -20,7 +20,7 @@ The variable `name` is assigned
 the value `"Adam Smith"`.
 Since the `user` object
 does not have an `email` property,
-the `email` variable is `undefiend`.
+the `email` variable is `undefined`.
 That is why we get `"undefined"`
 in the output.
 

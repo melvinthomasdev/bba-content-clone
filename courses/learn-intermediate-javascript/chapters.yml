@@ -19,3 +19,15 @@
   slug: local-and-session-storage
 - name: Comprehensive Exercises
   slug: comprehensive-exercises
+- name: JavaScript Object Notation
+  slug: javascript-object-notation
+- name: Array Destructuring
+  slug: array-destructuring
+- name: Object Destructuring
+  slug: object-destructuring
+- name: Optional Chaining
+  slug: optional-chaining
+- name: Asynchronous Code
+  slug: asynchronous-code
+- name: Promises
+  slug: promises

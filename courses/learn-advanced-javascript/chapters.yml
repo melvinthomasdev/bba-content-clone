@@ -5,26 +5,14 @@
   slug: this-on-objects
 - name: Closure
   slug: closure
-- name: JavaScript Object Notation
-  slug: javascript-object-notation
 - name: Map
   slug: map
 - name: Set
   slug: set
-- name: Array Destructuring
-  slug: array-destructuring
-- name: Object Destructuring
-  slug: object-destructuring
 - name: Error Handling
   slug: error-handling
 - name: Copying Objects
   slug: copying-objects
-- name: Optional Chaining
-  slug: optional-chaining
-- name: Asynchronous Code
-  slug: asynchronous-code
-- name: Promises
-  slug: promises
 - name: Debugging in JavaScript
   slug: debugging-in-javascript
 - name: String Methods
