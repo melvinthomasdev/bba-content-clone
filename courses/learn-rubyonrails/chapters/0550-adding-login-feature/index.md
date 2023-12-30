@@ -248,7 +248,52 @@ view template associated with the `create` action.
 A guard clause is a conditional check that immediately exits the function or
 method, either with a return statement or an exception.
 
-In our code, `unless` statement is the guard clause since it will exit the
+## When not to use guard clause
+
+Guard clauses are incredibly useful for making code clearer and avoiding deep nesting by handling edge cases or invalid conditions up front.
+
+However, they are not always the best choice, particularly in situations that involve complex logic or several linked conditions, where using guard clauses can make the code harder to follow.
+
+For instance, consider a scenario where we need to update the user's city.
+
+```ruby
+def update_user_city
+  new_city_id = params[:new_city_id]
+  unless new_city_id.present?
+    respond_with_error("Please provide a new city.") and return
+  end
+
+  new_city = City.find(new_city_id)
+  if new_city.nil?
+    respond_with_error("City not found.", :not_found) and return
+  end
+
+   # Update the user's city
+end
+```
+
+In the case above, readability is somewhat reduced. An `if-else` structure might be a better choice here:
+
+```ruby
+def update_user_city
+  new_city_id = params[:new_city_id]
+
+  if new_city_id.present?
+    new_city = City.find(new_city_id)
+    if new_city
+      # Update the user's city
+    else
+      respond_with_error("City not found.", :not_found)
+    end
+  else
+    respond_with_error("Please provide a new city.")
+  end
+end
+```
+
+Another case where guard clauses aren't ideal is when multiple actions in a Rails controller share common requirements. Here, using callbacks such as `before_action` is more efficient, helping to keep the code DRY and organized by centralizing preconditions and avoiding repetitive guard clauses across actions.
+
+But in our code, `unless` statement is the guard clause since it will exit the
 `create` method returning a JSON response and status if the condition inside
 `unless` statement holds `false`.
 
