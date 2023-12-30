@@ -5,4 +5,4 @@ to test!
 
 <image>html-movie-project.gif</image>
 
-Visit the [Basic HTML Project Page](https://courses.bigbinaryacademy.com/projects/movie-details/) to read more and start building.
+Visit the [Movie Details Project Page](https://courses.bigbinaryacademy.com/projects/movie-details/) to read more and start building.

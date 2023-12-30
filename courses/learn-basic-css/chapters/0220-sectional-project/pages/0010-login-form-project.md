@@ -5,6 +5,4 @@ to test!
 
 <image>css-sectional-project-login-form.webp</image>
 
-
-
-Visit the [Basic CSS Project Page](https://courses.bigbinaryacademy.com/projects/login-form/) to read more and start building.
+Visit the [Login Form Project Page](https://courses.bigbinaryacademy.com/projects/login-form/) to read more and start building.
