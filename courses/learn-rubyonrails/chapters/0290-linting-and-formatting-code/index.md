@@ -76,12 +76,13 @@ be manually corrected.
 Moving forward, we won't be running these commands. Rather we will use git hooks
 to run these commands for us on modified files.
 
-## Setup pre-commit Git hook
+## Setup Git hooks
 
-A pre-commit Git hook can re-format the files that are marked as "staged" by
-`git add` command before you commit.
+Git hooks are scripts that run automatically every time a particular event occurs in a Git repository.
 
-In BigBinary, no PR should be made without running the pre-commit hook. Or more
+A **pre-commit** Git hook can reformat the files marked as 'staged' by the `git add` command before you commit. The **pre-push** hook runs before changes are pushed to a remote repository using `git push`, allowing you to run scripts or tests to ensure code quality and prevent problematic pushes. Meanwhile, the **post-merge** hook executes after a successful merge, enabling you to perform cleanup, notifications, or other tasks to maintain an up-to-date codebase.
+
+In BigBinary, no PR should be made without running the pre-commit or the pre-push hook. Or more
 subtly saying, please don't bypass the Git hooks.
 
 First, let's add the `erb-lint` gem to our `Gemfile`:
@@ -164,11 +165,36 @@ cat << 'EOF' > .husky/pre-commit
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 . "$(dirname "$0")/helpers/lint_staged.sh"
+. "$(dirname "$0")/helpers/prevent_pushing_to_main.sh"
+. "$(dirname "$0")/helpers/prevent_conflict_markers.sh"
 
+prevent_pushing_to_main
+prevent_conflict_markers
 lint_staged_files
 EOF
 chmod a+x .husky/pre-commit
 curl --create-dirs -o ".husky/helpers/lint_staged.sh" "https://raw.githubusercontent.com/bigbinary/wheel/main/.husky/helpers/lint_staged.sh"
+curl --create-dirs -o ".husky/helpers/prevent_pushing_to_main.sh" "https://raw.githubusercontent.com/bigbinary/wheel/main/.husky/helpers/prevent_pushing_to_main.sh"
+curl --create-dirs -o ".husky/helpers/prevent_conflict_markers.sh" "https://raw.githubusercontent.com/bigbinary/wheel/main/.husky/helpers/prevent_conflict_markers.sh"
+
+cat << 'EOF' > .husky/pre-push
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/helpers/prevent_pushing_to_main.sh"
+
+prevent_pushing_to_main
+EOF
+chmod a+x .husky/pre-push
+
+cat << 'EOF' > .husky/post-merge
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/helpers/run_install_commands.sh"
+
+run_install_commands
+EOF
+chmod a+x .husky/post-merge
+curl --create-dirs -o ".husky/helpers/run_install_commands.sh" "https://raw.githubusercontent.com/bigbinary/wheel/main/.husky/helpers/run_install_commands.sh"
 ```
 
 In the following sections, we will set up the tools which our hooks depend upon.
