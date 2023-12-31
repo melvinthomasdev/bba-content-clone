@@ -10,13 +10,15 @@ URL or parameters sent as a part of HTTP POST requests. Regardless of its
 origin, we can readily access these parameters in the Rails controller using
 `params`.
 
+### Handling query string parameters
+
 Let us see two cases where query string parameters are used with `params`.
 
 In the first scenario, assume that you have a search page that allows users to
 filter results by keyword and category. The URL might look something like
 `http://example.com/search?keyword=laptops&category=electronics`. In this
 example, the query string parameters are `keyword` and `category`. We can
-access these parameters in your controller like this:
+access these parameters in our controller like this:
 
 ```rb
 def search
@@ -37,7 +39,7 @@ resources :articles, only: %i[show]
 This route will create a URL pattern like `/articles/:id`, where `:id` is a
 dynamic segment that represents the ID of the article.
 
-In our articles controller, you can access the `:id` parameter like this:
+In our articles controller, we can access the `:id` parameter like this:
 
 ```rb
 def show
@@ -45,11 +47,13 @@ def show
 end
 ```
 
-Now let's see an example where we can use `params` to access parameters that
+### Handling parameters send via POST request
+
+Let's see an example where we can use `params` to access parameters that
 are passed in through a POST request.
 
-Suppose you have a form that includes a text field for the user's name and a
-submit button. When the form is submitted, the following parameters might be
+Suppose we have a form that includes a text field for the user's name and a
+submit button. When the form is submitted, the following parameters is
 passed in the request:
 
 ```rb
@@ -78,7 +82,7 @@ def create
 end
 ```
 
-## Require and Permit
+## require and permit in params
 
 `params` looks like a hash.
 And it does behave like a hash.
