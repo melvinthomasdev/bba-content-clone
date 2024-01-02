@@ -1,8 +1,4 @@
-Regardless of the selector we use,
-we are ultimately selecting the
-same element.
-
-Let's have a look at an example:
+There are many ways to select an element.
 
 <codeblock language="css" type="lesson">
 <code>
@@ -51,7 +47,7 @@ to change the background colour.
 
 Finally, we used the `#para` id selector
 and
-changed the colour of the text. 
+changed the colour of the text.
 
 As can be seen, we can select an element
 using any type of a selector.

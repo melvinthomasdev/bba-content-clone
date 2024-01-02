@@ -1,4 +1,5 @@
-Set the `font-size` of the paragraphs with class name **large** to `24px` using class selector.
+Use class selector and find all paragraphs with class name **large**.
+Then set the `font-size` of the selected paragraphs to `24px`.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>

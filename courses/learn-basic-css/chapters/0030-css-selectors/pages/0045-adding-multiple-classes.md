@@ -1,9 +1,8 @@
 We can add multiple classes to an element.
-For this, we simply add the classes,
+For this, we need to add the classes,
 separated by spaces,
 as the value of the `class` attribute.
 
-Let's look at an example:
 <codeblock language="html" type="lesson">
 <code>
 <panel language="html">

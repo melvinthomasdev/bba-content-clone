@@ -1,6 +1,6 @@
 In the given CSS code,
 change the ***property*** to `background-color`
-and the ***value*** to `lightgray`:
+and the ***value*** to `lightgray`.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>

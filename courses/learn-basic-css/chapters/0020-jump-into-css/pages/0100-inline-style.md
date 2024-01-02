@@ -5,7 +5,6 @@ values directly on the
 HTML element using the
 style attribute.
 
-Let's take a look at an example:
 <codeblock language="html" type="lesson">
   <code>
     <h1 style="color:white; background-color: blue; font-size:14px; font-family:arial,sans-serif">
