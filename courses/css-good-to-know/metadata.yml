@@ -1,0 +1,17 @@
+---
+name: CSS Good to Know
+subheading: Some concepts in CSS that are not commonly used but are good to
+  know
+slug: css-good-to-know
+published: true
+custom_data:
+  type: css
+  courseType: lesson
+  upcoming: false
+  newCourse: false
+  courseColor: border-gray-600
+home_logo: css.svg
+logo: css-header-image.png
+chapter_completion_image: celebration_css.gif
+position: 110
+published: false
