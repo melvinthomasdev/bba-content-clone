@@ -9,8 +9,9 @@ instead of **blue**.
 in the default font color of **lightgray**.
 - The text inside the `<p>` element with
 the class `info` should be **blue**.
-- The `<h2>` element inside the `<div>`
-should not have **bold** font weight.
+- The text inside the element with
+the class `highlight` should
+have a **bold** font weight.
 
 Also fix all other issues in the code.
 <codeblock language="css" type="exercise" testMode="fixedInput">
@@ -35,10 +36,6 @@ h1 {
 
 p {
   color: green;
-}
-
-.highlight {
-  font-weight: bold;
 }
 </panel>
 </code>
