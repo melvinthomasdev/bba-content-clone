@@ -68,3 +68,6 @@
 - slug: waiting-for-api-responses
   name: Waiting for API responses
   has_pages: false
+- slug: tips-and-tricks
+  name: Tips and tricks
+  has_pages: false

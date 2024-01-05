@@ -394,7 +394,8 @@ that even people unfamiliar with Playwright can read.
 test("should be able to place an order", ({ page, loginPage, ordersPage }) => {
   await test.step("Step 1: Login to the application", loginPage.loginViaUI);
   await test.step("Step 2: Create new order", () =>
-    ordersPage.createOrders({ item: "Smartphone" }));
+    ordersPage.createOrders({ item: "Smartphone" })
+  );
   await test.step("Step 3: Assert a new order was created", async () => {
     const orders = page.getByTestId("order");
     await expect(orders).toHaveCount(1);
@@ -470,3 +471,177 @@ change occurs, asserting without i18n will cause the tests to
 fail requiring intervention from the automation team whereas
 the second approach using i18n will take this change into
 account automatically.
+
+### 5. Avoid redundant awaits when nesting async methods
+
+Consider you have an asynchronous POM method called `createNewUser` in the `userPage` fixture which creates a new user. This can be called likewise.
+
+```ts
+test("should create new user", async ({ page, userPage }) => {
+  await userPage.createNewUser();
+  await expect(page.getByTestId("user-profile-icon")).toBeVisible();
+});
+```
+
+We have already learned that we should add the proper steps to describe what each action is doing. So we can refactor the code with the proper step blocks.
+
+```ts
+test("should create new user", async ({ page, userPage }) => {
+  await test.step("Step 1: Create new user", async () => {
+    await userPage.createNewUser();
+  });
+  await test.step("Step 2: Assert profile icon to be visible", async () => {
+    await expect(page.getByTestId("user-profile-icon")).toBeVisible();
+  });
+});
+```
+
+**The above code demonstrates redundant awaits and is incorrect.**
+
+Let's see how we can write some of the commonly found blocks without redundant awaits.
+
+```ts
+// Incorrect
+
+test("should create new user", async ({ page, userPage }) => {
+  await test.step("Step 1: Create new user", async () => {
+    await userPage.createNewUser();
+  });
+});
+
+// Correct
+test("should create new user", async ({ page, userPage }) => {
+  await test.step("Step 1: Create new user", userPage.createNewUser);
+});
+```
+
+```ts
+// Incorrect
+
+test("should create new user", async ({ page, userPage }) => {
+  await test.step("Step 1: Create new user", async () => {
+    await userPage.createNewUser({ name: "Oliver Smith" });
+  });
+});
+
+// Correct
+test("should create new user", async ({ page, userPage }) => {
+  await test.step("Step 1: Create new user", () =>
+    userPage.createNewUser({ name: "Oliver Smith" })
+  );
+});
+```
+
+```ts
+// Correct
+
+test("should create new user", async ({ page, userPage }) => {
+  await test.step("Step 1: Create new user", async () => {
+    await userPage.createNewUser({ name: "Oliver Smith" });
+    await expect(page.getByTestId("user-profile-icon")).toBeVisible();
+  });
+});
+```
+
+### 6. Avoid adding sensitive data into git tracked env files
+
+In BigBinary, we deal with a lot of automation tests involving
+integrations and logins. For these tests we need access to sensitive
+information such as API keys and login credentials which should not be
+git tracked files. In such cases we should add them as environment
+variables. These environment variables should not be added in any git
+tracked files because checking in these secrets in a git repository
+defeats the purpose of it being a secret.
+
+Instead we should add these variables as the environment variables in
+the CI environment ([neetoCI](https://www.neeto.com/neetoci) in our
+case). This will make sure that these secrets are visible only to the
+people with proper permissions.
+
+In the development environment have made an additional configuration
+to merge all the env variables with the variables defined in the
+`.env.local` file. This file is not tracked by git in any of the neeto
+products and we can add any sensitive information we need to add for
+local testing in this file.
+
+### 7. Avoid destructuring fixtures in tests
+
+Consider a case where we have a POM fixture call `loginPage` and it
+has the method `loginNewUser()` to login a new user. When writing the
+test we might have the tendency to do something like this.
+
+```ts
+// Incorrect
+
+test("should login a new user", async ({
+  page,
+  loginPage: { loginNewUser },
+}) => {
+  await test.step("Step 1: Login new user", loginNewUser);
+  await test.step(
+    "Step 2: Assert that user has logged in",
+    expect(page.getByTestId("user-profile-icon")).toBeVisible
+  );
+});
+```
+
+While this seems perfectly fine for a small test such the one shown
+above, this becomes too complicated too fast due to the following
+reasons.
+
+- In larger tests we will have to depend on multiple fixtures for
+   multiple methods. This will drastically increase the amount of methods
+   we destructure in the test definition to the point where it becomes
+   unreadable.
+
+- When dealing with multiple fixtures, there might be a chance that
+   there are methods with the same name defined in them. For example
+   consider that there are two fixtures for `ordersPage` and
+   `productsPage` and both of them have the same method
+   `searchAndVerifyItem`. To avoid a conflict we will have to destructure
+   the methods using property assignment and the test definition will be
+   filled with destructuring logic.
+
+```ts
+test("should create a new order", async ({
+  productsPage: { searchAndVerifyItem: searchAndVerifyProduct },
+  ordersPage: { searchAndVerifyItem: searchAndVerifyOrders },
+}) => {});
+```
+
+- One of the main reasons to avoid destructing is readability and
+   context. Using the fixture method without destructing gives the person
+   reading the test a better idea about the page in which each operation
+   is taking place. This is much more important when dealing with
+   multi-page tests since its vital to keep track of which page each the
+   operations are taking place especially in bigger specs.
+
+```ts
+// Incorrect
+
+test("should login a new user", async ({
+  productsPage: { searchAndVerifyItem },
+  ordersPage: { createNewItem },
+}) => {
+  await searchAndVerifyItem();
+  await createNewItem();
+  /*
+   * Here the person reading the code has to go through the test
+   * definition to understand whether the searchAndVerifyItem() method
+   * is being done for the products or for the orders.
+   */
+});
+
+// Correct
+
+test("should login a new user", async ({ productsPage, ordersPage }) => {
+  await productsPage.searchAndVerifyItem();
+  await ordersPage.createNewItem();
+  /*
+   * Here the person reading the code has clear understanding that
+   * the searchAndVerifyItem() method is being executed for the
+   * products page and the createNewItem() method is being executed
+   * for the orders page.
+   */
+});
+```
