@@ -1,50 +1,47 @@
 ---
-- title: ComprehensiveExercise - Return sum of first and last element of array
+- title: ComprehensiveExercise - Find Sum of First and Last Elements of an Array
   slug: comprehensive-exercise-sum-first-last-array
   page_type: assessment
-- title: ComprehensiveExercise - Get full name
+- title: ComprehensiveExercise - Get Full Name
   slug: comprehensive-exercise-get-full-name
   page_type: assessment
-- title: ComprehensiveExercise - Add two numbers
+- title: ComprehensiveExercise - Add Two Numbers
   slug: comprehensive-exercise-add-two-numbers
   page_type: assessment
-- title: ComprehensiveExercise - Check whether the number is NaN
-  slug: comprehensive-exercise-check-whether-number-is-nan
+- title: ComprehensiveExercise - Check the Numbers and Add
+  slug: comprehensive-exercise-check-the-numbers-and-add
   page_type: assessment
-- title: ComprehensiveExercise - Check whether the number is divisible by 6
+- title: ComprehensiveExercise - Check Whether the Number is Divisible by 6
   slug: comprehensive-exercise-check-whether-number-is-divisible-by-6
   page_type: assessment
-- title: ComprehensiveExercise - Extract given property from given object
-  slug: comprehensive-exercise-extract-property-from-given-object
+- title: ComprehensiveExercise - Get a Property From an Object
+  slug: comprehensive-exercise-get-property-from-object
   page_type: assessment
-- title: ComprehensiveExercise - Check whether the property exist in the object
-  slug: comprehensive-exercise-check-whether-the-property-exist-in-object
-  page_type: assessment
-- title: ComprehensiveExercise - Assign non-empty value to Object key
+- title: ComprehensiveExercise - Assign Non-Empty Value to Object Key
   slug: comprehensive-exercise-assign-value-to-key-if-empty
   page_type: assessment
-- title: ComprehensiveExercise - Find the sum of all odd numbers until n
+- title: ComprehensiveExercise - Find the Sum of all Odd Numbers Until n
   slug: comprehensive-exercise-find-the-sum-of-all-odd-numbers-until-n
   page_type: assessment
 - title: ComprehensiveExercise - Increment And Add
   slug: comprehensive-exercise-increment-and-add
   page_type: assessment
-- title: ComprehensiveExercise - Create an empty array with length > 0
+- title: ComprehensiveExercise - Create an Empty Array With Length > 0
   slug: comprehensive-exercise-empty-array-with-length-greater-than-0
   page_type: assessment
 - title: ComprehensiveExercise - Adding Suffixes
   slug: comprehensive-exercise-adding-suffixes
   page_type: assessment
-- title: ComprehensiveExercise - Split an Array into Odd and Even Chunks
+- title: ComprehensiveExercise - Split an Array Into Odd and Even Chunks
   slug: comprehensive-exercise-split-an-array-into-odd-and-even-chunks
   page_type: assessment
-- title: ComprehensiveExercise - Join strings separated by a space
+- title: ComprehensiveExercise - Join Strings Separated by a Space
   slug: comprehensive-exercise-join-strings-separated-by-a-space
   page_type: assessment
-- title: ComprehensiveExercise - Increment a number and divide it
+- title: ComprehensiveExercise - Increment a Number and Divide It
   slug: comprehensive-exercise-increment-a-number-and-divide-it
   page_type: assessment
-- title: ComprehensiveExercise - Get remainder and check equality
+- title: ComprehensiveExercise - Get Remainder and Check Equality
   slug: comprehensive-exercise-get-remainder-and-check-equality
   page_type: assessment
 - title: ComprehensiveExercise - Use Template Strings
@@ -59,7 +56,7 @@
 - title: ComprehensiveExercise - Add, Update and Read Array Elements
   slug: comprehensive-exercise-add-update-and-read-array-elements
   page_type: assessment
-- title: ComprehensiveExercise - Add property to object
+- title: ComprehensiveExercise - Add Property to Object
   slug: comprehensive-exercise-add-property-to-object
   page_type: assessment
 - title: ComprehensiveExercise - Add and Show Object Property

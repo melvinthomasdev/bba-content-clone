@@ -1,8 +1,8 @@
-Declare a function `getProperty` to
+The function `getProperty` should
 extract the given property
 from a given object.
 If the given property is not present,
-return the string `Not found`.
+return the string **Not found**.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>

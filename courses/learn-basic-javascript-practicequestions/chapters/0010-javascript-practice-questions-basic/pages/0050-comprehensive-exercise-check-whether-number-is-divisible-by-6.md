@@ -1,5 +1,5 @@
-Declare a function `isDivisible`
-to determine whether
+The function `isDivisible`
+should determine whether
 the given number
 is divisible by `6` or not.
 

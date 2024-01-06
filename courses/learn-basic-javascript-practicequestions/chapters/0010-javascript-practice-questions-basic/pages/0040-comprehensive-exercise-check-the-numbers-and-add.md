@@ -1,8 +1,8 @@
-Declare a function `add`
-to return the sum of
+The function `add`
+should return the sum of
 the given two numbers.
 If one or
-both the inputs are **not** of the type number,
+both of the inputs are **not** valid numbers,
 return the string `Invalid Input`.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">

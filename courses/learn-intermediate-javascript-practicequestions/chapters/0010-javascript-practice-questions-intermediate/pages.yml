@@ -44,6 +44,9 @@
 - title: ComprehensiveExercise - Get number of days in a month
   slug: comprehensive-exercise-get-number-of-days-in-month
   page_type: assessment
+- title: ComprehensiveExercise - Check If the Property Exists in the Object
+  slug: comprehensive-exercise-check-if-the-property-exist-in-object
+  page_type: assessment
 - title: ComprehensiveExercise - Find the best bowling average
   slug: comprehensive-exercise-find-the-best-bowling-average
   page_type: assessment

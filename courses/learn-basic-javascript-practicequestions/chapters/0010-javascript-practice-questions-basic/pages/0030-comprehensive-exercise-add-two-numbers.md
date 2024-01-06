@@ -1,5 +1,5 @@
-Declare a function `add`
-to return the sum of
+The function `add`
+should return the sum of
 the given two numbers.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">

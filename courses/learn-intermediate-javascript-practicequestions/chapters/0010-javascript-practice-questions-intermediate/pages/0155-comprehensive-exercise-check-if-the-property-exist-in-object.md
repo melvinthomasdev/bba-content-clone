@@ -1,4 +1,4 @@
-Declare the `doesPropertyExist` function to
+The function `doesPropertyExist` should
 check whether a given property is present in the object or not.
 
 If the property is present, return `true`. Otherwise, return `false`.

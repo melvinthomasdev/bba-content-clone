@@ -1,5 +1,5 @@
-Declare a function `getFullName`
-to return a string.
+The function `getFullName`
+should return a string.
 The returned string
 must join the `firstName`
 and the `lastName`

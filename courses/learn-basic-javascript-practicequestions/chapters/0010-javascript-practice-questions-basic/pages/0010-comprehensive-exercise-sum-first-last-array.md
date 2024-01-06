@@ -1,6 +1,6 @@
-Declare a function `sumExtremes`
-to return the sum
-of the **first** and the **last** element
+The function `sumExtremes`
+should return the sum
+of the **first** and the **last** elements
 of the given array.
 If the array is empty,
 return `0`.
