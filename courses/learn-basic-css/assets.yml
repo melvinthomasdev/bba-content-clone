@@ -18,4 +18,9 @@ images:
 - googlefonts6.png
 - googlefonts7.png
 - celebration_css.gif
+- css-box-model.png
+- box-model-width-calculation.png
+- box-model-height-calculation.png
+- box-sizing.png
+- border-box.png
 databases: []

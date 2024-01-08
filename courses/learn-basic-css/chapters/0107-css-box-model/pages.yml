@@ -5,8 +5,11 @@
 - title: Exercise - CSS Box Model
   slug: exercise-css-box-model
   page_type: exercise
-- title: Box Sizing Property
-  slug: box-sizing-property
+- title: Box Sizing
+  slug: box-sizing
+  page_type: lesson
+- title: Box Sizing - Border Box
+  slug: box-sizing-border-box
   page_type: lesson
 - title: Exercise - Box Sizing Property for Divs
   slug: exercise-box-sizing-property-for-divs
