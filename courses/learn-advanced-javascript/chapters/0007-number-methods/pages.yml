@@ -17,3 +17,21 @@
 - title: Exercise - Get Floating Point Number From a String
   slug: exercise-parse-float
   page_type: exercise
+- title: Infinity
+  slug: infinity
+  page_type: lesson
+- title: Exercise - Multiply Infinity
+  slug: exercise-multiply-infinity
+  page_type: exercise
+- title: Exercise - Subtracting Infinity from Infinity
+  slug: exercise-subtracting-infinity-from-infinity
+  page_type: exercise
+- title: Negative infinity
+  slug: negative-infinity
+  page_type: lesson
+- title: Exercise - Negative Infinity Comparison
+  slug: exercise-negative-infinity-comparison
+  page_type: exercise
+- title: Exercise - Adding -Infinity to infinity
+  slug: exercise-adding-infinity-to-infinity
+  page_type: exercise

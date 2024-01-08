@@ -47,3 +47,12 @@
 - title: Exercise - Generating a Random Number
   slug: exercise-generating-a-random-number
   page_type: exercise
+- title: Getting absolute value
+  slug: getting-absolute-value
+  page_type: lesson
+- title: Exercise - Calculate absolute value of 0
+  slug: exercise-calculate-absolute-value-of-0
+  page_type: exercise
+- title: Exercise - Calculate absolute value
+  slug: exercise-calculate-absolute-value
+  page_type: exercise
