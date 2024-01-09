@@ -1,19 +1,26 @@
-When you set an element's `position` to
-**absolute**, you can use the `top`, `right`,
-`bottom` and `left` properties to change
-the its position inside its parent element:
+Setting an element's position to `absolute`
+lets us move it within its parent using `top`,
+`right`, `bottom`, and `left` offsets.
+
+This element will be placed relative to
+the closest ancestor with any other
+position value.
 
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
-<div id="static">
-  Static
-</div>
-<div id="relative">
-  Relative
-</div>
-<div id="absolute">
-  Absolute
+<div id="outer-container">
+  <div id="container">
+    <div id="child-element-1">
+      Child 1
+    </div>
+    <div id="child-element-2">
+      Child 2
+    </div>
+    <div id="child-element-3">
+      Child 3
+    </div>
+  </div>
 </div>
 </panel>
 <panel language="css">
@@ -22,62 +29,34 @@ body {
 }
 div {
   border: 2px solid white;
-  padding: 20px;
-  width: 200px;
   color: white;
   font-size: 1.2rem;
 }
-#relative {
+#outer-container {
   position: relative;
-  top: 20px;
-  right: 20px;
+  width: 90vw;
+  height: 90vh;
 }
-#absolute {
+#container {
+  width: 60vw;
+  height: 60vh;
+  margin: 30px;
+}
+#child-element-1 {
   position: absolute;
-  top: 20px;
-  right: 20px;
-}
-</panel>
-</code>
-</codeblock>
-
-In the above example, the parent element is the `body` itself. So notice how the element is placed `20px` away from the top right corner of `body`. Try changing the values of `top` and `right` to see what happens. Also add `left` and `bottom` properties too to see what happens.
-
-At the same time, notice the placement of the **relative** element when the same two values of `top` and `right` are applied to it. A relative element's location is changed with respect to its original location, while an absolute element's location is changed with respect to its parent element.
-
-Let's look at another example:
-
-<codeblock language="css" type="lesson">
-<code>
-<panel language="html">
-<div id="parent">
-  <div id="absolute">
-  </div>
-</div>
-</panel>
-<panel language="css">
-#parent {
-  width: 200px;
-  height: 100px;
-  background-color: teal;
-  position: relative;
-}
-#absolute {
-  background-color: orange;
-  width: 50px;
-  height: 50px;
-  position: absolute;
+  top: 10px;
   right: 10px;
-  bottom: 0px;
+}
+#child-element-2, #child-element-3 {
+  width: 40vw;
+  margin: 10px;
 }
 </panel>
 </code>
 </codeblock>
 
-In the above example, the **child** `div`
-is positioned `absolute`. Its location
-is changed using the `right` and
-`bottom` properties. The interesting part
-is that the changes in the **child** `div` element's
-position are now in relation to the **parent**
-`div` element and not `body`.
+In the above code, we can observe
+that the element with **id** set
+as **absolute** gets placed at the
+top right corner of the element
+with **id** set as **relative**.
