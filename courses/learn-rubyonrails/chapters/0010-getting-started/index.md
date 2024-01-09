@@ -1,16 +1,19 @@
-The goal of the chapter is to get you familiarized with certain terms and
-keywords that we will use throughout the book and how to use the UI.
+## All you need is a working internet connection
+
+Welcome to BigBinary Academy!
+
+In order to learn Ruby on Rails, all you need is a working internet connection.
 
 ## Navigating through the book
 
 We have designed the book in a way that it is user-friendly and navigating
 through the book is extremely easy. Let's talk about the `Table of contents`
-first. It contains a list of all the chapters each accompanied by its 
+first. It contains a list of all the chapters each accompanied by its
 respective lessons.
 
-Examining the image below reveals that every element within the list showcases 
-the chapter title and an inventory of lessons within. Selecting a title 
-navigates to the corresponding chapter, while selecting a lesson directly 
+Examining the image below reveals that every element within the list showcases
+the chapter title and an inventory of lessons within. Selecting a title
+navigates to the corresponding chapter, while selecting a lesson directly
 accesses that particular lesson within the chapter.
 
 <image alt="Table of contents">table-of-contents.png</image>
@@ -82,3 +85,24 @@ paste into the desired file within the project.
 As mentioned previously in this chapter, do not copy and paste a code snippet
 unless it is explicitly mentioned to do so in the surrounding sentences. Doing
 otherwise can lead to errors and bugs in your application.
+
+## Need Help?
+
+If you encounter any difficulties while progressing through this course, feel free to seek assistance. You can use the `Help` widget located at the bottom right corner of the page or send us an email at hello@bigbinary.com with your queries.
+
+## Help us to improve the book
+
+In this book, our attempt is to keep things simple. If any part of the book is
+confusing or something is missing then please send us an email at hello@bigbinary.com.
+
+We at BigBinary wrote this book because we wanted to have a book that contains
+documentation about using both Rails and React in a simple step-by-step fashion,
+that is easy to follow.
+
+And that's what we have built in this book.
+
+Your comments and suggestions are valuable to us. We are constantly working on
+improving the book. Please do let us know your thoughts.
+
+From BigBinary's side, we can promise that this book will forever be free and
+publicly accessible.

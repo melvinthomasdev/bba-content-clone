@@ -80,7 +80,7 @@ class ChapterShifter
     end
 
     def folder_name_matches?(folder_name)
-      folder_name =~ /^0?#{desired_chapter_no}0-/i
+      folder_name =~ /^0*#{desired_chapter_no}0-/i
     end
 
     def raise_no_file_present
@@ -101,7 +101,7 @@ class ChapterShifter
 
         system("git mv #{folder_name} #{final_name}")
       end
-      
+
       system("mv #{chapter_name} #{desired_chapter_name}")
     end
 
@@ -109,13 +109,13 @@ class ChapterShifter
       chapters_to_shift = Dir.entries(course_full_path)
                           .select { |f| reverse_shift_chapter?(f) }
                           .sort_by { |f| chapter_no_by_folder_name(f) }
-    
+
       Dir.chdir(course_full_path)
-    
+
       chapters_to_shift.each do |folder_name|
         new_chapter_no = chapter_no_by_folder_name(folder_name) - 1
         final_name = folder_name.sub(/^\d+-/i, "#{prefixed_chapter_no(new_chapter_no)}-")
-    
+
         system("git mv #{folder_name} #{final_name}")
       end
 

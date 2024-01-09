@@ -1,4 +1,7 @@
 ---
+- slug: getting-started
+  name: Getting Started
+  has_pages: false
 - slug: setting-up-macos
   name: Setting up macOS
   has_pages: false
@@ -11,17 +14,11 @@
 - slug: installing-ruby-on-rails
   name: Installing Ruby on Rails
   has_pages: false
-- slug: how-you-can-contribute-to-the-book
-  name: How you can contribute to the book
-  has_pages: false
 - slug: react-js-over-rails-view
   name: React.js over Rails view
   has_pages: false
 - slug: rails-core-principles
   name: Rails core principles
-  has_pages: false
-- slug: keywords-and-familiarizing-with-ui
-  name: Keywords and familiarizing with UI
   has_pages: false
 - slug: building-a-new-ruby-on-rails-application
   name: Building a new Ruby on Rails application
