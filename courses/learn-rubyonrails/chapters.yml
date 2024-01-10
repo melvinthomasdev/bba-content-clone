@@ -335,6 +335,9 @@
 - slug: rails-caching
   name: Rails caching
   has_pages: false
+- slug: optimizing-active-record-queries
+  name: Optimizing ActiveRecord Queries
+  has_pages: false
 - slug: memoization
   name: Memoization
   has_pages: false
