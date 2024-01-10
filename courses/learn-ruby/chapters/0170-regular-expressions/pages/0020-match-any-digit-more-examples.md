@@ -1,8 +1,8 @@
 Let's see another example:
 
 The order number of a
-shipping company starts with
-two digits.
+shipping company has
+two digits next to each other.
 We want our regular expression
 to check that.
 
