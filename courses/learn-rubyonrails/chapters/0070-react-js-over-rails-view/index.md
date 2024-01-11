@@ -16,9 +16,6 @@ materials mentioned in the below section to learn the fundamentals. We won't
 recommend going into depth about React.js, given that this book is more oriented
 towards Ruby on Rails.
 
-We will be developing a simple demo application using Rails and React in the
-upcoming chapters. Stay tuned!
-
 ## Free materials to learn JavaScript
 
 ### Courses

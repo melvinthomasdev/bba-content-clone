@@ -14,14 +14,17 @@
 - slug: installing-ruby-on-rails
   name: Installing Ruby on Rails
   has_pages: false
+- slug: introduction-to-the-rails-application
+  name: Introduction to the Rails Application
+  has_pages: false
 - slug: react-js-over-rails-view
   name: React.js over Rails view
   has_pages: false
 - slug: rails-core-principles
   name: Rails core principles
   has_pages: false
-- slug: building-a-new-ruby-on-rails-application
-  name: Building a new Ruby on Rails application
+- slug: setting-up-shakapacker
+  name: Setting up Shakapacker
   has_pages: false
 - slug: running-server-in-development-environment
   name: Running server in development environment
