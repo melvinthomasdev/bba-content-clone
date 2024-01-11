@@ -5,9 +5,15 @@
 - title: Exercise - Displaying on Screen
   slug: exercise-displaying-on-screen
   page_type: exercise
+- title: Exercise 2 - Displaying on Screen
+  slug: exercise-2-displaying-on-screen
+  page_type: exercise
 - title: Simple math
   slug: simple-math
   page_type: lesson
-- title: Exercise - simple math
+- title: Exercise - Simple math
   slug: exercise-simple-math
+  page_type: exercise
+- title: Exercise 2 - Simple math
+  slug: exercise-2-simple-math
   page_type: exercise
