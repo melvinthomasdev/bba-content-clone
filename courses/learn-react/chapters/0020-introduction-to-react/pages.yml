@@ -1,0 +1,10 @@
+---
+- title: Understanding React and its significance
+  slug: understanding-react-and-its-significance
+  page_type: lesson
+- title: JSX - A custom JavaScript syntax for React
+  slug: jsx-a-custom-javascript-syntax-for-react
+  page_type: lesson
+- title: Components
+  slug: components
+  page_type: lesson

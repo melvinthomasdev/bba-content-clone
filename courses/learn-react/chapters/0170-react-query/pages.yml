@@ -1,0 +1,16 @@
+---
+- title: Introduction to React Query
+  slug: introduction-to-react-query
+  page_type: lesson
+- title: Integrating React query to smile cart
+  slug: integrating-react-query-to-smile-cart
+  page_type: lesson
+- title: Adding pagination to product listing page
+  slug: adding-pagination-to-product-listing-page
+  page_type: lesson
+- title: Preserving state changes across page visits
+  slug: preserving-state-changes-across-page-visits
+  page_type: lesson
+- title: Implementing parallel queries using React Query
+  slug: implementing-parallel-queries-using-react-query
+  page_type: lesson

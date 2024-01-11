@@ -31,5 +31,6 @@ firstNumber++;
 secondNumber--;
 
 console.log(firstNumber === secondNumber);
+
 </solution>
 </codeblock>

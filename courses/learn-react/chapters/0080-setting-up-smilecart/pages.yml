@@ -1,0 +1,10 @@
+---
+- title: Project Overview
+  slug: project-overview
+  page_type: lesson
+- title: Component Library
+  slug: component-library
+  page_type: lesson
+- title: Tailwind CSS
+  slug: tailwind-css
+  page_type: lesson

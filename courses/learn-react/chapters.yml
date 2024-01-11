@@ -1,27 +1,41 @@
 ---
 - name: Getting started
   slug: getting-started
-- name: Your First Component
-  slug: your-first-component
-- name: JSX Under the Hood
-  slug: jsx-under-the-hood
+- name: Introduction to React
+  slug: introduction-to-react
 - name: Props
   slug: props
 - name: Conditional Rendering
   slug: conditional-rendering
 - name: Rendering Data Arrays
   slug: rendering-data-arrays
-- name: Imports and Exports
-  slug: imports-and-exports
-- name: Naming Conventions
-  slug: naming-conventions
-- name: Event Handling
-  slug: event-handling
-- name: The useState Hook
-  slug: usestate-hook
-- name: The useEffect Hook
-  slug: useeffect-hook
-- name: React Best Practices
-  slug: react-best-practices
-- name: Sectional Project
+- name: More on JSX
+  slug: more-on-jsx
+- name: Setting up react
+  slug: setting-up-react
+- name: Setting up Smilecart
+  slug: setting-up-smilecart
+- name: State and Event Handling
+  slug: state-and-event-handling
+- name: Side effects
+  slug: side-effects
+- name: HTTP Requests with Axios
+  slug: http-requests-with-axios
+- name: React Router DOM
+  slug: react-router-dom
+- name: Custom hooks
+  slug: custom-hooks
+- name: State management
+  slug: state-management
+- name: Locale translations
+  slug: locale-translations
+- name: React Query
+  slug: react-query
+- name: Formik Forms
+  slug: formik-forms
+- name: Performance Optimization
+  slug: performance-optimization
+- name: Miscellaneous
+  slug: miscellaneous
+- name: Sectional Project (optional)
   slug: sectional-project

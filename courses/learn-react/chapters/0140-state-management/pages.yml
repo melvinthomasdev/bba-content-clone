@@ -1,0 +1,18 @@
+- title: Lifting state up
+  slug: lifting-state-up
+  page_type: lesson
+- title: Context
+  slug: context
+  page_type: lesson
+- title: Zustand
+  slug: zustand
+  page_type: lesson
+- title: Adding the ability to set quantity for cart items
+  slug: adding-the-ability-to-set-quantity-for-cart-items
+  page_type: lesson
+- title: Adding the cart page
+  slug: adding-the-cart-page
+  page_type: lesson
+- title: Reducing boilerplate code using `babel-preset-neeto`
+  slug: reducing-boilerplate-using-babel-plugins
+  page_type: lesson

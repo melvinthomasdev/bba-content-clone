@@ -2,15 +2,60 @@
 - title: Props Basics
   slug: props-basics
   page_type: lesson
-- title: Boolean Props
+- title: Exercise - Props basics
+  slug: exercise-props-basics
+  page_type: exercise
+- title: Passing numbers as prop
+  slug: passing-numbers-as-prop
+  page_type: lesson
+- title: Exercise - Passing numbers as prop
+  slug: exercise-passing-numbers-as-prop
+  page_type: exercise
+- title: Passing expressions as prop
+  slug: passing-expressions-as-prop
+  page_type: lesson
+- title: Exercise - Passing expressions as prop
+  slug: exercise-passing-expressions-as-prop
+  page_type: exercise
+- title: Boolean props
   slug: boolean-props
   page_type: lesson
-- title: The Spread Syntax
-  slug: the-spread-syntax
+- title: Exercise - Boolean props
+  slug: exercise-boolean-props
+  page_type: exercise
+- title: Passing object as prop
+  slug: passing-object-as-prop
   page_type: lesson
-- title: The Children Prop
+- title: Exercise - Passing object as prop
+  slug: exercise-passing-object-as-prop
+  page_type: exercise
+- title: The Children prop
   slug: the-children-prop
   page_type: lesson
-- title: Splitting Components
-  slug: splitting-components
+- title: Exercise - The Children prop
+  slug: exercise-the-children-prop
+  page_type: exercise
+- title: Spread props
+  slug: spread-props
   page_type: lesson
+- title: Exercise - Spread props
+  slug: exercise-spread-props
+  page_type: exercise
+- title: Rest props
+  slug: rest-props
+  page_type: lesson
+- title: Exercise - Rest props
+  slug: exercise-rest-props
+  page_type: exercise
+- title: Ordering spread props
+  slug: ordering-spread-props
+  page_type: lesson
+- title: Default values and Renaming
+  slug: default-values-and-renaming
+  page_type: lesson
+- title: Exercise - Default values and Renaming
+  slug: exercise-default-values-and-renaming
+  page_type: exercise
+- title: Props Comprehensive Exercise
+  slug: props-comprehensive-exercise
+  page_type: exercise

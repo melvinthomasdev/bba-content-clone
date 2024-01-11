@@ -9,7 +9,7 @@ await page.waitForResponse(response => response.url().includes("/orders/"));
 
 In the above example, `page.waitForResponse` waits for a network response that matches with the URL pattern `/orders/` after clicking the submit button.
 
-Even though the above example seems simple, there is a chance for falkiness here. This is because the API might respond before Playwright starts waiting for it. It might happen for two reasons:
+Even though the above example seems simple, there is a chance for flakiness here. This is because the API might respond before Playwright starts waiting for it. It might happen for two reasons:
 
 1. API is very fast.
 2. External factors delay the test script.

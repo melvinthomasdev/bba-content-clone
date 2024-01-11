@@ -1,13 +1,115 @@
 ---
 images:
-- react.svg
-- reactjs-header-image.png
-- react-vs-plain-js.gif
-- state-update-in-unmounted-component.png
-- selected-input-field.jpg
-- required-input.jpg
-- ide-suggestions-for-boolean.png
-- ide-suggestions-for-array.png
-- news-feedly.jpeg
+  - react.svg
+  - reactjs-header-image.png
+  - react-vs-plain-js.gif
+  - state-update-in-unmounted-component.png
+  - selected-input-field.jpg
+  - required-input.jpg
+  - ide-suggestions-for-boolean.png
+  - ide-suggestions-for-array.png
+  - ide-support-props.gif
+  - mapping-exercise-output.png
+  - filtering-exercise-output.png
+  - regular-spaces.gif
+  - non-breaking-space.gif
+  - showing-browser-console.gif
+  - my-app-files-structure.png
+  - ingredients_list.png
+  - running-react-app.gif
+  - my-app-folder-structure-1.png
+  - smile-cart-home-page.png
+  - smile-cart-product-page.png
+  - smile-cart-user-cart-page.png
+  - smile-cart-checkout-page.png
+  - render-method.gif
+  - product-page-design-1.png
+  - product-page-design-breakdown.png
+  - show-tailwindcss-class-name-auto-completion.gif
+  - mounting.gif
+  - updating.gif
+  - unmounting.gif
+  - product-page-with-no-loader.png
+  - product-page-after-api-integration.png
+  - product-api-network-tab.png
+  - request-trigger-for-each-keystroke.gif
+  - header-after-integrating-search-input.png
+  - search-after-request-interceptor-integrated.gif
+  - open-react-profiler.png
+  - start-profiling.png
+  - stop-profiling.png
+  - profile-add-to-cart-feature.gif
+  - profiler-commits.png
+  - browsing-commits.gif
+  - flame-chart.png
+  - record-why-component-rendered.gif
+  - why-components-rendered.gif
+  - stepping-into-a-component.gif
+  - highlight-updates.gif
+  - ranked-chart.png
+  - settings-to-highlight-rendering.png
+  - hooks-from-number.png
+  - header-component-details.png
+  - component-panel.gif
+  - product-response-after-transforming-response-keys.png
+  - product-response-before-transforming-response-keys.png
+  - carousel-prev-next-handlers.gif
+  - carousel-dots.gif
+  - products-search-with-debouncing.gif
+  - carousel-without-ref.gif
+  - carousel-with-ref.gif
+  - queued-updates.jpg
+  - core-react-loop.jpeg
+  - product-listing-page-with-pagination.gif
+  - pagination-issue-in-product-listing-page.gif
+  - pagination-without-keep-previous-data.gif
+  - product-listing-with-no-data-page.png
+  - cart-page-with-page-header.png
+  - links.gif
+  - without-switch-and-exact-prop.gif
+  - with-exact-prop.gif
+  - without-404.png
+  - with-404.png
+  - product-listing-page-requirement.gif
+  - product-list.png
+  - product-listing-without-back-button.gif
+  - header-component-extraction.jpeg
+  - routing-with-navlink.gif
+  - pagination-with-keep-previous-data.gif
+  - back-button-requirement.png
+  - add-to-cart-button.gif
+  - cartItems-count.png
+  - product-list-component-tree.jpeg
+  - cartItems-count-click.gif
+  - lifting-state-up.jpeg
+  - routes-ide-support.gif
+  - carousel-with-automatic-scroll.gif
+  - global-state-management.jpeg
+  - add-to-cart-product-page.gif
+  - persist-middleware.png
+  - product-quantity-requirement.gif
+  - error-toastr-available-quantity.gif
+  - promise-all-responses.png
+  - product-deletion-toastr.png
+  - adding-delete-button.png
+  - cart-item-delete-alert.png
+  - cart-page-requirement.png
+  - cart-link.gif
+  - product-quantity.png
+  - tooltip-requirement.png
+  - items-count-without-pluralization.png
+  - translation-with-interpolation.png
+  - buy-now-price-card.png
+  - buy-now-product-page.png
+  - price-card.png
+  - props-comprehensive-exercise-output.png
+  - longest-bar.png
+  - profile-before-memoization.png
+  - profile-after-memoization.png
+  - error-overlay.png
+  - husky-init.png
+  - checkout-ui-breakdown.png
+  - news-feedly.jpeg
+  - search-and-add-to-cart.gif
 
 databases: []

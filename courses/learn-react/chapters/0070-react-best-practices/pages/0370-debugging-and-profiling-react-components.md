@@ -1,1 +1,0 @@
-Watch [this video](https://youtu.be/_cG-wYPSe9s) which walks through a real world issue in an application and provides insights into when to use a React profiler and when to use a debugger to resolve such issues.

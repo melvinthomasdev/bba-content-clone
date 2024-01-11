@@ -1,0 +1,13 @@
+---
+- title: Setting up template repository
+  slug: setting-up-template-repository
+  page_type: lesson
+- title: Structuring code
+  slug: structuring-code
+  page_type: lesson
+- title: forwardRef
+  slug: forward-ref
+  page_type: lesson
+- title: Best practices in React routing
+  slug: best-practices-in-react-routing
+  page_type: lesson

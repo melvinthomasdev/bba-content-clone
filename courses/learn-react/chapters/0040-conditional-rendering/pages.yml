@@ -2,21 +2,18 @@
 - title: If Else Branching
   slug: if-else-branching
   page_type: lesson
+- title: Exercise - If Else branching
+  slug: exercise-if-else-branching
+  page_type: exercise
 - title: Ternary Branching
   slug: ternary-branching
   page_type: lesson
-- title: Avoid Nesting Ternary Operators
-  slug: avoid-nesting-ternary-operators
-  page_type: lesson
-- title: Returning Nothing
-  slug: returning-nothing
-  page_type: lesson
+- title: Exercise - Ternary Branching
+  slug: exercise-ternary-branching
+  page_type: exercise
 - title: Logical And
   slug: logical-and
   page_type: lesson
-- title: Optional Chaining
-  slug: optional-chaining
-  page_type: lesson
-- title: Refactor Conditional Code
-  slug: refactor-conditional-code
+- title: Exercise - Logical And
+  slug: exercise-logical-and
   page_type: exercise

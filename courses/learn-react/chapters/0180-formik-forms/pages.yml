@@ -1,0 +1,16 @@
+---
+- title: Significance of Formik forms
+  slug: significance-of-formik-forms
+  page_type: lesson
+- title: Adding checkout page
+  slug: adding-checkout-page
+  page_type: lesson
+- title: Adding Yup validations to Formik form
+  slug: adding-yup-validations-to-formik-form
+  page_type: lesson
+- title: Form submission in Formik
+  slug: form-submission-in-formik
+  page_type: lesson
+- title: Displaying cart items in checkout page
+  slug: displaying-cart-items-and-total-bill-in-checkout-page
+  page_type: lesson

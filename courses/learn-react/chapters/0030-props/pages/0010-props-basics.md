@@ -1,64 +1,34 @@
-In React, we can pass data from parent to child via "props" which are essentially pieces of information you pass to a JSX tag using the following syntax:
+We can pass inputs to React components just like we pass arguments to JavaScript functions. React component accepts an object called `props` as the input.
+
+Consider the following example:
+
+<codeblock language="reactjs" type="lesson">
+<code>
+const Introduction = props => <h1>My name is {props.name}</h1>;
+
+const App = () => (
+  <div>
+    <h1>Hello 👋</h1>
+    <Introduction name="John Doe" />
+  </div>
+);
+
+export default App;
+</code>
+</codeblock>
+
+Here we pass `name="John Doe"` to the `Introduction` component from its parent component `App`. `Introduction` receives the attribute `name` wrapped inside the object `props`.
+
+The `name` property from the `props` object is used inside the `Introduction` component using curly braces `{}`. In JSX, anything written inside curly braces `{}` is evaluated as a JavaScript expression.
+
+Usually, we don’t need the whole `props` object itself, so we destructure it into individual `props`:
 
 ```jsx
-{/* Parent */}
-const Users = () => (
-  <UserCard name="Adam Smith" customClass="adminUser"/>
-  <UserCard name="John Doe" customClass="regularUser"/>
-)
-
-{/* Child */}
-const UserCard = ({ name, customClass }) => (
-  <p className={customClass}>
-    Hello {name}
-  </p>
-)
+const Introduction = ({ name }) => <h1>My name is {name}</h1>;
 ```
 
-In the above example, `className` is an in-built prop while `name` and `customClass` are custom props.
-In the above example, we use de-structuring inside the parameters to make the code more concise in the UserCard component. However, it can just as easily be written as:
+We prefer the destructured style, as it provides improved IDE support. IDEs can analyze the destructured `props` and provide helpful suggestions and autocompletion when accessing specific `props` within the component:
 
-```jsx
-{/* UserCard.jsx */}
-const UserCard = props => {
-  const name = props.name
-  const customClass = props.customClass
+<image>ide-support-props.gif</image>
 
-  return (
-    <p className={customClass}>
-      Hello {name}
-    </p>
-  )
-}
-```
-
-The props object is the only argument to your component.
-
-## Renaming and Default Values
-
-When destructuring, you can also assign default values and change the name of certain arguments like this:
-
-```jsx
-{/* UserCard.jsx */}
-const UserCard = ({ name = "User", customClass: pClass }) => (
-  <p className={pClass}>
-    Hello {name}
-  </p>
-)
-```
-
-In the above example
-
-* The `name` prop is defaulted to "User". It is important to note that it only defaults to "User" if the `name` prop is not used as an argument or if its value is explicitly set as `undefined` when the UserCard component is invoked. In all other cases, it will not use the default prop value, even if the argument's value is `""`, `0`, `false` or `null`.
-* `customClass` that is passed as a prop to the UserCard is renamed to `pClass` within the parameter list.
-
-You can even combine defaulting and renaming in a single attribute like this:
-
-```jsx
-{/* UserCard.jsx */}
-const UserCard = ({ name, customClass: pClass = "defaultClass" }) => (
-  <p className={pClass}>
-    Hello {name}
-  </p>
-)
-```
+Props might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, functions, and even other components. We will see examples for each of them in upcoming chapters.

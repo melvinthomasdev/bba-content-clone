@@ -1,0 +1,16 @@
+---
+- title: Adding comments
+  slug: adding-comments
+  page_type: lesson
+- title: Whitespaces in JSX
+  slug: whitespaces-in-jsx
+  page_type: lesson
+- title: Limitations of JSX
+  slug: limitations-of-jsx
+  page_type: lesson
+- title: Exercise - Converting HTML to JSX
+  slug: exercise-converting-html-to-jsx
+  page_type: lesson
+- title: How JSX is converted to JavaScript
+  slug: how-jsx-is-converted-to-js
+  page_type: lesson

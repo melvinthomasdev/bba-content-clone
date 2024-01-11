@@ -1,0 +1,10 @@
+---
+- title: Build your first React app
+  slug: build-your-first-react-app
+  page_type: lesson
+- title: Getting acquainted with the files
+  slug: getting-acquainted-with-the-files
+  page_type: lesson
+- title: Rendering in React
+  slug: rendering-in-react
+  page_type: lesson

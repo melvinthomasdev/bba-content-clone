@@ -1,0 +1,13 @@
+---
+- title: Sending HTTP requests using Axios
+  slug: sending-http-requests-using-axios
+  page_type: lesson
+- title: Integrate Axios to SmileCart
+  slug: integrate-axios-to-smile-cart
+  page_type: lesson
+- title: Organizing APIs
+  slug: organizing-apis
+  page_type: lesson
+- title: Adding Axios interceptors
+  slug: adding-axios-interceptors
+  page_type: lesson

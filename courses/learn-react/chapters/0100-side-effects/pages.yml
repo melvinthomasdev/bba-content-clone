@@ -1,0 +1,10 @@
+---
+- title: Component Lifecycle
+  slug: component-lifecycle
+  page_type: lesson
+- title: useEffect Hook
+  slug: use-effect-hook
+  page_type: lesson
+- title: useRef hook
+  slug: use-ref-hook
+  page_type: lesson
