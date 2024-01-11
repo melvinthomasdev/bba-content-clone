@@ -10,7 +10,7 @@ Today, more than 90% of the applications that we are building for our clients
 use React.js. Therefore, we can't claim that this book is well maintained unless
 we include lessons on integrating React to Rails application.
 
-So, in this book, we will be using [React.js](https://reactjs.org/) to write
+So, from hereon, we will be using [React.js](https://reactjs.org/) to write
 frontend code. If you are a beginner to React and JavaScript, you can use the
 materials mentioned in the below section to learn the fundamentals. We won't
 recommend going into depth about React.js, given that this book is more oriented
@@ -115,3 +115,5 @@ forms in React. We definitely use Formik in our neeto products.
 
 - [Chrome DevTools - Crash Course](https://www.youtube.com/watch?v=gTVpBbFWry8)
   by freeCodeCamp
+
+**There is nothing to be committed in this chapter.**

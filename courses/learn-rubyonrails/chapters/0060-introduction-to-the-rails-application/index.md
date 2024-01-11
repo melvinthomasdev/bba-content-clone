@@ -238,7 +238,7 @@ will see a page that would look like this:
 ## Verify Ruby and NodeJS versions from the project root
 
 Before committing the files, let's verify whether our Ruby and Node.js versions
-are the required versions or not. 
+are the required versions or not.
 
 For starters ensure that you will be running the next set of commands from the root
 of the newly created granite project. We can run the following UNIX command from

@@ -1,6 +1,6 @@
 ## Running Rails server
 
-In an earlier chapter, we had set up a basic Rails server. There we ran the
+In an earlier [chapter](/learn-rubyonrails/introduction-to-the-rails-application), we had set up a basic Rails server. There we ran the
 Rails server from the terminal using the `bundle exec rails server -p 3000`
 command.
 

@@ -89,6 +89,15 @@ class TasksController < ApplicationController
 end
 ```
 
+Now open `app/views/layout/application.html.erb` and remove the following lines:
+
+```erb
+<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+<%= javascript_importmap_tags %>
+```
+
+We will be updating the `application.html.erb` file in an upcoming [chapter](/learn-rubyonrails/setting-up-shakapacker#update-to-stylesheet-pack-tag).
+
 Now visit [http://localhost:3000/tasks](http://localhost:3000/tasks) and this
 time we should get message `List of tasks will appear here`.
 

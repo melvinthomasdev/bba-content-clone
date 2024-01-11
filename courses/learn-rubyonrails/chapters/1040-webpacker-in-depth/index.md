@@ -114,7 +114,7 @@ is the same pack name that you were using.
 ## Significance of stylesheet pack tag
 
 We had replaced the `stylesheet_link_tag` with `stylesheet_pack_tag` in the
-[application initialization chapter](/learn-rubyonrails/new-ruby-on-rails-application#update-to-stylesheet-pack-tag).
+[setting up Shakapacker chapter](/learn-rubyonrails/setting-up-shakapacker#update-to-stylesheet-pack-tag).
 
 The reason is that in `production` environment, webpacker by default sets
 `extract_css` to `true`.

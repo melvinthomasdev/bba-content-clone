@@ -17,17 +17,8 @@
 - slug: introduction-to-the-rails-application
   name: Introduction to the Rails Application
   has_pages: false
-- slug: react-js-over-rails-view
-  name: React.js over Rails view
-  has_pages: false
 - slug: rails-core-principles
   name: Rails core principles
-  has_pages: false
-- slug: setting-up-shakapacker
-  name: Setting up Shakapacker
-  has_pages: false
-- slug: running-server-in-development-environment
-  name: Running server in development environment
   has_pages: false
 - slug: basics-of-ruby-on-rails-routing
   name: Basics of Ruby on Rails routing
@@ -56,15 +47,6 @@
 - slug: rails-console
   name: Rails console
   has_pages: false
-- slug: adding-tailwind
-  name: Adding Tailwind
-  has_pages: false
-- slug: setting-up-react-environment
-  name: Setting up React environment
-  has_pages: false
-- slug: basics-of-react-router-dom
-  name: Basics of React Router Dom
-  has_pages: false
 - slug: adding-tasks-controller
   name: Adding Tasks controller
   has_pages: false
@@ -80,11 +62,29 @@
 - slug: project-blog-worthy-task-2
   name: Project BlogWorthy - Task 2
   has_pages: false
+- slug: react-js-over-rails-view
+  name: React.js over Rails view
+  has_pages: false
+- slug: setting-up-shakapacker
+  name: Setting up Shakapacker
+  has_pages: false
+- slug: running-server-in-development-environment
+  name: Running server in development environment
+  has_pages: false
+- slug: adding-tailwind
+  name: Adding Tailwind
+  has_pages: false
+- slug: setting-up-react-environment
+  name: Setting up React environment
+  has_pages: false
 - slug: bring-react-js-to-rails
   name: Bring React.js to Rails
   has_pages: false
 - slug: linting-and-formatting-code
   name: Linting and Formatting Code
+  has_pages: false
+- slug: basics-of-react-router-dom
+  name: Basics of React Router Dom
   has_pages: false
 - slug: reusable-components
   name: Reusable components

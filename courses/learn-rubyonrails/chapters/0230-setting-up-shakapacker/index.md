@@ -181,21 +181,14 @@ We will discuss more about alias in the coming chapters so you don't have to be 
 
 ## Update to stylesheet pack tag
 
-The default Rails application ERB template file,
-`app/views/layout/application.html.erb`, contains:
+In an earlier chapter, we had removed the following lines from the `app/views/layout/application.html.erb` file:
 
 ```erb
 <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 <%= javascript_importmap_tags %>
-<%= javascript_pack_tag "application" %>
 ```
 
-In that file, we need to replace `stylesheet_link_tag` with
-`stylesheet_pack_tag` to attach CSS packs.
-We need to replace `javascript_importmap_tags` with
-`javascript_pack_tag` to handle JavaScript files.
-
-After the change the `application.html.erb` would look like this.
+Instead, let us use `stylesheet_pack_tag` to attach CSS packs and `javascript_pack_tag` to handle JavaScript files, as follows:
 
 ```erb {1,2}
 <%= stylesheet_pack_tag "application" %>
