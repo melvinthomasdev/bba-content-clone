@@ -8,6 +8,9 @@
 - title: ComprehensiveExercise - Add Two Numbers
   slug: comprehensive-exercise-add-two-numbers
   page_type: assessment
+- title: ComprehensiveExercise - Convert Celsius to Fahrenheit
+  slug: comprehensive-exercise-celsius-to-fahrenheit
+  page_type: assessment
 - title: ComprehensiveExercise - Check the Numbers and Add
   slug: comprehensive-exercise-check-the-numbers-and-add
   page_type: assessment
@@ -80,3 +83,29 @@
 - title: ComprehensiveExercise - Using NOT
   slug: comprehensive-exercise-using-not
   page_type: assessment
+- title: ComprehensiveExercise - Setting Preferred Language
+  slug: comprehensive-exercise-setting-preferred-language
+  page_type: assessment
+- title: ComprehensiveExercise - Sum of Elements of Array
+  slug: comprehensive-exercise-sum-of-elements-of-array
+  page_type: assessment
+- title: ComprehensiveExercise - Array of Squared Numbers
+  slug: comprehensive-exercise-array-of-squared-numbers
+  page_type: assessment
+- title: ComprehensiveExercise - Extract Positives Numbers
+  slug: comprehensive-exercise-extract-positives-numbers
+  page_type: assessment
+- title: ComprehensiveExercise - Find second largest value in Array
+  slug: comprehensive-exercise-find-second-largest-value-in-array
+  page_type: assessment
+- title: ComprehensiveExercise - Calculate Total Price After Discount
+  slug: comprehensive-exercise-calculate-total-price-after-discount
+  page_type: assessment
+- title: ComprehensiveExercise - Check Book Availability
+  slug: comprehensive-exercise-check-book-availability
+  page_type: assessment
+- title: ComprehensiveExercise - Check Equal to 100
+  slug: comprehensive-exercise-check-equal
+  page_type: assessment
+
+

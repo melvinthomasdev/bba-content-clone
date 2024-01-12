@@ -11,6 +11,9 @@
 - title: ComprehensiveExercise - Find sum of numbers in the array
   slug: comprehensive-exercise-find-sum-of-numbers-in-array
   page_type: assessment
+- title: ComprehensiveExercise - Filter Even Numbers
+  slug: comprehensive-exercise-filter-even-numbers
+  page_type: assessment
 - title: ComprehensiveExercise - Return object with issues grouped by severity
   slug: comprehensive-exercise-return-object-with-issues-grouped-by-severity
   page_type: assessment
