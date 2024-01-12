@@ -14,6 +14,15 @@
 - title: ComprehensiveExercise - Check the Numbers and Add
   slug: comprehensive-exercise-check-the-numbers-and-add
   page_type: assessment
+- title: ComprehensiveExercise - Increment a Number and Divide It
+  slug: comprehensive-exercise-increment-a-number-and-divide-it
+  page_type: assessment
+- title: ComprehensiveExercise - Product of two Numbers
+  slug: comprehensive-exercise-product-of-two-numbers
+  page_type: assessment
+- title: ComprehensiveExercise - Pass or Fail
+  slug: comprehensive-exercise-pass-or-fail
+  page_type: assessment
 - title: ComprehensiveExercise - Check Whether the Number is Divisible by 6
   slug: comprehensive-exercise-check-whether-number-is-divisible-by-6
   page_type: assessment
@@ -38,50 +47,17 @@
 - title: ComprehensiveExercise - Split an Array Into Odd and Even Chunks
   slug: comprehensive-exercise-split-an-array-into-odd-and-even-chunks
   page_type: assessment
-- title: ComprehensiveExercise - Join Strings Separated by a Space
-  slug: comprehensive-exercise-join-strings-separated-by-a-space
+- title: ComprehensiveExercise - Check Ice Cream Price
+  slug: comprehensive-exercise-check-ice-cream-price
   page_type: assessment
-- title: ComprehensiveExercise - Increment a Number and Divide It
-  slug: comprehensive-exercise-increment-a-number-and-divide-it
+- title: ComprehensiveExercise - Find Day of the Week
+  slug: comprehensive-exercise-find-day-of-the-week
   page_type: assessment
-- title: ComprehensiveExercise - Get Remainder and Check Equality
-  slug: comprehensive-exercise-get-remainder-and-check-equality
+- title: ComprehensiveExercise - Calculating gift coupons
+  slug: comprehensive-exercise-calculating-gift-coupons
   page_type: assessment
-- title: ComprehensiveExercise - Use Template Strings
-  slug: comprehensive-exercise-use-template-strings
-  page_type: assessment
-- title: ComprehensiveExercise - Add and Read Array Elements
-  slug: comprehensive-exercise-add-and-read-array-elements
-  page_type: assessment
-- title: ComprehensiveExercise - Update and Read Array Elements
-  slug: comprehensive-exercise-update-and-read-array-elements
-  page_type: assessment
-- title: ComprehensiveExercise - Add, Update and Read Array Elements
-  slug: comprehensive-exercise-add-update-and-read-array-elements
-  page_type: assessment
-- title: ComprehensiveExercise - Add Property to Object
-  slug: comprehensive-exercise-add-property-to-object
-  page_type: assessment
-- title: ComprehensiveExercise - Add and Show Object Property
-  slug: comprehensive-exercise-add-show-object-property
-  page_type: assessment
-- title: ComprehensiveExercise - Add and Show Object Property
-  slug: comprehensive-exercise-bracket-notation-add-show-property
-  page_type: assessment
-- title: ComprehensiveExercise - Using If Else If
-  slug: comprehensive-exercise-using-if-else-and-if
-  page_type: assessment
-- title: ComprehensiveExercise - Using Switch Statement
-  slug: comprehensive-exercise-using-switch-statement
-  page_type: assessment
-- title: ComprehensiveExercise - Using Ternary Operator
-  slug: comprehensive-exercise-using-ternary-operator
-  page_type: assessment
-- title: ComprehensiveExercise - Using AND-OR
-  slug: comprehensive-exercise-using-and-or
-  page_type: assessment
-- title: ComprehensiveExercise - Using NOT
-  slug: comprehensive-exercise-using-not
+- title: ComprehensiveExercise - Check NOT Divisible
+  slug: comprehensive-exercise-check-not-divisible
   page_type: assessment
 - title: ComprehensiveExercise - Setting Preferred Language
   slug: comprehensive-exercise-setting-preferred-language
