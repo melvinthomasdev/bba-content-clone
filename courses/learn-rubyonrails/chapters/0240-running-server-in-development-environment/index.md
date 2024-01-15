@@ -37,7 +37,7 @@ Once a new terminal is open, run the following command:
 
 `webpacker-dev-server` is an executable file which resides inside the `bin`
 folder. Running the above command will start the Webpack development server and
-Webpacker will automatically proxy all Webpack asset requests to this server.
+Shakapacker will automatically proxy all Webpack asset requests to this server.
 
 ## Running the application
 

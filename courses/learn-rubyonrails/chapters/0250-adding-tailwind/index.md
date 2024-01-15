@@ -24,7 +24,7 @@ yarn add tailwindcss@1.9.6
 ```
 
 Note that we are not using the latest version(>2.0.x) of tailwindcss since it
-has some issues with webpacker environment.
+has some issues with shakapacker environment.
 
 Next we need a directory where our stylesheets can reside. Run the following
 command to create that directory:

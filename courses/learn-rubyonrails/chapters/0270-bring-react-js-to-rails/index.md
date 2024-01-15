@@ -3,7 +3,7 @@
 We will be building our application's frontend in
 [React.js](https://reactjs.org), and for this, we will be using
 [react-rails](https://github.com/reactjs/react-rails) gem to bring React to our
-Ruby on Rails application and hook it into the webpacker compilation system.
+Ruby on Rails application and hook it into the shakapacker compilation system.
 
 Add the following line to the end of the `Gemfile`:
 
@@ -17,9 +17,9 @@ Then install the newly added gem:
 bundle install
 ```
 
-## Setup React Webpacker pipeline
+## Setup React Shakapacker pipeline
 
-Webpacker also contains support for integrating many of the popular JavaScript
+Shakapacker also contains support for integrating many of the popular JavaScript
 frameworks and tools. Here we are going to integrate `ReactJS` into our
 environment.
 
@@ -30,7 +30,7 @@ yarn add react@^17.0.1 react-dom@^17.0.1 @babel/preset-react@^7.22.5 \
   prop-types@^15.8.1 mini-css-extract-plugin css-minimizer-webpack-plugin
 ```
 
-Let's complete setting up the React-Webpacker pipeline by running the
+Let's complete setting up the React-Shakapacker pipeline by running the
 following command:
 
 ```bash
@@ -66,7 +66,7 @@ rm -rf app/javascript/packs/server_rendering.js app/javascript/packs/hello_react
 
 ## Keeping src folder as the entry point
 
-Running the previous Webpacker commands might have redeclared
+Running the previous Shakapacker commands might have redeclared
 `componentRequireContext` with `components` as the argument in the
 `application.js` file.
 
@@ -112,7 +112,7 @@ it under the `src` folder.
 This is done so as to handle all the JavaScript/client code under a single path
 and have more control over it.
 
-With the last change we made to `application.js`, we have ensured that Webpacker
+With the last change we made to `application.js`, we have ensured that Shakapacker
 knows that our application relevant code and its context should be loaded from
 the `src` folder.
 

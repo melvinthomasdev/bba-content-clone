@@ -127,7 +127,7 @@ yarn add classnames
 ## Button component
 
 The components folder should be present in your application since we ran
-relevant commands as part of setting up Webpacker in the previous chapters.
+relevant commands as part of setting up Shakapacker in the previous chapters.
 
 **But do check if the `components` folder exists in the `app/javascript/src`
 directory. Only run the following command if the `components` folder doesn't

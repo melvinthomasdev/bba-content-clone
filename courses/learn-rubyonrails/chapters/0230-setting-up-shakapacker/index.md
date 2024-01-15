@@ -45,8 +45,8 @@ The default configurations sets the source path `app/javascript` as the `source_
 in `config/webpacker.yml`. We need to set a subdirectory of the `source_path`, namely `packs`, to
 be the `source_entry_path`.
 We also need to make other minor modifications in the webpack configuration.
-To incorporate all these, let's replace the contents of `config/webpacker.yml` with webpacker configuration from the
-[Wheel repository](https://raw.githubusercontent.com/bigbinary/wheel/main/webpacker.yml)
+To incorporate all these, let's replace the contents of `config/webpacker.yml` with shakapacker configuration from the
+[Wheel repository](https://raw.githubusercontent.com/bigbinary/wheel/main/config/webpacker.yml)
 by executing the following command from the root of the app:
 
 ```bash
@@ -113,14 +113,14 @@ Shakapacker gives us a default configuration file `config/webpack/webpack.config
 However, we need to customize this by modifying the webpack configuration, to suit our
 application.
 
-When setting up Webpacker, having files like `environment.js`, `development.js`,
+When setting up Shakapacker, having files like `environment.js`, `development.js`,
 `production.js`, etc, allows us to configure different settings for different
 environments in the application.
 
 The `environment.js` file is used to configure settings that are common across all
 environments, such as which JavaScript packs to load and which plugins to use. By
 separating configuration into different files based on environment, developers can
-easily manage and maintain their Webpacker configuration without having to duplicate
+easily manage and maintain their Shakapacker configuration without having to duplicate
 code or remember which settings apply in which environment.
 
 Let's import these customized configurations from `wheel` by running the below command:
@@ -201,7 +201,7 @@ end of the book.
 If you're very curious and don't mind the complexity at this early
 stage itself, then you can give
 [this section](/learn-rubyonrails/webpacker-in-depth#significance-of-stylesheet-pack-tag)
-a read to understand about Webpacker's CSS compilation.
+a read to understand about Shakapacker's CSS compilation.
 
 Once verified, add this new application to git:
 

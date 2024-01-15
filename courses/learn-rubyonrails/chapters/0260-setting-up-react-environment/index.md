@@ -170,7 +170,7 @@ errors that are caught from our `try-catch` block.
 We can use `js-logger` in such cases. `js-logger` is a lightweight JavaScript
 Logger that has zero dependencies.
 
-During the setup of Webpacker, we had already installed the necessary packages, specifically `js-logger` and `babel-plugin-js-logger`.
+During the setup of Shakapacker, we had already installed the necessary packages, specifically `js-logger` and `babel-plugin-js-logger`.
 
 To initialize `js-logger`, run the following command from the root of project:
 

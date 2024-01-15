@@ -69,16 +69,16 @@ brew link libyaml
 Note that this step should only be performed if the previous steps have failed
 to resolve the issue.
 
-## Webpacker compatibility issue
+## Shakapacker compatibility issue
 
-There can be compatibility issues with some versions of `webpacker`. Please read
+There can be compatibility issues with some versions of `shakapacker`. Please read
 the
 [webpacker module and version issues section](/learn-rubyonrails/webpacker-in-depth#Webpacker-module-and-version-issues)
 for more info.
 
 Take a look at the
-[setting up a webpack version section](/learn-rubyonrails/new-ruby-on-rails-application#setting-a-specific-webpacker-version)
-in this book for steps to fix the webpacker compatibility issues.
+[setting up Shakapacker chapter](/learn-rubyonrails/setting-up-shakapacker)
+in this book for steps to fix the shakapacker compatibility issues.
 
 ## rails command does not exist
 
