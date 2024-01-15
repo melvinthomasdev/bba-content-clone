@@ -50,5 +50,13 @@ const user = {
 };
 </i>
 </testcase>
+<testcase>
+<i>
+const user = {
+  name: "Lao",
+  preferredLanguage: "Chinese"
+};
+</i>
+</testcase>
 </testcases>
 </codeblock>

@@ -30,12 +30,6 @@ const suffix = "ly";
 </testcase>
 <testcase>
 <i>
-const str = "total";
-const suffix = "ly";
-</i>
-</testcase>
-<testcase>
-<i>
 const str = "fear";
 const suffix = "less";
 </i>

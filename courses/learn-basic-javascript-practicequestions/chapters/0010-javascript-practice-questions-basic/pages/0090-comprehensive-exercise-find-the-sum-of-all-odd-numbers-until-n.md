@@ -31,16 +31,6 @@ console.log(sumOfOddNumbers(n));
 </caller>
 <testcase>
 <i>
-const n = 100;
-</i>
-</testcase>
-<testcase>
-<i>
-const n = 34;
-</i>
-</testcase>
-<testcase>
-<i>
 const n = 25;
 </i>
 </testcase>

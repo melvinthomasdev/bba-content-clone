@@ -57,10 +57,5 @@ const arr = [-11, -12, -13, -14];
 const arr = [2, -3, 0, 5, -7, 8];
 </i>
 </testcase>
-<testcase>
-<i>
-const arr = [7, 8, 9, 10];
-</i>
-</testcase>
 </testcases>
 </codeblock>

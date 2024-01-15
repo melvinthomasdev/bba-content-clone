@@ -22,5 +22,20 @@ console.log(createArray(length));
 const length = 12;
 </i>
 </testcase>
+<testcase>
+<i>
+const length = 5;
+</i>
+</testcase>
+<testcase>
+<i>
+const length = 8;
+</i>
+</testcase>
+<testcase>
+<i>
+const length = 1;
+</i>
+</testcase>
 </testcases>
 </codeblock>

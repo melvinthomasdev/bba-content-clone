@@ -34,12 +34,6 @@ const num2 = 50;
 </testcase>
 <testcase>
 <i>
-const num1 = 0;
-const num2 = 100;
-</i>
-</testcase>
-<testcase>
-<i>
 const num1 = 40;
 const num2 = 50;
 </i>

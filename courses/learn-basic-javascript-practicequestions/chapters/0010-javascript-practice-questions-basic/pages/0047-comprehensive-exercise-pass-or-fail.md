@@ -34,5 +34,10 @@ const marks = 5;
 const marks = 45;
 </i>
 </testcase>
+<testcase>
+<i>
+const marks = 85;
+</i>
+</testcase>
 </testcases>
 </codeblock>

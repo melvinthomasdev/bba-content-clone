@@ -69,10 +69,5 @@ const day = 5;
 const day = 9;
 </i>
 </testcase>
-<testcase>
-<i>
-const day = 7;
-</i>
-</testcase>
 </testcases>
 </codeblock>

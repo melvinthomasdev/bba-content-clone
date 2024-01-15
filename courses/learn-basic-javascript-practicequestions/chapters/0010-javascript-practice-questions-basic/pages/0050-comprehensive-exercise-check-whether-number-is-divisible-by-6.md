@@ -31,11 +31,6 @@ const number = 1122;
 </testcase>
 <testcase>
 <i>
-const number = 9876;
-</i>
-</testcase>
-<testcase>
-<i>
 const number = 963;
 </i>
 </testcase>

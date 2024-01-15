@@ -45,10 +45,5 @@ const arr = [10, 12, 6, 18];
 const arr = [1, 5, 3, 2];
 </i>
 </testcase>
-<testcase>
-<i>
-const arr = [1, 3];
-</i>
-</testcase>
 </testcases>
 </codeblock>

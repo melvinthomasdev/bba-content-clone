@@ -57,15 +57,5 @@ const object = {
 const property = "id";
 </i>
 </testcase>
-<testcase>
-<i>
-const object = {
-  name: "Oliver",
-  age: 28,
-  address: "Main Street, New York, NY 10030"
-};
-const property = "address";
-</i>
-</testcase>
 </testcases>
 </codeblock>
