@@ -8,11 +8,17 @@
 - title: Exercise - Write your first CSS code
   slug: exercise-write-your-first-css-code
   page_type: exercise
+- title: Exercise 2 - Write your first CSS code
+  slug: exercise-2-write-your-first-css-code
+  page_type: exercise
 - title: Selectors
   slug: selectors
   page_type: lesson
 - title: Exercise - Selectors
   slug: exercise-selectors
+  page_type: exercise
+- title: Exercise 2 - Selectors
+  slug: exercise-2-selectors
   page_type: exercise
 - title: Properties & Values
   slug: properties-values
@@ -20,15 +26,24 @@
 - title: Exercise - Properties & Values
   slug: exercise-properties-values
   page_type: exercise
+- title: Exercise 2 - Properties & Values
+  slug: exercise-2-properties-values
+  page_type: exercise
 - title: CSS Comments
   slug: css-comments
   page_type: lesson
 - title: Exercise - CSS Comments
   slug: exercise-css-comments
   page_type: exercise
+- title: Exercise 2 - CSS Comments
+  slug: exercise-2-css-comments
+  page_type: exercise
 - title: Inline Style
   slug: inline-style
   page_type: lesson
 - title: Exercise - Inline Style
   slug: exercise-inline-style
+  page_type: exercise
+- title: Exercise 2 - Inline Style
+  slug: exercise-2-inline-style
   page_type: exercise
