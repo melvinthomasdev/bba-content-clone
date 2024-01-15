@@ -26,5 +26,15 @@ const codes = [73, 20, 76, 111, 118, 101, 20, 74, 83];
 const codes = [66, 105, 103, 20, 66, 105, 110, 97, 114, 121];
 </i>
 </testcase>
+<testcase>
+<i>
+const codes = [22, 45, 103, 20, 66, 82, 110, 97, 200, 121];
+</i>
+</testcase>
+<testcase>
+<i>
+const codes = [82, 33, 101, 111, 66, 105, 333, 97, 114, 666];
+</i>
+</testcase>
 </testcases>
 </codeblock>

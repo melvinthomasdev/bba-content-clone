@@ -63,5 +63,17 @@ const day = 11;
 const year = 2016;
 </i>
 </testcase>
+<testcase>
+<i>
+const vacationDetails = {
+  tripId: 2,
+  destination: "Paris",
+  hotelPhoneNumber: 0123456,
+  hotelEmailAddress: "hotel@example.com",
+};
+const day = 21;
+const year = 2020;
+</i>
+</testcase>
 </testcases>
 </codeblock>

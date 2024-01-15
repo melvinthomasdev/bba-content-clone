@@ -33,11 +33,6 @@ const list = [12, -15, 19, 58];
 </testcase>
 <testcase>
 <i>
-const list = [20, 20, 29, 18];
-</i>
-</testcase>
-<testcase>
-<i>
 const list = [];
 </i>
 </testcase>

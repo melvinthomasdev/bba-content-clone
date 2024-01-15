@@ -43,10 +43,5 @@ const elapsedSeconds = 545;
 const elapsedSeconds = 50;
 </i>
 </testcase>
-<testcase>
-<i>
-const elapsedSeconds = 9834;
-</i>
-</testcase>
 </testcases>
 </codeblock>

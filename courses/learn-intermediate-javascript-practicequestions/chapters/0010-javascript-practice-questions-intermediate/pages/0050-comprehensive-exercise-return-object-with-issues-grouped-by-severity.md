@@ -59,5 +59,88 @@ const issues = [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+const issues = [
+  {
+    title: "Calculations are incorrect",
+    severity: "high",
+    assignee: "Eric"
+  },
+  {
+    title: "Background color is not as per design",
+    severity: "medium",
+    assignee: "Eve"
+  },
+  {
+    title: "Admins are not able to login",
+    severity: "high",
+    assignee: "Sam"
+  },
+  {
+    title: "Buttons are disabled everywhere",
+    severity: "high",
+    assignee: "John"
+  },
+  {
+    title: "Table content overflowing",
+    severity: "medium",
+    assignee: "John"
+  }
+];
+</i>
+</testcase>
+<testcase>
+<i>
+const issues = [
+  {
+    title: "Dashboard content is missing",
+    severity: "high",
+    assignee: "Sam"
+  },
+  {
+    title: "Send button does not submit the form",
+    severity: "medium",
+    assignee: "Eve"
+  },
+  {
+    title: "Automation fails at login",
+    severity: "high",
+    assignee: "Sam"
+  },
+  {
+    title: "Stay logged in checkbox does not keep the user logged in",
+    severity: "high",
+    assignee: "Sam"
+  }
+];
+</i>
+</testcase>
+<testcase>
+<i>
+const issues = [
+  {
+    title: "Form labels are missing",
+    severity: "high",
+    assignee: "Sam"
+  },
+  {
+    title: "Missing images on products page",
+    severity: "high",
+    assignee: "Eve"
+  },
+  {
+    title: "Minor spelling error in header",
+    severity: "low",
+    assignee: "Sam"
+  },
+  {
+    title: "Logout button does not work",
+    severity: "high",
+    assignee: "Sam"
+  }
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>

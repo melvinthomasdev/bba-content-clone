@@ -38,5 +38,12 @@ const value = '154D';
   const newBase = 8
 </i>
 </testcase>
+<testcase>
+<i>
+const value = '328E';
+  const currentBase = 20
+  const newBase = 12
+</i>
+</testcase>
 </testcases>
 </codeblock>

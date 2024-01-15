@@ -21,7 +21,7 @@ parameter = 221;
 <testcase>
 <i>
 parameter = hello = () => {
-    return true
+  return true;
 };
 </i>
 </testcase>
@@ -32,24 +32,19 @@ parameter = 'BigBinary';
 </testcase>
 <testcase>
 <i>
-parameter = true;
-</i>
-</testcase>
-<testcase>
-<i>
 parameter = [
-    {
-        "name": "Miami",
-        "state": "Florida"
-    },
-    {
-        "name": "Pune",
-        "state": "Maharashtra"
-    },
-    {
-        "name": "Kochi",
-        "state": "Kerala"
-    }
+  {
+    "name": "Miami",
+    "state": "Florida"
+  },
+  {
+    "name": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "name": "Kochi",
+    "state": "Kerala"
+  }
 ];
 </i>
 </testcase>

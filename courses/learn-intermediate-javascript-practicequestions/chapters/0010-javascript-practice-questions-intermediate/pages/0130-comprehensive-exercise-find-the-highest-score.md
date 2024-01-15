@@ -28,5 +28,10 @@ const scores = [24, 3, 15, 52, 4, 9, 55, 18, 45, 10];
 const scores = [32, 78, 9, 109, 69, 9, 1, 12];
 </i>
 </testcase>
+<testcase>
+<i>
+const scores = [12, 34, 56, 78, 90];
+</i>
+</testcase>
 </testcases>
 </codeblock>

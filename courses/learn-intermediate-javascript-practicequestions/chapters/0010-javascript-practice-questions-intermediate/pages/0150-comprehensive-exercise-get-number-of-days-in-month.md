@@ -31,5 +31,11 @@ const month = 7;
 const year = 2011;
 </i>
 </testcase>
+<testcase>
+<i>
+const month = 10;
+const year = 2020;
+</i>
+</testcase>
 </testcases>
 </codeblock>

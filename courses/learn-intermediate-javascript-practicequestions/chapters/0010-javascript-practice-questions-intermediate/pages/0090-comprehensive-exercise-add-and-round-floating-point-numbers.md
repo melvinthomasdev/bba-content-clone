@@ -36,5 +36,11 @@ const a = '0.7';
 const b = 0.3;
 </i>
 </testcase>
+<testcase>
+<i>
+const a = '3.9';
+const b = 2.2;
+</i>
+</testcase>
 </testcases>
 </codeblock>

@@ -41,5 +41,10 @@ const numbers = [456, 51, 123, 31, 2, 99, 101];
 const numbers = [42, 48, 49, 111, 222, 333, 0, 5];
 </i>
 </testcase>
+<testcase>
+<i>
+const numbers = [206, 101, 88, 384, 291, 171];
+</i>
+</testcase>
 </testcases>
 </codeblock>

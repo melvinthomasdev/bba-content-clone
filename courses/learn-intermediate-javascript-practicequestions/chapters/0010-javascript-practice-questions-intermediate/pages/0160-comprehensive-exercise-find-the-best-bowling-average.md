@@ -47,5 +47,29 @@ const playerStats = {
 }
 </i>
 </testcase>
+<testcase>
+<i>
+const playerStats = {
+  "Raymond Curtis": 20.37,
+  "Alexander Menzie": 32.00,
+  "Josh Harvey": 21.33,
+  "Beata Lawrence": 19.28,
+  "Doug Morrison": 15.50,
+  "Darcy Brewer": 20.80
+}
+</i>
+</testcase>
+<testcase>
+<i>
+const playerStats = {
+  "Raymond Curtis": 19.37,
+  "Alexander Menzie": 17.00,
+  "Josh Harvey": 17.33,
+  "Beata Lawrence": 17.28,
+  "Doug Morrison": 17.50,
+  "Darcy Brewer": 17.80
+}
+</i>
+</testcase>
 </testcases>
 </codeblock>

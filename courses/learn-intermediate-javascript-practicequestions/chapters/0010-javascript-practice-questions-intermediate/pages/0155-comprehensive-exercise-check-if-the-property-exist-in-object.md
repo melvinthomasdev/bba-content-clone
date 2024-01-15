@@ -41,7 +41,7 @@ const property = "userName";
 const obj = {
   id: 1,
   userName: "sam_Smith",
-  name: "Oliver Smith"
+  name: "Sam Smith"
 };
 const property = "address";
 </i>
@@ -54,6 +54,26 @@ const obj = {
   name: "Anna Smith"
 };
 const property = "name";
+</i>
+</testcase>
+<testcase>
+<i>
+const obj = {
+  id: 1,
+  userName: "eve_smith",
+  name: "Eve Smith"
+};
+const property = "name";
+</i>
+</testcase>
+<testcase>
+<i>
+const obj = {
+  id: 1,
+  userName: "Sam Smith",
+  name: "Sam Smith"
+};
+const property = "firstName";
 </i>
 </testcase>
 </testcases>

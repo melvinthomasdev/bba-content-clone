@@ -34,7 +34,23 @@ const decoder = (value) => {
 </testcase>
 <testcase>
 <i>
-const code = '5f2!*r43%2^&';
+const code = '3f39d1078!*';
+const decoder = () => {
+  return 'decodedValue';
+}
+</i>
+</testcase>
+<testcase>
+<i>
+const code = '37EG01!#$19*';
+const decoder = (value) => {
+  return 'decodedValue';
+}
+</i>
+</testcase>
+<testcase>
+<i>
+const code = '84Ig!012*';
 const decoder = () => {
   return 'decodedValue';
 }
