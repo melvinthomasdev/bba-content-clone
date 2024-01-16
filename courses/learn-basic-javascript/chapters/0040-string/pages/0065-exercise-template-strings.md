@@ -17,7 +17,6 @@ console.log();
 console.log();
 console.log();
 console.log();
-console.log();
 </code>
 
 <solution>
@@ -30,6 +29,5 @@ console.log(`Employee ID: ${employeeIdNumber}`);
 console.log(`Name: ${employeeName}`);
 console.log(`Department: ${department}`);
 console.log(`Full-time: ${isFullTime}`);
-console.log(`Greetings, ${firstName}!`);
 </solution>
 </codeblock>
