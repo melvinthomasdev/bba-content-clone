@@ -1,6 +1,10 @@
-Given details of an employee, the function should return an updated version with the `experience` property incremented and a new property `age` calculated from `yearOfBirth` property added to it.
+The function `updatedEmployeeDetails` takes an object with the
+employee's details as input. The function should return an
+updated version of these details with the following modifications,
 
-1. If the 'experience' property is missing, then add it with an initial value of `1`.
+  - Add a new **age** property, calculated based on the **yearOfBirth** property.
+  - Increment the **experience** property by 1.
+  - If the **experience** property is initially absent, add it with a starting value of 1.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -29,13 +33,13 @@ console.log(updatedEmployeeDetails(employeeDetailsAtJoining));
 <i>
 const employeeDetailsAtJoining = {
   userId: 1,
-  fullName: "Hercule Poirot",
-  firstName: "Hercule",
-  lastName: "Poirot",
+  fullName: "Eve Smith",
+  firstName: "Eve",
+  lastName: "Smith",
   experience: 2,
   yearOfBirth: 1990,
   phoneNumber: 203203,
-  emailAddress: "whitehaven.mansions@example.com",
+  emailAddress: "eve.smith@example.com",
 };
 </i>
 </testcase>
@@ -43,12 +47,39 @@ const employeeDetailsAtJoining = {
 <i>
 const employeeDetailsAtJoining = {
   userId: 2,
-  fullName: "John Doe",
-  firstName: "John",
-  lastName: "Doe",
+  fullName: "Renu Sen",
+  firstName: "Renu",
+  lastName: "Sen",
   yearOfBirth: 1995,
-  phoneNumber: 010101,
-  emailAddress: "nowhere@example.com",
+  phoneNumber: 123456,
+  emailAddress: "renu@example.com",
+};
+</i>
+</testcase>
+<testcase>
+<i>
+const employeeDetailsAtJoining = {
+  userId: 3,
+  fullName: "Lao Xun",
+  firstName: "Lao",
+  lastName: "Xun",
+  experience: 1,
+  yearOfBirth: 1985,
+  phoneNumber: 303303,
+  emailAddress: "lao@example.com",
+};
+</i>
+</testcase>
+<testcase>
+<i>
+const employeeDetailsAtJoining = {
+  userId: 4,
+  fullName: "Carlos Alberti",
+  firstName: "Carlos",
+  lastName: "Alberti",
+  yearOfBirth: 1970,
+  phoneNumber: 404404,
+  emailAddress: "c.alberti@example.com",
 };
 </i>
 </testcase>
