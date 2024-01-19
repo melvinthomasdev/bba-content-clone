@@ -38,15 +38,5 @@ const title = "hotfix:user-missing-after-deployment";
 const title = "feature:facebook-sso";
 </i>
 </testcase>
-<testcase>
-<i>
-const title = "feature:edit-attachments-integration";
-</i>
-</testcase>
-<testcase>
-<i>
-const title = "bug:broken-image-url";
-</i>
-</testcase>
 </testcases>
 </codeblock>

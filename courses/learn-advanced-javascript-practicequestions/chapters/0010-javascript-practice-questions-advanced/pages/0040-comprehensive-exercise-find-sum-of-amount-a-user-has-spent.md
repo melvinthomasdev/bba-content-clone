@@ -66,5 +66,57 @@ const expenses = [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+const expenses = [
+  {
+    spentOn: "Electronics",
+    amount: 1500
+  },
+  {
+    spentOn: "Dinner",
+    amount: 700
+  },
+  {
+    spentOn: "Fitness",
+    amount: 450
+  },
+  {
+    spentOn: "Books",
+    amount: 890
+  },
+  {
+    spentOn: "Clothing",
+    amount: 2100
+  }
+];
+</i>
+</testcase>
+<testcase>
+<i>
+const expenses = [
+  {
+    spentOn: "Coffee",
+    amount: 120
+  },
+  {
+    spentOn: "Mobile Bill",
+    amount: 600
+  },
+  {
+    spentOn: "Gym Membership",
+    amount: 1500
+  },
+  {
+    spentOn: "Travel",
+    amount: 1000
+  },
+  {
+    spentOn: "Home Utilities",
+    amount: 2500
+  }
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>

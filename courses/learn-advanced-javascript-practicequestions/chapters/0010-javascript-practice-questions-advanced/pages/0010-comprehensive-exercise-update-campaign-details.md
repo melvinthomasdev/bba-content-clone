@@ -8,26 +8,26 @@ const updateCampaignDetails = ({ campaignDetails, completedLocationIds, newLocat
 </code>
 
 <solution>
-const updateCampaignDetails = ({ campainDetails, completedLocationIds, newLocations }) => {
-  const updatedCampainDetails = campainDetails.map(location => {
+const updateCampaignDetails = ({ campaignDetails, completedLocationIds, newLocations }) => {
+  const updatedCampaignDetails = campaignDetails.map(location => {
     if (!completedLocationIds.includes(location.id))
       return location;
 
     return {...location, completed: true};
   });
-  updatedCampainDetails.splice(2,0,newLocations);
-  return updatedCampainDetails;
+  updatedCampaignDetails.splice(2,0,newLocations);
+  return updatedCampaignDetails;
 }
 </solution>
 
 <testcases>
 <caller>
-console.log(updateCampaignDetails({ campainDetails, completedLocationIds, newLocations }));
+console.log(updateCampaignDetails({ campaignDetails, completedLocationIds, newLocations }));
 </caller>
 <testcase>
 <i>
 const completedLocationIds = [1, 3];
-const campainDetails = [
+const campaignDetails = [
   {
     id: 1,
     name: "Aizawl",
@@ -65,8 +65,8 @@ const newLocations = [
 </testcase>
 <testcase>
 <i>
-const completedLocationIds = [1, 3];
-const campainDetails = [
+const completedLocationIds = [1, 2];
+const campaignDetails = [
   {
     id: 1,
     name: "Thrissur",
@@ -100,6 +100,59 @@ const newLocations = [
     completed: false,
   },
 ];
+</i>
+</testcase>
+<testcase>
+<i>
+const completedLocationIds = [];
+const campaignDetails = [
+  {
+    id: 1,
+    name: "Delhi",
+    state: "Delhi",
+    completed: false,
+  },
+  {
+    id: 2,
+    name: "Mumbai",
+    state: "Maharashtra",
+    completed: false,
+  },
+];
+const newLocations = [
+  {
+    id: 3,
+    name: "Chennai",
+    state: "Tamil Nadu",
+    completed: false,
+  },
+  {
+    id: 4,
+    name: "Kolkata",
+    state: "West Bengal",
+    completed: false,
+  },
+];
+</i>
+</testcase>
+<testcase>
+<i>
+const completedLocationIds = [1, 2];
+const campaignDetails = [
+  {
+    id: 1,
+    name: "Seattle",
+    state: "Washington",
+    completed: false,
+  },
+  {
+    id: 2,
+    name: "San Francisco",
+    state: "California",
+    completed: false,
+  },
+];
+const newLocations = [];
 </i>
 </testcase>
 </testcases>

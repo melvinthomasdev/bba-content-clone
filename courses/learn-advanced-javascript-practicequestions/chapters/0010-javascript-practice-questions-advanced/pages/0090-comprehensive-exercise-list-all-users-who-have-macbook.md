@@ -97,5 +97,31 @@ const users = [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+const users = [
+  {
+    user: "Alice",
+    device: "MacBook Air",
+  },
+  {
+    user: "Bob",
+    device: "Lenovo ThinkPad",
+  },
+  {
+    user: "Charlie",
+    device: "MacBook Pro",
+  },
+  {
+    user: "Diana",
+    device: "Surface Laptop",
+  },
+  {
+    user: "Eva",
+    device: "MacBook Air",
+  }
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>

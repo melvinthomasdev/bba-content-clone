@@ -121,5 +121,39 @@ const users = [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+const users = [
+  {
+    name: "Amy",
+    creditCard: true
+  },
+  {
+    name: "Bandon",
+    creditCard: false
+  },
+  {
+    name: "Maria",
+    creditCard: true
+  },
+  {
+    name: "Rachel",
+    creditCard: false
+  },
+  {
+    name: "Chuck",
+    creditCard: true
+  },
+  {
+    name: "Peter",
+    creditCard: false
+  },
+  {
+    name: "Thomas",
+    creditCard: true
+  }
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>

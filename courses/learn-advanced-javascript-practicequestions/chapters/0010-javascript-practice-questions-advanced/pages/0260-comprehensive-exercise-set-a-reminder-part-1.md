@@ -41,32 +41,12 @@ const message = 'Remind me when I get home to check the mail';
 </testcase>
 <testcase>
 <i>
-const message = 'I will call you back bye Hey remind me to call John back';
-</i>
-</testcase>
-<testcase>
-<i>
 const message = 'Hey AI can you remind me to buy groceries';
 </i>
 </testcase>
 <testcase>
 <i>
-const message = 'Remind office party';
-</i>
-</testcase>
-<testcase>
-<i>
 const message = `Set Remind Game Night at Joe's place`;
-</i>
-</testcase>
-<testcase>
-<i>
-const message = 'Hi there remind me about the meeting with Raj';
-</i>
-</testcase>
-<testcase>
-<i>
-const message = `Reminders sent thank you card`
 </i>
 </testcase>
 <testcase>

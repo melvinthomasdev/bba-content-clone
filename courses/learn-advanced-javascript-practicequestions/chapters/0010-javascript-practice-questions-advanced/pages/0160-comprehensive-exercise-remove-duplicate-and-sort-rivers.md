@@ -38,5 +38,10 @@ const rivers = ['Barak', 'Danba Qu', 'Barak', 'Gomati', 'Teesta', 'Danba Qu', 'B
 const rivers = ['Ghaghara', 'Ganga', 'Yamuna', 'Jhelum', 'Ghaghara', 'Ganga', 'Jhelum'];
 </i>
 </testcase>
+<testcase>
+<i>
+const rivers = ['Mississippi', 'Amazon', 'Nile', 'Danube', 'Mississippi', 'Amazon', 'Volga'];
+</i>
+</testcase>
 </testcases>
 </codeblock>

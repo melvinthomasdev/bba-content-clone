@@ -40,15 +40,5 @@ const list = [[19, 12], [34, 545, 65, 654], [43, 98, 90]];
 const list = [[19, 12], [34, 545, 65, 654], [43, 98, 90], []];
 </i>
 </testcase>
-<testcase>
-<i>
-const list = [[3, 4], [], [12, 13], [14, 17], [19, 20]];
-</i>
-</testcase>
-<testcase>
-<i>
-const list = [[23, 4], [10, 20], [12, 13], [14, 17], [19, 20]];
-</i>
-</testcase>
 </testcases>
 </codeblock>

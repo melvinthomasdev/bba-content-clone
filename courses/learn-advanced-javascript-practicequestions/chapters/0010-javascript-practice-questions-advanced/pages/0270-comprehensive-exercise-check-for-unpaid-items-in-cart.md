@@ -72,7 +72,7 @@ const cart = [
     paymentStatus: true
   },
   {
-    item: "Coffe Beans",
+    item: "Coffee Beans",
     paymentStatus: true
   },
   {
@@ -82,6 +82,28 @@ const cart = [
   {
     item: "Milk",
     paymentStatus: true
+  }
+];
+</i>
+</testcase>
+<testcase>
+<i>
+const cart = [
+  {
+    item: "Laptop",
+    paymentStatus: false
+  },
+  {
+    item: "Headphones",
+    paymentStatus: false
+  },
+  {
+    item: "Mouse",
+    paymentStatus: false
+  },
+  {
+    item: "Charger",
+    paymentStatus: false
   }
 ];
 </i>

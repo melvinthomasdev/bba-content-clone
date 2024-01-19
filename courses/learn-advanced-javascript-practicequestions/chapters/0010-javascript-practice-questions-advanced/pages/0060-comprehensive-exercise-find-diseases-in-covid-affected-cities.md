@@ -73,5 +73,52 @@ const locations =  [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+const locations =  [
+  {
+    "id": 1,
+    "name": "Metropolis",
+    "diseases": ['Disease-X', 'Disease-Y', 'Disease-Z']
+  },
+  {
+    "id": 2,
+    "name": "Atlantis",
+    "diseases": ['Disease-A', 'Disease-B', 'Disease-C']
+  },
+  {
+    "id": '3',
+    "name": "Central City",
+    "diseases": ['Disease-P', 'Disease-Q', 'Disease-R']
+  }
+];
+</i>
+</testcase>
+<testcase>
+<i>
+const locations =  [
+  {
+    "id": '1',
+    "name": "Olympus",
+    "diseases": ['Disease-M', 'Disease-N', 'Disease-O']
+  },
+  {
+    "id": 2,
+    "name": "Avalon",
+    "diseases": ['Disease-D', 'Disease-E', 'Disease-F']
+  },
+  {
+    "id": 3,
+    "name": "Wakanda",
+    "diseases": ['Disease-G', 'Disease-H', 'Disease-I']
+  },
+  {
+    "id": 4,
+    "name": "Neverland",
+    "diseases": ['COVID-19', 'Disease-X', 'Disease-Y']
+  }
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>

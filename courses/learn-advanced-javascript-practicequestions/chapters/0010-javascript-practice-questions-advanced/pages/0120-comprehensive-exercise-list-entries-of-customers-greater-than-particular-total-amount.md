@@ -297,5 +297,75 @@ const customers = [
 const amount = 35000;
 </i>
 </testcase>
+<testcase>
+<i>
+const customers = [
+  {
+    name: "Sophia",
+    owes: 120000,
+    debts: [
+      {
+        amount: 50000,
+        date: "28-June-2020",
+        customer: "Sophia"
+      },
+      {
+        amount: 30000,
+        date: "30-June-2020",
+        customer: "Sophia"
+      },
+      {
+        amount: 40000,
+        date: "5-July-2021",
+        customer: "Sophia"
+      }
+    ]
+  },
+  {
+    name: "David",
+    owes: 75000,
+    debts: [
+      {
+        amount: 20000,
+        date: "28-June-2020",
+        customer: "David"
+      },
+      {
+        amount: 25000,
+        date: "30-June-2020",
+        customer: "David"
+      },
+      {
+        amount: 30000,
+        date: "5-July-2021",
+        customer: "David"
+      }
+    ]
+  },
+  {
+    name: "Emma",
+    owes: 45000,
+    debts: [
+      {
+        amount: 10000,
+        date: "28-June-2020",
+        customer: "Emma"
+      },
+      {
+        amount: 15000,
+        date: "30-June-2020",
+        customer: "Emma"
+      },
+      {
+        amount: 20000,
+        date: "5-July-2021",
+        customer: "Emma"
+      }
+    ]
+  }
+];
+const amount = 70000;
+</i>
+</testcase>
 </testcases>
 </codeblock>

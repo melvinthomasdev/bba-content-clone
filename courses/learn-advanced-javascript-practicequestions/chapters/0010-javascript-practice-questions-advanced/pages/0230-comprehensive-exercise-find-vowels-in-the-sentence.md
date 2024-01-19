@@ -40,5 +40,10 @@ const sentence = 'Good Morning, have some tea!'
 const sentence = `We can use regular expressions, which are basically patterns to match character combinations in strings`
 </i>
 </testcase>
+<testcase>
+<i>
+const sentence = `The quick brown fox jumps over the lazy dog.`
+</i>
+</testcase>
 </testcases>
 </codeblock>

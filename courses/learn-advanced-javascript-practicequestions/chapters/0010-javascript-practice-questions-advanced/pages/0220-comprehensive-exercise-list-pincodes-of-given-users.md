@@ -74,5 +74,30 @@ const list = [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+const list = [
+  {
+    user: 'Alice',
+    pincode: '110'
+  },
+  {
+    user: 'Bob',
+    pincode: '220'
+  },
+  {
+    user: 'Renu',
+    pincode: null
+  },
+  {
+    user: 'Diana',
+  },
+  {
+    user: 'Sam',
+    pincode: undefined
+  }
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>

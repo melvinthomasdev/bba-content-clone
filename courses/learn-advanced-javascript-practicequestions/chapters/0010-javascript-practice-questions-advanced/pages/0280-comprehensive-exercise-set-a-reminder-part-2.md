@@ -128,7 +128,17 @@ const messageArray = ['hey there can you remind me to buy groceries tomorrow', '
 </testcase>
 <testcase>
 <i>
-const messageArray = ['do one thing remind me about the assignment tomorrow', 'reminder game night today', 'remind me about the weekly show and tell on monday']
+const messageArray = ['do one thing remind me about the assignment tomorrow', 'reminder game night today', 'remind me about the weekly show and tell on monday'];
+</i>
+</testcase>
+<testcase>
+<i>
+const messageArray = ['remind to water the plants everyday', 'remind me to call mom today'];
+</i>
+</testcase>
+<testcase>
+<i>
+const messageArray = ['remind me about meeting with the team tomorrow', 'remind me about the conference call on wednesday'];
 </i>
 </testcase>
 </testcases>

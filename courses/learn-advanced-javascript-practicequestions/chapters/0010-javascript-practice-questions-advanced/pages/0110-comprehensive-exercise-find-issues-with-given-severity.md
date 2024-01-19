@@ -35,6 +35,11 @@ const issues = [
     assignee: "Eric"
   },
   {
+  title: "Database connection failure",
+  severity: "critical",
+  assignee: "Bob"
+  },
+  {
     title: "Submit button is disabled",
     severity: "high",
     assignee: "John"
@@ -43,6 +48,11 @@ const issues = [
     title: "Table content overflowing",
     severity: "medium",
     assignee: "John"
+  },
+  {
+    title: "Login button not working",
+    severity: "critical",
+    assignee: "Sam"
   }
 ];
 const severity = "medium";
@@ -67,6 +77,11 @@ const issues = [
     assignee: "Eric"
   },
   {
+  title: "Database connection failure",
+  severity: "critical",
+  assignee: "Bob"
+  },
+  {
     title: "Submit button is disabled",
     severity: "high",
     assignee: "John"
@@ -75,6 +90,11 @@ const issues = [
     title: "Table content overflowing",
     severity: "medium",
     assignee: "John"
+  },
+  {
+    title: "Login button not working",
+    severity: "critical",
+    assignee: "Sam"
   }
 ];
 const severity = "high";
@@ -99,6 +119,11 @@ const issues = [
     assignee: "Eric"
   },
   {
+  title: "Database connection failure",
+  severity: "critical",
+  assignee: "Bob"
+  },
+  {
     title: "Submit button is disabled",
     severity: "high",
     assignee: "John"
@@ -107,9 +132,56 @@ const issues = [
     title: "Table content overflowing",
     severity: "medium",
     assignee: "John"
+  },
+  {
+    title: "Login button not working",
+    severity: "critical",
+    assignee: "Sam"
   }
 ];
 const severity = "low";
+</i>
+</testcase>
+<testcase>
+<i>
+const issues = [
+  {
+    title: "View is not symmetric",
+    severity: "low",
+    assignee: "Eric"
+  },
+  {
+    title: "Title color is not as per design",
+    severity: "medium",
+    assignee: "John"
+  },
+  {
+    title: "Oliver is not able to login",
+    severity: "high",
+    assignee: "Eric"
+  },
+  {
+  title: "Database connection failure",
+  severity: "critical",
+  assignee: "Bob"
+  },
+  {
+    title: "Submit button is disabled",
+    severity: "high",
+    assignee: "John"
+  },
+  {
+    title: "Table content overflowing",
+    severity: "medium",
+    assignee: "John"
+  },
+  {
+    title: "Login button not working",
+    severity: "critical",
+    assignee: "Sam"
+  }
+];
+const severity = "critical";
 </i>
 </testcase>
 </testcases>

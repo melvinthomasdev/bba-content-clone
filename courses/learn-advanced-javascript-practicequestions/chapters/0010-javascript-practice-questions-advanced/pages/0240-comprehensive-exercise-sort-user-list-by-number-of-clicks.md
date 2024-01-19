@@ -92,5 +92,31 @@ const users = [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+const users = [
+  {
+    user: "Eva",
+    clicks: 20,
+  },
+  {
+    user: "Mark",
+    clicks: 120,
+  },
+  {
+    user: "Sophie",
+    clicks: 50,
+  },
+  {
+    user: "James",
+    clicks: 28,
+  },
+  {
+    user: "Olivia",
+    clicks: 80,
+  },
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>

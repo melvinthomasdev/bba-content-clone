@@ -85,5 +85,27 @@ const users = [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+const users = [
+  {
+    user: "Sam",
+    phone: "202-555-0445"
+  },
+  {
+    user: "Renu",
+    phone: "202-555-0198"
+  },
+  {
+    user: "John",
+    phone: "202-555-0164"
+  },
+  {
+    user: "Rachel",
+    phone: "202-555-6767"
+  }
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>
