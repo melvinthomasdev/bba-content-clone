@@ -373,8 +373,8 @@ class User < ApplicationRecord
     # previous code
 
     def assign_tasks_to_task_owners
-      tasks_whose_owner_is_not_current_user = assigned_tasks.select { |task| task.task_owner_id != id }
-      tasks_whose_owner_is_not_current_user.each do |task|
+      tasks_whose_owner_is_not_current_user = assigned_tasks.where.not(task_owner_id: id)
+      tasks_whose_owner_is_not_current_user.find_each do |task|
         task.update(assigned_user_id: task.task_owner_id)
       end
     end

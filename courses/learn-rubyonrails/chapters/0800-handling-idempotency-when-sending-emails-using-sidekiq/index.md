@@ -429,8 +429,7 @@ the following lines of code:
 ```ruby
 class AddDefaultPreferenceToExistingUsers < ActiveRecord::Migration[7.0]
  def up
-    users_with_nil_preference = User.where.missing(:preference)
-    users_with_nil_preference.each do |user|
+    User.where.missing(:preference).find_each do |user|
       user.send(:build_default_preference)
       user.save!
     end
@@ -1238,7 +1237,7 @@ class TodoNotificationService
     end
 
     def notify_users
-      users_to_notify.each do |user|
+      users_to_notify.find_each do |user|
         UserNotificationsJob.perform_async(user.id)
       end
     end

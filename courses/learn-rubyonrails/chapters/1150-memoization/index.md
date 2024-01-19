@@ -66,7 +66,7 @@ class UserDeletionService
   private
 
 	  def assign_tasks_to_admin
-	    user.assigned_tasks.each do |task|
+	    user.assigned_tasks.find_each do |task|
 	      task.update(assigned_user: admin)
 	    end
 	  end
