@@ -38,6 +38,15 @@
 - title: Exercise - Preventing Multiple Events
   slug: exercise-preventing-multiple-events
   page_type: exercise
+- title: Event Propagation
+  slug: event-propagation
+  page_type: lesson
+- title: Stopping Event Propagation
+  slug: stopping-event-propagation
+  page_type: lesson
+- title: Exercise - Stopping Event Propagation
+  slug: exercise-stopping-event-propagation
+  page_type: exercise
 - title: Preventing Default Behaviour
   slug: preventing-default-behaviour
   page_type: lesson
