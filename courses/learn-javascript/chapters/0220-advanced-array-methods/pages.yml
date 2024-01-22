@@ -1,0 +1,73 @@
+---
+- title: Get Index of an Element
+  slug: indexof-and-lastindexof
+  page_type: lesson
+- title: Exercise - Get Index of an Element
+  slug: exercise-indexof
+  page_type: exercise
+- title: Exercise - Get Index of an Element
+  slug: exercise-lastindexof
+  page_type: exercise
+- title: Check for Inclusion of an Element
+  slug: includes
+  page_type: lesson
+- title: Exercise - Search for an element
+  slug: exercise-includes
+  page_type: exercise
+- title: Slice an Array
+  slug: slice
+  page_type: lesson
+- title: Exercise - Copy a Portion of an Array
+  slug: exercise-slice-1
+  page_type: exercise
+- title: Exercise - Copy a Portion of an Array
+  slug: exercise-slice-2
+  page_type: exercise
+- title: Modify an Array
+  slug: splice
+  page_type: lesson
+- title: Exercise - Modify an Array
+  slug: exercise-splice
+  page_type: exercise
+- title: Concatenate Elements Into New Array
+  slug: concat
+  page_type: lesson
+- title: Exercise - Copy Elements Into New Array
+  slug: exercise-concat
+  page_type: exercise
+- title: Join all Elements
+  slug: join
+  page_type: lesson
+- title: Exercise - Join all Elements
+  slug: exercise-join
+  page_type: exercise
+- title: Filter elements based on given condition
+  slug: filter
+  page_type: lesson
+- title: Exercise - Check Elements on Given Condition
+  slug: exercise-filter
+  page_type: exercise
+- title: Exercise - Difference Between map and forEach
+  slug: exercise-map-and-foreach
+  page_type: exercise
+- title: Find element of an Array
+  slug: find
+  page_type: lesson
+- title: Exercise - Find element of an Array
+  slug: exercise-find
+  page_type: exercise
+- title: Sort the Array
+  slug: sort
+  page_type: lesson
+- title: Exercise - Sort the Array
+  slug: exercise-sort
+  page_type: exercise
+- title: Reduce an Array into a Single Value
+  slug: reduce
+  page_type: lesson
+- title: Exercise - Execute a Function and Get a Single Value
+  slug: exercise-reduce
+  page_type: exercise
+- title: Usage of Underscore in Functions
+  slug: usage-of-underscore
+  page_type: lesson

@@ -1,0 +1,19 @@
+---
+- title: The undefined Data Type
+  slug: the-undefined-data-type
+  page_type: lesson
+- title: Exercise - undefined
+  slug: exercise-undefined
+  page_type: exercise
+- title: Exercise 2 - undefined
+  slug: exercise-2-undefined
+  page_type: exercise
+- title: The null Data Type
+  slug: the-null-data-type
+  page_type: lesson
+- title: Exercise - null
+  slug: exercise-null
+  page_type: exercise
+- title: Exercise 2 - null
+  slug: exercise-2-null
+  page_type: exercise

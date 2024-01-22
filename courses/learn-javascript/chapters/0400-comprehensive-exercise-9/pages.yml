@@ -1,0 +1,13 @@
+---
+- title: About
+  slug: about-comprehensive-exercise
+  page_type: lesson
+- title: ComprehensiveExercise - Strings and Numbers
+  slug: challenge-strings-and-numbers-js
+  page_type: assessment
+- title: ComprehensiveExercise - Perfect Square
+  slug: challenge-perfect-square-js
+  page_type: assessment
+- title: ComprehensiveExercise - Biggest Difference
+  slug: challenge-biggest-difference-js
+  page_type: assessment

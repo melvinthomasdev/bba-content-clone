@@ -1,0 +1,10 @@
+---
+- title: About
+  slug: about-comprehensive-exercise
+  page_type: lesson
+- title: Challenge - Even Number Array
+  slug: challenge-even-number-array-js
+  page_type: assessment  
+- title: Challenge - Array of Numbers
+  slug: challenge-array-of-numbers-js
+  page_type: assessment

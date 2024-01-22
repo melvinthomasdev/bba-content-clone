@@ -1,0 +1,55 @@
+---
+- title: Create Map
+  slug: create-map
+  page_type: lesson
+- title: Exercise - Create Map
+  slug: exercise-create-map
+  page_type: exercise
+- title: Add Data to Map
+  slug: add-data-to-map
+  page_type: lesson
+- title: Exercise - Add Data to Map
+  slug: exercise-add-data-to-map
+  page_type: exercise
+- title: Fetch Data From a Map
+  slug: fetch-data-from-a-map
+  page_type: lesson
+- title: Exercise - Fetch Data From a Map
+  slug: exercise-fetch-data-from-a-map
+  page_type: exercise
+- title: Check if Map has Your Data
+  slug: check-if-map-has-your-data
+  page_type: lesson
+- title: Exercise - Check if Map has Your Data
+  slug: exercise-check-if-map-has-your-data
+  page_type: exercise
+- title: Size of the Map
+  slug: size-of-the-map
+  page_type: lesson
+- title: Exercise - Size of the Map
+  slug: exercise-size-of-the-map
+  page_type: exercise
+- title: Delete Data From the Map
+  slug: delete-data-from-the-map
+  page_type: lesson
+- title: Exercise - Delete Data From the Map
+  slug: exercise-delete-data-from-the-map
+  page_type: exercise
+- title: Remove All Elements From the Map
+  slug: remove-all-elements-from-the-map
+  page_type: lesson
+- title: Exercise - Remove All Elements From the Map
+  slug: exercise-remove-all-elements-from-the-map
+  page_type: exercise
+- title: Create a Map From an Object
+  slug: create-a-map-from-an-object
+  page_type: lesson
+- title: Exercise - Create a Map From an Object
+  slug: exercise-create-a-map-from-an-object
+  page_type: exercise
+- title: Convert Map to Object
+  slug: object-from-entries
+  page_type: lesson
+- title: Exercise - Object.fromEntries()
+  slug: exercise-object-from-entries
+  page_type: exercise

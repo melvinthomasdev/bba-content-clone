@@ -1,0 +1,46 @@
+---
+- title: Create String
+  slug: create-string
+  page_type: lesson
+- title: Exercise - Create String
+  slug: exercise-create-string
+  page_type: exercise
+- title: Exercise 2 - Create string
+  slug: exercise-2-create-string
+  page_type: exercise
+- title: Joining Strings
+  slug: joining-strings
+  page_type: lesson
+- title: Exercise - Joining Strings
+  slug: exercise-joining-strings
+  page_type: exercise
+- title: Exercise 2 - Joining Strings
+  slug: exercise-2-joining-strings
+  page_type: exercise
+- title: Template Strings
+  slug: template-strings
+  page_type: lesson
+- title: Exercise - Template Strings
+  slug: exercise-template-strings
+  page_type: exercise
+- title: Exercise 2 - Template Strings
+  slug: exercise-2-template-strings
+  page_type: exercise
+- title: String Interploation
+  slug: string-interploation
+  page_type: lesson
+- title: Exercise - String Interploation
+  slug: exercise-string-interploation
+  page_type: exercise
+- title: Exercise 2 - String Interploation
+  slug: exercise-2-string-interploation
+  page_type: exercise
+- title: Multi-line Template Strings
+  slug: multiline-template-strings
+  page_type: lesson
+- title: Exercise - Multi-line Template Strings
+  slug: exercise-multiline-template-strings
+  page_type: lesson
+- title: Exercise 2 - Multi-line Template Strings
+  slug: exercise-2-multiline-template-strings
+  page_type: lesson

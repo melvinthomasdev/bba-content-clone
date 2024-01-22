@@ -1,0 +1,31 @@
+---
+- title: Converting to String
+  slug: converting-to-string
+  page_type: lesson
+- title: Exercise - Converting to String
+  slug: exercise-converting-to-string
+  page_type: exercise
+- title: Exercise 2 - Converting to String
+  slug: exercise-2-converting-to-string
+  page_type: exercise
+- title: Converting to Number
+  slug: converting-to-number
+  page_type: lesson
+- title: Exercise - Converting to Number
+  slug: exercise-converting-any-type-to-number
+  page_type: exercise
+- title: Exercise 2 - Converting to Number
+  slug: exercise-2-converting-any-type-to-number
+  page_type: exercise
+- title: isNaN Method
+  slug: isnan-method
+  page_type: lesson
+- title: Exercise - isNaN Method
+  slug: exercise-isnan-method
+  page_type: exercise
+- title: Exercise 2 - isNaN Method
+  slug: exercise-2-isnan-method
+  page_type: exercise
+- title: Composite data types
+  slug: composite-data-types
+  page_type: lesson

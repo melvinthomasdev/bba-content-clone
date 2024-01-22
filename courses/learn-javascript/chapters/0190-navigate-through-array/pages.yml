@@ -1,0 +1,22 @@
+---
+- title: Execute Function for Each Element
+  slug: foreach
+  page_type: lesson
+- title: Exercise - Execute Function for Each Element
+  slug: exercise-foreach
+  page_type: exercise
+- title: Exercise 2 - Execute Function for Each Element
+  slug: exercise-2-foreach
+  page_type: exercise
+- title: Map a Function and Get a New Array
+  slug: map
+  page_type: lesson
+- title: Exercise - Execute a function and Get New Array
+  slug: exercise-map
+  page_type: exercise
+- title: Exercise 2 - Execute a function and Get New Array
+  slug: exercise-2-map
+  page_type: exercise
+- title: Difference between forEach and map
+  slug: difference-foreach-map
+  page_type: lesson

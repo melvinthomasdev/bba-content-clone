@@ -1,0 +1,25 @@
+---
+- title: Destructuring Array Elements
+  slug: destructuring-array-elements
+  page_type: lesson
+- title: Exercise Array Destructuring
+  slug: exercise-array-destructuring
+  page_type: exercise
+- title: Ignoring Elements
+  slug: ignoring-elements
+  page_type: lesson
+- title: Exercise - Ignoring Elements
+  slug: exercise-ignoring-elements
+  page_type: exercise
+- title: Destructuring arrays with Rest Operator
+  slug: destructuring-arrays-with-rest-operator
+  page_type: lesson
+- title: Exercise - Destructuring arrays with Rest Operator
+  slug: exercise-destructuring-arrays-with-rest-operator
+  page_type: exercise
+- title: Using Default Values
+  slug: using-default-values
+  page_type: lesson
+- title: Exercise - Using Default Values
+  slug: exercise-using-default-values
+  page_type: exercise

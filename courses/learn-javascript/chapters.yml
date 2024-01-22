@@ -1,0 +1,97 @@
+---
+- name: Getting Started
+  slug: getting-started
+- name: Display output on the screen
+  slug: display-output-on-screen
+- name: Variables
+  slug: variables
+- name: String
+  slug: string
+- name: Number
+  slug: number
+- name: Comprehensive Exercise 1
+  slug: comprehensive-exercise-1
+- name: undefined and null
+  slug: undefined-and-null
+- name: Object
+  slug: object
+- name: Array
+  slug: array
+- name: Array Methods
+  slug: array-methods
+- name: Comprehensive Exercise 2
+  slug: comprehensive-exercise-2
+- name: Conditionals
+  slug: conditionals
+- name: Logical Operations
+  slug: logical-operations
+- name: Type Conversions
+  slug: type-conversions
+- name: Functions
+  slug: functions
+- name: Comprehensive Exercise 3
+  slug: comprehensive-exercise-3
+- name: Navigate through Array
+  slug: navigate-through-array
+- name: Comprehensive Exercises 4
+  slug: comprehensive-exercises-4
+- name: Single and Multiple line comments
+  slug: single-and-multiple-line-comments
+- name: Advanced Array Methods
+  slug: advanced-array-methods
+- name: Rest and Spread
+  slug: rest-and-spread
+- name: Comprehensive Exercise 5
+  slug: comprehensive-exercise-5
+- name: Scope
+  slug: scope
+- name: Timeouts and Intervals
+  slug: timeouts-and-intervals
+- name: Date
+  slug: date
+- name: LocalStorage and sessionStorage
+  slug: local-and-session-storage
+- name: Comprehensive Exercises 6
+  slug: comprehensive-exercises-6
+- name: JavaScript Object Notation
+  slug: javascript-object-notation
+- name: Array Destructuring
+  slug: array-destructuring
+- name: Object Destructuring
+  slug: object-destructuring
+- name: Optional Chaining
+  slug: optional-chaining
+- name: Asynchronous Code
+  slug: asynchronous-code
+- name: Promises
+  slug: promises
+- name: Comprehensive Exercise 7
+  slug: comprehensive-exercise-7
+- name: String Methods
+  slug: string-methods
+- name: Comprehensive Exercise 8
+  slug: comprehensive-exercise-8
+- name: Math Object
+  slug: math-object
+- name: Number Methods
+  slug: number-methods
+- name: Comprehensive Exercise 9
+  slug: comprehensive-exercise-9  
+- name: this on Objects
+  slug: this-on-objects
+- name: Closure
+  slug: closure
+- name: Map
+  slug: map
+- name: Set
+  slug: set
+- name: Error Handling
+  slug: error-handling
+- name: Copying Objects
+  slug: copying-objects
+- name: Debugging in JavaScript
+  slug: debugging-in-javascript
+- name: Mutation
+  slug: mutation
+- name: Comprehensive Exercise 10
+  slug: comprehensive-exercise-10 

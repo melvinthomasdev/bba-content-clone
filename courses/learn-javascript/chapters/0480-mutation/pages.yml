@@ -1,0 +1,25 @@
+---
+- title: Avoid Mutation
+  slug: avoid-mutation
+  page_type: lesson
+- title: Mutating vs Reassigning
+  slug: mutating-vs-reassigning
+  page_type: lesson
+- title: Exercise - Avoid Mutation with `.sort()`
+  slug: exercise-avoid-mutation-with-sort
+  page_type: exercise
+- title: Exercise - Avoid Mutation While Removing Array Elements
+  slug: exercise-avoid-mutation-while-removing-array-elements
+  page_type: exercise
+- title: Exercise - Avoid Mutation While Adding Array Elements
+  slug: exercise-avoid-mutation-while-adding-array-elements
+  page_type: exercise
+- title: Exercise - Avoid Mutation While Updating an Array
+  slug: exercise-avoid-mutation-while-updating-an-array
+  page_type: exercise
+- title: Exercise - Avoid Mutation while Updating Properties
+  slug: exercise-avoid-mutation-while-updating-properties
+  page_type: exercise
+- title: JS Challenge Mutation
+  slug: js-challenge-mutation
+  page_type: exercise

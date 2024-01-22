@@ -1,0 +1,34 @@
+---
+- title: Store Number
+  slug: store-number
+  page_type: lesson
+- title: Exercise - Store Number
+  slug: exercise-store-number
+  page_type: exercise
+- title: Exercise 2 - Store number
+  slug: exercise-2-store-number
+  page_type: exercise
+- title: NaN
+  slug: nan
+  page_type: lesson
+- title: Increase or Decrease a Number by One
+  slug: increase-or-decrease-a-number-by-one
+  page_type: lesson
+- title: Exercise - Increase or Decrease a Number by One
+  slug: exercise-increase-or-decrease-a-number-by-one
+  page_type: exercise
+- title: Exercise 2 - Increase or Decrease a Number by One
+  slug: exercise-2-increase-or-decrease-a-number-by-one
+  page_type: exercise
+- title: Get the Remainder
+  slug: get-the-remainder
+  page_type: lesson
+- title: Exercise - Get the Remainder
+  slug: exercise-get-the-remainder
+  page_type: exercise
+- title: Exercise 2 - Get the Remainder
+  slug: exercise-2-get-the-remainder
+  page_type: exercise
+- title: JS Challenge - String and Number
+  slug: js-challenge-string-number
+  page_type: exercise
