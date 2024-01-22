@@ -4,7 +4,7 @@ subheading: Learn Intermediate HTML by actually writing HTML code
 slug: learn-intermediate-html
 published: true
 custom_data:
-  type: html
+  type: html-retired
   courseType: lesson
   upcoming: false
   newCourse: false

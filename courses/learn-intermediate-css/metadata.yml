@@ -4,7 +4,7 @@ subheading: Learn Intermediate CSS by actually writing CSS code
 slug: learn-intermediate-css
 published: true
 custom_data:
-  type: css
+  type: css-retired
   courseType: lesson
   upcoming: false
   newCourse: false

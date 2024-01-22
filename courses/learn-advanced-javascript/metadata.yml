@@ -4,7 +4,7 @@ subheading: Learn Advanced JavaScript by actually writing JavaScript code
 slug: learn-advanced-javascript
 published: true
 custom_data:
-  type: javascript
+  type: javascript-retired
   courseType: lesson
   upcoming: false
   newCourse: false

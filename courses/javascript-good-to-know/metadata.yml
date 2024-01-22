@@ -5,7 +5,7 @@ subheading: Some concepts in JavaScript that are not commonly used but are good 
 slug: javascript-good-to-know
 published: true
 custom_data:
-  type: javascript
+  type: javascript-retired
   courseType: lesson
   upcoming: false
   newCourse: false

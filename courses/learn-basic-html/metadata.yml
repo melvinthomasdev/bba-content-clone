@@ -4,7 +4,7 @@ subheading: Learn HTML by actually writing HTML code
 slug: learn-basic-html
 published: true
 custom_data:
-  type: html
+  type: html-retired
   courseType: lesson
   upcoming: false
   newCourse: false

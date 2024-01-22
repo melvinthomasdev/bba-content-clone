@@ -4,7 +4,7 @@ subheading: Learn CSS by actually writing CSS code
 slug: learn-css
 published: true
 custom_data:
-  type: css-new
+  type: css
   courseType: lesson
   upcoming: false
   newCourse: false
