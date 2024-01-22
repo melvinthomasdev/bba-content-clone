@@ -4,7 +4,7 @@ subheading: Learn JavaScript by actually writing JavaScript code
 slug: learn-javascript
 published: true
 custom_data:
-  type: js
+  type: javascript
   courseType: lesson
   upcoming: false
   newCourse: false

@@ -94,4 +94,16 @@
 - name: Mutation
   slug: mutation
 - name: Comprehensive Exercise 10
-  slug: comprehensive-exercise-10 
+  slug: comprehensive-exercise-10
+- name: Number Methods 2
+  slug: number-methods-2
+- name: String Methods 2
+  slug: string-methods-2
+- name: Immediately Invoked Function Expression
+  slug: immediately-invoked-function-expression
+- name: call, apply and bind
+  slug: call-apply-bind
+- name: Loops
+  slug: loops
+- name: instanceof
+  slug: instanceof
