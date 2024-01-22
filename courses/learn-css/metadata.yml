@@ -1,0 +1,15 @@
+---
+name: Learn CSS
+subheading: Learn CSS by actually writing CSS code
+slug: learn-css
+published: true
+custom_data:
+  type: css-new
+  courseType: lesson
+  upcoming: false
+  newCourse: false
+  courseColor: border-gray-600
+home_logo: css.svg
+logo: css-header-image.png
+chapter_completion_image: celebration_css.gif
+position: 193

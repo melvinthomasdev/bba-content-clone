@@ -1,0 +1,67 @@
+---
+- title: Maximum Height - I
+  slug: maximum-height-i
+  page_type: lesson
+- title: Maximum Height - II
+  slug: maximum-height-ii
+  page_type: lesson
+- title: Maximum Height - III
+  slug: maximum-height-iii
+  page_type: lesson
+- title: Exercise - Maximum Height
+  slug: exercise-maximum-height
+  page_type: exercise
+- title: Exercise 2 - Maximum Height
+  slug: exercise-maximum-height-2
+  page_type: exercise
+- title: Exercise 3 - Maximum Height
+  slug: exercise-maximum-height-3
+  page_type: exercise
+- title: Maximum Width - I 
+  slug: maximum-width-i
+  page_type: lesson
+- title: Maximum Width - II
+  slug: maximum-width-ii
+  page_type: lesson
+- title: Maximum Width - III
+  slug: maximum-width-iii
+  page_type: lesson
+- title: Exercise - Maximum Width
+  slug: exercise-maximum-width
+  page_type: exercise
+- title: Exercise 2 - Maximum Width
+  slug: exercise-maximum-width-2
+  page_type: exercise
+- title: Exercise 3 - Maximum Width
+  slug: exercise-maximum-width-3
+  page_type: exercise
+- title: Minimum Height - I
+  slug: minimum-height-i
+  page_type: lesson
+- title: Minimum Height - II 
+  slug: minimum-height-ii
+  page_type: lesson
+- title: Minimum Height - III
+  slug: minimum-height-iii
+  page_type: lesson
+- title: Exercise - Minimum Height
+  slug: exercise-minimum-height
+  page_type: exercise
+- title: Exercise 2 - Minimum Height
+  slug: exercise-2-minimum-height
+  page_type: exercise
+- title: Minimum Width - I
+  slug: minimum-width-i
+  page_type: lesson
+- title: Minimum Width - II 
+  slug: minimum-width-ii
+  page_type: lesson
+- title: Minimum Width - III 
+  slug: minimum-width-iii
+  page_type: lesson
+- title: Exercise - Min Width
+  slug: exercise-min-width
+  page_type: exercise
+- title: Exercise 2 - Min Width
+  slug: exercise-2-min-width
+  page_type: exercise

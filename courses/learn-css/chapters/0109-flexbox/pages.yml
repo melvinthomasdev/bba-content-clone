@@ -1,0 +1,76 @@
+---
+- title: Flexbox
+  slug: flexbox
+  page_type: lesson
+- title: Flex Container
+  slug: flex-container
+  page_type: lesson
+- title: Exercise - Flex Container
+  slug: exercise-flex-container
+  page_type: exercise
+- title: Flex Direction
+  slug: flex-direction
+  page_type: lesson
+- title: Exercise - Flex Direction
+  slug: exercise-flex-direction
+  page_type: exercise
+- title: Flex Wrap
+  slug: flex-wrap
+  page_type: lesson
+- title: Exercise - Flex Wrap
+  slug: exercise-flex-wrap
+  page_type: exercise
+- title: Justify Content
+  slug: justify-content
+  page_type: lesson
+- title: Exercise - Justify Content
+  slug: exercise-justify-content
+  page_type: exercise
+- title: Exercise - Justify Content - Column Direction
+  slug: exercise-justify-content-column
+  page_type: exercise
+- title: Align Items
+  slug: align-items
+  page_type: lesson
+- title: Exercise - Align Items
+  slug: exercise-align-items
+  page_type: exercise
+- title: Exercise - Align Items - Column Direction
+  slug: exercise-align-items-column
+  page_type: exercise
+- title: Align Self
+  slug: align-self
+  page_type: lesson
+- title: Exercise - Align Self
+  slug: exercise-align-self
+  page_type: exercise
+- title: Flex Grow
+  slug: flex-grow
+  page_type: lesson
+- title: Exercise - Flex Grow
+  slug: exercise-flex-grow
+  page_type: exercise
+- title: Flex Shrink
+  slug: flex-shrink
+  page_type: lesson
+- title: Exercise - Flex Shrink
+  slug: exercise-flex-shrink
+  page_type: exercise
+- title: Flex Basis
+  slug: flex-basis
+  page_type: lesson
+- title: Exercise - Flex Basis
+  slug: exercise-flex-basis
+  page_type: exercise
+- title: Flex Shorthand Property
+  slug: flex-shorthand-property
+  page_type: lesson
+- title: Exercise - Flex Shorthand Property
+  slug: exercise-flex-shorthand-property
+  page_type: exercise
+- title: Flex Order
+  slug: flex-order
+  page_type: lesson
+- title: Exercise - Flex Order
+  slug: exercise-flex-order
+  page_type: exercise

@@ -1,0 +1,15 @@
+- title: CSS variables
+  slug: css-variables
+  page_type: lesson
+- title: Exercise - CSS variables
+  slug: exercise-css-variables
+  page_type: exercise
+- title: CSS :root
+  slug: css-root
+  page_type: lesson
+- title: Exercise - CSS :root
+  slug: exercise-css-root
+  page_type: exercise
+- title: CSS variables - Specificity
+  slug: css-variables-specificity
+  page_type: lesson
