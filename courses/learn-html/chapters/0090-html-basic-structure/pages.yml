@@ -1,0 +1,22 @@
+---
+- title: Doctype
+  slug: doctype
+  page_type: lesson
+- title: The HTML Element
+  slug: the-html-element
+  page_type: lesson
+- title: Head Element
+  slug: the-head-element
+  page_type: lesson
+- title: Body Element
+  slug: the-body-element
+  page_type: lesson
+- title: Document Structure
+  slug: document-structure
+  page_type: lesson
+- title: Comments
+  slug: comments
+  page_type: lesson
+- title: HTML Challenge - HTML Basic Structure
+  slug: html-challenge-html-basic-structure
+  page_type: exercise
