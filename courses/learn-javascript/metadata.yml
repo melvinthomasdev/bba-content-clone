@@ -2,7 +2,7 @@
 name: Learn JavaScript
 subheading: Learn JavaScript by actually writing JavaScript code
 slug: learn-javascript
-published: false
+published: true
 custom_data:
   type: js
   courseType: lesson
