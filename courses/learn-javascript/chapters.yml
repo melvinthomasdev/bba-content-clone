@@ -33,8 +33,8 @@
   slug: comprehensive-exercise-3
 - name: Navigate through Array
   slug: navigate-through-array
-- name: Comprehensive Exercises 4
-  slug: comprehensive-exercises-4
+- name: Comprehensive Exercise 4
+  slug: comprehensive-exercise-4
 - name: Document Object Model
   slug: document-object-model
 - name: Selecting DOM Elements
@@ -43,12 +43,12 @@
   slug: manipulating-dom-elements-part-1
 - name: Manipulating DOM Elements Part 2
   slug: manipulating-dom-elements-part-2
-- name: Comprehensive Exercise 01
-  slug: comprehensive-exercise-01
+- name: Comprehensive Exercise 5
+  slug: comprehensive-exercise-5
 - name: Browser Events
   slug: browser-events
-- name: Comprehensive Exercise 02
-  slug: comprehensive-exercise-02
+- name: Comprehensive Exercise 6
+  slug: comprehensive-exercise-6
 - name: Sectional Project
   slug: sectional-project
 - name: Single and Multiple line comments
@@ -57,8 +57,8 @@
   slug: advanced-array-methods
 - name: Rest and Spread
   slug: rest-and-spread
-- name: Comprehensive Exercise 5
-  slug: comprehensive-exercise-5
+- name: Comprehensive Exercise 7
+  slug: comprehensive-exercise-7
 - name: Scope
   slug: scope
 - name: Timeouts and Intervals
@@ -67,8 +67,8 @@
   slug: date
 - name: LocalStorage and sessionStorage
   slug: local-and-session-storage
-- name: Comprehensive Exercises 6
-  slug: comprehensive-exercises-6
+- name: Comprehensive Exercises 8
+  slug: comprehensive-exercises-8
 - name: JavaScript Object Notation
   slug: javascript-object-notation
 - name: Array Destructuring
@@ -81,18 +81,18 @@
   slug: asynchronous-code
 - name: Promises
   slug: promises
-- name: Comprehensive Exercise 7
-  slug: comprehensive-exercise-7
+- name: Comprehensive Exercise 9
+  slug: comprehensive-exercise-9
 - name: String Methods
   slug: string-methods
-- name: Comprehensive Exercise 8
-  slug: comprehensive-exercise-8
+- name: Comprehensive Exercise 10
+  slug: comprehensive-exercise-10
 - name: Math Object
   slug: math-object
 - name: Number Methods
   slug: number-methods
-- name: Comprehensive Exercise 9
-  slug: comprehensive-exercise-9  
+- name: Comprehensive Exercise 11
+  slug: comprehensive-exercise-11 
 - name: this on Objects
   slug: this-on-objects
 - name: Closure
@@ -109,8 +109,8 @@
   slug: debugging-in-javascript
 - name: Mutation
   slug: mutation
-- name: Comprehensive Exercise 10
-  slug: comprehensive-exercise-10
+- name: Comprehensive Exercise 12
+  slug: comprehensive-exercise-12
 - name: Number Methods 2
   slug: number-methods-2
 - name: String Methods 2
