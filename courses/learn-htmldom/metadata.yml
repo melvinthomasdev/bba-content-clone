@@ -2,7 +2,7 @@
 name: Learn HTML DOM
 subheading: Learn HTML DOM by actually manipulating HTML DOM elements
 slug: learn-htmldom
-published: true
+published: false
 custom_data:
   type: javascript
   courseType: lesson

@@ -35,6 +35,22 @@
   slug: navigate-through-array
 - name: Comprehensive Exercises 4
   slug: comprehensive-exercises-4
+- name: Document Object Model
+  slug: document-object-model
+- name: Selecting DOM Elements
+  slug: selecting-dom-elements
+- name: Manipulating DOM Elements Part 1
+  slug: manipulating-dom-elements-part-1
+- name: Manipulating DOM Elements Part 2
+  slug: manipulating-dom-elements-part-2
+- name: Comprehensive Exercise 01
+  slug: comprehensive-exercise-01
+- name: Browser Events
+  slug: browser-events
+- name: Comprehensive Exercise 02
+  slug: comprehensive-exercise-02
+- name: Sectional Project
+  slug: sectional-project
 - name: Single and Multiple line comments
   slug: single-and-multiple-line-comments
 - name: Advanced Array Methods
