@@ -1,136 +1,185 @@
-In this lesson, we will learn how we can add titles to our pages. The page title is an essential part of a web page as it provides a concise and meaningful description of the content on that particular page.
+To understand Higher Order Components, it is essential to understand what are Higher Order Functions first.
 
-Adding a page title is important for several reasons:
+## Higher Order Functions
 
-**1. SEO (Search Engine Optimization):** Search engines use page titles as one of the factors to understand the content of a page. A relevant and descriptive title can improve the page's visibility in search engine results, potentially increasing organic traffic.
+Higher-order function (HOF) is a general concept that applies to many programming languages, including JavaScript. A higher order function is a function that takes one or more functions as arguments, or returns a function as its result.
 
-**2. Browser Tabs:** Titles are displayed on browser tabs, allowing users to easily switch between multiple open tabs. A well-crafted title helps users identify the content without having to click on each tab.
+Here is an example of a HOF that takes another function as argument:
 
-**3. User Experience:** A clear and relevant title helps users quickly understand the purpose of a page. It sets expectations and provides context, making navigation more intuitive.
+<codeblock language="javascript" type="lesson">
+<code>
 
-**4. Bookmarking:** When users bookmark a page, the title is often used as the default name for the bookmark. A meaningful title makes it easier for users to identify and organize their bookmarks.
+const twice = (operation, value) => operation(operation(value));
 
-We will be using the [react-helmet](https://www.npmjs.com/package/react-helmet) library to dynamically set the page title. `react-helmet` allows you to manage the changes to the head of the document within your components. It allows us to dynamically update the page title, meta tags, and other elements in the document head.
+const add3 = v => v + 3
 
-Run the following command to install `react-helmet`.
+console.log("Result is ", twice(add3, 1)) // will be 7
 
-```bash
-yarn add react-helmet@6.1.0
-```
+</code>
+</codeblock>
 
-Let's see how we can add a page title using `react-helmet` in our `Cart/index.jsx` file. We will be using the `Helmet` component from `react-helmet`. The `Helmet` component will take plain HTML tags and it will add them to the head of the document.
+In the above code, it takes the function called `operation` as an argument, and invokes it twice, where the second invocation uses the return value of first, that is inner, invocation of `operation`.
 
-```jsx {1, 9-11}
-import { Helmet } from "react-helmet";
-//...
+Here is another example where a HOF returns another function as its result:
 
-const Cart = () => {
-  // ...
+<codeblock language="javascript" type="lesson">
+<code>
 
-  return (
-    <>
-      <Helmet>
-        <title>My cart</title>
-      </Helmet>
+const addX = x => y => x + y;
 
-      {/* rest of the code */}
-    </>
-  );
+const add1 = addX(1)
+
+console.log("Result is ", add1(5)) // will be 6
+
+console.log("Result is ", addX(1)(5)) // this would also return 6
+
+</code>
+</codeblock>
+
+## Higher Order Components
+
+Now that you know what are Higher Order Functions (HOF), Higher Order Components (HOC) is a very similar concept. In a Higher Order Component, a function takes a component as an argument and returns a new component that wraps the original component. HOCs allow you to add additional functionality to a component without modifying the component's code.
+
+Here's an example of a simple HOC `withLoading`, which takes a component,`WrappedComponent`, as input and returns a new component `WithLoading` that adds a loading prop to the `WrappedComponent`.
+
+ <codeblock language="reactjs" type="lesson" >
+ <code>
+
+import React, { useState, useEffect } from 'react';
+
+const withLoading = WrappedComponent => props => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 3000); // Simulate API call
+  }, []);
+
+  if (isLoading) return <p>Loading...</p>;
+
+  return <WrappedComponent {...props} />;
 };
-```
 
-This is how the page title looks on the cart page:
 
-<image>cart-page-with-page-header.png</image>
+const MyComponent = () => <div>Content loaded!</div>;
 
-Instead of using `Helmet` in each component to add a page title, we will use a Higher-order Component (HOC) to add the title to our components. HOCs are a pattern that allows you to reuse component logic. They are functions that take a component as an argument and return a new component with enhanced capabilities.
+const MyComponentWithLoading = withLoading(MyComponent);
 
-### Using HOC to add page title
+// Usage
+const App = () => (
+    <div>
+        <MyComponentWithLoading />
+    </div>
+);
 
-Let's create a file called `withTitle.jsx` where we'll implement our logic for the HOC. We will keep our HOCs in the `src/utils` folder.
+export default App;
 
-Keep in mind that it's a general convention to prefix HOCs with the term `with`.
 
-```bash
-touch src/utils/withTitle.jsx
-```
+</code>
+</codeblock>
 
-Inside this file, we will create a higher-order component function called `withTitle` that accepts two parameters: `Component` and `title`. The `Component` parameter specifies to which component the title will be added, and the `title` parameter represents the title that should be added.
+## Why use Higher Order Components?
 
-First, we will define a component named `PageTitle` within the `withTitle` function. `PageTitle` will render the original component along with `Helmet` containing the `title`. `PageTitle` will accept and forward `props` directly to the original component ensuring that all the intended props are accepted.
+### Reusability
 
-If `title` is not provided, we will render the page title as `Smile cart` as default.
+HOCs allow you to reuse component logic across multiple components, which can save time and reduce code duplication.
+
+### Flexibility
+
+Additional arguments can be taken in a HOC, which allows you to customize the behavior of the HOC. This makes them a flexible way to add functionality to your components.
+
+### Separation of concern
+
+HOCs can help separate concerns in your code by encapsulating certain functionality in a separate component. This can make the code easier to read and maintain.
+
+### Composition
+
+Multiple HOCs can be composed together to create more complex functionality. This allows you to build up functionality from smaller, reusable pieces.
+
+### For Cross-Cutting Concerns
+
+HOCs can be used to implement cross-cutting concerns in your application such as authentication, error handling, logging, performance tracking, and many other features.
+
+## Common Use Cases for HOCs
+
+HOCs are commonly utilized in various scenarios, such as:
+
+### Authentication
+
+In an application with various routes, some requiring user authentication, rather than replicating the authentication logic in every component or route, an HOC named `withAuth` can be implemented. This HOC checks user authentication and redirects unauthenticated users to a login page. Wrapping components or routes needing authentication with `withAuth` minimizes redundancy and ensures uniform authentication practices throughout the application.
+
+### Logging
+
+For logging data in components during mounting or updates, instead of inserting logging code into each component, a HOC named `withLogger` can be created. This HOC manages the logging operations. Applying withLogger to your components ensures consistent logging across them, streamlining the process and maintaining a cleaner codebase.
+
+### Styling and Theming
+
+In scenarios where your application utilizes a consistent design system, an HOC like `withTheme` can be beneficial. This HOC can supply components with theme-related properties. Consequently, any component wrapped with `withTheme` gains the ability to seamlessly adopt and implement the styles and themes defined in your design system.
+
+### Adding Error Boundary
+
+To enhance application stability and handle errors smoothly, the `withErrorBoundary` HOC can be implemented. This HOC captures JavaScript errors in its child component tree, logs those errors for debugging, and displays a fallback UI instead of allowing the entire component tree to crash.
+
+
+## Conventions and best practices
+
+### Naming conventions
+
+Use the `with` prefix to make your HOCs easily recognizable, like `withAuth` or `withErrorHandler`.
+
+### Maximizing HOC composability
+
+We can leverage the power of Higher Order Components (HOCs) to enhance and extend the functionality of React components in a modular and scalable way. In the below example, this concept is demonstrated by combining two HOCs — `withUserData` and `withStyle` — to create an `EnhancedUserInfo` component.  We are utilizing the `compose` function from `ramda.js` to effectively merge `withStyle` and `withUserData`  into a single HOC.
 
 ```jsx
-import { t } from "i18next";
-import { Helmet } from "react-helmet";
+import React from 'react';
+import { compose } from 'ramda';
 
-const withTitle = (Component, title) => {
-  const PageTitle = props => {
-    const pageTitle = title ? t("pageTitle", { title }) : t("title");
+// Base Component
+const UserInfo = ({ user }) => (
+    <div>
+        <p>Name: {user.name}</p>
+        <p>Email: {user.email}</p>
+    </div>
+);
 
-    return (
-      <>
-        <Helmet>
-          <title>{pageTitle}</title>
-        </Helmet>
-        <Component {...props} />
-      </>
-    );
-  };
-
-  return PageTitle;
+// HOC to Fetch User Data
+const withUserData = WrappedComponent => props => {
+  // Simulating fetching data
+  const userData = { name: 'John Doe', email: 'johndoe@example.com' };
+  return <WrappedComponent {...props} user={userData} />;
 };
 
-export default withTitle;
+// HOC to Apply Style
+const withStyle = WrappedComponent => props => (
+    <div classname="text-center text-blue-500">
+        <WrappedComponent {...props} />
+    </div>
+);
+
+const enhance = compose(
+    withStyle,     // Applied second
+    withUserData   // Applied first
+);
+
+const EnhancedUserInfo = enhance(UserInfo);
+
+// App Component
+const App = () => (
+    <div>
+        <EnhancedUserInfo />
+    </div>
+);
+
+export default App;
 ```
 
-Next, we will add the translation keys `pageTitle` and `title` to `en.json`.
+### Avoid prop name collisions
 
-```json
-{
-  "title": "Smile Cart",
-  "pageTitle": "{{title}} | Smile Cart"
-}
-```
+Be mindful of prop names when using HOCs to avoid overwriting important data.
 
-Now, we will see how we can use the `withTitle` HOC to add page title to our `Cart` component.
+### Use `forwardRef`
 
-First, revert the changes made in the `Cart/index.jsx` file. Use the following code in the terminal.
+While the convention for Higher Order Components is to pass through all props to the wrapped component, this does not work for refs. That’s because `ref` is not really a prop, it is rather a reference to the DOM element. So the solution is to  use `forwardRef` to pass refs through your HOC. You can learn more about `forwardRef` by referring this [link](https://courses.bigbinaryacademy.com/learn-react/miscellaneous/forward-ref).
 
-```bash
-git checkout -- src/components/Cart/index.jsx
-```
 
-Then, make the following changes so that `withTitle` returns the `Cart` component with the page title.
-
-```jsx {1, 8}
-import i18n from "i18next";
-// ...
-
-const Cart = () => {
-  // ...
-};
-
-export default withTitle(Cart, i18n.t("cart.title"));
-```
-
-Also, add the translation key `cart.title` to `en.json` file.
-
-```json
-// ...
-  "cart": {
-    "title": "My cart",
-  },
-```
-
-Similarly, make changes to the remaining components requiring a page title.
-
-Let's commit the new changes:
-
-```bash
-git add -A
-git commit -m "Created HOC to add page title"
-```
-
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/6129a2069d2725eb4575c10f666ba291724f5560).
+In the upcoming lesson, we'll learn how to utilize HOCs in our application.
