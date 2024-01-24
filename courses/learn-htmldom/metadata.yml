@@ -2,9 +2,9 @@
 name: Learn HTML DOM
 subheading: Learn HTML DOM by actually manipulating HTML DOM elements
 slug: learn-htmldom
-published: false
+published: true
 custom_data:
-  type: javascript
+  type: javascript-retired
   courseType: lesson
   upcoming: false
   newCourse: false
