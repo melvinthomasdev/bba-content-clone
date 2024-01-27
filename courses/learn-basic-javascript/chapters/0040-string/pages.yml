@@ -40,7 +40,7 @@
   page_type: lesson
 - title: Exercise - Multi-line Template Strings
   slug: exercise-multiline-template-strings
-  page_type: lesson
+  page_type: exercise
 - title: Exercise 2 - Multi-line Template Strings
   slug: exercise-2-multiline-template-strings
-  page_type: lesson
+  page_type: exercise
