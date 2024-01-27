@@ -5,11 +5,17 @@
 - title: Exercise - Accessing String Characters
   slug: exercise-accessing-string-characters
   page_type: exercise
+- title: Exercise 2 - Accessing String Characters
+  slug: exercise-2-accessing-string-characters
+  page_type: exercise
 - title: Finding Length of String
   slug: finding-length-of-string
   page_type: lesson
 - title: Exercise - Finding Length of String
   slug: exercise-finding-length-of-string
+  page_type: exercise
+- title: Exercise 2 - Finding Length of String
+  slug: exercise-2-finding-length-of-string
   page_type: exercise
 - title: Changing Case of String
   slug: changing-case-of-a-string
@@ -17,7 +23,7 @@
 - title: Exercise - Changing Case of String
   slug: exercise-changing-case-of-a-string-1
   page_type: exercise
-- title: Exercise - Changing Case of String
+- title: Exercise 2 - Changing Case of String
   slug: exercise-changing-case-of-a-string-2
   page_type: exercise
 - title: Removing Empty Spaces From String
@@ -26,11 +32,17 @@
 - title: Exercise - Removing Empty Spaces From String
   slug: exercise-removing-empty-spaces-from-string
   page_type: exercise
+- title: Exercise 2 - Removing Empty Spaces From String
+  slug: exercise-2-removing-empty-spaces-from-string
+  page_type: exercise
 - title: Padding a String From the Start
   slug: padding-a-string-from-the-start
   page_type: lesson
 - title: Exercise - Padding a String From the Start
   slug: exercise-padding-a-string-from-the-start
+  page_type: exercise
+- title: Exercise 2 - Padding a String From the Start
+  slug: exercise-2-padding-a-string-from-the-start
   page_type: exercise
 - title: Padding a String From the End
   slug: padding-a-string-from-the-end
@@ -38,11 +50,17 @@
 - title: Exercise - Padding a string From the end
   slug: exercise-padding-a-string-from-the-end
   page_type: exercise
+- title: Exercise 2 - Padding a string From the end
+  slug: exercise-2-padding-a-string-from-the-end
+  page_type: exercise
 - title: Finding Index of Character in String
   slug: finding-index-of-character-in-string
   page_type: lesson
 - title: Exercise - Finding Index of Character in String
   slug: exercise-finding-index-of-character-in-string
+  page_type: exercise
+- title: Exercise 2 - Finding Index of Character in String
+  slug: exercise-2-finding-index-of-character-in-string
   page_type: exercise
 - title: Finding Last Index of Character in String
   slug: finding-last-index-of-character-in-string
@@ -50,11 +68,17 @@
 - title: Exercise - Finding Last Index of Character in String
   slug: exercise-finding-last-index-of-character-in-string
   page_type: exercise
+- title: Exercise 2 - Finding Last Index of Character in String
+  slug: exercise-2-finding-last-index-of-character-in-string
+  page_type: exercise
 - title: Searching for a String
   slug: searching-for-a-string
   page_type: lesson
 - title: Exercise - Searching for a String
   slug: exercise-searching-for-a-string
+  page_type: exercise
+- title: Exercise 2 - Searching for a String
+  slug: exercise-2-searching-for-a-string
   page_type: exercise
 - title: Matching Initial Characters of String
   slug: matching-initial-characters-of-string
@@ -62,11 +86,17 @@
 - title: Exercise - Matching Initial Characters of String
   slug: exercise-matching-initial-characters-of-string
   page_type: exercise
+- title: Exercise 2 - Matching Initial Characters of String
+  slug: exercise-2-matching-initial-characters-of-string
+  page_type: exercise
 - title: Matching End Characters of String
   slug: matching-end-characters-of-string
   page_type: lesson
 - title: Exercise - Matching End Characters of String
   slug: exercise-matching-end-characters-of-string
+  page_type: exercise
+- title: Exercise 2 - Matching End Characters of String
+  slug: exercise-2-matching-end-characters-of-string
   page_type: exercise
 - title: Extracting a Part of String
   slug: extracting-a-part-of-string
@@ -74,16 +104,16 @@
 - title: Exercise - Extracting a Part of String
   slug: exercise-extracting-a-part-of-string-1
   page_type: exercise
-- title: ComprehensiveExercise - Extract Part of a String
-  slug: comprehensive-exercise-extract-part-of-string-2
+- title: Exercise 2 - Extract Part of a String
+  slug: exercise-extract-part-of-string-2
   page_type: assessment
 - title: Replacing substring
   slug: replacing-substring
   page_type: lesson
-- title: Exercise - Replacing substring 1
+- title: Exercise - Replacing substring
   slug: exercise-replacing-substring-1
   page_type: exercise
-- title: Exercise - Replacing substring 2
+- title: Exercise 2 - Replacing substring
   slug: exercise-replacing-substring-2
   page_type: exercise
 - title: String Split Method
@@ -91,6 +121,9 @@
   page_type: lesson
 - title: Exercise String Split Method
   slug: exercise-string-split-method
+  page_type: exercise
+- title: Exercise 2 - String Split Method
+  slug: exercise-2-string-split-method
   page_type: exercise
 - title: toString() vs String() method
   slug: tostring-vs-string-method
