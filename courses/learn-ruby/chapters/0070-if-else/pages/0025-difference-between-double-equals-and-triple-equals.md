@@ -59,13 +59,14 @@ For example:
 <codeblock language="ruby" type="lesson">
 <code>
 text = "Hello!"
+
 case text
 when /ell/
-  puts `Text contains patterns matching "ell".`
+  puts "Text contains patterns matching 'ell'."
 when /ol/
-  puts "Text contains patterns matching "ol"."
+  puts "Text contains patterns matching 'ol'."
 else
-  puts "Text doesn't match the specified patterns"
+  puts "Text doesn't match the specified patterns."
 end
 </code>
 </codeblock>
