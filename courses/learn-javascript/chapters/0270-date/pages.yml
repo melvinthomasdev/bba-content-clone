@@ -5,11 +5,17 @@
 - title: Exercise - Date Object
   slug: exercise-date-object
   page_type: exercise
+- title: Exercise 2 - Date Object
+  slug: exercise-2-date-object
+  page_type: exercise
 - title: Convert Date into String
   slug: convert-date-into-string
   page_type: lesson
 - title: Exercise - Convert Date into String
   slug: exercise-convert-date-into-string
+  page_type: exercise
+- title: Exercise 2 - Convert Date into String
+  slug: exercise-2-convert-date-into-string
   page_type: exercise
 - title: Get Time Values
   slug: get-time-values
@@ -17,9 +23,15 @@
 - title: Exercise - Get Time Values
   slug: exercise-get-time-values
   page_type: exercise
+- title: Exercise 2 - Get Time Values
+  slug: exercise-2-get-time-values
+  page_type: exercise
 - title: Set Time Values
   slug: set-time-values
   page_type: lesson
 - title: Exercise - Set Time Values
   slug: exercise-set-time-values
+  page_type: exercise
+- title: Exercise 2 - Set Time Values
+  slug: exercise-2-set-time-values
   page_type: exercise
