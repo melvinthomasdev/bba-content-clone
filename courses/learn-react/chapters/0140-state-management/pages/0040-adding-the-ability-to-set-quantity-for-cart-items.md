@@ -45,7 +45,7 @@ Now, let's build a component to manage product quantity updates as shown:
 Create a component named `ProductQuantity` in the commons directory for the same:
 
 ```bash
-touch src/components/commons/ProductQuantity.js
+touch src/components/commons/ProductQuantity.jsx
 ```
 
 We can retrieve the quantity associated with a specific product and the `setSelectedQuantity` function from the Zustand store to display and update the product quantity. We will make use of the [paths](https://ramdajs.com/docs/#paths) function from ramda to pick these keys from the cart items store.

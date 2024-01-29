@@ -29,8 +29,6 @@ We can mention the `Route` for the `Checkout` component in `App.jsx`:
 In the `index.jsx` file, define the `Checkout` component as follows:
 
 ```jsx
-import { useRef } from "react";
-
 import i18n from "i18next";
 import { LeftArrow } from "neetoicons";
 import { Typography } from "neetoui";
@@ -38,11 +36,8 @@ import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import withTitle from "utils/withTitle";
 
-
 const Checkout = () => {
   const { t } = useTranslation();
-
-  const timerRef = useRef(null);
 
   const history = useHistory();
 

@@ -420,7 +420,8 @@ Let's define a component to show these consolidated details. Create a file named
 ```jsx
 import classNames from "classnames";
 import { Typography } from "neetoui";
-import { gt } from "ramda";
+import { gt, keys } from "ramda";
+import useCartItemsStore from "stores/useCartItemsStore";
 
 const PriceCard = ({ totalMrp, totalOfferPrice }) => {
   const totalDiscounts = totalMrp - totalOfferPrice;
