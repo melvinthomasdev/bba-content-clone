@@ -248,6 +248,9 @@
 - slug: using-bang-method
   name: Using bang method
   has_pages: false
+- slug: setting-up-postgresql-database
+  name: Setting up PostgreSQL database
+  has_pages: false
 - slug: deploying-the-application-on-heroku
   name: Deploying the application on Heroku
   has_pages: false
