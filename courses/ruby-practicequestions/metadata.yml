@@ -4,7 +4,7 @@ subheading: Practice Ruby you have already learnt
 slug: ruby-practicequestions
 published: true
 custom_data:
-  type: ruby
+  type: ruby-retired
   courseType: practice-questions
   upcoming: false
   newCourse: false
