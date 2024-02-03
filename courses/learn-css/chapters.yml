@@ -25,6 +25,10 @@
   slug: css-quiz-02
 - name: Text Formatting
   slug: text-formatting
+- name: Comprehensive Exercise 02
+  slug: css-comprehensive-exercise-02
+- name: Borders
+  slug: borders
 - name: Backgrounds
   slug: backgrounds
 - name: CSS Quiz
@@ -33,22 +37,24 @@
   slug: display
 - name: CSS Box Model
   slug: css-box-model
+- name: Comprehensive Exercise 03
+  slug: css-comprehensive-exercise-03
 - name: Position
   slug: position
 - name: Flexbox
   slug: flexbox
-- name: Borders
-  slug: borders
-- name: Opacity
-  slug: opacity
 - name: Styling Links
   slug: styling-links
+- name: Comprehensive Exercise 04
+  slug: css-comprehensive-exercise-04
 - name: CSS Quiz
   slug: css-quiz-04
-- name: Comprehensive Exercise 02
-  slug: css-comprehensive-exercise-02
 - name: Styling Lists
   slug: styling-lists
+- name: Comprehensive Exercise 05
+  slug: css-comprehensive-exercise-05
+- name: Opacity
+  slug: opacity
 - name: Styling Forms
   slug: styling-forms
 - name: Sectional Project
