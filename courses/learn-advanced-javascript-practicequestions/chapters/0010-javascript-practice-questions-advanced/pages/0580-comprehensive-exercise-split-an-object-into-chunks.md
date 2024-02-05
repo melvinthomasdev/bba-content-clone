@@ -37,5 +37,29 @@ const obj = {
 };
 </i>
 </testcase>
+<testcase>
+<i>
+const obj = {
+  Sam: 12,
+  Eve: 52,
+  Lao: 56,
+  Linh: 70,
+  Chinua: 20,
+  Renu: 18,
+};
+</i>
+</testcase>
+<testcase>
+<i>
+const obj = {
+  Sam: 33,
+  Eve: 45,
+  Lao: 56,
+  Linh: 69,
+  Chinua: 88,
+  Renu: 100,
+};
+</i>
+</testcase>
 </testcases>
 </codeblock>

@@ -30,5 +30,19 @@ const participants = ["Gwynyth", "Ryn", "Cyndy", "Rahmath"];
 const condition = name =>  !(name.match(/[aeiou]/ig));
 </i>
 </testcase>
+<testcase>
+<i>
+// Names with more than 7 letters
+const participants = ["Barcelona", "Beatles", "Patrick", "Kardashian"];
+const condition = name => name.length > 7;
+</i>
+</testcase>
+<testcase>
+<i>
+// Names with a vowel present
+const participants = ["Sam", "Lao", "Linh", "Bryn"];
+const condition = name =>  (name.match(/[aeiou]/ig));
+</i>
+</testcase>
 </testcases>
 </codeblock>

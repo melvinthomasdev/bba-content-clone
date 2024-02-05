@@ -97,5 +97,29 @@ let respondentDetails = [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+let respondentDetails = [
+  {
+    name: "Sam",
+    html: 21,
+    css: 18,
+    javascript: 29,
+  },
+  {
+    name: "Renu",
+    html: 11,
+    css: 22,
+    javascript: 33,
+  },
+  {
+    name: "Eve",
+    html: 12,
+    css: 34,
+    javascript: 45,
+  },
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>

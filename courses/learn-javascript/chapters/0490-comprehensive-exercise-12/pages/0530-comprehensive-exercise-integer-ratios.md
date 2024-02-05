@@ -44,5 +44,15 @@ const arr = [-4, 3, -9, 0, 4, 1];
 const arr = [1,2,3,-1,-2,-3,0,0];
 </i>
 </testcase>
+<testcase>
+<i>
+const arr = [-2, 4, -6, 2, 1, -5, 0, 0];
+</i>
+</testcase>
+<testcase>
+<i>
+const arr = [4, -5, 6, -4, 0, 8, 0, -3];
+</i>
+</testcase>
 </testcases>
 </codeblock>

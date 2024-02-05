@@ -57,5 +57,17 @@ const lowerLimit = 32;
 const upperLimit = 50;
 </i>
 </testcase>
+<testcase>
+<i>
+const marksArr = [
+  { student: "Sam", marks: 20 },
+  { student: "Eve", marks: 25 },
+  { student: "Lao", marks: 71 },
+  { student: "Chinua", marks: 100 },
+];
+const lowerLimit = 32;
+const upperLimit = 50;
+</i>
+</testcase>
 </testcases>
 </codeblock>

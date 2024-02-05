@@ -54,5 +54,13 @@ const c = 300;
 const d = 500;
 </i>
 </testcase>
+<testcase>
+<i>
+const a = 220;
+const b = 180;
+const c = 50;
+const d = 120;
+</i>
+</testcase>
 </testcases>
 </codeblock>

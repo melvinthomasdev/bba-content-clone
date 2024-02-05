@@ -80,5 +80,41 @@ const ticketLot = [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+const ticketLot = [
+  {
+    id: 1212,
+    name: 'Sam Smith',
+  },
+  {
+    id: 3145,
+    name: 'Eve Smith',
+  },
+  {
+    id: 1991,
+    name: 'Renu Sen',
+  }
+];
+</i>
+</testcase>
+<testcase>
+<i>
+const ticketLot = [
+  {
+    id: 6006,
+    name: 'Lao Xun',
+  },
+  {
+    id: 1034,
+    name: 'Linh Tran',
+  },
+  {
+    id: 01,
+    name: 'Chinua Achebe',
+  }
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>

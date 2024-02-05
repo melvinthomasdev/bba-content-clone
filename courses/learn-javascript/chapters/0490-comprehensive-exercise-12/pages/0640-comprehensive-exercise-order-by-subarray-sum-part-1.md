@@ -32,5 +32,10 @@ const arr = [[1,7], [11,10], [2,1]];
 const arr = [[14,5], [5,10], [8,9]];
 </i>
 </testcase>
+<testcase>
+<i>
+const arr = [[20, 15], [15,12], [18, 29]];
+</i>
+</testcase>
 </testcases>
 </codeblock>

@@ -74,5 +74,53 @@ let respondentDetails = [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+let respondentDetails = [
+  {
+    html: 10,
+    css: 20,
+    javascript: 30,
+    react: 40,
+  },
+  {
+    html: 12,
+    css: 24,
+    javascript: 36,
+    ruby: 48,
+  },
+  {
+    html: 9,
+    css: 15,
+    javascript: 19,
+    ruby: 20,
+    sql: 27,
+    tailwindCSS: 11
+},
+];
+</i>
+</testcase>
+<testcase>
+<i>
+let respondentDetails = [
+  {
+    html: 13,
+    css: 15
+  },
+  {
+    html: 17,
+    css: 11,
+    javascript: 10,
+  },
+  {
+    html: 20,
+    css: 23,
+    javascript: 22,
+    ruby: 26,
+    sql: 29
+  },
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>

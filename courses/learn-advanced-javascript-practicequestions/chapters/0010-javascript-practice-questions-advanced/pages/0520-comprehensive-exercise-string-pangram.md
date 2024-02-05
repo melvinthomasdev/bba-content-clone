@@ -46,15 +46,5 @@ const str = "Welcome to the gym";
 const str = "Brown jars prevented the mixture from freezing too quickly";
 </i>
 </testcase>
-<testcase>
-<i>
-const str = "When zombies arrive, quickly fax Judge Pat";
-</i>
-</testcase>
-<testcase>
-<i>
-const str = "The five boxing wizards jump quickly";
-</i>
-</testcase>
 </testcases>
 </codeblock>

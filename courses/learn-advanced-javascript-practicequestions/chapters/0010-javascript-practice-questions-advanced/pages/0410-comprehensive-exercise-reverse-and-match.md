@@ -41,5 +41,11 @@ const list = ["Raw", "Smart", "Trams", "Spoons"];
 const word = "Time";
 </i>
 </testcase>
+<testcase>
+<i>
+const list = ["Smooth", "Thorns", "Train", "Spaceship"];
+const word = "Alien";
+</i>
+</testcase>
 </testcases>
 </codeblock>

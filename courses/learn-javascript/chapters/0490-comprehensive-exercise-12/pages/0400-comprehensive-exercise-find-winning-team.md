@@ -65,5 +65,41 @@ const teams = [
 ]
 </i>
 </testcase>
+<testcase>
+<i>
+const teams = [
+    {
+        name: 'Elephant',
+        points: [20, 30, 40, 50, 60]
+    },
+    {
+        name: 'Ostriches',
+        points: [33, 66, 99, 40, 10]
+    },
+    {
+        name: 'Jaguars',
+        points: [25, 28, 36, 82, 90]
+    }
+]
+</i>
+</testcase>
+<testcase>
+<i>
+const teams = [
+    {
+      name: 'Rattlesnake',
+      points: [30, 33, 36, 40, 48]
+    },
+    {
+      name: 'Hornet',
+      points: [51, 57, 99, 82, 88]
+    },
+    {
+      name: 'Mongoose',
+      points: [19, 29, 41, 52, 67]
+    }
+]
+</i>
+</testcase>
 </testcases>
 </codeblock>

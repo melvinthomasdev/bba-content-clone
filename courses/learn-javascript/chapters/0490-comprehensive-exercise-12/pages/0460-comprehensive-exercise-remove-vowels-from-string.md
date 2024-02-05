@@ -41,5 +41,10 @@ const str = "Hello World";
 const str = "The weather is good";
 </i>
 </testcase>
+<testcase>
+<i>
+const str = "Sunrises are beautiful!";
+</i>
+</testcase>
 </testcases>
 </codeblock>

@@ -49,5 +49,10 @@ const str = "Sam";
 const str = "Oliver";
 </i>
 </testcase>
+<testcase>
+<i>
+const str = "Nicolas";
+</i>
+</testcase>
 </testcases>
 </codeblock>

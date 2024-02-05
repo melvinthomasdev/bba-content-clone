@@ -37,5 +37,10 @@ const str = ["raspberries", "mango"];
 const str = ["banana"];
 </i>
 </testcase>
+<testcase>
+<i>
+const str = ["orange", "pomegranate", "pineapple", "kiwi"];
+</i>
+</testcase>
 </testcases>
 </codeblock>

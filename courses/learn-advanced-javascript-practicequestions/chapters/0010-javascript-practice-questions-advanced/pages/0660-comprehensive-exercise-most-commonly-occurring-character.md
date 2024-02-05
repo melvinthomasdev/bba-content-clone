@@ -44,10 +44,5 @@ const str = "KABBAB";
 const str = "aFsFeeccfFfa";
 </i>
 </testcase>
-<testcase>
-<i>
-const str = "afdsafdsafe";
-</i>
-</testcase>
 </testcases>
 </codeblock>

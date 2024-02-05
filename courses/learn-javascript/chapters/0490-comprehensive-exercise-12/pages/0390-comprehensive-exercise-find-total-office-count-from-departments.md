@@ -72,5 +72,57 @@ const departmentCount = [
 ];
 </i>
 </testcase>
+<testcase>
+<i>
+const departmentCount = [
+  {
+    department: "Development",
+    count: 12
+  },
+  {
+    department: "QA",
+    count: 5
+  },
+  {
+    department: "Sales",
+    count: 2
+  },
+  {
+    department: "Design",
+    count: 1
+  },
+  {
+    department: "HR",
+    count: 1
+  }
+];
+</i>
+</testcase>
+<testcase>
+<i>
+const departmentCount = [
+  {
+    department: "Development",
+    departmentId: '007',
+    count: 19
+  },
+  {
+    department: "QA",
+    departmentId: '221',
+    count: 22
+  },
+  {
+    department: "Design",
+    departmentId: '42',
+    count: 13
+  },
+  {
+    department: "HR",
+    departmentId: '1',
+    count: 3
+  }
+];
+</i>
+</testcase>
 </testcases>
 </codeblock>

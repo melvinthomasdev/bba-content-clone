@@ -25,5 +25,15 @@ const str = "erehT era a tsav rebmun fo secruoser rof gninrael erom tpircsavaJ";
 const str = "tpircsavaJ si emosewa";
 </i>
 </testcase>
+<testcase>
+<i>
+const str = "lmtH si ysae";
+</i>
+</testcase>
+<testcase>
+<i>
+const str = "ecitcarp sekam a nam tcefrep";
+</i>
+</testcase>
 </testcases>
 </codeblock>

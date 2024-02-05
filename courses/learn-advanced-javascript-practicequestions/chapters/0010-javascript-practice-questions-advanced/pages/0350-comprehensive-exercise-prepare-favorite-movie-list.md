@@ -9,7 +9,7 @@ const getIndianMovies = surveyAnswers => {
 
 <solution>
 const getIndianMovies = surveyAnswers => {
-  const result = surveyAnswers.map(a => a.favoriteIndianMovie).sort();
+  const result = surveyAnswers.map(a => a.favouriteIndianMovie).sort();
   return [...new Set(result)];
 }
 </solution>
@@ -23,19 +23,19 @@ console.log(getIndianMovies(surveyAnswers));
 let surveyAnswers = [
   {
     name: "Jacqueline",
-    favoriteIndianMovie: "Kumbalangi Nights",
+    favouriteIndianMovie: "Kumbalangi Nights",
   },
   {
     name: "Dawson",
-    favoriteIndianMovie: "Thappad",
+    favouriteIndianMovie: "Thappad",
   },
   {
     name: "Jocelyn",
-    favoriteIndianMovie: "Karnan",
+    favouriteIndianMovie: "Karnan",
   },
   {
     name: "Palmer",
-    favoriteIndianMovie: "Kumbalangi Nights",
+    favouriteIndianMovie: "Kumbalangi Nights",
   },
 ];
 </i>
@@ -45,19 +45,41 @@ let surveyAnswers = [
 let surveyAnswers = [
   {
     name: "Arun",
-    favoriteIndianMovie: "Tumbaad",
+    favouriteIndianMovie: "Tumbaad",
   },
   {
     name: "Ali",
-    favoriteIndianMovie: "Kammatti Paadam",
+    favouriteIndianMovie: "Kammatti Paadam",
   },
   {
     name: "Jocelyn",
-    favoriteIndianMovie: "Asuran",
+    favouriteIndianMovie: "Asuran",
   },
   {
     name: "Palmer",
-    favoriteIndianMovie: "Super Deluxe",
+    favouriteIndianMovie: "Super Deluxe",
+  },
+];
+</i>
+</testcase>
+<testcase>
+<i>
+let surveyAnswers = [
+  {
+    name: "Sam",
+    favouriteIndianMovie: "Slumdog Millionaire",
+  },
+  {
+    name: "Eve",
+    favouriteIndianMovie: "Lunchbox",
+  },
+  {
+    name: "Lao",
+    favouriteIndianMovie: "Bahubali",
+  },
+  {
+    name: "Linh",
+    favouriteIndianMovie: "Kabali",
   },
 ];
 </i>
@@ -67,19 +89,19 @@ let surveyAnswers = [
 let surveyAnswers = [
   {
     name: "Rohit",
-    favoriteIndianMovie: "Utharam",
+    favouriteIndianMovie: "Utharam",
   },
   {
     name: "Ismail",
-    favoriteIndianMovie: "Ratsasan",
+    favouriteIndianMovie: "Ratsasan",
   },
   {
     name: "Peter",
-    favoriteIndianMovie: "Ratsasan",
+    favouriteIndianMovie: "Ratsasan",
   },
   {
     name: "Roy",
-    favoriteIndianMovie: "Psycho",
+    favouriteIndianMovie: "Psycho",
   },
 ];
 </i>
