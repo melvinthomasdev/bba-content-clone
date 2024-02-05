@@ -364,18 +364,6 @@ If any of those values are nil, then we have to fail our authentication.
 
 To mark the process as failure, we can return `false` value.
 
-But what does `&:nil?` in `[string, expected_credential].any?(&:nil?)` denote?
-
-By prepending `&` to a symbol we are creating a lambda function that will call
-method with a name of that symbol(`.nil?` here) on the object you pass into this
-function.
-
-So the above statement is equivalent to the following:
-
-```ruby
-[string, expected_credential].any? { |item| item.nil? }
-```
-
 - The `sha256_digest(value)` method computes and returns a 256-bit hash or
   message digest of the `value` parameter supplied.
 

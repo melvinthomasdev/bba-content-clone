@@ -570,6 +570,30 @@ about `create_list` method check
 [this section](https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md#building-or-creating-multiple-records)
 from the factory bot official documentation.
 
+## `pluck` vs `map`
+
+In Ruby, the `map` method is used to select specific keys from an array of hashes. In the same way, we can use the `map` method to extract attributes from ActiveRecord.
+
+For instance, in the previous test case, we could have utilized the `map` method to get `slugs` as shown below:
+
+```ruby
+slugs = tasks.map(&:slug)
+```
+
+Here, `&:slug` is shorthand for `{ |task| task.slug }`. You can find more information about this syntax [here](https://courses.bigbinaryacademy.com/learn-ruby/symbol-to-proc/symbol-to-proc/).
+
+Nevertheless, instead of using `map`, we opted for the `pluck` method due to its efficiency compared to `map`.
+
+`pluck` is an `ActiveRecord` method utilized to select one or more attributes from the database table. It retrieves the specified attributes using a single database query. For example, `tasks.pluck(:slug)` will trigger the following database query to generate the `slugs` array:
+
+```sql
+SELECT "tasks"."slug" FROM "tasks"
+```
+
+In contrast, the `map` method iterates over each `ActiveRecord` in `tasks`, instantiates each `task` in memory, and retrieves the `slug` to generate the `slugs` array. This behaviour can lead to increased memory consumption when dealing with a large dataset.
+
+It's important to note that `pluck` is an `ActiveRecord` method and cannot be used with standard Ruby arrays, whereas `map` is a core Ruby method that can be employed for transforming any enumerable object, including arrays, ranges, and hashes.
+
 ## Testing task deletion and assignment on user deletion
 
 Let's add test cases inside the `UserTest` class to test that all the tasks
