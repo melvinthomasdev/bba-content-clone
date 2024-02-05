@@ -29,10 +29,7 @@ A slug is the part of a URL that identifies a page in human-readable keywords.
 
 A well-defined slug can also help with SEO(search engine optimization).
 
-An URL like `https://example.com/articles/357` is not very SEO friendly. However
-if the URL looks like
-`https://example.com/articles/deploying-nextjs-application-to-netlify`, then
-it's very SEO friendly.
+A URL like https://example.com/articles/357 is not very SEO-friendly. However, if the URL looks like https://example.com/articles/deploying-nextjs-application-to-netlify, then it's very SEO-friendly.
 
 Rails, by default, uses integer based IDs in URLs to access resources. For
 example Rails would create `/tasks/1` out of the box.
@@ -561,13 +558,14 @@ are the changes we want to take place when we revert or rollback the migration.
 This ensures that upon rollback our database will go back to the state it was
 previously in before we applied the migration.
 
-In both the methods, we are querying a list of tasks from the database and
-iterating over them to call the `set_slug` method on each task to set a unique
-slug.
+In the `up` method, we are querying the list of tasks from the database and iterating over them to call the `set_slug` method on each task to set a unique slug. Since `set_slug` is a private method in our `Task` model, it is not accessible to the `task` objects. Hence we have used the `send` method to call the private `set_slug` method. Calling `send` invokes any method identified by a symbol, passing it any arguments specified.
+
+You shouldn't use the `send` method unless it is really required. Using `send`
+might be a good choice if you have to call a `private` or `protected` method. You will learn about the potential risks of using `send` method in the [Dangerous send](https://courses.bigbinaryacademy.com/learn-rubyonrails/rails-security-best-practices/#dangerous-send) section.
 
 ## Raw SQL query data migrations
 
-The same `down` operation could be done with a single raw SQL query also.
+The `down` operation in the above migration could be done with a single raw SQL query also.
 
 The following snippet is just for illustration, do not replace the previous
 code.
@@ -623,18 +621,7 @@ Task.find_each(batch_size: 50)
 
 Above query will fetch records in batches of 50.
 
-Another important thing to note here is the use of `send` method. Calling `send`
-invokes any method identified by a symbol, passing it any arguments specified.
-
-Since `set_slug` is a private method in our `Task` model, it is not accessible
-to the `task` objects we are calling the method on.
-
-Hence we have used the `send` method to call the private `set_slug` method.
-
-You shouldn't use the `send` method unless it is really required. Using `send`
-might be a good choice if you have to call a `private` or `protected` method.
-
-Apply the migration using the following command:
+Having discussed that, let us apply the migration using the following command:
 
 ```bash
 bundle exec rails db:migrate
