@@ -56,8 +56,8 @@ images:
   - carousel-prev-next-handlers.gif
   - carousel-dots.gif
   - products-search-with-debouncing.gif
-  - carousel-without-ref.gif
-  - carousel-with-ref.gif
+  - carousel-without-ref-hook.gif
+  - carousel-with-ref-hook.gif
   - queued-updates.jpg
   - core-react-loop.jpeg
   - product-listing-page-with-pagination.gif

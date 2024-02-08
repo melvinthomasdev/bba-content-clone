@@ -1,6 +1,6 @@
 In the previous lesson, we added side effects to the `Carousel` component, allowing it to automatically change the product images after a 3-second time interval. However, you may have noticed that if you click on the carousel arrows or dots to change the image in-between transitions, the next image appears too quickly.
 
-<image>carousel-without-ref.gif</image>
+<image>carousel-without-ref-hook.gif</image>
 
 This issue occurs because the previous timer isn't cleared when manually changing the image. Currently, the timer ID is accessible only inside the `useEffect` hook. But we need to access it from `handleNext` and `handlePrevious` functions to clear it. Storing the timer ID in a React state would cause the component to re-render every time the timer ID changes, which is unnecessary. We can't store it in a local variable either because it will get reset during rerenders.
 
@@ -118,7 +118,7 @@ const Carousel = () => {
 
 This is how the image transition works after integrating `Ref`:
 
-<image>carousel-with-ref.gif</image>
+<image>carousel-with-ref-hook.gif</image>
 
 Let's commit the new changes:
 
