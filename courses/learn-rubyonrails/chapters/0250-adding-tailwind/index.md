@@ -20,11 +20,20 @@ directly copy-pasted, and it will work.
 Run the following from the root of your project:
 
 ```bash
-yarn add tailwindcss@1.9.6
+yarn add tailwindcss@^3.4.1
 ```
 
-Note that we are not using the latest version(>2.0.x) of tailwindcss since it
-has some issues with shakapacker environment.
+Add the following lines to `package.json`.
+
+```js
+{
+ // keep previous keys as it was
+  "resolutions": {
+    "strip-ansi": "^6.0.1",
+    "string-width": "^4.2.2"
+  }
+}
+```
 
 Next we need a directory where our stylesheets can reside. Run the following
 command to create that directory:
@@ -44,6 +53,26 @@ npx tailwindcss init -p
 
 First we need to ensure that we can see `tailwind.config.js` and
 `postcss.config.js` files in the project root, before going further ahead.
+
+Replace the content of `tailwind.config.js` with the following configuration:
+
+```js
+module.exports = {
+  important: true,
+  content: ["./app/javascript/**/*.{js,jsx}", "./app/views/**/*.html.erb"],
+};
+```
+
+The key named `important` in `tailwind.config.js` determines whether
+Tailwind utility classes should be generated with the
+[`!important`](https://courses.bigbinaryacademy.com/learn-css/cascade-and-specificity/important-rule/)
+rule. Setting `important` to `true` gives higher precedence to Tailwind classes
+over any existing CSS with high-specificity selectors in our project.
+
+The `content` option is used to specify the paths to all files in our project
+that contains any Tailwind class names. The glob pattern we have set will point
+to all `js` and `jsx` files within `app/javascript` directory and `erb` files
+within `app/views` directory.
 
 Let's import some basic tailwind styles in the
 `app/javascript/stylesheets/application.scss` file, which will allow us to use a
