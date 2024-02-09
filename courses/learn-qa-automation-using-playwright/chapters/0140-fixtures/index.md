@@ -22,51 +22,88 @@ test("Verify members", async ({ page, context, browser }) => {
 });
 ```
 
-## How to use fixtures
-
-Imagine a scenario where we need to console `Fixture setup` before every test, `Fixture Data` during the test and `Fixture teardown` after every test.
+It is important to note that fixtures can only be used by destructuring them. This is because the lifecycle of the fixtures start when we destructure them in a test. 
+If we use fixtures without destructuring them, Playwright throws an error.
 
 ```ts
-// fixtures.ts
+test("Verify members", async ({ page, context, browser }) => { // Correct
+  ...
+});
 
-import { Page, test as base } from "@playwright/test";
-
-type Fixture = {
-  sampleString: string;
-};
-
-export const test = base.extend<Fixture>({
-  sampleString: async (use) => {
-    console.log("Fixture setup");
-    await use("Fixture Data")
-    console.log("Fixture teardown");
-  }.
-})
-```
-
-The `extend` method is used to add additional functionality to the test object.
-Each fixture has a setup and teardown phase separated by the `await use()`. The `use` function is passed as an argument to the fixture function, and is used to provide the fixture object to the test function.
-
-To utilize the fixture in our tests, import this test into our test files instead of importing it directly from `@playwright/test`.
-
-```js
-import { test } from "./fixtures";
-
-test("test", async ({ sampleString }) => {
-  console.log(sampleString);
+test("Verify members", async (fixtures) => { // Incorrect. Playwright throws an error.
+  ...
 });
 ```
 
-```bash
+## Custom fixtures
+
+We can create custom fixtures for any data or helpers we might need in a test. For doing this we can make use of the `.extend` method. Each fixture
+has a setup and teardown phase separated by the `await use()`. The `use` function is passed as an argument to the fixture function, and is used to
+provide the fixture object to the test function. To utilize the fixture in our tests, import the extended `test` we have created into our test files instead of importing it
+directly from `@playwright/test`.
+
+### Fixture Lifecycle
+
+The lifecycle of a fixture can be classified into three steps. The setup, usage and teardown step. To understand it better consider the following sample fixture.
+
+```ts
+
+import { test } from "@playwright/test";
+
+interface {
+  customValue: string;
+}
+
+const sampleFixture = test.extend<customValue>({
+  customValue: async ({}, use) => {
+    /* Setup starts */
+    console.log("Setting up customValue fixture");
+    /* Setup ends */
+
+    await use("This is the value of the customValue fixture"); // Usage
+
+    /* Teardown starts */
+    console.log("Tearing down customValue fixture");
+    /* Teardown ends */
+  }
+})
+
+sampleFixture(async ({ customValue }) => {
+  console.log("Test begins");
+  console.log(customValue);
+  console.log("Test ends")
+})
+```
+
+The output when executing the above tests will be as follows.
+
+```
 # output
 $ npx playwright test sample.spec.ts
 
-Fixture Setup
-Fixture Data
-Fixture Teardown
+Setting up customValue fixture
+Test begins
+This is the value of the customValue fixture
+Test ends
+Tearing down customValue fixture
 ```
 
-This approach spares us from the need to include the logic to console within every individual test, promoting cleaner and more efficient test code.
+As seen from the output above, the fixture lifecycle is dependent on the test lifecycle. The lifecycle is as follows.
+
+1. Setup: Here we can write all the logic to setup our custom fixture. Some common usage includes initializing a POM and 
+setting up the page for using the fixture. This step takes place before the test begins. Playwright goes through all the 
+fixtures we have destructred in a test and sets them up.
+
+2. Usage: This is the step where we actually use the fixture. In the fixture we can provide any useful data or helper to
+the tests through the `use` command. Doing this replaces all the occurrences of the fixture name
+in the tests with the value we pass in the `use` command.
+
+3. Teardown: This is the final step in the fixture lifecycle which can be used to execute some cleanup actions. This can 
+be used to do something like cleaning up the test data from a site after testing in it. The teardown of a fixture is 
+executed only after the dependent test has completed execution.
+
+This approach spares us from the need to include the repeating logic within individual tests, promoting cleaner and 
+more efficient test code.
 
 ## Page Object Models as fixtures
 
