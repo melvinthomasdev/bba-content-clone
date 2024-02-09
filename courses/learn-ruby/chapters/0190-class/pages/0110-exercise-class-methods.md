@@ -21,6 +21,6 @@ class Number
   end
 end
 
-puts Number.addition(3.6, 4.4)
+puts Number.addition(3.6, 4.3)
 </solution>
 </codeblock>
