@@ -17,14 +17,13 @@ Currently the path for `ProductList` component is `/products`. Let's outline the
 
 To fulfill the initial requirement, we'll create a new function called `handlePageNavigation`. This function will be assigned to the `navigate` prop within the `Pagination` component. It will add the new page number and the default page size to the URL when the user navigates to a different page.
 
-```jsx {3-7, 15}
+```jsx {3-6, 14}
 const ProductList = () => {
   // ...
-  const handlePageNavigation = page => {
+  const handlePageNavigation = page =>
     history.replace(
       buildUrl(routes.products.index, { page, pageSize: DEFAULT_PAGE_SIZE })
     );
-  };
   // ...
 
   return (
@@ -90,7 +89,7 @@ const [currentPage, setCurrentPage] = useState(DEFAULT_PAGE_INDEX);
 
 Next, we'll substitute all instances of `currentPage` with `page` throughout the component. Query parameters extracted from the URL are strings. `Number(page)` explicitly converts the extracted page value from a string to a numeric type.
 
-```jsx {5, 6, 13-20, 28-30}
+```jsx {5, 6, 13-19, 28-29}
 const ProductList = () => {
   // ...
   const productsParams = {
@@ -103,14 +102,13 @@ const ProductList = () => {
     useFetchProducts(productsParams);
 
   // ...
-  const handlePageNavigation = page => {
+  const handlePageNavigation = page =>
     history.replace(
       buildUrl(
         routes.products.index,
         mergeLeft({ page, pageSize: DEFAULT_PAGE_SIZE }, queryParams)
       )
     );
-  };
   // ...
 
   return (
@@ -136,16 +134,18 @@ The following points articulate our requirements for the behaviour of search inp
 - Using the search input to search for a query should update the URL by adding the `search_term` as a query parameter. The `page` and `page_size` should revert to their default values.
 - When opening the application URL with the path `/products?page=1&page_size=8&search_term=mac` in a new tab, it should automatically direct us to the initial page, displaying a maximum of eight products containing the term "mac".
 
-We can fulfill the second requirement using the same approach we employed for `pages` by utilizing `useQueryParams`. We will also modify the `productsParams` to incorporate the `searchTerm`.
+We can fulfill the second requirement using the same approach we employed for `pages` by utilizing `useQueryParams`. We will also modify the `productsParams` and the default value of the `searchKey` state to incorporate the `searchTerm`.
 
-```jsx {1, 6-7, 10}
+```jsx {1, 5-8, 12}
 import useQueryParams from "hooks/useQueryParams";
 // ...
 
 const ProductList = () => {
-  // ...
   const queryParams = useQueryParams();
-  const { page, pageSize, searchTerm } = queryParams;
+  const { page, pageSize, searchTerm = "" } = queryParams;
+
+  const [searchKey, setSearchKey] = useState(searchTerm);
+  // ...
 
   const productsParams = {
     searchTerm,
@@ -159,35 +159,21 @@ const ProductList = () => {
 };
 ```
 
-Up to this point, we kept track of the input value using the `searchKey` state. This value underwent debouncing via the `useDebounce` hook and was stored as `debouncedSearchKey`.
+With that, we are ready to address the first requirement of updating the query parameters in the URL when a user enters a query. We'll start by creating a `updateQueryParams` event handler for updating the query parameters in response to changes in the input. Also, inside this handler we will update the `searchKey` state with the value entered by the user.
 
-With direct access to the `searchTerm` from the query parameters, the `searchKey` state is now unnecessary, rendering the `useDebounce` hook obsolete. Let's proceed to eliminate all the highlighted lines below.
-
-```jsx {1, 5, 7}
-import useDebounce from "hooks/useDebounce";
-// ...
-const ProductList = () => {
-  // ...
-  const [searchKey, setSearchKey] = useState(searchTerm);
-
-  const debouncedSearchKey = useDebounce(searchKey);
-  // ...
-};
-```
-
-With that, we are ready to address the first requirement of updating the query parameters in the URL when a user enters a query. We'll start by creating a `handleChange` event handler for updating the query parameters in response to changes in the input. As we have eliminated the use of the `searchKey` state to track input values, we will now make the `Input` component uncontrolled by removing the `value` prop. An uncontrolled input component in React is one that doesn't rely on React state to manage its value. Instead, it directly interacts with the DOM, allowing the DOM itself to maintain and handle the input's state.
-
-```jsx {1, 4-12, 16-21}
+```jsx {1, 5-15, 12, 24}
 import { filterNonNull } from "neetocist";
 // ...
 const ProductList = () => {
   // ...
-  const handleChange = ({ target: { value } }) => {
+  const updateQueryParams = ({ target: { value } }) => {
     const params = {
       page: DEFAULT_PAGE_INDEX,
       pageSize: DEFAULT_PAGE_SIZE,
       searchTerm: value || null,
     };
+
+    setSearchKey(value);
 
     history.replace(buildUrl(routes.products.index, filterNonNull(params)));
   };
@@ -195,10 +181,11 @@ const ProductList = () => {
   return (
     // ...
     <Input
-      placeHolder="search"
+      placeholder={t("searchProducts")}
       prefix={<Search />}
+      value={searchKey}
       type="search"
-      onChange={handleChange}
+      onChange={updateQueryParams}
     />
     // ...
   );
@@ -207,7 +194,7 @@ const ProductList = () => {
 
 From now on, any changes in the input will prompt an update in the URL to mirror the search query.
 
-Moving forward, we're not going to debounce the search value using the `useDebounce` hook. Instead, we'll delay running the code that updates the query parameters. We'll do this by building another hook called `useFuncDebounce`. As a result, the `useDebounce.js` file is no longer needed, you can go ahead and remove the file.
+Moving forward, we're not going to debounce the search value using the `useDebounce` hook. Instead, we'll delay running the code that updates the query parameters. We'll do this by building another hook called `useFuncDebounce`. As a result, the `useDebounce.js` file is no longer needed, you can go ahead and remove the file and also we need to remove its usage from the `ProductList` component.
 
 Let's create the `useFuncDebounce.js` file inside `src/hooks` folder.
 
@@ -233,14 +220,14 @@ const useFuncDebounce = func => {
 export default useFuncDebounce;
 ```
 
-We'll now swap out the prior `handleChange` event handler for a debounced counterpart that bears the same name.
+We'll now swap out the prior `updateQueryParams` event handler for a debounced counterpart that bears the same name. As we only need to debounce the query params updating logic, we need to move the `setSearchKey` function out of the `updateQueryParams`.
 
-```jsx {1, 5, 13}
+```jsx {1, 5, 23-26}
 import useFuncDebounce from "hooks/useFuncDebounce";
 // ...
 const ProductList = () => {
   // ...
-  const handleChange = useFuncDebounce(({ target: { value } }) => {
+  const updateQueryParams = useFuncDebounce(value => {
     const params = {
       page: DEFAULT_PAGE_INDEX,
       pageSize: DEFAULT_PAGE_SIZE,
@@ -250,6 +237,21 @@ const ProductList = () => {
     history.replace(buildUrl(routes.products.index, filterNonNull(params)));
   });
   // ...
+
+  return (
+    // ...
+    <Input
+      placeholder={t("searchProducts")}
+      prefix={<Search />}
+      type="search"
+      value={searchKey}
+      onChange={({ target: { value } }) => {
+        updateQueryParams(value);
+        setSearchKey(value);
+      }}
+    />
+    // ...
+  );
 };
 ```
 
