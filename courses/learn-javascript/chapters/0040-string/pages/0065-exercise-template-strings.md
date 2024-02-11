@@ -1,10 +1,10 @@
 Update the console log
 statements to display the
 values accordingly:
-`Employee ID: [Employee ID Number]`
-`Name: [Employee Name value]`
-`Department: [Department value]`
-`Full-Time: [Is Full Time value]`
+`Employee ID: [employeeIdNumber]`
+`Name: [employeeIdNumber]`
+`Department: [department]`
+`Full-Time: [isFullTime]`
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
