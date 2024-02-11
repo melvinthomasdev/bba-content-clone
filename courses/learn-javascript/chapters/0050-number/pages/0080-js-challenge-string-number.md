@@ -101,42 +101,34 @@ among themselves and donate any extra coins
 to charity.
 Later they decided to give 1 more coin to charity.
 
-- Provided below is the function `findExtraCoins`
-  that takes two parameters:
-  `totalCoins` and `numberOfPeople`.
-- Update the `findExtraCoins` function to calculate
+- Update the code to calculate
   the number of extra coins left after dividing
-  the `totalCoins` equally among the `numberOfPeople`.
-- Store the number of extra coins in a variable
-  named `charity`.
-- Print the value of the `charity` variable to
+  the total coins equally among the specified
+  number of people and store the number of extra
+  coins in a variable named **charity**.
+- Print the value of the **charity** variable to
   the console.
 - Using the appropriate operator,
   increase the value of the charity variable
   by 1 and print it again to the console.
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 const totalGoldCoins = 103;
 const totalNumberOfPeople = 4;
-const findExtraCoins = (totalCoins, numberOfPeople) => {
-  // Write your code here
-};
 
-findExtraCoins(totalGoldCoins, totalNumberOfPeople);
 </code>
 <solution>
 const totalGoldCoins = 103;
 const totalNumberOfPeople = 4;
 
-const findExtraCoins = (totalCoins, numberOfPeople) => {
-// Write your code here
-  let charity = totalGoldCoins % numberOfPeople
-  console.log(charity);
-  charity += 1;
-  console.log(charity);
-};
+let charity = totalGoldCoins % totalNumberOfPeople;
 
-findExtraCoins(totalGoldCoins, totalNumberOfPeople);
+console.log(charity);
+
+charity += 1;
+
+console.log(charity);
 </solution>
 </codeblock>
 
