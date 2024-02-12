@@ -477,10 +477,11 @@ Fully replace the content of
 
 ```jsx
 import React, { useState, useEffect } from "react";
+
 import { all, isNil, isEmpty, either } from "ramda";
+
 import tasksApi from "apis/tasks";
-import Container from "components/Container";
-import PageLoader from "components/PageLoader";
+import { Container, PageLoader, PageTitle } from "components/commons";
 import Table from "components/Tasks/Table";
 
 const Dashboard = ({ history }) => {
@@ -538,7 +539,7 @@ const Dashboard = ({ history }) => {
 
   if (loading) {
     return (
-      <div className="w-screen h-screen">
+      <div className="h-screen w-screen">
         <PageLoader />
       </div>
     );
@@ -547,7 +548,7 @@ const Dashboard = ({ history }) => {
   if (all(either(isNil, isEmpty), [pendingTasks, completedTasks])) {
     return (
       <Container>
-        <h1 className="my-5 text-xl leading-5 text-center">
+        <h1 className="my-5 text-center text-xl leading-5">
           You have not created or been assigned any tasks 🥳
         </h1>
       </Container>
@@ -556,22 +557,25 @@ const Dashboard = ({ history }) => {
 
   return (
     <Container>
-      {!either(isNil, isEmpty)(pendingTasks) && (
-        <Table
-          data={pendingTasks}
-          destroyTask={destroyTask}
-          showTask={showTask}
-          handleProgressToggle={handleProgressToggle}
-        />
-      )}
-      {!either(isNil, isEmpty)(completedTasks) && (
-        <Table
-          type="completed"
-          data={completedTasks}
-          destroyTask={destroyTask}
-          handleProgressToggle={handleProgressToggle}
-        />
-      )}
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Todo list" />
+        {!either(isNil, isEmpty)(pendingTasks) && (
+          <Table
+            data={pendingTasks}
+            destroyTask={destroyTask}
+            handleProgressToggle={handleProgressToggle}
+            showTask={showTask}
+          />
+        )}
+        {!either(isNil, isEmpty)(completedTasks) && (
+          <Table
+            data={completedTasks}
+            destroyTask={destroyTask}
+            handleProgressToggle={handleProgressToggle}
+            type="completed"
+          />
+        )}
+      </div>
     </Container>
   );
 };
@@ -637,6 +641,7 @@ Fully replace the content of `Table/index.jsx`with the following lines of code:
 
 ```jsx
 import React from "react";
+
 import Header from "./Header";
 import Row from "./Row";
 
@@ -646,30 +651,20 @@ const Table = ({
   destroyTask,
   showTask,
   handleProgressToggle,
-  starTask,
-}) => {
-  return (
-    <div className="flex flex-col mt-10 ">
-      <div className="my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-          <div className="overflow-hidden border-b border-gray-200 shadow md:custom-box-shadow">
-            <table className="min-w-full divide-y divide-gray-200">
-              <Header type={type} />
-              <Row
-                data={data}
-                destroyTask={destroyTask}
-                showTask={showTask}
-                type={type}
-                handleProgressToggle={handleProgressToggle}
-                starTask={starTask}
-              />
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+}) => (
+  <div className="inline-block min-w-full">
+    <table className="min-w-full border-collapse border border-gray-300">
+      <Header type={type} />
+      <Row
+        data={data}
+        destroyTask={destroyTask}
+        handleProgressToggle={handleProgressToggle}
+        showTask={showTask}
+        type={type}
+      />
+    </table>
+  </div>
+);
 
 export default Table;
 ```
@@ -681,6 +676,7 @@ Now, inside `Header.jsx`, fully replace with the following content:
 
 ```jsx
 import React from "react";
+
 import { compose, head, join, juxt, tail, toUpper } from "ramda";
 
 const Header = ({ type }) => {
@@ -691,41 +687,22 @@ const Header = ({ type }) => {
   return (
     <thead>
       <tr>
-        <th className="w-1"></th>
-        <th
-          className="px-6 py-3 text-xs font-bold
-        leading-4 tracking-wider text-left text-bb-gray-600
-        text-opacity-50 uppercase bg-gray-50"
-        >
+        <th className="w-1 border-b border-r border-gray-300 bg-gray-100" />
+        <th className="border-b border-r border-gray-300 bg-gray-100 px-4 py-2.5 text-left text-xs font-bold uppercase leading-4 text-gray-800">
           {title}
         </th>
         {type === "pending" && (
-          <th
-            className="px-6 py-3 text-sm font-bold leading-4
-          tracking-wider text-left text-bb-gray-600
-          text-opacity-50 bg-gray-50"
-          >
+          <th className="border-b border-r border-gray-300 bg-gray-100 px-4 py-2.5 text-left text-xs font-bold uppercase leading-4 text-gray-800">
             Assigned To
           </th>
         )}
         {type === "completed" && (
-          <>
-            <th style={{ width: "164px" }}></th>
-            <th
-              className="pl-6 py-3 text-sm font-bold leading-4
-            tracking-wider text-center text-bb-gray-600
-            text-opacity-50 bg-gray-50"
-            >
-              Delete
-            </th>
-          </>
+          <th className="border-b border-gray-300 bg-gray-100 px-4 py-2.5 text-center text-xs font-bold uppercase leading-4 text-gray-800">
+            Actions
+          </th>
         )}
         {type === "pending" && (
-          <th
-            className="pl-6 py-3 text-sm font-bold leading-4
-          tracking-wider text-center text-bb-gray-600
-          text-opacity-50 bg-gray-50"
-          >
+          <th className="border-b border-gray-300 bg-gray-100 px-4 py-2.5 text-center text-xs font-bold uppercase leading-4 text-gray-800">
             Starred
           </th>
         )}
@@ -757,10 +734,11 @@ Now, inside `Row.jsx`, fully replace with the following content:
 
 ```jsx
 import React from "react";
+
 import classnames from "classnames";
 import PropTypes from "prop-types";
 
-import Tooltip from "components/Tooltip";
+import { Tooltip } from "components/commons";
 
 const Row = ({
   type = "pending",
@@ -773,57 +751,55 @@ const Row = ({
   const toggledProgress = isCompleted ? "pending" : "completed";
 
   return (
-    <tbody className="bg-white divide-y divide-bb-gray-600">
+    <tbody className="divide-y divide-gray-200 bg-white">
       {data.map(rowData => (
         <tr key={rowData.id}>
-          <td className="px-6 py-4 text-center">
-            <input
-              type="checkbox"
-              checked={isCompleted}
-              className="ml-6 w-4 h-4 text-bb-purple border-gray-300
-               rounded form-checkbox focus:ring-bb-purple cursor-pointer"
-              onChange={() =>
-                handleProgressToggle({
-                  slug: rowData.slug,
-                  progress: toggledProgress,
-                })
+          <td className="border-r border-gray-300 px-4 py-2.5 text-center">
+            <Tooltip
+              tooltipContent={
+                isCompleted ? "Mark as incomplete" : "Mark as completed"
               }
-            />
+            >
+              <input
+                checked={isCompleted}
+                className="form-checkbox h-4 w-4 cursor-pointer rounded border-gray-300 text-indigo-600 focus:text-indigo-600"
+                type="checkbox"
+                onChange={() =>
+                  handleProgressToggle({
+                    slug: rowData.slug,
+                    progress: toggledProgress,
+                  })
+                }
+              />
+            </Tooltip>
           </td>
           <td
             className={classnames(
-              "block w-64 px-6 py-4 text-sm font-medium leading-8 text-bb-purple capitalize truncate",
+              "border-r border-gray-300 px-4 py-2.5 text-sm font-medium capitalize text-indigo-600",
               {
                 "cursor-pointer": !isCompleted,
-              },
-              { "text-opacity-50": isCompleted }
+                "cursor-not-allowed line-through": isCompleted,
+              }
             )}
             onClick={() => !isCompleted && showTask(rowData.slug)}
           >
-            <Tooltip content={rowData.title} delay={200} direction="top">
-              <div className="truncate max-w-64 ">{rowData.title}</div>
+            <Tooltip tooltipContent={rowData.title}>
+              <span>{rowData.title}</span>
             </Tooltip>
           </td>
           {!isCompleted && (
-            <td
-              className="px-6 py-4 text-sm font-medium leading-5
-             text-bb-gray-600 whitespace-no-wrap"
-            >
+            <td className="whitespace-no-wrap border-r border-gray-300 px-4 py-2.5 text-sm text-gray-800">
               {rowData.assigned_user.name}
             </td>
           )}
           {isCompleted && (
-            <>
-              <td style={{ width: "164px" }}></td>
-              <td className="px-6 py-4 text-center cursor-pointer">
-                <i
-                  className="text-2xl text-center text-bb-border
-                  transition duration-300 ease-in-out
-                  ri-delete-bin-5-line hover:text-bb-red"
-                  onClick={() => destroyTask(rowData.slug)}
-                ></i>
-              </td>
-            </>
+            <td className="cursor-pointer px-4 py-2.5 text-center">
+              <Tooltip tooltipContent="Delete">
+                <button onClick={() => destroyTask(rowData.slug)}>
+                  <i className="ri-delete-bin-line text-2xl text-gray-400 transition duration-300 ease-in-out hover:text-red-500" />
+                </button>
+              </Tooltip>
+            </td>
           )}
         </tr>
       ))}
@@ -863,13 +839,13 @@ Fully replace `Show.jsx` with the following content:
 
 ```jsx
 import React, { useEffect, useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
 
-import tasksApi from "apis/tasks";
+import { useHistory, useParams } from "react-router-dom";
+
 import commentsApi from "apis/comments";
-import Container from "components/Container";
-import PageLoader from "components/PageLoader";
+import tasksApi from "apis/tasks";
 import Comments from "components/Comments";
+import { Button, Container, PageLoader } from "components/commons";
 
 const Show = () => {
   const [task, setTask] = useState([]);
@@ -877,8 +853,7 @@ const Show = () => {
   const [newComment, setNewComment] = useState("");
   const [loading, setLoading] = useState(false);
   const { slug } = useParams();
-
-  let history = useHistory();
+  const history = useHistory();
 
   const destroyTask = async () => {
     try {
@@ -899,22 +874,26 @@ const Show = () => {
         data: { task },
       } = await tasksApi.show(slug);
       setTask(task);
+      setPageLoading(false);
     } catch (error) {
       logger.error(error);
-    } finally {
-      setPageLoading(false);
+      history.push("/");
     }
   };
 
-  const handleSubmit = async event => {
+  const addComment = async event => {
     event.preventDefault();
+    setLoading(true);
     try {
-      await commentsApi.create({ content: newComment, task_id: task.id });
+      await commentsApi.create({
+        content: newComment,
+        task_id: task.id,
+      });
       fetchTaskDetails();
       setNewComment("");
-      setLoading(false);
     } catch (error) {
       logger.error(error);
+    } finally {
       setLoading(false);
     }
   };
@@ -929,41 +908,46 @@ const Show = () => {
 
   return (
     <Container>
-      <div className="flex justify-between text-bb-gray-600 mt-10">
-        <h1 className="pb-3 mt-5 mb-3 text-lg leading-5 font-bold">
-          {task?.title}
-        </h1>
-        <div className="bg-bb-env px-2 mt-2 mb-4 rounded">
-          <i
-            className="text-2xl text-center transition duration-300
-             ease-in-out ri-delete-bin-5-line hover:text-bb-red mr-2"
-            onClick={destroyTask}
-          ></i>
-          <i
-            className="text-2xl text-center transition duration-300
-             ease-in-out ri-edit-line hover:text-bb-yellow"
-            onClick={updateTask}
-          ></i>
+      <div className="flex flex-col gap-y-8">
+        <div className="mt-8 flex w-full items-start justify-between gap-x-6">
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-3xl font-semibold">{task?.title}</h2>
+            <div className="flex items-center gap-x-6">
+              <p className="text-base text-gray-700">
+                <span className="font-semibold">Assigned to: </span>
+                {task?.assigned_user?.name}
+              </p>
+              <p className="text-base text-gray-700">
+                <span className="font-semibold">Created by: </span>
+                {task?.task_owner?.name}
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center justify-end gap-x-3">
+            <Button
+              buttonText="Delete"
+              icon="delete-bin-5-line"
+              size="small"
+              style="secondary"
+              onClick={destroyTask}
+            />
+            <Button
+              buttonText="Edit"
+              icon="edit-line"
+              size="small"
+              style="secondary"
+              onClick={updateTask}
+            />
+          </div>
         </div>
+        <Comments
+          comments={task?.comments}
+          handleSubmit={addComment}
+          loading={loading}
+          newComment={newComment}
+          setNewComment={setNewComment}
+        />
       </div>
-      <h2
-        className="pb-3 mb-3 text-md leading-5 text-bb-gray-600
-       text-opacity-50"
-      >
-        <span>Assigned To : </span>
-        {task?.assigned_user.name}
-      </h2>
-      <h2 className="pb-3 mb-3 text-md leading-5 text-bb-gray-600 text-opacity-50">
-        <span>Created By : </span>
-        {task?.task_owner?.name}
-      </h2>
-      <Comments
-        comments={task?.comments}
-        setNewComment={setNewComment}
-        handleSubmit={handleSubmit}
-        newComment={newComment}
-        loading={loading}
-      />
     </Container>
   );
 };

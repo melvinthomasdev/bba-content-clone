@@ -382,13 +382,15 @@ then open `app/javascript/src/App.jsx` file and add the following lines:
 
 ```jsx {3,7,10,13-14,24-30}
 import React from "react";
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+
 import { either, isEmpty, isNil } from "ramda";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import Dashboard from "components/Dashboard";
-import { CreateTask, ShowTask, EditTask } from "components/Tasks";
+
 import { Login, Signup } from "components/Authentication";
-import PrivateRoute from "components/Common/PrivateRoute";
+import { PrivateRoute } from "components/commons";
+import Dashboard from "components/Dashboard";
+import { CreateTask, EditTask, ShowTask } from "components/Tasks";
 import { getFromLocalStorage } from "utils/storage";
 
 const App = () => {
@@ -399,16 +401,16 @@ const App = () => {
     <Router>
       <ToastContainer />
       <Switch>
-        <Route exact path="/tasks/:slug/show" component={ShowTask} />
-        <Route exact path="/tasks/:slug/edit" component={EditTask} />
-        <Route exact path="/tasks/create" component={CreateTask} />
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/login" component={Login} />
+        <Route exact component={ShowTask} path="/tasks/:slug/show" />
+        <Route exact component={EditTask} path="/tasks/:slug/edit" />
+        <Route exact component={CreateTask} path="/tasks/create" />
+        <Route exact component={Signup} path="/signup" />
+        <Route exact component={Login} path="/login" />
         <PrivateRoute
+          component={Dashboard}
+          condition={isLoggedIn}
           path="/"
           redirectRoute="/login"
-          condition={isLoggedIn}
-          component={Dashboard}
         />
       </Switch>
     </Router>
@@ -419,61 +421,19 @@ export default App;
 ```
 
 Now that our dashboard component is rendered at `/` path instead of
-`/dashboard`, replace `history.push("/dashboard")` with `history.push("/")` in
-`Create` component, so as to redirect users to the correct URL from the
-`handleSubmit` function, like this:
+`/dashboard`, replace the occurrences of `history.push("/dashboard")` with `history.push("/")`. Also replace the value of `to` prop of `<Link/>` components from `"/dashboard"` to `"/"`.
 
-```jsx {9}
-/* previous code */
-const Create = ({ history }) => {
-  /* previous code */
-  const handleSubmit = async event => {
-    event.preventDefault();
-    setLoading(true);
-    try {
-      /* previous code */
-      history.push("/");
-    } catch (error) {
-      logger.error(error);
-      setLoading(false);
-    }
-  };
-  /* previous code */
-};
-
-export default Create;
-```
-
-Now make the same change in the `Edit` component as well, like this:
-
-```jsx {8} {
-/* previous code */
-const Edit = ({ history }) => {
-  /* previous code */
-  const handleSubmit = async event => {
-    event.preventDefault();
-    try {
-      /* previous code */
-      history.push("/");
-    } catch (error) {
-      setLoading(false);
-      logger.error(error);
-    }
-  };
-  /* previous code */
-};
-```
-
-Now, let's define `app/javascript/src/components/Common/PrivateRoute.jsx`. It
+Now, let's define `app/javascript/src/components/commons/PrivateRoute.jsx`. It
 should redirect unauthenticated users to the login screen, if they try to access
 any private route.
 
 Create the file and add the following lines of code to it:
 
-```javascript {
+```javascript
 import React from "react";
-import { Redirect, Route } from "react-router-dom";
+
 import PropTypes from "prop-types";
+import { Redirect, Route } from "react-router-dom";
 
 const PrivateRoute = ({
   component: Component,
@@ -492,7 +452,8 @@ const PrivateRoute = ({
       />
     );
   }
-  return <Route path={path} component={Component} {...props} />;
+
+  return <Route component={Component} path={path} {...props} />;
 };
 
 PrivateRoute.propTypes = {
@@ -504,6 +465,30 @@ PrivateRoute.propTypes = {
 };
 
 export default PrivateRoute;
+```
+
+Now, export `PrivateRoute` from `commons/index.js` file:
+
+```js
+import Button from "./Button";
+import Container from "./Container";
+import Input from "./Input";
+import PageLoader from "./PageLoader";
+import PageTitle from "./PageTitle";
+import PrivateRoute from "./PrivateRoute";
+import Toastr from "./Toastr";
+import Tooltip from "./Tooltip";
+
+export {
+  Button,
+  Container,
+  Input,
+  PageLoader,
+  PageTitle,
+  PrivateRoute,
+  Tooltip,
+  Toastr,
+};
 ```
 
 Open `app/javascript/src/apis/auth.js` and replace it with the following
@@ -543,53 +528,43 @@ Add the following content into `Form/Login.jsx`:
 
 ```jsx
 import React from "react";
+
 import { Link } from "react-router-dom";
 
-import Input from "components/Input";
-import Button from "components/Button";
+import { Button, Input } from "components/commons";
 
-const Login = ({ handleSubmit, setEmail, setPassword, loading }) => {
-  return (
-    <div
-      className="flex items-center justify-center min-h-screen
-      px-4 py-12 lg:px-8 bg-gray-50 sm:px-6"
-    >
-      <div className="w-full max-w-md">
-        <h2
-          className="mt-6 text-3xl font-extrabold leading-9
-          text-center text-bb-gray-700"
+const Login = ({ handleSubmit, setEmail, setPassword, loading }) => (
+  <div className="flex min-h-screen items-center justify-center bg-gray-50 px-4 py-12 sm:px-6 lg:px-8">
+    <div className="w-full max-w-md">
+      <h2 className="mt-6 text-center text-3xl font-extrabold leading-9 text-gray-700">
+        Sign In
+      </h2>
+      <div className="text-center">
+        <Link
+          className="mt-2 text-sm font-medium text-indigo-500 transition duration-150 ease-in-out focus:underline focus:outline-none"
+          to="/signup"
         >
-          Sign In
-        </h2>
-        <div className="text-center">
-          <Link
-            to="/signup"
-            className="mt-2 text-sm font-medium text-bb-purple
-            transition duration-150 ease-in-out focus:outline-none
-            focus:underline"
-          >
-            Or Register Now
-          </Link>
-        </div>
-        <form className="mt-8" onSubmit={handleSubmit}>
-          <Input
-            label="Email"
-            type="email"
-            placeholder="oliver@example.com"
-            onChange={e => setEmail(e.target.value)}
-          />
-          <Input
-            label="Password"
-            type="password"
-            placeholder="********"
-            onChange={e => setPassword(e.target.value)}
-          />
-          <Button type="submit" buttonText="Sign In" loading={loading} />
-        </form>
+          Or Register Now
+        </Link>
       </div>
+      <form className="mt-8 flex flex-col gap-y-6" onSubmit={handleSubmit}>
+        <Input
+          label="Email"
+          placeholder="oliver@example.com"
+          type="email"
+          onChange={e => setEmail(e.target.value)}
+        />
+        <Input
+          label="Password"
+          placeholder="********"
+          type="password"
+          onChange={e => setPassword(e.target.value)}
+        />
+        <Button buttonText="Sign In" loading={loading} type="submit" />
+      </form>
     </div>
-  );
-};
+  </div>
+);
 
 export default Login;
 ```
@@ -607,9 +582,9 @@ Add the following content to `Login.jsx`:
 ```jsx
 import React, { useState } from "react";
 
-import LoginForm from "components/Authentication/Form/Login";
 import authApi from "apis/auth";
 import { setAuthHeaders } from "apis/axios";
+import LoginForm from "components/Authentication/Form/Login";
 import { setToLocalStorage } from "utils/storage";
 
 const Login = () => {
@@ -629,7 +604,6 @@ const Login = () => {
         userName: response.data.name,
       });
       setAuthHeaders();
-      setLoading(false);
       window.location.href = "/";
     } catch (error) {
       logger.error(error);
@@ -639,10 +613,10 @@ const Login = () => {
 
   return (
     <LoginForm
+      handleSubmit={handleSubmit}
+      loading={loading}
       setEmail={setEmail}
       setPassword={setPassword}
-      loading={loading}
-      handleSubmit={handleSubmit}
     />
   );
 };
@@ -858,42 +832,51 @@ end
 Now, to show the logged in user's name in our `NavBar`, add these changes our
 `app/javascript/src/components/NavBar/index.jsx` file:
 
-```jsx {5,8,24-32}
+```jsx {6, 11, 38-40}
 import React from "react";
-import NavItem from "./NavItem";
-import authApi from "apis/auth";
-import { resetAuthTokens } from "src/apis/axios";
+
+import classnames from "classnames";
+import { Link, useLocation } from "react-router-dom";
+
 import { getFromLocalStorage } from "utils/storage";
+
+import GraniteLogo from "./GraniteLogo";
 
 const NavBar = () => {
   const userName = getFromLocalStorage("authUserName");
+  const location = useLocation();
 
   return (
-    <nav className="bg-white shadow">
-      <div className="px-2 mx-auto max-w-7xl sm:px-4 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex px-2 lg:px-0">
-            <div className="hidden lg:flex">
-              <NavItem name="Todos" path="/dashboard" />
-              <NavItem
-                name="Add"
-                iconClass="ri-add-fill"
-                path="/tasks/create"
-              />
-            </div>
+    <header className="bg-primary-white sticky top-0 z-20 w-full border-b border-gray-200 transition-all duration-500">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="flex h-16 items-center justify-between">
+          <div className="w-max flex-shrink-0">
+            <Link className="h-full w-auto" to="/">
+              <GraniteLogo className="h-8 w-auto" />
+            </Link>
           </div>
-          <div className="flex items-center justify-end gap-x-4">
-            <span
-              className="inline-flex items-center px-2 pt-1 text-sm font-regular leading-5 text-bb-gray-600
-              text-opacity-50 transition duration-150 ease-in-out border-b-2 border-transparent focus:outline-none
-              focus:text-bb-gray-700"
+          <div className="flex items-center gap-x-4">
+            <Link
+              to="/"
+              className={classnames("text-sm font-medium text-gray-800", {
+                "text-indigo-600": location.pathname === "/",
+              })}
             >
-              {userName}
-            </span>
+              Todos
+            </Link>
+            <Link
+              className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:shadow"
+              to="/tasks/create"
+            >
+              Add new task
+            </Link>
+            <Link className="flex items-center gap-x-1 rounded-md bg-gray-200 px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-300 focus:shadow">
+              <span className="block">{userName}</span>
+            </Link>
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 

@@ -10,7 +10,9 @@ These are the basic requirements of this feature:
 - An unordered list of all tasks which will be displayed on the application home
   page.
 
-<image alt="displaying list of tasks feature">displaying-list-of-tasks.png</image>
+<image alt="displaying list of tasks feature">
+  displaying-list-of-tasks.png
+</image>
 
 ## Technical design
 
@@ -66,12 +68,12 @@ Inside `index.jsx`, paste the following contents:
 
 ```jsx
 import React, { useState, useEffect } from "react";
+
 import { isNil, isEmpty, either } from "ramda";
 
-import Container from "components/Container";
-import Table from "components/Tasks/Table";
-import PageLoader from "components/PageLoader";
 import tasksApi from "apis/tasks";
+import { PageLoader, PageTitle, Container } from "components/commons";
+import Table from "components/Tasks/Table";
 
 const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
@@ -96,7 +98,7 @@ const Dashboard = () => {
 
   if (loading) {
     return (
-      <div className="w-screen h-screen">
+      <div className="h-screen w-screen">
         <PageLoader />
       </div>
     );
@@ -105,8 +107,8 @@ const Dashboard = () => {
   if (either(isNil, isEmpty)(tasks)) {
     return (
       <Container>
-        <h1 className="text-xl leading-5 text-center">
-          You have no tasks assigned 😔
+        <h1 className="my-5 text-center text-xl leading-5">
+          You have not created or been assigned any tasks 🥳
         </h1>
       </Container>
     );
@@ -114,7 +116,10 @@ const Dashboard = () => {
 
   return (
     <Container>
-      <Table data={tasks} />
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Todo list" />
+        <Table data={tasks} />
+      </div>
     </Container>
   );
 };
@@ -150,22 +155,21 @@ export default App;
 ```
 
 Next let's update our `NavBar` component so that on clicking the `Todos`
-navitem, we get redirected to `/dashboard`.
+navitem, we get redirected to `/dashboard`:
 
-Update the `NavItem` with `name="Todos"` in
-`app/javascript/src/components/NavBar/index.jsx`, to the following content:
-
-```javascript{5}
+```javascript{6}
 // imports as it was
 const NavBar = () => {
   return (
     // previous jsx as it was
-        <NavItem name="Todos" path="/dashboard" />
-        <NavItem
-          name="Add"
-          iconClass="ri-add-fill"
-          path="/tasks/create"
-        />
+      <Link
+        to="/dashboard"
+        className={classnames("text-sm font-medium text-gray-800", {
+          "text-indigo-600": location.pathname === "/dashboard",
+        })}
+      >
+        Todos
+      </Link>
     // previous jsx as it was
   )
 }

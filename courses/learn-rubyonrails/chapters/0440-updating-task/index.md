@@ -215,16 +215,16 @@ Inside `Edit.jsx`, add the following content:
 
 ```jsx
 import React, { useState, useEffect } from "react";
+
 import { useParams } from "react-router-dom";
 
-import Container from "components/Container";
-import Form from "./Form";
 import tasksApi from "apis/tasks";
-import PageLoader from "components/PageLoader";
+import { Container, PageLoader, PageTitle } from "components/commons";
+
+import Form from "./Form";
 
 const Edit = ({ history }) => {
   const [title, setTitle] = useState("");
-  const [userId, setUserId] = useState("");
   const [loading, setLoading] = useState(false);
   const [pageLoading, setPageLoading] = useState(true);
   const { slug } = useParams();
@@ -274,15 +274,16 @@ const Edit = ({ history }) => {
 
   return (
     <Container>
-      <Form
-        type="update"
-        title={title}
-        userId={userId}
-        setTitle={setTitle}
-        setUserId={setUserId}
-        loading={loading}
-        handleSubmit={handleSubmit}
-      />
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Edit task" />
+        <Form
+          handleSubmit={handleSubmit}
+          loading={loading}
+          setTitle={setTitle}
+          title={title}
+          type="update"
+        />
+      </div>
     </Container>
   );
 };
@@ -309,7 +310,7 @@ Now, we need to create a route inside of our `App.jsx`.
 
 To do so, open `App.jsx` and add the following lines:
 
-```jsx {3,13}
+```jsx {3,12}
 // previous imports if any
 import Dashboard from "components/Dashboard";
 import { CreateTask, ShowTask, EditTask } from "components/Tasks";
@@ -339,22 +340,21 @@ To do so, fully replace `app/javascript/src/components/Tasks/Show.jsx` with the
 following lines of code:
 
 ```jsx
-import React, { useState, useEffect } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
-import Container from "components/Container";
-import PageLoader from "components/PageLoader";
+import { useHistory, useParams } from "react-router-dom";
+
 import tasksApi from "apis/tasks";
+import { Button, Container, PageLoader } from "components/commons";
 
 const Show = () => {
-  const [taskDetails, setTaskDetails] = useState([]);
+  const [task, setTask] = useState([]);
   const [pageLoading, setPageLoading] = useState(true);
   const { slug } = useParams();
-
-  let history = useHistory();
+  const history = useHistory();
 
   const updateTask = () => {
-    history.push(`/tasks/${taskDetails.slug}/edit`);
+    history.push(`/tasks/${task.slug}/edit`);
   };
 
   const fetchTaskDetails = async () => {
@@ -362,11 +362,11 @@ const Show = () => {
       const {
         data: { task },
       } = await tasksApi.show(slug);
-      setTaskDetails(task);
+      setTask(task);
+      setPageLoading(false);
     } catch (error) {
       logger.error(error);
-    } finally {
-      setPageLoading(false);
+      history.push("/");
     }
   };
 
@@ -380,14 +380,21 @@ const Show = () => {
 
   return (
     <Container>
-      <h1 className="pb-3 pl-3 mt-3 mb-3 text-lg leading-5 text-bb-gray border-b border-bb-gray">
-        <span>Task Title : </span> {taskDetails?.title}
-      </h1>
-      <div className="bg-bb-env px-2 mt-2 mb-4 rounded">
-        <i
-          className="text-2xl text-center transition cursor-pointer duration-300ease-in-out ri-edit-line hover:text-bb-yellow"
-          onClick={updateTask}
-        ></i>
+      <div className="flex flex-col gap-y-8">
+        <div className="mt-8 flex w-full items-start justify-between gap-x-6">
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-3xl font-semibold">{task?.title}</h2>
+          </div>
+          <div className="flex items-center justify-end gap-x-3">
+            <Button
+              buttonText="Edit"
+              icon="edit-line"
+              size="small"
+              style="secondary"
+              onClick={updateTask}
+            />
+          </div>
+        </div>
       </div>
     </Container>
   );

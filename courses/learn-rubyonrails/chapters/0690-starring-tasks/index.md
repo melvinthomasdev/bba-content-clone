@@ -237,11 +237,11 @@ code:
 
 ```jsx
 import React, { useState, useEffect } from "react";
+
 import { all, isNil, isEmpty, either } from "ramda";
 
 import tasksApi from "apis/tasks";
-import Container from "components/Container";
-import PageLoader from "components/PageLoader";
+import { PageLoader, PageTitle, Container } from "components/commons";
 import Table from "components/Tasks/Table";
 
 const Dashboard = ({ history }) => {
@@ -311,7 +311,7 @@ const Dashboard = ({ history }) => {
 
   if (loading) {
     return (
-      <div className="w-screen h-screen">
+      <div className="h-screen w-screen">
         <PageLoader />
       </div>
     );
@@ -320,7 +320,7 @@ const Dashboard = ({ history }) => {
   if (all(either(isNil, isEmpty), [pendingTasks, completedTasks])) {
     return (
       <Container>
-        <h1 className="my-5 text-xl leading-5 text-center">
+        <h1 className="my-5 text-center text-xl leading-5">
           You have not created or been assigned any tasks 🥳
         </h1>
       </Container>
@@ -329,23 +329,26 @@ const Dashboard = ({ history }) => {
 
   return (
     <Container>
-      {!either(isNil, isEmpty)(pendingTasks) && (
-        <Table
-          data={pendingTasks}
-          destroyTask={destroyTask}
-          showTask={showTask}
-          handleProgressToggle={handleProgressToggle}
-          starTask={starTask}
-        />
-      )}
-      {!either(isNil, isEmpty)(completedTasks) && (
-        <Table
-          type="completed"
-          data={completedTasks}
-          destroyTask={destroyTask}
-          handleProgressToggle={handleProgressToggle}
-        />
-      )}
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Todo list" />
+        {!either(isNil, isEmpty)(pendingTasks) && (
+          <Table
+            data={pendingTasks}
+            destroyTask={destroyTask}
+            handleProgressToggle={handleProgressToggle}
+            showTask={showTask}
+            starTask={starTask}
+          />
+        )}
+        {!either(isNil, isEmpty)(completedTasks) && (
+          <Table
+            data={completedTasks}
+            destroyTask={destroyTask}
+            handleProgressToggle={handleProgressToggle}
+            type="completed"
+          />
+        )}
+      </div>
     </Container>
   );
 };
@@ -368,6 +371,7 @@ the following code:
 
 ```jsx
 import React from "react";
+
 import Header from "./Header";
 import Row from "./Row";
 
@@ -378,35 +382,21 @@ const Table = ({
   showTask,
   handleProgressToggle,
   starTask,
-}) => {
-  return (
-    <div className="flex flex-col mt-10">
-      <div className="my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div
-          className="inline-block min-w-full py-2
-            align-middle sm:px-6 lg:px-8"
-        >
-          <div
-            className="overflow-hidden border-b
-              border-gray-200 shadow md:custom-box-shadow"
-          >
-            <table className="min-w-full divide-y divide-gray-200">
-              <Header type={type} />
-              <Row
-                data={data}
-                type={type}
-                destroyTask={destroyTask}
-                showTask={showTask}
-                handleProgressToggle={handleProgressToggle}
-                starTask={starTask}
-              />
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+}) => (
+  <div className="inline-block min-w-full">
+    <table className="min-w-full border-collapse border border-gray-300">
+      <Header type={type} />
+      <Row
+        data={data}
+        destroyTask={destroyTask}
+        handleProgressToggle={handleProgressToggle}
+        showTask={showTask}
+        starTask={starTask}
+        type={type}
+      />
+    </table>
+  </div>
+);
 
 export default Table;
 ```
@@ -416,10 +406,11 @@ yet completed. Thus, replace `Row` with the following code:
 
 ```jsx
 import React from "react";
+
 import classnames from "classnames";
 import PropTypes from "prop-types";
 
-import Tooltip from "components/Tooltip";
+import { Tooltip } from "components/commons";
 
 const Row = ({
   type = "pending",
@@ -433,74 +424,74 @@ const Row = ({
   const toggledProgress = isCompleted ? "pending" : "completed";
 
   return (
-    <tbody className="bg-white divide-y divide-gray-200">
+    <tbody className="divide-y divide-gray-200 bg-white">
       {data.map(rowData => (
         <tr key={rowData.id}>
-          <td className="text-center">
-            <input
-              type="checkbox"
-              checked={isCompleted}
-              className="ml-6 w-4 h-4 text-bb-purple border-gray-300
-                  rounded focus:ring-bb-purple cursor-pointer"
-              onChange={() =>
-                handleProgressToggle({
-                  slug: rowData.slug,
-                  progress: toggledProgress,
-                })
+          <td className="border-r border-gray-300 py-2.5 px-4 text-center">
+            <Tooltip
+              tooltipContent={
+                isCompleted ? "Mark as incomplete" : "Mark as completed"
               }
-            />
+            >
+              <input
+                checked={isCompleted}
+                className="form-checkbox h-4 w-4 cursor-pointer rounded border-gray-300 text-indigo-600 focus:text-indigo-600"
+                type="checkbox"
+                onChange={() =>
+                  handleProgressToggle({
+                    slug: rowData.slug,
+                    progress: toggledProgress,
+                  })
+                }
+              />
+            </Tooltip>
           </td>
           <td
             className={classnames(
-               "block w-64 px-6 py-4 text-sm font-medium leading-8
-                text-bb-purple capitalize truncate",
+              "border-r border-gray-300 px-4 py-2.5 text-sm font-medium capitalize text-indigo-600",
               {
                 "cursor-pointer": !isCompleted,
-                "text-opacity-50": isCompleted,
+                "cursor-not-allowed line-through": isCompleted,
               }
             )}
             onClick={() => !isCompleted && showTask(rowData.slug)}
           >
-            <Tooltip content={rowData.title} delay={200} direction="top">
-              <div className="truncate max-w-64 ">{rowData.title}</div>
+            <Tooltip tooltipContent={rowData.title}>
+              <span>{rowData.title}</span>
             </Tooltip>
           </td>
           {!isCompleted && (
             <>
-              <td className="px-6 py-4 text-sm font-medium leading-5
-                            text-bb-gray-600 whitespace-no-wrap">
+              <td className="whitespace-no-wrap border-r border-gray-300 px-4 py-2.5 text-sm text-gray-800">
                 {rowData.assigned_user.name}
               </td>
-              <td className="pl-6 py-4 text-center cursor-pointer">
-                <i
-                  className={classnames(
-                    "transition duration-300 ease-in-out text-2xl hover:text-bb-yellow p-1",
-                    {
-                      "text-bb-border ri-star-line":
-                        rowData.status !== "starred",
-                    },
-                    {
-                      "text-white text-bb-yellow ri-star-fill":
-                        rowData.status === "starred",
-                    }
-                  )}
-                  onClick={() => starTask(rowData.slug, rowData.status)}
-                ></i>
+              <td className="cursor-pointer px-4 py-2.5 text-center">
+                <button onClick={() => starTask(rowData.slug, rowData.status)}>
+                  <i
+                    className={classnames(
+                      "text-2xl transition duration-300 ease-in-out hover:text-yellow-600",
+                      {
+                        "ri-star-line text-gray-400":
+                          rowData.status !== "starred",
+                      },
+                      {
+                        "ri-star-fill text-yellow-500":
+                          rowData.status === "starred",
+                      }
+                    )}
+                  />
+                </button>
               </td>
             </>
           )}
           {isCompleted && (
-            <>
-              <td style={{ width: "164px" }}></td>
-              <td className="pl-6 py-4 text-center cursor-pointer">
-                <i
-                  className="text-2xl text-center text-bb-border
-                  transition duration-300 ease-in-out
-                  ri-delete-bin-5-line hover:text-bb-red"
-                  onClick={() => destroyTask(rowData.slug)}
-                ></i>
-              </td>
-            </>
+            <td className="cursor-pointer px-4 py-2.5 text-center">
+              <Tooltip tooltipContent="Delete">
+                <button onClick={() => destroyTask(rowData.slug)}>
+                  <i className="ri-delete-bin-line text-2xl text-gray-400 transition duration-300 ease-in-out hover:text-red-500" />
+                </button>
+              </Tooltip>
+            </td>
           )}
         </tr>
       ))}

@@ -125,8 +125,8 @@ So the questions that you need ask yourself are:
   intellisense(we will get to it later).
 
 - Where should this file be created in our directory structure? Since this file
-  is common for all other components, let's actually create a directory called
-  `Common` and add this file in it.
+  is common for all other components, let's add this file in
+  `commons` directory.
 
 - The directory name as well as component file name, should be in `PascalCase`.
   The same thing applies to the component naming.
@@ -134,8 +134,7 @@ So the questions that you need ask yourself are:
 Run the following commands to create the file:
 
 ```bash
-mkdir -p app/javascript/src/components/Common
-touch app/javascript/src/components/Common/Toastr.jsx
+touch app/javascript/src/components/commons/Toastr.jsx
 ```
 
 To show the notifications, we need a base library which we can use and modify
@@ -173,7 +172,7 @@ to heroku. This is because Rails asset pipeline works slightly differently in
 the development environment and in the production environment.
 
 Let's complete our `Toastr` component. Add the following code snippet to
-`app/javascript/src/components/Common/Toastr.jsx`:
+`app/javascript/src/components/commons/Toastr.jsx`:
 
 ```javascript
 import React from "react";
@@ -213,6 +212,15 @@ const Toastr = {
 };
 
 export default Toastr;
+```
+
+Now, export `Toastr` from `commons/index.js` file:
+
+```js
+// keep the previous imports as it was
+import Toastr from "./Toastr";
+
+export { Button, Container, Input, PageLoader, PageTitle, Tooltip, Toastr };
 ```
 
 Done. Now we have a `Toastr` component which we can actually use in our code.
@@ -283,7 +291,7 @@ functions in a separate file for the following reasons:
   principle. Declaring constants and helper functions inside them defeats this
   purpose. And it also makes the code difficult to maintain and reuse.
 
-Now, update `app/javascript/src/components/Common/Toastr.jsx` with the following
+Now, update `app/javascript/src/components/commons/Toastr.jsx` with the following
 lines of code:
 
 ```javascript{2,4,15,22}
@@ -441,7 +449,7 @@ Open `app/javascript/src/apis/axios.js` and add the following lines of code.
 
 ```javascript{2,5,26-54}
 import axios from "axios";
-import Toastr from "components/Common/Toastr";
+import { Toastr } from "components/commons";
 import { setToLocalStorage, getFromLocalStorage } from "utils/storage";
 
 const DEFAULT_ERROR_NOTIFICATION = "Something went wrong!";

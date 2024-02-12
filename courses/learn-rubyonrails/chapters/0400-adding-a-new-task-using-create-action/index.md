@@ -15,7 +15,9 @@ created a user.
 
 We will add the select field once we are through with user creation.
 
-<image alt="Adding a task using create action feature">adding-a-task-using-create-action.png</image>
+<image alt="Adding a task using create action feature">
+  adding-a-task-using-create-action.png
+</image>
 
 ## Technical design
 
@@ -393,12 +395,11 @@ In `Form.jsx`, add the following content:
 ```jsx
 import React from "react";
 
-import Input from "components/Input";
-import Button from "components/Button";
+import { Input, Button } from "components/commons";
 
 const Form = ({ type = "create", title, setTitle, loading, handleSubmit }) => {
   return (
-    <form className="max-w-lg mx-auto" onSubmit={handleSubmit}>
+    <form className="mb-4 w-full space-y-2" onSubmit={handleSubmit}>
       <Input
         label="Title"
         placeholder="Todo Title (Max 50 Characters Allowed)"
@@ -437,7 +438,7 @@ In `Create.jsx`, add the following content:
 
 ```jsx
 import React, { useState } from "react";
-import Container from "components/Container";
+import { Container, PageTitle } from "components/commons";
 import Form from "./Form";
 import tasksApi from "apis/tasks";
 
@@ -460,7 +461,14 @@ const Create = ({ history }) => {
 
   return (
     <Container>
-      <Form setTitle={setTitle} loading={loading} handleSubmit={handleSubmit} />
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Add new task" />
+        <Form
+          handleSubmit={handleSubmit}
+          loading={loading}
+          setTitle={setTitle}
+        />
+      </div>
     </Container>
   );
 };
@@ -583,7 +591,7 @@ const App = () => {
 // previous code if any
 ```
 
-Visit http://localhost:3000 and click the `Create` button in `NavBar` and this
+Visit http://localhost:3000/dashboard and click the `Create` button in `NavBar` and this
 time enter a new task and hit "Submit" button. We should see our new task in the
 tasks list.
 

@@ -8,9 +8,11 @@ following is the list of things we need in this feature:
 
 - We need a new dropdown in the task form showing the list of users. We should
   be able to select the task's assignee from this dropdown.
+
   <image alt="User dropdown">user-dropdown.png</image>
 
 - The task details page should show the name of its assignee.
+
   <image alt="Assignee in task details">show-user-in-task-details.png</image>
 
 - Each task on the dashboard should contain the task assignee's name along with
@@ -176,12 +178,12 @@ lines:
 ```javascript
 import React from "react";
 
-import Button from "components/Button";
-import Input from "components/Input";
+import { useHistory } from "react-router-dom";
 import Select from "react-select";
 
+import { Button, Input } from "components/commons";
+
 const Form = ({
-  type = "create",
   title,
   setTitle,
   assignedUser,
@@ -190,39 +192,47 @@ const Form = ({
   loading,
   handleSubmit,
 }) => {
+  const history = useHistory();
   const userOptions = users.map(user => ({
     value: user.id,
     label: user.name,
   }));
-  const defaultOption = {
-    value: assignedUser?.id,
-    label: assignedUser?.name,
-  };
+  const defaultOption = { value: assignedUser?.id, label: assignedUser?.name };
 
   return (
-    <form className="max-w-lg mx-auto" onSubmit={handleSubmit}>
-      <Input
-        label="Title"
-        placeholder="Todo Title (Max 50 Characters Allowed)"
-        value={title}
-        onChange={e => setTitle(e.target.value.slice(0, 50))}
-      />
-      <div className="flex flex-row items-center justify-start mt-3">
-        <p className="w-3/12 leading-5 text-gray-800 text-md">Assigned To: </p>
-        <div className="w-full">
-          <Select
-            isSearchable
-            options={userOptions}
-            defaultValue={defaultOption}
-            onChange={e => setUserId(e.value)}
+    <form className="mb-4 w-full" onSubmit={handleSubmit}>
+      <div className="mx-auto mb-4 w-full overflow-hidden rounded-lg border border-gray-200 bg-white text-gray-800 sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-2xl">
+        <div className="flex flex-col gap-4 p-6">
+          <Input
+            label="Title"
+            placeholder="Todo Title (Max 50 Characters Allowed)"
+            value={title}
+            onChange={e => setTitle(e.target.value.slice(0, 50))}
           />
+          <div className="flex flex-col">
+            <p className="text-sm font-medium leading-none text-gray-800">
+              Assigned To
+            </p>
+            <div className="mt-1 w-full">
+              <Select
+                isSearchable
+                defaultValue={defaultOption}
+                menuPosition="fixed"
+                options={userOptions}
+                onChange={e => setUserId(e.value)}
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <Button
-        type="submit"
-        buttonText={type === "create" ? "Create Task" : "Update Task"}
-        loading={loading}
-      />
+      <div className="flex items-center gap-x-3">
+        <Button buttonText="Save changes" loading={loading} type="submit" />
+        <Button
+          buttonText="Cancel"
+          style="secondary"
+          onClick={() => history.push("/dashboard")}
+        />
+      </div>
     </form>
   );
 };
@@ -251,11 +261,12 @@ result will be passed to `Form`:
 
 ```javascript
 import React, { useState, useEffect } from "react";
-import Container from "components/Container";
-import Form from "./Form";
-import PageLoader from "components/PageLoader";
+
 import tasksApi from "apis/tasks";
 import usersApi from "apis/users";
+import { Container, PageLoader, PageTitle } from "components/commons";
+
+import Form from "./Form";
 
 const Create = ({ history }) => {
   const [title, setTitle] = useState("");
@@ -284,9 +295,9 @@ const Create = ({ history }) => {
       } = await usersApi.fetch();
       setUsers(users);
       setUserId(users[0].id);
-      setPageLoading(false);
     } catch (error) {
       logger.error(error);
+    } finally {
       setPageLoading(false);
     }
   };
@@ -301,14 +312,18 @@ const Create = ({ history }) => {
 
   return (
     <Container>
-      <Form
-        setTitle={setTitle}
-        setUserId={setUserId}
-        assignedUser={users[0]}
-        loading={loading}
-        handleSubmit={handleSubmit}
-        users={users}
-      />
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Add new task" />
+        <Form
+          assignedUser={users[0]}
+          handleSubmit={handleSubmit}
+          loading={loading}
+          setTitle={setTitle}
+          setUserId={setUserId}
+          title={title}
+          users={users}
+        />
+      </div>
     </Container>
   );
 };
@@ -391,7 +406,7 @@ After making the changes we just discussed, `assigned_user_id` will get stored
 while creating a new task and we will get `assigned_user` along with other task
 details in the frontend upon fetching a task.
 
-Start Rails sever and visit http://localhost:3000. Clicking on the create task
+Start Rails sever and visit http://localhost:3000/dashboard. Clicking on the create task
 button will redirect you to the page to create new task. Select a user from the
 dropdown menu, add a title, and create the task. That's it.
 
@@ -403,11 +418,11 @@ content in it with the following lines of code:
 ```javascript
 import React, { useState, useEffect } from "react";
 
+import { useParams } from "react-router-dom";
+
 import tasksApi from "apis/tasks";
 import usersApi from "apis/users";
-import Container from "components/Container";
-import PageLoader from "components/PageLoader";
-import { useParams } from "react-router-dom";
+import { Container, PageLoader, PageTitle } from "components/commons";
 
 import Form from "./Form";
 
@@ -450,8 +465,7 @@ const Edit = ({ history }) => {
     try {
       const {
         data: {
-          task: { title },
-          assigned_user,
+          task: { title, assigned_user },
         },
       } = await tasksApi.show(slug);
       setTitle(title);
@@ -473,7 +487,7 @@ const Edit = ({ history }) => {
 
   if (pageLoading) {
     return (
-      <div className="w-screen h-screen">
+      <div className="h-screen w-screen">
         <PageLoader />
       </div>
     );
@@ -481,16 +495,18 @@ const Edit = ({ history }) => {
 
   return (
     <Container>
-      <Form
-        type="update"
-        title={title}
-        users={users}
-        assignedUser={assignedUser}
-        setTitle={setTitle}
-        setUserId={setUserId}
-        loading={loading}
-        handleSubmit={handleSubmit}
-      />
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Edit task" />
+        <Form
+          assignedUser={assignedUser}
+          handleSubmit={handleSubmit}
+          loading={loading}
+          setTitle={setTitle}
+          setUserId={setUserId}
+          title={title}
+          users={users}
+        />
+      </div>
     </Container>
   );
 };
@@ -513,36 +529,33 @@ Now we will display the user that is assigned to the task on task show page.
 Fully replace `Show.jsx` with the following lines of code:
 
 ```jsx
-import React, { useState, useEffect } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
-import Container from "components/Container";
-import PageLoader from "components/PageLoader";
+import { useHistory, useParams } from "react-router-dom";
+
 import tasksApi from "apis/tasks";
+import { Button, Container, PageLoader } from "components/commons";
 
 const Show = () => {
-  const [taskDetails, setTaskDetails] = useState([]);
-  const [assignedUser, setAssignedUser] = useState([]);
+  const [task, setTask] = useState([]);
   const [pageLoading, setPageLoading] = useState(true);
   const { slug } = useParams();
-
   const history = useHistory();
 
   const updateTask = () => {
-    history.push(`/tasks/${taskDetails.slug}/edit`);
+    history.push(`/tasks/${task.slug}/edit`);
   };
 
   const fetchTaskDetails = async () => {
     try {
       const {
-        data: { task, assigned_user },
+        data: { task },
       } = await tasksApi.show(slug);
-      setTaskDetails(task);
-      setAssignedUser(assigned_user);
+      setTask(task);
+      setPageLoading(false);
     } catch (error) {
       logger.error(error);
-    } finally {
-      setPageLoading(false);
+      history.push("/");
     }
   };
 
@@ -556,20 +569,26 @@ const Show = () => {
 
   return (
     <Container>
-      <h1 className="pb-3 pl-3 mt-3 mb-3 text-lg leading-5 text-gray-800 border-b border-gray-500">
-        <span className="text-gray-600">Task Title : </span>{" "}
-        {taskDetails?.title}
-      </h1>
-      <div className="bg-bb-env px-2 mt-2 mb-4 rounded">
-        <i
-          className="text-2xl text-center transition cursor-pointer duration-300ease-in-out ri-edit-line hover:text-bb-yellow"
-          onClick={updateTask}
-        ></i>
+      <div className="flex flex-col gap-y-8">
+        <div className="mt-8 flex w-full items-start justify-between gap-x-6">
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-3xl font-semibold">{task?.title}</h2>
+            <div className="flex items-center gap-x-6">
+              <p className="text-base text-gray-700">
+                <span className="font-semibold">Assigned to: </span>
+                {task?.assigned_user?.name}
+              </p>
+            </div>
+          </div>
+          <Button
+            buttonText="Edit"
+            icon="edit-line"
+            size="small"
+            style="secondary"
+            onClick={updateTask}
+          />
+        </div>
       </div>
-      <h2 className="pb-3 pl-3 mt-3 mb-3 text-lg leading-5 text-gray-800 border-b border-gray-500">
-        <span className="text-gray-600">Assigned To : </span>
-        {assignedUser?.name}
-      </h2>
     </Container>
   );
 };
@@ -616,56 +635,46 @@ So far we have only been showing the task title in each of the tasks listed on
 the dashboard. To display task assignee's name along with the task title in
 dashboard update the `Row` component like this:
 
-```jsx {19-24}
+```jsx {16-18}
 import React from "react";
+
 import PropTypes from "prop-types";
 
-import Tooltip from "components/Tooltip";
+import { Tooltip } from "components/commons";
 
-const Row = ({ data, destroyTask, showTask }) => {
-  return (
-    <tbody className="bg-white divide-y divide-gray-200">
-      {data.map(rowData => (
-        <tr key={rowData.id}>
-          <td
-            className="block w-64 px-6 py-4 text-sm font-medium
-            leading-8 text-bb-purple capitalize truncate"
-          >
-            <Tooltip content={rowData.title} delay={200} direction="top">
-              <div className="truncate max-w-64 ">{rowData.title}</div>
-            </Tooltip>
-          </td>
-          <td
-            className="px-6 py-4 text-sm font-medium
-            leading-5 text-gray-900 whitespace-no-wrap"
-          >
-            {rowData.assigned_user.name}
-          </td>
-          <td className="px-6 py-4 text-sm font-medium leading-5 text-right cursor-pointer">
-            <a
-              className="text-bb-purple"
-              onClick={() => showTask(rowData.slug)}
-            >
-              Show
-            </a>
-          </td>
-          <td
-            className="px-6 py-4 text-sm font-medium
-            leading-5 text-right cursor-pointer"
-          >
-            <a
-              className="text-red-500
+const Row = ({ data, showTask, destroyTask }) => (
+  <tbody className="divide-y divide-gray-200 bg-white">
+    {data.map(rowData => (
+      <tr key={rowData.id}>
+        <td className="space-x-5 border-r border-gray-300 px-4 py-2.5 text-sm font-medium capitalize">
+          <Tooltip tooltipContent={rowData.title}>
+            <span>{rowData.title}</span>
+          </Tooltip>
+        </td>
+        <td className="whitespace-no-wrap border-r border-gray-300 px-4 py-2.5 text-sm text-gray-800">
+          {rowData.assigned_user.name}
+        </td>
+        <td className="cursor-pointer px-6 py-4 text-right text-sm font-medium leading-5">
+          <a className="text-indigo-600" onClick={() => showTask(rowData.slug)}>
+            Show
+          </a>
+        </td>
+        <td
+          className="cursor-pointer px-6 py-4 text-right
+            text-sm font-medium leading-5"
+        >
+          <a
+            className="text-red-500
               hover:text-red-700"
-              onClick={() => destroyTask(rowData.slug)}
-            >
-              Delete
-            </a>
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  );
-};
+            onClick={() => destroyTask(rowData.slug)}
+          >
+            Delete
+          </a>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+);
 
 Row.propTypes = {
   data: PropTypes.array.isRequired,

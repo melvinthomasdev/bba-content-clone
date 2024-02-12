@@ -128,12 +128,12 @@ content of the file with the code shown below.
 
 ```jsx
 import React, { useState, useEffect } from "react";
+
 import { isNil, isEmpty, either } from "ramda";
 
-import Container from "components/Container";
-import Table from "components/Tasks/Table";
 import tasksApi from "apis/tasks";
-import PageLoader from "components/PageLoader";
+import { PageLoader, PageTitle, Container } from "components/commons";
+import Table from "components/Tasks/Table";
 
 const Dashboard = ({ history }) => {
   const [tasks, setTasks] = useState([]);
@@ -145,9 +145,9 @@ const Dashboard = ({ history }) => {
         data: { tasks },
       } = await tasksApi.fetch();
       setTasks(tasks);
-      setLoading(false);
     } catch (error) {
       logger.error(error);
+    } finally {
       setLoading(false);
     }
   };
@@ -171,7 +171,7 @@ const Dashboard = ({ history }) => {
 
   if (loading) {
     return (
-      <div className="w-screen h-screen">
+      <div className="h-screen w-screen">
         <PageLoader />
       </div>
     );
@@ -180,8 +180,8 @@ const Dashboard = ({ history }) => {
   if (either(isNil, isEmpty)(tasks)) {
     return (
       <Container>
-        <h1 className="text-xl leading-5 text-center">
-          You have no tasks assigned 😔
+        <h1 className="my-5 text-center text-xl leading-5">
+          You have not created or been assigned any tasks 🥳
         </h1>
       </Container>
     );
@@ -189,7 +189,10 @@ const Dashboard = ({ history }) => {
 
   return (
     <Container>
-      <Table data={tasks} destroyTask={destroyTask} showTask={showTask} />
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Todo list" />
+        <Table data={tasks} destroyTask={destroyTask} showTask={showTask} />
+      </div>
     </Container>
   );
 };
@@ -201,27 +204,20 @@ Now, we need to pass down `destroyTask` function as props to `Row` component. To
 do so, update `app/javascript/src/components/Tasks/Table/index.jsx` with the
 following lines of code:
 
-```jsx {5,16}
+```jsx {6,10}
 import React from "react";
+
 import Header from "./Header";
 import Row from "./Row";
 
-const Table = ({ data, showTask, destroyTask }) => {
-  return (
-    <div className="flex flex-col">
-      <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-          <div className="overflow-hidden border-b border-bb-gray-200 shadow sm:rounded-lg">
-            <table className="min-w-full divide-y divide-gray-200">
-              <Header />
-              <Row data={data} showTask={showTask} destroyTask={destroyTask} />
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+const Table = ({ data, destroyTask, showTask }) => (
+  <div className="inline-block min-w-full">
+    <table className="min-w-full border-collapse border border-gray-300">
+      <Header />
+      <Row data={data} destroyTask={destroyTask} showTask={showTask} />
+    </table>
+  </div>
+);
 
 export default Table;
 ```
@@ -232,50 +228,43 @@ Now, we need to make use of the `destroyTask` function so that a click on the
 To do so, go to `app/javascript/src/components/Tasks/Table/Row.jsx` and add the
 following lines:
 
-```jsx {6,33-44,53}
+```jsx {7, 21-32, 40}
 import React from "react";
+
 import PropTypes from "prop-types";
 
-import Tooltip from "components/Tooltip";
+import { Tooltip } from "components/commons";
 
-const Row = ({ data, destroyTask, showTask }) => {
-  return (
-    <tbody className="bg-white divide-y divide-gray-200">
-      {data.map(rowData => (
-        <tr key={rowData.id}>
-          <td
-            className="block w-64 px-6 py-4 text-sm font-medium
-            leading-8 text-bb-purple capitalize truncate"
-          >
-            <Tooltip content={rowData.title} delay={200} direction="top">
-              <div className="truncate max-w-64 ">{rowData.title}</div>
-            </Tooltip>
-          </td>
-          <td className="px-6 py-4 text-sm font-medium leading-5 text-right cursor-pointer">
-            <a
-              className="text-bb-purple"
-              onClick={() => showTask(rowData.slug)}
-            >
-              Show
-            </a>
-          </td>
-          <td
-            className="px-6 py-4 text-sm font-medium
-            leading-5 text-right cursor-pointer"
-          >
-            <a
-              className="text-red-500
+const Row = ({ data, showTask, destroyTask }) => (
+  <tbody className="divide-y divide-gray-200 bg-white">
+    {data.map(rowData => (
+      <tr key={rowData.id}>
+        <td className="space-x-5 border-r border-gray-300 px-4 py-2.5 text-sm font-medium capitalize">
+          <Tooltip tooltipContent={rowData.title}>
+            <span>{rowData.title}</span>
+          </Tooltip>
+        </td>
+        <td className="cursor-pointer px-6 py-4 text-right text-sm font-medium leading-5">
+          <a className="text-indigo-600" onClick={() => showTask(rowData.slug)}>
+            Show
+          </a>
+        </td>
+        <td
+          className="cursor-pointer px-6 py-4 text-right
+            text-sm font-medium leading-5"
+        >
+          <a
+            className="text-red-500
               hover:text-red-700"
-              onClick={() => destroyTask(rowData.slug)}
-            >
-              Delete
-            </a>
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  );
-};
+            onClick={() => destroyTask(rowData.slug)}
+          >
+            Delete
+          </a>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+);
 
 Row.propTypes = {
   data: PropTypes.array.isRequired,

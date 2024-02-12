@@ -14,6 +14,7 @@ application:
   posted.
 
 Here is how the feature will look like when implemented:
+
 <image alt="Comments feature">comments-feature.png</image>
 
 ## Technical design
@@ -406,54 +407,53 @@ Inside `Comments/index.jsx` add the following contents:
 ```jsx
 import React from "react";
 
-import Button from "components/Button";
+import { Button } from "components/commons";
 
 const Comments = ({
   comments,
   loading,
-  newComment,
   setNewComment,
+  newComment,
   handleSubmit,
-}) => {
-  return (
-    <>
-      <form onSubmit={handleSubmit} className="mb-16">
-        <div className="sm:grid sm:grid-cols-1 sm:gap-1 sm:items-start">
-          <label
-            className="block text-sm font-medium
-            text-nitro-gray-800 sm:mt-px sm:pt-2"
-          >
-            Comment
-          </label>
-          <textarea
-            placeholder="Ask a question or post an update"
-            rows={3}
-            className="flex-1 block w-full p-2 border border-bb-border
-            rounded-md shadow-sm resize-none text-bb-gray-600
-            focus:ring-bb-purple focus:border-bb-purple sm:text-sm"
-            onChange={e => setNewComment(e.target.value)}
-            value={newComment}
-          ></textarea>
+}) => (
+  <>
+    <form className="mx-auto mb-4 w-full space-y-4" onSubmit={handleSubmit}>
+      <div className="space-y-1">
+        <label className="block text-sm font-medium text-gray-800">
+          Comment
+        </label>
+        <textarea
+          className="block w-full flex-1 resize-none rounded-md border border-gray-300 p-2 text-gray-700 shadow-sm focus:border-gray-400 focus:ring-gray-400 sm:text-sm"
+          placeholder="Ask a question or post an update"
+          rows={3}
+          value={newComment}
+          onChange={e => setNewComment(e.target.value)}
+        />
+      </div>
+      <Button buttonText="Comment" loading={loading} type="submit" />
+    </form>
+    {comments.length > 0 && (
+      <div className="space-y-3">
+        <h2 className="text-lg font-semibold">Comments</h2>
+        <div className="flex flex-col gap-y-2">
+          {comments.map((comment, index) => (
+            <div
+              className="flex justify-between rounded border border-gray-300 bg-gray-100 px-4 py-3 text-base leading-5"
+              key={comment.id}
+            >
+              <p className="text-gray-800" key={index}>
+                {comment.content}
+              </p>
+              <p className="text-gray-600">
+                {new Date(comment.created_at).toLocaleString()}
+              </p>
+            </div>
+          ))}
         </div>
-        <Button type="submit" buttonText="Comment" loading={loading} />
-      </form>
-      {comments?.map((comment, index) => (
-        <div
-          key={comment.id}
-          className="px-8 py-3 my-2 leading-5 flex justify-between
-          border border-bb-border text-md rounded"
-        >
-          <p className="text-bb-gray-600" key={index}>
-            {comment.content}
-          </p>
-          <p className="text-opacity-50 text-bb-gray-600">
-            {new Date(comment.created_at).toLocaleString()}
-          </p>
-        </div>
-      ))}
-    </>
-  );
-};
+      </div>
+    )}
+  </>
+);
 
 export default Comments;
 ```
@@ -462,13 +462,13 @@ Now, fully replace `Show.jsx` with the following content:
 
 ```jsx
 import React, { useEffect, useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
 
-import tasksApi from "apis/tasks";
+import { useHistory, useParams } from "react-router-dom";
+
 import commentsApi from "apis/comments";
-import Container from "components/Container";
-import PageLoader from "components/PageLoader";
+import tasksApi from "apis/tasks";
 import Comments from "components/Comments";
+import { Button, Container, PageLoader } from "components/commons";
 
 const Show = () => {
   const [task, setTask] = useState([]);
@@ -476,8 +476,7 @@ const Show = () => {
   const [newComment, setNewComment] = useState("");
   const [loading, setLoading] = useState(false);
   const { slug } = useParams();
-
-  let history = useHistory();
+  const history = useHistory();
 
   const updateTask = () => {
     history.push(`/tasks/${task.slug}/edit`);
@@ -489,18 +488,21 @@ const Show = () => {
         data: { task },
       } = await tasksApi.show(slug);
       setTask(task);
+      setPageLoading(false);
     } catch (error) {
       logger.error(error);
-    } finally {
-      setPageLoading(false);
+      history.push("/");
     }
   };
 
-  const handleSubmit = async event => {
+  const addComment = async event => {
     event.preventDefault();
     setLoading(true);
     try {
-      await commentsApi.create({ content: newComment, task_id: task.id });
+      await commentsApi.create({
+        content: newComment,
+        task_id: task.id,
+      });
       fetchTaskDetails();
       setNewComment("");
     } catch (error) {
@@ -520,36 +522,37 @@ const Show = () => {
 
   return (
     <Container>
-      <div className="flex justify-between text-bb-gray-600 mt-10">
-        <h1 className="pb-3 mt-5 mb-3 text-lg leading-5 font-bold">
-          {task?.title}
-        </h1>
-        <div className="bg-bb-env px-2 mt-2 mb-4 rounded">
-          <i
-            className="text-2xl text-center transition duration-300
-             ease-in-out ri-edit-line hover:text-bb-yellow"
+      <div className="flex flex-col gap-y-8">
+        <div className="mt-8 flex w-full items-start justify-between gap-x-6">
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-3xl font-semibold">{task?.title}</h2>
+            <div className="flex items-center gap-x-6">
+              <p className="text-base text-gray-700">
+                <span className="font-semibold">Assigned to: </span>
+                {task?.assigned_user?.name}
+              </p>
+              <p className="text-base text-gray-700">
+                <span className="font-semibold">Created by: </span>
+                {task?.task_owner?.name}
+              </p>
+            </div>
+          </div>
+          <Button
+            buttonText="Edit"
+            icon="edit-line"
+            size="small"
+            style="secondary"
             onClick={updateTask}
-          ></i>
+          />
         </div>
+        <Comments
+          comments={task?.comments}
+          handleSubmit={addComment}
+          loading={loading}
+          newComment={newComment}
+          setNewComment={setNewComment}
+        />
       </div>
-      <h2
-        className="pb-3 mb-3 text-md leading-5 text-bb-gray-600
-       text-opacity-50"
-      >
-        <span>Assigned To : </span>
-        {task?.assigned_user.name}
-      </h2>
-      <h2 className="pb-3 mb-3 text-md leading-5 text-bb-gray-600 text-opacity-50">
-        <span>Created By : </span>
-        {task?.task_owner?.name}
-      </h2>
-      <Comments
-        comments={task?.comments}
-        setNewComment={setNewComment}
-        handleSubmit={handleSubmit}
-        newComment={newComment}
-        loading={loading}
-      />
     </Container>
   );
 };

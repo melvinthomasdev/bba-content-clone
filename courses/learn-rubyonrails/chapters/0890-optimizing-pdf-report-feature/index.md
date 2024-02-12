@@ -852,10 +852,10 @@ yarn add framer-motion@6.5.1
 Please note that we are utilizing version `6.5.1` of `framer-motion`. This is because starting from version 7, `framer-motion` requires a minimum supported version of `react@18`, whereas we are currently using `react@17`.
 
 Now let's work on the progress bar. Create a file called `ProgressBar.jsx` in
-the `Common` directory, like this:
+the `commons` directory, like this:
 
 ```bash
-touch app/javascript/src/components/Common/ProgressBar.jsx
+touch app/javascript/src/components/commons/ProgressBar.jsx
 ```
 
 Add the code in the `ProgressBar.jsx`, like this:
@@ -892,6 +892,25 @@ The `ProgressBar` component gets a prop called `progress` and according to the
 value of `progress`, the width of a `div` increases and appears to us like a
 progress bar.
 
+Let's export the `ProgressBar` from `commons/index.js` file:
+
+```js
+// keep previous imports as it was
+import ProgressBar from "./ProgressBar";
+
+export {
+  Button,
+  Container,
+  Input,
+  PageLoader,
+  PageTitle,
+  ProgressBar,
+  PrivateRoute,
+  Tooltip,
+  Toastr,
+};
+```
+
 Now let's move on to the `DownloadReport` component. Fully update the
 `DownloadReport` component like this:
 
@@ -903,9 +922,7 @@ import FileSaver from "file-saver";
 import tasksApi from "apis/tasks";
 import createConsumer from "channels/consumer";
 import { subscribeToReportDownloadChannel } from "channels/reportDownloadChannel";
-import Button from "components/Button";
-import ProgressBar from "components/Common/ProgressBar";
-import Container from "components/Container";
+import { Button, Container, ProgressBar, PageTitle } from "components/commons";
 
 const DownloadReport = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -956,14 +973,21 @@ const DownloadReport = () => {
 
   return (
     <Container>
-      <div className="mx-auto mt-48 w-3/6 space-y-6 rounded-md border-2 p-4 text-center">
-        <h1>{message}</h1>
-        <ProgressBar progress={progress} />
-        <Button
-          buttonText="Download"
-          loading={isLoading}
-          onClick={downloadPdf}
-        />
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Download report" />
+        <div className="mb-4 w-full">
+          <div className="mx-auto mb-4 w-full overflow-hidden rounded-lg border border-gray-200 bg-white text-gray-800 sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-2xl">
+            <div className="space-y-2 p-6">
+              <p className="text-xl font-semibold">{message}</p>
+              <ProgressBar progress={progress} />
+            </div>
+          </div>
+          <Button
+            buttonText="Download"
+            loading={isLoading}
+            onClick={downloadPdf}
+          />
+        </div>
       </div>
     </Container>
   );

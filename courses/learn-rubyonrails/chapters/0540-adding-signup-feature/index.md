@@ -175,10 +175,11 @@ In `Form/Signup.jsx`, paste the following contents:
 
 ```jsx
 import React from "react";
+
 import { Link } from "react-router-dom";
 
-import Input from "components/Input";
-import Button from "components/Button";
+import { Button, Input } from "components/commons";
+
 const Signup = ({
   handleSubmit,
   setName,
@@ -186,59 +187,57 @@ const Signup = ({
   setPassword,
   loading,
   setPasswordConfirmation,
-}) => {
-  return (
-    <div
-      className="flex items-center justify-center min-h-screen px-4
-    py-12 sm:px-6 lg:px-8 bg-gray-50 "
-    >
-      <div className="w-full max-w-md">
-        <h2
-          className="mt-6 text-3xl font-extrabold leading-9
-        text-center text-gray-700"
+}) => (
+  <div
+    className="flex min-h-screen items-center justify-center bg-gray-50
+    px-4 py-12 sm:px-6 lg:px-8 "
+  >
+    <div className="w-full max-w-md">
+      <h2
+        className="mt-6 text-center text-3xl font-extrabold
+        leading-9 text-gray-700"
+      >
+        Sign Up
+      </h2>
+      <div className="text-center">
+        <Link
+          to="/"
+          className="text-bb-purple mt-2 text-center text-sm
+            font-medium transition duration-150 ease-in-out
+            focus:underline focus:outline-none"
         >
-          Sign Up
-        </h2>
-        <div className="text-center">
-          <Link
-            to="/"
-            className="mt-2 text-sm font-medium text-center
-            text-bb-purple transition duration-150 ease-in-out
-            focus:outline-none focus:underline"
-          >
-            Or Login Now
-          </Link>
-        </div>
-        <form className="mt-8" onSubmit={handleSubmit}>
-          <Input
-            label="Name"
-            placeholder="Oliver"
-            onChange={e => setName(e.target.value)}
-          />
-          <Input
-            type="email"
-            label="Email"
-            placeholder="oliver@example.com"
-            onChange={e => setEmail(e.target.value)}
-          />
-          <Input
-            type="password"
-            label="Password"
-            placeholder="********"
-            onChange={e => setPassword(e.target.value)}
-          />
-          <Input
-            type="password"
-            label="Password Confirmation"
-            placeholder="********"
-            onChange={e => setPasswordConfirmation(e.target.value)}
-          />
-          <Button type="submit" buttonText="Register" loading={loading} />
-        </form>
+          Or Login Now
+        </Link>
       </div>
+      <form className="mt-8 flex flex-col gap-y-6" onSubmit={handleSubmit}>
+        <Input
+          label="Name"
+          placeholder="Oliver"
+          onChange={e => setName(e.target.value)}
+        />
+        <Input
+          label="Email"
+          placeholder="oliver@example.com"
+          type="email"
+          onChange={e => setEmail(e.target.value)}
+        />
+        <Input
+          label="Password"
+          placeholder="********"
+          type="password"
+          onChange={e => setPassword(e.target.value)}
+        />
+        <Input
+          label="Password Confirmation"
+          placeholder="********"
+          type="password"
+          onChange={e => setPasswordConfirmation(e.target.value)}
+        />
+        <Button buttonText="Register" loading={loading} type="submit" />
+      </form>
     </div>
-  );
-};
+  </div>
+);
 
 export default Signup;
 ```
@@ -248,8 +247,8 @@ Now open `Signup.jsx` and add the following contents.
 ```jsx
 import React, { useState } from "react";
 
-import SignupForm from "components/Authentication/Form/Signup";
 import authApi from "apis/auth";
+import SignupForm from "components/Authentication/Form/Signup";
 
 const Signup = ({ history }) => {
   const [name, setName] = useState("");
@@ -269,20 +268,21 @@ const Signup = ({ history }) => {
         password_confirmation: passwordConfirmation,
       });
       setLoading(false);
-      history.push("/");
+      history.push("/dashboard");
     } catch (error) {
       logger.error(error);
       setLoading(false);
     }
   };
+
   return (
     <SignupForm
-      setName={setName}
+      handleSubmit={handleSubmit}
+      loading={loading}
       setEmail={setEmail}
+      setName={setName}
       setPassword={setPassword}
       setPasswordConfirmation={setPasswordConfirmation}
-      loading={loading}
-      handleSubmit={handleSubmit}
     />
   );
 };

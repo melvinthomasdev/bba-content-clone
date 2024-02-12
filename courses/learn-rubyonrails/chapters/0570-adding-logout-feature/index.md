@@ -129,7 +129,7 @@ of the file and also update the export statement like this:
 
 ```javascript{55-58,60}
 import axios from "axios";
-import Toastr from "components/Common/Toastr";
+import { Toastr } from "components/commons";
 import { setToLocalStorage, getFromLocalStorage } from "utils/storage";
 
 const DEFAULT_ERROR_NOTIFICATION = "Something went wrong!";
@@ -196,14 +196,41 @@ that we added before to make the logout logic complete. Replace the whole
 content of `NavBar/index.jsx` with this code:
 
 ```jsx
-import React from "react";
-import NavItem from "./NavItem";
-import authApi from "apis/auth";
+import React, { useState, useEffect, useRef } from "react";
+
+import classnames from "classnames";
+import { Link, useLocation } from "react-router-dom";
 import { resetAuthTokens } from "src/apis/axios";
+
+import authApi from "apis/auth";
 import { getFromLocalStorage, setToLocalStorage } from "utils/storage";
 
+import GraniteLogo from "./GraniteLogo";
+
 const NavBar = () => {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const menuRef = useRef();
   const userName = getFromLocalStorage("authUserName");
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleClickOutside = event => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuVisible(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
+
+  const toggleMenu = () => {
+    setIsMenuVisible(!isMenuVisible);
+  };
+
   const handleLogout = async () => {
     try {
       await authApi.logout();
@@ -221,44 +248,52 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-white shadow">
-      <div className="px-2 mx-auto max-w-7xl sm:px-4 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex px-2 lg:px-0">
-            <div className="hidden lg:flex">
-              <NavItem name="Todos" path="/dashboard" />
-              <NavItem
-                name="Add"
-                iconClass="ri-add-fill"
-                path="/tasks/create"
-              />
-            </div>
+    <header className="bg-primary-white sticky top-0 z-20 w-full border-b border-gray-200 transition-all duration-500">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="flex h-16 items-center justify-between">
+          <div className="w-max flex-shrink-0">
+            <Link className="h-full w-auto" to="/">
+              <GraniteLogo className="h-8 w-auto" />
+            </Link>
           </div>
-          <div className="flex items-center justify-end gap-x-4">
-            <span
-              className="inline-flex items-center px-2 pt-1 text-sm
-              font-regular leading-5 text-bb-gray-600 text-opacity-50
-              transition duration-150 ease-in-out border-b-2
-              border-transparent focus:outline-none
-              focus:text-bb-gray-700"
+          <div className="flex items-center gap-x-4">
+            <Link
+              to="/"
+              className={classnames("text-sm font-medium text-gray-800", {
+                "text-indigo-600": location.pathname === "/",
+              })}
             >
-              {userName}
-            </span>
-
-            <a
-              onClick={handleLogout}
-              className="inline-flex items-center px-1 pt-1 text-sm
-              font-semibold leading-5 text-bb-gray-600 text-opacity-50
-              transition duration-150 ease-in-out border-b-2
-              border-transparent hover:text-bb-gray-600 focus:outline-none
-              focus:text-bb-gray-700 cursor-pointer"
+              Todos
+            </Link>
+            <Link
+              className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:shadow"
+              to="/tasks/create"
             >
-              LogOut
-            </a>
+              Add new task
+            </Link>
+            <div className="relative" ref={menuRef}>
+              <Link
+                className="flex items-center gap-x-1 rounded-md bg-gray-200 px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-300 focus:shadow"
+                onClick={toggleMenu}
+              >
+                <span className="block">{userName}</span>
+                <i className="ri-arrow-down-s-line" />
+              </Link>
+              {isMenuVisible && (
+                <div className="absolute right-0 z-20 mt-2 w-48 rounded-md border border-gray-300 bg-white py-1 shadow-xl">
+                  <Link
+                    className="block cursor-pointer px-3 py-1.5 text-sm text-gray-800 hover:bg-gray-100"
+                    onClick={handleLogout}
+                  >
+                    Log out
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 
@@ -479,7 +514,7 @@ end
 Now, update the `Show` component to display the task owner name along with other
 task details. Add the following lines of code to the `Show` component:
 
-```javascript{9-12}
+```javascript {17-20}
 // previous imports
 
 const Show = () => {
@@ -487,11 +522,32 @@ const Show = () => {
 
   return (
     <Container>
-      // previous code
-      <h2 className="pb-3 mb-3 text-md leading-5 text-bb-gray-600 text-opacity-50">
-        <span>Created By : </span>
-        {task?.task_owner?.name}
-      </h2>
+      <div className="flex flex-col gap-y-8">
+        <div className="mt-8 flex w-full items-start justify-between gap-x-6">
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-3xl font-semibold">{task?.title}</h2>
+            <div className="flex items-center gap-x-6">
+              <p className="text-base text-gray-700">
+                <span className="font-semibold">Assigned to: </span>
+                {task?.assigned_user?.name}
+              </p>
+              <p className="text-base text-gray-700">
+                <span className="font-semibold">Created by: </span>
+                {task?.task_owner?.name}
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center justify-end gap-x-3">
+            <Button
+              buttonText="Edit"
+              icon="edit-line"
+              size="small"
+              style="secondary"
+              onClick={updateTask}
+            />
+          </div>
+        </div>
+      </div>
     </Container>
   );
 };

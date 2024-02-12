@@ -279,7 +279,7 @@ The amount of time required to generate the PDF purely depends on the number of
 tasks the user has and what all calculations we will be performing. Safe to say
 we can't let this logic hog up our request-response cycle. The main aim of a
 controller should be to respond as quickly as possible back to the client. Thus
-let's create a Sidekiq job  to take care of PDF report generation logic.
+let's create a Sidekiq job to take care of PDF report generation logic.
 
 We will first add the necessary logic to our codebase and then walk through what
 we have added.
@@ -486,16 +486,15 @@ import DownloadReport from "components/Tasks/DownloadReport";
 <Route exact path="/tasks/report" component={DownloadReport} />;
 ```
 
-Now towards the right of the task's `Add` button in NavBar we need to place the
-download report button. Thus add the following lines to
-`app/javascript/src/components/NavBar/index.jsx`:
+Now, we need to add a `Download Report` option to the dropdown menu in Navbar. Thus add the following lines to before the `Log out` link in `app/javascript/src/components/NavBar/index.jsx`:
 
 ```jsx
-<NavItem
-  name="Download Report"
-  iconClass="ri-file-download-fill"
-  path="/tasks/report"
-/>
+<Link
+  className="block px-3 py-1.5 text-sm text-gray-800 hover:bg-gray-100"
+  to="/tasks/report"
+>
+  Download Report
+</Link>
 ```
 
 Create the `DownloadReport` component:
@@ -510,8 +509,7 @@ Add the content for the `DownloadReport` component:
 import React, { useState } from "react";
 
 import tasksApi from "apis/tasks";
-import Toastr from "components/Common/Toastr";
-import Container from "components/Container";
+import { Container, PageTitle, Toastr } from "components/commons";
 
 const DownloadReport = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -560,7 +558,10 @@ const DownloadReport = () => {
 
   return (
     <Container>
-      <h1>{message}</h1>
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Download report" />
+        <h1>{message}</h1>
+      </div>
     </Container>
   );
 };

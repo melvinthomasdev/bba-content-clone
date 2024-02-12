@@ -41,7 +41,7 @@ dashboard table with the header `Comments` which will be used to display the
 count. Replace the contents of
 `app/javascript/src/components/Tasks/Table/Header.jsx` file with the following:
 
-```jsx {30-34}
+```jsx {27-31}
 import React from "react";
 
 import { compose, head, join, juxt, tail, toUpper } from "ramda";
@@ -54,30 +54,27 @@ const Header = ({ type }) => {
   return (
     <thead>
       <tr>
-        <th className="w-1" />
-        <th className="bg-gray-50 px-6 py-3 text-left text-xs font-bold uppercase leading-4 tracking-wider text-bb-gray-600 text-opacity-50">
+        <th className="w-1 border-b border-r border-gray-300 bg-gray-100" />
+        <th className="border-b border-r border-gray-300 bg-gray-100 px-4 py-2.5 text-left text-xs font-bold uppercase leading-4 text-gray-800">
           {title}
         </th>
         {type === "pending" && (
-          <th className="bg-gray-50 px-6 py-3 text-left text-sm font-bold leading-4 tracking-wider text-bb-gray-600 text-opacity-50">
+          <th className="border-b border-r border-gray-300 bg-gray-100 px-4 py-2.5 text-left text-xs font-bold uppercase leading-4 text-gray-800">
             Assigned To
           </th>
         )}
         {type === "completed" && (
-          <>
-            <th style={{ width: "164px" }} />
-            <th className="bg-gray-50 py-3 pl-6 text-center text-sm font-bold leading-4 tracking-wider text-bb-gray-600 text-opacity-50">
-              Delete
-            </th>
-          </>
+          <th className="border-b border-gray-300 bg-gray-100 px-4 py-2.5 text-center text-xs font-bold uppercase leading-4 text-gray-800">
+            Actions
+          </th>
         )}
         {type === "pending" && (
-          <th className="bg-gray-50 py-3 text-center text-sm font-bold leading-4 tracking-wider text-bb-gray-600 text-opacity-50">
+          <th className="border-b border-r border-gray-300 bg-gray-100 px-4 py-2.5 text-center text-xs font-bold uppercase leading-4 text-gray-800">
             Comments
           </th>
         )}
         {type === "pending" && (
-          <th className="bg-gray-50 py-3 pl-6 text-center text-sm font-bold leading-4 tracking-wider text-bb-gray-600 text-opacity-50">
+          <th className="border-b border-gray-300 bg-gray-100 px-4 py-2.5 text-center text-xs font-bold uppercase leading-4 text-gray-800">
             Starred
           </th>
         )}
@@ -92,13 +89,13 @@ export default Header;
 Also, replace the contents of
 `app/javascript/src/components/Tasks/Table/Row.jsx` file with the following:
 
-```jsx {55-57}
+```jsx {61-63}
 import React from "react";
 
 import classnames from "classnames";
 import PropTypes from "prop-types";
 
-import Tooltip from "components/Tooltip";
+import { Tooltip } from "components/commons";
 
 const Row = ({
   type = "pending",
@@ -115,69 +112,74 @@ const Row = ({
     <tbody className="divide-y divide-gray-200 bg-white">
       {data.map(rowData => (
         <tr key={rowData.id}>
-          <td className="text-center">
-            <input
-              checked={isCompleted}
-              className="form-checkbox ml-6 h-4 w-4 cursor-pointer rounded border-gray-300 text-bb-purple focus:ring-bb-purple"
-              type="checkbox"
-              onChange={() =>
-                handleProgressToggle({
-                  slug: rowData.slug,
-                  progress: toggledProgress,
-                })
+          <td className="border-r border-gray-300 py-2.5 px-4 text-center">
+            <Tooltip
+              tooltipContent={
+                isCompleted ? "Mark as incomplete" : "Mark as completed"
               }
-            />
+            >
+              <input
+                checked={isCompleted}
+                className="form-checkbox h-4 w-4 cursor-pointer rounded border-gray-300 text-indigo-600 focus:text-indigo-600"
+                type="checkbox"
+                onChange={() =>
+                  handleProgressToggle({
+                    slug: rowData.slug,
+                    progress: toggledProgress,
+                  })
+                }
+              />
+            </Tooltip>
           </td>
           <td
             className={classnames(
-              "block w-64 px-6 py-4 text-sm font-medium capitalize leading-8 text-bb-purple ",
+              "border-r border-gray-300 px-4 py-2.5 text-sm font-medium capitalize text-indigo-600",
               {
                 "cursor-pointer": !isCompleted,
-                "text-opacity-50": isCompleted,
+                "cursor-not-allowed line-through": isCompleted,
               }
             )}
             onClick={() => !isCompleted && showTask(rowData.slug)}
           >
-            <Tooltip content={rowData.title} delay={200} direction="top">
-              <div className="max-w-64 truncate ">{rowData.title}</div>
+            <Tooltip tooltipContent={rowData.title}>
+              <span>{rowData.title}</span>
             </Tooltip>
           </td>
           {!isCompleted && (
             <>
-              <td className="whitespace-no-wrap px-6 py-4 text-sm font-medium leading-5 text-bb-gray-600">
+              <td className="whitespace-no-wrap border-r border-gray-300 px-4 py-2.5 text-sm text-gray-800">
                 {rowData.assigned_user.name}
               </td>
-              <td className="whitespace-no-wrap px-6 py-4 text-center text-sm font-medium leading-5 text-bb-gray-600">
+              <td className="whitespace-no-wrap border-r border-gray-300 px-4 py-2.5 text-center text-sm text-gray-800">
                 {rowData.comments_count}
               </td>
-              <td className="cursor-pointer py-4 pl-6 text-center">
-                <i
-                  className={classnames(
-                    "p-1 text-2xl transition duration-300 ease-in-out hover:text-bb-yellow",
-                    {
-                      "ri-star-line text-bb-border":
-                        rowData.status !== "starred",
-                    },
-                    {
-                      "ri-star-fill text-white text-bb-yellow":
-                        rowData.status === "starred",
-                    }
-                  )}
-                  onClick={() => starTask(rowData.slug, rowData.status)}
-                />
+              <td className="cursor-pointer px-4 py-2.5 text-center">
+                <button onClick={() => starTask(rowData.slug, rowData.status)}>
+                  <i
+                    className={classnames(
+                      "text-2xl transition duration-300 ease-in-out hover:text-yellow-600",
+                      {
+                        "ri-star-line text-gray-400":
+                          rowData.status !== "starred",
+                      },
+                      {
+                        "ri-star-fill text-yellow-500":
+                          rowData.status === "starred",
+                      }
+                    )}
+                  />
+                </button>
               </td>
             </>
           )}
           {isCompleted && (
-            <>
-              <td style={{ width: "164px" }} />
-              <td className="cursor-pointer py-4 pl-6 text-center">
-                <i
-                  className="ri-delete-bin-5-line text-center text-2xl text-bb-border transition duration-300 ease-in-out hover:text-bb-red"
-                  onClick={() => destroyTask(rowData.slug)}
-                />
-              </td>
-            </>
+            <td className="cursor-pointer px-4 py-2.5 text-center">
+              <Tooltip tooltipContent="Delete">
+                <button onClick={() => destroyTask(rowData.slug)}>
+                  <i className="ri-delete-bin-line text-2xl text-gray-400 transition duration-300 ease-in-out hover:text-red-500" />
+                </button>
+              </Tooltip>
+            </td>
           )}
         </tr>
       ))}
@@ -251,7 +253,9 @@ end
 That concludes the setup. Now, if you inspect the server log, you will see that
 the `comments` table is not queried at all.
 
-<image alt="Server log after adding counter cache">counter-cache-added-server-log.png</image>
+<image alt="Server log after adding counter cache">
+  counter-cache-added-server-log.png
+</image>
 
 Here's how it works:
 

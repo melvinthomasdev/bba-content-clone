@@ -86,28 +86,29 @@ touch app/javascript/src/components/Tasks/Show.jsx
 In `Show.jsx`, paste the following content:
 
 ```jsx
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
-import Container from "components/Container";
-import PageLoader from "components/PageLoader";
+import { useHistory, useParams } from "react-router-dom";
+
 import tasksApi from "apis/tasks";
+import { Container, PageLoader } from "components/commons";
 
 const Show = () => {
-  const [taskDetails, setTaskDetails] = useState([]);
+  const [task, setTask] = useState([]);
   const [pageLoading, setPageLoading] = useState(true);
   const { slug } = useParams();
+  const history = useHistory();
 
   const fetchTaskDetails = async () => {
     try {
       const {
         data: { task },
       } = await tasksApi.show(slug);
-      setTaskDetails(task);
+      setTask(task);
+      setPageLoading(false);
     } catch (error) {
       logger.error(error);
-    } finally {
-      setPageLoading(false);
+      history.push("/");
     }
   };
 
@@ -121,9 +122,15 @@ const Show = () => {
 
   return (
     <Container>
-      <h1 className="pb-3 pl-3 mt-3 mb-3 text-lg leading-5 text-bb-gray border-b border-bb-gray">
-        <span>Task Title : </span> {taskDetails?.title}
-      </h1>
+      <div className="flex flex-col gap-y-8">
+        <div className="mt-8 flex w-full items-start justify-between gap-x-6">
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-3xl font-semibold">
+              Task Title: {task?.title}
+            </h2>
+          </div>
+        </div>
+      </div>
     </Container>
   );
 };
@@ -188,12 +195,12 @@ down to the `Table` component. Fully replace
 
 ```jsx
 import React, { useState, useEffect } from "react";
+
 import { isNil, isEmpty, either } from "ramda";
 
-import Container from "components/Container";
-import Table from "components/Tasks/Table";
 import tasksApi from "apis/tasks";
-import PageLoader from "components/PageLoader";
+import { PageLoader, PageTitle, Container } from "components/commons";
+import Table from "components/Tasks/Table";
 
 const Dashboard = ({ history }) => {
   const [tasks, setTasks] = useState([]);
@@ -205,9 +212,9 @@ const Dashboard = ({ history }) => {
         data: { tasks },
       } = await tasksApi.fetch();
       setTasks(tasks);
-      setLoading(false);
     } catch (error) {
       logger.error(error);
+    } finally {
       setLoading(false);
     }
   };
@@ -222,7 +229,7 @@ const Dashboard = ({ history }) => {
 
   if (loading) {
     return (
-      <div className="w-screen h-screen">
+      <div className="h-screen w-screen">
         <PageLoader />
       </div>
     );
@@ -231,8 +238,8 @@ const Dashboard = ({ history }) => {
   if (either(isNil, isEmpty)(tasks)) {
     return (
       <Container>
-        <h1 className="text-xl leading-5 text-center">
-          You have no tasks assigned 😔
+        <h1 className="my-5 text-center text-xl leading-5">
+          You have not created or been assigned any tasks 🥳
         </h1>
       </Container>
     );
@@ -240,7 +247,10 @@ const Dashboard = ({ history }) => {
 
   return (
     <Container>
-      <Table data={tasks} showTask={showTask} />
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Todo list" />
+        <Table data={tasks} showTask={showTask} />
+      </div>
     </Container>
   );
 };
@@ -254,65 +264,51 @@ it to an `onClick` event which will be fired upon clicking the show button.
 To do so, update `app/javascript/src/components/Tasks/Table/index.jsx` with the
 following lines of code:
 
-```jsx {5,13}
+```jsx {6,10}
 import React from "react";
+
 import Header from "./Header";
 import Row from "./Row";
 
-const Table = ({ data, showTask }) => {
-  return (
-    <div className="flex flex-col">
-      <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-          <div className="overflow-hidden border-b border-bb-gray-200 shadow sm:rounded-lg">
-            <table className="min-w-full divide-y divide-gray-200">
-              <Header />
-              <Row data={data} showTask={showTask} />
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+const Table = ({ data, showTask }) => (
+  <div className="inline-block min-w-full">
+    <table className="min-w-full border-collapse border border-gray-300">
+      <Header />
+      <Row data={data} showTask={showTask} />
+    </table>
+  </div>
+);
 
 export default Table;
 ```
 
 Then, update the content of `Row.jsx` with following lines:
 
-```jsx {4,6, 15-17,22-29,38}
+```jsx {5, 7, 16-20}
 import React from "react";
+
 import PropTypes from "prop-types";
 
-import Tooltip from "components/Tooltip";
+import { Tooltip } from "components/commons";
 
-const Row = ({ data, showTask }) => {
-  return (
-    <tbody className="bg-white divide-y divide-gray-200">
-      {data.map(rowData => (
-        <tr key={rowData.id}>
-          <td
-            className="block w-64 px-6 py-4 text-sm font-medium
-            leading-8 text-bb-purple capitalize truncate"
-          >
-            <Tooltip content={rowData.title} delay={200} direction="top">
-              <div className="truncate max-w-64 ">{rowData.title}</div>
-            </Tooltip>
-          </td>
-          <td className="px-6 py-4 text-sm font-medium leading-5 text-right cursor-pointer">
-            <a
-              className="text-bb-purple"
-              onClick={() => showTask(rowData.slug)}
-            >
-              Show
-            </a>
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  );
-};
+const Row = ({ data, showTask }) => (
+  <tbody className="divide-y divide-gray-200 bg-white">
+    {data.map(rowData => (
+      <tr key={rowData.id}>
+        <td className="space-x-5 border-r border-gray-300 px-4 py-2.5 text-sm font-medium capitalize">
+          <Tooltip tooltipContent={rowData.title}>
+            <span>{rowData.title}</span>
+          </Tooltip>
+        </td>
+        <td className="px-6 py-4 text-sm font-medium leading-5 text-right cursor-pointer">
+          <a className="text-indigo-600" onClick={() => showTask(rowData.slug)}>
+            Show
+          </a>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+);
 
 Row.propTypes = {
   data: PropTypes.array.isRequired,
@@ -354,7 +350,7 @@ export them as `CreateTask` and `ShowTask`.
 
 Now add the highlighted lines to `App.jsx`:
 
-```jsx {3,12}
+```jsx {3,11}
 // previous imports if any
 import Dashboard from "components/Dashboard";
 import { CreateTask, ShowTask } from "components/Tasks";

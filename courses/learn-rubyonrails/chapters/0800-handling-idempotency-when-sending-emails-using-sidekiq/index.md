@@ -14,7 +14,9 @@ These are the basic requirements of the feature :
 - If a user has disabled the email notification then that user should not be
   able to set preferred time to receive email.
 
-<image alt="Mail delivery feature">handling-idempotency-when-sending-emails-using-sidekiq.png</image>
+<image alt="Mail delivery feature">
+  handling-idempotency-when-sending-emails-using-sidekiq.png
+</image>
 
 ## Technical design
 
@@ -64,20 +66,20 @@ To implement this feature, we need to introduce the following changes:
 
 - Define `preference` related axios connectors.
 
-- We will add a `MyPreferences` component which will handle the preferences of
+- We will add a `Preferences` component which will handle the preferences of
   the user.
 
 - Delegate the job of taking in the preferred time for mail delivery to a `Form`
-  component within the `MyPreferences` folder.
+  component within the `Preferences` folder.
 
-- Add a function `fetchPreferenceDetails` in the `MyPreferences` container
+- Add a function `fetchPreferenceDetails` in the `Preferences` container
   component which will fetch preference details like
   `notification_delivery_hour` and `should_receive_email`.
 
-- Add a function `updateEmailNotification` in the `MyPreferences` component
+- Add a function `updateEmailNotification` in the `Preferences` component
   which will handle enabling/disabling email notifications.
 
-- Similarly, add a function `updatePreference` in the `MyPreferences` container
+- Similarly, add a function `updatePreference` in the `Preferences` container
   component which will update `notification_delivery_hour`.
 
 ## Sidekiq Job
@@ -596,8 +598,8 @@ export default preferencesApi;
 Now, let's create the preference component:
 
 ```bash
-mkdir -p app/javascript/src/components/MyPreferences
-touch app/javascript/src/components/MyPreferences/index.jsx
+mkdir -p app/javascript/src/components/Preferences
+touch app/javascript/src/components/Preferences/index.jsx
 ```
 
 Paste the following lines into `index.jsx`:
@@ -606,13 +608,12 @@ Paste the following lines into `index.jsx`:
 import React, { useState, useEffect } from "react";
 
 import preferencesApi from "apis/preferences";
-import Container from "components/Container";
-import PageLoader from "components/PageLoader";
+import { Container, PageLoader, PageTitle } from "components/commons";
 import { getFromLocalStorage } from "utils/storage";
 
 import Form from "./Form";
 
-const MyPreferences = () => {
+const Preferences = () => {
   const [notificationDeliveryHour, setNotificationDeliveryHour] = useState("");
   const [shouldReceiveEmail, setShouldReceiveEmail] = useState(true);
   const [loading, setLoading] = useState(false);
@@ -640,7 +641,6 @@ const MyPreferences = () => {
     setLoading(true);
     try {
       await preferencesApi.mail({
-        id: preferenceId,
         payload: {
           should_receive_email: emailNotificationStatus,
         },
@@ -675,7 +675,7 @@ const MyPreferences = () => {
 
   if (pageLoading || !userId || !preferenceId) {
     return (
-      <div className="w-screen h-screen">
+      <div className="h-screen w-screen">
         <PageLoader />
       </div>
     );
@@ -683,20 +683,23 @@ const MyPreferences = () => {
 
   return (
     <Container>
-      <Form
-        notificationDeliveryHour={notificationDeliveryHour}
-        setNotificationDeliveryHour={setNotificationDeliveryHour}
-        shouldReceiveEmail={shouldReceiveEmail}
-        setShouldReceiveEmail={setShouldReceiveEmail}
-        loading={loading}
-        updatePreference={updatePreference}
-        updateEmailNotification={updateEmailNotification}
-      />
+      <div className="flex flex-col gap-y-8">
+        <PageTitle title="Preferences" />
+        <Form
+          loading={loading}
+          notificationDeliveryHour={notificationDeliveryHour}
+          setNotificationDeliveryHour={setNotificationDeliveryHour}
+          setShouldReceiveEmail={setShouldReceiveEmail}
+          shouldReceiveEmail={shouldReceiveEmail}
+          updateEmailNotification={updateEmailNotification}
+          updatePreference={updatePreference}
+        />
+      </div>
     </Container>
   );
 };
 
-export default MyPreferences;
+export default Preferences;
 ```
 
 Here, `fetchPreferenceDetails` function uses the `show` axios API call from
@@ -707,21 +710,18 @@ As you can see we have used a `Form` component which is not yet created. Let's
 create it:
 
 ```bash
-mkdir -p app/javascript/src/components/MyPreferences/Form
-touch app/javascript/src/components/MyPreferences/Form.jsx
+mkdir -p app/javascript/src/components/Preferences/Form
+touch app/javascript/src/components/Preferences/Form.jsx
 ```
 
-Paste the following lines in the `MyPreferences/Form.jsx`:
+Paste the following lines in the `Preferences/Form.jsx`:
 
 ```javascript
 import React from "react";
 
 import classnames from "classnames";
-import Button from "components/Button";
-import Input from "components/Input";
-import Select from "react-select";
 
-const defaultTimezone = "UTC";
+import { Button } from "components/commons";
 
 const Form = ({
   notificationDeliveryHour,
@@ -742,73 +742,66 @@ const Form = ({
 
   const handleSubmit = event => {
     event.preventDefault();
-    if (shouldReceiveEmail) {
-      updatePreference();
-    }
+    if (shouldReceiveEmail) return updatePreference();
+
+    return null;
   };
 
   const handleEmailNotificationChange = e => {
     setShouldReceiveEmail(e.target.checked);
+
     return updateEmailNotification(e.target.checked);
   };
 
   return (
-    <form className="max-w-lg mx-auto" onSubmit={handleSubmit}>
-      <div className="flex justify-between text-bb-gray-600 mt-10 mb-2">
-        <h1 className="pb-3 mt-5 text-2xl leading-5 font-bold">
-          Pending Tasks in Email
-        </h1>
+    <form className="mb-4 w-full" onSubmit={handleSubmit}>
+      <div className="mx-auto mb-4 w-full overflow-hidden rounded-lg border border-gray-200 bg-white text-gray-800 sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-2xl">
+        <div className="space-y-2 p-6">
+          <div className="flex flex-grow-0 items-center justify-start">
+            <input
+              checked={shouldReceiveEmail}
+              id="shouldReceiveEmail"
+              type="checkbox"
+              onChange={handleEmailNotificationChange}
+            />
+            <label className="ml-2 text-xl font-semibold">
+              Pending tasks in email
+            </label>
+          </div>
+          <p className="text-sm leading-normal">
+            Send me a daily email of the pending tasks assigned to me. No email
+            will be sent if there are no pending tasks.
+          </p>
+          <div className="flex items-center gap-2">
+            <label className="text-base font-semibold">
+              Delivery Time (Hours)
+            </label>
+            <input
+              disabled={!shouldReceiveEmail}
+              max={23}
+              min={0}
+              type="number"
+              value={notificationDeliveryHour}
+              className={classnames(
+                "focus:outline-none focus:shadow-outline-blue block appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 transition duration-150 ease-in-out focus:border-blue-300 sm:text-sm sm:leading-5",
+                {
+                  "cursor-not-allowed": !shouldReceiveEmail,
+                }
+              )}
+              onChange={onHandleDeliveryHourChange}
+            />
+            <span className="block font-semibold">(UTC)</span>
+          </div>
+        </div>
       </div>
-
-      <div
-        className={classnames("flex  items-baseline space-x-1", {
-          "text-bb-gray-700": shouldReceiveEmail,
-          "text-bb-gray-600": !shouldReceiveEmail,
+      <Button
+        buttonText="Schedule Email"
+        loading={loading}
+        type="submit"
+        className={classnames({
+          "cursor-not-allowed bg-opacity-60": !shouldReceiveEmail,
         })}
-      >
-        <input
-          type="checkbox"
-          checked={shouldReceiveEmail}
-          id="shouldReceiveEmail"
-          onChange={handleEmailNotificationChange}
-        />
-        <span>
-          Send me a daily email of the pending tasks assigned to me.
-          <br /> No email will be sent if there are no pending tasks.
-        </span>
-      </div>
-
-      <div
-        className={classnames("flex space-x-4 items-center", {
-          "text-bb-gray-700": shouldReceiveEmail,
-          "text-bb-gray-600": !shouldReceiveEmail,
-        })}
-      >
-        <p className="text-sm font-medium mt-6 leading-5 ">
-          Delivery Time (Hours)
-        </p>
-        <Input
-          type="number"
-          placeholder="Enter hour"
-          disabled={!shouldReceiveEmail}
-          min={0}
-          max={23}
-          value={notificationDeliveryHour}
-          onChange={onHandleDeliveryHourChange}
-        />
-        <p className="mt-6 font-extrabold">(UTC)</p>
-      </div>
-
-      <div className="w-2/6">
-        <Button
-          type="submit"
-          buttonText="Schedule Email"
-          className={classnames({
-            "cursor-not-allowed bg-opacity-60": !shouldReceiveEmail,
-          })}
-          loading={loading}
-        />
-      </div>
+      />
     </form>
   );
 };
@@ -818,7 +811,7 @@ export default Form;
 
 The `Form` component contains a checkbox for enabling and disabling the email
 notifications. When the checkbox value changes, `updateEmailNotification`
-function defined inside the `MyPreferences` component will be called and it will
+function defined inside the `Preferences` component will be called and it will
 in turn make an API for `mail` action in the `PreferencesController`.
 
 There is a `updatePreference` function as well which will be called upon
@@ -833,7 +826,7 @@ We have to constraint the values that this component can accept, when it's
 
 Thus let's update our reusable `Input` component to provide this functionality:
 
-```javascript {12-13, 30-31, 49-50}
+```javascript {13-14, 27-28, 50-51}
 import React from "react";
 
 import classnames from "classnames";
@@ -845,35 +838,36 @@ const Input = ({
   value,
   onChange,
   placeholder,
+  disabled = false,
   min,
   max,
   required = true,
-}) => {
-  return (
-    <div className="mt-6">
-      {label && (
-        <label className="block text-sm font-medium leading-5 text-bb-gray-700">
-          {label}
-        </label>
-      )}
-      <div className="mt-1 rounded-md shadow-sm">
-        <input
-          type={type}
-          required={required}
-          value={value}
-          onChange={onChange}
-          placeholder={placeholder}
-          min={min}
-          max={max}
-          className={classnames(
-            "block w-full px-3 py-2 placeholder-gray-400 transition duration-150 ease-in-out border border-gray-300 rounded-md appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5",
-            [className]
-          )}
-        />
-      </div>
+  className = "",
+}) => (
+  <div className="flex flex-col">
+    {label && (
+      <label className="block text-sm font-medium leading-none text-gray-800">
+        {label}
+      </label>
+    )}
+    <div className="mt-1 rounded-md shadow-sm">
+      <input
+        disabled={disabled}
+        max={max}
+        min={min}
+        placeholder={placeholder}
+        required={required}
+        type={type}
+        value={value}
+        className={classnames(
+          "focus:outline-none focus:shadow-outline-blue block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 transition duration-150 ease-in-out focus:border-blue-300 sm:text-sm sm:leading-5",
+          [className]
+        )}
+        onChange={onChange}
+      />
     </div>
-  );
-};
+  </div>
+);
 
 Input.propTypes = {
   type: PropTypes.string,
@@ -894,7 +888,7 @@ component in `App.jsx` and let's also create a link to it in our navbar:
 
 ```javascript {2, 12}
 //  previous code if any
-import MyPreferences from "components/MyPreferences";
+import Preferences from "components/Preferences";
 
 const App = () => {
   //  previous code if any
@@ -904,7 +898,7 @@ const App = () => {
       <Switch>
         {/* previous code if any */}
         <Route exact path="/login" component={Login} />
-        <Route exact path="/my/preferences" component={MyPreferences} />
+        <Route exact path="/my/preferences" component={Preferences} />
         {/* previous code if any */}
       </Switch>
     </Router>
@@ -917,57 +911,63 @@ export default App;
 Now open the Navbar component from `components/NavBar/index.jsx` and add the
 following line to create a `Preferences` item in navbar:
 
-```javascript {20-28}
+```javascript {38-43}
 // previous code if any
 const NavBar = () => {
   // previous code if any
   return (
-    <nav className="bg-white shadow">
-      <div className="px-2 mx-auto max-w-7xl sm:px-4 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex px-2 lg:px-0">
-            <div className="hidden lg:flex">
-              <NavItem name="Todos" path="/dashboard" />
-              <NavItem
-                name="Add"
-                iconClass="ri-add-fill"
-                path="/tasks/create"
-              />
-            </div>
+    <header className="bg-primary-white sticky top-0 z-20 w-full border-b border-gray-200 transition-all duration-500">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="flex h-16 items-center justify-between">
+          <div className="w-max flex-shrink-0">
+            <Link className="h-full w-auto" to="/">
+              <GraniteLogo className="h-8 w-auto" />
+            </Link>
           </div>
-          <div className="flex items-center justify-end gap-x-4">
-            <span
-              className="inline-flex items-center px-2 pt-1 text-sm
-              font-regular leading-5 text-bb-gray-600 text-opacity-50
-              transition duration-150 ease-in-out border-b-2
-              border-transparent focus:outline-none
-              focus:text-bb-gray-700"
+          <div className="flex items-center gap-x-4">
+            <Link
+              to="/"
+              className={classnames("text-sm font-medium text-gray-800", {
+                "text-indigo-600": location.pathname === "/",
+              })}
             >
-              <Link to="/my/preferences">Preferences </Link>
-            </span>
-            <span
-              className="inline-flex items-center px-2 pt-1 text-sm
-              font-regular leading-5 text-bb-gray-600 text-opacity-50
-              transition duration-150 ease-in-out border-b-2
-              border-transparent focus:outline-none
-              focus:text-bb-gray-700"
+              Todos
+            </Link>
+            <Link
+              className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:shadow"
+              to="/tasks/create"
             >
-              {userName}
-            </span>
-            <a
-              onClick={handleLogout}
-              className="inline-flex items-center px-1 pt-1 text-sm
-              font-semibold leading-5 text-bb-gray-600 text-opacity-50
-              transition duration-150 ease-in-out border-b-2
-              border-transparent hover:text-bb-gray-600 focus:outline-none
-              focus:text-bb-gray-700 cursor-pointer"
-            >
-              LogOut
-            </a>
+              Add new task
+            </Link>
+            <div className="relative" ref={menuRef}>
+              <Link
+                className="flex items-center gap-x-1 rounded-md bg-gray-200 px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-300 focus:shadow"
+                onClick={toggleMenu}
+              >
+                <span className="block">{userName}</span>
+                <i className="ri-arrow-down-s-line" />
+              </Link>
+              {isMenuVisible && (
+                <div className="absolute right-0 z-20 mt-2 w-48 rounded-md border border-gray-300 bg-white py-1 shadow-xl">
+                  <Link
+                    className="block px-3 py-1.5 text-sm text-gray-800 hover:bg-gray-100"
+                    to="/my/preferences"
+                  >
+                    Preferences
+                  </Link>
+                  <Link
+                    className="block cursor-pointer px-3 py-1.5 text-sm text-gray-800 hover:bg-gray-100"
+                    onClick={handleLogout}
+                  >
+                    Log out
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 ```
