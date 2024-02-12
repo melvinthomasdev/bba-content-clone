@@ -89,4 +89,4 @@ git add -A
 git commit -m "Initialized i18n"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/29327e1ab8b377cc45096aa8589c436ec593a5c1).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/ae1c0e001c2579bb036b209709548adcabd22a52).

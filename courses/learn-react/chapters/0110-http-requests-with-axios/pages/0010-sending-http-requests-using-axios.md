@@ -2,7 +2,7 @@ Until now, we have hard-coded the information regarding a product in our Product
 
 We will use [Axios](https://github.com/axios/axios) to simplify this data retrieval process. Axios is a popular JavaScript library used for making HTTP requests. In this lesson, we will learn how to fetch data from an API using the Axios library. It is similar to the Fetch API and returns a JavaScript Promise.
 
-If you need to refresh your understanding of Promises, refer to the [Promises section](https://courses.bigbinaryacademy.com/learn-advanced-javascript/#promises) in the BigBinary Academy.
+If you need to refresh your understanding of Promises, refer to the [Promises section](https://courses.bigbinaryacademy.com/learn-javascript/#promises) in the BigBinary Academy.
 
 ## Benefits of choosing Axios over Fetch
 

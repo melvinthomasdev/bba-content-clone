@@ -533,4 +533,4 @@ git add -A
 git commit -m "Added ability to set quantity of cart items"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/e3c2d93f69506633741b2bf70e6addedb254b952).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/bd275e109119a46f087c0659bea90f49d6460ecb).

@@ -246,4 +246,4 @@ git add -A
 git commit -m "Added routing functionality"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/9b9f4e1bde61ad9b7f939a78fe3e4cd893397c91).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/1e6a0a524f552970aaff2153c462b493653fbc69).

@@ -251,6 +251,6 @@ Let's commit the new changes:
 git add -A
 git commit -m "Implemented localization to smile cart"
 ```
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/dd386c9f1109645b5bbbadb8d1300581afc9d926).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/ef31292cce7d80e8f1af25f79b58dfd08ee8492c).
 
 To learn more about the localization checkout [this blog](https://www.bigbinary.com/blog/react-localization).

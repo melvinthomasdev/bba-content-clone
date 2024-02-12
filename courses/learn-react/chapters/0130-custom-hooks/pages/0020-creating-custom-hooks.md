@@ -152,4 +152,4 @@ git add -A
 git commit -m "Created custom hook for debouncing"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/ffd1f07970a18da27460858db14bc90258260e60).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/03100e2b0c57671ce17559bd5f4bd35952178420).

@@ -92,4 +92,4 @@ git add -A
 git commit -m "Initialized query client instance"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/8c3981c49566d83418ef3ca829ca4b98bf591a57).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/e5e8b891e23b795b962440f508f097b014d34a00).

@@ -173,4 +173,4 @@ git add -A
 git commit -m "Created React query custom hook to fetch product and product list"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/429f22803ff9f256a780433e1cf9c2c0c6f3dbd0).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/72de9b34da604df149d1c5255d58de28a21493fe).

@@ -221,4 +221,4 @@ git add -A
 git commit -m "Standardized frontend routes"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/6f65218e60e52d92929596dda74398203dcfc656).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/a21f5b39cf122083e6d558b5f331abd4ebce6eb8).

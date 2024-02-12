@@ -459,4 +459,4 @@ git add -A
 git commit -m "Added product listing page"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/22a9cb2088d448a8d0b0bf838d039947af8e00fe).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/f857329f7c220c3947f2166345e64162ecd7d9be).

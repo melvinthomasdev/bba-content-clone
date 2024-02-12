@@ -12,7 +12,7 @@ neetoUI provides us with components such as Buttons, Input, Modal, Table, Alert,
 
 You can explore the neetoUI components on its [official website](https://neeto-ui.neeto.com).
 
-## Using neetoUI components in our project
+## Setup neetoUI
 
 Step 1. Install neetoUI and its peer dependencies using the following commands:
 
@@ -22,23 +22,32 @@ yarn add @bigbinary/neetoui@5.2.41
 yarn add react-toastify@9.0.1 formik@2.2.0 react-router-dom@5.2.0 @bigbinary/neeto-icons@1.17.6 antd@4.24.3 i18next@21.7.0 @emotion/is-prop-valid@1.2.0 @bigbinary/neeto-cist@1.0.6
 ```
 
-Step 2. To get the styles working, import neetoUI and ReactToastify stylesheets to the main `CSS` entry point. In our project, the `index.css` file serves as the entry point for `CSS`.
+Step 2. To get the styles working, import neetoUI and ReactToastify stylesheets to the main `CSS` entry point. In our project, the `src/index.css` file serves as the entry point for `CSS`. Replace the contents of `src/index.css` with the following lines:
 
 ```css
 @import "@bigbinary/neetoui";
 @import "react-toastify/dist/ReactToastify.min.css";
 ```
 
-Step 3. Import the desired component from neetoUI:
+Let's commit the new changes:
 
-```jsx
-import { Button } from "neetoui";
+```bash
+git add -A
+git commit -m "Setup neetoUI"
 ```
 
-Step 4. Use the component wherever needed and customize it by passing props:
+Once you have set up `neetoUI`, you can import and use `neetoUI` components by passing props according to your requirements. Here is an example that uses the `Button` component from `neetoUI`:
 
 ```jsx
-<Button label="Click me" style="secondary" />
+import React from "react";
+
+import { Button } from "neetoui";
+
+const App = () => <Button label="Click me" style="secondary" />;
+
+export default App;
 ```
 
 That’s it! We have learned how to use the neetoUI component library. We'll be using the neetoUI component library to build our project.
+
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/a02fec0c9c5244feb7475fe2d69edcb8f11ea680).

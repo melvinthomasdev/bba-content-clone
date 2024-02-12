@@ -117,7 +117,7 @@ Most of React's powerful features, including states, are made accessible through
 const [state, setState] = useState(initialValue);
 ```
 
-Here we have [destructured](https://courses.bigbinaryacademy.com/learn-advanced-javascript/array-destructuring/destructuring-array-elements/) the array returned by the `useState` function to the variables `state` and `setState`. The first destructured variable is the name of the item we're tracking. The second variable prefixes that name with `set`, signifying that it's a function that can be invoked to update the tracked item. This function is sometimes referred to as a **setter function** since it sets the new value for the state variable.
+Here we have [destructured](https://courses.bigbinaryacademy.com/learn-javascript/array-destructuring/destructuring-array-elements/) the array returned by the `useState` function to the variables `state` and `setState`. The first destructured variable is the name of the item we're tracking. The second variable prefixes that name with `set`, signifying that it's a function that can be invoked to update the tracked item. This function is sometimes referred to as a **setter function** since it sets the new value for the state variable.
 
 We can name these variables whatever we want. However, it is a convention followed across the React community to name the setter function as `set` followed by the state variable name.
 
@@ -313,6 +313,12 @@ Let’s see how we can add the dot indicator to our `Carousel` component.
 
     However, we can avoid the hassle of writing the conditions as above by leveraging the [classNames](https://www.npmjs.com/package/classnames) package to apply classnames conditionally. This package provides a function called `classNames` that facilitates the conditional joining of class names.
 
+    To install `classnames`, run the following command:
+
+    ```bash
+    yarn add classnames@2.3.1
+    ```
+
     With the `classNames` function, we pass the classnames to include and the corresponding conditions as an object. In addition, the class names that should always be present are passed as a string.
 
     Here is what the code will look like with the `classNames` package. Much better, right?
@@ -345,4 +351,4 @@ git add -A
 git commit -m "Added Carousel component"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/15d0888e810fd135ecb2d4150a07d31a5c041add).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/1a5cb2b595319754f8bef9b2daaa3258c5f86dcf).

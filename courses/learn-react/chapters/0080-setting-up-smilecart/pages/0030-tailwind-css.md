@@ -1,4 +1,4 @@
-In this lesson, we will learn how to use TailwindCSS to create beautiful web pages. [TailwindCSS](https://tailwindcss.com) is a popular, highly customizable, low-level CSS framework for building modern designs for web applications.
+In this lesson, we will learn how to use TailwindCSS to create beautiful web pages. [TailwindCSS](https://v2.tailwindcss.com/) is a popular, highly customizable, low-level CSS framework for building modern designs for web applications.
 
 Unlike the traditional approach of writing CSS to style something on the web, TailwindCSS allows us to style our application using pre-existing classes.
 
@@ -49,11 +49,11 @@ As you can observe, we have created the same styled `Button` component with sign
 - `rounded`: Applies border-radius of 0.25rem(4px).
 - `cursor-pointer`: Changes the cursor to a hand icon on hover.
 
-You can refer to the TailwindCSS official [documentation](https://tailwindcss.com/docs) to find the classes you need and understand what styles they apply, so you don't need to memorize all the classes. Additionally, you can install the TailwindCSS IntelliSense extension for Visual Studio Code from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss). This extension provides autocompletion and suggestions for TailwindCSS classes directly within your editor. So, you don't have to type everything manually, and it can actually make your development process faster and more efficient.
+You can refer to the TailwindCSS official [documentation](https://v2.tailwindcss.com/docs) to find the classes you need and understand what styles they apply, so you don't need to memorize all the classes. Additionally, you can install the TailwindCSS IntelliSense extension for Visual Studio Code from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss). This extension provides autocompletion and suggestions for TailwindCSS classes directly within your editor. So, you don't have to type everything manually, and it can actually make your development process faster and more efficient.
 
 <image>show-tailwindcss-class-name-auto-completion.gif</image>
 
-You might ask what these numbers (`py-2, px-1.5`) mean and how they connect with real-world units like px, rem, etc. In TailwindCSS, numbers in class names represent `spacing` or `sizing` values based on a predefined scale. By default, TailwindCSS uses a spacing scale that's defined in multiples of 0.25 rem. For example, `pb-2` corresponds to `padding-bottom: "0.5rem"`. We can customize the spacing scale inside the `tailwind.config.js` file to any value and any unit. If you're curious about customizing the default scale, you can explore [this section](https://tailwindcss.com/docs/configuration) of the TailwindCSS official documentation.
+You might ask what these numbers (`py-2, px-1.5`) mean and how they connect with real-world units like px, rem, etc. In TailwindCSS, numbers in class names represent `spacing` or `sizing` values based on a predefined scale. By default, TailwindCSS uses a spacing scale that's defined in multiples of 0.25 rem. For example, `pb-2` corresponds to `padding-bottom: "0.5rem"`. We can customize the spacing scale inside the `tailwind.config.js` file to any value and any unit. If you're curious about customizing the default scale, you can explore [this section](https://v2.tailwindcss.com/docs/configuration) of the TailwindCSS official documentation.
 
 Let's see some of the benefits of using TailwindCSS:
 
@@ -85,9 +85,10 @@ Let's see some of the benefits of using TailwindCSS:
 
    Here, `-p` stands for PostCSS. It will generate a `postcss.config.js` file along with the `tailwind.config.js` file in your project root. The `postcss.config.js` file is where you can configure PostCSS plugins, such as TailwindCSS and autoprefixer, that will process your CSS files.
 
-3. Import Tailwind Styles: To utilize TailwindCSS styles across the application, we need to import the core TailwindCSS styles into `src/index.css`, which serves as the main stylesheet for the project. For that, replace the contents of `src/index.css` with the following lines:
+3. Import Tailwind Styles: To utilize TailwindCSS styles across the application, we need to import the core TailwindCSS styles into `src/index.css`, which serves as the main stylesheet for the project. For that, add the below lines to `src/index.css`:
 
    ```css
+   /* Rest of the imports */
    @import "tailwindcss/base";
    @import "tailwindcss/components";
    @import "tailwindcss/utilities";
@@ -170,7 +171,7 @@ Now, let's take a look at a few TailwindCSS classes that we have used to build t
 - `gap-6`: Sets a gap of 1.5rem(24px) between flex items.
 - `space-y-4`: Adds vertical spacing of 1rem(16px) between direct child elements in a stack.
 
-You can refer to the TailwindCSS official [documentation](https://tailwindcss.com/docs) or https://tailwind.build/classes for a more comprehensive list of classes.
+You can refer to the TailwindCSS official [documentation](https://v2.tailwindcss.com/docs) or https://tailwind.build/classes for a more comprehensive list of classes.
 
 Now, let's create the Product page in our SmileCart project. To do this, we'll begin by creating a `components` directory within the `src` folder. At BigBinary, we follow the convention of keeping all our components inside this `components` directory. You can create this directory by running the following command in your terminal from the root of the project:
 
@@ -207,4 +208,4 @@ git add -A
 git commit -m "Added product page"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/069be6bc3bb587eda3e31f09c3a18d6018e467bf).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/2032fecf775289224c45b98dc9cffecd2558313e).

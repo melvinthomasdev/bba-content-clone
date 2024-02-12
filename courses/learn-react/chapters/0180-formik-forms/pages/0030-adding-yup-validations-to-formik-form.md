@@ -162,4 +162,4 @@ git add -A
 git commit -m "Implemented yup validation for checkout form"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/de6137512eb7cb71e16682660fb253d5ddda8f96).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/76a6b78253560dff60e7534f0cf06fbb7268a2ac).

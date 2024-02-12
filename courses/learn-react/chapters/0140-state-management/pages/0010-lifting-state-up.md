@@ -251,4 +251,4 @@ git add -A
 git commit -m "Added feature to add products to cart"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/668f2fe57e0ae9c703fa4a3bf08a2fa3f0ce3362).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/f21dd38a33361429b454d9167af4bb3df49f19bf).

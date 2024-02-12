@@ -208,6 +208,6 @@ git add -A
 git commit -m "Replaced CartItemsContext with useCartItemsStore"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/59290fa949a4a940f08632ef4c1faf7f5993548d).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/b6614977d325c7feb944e5530853d007d4f28528).
 
 One thing to note is that Zustand is not an alternative to React context. Zustand and React context serve different purposes in managing state in React applications. Zustand is a better option when handling complex state updates with a focus on performance. On the other hand, the React context API might be a better choice for managing simple global states, such as themes or current accounts. In some cases, we may even need to use them together to handle states in our application.

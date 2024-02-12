@@ -1,6 +1,6 @@
 Welcome to BigBinary Academy!
 
-To learn to program in ReactJS, we expect you to have the fundamental knowledge of HTML, CSS and JavaScript. Feel free to go through the following courses if you are not familiar with these technologies.
+To learn to program in React, we expect you to have the fundamental knowledge of HTML, CSS and JavaScript. Feel free to go through the following courses if you are not familiar with these technologies.
   - [HTML](https://courses.bigbinaryacademy.com/courses/html)
   - [CSS](https://courses.bigbinaryacademy.com/courses/css)
   - [JavaScript](https://courses.bigbinaryacademy.com/courses/javascript)

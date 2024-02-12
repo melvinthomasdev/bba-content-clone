@@ -204,4 +204,4 @@ git add -A
 git commit -m "Added pagination to product listing page"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/e59973648cfafb9dd28ef1ac666a8714b3fee051).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/700c8e73bd0b5470713d32a57495b729dc8aa946).

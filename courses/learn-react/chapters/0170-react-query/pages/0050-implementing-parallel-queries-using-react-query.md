@@ -159,4 +159,4 @@ git add -A
 git commit -m "Created React query custom hook to implement parallel queries"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/656ec66e5698f46982b673077c67d1623d35ac74).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/00cc56acf1d5942cedc29e71b3b72dbc3fe4e236).

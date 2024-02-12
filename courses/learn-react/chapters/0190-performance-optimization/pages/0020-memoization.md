@@ -67,4 +67,4 @@ git add -A
 git commit -m "Enhanced app performance using memoization"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/6f03c60204990fb7a90c8cbebd135462fa7c257c).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/6a6c5e7523671835cd3ccdb0fd44a2459068b9b8).

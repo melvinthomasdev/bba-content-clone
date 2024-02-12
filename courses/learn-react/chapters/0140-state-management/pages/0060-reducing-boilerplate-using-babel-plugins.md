@@ -176,4 +176,4 @@ git add -A
 git commit -m "Utilized babel-preset-neeto to access Zustand store properties"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/19ebf5d00b413c1cfe2bdf00b901694aa9fc42ff).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/032ba6042318f3d22f924cbc8970ef7ff2d72773).

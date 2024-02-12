@@ -221,4 +221,4 @@ git add -A
 git commit -m "Implemented search functionality to product listing page"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/40fb75425458f35176b1ef4dcd2faecb7da141e2).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/5572412bf37f361cacf57002fd4992f937320278).

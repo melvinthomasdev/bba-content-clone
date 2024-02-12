@@ -510,4 +510,4 @@ git add -A
 git commit -m "Integrated Formik form into the checkout page"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/d6cc09d8a160bc4fe24525fb28aa159782f330f5).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/7a1b66c7a709258df5356558490f51b35e436306).

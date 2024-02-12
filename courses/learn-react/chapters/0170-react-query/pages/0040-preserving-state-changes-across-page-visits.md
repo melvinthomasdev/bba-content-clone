@@ -264,4 +264,4 @@ git add -A
 git commit -m "Adjusted ProductList component to use query parameter info"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/9d268435c119198eb6aace575542f35b786b0f87).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/cb278bb6352012114857ade94afb3ce1d59dabfe).

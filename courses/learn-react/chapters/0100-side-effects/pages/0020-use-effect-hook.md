@@ -248,4 +248,4 @@ git add -A
 git commit -m "Added side effect in carousel component"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/45b7f03a9394327849fb6a19827e477883eaa5ae).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/3d34ad3f479436a7319651cd4928ccf5b3778a45).

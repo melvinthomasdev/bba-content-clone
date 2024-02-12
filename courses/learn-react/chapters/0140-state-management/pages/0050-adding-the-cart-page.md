@@ -564,4 +564,4 @@ git add -A
 git commit -m "Added cart page"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/6842e12c2af8b6f662fa81da166f94a0ed7f3a23).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/dd96554ad2f654ff67344feb17ad81dce6efc955).

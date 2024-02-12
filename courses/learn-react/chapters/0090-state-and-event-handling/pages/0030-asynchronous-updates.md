@@ -82,7 +82,7 @@ git add -A
 git commit -m "Utilized updater function to set state values"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/8c8ed25c77bacd9c035fa070a124298dc04d2142).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/19a58662ef15e6812bcfd6fc59fc2496c51c7edf).
 
 ## Initializer Function
 

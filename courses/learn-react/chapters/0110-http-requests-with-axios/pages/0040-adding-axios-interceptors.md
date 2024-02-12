@@ -207,4 +207,4 @@ git add -A
 git commit -m "Implemented Axios interceptors to set http headers and to transform response"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/252a07c0b1e704741197f9f4087ee18e87cf0779).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/11a7e148c35cac77d2e0184324d3110e3869e790).

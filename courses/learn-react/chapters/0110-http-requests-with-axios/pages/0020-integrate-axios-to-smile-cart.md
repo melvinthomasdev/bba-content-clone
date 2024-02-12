@@ -364,4 +364,4 @@ git add -A
 git commit -m "Integrated API to display product details"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/cfed1836117220817baf594b78c0cad953bac640).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/1fcc17f0565b37905925fbe66b12b32f04811c58).

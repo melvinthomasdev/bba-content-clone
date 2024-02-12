@@ -127,7 +127,7 @@ git add -A
 git commit -m "Integrated Ref to the Carousel component"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/f7c010351607f1fdbd3868a9795ba198c68a4e64).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/403b2520cbacca5d6242ad1fa6981deefead52e3).
 
 ### Accessing DOM nodes using Ref
 

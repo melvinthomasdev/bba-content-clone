@@ -133,4 +133,4 @@ git add -A
 git commit -m "Created HOC to add page title"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/6129a2069d2725eb4575c10f666ba291724f5560).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/9460880349a18e727c3b32074fced9527141cc4a).

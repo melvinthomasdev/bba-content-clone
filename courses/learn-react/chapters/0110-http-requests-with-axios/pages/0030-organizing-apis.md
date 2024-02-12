@@ -96,4 +96,4 @@ git add -A
 git commit -m "Created product API connector file"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/e4e3c26c0cfb0a342fa0da723108ecccb6a53ced).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/965f54d3fddf8f783249e44e4087cd5cddd07f97).
