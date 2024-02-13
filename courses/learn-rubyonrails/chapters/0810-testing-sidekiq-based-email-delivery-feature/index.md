@@ -54,7 +54,7 @@ Add the following code to the test file:
 def test_notification_delivery_hour_must_be_present_and_valid
   @preference.notification_delivery_hour = nil
   assert @preference.invalid?
-  assert_includes @preference.errors.messages[:notification_delivery_hour], t('errors.messages.blank')
+  assert_includes @preference.errors.messages[:notification_delivery_hour], I18n.t('errors.messages.blank')
 end
 ```
 
@@ -157,7 +157,7 @@ Let's test that a `user_notification` is invalid if
 def test_last_notification_sent_date_must_be_present
   @user_notification.last_notification_sent_date = nil
   assert @user_notification.invalid?
-  assert_includes @user_notification.errors.messages[:last_notification_sent_date], t('errors.messages.blank')
+  assert_includes @user_notification.errors.messages[:last_notification_sent_date], I18n.t('errors.messages.blank')
 end
 ```
 
@@ -206,7 +206,7 @@ Let's add another test to make sure `user_notification` is invalid if
 def test_last_notification_sent_date_cannot_be_in_past
   @user_notification.last_notification_sent_date = Time.zone.yesterday
   assert @user_notification.invalid?
-  assert_includes @user_notification.errors.messages[:last_notification_sent_date], t('date.cant_be_in_past')
+  assert_includes @user_notification.errors.messages[:last_notification_sent_date], I18n.t('date.cant_be_in_past')
 end
 ```
 

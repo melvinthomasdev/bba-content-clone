@@ -181,7 +181,7 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
       headers: @creator_headers
     assert_response :success
     response_json = response.parsed_body
-    assert_equal t('successfully_created', entity: 'Task'), response_json['notice']
+    assert_equal I18n.t('successfully_created', entity: 'Task'), response_json['notice']
   end
 end
 ```
@@ -291,7 +291,7 @@ def test_assignee_shouldnt_destroy_task
   delete task_path(@task.slug), headers: @assignee_headers
   assert_response :forbidden
   response_json = response.parsed_body
-  assert_equal t("authorization.denied"), response_json["error"]
+  assert_equal I18n.t("authorization.denied"), response_json["error"]
 end
 
 def test_assignee_shouldnt_update_restricted_task_fields
@@ -336,7 +336,7 @@ def test_not_found_error_rendered_for_invalid_task_slug
 
   get task_path(invalid_slug), headers: @creator_headers
   assert_response :not_found
-  assert_equal t("task.not_found"), response.parsed_body["error"]
+  assert_equal I18n.t("task.not_found"), response.parsed_body["error"]
 end
 ```
 
@@ -394,7 +394,7 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
     post comments_path, params: { comment: { content: "This is a comment", task_id: "" } }, headers: @headers
     assert_response :not_found
     response_json = response.parsed_body
-    assert_equal t("task.not_found"), response_json["error"]
+    assert_equal I18n.t("task.not_found"), response_json["error"]
   end
 end
 ```
@@ -459,7 +459,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
                                       password_confirmation: 'welcome' } }, headers: @headers
     assert_response :success
     response_json = response.parsed_body
-    assert_equal t('successfully_created', entity: 'User'), response_json['notice']
+    assert_equal I18n.t('successfully_created', entity: 'User'), response_json['notice']
   end
 
   def test_shouldnt_signup_user_with_invalid_credentials
@@ -511,7 +511,7 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
     post session_path, params: { login: { email: @user.email, password: "invalid password" } }, as: :json
     assert_response :unauthorized
     response_json = response.parsed_body
-    assert_equal t("session.incorrect_credentials"), response_json["error"]
+    assert_equal I18n.t("session.incorrect_credentials"), response_json["error"]
   end
 
   def test_should_respond_with_not_found_error_if_user_is_not_present
@@ -561,7 +561,7 @@ def test_should_update_user_password
     }, headers: @headers
   assert_response :success
   response_json = response.parsed_body
-  assert_equal t("successfully_updated", name: "User"), response_json["notice"]
+  assert_equal I18n.t("successfully_updated", name: "User"), response_json["notice"]
   assert_equal new_password, @user.reload.password
 end
 ```

@@ -233,9 +233,8 @@ through inheritance.
 
 Update the `application_record.rb` file like this:
 
-```ruby {5-7}
+```ruby {4-6}
 class ApplicationRecord < ActiveRecord::Base
-  include ActionView::Helpers::TranslationHelper
   primary_abstract_class
 
   def errors_to_sentence
@@ -627,8 +626,12 @@ en:
       immutable: "is immutable!"
 ```
 
-Let's use that to show a response. Update the `create` action of
-`TasksController` with the translation, like this:
+In the `Task` model, we utilized the `I18n.t()` method for string translation.
+
+Instead of using `I18n.t()`, we can also use the alias `t()` to get the
+translation string. Rails by default adds this shorthand form to controllers and views.
+
+Let's use the `t()` function to show the response in `TasksController`:
 
 ```ruby {4}
 def create
@@ -644,3 +647,34 @@ Let's commit the changes:
 git add -A
 git commit -m "Implemented create action"
 ```
+
+## t() vs I18n.t()
+
+Now that you have learned the usages of `t()` and `I18n.t()`, let's understand when to use `t()` and `I18n.t()`.
+
+In every controller, we can use the `t()` method without including any additional modules since [AbstractController::Translation](https://api.rubyonrails.org/v7.0.5/classes/AbstractController/Translation.html) is already included in [ActionController::Base](https://api.rubyonrails.org/classes/ActionController/Base.html).
+
+As you can see, `ApplicationController` (in
+`app/controllers/application_controller.rb`), inherits from
+`ActionController::Base`.
+
+`ApplicationController` is the superclass of all our controller classes, and thus, all our controllers can access the methods defined in `ActionController::Base`, including the `t()` we discussed earlier.
+
+Similarly, the `t()` function is available in views through [ActionView::Helpers::TranslationHelper](https://api.rubyonrails.org/v7.1.1/classes/ActionView/Helpers/TranslationHelper.html).
+
+In addition to delegating to `I18n.t`, the `t()` function from `ActionView::Helpers::TranslationHelper` catches missing translations and wraps the resulting error message in a `<span class="translation_missing">` with a titleized version of the last key segment as text. That means if the key `task.slug.immutable` is missing in `en.yml`, then the `t()` method will render a `<span>` as shown:
+
+```html
+<span
+  class="translation_missing"
+  title="translation missing: en.task.slug.immutable"
+  >Immutable</span
+>
+```
+
+This enables views to display reasonably understandable strings while still providing developers with a means to identify missing translations.
+
+So to summarize:
+
+- Use `t()` method in controllers and views. So if there are `concerns`, like controller concerns, use `t()` method in those files too.
+- Use `I18n.t()` method at all other places like models, services, workers, tests etc.

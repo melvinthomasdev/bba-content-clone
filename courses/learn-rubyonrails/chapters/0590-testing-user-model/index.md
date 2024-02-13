@@ -54,32 +54,6 @@ to `model`, `controller`, `job`, `carrier`, and `service` tests.
 The `test_helper.rb` file holds the configuration for all the tests. This file
 will be loaded in all the test files to load the test configurations.
 
-## Bringing translation helpers into test cases
-
-[ActionView::Helpers::TranslationHelper](https://api.rubyonrails.org/classes/ActionView/Helpers/TranslationHelper.html)
-is a Rails module which provides various helper methods which we are going to
-use in our tests.
-
-Helpers like `t()` aren't available by default. We need to explicitly include
-them in our test suite.
-
-Open "test/test_helper.rb" and add the following line:
-
-```ruby {6}
-ENV["RAILS_ENV"] ||= "test"
-require_relative "../config/environment"
-require "rails/test_help"
-
-class ActiveSupport::TestCase
-  include ActionView::Helpers::TranslationHelper
-
-  # Run tests in parallel with specified workers
-  parallelize(workers: :number_of_processors)
-
-  # Add more helper methods to be used by all tests here...
-end
-```
-
 ## The setup method
 
 Every test runs independently of each other. The data we create in one of the
@@ -297,6 +271,7 @@ bundle exec rails t -v
 ```
 
 We would get the following output:
+
 <image alt="Test file naming without suffix">test-file-naming-suffix.png</image>
 
 You can see that the command outputs 0 runs even though we have a test file

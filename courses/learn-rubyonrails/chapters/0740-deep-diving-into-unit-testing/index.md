@@ -376,7 +376,7 @@ def test_error_raised_for_duplicate_slug
   end
 
   error_msg = another_test_task.errors.full_messages.to_sentence
-  assert_match t("task.slug.immutable"), error_msg
+  assert_match I18n.t("task.slug.immutable"), error_msg
 end
 ```
 
@@ -984,7 +984,7 @@ def test_error_raised_for_duplicate_slug
   end
 
   error_msg = another_test_task.errors.full_messages.to_sentence
-  assert_match t("task.slug.immutable"), error_msg
+  assert_match I18n.t("task.slug.immutable"), error_msg
 end
 ```
 
@@ -1000,7 +1000,7 @@ test "should raise an error when the slug is duplicated" do
   end
 
   error_msg = another_test_task.errors.full_messages.to_sentence
-  assert_match t("task.slug.immutable"), error_msg
+  assert_match I18n.t("task.slug.immutable"), error_msg
 end
 ```
 

@@ -117,14 +117,13 @@ will be able to use them across all of them.
 
 Open `test/test_helper.rb` and add the following line:
 
-```ruby {8}
+```ruby {7}
 # ...previous code...
 ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
 
 class ActiveSupport::TestCase
-  include ActionView::Helpers::TranslationHelper
   include FactoryBot::Syntax::Methods
 
   # Run tests in parallel with specified workers

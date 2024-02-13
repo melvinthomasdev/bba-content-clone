@@ -1400,7 +1400,7 @@ def test_not_found_error_rendered_for_invalid_task_slug
   get task_path(invalid_slug), headers: @creator_headers
   assert_response :not_found
   response_json = response.parsed_body
-  assert_equal t("not_found", entity: "Task"), response_json["error"]
+  assert_equal I18n.t("not_found", entity: "Task"), response_json["error"]
 end
 ```
 
@@ -1412,7 +1412,7 @@ def test_shouldnt_create_comment_without_task
   post comments_path, params: { comment: { content: "This is a comment", task_id: "" } }, headers: @headers
   assert_response :not_found
   response_json = response.parsed_body
-  assert_equal t("not_found", entity: "Task"), response_json["error"]
+  assert_equal I18n.t("not_found", entity: "Task"), response_json["error"]
 end
 ```
 
@@ -1425,7 +1425,7 @@ def test_should_respond_with_not_found_error_if_user_is_not_present
   post session_path, params: { login: { email: non_existent_email, password: "welcome" } }, as: :json
   assert_response :not_found
   response_json = response.parsed_body
-  assert_equal t("not_found", entity: "User"), response_json["error"]
+  assert_equal I18n.t("not_found", entity: "User"), response_json["error"]
 end
 ```
 
@@ -1462,12 +1462,12 @@ class UserNotification < ApplicationRecord
         Date.parse(last_notification_sent_date.to_s)
       end
     rescue ArgumentError
-      errors.add(:last_notification_sent_date, t("date.invalid"))
+      errors.add(:last_notification_sent_date, I18n.t("date.invalid"))
     end
 
     def last_notification_sent_date_cannot_be_in_the_past
       if last_notification_sent_date.present? && last_notification_sent_date < Time.zone.today
-        errors.add(:last_notification_sent_date, t("date.cant_be_in_past"))
+        errors.add(:last_notification_sent_date, I18n.t("date.cant_be_in_past"))
       end
     end
 end

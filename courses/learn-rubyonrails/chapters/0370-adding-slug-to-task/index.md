@@ -876,21 +876,32 @@ user.name_previously_changed?(from: "Oliver" , to: "Jane") # => true
 
 ## Moving response messages to i18n en. locales
 
-`i18n` is "Ruby internationalization and localization solution". It provides
-support for English and similar languages by default. To use other languages, we
-can set it in our `config/application.rb`.
+Internationalization, often abbreviated as `i18n`, is the process of
+designing software applications to adapt to various languages and regions,
+without requiring a complete overhaul.
 
-For eg, in the previous chapter, we manually hard coded and returned a `json`
-response with the `notice` key as "Task was successfully created". So what if we
-needed the same response to be used multiple times in our app?
+Internationalization involves separating the code and content of the application
+in such a way that swapping out one language for another becomes a relatively
+straightforward task.
 
-Instead of hardcoding this string response message each time, we can use `en`
-locales to accommodate our string messages and reuse them the way we access
-variables.
+Rails provide the Ruby I18n framework to facilitate the internationalization of our
+Rails application. Let's see how we can make use of
+Rails I18n API to internationalize
+our application.
 
-This allows for modularizing and reusing the messages.
+In our `Task` model, we have supplied the error message `is immutable!` as a
+hardcoded string as shown:
 
-Now, open the `en.yml` file in `config/locales` and add the following code:
+```ruby {3}
+  def slug_not_changed
+    if slug_changed? && self.persisted?
+      errors.add(:slug, 'is immutable!')
+    end
+  end
+```
+
+We will add this string to a translation file named `en.yml` in `config/locales`.
+Open the `en.yml` file in `config/locales` and add the following code:
 
 ```yaml
 en:
@@ -899,49 +910,14 @@ en:
       immutable: "is immutable!"
 ```
 
-Here, we have created our data in a JSON like format called YAML. It's another
+Here, we have created our data in a JSON-like format called YAML. It's another
 markup language (Yet Another Markup Language).
 
-Whenever `task.slug.immutable` is translated, it refers to the string "is
-immutable!".
+Now, instead of using hardcoded strings in our application, we will use the keys
+in the above YAML file to translate the content. The `I18n` library provides
+the `I18n.t()` method to look for the strings corresponding to the translation key.
 
-Now we can access it in our `tasks_controller` by using `t()`. `t()` is an alias
-for translate, which is a
-[TranslationHelper](https://api.rubyonrails.org/classes/ActionView/Helpers/TranslationHelper.html#method-i-t).
-
-In every controller, we can use `t()` method without including any additional
-modules since
-[AbstractController::Translation](https://api.rubyonrails.org/v7.0.5/classes/AbstractController/Translation.html)
-is already included in
-[ActionController::Base](https://api.rubyonrails.org/classes/ActionController/Base.html).
-
-As you can see, `ApplicationController` (in
-`app/controllers/application_controller.rb`), inherits from
-`ActionController::Base`.
-
-`ApplicationController` is the superclass of all of our controller classes, and
-thus all of our controllers can access the methods defined in
-`ActionController::Base` including the `t()` we have discussed earlier.
-
-Unlike controllers, instances of `ApplicationRecord` (or more specifically,
-models) don't have reference to `t()` methods out of the box. We need to
-manually include the module
-[ActionView::Helpers::TranslationHelper](https://api.rubyonrails.org/v7.0.5/classes/ActionView/Helpers/TranslationHelper.html)
-to use `t()` in our models.
-
-Instead of including `ActionView::Helpers::TranslationHelper` in every model,
-let us include it in their common superclass `ApplicationRecord`.
-
-Open `app/models/application_record.rb` and add the following line to it:
-
-```ruby {2}
-class ApplicationRecord < ActiveRecord::Base
-  include ActionView::Helpers::TranslationHelper
-  primary_abstract_class
-end
-```
-
-Now, let's replace our hardcoded error message with `t()` method call:
+Let's replace the hardcoded error message with the `I18n.t` method call:
 
 ```ruby {28}
 class Task < ApplicationRecord
@@ -971,11 +947,18 @@ class Task < ApplicationRecord
 
     def slug_not_changed
       if slug_changed? && self.persisted?
-        errors.add(:slug, t('task.slug.immutable'))
+        errors.add(:slug, I18n.t('task.slug.immutable'))
       end
     end
 end
 ```
+
+The `I18n` library uses English as the default locale and looks up the `en.yml` for
+the translation strings. If you want to use a different locale, say, French, you can set the default locale to `:fr` and add the `fr.yml` file in the `config/locales` directory
+with the strings in French.
+
+You can learn more about how to leverage the Rails `I18n` library to adapt your application to the desired
+locale and switch between different locales referring to the [official documentation](https://guides.rubyonrails.org/i18n.html).
 
 Phew! That was a lot of good content. But still we can add some finesse to the
 overall process, which we will do in the next chapter.
