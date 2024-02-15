@@ -1054,6 +1054,44 @@ Paste the following lines into it:
 </html>
 ```
 
+## Previewing emails using `ActionMailer::Preview`
+
+During development, we will need to see how the layout and content of an email will look like in the UI without having to go through steps of generating an email, by sending a request to a controller action, triggering a service, or waiting for a job to execute. Rails provides the `ActionMailer::Preview` class for this specific purpose. It allows us to preview emails by visiting a URL.
+
+Let's see how we can utilize `ActionMailer::Preview` to preview the email for the `TaskMailer`.
+
+First, we need to create a class that inherits `ActionMailer::Preview` in the `test/mailers/previews` folder. Rails identifies a mailer as a preview if the file name and class name is suffixed with the keyword `preview` in appropriate casing. So in the case of `TaskMailer`, the class should be named `TaskMailerPreview`, and the file should be name `task_mailer_preview.rb`. Since this file is already generated as part of the mailer generate command, we can skip this step.
+
+Next, to see the preview of `pending_tasks_email`, implement a method that has the same name and call `TaskMailer.pending_tasks_email` from that method. We follow this convention of naming mailer actions and preview methods with the same name. We can pass the ID of the first user as the `receiver_id`. Add the following code to `task_mailer_preview.rb`:
+
+```rb
+# frozen_string_literal: true
+
+# Preview all emails at http://localhost:3000/rails/mailers/task_mailer
+class TaskMailerPreview < ActionMailer::Preview
+  def pending_tasks_email
+    TaskMailer.with(preview: true).pending_tasks_email(User.first.id)
+  end
+end
+```
+
+While previewing emails, we do not want to create database entries for user notifications. For that, we have passed a `param` named `preview` with the value `true` to denote that we are previewing the mail.
+
+We can use this param to skip the `after_action` callback in `TaskMailer`, like so:
+
+```ruby {2}
+class TaskMailer < ApplicationMailer
+  after_action :create_user_notification, if: -> { !params&.[](:preview) && @receiver }
+  # keep the previous code as it was
+end
+```
+
+In the above code, we are using the safe navigation operator(`&`) to access the `preview` key of the `params` hash. It checks if the value of `params` is nil. If it's not `nil`, it proceeds to access the value associated with the key `:preview` in the `params` hash. If `params` is `nil`, the expression returns `nil` without raising an error.
+
+Now, you can preview the pending task email at http://localhost:3000/rails/mailers/task_mailer/pending_tasks_email.
+
+You can see the list of URLs of all email previews associated with `TaskMailer` at http://localhost:3000/rails/mailers/task_mailer.
+
 ## Use case of secrets.yml file
 
 Rails supports the `secrets.yml` file to store your application's secrets. It is
