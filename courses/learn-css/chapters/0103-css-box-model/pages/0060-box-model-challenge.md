@@ -5,7 +5,7 @@ gained so far, do the following:
 
 2. Add a solid `goldenrod` border of `3px` to **Skoda Slavia**.
 
-3. Now, set the box sizing to `border-box`.
+3. Set the `box-sizing` to `border-box` for all elements with a single line of CSS code.
 
 <codeblock language="css" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
