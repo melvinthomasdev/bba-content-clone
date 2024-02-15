@@ -26,9 +26,11 @@ Methods for optimization, such as memoization, can prevent these unneeded render
 
 Memoization is a technique used to optimize performance by caching the results of expensive computations and preventing unnecessary re-computation of values. This technique aims to improve performance by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
 
-In React, the `React.memo` higher-order component and the `useMemo` hook are used for memoization:
+In React, the `React.memo` higher-order component, `useMemo` and `useCallback` hooks are used for memoization:
+
 - `React.memo`: When a functional component, wrapped with `React.memo` HOC, receives the same props, it skips re-rendering and returns the last rendered result that's stored in memory.
 - `useMemo`: It memoizes the result of a function or computation and re-runs it only when the dependencies provided in the dependency array change.
+- `useCallback`: It memoizes a callback function and re-runs it only when the dependencies provided in the dependency array change.
 
 Let us bring memoization to SmileCart by wrapping the stateless `ProductListItem` component with `React.memo`.
 
@@ -58,6 +60,7 @@ Though we've delved into how memoization optimizes applications, it's important 
 - When the memory usage from caching values surpasses potential performance gains.
 
 ## References
+
 - https://www.bigbinary.com/blog/react-performance-optimization-memoization-demystified
 
 Let's commit the new changes:
