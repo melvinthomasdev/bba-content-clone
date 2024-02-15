@@ -11,6 +11,9 @@
 - title: Next & Previous page using keyboard
   slug: next-previous-page-using-keyboard
   page_type: lesson
+- title: Running code using keyboard
+  slug: running-code-using-keyboard
+  page_type: lesson
 - title: Prerequisites
   slug: prerequisites
   page_type: lesson
