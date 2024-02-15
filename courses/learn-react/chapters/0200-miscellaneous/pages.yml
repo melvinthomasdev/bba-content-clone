@@ -14,6 +14,9 @@
 - title: useMemo
   slug: use-memo
   page_type: lesson
+- title: useCallback
+  slug: use-callback
+  page_type: lesson
 - title: Recommended reading
   slug: recommended-reading
   page_type: lesson
