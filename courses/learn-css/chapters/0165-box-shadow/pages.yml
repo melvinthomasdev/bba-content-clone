@@ -1,0 +1,43 @@
+---
+- title: Why Box Shadow
+  slug: why-box-shadow
+  page_type: lesson
+- title: Box Shadow
+  slug: box-shadow
+  page_type: lesson
+- title: Box Shadow Offsets
+  slug: box-shadow-offsets
+  page_type: lesson
+- title: Exercise - Box Shadow Offsets
+  slug: exercise-box-shadow-offsets
+  page_type: exercise
+- title: Adding colour to Shadow
+  slug: adding-colour-to-shadow
+  page_type: lesson
+- title: Exercise - Adding colour to Shadow
+  slug: exercise-adding-colour-to-shadow
+  page_type: exercise
+- title: Adding blur-radius to Shadow
+  slug: adding-blur-radius-to-shadow
+  page_type: lesson
+- title: Exercise - Adding blur-radius to Shadow
+  slug: exercise-adding-blur-radius-to-shadow
+  page_type: exercise
+- title: Adding spread-radius to Shadow
+  slug: adding-spread-radius-to-shadow
+  page_type: lesson
+- title: Exercise - Adding spread-radius to Shadow
+  slug: exercise-adding-spread-radius-to-shadow
+  page_type: exercise
+- title: Adding multiple Box Shadows
+  slug: adding-multiple-box-shadows
+  page_type: lesson
+- title: Exercise - Adding multiple Box Shadows
+  slug: exercise-adding-multiple-box-shadows
+  page_type: exercise
+- title: Adding Inner Shadow using inset
+  slug: adding-inner-shadow-using-inset
+  page_type: lesson
+- title: Exercise - Adding Inner Shadow using inset
+  slug: exercise-adding-inner-shadow-using-inset
+  page_type: exercise
