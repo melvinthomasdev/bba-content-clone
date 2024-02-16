@@ -377,6 +377,9 @@
 - slug: jsonb-columns-and-activerecord-store-module
   name: JSONB columns and ActiveRecord Store module
   has_pages: false
+- slug: postgresql-jsonb-operators
+  name: PostgreSQL JSONB operators
+  has_pages: false
 - slug: more-rails-goodies
   name: More Rails goodies
   has_pages: false
