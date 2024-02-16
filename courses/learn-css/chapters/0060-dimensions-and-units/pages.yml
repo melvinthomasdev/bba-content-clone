@@ -32,6 +32,12 @@
 - title: Percentages
   slug: percentages
   page_type: lesson
+- title: Exercise - Percentages
+  slug: exercise-percentages
+  page_type: exercise
+- title: Exercise 2 - Percentages
+  slug: exercise-2-percentages
+  page_type: exercise
 - title: em - I
   slug: em-i
   page_type: lesson
