@@ -8,7 +8,7 @@ In this lesson, we will implement a pagination mechanism in our product listing 
 
 This is how the page will look after implementing the pagination:
 
-<image>product-listing-page-with-pagination.gif</image>
+<image>product-listing-with-pagination.gif</image>
 
 To accommodate this change, let's go to the `ProductList/index.jsx` file and create a state named `currentPage` to store the current page number. We should initialize the state with a default page number of `1`.
 

@@ -60,7 +60,7 @@ images:
   - carousel-with-ref-hook.gif
   - queued-updates.jpg
   - core-react-loop.jpeg
-  - product-listing-page-with-pagination.gif
+  - product-listing-with-pagination.gif
   - pagination-issue-in-product-listing-page.gif
   - pagination-without-keep-previous-data.gif
   - product-listing-with-no-data-page.png

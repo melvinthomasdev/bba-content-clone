@@ -166,6 +166,38 @@ const Carousel = () => {
 };
 ```
 
+### Avoid prop drilling values from React query hooks
+
+React query sends a single API request even if it is called multiple places. So its value need not be prop drilled to child components. We can call the hook inside the child component to get all the required values.
+
+In our case, we are passing down the `availableQuantity` prop through multiple levels just to utilize it within the `ProductQuantity` component. The flow of `availableQuantity` prop through various component is shown below:
+
+```bash
+ProductList -> ProductListItem -> AddToCart -> ProductQuantity
+Product -> AddToCart -> ProductQuantity
+Cart -> ProductCard -> ProductQuantity
+```
+
+Given that the product `slug` is accessible in the `ProductQuantity` component, we can make use of the `useShowProduct` React query hook to get the `availableQuantity` for that product:
+
+```jsx {2, 5, 7, 9}
+// ...
+import { useShowProduct } from "hooks/reactQuery/useProductsApi";
+// ...
+
+const ProductQuantity = ({ slug }) => {
+  // ...
+  const { data: product = {} } = useShowProduct(slug);
+
+  const { availableQuantity } = product;
+
+  // ...
+};
+export default ProductQuantity;
+```
+
+Now, let's remove the `availableQuantity` that is prop drilled through the `ProductListItem`, `AddToCart`, `Product`, and `ProductCard` components.
+
 Let's commit the new changes:
 
 ```bash
@@ -173,4 +205,4 @@ git add -A
 git commit -m "Created React query custom hook to fetch product and product list"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/72de9b34da604df149d1c5255d58de28a21493fe).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/6c75b37367ef75ab795c8a6a088e8eb038fffd0b).
