@@ -16,19 +16,19 @@ Let's look at an example:
 <panel language="html">
 <div>
   <h2>Gradients</h2>
-  <p>CSS gradients allow you to create smooth transitions between
-   two or more colours in your web design, adding depth and visual
-   appeal to your elements.</p>
+  <p>
+    CSS gradients allow you to create smooth transitions between two or more colours in your web design, adding depth and visual appeal to your elements.
+  </p>
 
   <h2>Backgrounds</h2>
-  <p>CSS backgrounds provide you with the tools to customize the
-   background of elements, including setting images, colours, and
-   repeating patterns.</p>
+  <p>
+    CSS backgrounds provide you with the tools to customize the background of elements, including setting images, colours, and repeating patterns.
+  </p>
 
   <h2>Typography</h2>
-  <p>CSS typography enables you to control font styles, sizes,
-   and spacing, helping you achieve the desired text presentation
-   on your website.</p>
+  <p>
+    CSS typography enables you to control font styles, sizes, and spacing, helping you achieve the desired text presentation on your website.
+  </p>
 </div>
 </panel>
 <panel language="css">

@@ -4,7 +4,9 @@ Let's look at the following code:
 <code>
 <panel language="html">
 <h1>What is Universe?</h1>
-<p>The universe is all of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy.</p>
+<p>
+  The universe is all of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy.
+</p>
 </panel>
 <panel  language="css">
 h1 {
@@ -27,7 +29,9 @@ Now, let's use the `div` element to group them together.
 <panel language="html">
 <div>
   <h1>What is Universe?</h1>
-  <p>The universe is all of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy.</p>
+  <p>
+    The universe is all of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy.
+  </p>
 </div>
 </panel>
 <panel  language="css">

@@ -29,9 +29,9 @@ and portrait mode.
 <codeblock language="html" type="lesson">
 <code>
 <picture>
-    <source media="(max-width: 720px)" width="100%" srcset="https://upload.wikimedia.org/wikipedia/commons/c/c8/Taj_Mahal_in_March_2004.jpg" />
-    <source media="(min-width: 721px)" width="100%" srcset="https://upload.wikimedia.org/wikipedia/commons/6/67/Taj_Mahal_in_India_-_Kristian_Bertel.jpg" />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Taj_Mahal_in_March_2004.jpg" width="100%" alt="Picture of Taj Mahal">
+  <source media="(max-width: 720px)" width="100%" srcset="https://upload.wikimedia.org/wikipedia/commons/c/c8/Taj_Mahal_in_March_2004.jpg" />
+  <source media="(min-width: 721px)" width="100%" srcset="https://upload.wikimedia.org/wikipedia/commons/6/67/Taj_Mahal_in_India_-_Kristian_Bertel.jpg" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Taj_Mahal_in_March_2004.jpg" width="100%" alt="Picture of Taj Mahal">
 </picture>
 </code>
 </codeblock>

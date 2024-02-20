@@ -6,11 +6,11 @@ it using its `outerHTML` property.
 <code>
 <panel language="html">
 <p>
-    The dogs
-    <span>will </span>
-    <span>be </span>
-    <span>waiting.</span>
-    <img src="shih-tzu-dog-02.jpg" width="350px">
+  The dogs
+  <span>will </span>
+  <span>be </span>
+  <span>waiting.</span>
+  <img src="shih-tzu-dog-02.jpg" width="350px">
 </p>
 </panel>
 <panel language="javascript">

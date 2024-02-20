@@ -14,10 +14,14 @@ element with **quote** class:
   <strong>Famous Quotes:</strong>
 </div>
 <p>
-  <em>"People rarely succeed unless they have fun in what they are doing"</em>
+  <em>
+    "People rarely succeed unless they have fun in what they are doing"
+  </em>
 </p>
 <p>
-  <em>"Take a chance! All life is a chance. The man who goes farthest is generally the one who is willing to do and dare"</em>
+  <em>
+    "Take a chance! All life is a chance. The man who goes farthest is generally the one who is willing to do and dare"
+  </em>
 </p>
 </panel>
 <panel language="css">

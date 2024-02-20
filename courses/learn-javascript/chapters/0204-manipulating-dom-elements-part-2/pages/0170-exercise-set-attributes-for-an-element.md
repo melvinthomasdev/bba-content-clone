@@ -8,10 +8,10 @@ element with the value `https://www.nasa.gov/sites/default/files/thumbnails/imag
 </panel>
 <panel language="css">
 img {
-    width: 300px;
-    border: 10px solid steelblue;
-    display: block;
-    margin: 1rem auto;
+  width: 300px;
+  border: 10px solid steelblue;
+  display: block;
+  margin: 1rem auto;
 }
 </panel>
 <panel language="javascript">

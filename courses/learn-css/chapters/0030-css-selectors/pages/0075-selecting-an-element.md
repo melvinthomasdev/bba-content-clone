@@ -6,7 +6,9 @@ There are many ways to select an element.
 <img src="https://ucarecdn.com/fc228388-6c3c-4ee8-ad3e-591ae79d0fdb/">
 <h2>CSS is easy!</h2>
 <hr>
-<p class="paragraph" id="para">CSS is a powerful and relatively straightforward language used for styling web pages. </p>
+<p class="paragraph" id="para">
+  CSS is a powerful and relatively straightforward language used for styling web pages.
+</p>
 </panel>
 <panel language="css">
 * {

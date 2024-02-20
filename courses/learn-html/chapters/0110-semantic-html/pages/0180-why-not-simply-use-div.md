@@ -31,12 +31,16 @@ Wait, don't imagine, let us show you:
       <h1>5 Reasons why <span class="highlight">HTML is the King!</span></h1>
     </div>
     <div class="main">
-      <p>In this study, we'll list 5 reasons why HTML is one of the most important languages invented on the web.</p>
+      <p>
+        In this study, we'll list 5 reasons why HTML is one of the most important languages invented on the web.
+      </p>
       <ul>
         <li>HTML is forgiving</li>
         <li>HTML is easy to understand</li>
         <li>HTML powers the whole web</li>
-        <li>HTML can be easily configured with other languages like JavaScript, and Python</li>
+        <li>
+          HTML can be easily configured with other languages like JavaScript, and Python
+        </li>
         <li>An HTML only website can load really fast</li>
       </ul>
     </div>
@@ -112,12 +116,16 @@ according to best practices.
       <h1>5 Reasons why <span class="highlight">HTML is the King!</span></h1>
     </div>
     <div class="main">
-      <p>In this study, we'll list 5 reasons why HTML is one of the most important languages invented on the web.</p>
+      <p>
+        In this study, we'll list 5 reasons why HTML is one of the most important languages invented on the web.
+      </p>
       <ul>
         <li>HTML is forgiving</li>
         <li>HTML is easy to understand</li>
         <li>HTML powers the whole web</li>
-        <li>HTML can be easily configured with other languages like JavaScript, and Python</li>
+        <li>
+          HTML can be easily configured with other languages like JavaScript, and Python
+        </li>
         <li>An HTML only website can load really fast</li>
       </ul>
     </div>

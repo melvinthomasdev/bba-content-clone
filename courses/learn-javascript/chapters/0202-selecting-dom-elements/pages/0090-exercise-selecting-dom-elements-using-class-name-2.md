@@ -19,8 +19,8 @@ class name **external-link** to **tomato**.
 </panel>
 <panel language="css">
 a {
-    margin-left: 1rem;
-  }
+  margin-left: 1rem;
+}
 </panel>
 <panel language="javascript">
 

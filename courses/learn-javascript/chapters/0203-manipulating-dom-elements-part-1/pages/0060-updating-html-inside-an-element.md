@@ -7,11 +7,11 @@ its `innerHTML` property.
 <code>
 <panel language="html">
 <p>
-    Our Friends
-    <span>in </span>
-    <span>this </span>
-    <span>ecosystem</span>
-    <img src="shih-tzu-dog-01.jpg" width="350px">
+  Our Friends
+  <span>in </span>
+  <span>this </span>
+  <span>ecosystem</span>
+  <img src="shih-tzu-dog-01.jpg" width="350px">
 </p>
 </panel>
 <panel language="javascript">

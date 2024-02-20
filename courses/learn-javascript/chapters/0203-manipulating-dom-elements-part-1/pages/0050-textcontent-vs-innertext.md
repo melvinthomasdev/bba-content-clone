@@ -9,7 +9,7 @@ complete text, whether hidden from view or not.
 </panel>
 <panel language="css">
 span {
-    display: none
+  display: none
 }
 </panel>
 <panel language="javascript">

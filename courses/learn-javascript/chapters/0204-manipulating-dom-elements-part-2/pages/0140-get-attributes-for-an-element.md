@@ -20,16 +20,16 @@ Look at the example given below:
 <code>
 <panel language="html">
 <form id="user-info">
-    <input type="text" class="user-input" value="Name">
-    <input type="text" class="user-input" value="Email">
-    <input type="text" class="user-input" value="Address">
-    <input type="submit" value="submit">
+  <input type="text" class="user-input" value="Name">
+  <input type="text" class="user-input" value="Email">
+  <input type="text" class="user-input" value="Address">
+  <input type="submit" value="submit">
 </form>
 </panel>
 <panel language="javascript">
 let allUserInputs = document.getElementsByClassName('user-input');
 for (let userInput of allUserInputs) {
-    console.log(`This is an input of the type '${userInput.type}' and it collects the user's ${userInput.value}`);
+  console.log(`This is an input of the type '${userInput.type}' and it collects the user's ${userInput.value}`);
 }
 </panel>
 </code>

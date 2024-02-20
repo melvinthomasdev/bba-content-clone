@@ -8,18 +8,18 @@ rectangle in the example given below:
 <code>
 <panel language="html">
 <div>
-    <p></p>
+  <p></p>
 </div>
 </panel>
 <panel language="css">
 div {
-    background-color: brown;
-    width: 200px;
-    height: 200px;
-    color: snow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: brown;
+  width: 200px;
+  height: 200px;
+  color: snow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </panel>
 <panel language="javascript">

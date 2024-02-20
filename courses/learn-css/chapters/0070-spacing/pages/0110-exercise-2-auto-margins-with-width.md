@@ -17,7 +17,9 @@ Apply margin `auto`, and a `width` of **80%** to the `.site-content` class.
 </div>
 <div class="site-content">
   <h2>About Us</h2>
-  <p>Discover the perfect blend of fashion and comfort at our Shoes Center. From trendy sneakers to elegant heels, we offer an extensive collection of footwear to cater to every taste and occasion.</p>
+  <p>
+    Discover the perfect blend of fashion and comfort at our Shoes Center. From trendy sneakers to elegant heels, we offer an extensive collection of footwear to cater to every taste and occasion.
+  </p>
 </div>
 </panel>
 <panel language="css">

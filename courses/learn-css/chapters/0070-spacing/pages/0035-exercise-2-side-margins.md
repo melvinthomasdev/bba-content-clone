@@ -12,15 +12,21 @@ Apply the following margins to the `browser-card` class:
   <h1>Most Popular Browsers</h1>
   <div class="browser-card">
     <h2>Google Chrome</h2>
-    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    <p>
+      Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!
+    </p>
   </div>
   <div class="browser-card">
     <h2>Mozilla Firefox</h2>
-    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+    <p>
+      Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.
+    </p>
   </div>
   <div class="browser-card">
     <h2>Microsoft Edge</h2>
-    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    <p>
+      Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.
+    </p>
   </div>
 </div>
 </panel>

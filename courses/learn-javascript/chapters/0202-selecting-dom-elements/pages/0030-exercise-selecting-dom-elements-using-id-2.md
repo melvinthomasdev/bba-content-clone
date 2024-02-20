@@ -8,7 +8,9 @@ respectively.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<p>The success of this venture depended on your <span id="first-compliment">timely</span>, <span id="second-compliment">judicious</span>, and <span id="third-compliment">justified</span> actions.</p>
+<p>
+  The success of this venture depended on your <span id="first-compliment">timely</span>, <span id="second-compliment">judicious</span>, and <span id="third-compliment">justified</span> actions.
+</p>
 </panel>
 <panel language="javascript">
 let firstCompliment = ;

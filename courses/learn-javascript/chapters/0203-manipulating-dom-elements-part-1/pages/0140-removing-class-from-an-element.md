@@ -8,11 +8,11 @@ element using the `classList` property.
 </panel>
 <panel language="css">
 .highlight {
-    color: orangered;
+  color: orangered;
 }
 
 .complete {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 </panel>
 <panel language="javascript">

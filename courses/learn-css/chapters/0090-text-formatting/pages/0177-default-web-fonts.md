@@ -8,7 +8,9 @@ Your designs will look the same for all users.
 <panel language="html">
 <h1>Default Web Fonts</h1>
 
-<p>Default web fonts like 'Arial' and 'Helvetica', ensure that your website looks great while remaining accessible to all users.</p>
+<p>
+  Default web fonts like 'Arial' and 'Helvetica', ensure that your website looks great while remaining accessible to all users.
+</p>
 </panel>
 <panel language="css">
 h1 {

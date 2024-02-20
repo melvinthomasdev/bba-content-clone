@@ -15,11 +15,11 @@ this square `div`:
 </panel>
 <panel language="css">
 div {
-    width: 300px;
-    height: 250px;
-    background-color: palevioletred;
-    font-family: Arial;
-    font-size: 3rem;
+  width: 300px;
+  height: 250px;
+  background-color: palevioletred;
+  font-family: Arial;
+  font-size: 3rem;
 }
 </panel>
 <panel language="javascript">

@@ -11,10 +11,10 @@ these changes:
 <code>
 <panel language="html">
 <section>
-    <div>
-        <a href="https://www.google.com/">Link to a webpage</a>
-    </div>
-    <p>Overwrite this text with the link address</p>
+  <div>
+    <a href="https://www.google.com/">Link to a webpage</a>
+  </div>
+  <p>Overwrite this text with the link address</p>
 </section>
 </panel>
 <panel language="javascript">

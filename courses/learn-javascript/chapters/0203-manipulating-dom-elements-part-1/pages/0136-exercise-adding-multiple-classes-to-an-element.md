@@ -14,7 +14,9 @@ instead use JavaScript.
 <panel language="html">
 <h2>Basketball</h2>
 <hr>
-<p id="description">Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball through the defender's hoop, while preventing the opposing team from shooting through their own hoop.</p>
+<p id="description">
+  Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball through the defender's hoop, while preventing the opposing team from shooting through their own hoop.
+</p>
 </panel>
 <panel language="css">
 * {

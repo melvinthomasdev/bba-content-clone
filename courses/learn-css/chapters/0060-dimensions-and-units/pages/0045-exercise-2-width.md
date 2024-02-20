@@ -19,7 +19,9 @@ Set a width of `200px` to the `.sidebar` class.
 <div class="content">
   <h2>Welcome to Shoes Center</h2>
   <p>Step into Style: Your Ultimate Shoes Store</p>
-  <p>Discover the perfect blend of fashion and comfort at our shoes store. From trendy sneakers to elegant heels, we offer a wide selection to suit every style and occasion. Step up your footwear game and walk confidently with our premium collection.</p>
+  <p>
+    Discover the perfect blend of fashion and comfort at our shoes store. From trendy sneakers to elegant heels, we offer a wide selection to suit every style and occasion. Step up your footwear game and walk confidently with our premium collection.
+  </p>
 </div>
 
 <div class="footer">

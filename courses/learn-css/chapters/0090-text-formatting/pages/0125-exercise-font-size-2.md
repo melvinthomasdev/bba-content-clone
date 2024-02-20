@@ -11,7 +11,9 @@ Apply the following font sizes:
 <div class="container">
   <h1 class="main-title">Journey to the</h1>
   <h1 class="fancy-title">Unknown</h1>
-  <p class="description">Embark on a quest to explore mysterious worlds and uncover hidden treasures.</p>
+  <p class="description">
+    Embark on a quest to explore mysterious worlds and uncover hidden treasures.
+  </p>
   <button class="cta-button">Start Journey</button>
 </div>
 </panel>

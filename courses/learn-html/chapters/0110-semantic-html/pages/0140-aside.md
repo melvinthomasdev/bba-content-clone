@@ -19,12 +19,18 @@ In such cases, we can use the `<aside>` tag:
 <main>
   <article>
     <aside>
-      <p>Space is mind-blowing. It's so vast that even GPS gets lost. And don't get me started on black holes – they're like cosmic vacuum cleaners, but without the annoying cord you trip over.</p>
+      <p>
+        Space is mind-blowing. It's so vast that even GPS gets lost. And don't get me started on black holes – they're like cosmic vacuum cleaners, but without the annoying cord you trip over.
+      </p>
     </aside>
     <h2>The Importance of Space Exploration</h2>
     <p>Space exploration has opened up new horizons for humanity.</p>
-    <p>Space exploration has seen several historical milestones, starting with the launch of the first artificial satellite, Sputnik 1, by the Soviet Union in 1957. This event marked the beginning of the space age.</p>
-    <p>The United States and the Soviet Union engaged in a space race during the Cold War era. This competition led to significant achievements, including the first human in space (Yuri Gagarin) and the Apollo moon landings.</p>
+    <p>
+      Space exploration has seen several historical milestones, starting with the launch of the first artificial satellite, Sputnik 1, by the Soviet Union in 1957. This event marked the beginning of the space age.
+    </p>
+    <p>
+      The United States and the Soviet Union engaged in a space race during the Cold War era. This competition led to significant achievements, including the first human in space (Yuri Gagarin) and the Apollo moon landings.
+    </p>
   </article>
 </main>
 <footer>

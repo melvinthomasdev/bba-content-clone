@@ -12,22 +12,30 @@ example with 2 sections:
 <panel language="html">
 <section id="pacific-ocean">
   <h1>Pacific Ocean</h1>
-  <p>The Pacific Ocean is the largest and deepest ocean on Earth, covering more than one-third of the planet's surface. It is known for its stunning biodiversity and vastness.</p>
+  <p>
+    The Pacific Ocean is the largest and deepest ocean on Earth, covering more than one-third of the planet's surface. It is known for its stunning biodiversity and vastness.
+  </p>
 </section>
 
 <section id="atlantic-ocean">
   <h1>Atlantic Ocean</h1>
-  <p>The Atlantic Ocean is the second-largest ocean and is home to a rich marine ecosystem. It separates the continents of North and South America from Europe and Africa.</p>
+  <p>
+    The Atlantic Ocean is the second-largest ocean and is home to a rich marine ecosystem. It separates the continents of North and South America from Europe and Africa.
+  </p>
 </section>
 
 <section id="indian-ocean">
   <h1>Indian Ocean</h1>
-  <p>The Indian Ocean is the warmest of all the oceans and is known for its diverse marine life, including coral reefs, dolphins, and whales. It plays a vital role in global climate patterns.</p>
+  <p>
+    The Indian Ocean is the warmest of all the oceans and is known for its diverse marine life, including coral reefs, dolphins, and whales. It plays a vital role in global climate patterns.
+  </p>
 </section>
 
 <section id="arctic-ocean">
   <h1>Arctic Ocean</h1>
-  <p>The Arctic Ocean is the smallest and shallowest of the world's oceans, located around the North Pole. It is covered by sea ice for most of the year and is home to unique cold-water species.</p>
+  <p>
+    The Arctic Ocean is the smallest and shallowest of the world's oceans, located around the North Pole. It is covered by sea ice for most of the year and is home to unique cold-water species.
+  </p>
 </section>
 
 </panel>

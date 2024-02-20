@@ -37,9 +37,9 @@ this square `div`:
 </panel>
 <panel language="css">
 div {
-    width: 300px;
-    height: 250px;
-    background-color: palevioletred;
+  width: 300px;
+  height: 250px;
+  background-color: palevioletred;
 }
 </panel>
 <panel language="javascript">

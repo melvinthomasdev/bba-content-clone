@@ -16,21 +16,21 @@ Look at the example given below:
 <code>
 <panel language="html">
 <div id="root">
-    <h2>Opinions are aplenty</h2>
+  <h2>Opinions are aplenty</h2>
 </div>
 </panel>
 <panel language="css">
 #root {
-    font-family: Helvetica;
+  font-family: Helvetica;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 p {
-    font-size: 1.4rem;
-    color: grey;
+  font-size: 1.4rem;
+  color: grey;
 }
 </panel>
 <panel language="javascript">
