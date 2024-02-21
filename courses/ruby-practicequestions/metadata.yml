@@ -2,7 +2,7 @@
 name: Ruby Practice Questions
 subheading: Practice Ruby you have already learnt
 slug: ruby-practicequestions
-published: true
+published: false
 custom_data:
   type: ruby-retired
   courseType: practice-questions
