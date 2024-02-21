@@ -2,20 +2,32 @@
 - title: Callback Functions
   slug: callback-functions
   page_type: lesson
+- title: Callback Hell
+  slug: callback-hell
+  page_type: lesson
+- title: Exercise - Callback Functions
+  slug: exercise-callback-functions
+  page_type: exercise
 - title: Make a Promise
   slug: make-a-promise
   page_type: lesson
-- title: Exercise - Make a Promise
-  slug: exercise-make-a-promise
+- title: "`then` method"
+  slug: then-method
+  page_type: lesson
+- title: Exercise - `then` method
+  slug: exercise-then-method
   page_type: exercise
-- title: Multiple resolves and rejects
-  slug: multiple-resolves-and-rejects
+- title: "`catch` method"
+  slug: catch-method
   page_type: lesson
-- title: "`then`, `catch` and `finally` in Promise"
-  slug: then-catch-and-finally-in-promise
+- title: Exercise - `catch` method
+  slug: exercise-catch-method
+  page_type: exercise
+- title: "`finally` method"
+  slug: finally-method
   page_type: lesson
-- title: Exercise - `then`, `catch` and `finally` in Promise
-  slug: exercise-then-catch-and-finally-in-promise
+- title: Exercise - `finally` method
+  slug: exercise-finally-method
   page_type: exercise
 - title: Chaining Promises
   slug: chaining-promises
@@ -23,20 +35,26 @@
 - title: Exercise - Chaining Promises
   slug: exercise-chaining-promises
   page_type: exercise
+- title: Returning a value from `then` handler
+  slug: returning-a-value-from-then-handler
+  page_type: lesson
+- title: Multiple Resolves and Rejects
+  slug: multiple-resolves-and-rejects
+  page_type: lesson
 - title: "`async` Functions"
   slug: async-functions
   page_type: lesson
 - title: The `await` Keyword
   slug: await-keyword
   page_type: lesson
-- title: Async/Await Practical Examples
-  slug: async-await
-  page_type: lesson
+- title: Exercise - Async/Await
+  slug: exercise-async-await
+  page_type: exercise
 - title: Adding try...catch
   slug: adding-try-catch
   page_type: lesson
-- title: Exercise - Async/Await
-  slug: exercise-async-await
+- title: Exercise - Adding try...catch
+  slug: exercise-adding-try-catch
   page_type: exercise
 - title: Fetch API
   slug: fetch-api
