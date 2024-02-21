@@ -17,7 +17,5 @@
   slug: code-optimization
 - name: Locale Translations
   slug: locale-translations
-- name: Semantic HTML
-  slug: semantic-html
 - name: Compound Components
   slug: compound-components

@@ -1,4 +1,10 @@
 ---
+- title: Semantic HTML
+  slug: semantic-html
+  page_type: lesson
+- title: Keyboard Actions
+  slug: keyboard-actions
+  page_type: lesson
 - title: Header
   slug: header
   page_type: lesson
@@ -55,4 +61,7 @@
   page_type: lesson
 - title: Writing Good `alt` text
   slug: writing-good-alt-text
+  page_type: lesson
+- title: Accessibility Best Practices
+  slug: accessibility-best-practices
   page_type: lesson
