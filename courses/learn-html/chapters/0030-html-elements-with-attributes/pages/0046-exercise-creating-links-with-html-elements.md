@@ -2,10 +2,10 @@ Create a `p` element
 with the text
 `Take a look at our basic HTML course`
 such that it takes us to
-BB Academy's basic HTML
+BB Academy's Learn HTML
 course using the following
 link:
-`https://courses.bigbinaryacademy.com/learn-basic-html/`
+`https://courses.bigbinaryacademy.com/learn-html/`
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
@@ -13,7 +13,7 @@ link:
 </code>
 <solution>
 <!-- Write code here -->
-<a href="https://courses.bigbinaryacademy.com/learn-basic-html/">
+<a href="https://courses.bigbinaryacademy.com/learn-html/">
   <p>Take a look at our basic HTML course</p>
 </a>
 </solution>

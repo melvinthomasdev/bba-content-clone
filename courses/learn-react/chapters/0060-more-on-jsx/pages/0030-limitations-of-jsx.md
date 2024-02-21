@@ -150,7 +150,7 @@ const Speedometer = ({ currentSpeed }) => {
 };
 ```
 
-Another solution is using [IIFE](https://courses.bigbinaryacademy.com/javascript-good-to-know/immediately-invoked-function-expression/iife/) (Immediately Invoked Function Expression):
+Another solution is using [IIFE](https://courses.bigbinaryacademy.com/learn-javascript/immediately-invoked-function-expression/iife/) (Immediately Invoked Function Expression):
 
 ```jsx
 const Speedometer = ({ currentSpeed }) => (

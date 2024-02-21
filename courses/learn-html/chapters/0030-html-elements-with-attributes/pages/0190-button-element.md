@@ -13,11 +13,11 @@ we have added the type as
 
 We will learn more about 
 `button` element in our
-chapter on [Form Elements](https://courses.bigbinaryacademy.com/learn-basic-html/#form-elements).
+chapter on [Form Elements](https://courses.bigbinaryacademy.com/learn-html/#form-elements).
 
 To make this type of button interactive,
 JavaScript is required.
 
 We will learn more about adding
 interactivity to HTML elements
-in our JavaScript course on [HTML DOM](https://courses.bigbinaryacademy.com/learn-htmldom/).
+in our [Learn JavaScript](https://courses.bigbinaryacademy.com/learn-javascript/) course.

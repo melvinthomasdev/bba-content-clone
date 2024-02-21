@@ -82,4 +82,4 @@ dismissButton.addEventListener("click", () => {
 If you are confused by the
 HTML DOM manipulation code
 used above, please go through
-our course [Learn HTML DOM](https://courses.bigbinaryacademy.com/learn-htmldom/).
+our [Learn JavaScript](https://courses.bigbinaryacademy.com/learn-javascript/) course.

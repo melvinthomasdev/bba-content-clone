@@ -8,5 +8,4 @@ while CSS
 gives the look and feel to it.
 
 If you are not familiar with HTML,
-get started with our [Learn Basic HTML](https://courses.bigbinaryacademy.com/learn-basic-html/)
-course.
+get started with our [Learn HTML](https://courses.bigbinaryacademy.com/learn-html/) course.

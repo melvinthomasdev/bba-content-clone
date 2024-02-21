@@ -157,7 +157,7 @@ There are a couple of rules that we need to follow while using `hooks`:
 
 ## Event handling
 
-You might be familiar with handling [events](https://courses.bigbinaryacademy.com/learn-htmldom/browser-events/browser-events) in JavaScript. In JavaScript, browser events are handled by attaching event listeners to DOM elements:
+You might be familiar with handling [events](https://courses.bigbinaryacademy.com/learn-javascript/browser-events/browser-events/) in JavaScript. In JavaScript, browser events are handled by attaching event listeners to DOM elements:
 
 ```js
 const button = document.getElementById("buttonId");

@@ -2,7 +2,7 @@ We may frequently need to filter and display a subset of data based on a specifi
 
 Let's see an example to understand this concept. Suppose we have users' data with fields such as `name`, `email`, `isActive`, and `profileUrl`. Here the `isActive` field represents the status of the user, where `true` means the user is currently active, and `false` means the user is not active at the moment.
 
-Our goal is to display a list of users who are currently active. In this case, we can use JavaScript’s [filter()](https://courses.bigbinaryacademy.com/learn-intermediate-javascript/advanced-array-methods/filter/) method to filter out the active users, and then we can use the [map()](https://courses.bigbinaryacademy.com/learn-basic-javascript/navigate-through-array/map/) method to render the list of active users.
+Our goal is to display a list of users who are currently active. In this case, we can use JavaScript’s [filter()](https://courses.bigbinaryacademy.com/learn-javascript/advanced-array-methods/filter/) method to filter out the active users, and then we can use the [map()](https://courses.bigbinaryacademy.com/learn-javascript/navigate-through-array/map/) method to render the list of active users.
 
 Step 1. Create a new array that contains only active users:
 

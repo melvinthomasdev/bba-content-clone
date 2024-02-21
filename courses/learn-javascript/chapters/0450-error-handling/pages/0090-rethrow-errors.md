@@ -75,5 +75,5 @@ All unhandled errors are thrown again.
 This is known as **re-throwing an error**.
 
 The `instanceof` operator is explained
-in the [`instanceof`](https://courses.bigbinaryacademy.com/javascript-good-to-know/instanceof/classes/) section
-of the [`JavaScript Good to Know`](https://courses.bigbinaryacademy.com/javascript-good-to-know/) course.
+in the [`instanceof`](https://courses.bigbinaryacademy.com/learn-javascript/instanceof/classes/) section
+of the [`Learn JavaScript`](https://courses.bigbinaryacademy.com/learn-javascript/) course.

@@ -13,4 +13,4 @@ The `<input>` element accepts data from the user. Its functioning depends on the
 
 We will be learning about
 different input types in the
-next chapter: [Input Types](https://courses.bigbinaryacademy.com/learn-basic-html/#input-types)
+next chapter: [Input Types](https://courses.bigbinaryacademy.com/learn-html/#input-types)

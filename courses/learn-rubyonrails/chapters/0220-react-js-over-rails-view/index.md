@@ -23,13 +23,7 @@ towards Ruby on Rails.
 - [Functional Programming course](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#functional-programming)
   by freeCodeCamp
 
-- [Basic JavaScript course](https://courses.bigbinaryacademy.com/learn-basic-javascript/)
-  by BigBinary Academy
-
-- [Intermediate JavaScript course](https://courses.bigbinaryacademy.com/learn-intermediate-javascript/)
-  by BigBinary Academy
-
-- [Advanced JavaScript course](https://courses.bigbinaryacademy.com/learn-advanced-javascript/)
+- [Learn JavaScript course](https://courses.bigbinaryacademy.com/learn-javascript/)
   by BigBinary Academy
 
 - [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg)

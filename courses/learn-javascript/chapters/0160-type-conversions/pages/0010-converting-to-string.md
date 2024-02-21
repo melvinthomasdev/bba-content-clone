@@ -40,7 +40,7 @@ We will learn more about the
 difference between `toString()`
 and
 `String()` methods in 
-[**toString() vs String() method**](https://courses.bigbinaryacademy.com/learn-intermediate-javascript/string-methods/tostring-vs-string-method/)
+[**toString() vs String() method**](https://courses.bigbinaryacademy.com/learn-javascript/string-methods/tostring-vs-string-method/)
 lesson in our 
-intermediate JavaScript
+Learn JavaScript
 course.

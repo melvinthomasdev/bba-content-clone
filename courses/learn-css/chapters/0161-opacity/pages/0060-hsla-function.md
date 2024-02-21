@@ -29,5 +29,4 @@ The value of alpha can be between 0 and 1.
 Where, 0 means completely transparent
 and 1 means completely opaque.
 
-Refer **Opacity** lesson in
-[Learn Basic CSS](https://courses.bigbinaryacademy.com/learn-basic-css/) for more.
+Refer **Opacity** [lesson](https://courses.bigbinaryacademy.com/learn-css/#opacity) for more.
