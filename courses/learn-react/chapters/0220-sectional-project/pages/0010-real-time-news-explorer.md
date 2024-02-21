@@ -6,5 +6,5 @@ so happy for you 😃. Here is an optional Project you can try out to test your 
 
 <image>news-feedly.jpeg</image>
 
-Visit the [News Feedly project page](https://courses.bigbinaryacademy.com/projects/news-feedly/)
+Visit the [Real-Time News Explorer](https://courses.bigbinaryacademy.com/projects/real-time-news-explorer/)
 to read more and start building.
