@@ -92,7 +92,7 @@
 - name: Number Methods
   slug: number-methods
 - name: Comprehensive Exercise 11
-  slug: comprehensive-exercise-11 
+  slug: comprehensive-exercise-11
 - name: this on Objects
   slug: this-on-objects
 - name: Closure
@@ -111,6 +111,8 @@
   slug: mutation
 - name: Comprehensive Exercise 12
   slug: comprehensive-exercise-12
+- name: Read Before Moving Forward
+  slug: read-before-moving-forward
 - name: Number Methods 2
   slug: number-methods-2
 - name: String Methods 2
