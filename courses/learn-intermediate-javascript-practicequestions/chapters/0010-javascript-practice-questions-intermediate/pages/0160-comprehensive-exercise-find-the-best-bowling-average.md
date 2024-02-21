@@ -1,7 +1,14 @@
-From the list of cricket players, given in form of the JSON object, find the bowler with the best bowling average.
+In cricket, bowling average is used
+to measure a bowler's performance.
+Between two bowlers, the bowler with
+a lower bowling average is considered
+to be a better performer.
 
-1. In cricket, the lower the bowling average is, the better the bowler is performing.
-2. Return a value with 3 decimal points.
+From the list of cricket players,
+given in form of a JSON object,
+find the bowler with the best
+bowling average.
+Return a value with 3 decimal points.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
