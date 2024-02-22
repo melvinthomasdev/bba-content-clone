@@ -8,11 +8,13 @@ non-standard HTML attributes too.
 This seems too miniscule a benefit
 for students to be taught 2 ways of
 doing the same thing.
- -->
+-->
 
-You can access the attribute values for an HTML element,
-element, by simply looking up the value
-of that property on the node object.
+You can access the attribute values
+for an HTML element,
+by simply looking up the value
+of that property on the object
+representation of the HTML element.
 
 Look at the example given below:
 
