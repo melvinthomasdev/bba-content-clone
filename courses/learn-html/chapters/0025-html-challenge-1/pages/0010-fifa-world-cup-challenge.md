@@ -8,18 +8,18 @@ Add a heading with the text
 
 Below the heading, add a paragraph
 with the following description:
-**The FIFA World Cup, often simply called the World Cup, 
-is an international association football competition 
-between the senior men's national teams of the members 
-of the Fédération Internationale de Football 
+**The FIFA World Cup, often simply called the World Cup,
+is an international association football competition
+between the senior men's national teams of the members
+of the Fédération Internationale de Football
 Association (FIFA), the sport's global governing body.**
 
 Below the description, add a
-subheading. In the subheading, 
-**History of the Tournament** should 
+subheading. In the subheading,
+**History of the Tournament** should
 be added as text.
 
-After this, add a paragraph. 
+After this, add a paragraph.
 Add the following text in the paragraph: **FIFA was founded on May 21, 1904, in Paris, France. The founding members were Belgium, Denmark, France, Netherlands, Spain, Sweden, and Switzerland. The first international football match organized by FIFA took place on May 30, 1904, between Belgium and France. The idea of a global football competition materialized, leading to the creation of the FIFA World Cup. The inaugural tournament was awarded to Uruguay in 1930.**
 
 Add another subheading **Key Facts**
@@ -32,11 +32,12 @@ the following points:
 - Brazil is the most successful team in World Cup history, having won the tournament a record five times.
 - The 1990 World Cup held in Italy was significant as it took place shortly after the reunification of East and West Germany.
 
-After this, add a subheading 
+After this, add a subheading
 with the text **Notable Editions**.
 
 Below this, add an ordered list with
 the following points:
+
 - 2022: Qatar - Winner: Argentina
 - 2018: Russia - Winner: France
 - 2014: Brazil - Winner: Germany
@@ -60,15 +61,28 @@ the following points:
 </p>
 
 <h2>History of the Tournament</h2>
-<p>The inaugural FIFA World Cup took place in Uruguay in 1930...</p>
+<p>
+  FIFA was founded on May 21, 1904, in Paris, France. The founding members were
+  Belgium, Denmark, France, Netherlands, Spain, Sweden, and Switzerland. The
+  first international football match organized by FIFA took place on May 30,
+  1904, between Belgium and France. The idea of a global football competition
+  materialized, leading to the creation of the FIFA World Cup. The inaugural
+  tournament was awarded to Uruguay in 1930
+</p>
 
 <h2>Key Facts</h2>
 <ul>
   <li>Over 200 countries participate in the qualification process.</li>
   <li>The tournament takes place every four years.</li>
   <li>The first FIFA World Cup was held in Uruguay in 1930.</li>
-  <li>Brazil is the most successful team in World Cup history, having won the tournament a record five times.</li>
-  <li>The 1990 World Cup held in Italy was significant as it took place shortly after the reunification of East and West Germany.</li>
+  <li>
+    Brazil is the most successful team in World Cup history, having won the
+    tournament a record five times.
+  </li>
+  <li>
+    The 1990 World Cup held in Italy was significant as it took place shortly
+    after the reunification of East and West Germany.
+  </li>
 </ul>
 
 <h2>Notable Editions</h2>
