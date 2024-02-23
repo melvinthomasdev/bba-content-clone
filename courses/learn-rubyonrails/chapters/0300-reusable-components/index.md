@@ -179,20 +179,21 @@ const Button = ({
   loading,
   className = "",
   icon,
+  disabled = false,
 }) => {
   const handleClick = e => {
-    if (!loading) return onClick(e);
+    if (!(disabled || loading)) return onClick(e);
 
     return null;
   };
 
   return (
     <button
-      disabled={loading}
+      disabled={disabled || loading}
       type={type}
       className={classnames(
         [className],
-        "focus:outline-none group relative flex items-center justify-center gap-x-2 rounded-md border border-transparent  text-sm font-medium leading-5 transition duration-150 ease-in-out",
+        "group relative flex items-center justify-center gap-x-2 rounded-md border border-transparent text-sm  font-medium leading-5 transition duration-150 ease-in-out focus:outline-none",
         {
           "px-4 py-2": size === "medium",
           "px-2 py-1": size === "small",
@@ -202,6 +203,7 @@ const Button = ({
             !loading && style === "secondary",
           "bg-gray-300 text-gray-800": loading,
           "cursor-wait": loading,
+          "cursor-not-allowed opacity-50": disabled,
         }
       )}
       onClick={handleClick}

@@ -176,8 +176,9 @@ Next, replace the whole content of the `Form` component with the following
 lines:
 
 ```javascript
-import React from "react";
+import React, { useRef } from "react";
 
+import { equals } from "ramda";
 import { useHistory } from "react-router-dom";
 import Select from "react-select";
 
@@ -198,6 +199,16 @@ const Form = ({
     label: user.name,
   }));
   const defaultOption = { value: assignedUser?.id, label: assignedUser?.name };
+
+  const initialValues = useRef({
+    title,
+    userId: assignedUser.id,
+  });
+
+  const isNotDirty = equals(initialValues.current, {
+    title,
+    userId: assignedUser.id,
+  });
 
   return (
     <form className="mb-4 w-full" onSubmit={handleSubmit}>
@@ -226,7 +237,12 @@ const Form = ({
         </div>
       </div>
       <div className="flex items-center gap-x-3">
-        <Button buttonText="Save changes" loading={loading} type="submit" />
+        <Button
+          buttonText="Save changes"
+          disabled={isNotDirty}
+          loading={loading}
+          type="submit"
+        />
         <Button
           buttonText="Cancel"
           style="secondary"
@@ -250,6 +266,36 @@ the user is what gets passed into `setUserId`.
 If you notice the first two lines in the `Form` component, there we are
 formatting out the `users` and `assignedUser`, to the format required by
 `react-select`.
+
+Note that, in the above code, we have used a variable named `isNotDirty` to disable the "Save changes" button. This ensures that the "Save changes" button is only enabled if the user has made any changes to the form values.
+
+To ensure a better user experience, we should disable the primary button when the form is not dirty to prevent accidental submissions and unwanted requests.
+
+Now, let's see how we have checked whether a form is dirty.
+
+To check whether a form is dirty, we need to store the initial or default values of the form data and compare them with the current state of the form data. Since the initial form values should not change, even if the form re-renders, we made use of [`useRef`](https://courses.bigbinaryacademy.com/learn-react/side-effects/use-ref-hook/) hook to store this value. The `useRef` hook allows us to persist values between re-renders.
+
+The `useRef` hook accepts the initial value that we want to store. Here, we have passed an object that contains `title` and `assignedUser.id` as values to the `useRef` hook:
+
+```js
+const initialValues = useRef({
+  title,
+  userId: assignedUser.id,
+});
+```
+
+It returns a reference to a mutable object, which doesn't trigger a re-render. We can access the stored value using the `current` property of this object, i.e. `initialValues.current` will return the object containing `title` and `userId`. This value will not change even if the `title` and the `assignedUser` changes due to re-rendering.
+
+Now that we have the `initialValues` set, we can compare it with an object containing the `title` and `assignedUser.id` values derived from `prop` values during rendering like so:
+
+```js
+const isNotDirty = equals(initialValues.current, {
+  title,
+  userId: assignedUser.id,
+});
+```
+
+We have used the `equals` function from `ramda` to compare the two objects by their values.
 
 ## Updating Create component
 
