@@ -111,5 +111,7 @@ images:
   - checkout-ui-breakdown.png
   - news-feedly.jpeg
   - search-and-add-to-cart.gif
+  - path-segments-example.png
+  - query-params-example.png
 
 databases: []

@@ -68,6 +68,7 @@ Sessionx.vim
 # OSX Ignores                           #
 #---------------------------------------#
 .DS_Store
+assets/.DS_Store
 .AppleDouble
 .LSOverride
 .localized
