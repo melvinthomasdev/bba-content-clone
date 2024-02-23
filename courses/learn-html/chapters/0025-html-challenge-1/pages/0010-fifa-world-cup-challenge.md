@@ -3,7 +3,7 @@ our first web page.
 
 Complete the following tasks:
 
-Add a heading with the text
+Add an **h1** heading with the text
 **FIFA World Cup: A Global Spectacle**
 
 Below the heading, add a paragraph
@@ -14,15 +14,15 @@ between the senior men's national teams of the members
 of the Fédération Internationale de Football
 Association (FIFA), the sport's global governing body.**
 
-Below the description, add a
-subheading. In the subheading,
+Below the description, add an
+**h2** subheading. In the subheading,
 **History of the Tournament** should
 be added as text.
 
 After this, add a paragraph.
 Add the following text in the paragraph: **FIFA was founded on May 21, 1904, in Paris, France. The founding members were Belgium, Denmark, France, Netherlands, Spain, Sweden, and Switzerland. The first international football match organized by FIFA took place on May 30, 1904, between Belgium and France. The idea of a global football competition materialized, leading to the creation of the FIFA World Cup. The inaugural tournament was awarded to Uruguay in 1930.**
 
-Add another subheading **Key Facts**
+Add another **h2** subheading **Key Facts**
 Below this, add an unordered list with
 the following points:
 
@@ -32,7 +32,7 @@ the following points:
 - Brazil is the most successful team in World Cup history, having won the tournament a record five times.
 - The 1990 World Cup held in Italy was significant as it took place shortly after the reunification of East and West Germany.
 
-After this, add a subheading
+After this, add an **h2** subheading
 with the text **Notable Editions**.
 
 Below this, add an ordered list with
