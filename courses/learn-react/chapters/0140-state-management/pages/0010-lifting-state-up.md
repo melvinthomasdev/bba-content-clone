@@ -1,4 +1,4 @@
-In the [State and event handling](https://courses.bigbinaryacademy.com/learn-react/#state-and-event-handling) section, we learned the concept of state to manage data associated with a component. We have also used states in multiple places across our application to render components with dynamic data.
+In the [State and event handling](https://courses.bigbinaryacademy.com/learn-react/state-and-event-handling) section, we learned the concept of state to manage data associated with a component. We have also used states in multiple places across our application to render components with dynamic data.
 
 So far, the usage of state has been confined to the component in which it was declared. As the application grows, we will encounter scenarios where components need to share some states for rendering UI. In this module on state management, we will learn various techniques to share states between components by adding a feature to enable users to add products to their carts.
 
@@ -117,6 +117,7 @@ Inside the `Header` component, we can display the `cartItemsCount` beside a cart
 ```bash
 yarn add react-icons@4.10.1
 ```
+
 Then make changes to the `Header` component as follows:
 
 ```jsx {1, 8, 15-22}

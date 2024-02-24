@@ -9,7 +9,7 @@ Since this feature has a lot of moving parts, let's break it down into smaller r
 - Add navigation to the `Product` component from the product listing page.
 - Display the detail of the product clicked.
 
-Let's get started by adding an API connector to fetch the products list from the [product listing API](https://courses.bigbinaryacademy.com/learn-react/setting-up-smilecart/project-overview/#listing-products) available to us. Since we have already set the Axios for managing API requests, we can directly add a function to our `productsApi` to send a get request to fetch products:
+Let's get started by adding an API connector to fetch the products list from the [product listing API](https://courses.bigbinaryacademy.com/learn-react/setting-up-smilecart/project-overview/#list-products) available to us. Since we have already set the Axios for managing API requests, we can directly add a function to our `productsApi` to send a get request to fetch products:
 
 ```js
 // remaining code in products.js as it is
