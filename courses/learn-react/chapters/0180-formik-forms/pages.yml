@@ -14,3 +14,6 @@
 - title: Displaying cart items in checkout page
   slug: displaying-cart-items-and-total-bill-in-checkout-page
   page_type: lesson
+- title: Formik best practices
+  slug: formik-best-practices
+  page_type: lesson

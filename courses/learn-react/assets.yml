@@ -113,5 +113,7 @@ images:
   - search-and-add-to-cart.gif
   - path-segments-example.png
   - query-params-example.png
+  - form-with-buttons.png
+  - formik-validation.gif
 
 databases: []
