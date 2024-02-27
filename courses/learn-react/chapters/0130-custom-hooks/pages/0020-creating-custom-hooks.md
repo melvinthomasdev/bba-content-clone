@@ -1,6 +1,6 @@
 In the previous lesson, we implemented search functionality on the product listing page. However, this implementation has a significant drawback. An API request is sent for each keystroke in the search input.
 
-<image>request-trigger-for-each-keystroke.gif</image>
+<image>request-trigger-each-keystroke.gif</image>
 
 Making an API request for every keystroke can overload the server and slow down the application. Additionally, another issue arises when multiple API requests are triggered one after the other with each keystroke. If the first request takes longer to process and is served after the second one, the user might end up interacting with inaccurate or outdated data.
 
@@ -143,7 +143,7 @@ const ProductList = () => {
 
 Now, you may notice that network requests are not triggered with every keystroke, instead fetching will only occur when the user pauses typing for at least 350 milliseconds.
 
-<image>products-search-with-debouncing.gif</image>
+<image>products-search-with-debounce.gif</image>
 
 Let's commit the new changes:
 

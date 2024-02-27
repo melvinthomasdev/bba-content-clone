@@ -1,6 +1,6 @@
 In the previous lesson, we learned the concept of the component lifecycle, and we mentioned that the `useEffect` hook plays a crucial part in component lifecycle management. So in this lesson, we will learn what the `useEffect` hook is and how we can utilize it to perform specific actions during different phases of the component lifecycle. Subsequently, we will apply this knowledge to enhance our `Carousel` component to switch between images at an interval.
 
-<image>carousel-with-automatic-scroll.gif</image>
+<image>automatic-scroll-carousel.gif</image>
 
 The `Effects` in React are a way to synchronize the React component with the outside world. This "outside world" can include browser features, local storage, network requests, and more. In React, the rendering process is similar to solving a mathematical equation. Just as we input values, perform operations, and obtain a result, in React, we provide props, apply transformations, and generate JSX as the output. Ideally, rendering should be pure and not have any effects outside of the component. However, in many cases, we need side effects to reach outside of our React components to do something.
 

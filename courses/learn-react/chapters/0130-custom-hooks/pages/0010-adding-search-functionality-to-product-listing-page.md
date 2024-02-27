@@ -158,7 +158,7 @@ useEffect(() => {
 
 Now as you type into the search products input, you can see the corresponding products displayed, as shown below:
 
-<image>search-after-request-interceptor-integrated.gif</image>
+<image>products-search-after-request-interceptor-integrated.gif</image>
 
 If you search for a product and it's not found in the database, you may encounter a blank page, which can be confusing. To enhance the user experience, it is beneficial to implement a dedicated "no data" page. This page communicates to the user that there is currently no information available for the requested product.
 

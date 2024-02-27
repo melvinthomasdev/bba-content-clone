@@ -32,9 +32,9 @@ images:
   - product-page-with-no-loader.png
   - product-page-after-api-integration.png
   - product-api-network-tab.png
-  - request-trigger-for-each-keystroke.gif
+  - request-trigger-each-keystroke.gif
   - header-after-integrating-search-input.png
-  - search-after-request-interceptor-integrated.gif
+  - products-search-after-request-interceptor-integrated.gif
   - open-react-profiler.png
   - start-profiling.png
   - stop-profiling.png
@@ -55,7 +55,7 @@ images:
   - product-response-before-transforming-response-keys.png
   - carousel-prev-next-handlers.gif
   - carousel-dots.gif
-  - products-search-with-debouncing.gif
+  - products-search-with-debounce.gif
   - carousel-without-ref-hook.gif
   - carousel-with-ref-hook.gif
   - queued-updates.jpg
@@ -83,7 +83,7 @@ images:
   - cartItems-count-click.gif
   - lifting-state-up.jpeg
   - routes-ide-support.gif
-  - carousel-with-automatic-scroll.gif
+  - automatic-scroll-carousel.gif
   - global-state-management.jpeg
   - add-to-cart-product-page.gif
   - persist-middleware.png
