@@ -562,7 +562,6 @@
     "untrusted",
     "unwatch",
     "upcase",
-    "updation",
     "uploadcare",
     "uploaders",
     "upsertion",
@@ -984,7 +983,10 @@
     "Dursley",
     "Grunnings",
     "Fédération",
-    "practicequestions"
+    "practicequestions",
+    "olivers",
+    "NOWAIT",
+    "innodb"
   ],
   // flagWords - list of words to be always considered incorrect
   // This is useful for offensive words and common spelling errors.

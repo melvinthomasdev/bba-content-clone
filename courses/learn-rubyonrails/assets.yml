@@ -73,4 +73,7 @@ images:
 - debugging-test-1.png
 - mock-test-error.png
 - granite-logo.png
+- withdraw-without-lock.png
+- withdraw-with-optimistic-lock.png
+- withdraw-with-pessimistic-lock.png
 databases: []

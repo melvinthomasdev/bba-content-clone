@@ -149,8 +149,8 @@ the required child exception classes specifically.
   `Rails` raises `ActiveRecord::RecordNotFound` exception. We can handle this
   with a `404` or `not_found` status.
 
-- `ActiveRecord::RecordInvalid` is raised on failure of validations declared in
-  model for any record creation or updation. Let's say we have some `email`
+- `ActiveRecord::RecordInvalid` is raised on the failure of validations declared in
+  model for any record creation or update actions. Let's say we have some `email`
   validation declared in model and the input email does not match with the given
   `Regex` pattern `Rails` raises `ActiveRecord::RecordInvalid` exception. We can
   handle this with a `422` or `unprocessable_entity` status.
