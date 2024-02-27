@@ -1,4 +1,5 @@
-Write **HTML is fun!** as the content of the `<h1>` html element.
+Write **HTML** as the content of the `<h1>` html element.
+Do not forget to capitalize the letters.
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
@@ -6,6 +7,6 @@ Write **HTML is fun!** as the content of the `<h1>` html element.
 </code>
 
 <solution>
-<h1>HTML is fun!</h1>
+<h1>HTML</h1>
 </solution>
 </codeblock>

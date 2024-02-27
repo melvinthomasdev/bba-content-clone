@@ -6,7 +6,19 @@
   slug: elements
   page_type: lesson
 - title: Exercise - Elements
-  slug: exercise-elements
+  slug: exercise-elements-01
+  page_type: exercise
+- title: Exercise - Elements
+  slug: exercise-elements-02
+  page_type: exercise
+- title: Exercise - Elements
+  slug: exercise-elements-03
+  page_type: exercise
+- title: Exercise - Elements
+  slug: exercise-elements-04
+  page_type: exercise
+- title: Exercise - Elements
+  slug: exercise-elements-05
   page_type: exercise
 - title: Headings
   slug: headings
