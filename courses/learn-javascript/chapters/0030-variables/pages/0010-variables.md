@@ -26,7 +26,7 @@ replace all occurrences of
 This will become a tedious task
 for a large code.
 
-Here we can use a **variable**
+Here, we can use a **variable**
 to store the value `120`
 that is repeatedly used,
 as shown in the example below.
@@ -60,3 +60,7 @@ In the above example:
   used to create a variable.
   We will talk about what `const`
   stands for in an upcoming chapter.
+
+
+If you are coming from other programming languages, then it will be confusing to see `const` to declare a variable.
+A few chapters later, we will explain how `const` works in detail.
