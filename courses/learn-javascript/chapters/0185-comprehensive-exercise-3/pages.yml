@@ -11,3 +11,15 @@
 - title: Calculator
   slug: calculator
   page_type: assessment
+- title: Good Morning
+  slug: good-morning
+  page_type: assessment
+- title: Discount Calculator
+  slug: discount-calculator
+  page_type: assessment
+- title: Shipping Cost Calculator
+  slug: shipping-cost-calculator
+  page_type: assessment
+- title: Income Tax Calculator
+  slug: income-tax-calculator
+  page_type: assessment
