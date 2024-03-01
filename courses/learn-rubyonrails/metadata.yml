@@ -11,3 +11,4 @@ logo: ruby-on-rails.svg
 show_google_login: false
 show_reset_button: false
 position: 19
+introduction: This course teaches you the popular framework that powers some of the most successful web applications. From MVC architecture to database integration, you'll build dynamic web applications. 🚂

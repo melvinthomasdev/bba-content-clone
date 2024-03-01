@@ -12,3 +12,4 @@ custom_data:
 home_logo: learn-sql.svg
 logo: sql-header-image.png
 position: 20
+introduction: This course teaches you how to retrieve the right data from the tables. Beyond that, you will learn about joining tables, unions, primary keys, table constraints, foreign keys, views, subqueries, and more. All this without installing anything on your laptop. 📊
