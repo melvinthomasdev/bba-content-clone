@@ -9,10 +9,8 @@ to perform the following tasks:
   element to 64px.
 - Apply the text color `snow` to the
   first 3 paragraphs with the class
-  `first-section-details.`
-- Set background color of `midnightblue`
-  to the last 3 paragraphs with the
-  class `first-section-details.`
+  `first-section-details.` Set the background
+  color to `cadetblue`.
 - When the `Join the workshop` button is
   clicked, change the text of the `<h1>`
   element to `I joined the workshop.`
@@ -71,30 +69,28 @@ to perform the following tasks:
 </code>
 <solution>
 // Write code here
-let welcomeHeading = document.getElementsByTagName('h1');
-welcomeHeading[0].style.backgroundColor = 'lightblue';
-welcomeHeading[0].style.color = 'snow';
-welcomeHeading[0].style.fontSize = '64px';
+const welcomeHeading = document.getElementsByTagName("h1");
+welcomeHeading[0].style.backgroundColor = "lightblue";
+welcomeHeading[0].style.color = "snow";
+welcomeHeading[0].style.fontSize = "64px";
 
-let firstSectionDetails = document.querySelectorAll('.first-section-details');
-for (let i = 0; i < 3; i++) {
-  firstSectionDetails[i].style.color = 'snow';
-}
+const firstSectionDetails = document.querySelectorAll(".first-section-details");
 
-for (let i = firstSectionDetails.length - 1; i >= firstSectionDetails.length - 3; i--) {
-  firstSectionDetails[i].style.backgroundColor = 'midnightblue';
-}
-
-let joinWorkshopBtn = document.getElementsByTagName('button')[0];
-joinWorkshopBtn.addEventListener('click', function() {
-  welcomeHeading[0].textContent = 'I joined the workshop';
+firstSectionDetails.forEach(section => {
+  section.style.color = "snow";
+  section.style.backgroundColor = "cadetblue";
 });
 
-let mistyEverywhereBtn = document.getElementsByTagName('button')[1];
-mistyEverywhereBtn.addEventListener('click', function() {
-  let authors = document.querySelectorAll('.author');
+const joinWorkshopBtn = document.getElementsByTagName("button")[0];
+joinWorkshopBtn.addEventListener("click", function() {
+  welcomeHeading[0].textContent = "I joined the workshop";
+});
+
+const mistyEverywhereBtn = document.getElementsByTagName("button")[1];
+mistyEverywhereBtn.addEventListener("click", function() {
+  const authors = document.querySelectorAll(".author");
   for (let author of authors) {
-    author.textContent = 'Misty';
+    author.textContent = "Misty";
   };
 });
 </solution>

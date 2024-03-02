@@ -53,3 +53,6 @@
 - title: Exercise - Preventing Default Behaviour
   slug: exercise-preventing-default-behaviour
   page_type: exercise
+- title: HTML DOM Challenge - Manipulation
+  slug: html-dom-challenge-manipulation
+  page_type: exercise
