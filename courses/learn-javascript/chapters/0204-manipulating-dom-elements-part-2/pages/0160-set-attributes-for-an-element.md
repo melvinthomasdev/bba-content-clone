@@ -6,25 +6,24 @@ method.
 <code>
 <panel language="html">
 <div>
-    <img>
+  <img>
 </div>
 </panel>
 <panel language="css">
 div {
-    width: 300px;
-    min-height: 200px;
-    border: 10px solid palevioletred;
-    margin: 1rem auto;
+  width: 480px;
+  border: 16px solid palevioletred;
+  margin: 1rem auto;
 }
 
 img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 </panel>
 <panel language="javascript">
 let imgElement = document.querySelector('img');
-imgElement.setAttribute("src", "https://www.nasa.gov/sites/default/files/thumbnails/image/potw2121a.jpg");
+imgElement.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/6/65/The_station_pictured_from_the_SpaceX_Crew_Dragon_1.jpg");
 </panel>
 </code>
 </codeblock>
