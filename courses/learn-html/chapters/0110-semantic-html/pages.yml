@@ -8,53 +8,53 @@
 - title: Header
   slug: header
   page_type: lesson
-- title: Exercise - Header
-  slug: exercise-header
+- title: Challenge - Header
+  slug: challenge-header
   page_type: exercise
 - title: Main
   slug: main
   page_type: lesson
-- title: Exercise - Main
-  slug: exercise-main
+- title: Challenge - Main
+  slug: challenge-main
   page_type: exercise
 - title: Footer
   slug: footer
   page_type: lesson
-- title: Exercise - Footer
-  slug: exercise-footer
+- title: Challenge - Footer
+  slug: challenge-footer
   page_type: exercise
-- title: Exercise - 2 - Footer
-  slug: exercise-2-footer
+- title: Challenge - 2 - Footer
+  slug: challenge-2-footer
   page_type: exercise
 - title: Nav
   slug: nav
   page_type: lesson
-- title: Exercise - Nav
-  slug: exercise-nav
+- title: Challenge - Nav
+  slug: challenge-nav
   page_type: exercise
 - title: Article
   slug: article
   page_type: lesson
-- title: Exercise - Article
-  slug: exercise-article
+- title: Challenge - Article
+  slug: challenge-article
   page_type: exercise
 - title: Section
   slug: section
   page_type: lesson
-- title: Exercise - Section
-  slug: exercise-section
+- title: Challenge - Section
+  slug: challenge-section
   page_type: exercise
 - title: Aside
   slug: aside
   page_type: lesson
-- title: Exercise - Aside
-  slug: exercise-aside
+- title: Challenge - Aside
+  slug: challenge-aside
   page_type: exercise
 - title: Span
   slug: span
   page_type: lesson
-- title: Exercise - Span
-  slug: exercise-span
+- title: Challenge - Span
+  slug: challenge-span
   page_type: exercise
 - title: Why Not Simply Use Div
   slug: why-not-simply-use-div

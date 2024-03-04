@@ -5,59 +5,59 @@
 - title: Input Element
   slug: input-element
   page_type: lesson
-- title: Exercise - Input Element
-  slug: exercise-input-element
+- title: Challenge - Input Element
+  slug: challenge-input-element
   page_type: exercise
 - title: Label Element
   slug: label-elements
   page_type: lesson
-- title: Exercise - Label Element
-  slug: exercise-label-element
+- title: Challenge - Label Element
+  slug: challenge-label-element
   page_type: exercise
 - title: Placeholder
   slug: placeholder
   page_type: lesson
-- title: Exercise - Placeholder
-  slug: exercise-placeholder
+- title: Challenge - Placeholder
+  slug: challenge-placeholder
   page_type: exercise
 - title: Textarea Element
   slug: textarea-element
   page_type: lesson
-- title: Exercise - Textarea Element
-  slug: exercise-textarea-element
+- title: Challenge - Textarea Element
+  slug: challenge-textarea-element
   page_type: exercise
 - title: Select Element
   slug: select-element
   page_type: lesson
-- title: Exercise - Select Element
-  slug: exercise-select-element
+- title: Challenge - Select Element
+  slug: challenge-select-element
   page_type: exercise
-- title: Exercise - Select Element 2
-  slug: exercise-select-element-2
+- title: Challenge - Select Element 2
+  slug: challenge-select-element-2
   page_type: exercise
 - title: Button Type - Submit
   slug: button-type-submit
   page_type: lesson
-- title: Exercise - Button Type - Submit
-  slug: exercise-button-type-submit
+- title: Challenge - Button Type - Submit
+  slug: challenge-button-type-submit
   page_type: exercise
 - title: Button Type - Reset
   slug: button-type-reset
   page_type: lesson
-- title: Exercise - Button Type - Reset
-  slug: exercise-button-type-reset
+- title: Challenge - Button Type - Reset
+  slug: challenge-button-type-reset
   page_type: exercise
 - title: Fieldset Element
   slug: fieldset-element
   page_type: lesson
-- title: Exercise - Fieldset Element
-  slug: exercise-fieldset-element
+- title: Challenge - Fieldset Element
+  slug: challenge-fieldset-element
   page_type: exercise
 - title: Legend Element - Fieldset
   slug: legend-element-fieldset
   page_type: lesson
-- title: Exercise - Legend Element
-  slug: exercise-legend-element
+- title: Challenge - Legend Element
+  slug: challenge-legend-element
   page_type: exercise
 - title: Form Structure
   slug: form-structure

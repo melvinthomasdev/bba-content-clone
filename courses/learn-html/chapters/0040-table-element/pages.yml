@@ -2,42 +2,42 @@
 - title: Table
   slug: table
   page_type: lesson
-- title: Exercise - Table
-  slug: exercise-table
+- title: Challenge - Table
+  slug: challenge-table
   page_type: exercise
 - title: Table Header Row
   slug: table-header-row
   page_type: lesson
-- title: Exercise - Table Header Row
-  slug: exercise-table-header-row
+- title: Challenge - Table Header Row
+  slug: challenge-table-header-row
   page_type: exercise
 - title: Table Title
   slug: table-title
   page_type: lesson
-- title: Exercise - Table Title
-  slug: exercise-table-title
+- title: Challenge - Table Title
+  slug: challenge-table-title
   page_type: exercise
 - title: Table Header
   slug: table-header
   page_type: lesson
-- title: Exercise - Table Header
-  slug: exercise-table-header
+- title: Challenge - Table Header
+  slug: challenge-table-header
   page_type: exercise
 - title: Table Footer
   slug: table-footer
   page_type: lesson
-- title: Exercise - Table Footer
-  slug: exercise-table-footer
+- title: Challenge - Table Footer
+  slug: challenge-table-footer
   page_type: exercise
 - title: Table Body
   slug: table-body
   page_type: lesson
-- title: Exercise - Table Body
-  slug: exercise-table-body
+- title: Challenge - Table Body
+  slug: challenge-table-body
   page_type: exercise
-- title: HTML Challenge - Table
-  slug: html-challenge-table
+- title: HTML Assessment - Table
+  slug: html-assessment-table
   page_type: exercise
-- title: HTML Challenge - Tables, Headings and Images
-  slug: html-challenge-tables-headings-images
+- title: HTML Assessment - Tables, Headings and Images
+  slug: html-assessment-tables-headings-images
   page_type: exercise

@@ -8,8 +8,8 @@
 - title: When to use Picture
   slug: picture-use
   page_type: lesson
-- title: Exercise - Picture
-  slug: exercise-picture
+- title: Challenge - Picture
+  slug: challenge-picture
   page_type: exercise
 - title: Audio
   slug: audio
@@ -17,14 +17,14 @@
 - title: Attributes of Audio
   slug: audio-attributes
   page_type: lesson
-- title: Exercise - Audio
-  slug: exercise-audio
+- title: Challenge - Audio
+  slug: challenge-audio
   page_type: exercise
 - title: Source element in audio
   slug: source-element-in-audio
   page_type: lesson
-- title: Exercise - Source element in audio
-  slug: exercise-source-element-in-audio
+- title: Challenge - Source element in audio
+  slug: challenge-source-element-in-audio
   page_type: exercise
 - title: Video
   slug: video
@@ -32,8 +32,8 @@
 - title: Attributes of Video
   slug: video-attributes
   page_type: lesson
-- title: Exercise - Video
-  slug: exercise-video
+- title: Challenge - Video
+  slug: challenge-video
   page_type: exercise
 - title: iFrame
   slug: iframe
@@ -44,18 +44,18 @@
 - title: Security concerns of iFrame
   slug: iframe-security
   page_type: lesson
-- title: Exercise - iFrame
-  slug: exercise-iframe
+- title: Challenge - iFrame
+  slug: challenge-iframe
   page_type: exercise
 - title: Figure
   slug: figure
   page_type: lesson
-- title: Exercise - Figure
-  slug: exercise-figure
+- title: Challenge - Figure
+  slug: challenge-figure
   page_type: exercise
 - title: Figcaption
   slug: figcaption
   page_type: lesson
-- title: Exercise - Figcaption
-  slug: exercise-figcaption
+- title: Challenge - Figcaption
+  slug: challenge-figcaption
   page_type: exercise

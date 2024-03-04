@@ -5,57 +5,57 @@
 - title: Elements
   slug: elements
   page_type: lesson
-- title: Exercise - Elements
-  slug: exercise-elements-01
+- title: Challenge - Elements
+  slug: challenge-elements-01
   page_type: exercise
-- title: Exercise - Elements
-  slug: exercise-elements-02
+- title: Challenge - Elements
+  slug: challenge-elements-02
   page_type: exercise
-- title: Exercise - Elements
-  slug: exercise-elements-03
+- title: Challenge - Elements
+  slug: challenge-elements-03
   page_type: exercise
-- title: Exercise - Elements
-  slug: exercise-elements-04
+- title: Challenge - Elements
+  slug: challenge-elements-04
   page_type: exercise
-- title: Exercise - Elements
-  slug: exercise-elements-05
+- title: Challenge - Elements
+  slug: challenge-elements-05
   page_type: exercise
 - title: Headings
   slug: headings
   page_type: lesson
-- title: Exercise - Headings
-  slug: exercise-headings
+- title: Challenge - Headings
+  slug: challenge-headings
   page_type: exercise
 - title: Paragraph
   slug: paragraph
   page_type: lesson
-- title: Exercise - Paragraph
-  slug: exercise-paragraph
+- title: Challenge - Paragraph
+  slug: challenge-paragraph
   page_type: exercise
 - title: Unordered List
   slug: unordered-list
   page_type: lesson
-- title: Exercise - Unordered List
-  slug: exercise-unordered-list
+- title: Challenge - Unordered List
+  slug: challenge-unordered-list
   page_type: exercise
 - title: Ordered List
   slug: ordered-list
   page_type: lesson
-- title: Exercise - Ordered List
-  slug: exercise-ordered-list
+- title: Challenge - Ordered List
+  slug: challenge-ordered-list
   page_type: exercise
 - title: HTML elements allowed inside list items
   slug: html-elements-allowed-inside-list-items
   page_type: lesson
-- title: Exercise 1 - HTML elements allowed inside list items
-  slug: exercise-1-html-elements-allowed-inside-list-items
+- title: Challenge 1 - HTML elements allowed inside list items
+  slug: challenge-1-html-elements-allowed-inside-list-items
   page_type: exercise
-- title: Exercise 2 - HTML elements allowed inside list items
-  slug: exercise-2-html-elements-allowed-inside-list-items
+- title: Challenge 2 - HTML elements allowed inside list items
+  slug: challenge-2-html-elements-allowed-inside-list-items
   page_type: exercise
 - title: Line Break
   slug: line-break
   page_type: lesson
-- title: Exercise - Line Break
-  slug: exercise-line-break
+- title: Challenge - Line Break
+  slug: challenge-line-break
   page_type: exercise

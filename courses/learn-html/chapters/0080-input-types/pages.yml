@@ -2,84 +2,84 @@
 - title: Input Type - Text
   slug: input-type-text
   page_type: lesson
-- title: Exercise - Input type - text
-  slug: exercise-input-type-text
+- title: Challenge - Input type - text
+  slug: challenge-input-type-text
   page_type: exercise
 - title: Input Type - Password
   slug: input-type-password
   page_type: lesson
-- title: Exercise - Input type - Password
-  slug: exercise-input-type-password
+- title: Challenge - Input type - Password
+  slug: challenge-input-type-password
   page_type: exercise
 - title: Input Type - Submit
   slug: input-type-submit
   page_type: lesson
-- title: Exercise - Input type - Submit
-  slug: exercise-input-type-submit
+- title: Challenge - Input type - Submit
+  slug: challenge-input-type-submit
   page_type: exercise
 - title: Difference between Input Type - Submit and Button Type - Submit
   slug: input-type-submit-vs-button-type-submit
   page_type: lesson
-- title: Exercise 1 - Input type submit
-  slug: exercise-1-input-type-submit
+- title: Challenge 1 - Input type submit
+  slug: challenge-1-input-type-submit
   page_type: exercise
-- title: Exercise 2 - Button type submit
-  slug: exercise-2-button-type-submit
+- title: Challenge 2 - Button type submit
+  slug: challenge-2-button-type-submit
   page_type: exercise
 - title: Input Type - Reset
   slug: input-type-reset
   page_type: lesson
-- title: Exercise - Input type - Reset
-  slug: exercise-input-type-reset
+- title: Challenge - Input type - Reset
+  slug: challenge-input-type-reset
   page_type: exercise
 - title: Input Type - Radio
   slug: input-type-radio
   page_type: lesson
-- title: Exercise - Input type - Radio
-  slug: exercise-input-type-radio
+- title: Challenge - Input type - Radio
+  slug: challenge-input-type-radio
   page_type: exercise
 - title: Input Type - Checkbox
   slug: input-type-checkbox
   page_type: lesson
-- title: Exercise - Input type - Checkbox
-  slug: exercise-input-type-checkbox
+- title: Challenge - Input type - Checkbox
+  slug: challenge-input-type-checkbox
   page_type: exercise
 - title: Input Type - Button
   slug: input-type-button
   page_type: lesson
-- title: Exercise - Input Type - Button
-  slug: exercise-input-type-button
+- title: Challenge - Input Type - Button
+  slug: challenge-input-type-button
   page_type: exercise
 - title: Input Type - Email
   slug: input-type-email
   page_type: lesson
-- title: Exercise - Input Type - Email
-  slug: exercise-input-type-email
+- title: Challenge - Input Type - Email
+  slug: challenge-input-type-email
   page_type: exercise
 - title: Input Type - Date
   slug: input-type-date
   page_type: lesson
-- title: Exercise - Input Type - Date
-  slug: exercise-input-type-date
+- title: Challenge - Input Type - Date
+  slug: challenge-input-type-date
   page_type: exercise
 - title: Input Type - File
   slug: input-type-file
   page_type: lesson
-- title: Exercise - Input Type - File
-  slug: exercise-input-type-file
+- title: Challenge - Input Type - File
+  slug: challenge-input-type-file
   page_type: exercise
 - title: Input Type - Tel
   slug: input-type-tel
   page_type: lesson
-- title: Exercise - Input Type - Tel
-  slug: exercise-input-type-tel
+- title: Challenge - Input Type - Tel
+  slug: challenge-input-type-tel
   page_type: exercise
 - title: Input Type - Number
   slug: input-type-number
   page_type: lesson
-- title: Exercise - Input Type - Number
-  slug: exercise-input-type-number
+- title: Challenge - Input Type - Number
+  slug: challenge-input-type-number
   page_type: exercise
-- title: HTML Challenge - Form
-  slug: html-challenge-form
+- title: HTML Assessment - Form
+  slug: html-assessment-form
   page_type: exercise
