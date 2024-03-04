@@ -5,45 +5,45 @@
 - title: First look at CSS
   slug: first-look-at-css
   page_type: lesson
-- title: Exercise - Write your first CSS code
-  slug: exercise-write-your-first-css-code
+- title: Challenge - Write your first CSS code
+  slug: challenge-write-your-first-css-code
   page_type: exercise
-- title: Exercise 2 - Write your first CSS code
-  slug: exercise-2-write-your-first-css-code
+- title: Challenge 2 - Write your first CSS code
+  slug: challenge-2-write-your-first-css-code
   page_type: exercise
 - title: Selectors
   slug: selectors
   page_type: lesson
-- title: Exercise - Selectors
-  slug: exercise-selectors
+- title: Challenge - Selectors
+  slug: challenge-selectors
   page_type: exercise
-- title: Exercise 2 - Selectors
-  slug: exercise-2-selectors
+- title: Challenge 2 - Selectors
+  slug: challenge-2-selectors
   page_type: exercise
 - title: Properties & Values
   slug: properties-values
   page_type: lesson
-- title: Exercise - Properties & Values
-  slug: exercise-properties-values
+- title: Challenge - Properties & Values
+  slug: challenge-properties-values
   page_type: exercise
-- title: Exercise 2 - Properties & Values
-  slug: exercise-2-properties-values
+- title: Challenge 2 - Properties & Values
+  slug: challenge-2-properties-values
   page_type: exercise
 - title: CSS Comments
   slug: css-comments
   page_type: lesson
-- title: Exercise - CSS Comments
-  slug: exercise-css-comments
+- title: Challenge - CSS Comments
+  slug: challenge-css-comments
   page_type: exercise
-- title: Exercise 2 - CSS Comments
-  slug: exercise-2-css-comments
+- title: Challenge 2 - CSS Comments
+  slug: challenge-2-css-comments
   page_type: exercise
 - title: Inline Style
   slug: inline-style
   page_type: lesson
-- title: Exercise - Inline Style
-  slug: exercise-inline-style
+- title: Challenge - Inline Style
+  slug: challenge-inline-style
   page_type: exercise
-- title: Exercise 2 - Inline Style
-  slug: exercise-2-inline-style
+- title: Challenge 2 - Inline Style
+  slug: challenge-2-inline-style
   page_type: exercise

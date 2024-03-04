@@ -2,41 +2,41 @@
 - title: Element Selectors
   slug: element-selectors
   page_type: lesson
-- title: Exercise - Element Selectors
-  slug: exercise-element-selectors
+- title: Challenge - Element Selectors
+  slug: challenge-element-selectors
   page_type: exercise
 - title: Class Selectors
   slug: class-selectors
   page_type: lesson
-- title: Exercise - Class Selectors
-  slug: exercise-class-selectors
+- title: Challenge - Class Selectors
+  slug: challenge-class-selectors
   page_type: exercise
 - title: Adding Multiple Classes
   slug: adding-multiple-classes
   page_type: lesson
-- title: Exercise - Adding Multiple Classes
-  slug: exercise-adding-multiple-classes
+- title: Challenge - Adding Multiple Classes
+  slug: challenge-adding-multiple-classes
   page_type: exercise
 - title: ID Selectors
   slug: id-selectors
   page_type: lesson
-- title: Exercise - ID Selectors
-  slug: exercise-id-selectors
+- title: Challenge - ID Selectors
+  slug: challenge-id-selectors
   page_type: exercise
-- title: Exercise - Class and ID Selectors
-  slug: exercise-class-and-id-selectors
+- title: Challenge - Class and ID Selectors
+  slug: challenge-class-and-id-selectors
   page_type: exercise
 - title: Selecting an Element
   slug: selecting-an-element
   page_type: lesson
-- title: Exercise - Selecting an Element using Element selector
-  slug: exercise-selecting-an-element-using-element-selector
+- title: Challenge - Selecting an Element using Element selector
+  slug: challenge-selecting-an-element-using-element-selector
   page_type: exercise
-- title: Exercise - Selecting an Element using Class selector
-  slug: exercise-selecting-an-element-using-class-selector
+- title: Challenge - Selecting an Element using Class selector
+  slug: challenge-selecting-an-element-using-class-selector
   page_type: exercise
-- title: Exercise - Selecting an Element using ID selector
-  slug: exercise-selecting-an-element-using-id-selector
+- title: Challenge - Selecting an Element using ID selector
+  slug: challenge-selecting-an-element-using-id-selector
   page_type: exercise
 - title: Naming Convention
   slug: naming-convention
@@ -44,9 +44,9 @@
 - title: Universal Selector
   slug: universal-selector
   page_type: lesson
-- title: Exercise - Universal Selector
-  slug: exercise-universal-selector
+- title: Challenge - Universal Selector
+  slug: challenge-universal-selector
   page_type: exercise
-- title: Selectors Challenge
-  slug: selectors-challenge
+- title: Selectors Assessment
+  slug: selectors-assessment
   page_type: exercise
