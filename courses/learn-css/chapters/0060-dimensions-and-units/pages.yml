@@ -2,20 +2,20 @@
 - title: Height
   slug: height
   page_type: lesson
-- title: Exercise - Height
-  slug: exercise-height
+- title: Challenge - Height
+  slug: challenge-height
   page_type: exercise
-- title: Exercise 2 - Height
-  slug: exercise-2-height
+- title: Challenge 2 - Height
+  slug: challenge-2-height
   page_type: exercise
 - title: Width
   slug: width
   page_type: lesson
-- title: Exercise - Width
-  slug: exercise-width
+- title: Challenge - Width
+  slug: challenge-width
   page_type: exercise
-- title: Exercise 2 - Width
-  slug: exercise-2-width
+- title: Challenge 2 - Width
+  slug: challenge-2-width
   page_type: exercise
 - title: Units
   slug: units
@@ -23,20 +23,20 @@
 - title: Pixels
   slug: pixels
   page_type: lesson
-- title: Exercise - Pixels
-  slug: exercise-pixels
+- title: Challenge - Pixels
+  slug: challenge-pixels
   page_type: exercise
-- title: Exercise 2 - Pixels
-  slug: exercise-2-pixels
+- title: Challenge 2 - Pixels
+  slug: challenge-2-pixels
   page_type: exercise
 - title: Percentages
   slug: percentages
   page_type: lesson
-- title: Exercise - Percentages
-  slug: exercise-percentages
+- title: Challenge - Percentages
+  slug: challenge-percentages
   page_type: exercise
-- title: Exercise 2 - Percentages
-  slug: exercise-2-percentages
+- title: Challenge 2 - Percentages
+  slug: challenge-2-percentages
   page_type: exercise
 - title: em - I
   slug: em-i
@@ -44,39 +44,39 @@
 - title: em - II
   slug: em-ii
   page_type: lesson
-- title: Exercise - em
-  slug: exercise-em
+- title: Challenge - em
+  slug: challenge-em
   page_type: exercise
-- title: Exercise 2 - em for div
-  slug: exercise-2-em
+- title: Challenge 2 - em for div
+  slug: challenge-2-em
   page_type: exercise
-- title: Exercise 3 - em for div
-  slug: exercise-3-em
+- title: Challenge 3 - em for div
+  slug: challenge-3-em
   page_type: exercise
 - title: rem
   slug: rem
   page_type: lesson
-- title: Exercise - rem
-  slug: exercise-rem
+- title: Challenge - rem
+  slug: challenge-rem
   page_type: exercise
-- title: Exercise 2 - rem
-  slug: exercise-2-rem
+- title: Challenge 2 - rem
+  slug: challenge-2-rem
   page_type: exercise
 - title: vh
   slug: vh
   page_type: lesson
-- title: Exercise - vh
-  slug: exercise-vh
+- title: Challenge - vh
+  slug: challenge-vh
   page_type: exercise
-- title: Exercise 2 - vh
-  slug: exercise-2-vh
+- title: Challenge 2 - vh
+  slug: challenge-2-vh
   page_type: exercise
 - title: vw
   slug: vw
   page_type: lesson
-- title: Exercise - vw
-  slug: exercise-vw
+- title: Challenge - vw
+  slug: challenge-vw
   page_type: exercise
-- title: Exercise 2 - vw
-  slug: exercise-2-vw
+- title: Challenge 2 - vw
+  slug: challenge-2-vw
   page_type: exercise
