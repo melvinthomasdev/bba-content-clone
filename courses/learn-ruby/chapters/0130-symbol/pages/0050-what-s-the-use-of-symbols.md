@@ -8,13 +8,13 @@ class Person
   attr_reader :name
   attr_writer :height
 
-  def initialize(name, height)
+  def initialize(name:, height:)
     @name = name
     @height = height
   end
 end
 
-mentor = Person.new(:name => 'Joe', :height => '5')
+mentor = Person.new(name: 'Joe', height: '5')
 </code>
 </codeblock>
 
