@@ -987,6 +987,8 @@
     "olivers",
     "NOWAIT",
     "innodb",
+    "Tahoma",
+    "Coffea",
     "Tahoma"
   ],
   // flagWords - list of words to be always considered incorrect

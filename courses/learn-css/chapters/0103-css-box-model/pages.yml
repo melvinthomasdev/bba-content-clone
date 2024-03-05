@@ -2,8 +2,8 @@
 - title: CSS Box Model
   slug: css-box-model
   page_type: lesson
-- title: Exercise - CSS Box Model
-  slug: exercise-css-box-model
+- title: Challenge - CSS Box Model
+  slug: challenge-css-box-model
   page_type: exercise
 - title: Box Sizing
   slug: box-sizing
@@ -11,12 +11,12 @@
 - title: Box Sizing - Border Box
   slug: box-sizing-border-box
   page_type: lesson
-- title: Exercise - Box Sizing Property for Divs
-  slug: exercise-box-sizing-property-for-divs
+- title: Challenge - Box Sizing Property for Divs
+  slug: challenge-box-sizing-property-for-divs
   page_type: exercise
-- title: Exercise - Box Sizing Property for Forms
-  slug: exercise-box-sizing-property-for-forms
+- title: Challenge - Box Sizing Property for Forms
+  slug: challenge-box-sizing-property-for-forms
   page_type: exercise
-- title: CSS Box Model Challenge
-  slug: box-model-challenge
+- title: CSS Box Model Assessment
+  slug: box-model-assessment
   page_type: exercise
