@@ -138,15 +138,15 @@ This is how data in the product state looks like:
     name: "Infinix INBOOK",
     slug: "infinix-inbook-2",
     available_quantity: 5,
-    image_url: "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
+    image_url: "https://ik.imagekit.io/d9mvewbju/SmileCart/thumbnail_61_7PaLfb.jpg",
     mrp: 32678,
     offer_price: 30990,
     description:
       "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey - 1 Year Warranty.",
     image_urls: [
-        "https://i.dummyjson.com/data/products/9/1.jpg",
-        "https://i.dummyjson.com/data/products/9/2.png",
-        "https://i.dummyjson.com/data/products/9/3.png"
+        "https://ik.imagekit.io/d9mvewbju/SmileCart/1_yuRfcETI5.jpg",
+        "https://ik.imagekit.io/d9mvewbju/SmileCart/2_HoKD2OblW.png",
+        "https://ik.imagekit.io/d9mvewbju/SmileCart/3_-6sHqwicC.png"
     ]
 }
 ```

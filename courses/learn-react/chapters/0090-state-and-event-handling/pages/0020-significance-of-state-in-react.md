@@ -62,10 +62,10 @@ const Carousel = () => {
 };
 
 const IMAGE_URLS = [
-  "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
-  "https://i.dummyjson.com/data/products/9/1.jpg",
-  "https://i.dummyjson.com/data/products/9/2.png",
-  "https://i.dummyjson.com/data/products/9/3.png",
+  "https://ik.imagekit.io/d9mvewbju/SmileCart/thumbnail_61_7PaLfb.jpg",
+  "https://ik.imagekit.io/d9mvewbju/SmileCart/1_yuRfcETI5.jpg",
+  "https://ik.imagekit.io/d9mvewbju/SmileCart/2_HoKD2OblW.png",
+  "https://ik.imagekit.io/d9mvewbju/SmileCart/3_-6sHqwicC.png"
 ];
 
 export default Carousel;

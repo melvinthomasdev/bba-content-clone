@@ -146,7 +146,7 @@ const Product = () => (
       <div className="w-2/5">
         <img
           alt="Product"
-          src="https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+          src="https://ik.imagekit.io/d9mvewbju/SmileCart/thumbnail_61_7PaLfb.jpg"
           className="w-10/12 h-64"
         />
       </div>

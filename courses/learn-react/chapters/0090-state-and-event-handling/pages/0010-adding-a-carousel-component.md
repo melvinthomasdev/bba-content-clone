@@ -64,19 +64,19 @@ const Carousel = ({ imageUrls, title }) => (
 
 We can use this component inside our `Product` component to display a Carousel. For that, we need a set of images. We can use some dummy images from the internet for the same:
 
-- https://i.dummyjson.com/data/products/9/thumbnail.jpg
-- https://i.dummyjson.com/data/products/9/1.jpg
-- https://i.dummyjson.com/data/products/9/2.png
-- https://i.dummyjson.com/data/products/9/3.png
+- https://ik.imagekit.io/d9mvewbju/SmileCart/thumbnail_61_7PaLfb.jpg
+- https://ik.imagekit.io/d9mvewbju/SmileCart/1_yuRfcETI5.jpg
+- https://ik.imagekit.io/d9mvewbju/SmileCart/2_HoKD2OblW.png
+- https://ik.imagekit.io/d9mvewbju/SmileCart/3_-6sHqwicC.png
 
 Let us create a constant array of these URLs. At Bigbinary, we follow the convention of naming constants in `UPPER_SNAKE_CASE` and grouping them within a file `constants.js`. Following this convention, let's create a `constants.js` file within `src/components` and place the above URLs into an array:
 
 ```js
 export const IMAGE_URLS = [
-  "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
-  "https://i.dummyjson.com/data/products/9/1.jpg",
-  "https://i.dummyjson.com/data/products/9/2.png",
-  "https://i.dummyjson.com/data/products/9/3.png",
+  "https://ik.imagekit.io/d9mvewbju/SmileCart/thumbnail_61_7PaLfb.jpg",
+  "https://ik.imagekit.io/d9mvewbju/SmileCart/1_yuRfcETI5.jpg",
+  "https://ik.imagekit.io/d9mvewbju/SmileCart/2_HoKD2OblW.png",
+  "https://ik.imagekit.io/d9mvewbju/SmileCart/3_-6sHqwicC.png"
 ];
 ```
 
