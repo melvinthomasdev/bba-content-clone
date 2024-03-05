@@ -1,6 +1,6 @@
 At the beginning of this chapter, we learned about mapping in React. Now, let's write a small piece of code that uses mapping.
 
-<codeblock language="reactjs" type="lesson">
+<codeblock language="reactjs" type="lesson" showConsole="true">
 <code>
 const fruits = ["Apple", "Mango", "Grapes"];
 
@@ -14,9 +14,7 @@ export default Fruits;
 
 In this example, we are rendering a list of fruits using the map method.
 
-Now, if you open your browser console, you will find a warning that says `Each child in a list should have a unique "key" prop`:
-
-<image>showing-browser-console.gif</image>
+In the console, you will find a warning that says `Each child in a list should have a unique "key" prop`.
 
 In React, when we use the map method to generate an array of JSX, we need to provide a `key` prop to the top level element within the map method. This key is like a label that tells React which specific item from the array each component represents.
 

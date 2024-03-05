@@ -115,5 +115,7 @@ images:
   - query-params-example.png
   - form-with-buttons.png
   - formik-validation.gif
+  - passing-id-as-key.gif
+  - passing-index-as-key.gif
 
 databases: []
