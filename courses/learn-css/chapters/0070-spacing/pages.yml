@@ -5,50 +5,50 @@
 - title: Side Margins
   slug: side-margins
   page_type: lesson
-- title: Exercise - Side Margins
-  slug: side-margins-ex1
+- title: Challenge - Side Margins
+  slug: side-margins-challenge-01
   page_type: exercise
-- title: Exercise 2- Side Margins
-  slug: exercise-2-side-margins
+- title: Challenge 2- Side Margins
+  slug: challenge-2-side-margins
   page_type: exercise
 - title: Margin Shorthand Property
   slug: margin-shorthand-property
   page_type: lesson
-- title: Exercise - Margin Shorthand Property
-  slug: exercise-margin-shorthand-property
+- title: Challenge - Margin Shorthand Property
+  slug: challenge-margin-shorthand-property
   page_type: exercise
-- title: Exercise 2 - Margin Shorthand Property
-  slug: exercise-margin-shorthand-property-2
+- title: Challenge 2 - Margin Shorthand Property
+  slug: challenge-margin-shorthand-property-2
   page_type: exercise
-- title: Exercise 3 - Margin Shorthand Property
-  slug: exercise-3-margin-shorthand-property
+- title: Challenge 3 - Margin Shorthand Property
+  slug: challenge-3-margin-shorthand-property
   page_type: exercise
 - title: Negative Margins
   slug: negative-margins
   page_type: lesson
-- title: Exercise - Negative Margins
-  slug: exercise-negative-margins
+- title: Challenge - Negative Margins
+  slug: challenge-negative-margins
   page_type: exercise
-- title: Exercise 2 - Negative Margins
-  slug: exercise-2-negative-margins
+- title: Challenge 2 - Negative Margins
+  slug: challenge-2-negative-margins
   page_type: exercise
 - title: Auto Margins
   slug: auto-margins
   page_type: lesson
-- title: Exercise - Auto Margins
-  slug: exercise-auto-margins
+- title: Challenge - Auto Margins
+  slug: challenge-auto-margins
   page_type: exercise
-- title: Exercise 2 - Auto Margins
-  slug: exercise-2-auto-margins
+- title: Challenge 2 - Auto Margins
+  slug: challenge-2-auto-margins
   page_type: exercise
 - title: Auto Margins with Width
   slug: auto-margins-with-width
   page_type: lesson
-- title: Exercise - Auto Margins with Width
-  slug: exercise-auto-margins-with-width
+- title: Challenge - Auto Margins with Width
+  slug: challenge-auto-margins-with-width
   page_type: exercise
-- title: Exercise 2 - Auto Margins with Width
-  slug: exercise-2-auto-margins-with-width
+- title: Challenge 2 - Auto Margins with Width
+  slug: challenge-2-auto-margins-with-width
   page_type: exercise
 - title: Padding
   slug: padding
@@ -56,30 +56,30 @@
 - title: Padding on Sides
   slug: padding-on-sides
   page_type: lesson
-- title: Exercise - Padding Individual Properties
-  slug: exercise-padding-individual-properties
+- title: Challenge - Padding Individual Properties
+  slug: challenge-padding-individual-properties
   page_type: exercise
-- title: Exercise 2 - Padding Individual Properties
-  slug: exercise-2-padding-individual-properties
+- title: Challenge 2 - Padding Individual Properties
+  slug: challenge-2-padding-individual-properties
   page_type: exercise
 - title: Padding Shorthand Property
   slug: padding-shorthand-property
   page_type: lesson
-- title: Exercise - Padding Shorthand Property
-  slug: exercise-padding-shorthand-property
+- title: Challenge - Padding Shorthand Property
+  slug: challenge-padding-shorthand-property
   page_type: exercise
-- title: Exercise 2 - Padding Shorthand Property
-  slug: exercise-padding-shorthand-property-2
+- title: Challenge 2 - Padding Shorthand Property
+  slug: challenge-padding-shorthand-property-2
   page_type: exercise
-- title: Exercise 3 - Padding Shorthand Property
-  slug: exercise-3-padding-shorthand-property
+- title: Challenge 3 - Padding Shorthand Property
+  slug: challenge-3-padding-shorthand-property
   page_type: exercise
 - title: Setting Margin and Padding Values in Percentages
   slug: margin-padding-in-percentages
   page_type: lesson
-- title: Exercise - Margin Values in Percentages
-  slug: exercise-margin-value-in-percentages
+- title: Challenge - Margin Values in Percentages
+  slug: challenge-margin-value-in-percentages
   page_type: exercise
-- title: Exercise - Padding Values in Percentages
-  slug: exercise-padding-value-in-percentages
+- title: Challenge - Padding Values in Percentages
+  slug: challenge-padding-value-in-percentages
   page_type: exercise
