@@ -354,4 +354,4 @@ git add -A
 git commit -m "Added component to display cart items and total cost"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/7544a2cdf7ad98d349f3b23adf3315dfe8a6c596).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/4c6297f009189d799fb0fe220583c1460073e192).

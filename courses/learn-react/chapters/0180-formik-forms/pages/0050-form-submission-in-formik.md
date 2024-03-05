@@ -286,4 +286,4 @@ git add -A
 git commit -m "Added submission handler to forms"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/4c144b07c1e741e3929daa99303a6e7a4fbf365b).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/f6ba45989add76731f3adef25cdc9e3dec34ab8d).

@@ -5,6 +5,9 @@
 - title: Adding checkout page
   slug: adding-checkout-page
   page_type: lesson
+- title: Persisting query client state
+  slug: persisting-query-client-state
+  page_type: lesson
 - title: Adding Yup validations to Formik form
   slug: adding-yup-validations-to-formik-form
   page_type: lesson
