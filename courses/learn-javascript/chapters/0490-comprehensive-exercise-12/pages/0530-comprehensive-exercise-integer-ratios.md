@@ -17,7 +17,7 @@ const integerRatios = arr => {
   arr.forEach(e => {
     if (e > 0) positives++;
     if (e < 0) negatives++;
-    if (e == 0) zeros++;
+    if (e === 0) zeros++;
   });
   const positivesRatio = (positives / arr.length).toFixed(4);
   const negativesRatio = (negatives / arr.length).toFixed(4);

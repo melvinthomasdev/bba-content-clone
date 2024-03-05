@@ -29,7 +29,7 @@ const participant = {
 };
 
 // Write code below
-if (participant.role == "admin") {
+if (participant.role === "admin") {
   console.log(`${participant.name} has access to admin area.`)
 } else {
   console.log(`${participant.name} has access to public area.`)

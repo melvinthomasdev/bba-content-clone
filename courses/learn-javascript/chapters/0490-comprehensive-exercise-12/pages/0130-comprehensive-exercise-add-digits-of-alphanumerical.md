@@ -14,7 +14,7 @@ const findSumOfDigits = alphaNumeric => {
 const findSumOfDigits = alphaNumeric => {
   const characters = alphaNumeric.split("");
   return characters
-    .filter(ch => isNaN(ch) == false)
+    .filter(ch => isNaN(ch) === false)
     .map(Number)
     .reduce((sum, digit) => sum + digit, false);
 };

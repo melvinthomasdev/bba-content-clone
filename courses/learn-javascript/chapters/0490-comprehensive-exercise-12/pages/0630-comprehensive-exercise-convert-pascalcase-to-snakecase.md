@@ -13,7 +13,7 @@ const toSnakeCase = str =>
   str
     .split("")
     .slice(1)
-    .map(char => char == char.toUpperCase() ? "_" + char.toLowerCase() : char)
+    .map(char => char === char.toUpperCase() ? "_" + char.toLowerCase() : char)
     .join("");
 </solution>
 

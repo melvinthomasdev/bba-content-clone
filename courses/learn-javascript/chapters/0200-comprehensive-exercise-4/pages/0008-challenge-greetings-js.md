@@ -6,7 +6,7 @@ function `callback`.
 The `callback` should always be
 `console.log`. If the function
 is not `console.log` then log
-to the console: 
+to the console:
 "Provide correct callback."
 
 Else, `greetings` should call
@@ -19,7 +19,7 @@ the `message` as argument.
 </code>
 <solution>
 const greetings = (message, callback) => {
-  if (callback == console.log){
+  if (callback === console.log){
     return callback(message);
   } else {
     console.log("Provide correct callback.")

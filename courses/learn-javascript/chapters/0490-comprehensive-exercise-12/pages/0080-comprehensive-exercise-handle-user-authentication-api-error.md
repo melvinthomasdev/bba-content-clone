@@ -37,7 +37,7 @@ const authUser  = ({ userId, userName, thirdPartyAuthAPI }) => {
 <testcases>
 <caller>
 const thirdPartyAuthAPI = (userId, concatinatedValue) => {
-    if (userId % 13 == 0) {
+    if (userId % 13 === 0) {
       throw new Error('Please contact the system administrator');
     }
     const loginToken = concatinatedValue.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);
