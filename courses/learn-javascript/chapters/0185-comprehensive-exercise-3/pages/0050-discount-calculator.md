@@ -2,7 +2,7 @@ Update the function **getDiscountedPrice** to calculate the discounted price of 
 
 The function parameters are,
 
-- **originalPrice (number):** It is the original price of the item. 
+- **originalPrice (number):** It is the original price of the item.
 - **isMember (boolean):** It indicates if the customer is a member (true) or not (false)
 - **hasCoupon (boolean):** It indicates if the customer has a coupon (true) or not (false).
 
@@ -28,8 +28,10 @@ const getDiscountedPrice = (originalPrice, isMember, hasCoupon) => {
 
   if (isMember && hasCoupon) {
     discount = 0.30; // 30% discount
-  } else if (isMember || hasCoupon) {
+  } else if (hasCoupon) {
     discount = 0.20; // 20% discount
+  } else if (isMember){
+    discount = 0.10; // 10% discount
   } else {
     discount = 0; // No discount
   }
