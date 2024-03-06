@@ -2,24 +2,24 @@
 - title: Styling Lists
   slug: styling-lists
   page_type: lesson
-- title: Exercise - Styling Unordered Lists
-  slug: exercise-styling-unordered-lists
+- title: Challenge - Styling Unordered Lists
+  slug: challenge-styling-unordered-lists
   page_type: exercise
-- title: Exercise - Styling Ordered Lists
-  slug: exercise-styling-ordered-lists
+- title: Challenge - Styling Ordered Lists
+  slug: challenge-styling-ordered-lists
   page_type: exercise
 - title: List Marker Image
   slug: list-marker-image
   page_type: lesson
-- title: Exercise - List Marker Image
-  slug: exercise-list-marker-image
+- title: Challenge - List Marker Image
+  slug: challenge-list-marker-image
   page_type: exercise
 - title: List Marker Position
   slug: list-marker-position
   page_type: lesson
-- title: Exercise - List Marker Position
-  slug: exercise-list-marker-position
+- title: Challenge - List Marker Position
+  slug: challenge-list-marker-position
   page_type: exercise
-- title: Styling Lists Challenge
-  slug: styling-lists-challenge
+- title: Styling Lists Assessment
+  slug: styling-lists-assessment
   page_type: exercise

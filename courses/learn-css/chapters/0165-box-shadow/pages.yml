@@ -8,36 +8,36 @@
 - title: Box Shadow Offsets
   slug: box-shadow-offsets
   page_type: lesson
-- title: Exercise - Box Shadow Offsets
-  slug: exercise-box-shadow-offsets
+- title: Challenge - Box Shadow Offsets
+  slug: challenge-box-shadow-offsets
   page_type: exercise
 - title: Adding colour to Shadow
   slug: adding-colour-to-shadow
   page_type: lesson
-- title: Exercise - Adding colour to Shadow
-  slug: exercise-adding-colour-to-shadow
+- title: Challenge - Adding colour to Shadow
+  slug: challenge-adding-colour-to-shadow
   page_type: exercise
 - title: Adding blur-radius to Shadow
   slug: adding-blur-radius-to-shadow
   page_type: lesson
-- title: Exercise - Adding blur-radius to Shadow
-  slug: exercise-adding-blur-radius-to-shadow
+- title: Challenge - Adding blur-radius to Shadow
+  slug: challenge-adding-blur-radius-to-shadow
   page_type: exercise
 - title: Adding spread-radius to Shadow
   slug: adding-spread-radius-to-shadow
   page_type: lesson
-- title: Exercise - Adding spread-radius to Shadow
-  slug: exercise-adding-spread-radius-to-shadow
+- title: Challenge - Adding spread-radius to Shadow
+  slug: challenge-adding-spread-radius-to-shadow
   page_type: exercise
 - title: Adding multiple Box Shadows
   slug: adding-multiple-box-shadows
   page_type: lesson
-- title: Exercise - Adding multiple Box Shadows
-  slug: exercise-adding-multiple-box-shadows
+- title: Challenge - Adding multiple Box Shadows
+  slug: challenge-adding-multiple-box-shadows
   page_type: exercise
 - title: Adding Inner Shadow using inset
   slug: adding-inner-shadow-using-inset
   page_type: lesson
-- title: Exercise - Adding Inner Shadow using inset
-  slug: exercise-adding-inner-shadow-using-inset
+- title: Challenge - Adding Inner Shadow using inset
+  slug: challenge-adding-inner-shadow-using-inset
   page_type: exercise

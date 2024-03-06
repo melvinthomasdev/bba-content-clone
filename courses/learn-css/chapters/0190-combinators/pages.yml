@@ -5,24 +5,24 @@
 - title: Selecting all Child Elements
   slug: selecting-all-child-elements
   page_type: lesson
-- title: Exercise - Selecting all Child Elements
-  slug: exercise-selecting-all-child-elements
+- title: Challenge - Selecting all Child Elements
+  slug: challenge-selecting-all-child-elements
   page_type: exercise
 - title: Selecting Direct Child Elements
   slug: selecting-direct-child-elements
   page_type: lesson
-- title: Exercise - Selecting Direct Child Elements
-  slug: exercise-selecting-direct-child-elements
+- title: Challenge - Selecting Direct Child Elements
+  slug: challenge-selecting-direct-child-elements
   page_type: exercise
 - title: Selecting Immediate Next Element
   slug: selecting-immediate-next-element
   page_type: lesson
-- title: Exercise - Selecting Immediate Next Element
-  slug: exercise-selecting-immediate-next-element
+- title: Challenge - Selecting Immediate Next Element
+  slug: challenge-selecting-immediate-next-element
   page_type: exercise
 - title: Selecting any Next Element
   slug: selecting-any-next-element
   page_type: lesson
-- title: Exercise - Selecting any Next Element
-  slug: exercise-selecting-any-next-element
+- title: Challenge - Selecting any Next Element
+  slug: challenge-selecting-any-next-element
   page_type: exercise

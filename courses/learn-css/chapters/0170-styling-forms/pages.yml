@@ -5,60 +5,60 @@
 - title: Width & Height for Text Inputs
   slug: width-height-for-text-inputs
   page_type: lesson
-- title: Exercise - Width & Height for Text Inputs
-  slug: exercise-width-height-for-text-inputs
+- title: Challenge - Width & Height for Text Inputs
+  slug: challenge-width-height-for-text-inputs
   page_type: exercise
 - title: Selecting input by type
   slug: selecting-input-by-type
   page_type: lesson
-- title: Exercise - Selecting input by type
-  slug: exercise-selecting-input-by-type
+- title: Challenge - Selecting input by type
+  slug: challenge-selecting-input-by-type
   page_type: exercise
 - title: Padding & Margin for Text Inputs
   slug: padding-margin-for-text-inputs
   page_type: lesson
-- title: Exercise - Padding & Margin for Text Inputs
-  slug: exercise-padding-margin-for-text-inputs
+- title: Challenge - Padding & Margin for Text Inputs
+  slug: challenge-padding-margin-for-text-inputs
   page_type: exercise
 - title: Borders for Text Inputs
   slug: borders-for-text-inputs
   page_type: lesson
-- title: Exercise - Borders for Text Inputs
-  slug: exercise-borders-for-text-inputs
+- title: Challenge - Borders for Text Inputs
+  slug: challenge-borders-for-text-inputs
   page_type: exercise
 - title: Color for Text Inputs
   slug: color-for-text-inputs
   page_type: lesson
-- title: Exercise - Color for Text Inputs
-  slug: exercise-color-for-text-inputs
+- title: Challenge - Color for Text Inputs
+  slug: challenge-color-for-text-inputs
   page_type: exercise
 - title: Font and Font Size for Text Inputs
   slug: font-and-size-for-text-inputs
   page_type: lesson
-- title: Exercise - Font and Font Size for Text Inputs
-  slug: exercise-font-and-size-for-text-inputs
+- title: Challenge - Font and Font Size for Text Inputs
+  slug: challenge-font-and-size-for-text-inputs
   page_type: exercise
 - title: Textarea Resize
   slug: textarea-resize
   page_type: lesson
-- title: Exercise - Textarea Resize
-  slug: exercise-textarea-resize
+- title: Challenge - Textarea Resize
+  slug: challenge-textarea-resize
   page_type: exercise
 - title: Styling Select Inputs
   slug: styling-select-inputs
   page_type: lesson
-- title: Exercise - Styling Select Inputs
-  slug: exercise-styling-select-inputs
+- title: Challenge - Styling Select Inputs
+  slug: challenge-styling-select-inputs
   page_type: exercise
 - title: Styling Buttons
   slug: styling-buttons
   page_type: lesson
-- title: Exercise - Styling Buttons
-  slug: exercise-styling-buttons
+- title: Challenge - Styling Buttons
+  slug: challenge-styling-buttons
   page_type: exercise
 - title: Hover & Focus Styles
   slug: hover-focus-styles
   page_type: lesson
-- title: Exercise - Hover & Focus Styles
-  slug: exercise-hover-focus-styles
+- title: Challenge - Hover & Focus Styles
+  slug: challenge-hover-focus-styles
   page_type: exercise
