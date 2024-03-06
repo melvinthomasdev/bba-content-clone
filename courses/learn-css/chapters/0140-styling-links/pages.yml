@@ -2,11 +2,11 @@
 - title: Styling Links
   slug: styling-links
   page_type: lesson
-- title: Exercise - Styling Links with color
-  slug: exercise-styling-links-with-color
+- title: Challenge - Styling Links with color
+  slug: challenge-styling-links-with-color
   page_type: exercise
-- title: Exercise - Styling Links like buttons
-  slug: exercise-styling-links-like-buttons
+- title: Challenge - Styling Links like buttons
+  slug: challenge-styling-links-like-buttons
   page_type: exercise
 - title: Spacing around links
   slug: spacing-around-links
@@ -17,9 +17,9 @@
 - title: More Examples - Styling Links using States
   slug: example-styling-links-using-states
   page_type: lesson
-- title: Exercise - Styling Links using States
-  slug: exercise-styling-links-using-states
+- title: Challenge - Styling Links using States
+  slug: challenge-styling-links-using-states
   page_type: exercise
-- title: Exercise 2 - Styling Links using States
-  slug: exercise-styling-links-using-states-2
+- title: Challenge 2 - Styling Links using States
+  slug: challenge-styling-links-using-states-2
   page_type: exercise
