@@ -1,8 +1,8 @@
 - title: Reviewing Selectors
   slug: reviewing-selectors
   page_type: lesson
-- title: Exercise - Reviewing Selectors
-  slug: exercise-reviewing-selectors
+- title: Challenge - Reviewing Selectors
+  slug: challenge-reviewing-selectors
   page_type: exercise
 - title: Specificity of Selectors
   slug: specificity-of-selectors
@@ -10,6 +10,6 @@
 - title: Examining HTML Elements
   slug: examining-html-elements
   page_type: lesson
-- title: Exercise - Resolving CSS errors
-  slug: exercise-resolving-css-errors
+- title: Challenge - Resolving CSS errors
+  slug: challenge-resolving-css-errors
   page_type: exercise

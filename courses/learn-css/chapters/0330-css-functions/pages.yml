@@ -2,32 +2,32 @@
 - title: "`attr` Function"
   slug: attr-function
   page_type: lesson
-- title: Exercise - `attr` Function
-  slug: exercise-attr-function
+- title: Challenge - `attr` Function
+  slug: challenge-attr-function
   page_type: exercise
 - title: "`calc` Function"
   slug: calc-function
   page_type: lesson
-- title: Exercise - `calc` Function
-  slug: exercise-calc-function
+- title: Challenge - `calc` Function
+  slug: challenge-calc-function
   page_type: exercise
 - title: "`conic-gradient` Function Introduction"
   slug: conic-gradient-function-intro
   page_type: lesson
-- title: Exercise - `conic-gradient` Function Introduction
-  slug: exercise-conic-gradient-function-intro
+- title: Challenge - `conic-gradient` Function Introduction
+  slug: challenge-conic-gradient-function-intro
   page_type: exercise
 - title: Conic Gradient with Start and Stop Values
   slug: conic-gradient-start-stop
   page_type: lesson
-- title: Exercise - Conic Gradient with Start and Stop Values
-  slug: exercise-conic-gradient-start-stop
+- title: Challenge - Conic Gradient with Start and Stop Values
+  slug: challenge-conic-gradient-start-stop
   page_type: exercise
 - title: Changing Starting Angle in Conic Gradient
   slug: conic-gradient-changing-starting-angle
   page_type: lesson
-- title: Exercise - Changing Starting Angle in Conic Gradient
-  slug: exercise-conic-gradient-changing-starting-angle
+- title: Challenge - Changing Starting Angle in Conic Gradient
+  slug: challenge-conic-gradient-changing-starting-angle
   page_type: exercise
 - title: "`counter` Function Introduction"
   slug: counter-function-intro
@@ -38,14 +38,14 @@
 - title: Counter increment
   slug: counter-increment
   page_type: lesson
-- title: Exercise - `counter` Function
-  slug: exercise-counter-function
+- title: Challenge - `counter` Function
+  slug: challenge-counter-function
   page_type: exercise
 - title: Counter List Style
   slug: counter-list-style
   page_type: lesson
-- title: Exercise - Counter List Style
-  slug: exercise-counter-list-style
+- title: Challenge - Counter List Style
+  slug: challenge-counter-list-style
   page_type: exercise
 - title: "`cubic-bezier` Function"
   slug: cubic-bezier-function
@@ -53,68 +53,68 @@
 - title: "`cubic-bezier` Function 2"
   slug: cubic-bezier-function-2
   page_type: lesson
-- title: Exercise - `cubic-bezier` Function
-  slug: exercise-cubic-bezier-function
+- title: Challenge - `cubic-bezier` Function
+  slug: challenge-cubic-bezier-function
   page_type: exercise
 - title: "`linear-gradient` Function Introduction"
   slug: linear-gradient-function
   page_type: lesson
-- title: Exercise - `linear-gradient` Function Introduction
-  slug: exercise-linear-gradient-function
+- title: Challenge - `linear-gradient` Function Introduction
+  slug: challenge-linear-gradient-function
   page_type: exercise
 - title: "`linear-gradient` Direction"
   slug: linear-gradient-direction
   page_type: lesson
-- title: Exercise - `linear-gradient` Direction
-  slug: exercise-linear-gradient-direction
+- title: Challenge - `linear-gradient` Direction
+  slug: challenge-linear-gradient-direction
   page_type: exercise
 - title: Diagonal Gradient
   slug: diagonal-gradient
   page_type: lesson
-- title: Exercise - Diagonal Gradient
-  slug: exercise-diagonal-gradient
+- title: Challenge - Diagonal Gradient
+  slug: challenge-diagonal-gradient
   page_type: exercise
 - title: Gradient at a Specific Angle
   slug: linear-gradient-angle
   page_type: lesson
-- title: Exercise - Gradient at a Specific Angle
-  slug: exercise-linear-gradient-angle
+- title: Challenge - Gradient at a Specific Angle
+  slug: challenge-linear-gradient-angle
   page_type: exercise
 - title: Gradient with Percentage Color Stops
   slug: linear-gradient-percentage
   page_type: lesson
-- title: Exercise - Gradient with Percentage Color Stops
-  slug: exercise-linear-gradient-percentage
+- title: Challenge - Gradient with Percentage Color Stops
+  slug: challenge-linear-gradient-percentage
   page_type: exercise
 - title: "`max` Function"
   slug: max-function
   page_type: lesson
-- title: Exercise - `max` Function
-  slug: exercise-max-function
+- title: Challenge - `max` Function
+  slug: challenge-max-function
   page_type: exercise
 - title: "`min` Function"
   slug: min-function
   page_type: lesson
-- title: Exercise - `min` Function
-  slug: exercise-min-function
+- title: Challenge - `min` Function
+  slug: challenge-min-function
   page_type: exercise
 - title: "`radial-gradient` Function Introduction"
   slug: radial-gradient-function
   page_type: lesson
-- title: Exercise - `radial-gradient` Function Introduction
-  slug: exercise-radial-gradient-function
+- title: Challenge - `radial-gradient` Function Introduction
+  slug: challenge-radial-gradient-function
   page_type: exercise
 - title: "`radial-gradient` Percentage Color Stops"
   slug: radial-gradient-percentage
   page_type: lesson
-- title: Exercise - `radial-gradient` Percentage Color Stops
-  slug: exercise-radial-gradient-percentage
+- title: Challenge - `radial-gradient` Percentage Color Stops
+  slug: challenge-radial-gradient-percentage
   page_type: exercise
 - title: "`radial-gradient` Shape"
   slug: radial-gradient-shape
   page_type: lesson
-- title: Exercise - `radial-gradient` Shape
-  slug: exercise-radial-gradient-shape
+- title: Challenge - `radial-gradient` Shape
+  slug: challenge-radial-gradient-shape
   page_type: exercise
 - title: "`radial-gradient` Shape with Position"
   slug: radial-gradient-shape-with-position
@@ -122,18 +122,18 @@
 - title: "`radial-gradient` Shape with Position 2"
   slug: radial-gradient-shape-with-position-2
   page_type: lesson
-- title: Exercise - `radial-gradient` Shape with Position
-  slug: exercise-radial-gradient-shape-with-position
+- title: Challenge - `radial-gradient` Shape with Position
+  slug: challenge-radial-gradient-shape-with-position
   page_type: exercise
 - title: "`radial-gradient` Size"
   slug: radial-gradient-size
   page_type: lesson
-- title: Exercise - `radial-gradient` Size
-  slug: exercise-radial-gradient-size
+- title: Challenge - `radial-gradient` Size
+  slug: challenge-radial-gradient-size
   page_type: exercise
 - title: "`radial-gradient` Size Keywords"
   slug: radial-gradient-size-keywords
   page_type: lesson
-- title: Exercise - `radial-gradient` Size Keywords
-  slug: exercise-radial-gradient-size-keywords
+- title: Challenge - `radial-gradient` Size Keywords
+  slug: challenge-radial-gradient-size-keywords
   page_type: exercise
