@@ -5,27 +5,27 @@
 - title: Styling First Line and First Letter
   slug: first-line-first-letter
   page_type: lesson
-- title: Exercise - Styling First Line
-  slug: exercise-styling-first-line
+- title: Challenge - Styling First Line
+  slug: challenge-styling-first-line
   page_type: exercise
-- title: Exercise - Styling First Letter
-  slug: exercise-styling-first-letter
+- title: Challenge - Styling First Letter
+  slug: challenge-styling-first-letter
   page_type: exercise
 - title: The 'before' Pseudo-element
   slug: before-pseudo-element
   page_type: lesson
-- title: Exercise - The 'before' Pseudo-element
-  slug: exercise-before-pseudo-element
+- title: Challenge - The 'before' Pseudo-element
+  slug: challenge-before-pseudo-element
   page_type: exercise
 - title: The 'after' Pseudo-element
   slug: after-pseudo-element
   page_type: lesson
-- title: Exercise - The 'after' Pseudo-element
-  slug: exercise-after-pseudo-element
+- title: Challenge - The 'after' Pseudo-element
+  slug: challenge-after-pseudo-element
   page_type: exercise
 - title: Initial Letter
   slug: initial-letter
   page_type: lesson
-- title: Exercise - Initial Letter
-  slug: exercise-initial-letter
+- title: Challenge - Initial Letter
+  slug: challenge-initial-letter
   page_type: exercise

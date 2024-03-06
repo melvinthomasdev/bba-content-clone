@@ -2,24 +2,24 @@
 - title: Cascade
   slug: cascade
   page_type: lesson
-- title: Exercise - Cascade
-  slug: exercise-cascade
+- title: Challenge - Cascade
+  slug: challenge-cascade
   page_type: exercise
 - title: Specificity Hierarchy
   slug: specificity-hierarchy
   page_type: lesson
-- title: Exercise - Specificity Hierarchy
-  slug: exercise-specificity-hierarchy
+- title: Challenge - Specificity Hierarchy
+  slug: challenge-specificity-hierarchy
   page_type: exercise
 - title: Specificity Value
   slug: specificity-value
   page_type: lesson
-- title: Exercise - Specificity Value
-  slug: exercise-specificity-value
+- title: Challenge - Specificity Value
+  slug: challenge-specificity-value
   page_type: exercise
 - title: The !important rule
   slug: important-rule
   page_type: lesson
-- title: Exercise - The !important rule
-  slug: exercise-important-rule
+- title: Challenge - The !important rule
+  slug: challenge-important-rule
   page_type: exercise

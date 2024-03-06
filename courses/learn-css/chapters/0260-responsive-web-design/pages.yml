@@ -5,8 +5,8 @@
 - title: The Media Rule
   slug: the-media-rule
   page_type: lesson
-- title: Exercise - Media Queries
-  slug: exercise-media-queries
+- title: Challenge - Media Queries
+  slug: challenge-media-queries
   page_type: exercise
 - title: Breakpoints
   slug: breakpoints
@@ -14,26 +14,26 @@
 - title: Mobile first and Desktop first Approaches
   slug: mobile-first-desktop-first
   page_type: lesson
-- title: Exercise - Breakpoints
-  slug: exercise-breakpoints
+- title: Challenge - Breakpoints
+  slug: challenge-breakpoints
   page_type: exercise
 - title: Media Queries for Orientation
   slug: media-queries-for-orientation
   page_type: lesson
-- title: Exercise - Media Queries for Orientation
-  slug: exercise-media-queries-for-orientation
+- title: Challenge - Media Queries for Orientation
+  slug: challenge-media-queries-for-orientation
   page_type: exercise
 - title: Responsive Images
   slug: responsive-images
   page_type: lesson
-- title: Exercise - Responsive Images
-  slug: exercise-responsive-images
+- title: Challenge - Responsive Images
+  slug: challenge-responsive-images
   page_type: exercise
 - title: Responsive Text
   slug: responsive-text
   page_type: lesson
-- title: Exercise - Responsive Text
-  slug: exercise-responsive-text
+- title: Challenge - Responsive Text
+  slug: challenge-responsive-text
   page_type: exercise
 - title: Responsive Blocks
   slug: responsive-blocks

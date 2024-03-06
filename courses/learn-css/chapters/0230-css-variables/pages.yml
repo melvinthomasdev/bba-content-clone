@@ -1,14 +1,14 @@
 - title: CSS variables
   slug: css-variables
   page_type: lesson
-- title: Exercise - CSS variables
-  slug: exercise-css-variables
+- title: Challenge - CSS variables
+  slug: challenge-css-variables
   page_type: exercise
 - title: CSS :root
   slug: css-root
   page_type: lesson
-- title: Exercise - CSS :root
-  slug: exercise-css-root
+- title: Challenge - CSS :root
+  slug: challenge-css-root
   page_type: exercise
 - title: CSS variables - Specificity
   slug: css-variables-specificity

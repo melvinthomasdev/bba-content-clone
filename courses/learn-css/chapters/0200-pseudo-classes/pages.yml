@@ -5,20 +5,20 @@
 - title: Hover
   slug: hover
   page_type: lesson
-- title: Exercise - Hover
-  slug: exercise-hover
+- title: Challenge - Hover
+  slug: challenge-hover
   page_type: exercise
 - title: Focus
   slug: focus
   page_type: lesson
-- title: Exercise - Focus
-  slug: exercise-focus
+- title: Challenge - Focus
+  slug: challenge-focus
   page_type: exercise
 - title: Active
   slug: active
   page_type: lesson
-- title: Exercise - Active
-  slug: exercise-active
+- title: Challenge - Active
+  slug: challenge-active
   page_type: exercise
 - title: Styling Links with Pseudo-classes
   slug: styling-links-with-pseudo-classes
@@ -29,24 +29,24 @@
 - title: First and Last Child
   slug: first-last-child
   page_type: lesson
-- title: Exercise - First and Last Child
-  slug: exercise-first-last-child
+- title: Challenge - First and Last Child
+  slug: challenge-first-last-child
   page_type: exercise
 - title: nth Child
   slug: nth-child
   page_type: lesson
-- title: Exercise - nth child
-  slug: exercise-nth-child
+- title: Challenge - nth child
+  slug: challenge-nth-child
   page_type: exercise
 - title: First and Last of Type
   slug: first-last-of-type
   page_type: lesson
-- title: Exercise - First and Last of Type
-  slug: exercise-first-last-of-type
+- title: Challenge - First and Last of Type
+  slug: challenge-first-last-of-type
   page_type: exercise
 - title: nth of Type
   slug: nth-of-type
   page_type: lesson
-- title: Exercise - nth of Type
-  slug: exercise-nth-of-type
+- title: Challenge - nth of Type
+  slug: challenge-nth-of-type
   page_type: exercise
