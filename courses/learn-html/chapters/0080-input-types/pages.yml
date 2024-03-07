@@ -62,6 +62,12 @@
 - title: Challenge - Input Type - Date
   slug: challenge-input-type-date
   page_type: exercise
+- title: Input Type - Time
+  slug: input-type-time
+  page_type: lesson
+- title: Challenge - Input Type - Time
+  slug: challenge-input-type-time
+  page_type: exercise
 - title: Input Type - File
   slug: input-type-file
   page_type: lesson
@@ -79,6 +85,12 @@
   page_type: lesson
 - title: Challenge - Input Type - Number
   slug: challenge-input-type-number
+  page_type: exercise
+- title: Input Type - Datetime
+  slug: input-type-datetime
+  page_type: lesson
+- title: Exercise - Input Type - Datetime
+  slug: exercise-input-type-datetime
   page_type: exercise
 - title: HTML Assessment - Form
   slug: html-assessment-form
