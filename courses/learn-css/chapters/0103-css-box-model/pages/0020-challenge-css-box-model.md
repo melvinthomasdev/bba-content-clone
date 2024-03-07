@@ -32,7 +32,7 @@ div {
   padding: 20px;
   margin: 20px;
   border: solid 5px yellow;
-  width: 410px;
+  width: 450px;
 }
 </solution>
 </codeblock>
