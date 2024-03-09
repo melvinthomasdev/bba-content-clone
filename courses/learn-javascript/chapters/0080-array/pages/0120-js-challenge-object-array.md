@@ -15,18 +15,13 @@ details of a movie:
 Then update the IMDB rating
 of the movie to be 10.
 
-Log to the console all the
-details of the movie, in
-a way that only values and
-not the properties are printed.
+Log to the console an array with all the
+details of the movie. In
+a way that only values are printed.
 
 Expected output:
 ```js
-Unbelievable 
-Crime, Drama
-Lisa Cholodenko, Michael Dinner, Susannah Grant
-Merritt Wever
-10
+["Unbelievable", ["Crime", "Drama"], ["Lisa Cholodenko", "Michael Dinner", "Susannah Grant", "Merritt Wever"], 10]
 ```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
