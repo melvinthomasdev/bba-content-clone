@@ -1,6 +1,6 @@
-## push operator over overload operator
+## Use push operator over overload operator
 
-Refrain use of overload addition(+=) ruby operator and replacing it with push(<<) operator for strings and   arrays.
+Refrain use of overload addition (+=) ruby operator. Instead, replace it with the push (<<) operator for strings and arrays.
 
 <image>overload-vs-push-benchmark.png</image>
 
@@ -24,7 +24,7 @@ message = "Assigned to"
 message += "agent #{user.name}" if user
 ```
 
-## Use of bang methods
+## Correct use of bang methods
 
 Use In-Place updates(destructive operations) selectively to save copying overhead.
 
@@ -80,7 +80,7 @@ Use Case:
     if message == "Assigned to me"
     ```
 
-## Refraining use of BigDecimal comparison with integer or string
+## Avoid comparison of BigDecimal with integer or string
 
 ```ruby
 # Do's
@@ -90,7 +90,7 @@ if BigDecimal("3.12456") <=> BigDecimal("5.12456")
 if BigDecimal("3.12456") <=> 5.12456
 ```
 
-## Using String Interpolation instead of + operator
+## Use String Interpolation instead of + operator
 
 ```ruby
 # Do's
@@ -227,7 +227,7 @@ class Api::V1::Desk::MergeTicketsController < Api::V1::BaseController
 end
 ```
 
-## Optimizing use of constants
+## Optimize use of constants
 
 Optimize access to Global constants through use of namespace operator `::` in front of constant.
 
@@ -243,7 +243,7 @@ def get_placeholders_carrier(object)
 end
 ```
 
-## Using constant declaration for temporary data structures
+## Use constant declaration for temporary data structures
 
 Using constant declaration for temporary data structures like Array, which are not going to be changed overtime.
 
@@ -272,11 +272,11 @@ def can_view_tickets?
   )
 end
 ```
-## Using blocks instead of Symbol.to_proc
+## Use blocks instead of Symbol.to_proc
 
 <image>SymbolProc-vs-blocks.png</image>
 
-## Ordering under different cases
+## Order under different cases
 
 1. Most frequent case shall be added first
 2. If all cases are equally frequent, prefer sorting in increasing order of computation
@@ -307,7 +307,7 @@ else
   condition.value
 end
 ```
-## Avoiding operations clearing Ruby's method cache
+## Avoid operations which clear Ruby's method cache
 Dynamic language implementations use 'inline method caching', which avoid expensive method lookups frequently. But some the below given methods invalidates the method caching, so avoiding them at runtime is critical to writing fast Ruby code.
 
     - Aliasing or removing methods (Module#alias_method and Module#remove_method): Aliasing and removing methods invalidates the method caches
@@ -340,27 +340,27 @@ end
 end
 ```
 
-## Caching data in variables
+## Cache data in variables
 
-1. Caching Data in Instance Variables
+1. Cache Data in Instance Variables
 
 <image>caching-data-instance-vars.png</image>
 
 <image>general-caching-practice-example.png</image>
 
-2. Caching Data in Class Variables for large persisting data
+2. Cache Data in Class Variables for large persisting data
 
 <image>caching-data-class-vars.png</image>
 
-3. Using constants to store database results to avoid hitting db frequently
+3. Use constants to store database results to avoid hitting db frequently
 
 <image>constants-for-db-data.png</image>
 
-## Using ActiveSupport::Memoizable for memoizing expensive operations
+## Use ActiveSupport::Memoizable for memoization of expensive operations
 
 <image>active-support-memoizable.png</image>
 
-## Initializing variable with nil
+## Initialize variable with nil
 
 Instance variables already default to nil.
 
@@ -373,7 +373,7 @@ Instance variables already default to nil.
 @status = "available" if @organization.request_in_business_hours?
 ```
 
-## Using conditionals directly in place of .nil?
+## Use conditionals directly in place of .nil?
 
 Avoiding method overhead call by directly using `if user` instead of `if user.nil?`
 
@@ -395,7 +395,7 @@ unless @ticket
 if @ticket.nil?
 ```
 
-## Using blank? in place of empty? or nil?
+## Use blank? in place of empty? or nil?
 
 Since blank? checks for both case of value to be nil or empty, it's better to use blank? in such cases.
 
@@ -435,7 +435,7 @@ SUPPORTED_VERB_CONDITIONS = [
 SUPPORTED_VERB_CONDITIONS.include? verb
 ```
 
-## Avoiding repeated Hash access
+## Avoid repeated Hash access
 
 ```ruby
 # Not preferred
@@ -451,7 +451,7 @@ group[:name] = "random"
 group[:description] = "Lorem Ipsum"
 ```
 
-## Extending classes vs reopening classes vs using mixins
+## Extend classes vs reopen classes vs mixin usage
 
 Extending a class is slower compared to opening the class or using mix-in.
 

@@ -1,4 +1,4 @@
-## Checking Cache hit ratio
+## Check Cache hit ratio
 
 **Analysis Code**
 
@@ -17,7 +17,7 @@ The cache hit ratio values of the output should be more than 0.99(99%), database
     table hit rate |        0.988721
 ```
 
-## Analysis for checking the index utility
+## Analysis for index utility check
 
 **Analysis Code**
 
@@ -40,7 +40,7 @@ This command provides information on the efficiency of indexes, represented as w
     |   desk_customer_satisfaction_survey_responses  |   96  |   4  |
     |   desk_customer_satisfaction_surveys  |   95  |   4159  |
 
-## Analysis for checking the index utility
+## Analysis for index utility check
 
 **Analysis Code**
 
@@ -63,7 +63,7 @@ This command provides information on the efficiency of indexes, represented as w
     |   desk_customer_satisfaction_survey_responses  |   96  |   4  |
     |   desk_customer_satisfaction_surveys  |   95  |   4159  |
 
-## Analysis for removing duplicate index
+## Analysis for duplicate index removal
 
 **Analysis Code**
 
@@ -81,7 +81,7 @@ This command displays multiple indexes that have the same set of columns, same o
     | 128 k      | users_pkey   | index_users_id |          |           |
 ```
 
-## Fixing slow queries reported through outliers
+## Fix slow queries reported through outliers
 
 **Analysis Code**
 
@@ -109,7 +109,7 @@ Typically, an efficient query will have an appropriate ratio of calls to total e
     |   04:17:02.866623  |   36.6%  |   38,89,837  |   00:00:00  |   SELECT "neeto_rules_events".* FROM "neeto_rules_events" WHERE "neeto_rules_events"."type" = $1 AND "neeto_rules_events"."rule_id" = $2 AND "neeto_rules_events"."name" = $3 LIMIT $4  |
     |   05:49:30.220956  |   49.8%  |   38,91,912  |   00:00:00.006247  |   SELECT "neeto_rules_condition_groups".* FROM "neeto_rules_condition_groups" WHERE "neeto_rules_condition_groups"."type" = $1 AND "neeto_rules_condition_groups"."rule_id" = $2 ORDER BY "neeto_rules_condition_groups"."sequence" ASC  |
 
-## Fixing slow queries with high seq scans
+## Fix slow queries with high seq scans
 
 **Analysis Code**
 
@@ -139,7 +139,7 @@ This command displays the number of sequential scans recorded against all tables
     |   neeto_rules_events  |   3932256  |
     |   organizations  |   211918  |
 
-## Checking other postgres health stats
+## Check other postgres health stats
 
 1. Locks
 

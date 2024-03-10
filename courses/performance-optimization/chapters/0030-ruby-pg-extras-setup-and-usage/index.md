@@ -6,7 +6,7 @@
 
 For additional setup reference and details - https://github.com/pawurb/ruby-pg-extras
 
-## Using rake task to generate the report
+## Use rake task to generate the report
 
 ```ruby
 desc "Generate Postgres Stats through ruby-pg-extras gem"

@@ -1,4 +1,4 @@
-## Avoiding N+1 queries
+## Avoid N+1 queries
 
 Fixing the N+1 queries raised in test and logged in development mode under Bullet.log from Bullet.
 
@@ -8,17 +8,17 @@ Ref. - [N+1 Query and memoization](https://courses.bigbinaryacademy.com/learn-ru
 
 Loading all data once in memory affects the performance, this can be fixed by using limit and querying in batches.
 
-## Using find_each or find_in_batches
+## Use find_each or find_in_batches
 
 Performing the query operation in batches to avoid loading large number of records for performance issues. find_each queries result in a batch of 1,000 by default. Both methods differ as find_in_batches yields the result as an array of models instead of individual records.
 
 <image>find_each-vs-each.png</image>
 
-## Using/Removing Database Index if needed
+## Use/Remove Database Index if needed
 
 Analyzing the database indexes through `rails-pg-extras` and slow database transactions through NewRelic to measure utility of DB index on case-to-case basis.
 
-**Removing DB index**
+**Remove DB index**
 
 1. Removing unused indexes analyzed through
 
@@ -28,7 +28,7 @@ Analyzing the database indexes through `rails-pg-extras` and slow database trans
 
 2. Analysis on removing the DB index if query plan `index scan` cost way higher than `sequence scan` cost, and the column(s) have high frequency of insert, update and delete DB operations.
 
-**Adding DB index**
+**Add DB index**
 
 DB index can be added post critical analysis of given conditions -
 
@@ -85,7 +85,7 @@ def size
 end
 ```
 
-## Selecting only required attributes in query
+## Select only required attributes in query
 
 `#pluck` or `#select` can be used based on whether array of strings or ActiveRecord_Relation is required to be returned. Order in performance preference - pluck > select > collect/map
 
@@ -110,7 +110,7 @@ users = User.where(active: true)
 
 `present?` loads all columns and the object in memory whereas `exists?` limits only to 1 record and does not select any columns.
 
-## Using transactions for a group of operations
+## Use transactions for a group of operations
 
 ```ruby
 ticket.update(ticket_options)
@@ -139,7 +139,7 @@ ActiveRecord::Base.transaction do
 end
 ```
 
-## Enhancing render partial performance
+## Enhance render partial performance
 
 ```ruby
 # Not preferred - Slower since Rails needs to compile and process each partial once.
@@ -152,7 +152,7 @@ end
 <%= render :partial => "ticket", :collection => @tickets, :as => :ticket %>
 ```
 
-## Use In-Memory Calculation if needed
+## Use In-Memory calculation if needed
 
 Converse to using `find_each` where number of queries were more and memory was reduced, sometimes with judgement in-memory computations can be used to reduce query count and increase memory use given the latter is performing better justified by benchmarks.
 
