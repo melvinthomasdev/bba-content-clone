@@ -9,7 +9,7 @@ all these values together.
 
 In JavaScript, we can use
 the `Object` type to store such values
-that are are related.
+that are related.
 
 Take a look at the below image to see
 what an **object** looks like.
@@ -27,5 +27,6 @@ const car = {
 };
 
 console.log(car);
+
 </code>
 </codeblock>

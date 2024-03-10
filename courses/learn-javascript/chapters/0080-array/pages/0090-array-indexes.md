@@ -35,4 +35,4 @@ to display the array,
 we can see that the elements are indeed
 stored in the indexes `0`, `1`, `2` and `7`.
 The indexes from `3` to `6`,
-all contain the `null` value.
+are all `undefined`
