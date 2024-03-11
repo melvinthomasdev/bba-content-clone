@@ -17,11 +17,14 @@
 - title: useCallback
   slug: use-callback
   page_type: lesson
-- title: Path segments vs Query parameters
-  slug: path-segments-vs-query-parameters
+- title: Compound Components
+  slug: compound-components
   page_type: lesson
 - title: Why not to use index as key
   slug: not-to-use-index-as-key
+  page_type: lesson
+- title: Path segments vs Query parameters
+  slug: path-segments-vs-query-parameters
   page_type: lesson
 - title: Recommended reading
   slug: recommended-reading
