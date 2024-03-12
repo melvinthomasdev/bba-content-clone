@@ -20,14 +20,12 @@ console.log(quote);
 </code>
 
 <solution>
-const quote = `
-  "Take risks in your life;
+const quote = `"Take risks in your life;
 
-  If you win, you can lead!
-  If you lose, you can guide!"
+If you win, you can lead!
+If you lose, you can guide!"
 
-  — Swami Vivekananda
-`;
+— Swami Vivekananda`;
 
 console.log(quote);
 </solution>

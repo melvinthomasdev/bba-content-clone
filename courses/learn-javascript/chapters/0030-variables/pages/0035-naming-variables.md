@@ -3,8 +3,7 @@ there are certain rules
 we need to follow for
 the name of the variable:
 
-1. The name should either start
-with an alphabet or an underscore, i.e., `_`.
+<h3>The name should either start with an alphabet or an underscore, i.e., `_`.</h3>
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -16,6 +15,7 @@ console.log(_validVariableName);
 
 const 0invalidVariableName = 140; // This will show an error
 console.log(0invalidVariableName);
+
 </code>
 </codeblock>
 
@@ -27,8 +27,7 @@ You can comment out the last
 two lines in the example given above
 to run the code without errors.
 
-2\. The rest of the name can only contain
-alphabets, numbers and underscores.
+<h3>The rest of the name can only contain alphabets, numbers and underscores.</h3>
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -37,6 +36,7 @@ console.log(validVariableName_1);
 
 let invalid-variable-name = 160; // This will show an error
 console.log(invalid-variable-name);
+
 </code>
 </codeblock>
 
@@ -45,17 +45,16 @@ In the example given above,
 is not a valid variable name
 because the name contains `-`.
 
-3\. A reserved keyword cannot be used
+<h3>A reserved keyword cannot be used
 as a variable name.
 For example, `let` is a keyword
 used to declare variables.
 We cannot declare a variable
-with the name `let`.
+with the name `let`.</h3>
 
 <codeblock language="javascript" type="lesson">
 <code>
-const let = 170; // This will show an error
-console.log(let);
+const let = 170; // This will show an error console.log(let);
 </code>
 </codeblock>
 
@@ -70,6 +69,7 @@ const noOfBurgers = 170;
 console.log(noOfBurgers);
 
 console.log(noofburgers); // This will show an error
+
 </code>
 </codeblock>
 
@@ -90,5 +90,6 @@ console.log(noOfBurgers);
 
 const noofburgers = 12;
 console.log(noofburgers);
+
 </code>
 </codeblock>

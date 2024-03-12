@@ -33,9 +33,10 @@ of names using camelCase -
 `temperatureInCelsius`,
 `fruitsWithRedColor`.
 
-### Note:
-In JavaScript, camelCase has become
-a widely accepted way of variable
-naming. Although this is not defined
-as a rule, it has evolved as a community
-practice.
+Please note that in JavaScript,
+camelCase has become a widely
+accepted way of naming variables.
+Although this is not defined as a rule,
+it has evolved as a community practice,
+and
+this is what we will follow.

@@ -1,4 +1,6 @@
-Create a `select` element.
+Create a `select` element
+with the label `Choose currency`
+
 Add three options in it:
 - United States Dollar
 - Euro
@@ -19,7 +21,7 @@ should be **USD** for United States Dollar,
 
 <solution>
 <form>
-  <label>Choose currency:</label>
+  <label>Choose currency</label>
   <!-- Write code here -->
   <select>
     <option value="USD">United States Dollar</option>
