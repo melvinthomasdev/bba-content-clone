@@ -101,3 +101,15 @@
 - title: Exercise - Get a Part of the String
   slug: exercise-get-a-part-of-the-string
   page_type: exercise
+- title: Replace characters in a string
+  slug: replace-characters-in-a-string
+  page_type: lesson
+- title: Exercise - Replace characters in a string
+  slug: exercise-replace-characters-in-a-string
+  page_type: exercise
+- title: Replace strings within a string
+  slug: replace-strings-within-a-string
+  page_type: lesson
+- title: Exercise - Replace strings within a string
+  slug: exercise-replace-strings-within-a-string
+  page_type: exercise
