@@ -6,7 +6,11 @@ Let us take a look at an example:
 
 <codeblock language="javascript" type="lesson">
 <code>
-"I feel like the king of the world".replace("world", "universe");
+const statement = "I feel like the king of the world!";
+console.log(statement);
+
+const updatedStatement = statement.replace("world", "universe");
+console.log(updatedStatement);
 </code>
 </codeblock>
 
@@ -36,7 +40,11 @@ const makeUpperCase = subString => {
   return subString.toUpperCase();
 };
 
-"I look fat".replace("fat", makeUpperCase("fat"));
+const currentMood = "I am happy.";
+console.log(currentMood);
+
+const updatedMood = currentMood.replace("happy", makeUpperCase("happy"));
+console.log(updatedMood);
 </code>
 </codeblock>
 
@@ -44,7 +52,7 @@ In this code-block, we can see
 that replace even accepts a
 function as a second parameter.
 What this function returns
-replaces `fat`.
+replaces `happy`.
 
 Let's take a look at a few more
 applications of `replace()`
@@ -53,14 +61,25 @@ method.
 <codeblock language="javascript" type="lesson">
 <code>
 // Variable which holds a string as it's value
-const string = "I love ice-cream"
+const statementOne = "I like ice-cream.";
+console.log(statementOne);
 
-string.replace("love", "hate");
+const updatedStatementOne = statementOne.replace("like", "love");
+console.log(updatedStatementOne);
+
 
 // Using anonymous arrow function as a second parameter
-"Come fly with me".replace("fly", substring => substring.toUpperCase());
+const statementTwo = "Come fly with me.";
+console.log(statementTwo);
+
+const updatedStatementTwo = statementTwo.replace("fly", substring => substring.toUpperCase());
+console.log(updatedStatementTwo);
 
 // Replacing with a number
-"I had two chocolates".replace("two", 2);
+const statementThree = "I had two chocolates.";
+console.log(statementThree);
+
+const updatedStatementThree = statementThree.replace("two", 2);
+console.log(updatedStatementThree);
 </code>
 </codeblock>
