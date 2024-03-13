@@ -18,7 +18,7 @@ const handleDivEvent = () => {
   console.log("Div clicked!");
 };
 
-const handleButtonEvent = () => {
+const handleButtonEvent = (event) => {
   console.log("Button clicked!");
   event.stopPropagation();
 }
