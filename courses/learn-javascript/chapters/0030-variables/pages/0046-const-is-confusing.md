@@ -1,15 +1,15 @@
 _Please note that this lesson refers to technical materials that have not yet been covered.
-So, if you are not able to fully grasp all the things mentioned in this lesson, then
-don't worry. You can proceed to the next lesson and you can come back to this lesson later._
+So, if you cannot fully grasp everything mentioned in this lesson, 
+don't worry. You can go ahead and go to the next lesson and return to this lesson later._
 
 _It's important to add this lesson because many people come to learn JavaScript after having learned other programming
-languages like Java and Python. In those languages, the meaning of a constant is very different from the way variables
+languages like Java and Python. In those languages, the meaning of a constant is very different from how variables
 are declared using `const` in JavaScript. This lesson is for those folks so that they fully understand what exactly
 `const` means in JavaScript._
 
 In JavaScript, `const` is used to declare variables.
-In JavaScript not only `const` can be used to declare variables, but
-it's the most recommended way to create variables.
+In JavaScript, not only can `const` be used to declare variables, but
+it's also the most recommended way to create variables.
 
 First, let's see an example.
 
@@ -45,7 +45,7 @@ let's take an example of an array.
 ```
 
 This is a valid JavaScript code.
-When JavaScript sees this statement, then, it creates an array in the memory.
+When JavaScript sees this statement, it creates an array in the memory.
 Before this statement, the memory would be empty and look like this.
 
 <image>figure-1.png</image>
@@ -54,7 +54,7 @@ After that statement, the memory will look like this.
 
 <image>memory-array.png</image>
 
-Now, let's give the array a name by assigning it to a variable.
+Let's give the array a name by assigning it to a variable.
 
 ```
 let fruits = ["Apple", "Banana", "Mango"]
@@ -62,7 +62,7 @@ let fruits = ["Apple", "Banana", "Mango"]
 
 Now, we are assigning that array to a variable. The equal sign here acts like an assignment.
 
-In the memory, now we have a variable called "fruits", and it is pointing to the array.
+Now, in memory, we have a variable called "fruits," which points to the array.
 
 <image>fruits-variable-assignment.png</image>
 
@@ -72,7 +72,7 @@ Now, let's create one more variable.
 let cities = ["Paris", "London", "Chicago"]
 ```
 
-Now, the memory looks like this. Now, we have two variables - `cities` and "fruits".
+Now we have two variables, "cities" and "fruits" and the memory would look like this.
 
 <image>cities-variable-assignment.png</image>
 
@@ -86,8 +86,8 @@ Now, the memory looks like this.
 
 <image>fruits-reassignment.png</image>
 
-As we can see, because of this assignment, fruits point to a different array.
-We have not changed the original array. We have created a new array, and this new array is what Fruits is now pointing to.
+As we can see, fruits point to a different array because of this assignment.
+We have not changed the original array. We have created a new array, which is what Fruits is now pointing to.
 This is because the variable fruits is **assigned** a new value.
 
 Now let's change the first item in fruits to "Pineapple".
@@ -109,6 +109,6 @@ This is **mutation**.
 Once a variable is pointing to something, then `let` allows us to **assign** a different item to the variable
 so that the variable can point to something else.
 
-`const` doesn't allow that. In the case of `const` once a variable is pointing to an item then JavaScript
-will not allow us to change the variable to point to something else. However, JavaScript allows us to change the item
-to which `let` and `const` are pointing to. In other words both `let` and `const` allow **mutation** but only `let` allows **assigning** new values.
+`const` doesn't allow that. In the case of `const`, once a variable points to an item, JavaScript
+will not allow us to change the variable to something else. However, JavaScript allows us to change the item
+to which `let` and `const` are pointing. In other words, both `let` and `const` allow **mutation**, but only `let` allows **assigning** new values.
