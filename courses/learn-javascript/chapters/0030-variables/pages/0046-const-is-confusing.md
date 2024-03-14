@@ -91,11 +91,11 @@ As we can see, fruits point to a different array because of this assignment.
 We have not changed the original array. We have created a new array, which is what Fruits is now pointing to.
 This is because the variable fruits is **assigned** a new value.
 
-Now let's change the first item in fruits to "Pineapple".
+Now let's change the first item in "cities" to "Tokyo".
 
 <codeblock language="javascript" type="lesson">
 <code>
-fruits[0] = "Pineapple"
+cities[0] = "Tokyo"
 </code>
 </codeblock>
 
