@@ -1,6 +1,6 @@
 ## Use push operator over overload operator
 
-Refrain use of overload addition (+=) ruby operator. Instead, replace it with the push (<<) operator for strings and arrays.
+Avoid the use of overload addition (+=) ruby operator. Instead, replace it with the push operator (<<) for strings and arrays.
 
 <image>overload-vs-push-benchmark.png</image>
 
@@ -26,11 +26,11 @@ message += "agent #{user.name}" if user
 
 ## Correct use of bang methods
 
-Use In-Place updates(destructive operations) selectively to save copying overhead.
+Use In-Place updates (destructive operations) selectively to save copying overhead.
 
-Unlike the Rails bang methods, the ruby bang methods perform an action and change the object, returning the modified object as a result i.e. object mutation, so they are often termed as mutator/dangerous methods.
+Unlike the Rails bang methods, the Ruby bang methods perform an action and change the object. They return the modified object as a result. This is object mutation, so they are often termed as mutator/dangerous methods.
 
-Usage condition - If the original object is not required multiple times in codebase then ruby destructive methods can be used, instead of their simple copying counterparts.
+Usage condition - If the original object is not required multiple times in the codebase, then Ruby destructive methods can be used, instead of their simple copying counterparts.
 
 | Class              | Copying            | Destructive        |
 |--------------------| :----------------: | :----------------: |
@@ -105,11 +105,11 @@ response_token = "sha256=" + Base64.encode64(hash).strip!
 Apply reader and accessors correctly, based on usage within or outside the class.
 
 Use case 1 -
-Redundant use of attr_accessors although setters are not used within/outside class
+Redundant use of attr_accessors although setters are not used within/outside class.
 
 ```ruby
 # Do's
-# Use case when method(getter) is accessed outside the class
+# Use case when method (getter) is accessed outside the class
 class Tickets::MergeService
   attr_reader :response
 
@@ -170,7 +170,7 @@ Use of Instance variable instead of accessors, when public method access is not 
 
 ```ruby
 # Do's
-# Use case when method(getter) is accessed outside the class
+# Use case when method (getter) is accessed outside the class
 class Tickets::MergeService
   attr_reader :response
 
@@ -278,8 +278,8 @@ end
 
 ## Order under different cases
 
-1. Most frequent case shall be added first
-2. If all cases are equally frequent, prefer sorting in increasing order of computation
+1. Most frequent case should be added first
+2. If all cases are equally frequent, prefer sorting in the increasing order of computation
 
 ```ruby
 # Do's
@@ -308,7 +308,7 @@ else
 end
 ```
 ## Avoid operations which clear Ruby's method cache
-Dynamic language implementations use 'inline method caching', which avoid expensive method lookups frequently. But some the below given methods invalidates the method caching, so avoiding them at runtime is critical to writing fast Ruby code.
+Dynamic language implementations use 'inline method caching', which avoid expensive method lookups frequently. But some of the below given methods invalidate the method caching. Avoiding them at runtime is critical to writing fast Ruby code.
 
     - Aliasing or removing methods (Module#alias_method and Module#remove_method): Aliasing and removing methods invalidates the method caches
     - Setting and removing constants (#const_set and #remove_const)
@@ -397,7 +397,7 @@ if @ticket.nil?
 
 ## Use blank? in place of empty? or nil?
 
-Since blank? checks for both case of value to be nil or empty, it's better to use blank? in such cases.
+Since blank? checks for both cases of value to be nil or empty, it's better to use blank? in such cases.
 
 ```ruby
 # Do's
@@ -409,7 +409,7 @@ return true if sort_by_column.nil? || sort_by_column.empty?
 
 ## Set over Array
 
-Preference of Set over Array for search(include?) and cluster operations(uniq, |, &)
+Preference of Set over Array for search (include?) and cluster operations (uniq, |, &)
 
 ```ruby
 # Do's
@@ -470,7 +470,7 @@ class SlackIntegration
     end
 end
 
-# Results of Opening a class and including are comparable in benchmarks for recent ruby versions
+# Results of Opening a class and including are comparable in benchmarks for recent Ruby versions
 
 module SlackIntegrable
     def slack_connected
@@ -494,9 +494,9 @@ end
 
 ## Freeze constant data
 
-Constant data including arrays and hashes, should be freezed if they are just accessed and not mutated in codebase.
+Constant data including arrays and hashes, should be frozen if they are accessed but not mutated in the codebase.
 
-All string will already be freezed by rubocop, so freezing them is not required.
+All strings will already be frozen by rubocop, so freezing them is not required.
 
 ```ruby
 # Do's

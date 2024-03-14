@@ -6,7 +6,7 @@
   RubyPgExtras.cache_hit
 ```
 
-The cache hit ratio values of the output should be more than 0.99(99%), database can be scaled-up or re-configured if not in expected range for better performance.
+The cache hit ratio values of the output should be more than 0.99(99%). The database can be scaled-up or re-configured if not in the expected range for better performance.
 
 **Sample output**
 
@@ -167,7 +167,7 @@ procpid | relname | transactionid | granted | query_snippet         | mode      
   RubyPgExtras.bloat
 ```
 
-This command displays an estimation of table "bloat" – space allocated to a relation that is full of dead tuples, that has yet to be reclaimed. Tables that have a high bloat ratio, typically 10 or greater, should be investigated to see if vacuuming is aggressive enough, and can be a sign of high table churn.
+This command displays an estimation of table "bloat" – space allocated to a relation that is full of dead tuples, that is yet to be reclaimed. Tables that have a high bloat ratio, typically 10 or greater, should be investigated to see if vacuuming is aggressive enough. This can be a sign of high table churn.
 
 **Sample output**
         |   type  |   schemaname  |   object_name  |   bloat  |   waste  |
@@ -186,7 +186,7 @@ This command displays an estimation of table "bloat" – space allocated to a re
         |   index  |   public  |   schema_migrations::schema_migrations_pkey  |   2.5  |   24 kB  |
         |   index  |   public  |   companies::index_companies_on_domains  |   3  |   16 kB  |
 
-3. Vacuum Stats
+1. Vacuum Stats
 
 **Analysis Code**
 

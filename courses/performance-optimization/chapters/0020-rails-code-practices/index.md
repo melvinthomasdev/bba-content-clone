@@ -4,7 +4,7 @@ Fixing the N+1 queries raised in test and logged in development mode under Bulle
 
 Ref. - [N+1 Query and memoization](https://courses.bigbinaryacademy.com/learn-rubyonrails/n-1-queries/)
 
-## Avoid .all queries, use pagination
+## Avoid .all queries, use pagination instead
 
 Loading all data once in memory affects the performance, this can be fixed by using limit and querying in batches.
 
@@ -154,5 +154,5 @@ end
 
 ## Use In-Memory calculation if needed
 
-Converse to using `find_each` where number of queries were more and memory was reduced, sometimes with judgement in-memory computations can be used to reduce query count and increase memory use given the latter is performing better justified by benchmarks.
+Contrary to using `find_each`, where number of queries were more and memory was reduced, sometimes with judgement, in-memory computations can be used to reduce query count and increase memory use. Given that the latter is performing better justified by benchmarks.
 
