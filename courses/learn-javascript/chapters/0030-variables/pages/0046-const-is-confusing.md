@@ -93,11 +93,9 @@ This is because the variable fruits is **assigned** a new value.
 
 Now let's change the first item in "cities" to "Tokyo".
 
-<codeblock language="javascript" type="lesson">
-<code>
+```
 cities[0] = "Tokyo"
-</code>
-</codeblock>
+```
 
 In this case, the existing item was changed. This is called **mutation**.
 In this case, there was no "assignment" using `=` sign.
