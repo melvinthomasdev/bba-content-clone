@@ -1,5 +1,5 @@
-_Please note that this lesson refers to technical materials which are not yet covered.
-So if you are not able to fully grasp all the things mentioned in this lesson then
+_Please note that this lesson refers to technical materials that have not yet been covered.
+So, if you are not able to fully grasp all the things mentioned in this lesson, then
 don't worry. You can proceed to the next lesson and you can come back to this lesson later._
 
 _It's important to add this lesson because many people come to learn JavaScript after having learned other programming
@@ -7,8 +7,8 @@ languages like Java and Python. In those languages, the meaning of a constant is
 are declared using `const` in JavaScript. This lesson is for those folks so that they fully understand what exactly
 `const` means in JavaScript._
 
-In JavaScript `const` is used to declare variables.
-In JavaScript not only `const` can be used to declare variables but
+In JavaScript, `const` is used to declare variables.
+In JavaScript not only `const` can be used to declare variables, but
 it's the most recommended way to create variables.
 
 First, let's see an example.
@@ -23,7 +23,7 @@ console.log(fruit)
 </codeblock>
 
 In the above case, we can change `fruit` even though it's declared as a `const`.
-However, if we try to achieve the same result through assigning a new object then `const` will not allow us.
+However, if we try to achieve the same result by assigning a new object, then `const` will not allow us to do so.
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -34,7 +34,7 @@ fruit = { name: "Banana" }
 
 ## Assignment vs Mutation
 
-To better understand what's going on here we need to understand the difference between
+To better understand what's going on here, we need to understand the difference between
 **Assignment** and **Mutation**.
 
 let's take an example of an array.
@@ -45,8 +45,8 @@ let's take an example of an array.
 ```
 
 This is a valid JavaScript code.
-When JavaScript sees this statement then it creates an array in the memory.
-Before this statement, the memory will be empty and it would look like this.
+When JavaScript sees this statement, then, it creates an array in the memory.
+Before this statement, the memory would be empty and look like this.
 
 <image>figure-1.png</image>
 
@@ -54,40 +54,40 @@ After that statement, the memory will look like this.
 
 <image>memory-array.png</image>
 
-Now let's give the array a name by assigning it to a variable.
+Now, let's give the array a name by assigning it to a variable.
 
 ```
 let fruits = ["Apple", "Banana", "Mango"]
 ```
 
-Now we are assigning that array to a variable. The equal sign here acts like an assignment.
+Now, we are assigning that array to a variable. The equal sign here acts like an assignment.
 
-In the memory now we have a variable called "fruits" and it is pointing to the array.
+In the memory, now we have a variable called "fruits", and it is pointing to the array.
 
 <image>fruits-variable-assignment.png</image>
 
-Now let's create one more variable.
+Now, let's create one more variable.
 
 ```
 let cities = ["Paris", "London", "Chicago"]
 ```
 
-Now the memory looks like this.
+Now, the memory looks like this.
 
 <image>cities-variable-assignment.png</image>
 
-Now let's **assign** a different value to "fruits" variable.
+Now, let's **assign** a different value to the "fruits" variable.
 
 ```
 fruits = ["Strawberry", "Blueberry"]
 ```
 
-Now the memory looks like this.
+Now, the memory looks like this.
 
 <image>fruits-reassignment.png</image>
 
-As we can see because of this assignment fruits are pointing to a different array.
-We have not changed the original array. We have created a new array and this new array is what fruits is now pointing to.
+As we can see, because of this assignment, fruits point to a different array.
+We have not changed the original array. We have created a new array, and this new array is what Fruits is now pointing to.
 This is because the variable fruits is **assigned** a new value.
 
 Now let's change the first item in fruits to "Pineapple".
@@ -106,7 +106,7 @@ This is **mutation**.
 
 ## Differences between let and const
 
-Once a variable is pointing to something then `let` allows us to **assign** a different item to the variable
+Once a variable is pointing to something, then `let` allows us to **assign** a different item to the variable
 so that the variable can point to something else.
 
 `const` doesn't allow that. In the case of `const` once a variable is pointing to an item then JavaScript
