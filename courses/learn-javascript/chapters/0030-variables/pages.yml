@@ -26,6 +26,9 @@
 - title: let
   slug: let
   page_type: lesson
+- title: const is confusing
+  slug: const-is-confusing
+  page_type: lesson
 - title: Exercise - const and let
   slug: exercise-const-and-let
   page_type: exercise
