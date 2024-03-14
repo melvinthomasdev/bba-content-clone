@@ -72,7 +72,7 @@ Now, let's create one more variable.
 let cities = ["Paris", "London", "Chicago"]
 ```
 
-Now, the memory looks like this.
+Now, the memory looks like this. Now, we have two variables - `cities` and "fruits".
 
 <image>cities-variable-assignment.png</image>
 
