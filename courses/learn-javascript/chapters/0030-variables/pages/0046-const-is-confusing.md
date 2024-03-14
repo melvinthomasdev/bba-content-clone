@@ -74,6 +74,7 @@ let cities = ["Paris", "London", "Chicago"]
 
 Now we have two variables, "cities" and "fruits" and the memory would look like this.
 
+<image>fruits-variable-assignment.png</image>
 <image>cities-variable-assignment.png</image>
 
 Now, let's **assign** a different value to the "fruits" variable.
