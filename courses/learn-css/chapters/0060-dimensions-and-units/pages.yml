@@ -62,8 +62,8 @@
 - title: Challenge 2 - rem
   slug: challenge-2-rem
   page_type: exercise
-- title: rem default value
-  slug: rem-default-value
+- title: Default rem Value
+  slug: default-rem-value
   page_type: lesson
 - title: vh
   slug: vh

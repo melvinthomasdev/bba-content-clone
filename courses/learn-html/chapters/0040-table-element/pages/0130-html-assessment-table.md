@@ -3,12 +3,9 @@ according to the following
 requirements:
 
 - Add `Fruit Cart` as the Table title.
-- Update the table contents with proper
-table headings and table body elements.
-- Add a new row for fruit `Apple`
-with emoji `🍎`.
-- Ensure correct tags are used for
-table header values.
+- Update the table contents with proper table headings and table body elements.
+- Add a new row for fruit `Apple` with emoji `🍎`.
+- Ensure the correct tags are used for table header values.
 
 <codeblock language="html" type="exercise" testMode="fixedInput" showSolution="false">
 <code>

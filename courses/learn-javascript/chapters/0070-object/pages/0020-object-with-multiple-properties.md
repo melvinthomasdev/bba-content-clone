@@ -87,11 +87,8 @@ const car = {
   fuelType: "petrol"
 };
 
-console.log(`It is a ${car.model} car that runs on ${car.fuelType} and has ${car.seatingCapacity} seats.`);
+console.log(`It is a ${car.model} model car that runs on ${car.fuelType} and has ${car.seatingCapacity} seats.`);
 </code>
 </codeblock>
 
-In the example given above,
-the property `car.seatingCapacity`
-is assigned the value of `noOfSeats`,
-which is `5`.
+In the example given above, the property `car.seatingCapacity` is assigned the value of `noOfSeats`, which is `5`.

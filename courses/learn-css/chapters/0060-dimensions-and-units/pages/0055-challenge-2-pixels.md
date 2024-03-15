@@ -1,9 +1,9 @@
 Add the following widths to the respective selectors:
 
-1. Set a width of `300px` for `.contact-card-primary`.
-2. Set a width of `80mm` to `.contact-card-secondary`.
-3. Set a width of `200pt` to `.contact-card-alt`.
-4. Set a width of `18pc` for `.contact-card-custom`.
+1. Set a width of `270px` for `.contact-card-primary`.
+2. Set a width of `250px` to `.contact-card-secondary`.
+3. Set a width of `200px` for `.contact-card-custom`.
+4. Set a width of `150px` to `.contact-card-small`.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
@@ -12,8 +12,8 @@ Add the following widths to the respective selectors:
   <div class="contact-card contact-card-primary">
   <h2>Contact Information</h2>
   <div class="info">
-    <p>Name: Steph Curry</p>
-    <p>Email: stephcurry30@example.com</p>
+    <p>Name: Eve Smith</p>
+    <p>Email: evesmith@example.com</p>
     <p>Phone: +1 (123) 456-7890</p>
   </div>
   </div>
@@ -21,25 +21,25 @@ Add the following widths to the respective selectors:
   <div class="contact-card contact-card-secondary">
   <h2>Contact Information</h2>
   <div class="info">
-    <p>Name: Lebron James</p>
-    <p>Email: lebronjames23@example.com</p>
-    <p>Phone: +1 (456) 123-7890</p>
-  </div>
-  </div>
-  <div class="contact-card contact-card-alt">
-  <h2>Contact Information</h2>
-  <div class="info">
-    <p>Name: Klay Thompson</p>
-    <p>Email: klaythompson11@example.com</p>
-    <p>Phone: +1 (789) 456-1230</p>
+    <p>Name: Eve Smith</p>
+    <p>Email: evesmith@example.com</p>
+    <p>Phone: +1 (123) 456-7890</p>
   </div>
   </div>
   <div class="contact-card contact-card-custom">
   <h2>Contact Information</h2>
   <div class="info">
-    <p>Name: Shaqeel O'neal</p>
-    <p>Email: shaq27@example.com</p>
-    <p>Phone: +1 (987) 456-1230</p>
+    <p>Name: Eve Smith</p>
+    <p>Email: evesmith@example.com</p>
+    <p>Phone: +1 (123) 456-7890</p>
+  </div>
+  </div>
+  <div class="contact-card contact-card-small">
+  <h2>Contact Information</h2>
+  <div class="info">
+    <p>Name: Eve Smith</p>
+    <p>Email: evesmith@example.com</p>
+    <p>Phone: +1 (123) 456-7890</p>
   </div>
   </div>
 </div>
@@ -68,7 +68,7 @@ h2 {
 .contact-card-secondary {
   background-color: paleturquoise;
 }
-.contact-card-alt {
+.contact-card-small {
   background-color: lightgoldenrodyellow;
 }
 .contact-card-custom {
@@ -96,20 +96,21 @@ h2 {
   font-size: 16px;
 }
 .contact-card-primary {
-  width: 300px;
+  width: 270px;
   background-color: #f0f0f0;
 }
 .contact-card-secondary {
-  width: 80mm;
+  width: 250px;
   background-color: paleturquoise;
 }
-.contact-card-alt {
-  width: 200pt;
-  background-color: lightgoldenrodyellow;
-}
 .contact-card-custom {
-  width: 18pc;
+  width: 200px;
   background-color: lavender;
 }
+.contact-card-small {
+  width: 150px;
+  background-color: lightgoldenrodyellow;
+}
+
 </solution>
 </codeblock>
