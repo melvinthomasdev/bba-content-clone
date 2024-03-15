@@ -1,5 +1,5 @@
 Set the `width` of this `div` to
-5 centimeters and `height` to 1 inch:
+50 pixels and `height` to 40 pixels:
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
@@ -17,8 +17,8 @@ div {
 <solution>
 div {
   background-color: darkseagreen;
-  width: 5cm;
-  height: 1in;
+  width: 50px;
+  height: 40px;
 }
 </solution>
 </codeblock>
