@@ -5,11 +5,17 @@
 - title: Exercise - Finding the Largest Number
   slug: exercise-finding-largest-number
   page_type: exercise
+- title: Exercise - Who has more apples?
+  slug: exercise-who-has-more-apples
+  page_type: exercise
 - title: Finding the Smallest Number
   slug: finding-smallest-number
   page_type: lesson
 - title: Exercise - Finding the Smallest Number
   slug: exercise-finding-smallest-number
+  page_type: exercise
+- title: Exercise - Finding the Lowest Score
+  slug: exercise-finding-the-lowest-score
   page_type: exercise
 - title: Calculating Exponentiation Values
   slug: calculating-exponentiation-values
@@ -17,11 +23,17 @@
 - title: Exercise - Calculating Exponentiation Values
   slug: exercise-calculating-exponentiation-values
   page_type: exercise
+- title: Exercise - Calculating Volume of Cube
+  slug: exercise-calculating-volume-of-cube
+  page_type: exercise
 - title: Rounding a Number
   slug: rounding-a-number
   page_type: lesson
 - title: Exercise - Rounding a Number
   slug: exercise-rounding-a-number
+  page_type: exercise
+- title: Exercise - Find correct grade
+  slug: exercise-find-correct-grade
   page_type: exercise
 - title: Rounding Down a Number
   slug: rounding-down-a-number
@@ -29,17 +41,26 @@
 - title: Exercise - Rounding Down a Number
   slug: exercise-rounding-down-a-number
   page_type: exercise
+- title: Exercise - Supermarket Purchase
+  slug: exercise-supermarket-purchase
+  page_type: exercise
 - title: Rounding Up a Number
   slug: rounding-up-a-number
   page_type: lesson
 - title: Exercise - Rounding Up a Number
   slug: exercise-rounding-up-a-number
   page_type: exercise
+- title: Exercise - Find Tower floors
+  slug: exercise-find-tower-floors
+  page_type: exercise
 - title: Removing Fractional Part of Number
   slug: removing-fractional-part-of-number
   page_type: lesson
 - title: Exercise - Removing Fractional Part of Number
   slug: exercise-removing-fractional-part-of-number
+  page_type: exercise
+- title: Exercise - Find discounted price
+  slug: exercise-find-discounted-price
   page_type: exercise
 - title: Generating a Random Number
   slug: generating-a-random-number
