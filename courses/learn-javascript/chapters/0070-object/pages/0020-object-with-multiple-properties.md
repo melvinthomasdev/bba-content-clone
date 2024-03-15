@@ -38,6 +38,7 @@ const person = {
 };
 
 console.log(person);
+
 </code>
 </codeblock>
 
@@ -47,9 +48,9 @@ separate variables.
 
 <codeblock language="javascript" type="lesson">
 <code>
-const carModel = 2011;
-const carFuelType = "diesel";
-console.log(`It is a ${carModel} car that runs on ${carFuelType}`);
+  const carModel = 2011;
+  const carFuelType = "diesel";
+  console.log(`It is a ${carModel} car that runs on ${carFuelType}`);
 </code>
 </codeblock>
 
@@ -69,6 +70,7 @@ const car = {
 };
 
 console.log(`It is a ${car.model} car that runs on ${car.fuelType}`);
+
 </code>
 </codeblock>
 
@@ -77,14 +79,12 @@ to the property of an object.
 
 <codeblock language="javascript" type="lesson">
 <code>
-const noOfSeats = 2 + 3;
-
-const fuelTypes = ["petrol", "diesel"];
+const noOfSeats = 5;
 
 const car = {
   model: 2011,
   seatingCapacity: noOfSeats,
-  fuelType: fuelTypes[1],
+  fuelType: "petrol"
 };
 
 console.log(`It is a ${car.model} car that runs on ${car.fuelType} and has ${car.seatingCapacity} seats.`);
@@ -94,7 +94,4 @@ console.log(`It is a ${car.model} car that runs on ${car.fuelType} and has ${car
 In the example given above,
 the property `car.seatingCapacity`
 is assigned the value of `noOfSeats`,
-which is `2 + 3` or `5`.
-The property `car.fuelType`
-is assigned the value of `fuelTypes[1]`,
-which is `"diesel"`.
+which is `5`.

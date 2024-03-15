@@ -4,7 +4,7 @@ given in the table below:
 
 | Key      | Value     |
 | -------- | --------- |
-| type     | "owl" |
+| type     | "owl"     |
 | canFly   | true      |
 | legCount | 2         |
 
