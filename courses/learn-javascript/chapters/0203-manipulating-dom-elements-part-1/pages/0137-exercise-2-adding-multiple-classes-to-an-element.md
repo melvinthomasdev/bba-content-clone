@@ -1,43 +1,37 @@
-Using JavaScript, select the
-HTML element with the **id** - `image`
+Add the classes **company-border**
 and
-add the following classes to it:
-- rounded-corner
-- shadow
+**company-card** to
+the div element using the `classList`
+property.
 
-Display the updated list of
-classes on the console.
-
-<codeblock language="javascript" type="exercise" testMode="fixedInput" matchSolutionCode="true">
+<codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
 <div>
-  <img id="image" src="https://ucarecdn.com/a29f134d-6b1e-4d95-a2d3-0f57c34f4259/-/resize/400x350/">
+  <h3>Shell Corporate Inc.</h3>
+  <p>Legitimate Businesses for the common folk.</p>
 </div>
 </panel>
 <panel language="css">
-* {
+.company-border {
+  border: 3px dashed gray;
+  border-radius: 3px;
+}
+
+.company-card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  max-width: 300px;
+  margin: 0 auto;
   text-align: center;
-}
-
-.rounded-corner {
-  border-radius: 10px;
-}
-
-.shadow {
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 </panel>
 <panel language="javascript">
-// Write code below
+let requiredDiv = document.querySelector('div');
 </panel>
 </code>
+
 <solution>
-// Write code below
-const image = document.getElementById("image");
-
-image.classList.add("rounded-corner", "shadow");
-
-console.log(image.classList);
+let requiredDiv = document.querySelector('div');
+requiredDiv.classList.add('company-border', 'company-card');
 </solution>
 </codeblock>
