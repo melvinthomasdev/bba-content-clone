@@ -29,6 +29,9 @@
 - title: Render props
   slug: render-props
   page_type: lesson
+- title: Error boundary
+  slug: error-boundary
+  page_type: lesson
 - title: Recommended reading
   slug: recommended-reading
   page_type: lesson

@@ -118,5 +118,6 @@ images:
   - persist-query-client.gif
   - passing-id-as-key.gif
   - passing-index-as-key.gif
+  - error-in-dev-env.png
 
 databases: []
