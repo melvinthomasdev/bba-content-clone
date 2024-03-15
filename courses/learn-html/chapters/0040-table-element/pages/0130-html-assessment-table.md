@@ -7,8 +7,8 @@ requirements:
 table headings and table body elements.
 - Add a new row for fruit `Apple`
 with emoji `🍎`.
-- Include columns for `Sr. No.`,
-`Fruit Name` and `Emoji`.
+- Ensure correct tags are used for
+table header values.
 
 <codeblock language="html" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
@@ -17,7 +17,7 @@ with emoji `🍎`.
   <table>
     <tr>
       <td>Sr. No.</td>
-      <td>Fruit</td>
+      <td>Fruit Name</td>
       <td>Emoji</td>
     </tr>
     <tr>
@@ -54,9 +54,11 @@ with emoji `🍎`.
   <table>
     <caption>Fruit Cart</caption>
     <thead>
-      <th>Sr. No.</th>
-      <th>Fruit Name</th>
-      <th>Emoji</th>
+      <tr>
+        <th>Sr. No.</th>
+        <th>Fruit Name</th>
+        <th>Emoji</th>
+      </tr>
     </thead>
     <tbody>
       <tr>
