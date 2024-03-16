@@ -2,9 +2,17 @@
 - title: About
   slug: about-comprehensive-exercise
   page_type: lesson
-- title: Challenge - Even Number Array
+- title: Even Number Array
   slug: challenge-even-number-array-js
   page_type: assessment  
-- title: Challenge - Array of Numbers
+- title: Array of Numbers
   slug: challenge-array-of-numbers-js
   page_type: assessment
+- title: Find the Sum of all Odd Numbers Until n
+  slug: challenge-find-the-sum-of-all-odd-numbers-until-n
+  page_type: assessment
+- title: Increment And Add
+  slug: challenge-increment-and-add
+  page_type: assessment
+  
+  

@@ -50,12 +50,6 @@
 - title: ComprehensiveExercise - Assign Non-Empty Value to Object Key
   slug: comprehensive-exercise-assign-value-to-key-if-empty
   page_type: assessment
-- title: ComprehensiveExercise - Find the Sum of all Odd Numbers Until n
-  slug: comprehensive-exercise-find-the-sum-of-all-odd-numbers-until-n
-  page_type: assessment
-- title: ComprehensiveExercise - Increment And Add
-  slug: comprehensive-exercise-increment-and-add
-  page_type: assessment
 - title: ComprehensiveExercise - Create an Empty Array With Length > 0
   slug: comprehensive-exercise-empty-array-with-length-greater-than-0
   page_type: assessment

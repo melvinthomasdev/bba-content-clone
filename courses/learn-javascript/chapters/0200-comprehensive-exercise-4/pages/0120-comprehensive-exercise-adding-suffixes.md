@@ -1,49 +1,55 @@
-The function `addSuffix` should return an anonymous function, which transforms its input by adding a particular suffix at the end. Whereas the function `printSuffixed` should return this suffixed string.
+You are provided with two functions: **addSuffix** and **printSuffixed** to manipulate strings with a provided suffix,
 
-1. Do not modify the function names.
+- **addSuffix**: This function should take two parameters: suffix (a string) and string (the original string). It should return a new string with the provided suffix appended to the end of string.
+
+- **printSuffixed**: This function should take an object as its parameter, which contains two properties: **suffix** and **string**.  It then calls **addSuffix** by passing these parameters and returns the returning value.
+
+**printSuffixed** is the function, that will be called first. **Do not modify the function names.**
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
+// Update the below functions
+
 const addSuffix = () => {
-  // your code here
+  
 };
-const printSuffixed = ({ suffix, str }) => {
-  // your code here
+const printSuffixed = () => {
+  
 };
 </code>
 
 <solution>
-const addSuffix = suffix => str => `${str}${suffix}`;
+const addSuffix = (string, suffix) => `${string}${suffix}`;
 
-const printSuffixed = ({ suffix, str }) => addSuffix(suffix)(str)
+const printSuffixed = ({ suffix, string }) => (addSuffix(string, suffix));
 </solution>
 
 <testcases>
 <caller>
-console.log(printSuffixed({ suffix, str }));
+console.log(printSuffixed({ suffix, string }));
 </caller>
 <testcase>
 <i>
-const str = "quick";
-const suffix = "ly";
-</i>
-</testcase>
-<testcase>
-<i>
-const str = "fear";
+const string = "fear";
 const suffix = "less";
 </i>
 </testcase>
 <testcase>
 <i>
-const str = "ruth";
-const suffix = "less";
+const string = "star";
+const suffix = "light";
 </i>
 </testcase>
 <testcase>
 <i>
-const str = "joy";
-const suffix = "ous";
+const string = "sun";
+const suffix = "shine";
+</i>
+</testcase>
+<testcase>
+<i>
+const string = "friend";
+const suffix = "ship";
 </i>
 </testcase>
 </testcases>
