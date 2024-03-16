@@ -81,6 +81,8 @@
   slug: asynchronous-code
 - name: Promises
   slug: promises
+- name: API
+  slug: api
 - name: Sectional Project 2
   slug: sectional-project-2
 - name: Comprehensive Exercise 9
