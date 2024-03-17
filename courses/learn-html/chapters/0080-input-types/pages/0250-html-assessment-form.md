@@ -6,7 +6,7 @@ Inside the form element,
 
 Add a **label** element with text **Username** with a **for** attribute set as **username**. Below that, add an input element with the **placeholder** attribute set as **Renu Sen** to allow users to enter their name.
 
-Below that, add a **label** element with the text **Password** with a **for** attribute set as **password**. Below that, add an input element with the **placeholder** attribute set as **password** to allow user to enter their password.
+Below that, add a **label** element with the text **Password** with a **for** attribute set as **password**. Below that, add an input element to allow user to enter their password.
 
 Below that, add a **label** element with the text **Address** with a **for** attribute set as **address**.  Below that, add an input element with the **placeholder** attribute set as **World Trade Center, Kharadi, Pune, Maharashtra 41101** to allow user to enter their full address. 
 Make sure the element has 4 rows and 50 columns.
