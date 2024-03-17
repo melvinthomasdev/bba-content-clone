@@ -1,10 +1,7 @@
-Create a page heading with
-the following text:
-`Welcome to My Website.`
+Create a page heading with the following text, **Welcome to My Website**
 
-Below the heading, add a paragraph
-with the following text:
-`Hello! I am a web developer passionate about HTML and CSS. This is my website where I share my knowledge and experiences.`
+Below the heading, add a paragraph with the following text,
+**Hello! I am a web developer passionate about HTML and CSS. This is my website where I share my knowledge and experiences.**
 
 Then, create the following:
 
@@ -19,11 +16,9 @@ Then, create the following:
    - Create basic setup
    - Code the website using basic HTML
 3. Insert a line break after the ordered list.
-4. Insert an image with the source as **#**
-   and add the following alternative text:
-   `A beautiful landscape.`
-5. Add the following table with the
-   caption `Monthly Expenses`:
+4. Insert an image with the source as **https://ucarecdn.com/4f018f4c-5f28-45f5-87dc-dd477c00517c/-/preview/500x700/**
+   and add the following alternative text, **A houseboat on a river in Kerala.**
+5. Create a table with the caption **Monthly Expenses** and add the following content to it,
 
 | Category      | Amount | Date       |
 | ------------- | ------ | ---------- |
@@ -31,9 +26,7 @@ Then, create the following:
 | Clothes       | $100   | 2023-08-02 |
 | Entertainment | $50    | 2023-08-02 |
 
-Add a table footer with the
-following text:
-`Total: $300`.
+Add a table footer with the following text, **Total: $300**
 
 ### Note:
 - Each unordered list item should
@@ -45,7 +38,7 @@ in their place.
 
 Now, add a paragraph with the following
 text:
-`© 2023 Bigbinary. All rights reserved.`
+**© 2023 BigBinary. All rights reserved.**
 
 <codeblock language="html" type="exercise" testMode="fixedInput" matchSolutionCode="true">
 <code>
@@ -68,7 +61,7 @@ text:
   <li>Code the website using basic HTML</li>
 </ol>
 <br>
-<img src="#" alt="A beautiful landscape">
+<img src="https://ucarecdn.com/4f018f4c-5f28-45f5-87dc-dd477c00517c/-/preview/500x700/" alt="A houseboat on a river in Kerala.">
 <table>
   <caption>Monthly Expenses</caption>
   <thead>

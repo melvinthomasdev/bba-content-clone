@@ -1,66 +1,43 @@
-Add an `<h2>` element with the text **Identity**.
-Below the heading, add a form element.
+Start with adding the text **Personal Details** to an **h2** element.
+
+Below the heading, add a **form** element with a **class** attribute set to **"personal-details-form"**.
 
 Inside the form element,
-add the following:
 
-A Label with text `Username:` with **for**
-attribute set as `username`.
+Add a **label** element with text **Username** with a **for** attribute set as **username**. Below that, add an input element with the **placeholder** attribute set as **Renu Sen** to allow users to enter their name.
 
-Following the label, add a text field
-with **placeholder** attributes set as
-`username`.
+Below that, add a **label** element with the text **Password** with a **for** attribute set as **password**. Below that, add an input element with the **placeholder** attribute set as **password** to allow user to enter their password.
 
-Below the text field, add a label `Password:`
-Add password input field with **placeholder**
-attribute as `password`.
+Below that, add a **label** element with the text **Address** with a **for** attribute set as **address**.  Below that, add an input element with the **placeholder** attribute set as **World Trade Center, Kharadi, Pune, Maharashtra 41101** to allow user to enter their full address. 
+Make sure the element has 4 rows and 50 columns.
 
-Below password field, add label `Address:`.
-Add a textarea field with **placeholder**
-attribute set as `address`.
-Add **rows** attribute set as `4`
-and
-**cols** set as `50`.
+Below that, add a **label** element with the text **Favourite Ice Cream Flavour** with a **for** and the **name** attribute set as **flavour**.
 
-Below the address field,
-add a label with text
-`Favourite Ice Cream Flavour:`
-
-Create a dropdown menu for users
-to select their favorite ice cream flavors.
-Selections should have options for
-the following flavours:
+ Below that, add a dropdown menu for users to select their favorite ice cream flavors.
+Selections should have options for the following flavours:
   1. Chocolate
   2. Vanilla
   3. Strawberry
   4. Pista
   5. Butterscotch
-Option value should be the same
-as the flavour.
 
-Add a label `Phone No.`,
-and
-a telephone field with **placeholder**
-attribute set as `phone-no`.
+The option value should match the flavor, but in lowercase.
 
-Below the phone number field,
-add two buttons one with type
-`reset`
-and
-text `Reset`.
+ Below that, add a **label** element with the text **Phone Number** with a **for** attribute set as **phone-number**. Below that, add an input element with the **placeholder** attribute set as **+911234567890** to allow user to enter their phone number.
 
-Add another button with type
-`submit`
-and
-text `Submit`.
+Below the phone number field, add a **div** element with a class of **"button-container"**. 
+
+Inside this **div** element, add two **Button** elements. The first one, upon clicking, should reset all the data entered in the form, while the second should submit the form. Make sure to specify their types.
+
+You need to ensure that if we click any of the labels, the input element associated with it should be highlighted.
 
 <codeblock language="html" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 <panel language="html">
-<!-- Write code below -->
+<!-- Write your code below -->
 </panel>
 <panel language="css" hidden="true">
-form {
+.personal-details-form {
   font-family: Lato;
   border-radius: 10px;
   padding: 1rem;
@@ -71,17 +48,58 @@ form {
   flex-direction: column;
 }
 
-form * {
+.personal-details-form * {
   margin: 0.5rem;
 }
 
+input[type="text"],
+input[type="password"],
+input[type="tel"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 60%; /* Reduced width for text, password, and tel inputs */
+  box-sizing: border-box;
+}
+
+textarea,
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+select {
+  width: 30%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus,
+input[type="tel"]:focus {
+  outline: none;
+  border-color: royalblue;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 button {
-  border: none;
   padding: 0.5rem;
   font-size: 1.2rem;
   font-weight: 700;
   box-shadow: 0px 0px 1px black;
   border-radius: 2px;
+  width: 17%;
+  min-width: 110px;
 }
 
 button:hover {
@@ -100,32 +118,38 @@ button[type="reset"] {
 </panel>
 </code>
 <solution>
-<!-- Write code below -->
-<h2>Identity</h2>
-<form action="#" method="post">
-  <label for="username">Username:</label>
-  <input type="text" placeholder="username" />
+<!-- Write your code below -->
+<h2>Personal Details</h2>
+<form class="personal-details-form">
+	<label for="username">Username:</label>
+	<input type="text" id="username" name="username" placeholder="Renu Sen">
+  <br>
+  
+  <label for="password">Password:</label>
+	<input type="password" id="password" name="password">
+  <br>
+  
+  <label for="address">Address:</label><br>
+	<textarea id="address" name="address" rows="4" cols="50" placeholder="World Trade Center, Kharadi, Pune, Maharashtra 41101"></textarea>
+  <br>
 
-  <label>Password:</label>
-  <input type="password" placeholder="password" />
-
-  <label>Address:</label>
-  <textarea rows="4" cols="50" placeholder="address"></textarea>
-
-  <label>Favourite Ice Cream Flavour:</label>
-  <select>
-    <option value="Chocolate">Chocolate</option>
-    <option value="Vanilla">Vanilla</option>
-    <option value="Strawberry">Strawberry</option>
-    <option value="Pista">Pista</option>
-    <option value="Butterscotch">Butterscotch</option>
+  <label for="flavour">Favourite Ice Cream Flavour:</label>
+  <select id="flavour" name="flavour">
+    <option value="chocolate">Chocolate</option>
+    <option value="vanilla">Vanilla</option>
+    <option value="strawberry">Strawberry</option>
+    <option value="pista">Pista</option>
+    <option value="butterscotch">Butterscotch</option>
   </select>
-
-  <label>Phone No.</label>
-  <input type="tel" placeholder="phone-no" />
-
-  <button type="reset">Reset</button>
-  <button type="submit">Submit</button>
+  <br>
+  
+  <label for="phone-number">Phone Number:</label>
+	<input type="tel" id="phone-number" name="phone-number" placeholder="+911234567890">
+  <br>
+  <div class="button-container">
+    <button type="reset">Reset</button>
+	  <button type="submit">Submit</button>
+  </div>
 </form>
 </solution>
 </codeblock>
@@ -140,4 +164,4 @@ We also don't want to leave you stuck, so if you feel
 you have tried enough and are still unable to solve
 this challenge, feel free to ask in our **community**.
 
-[Here is the link](https://bigbinaryacademy.slack.com/join/shared_invite/zt-23dvxwolx-U9LYYbv4ycmODEA1cbNFgA#/shared-invite/email) to join the community.
+[Here is the link](https://join.slack.com/t/bigbinaryacademy/shared_invite/zt-2d8ias5ud-ywkjF1xRyV9Nbne1_sGQag) to join the community.

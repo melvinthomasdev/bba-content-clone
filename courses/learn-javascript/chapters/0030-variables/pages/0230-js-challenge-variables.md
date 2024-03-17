@@ -39,4 +39,4 @@ We also don't want to leave you stuck, so if you feel
 you have tried enough and are still unable to solve
 this challenge, feel free to ask in our **community**.
 
-[Here is the link](https://bigbinaryacademy.slack.com/join/shared_invite/zt-23dvxwolx-U9LYYbv4ycmODEA1cbNFgA#/shared-invite/email) to join the community.
+[Here is the link](https://join.slack.com/t/bigbinaryacademy/shared_invite/zt-2d8ias5ud-ywkjF1xRyV9Nbne1_sGQag) to join the community.
