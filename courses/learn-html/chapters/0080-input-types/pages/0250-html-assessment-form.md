@@ -11,9 +11,9 @@ Below that, add a **label** element with the text **Password** with a **for** at
 Below that, add a **label** element with the text **Address** with a **for** attribute set as **address**.  Below that, add an input element with the **placeholder** attribute set as **World Trade Center, Kharadi, Pune, Maharashtra 41101** to allow user to enter their full address. 
 Make sure the element has 4 rows and 50 columns.
 
-Below that, add a **label** element with the text **Favourite Ice Cream Flavour** with a **for** and the **name** attribute set as **flavour**.
+Below that, add a **label** element with the text **Favourite Ice Cream Flavour** with a **for** attribute set as **flavour**.
 
- Below that, add a dropdown menu for users to select their favorite ice cream flavors.
+Below that, add a dropdown menu for the users to select their favorite ice cream flavours.
 Selections should have options for the following flavours:
   1. Chocolate
   2. Vanilla
@@ -23,7 +23,7 @@ Selections should have options for the following flavours:
 
 The option value should match the flavor, but in lowercase.
 
- Below that, add a **label** element with the text **Phone Number** with a **for** attribute set as **phone-number**. Below that, add an input element with the **placeholder** attribute set as **+911234567890** to allow user to enter their phone number.
+Below that, add a **label** element with the text **Phone Number** with a **for** attribute set as **phone-number**. Below that, add an input element with the **placeholder** attribute set as **+911234567890** to allow user to enter their phone number.
 
 Below the phone number field, add a **div** element with a class of **"button-container"**. 
 
@@ -121,31 +121,27 @@ button[type="reset"] {
 <!-- Write your code below -->
 <h2>Personal Details</h2>
 <form class="personal-details-form">
-	<label for="username">Username:</label>
-	<input type="text" id="username" name="username" placeholder="Renu Sen">
-  <br>
+	<label for="username">Username</label>
+	<input type="text" id="username" placeholder="Renu Sen">
   
-  <label for="password">Password:</label>
-	<input type="password" id="password" name="password">
-  <br>
+  <label for="password">Password</label>
+	<input type="password" id="password">
   
-  <label for="address">Address:</label><br>
-	<textarea id="address" name="address" rows="4" cols="50" placeholder="World Trade Center, Kharadi, Pune, Maharashtra 41101"></textarea>
-  <br>
+  <label for="address">Address</label>
+	<textarea id="address" rows="4" cols="50" placeholder="World Trade Center, Kharadi, Pune, Maharashtra 41101"></textarea>
 
-  <label for="flavour">Favourite Ice Cream Flavour:</label>
-  <select id="flavour" name="flavour">
+  <label for="flavour">Favourite Ice Cream Flavour</label>
+  <select id="flavour">
     <option value="chocolate">Chocolate</option>
     <option value="vanilla">Vanilla</option>
     <option value="strawberry">Strawberry</option>
     <option value="pista">Pista</option>
     <option value="butterscotch">Butterscotch</option>
   </select>
-  <br>
   
-  <label for="phone-number">Phone Number:</label>
-	<input type="tel" id="phone-number" name="phone-number" placeholder="+911234567890">
-  <br>
+  <label for="phone-number">Phone Number</label>
+	<input type="tel" id="phone-number" placeholder="+911234567890">
+  
   <div class="button-container">
     <button type="reset">Reset</button>
 	  <button type="submit">Submit</button>
