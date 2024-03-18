@@ -5,11 +5,11 @@
 - title: Define a Function
   slug: define-a-function
   page_type: lesson
-- title: Exercise - Define a Function
-  slug: exercise-define-a-function
+- title: Challenge - Define a Function
+  slug: challenge-define-a-function
   page_type: exercise
-- title: Exercise 2 - Define a Function
-  slug: exercise-2-define-a-function
+- title: Challenge 2 - Define a Function
+  slug: challenge-2-define-a-function
   page_type: exercise
 - title: Function Expression
   slug: function-expression
@@ -20,20 +20,20 @@
 - title: Parameters and Arguments
   slug: parameters-and-arguments
   page_type: lesson
-- title: Exercise - Parameters and Arguments
-  slug: exercise-parameters-and-arguments
+- title: Challenge - Parameters and Arguments
+  slug: challenge-parameters-and-arguments
   page_type: exercise
-- title: Exercise 2 - Parameters and Arguments
-  slug: exercise-2-parameters-and-arguments
+- title: Challenge 2 - Parameters and Arguments
+  slug: challenge-2-parameters-and-arguments
   page_type: exercise
 - title: Default Parameters
   slug: default-parameters
   page_type: lesson
-- title: Exercise - Default Parameters
-  slug: exercise-default-parameters
+- title: Challenge - Default Parameters
+  slug: challenge-default-parameters
   page_type: exercise
-- title: Exercise 2 - Default Parameters
-  slug: exercise-2-default-parameters
+- title: Challenge 2 - Default Parameters
+  slug: challenge-2-default-parameters
   page_type: exercise
 - title: return Statement
   slug: return-statement
@@ -44,41 +44,41 @@
 - title: Why return Statement 2
   slug: why-return-statement-2
   page_type: lesson
-- title: Exercise - return Statement
-  slug: exercise-return-statement
+- title: Challenge - return Statement
+  slug: challenge-return-statement
   page_type: exercise
-- title: Exercise 2 - return Statement
-  slug: exercise-2-return-statement
+- title: Challenge 2 - return Statement
+  slug: challenge-2-return-statement
   page_type: exercise
 - title: return Statement for Terminating Functions
   slug: return-to-terminate
   page_type: lesson
-- title: Exercise - return Statement for Terminating Functions
-  slug: exercise-return-to-terminate
+- title: Challenge - return Statement for Terminating Functions
+  slug: challenge-return-to-terminate
   page_type: exercise
 - title: Arrow Function Shorthand
   slug: arrow-function-shorthand
   page_type: lesson
-- title: Exercise - Arrow Function Shorthand
-  slug: exercise-arrow-function-shorthand
+- title: Challenge - Arrow Function Shorthand
+  slug: challenge-arrow-function-shorthand
   page_type: exercise
-- title: Exercise 2 - Arrow Function Shorthand
-  slug: exercise-2-arrow-function-shorthand
+- title: Challenge 2 - Arrow Function Shorthand
+  slug: challenge-2-arrow-function-shorthand
   page_type: exercise
 - title: Function as a Property of an Object
   slug: function-as-a-property-of-an-object
   page_type: lesson
-- title: Exercise - Function as a Property of an Object
-  slug: exercise-function-as-a-property-of-an-object
+- title: Challenge - Function as a Property of an Object
+  slug: challenge-function-as-a-property-of-an-object
   page_type: exercise
 - title: Shorthand for Method
   slug: shorthand-for-method
   page_type: lesson
-- title: Exercise - Shorthand for Method
-  slug: exercise-shorthand-for-method
+- title: Challenge - Shorthand for Method
+  slug: challenge-shorthand-for-method
   page_type: exercise
-- title: Exercise 2 - Shorthand for Method
-  slug: exercise-2-shorthand-for-method
+- title: Challenge 2 - Shorthand for Method
+  slug: challenge-2-shorthand-for-method
   page_type: exercise
 - title: Function Naming Conventions
   slug: function-naming-conventions
@@ -89,6 +89,6 @@
 - title: Callback Functions
   slug: callback-functions
   page_type: lesson
-- title: Exercise- Callback Functions
-  slug: exercise-callback-functions
+- title: challenge- Callback Functions
+  slug: challenge-callback-functions
   page_type: exercise
