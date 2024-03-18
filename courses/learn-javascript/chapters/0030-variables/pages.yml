@@ -2,11 +2,11 @@
 - title: Variables
   slug: variables
   page_type: lesson
-- title: Exercise - Variables
-  slug: exercise-variables
+- title: Challenge - Variables
+  slug: challenge-variables
   page_type: exercise
-- title: Exercise 2 - Variables
-  slug: exercise-2-variables
+- title: Challenge 2 - Variables
+  slug: challenge-2-variables
   page_type: exercise
 - title: Naming Variables
   slug: naming-variables
@@ -14,11 +14,11 @@
 - title: Naming Variables - camelCase
   slug: naming-variables-camelcase
   page_type: lesson
-- title: Exercise - Naming Variables - camelCase
-  slug: exercise-naming-variables-camelcase
+- title: Challenge - Naming Variables - camelCase
+  slug: challenge-naming-variables-camelcase
   page_type: exercise
-- title: Exercise 2 - Naming Variables - camelCase
-  slug: exercise-2-naming-variables-camelcase
+- title: Challenge 2 - Naming Variables - camelCase
+  slug: challenge-2-naming-variables-camelcase
   page_type: exercise
 - title: const
   slug: const
@@ -29,11 +29,11 @@
 - title: const is confusing
   slug: const-is-confusing
   page_type: lesson
-- title: Exercise - const and let
-  slug: exercise-const-and-let
+- title: Challenge - const and let
+  slug: challenge-const-and-let
   page_type: exercise
-- title: Exercise 2 - const and let
-  slug: exercise-2-const-and-let
+- title: Challenge 2 - const and let
+  slug: challenge-2-const-and-let
   page_type: exercise
 - title: Declaring Multiple Variables in a Single Line
   slug: declaring-multiple-variables
@@ -53,11 +53,11 @@
 - title: Storing Result of Expressions
   slug: storing-result-of-expressions
   page_type: lesson
-- title: Exercise - Storing Result of Expressions
-  slug: exercise-storing-result-of-expressions
+- title: Challenge - Storing Result of Expressions
+  slug: challenge-storing-result-of-expressions
   page_type: exercise
-- title: Exercise 2 - Storing Result of Expressions
-  slug: exercise-2-storing-result-of-expressions
+- title: Challenge 2 - Storing Result of Expressions
+  slug: challenge-2-storing-result-of-expressions
   page_type: exercise
 - title: Expressions and Parentheses
   slug: expressions-and-parentheses
@@ -65,20 +65,20 @@
 - title: Boolean
   slug: boolean
   page_type: lesson
-- title: Exercise - Store true or false
-  slug: exercise-store-true-or-false
+- title: Challenge - Store true or false
+  slug: challenge-store-true-or-false
   page_type: exercise
-- title: Exercise 2 - Store true or false
-  slug: exercise-2-store-true-or-false
+- title: Challenge 2 - Store true or false
+  slug: challenge-2-store-true-or-false
   page_type: exercise
 - title: Checking Equality
   slug: checking-equality
   page_type: lesson
-- title: Exercise - Checking Equality
-  slug: exercise-checking-equality
+- title: Challenge - Checking Equality
+  slug: challenge-checking-equality
   page_type: exercise
-- title: Exercise 2 - Checking Equality
-  slug: exercise-2-checking-equality
+- title: Challenge 2 - Checking Equality
+  slug: challenge-2-checking-equality
   page_type: exercise
 - title: Naming Convention
   slug: naming-convention
@@ -86,6 +86,6 @@
 - title: Changing Data Type
   slug: changing-data-type
   page_type: lesson
-- title: JS Challenge - Variables
-  slug: js-challenge-variables
+- title: JS Assessment - Variables
+  slug: js-assessment-variables
   page_type: exercise

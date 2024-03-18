@@ -2,45 +2,45 @@
 - title: Create String
   slug: create-string
   page_type: lesson
-- title: Exercise - Create String
-  slug: exercise-create-string
+- title: Challenge - Create String
+  slug: challenge-create-string
   page_type: exercise
-- title: Exercise 2 - Create string
-  slug: exercise-2-create-string
+- title: Challenge 2 - Create string
+  slug: challenge-2-create-string
   page_type: exercise
 - title: Joining Strings
   slug: joining-strings
   page_type: lesson
-- title: Exercise - Joining Strings
-  slug: exercise-joining-strings
+- title: Challenge - Joining Strings
+  slug: challenge-joining-strings
   page_type: exercise
-- title: Exercise 2 - Joining Strings
-  slug: exercise-2-joining-strings
+- title: Challenge 2 - Joining Strings
+  slug: challenge-2-joining-strings
   page_type: exercise
 - title: Template Strings
   slug: template-strings
   page_type: lesson
-- title: Exercise - Template Strings
-  slug: exercise-template-strings
+- title: Challenge - Template Strings
+  slug: challenge-template-strings
   page_type: exercise
-- title: Exercise 2 - Template Strings
-  slug: exercise-2-template-strings
+- title: Challenge 2 - Template Strings
+  slug: challenge-2-template-strings
   page_type: exercise
 - title: String Interploation
   slug: string-interploation
   page_type: lesson
-- title: Exercise - String Interploation
-  slug: exercise-string-interploation
+- title: Challenge - String Interploation
+  slug: challenge-string-interploation
   page_type: exercise
-- title: Exercise 2 - String Interploation
-  slug: exercise-2-string-interploation
+- title: Challenge 2 - String Interploation
+  slug: challenge-2-string-interploation
   page_type: exercise
 - title: Multi-line Template Strings
   slug: multiline-template-strings
   page_type: lesson
-- title: Exercise - Multi-line Template Strings
-  slug: exercise-multiline-template-strings
+- title: Challenge - Multi-line Template Strings
+  slug: challenge-multiline-template-strings
   page_type: exercise
-- title: Exercise 2 - Multi-line Template Strings
-  slug: exercise-2-multiline-template-strings
+- title: Challenge 2 - Multi-line Template Strings
+  slug: challenge-2-multiline-template-strings
   page_type: exercise
