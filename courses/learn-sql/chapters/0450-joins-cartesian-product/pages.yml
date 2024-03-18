@@ -2,12 +2,12 @@
 - title: Cartesian product using JOINs
   slug: cartesian-product-using-joins
   page_type: lesson
-- title: Exercise - Cartesian product using JOINs
-  slug: exercise-cartesian-product-using-joins
+- title: Challenge - Cartesian product using JOINs
+  slug: challenge-cartesian-product-using-joins
   page_type: exercise
 - title: Cartesian product using SELF JOINs and filters
   slug: cartesian-product-using-self-joins-and-filters
   page_type: lesson
-- title: Exercise - Cartesian product using SELF JOINs and filters
-  slug: exercise-cartesian-product-using-self-joins-and-filters
+- title: Challenge - Cartesian product using SELF JOINs and filters
+  slug: challenge-cartesian-product-using-self-joins-and-filters
   page_type: exercise

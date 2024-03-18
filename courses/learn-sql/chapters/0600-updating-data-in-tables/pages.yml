@@ -2,18 +2,18 @@
 - title: Updating data in a column
   slug: updating-data-in-a-column
   page_type: lesson
-- title: Exercise - Updating data in a column
-  slug: exercise-updating-data-in-a-column
+- title: Challenge - Updating data in a column
+  slug: challenge-updating-data-in-a-column
   page_type: exercise
 - title: Updating data in multiple columns
   slug: updating-data-in-multiple-columns
   page_type: lesson
-- title: Exercise - Updating data in multiple columns
-  slug: exercise-updating-data-in-multiple-columns
+- title: Challenge - Updating data in multiple columns
+  slug: challenge-updating-data-in-multiple-columns
   page_type: exercise
 - title: Updating data in all rows
   slug: updating-data-in-all-rows
   page_type: lesson
-- title: Exercise - Updating data in all rows
-  slug: exercise-updating-data-in-all-rows
+- title: Challenge - Updating data in all rows
+  slug: challenge-updating-data-in-all-rows
   page_type: exercise

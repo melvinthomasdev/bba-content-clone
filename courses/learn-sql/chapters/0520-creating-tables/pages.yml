@@ -2,12 +2,12 @@
 - title: CREATE TABLE
   slug: create-table-statement
   page_type: lesson
-- title: Exercise - CREATE TABLE
-  slug: exercise-create-table-statement
+- title: Challenge - CREATE TABLE
+  slug: challenge-create-table-statement
   page_type: exercise
 - title: CREATE TABLE - Data types
   slug: create-table-data-types
   page_type: lesson
-- title: Exercise - CREATE TABLE - Data types
-  slug: exercise-create-table-data-types
+- title: Challenge - CREATE TABLE - Data types
+  slug: challenge-create-table-data-types
   page_type: exercise

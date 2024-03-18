@@ -2,12 +2,12 @@
 - title: Select where less than
   slug: select-where-less-than
   page_type: lesson
-- title: Exercise - Select where less than
-  slug: exercise-select-where-less-than
+- title: Challenge - Select where less than
+  slug: challenge-select-where-less-than
   page_type: exercise
 - title: Select where greater than
   slug: select-where-greater-than
   page_type: lesson
-- title: Exercise - Select where greater than
-  slug: exercise-select-where-greater-than
+- title: Challenge - Select where greater than
+  slug: challenge-select-where-greater-than
   page_type: exercise

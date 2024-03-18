@@ -2,12 +2,12 @@
 - title: AS to change the column header
   slug: as-to-change-the-column-header
   page_type: lesson
-- title: Exercise - ALIAS to change the column header
-  slug: exercise-alias
+- title: Challenge - ALIAS to change the column header
+  slug: challenge-alias
   page_type: exercise
 - title: AS - another example
   slug: as-another-example
   page_type: lesson
-- title: Exercise - AS another example
-  slug: exercise-alias-2
+- title: Challenge - AS another example
+  slug: challenge-alias-2
   page_type: exercise

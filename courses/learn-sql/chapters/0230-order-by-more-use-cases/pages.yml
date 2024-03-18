@@ -2,12 +2,12 @@
 - title: Order students alphabetically
   slug: order-students-alphabetically
   page_type: lesson
-- title: Exercise - Order students with courses and names
-  slug: exercise-order-students-with-courses-and-names
+- title: Challenge - Order students with courses and names
+  slug: challenge-order-students-with-courses-and-names
   page_type: exercise
 - title: Order distinct courses alphabetically
   slug: order-distinct-courses-alphabetically
   page_type: lesson
-- title: Exercise - Sort distinct marks alphabetically in reverse order
-  slug: exercise-sort-distinct-marks-alphabetically-in-reverse-order
+- title: Challenge - Sort distinct marks alphabetically in reverse order
+  slug: challenge-sort-distinct-marks-alphabetically-in-reverse-order
   page_type: exercise

@@ -5,6 +5,6 @@
 - title: Select only name & age
   slug: select-only-name-age
   page_type: lesson
-- title: Exercise - Select only a few columns
+- title: Challenge - Select only a few columns
   slug: select-name
   page_type: exercise

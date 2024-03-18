@@ -2,6 +2,6 @@
 - title: GROUP_CONCAT
   slug: group-concat
   page_type: lesson
-- title: Exercise - GROUP_CONCAT
-  slug: exercise-group-concat
+- title: Challenge - GROUP_CONCAT
+  slug: challenge-group-concat
   page_type: exercise

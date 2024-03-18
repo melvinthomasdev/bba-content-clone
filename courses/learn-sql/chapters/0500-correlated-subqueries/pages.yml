@@ -2,12 +2,12 @@
 - title: Correlated subqueries in filter
   slug: correlated-subqueries-in-filter
   page_type: lesson
-- title: Exercise - Correlated subqueries in filter
-  slug: exercise-correlated-subqueries-in-filter
+- title: Challenge - Correlated subqueries in filter
+  slug: challenge-correlated-subqueries-in-filter
   page_type: exercise
 - title: Correlated subqueries in SELECT
   slug: correlated-subqueries-in-select
   page_type: lesson
-- title: Exercise - Correlated subqueries in SELECT
-  slug: exercise-correlated-subqueries-in-select
+- title: Challenge - Correlated subqueries in SELECT
+  slug: challenge-correlated-subqueries-in-select
   page_type: exercise

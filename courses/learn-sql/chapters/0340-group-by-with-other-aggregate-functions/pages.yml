@@ -2,15 +2,15 @@
 - title: GROUP BY and aggregate functions
   slug: group-by-and-aggregate-functions
   page_type: lesson
-- title: Exercise - Maximum age in each grade
-  slug: exercise-max-age-in-each-grade
+- title: Challenge - Maximum age in each grade
+  slug: challenge-max-age-in-each-grade
   page_type: exercise
-- title: Exercise - Minimum marks in each course
-  slug: exercise-minimum-marks-in-each-course
+- title: Challenge - Minimum marks in each course
+  slug: challenge-minimum-marks-in-each-course
   page_type: exercise
-- title: Exercise - Sum of marks in each course
-  slug: exercise-sum-of-marks-in-each-course
+- title: Challenge - Sum of marks in each course
+  slug: challenge-sum-of-marks-in-each-course
   page_type: exercise
-- title: Exercise - Average of marks in each grade
-  slug: exercise-average-of-marks-in-each-grade
+- title: Challenge - Average of marks in each grade
+  slug: challenge-average-of-marks-in-each-grade
   page_type: exercise

@@ -11,11 +11,11 @@
 - title: INNER JOIN - Column aliases for distinction
   slug: inner-join-part3
   page_type: lesson
-- title: Exercise - INNER JOIN - 1
-  slug: exercise-inner-join-1
+- title: Challenge - INNER JOIN - 1
+  slug: challenge-inner-join-1
   page_type: exercise
-- title: Exercise - INNER JOIN - 2
-  slug: exercise-inner-join-2
+- title: Challenge - INNER JOIN - 2
+  slug: challenge-inner-join-2
   page_type: exercise
 - title: Aliasing table names in JOIN
   slug: aliasing-table-names-in-join

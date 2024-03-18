@@ -5,8 +5,8 @@
 - title: Time function
   slug: time-function
   page_type: lesson
-- title: Exercise - Date and Time functions
-  slug: exercise-date-function
+- title: Challenge - Date and Time functions
+  slug: challenge-date-function
   page_type: exercise
 - title: DATETIME function
   slug: datetime-function
@@ -17,9 +17,9 @@
 - title: STRFTIME Function
   slug: strftime-function
   page_type: lesson
-- title: Exercise - STRFTIME Function
-  slug: exercise-strftime-function
+- title: Challenge - STRFTIME Function
+  slug: challenge-strftime-function
   page_type: exercise
-- title: Exercise - DATE functions
-  slug: exercise-date-functions-final
+- title: Challenge - DATE functions
+  slug: challenge-date-functions-final
   page_type: exercise

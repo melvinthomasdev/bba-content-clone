@@ -2,15 +2,15 @@
 - title: Subqueries - EXISTS operator
   slug: subqueries-exists-operator
   page_type: lesson
-- title: Exercise - Subqueries - EXISTS operator - 1
-  slug: exercise-subqueries-exists-operator-1
+- title: Challenge - Subqueries - EXISTS operator - 1
+  slug: challenge-subqueries-exists-operator-1
   page_type: exercise
-- title: Exercise - Subqueries - EXISTS operator - 2
-  slug: exercise-subqueries-exists-operator-2
+- title: Challenge - Subqueries - EXISTS operator - 2
+  slug: challenge-subqueries-exists-operator-2
   page_type: exercise
 - title: Subqueries - NOT EXISTS operator
   slug: subqueries-not-exists-operator
   page_type: lesson
-- title: Exercise - Subqueries - NOT EXISTS operator
-  slug: exercise-subqueries-not-exists-operator
+- title: Challenge - Subqueries - NOT EXISTS operator
+  slug: challenge-subqueries-not-exists-operator
   page_type: exercise

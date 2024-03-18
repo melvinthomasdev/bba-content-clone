@@ -2,18 +2,18 @@
 - title: NOT NULL Constraint
   slug: not-null-constraint
   page_type: lesson
-- title: Exercise - NOT NULL Constraint
-  slug: exercise-not-null-constraint
+- title: Challenge - NOT NULL Constraint
+  slug: challenge-not-null-constraint
   page_type: exercise
 - title: UNIQUE Constraint
   slug: unique-constraint
   page_type: lesson
-- title: Exercise - UNIQUE Constraint
-  slug: exercise-unique-constraint
+- title: Challenge - UNIQUE Constraint
+  slug: challenge-unique-constraint
   page_type: exercise
 - title: Combining constraints
   slug: combining-constraints
   page_type: lesson
-- title: Exercise - Combining constraints
-  slug: exercise-combining-constraints
+- title: Challenge - Combining constraints
+  slug: challenge-combining-constraints
   page_type: exercise

@@ -2,12 +2,12 @@
 - title: SQL comments
   slug: sql-comments
   page_type: lesson
-- title: Exercise - SQL comments
-  slug: exercise-sql-comments
+- title: Challenge - SQL comments
+  slug: challenge-sql-comments
   page_type: exercise
 - title: SQL multiline comments
   slug: sql-multiline-comments
   page_type: lesson
-- title: Exercise - SQL multiline comments
-  slug: exercise-sql-multiline-comments
+- title: Challenge - SQL multiline comments
+  slug: challenge-sql-multiline-comments
   page_type: exercise

@@ -2,12 +2,12 @@
 - title: INTERSECT
   slug: intersection
   page_type: lesson
-- title: Exercise - INTERSECT
-  slug: exercise-intersection
+- title: Challenge - INTERSECT
+  slug: challenge-intersection
   page_type: exercise
 - title: EXCEPT
   slug: except
   page_type: lesson
-- title: Exercise - EXCEPT
-  slug: exercise-except
+- title: Challenge - EXCEPT
+  slug: challenge-except
   page_type: exercise

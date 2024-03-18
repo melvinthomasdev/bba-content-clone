@@ -2,12 +2,12 @@
 - title: IFNULL
   slug: ifnull
   page_type: lesson
-- title: Exercise - IFNULL
-  slug: exercise-ifnull
+- title: Challenge - IFNULL
+  slug: challenge-ifnull
   page_type: exercise
 - title: COALESCE
   slug: coalesce
   page_type: lesson
-- title: Exercise - COALESCE
-  slug: exercise-coalesce
+- title: Challenge - COALESCE
+  slug: challenge-coalesce
   page_type: exercise

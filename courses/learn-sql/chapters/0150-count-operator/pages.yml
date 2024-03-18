@@ -5,6 +5,6 @@
 - title: COUNT from a column
   slug: select-count-column
   page_type: lesson
-- title: Exercise - Count from a column
-  slug: exercise-select-count-column
+- title: Challenge - Count from a column
+  slug: challenge-select-count-column
   page_type: exercise

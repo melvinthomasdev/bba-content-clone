@@ -5,12 +5,12 @@
 - title: PRIMARY KEY - Continued
   slug: primary-key-continued
   page_type: lesson
-- title: Exercise - PRIMARY KEY
-  slug: exercise-primary-key
+- title: Challenge - PRIMARY KEY
+  slug: challenge-primary-key
   page_type: exercise
 - title: PRIMARY KEY with multiple columns
   slug: primary-key-multiple-columns
   page_type: lesson
-- title: Exercise - PRIMARY KEY with multiple columns
-  slug: exercise-primary-key-multiple-columns
+- title: Challenge - PRIMARY KEY with multiple columns
+  slug: challenge-primary-key-multiple-columns
   page_type: exercise

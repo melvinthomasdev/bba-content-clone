@@ -2,18 +2,18 @@
 - title: Sum of ages
   slug: sum-of-ages
   page_type: lesson
-- title: Exercise - Sum of marks
-  slug: exercise-sum-of-marks
+- title: Challenge - Sum of marks
+  slug: challenge-sum-of-marks
   page_type: exercise
-- title: Exercise - Sum of distinct marks under 50
-  slug: exercise-sum-of-distinct-marks-under-50
+- title: Challenge - Sum of distinct marks under 50
+  slug: challenge-sum-of-distinct-marks-under-50
   page_type: exercise
 - title: Average of marks
   slug: average-of-marks
   page_type: lesson
-- title: Exercise - Average of ages
-  slug: exercise-average-of-ages
+- title: Challenge - Average of ages
+  slug: challenge-average-of-ages
   page_type: exercise
-- title: Exercise - Average of distinct ages between 8 and 13
-  slug: exercise-average-of-distinct-ages-between-8-and-13
+- title: Challenge - Average of distinct ages between 8 and 13
+  slug: challenge-average-of-distinct-ages-between-8-and-13
   page_type: exercise

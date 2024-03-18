@@ -2,6 +2,6 @@
 - title: SELECT *
   slug: select-all
   page_type: lesson
-- title: Exercise - Select *
-  slug: exercise-select-all
+- title: Challenge - Select *
+  slug: challenge-select-all
   page_type: exercise

@@ -2,9 +2,9 @@
 - title: LEFT OUTER JOIN
   slug: left-outer-join
   page_type: lesson
-- title: Exercise - LEFT OUTER JOIN - 1
-  slug: exercise-left-outer-join-1
+- title: Challenge - LEFT OUTER JOIN - 1
+  slug: challenge-left-outer-join-1
   page_type: exercise
-- title: Exercise - LEFT OUTER JOIN - 2
-  slug: exercise-left-outer-join-2
+- title: Challenge - LEFT OUTER JOIN - 2
+  slug: challenge-left-outer-join-2
   page_type: exercise

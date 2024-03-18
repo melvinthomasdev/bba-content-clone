@@ -2,6 +2,6 @@
 - title: PRIMARY KEY - AUTOINCREMENT
   slug: primary-key-autoincrement
   page_type: lesson
-- title: Exercise - PRIMARY KEY - AUTOINCREMENT
-  slug: exercise-primary-key-autoincrement
+- title: Challenge - PRIMARY KEY - AUTOINCREMENT
+  slug: challenge-primary-key-autoincrement
   page_type: exercise

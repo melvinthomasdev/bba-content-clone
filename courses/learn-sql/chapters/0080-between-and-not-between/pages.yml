@@ -2,18 +2,18 @@
 - title: Select using BETWEEN
   slug: select-where-between
   page_type: lesson
-- title: Exercise - Select using BETWEEN
-  slug: exercise-select-where-between
+- title: Challenge - Select using BETWEEN
+  slug: challenge-select-where-between
   page_type: exercise
 - title: Select using BETWEEN and other conditions
   slug: select-where-between-and-other-conditions
   page_type: lesson
-- title: Exercise - Select using BETWEEN and other conditions
-  slug: exercise-select-where-between-and-other-conditions
+- title: Challenge - Select using BETWEEN and other conditions
+  slug: challenge-select-where-between-and-other-conditions
   page_type: exercise
 - title: Select using NOT BETWEEN
   slug: select-where-not-between
   page_type: lesson
-- title: Exercise - Select using NOT BETWEEN
-  slug: exercise-select-where-not-between
+- title: Challenge - Select using NOT BETWEEN
+  slug: challenge-select-where-not-between
   page_type: exercise

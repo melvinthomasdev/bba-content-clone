@@ -2,15 +2,15 @@
 - title: UNION
   slug: union
   page_type: lesson
-- title: Exercise - UNION - 1
-  slug: exercise-union-1
+- title: Challenge - UNION - 1
+  slug: challenge-union-1
   page_type: exercise
-- title: Exercise - UNION - 2
-  slug: exercise-union-2
+- title: Challenge - UNION - 2
+  slug: challenge-union-2
   page_type: exercise
 - title: UNION ALL
   slug: union-all
   page_type: lesson
-- title: Exercise - UNION ALL
-  slug: exercise-union-all
+- title: Challenge - UNION ALL
+  slug: challenge-union-all
   page_type: exercise

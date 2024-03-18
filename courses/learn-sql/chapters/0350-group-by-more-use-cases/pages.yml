@@ -2,18 +2,18 @@
 - title: GROUP BY modified column data
   slug: group-by-modified-column-data
   page_type: lesson
-- title: Exercise - GROUP BY modified column data
-  slug: exercise-group-by-modified-column-data
+- title: Challenge - GROUP BY modified column data
+  slug: challenge-group-by-modified-column-data
   page_type: exercise
 - title: GROUP BY with ordering
   slug: group-by-with-ordering
   page_type: lesson
-- title: Exercise - GROUP BY with ordering
-  slug: exercise-group-by-with-ordering
+- title: Challenge - GROUP BY with ordering
+  slug: challenge-group-by-with-ordering
   page_type: exercise
 - title: Filters over results from GROUP BY
   slug: filters-over-results-from-group-by
   page_type: lesson
-- title: Exercise - Filters over results from GROUP BY
-  slug: exercise-filters-over-results-from-group-by
+- title: Challenge - Filters over results from GROUP BY
+  slug: challenge-filters-over-results-from-group-by
   page_type: exercise

@@ -2,12 +2,12 @@
 - title: DEFAULT Constraint
   slug: default-constraint
   page_type: lesson
-- title: Exercise - DEFAULT Constraint
-  slug: exercise-default-constraint
+- title: Challenge - DEFAULT Constraint
+  slug: challenge-default-constraint
   page_type: exercise
 - title: CHECK Constraint
   slug: check-constraint
   page_type: lesson
-- title: Exercise - CHECK Constraint
-  slug: exercise-check-constraint
+- title: Challenge - CHECK Constraint
+  slug: challenge-check-constraint
   page_type: exercise

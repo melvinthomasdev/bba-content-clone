@@ -2,18 +2,18 @@
 - title: Select top 10 students with highest marks
   slug: select-top-10-students-with-highest-marks
   page_type: lesson
-- title: Exercise - Select bottom 5 students with lowest marks
-  slug: exercise-select-bottom-5-students-with-lowest-marks
+- title: Challenge - Select bottom 5 students with lowest marks
+  slug: challenge-select-bottom-5-students-with-lowest-marks
   page_type: exercise
-- title: Exercise - Select last 6 students in the alphabetical order
-  slug: exercise-select-last-6-students-in-alphabetical-order
+- title: Challenge - Select last 6 students in the alphabetical order
+  slug: challenge-select-last-6-students-in-alphabetical-order
   page_type: exercise
-- title: Exercise - Select top 3 distinct courses in the alphabetical order
-  slug: exercise-select-top-3-distinct-courses-in-alphabetical-order
+- title: Challenge - Select top 3 distinct courses in the alphabetical order
+  slug: challenge-select-top-3-distinct-courses-in-alphabetical-order
   page_type: exercise
 - title: Select top students with highest marks from rank 6 to 10
   slug: select-top-students-with-highest-marks-from-rank-6-to-10
   page_type: lesson
-- title: Exercise - Select 6th student in the alphabetical order of names
-  slug: exercise-select-6th-student-in-the-alphabetical-order-of-names
+- title: Challenge - Select 6th student in the alphabetical order of names
+  slug: challenge-select-6th-student-in-the-alphabetical-order-of-names
   page_type: exercise
