@@ -9,8 +9,8 @@
   slug: string
 - name: Number
   slug: number
-- name: Comprehensive Exercise 1
-  slug: comprehensive-exercise-1
+- name: Comprehensive Challenge 1
+  slug: comprehensive-challenge-1
 - name: undefined and null
   slug: undefined-and-null
 - name: Object
@@ -19,8 +19,8 @@
   slug: array
 - name: Array Methods
   slug: array-methods
-- name: Comprehensive Exercise 2
-  slug: comprehensive-exercise-2
+- name: Comprehensive Challenge 2
+  slug: comprehensive-challenge-2
 - name: Conditionals
   slug: conditionals
 - name: Logical Operations
@@ -29,8 +29,8 @@
   slug: type-conversions
 - name: Functions
   slug: functions
-- name: Comprehensive Exercise 3
-  slug: comprehensive-exercise-3
+- name: Comprehensive Challenge 3
+  slug: comprehensive-challenge-3
 - name: Navigate through Array
   slug: navigate-through-array
 - name: Comprehensive Exercise 4

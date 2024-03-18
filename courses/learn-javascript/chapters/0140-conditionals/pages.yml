@@ -5,47 +5,47 @@
 - title: if Statement
   slug: if-statement
   page_type: lesson
-- title: Exercise - if Statement
-  slug: exercise-if-statement
+- title: Challenge - if Statement
+  slug: challenge-if-statement
   page_type: exercise
-- title: Exercise 2 - if Statement
-  slug: exercise-2-if-statement
+- title: Challenge 2 - if Statement
+  slug: challenge-2-if-statement
   page_type: exercise
 - title: if statement condition
   slug: if-statement-condition
   page_type: lesson
-- title: Exercise - if statement condition
-  slug: exercise-if-statement-condition
+- title: Challenge - if statement condition
+  slug: challenge-if-statement-condition
   page_type: exercise
-- title: Exercise 2 - if statement condition
-  slug: exercise-2-if-statement-condition
+- title: Challenge 2 - if statement condition
+  slug: challenge-2-if-statement-condition
   page_type: exercise
 - title: else statement
   slug: else-statement
   page_type: lesson
-- title: Exercise - else Statement
-  slug: exercise-else-statement
+- title: Challenge - else Statement
+  slug: challenge-else-statement
   page_type: exercise
-- title: Exercise 2 - else Statement
-  slug: exercise-2-else-statement
+- title: Challenge 2 - else Statement
+  slug: challenge-2-else-statement
   page_type: exercise
 - title: else if Statement
   slug: else-if-statement
   page_type: lesson
-- title: Exercise - else if Statement
-  slug: exercise-else-if-statement
+- title: Challenge - else if Statement
+  slug: challenge-else-if-statement
   page_type: exercise
-- title: Exercise 2 - else if Statement
-  slug: exercise-2-else-if-statement
+- title: Challenge 2 - else if Statement
+  slug: challenge-2-else-if-statement
   page_type: exercise
 - title: switch Statement
   slug: switch-statement
   page_type: lesson
-- title: Exercise - switch Statement
-  slug: exercise-switch-statement
+- title: Challenge - switch Statement
+  slug: challenge-switch-statement
   page_type: exercise
-- title: Exercise 2 - switch Statement
-  slug: exercise-2-switch-statement
+- title: Challenge 2 - switch Statement
+  slug: challenge-2-switch-statement
   page_type: exercise
 - title: switch statement fall through method
   slug: switch-statement-fall-through-method
@@ -53,21 +53,21 @@
 - title: Ternary Operator
   slug: ternary-operator
   page_type: lesson
-- title: Exercise - Ternary Operator
-  slug: exercise-ternary-operator
+- title: Challenge - Ternary Operator
+  slug: challenge-ternary-operator
   page_type: exercise
-- title: Exercise - Positive or Negative number
-  slug: exercise-positive-or-negative-number
+- title: Challenge - Positive or Negative number
+  slug: challenge-positive-or-negative-number
   page_type: exercise
-- title: Exercise - Find Maximum Number
-  slug: exercise-find-maximum-number
+- title: Challenge - Find Maximum Number
+  slug: challenge-find-maximum-number
   page_type: exercise
-- title: JS Challenge - Array methods and Conditionals Part 1
-  slug: js-challenge-array-methods-conditionals
+- title: JS Assessment- Array methods and Conditionals Part 1
+  slug: js-assessment-array-methods-conditionals
   page_type: exercise
-- title: JS Challenge - Array methods and Conditionals Part 2
-  slug: js-challenge-array-methods-conditionals-part-2
+- title: JS Assessment- Array methods and Conditionals Part 2
+  slug: js-assessment-array-methods-conditionals-part-2
   page_type: exercise
-- title: JS Challenge - Array methods and Conditionals Part 3
-  slug: js-challenge-array-methods-conditionals-part-3
+- title: JS Assessment- Array methods and Conditionals Part 3
+  slug: js-assessment-array-methods-conditionals-part-3
   page_type: exercise
