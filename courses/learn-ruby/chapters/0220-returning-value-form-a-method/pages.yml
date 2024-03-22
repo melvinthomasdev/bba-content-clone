@@ -8,17 +8,17 @@
 - title: No puts in the method
   slug: no-puts-in-the-method
   page_type: lesson
-- title: Exercise - Add two numbers
-  slug: exercise-add-two-numbers
+- title: Challenge - Add two numbers
+  slug: challenge-add-two-numbers
   page_type: exercise
-- title: Exercise - Find capital of the country
-  slug: exercise-find-capital-of-the-country
+- title: Challenge - Find capital of the country
+  slug: challenge-find-capital-of-the-country
   page_type: exercise
 - title: Multiple returns in a method
   slug: multiple-returns-in-a-method
   page_type: lesson
-- title: Exercise - Use multiple returns to return the grade
-  slug: exercise-multipe-return-to-return-the-grade
+- title: Challenge - Use multiple returns to return the grade
+  slug: challenge-multipe-return-to-return-the-grade
   page_type: exercise
 - title: Last statement is auto returned
   slug: last-statement-is-auto-returned

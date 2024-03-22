@@ -26,12 +26,12 @@
 - title: Multiple Arguments
   slug: multiple-arguments
   page_type: lesson
-- title: Exercise - Triangle with three arguments
-  slug: exercise-triangel-with-three-arguments
+- title: Challenge - Triangle with three arguments
+  slug: challenge-triangel-with-three-arguments
   page_type: exercise
-- title: Exercise - Rectangle with four arguments
-  slug: exercise-rectangel-with-four-arguments
+- title: Challenge - Rectangle with four arguments
+  slug: challenge-rectangel-with-four-arguments
   page_type: exercise
-- title: Exercise - boxing match with two arguments
-  slug: exercise-boxing-match-with-two-arguments
+- title: Challenge - boxing match with two arguments
+  slug: challenge-boxing-match-with-two-arguments
   page_type: exercise

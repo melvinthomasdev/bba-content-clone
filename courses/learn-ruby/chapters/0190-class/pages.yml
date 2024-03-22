@@ -14,8 +14,8 @@
 - title: What is the Class
   slug: what-is-the-class
   page_type: lesson
-- title: Exercise - What is the Class
-  slug: exercise-what-is-the-class
+- title: Challenge - What is the Class
+  slug: challenge-what-is-the-class
   page_type: exercise
 - title: What is the Class of String and Integer
   slug: what-is-the-class-of-string-and-integer
@@ -23,12 +23,12 @@
 - title: Checking class name
   slug: checking-class-name
   page_type: lesson
-- title: Exercise - Check classname using is-a
-  slug: exercise-check-classname-using-is-a
+- title: Challenge - Check classname using is-a
+  slug: challenge-check-classname-using-is-a
   page_type: exercise
 - title: Class methods
   slug: class-methods
   page_type: lesson
-- title: Exercise - Class methods
-  slug: exercise-class-methods
+- title: Challenge - Class methods
+  slug: challenge-class-methods
   page_type: exercise
