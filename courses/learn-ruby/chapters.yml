@@ -17,8 +17,8 @@
   slug: range
 - name: Hash
   slug: hash
-- name: Comprehensive Exercises
-  slug: comprehensive-exercises-1
+- name: Comprehensive Challenges 1
+  slug: comprehensive-challenges-1
 - name: Number
   slug: number
 - name: What is nil
@@ -33,8 +33,8 @@
   slug: comments
 - name: Regular expressions
   slug: regular-expressions
-- name: Comprehensive Exercises
-  slug: comprehensive-exercises-2
+- name: Comprehensive Challenges
+  slug: comprehensive-challenges-2
 - name: Class
   slug: class
 - name: Instance Method
@@ -69,5 +69,5 @@
   slug: symbol-to-proc
 - name: Ruby way
   slug: ruby-way
-- name: Comprehensive Exercises
-  slug: comprehensive-exercises-3
+- name: Comprehensive Challenges
+  slug: comprehensive-challenges-3
