@@ -2,20 +2,20 @@
 - title: Select Certain Items From Array
   slug: select-certain-items-from-array
   page_type: lesson
-- title: Exercise - Select Some Elements of the Array
-  slug: exercise-select-some-elements-of-the-array
+- title: Challenge - Select Some Elements of the Array
+  slug: challenge-select-some-elements-of-the-array
   page_type: exercise
-- title: Exercise - Select Some Elements of the Array
-  slug: exercise-select-some-elements-of-the-array-2
+- title: Challenge - Select Some Elements of the Array
+  slug: challenge-select-some-elements-of-the-array-2
   page_type: exercise
 - title: Remove Certain Items From an Array
   slug: remove-certain-items-from-array
   page_type: lesson
-- title: Exercise - Remove Some Elements of the Array
-  slug: exercise-remove-some-elements-of-the-array
+- title: Challenge - Remove Some Elements of the Array
+  slug: challenge-remove-some-elements-of-the-array
   page_type: exercise
-- title: Exercise - Remove Some Elements of the Array
-  slug: exercise-remove-some-elements-of-the-array-1
+- title: Challenge - Remove Some Elements of the Array
+  slug: challenge-remove-some-elements-of-the-array-1
   page_type: exercise
 - title: Add an Item to an Array Using Double Arrows
   slug: add-an-item-to-an-array-using-double-arrows
@@ -56,30 +56,30 @@
 - title: Loop Over Array Using Index
   slug: loop-over-items-using-index
   page_type: lesson
-- title: Exercise - Loop Over Array Using Index
-  slug: exercise-loop-over-items-using-index
+- title: Challenge - Loop Over Array Using Index
+  slug: challenge-loop-over-items-using-index
   page_type: exercise
 - title: Loop Over Equal-Sized Array Chunks
   slug: loop-over-equal-sized-array-chunks
   page_type: lesson
-- title: Exercise - Loop Over Equal-Sized Array Chunks
-  slug: exercise-loop-over-equal-sized-array-chunks
+- title: Challenge - Loop Over Equal-Sized Array Chunks
+  slug: challenge-loop-over-equal-sized-array-chunks
   page_type: exercise
 - title: Sort Items of Array
   slug: sort-items-of-array
   page_type: lesson
-- title: Exercise - Sort Items of Array
-  slug: exercise-sort-items-of-array
+- title: Challenge - Sort Items of Array
+  slug: challenge-sort-items-of-array
   page_type: exercise
 - title: Quicker Way to Create Array of Strings
   slug: quicker-way-to-create-array-of-strings
   page_type: lesson
-- title: Exercise - Quicker Way to Create Arrays of Strings
-  slug: exercise-quicker-way-to-create-arrays-of-strings
+- title: Challenge - Quicker Way to Create Arrays of Strings
+  slug: challenge-quicker-way-to-create-arrays-of-strings
   page_type: exercise
 - title: Quicker Way to Create Array of Symbols
   slug: quicker-way-to-create-array-of-symbols
   page_type: lesson
-- title: Exercise - Quicker Way to Create Arrays of Symbols
-  slug: exercise-quicker-way-to-create-arrays-of-symbols
+- title: Challenge - Quicker Way to Create Arrays of Symbols
+  slug: challenge-quicker-way-to-create-arrays-of-symbols
   page_type: exercise

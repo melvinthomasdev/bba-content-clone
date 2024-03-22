@@ -2,30 +2,30 @@
 - title: Convert a String into an Array
   slug: convert-a-string-into-an-array
   page_type: lesson
-- title: Exercise - String to array
-  slug: exercise-string-to-array
+- title: Challenge - String to array
+  slug: challenge-string-to-array
   page_type: exercise
 - title: Split String Along Comma
   slug: split-string-along-comma
   page_type: lesson
-- title: Exercise - Split String Along Comma
-  slug: exercise-split-string-along-comma
+- title: Challenge - Split String Along Comma
+  slug: challenge-split-string-along-comma
   page_type: exercise
-- title: Exercise - Split Friends' Names
-  slug: exercise-split-friends-name
+- title: Challenge - Split Friends' Names
+  slug: challenge-split-friends-name
   page_type: exercise
-- title: Exercise - Split String Along Pipe
-  slug: exercise-split-string-along-pipe
+- title: Challenge - Split String Along Pipe
+  slug: challenge-split-string-along-pipe
   page_type: exercise
-- title: Exercise - Middle Name of the City
-  slug: exercise-middle-name-of-the-city
+- title: Challenge - Middle Name of the City
+  slug: challenge-middle-name-of-the-city
   page_type: exercise
 - title: Use join to Convert an Array Into a String
   slug: use-join-to-convert-an-array-into-a-string
   page_type: lesson
-- title: Exercise - Array to String Using join
-  slug: exercise-array-to-string-using-join
+- title: Challenge - Array to String Using join
+  slug: challenge-array-to-string-using-join
   page_type: exercise
-- title: Exercise - Capitalize the First Letter of the Cities
-  slug: exercise-capitalize-the-first-letter-of-the-cities
+- title: Challenge - Capitalize the First Letter of the Cities
+  slug: challenge-capitalize-the-first-letter-of-the-cities
   page_type: exercise

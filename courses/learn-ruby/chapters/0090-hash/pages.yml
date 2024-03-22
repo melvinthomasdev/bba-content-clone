@@ -2,45 +2,45 @@
 - title: Key Value Pair
   slug: key-value-pair
   page_type: lesson
-- title: Exercise - Key Value Pair
-  slug: exercise-key-value-pair
+- title: Challenge - Key Value Pair
+  slug: challenge-key-value-pair
   page_type: exercise
 - title: Get Value Using Key
   slug: get-value-using-key
   page_type: lesson
-- title: Exercise - Get value using key
-  slug: exercise-get-value-using-key
+- title: Challenge - Get value using key
+  slug: challenge-get-value-using-key
   page_type: exercise
-- title: Exercise - Get value using key
-  slug: exercise-get-value-using-key-2
+- title: Challenge - Get value using key
+  slug: challenge-get-value-using-key-2
   page_type: exercise
 - title: Add Data to a Hash
   slug: add-data-to-a-hash
   page_type: lesson
-- title: Exercise - Add Data to a Hash
-  slug: exercise-add-data-to-a-hash
+- title: Challenge - Add Data to a Hash
+  slug: challenge-add-data-to-a-hash
   page_type: exercise
 - title: Add Data to a Hash Using Key
   slug: add-data-to-a-hash-using-key
   page_type: lesson
-- title: Exercise - Add Data to a Hash Using Key
-  slug: exercise-add-data-to-a-hash-using-key
+- title: Challenge - Add Data to a Hash Using Key
+  slug: challenge-add-data-to-a-hash-using-key
   page_type: exercise
 - title: Access All Keys
   slug: access-all-keys
   page_type: lesson
-- title: Exercise - Access All Keys
-  slug: exercise-access-all-keys
+- title: Challenge - Access All Keys
+  slug: challenge-access-all-keys
   page_type: exercise
 - title: Loop Over All Keys and Values
   slug: loop-over-all-key-and-values
   page_type: lesson
-- title: Exercise - Use each to print all items
-  slug: exercise-use-each-to-print-all-items
+- title: Challenge - Use each to print all items
+  slug: challenge-use-each-to-print-all-items
   page_type: exercise
 - title: Value omission in Ruby Hash Literals
   slug: value-omission-in-ruby-hash-literals
   page_type: lesson
-- title: Exercise - Value omission in Ruby Hash Literals
-  slug: exercise-value-omission-in-ruby-hash-literals
+- title: Challenge - Value omission in Ruby Hash Literals
+  slug: challenge-value-omission-in-ruby-hash-literals
   page_type: exercise

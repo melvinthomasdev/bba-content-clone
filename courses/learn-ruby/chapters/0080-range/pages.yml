@@ -2,17 +2,17 @@
 - title: Range of Numbers
   slug: range-of-numbers
   page_type: lesson
-- title: Exercise - Range of Numbers
-  slug: exercise-range-of-numbers
+- title: Challenge - Range of Numbers
+  slug: challenge-range-of-numbers
   page_type: exercise
 - title: Checking if Value is in Range
   slug: checking-if-value-is-in-range
   page_type: lesson
-- title: Exercise - Checking if Value is in Range
-  slug: exercise-checking-if-value-is-in-range
+- title: Challenge - Checking if Value is in Range
+  slug: challenge-checking-if-value-is-in-range
   page_type: exercise
-- title: Exercise - Checking if Value is in Range
-  slug: exercise-checking-if-value-is-in-range-2
+- title: Challenge - Checking if Value is in Range
+  slug: challenge-checking-if-value-is-in-range-2
   page_type: exercise
 - title: Converting Range into an Array
   slug: converting-range-into-an-array
