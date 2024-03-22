@@ -41,15 +41,6 @@
 - title: Exercise - Join all Elements
   slug: exercise-join
   page_type: exercise
-- title: Filter elements based on given condition
-  slug: filter
-  page_type: lesson
-- title: Exercise - Check Elements on Given Condition
-  slug: exercise-filter
-  page_type: exercise
-- title: Exercise - Difference Between map and forEach
-  slug: exercise-map-and-foreach
-  page_type: exercise
 - title: Find element of an Array
   slug: find
   page_type: lesson
@@ -71,12 +62,3 @@
 - title: Usage of Underscore in Functions
   slug: usage-of-underscore
   page_type: lesson
-- title: Exploring Array.from() method
-  slug: array-from-method
-  page_type: lesson
-- title: Challenge - Array Doubled
-  slug: challenge-array-doubled
-  page_type: exercise
-- title: Challenge - Fruit Stand
-  slug: challenge-fruit-stand
-  page_type: exercise

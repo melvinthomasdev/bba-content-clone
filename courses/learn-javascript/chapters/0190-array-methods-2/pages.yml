@@ -20,3 +20,21 @@
 - title: Difference between forEach and map
   slug: difference-foreach-map
   page_type: lesson
+- title: Exercise - Difference Between map and forEach
+  slug: exercise-map-and-foreach
+  page_type: exercise
+- title: Filter elements based on given condition
+  slug: filter
+  page_type: lesson
+- title: Exercise - Check Elements on Given Condition
+  slug: exercise-filter
+  page_type: exercise
+- title: Create Arrays from iterables or array like objects
+  slug: array-from-method
+  page_type: lesson
+- title: Challenge - Array Tripled
+  slug: challenge-array-tripled
+  page_type: exercise
+- title: Challenge - Text Processing
+  slug: challenge-text-processing
+  page_type: exercise

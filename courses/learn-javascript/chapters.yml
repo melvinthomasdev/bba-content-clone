@@ -17,8 +17,8 @@
   slug: object
 - name: Array
   slug: array
-- name: Array Methods
-  slug: array-methods
+- name: Array Methods 1
+  slug: array-methods-1
 - name: Comprehensive Challenge 2
   slug: comprehensive-challenge-2
 - name: Conditionals
@@ -31,8 +31,8 @@
   slug: functions
 - name: Comprehensive Challenge 3
   slug: comprehensive-challenge-3
-- name: Navigate through Array
-  slug: navigate-through-array
+- name: Array Methods 2
+  slug: array-methods-2
 - name: Comprehensive Exercise 4
   slug: comprehensive-exercise-4
 - name: Document Object Model
@@ -53,8 +53,8 @@
   slug: sectional-project-1
 - name: Single and Multiple line comments
   slug: single-and-multiple-line-comments
-- name: Advanced Array Methods
-  slug: advanced-array-methods
+- name: Array Methods 3
+  slug: array-methods-3
 - name: Rest and Spread
   slug: rest-and-spread
 - name: Comprehensive Exercise 7
