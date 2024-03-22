@@ -2,26 +2,26 @@
 - title: Joining Strings
   slug: joining-strings
   page_type: lesson
-- title: Exercise - Joining Strings
-  slug: exercise-joining-strings
+- title: Challenge - Joining Strings
+  slug: challenge-joining-strings
   page_type: exercise
 - title: Reversing a String
   slug: reversing-a-string
   page_type: lesson
-- title: Exercise - Reversing a String
-  slug: exercise-reversing-a-string
+- title: Challenge - Reversing a String
+  slug: challenge-reversing-a-string
   page_type: exercise
 - title: Convert All Letters in String to Capital Letters
   slug: convert-all-letters-in-string-to-capital-letters
   page_type: lesson
-- title: Exercise - Convert All Letters in String to Capital Letters
-  slug: exercise-convert-all-letters-in-string-to-capital-letters
+- title: Challenge - Convert All Letters in String to Capital Letters
+  slug: challenge-convert-all-letters-in-string-to-capital-letters
   page_type: exercise
 - title: Convert All Letters in String to Small Letters
   slug: convert-all-letters-in-string-to-small-letters
   page_type: lesson
-- title: Exercise - Convert All Letters in String to Small Letters
-  slug: exercise-convert-all-letters-in-string-to-small-letters
+- title: Challenge - Convert All Letters in String to Small Letters
+  slug: challenge-convert-all-letters-in-string-to-small-letters
   page_type: exercise
 - title: Remove Extra Spaces in String
   slug: remove-extra-spaces-in-string
@@ -29,20 +29,20 @@
 - title: Convert a Number Into a String
   slug: convert-a-number-into-a-string
   page_type: lesson
-- title: Exercise - Convert a Number into a String
-  slug: exercise-convert-a-number-into-a-string
+- title: Challenge - Convert a Number into a String
+  slug: challenge-convert-a-number-into-a-string
   page_type: exercise
 - title: Convert a String Into a Number
   slug: convert-a-string-into-a-number
   page_type: lesson
-- title: Exercise - Convert a String Into a Number
-  slug: exercise-convert-a-string-into-a-number
+- title: Challenge - Convert a String Into a Number
+  slug: challenge-convert-a-string-into-a-number
   page_type: exercise
 - title: Capitalize the First Letter of a String
   slug: capitalize-the-first-letter-of-a-string
   page_type: lesson
-- title: Exercise - Capitalize the First Letter of a String
-  slug: exercise-capitalize-the-first-letter-of-a-string
+- title: Challenge - Capitalize the First Letter of a String
+  slug: challenge-capitalize-the-first-letter-of-a-string
   page_type: exercise
 - title: Running Methods One After Another
   slug: running-methods-one-after-another
@@ -50,32 +50,32 @@
 - title: First position is zero not 1
   slug: first-position-is-zero-not-1
   page_type: lesson
-- title: Exercise - First position is zero not 1
-  slug: exercise-first-position-is-zero-not-1
+- title: Challenge - First position is zero not 1
+  slug: challenge-first-position-is-zero-not-1
   page_type: exercise
 - title: Last position is -1
   slug: last-position-is-1
   page_type: lesson
-- title: Exercise - Last position is -1
-  slug: exercise-last-position-is-1
+- title: Challenge - Last position is -1
+  slug: challenge-last-position-is-1
   page_type: exercise
 - title: Check for the Starting Characters in a String
   slug: check-for-the-starting-characters-in-a-string
   page_type: lesson
-- title: Exercise - Check for the Starting Characters in a String
-  slug: exercise-check-if-string-starts-with-a-specific-character
+- title: Challenge - Check for the Starting Characters in a String
+  slug: challenge-check-if-string-starts-with-a-specific-character
   page_type: exercise
 - title: Check if a String is included in another String
   slug: check-if-a-string-is-included-in-another-string
   page_type: lesson
-- title: Exercise - Check if a String is included in another String
-  slug: exercise-check-if-a-string-is-included-in-another-string
+- title: Challenge - Check if a String is included in another String
+  slug: challenge-check-if-a-string-is-included-in-another-string
   page_type: exercise
 - title: Convert String to Characters
   slug: convert-string-to-characters
   page_type: lesson
-- title: Exercise - Convert String to Characters
-  slug: exercise-convert-string-to-characters
+- title: Challenge - Convert String to Characters
+  slug: challenge-convert-string-to-characters
   page_type: exercise
 - title: Compare Two Strings Ignoring Case
   slug: compare-two-strings-ignoring-case
@@ -83,14 +83,14 @@
 - title: Compare Two Strings Considering Case
   slug: compare-two-strings-considering-case
   page_type: lesson
-- title: Exercise - Compare Two Strings
-  slug: exercise-compare-two-strings
+- title: Challenge - Compare Two Strings
+  slug: challenge-compare-two-strings
   page_type: exercise
 - title: Interpolation using double quoted string
   slug: interpolation-using-double-quoted-string
   page_type: lesson
-- title: Exercise - Interpolation using double quoted string
-  slug: exercise-interpolation-using-double-quoted-string
+- title: Challenge - Interpolation using double quoted string
+  slug: challenge-interpolation-using-double-quoted-string
   page_type: exercise
 - title: What is escape sequence
   slug: what-is-escape-sequence
@@ -98,18 +98,18 @@
 - title: Get a Part of the String
   slug: get-a-part-of-the-string
   page_type: lesson
-- title: Exercise - Get a Part of the String
-  slug: exercise-get-a-part-of-the-string
+- title: Challenge - Get a Part of the String
+  slug: challenge-get-a-part-of-the-string
   page_type: exercise
 - title: Replace characters in a string
   slug: replace-characters-in-a-string
   page_type: lesson
-- title: Exercise - Replace characters in a string
-  slug: exercise-replace-characters-in-a-string
+- title: Challenge - Replace characters in a string
+  slug: challenge-replace-characters-in-a-string
   page_type: exercise
 - title: Replace strings within a string
   slug: replace-strings-within-a-string
   page_type: lesson
-- title: Exercise - Replace strings within a string
-  slug: exercise-replace-strings-within-a-string
+- title: Challenge - Replace strings within a string
+  slug: challenge-replace-strings-within-a-string
   page_type: exercise
