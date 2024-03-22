@@ -71,3 +71,12 @@
 - title: Usage of Underscore in Functions
   slug: usage-of-underscore
   page_type: lesson
+- title: Exploring Array.from() method
+  slug: array-from-method
+  page_type: lesson
+- title: Challenge - Array Doubled
+  slug: challenge-array-doubled
+  page_type: exercise
+- title: Challenge - Fruit Stand
+  slug: challenge-fruit-stand
+  page_type: exercise
