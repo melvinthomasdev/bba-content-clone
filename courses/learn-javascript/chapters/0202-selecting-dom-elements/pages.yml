@@ -2,74 +2,74 @@
 - title: Using ID
   slug: selecting-dom-elements-using-id
   page_type: lesson
-- title: Exercise - Using ID
-  slug: exercise-selecting-dom-elements-using-id-1
+- title: Challenge - Using ID
+  slug: challenge-selecting-dom-elements-using-id-1
   page_type: exercise
-- title: Exercise - Using ID
-  slug: exercise-selecting-dom-elements-using-id-2
+- title: Challenge - Using ID
+  slug: challenge-selecting-dom-elements-using-id-2
   page_type: exercise
 - title: Using Tag Name
   slug: selecting-dom-elements-using-tag-name
   page_type: lesson
-- title: Exercise - Using Tag Name
-  slug: exercise-selecting-dom-elements-using-tag-name
+- title: Challenge - Using Tag Name
+  slug: challenge-selecting-dom-elements-using-tag-name
   page_type: exercise
-- title: Exercise - Using Tag Name
-  slug: exercise-selecting-dom-elements-using-tag-name-2
+- title: Challenge - Using Tag Name
+  slug: challenge-selecting-dom-elements-using-tag-name-2
   page_type: exercise
 - title: Using Class Name
   slug: selecting-dom-elements-using-class-name
   page_type: lesson
-- title: Exercise - Using Class Name
-  slug: exercise-selecting-dom-elements-using-class-name
+- title: Challenge - Using Class Name
+  slug: challenge-selecting-dom-elements-using-class-name
   page_type: exercise
-- title: Exercise - Using Class Name
-  slug: exercise-selecting-dom-elements-using-class-name-2
+- title: Challenge - Using Class Name
+  slug: challenge-selecting-dom-elements-using-class-name-2
   page_type: exercise
 - title: Using querySelector
   slug: selecting-dom-elements-using-query-selector
   page_type: lesson
-- title: Exercise - Using querySelector
-  slug: exercise-selecting-dom-elements-using-query-selector
+- title: Challenge - Using querySelector
+  slug: challenge-selecting-dom-elements-using-query-selector
   page_type: exercise
 - title: Using querySelectorAll
   slug: selecting-dom-elements-using-query-selector-all
   page_type: lesson
-- title: Exercise - Using querySelectorAll
-  slug: exercise-selecting-dom-elements-using-query-selector-all
+- title: Challenge - Using querySelectorAll
+  slug: challenge-selecting-dom-elements-using-query-selector-all
   page_type: exercise
 - title: Selecting Parent Element
   slug: selecting-parent-element
   page_type: lesson
-- title: Exercise - Selecting Parent Element
-  slug: exercise-selecting-parent-element
+- title: Challenge - Selecting Parent Element
+  slug: challenge-selecting-parent-element
   page_type: exercise
-- title: Exercise - Selecting Parent Element
-  slug: exercise-selecting-parent-element-2
+- title: Challenge - Selecting Parent Element
+  slug: challenge-selecting-parent-element-2
   page_type: exercise
 - title: Selecting Sibling Element
   slug: selecting-sibling-element
   page_type: lesson
-- title: Exercise - Selecting Sibling Element
-  slug: exercise-selecting-sibling-element
+- title: Challenge - Selecting Sibling Element
+  slug: challenge-selecting-sibling-element
   page_type: exercise
-- title: Exercise - Selecting Sibling Element
-  slug: exercise-selecting-sibling-element-2
+- title: Challenge - Selecting Sibling Element
+  slug: challenge-selecting-sibling-element-2
   page_type: exercise
 - title: Selecting Child Elements
   slug: selecting-child-elements
   page_type: lesson
-- title: Exercise - Selecting Child Element
-  slug: exercise-selecting-child-element
+- title: Challenge - Selecting Child Element
+  slug: challenge-selecting-child-element
   page_type: exercise
-- title: Exercise - Selecting Child Element
-  slug: exercise-selecting-child-element-2
+- title: Challenge - Selecting Child Element
+  slug: challenge-selecting-child-element-2
   page_type: exercise
 - title: Selecting Elements Using dataset
   slug: selecting-elements-using-dataset
   page_type: lesson
-- title: Exercise - Selecting Elements Using dataset
-  slug: exercise-selecting-elements-using-dataset
+- title: Challenge - Selecting Elements Using dataset
+  slug: challenge-selecting-elements-using-dataset
   page_type: exercise
 - title: HTML DOM Challenge - Selection
   slug: html-dom-challenge-selection

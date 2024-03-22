@@ -8,8 +8,8 @@
 - title: HTML Element - Object Representation
   slug: html-element-object-representation
   page_type: lesson
-- title: Exercise - HTML Element - Object Representation
-  slug: exercise-html-element-object-representation
+- title: Challenge - HTML Element - Object Representation
+  slug: challenge-html-element-object-representation
   page_type: exercise
 - title: DOM Tree
   slug: dom-tree
@@ -17,8 +17,8 @@
 - title: DOM Methods and Properties
   slug: dom-methods-and-properties
   page_type: lesson
-- title: Exercise - DOM Methods and Properties
-  slug: exercise-dom-methods-and-properties
+- title: Challenge - DOM Methods and Properties
+  slug: challenge-dom-methods-and-properties
   page_type: exercise
 - title: Document is the Root of the DOM Tree
   slug: document-is-the-root-of-the-dom-tree

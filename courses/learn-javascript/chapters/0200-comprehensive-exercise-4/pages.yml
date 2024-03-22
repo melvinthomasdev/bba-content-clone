@@ -2,96 +2,96 @@
 - title: About
   slug: about-comprehensive-exercise
   page_type: lesson
-- title: ComprehensiveExercise - Find Positive Numbers
+- title: Comprehensive Challenge - Find Positive Numbers
   slug: challenge-find-positive-numbers-js
   page_type: assessment
-- title: ComprehensiveExercise - Calculate Grade
+- title: Comprehensive Challenge - Calculate Grade
   slug: challenge-calculate-grade-js
   page_type: assessment
-- title: ComprehensiveExercise - Build Pizza Price Calculator
+- title: Comprehensive Challenge - Build Pizza Price Calculator
   slug: challenge-build-pizza-price-calculator-js
   page_type: assessment
-- title: ComprehensiveExercise - Greetings
+- title: Comprehensive Challenge - Greetings
   slug: challenge-greetings-js
   page_type: assessment
-- title: ComprehensiveExercise - Addition in Array
+- title: Comprehensive Challenge - Addition in Array
   slug: challenge-addition-in-array-js
   page_type: assessment
-- title: ComprehensiveExercise - Find Sum of First and Last Elements of an Array
-  slug: comprehensive-exercise-sum-first-last-array
+- title: Comprehensive Challenge - Find Sum of First and Last Elements of an Array
+  slug: comprehensive-challenge-sum-first-last-array
   page_type: assessment
-- title: ComprehensiveExercise - Get Full Name
-  slug: comprehensive-exercise-get-full-name
+- title: Comprehensive Challenge - Get Full Name
+  slug: comprehensive-challenge-get-full-name
   page_type: assessment
-- title: ComprehensiveExercise - Add Two Numbers
-  slug: comprehensive-exercise-add-two-numbers
+- title: Comprehensive Challenge - Add Two Numbers
+  slug: comprehensive-challenge-add-two-numbers
   page_type: assessment
-- title: ComprehensiveExercise - Convert Celsius to Fahrenheit
-  slug: comprehensive-exercise-celsius-to-fahrenheit
+- title: Comprehensive Challenge - Convert Celsius to Fahrenheit
+  slug: comprehensive-challenge-celsius-to-fahrenheit
   page_type: assessment
-- title: ComprehensiveExercise - Check the Numbers and Add
-  slug: comprehensive-exercise-check-the-numbers-and-add
+- title: Comprehensive Challenge - Check the Numbers and Add
+  slug: comprehensive-challenge-check-the-numbers-and-add
   page_type: assessment
-- title: ComprehensiveExercise - Increment a Number and Divide It
-  slug: comprehensive-exercise-increment-a-number-and-divide-it
+- title: Comprehensive Challenge - Increment a Number and Divide It
+  slug: comprehensive-challenge-increment-a-number-and-divide-it
   page_type: assessment
-- title: ComprehensiveExercise - Product of two Numbers
-  slug: comprehensive-exercise-product-of-two-numbers
+- title: Comprehensive Challenge - Product of two Numbers
+  slug: comprehensive-challenge-product-of-two-numbers
   page_type: assessment
-- title: ComprehensiveExercise - Pass or Fail
-  slug: comprehensive-exercise-pass-or-fail
+- title: Comprehensive Challenge - Pass or Fail
+  slug: comprehensive-challenge-pass-or-fail
   page_type: assessment
-- title: ComprehensiveExercise - Check Whether the Number is Divisible by 6
-  slug: comprehensive-exercise-check-whether-number-is-divisible-by-6
+- title: Comprehensive Challenge - Check Whether the Number is Divisible by 6
+  slug: comprehensive-challenge-check-whether-number-is-divisible-by-6
   page_type: assessment
-- title: ComprehensiveExercise - Get a Property From an Object
-  slug: comprehensive-exercise-get-property-from-object
+- title: Comprehensive Challenge - Get a Property From an Object
+  slug: comprehensive-challenge-get-property-from-object
   page_type: assessment
-- title: ComprehensiveExercise - Assign Non-Empty Value to Object Key
-  slug: comprehensive-exercise-assign-value-to-key-if-empty
+- title: Comprehensive Challenge - Assign Non-Empty Value to Object Key
+  slug: comprehensive-challenge-assign-value-to-key-if-empty
   page_type: assessment
-- title: ComprehensiveExercise - Create an Empty Array With Length > 0
-  slug: comprehensive-exercise-empty-array-with-length-greater-than-0
+- title: Comprehensive Challenge - Create an Empty Array With Length > 0
+  slug: comprehensive-challenge-empty-array-with-length-greater-than-0
   page_type: assessment
-- title: ComprehensiveExercise - Adding Suffixes
-  slug: comprehensive-exercise-adding-suffixes
+- title: Comprehensive Challenge - Adding Suffixes
+  slug: comprehensive-challenge-adding-suffixes
   page_type: assessment
-- title: ComprehensiveExercise - Split an Array Into Odd and Even Chunks
-  slug: comprehensive-exercise-split-an-array-into-odd-and-even-chunks
+- title: Comprehensive Challenge - Split an Array Into Odd and Even Chunks
+  slug: comprehensive-challenge-split-an-array-into-odd-and-even-chunks
   page_type: assessment
-- title: ComprehensiveExercise - Check Ice Cream Price
-  slug: comprehensive-exercise-check-ice-cream-price
+- title: Comprehensive Challenge - Check Ice Cream Price
+  slug: comprehensive-challenge-check-ice-cream-price
   page_type: assessment
-- title: ComprehensiveExercise - Find Day of the Week
-  slug: comprehensive-exercise-find-day-of-the-week
+- title: Comprehensive Challenge - Find Day of the Week
+  slug: comprehensive-challenge-find-day-of-the-week
   page_type: assessment
-- title: ComprehensiveExercise - Calculating gift coupons
-  slug: comprehensive-exercise-calculating-gift-coupons
+- title: Comprehensive Challenge - Calculating gift coupons
+  slug: comprehensive-challenge-calculating-gift-coupons
   page_type: assessment
-- title: ComprehensiveExercise - Check NOT Divisible
-  slug: comprehensive-exercise-check-not-divisible
+- title: Comprehensive Challenge - Check NOT Divisible
+  slug: comprehensive-challenge-check-not-divisible
   page_type: assessment
-- title: ComprehensiveExercise - Setting Preferred Language
-  slug: comprehensive-exercise-setting-preferred-language
+- title: Comprehensive Challenge - Setting Preferred Language
+  slug: comprehensive-challenge-setting-preferred-language
   page_type: assessment
-- title: ComprehensiveExercise - Sum of Elements of Array
-  slug: comprehensive-exercise-sum-of-elements-of-array
+- title: Comprehensive Challenge - Sum of Elements of Array
+  slug: comprehensive-challenge-sum-of-elements-of-array
   page_type: assessment
-- title: ComprehensiveExercise - Array of Squared Numbers
-  slug: comprehensive-exercise-array-of-squared-numbers
+- title: Comprehensive Challenge - Array of Squared Numbers
+  slug: comprehensive-challenge-array-of-squared-numbers
   page_type: assessment
-- title: ComprehensiveExercise - Extract Positives Numbers
-  slug: comprehensive-exercise-extract-positives-numbers
+- title: Comprehensive Challenge - Extract Positives Numbers
+  slug: comprehensive-challenge-extract-positives-numbers
   page_type: assessment
-- title: ComprehensiveExercise - Find second largest value in Array
-  slug: comprehensive-exercise-find-second-largest-value-in-array
+- title: Comprehensive Challenge - Find second largest value in Array
+  slug: comprehensive-challenge-find-second-largest-value-in-array
   page_type: assessment
-- title: ComprehensiveExercise - Calculate Total Price After Discount
-  slug: comprehensive-exercise-calculate-total-price-after-discount
+- title: Comprehensive Challenge - Calculate Total Price After Discount
+  slug: comprehensive-challenge-calculate-total-price-after-discount
   page_type: assessment
-- title: ComprehensiveExercise - Check Book Availability
-  slug: comprehensive-exercise-check-book-availability
+- title: Comprehensive Challenge - Check Book Availability
+  slug: comprehensive-challenge-check-book-availability
   page_type: assessment
-- title: ComprehensiveExercise - Check Equal to 100
-  slug: comprehensive-exercise-check-equal
+- title: Comprehensive Challenge - Check Equal to 100
+  slug: comprehensive-challenge-check-equal
   page_type: assessment
