@@ -8,8 +8,8 @@
 - title: forwardRef
   slug: forward-ref
   page_type: lesson
-- title: Best practices in React routing
-  slug: best-practices-in-react-routing
+- title: More on React routing
+  slug: more-on-react-routing
   page_type: lesson
 - title: useMemo
   slug: use-memo
