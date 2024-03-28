@@ -18,7 +18,7 @@ Always add alternative texts in images. If the image fails to load, the alt text
 Always add labels in the form. Labels ensure that form controls are announced properly by assistive technologies like screen readers.
 
 ```html
-<input id="subscribe" type="checkbox" />
+<input id="subscribe" type="checkbox" >
 <label for="subscribe">Subscribe to newsletter</label>
 ```
 

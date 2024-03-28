@@ -15,12 +15,12 @@ incorrect form structure example:
 
   <p>First Name:</p>
   <br>
-  <input id="first-name" placeholder="Eve"/>
+  <input id="first-name" placeholder="Eve">
   <br>
 
   <p>Last Name:</p>
   <br>
-  <input id="last-name" placeholder="Smith"/>
+  <input id="last-name" placeholder="Smith">
   <br>
 
   <button type="submit">Submit</button>
@@ -42,12 +42,12 @@ with correct form structure:
 <form>
   <label for="first-name">First Name:</label>
   <br>
-  <input id="first-name" placeholder="Eve"/>
+  <input id="first-name" placeholder="Eve">
   <br>
 
   <label for="last-name">Last Name:</label>
   <br>
-  <input id="last-name" placeholder="Smith"/>
+  <input id="last-name" placeholder="Smith">
   <br>
   <a href="#">Rules</a>
 

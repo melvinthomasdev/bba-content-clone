@@ -42,7 +42,7 @@ p {
 <solution>
 <panel language="html">
 <h1>Welcome to CSS Challenge</h1>
-<img src= "https://upload.wikimedia.org/wikipedia/commons/b/ba/Javascript_badge.svg" />
+<img src= "https://upload.wikimedia.org/wikipedia/commons/b/ba/Javascript_badge.svg" >
 <p>A short description</p>
 <p class="info">Additional Information</p>
 <div>

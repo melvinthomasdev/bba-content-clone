@@ -9,8 +9,15 @@ elements and they do not require
 a closing tag. These elements are
 called **Void Elements**.
 
+The `/` is optional for void elements.
+Some developers use `/` while writing
+the void elements, but in this course,
+the void elements will be written
+without the `/`.
+
 Let us have a look at some examples
 of void elements:
+
 <codeblock language="html" type="lesson">
 <code>
 <h1>Void Elements Example</h1>

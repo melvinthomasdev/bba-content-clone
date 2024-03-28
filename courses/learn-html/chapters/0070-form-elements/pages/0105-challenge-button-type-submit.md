@@ -15,12 +15,12 @@ text `Submit`.
 
   <label>City:</label>
   <br>
-  <input placeholder="Pune"/>
+  <input placeholder="Pune">
   <br>
 
   <label>Country:</label>
   <br>
-  <input placeholder="India"/>
+  <input placeholder="India">
   <br>
 
   <!-- Write your code below -->
@@ -36,12 +36,12 @@ text `Submit`.
 
   <label>City:</label>
   <br>
-  <input placeholder="Pune"/>
+  <input placeholder="Pune">
   <br>
 
   <label>Country:</label>
   <br>
-  <input placeholder="India"/>
+  <input placeholder="India">
   <br>
 
   <!-- Write your code below -->

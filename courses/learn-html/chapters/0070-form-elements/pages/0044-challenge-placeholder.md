@@ -7,11 +7,11 @@ input field and **Smith** for the **Last Name** input field.
 <form>
   <label>First Name:</label>
   <br>
-  <input/>
+  <input>
   <br>
   <label>Last Name:</label>
   <br>
-  <input/>
+  <input>
 </form>
 </code>
 
@@ -19,11 +19,11 @@ input field and **Smith** for the **Last Name** input field.
 <form>
   <label>First Name:</label>
   <br>
-  <input placeholder="Eve" />
+  <input placeholder="Eve" >
   <br>
   <label>Last Name:</label>
   <br>
-  <input placeholder="Smith" />
+  <input placeholder="Smith" >
 </form>
 </solution>
 </codeblock>

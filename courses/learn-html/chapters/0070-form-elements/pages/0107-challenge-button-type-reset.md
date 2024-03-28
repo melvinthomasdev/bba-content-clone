@@ -13,12 +13,12 @@ text `Reset` below the
 
   <label>City:</label>
   <br>
-  <input placeholder="Pune"/>
+  <input placeholder="Pune">
   <br>
 
   <label>Country:</label>
   <br>
-  <input placeholder="India"/>
+  <input placeholder="India">
   <br>
 
   <button type="submit">Submit</button>
@@ -34,12 +34,12 @@ text `Reset` below the
 
   <label>City:</label>
   <br>
-  <input placeholder="Pune"/>
+  <input placeholder="Pune">
   <br>
 
   <label>Country:</label>
   <br>
-  <input placeholder="India"/>
+  <input placeholder="India">
   <br>
 
   <button type="submit">Submit</button>
