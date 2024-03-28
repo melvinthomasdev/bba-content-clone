@@ -57,8 +57,8 @@
   slug: array-methods-3
 - name: Rest and Spread
   slug: rest-and-spread
-- name: Comprehensive Exercise 7
-  slug: comprehensive-exercise-7
+- name: Comprehensive Challenge 7
+  slug: comprehensive-challenge-7
 - name: Scope
   slug: scope
 - name: Timeouts and Intervals
@@ -67,8 +67,8 @@
   slug: date
 - name: LocalStorage and sessionStorage
   slug: local-and-session-storage
-- name: Comprehensive Exercises 8
-  slug: comprehensive-exercises-8
+- name: Comprehensive Challenge 8
+  slug: comprehensive-challenge-8
 - name: JavaScript Object Notation
   slug: javascript-object-notation
 - name: Array Destructuring

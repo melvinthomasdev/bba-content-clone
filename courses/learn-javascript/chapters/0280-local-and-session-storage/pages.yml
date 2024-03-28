@@ -8,29 +8,29 @@
 - title: Adding Items to Storage
   slug: adding-items-to-storage
   page_type: lesson
-- title: Exercise - Adding Items to LocalStorage
-  slug: exercise-adding-items-to-local-storage
+- title: Challenge - Adding Items to LocalStorage
+  slug: challenge-adding-items-to-local-storage
   page_type: exercise
-- title: Exercise - Adding Items to sessionStorage
-  slug: exercise-adding-items-to-session-storage
+- title: Challenge - Adding Items to sessionStorage
+  slug: challenge-adding-items-to-session-storage
   page_type: exercise
 - title: Checking if Item Exists in Storage
   slug: checking-if-item-exists-in-storage
   page_type: lesson
-- title: Exercise - Checking if Item Exists in LocalStorage
-  slug: exercise-checking-if-item-exists-in-local-storage
+- title: Challenge - Checking if Item Exists in LocalStorage
+  slug: challenge-checking-if-item-exists-in-local-storage
   page_type: exercise
-- title: Exercise - Checking if Item Exists in sessionStorage
-  slug: exercise-checking-if-item-exists-in-session-storage
+- title: Challenge - Checking if Item Exists in sessionStorage
+  slug: challenge-checking-if-item-exists-in-session-storage
   page_type: exercise
 - title: Removing Items from Storage
   slug: removing-items-from-storage
   page_type: lesson
-- title: Exercise - Removing Items from LocalStorage
-  slug: exercise-removing-items-from-local-storage
+- title: Challenge - Removing Items from LocalStorage
+  slug: challenge-removing-items-from-local-storage
   page_type: exercise
-- title: Exercise - Removing Items from sessionStorage
-  slug: exercise-removing-items-from-session-storage
+- title: Challenge - Removing Items from sessionStorage
+  slug: challenge-removing-items-from-session-storage
   page_type: exercise
 - title: Clearing the sessionStorage and LocalStorage
   slug: clearing-session-and-local-storage

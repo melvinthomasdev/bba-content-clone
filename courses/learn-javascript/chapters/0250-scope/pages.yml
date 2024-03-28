@@ -2,8 +2,8 @@
 - title: Global Scope
   slug: global-scope
   page_type: lesson
-- title: Exercise - Global Scope
-  slug: exercise-global-scope
+- title: Challenge - Global Scope
+  slug: challenge-global-scope
   page_type: exercise
 - title: Global and Window Objects
   slug: global-and-window-objects
@@ -11,18 +11,18 @@
 - title: Local Scope
   slug: local-scope
   page_type: lesson
-- title: Exercise - Local Scope
-  slug: exercise-local-scope
+- title: Challenge - Local Scope
+  slug: challenge-local-scope
   page_type: exercise
 - title: Scope Nesting
   slug: scope-nesting
   page_type: lesson
-- title: Exercise - Scope Nesting
-  slug: exercise-scope-nesting
+- title: Challenge - Scope Nesting
+  slug: challenge-scope-nesting
   page_type: exercise
 - title: Hoisting
   slug: hoisting
   page_type: lesson
-- title: Exercise - Hoisting
-  slug: exercise-hoisting
+- title: Challenge - Hoisting
+  slug: challenge-hoisting
   page_type: exercise
