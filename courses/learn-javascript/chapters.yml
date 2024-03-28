@@ -49,8 +49,8 @@
   slug: browser-events
 - name: Comprehensive Exercise 6
   slug: comprehensive-exercise-6
-- name: Sectional Project 1
-  slug: sectional-project-1
+- name: Projects 1
+  slug: projects-1
 - name: Single and Multiple line comments
   slug: single-and-multiple-line-comments
 - name: Array Methods 3
@@ -83,8 +83,8 @@
   slug: promises
 - name: API
   slug: api
-- name: Sectional Project 2
-  slug: sectional-project-2
+- name: Projects 2
+  slug: projects-2
 - name: Comprehensive Challenge 9
   slug: comprehensive-challenge-9
 - name: String Methods

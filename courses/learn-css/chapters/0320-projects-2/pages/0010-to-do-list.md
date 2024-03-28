@@ -7,4 +7,4 @@ to test and build a to-do list.
 
 <image>to-do-list.png</image>
 
-Visit the [PlanPal project page](https://courses.bigbinaryacademy.com/projects/to-do-list/) to read more and start building.
+Visit the [To Do List page](https://courses.bigbinaryacademy.com/projects/to-do-list/) to read more and start building.

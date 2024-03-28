@@ -59,8 +59,8 @@
   slug: box-shadow
 - name: Styling Forms
   slug: styling-forms
-- name: Sectional Project
-  slug: sectional-project
+- name: Projects 1
+  slug: projects-1
 - name: Combinators
   slug: combinators
 - name: Pseudo-classes
@@ -87,8 +87,8 @@
   slug: resolving-css-errors
 - name: Styling Tables
   slug: styling-tables
-- name: Sectional Projects
-  slug: sectional-projects
+- name: Projects 2
+  slug: projects-2
 - name: CSS Functions
   slug: css-functions
 - name: Float
