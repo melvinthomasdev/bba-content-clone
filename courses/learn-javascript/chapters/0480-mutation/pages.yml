@@ -5,36 +5,36 @@
 - title: Mutating vs Reassigning
   slug: mutating-vs-reassigning
   page_type: lesson
-- title: Exercise - Avoid Mutation with `.sort()`
-  slug: exercise-avoid-mutation-with-sort
+- title: Challenge - Avoid Mutation with `.sort()`
+  slug: challenge-avoid-mutation-with-sort
   page_type: exercise
-- title: Exercise 2 - Avoid Mutation with `.sort()`
-  slug: exercise-2-avoid-mutation-with-sort
+- title: Challenge 2 - Avoid Mutation with `.sort()`
+  slug: challenge-2-avoid-mutation-with-sort
   page_type: exercise
-- title: Exercise - Avoid Mutation While Removing Array Elements
-  slug: exercise-avoid-mutation-while-removing-array-elements
+- title: Challenge - Avoid Mutation While Removing Array Elements
+  slug: challenge-avoid-mutation-while-removing-array-elements
   page_type: exercise
-- title: Exercise 2 - Avoid Mutation While Removing Array Elements
-  slug: exercise-2-avoid-mutation-while-removing-array-elements
+- title: Challenge 2 - Avoid Mutation While Removing Array Elements
+  slug: challenge-2-avoid-mutation-while-removing-array-elements
   page_type: exercise
-- title: Exercise - Avoid Mutation While Adding Array Elements
-  slug: exercise-avoid-mutation-while-adding-array-elements
+- title: Challenge - Avoid Mutation While Adding Array Elements
+  slug: challenge-avoid-mutation-while-adding-array-elements
   page_type: exercise
-- title: Exercise 2 - Avoid Mutation While Adding Array Elements
-  slug: exercise-2-avoid-mutation-while-adding-array-elements
+- title: Challenge 2 - Avoid Mutation While Adding Array Elements
+  slug: challenge-2-avoid-mutation-while-adding-array-elements
   page_type: exercise
-- title: Exercise - Avoid Mutation While Updating an Array
-  slug: exercise-avoid-mutation-while-updating-an-array
+- title: Challenge - Avoid Mutation While Updating an Array
+  slug: challenge-avoid-mutation-while-updating-an-array
   page_type: exercise
-- title: Exercise 2 - Avoid Mutation While Updating an Array
-  slug: exercise-2-avoid-mutation-while-updating-an-array
+- title: Challenge 2 - Avoid Mutation While Updating an Array
+  slug: challenge-2-avoid-mutation-while-updating-an-array
   page_type: exercise
-- title: Exercise - Avoid Mutation while Updating Properties
-  slug: exercise-avoid-mutation-while-updating-properties
+- title: Challenge - Avoid Mutation while Updating Properties
+  slug: challenge-avoid-mutation-while-updating-properties
   page_type: exercise
-- title: Exercise 2 - Avoid Mutation while Updating Properties
-  slug: exercise-2-avoid-mutation-while-updating-properties
+- title: Challenge 2 - Avoid Mutation while Updating Properties
+  slug: challenge-2-avoid-mutation-while-updating-properties
   page_type: exercise
-- title: JS Challenge Mutation
-  slug: js-challenge-mutation
+- title: JS Assessment Mutation
+  slug: js-assessment-mutation
   page_type: exercise
