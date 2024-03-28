@@ -1,0 +1,67 @@
+---
+- title: About
+  slug: about-comprehensive-challenge
+  page_type: lesson
+- title: Comprehensive Challenge - Convert time format
+  slug: comprehensive-challenge-convert-given-seconds-to-hours-minutes-and-seconds
+  page_type: assessment
+- title: Comprehensive Challenge - Extract book name by the borrower
+  slug: comprehensive-challenge-extract-book-name-by-borrower
+  page_type: assessment
+- title: Comprehensive Challenge - Add an element to array
+  slug: comprehensive-challenge-add-element-to-array
+  page_type: assessment
+- title: Comprehensive Challenge - Find sum of numbers in the array
+  slug: comprehensive-challenge-find-sum-of-numbers-in-array
+  page_type: assessment
+- title: Comprehensive Challenge - Filter Even Numbers
+  slug: comprehensive-challenge-filter-even-numbers
+  page_type: assessment
+- title: Comprehensive Challenge - Return object with issues grouped by severity
+  slug: comprehensive-challenge-return-object-with-issues-grouped-by-severity
+  page_type: assessment
+- title: Comprehensive Challenge - Find Hexadecimal And Convert to Decimal
+  slug: comprehensive-challenge-find-hexadecimal-and-convert-to-decimal
+  page_type: assessment
+- title: Comprehensive Challenge - Find the Type of Parameter
+  slug: comprehensive-challenge-find-type-of-parameter-passed
+  page_type: assessment
+- title: Comprehensive Challenge - Access code in inner function
+  slug: comprehensive-challenge-access-code-in-inne-function
+  page_type: assessment
+- title: Comprehensive Challenge - Add and Round the Floating Point Numbers
+  slug: comprehensive-challenge-add-and-round-floating-point-numbers
+  page_type: assessment
+- title: Comprehensive Challenge - Add Vacation Start Date, if missing
+  slug: comprehensive-challenge-add-date-property-if-missing
+  page_type: assessment
+- title: Comprehensive Challenge - Convert from UTF-16
+  slug: comprehensive-challenge-convert-utf-16-to-string
+  page_type: assessment
+- title: Comprehensive Challenge - Convert the bases
+  slug: comprehensive-challenge-convert-the-bases
+  page_type: assessment
+- title: Comprehensive Challenge - Find the Highest Score
+  slug: comprehensive-challenge-find-the-highest-score
+  page_type: assessment
+- title: Comprehensive Challenge - Make it Ordinal
+  slug: comprehensive-challenge-make-it-ordinal
+  page_type: assessment
+- title: Comprehensive Challenge - Get number of days in a month
+  slug: comprehensive-challenge-get-number-of-days-in-month
+  page_type: assessment
+- title: Comprehensive Challenge - Check If the Property Exists in the Object
+  slug: comprehensive-challenge-check-if-the-property-exist-in-object
+  page_type: assessment
+- title: Comprehensive Challenge - Find the best bowling average
+  slug: comprehensive-challenge-find-the-best-bowling-average
+  page_type: assessment
+- title: Comprehensive Challenge - Flatten the Array
+  slug: comprehensive-challenge-flatten-the-array
+  page_type: assessment
+- title: Comprehensive Challenge - Finding Nemo
+  slug: comprehensive-challenge-finding-nemo
+  page_type: assessment
+- title: Comprehensive Challenge - Folding a Piece of Paper
+  slug: comprehensive-challenge-folding-a-piece-of-paper
+  page_type: assessment

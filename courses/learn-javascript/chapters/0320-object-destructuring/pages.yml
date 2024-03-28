@@ -2,14 +2,14 @@
 - title: Object Destructuring
   slug: object-destructuring
   page_type: lesson
-- title: Exercise - Object Destructuring
-  slug: exercise-object-destructuring
+- title: Challenge - Object Destructuring
+  slug: challenge-object-destructuring
   page_type: exercise
 - title: Renaming Destructured Property
   slug: renaming-destructured-property
   page_type: lesson
-- title: Exercise - Renaming Destructured Property
-  slug: exercise-renaming-destructured-property
+- title: Challenge - Renaming Destructured Property
+  slug: challenge-renaming-destructured-property
   page_type: exercise
 - title: Destructuring with Computed Properties
   slug: destructuring-with-computed-properties
@@ -17,24 +17,24 @@
 - title: Set Default Values
   slug: set-default-values
   page_type: lesson
-- title: Exercise - Set Default Values
-  slug: exercise-set-default-values
+- title: Challenge - Set Default Values
+  slug: challenge-set-default-values
   page_type: exercise
 - title: The Rest Pattern
   slug: object-destructuring-rest-pattern
   page_type: lesson
-- title: Exercise - The Rest Pattern
-  slug: exercise-object-destructuring-rest-pattern
+- title: Challenge - The Rest Pattern
+  slug: challenge-object-destructuring-rest-pattern
   page_type: exercise
 - title: Nested Destructuring
   slug: nested-destructuring
   page_type: lesson
-- title: Exercise - Nested Destructuring
-  slug: exercise-nested-destructuring
+- title: Challenge - Nested Destructuring
+  slug: challenge-nested-destructuring
   page_type: exercise
 - title: Named Parameters
   slug: named-parameters
   page_type: lesson
-- title: Exercise - Default Parameters
-  slug: exercise-default-parameters
+- title: Challenge - Default Parameters
+  slug: challenge-default-parameters
   page_type: exercise

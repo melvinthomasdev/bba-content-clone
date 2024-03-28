@@ -5,8 +5,8 @@
 - title: Callback Hell
   slug: callback-hell
   page_type: lesson
-- title: Exercise - Callback Functions
-  slug: exercise-callback-functions
+- title: Challenge - Callback Functions
+  slug: challenge-callback-functions
   page_type: exercise
 - title: Make a Promise
   slug: make-a-promise
@@ -14,26 +14,26 @@
 - title: "`then` method"
   slug: then-method
   page_type: lesson
-- title: Exercise - `then` method
-  slug: exercise-then-method
+- title: Challenge - `then` method
+  slug: challenge-then-method
   page_type: exercise
 - title: "`catch` method"
   slug: catch-method
   page_type: lesson
-- title: Exercise - `catch` method
-  slug: exercise-catch-method
+- title: Challenge - `catch` method
+  slug: challenge-catch-method
   page_type: exercise
 - title: "`finally` method"
   slug: finally-method
   page_type: lesson
-- title: Exercise - `finally` method
-  slug: exercise-finally-method
+- title: Challenge - `finally` method
+  slug: challenge-finally-method
   page_type: exercise
 - title: Chaining Promises
   slug: chaining-promises
   page_type: lesson
-- title: Exercise - Chaining Promises
-  slug: exercise-chaining-promises
+- title: Challenge - Chaining Promises
+  slug: challenge-chaining-promises
   page_type: exercise
 - title: Returning a value from `then` handler
   slug: returning-a-value-from-then-handler
@@ -47,14 +47,14 @@
 - title: The `await` Keyword
   slug: await-keyword
   page_type: lesson
-- title: Exercise - Async/Await
-  slug: exercise-async-await
+- title: Challenge - Async/Await
+  slug: challenge-async-await
   page_type: exercise
 - title: Adding try...catch
   slug: adding-try-catch
   page_type: lesson
-- title: Exercise - Adding try...catch
-  slug: exercise-adding-try-catch
+- title: Challenge - Adding try...catch
+  slug: challenge-adding-try-catch
   page_type: exercise
 - title: Fetch API
   slug: fetch-api
