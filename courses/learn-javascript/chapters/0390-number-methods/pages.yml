@@ -2,36 +2,36 @@
 - title: Fix Precision of Decimal Numbers
   slug: to-fixed
   page_type: lesson
-- title: Exercise - Fix Precision of Decimal Numbers
-  slug: exercise-to-fixed
+- title: Challenge - Fix Precision of Decimal Numbers
+  slug: challenge-to-fixed
   page_type: exercise
 - title: Get Numbers From String
   slug: parse-int
   page_type: lesson
-- title: Exercise - Get Numbers From String
-  slug: exercise-parse-int
+- title: Challenge - Get Numbers From String
+  slug: challenge-parse-int
   page_type: exercise
 - title: Get Floating Point Number From a String
   slug: parse-float
   page_type: lesson
-- title: Exercise - Get Floating Point Number From a String
-  slug: exercise-parse-float
+- title: Challenge - Get Floating Point Number From a String
+  slug: challenge-parse-float
   page_type: exercise
 - title: Infinity
   slug: infinity
   page_type: lesson
-- title: Exercise - Multiply Infinity
-  slug: exercise-multiply-infinity
+- title: Challenge - Multiply Infinity
+  slug: challenge-multiply-infinity
   page_type: exercise
-- title: Exercise - Subtracting Infinity from Infinity
-  slug: exercise-subtracting-infinity-from-infinity
+- title: Challenge - Subtracting Infinity from Infinity
+  slug: challenge-subtracting-infinity-from-infinity
   page_type: exercise
 - title: Negative infinity
   slug: negative-infinity
   page_type: lesson
-- title: Exercise - Negative Infinity Comparison
-  slug: exercise-negative-infinity-comparison
+- title: Challenge - Negative Infinity Comparison
+  slug: challenge-negative-infinity-comparison
   page_type: exercise
-- title: Exercise - Adding -Infinity to infinity
-  slug: exercise-adding-infinity-to-infinity
+- title: Challenge - Adding -Infinity to infinity
+  slug: challenge-adding-infinity-to-infinity
   page_type: exercise
