@@ -1,0 +1,202 @@
+---
+- title: About
+  slug: about-comprehensive-challenge
+  page_type: lesson
+- title: Comprehensive Challenge - Update Campaign Details
+  slug: comprehensive-challenge-update-campaign-details
+  page_type: assessment
+- title: Comprehensive Challenge - Jumbled Word Solver
+  slug: comprehensive-challenge-jumbled-word-solver
+  page_type: assessment
+- title: Comprehensive Challenge - Update the value of a property in object
+  slug: comprehensive-challenge-update-the-value-of-a-property-in-object
+  page_type: assessment
+- title: Comprehensive Challenge - Find the sum of amount a user has spent
+  slug: comprehensive-challenge-find-sum-of-amount-a-user-has-spent
+  page_type: assessment
+- title: Comprehensive Challenge - Find the vaccinated user details
+  slug: comprehensive-challenge-find-vaccinated-user-details
+  page_type: assessment
+- title: Comprehensive Challenge - Find diseases spreading in Covid-19 zones
+  slug: comprehensive-challenge-find-diseases-in-covid-affected-cities
+  page_type: assessment
+- title: Comprehensive Challenge - Insert the user's name at given position
+  slug: comprehensive-challenge-insert-name-at-given-position
+  page_type: assessment
+- title: Comprehensive Challenge - Handle User Authentication API Error
+  slug: comprehensive-challenge-handle-user-authentication-api-error
+  page_type: assessment
+- title: Comprehensive Challenge - List all users who have MacBook
+  slug: comprehensive-challenge-list-all-users-who-have-macbook
+  page_type: assessment
+- title: Comprehensive Challenge - Find the index of the given element in the array
+  slug: comprehensive-challenge-find-the-index-of-element
+  page_type: assessment
+- title: Comprehensive Challenge - Find the issues with given severity
+  slug: comprehensive-challenge-find-issues-with-given-severity
+  page_type: assessment
+- title: Comprehensive Challenge - List debt entries of customers
+  slug: comprehensive-challenge-list-entries-of-customers-greater-than-particular-total-amount
+  page_type: assessment
+- title: Comprehensive Challenge - Add the digits of a given Alphanumerical value
+  slug: comprehensive-challenge-add-digits-of-alphanumerical
+  page_type: assessment
+- title: Comprehensive Challenge - List all cars made in the given region
+  slug: comprehensive-challenge-list-all-cars-maufactured-at-given-region
+  page_type: assessment
+- title: Comprehensive Challenge - Check if array values are multiples of a number
+  slug: comprehensive-challenge-is-all-numbers-in-the-array-multiple-of-given-number
+  page_type: assessment
+- title: Comprehensive Challenge - Remove Duplicate And Sort Rivers
+  slug: comprehensive-challenge-remove-duplicate-and-sort-rivers
+  page_type: assessment
+- title: Comprehensive Challenge - Check all users have credit card
+  slug: comprehensive-challenge-check-all-users-have-credit-card
+  page_type: assessment
+- title: Comprehensive Challenge - Fetch largest countries for given index
+  slug: comprehensive-challenge-fetch-largest-countries-of-given-index
+  page_type: assessment
+- title: Comprehensive Challenge - Convert array of numbers to array of sum
+  slug: comprehensive-challenge-convert-array-of-array-of-numbers-array-of-sum
+  page_type: assessment
+- title: Comprehensive Challenge - Update the Employee Details
+  slug: comprehensive-challenge-update-employee-details
+  page_type: assessment
+- title: Comprehensive Challenge - Get current URL and PathName
+  slug: comprehensive-challenge-get-current-url-and-pathname
+  page_type: assessment
+- title: Comprehensive Challenge - List pincodes of all users
+  slug: comprehensive-challenge-list-pincodes-of-given-users
+  page_type: assessment
+- title: Comprehensive Challenge - Find all the vowels in the given sentence
+  slug: comprehensive-challenge-find-vowels-in-the-sentence
+  page_type: assessment
+- title: Comprehensive Challenge - Sort user list by number of clicks
+  slug: comprehensive-challenge-sort-user-list-by-number-of-clicks
+  page_type: assessment
+- title: Comprehensive Challenge - Print users phone numbers
+  slug: comprehensive-challenge-get-users-phone-numbers
+  page_type: assessment
+- title: Comprehensive Challenge - Reminder AI (Part 1) - Extract reminder text
+  slug: comprehensive-challenge-set-a-reminder-part-1
+  page_type: assessment
+- title: Comprehensive Challenge - Check for Unpaid items in cart
+  slug: comprehensive-challenge-check-for-unpaid-items-in-cart
+  page_type: assessment
+- title: Comprehensive Challenge - Reminder AI (Part 2) - Extract day.
+  slug: comprehensive-challenge-set-a-reminder-part-2
+  page_type: assessment
+- title: Comprehensive Challenge - Extract the issue type from the string
+  slug: comprehensive-challenge-extract-issue-type-from-the-string
+  page_type: assessment
+- title: Comprehensive Challenge - Find the sum of numbers
+  slug: comprehensive-challenge-find-the-sum-of-numbers
+  page_type: assessment
+- title: Comprehensive Challenge - Mask Credit Card Numbers
+  slug: comprehensive-challenge-mask-credit-card-numbers
+  page_type: assessment
+- title: Comprehensive Challenge - Decipher the Message
+  slug: comprehensive-challenge-decipher-the-secret-message
+  page_type: assessment
+- title: Comprehensive Challenge - Fetch newsletters for given departments
+  slug: comprehensive-challenge-fetch-newsletters-for-given-departments
+  page_type: assessment
+- title: Comprehensive Challenge - Sort Capital cities
+  slug: comprehensive-challenge-sort-based-on-capitals
+  page_type: assessment
+- title: Comprehensive Challenge - Prepare a Movie list based on Survey
+  slug: comprehensive-challenge-prepare-favorite-movie-list
+  page_type: assessment
+- title: Comprehensive Challenge - Calculate and Set count (Part 1)
+  slug: comprehensive-challenge-calculate-and-set-questions-count-part-1
+  page_type: assessment
+- title: Comprehensive Challenge - Calculate and Set count (Part 2)
+  slug: comprehensive-challenge-calculate-and-set-questions-count-part-2
+  page_type: assessment
+- title: Comprehensive Challenge - Find the lottery winner
+  slug: comprehensive-challenge-find-the-lottery-winner
+  page_type: assessment
+- title: Comprehensive Challenge - Find total office count from departments
+  slug: comprehensive-challenge-find-total-office-count-from-departments
+  page_type: assessment
+- title: Comprehensive Challenge - Find winning team
+  slug: comprehensive-challenge-find-winning-team
+  page_type: assessment
+- title: Comprehensive Challenge - Reverse and Match
+  slug: comprehensive-challenge-reverse-and-match
+  page_type: assessment
+- title: Comprehensive Challenge - Remove Names based on a condition
+  slug: comprehensive-challenge-remove-based-on-a-condition
+  page_type: assessment
+- title: Comprehensive Challenge - Longest Word in String
+  slug: comprehensive-challenge-longest-word-in-string
+  page_type: assessment
+- title: Comprehensive Challenge - String Anagrams (Part 1)
+  slug: comprehensive-challenge-string-anagrams-part-1
+  page_type: assessment
+- title: Comprehensive Challenge - String Anagrams (Part 2)
+  slug: comprehensive-challenge-string-anagrams-part-2
+  page_type: assessment
+- title: Comprehensive Challenge - Remove Vowels from String
+  slug: comprehensive-challenge-remove-vowels-from-string
+  page_type: assessment
+- title: Comprehensive Challenge - In-Place Reversal
+  slug: comprehensive-challenge-inplace-reversal
+  page_type: assessment
+- title: Comprehensive Challenge - Print all Unique Words
+  slug: comprehensive-challenge-print-all-unique-words
+  page_type: assessment
+- title: Comprehensive Challenge - Curried Sum
+  slug: comprehensive-challenge-curried-sum
+  page_type: assessment
+- title: Comprehensive Challenge - Vehicle Registration
+  slug: comprehensive-challenge-vehicle-registration
+  page_type: assessment
+- title: Comprehensive Challenge - Fruit Salad
+  slug: comprehensive-challenge-fruit-salad
+  page_type: assessment
+- title: Comprehensive Challenge - String Pangram
+  slug: comprehensive-challenge-string-pangram
+  page_type: assessment
+- title: Comprehensive Challenge - Integer Ratios
+  slug: comprehensive-challenge-integer-ratios
+  page_type: assessment
+- title: Comprehensive Challenge - Shuffle Names
+  slug: comprehensive-challenge-shuffle-names
+  page_type: assessment
+- title: Comprehensive Challenge - Find all common elements
+  slug: comprehensive-challenge-find-all-common-elements
+  page_type: assessment
+- title: Comprehensive Challenge - Find the sum in the given range
+  slug: comprehensive-challenge-find-the-sum-in-the-given-range
+  page_type: assessment
+- title: Comprehensive Challenge - Select Marks in Range
+  slug: comprehensive-challenge-select-marks-in-range
+  page_type: assessment
+- title: Comprehensive Challenge - Split an Object into Chunks
+  slug: comprehensive-challenge-split-an-object-into-chunks
+  page_type: assessment
+- title: Comprehensive Challenge -  Split an Array into N Chunks
+  slug: comprehensive-challenge-split-an-array-into-n-chunks
+  page_type: assessment
+- title: Comprehensive Challenge - Accumulating Array
+  slug: comprehensive-challenge-accumulating-array
+  page_type: assessment
+- title: Comprehensive Challenge - Array Compact
+  slug: comprehensive-challenge-array-compact
+  page_type: assessment
+- title: Comprehensive Challenge - Shallow Comparison of Arrays
+  slug: comprehensive-challenge-shallow-comparison-of-arrays
+  page_type: assessment
+- title: Comprehensive Challenge - Convert PascalCase to snake_case
+  slug: comprehensive-challenge-convert-pascalcase-to-snakecase
+  page_type: assessment
+- title: Comprehensive Challenge - Order by Subarray Sum (Part 1)
+  slug: comprehensive-challenge-order-by-subarray-sum-part-1
+  page_type: assessment
+- title: Comprehensive Challenge - Order by Subarray Sum (Part 2)
+  slug: comprehensive-challenge-order-by-subarray-sum-part-2
+  page_type: assessment
+- title: Comprehensive Challenge - Most Commonly Occurring Character
+  slug: comprehensive-challenge-most-commonly-occurring-character
+  page_type: assessment
