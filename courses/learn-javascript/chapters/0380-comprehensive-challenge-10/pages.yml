@@ -1,6 +1,6 @@
 ---
 - title: About
-  slug: about-comprehensive-exercise
+  slug: about-comprehensive-challenge
   page_type: lesson
 - title: Challenge AI commands
   slug: challenge-ai-commands-js
@@ -14,4 +14,3 @@
 - title: Challenge 3
   slug: challenge-3-js
   page_type: assessment
-  

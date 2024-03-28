@@ -2,78 +2,78 @@
 - title: Finding the Largest Number
   slug: finding-largest-number
   page_type: lesson
-- title: Exercise - Finding the Largest Number
-  slug: exercise-finding-largest-number
+- title: Challenge - Finding the Largest Number
+  slug: challenge-finding-largest-number
   page_type: exercise
-- title: Exercise - Who has more apples?
-  slug: exercise-who-has-more-apples
+- title: Challenge - Who has more apples?
+  slug: challenge-who-has-more-apples
   page_type: exercise
 - title: Finding the Smallest Number
   slug: finding-smallest-number
   page_type: lesson
-- title: Exercise - Finding the Smallest Number
-  slug: exercise-finding-smallest-number
+- title: Challenge - Finding the Smallest Number
+  slug: challenge-finding-smallest-number
   page_type: exercise
-- title: Exercise - Finding the Lowest Score
-  slug: exercise-finding-the-lowest-score
+- title: Challenge - Finding the Lowest Score
+  slug: challenge-finding-the-lowest-score
   page_type: exercise
 - title: Calculating Exponentiation Values
   slug: calculating-exponentiation-values
   page_type: lesson
-- title: Exercise - Calculating Exponentiation Values
-  slug: exercise-calculating-exponentiation-values
+- title: Challenge - Calculating Exponentiation Values
+  slug: challenge-calculating-exponentiation-values
   page_type: exercise
-- title: Exercise - Calculating Volume of Cube
-  slug: exercise-calculating-volume-of-cube
+- title: Challenge - Calculating Volume of Cube
+  slug: challenge-calculating-volume-of-cube
   page_type: exercise
 - title: Rounding a Number
   slug: rounding-a-number
   page_type: lesson
-- title: Exercise - Rounding a Number
-  slug: exercise-rounding-a-number
+- title: Challenge - Rounding a Number
+  slug: challenge-rounding-a-number
   page_type: exercise
-- title: Exercise - Find correct grade
-  slug: exercise-find-correct-grade
+- title: Challenge - Find correct grade
+  slug: challenge-find-correct-grade
   page_type: exercise
 - title: Rounding Down a Number
   slug: rounding-down-a-number
   page_type: lesson
-- title: Exercise - Rounding Down a Number
-  slug: exercise-rounding-down-a-number
+- title: Challenge - Rounding Down a Number
+  slug: challenge-rounding-down-a-number
   page_type: exercise
-- title: Exercise - Supermarket Purchase
-  slug: exercise-supermarket-purchase
+- title: Challenge - Supermarket Purchase
+  slug: challenge-supermarket-purchase
   page_type: exercise
 - title: Rounding Up a Number
   slug: rounding-up-a-number
   page_type: lesson
-- title: Exercise - Rounding Up a Number
-  slug: exercise-rounding-up-a-number
+- title: Challenge - Rounding Up a Number
+  slug: challenge-rounding-up-a-number
   page_type: exercise
-- title: Exercise - Find Tower floors
-  slug: exercise-find-tower-floors
+- title: Challenge - Find Tower floors
+  slug: challenge-find-tower-floors
   page_type: exercise
 - title: Removing Fractional Part of Number
   slug: removing-fractional-part-of-number
   page_type: lesson
-- title: Exercise - Removing Fractional Part of Number
-  slug: exercise-removing-fractional-part-of-number
+- title: Challenge - Removing Fractional Part of Number
+  slug: challenge-removing-fractional-part-of-number
   page_type: exercise
-- title: Exercise - Find discounted price
-  slug: exercise-find-discounted-price
+- title: Challenge - Find discounted price
+  slug: challenge-find-discounted-price
   page_type: exercise
 - title: Generating a Random Number
   slug: generating-a-random-number
   page_type: lesson
-- title: Exercise - Generating a Random Number
-  slug: exercise-generating-a-random-number
+- title: Challenge - Generating a Random Number
+  slug: challenge-generating-a-random-number
   page_type: exercise
 - title: Getting absolute value
   slug: getting-absolute-value
   page_type: lesson
-- title: Exercise - Calculate absolute value of 0
-  slug: exercise-calculate-absolute-value-of-0
+- title: Challenge - Calculate absolute value of 0
+  slug: challenge-calculate-absolute-value-of-0
   page_type: exercise
-- title: Exercise - Calculate absolute value
-  slug: exercise-calculate-absolute-value
+- title: Challenge - Calculate absolute value
+  slug: challenge-calculate-absolute-value
   page_type: exercise
