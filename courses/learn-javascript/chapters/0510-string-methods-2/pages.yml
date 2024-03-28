@@ -2,12 +2,12 @@
 - title: Joining Strings Using concat
   slug: joining-strings-using-concat
   page_type: lesson
-- title: Exercise - Joining Strings Using concat
-  slug: exercise-joining-strings-using-concat
+- title: Challenge - Joining Strings Using concat
+  slug: challenge-joining-strings-using-concat
   page_type: exercise
 - title: charAt method
   slug: char-at-method
   page_type: lesson
-- title: Exercise - charAt method
-  slug: exercise-char-at-method
+- title: Challenge - charAt method
+  slug: challenge-char-at-method
   page_type: exercise

@@ -2,18 +2,18 @@
 - title: The call method
   slug: call-method
   page_type: lesson
-- title: Exercise - The call method
-  slug: exercise-call-method
+- title: Challenge - The call method
+  slug: challenge-call-method
   page_type: exercise
 - title: The apply method
   slug: apply-method
   page_type: lesson
-- title: Exercise - The apply method
-  slug: exercise-apply-method
+- title: Challenge - The apply method
+  slug: challenge-apply-method
   page_type: exercise
 - title: The bind method
   slug: bind-method
   page_type: lesson
-- title: Exercise - bind()
-  slug: exercise-bind-method
+- title: Challenge - bind()
+  slug: challenge-bind-method
   page_type: exercise

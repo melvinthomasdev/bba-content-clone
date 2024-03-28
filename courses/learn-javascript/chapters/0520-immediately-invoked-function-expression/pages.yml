@@ -2,14 +2,14 @@
 - title: IIFE
   slug: iife
   page_type: lesson
-- title: Exercise - IIFE
-  slug: exercise-iife
+- title: Challenge - IIFE
+  slug: challenge-iife
   page_type: exercise
 - title: Named IIFE
   slug: named-iife
   page_type: lesson
-- title: Exercise - Named IIFE
-  slug: exercise-named-iife
+- title: Challenge - Named IIFE
+  slug: challenge-named-iife
   page_type: exercise
 - title: Limiting scope with IIFE
   slug: limiting-scope-with-iife
