@@ -95,3 +95,33 @@
 - title: Comprehensive Challenge - Check Equal to 100
   slug: comprehensive-challenge-check-equal
   page_type: assessment
+- title: Comprehensive Challenge - Count Substrings with Exactly K Distinct Characters
+  slug: comprehensive-challenge-count-number-of-substrings
+  page_type: assessment
+- title: Comprehensive Challenge - Count duplicate characters
+  slug: comprehensive-challenge-count-duplicate-characters
+  page_type: assessment
+- title: Comprehensive Challenge - Find unique elements from two arrays
+  slug: comprehensive-challenge-find-unique-elements-from-two-array
+  page_type: assessment
+- title: Comprehensive Challenge - Count the number of arrays inside an array
+  slug: comprehensive-challenge-count-number-of-arrays-inside-an-array
+  page_type: assessment
+- title: Comprehensive Challenge - Find the key with the max value in the object
+  slug: comprehensive-challenge-find-key-with-max-value-in-object
+  page_type: assessment
+- title: Comprehensive Challenge - Convert an object to the query string
+  slug: comprehensive-challenge-convert-object-to-query-string
+  page_type: assessment
+- title: Comprehensive Challenge - Convert camel case to snake case
+  slug: comprehensive-challenge-convert-camel-case-to-snake-case
+  page_type: assessment
+- title: Comprehensive Challenge - Find the first matching item from an array of objects
+  slug: comprehensive-challenge-find-first-matching-item
+  page_type: assessment
+- title: Comprehensive Challenge - Anagram Checker
+  slug: comprehensive-challenge-anagram-checker
+  page_type: assessment
+- title: Comprehensive Challenge - Cumulative Sum Array Generator
+  slug: comprehensive-challenge-cumulative-sum
+  page_type: assessment

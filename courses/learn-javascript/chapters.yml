@@ -33,6 +33,8 @@
   slug: comprehensive-challenge-3
 - name: Array Methods 2
   slug: array-methods-2
+- name: Loops
+  slug: loops
 - name: Comprehensive Challenge 4
   slug: comprehensive-challenge-4
 - name: Document Object Model
@@ -125,7 +127,5 @@
   slug: immediately-invoked-function-expression
 - name: call, apply and bind
   slug: call-apply-bind
-- name: Loops
-  slug: loops
 - name: instanceof
   slug: instanceof
