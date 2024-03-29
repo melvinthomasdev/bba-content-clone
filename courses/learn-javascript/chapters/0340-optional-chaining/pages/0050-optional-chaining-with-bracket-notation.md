@@ -47,4 +47,4 @@ In the example given above:
   `"full-name"` property of `user2`
   only if `user2` is not `null` or `undefined`.
   Since, `user2` is `null`,
-  nothing is displayed.
+  `undefined` is displayed.
