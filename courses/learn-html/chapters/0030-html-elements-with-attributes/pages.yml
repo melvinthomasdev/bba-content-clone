@@ -20,6 +20,12 @@
 - title: Challenge - Links
   slug: challenge-links
   page_type: exercise
+- title: Links - Target attribute
+  slug: links-target-attribute
+  page_type: lesson
+- title: Challenge 1 - Link Target attribute
+  slug: challenge-1-link-target-attribute
+  page_type: exercise
 - title: Creating links with HTML Elements
   slug: creating-links-with-html-elements
   page_type: lesson
