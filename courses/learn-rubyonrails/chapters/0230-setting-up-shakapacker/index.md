@@ -41,6 +41,12 @@ Now, we can set up the base for `shakapacker` by running the following command.
 bin/rails webpacker:install
 ```
 
+We will be using version `4.13.1` of `webpack-dev-server`. Run the following command to ensure this.
+
+```bash
+yarn upgrade webpack-dev-server@4.13.1
+```
+
 The default configurations sets the source path `app/javascript` as the `source_entry_path`
 in `config/webpacker.yml`. We need to set a subdirectory of the `source_path`, namely `packs`, to
 be the `source_entry_path`.
