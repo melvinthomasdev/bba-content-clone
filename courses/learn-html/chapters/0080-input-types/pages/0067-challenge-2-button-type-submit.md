@@ -26,7 +26,7 @@ image with the following source:
   <br>
 
   <!-- Write code below -->
-  <button>
+  <button type="submit">
     <img src="https://ucarecdn.com/8b4a9a74-3de8-46cb-b394-ad767f8b4d58/-/resize/150x100/">
   </button>
 </form>
