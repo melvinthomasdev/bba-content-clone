@@ -5,7 +5,7 @@ In the code given below, console message `Data fetched successfully` is logged b
 const fetchData = user => {
   setTimeout(() => {
     console.log(`Data fetched for ${user}`);
-  }, 5000);
+  }, 3000);
 };
 
 const onFetchSuccess = () => {
