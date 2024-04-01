@@ -6,27 +6,28 @@ with all the links inside the
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
 <ul>
-		<li><a href="/home">Home</a></li>
-		<li><a href="/curriculum">Curriculum</a></li>
-		<li><a href="/students">For Students</a></li>
-		<li><a href="/downloads">Downloads</a></li>
-		<li><a href="/career">Career Services</a></li>
-	</ul>
-    <div>
-        <h1>Global Study Solutions</h1>
-        <p>We help you build your future</p>
-    </div>
-    <div>
-        <h2>Examinations and Results</h2>
-		<ul>
-			<li><a href="/exams">Exams</li>
-			<li><a href="/results">Results</li>
-		</ul>
-    </div>
-    <div>
-        <h2>Admissions</h2>
-        <p>Read more to understand our policy for admission to our Ph. D. program.</p>
-    </div>
+  <li><a href="/home">Home</a></li>
+  <li><a href="/curriculum">Curriculum</a></li>
+  <li><a href="/students">For Students</a></li>
+  <li><a href="/downloads">Downloads</a></li>
+  <li><a href="/career">Career Services</a></li>
+</ul>
+<div>
+  <h1>Global Study Solutions</h1>
+  <p>We help you build your future</p>
+</div>
+<div>
+  <h2>Examinations and Results</h2>
+<ul>
+  <li><a href="/exams">Exams</a></li>
+  <li><a href="/results">Results</a>
+  </li>
+</ul>
+</div>
+<div>
+  <h2>Admissions</h2>
+  <p>Read more to understand our policy for admission to our Ph. D. program.</p>
+</div>
 </code>
 
 <solution>
@@ -47,8 +48,8 @@ with all the links inside the
 <div>
 	<h2>Examinations and Results</h2>
 	<ul>
-		<li><a href="/exams">Exams</li>
-		<li><a href="/results">Results</li>
+		<li><a href="/exams">Exams</a></li>
+		<li><a href="/results">Results</a></li>
 	</ul>
 </div>
 <div>
