@@ -27,8 +27,9 @@ useQuery({
 The `useQuery` hooks return an object with several properties containing information about the query's state and data. Here are the main properties returned by the hook:
 
 1. `data`: It is the return value of `queryFn`. In our case, it is the API response object.
-2. `isLoading`: A boolean flag that indicates whether the query is currently in the process of fetching data. It will be `true` while the query is loading and `false` once the data has been fetched or if there was an error.
+2. `isLoading`: A boolean flag that indicates whether the query is currently in the process of fetching data for the first time. It will be `true` while the query is loading and `false` once the data has been fetched or if there was an error.
 3. `isError`: It is a boolean value that returns `true` if an error occurs during the data fetching process otherwise, it returns `false`.
+4. `isFetching`: It is a boolean value that returns `true` whenever a query is being fetched, regardless of whether it is the initial fetch or a refetch. Once the data has been fetched or if there was an error, it returns `false`.
 
 Instead of directly calling the `useQuery` hook inside our component, we will encapsulate the `useQuery` hook inside a custom hook signifying the name of the query that it handles. We will be placing all such hooks related to products API under a single file called `useProductsApi.js` inside the `src/hooks/reactQuery` folder to keep it organized. The convention we follow is formatting the file name as `use*Api`, where `*` represents the specific set of APIs we are using. We follow this convention at BigBinary to organize the hooks related to react query.
 

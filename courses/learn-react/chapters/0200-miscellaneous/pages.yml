@@ -35,6 +35,12 @@
 - title: Error boundary
   slug: error-boundary
   page_type: lesson
+- title: More on React query
+  slug: more-on-react-query
+  page_type: lesson
+- title: Exploring React query devtools
+  slug: exploring-react-query-devtools
+  page_type: lesson
 - title: Recommended reading
   slug: recommended-reading
   page_type: lesson
