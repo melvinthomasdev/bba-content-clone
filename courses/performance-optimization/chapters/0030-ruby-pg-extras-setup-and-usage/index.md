@@ -1,17 +1,17 @@
 ## Add the gem to gemfile
 
 ```ruby
-    gem "ruby-pg-extras"
+gem "ruby-pg-extras"
 ```
 
 For additional setup reference and details - https://github.com/pawurb/ruby-pg-extras
 
-## Use rake task to generate the report
+## Usage of rake task to generate the report
 
 ```ruby
 desc "Generate Postgres Stats through ruby-pg-extras gem"
 task print_pg_stats: :environment do
-checks = [
+  checks = [
     "RubyPgExtras.cache_hit(in_format: :hash)",
     "RubyPgExtras.diagnose(in_format: :hash)",
     "RubyPgExtras.table_info(in_format: :hash)",
@@ -25,12 +25,12 @@ checks = [
     "RubyPgExtras.locks(in_format: :hash)",
     "RubyPgExtras.bloat(in_format: :hash)",
     "RubyPgExtras.vacuum_stats(in_format: :hash)",
-]
+  ]
 
-output = checks.map do |check|
-  [ check.split("(").first, eval(check) ]
-end.to_h
+  output = checks.map do |check|
+    [ check.split("(").first, eval(check) ]
+  end.to_h
 
-puts output.to_json
+  puts output.to_json
 end
 ```

@@ -8,11 +8,20 @@ Ref. - [N+1 Query and memoization](https://courses.bigbinaryacademy.com/learn-ru
 
 Loading all data once in memory affects the performance, this can be fixed by using limit and querying in batches.
 
-## Use find_each or find_in_batches
+## Usage of find_each or find_in_batches
 
 Performing the query operation in batches to avoid loading large number of records for performance issues. find_each queries result in a batch of 1,000 by default. Both methods differ as find_in_batches yields the result as an array of models instead of individual records.
 
-<image>find_each-vs-each.png</image>
+```ruby
+  tickets.each do |ticket|
+    # Perform computation
+  end
+
+  # Better - To performing the operation in batches via find_each
+  tickets.find_each do |ticket|
+    # Perform computation
+  end
+```
 
 ## Use/Remove Database Index if needed
 
@@ -41,26 +50,26 @@ DB index can be added post critical analysis of given conditions -
 
 Slow queries can be updated to use an already existing index or an added index can help improve the performance. Using `.explain` on queries can be used to analyze if index is utilized, and single, composite or partial indexes can be added to improve query performance.
 
-## Use Bulk Operations
+## Usage of Bulk Operations
 
 Creation - `#create` accepts an array of hashes and returns one query instead of n, depending on the DB engine supporting bulk insert operation
 Updation - Bulk update through `update_all`
 Deletion - `delete_all` can be used in place of `destroy`, if `after_destroy` callback invocation is not required
 
 ```ruby
-#Deletion
+# Deletion
 users = User.where(active: false)
 
 users.each do |user|
   user.delete
 end
 
-#Better - Performing same operation in bulk
+# Better - Performing same operation in bulk
 users = User.where(active: false)
 
 users.delete_all
 
-#Creation
+# Creation
 new_users = [
   { name: "Oliver Smith", email: "oliver@example.com" },
   { name: "Eve Smith", email: "eve@example.com" }
@@ -70,7 +79,7 @@ new_users.each do |user_attrs|
   User.create(user_attrs)
 end
 
-#Better - Performing user creation in bulk
+# Better - Performing user creation in bulk
 User.create(new_users)
 ```
 
@@ -110,7 +119,7 @@ users = User.where(active: true)
 
 `present?` loads all columns and the object in memory whereas `exists?` limits only to 1 record and does not select any columns.
 
-## Use transactions for a group of operations
+## Usage of transactions for a group of operations
 
 ```ruby
 ticket.update(ticket_options)
@@ -132,7 +141,7 @@ Ticket.transaction do
   end
 end
 
-#or
+# or
 
 ActiveRecord::Base.transaction do
   # Group of operations
@@ -152,7 +161,7 @@ end
 <%= render :partial => "ticket", :collection => @tickets, :as => :ticket %>
 ```
 
-## Use In-Memory calculation if needed
+## Usage of In-Memory calculation if needed
 
 Contrary to using `find_each`, where number of queries were more and memory was reduced, sometimes with judgement, in-memory computations can be used to reduce query count and increase memory use. Given that the latter is performing better justified by benchmarks.
 
