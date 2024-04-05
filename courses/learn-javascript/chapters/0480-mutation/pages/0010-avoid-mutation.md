@@ -177,14 +177,14 @@ passed as argument to it.
 So `addDefaultPropsUsingAssign(user1)`
 mutates `user1` itself.
 
-`addDefaultPropsUsingAssign`
+`addDefaultPropsUsingSpread`
 creates another object
 that contains the properties
 of the object passed as argument
 and
 adds the new properties.
 Hence, when we perform
-`const updatedUser2 = addDefaultPropsUsingAssign(user2)`,
+`const updatedUser2 = addDefaultPropsUsingSpread(user2)`,
 `user2` remains unchanged
 and
 we assign the new object with
