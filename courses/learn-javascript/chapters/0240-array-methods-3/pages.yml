@@ -53,6 +53,15 @@
 - title: Exercise - Sort the Array
   slug: exercise-sort
   page_type: exercise
+- title: Every() method
+  slug: every-method
+  page_type: lesson
+- title: Challenge - Every() method
+  slug: challenge-every-method
+  page_type: exercise
+- title: Challenge - Validate Student Information
+  slug: challenge-validate-student-information
+  page_type: exercise
 - title: Reduce an Array into a Single Value
   slug: reduce
   page_type: lesson
