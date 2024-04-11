@@ -1,6 +1,7 @@
-Using the class selector,
-change the font-size of the
-`h2` element to **24px** 
+Add the class **heading** to the 
+`h2` element. Then, using the class 
+selector, change the font-size of the 
+heading to **24px**.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
