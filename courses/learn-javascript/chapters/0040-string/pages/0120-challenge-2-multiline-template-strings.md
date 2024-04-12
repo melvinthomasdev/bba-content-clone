@@ -20,13 +20,11 @@ Log the value of `verse` to the console:
 </code>
 
 <solution>
-const verse = `
-  "Death is certain for one who has been born,
-  and rebirth is inevitable for one who has died.
-  Therefore, you should not lament over the inevitable."
+const verse = `"Death is certain for one who has been born,
+and rebirth is inevitable for one who has died.
+Therefore, you should not lament over the inevitable."
 
-  — Lord Krishna
-`;
+— Lord Krishna`;
 
 console.log(verse);
 </solution>
