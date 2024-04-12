@@ -11,7 +11,7 @@ as follows:
 | Key         | Value     |
 | ----------- | --------- |
 | punjab      | "Punjabi" |
-| gujrat      | "Gujrati" |
+| gujarat     | "Gujarati"|
 | maharashtra | "Marathi" |
 | karnataka   | "Kannad"  |
 | tamilNadu   | "Tamil"   |
@@ -32,7 +32,7 @@ to the console
 <solution>
 const statesOfIndia ={
   punjab: "Punjabi",
-  gujrat: "Gujrati",
+  gujarat: "Gujarati",
   maharashtra: "Marathi",
   karnataka: "Kannad",
   tamilNadu: "Tamil"
