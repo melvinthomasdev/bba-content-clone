@@ -1,5 +1,5 @@
 Set the `src` attribute of the image
-element with the value `https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2109c-m-2000x1125.png`
+element with the value `https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Torhaus_der_Mainbr%C3%BCcke_in_Miltenberg.jpg/512px-Torhaus_der_Mainbr%C3%BCcke_in_Miltenberg.jpg`
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
@@ -9,9 +9,10 @@ element with the value `https://www.nasa.gov/sites/default/files/thumbnails/imag
 <panel language="css">
 img {
   width: 300px;
-  border: 10px solid steelblue;
   display: block;
   margin: 1rem auto;
+  box-shadow: 0px 0px 10px 10px peachpuff;
+  border-radius: 50%;
 }
 </panel>
 <panel language="javascript">
@@ -21,6 +22,6 @@ img {
 
 <solution>
 let imgElement = document.querySelector('img');
-imgElement.src = "https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2109c-m-2000x1125.png";
+imgElement.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Torhaus_der_Mainbr%C3%BCcke_in_Miltenberg.jpg/512px-Torhaus_der_Mainbr%C3%BCcke_in_Miltenberg.jpg");
 </solution>
 </codeblock>
