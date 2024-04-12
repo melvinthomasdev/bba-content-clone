@@ -13,7 +13,7 @@ as follows:
 | punjab      | "Punjabi" |
 | gujarat     | "Gujarati"|
 | maharashtra | "Marathi" |
-| karnataka   | "Kannad"  |
+| karnataka   | "Kannada"  |
 | tamilNadu   | "Tamil"   |
 
 Later, add another property
@@ -34,7 +34,7 @@ const statesOfIndia ={
   punjab: "Punjabi",
   gujarat: "Gujarati",
   maharashtra: "Marathi",
-  karnataka: "Kannad",
+  karnataka: "Kannada",
   tamilNadu: "Tamil"
 };
 statesOfIndia.kerala = "Malayalam";
