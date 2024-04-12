@@ -14,6 +14,11 @@ return the `firstName` as the full name.
 3. If both `firstName` and `lastName` are not present,
 return `" "` as the full name.
 
+```js
+Input: person = { firstName: "Sam" }
+
+Output: "Sam"
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getFullName = person => {

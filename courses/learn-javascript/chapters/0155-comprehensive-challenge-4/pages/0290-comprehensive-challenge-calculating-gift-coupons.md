@@ -12,8 +12,18 @@ based on the following conditions.
 | Any other value of `skill` and `employmentDuration`                            | 20    |
 
 Display the number of gift-coupons followed by the value of numberOfGiftCoupons.
-For example, if the value of numberOfGiftCoupons is 20,
-the output should be, **Number of gift-coupons: 20**.
+
+For example:
+```js
+Input:
+employee = {
+  skill: "Software",
+  employmentDuration: 8
+}
+
+Output:
+"Number of gift-coupons: 10"
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>

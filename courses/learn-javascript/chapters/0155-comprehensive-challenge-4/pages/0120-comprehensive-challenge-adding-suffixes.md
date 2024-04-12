@@ -6,15 +6,21 @@ You are provided with two functions: **addSuffix** and **printSuffixed** to mani
 
 **printSuffixed** is the function, that will be called first. **Do not modify the function names.**
 
+For example:
+```js
+Input: string = "Overcast" suffix = "Sky"
+
+Output: "Overcast Sky"
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 // Update the below functions
 
 const addSuffix = () => {
-  
+
 };
 const printSuffixed = () => {
-  
+
 };
 </code>
 

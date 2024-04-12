@@ -17,23 +17,23 @@ const countSubstrings = (str, k) => {
 
 <solution>
 const countSubstrings = (str, k) => {
-    const n = str.length;
-    let count = 0;
+  const n = str.length;
+  let count = 0;
 
-    for (let i = 0; i < n; i++) {
-        const distinctChars = new Set();
-        for (let j = i; j < n; j++) {
-            distinctChars.add(str[j]);
-            if (distinctChars.size === k) {
-                count++;
-            }
-            if (distinctChars.size > k) {
-                break;
-            }
-        }
+  for (let i = 0; i < n; i++) {
+    const distinctChars = new Set();
+    for (let j = i; j < n; j++) {
+      distinctChars.add(str[j]);
+      if (distinctChars.size === k) {
+        count++;
+      }
+      if (distinctChars.size > k) {
+        break;
+      }
     }
+  }
 
-    return count;
+  return count;
 
 }
 

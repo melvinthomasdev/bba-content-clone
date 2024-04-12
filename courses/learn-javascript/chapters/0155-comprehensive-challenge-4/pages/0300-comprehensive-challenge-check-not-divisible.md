@@ -8,6 +8,12 @@ specified divisor based on the following conditions.
     - If the number is divisible by the divisor, it returns **Divisible**.
 2. If the input is invalid or the divisor is zero, it returns **Invalid input**.
 
+For example:
+```js
+Input: number = 30, divisor = 5
+
+Output: "Divisible"
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 function checkNotDivisible(number, divisor) {

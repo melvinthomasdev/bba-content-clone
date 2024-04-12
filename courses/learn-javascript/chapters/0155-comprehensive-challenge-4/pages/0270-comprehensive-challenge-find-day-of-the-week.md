@@ -2,8 +2,8 @@ The function `getDayOfWeek()` takes a day **value**
 as input and returns the corresponding day
 of the week based on the following table:
 
-| Value | Message     |
-| ----- | ----------- |
+| Value | Message   |
+| ----- | --------- |
 | 1     | Sunday    |
 | 2     | Monday    |
 | 3     | Tuesday   |
@@ -15,6 +15,12 @@ of the week based on the following table:
 If the provided **value** does not match any of the listed values,
 the function returns **Invalid day!**.
 
+For example:
+```js
+Input: 12
+
+Output: "Invalid day!"
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 function getDayOfWeek(day) {

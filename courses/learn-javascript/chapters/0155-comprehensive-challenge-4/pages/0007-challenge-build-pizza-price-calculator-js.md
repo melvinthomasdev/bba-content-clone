@@ -13,12 +13,12 @@ per item can be different.
 
 For example:
 
-|Items | Cost|
-|--|--|
-|Veggie Pizza| $7 |
-|Chicken Pizza| $10 |
-|Chocolate Cookie| $3 |
-|Vanilla Shake| $5|
+|Items            | Cost |
+| --------------- | ---- |
+|Veggie Pizza     | $7   |
+|Chicken Pizza    | $10  |
+|Chocolate Cookie | $3   |
+|Vanilla Shake    | $5   |
 
 Also provided will be
 another object `orderedItems`

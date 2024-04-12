@@ -4,8 +4,12 @@ it returns their language preference.
 If no preferred language is specified,
 it defaults to the **defaultLanguage**.
 
-For example, with the user object `{ name: "John", preferredLanguage: "German" }`,
-the function returns, **John's preferred language is German**.
+For example:
+```js
+Input: user ={ name: "Eve", preferredLanguage: "German" },
+
+Output: "Eve's preferred language is German".
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>

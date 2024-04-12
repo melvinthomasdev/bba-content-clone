@@ -8,6 +8,12 @@ message based on the following conditions.
 | If the price of ice cream is `123`                    | "That is a lucky number, but still expensive!" |
 | For all other prices                                  | "You bought an unusual dessert!"      |
 
+For example:
+```js
+Input: price = 12
+
+Output: "Your ice cream is fairly expensive!"
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 function checkIceCreamPrice(price) {

@@ -1,6 +1,12 @@
 The function `product` should return
 a string representing the product of `firstNumber` and `secondNumber`.
 
+For example:
+```js
+Input: firstNumber = 7, secondNumber = 3
+
+Output: 21
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const product = (firstNumber, secondNumber) => {

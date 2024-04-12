@@ -2,6 +2,12 @@ The function `add`
 should return the sum of
 the given two numbers.
 
+For example:
+```js
+Input: x = 12, y = 13
+
+Output: 25
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const add = ({ x, y }) => // write your code here

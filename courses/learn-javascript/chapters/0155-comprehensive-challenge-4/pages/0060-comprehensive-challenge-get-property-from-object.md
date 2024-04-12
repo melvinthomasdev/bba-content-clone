@@ -4,6 +4,19 @@ from a given object.
 If the given property is not present,
 return the string **Not found**.
 
+For example:
+```js
+Input:
+object = {
+  name: "Oliver",
+  age: 28,
+  address: "Main Street, New York, NY 10030"
+}
+property = "name";
+
+Output: "Oliver"
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getProperty = ({ object, property }) => // write your code here

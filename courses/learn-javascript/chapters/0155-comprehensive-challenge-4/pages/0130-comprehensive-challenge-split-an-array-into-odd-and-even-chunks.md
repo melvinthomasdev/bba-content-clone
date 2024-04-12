@@ -2,6 +2,13 @@ The function `splitByOddAndEven` should separate a single array into sub-arrays:
 
 1. If array contains only even or odd, return the array. Eg. [1,3,5] -> [1,3,5]
 
+For example:
+```js
+Input: [1, 2, 3, 4, 5, 6]
+
+Output: [[1, 3, 5], [2, 4, 6]]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const splitByOddAndEven = arr => {

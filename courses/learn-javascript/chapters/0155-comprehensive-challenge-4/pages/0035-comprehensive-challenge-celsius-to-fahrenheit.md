@@ -2,7 +2,15 @@ The function **celsiusToFahrenheit**
 converts Celsius values to Fahrenheit values.
 
 The formula to convert Celsius to Fahrenheit
-is **F = (C * 9/5) + 32**.
+is **F = (C \* 9/5) + 32**.
+
+For example:
+
+```js
+Input: celsius = 60
+
+Output: 140
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>

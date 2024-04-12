@@ -3,6 +3,12 @@ the sum of all elements in an array of numbers
 and return the result. If the array is empty,
 it returns 0.
 
+For example:
+```js
+Input: []
+
+Output: 0
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 function calculateSum(numbers) {

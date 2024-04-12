@@ -8,6 +8,16 @@ If the input array is empty, the function should return 0.
 The formula to calculate the discounted price
 is **price - (price * (discountPercentage / 100))**.
 
+```js
+Input:
+items = [
+  { itemName: "Laptop", price: 1300, discountPercentage: 10 },
+  { itemName: "Backpack", price: 150, discountPercentage: 0 },
+  { itemName: "Notebook", price: 20, discountPercentage: 20 },
+]
+
+Output: 1336
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 function calculateTotalPrice(items) {
@@ -17,7 +27,7 @@ function calculateTotalPrice(items) {
 </code>
 
 <solution>
-function calculateTotalPrice(items) {
+const calculateTotalPrice = (items) => {
   let totalPrice = 0;
 
   items.forEach(item => {

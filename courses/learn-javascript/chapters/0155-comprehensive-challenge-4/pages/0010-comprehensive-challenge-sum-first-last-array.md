@@ -5,6 +5,13 @@ of the given array.
 If the array is empty,
 return `0`.
 
+For example:
+```js
+Input: [10, 9, 6, 11]
+
+Output: 21
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const sumExtremes = arr => // write your code here

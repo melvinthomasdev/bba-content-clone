@@ -4,15 +4,21 @@ of numbers as input and determine the
 If the array has less than two elements,
 it should return **null**.
 
+For example:
+```js
+Input: [1]
+
+Output: null
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
-function findSecondLargest(arr) {
+const findSecondLargest = (arr) => {
   // write your code here
 }
 </code>
 
 <solution>
-function findSecondLargest(arr) {
+const findSecondLargest = (arr) => {
   if (arr.length < 2) {
     return null;
   }

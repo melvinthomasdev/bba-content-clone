@@ -5,6 +5,11 @@ If one or
 both of the inputs are **not** valid numbers,
 return the string `Invalid Input`.
 
+```js
+Input: x = "a", y = 10
+
+Output: `Invalid Input`
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const add = ({ x, y }) => // write your code here

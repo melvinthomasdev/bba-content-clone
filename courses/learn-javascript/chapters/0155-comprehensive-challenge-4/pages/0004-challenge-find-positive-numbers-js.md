@@ -6,6 +6,14 @@ display to the console,
 a new array containing only
 the positive numbers, including zero.
 
+For example:
+
+```js
+numbers = [5, 10, -2, 1, -15, 0]
+
+output: [5, 10, 1, 0]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 function getPositiveNumbers(numbers) {

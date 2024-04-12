@@ -5,10 +5,10 @@ For example:
 ```text
 Input:
 obj = {
-    apple: 1,
-    banana: 50,
-    orange: 0,
-    mango: -5
+  apple: 1,
+  banana: 50,
+  orange: 0,
+  mango: -5
 };
 
 Output: banana

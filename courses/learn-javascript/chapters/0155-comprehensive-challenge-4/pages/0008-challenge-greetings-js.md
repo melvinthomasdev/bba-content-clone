@@ -13,6 +13,12 @@ Else, `greetings` should call
 `callback` function with
 the `message` as argument.
 
+For example:
+```js
+Input: message = "Good Morning!", callback = prompt
+
+Output: "Provide correct callback."
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 // Write code here.

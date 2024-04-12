@@ -2,6 +2,14 @@ The function `checkExamResult` returns
 **Pass** if the marks obtained is more than or equal to **45**,
 otherwise it returns **Fail**.
 
+For example:
+
+```js
+Input: 51
+
+Output: "Pass"
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 function checkExamResult(marks) {

@@ -1,15 +1,21 @@
-* If the score is 100, then grade is **A+**.
-* If the score is more than 80 and less than 100, then grade is **A**.
-* If the score is more than 60 and less than 81, then grade is **B**.
-* If the score is 60 or less than 60, then grade is **C**.
+- If the score is 100, then grade is **A+**.
+- If the score is more than 80 and less than 100, then grade is **A**.
+- If the score is more than 60 and less than 81, then grade is **B**.
+- If the score is 60 or less than 60, then grade is **C**.
 
-Based on the above conditions 
-create a function `getGrade` 
-that accepts two parameters 
-`score` and `name` 
+Based on the above conditions
+create a function `getGrade`
+that accepts two parameters
+`score` and `name`
 The function should log
 `[name] got X grade.`
 accordingly to the console.
+
+```js
+Input: score = 79, name = Sam
+
+output: "Sam got A grade."
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -20,18 +26,20 @@ accordingly to the console.
 const getGrade = (score, name) => {
 	let grade = null;
 
-	if (score === 100) {
-		grade = "A+";
-	} else if (score > 80 && score < 100) {
-		grade = "A";
-	} else if (score > 60 && score < 81) {
-		grade = "B"
-	} else if (score < 61) {
-		grade = "C";
-	}
+  if (score === 100) {
+  	grade = "A+";
+  } else if (score > 80 && score < 100) {
+  	grade = "A";
+  } else if (score > 60 && score < 81) {
+  	grade = "B"
+  } else if (score < 61) {
+  	grade = "C";
+  }
 
-	console.log(`${name} got ${grade} grade.`);
+  console.log(`${name} got ${grade} grade.`);
+
 };
+
 </solution>
 <testcases>
 <caller>

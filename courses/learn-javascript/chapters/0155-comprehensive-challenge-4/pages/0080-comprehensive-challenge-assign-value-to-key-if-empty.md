@@ -4,6 +4,22 @@ Assign value to the specified key if value is not empty.
 2. Assign the `value` to given `key` if the given `value` is not empty.
 3. Do not update the `key` if the given value is empty.
 
+For example:
+```js
+const data = {
+  name: "Sam",
+  location: "Mumbai",
+};
+var key = "age";
+var value = 30;
+
+Output:
+{
+  name: "Sam",
+  location: "Mumbai",
+  age: 30
+}
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const updateData = ({ data, key, value }) => {

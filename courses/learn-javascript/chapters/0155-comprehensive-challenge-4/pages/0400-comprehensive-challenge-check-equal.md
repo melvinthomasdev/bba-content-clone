@@ -3,15 +3,20 @@ numbers is equal to **100** or
 if their sum is equal to 100.
 Otherwise, it returns **false**.
 
+```js
+Input: num1 = 10, num2 = 50
+
+Output: false
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
-function isEqualTo100(num1, num2) {
+const isEqualTo100 = (num1, num2) => {
   // write your code here
 }
 </code>
 
 <solution>
-function isEqualTo100(num1, num2) {
+const isEqualTo100 = (num1, num2) => {
   return num1 === 100 || num2 === 100 || num1 + num2 === 100;
 }
 </solution>

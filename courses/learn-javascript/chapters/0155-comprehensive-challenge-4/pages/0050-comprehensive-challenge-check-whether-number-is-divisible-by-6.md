@@ -6,6 +6,12 @@ is divisible by `6` or not.
 If the number is divisible by `6`, return `true`.
 Otherwise, return `false.`
 
+```js
+Input: 42
+
+Output: true
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const isDivisible = number => // write your code here

@@ -2,7 +2,6 @@ Create a function `addThree`,
 which accepts a `number` and
 increments it by 3 and returns
 the result.
-For example: `1 -> 1 + 3, 4 is returned`
 
 Create another function
 `addThreeToArray` which accepts
@@ -11,6 +10,12 @@ and logs a new array where
 3 is added to each element
 to the console.
 
+For example:
+```js
+Input: [4, 9, 10, 16]
+
+Output: [7, 12, 13, 19]
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 // Write your code here
@@ -19,12 +24,12 @@ to the console.
 const addThree = (number) => number + 3;
 
 const addThreeToArray = (inputArray) => {
-	const newArray = [];
-	//As DRY principle states not to repeat ourself, we will be using the already created addThree function.
+  const newArray = [];
+  //As DRY principle states not to repeat ourself, we will be using the already created addThree function.
   inputArray.forEach((element, index) => {
-		newArray[index] = addThree(element)
+    newArray[index] = addThree(element)
   })
-	console.log(newArray);
+  console.log(newArray);
 };
 </solution>
 <testcases>
