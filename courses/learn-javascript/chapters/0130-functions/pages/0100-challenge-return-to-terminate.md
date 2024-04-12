@@ -1,12 +1,13 @@
 Define the function `displayEligibility`
 with one parameter - `user`.
-If the `user.age` is not defined,
+If `user.age` is not defined,
 stop further execution of the function.
-If the value of `user.age` is `18` or higher,
-display `"You are eligible"`
+If the value of `user.age` is **18** or higher,
+display **You are eligible**
 and
-increment the value of `eligibleUsersCount`,
-otherwise display `"You are not eligible."`.
+increment the value of `eligibleUsersCount`.
+Otherwise, if the value is less than **18**, 
+display **You are not eligible** in the console.
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
