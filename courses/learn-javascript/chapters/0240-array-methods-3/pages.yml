@@ -2,56 +2,56 @@
 - title: Get Index of an Element
   slug: indexof-and-lastindexof
   page_type: lesson
-- title: Exercise - Get Index of an Element
-  slug: exercise-indexof
+- title: Challenge - Get Index of an Element
+  slug: challenge-indexof
   page_type: exercise
-- title: Exercise - Get Index of an Element
-  slug: exercise-lastindexof
+- title: Challenge - Get Index of an Element
+  slug: challenge-lastindexof
   page_type: exercise
 - title: Check for Inclusion of an Element
   slug: includes
   page_type: lesson
-- title: Exercise - Search for an element
-  slug: exercise-includes
+- title: Challenge - Search for an element
+  slug: challenge-includes
   page_type: exercise
 - title: Slice an Array
   slug: slice
   page_type: lesson
-- title: Exercise - Copy a Portion of an Array
-  slug: exercise-slice-1
+- title: Challenge - Copy a Portion of an Array
+  slug: challenge-slice-1
   page_type: exercise
-- title: Exercise - Copy a Portion of an Array
-  slug: exercise-slice-2
+- title: Challenge - Copy a Portion of an Array
+  slug: challenge-slice-2
   page_type: exercise
 - title: Modify an Array
   slug: splice
   page_type: lesson
-- title: Exercise - Modify an Array
-  slug: exercise-splice
+- title: Challenge - Modify an Array
+  slug: challenge-splice
   page_type: exercise
 - title: Concatenate Elements Into New Array
   slug: concat
   page_type: lesson
-- title: Exercise - Copy Elements Into New Array
-  slug: exercise-concat
+- title: Challenge - Copy Elements Into New Array
+  slug: challenge-concat
   page_type: exercise
 - title: Join all Elements
   slug: join
   page_type: lesson
-- title: Exercise - Join all Elements
-  slug: exercise-join
+- title: Challenge - Join all Elements
+  slug: challenge-join
   page_type: exercise
 - title: Find element of an Array
   slug: find
   page_type: lesson
-- title: Exercise - Find element of an Array
-  slug: exercise-find
+- title: Challenge - Find element of an Array
+  slug: challenge-find
   page_type: exercise
 - title: Sort the Array
   slug: sort
   page_type: lesson
-- title: Exercise - Sort the Array
-  slug: exercise-sort
+- title: Challenge - Sort the Array
+  slug: challenge-sort
   page_type: exercise
 - title: Every() method
   slug: every-method
@@ -65,8 +65,8 @@
 - title: Reduce an Array into a Single Value
   slug: reduce
   page_type: lesson
-- title: Exercise - Execute a Function and Get a Single Value
-  slug: exercise-reduce
+- title: Challenge - Execute a Function and Get a Single Value
+  slug: challenge-reduce
   page_type: exercise
 - title: Usage of Underscore in Functions
   slug: usage-of-underscore
