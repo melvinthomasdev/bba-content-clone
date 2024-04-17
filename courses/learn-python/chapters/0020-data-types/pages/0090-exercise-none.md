@@ -6,6 +6,6 @@ Check if `0` is the same as `None`.
 </code>
 
 <solution>
-print(0 is None)
+print(0 == None)
 </solution>
 </codeblock>
