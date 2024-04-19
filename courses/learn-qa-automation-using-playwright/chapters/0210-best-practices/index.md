@@ -394,8 +394,7 @@ that even people unfamiliar with Playwright can read.
 test("should be able to place an order", ({ page, loginPage, ordersPage }) => {
   await test.step("Step 1: Login to the application", loginPage.loginViaUI);
   await test.step("Step 2: Create new order", () =>
-    ordersPage.createOrders({ item: "Smartphone" })
-  );
+    ordersPage.createOrders({ item: "Smartphone" }));
   await test.step("Step 3: Assert a new order was created", async () => {
     const orders = page.getByTestId("order");
     await expect(orders).toHaveCount(1);
@@ -527,8 +526,7 @@ test("should create new user", async ({ page, userPage }) => {
 // Correct
 test("should create new user", async ({ page, userPage }) => {
   await test.step("Step 1: Create new user", () =>
-    userPage.createNewUser({ name: "Oliver Smith" })
-  );
+    userPage.createNewUser({ name: "Oliver Smith" }));
 });
 ```
 
@@ -590,17 +588,17 @@ above, this becomes too complicated too fast due to the following
 reasons.
 
 - In larger tests we will have to depend on multiple fixtures for
-   multiple methods. This will drastically increase the amount of methods
-   we destructure in the test definition to the point where it becomes
-   unreadable.
+  multiple methods. This will drastically increase the amount of methods
+  we destructure in the test definition to the point where it becomes
+  unreadable.
 
 - When dealing with multiple fixtures, there might be a chance that
-   there are methods with the same name defined in them. For example
-   consider that there are two fixtures for `ordersPage` and
-   `productsPage` and both of them have the same method
-   `searchAndVerifyItem`. To avoid a conflict we will have to destructure
-   the methods using property assignment and the test definition will be
-   filled with destructuring logic.
+  there are methods with the same name defined in them. For example
+  consider that there are two fixtures for `ordersPage` and
+  `productsPage` and both of them have the same method
+  `searchAndVerifyItem`. To avoid a conflict we will have to destructure
+  the methods using property assignment and the test definition will be
+  filled with destructuring logic.
 
 ```ts
 test("should create a new order", async ({
@@ -610,11 +608,11 @@ test("should create a new order", async ({
 ```
 
 - One of the main reasons to avoid destructing is readability and
-   context. Using the fixture method without destructing gives the person
-   reading the test a better idea about the page in which each operation
-   is taking place. This is much more important when dealing with
-   multi-page tests since its vital to keep track of which page each the
-   operations are taking place especially in bigger specs.
+  context. Using the fixture method without destructing gives the person
+  reading the test a better idea about the page in which each operation
+  is taking place. This is much more important when dealing with
+  multi-page tests since its vital to keep track of which page each the
+  operations are taking place especially in bigger specs.
 
 ```ts
 // Incorrect
@@ -644,4 +642,41 @@ test("should login a new user", async ({ productsPage, ordersPage }) => {
    * for the orders page.
    */
 });
+```
+
+### 8. Move hardcoded selectors and texts to respective constant folders.
+
+It's a good practice to centralize constants like selectors and texts in dedicated folders or files.
+This approach offers several benefits:
+
+- Reuse: We can easily reuse constants across different parts of your application.
+
+- Maintainability: By keeping all selectors and texts in one place, it becomes easier to update them. If there's a change in a selector or text, we only need to update it in one location rather than hunting through our codebase for every instance.
+
+- Readability: Using meaningful names for constants improves code readability. It's easier to understand what the code is doing without needing to decipher hardcoded values.
+
+```ts
+// Incorrect
+
+test("should login a new user", async ({ page }) => {
+  // ...
+  await page.getByRole("button").toHaveText("Save changes");
+  await page.getByTestId("save-changes-button")click();
+ // ....
+});
+```
+
+```ts
+// Correct
+
+test("should verify save changes button", async ({ page }) => {
+ await page.getByRole("button").toHaveText(BUTTON_TEXTS.saveChanges);
+ await page.getByTestId(BUTTON_SELECTORS.saveChanges)click();
+});
+
+// constants/selectors/buttons.ts
+export const BUTTON_SELECTORS = { saveChanges: "save-changes-button" }
+
+// constants/texts/buttons.ts
+export const BUTTON_TEXTS = { saveChanges: "Save changes" }
 ```
