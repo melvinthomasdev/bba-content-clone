@@ -10,7 +10,7 @@ console.log("Price of 1 pencil:");
 console.log(5);
 
 console.log("Price of 5 pencils:");
-console.log(5 * 7);
+console.log(5 * 5);
 
 console.log("Price of 10 pencils:");
 console.log(5 * 10);
@@ -22,8 +22,8 @@ const priceOfPencil = 5;
 console.log("Price of 1 pencil:");
 console.log(priceOfPencil);
 
-console.log("Price of 7 pencils:");
-console.log(priceOfPencil * 7);
+console.log("Price of 5 pencils:");
+console.log(priceOfPencil * 5);
 
 console.log("Price of 10 pencils:");
 console.log(priceOfPencil * 10);
