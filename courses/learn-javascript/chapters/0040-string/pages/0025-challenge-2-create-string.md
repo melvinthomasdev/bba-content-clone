@@ -4,6 +4,12 @@ Create another string `lastName` and store the string `James` as it's value.
 
 At the end, print the values of both variables to the console.
 
+```js
+Output:
+"Lejo"
+"James"
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here

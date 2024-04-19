@@ -2,6 +2,12 @@ Create a variable named `phoneNumber` and store the number **0123456789** as the
 
 At the end, print the values of both variables to the console.
 
+```js
+Output:
+0123456789
+2255
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here
@@ -14,4 +20,3 @@ console.log(phoneNumber);
 console.log(pinCode);
 </solution>
 </codeblock>
-

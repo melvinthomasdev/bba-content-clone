@@ -2,11 +2,12 @@ Update the console log
 statements to display the
 values accordingly:
 
-```
-Employee ID: [employeeIdNumber]
-Name: [employeeName]
-Department: [department]
-Full-Time: [isFullTime]
+```js
+Output:
+Employee ID: "012345"
+Name: "Eve Smith"
+Department: "Marketing"
+Full-Time: true
 ```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">

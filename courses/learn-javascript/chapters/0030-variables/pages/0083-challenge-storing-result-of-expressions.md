@@ -1,6 +1,13 @@
 Store the product of
 `length` and `width` in `area`.
 
+For example
+```js
+Input: length = 5, width = 20
+
+Output: 100
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const length = 230;

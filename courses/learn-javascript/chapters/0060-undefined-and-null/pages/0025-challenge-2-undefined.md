@@ -5,6 +5,9 @@ value to it.
 Log the value of `name`
 to the console.
 
+```js
+Output: undefined
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here

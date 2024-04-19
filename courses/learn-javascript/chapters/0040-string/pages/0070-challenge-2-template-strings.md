@@ -8,6 +8,11 @@ Finally using the variables `firstName`, `lastName` and `fullName`, print the be
 
 `Good Morning [Full Name]! Have a great day.`
 
+```js
+Output:
+"Your first name is Sam and last name is Smith."
+"Good Morning Sam Smith! Have a great day."
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here

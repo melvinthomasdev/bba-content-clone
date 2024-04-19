@@ -10,13 +10,10 @@ Display the value of `distanceInKM`
 to the console.
 
 For example:
-```
-distanceInKM = 1000
-```
+```js
+Input: distanceInKM = 1000
 
-Expected Output:
-```
-1000
+Output: 1000
 ```
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>

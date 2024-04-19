@@ -1,6 +1,10 @@
 Use `++` to increment
 the value of `age` by `1`.
 
+```js
+Output:
+33
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 let age = 32;

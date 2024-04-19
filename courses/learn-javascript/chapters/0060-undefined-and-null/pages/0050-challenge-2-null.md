@@ -15,6 +15,10 @@ equal to `lastName` and
 log the **Boolean** result
 to the console.
 
+```js
+Output: false
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here

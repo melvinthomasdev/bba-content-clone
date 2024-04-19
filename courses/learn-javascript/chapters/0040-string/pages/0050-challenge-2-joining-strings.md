@@ -9,6 +9,10 @@ between the two strings.
 Insert a space between
 the two strings.
 
+```js
+Output:
+"Sam Smith"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const firstName = "Sam";

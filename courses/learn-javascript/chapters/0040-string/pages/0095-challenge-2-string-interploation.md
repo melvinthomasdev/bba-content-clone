@@ -4,9 +4,10 @@ and
 another variable `secondNumber`
 with a value of **17**.
 
-Add a console log with the following
-statement:
+```js
+Output:
 `Product of the two numbers is [product].`
+```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
