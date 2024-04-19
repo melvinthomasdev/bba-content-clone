@@ -1,31 +1,31 @@
 ---
 - name: Getting Started
   slug: getting-started
-- name: HTML Elements
-  slug: html-elements
-- name: HTML Challenge - 1
-  slug: html-challenge-1
-- name: HTML elements with attributes
-  slug: html-elements-with-attributes
+- name: Elements
+  slug: elements
+- name: Challenge - 1
+  slug: challenge-1
+- name: Elements with attributes
+  slug: elements-with-attributes
 - name: Table Element
   slug: table-element
-- name: HTML Quiz
-  slug: html-quiz-01
-- name: Comprehensive exercise 1
-  slug: comprehensive-exercise-1
+- name: Quiz
+  slug: quiz-01
+- name: Challenges Set 1
+  slug: challenges-set-1
 - name: Form Elements
   slug: form-elements
 - name: Input Types
   slug: input-types
-- name: HTML Basic Structure
-  slug: html-basic-structure
-- name: HTML Quiz
-  slug: html-quiz-02
+- name: Basic Structure
+  slug: basic-structure
+- name: Quiz
+  slug: quiz-02
 - name: Projects
   slug: projects
 - name: Semantic HTML
   slug: semantic-html
 - name: Media
   slug: media
-- name: Uncommon HTML Elements and Attributes
-  slug: uncommon-html-elements-and-attributes
+- name: Uncommon Elements and Attributes
+  slug: uncommon-elements-and-attributes

@@ -35,9 +35,9 @@
 - title: Challenge - Table Body
   slug: challenge-table-body
   page_type: exercise
-- title: HTML Assessment - Table
-  slug: html-assessment-table
+- title: Assessment - Table
+  slug: assessment-table
   page_type: exercise
-- title: HTML Assessment - Tables, Headings and Images
-  slug: html-assessment-tables-headings-images
+- title: Assessment - Tables, Headings and Images
+  slug: assessment-tables-headings-images
   page_type: exercise

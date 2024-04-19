@@ -44,14 +44,14 @@
 - title: Challenge - Ordered List
   slug: challenge-ordered-list
   page_type: exercise
-- title: HTML elements allowed inside list items
-  slug: html-elements-allowed-inside-list-items
+- title: Elements allowed inside list items
+  slug: elements-allowed-inside-list-items
   page_type: lesson
-- title: Challenge 1 - HTML elements allowed inside list items
-  slug: challenge-1-html-elements-allowed-inside-list-items
+- title: Challenge 1 - Elements allowed inside list items
+  slug: challenge-1-elements-allowed-inside-list-items
   page_type: exercise
-- title: Challenge 2 - HTML elements allowed inside list items
-  slug: challenge-2-html-elements-allowed-inside-list-items
+- title: Challenge 2 - Elements allowed inside list items
+  slug: challenge-2-elements-allowed-inside-list-items
   page_type: exercise
 - title: Line Break
   slug: line-break
