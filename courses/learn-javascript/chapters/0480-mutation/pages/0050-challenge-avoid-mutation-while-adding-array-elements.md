@@ -6,6 +6,28 @@ store the new list in `updatedUsers`.
 Note that the `users` array
 should not be mutated.
 
+For example:
+```js
+Input: users = [
+  { name: "Sam", age: 25 },
+  { name: "Linh", age: 28 },
+  { name: "Chinua", age: 30 },
+]
+
+Output:
+[
+  { name: "Sam", age: 25 },
+  { name: "Linh", age: 28 },
+  { name: "Chinua", age: 30 },
+]
+[
+  { name: "Sam", age: 25 },
+  { name: "Linh", age: 28 },
+  { name: "Chinua", age: 30 },
+  { name: "Eve", age: 24 }
+]
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const users = [

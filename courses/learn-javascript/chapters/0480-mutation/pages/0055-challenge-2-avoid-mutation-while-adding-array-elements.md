@@ -5,6 +5,12 @@ named `newArrayAfterAddition`.
 
 Log the value of `newArrayAfterAddition`
 to the console.
+
+For example:
+```js
+Input: numberArray = [5, 10, 15, 20]
+Output: [5, 10, 15, 20, 6, 7]
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const numberArray = [1, 2, 3, 4];

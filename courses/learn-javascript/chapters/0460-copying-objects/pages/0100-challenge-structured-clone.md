@@ -4,7 +4,7 @@ object as `newPlayer` using the
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" matchSolutionCode="true">
 <code>
-let player = {
+const player = {
   name: "Messi",
   age: 36,
   address: {
@@ -18,7 +18,7 @@ let player = {
 console.log(newPlayer);
 </code>
 <solution>
-let player = {
+const player = {
   name: "Messi",
   age: 36,
   address: {

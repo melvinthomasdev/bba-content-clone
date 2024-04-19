@@ -18,6 +18,12 @@ after dividing them by `100`.
 Use `console.log()` to display both
 `sizesInCentimeters` and `sizesInMeters` arrays.
 
+For example:
+```js
+Input: sizesInCentimeters = [18000, 2500, 6000]
+Output: [180, 25, 60]
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const sizesInCentimeters = [24000, 3200, 5000];

@@ -7,6 +7,12 @@ store the resultant array in a variable named
 Log the value of `updatedNumberArray`
 to the console.
 
+For example:
+```js
+Input: numbers = [8, 12, 16, 24, 32]
+Output: [8, 12, 24, 32]
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const numbers = [5, 10, 15, 20, 25];

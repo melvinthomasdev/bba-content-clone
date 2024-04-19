@@ -8,6 +8,27 @@ for the `name` property.
 Note that the array `users`
 should not be mutated.
 
+```js
+Input: users = [
+  { name: "Eve", age: 28 },
+  { name: "Sam", age: 32 },
+  { name: "Linh", age: 25 },
+  { name: "Carlos", age: 30 },
+]
+Output:
+[
+  { name: "Eve", age: 28 },
+  { name: "Sam", age: 32 },
+  { name: "Linh", age: 25 },
+  { name: "Carlos", age: 30 },
+]
+[
+  { name: "Eve", age: 28 },
+  { name: "Linh", age: 25 },
+  { name: "Carlos", age: 30 },
+]
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const users = [
@@ -21,6 +42,7 @@ const updatedUsers = ;
 
 console.log(users);
 console.log(updatedUsers);
+
 </code>
 
 <solution>
@@ -35,5 +57,6 @@ const updatedUsers = users.filter(user => user.name !== "Sam");
 
 console.log(users);
 console.log(updatedUsers);
+
 </solution>
 </codeblock>

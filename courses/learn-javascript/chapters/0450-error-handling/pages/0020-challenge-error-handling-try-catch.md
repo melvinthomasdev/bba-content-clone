@@ -7,6 +7,11 @@ the error in the code given below.
 In the catch block, use `console.log`
 to display the message `"Something went wrong"`.
 
+```js
+Output:
+"Something went wrong"
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const firstName = "Sam";

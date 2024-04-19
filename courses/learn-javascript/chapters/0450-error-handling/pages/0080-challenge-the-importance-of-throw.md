@@ -7,6 +7,11 @@ If it doesn't,
 throw an error **"Email is not present"**
 using `new Error()`.
 
+```js
+Output:
+`Uncaught Error: Email is not present`
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const inputData = '{ "name": "Sam Smith", "age": 32 }';

@@ -5,6 +5,16 @@ store them in `sortedNames`.
 Note that the `names` array
 should not be mutated.
 
+For example:
+
+```js
+Input: names = ["Eve", "Linh", "Carlos", "Eve"]
+
+Output:
+['Eve', 'Linh', 'Adam', 'Eve']
+['Adam', 'Eve', 'Linh', 'Eve']
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const names = ["Sam", "Oliver", "Adam", "Eve"];

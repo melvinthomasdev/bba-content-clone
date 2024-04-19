@@ -5,6 +5,10 @@ Show the name of the error
 using `console.log`
 inside the `catch` block.
 
+```js
+Output:
+"TypeError"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 try {
@@ -24,3 +28,4 @@ try {
 }
 </solution>
 </codeblock>
+```

@@ -9,6 +9,11 @@ show the comparison.
 Also, create another variable `bird3` whose value is equal to `bird1` when equality is checked.
 Again, use `console.log()` to show the comparison.
 
+```js
+Output:
+false
+true
+```
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>

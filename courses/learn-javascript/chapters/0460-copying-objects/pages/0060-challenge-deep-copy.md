@@ -4,6 +4,21 @@ assign it to `updatedBird`.
 Also, modify the value of
 `updatedBird.claws` to `5`.
 
+```js
+Input:
+bird = {
+  name: "Eagle",
+  canFly: true,
+  claws: 4,
+};
+
+Output:
+{
+  name: "Eagle",
+  canFly: true,
+  claws: 5,
+};
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird = {

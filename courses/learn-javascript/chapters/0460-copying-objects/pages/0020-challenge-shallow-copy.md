@@ -7,6 +7,14 @@ Assign **"Eagle"** to `bird2.name`.
 Use `console.log()` to
 show the value of the `bird1.name` property.
 
+For example
+```js
+Input:
+bird1 = { name: "Sparrow" };
+
+Output:
+"Eagle"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird1 = { name: "Owl" };

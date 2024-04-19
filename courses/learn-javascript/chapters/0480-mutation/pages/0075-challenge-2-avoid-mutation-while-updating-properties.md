@@ -8,6 +8,20 @@ store it in a variable named
 Log the value of `updatedUser`
 to the console.
 
+```js
+Input: user = {
+  name: "Carlos Alberti",
+  age: 45,
+  role: "Premium",
+}
+Output:
+{
+  name: "Carlos Alberti",
+  age: 45,
+  role: "Premium",
+  country: "USA",
+}
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const user = {

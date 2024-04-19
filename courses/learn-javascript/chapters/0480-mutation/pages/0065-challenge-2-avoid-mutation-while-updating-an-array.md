@@ -7,6 +7,13 @@ named `newArray`.
 
 Log the value of `newArray`
 to the console.
+
+For example:
+```js
+Input: originalArray = [8, 16, 24, 32, 40]
+Output: [8, 16, 35, 32, 40]
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const originalArray = [10, 20, 30, 40, 50];

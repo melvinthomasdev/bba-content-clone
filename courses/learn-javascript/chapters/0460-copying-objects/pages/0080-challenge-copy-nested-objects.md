@@ -3,6 +3,17 @@ into the `birdCopy` object.
 `bird.features` and `birdCopy.features`
 should not be shallow copied.
 
+```js
+Output:
+{
+  name: "Owl",
+  features: {
+    canFly: true,
+    claws: 4
+  },
+  rare: false
+}
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird = {

@@ -8,6 +8,8 @@ named `sortedDescending`.
 Log the value of `sortedDescending`
 to the console.
 
+For example:
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const originalArray = [4, 2, 7, 1, 9];
