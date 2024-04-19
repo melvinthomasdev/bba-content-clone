@@ -13,6 +13,8 @@ the value `Mumbai `.
 
 Use **bracket notation** to update
 the object.
+
+Log the value of `identity` to the console.
 ```js
 {
   name: "Sam Smith",
