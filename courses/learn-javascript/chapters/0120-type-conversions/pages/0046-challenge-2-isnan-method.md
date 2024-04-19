@@ -3,7 +3,14 @@ log to the console if the variables
 have a value of the type `NaN` or not.
 
 The output should be either `true`
-or `false`:
+or `false`.
+
+For example:
+```js
+Input: user = "a123"
+
+Output: true
+```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>

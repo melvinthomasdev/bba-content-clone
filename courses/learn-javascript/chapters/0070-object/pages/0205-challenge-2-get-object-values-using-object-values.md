@@ -13,7 +13,10 @@ get all the **values** stored
 in the `identity` object.
 
 Use `console.log` to show the values.
-
+```js
+Output:
+['Sam Smith', 30, 'Pune', 'sam.smith@example.com']
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code below

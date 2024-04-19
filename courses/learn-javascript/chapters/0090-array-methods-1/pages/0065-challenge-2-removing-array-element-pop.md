@@ -2,8 +2,12 @@ Remove the last element
 of the array `iceCreams`.
 
 Log the array `iceCreams`
-to the console. 
+to the console.
 
+```js
+Output:
+["Chocolate", "Vanilla", "Strawberry", "Butterscotch", "Guava"]
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const iceCreams = ["Chocolate", "Vanilla", "Strawberry", "Butterscotch", "Guava", "Watermelon"];

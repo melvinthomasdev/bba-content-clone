@@ -20,15 +20,21 @@ in the `message` variable,
 if the value of the `number` variable
 is equal to `3`.
 
+For example:
+```js
+Input: number = 4
+
+Output: "Number is greater than 3"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const number = 3;
 let message;
 
 if (number > 3) {
-  message = "number is greater than 3";
+  message = "Number is greater than 3";
 } else {
-  message = "number is lesser than 3";
+  message = "Number is lesser than 3";
 }
 
 console.log(message);
@@ -39,11 +45,11 @@ const number = 3;
 let message;
 
 if (number > 3) {
-  message = "number is greater than 3";
+  message = "Number is greater than 3";
 } else if (number === 3) {
-  message = "number is equal to 3";
+  message = "Number is equal to 3";
 } else {
-  message = "number is lesser than 3";
+  message = "Number is lesser than 3";
 }
 
 console.log(message);

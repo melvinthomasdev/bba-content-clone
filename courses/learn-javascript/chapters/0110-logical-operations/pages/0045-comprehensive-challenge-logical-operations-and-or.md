@@ -10,13 +10,14 @@ or equal to 5, or if the boolean is true.
 For example:
 
 ```js
-number = 5;
-string = "hello";
-boolean = false;
-```
+Input:
+number = 5
+string = "hello"
+boolean = false
 
-For the above example the function should
-output `true`.
+Output:
+true
+```
 
 Use the following to test the code:
 

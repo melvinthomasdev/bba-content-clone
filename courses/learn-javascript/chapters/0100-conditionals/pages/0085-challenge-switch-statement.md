@@ -14,6 +14,12 @@ for each case:
 If none of the cases match,
 display **"This is an invalid number"**.
 
+For example:
+```js
+Input: number = 4
+
+Output: "This is an invalid number"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const number = 3;

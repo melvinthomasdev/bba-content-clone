@@ -12,6 +12,17 @@ of `admin`, the message should be:
 If the participant has a different role,
 the message should be:
 `[Participant Name] has access to the public area.`
+
+For example:
+```js
+Input:
+participant = {
+  name: "Sam",
+  role: "admin"
+}
+
+Output: "Sam has access to the public area."
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const participant = {

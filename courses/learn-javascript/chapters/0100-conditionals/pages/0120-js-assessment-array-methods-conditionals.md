@@ -18,6 +18,9 @@ and
 log the resulting list
 to the console.
 
+```js
+Output: ["Eve Smith", "Sam Smith", "Renu Sen", "Lao Xun", "Chinua Achebe"]
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 // Write code here

@@ -3,6 +3,10 @@ and
 fourth elements
 of the `mixedArray` array.
 
+```js
+Output:
+apple null
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const mixedArray = [1, "apple", true, null];

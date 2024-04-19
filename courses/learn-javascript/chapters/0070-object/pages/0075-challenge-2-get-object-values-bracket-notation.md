@@ -3,7 +3,7 @@ which is an object.
 Properties of this object are
 described below:
 
-| Key                 | Value | 
+| Key                 | Value |
 | ------------------- | ----- |
 | "history"           | 61    |
 | "geography"         | 49    |
@@ -17,6 +17,12 @@ and `math-algebra` property
 from the `results` object
 using the **bracket notation**
 and log it to the console.
+
+```js
+Output:
+51
+65
+```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>

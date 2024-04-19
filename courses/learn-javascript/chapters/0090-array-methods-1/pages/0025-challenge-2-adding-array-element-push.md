@@ -2,7 +2,11 @@ Add an element `Orange`
 at the end of the array `iceCreams`.
 
 Log the resulting value of
-`iceCreams` array to the console:
+`iceCreams` array to the console.
+
+```js
+["Chocolate", "Vanilla", "Strawberry", "Butterscotch", "Orange"]
+```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>

@@ -4,7 +4,11 @@ of the array
 `danceForms` to `tapDance`.
 
 Log the value of `danceForms`
-to the console:
+to the console.
+```js
+Output:
+["Salsa", "tapDance", "Samba"]
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const danceForms = ["Salsa", "Ballet", "Samba"];

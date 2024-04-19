@@ -8,6 +8,14 @@ Use **dot notation** to update the object.
 | canFly        | false |
 | numberOfClaws | 3     |
 
+````js
+Output:
+{
+  type: "owl",
+  canFly: false,
+  numberOfClaws: 3
+}
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const bird = {
@@ -32,3 +40,4 @@ bird.numberOfClaws = 3;
 console.log(bird);
 </solution>
 </codeblock>
+````

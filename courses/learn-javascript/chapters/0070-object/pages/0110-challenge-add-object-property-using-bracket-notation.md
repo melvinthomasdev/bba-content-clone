@@ -8,6 +8,15 @@ Use **bracket notation** to add the properties.
 | 13  | "Samantha" |
 | 14  | "Oliver"   |
 
+```js
+Output:
+{
+  12: "Adam",
+  13: "Samantha",
+  14: "Oliver"
+}
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const person = {

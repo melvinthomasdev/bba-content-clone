@@ -23,8 +23,19 @@ be `Malayalam`.
 Make sure to add this property
 using dot notation.
 Log the value of `statesOfIndia`
-to the console
+to the console.
 
+```js
+Output:
+{
+  punjab: "Punjabi",
+  gujarat: "Gujarati",
+  maharashtra: "Marathi",
+  karnataka: "Kannada",
+  tamilNadu: "Tamil",
+  kerala: "Malayalam"
+};
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here

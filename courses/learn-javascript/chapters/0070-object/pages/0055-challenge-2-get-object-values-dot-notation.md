@@ -20,6 +20,12 @@ Later, log the value of `gujarat`
 and `tamilNadu` to the console
 using dot notation.
 
+```js
+Output:
+"Gujarati"
+"Tamil"
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here

@@ -5,9 +5,8 @@ list of movies.
   total number of movies
   mentioned in the list.
 
-- Add a new movie of your
-  choice at the end of
-  the list.
+- Add a new movie "Vichithram"
+  at the end of the list.
 
 - Log to the console in the following format:
 

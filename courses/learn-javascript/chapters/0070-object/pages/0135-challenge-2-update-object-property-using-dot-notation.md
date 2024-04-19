@@ -14,6 +14,14 @@ notation.
 Log the value of the object
 `vehicle` to the console.
 
+```js
+Output:
+{
+  type: "Car",
+  numberOfWheels: 4,
+  fuel: "Diesel"
+}
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code below

@@ -11,8 +11,11 @@ and
 log it to the console.
 
 For Example:
-`findMaxOfThree(5, 12, 8)` should
-give an output `12`.
+```js
+Input: 5, 12, 8
+
+Output: 12
+```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
@@ -22,7 +25,7 @@ function findMaxOfThree(a, b, c) {
 
 findMaxOfThree(5, 10, 3);
 findMaxOfThree(8, 2, 15);
-findMaxOfThree(4, 4, 4); 
+findMaxOfThree(4, 4, 4);
 </code>
 
 <solution>
@@ -34,6 +37,6 @@ function findMaxOfThree(a, b, c) {
 
 findMaxOfThree(5, 10, 3);
 findMaxOfThree(8, 2, 15);
-findMaxOfThree(4, 4, 4); 
+findMaxOfThree(4, 4, 4);
 </solution>
 </codeblock>

@@ -7,6 +7,13 @@ If not, log the following:
 
 Make sure to use the **not**
 operator.
+
+For example:
+```js
+Input: isRainy = false
+
+Output: "It's a sunny day!"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const isRainy = true;

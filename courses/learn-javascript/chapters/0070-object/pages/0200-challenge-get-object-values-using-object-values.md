@@ -3,7 +3,10 @@ get all the **values** stored
 in the `bird` object.
 
 Use `console.log` to show the values.
-
+```js
+Output:
+['owl', true, 4]
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const bird = {

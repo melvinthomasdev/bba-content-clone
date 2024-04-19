@@ -13,7 +13,14 @@ the value `Mumbai `.
 
 Use **bracket notation** to update
 the object.
-
+```js
+{
+  name: "Sam Smith",
+  age: 30,
+  city: "Mumbai",
+  email: "sam.smith@example.com"
+};
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code below

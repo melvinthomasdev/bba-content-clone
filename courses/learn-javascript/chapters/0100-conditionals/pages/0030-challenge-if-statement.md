@@ -5,9 +5,14 @@ Use an `if` statement to check
 if the value of `number`
 is greater than `3`.
 If the condition is `true`,
-store `"number is greater than 3"`
+store `"Number is greater than 3"`
 in the `message` variable.
 
+```js
+Input: number = 6
+
+Output: "Number is greater than 3"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const number = 4;
@@ -23,7 +28,7 @@ const number = 4;
 let message;
 
 if (number > 3) {
-  message = "number is greater than 3";
+  message = "Number is greater than 3";
 }
 
 console.log(message);

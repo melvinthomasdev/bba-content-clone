@@ -3,6 +3,14 @@ to a string using the `String()` method
 and
 display the output.
 
+For example:
+
+```js
+Input: length = 10;
+
+Output: "10";
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const length = 5;

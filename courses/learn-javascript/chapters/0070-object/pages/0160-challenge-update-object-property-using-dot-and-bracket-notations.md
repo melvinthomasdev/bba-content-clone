@@ -9,6 +9,13 @@ only where it's necessary.
 | canFly            | false |
 | "number-of-claws" | 3     |
 
+```js
+{
+  type: "owl",
+  canFly: false,
+  "number-of-claws": 3
+}
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const bird = {
