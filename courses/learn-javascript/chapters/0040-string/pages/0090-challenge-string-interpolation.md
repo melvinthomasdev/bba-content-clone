@@ -8,7 +8,7 @@ the backticks.
 In the console, the answer should
 look like: `Difference is 2`.
 
-<codeblock language="javascript" type="exercise" testMode="fixedInput">
+<codeblock language="javascript" type="exercise" testMode="fixedInput" matchSolutionCode="true">
 <code>
 const largeNum = 7;
 const smallNum = 5;
