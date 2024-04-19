@@ -8,7 +8,7 @@ Use **dot notation** to update the object.
 | canFly        | false |
 | numberOfClaws | 3     |
 
-````js
+```js
 Output:
 {
   type: "owl",
@@ -40,4 +40,3 @@ bird.numberOfClaws = 3;
 console.log(bird);
 </solution>
 </codeblock>
-````

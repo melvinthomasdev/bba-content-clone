@@ -22,4 +22,3 @@ undefined
     console.log(isApple);
   </solution>
 </codeblock>
-```

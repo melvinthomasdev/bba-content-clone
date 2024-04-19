@@ -13,7 +13,8 @@ bird = {
 
 Output:
 4
-``
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const bird = {
