@@ -17,7 +17,7 @@ In the above example:
 
 - `20 + 30` is an expression.
   `+` is the operator.
-  `23` and `45` are operands. It resolved to the value `50`.
+  `20` and `30` are operands. It resolved to the value `50`.
 
 - `length = 1000` is an expression.
   `=` is the operator.
@@ -31,7 +31,7 @@ In the above example:
   `typeof` is the operator.
   `"Hello World"` is the operand.
 
-  
+
 
 Note that, operators that require two operands are called **binary operators**.
 `+`, `-`, `*`, `/`, and `=` are all binary operators.

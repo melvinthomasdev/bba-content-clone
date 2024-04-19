@@ -8,7 +8,7 @@ Add a **label** element with text **Username** with a **for** attribute set as *
 
 Below that, add a **label** element with the text **Password** with a **for** attribute set as **password**. Below that, add an input element to allow user to enter their password.
 
-Below that, add a **label** element with the text **Address** with a **for** attribute set as **address**.  Below that, add an input element with the **placeholder** attribute set as **World Trade Center, Kharadi, Pune, Maharashtra 41101** to allow user to enter their full address. 
+Below that, add a **label** element with the text **Address** with a **for** attribute set as **address**.  Below that, add an input element with the **placeholder** attribute set as **World Trade Center, Kharadi, Pune, Maharashtra 41101** to allow user to enter their full address.
 Make sure the element has 4 rows and 50 columns.
 
 Below that, add a **label** element with the text **Favourite Ice Cream Flavour** with a **for** attribute set as **flavour**.
@@ -25,7 +25,7 @@ The option value should match the flavor, but in lowercase.
 
 Below that, add a **label** element with the text **Phone Number** with a **for** attribute set as **phone-number**. Below that, add an input element with the **placeholder** attribute set as **+911234567890** to allow user to enter their phone number.
 
-Below the phone number field, add a **div** element with a class of **"button-container"**. 
+Below the phone number field, add a **div** element with a class of **"button-container"**.
 
 Inside this **div** element, add two **Button** elements. The first one, upon clicking, should reset all the data entered in the form, while the second should submit the form. Make sure to specify their types.
 
@@ -121,14 +121,14 @@ button[type="reset"] {
 <!-- Write your code below -->
 <h2>Personal Details</h2>
 <form class="personal-details-form">
-	<label for="username">Username</label>
-	<input type="text" id="username" placeholder="Renu Sen">
-  
+  <label for="username">Username</label>
+  <input type="text" id="username" placeholder="Renu Sen">
+
   <label for="password">Password</label>
-	<input type="password" id="password">
-  
+  <input type="password" id="password">
+
   <label for="address">Address</label>
-	<textarea id="address" rows="4" cols="50" placeholder="World Trade Center, Kharadi, Pune, Maharashtra 41101"></textarea>
+  <textarea rows="4" cols="50" placeholder="World Trade Center, Kharadi, Pune, Maharashtra 41101" id="address"></textarea>
 
   <label for="flavour">Favourite Ice Cream Flavour</label>
   <select id="flavour">
@@ -138,13 +138,13 @@ button[type="reset"] {
     <option value="pista">Pista</option>
     <option value="butterscotch">Butterscotch</option>
   </select>
-  
+
   <label for="phone-number">Phone Number</label>
-	<input type="tel" id="phone-number" placeholder="+911234567890">
-  
+  <input type="tel" placeholder="+911234567890" id="+911234567890">
+
   <div class="button-container">
     <button type="reset">Reset</button>
-	  <button type="submit">Submit</button>
+    <button type="submit">Submit</button>
   </div>
 </form>
 </solution>
