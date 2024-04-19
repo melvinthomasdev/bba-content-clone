@@ -6,6 +6,17 @@ Create a new object `organization` that contains:
 
 - add another property `email: "hello@bigbinary.com"`
 
+```js
+Output:
+{
+  name: "BigBinary",
+  startYear: "2011",
+  website: "https://www.bigbinary.com/",
+  location: "Miami, USA",
+  email: "hello@bigbinary.com"
+}
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const basicInfo = {

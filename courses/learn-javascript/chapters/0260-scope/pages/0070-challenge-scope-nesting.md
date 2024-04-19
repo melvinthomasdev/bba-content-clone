@@ -1,8 +1,9 @@
 Move the `console.log` statements to achieve the following output:
 
-```text
-Sam's email: sam@example.com
-Sam's phone: 9876543210
+```js
+Output:
+"Sam's email: sam@example.com"
+"Sam's phone: 9876543210"
 ```
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">

@@ -3,6 +3,10 @@ to create a new array - `foodItems`,
 that contains the elements from `fruits`
 followed by the elements from `vegetables`.
 
+```js
+Output:
+["apple", "banana", "mango", "cabbage", "spinach"]
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const fruits = ["apple", "banana", "mango"];

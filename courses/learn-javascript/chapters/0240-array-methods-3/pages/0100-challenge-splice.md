@@ -2,6 +2,10 @@ Use the `splice()` method
 to replace the element **"Oliver"**
 with **"Eve"**.
 
+```js
+Output:
+["Adam", "Eve", "Sam"]
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const names = ["Adam", "Oliver", "Sam"];

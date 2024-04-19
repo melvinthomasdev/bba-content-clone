@@ -15,6 +15,17 @@ The `validateStudents` function should return
 `true` if all students in the array meet
 these criteria and false otherwise.
 
+For example:
+```js
+Input:
+studentsArray =[
+  { name: "Alice", age: 15, grades: [90, 80, 85] },
+  { name: "", age: 19, grades: [90, 80, 85] },
+  { name: "Bob", age: 17, grades: [75, 85, 92] }
+]
+
+Output: false
+```
 Log the output to the console.
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>

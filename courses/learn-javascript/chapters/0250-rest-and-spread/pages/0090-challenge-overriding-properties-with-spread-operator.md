@@ -4,6 +4,16 @@ but
 override the values of `status` and `currentLocation`
 with the properties from `newInfo`.
 
+```js
+Output:
+{
+  price: 8300,
+  isPaid: true,
+  status: "On the way",
+  currentLocation: "Bangalore",
+}
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const order = {
@@ -14,7 +24,7 @@ const order = {
 }
 
 const newInfo = {
-  status: "On th way",
+  status: "On the way",
   currentLocation: "Bangalore",
 }
 
@@ -32,7 +42,7 @@ const order = {
 }
 
 const newInfo = {
-  status: "On th way",
+  status: "On the way",
   currentLocation: "Bangalore",
 }
 

@@ -3,6 +3,12 @@ copy the last two elements
 from the `names` array
 into `namesSubArray`.
 
+For example:
+```js
+Input: names = ["Eve", "Sam", "Carlos", "Chinua"]
+
+Output: ["Carlos", "Chinua"]
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const names = ["Adam", "Eve", "Oliver", "Sam"];

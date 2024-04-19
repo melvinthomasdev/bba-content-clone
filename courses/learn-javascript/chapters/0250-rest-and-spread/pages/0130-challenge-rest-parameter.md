@@ -8,6 +8,11 @@ instead of just the first two arguments.
 Use the `reduce` method to find
 the sum of the array of arguments.
 
+```js
+Input: 50 , 100, 120
+
+Output: 270
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const calculateSum = (number1, number2) => number1 + number2

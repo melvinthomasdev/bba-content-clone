@@ -6,6 +6,15 @@ Add two other elements -
 to the end of the
 `livingThings` array as well.
 
+For example:
+```js
+Input:
+birds = ["sparrow", "crow", "vulture"]
+insects = ["crane fly", "beetle", "ant"]
+
+Output: ["sparrow", "crow", "vulture", "crane fly", "beetle", "ant", "dog", "cat"]
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const birds = ["owl", "crow", "eagle"];
