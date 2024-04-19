@@ -8,6 +8,12 @@
 
 - Use `"*"` for padding.
 
+For example:
+```js
+Input: cardNumberEnding = "3206"
+
+Output: "************3206"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const cardNumberEnding = "1234";

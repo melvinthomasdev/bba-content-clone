@@ -13,9 +13,11 @@ the the minimum value,
 and
 the index of the minimum value in the array
 and log it to the console.
-Expected output:
 
-`The minimum value is [minimumValue] at index [Index].`
+```js
+Output:
+`The minimum value is 40 at index 1.`
+```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
@@ -25,7 +27,7 @@ const scores = [65, 40, 80, 72];
 
 </code>
 <solution>
-const scores = [40, 65, 72, 80];
+const scores = [65, 40, 80, 72];
 
 // Write code below this line
 const calculateMinimum = (array) => {

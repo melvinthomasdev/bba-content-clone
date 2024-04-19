@@ -14,10 +14,12 @@ the nearest whole price.
 
 Log both variations to the console.
 
-Expected output:
-`Discounted price: [discountedPrice]`
-
-`Rounded up total price: [ceiledPrice]`
+```js
+Input: totalCost = 82.45
+Output:
+`Discounted price: 82`
+`Rounded up total price: 83`
+```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>

@@ -8,6 +8,15 @@ the following key-value pairs:
 | { flavor: "Chocolate", topping: "Raisins" }   | 240   |
 | { flavor: "Vanilla", topping: "Choco Chips" } | 180   |
 
+```js
+Output:
+[
+ [{ flavor: "Chocolate", topping: "Almond" }, 250],
+ [{ flavor: "Chocolate", topping: "Raisins" }, 240],
+ [{ flavor: "Vanilla", topping: "Choco Chips" }, 180],
+]
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const iceCream = ;

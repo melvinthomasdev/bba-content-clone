@@ -8,7 +8,12 @@ following words in the string stored in **story**.
 
 - Find **intrigue** and store the result in the variable **lastIndexOfIntrigue**.
 
-
+```js
+Output:
+40
+137
+123
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const story = "As the story unfolded, twist emerged, a twist that deepened the intrigue. As the characters navigated the intricate web of intrigue, new characters emerged."

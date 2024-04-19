@@ -13,11 +13,11 @@ and log it to the console.
 Formula for surface area:
 <image>surface-area.png</image>
 
-Expected output:
-`The volume of the cube is [volume]`
-
-`The surface area of the cube is [surface area]`
-
+```js
+Output:
+`The volume of the cube is: 1728`
+`The surface area of the cube is: 864`
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const sideLength = 12;

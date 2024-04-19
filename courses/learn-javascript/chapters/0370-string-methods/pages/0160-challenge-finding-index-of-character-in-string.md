@@ -2,6 +2,10 @@ Use the `indexOf()` method
 to get the index of `+`
 from the value of `message`.
 
+```js
+Output: 19;
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const message = "My phone number is +91-23456-78901";

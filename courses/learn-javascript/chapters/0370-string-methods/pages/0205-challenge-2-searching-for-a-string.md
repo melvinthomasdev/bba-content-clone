@@ -9,6 +9,10 @@ the words **happy** and **day** in the **message**.
   inside the **if** statement to
   complete the exercise.
 
+```js
+Output:
+`This message expresses happiness for the day. The word "happy" is present at index 14.`
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const message = "Wishing you a happy and joyful day!";

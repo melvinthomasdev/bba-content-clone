@@ -1,11 +1,21 @@
-Use the **startsWith()** method to 
-check if **emailAddress1** 
-and 
-**emailAddress2** start with the 
-substring **info@**. Use the **startsWith()** 
-method again to see if **file1** and **file2** 
+Use the **startsWith()** method to
+check if **emailAddress1**
+and
+**emailAddress2** start with the
+substring **info@**. Use the **startsWith()**
+method again to see if **file1** and **file2**
 start with the substring **image-**.
 
+For example:
+```js
+Input:
+emailAddress = "sam@example.com"
+file = "image-funny-cat.png"
+
+Output:
+false
+true
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const emailAddress1 = "info@example.com";

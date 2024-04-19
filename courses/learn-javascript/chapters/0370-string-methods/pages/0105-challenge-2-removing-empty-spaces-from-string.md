@@ -15,6 +15,12 @@ beginning and end.
   **spacesRemovedInGreeting** and
   **spacesRemovedInReply**.
 
+```js
+Output:
+"Hello, how are you today?"
+"I am doing great, thank you!"
+"We removed 7 extra spaces from greeting and 7 extra spaces from reply."
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const greeting = "    Hello, how are you today?   ";

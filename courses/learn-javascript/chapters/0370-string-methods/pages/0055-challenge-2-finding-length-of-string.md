@@ -17,6 +17,11 @@ secret code at various positions.
   to find the **thirdLastCharacter**
   and **lastCharacter**.
 
+```js
+Output:
+"The secret code has 20 characters!"
+"The secret word is BINGO!"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const secretCode = "YB7RIQ6K8N5YBQK8FGYO";

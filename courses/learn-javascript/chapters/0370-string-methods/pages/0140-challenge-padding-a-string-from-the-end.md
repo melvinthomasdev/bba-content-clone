@@ -6,6 +6,10 @@
 
 - Use `$` for padding.
 
+```js
+Output: "qwertyuiop$$$$$$$$$$";
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const password = "qwertyuiop";

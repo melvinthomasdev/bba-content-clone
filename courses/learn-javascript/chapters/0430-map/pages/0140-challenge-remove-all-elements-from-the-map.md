@@ -2,6 +2,18 @@ Use the `map.clear()` method
 to remove all the elements
 from the `fruit` Map.
 
+For example:
+```js
+Input:
+fruit = new Map([
+  ["name", "strawberry"],
+  ["color", "red"],
+])
+
+Output:
+Map(0) {size: 0}
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const fruit = new Map([

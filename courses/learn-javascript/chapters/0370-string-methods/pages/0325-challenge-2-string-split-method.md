@@ -7,14 +7,18 @@ each string into an array of individual tags.
 Use `console.log` to display the resulting arrays
 of tags for each post.
 
+```js
+Output:
+["JavaScript", "Web Development", "Programming"]
+["CSS", "Web Development", "Programming"]
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const hashTagsPost1 = "JavaScript, Web Development, Programming";
 const hashTagsPost2 = "CSS, Web Development, Programming";
 
 function extractTagsFromPost(tags) {
-// Your code here
-
+  // Your code here
 }
 
 extractTagsFromPost(hashTagsPost1);
@@ -26,9 +30,9 @@ const hashTagsPost1 = "JavaScript, Web Development, Programming";
 const hashTagsPost2 = "CSS, Web Development, Programming";
 
 function extractTagsFromPost(tags) {
-// Your code here
-const tagArray = tags.split(", ");
-console.log(tagArray);
+  // Your code here
+  const tagArray = tags.split(", ");
+  console.log(tagArray);
 }
 
 extractTagsFromPost(hashTagsPost1);

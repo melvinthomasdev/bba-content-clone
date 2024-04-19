@@ -1,6 +1,11 @@
 Create the `names` Set with
 values `"Sam"`, `"Oliver"` and `"Adam"`.
 
+```js
+Output:
+Set(3) {'Sam', 'Oliver', 'Adam'}
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const names = ;

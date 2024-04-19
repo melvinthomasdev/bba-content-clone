@@ -1,6 +1,10 @@
 ## Challenge 1
 Update the function `maskCardNumber` to return the `cardNumber` with only the last 4 digits displayed and the rest replaced with `*`. The length of the card number can vary.
 
+```js
+Output:
+"**** **** **** 4444"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 const maskCardNumber = (cardNumber) => {
@@ -26,6 +30,11 @@ console.log(maskCardNumber(cardNumber));
 It should be written `JavaScript` and not `javascript`.
 Update the function `fixJavaScript` to return the fixed version of the below excerpt from an interview with Brendan Eich, the founder of JavaScript before he sees it.
 
+```js
+Output:
+`InfoWorld: As I understand it, JavaScript started out as Mocha, then became LiveScript and then became JavaScript when Netscape and Sun got together. But it actually has nothing to do with Java or not much to do with it, correct?
+Eich: That's right. It was all within six months from May till December (1995) that it was Mocha and then LiveScript. And then in early December, Netscape and Sun did a license agreement and it became JavaScript. And the idea was to make it a complementary scripting language to go with Java, with the compiled language.`
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 const interviewExcerpt = `InfoWorld: As I understand it, javascript started out as Mocha, then became LiveScript and then became javascript when Netscape and Sun got together. But it actually has nothing to do with Java or not much to do with it, correct?
@@ -53,6 +62,10 @@ console.log(fixJavaScript(interviewExcerpt));
 Update function `trimUnits` such that it clears out the unit mentioned (`px`, `em`, `cm` etc) and returns the numerical value.
 For example: `4px` should return 4. The length of all units will be given as `unitLength`.
 
+```js
+Output:
+12
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 const unitValue = "12rem";
@@ -76,6 +89,10 @@ console.log(trimUnits(unitValue, unitLength));
 Fix the error in the code below
 by using the correct method:
 
+```js
+Output:
+"undefined"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 console.log(undefined.toString());

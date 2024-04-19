@@ -10,9 +10,12 @@ same number of apples.
 
 Find who has the highest number
 of apples and log it to the
-console accordingly:
-`[Name] possesses the largest quantity of apples, with a total count of [Number of Apples].`
+console.
 
+```js
+Output:
+`Linh possesses the largest quantity of apples, with a total count of 12.`
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const numberOfApplesEve = 7;

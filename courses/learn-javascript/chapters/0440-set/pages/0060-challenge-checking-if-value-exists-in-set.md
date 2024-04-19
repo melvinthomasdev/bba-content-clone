@@ -3,6 +3,15 @@ the value **"JS"** is present
 in the **skills** set.
 Store the result in `isSkilledInJS`.
 
+For example:
+```js
+Input:
+skills = new Set(["HTML", "CSS", "PYTHON"])
+
+Output:
+false
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const skills = new Set(["HTML", "CSS", "JS"]);

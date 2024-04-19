@@ -4,6 +4,15 @@ from the string stored in the
 to the **firstCharacter**, **thirdCharacter**
 and **lastCharacter** variables respectively.
 
+For example:
+```js
+Input: framework = "Express"
+
+Output:
+"E"
+"p"
+"s"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const framework = "Angular";

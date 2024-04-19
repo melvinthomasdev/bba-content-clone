@@ -4,6 +4,12 @@ alcohol or not by checking if its name ends
 with **nol**.
 Display **true** if it is alcohol, and **false** otherwise.
 
+For example:
+```js
+Input: compound = "Polythene"
+
+Output: false
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const compound1 = "Ethanol";

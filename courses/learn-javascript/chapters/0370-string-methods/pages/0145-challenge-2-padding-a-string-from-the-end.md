@@ -11,6 +11,13 @@ to meet specific length requirements.
 Store the values in the variables **paddedPhoneNumber**,
 **paddedZipCode**, and **paddedSocialSecurityNumber** respectively.
 
+```js
+Output:
+"98725*****"
+"770****"
+"967045**********"
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const phoneNumber = "98725";
@@ -24,6 +31,7 @@ const paddedSocialSecurityNumber =
 console.log(paddedPhoneNumber);
 console.log(paddedZipCode);
 console.log(paddedSocialSecurityNumber);
+
 </code>
 
 <solution>
@@ -31,12 +39,13 @@ const phoneNumber = "98725";
 const zipCode = "770";
 const socialSecurityNumber = "967045";
 
-const paddedPhoneNumber = phoneNumber.padEnd(10, "*");
-const paddedZipCode = zipCode.padEnd(7, "*");
-const paddedSocialSecurityNumber = socialSecurityNumber.padEnd(16, "*");
+const paddedPhoneNumber = phoneNumber.padEnd(10, "_");
+const paddedZipCode = zipCode.padEnd(7, "_");
+const paddedSocialSecurityNumber = socialSecurityNumber.padEnd(16, "\*");
 
 console.log(paddedPhoneNumber);
 console.log(paddedZipCode);
 console.log(paddedSocialSecurityNumber);
+
 </solution>
 </codeblock>

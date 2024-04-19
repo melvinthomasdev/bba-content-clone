@@ -13,13 +13,12 @@ You have the following tasks:
 - Round up the calculated number to the nearest whole floor and log it to the console.
 - Round down to the nearest whole floor and log it to the console.
 
-Expected result:
-`Total floors: [totalFloors]`
-
-`Rounded floors: [roundedFloors]`
-
-`Floored floors: [flooredFloors]`
-
+```js
+Output:
+`Total floors: 53.333333333333336`
+`Rounded floors: 54`
+`Floored floors: 53`
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const requiredHeight = 800;

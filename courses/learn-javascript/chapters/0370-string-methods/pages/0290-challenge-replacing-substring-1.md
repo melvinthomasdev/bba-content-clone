@@ -7,6 +7,10 @@ Later replace the word
 `tonight` with `tomorrow`
 and log it to the console.
 
+```js
+Output:
+"Party rock is in the house tomorrow!"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code here

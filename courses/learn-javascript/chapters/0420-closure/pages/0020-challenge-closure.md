@@ -5,6 +5,19 @@ of the `login` function are equal to
 the `email` and `password` properties of `user`.
 Otherwise, return **"Invalid Credentials"**.
 
+For example:
+```js
+Input:
+user = {
+  email: "sam@example.com",
+  password: "123456",
+}
+email = "sam@example.com"
+password= "1234567"
+
+Output:
+"Invalid Credentials"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const login = (email, password) => {

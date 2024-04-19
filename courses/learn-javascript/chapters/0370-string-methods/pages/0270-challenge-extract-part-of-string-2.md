@@ -11,6 +11,10 @@ from the `longString` variable.
 3. Then use `console.log()`
 to show the result.
 
+```js
+Output:
+"Create"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here.

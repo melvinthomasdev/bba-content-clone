@@ -6,10 +6,17 @@ all the elements of the `colors` property
 separated by - **", "**,
 using a template string.
 
-For the code below,
-the output should be
-**"Owl has these colors - brown, black, gray"**.
-
+For example:
+```js
+Input:
+bird = {
+  name: "Eagle",
+  colors: ["white", "black", "gray"],
+  displayNameAndColors() {},
+}
+Output:
+"Eagle has these colors - white, black, gray"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird = {

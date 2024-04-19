@@ -12,6 +12,13 @@ stored in **wiseWords**.
 - Find **forever** starting from the
   **40th** position and store the result in **indexOfForever**.
 
+```js
+Output:
+61
+53
+66
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const wiseWords = "Live as if you were to die tomorrow. Learn as if you were to live forever.";
@@ -23,6 +30,7 @@ const indexOfForever =
 console.log(indexOfLive);
 console.log(indexOfWere);
 console.log(indexOfForever);
+
 </code>
 
 <solution>
@@ -35,5 +43,6 @@ const indexOfForever = wiseWords.indexOf("forever", 40);
 console.log(indexOfLive);
 console.log(indexOfWere);
 console.log(indexOfForever);
+
 </solution>
 </codeblock>

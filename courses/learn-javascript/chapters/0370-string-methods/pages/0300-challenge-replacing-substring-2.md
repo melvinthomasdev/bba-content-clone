@@ -1,6 +1,6 @@
 Create a JavaScript function
 `updateString` that takes in
-three parameters :- 
+three parameters :-
 - inputString
 - originalSubstring
 - additionalSubstring
@@ -19,10 +19,11 @@ string to the console.
 
 For example:
 ```js
+Input:
 inputString = "The club can't even handle me right now"
 originalSubstring = "club"
 additionalSubstring = "house"
-// Output should be:
+Output:
 "The clubhouse can't even handle me right now"
 ```
 

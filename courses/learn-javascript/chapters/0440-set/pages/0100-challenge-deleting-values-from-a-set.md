@@ -2,6 +2,10 @@ Use the `delete()`
 method to remove **"mango"**
 from the `fruits` Set.
 
+```js
+Output:
+Set(3) {'apple', 'banana', 'orange'}
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const fruits = new Set(["apple", "banana", "orange", "mango"]);

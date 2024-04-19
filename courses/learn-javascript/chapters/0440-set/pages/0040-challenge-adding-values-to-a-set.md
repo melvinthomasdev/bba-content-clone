@@ -2,6 +2,11 @@ Use the `add()` method to add
 `apple`, `banana` and `orange`
 to the `fruits` set.
 
+```js
+Output:
+Set(3) {'apple', 'banana', 'orange'}
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const fruits = new Set();

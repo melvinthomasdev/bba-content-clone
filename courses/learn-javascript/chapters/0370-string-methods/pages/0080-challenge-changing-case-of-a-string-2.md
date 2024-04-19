@@ -3,6 +3,12 @@ to convert the string
 stored in `email`
 to lowercase.
 
+For example:
+```js
+Input: email = "SAM@EXAMPLE.COM"
+
+Output: "sam@example.com"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const email = "HELLO@BIGBINARY.COM";

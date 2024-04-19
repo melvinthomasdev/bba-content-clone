@@ -12,13 +12,12 @@ log it to the console.
 Additionally, round the average to the nearest
 whole number and log it to the console.
 
-Expected output:
-`The average test score is: [Average]`
-
-`The highest test score is: [highestScore]`
-
-`Rounded average score to the nearest whole number: [roundedAverage]`
-
+```js
+Output:
+`The average test score is: 76.2725`
+`The highest test score is: 84.33`
+`Rounded average score to the nearest whole number: 76`
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const samScore = 82.21;

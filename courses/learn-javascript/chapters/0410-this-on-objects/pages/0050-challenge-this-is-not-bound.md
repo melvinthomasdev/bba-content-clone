@@ -4,10 +4,17 @@ of the object whose method `displaySound` is assigned to,
 followed by **": Woof woof"**,
 using a template string.
 
-For example,
-if it is invoked from `dog`,
-the output should be
-**"Dog: Woof woof"**.
+For example:
+```js
+Input:
+cat = {
+  name: "Cat",
+  makeSound: displaySound,
+};
+
+Output:
+"Cat: Woof woof"
+```
 
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>

@@ -2,6 +2,16 @@ Use the `map.get()` method
 to get the value of
 the **"name"** key of `fruit`.
 
+For example:
+```js
+Input:
+fruit = new Map([
+  ["name", "strawberry"]
+]);
+
+Output:
+"strawberry"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const fruit = new Map([

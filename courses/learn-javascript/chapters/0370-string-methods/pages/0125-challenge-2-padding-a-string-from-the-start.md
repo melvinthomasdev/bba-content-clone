@@ -6,6 +6,12 @@ and **employeeID3** so that all of them are exactly
 Store the formatted IDs in the variables **formattedEmployeeID1**,
 **formattedEmployeeID2**, and **formattedEmployeeID3**.
 
+```js
+Output:
+"00001312"
+"00024565"
+"00000021"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const employeeID1 = "1312";

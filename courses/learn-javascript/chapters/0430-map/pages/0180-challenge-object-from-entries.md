@@ -3,6 +3,18 @@ to create an object `fruit`
 containing all the properties
 of the map `fruitMap`.
 
+For example:
+```js
+Input:
+fruitMap = new Map([
+  ["name", "strawberry"],
+  ["color", "red"],
+]);
+
+Output:
+{name: 'strawberry', color: 'red'}
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const fruitMap = new Map([

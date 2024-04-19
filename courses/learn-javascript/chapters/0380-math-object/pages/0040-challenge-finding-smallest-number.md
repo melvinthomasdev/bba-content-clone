@@ -1,5 +1,9 @@
 Find the smallest number among **94, 62, 86, 0, and 23**.
 
+```js
+Output:
+94
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const minNum = ;

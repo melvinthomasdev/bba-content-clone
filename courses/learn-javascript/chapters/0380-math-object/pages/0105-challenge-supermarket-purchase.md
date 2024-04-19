@@ -8,14 +8,13 @@ We have the following tasks:
 - Find the rounded average cost and log it to the console.
 - Find the rounded down total cost and log it to the console.
 
-Expected outcome:
-`Total cost of the items is: [totalCost].`
-
-`The average cost of the items is: [averageCost].`
-
-`Rounded average cost to the nearest whole number[roundedAverage].`
-
-`Rounded-down total cost to the nearest whole number[roundedDownTotalCost].`
+```js
+Outcome:
+`Total cost of the items is: 236.64.`
+`The average cost of the items is: 78.88.`
+`Rounded average cost to the nearest whole number: 79.`
+`Rounded-down total cost to the nearest whole number: 236.`
+```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>

@@ -1,5 +1,9 @@
 Using `Math.pow()`, find the value of **6** raised to a power of **3**.
 
+```js
+Output:
+216
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const result = ;

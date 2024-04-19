@@ -4,6 +4,22 @@ Modify the code below so that we get the output `Brand: Tesla, Model: Model S, Y
 
 **Hint:** Use the `window` object.
 
+For example:
+```js
+Input:
+car = {
+  brand: "Tata",
+  model: "Curvv",
+  year: 2024,
+  describeCar: () => {
+    console.log(`Brand: ${this.brand}, Model: ${this.model}, Year: ${this.year}`);
+  },
+}
+
+Output:
+`Brand: Tata, Model: Curvv, Year: 2024`
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const car = {

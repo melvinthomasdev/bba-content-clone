@@ -3,6 +3,12 @@ to convert the string
 stored in `language`
 to uppercase.
 
+For example:
+```js
+Input: language = "JavaScript"
+
+Output: "JAVASCRIPT"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const language = "html";
