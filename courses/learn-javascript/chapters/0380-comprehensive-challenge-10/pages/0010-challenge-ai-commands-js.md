@@ -1,5 +1,5 @@
-- Create a function `getTaskFromCommand` 
-which accepts 2 parameters, `keyword` 
+- Create a function `getTaskFromCommand`
+which accepts 2 parameters, `keyword`
 and `command`.
 - The keyword will be present only ONCE
 in the command string.
@@ -7,12 +7,13 @@ in the command string.
 which follows the `keyword`.
 
 For example:
-```
+```js
 Keyword = "Hey Buzz"
 String = "Hey Buzz remind me to go to infinity and beyond"
-```
-Result from the above example is `remind me to go to infinity and beyond`.
 
+Output:
+`remind me to go to infinity and beyond`.
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>

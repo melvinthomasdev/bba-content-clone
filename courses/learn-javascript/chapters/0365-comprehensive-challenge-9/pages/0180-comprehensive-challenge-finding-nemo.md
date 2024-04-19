@@ -3,6 +3,15 @@ Determine the position of the word "Nemo" and return a string in the following m
 1. If there are multiple instances of the word, return the string for the first occurence.
 2. If you can't find Nemo, return "I can't find Nemo :(".
 
+For example:
+```js
+Input:
+const str = "Dory found Nemo";
+
+Output:
+"I found Nemo at 3!"
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const findNemo = str => {

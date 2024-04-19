@@ -1,7 +1,12 @@
 Declare a function `formatElapsedSeconds` to
 convert the given number of seconds to a format of `hours:minutes:seconds`.
 
-If the input is `3670`, then the output should be `1:1:10`. This is because `3600` seconds is equal to `1` hour, and the remaining `70` seconds is equal to `1` minute and `10` seconds.
+For example:
+```js
+Input: elapsedSeconds = 3670
+
+Output: 1:1:10
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>

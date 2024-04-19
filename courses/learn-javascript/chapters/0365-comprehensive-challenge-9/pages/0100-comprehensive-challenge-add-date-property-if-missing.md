@@ -4,6 +4,29 @@ Given an object with vacation details, return the same after adding a `startDate
 2. Try using [Logical nullish](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment) assignment.
 3. Month should always be set as `December`.
 
+For example:
+```js
+Input:
+const vacationDetails = {
+  tripId: 5,
+  destination: "Maldives",
+  startDate: "Thu Dec 20 2018",
+  hotelPhoneNumber: 1234567890,
+  hotelEmailAddress: "info@example.com",
+};
+const day = 25;
+const year = 2021;
+
+Output:
+{
+  tripId: 5,
+  destination: "Maldives",
+  startDate: "Fri Dec 25 2021",
+  hotelPhoneNumber: 1234567890,
+  hotelEmailAddress: "info@example.com",
+}
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const addMissingProperty = ({ vacationDetails, day, year }) => {

@@ -1,5 +1,13 @@
 The function `findType` should return the type of the parameters passed.
 
+For example:
+```js
+Input:
+parameter = new Date();
+
+Output:
+object
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const findType = parameter => // write your code here

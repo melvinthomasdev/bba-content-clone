@@ -1,5 +1,14 @@
 The function `highestScore` should return the highest score from an array of scores.
 
+For example:
+```js
+Input:
+const scores = [40, 55, 73, 82, 94, 67];
+
+Output:
+94
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const highestScore = scores => // your code here

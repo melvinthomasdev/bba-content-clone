@@ -15,6 +15,20 @@ that looks like
 4. If the user has not borrowed any book,
 return the string `No books borrowed`.
 
+For example:
+```js
+Input:
+const booksRecord = [
+  { book: "The Great Gatsby", borrower: "Sam", date: "2024-04-15" },
+  { book: "To Kill a Mockingbird", borrower: "Eve", date: "2024-04-10" },
+  { book: "1984", borrower: "Linh", date: "2024-04-20" }
+];
+const borrower = "Carlos";
+
+Output:
+"No books borrowed"
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getBorrower = ({ booksRecord, borrower }) => {

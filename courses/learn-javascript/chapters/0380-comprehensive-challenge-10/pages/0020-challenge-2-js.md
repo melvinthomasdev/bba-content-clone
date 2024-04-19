@@ -6,15 +6,22 @@ For example:
 `Albert Einstein` when provided should
 return `Albert E.`
 
-Create another program `getMaskedEmail` 
+Create another program `getMaskedEmail`
 that accepts a parameter `email` and
 outputs the masked version of the email,
 where we can see the first 3 characters
 in the email and the domain.
 
 For example:
-`albert.einstein@gmail.com` when provided
-should return `alb...@gmail.com`.
+```js
+Input:
+name = `Albert Einstein`
+email = `albert.einstein@gmail.com`
+
+Output:
+`Albert E.`
+`alb...@gmail.com`.
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>

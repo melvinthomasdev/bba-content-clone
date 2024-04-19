@@ -3,6 +3,14 @@ The function `convertToString` should return characters created from the given s
 1. There could be any number of inputs with a minimum of 1.
 2. Return the final string.
 
+For example:
+```js
+Input:
+const codes = [67, 111, 100, 101, 32, 65, 115, 115, 105, 115, 116, 97, 110, 116];
+
+Output:
+Code Assistant
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const convertToString = codes => // your code here

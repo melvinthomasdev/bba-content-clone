@@ -5,6 +5,14 @@ returns an array of corresponding ordinals.
 For instance, if the input array is `[1, 2, 3]`,
 the function should return `['1st', '2nd', '3rd']`.
 
+For example:
+```js
+Input:
+const numbers = [10, 20, 30, 40, 50];
+
+Output:
+['10th', '20th', '30th', '40th', '50th']
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const makeItOrdinal = numbers => {

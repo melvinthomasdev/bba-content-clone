@@ -4,6 +4,16 @@ Return the `authCode` from the `mainApp` function through the `auth` function.
 
 1. Try to achieve it with a one-line change.
 
+```js
+Input:
+const code = '9@2k3%1!';
+const decoder = (value) => {
+  return 'superUser';
+};
+
+Output:
+"superUser"
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const mainApp = ({ code, decoder }) => {

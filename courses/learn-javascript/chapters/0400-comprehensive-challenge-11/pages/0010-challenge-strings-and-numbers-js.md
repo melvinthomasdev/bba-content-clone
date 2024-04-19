@@ -8,16 +8,16 @@ in the provided format.
 3. Calculate the square of the rounded number.
 4. Reverse the squared number.
 
-Given the value is `"15.8"`, the format to display the values are:
+For example:
+```js
+Input: `"15.8"`
 
+Output:
 `Numeric value of the string is 15.8`
-
 `Rounded value of the number is 16`
-
 `Square of the rounded number is 256`
-
 `Reverse of the squared number is 652`
-
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>

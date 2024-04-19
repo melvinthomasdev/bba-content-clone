@@ -1,5 +1,14 @@
 The function `add` should return the sum of two given numbers, containing exactly 2 decimal points.
 
+For example:
+```js
+Input:
+const a = '0.123';
+const b = '0.456';
+
+Output:
+0.58
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const add = ({ a, b }) => {

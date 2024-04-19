@@ -2,6 +2,14 @@ The function **filterEvenNumbers** should accept an array
 of numbers as input and return an array
 containing only the **even numbers** from the original array.
 
+For example:
+```js
+Input:
+const numbers = [2, 5, 8, 3, 6, 9];
+
+Output:
+[2, 8, 6]
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 function filterEvenNumbers(numbers) {

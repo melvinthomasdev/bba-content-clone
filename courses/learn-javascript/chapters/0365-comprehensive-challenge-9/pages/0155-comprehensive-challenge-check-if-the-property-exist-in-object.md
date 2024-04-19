@@ -3,6 +3,18 @@ check whether a given property is present in the object or not.
 
 If the property is present, return `true`. Otherwise, return `false`.
 
+For example:
+```js
+const obj = {
+  name: "Sam",
+  age: 30,
+  weight: 70
+};
+const property = "height";
+
+Output:
+false
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const doesPropertyExist = ({ obj, property }) => // write your code here

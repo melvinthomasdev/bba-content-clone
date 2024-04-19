@@ -1,5 +1,14 @@
 The function `getDaysCount` should return the number of days in a given month.
 
+For example:
+```js
+Input:
+const month = 4;
+const year = 1996;
+
+Output:
+30
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getDaysCount = ({ month, year }) => // your code here

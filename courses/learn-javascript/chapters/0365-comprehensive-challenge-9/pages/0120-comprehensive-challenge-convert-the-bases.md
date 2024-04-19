@@ -2,6 +2,16 @@ The function `convertBase` should convert the given number to a specific given b
 
 1. Expected bases for the inputs will be either binary or octal or decimal or hexadecimal.
 
+For example:
+```js
+Input:
+const value = '328E';
+const currentBase = 20;
+const newBase = 12;
+
+Output:
+2D6E
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const convertBase = ({ value, currentBase, newBase }) => {

@@ -3,6 +3,15 @@ return the sum of all the numbers
 in the array.
 If the array is empty, return `0`.
 
+For example:
+```js
+Input:
+const list = [12, -15, 19, 58];
+
+Output:
+74
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const sum = list => // write your code here

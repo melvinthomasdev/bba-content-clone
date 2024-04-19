@@ -1,5 +1,13 @@
 Add the given element to the array if it is not present in it.
 
+```js
+Input:
+const list = ["Sam", "Ann", "Oliver"];
+const value = "Smith";
+
+Output:
+Sam, Ann, Oliver, Smith
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const addToList = ({ list, value }) => {

@@ -3,6 +3,20 @@ From the list of cricket players, given in form of the JSON object, find the bow
 1. In cricket, the lower the bowling average is, the better the bowler is performing.
 2. Return a value with 3 decimal points.
 
+For example:
+```js
+Input:
+const playerStats = {
+  "Sam Smith": 25.50,
+  "Eve Smith": 27.80,
+  "Linh Tran": 23.75,
+  "Carlos Alberti": 24.90,
+  "Chinua Achebe": 26.00
+};
+
+Output:
+23.750
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const findBestBowlingAvg = playerStats => {
