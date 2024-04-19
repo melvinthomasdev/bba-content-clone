@@ -25,7 +25,7 @@ let user = {
 
 // Write your code below this line
 delete user.email;
-delete user.country`;
+delete user.country;
 
 console.log(user);
 </solution>
