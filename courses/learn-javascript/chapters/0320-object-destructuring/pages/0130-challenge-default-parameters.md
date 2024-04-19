@@ -18,6 +18,11 @@
   `3000` to the `tax` parameter.
   Display the value returned using `console.log`
 
+
+```js
+Output:
+97000
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const getBalance = ;

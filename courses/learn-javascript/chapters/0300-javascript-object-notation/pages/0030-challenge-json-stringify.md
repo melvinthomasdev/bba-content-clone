@@ -2,6 +2,12 @@ Use `JSON.stringify()`
 to convert the object `adminDetails`
 into a JSON string.
 
+For example:
+```js
+Input: {name: "Sam", age: 40, isAdmin: false}
+
+Output: {"name": "Sam", "age": 40, "isAdmin": false}
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const adminDetails = {

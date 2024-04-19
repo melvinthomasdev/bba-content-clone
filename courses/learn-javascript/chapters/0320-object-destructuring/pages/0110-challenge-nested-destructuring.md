@@ -7,6 +7,21 @@ to extract the properties
 `roof` and `walls` from
 the object `house.details`.
 
+For example:
+```js
+Input:
+house = {
+  details: {
+    roof: "Stone tiles",
+    walls: "Wood"
+  },
+  available: true
+}
+
+Output:
+"Stone tiles"
+"Wood"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const house = {

@@ -1,5 +1,13 @@
 In the code given below, there are two asynchronous operations `placeOrder` and `showOrderStatus`. Create a function `checkout()` and use `async/await` to invoke both `placeOrder` and `showOrderStatus` such that `showOrderStatus` should be invoked only after the completion of `placeOrder`.
 
+```js
+Output:
+// This will be displayed after 3 seconds
+"Order Placed"
+// This will be displayed after 1 second
+"Order is dispatched"
+```
+
 <codeblock type="exercise" language="javascript" evaluateAsync="true" timeOut="2000" testMode="fixedInput">
 <code>
 const placeOrder = () => new Promise(resolve =>

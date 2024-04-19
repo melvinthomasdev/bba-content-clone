@@ -20,6 +20,17 @@ as an array `otherRunners`
 and
 display that array.
 
+For example:
+
+```js
+Input: ["Sam", "Eve", "Linh", "Chinua"]
+
+Output:
+"Sam finished first"
+"Eve finished second"
+["Linh", "Chinua"]
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const names = ["Sam", "Oliver", "Adam", "Eve"];
@@ -33,5 +44,6 @@ const [winner, runnerUp, ...otherRunners] = names;
 console.log(`${winner} finished first`);
 console.log(`${runnerUp} finished second`);
 console.log(otherRunners);
+
 </solution>
 </codeblock>

@@ -5,6 +5,18 @@ and
 store it in a variable `userID`
 using destructuring.
 
+For example:
+
+```js
+Input: user = {
+  id: "eve.smith",
+  name: "Eve Smith",
+  age: 28,
+};
+
+Output: "eve.smith"
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const user = {
@@ -14,6 +26,7 @@ const user = {
 }
 
 console.log(userID);
+
 </code>
 
 <solution>
@@ -25,5 +38,6 @@ const user = {
 
 const { id: userID } = user;
 console.log(userID);
+
 </solution>
 </codeblock>

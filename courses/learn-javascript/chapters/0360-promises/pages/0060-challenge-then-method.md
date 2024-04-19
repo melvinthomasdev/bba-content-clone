@@ -1,5 +1,11 @@
 Please rewrite the code to ensure that the message `Order will be dispatched soon` gets displayed, once the `placeOrder` function has finished executing.
 
+```js
+Output:
+// This will be displayed after 5 seconds
+"Order placed."
+"Order will be dispatched soon"
+```
 <codeblock type="exercise" language="javascript" evaluateAsync="true" timeOut="2000" testMode="fixedInput">
 <code>
 const placeOrder = () => {

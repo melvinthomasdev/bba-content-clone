@@ -7,6 +7,13 @@ respectively.
 
 Use a comma to ignore the **second** element.
 
+For example:
+```js
+Input: name = ["Eve", "Sam", "Tran"]
+
+Output:
+"Eve Tran"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const name = ["Sam", "William", "Smith"];

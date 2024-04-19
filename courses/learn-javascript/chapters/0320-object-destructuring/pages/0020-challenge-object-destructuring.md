@@ -6,9 +6,11 @@ Use object destructuring
 to copy the values of all the properties
 and
 assign them to separate variables.
-The output message should be:
-`The Apple is red and it weighs 100 grams.`
 
+```js
+Output:
+`The Apple is red and it weighs 100 grams.`
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const fruit = {

@@ -7,6 +7,20 @@ the if condition work,
 even if the value of `bird.abilities`
 is `null` or `undefined`.
 
+For example:
+```js
+Input:
+bird = {
+  name: "Owl",
+  abilities: {
+    canFly: true,
+  },
+}
+
+Output:
+`The Owl can fly`
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird = {

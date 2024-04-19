@@ -5,12 +5,23 @@ and
 `firstName` and `lastName`
 respectively.
 
+For example:
+
+```js
+Input: name = ["Chinua", "Achebe"];
+
+Output:
+"Chinua"
+"Achebe"
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const name = ["Sam", "Smith"];
 
 console.log(firstName);
 console.log(lastName);
+
 </code>
 
 <solution>

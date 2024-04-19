@@ -3,6 +3,11 @@ set the default value
 of the variable `secondElement`
 as `"No fruit provided!"`
 
+```js
+Output:
+"Apple"
+"No fruit provided!"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const fruits = ["Apple"];

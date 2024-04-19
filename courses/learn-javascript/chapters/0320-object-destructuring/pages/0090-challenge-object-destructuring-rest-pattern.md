@@ -9,6 +9,26 @@ and
 the other properties in
 another object `publicInfo`.
 
+For example:
+
+```js
+Input:
+user = {
+  email: "eve@example.com",
+  name: "Eve Smith",
+  age: 28,
+  dateOfBirth: "01/01/1995",
+  phoneNumber: "911234567890",
+}
+
+Output:
+{
+  email: 'eve@example.com',
+  name: 'Eve Smith',
+  age: 28
+ }
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const user = {
@@ -20,6 +40,7 @@ const user = {
 }
 
 console.log(publicInfo);
+
 </code>
 
 <solution>
@@ -33,5 +54,6 @@ const user = {
 
 const { dateOfBirth, phoneNumber, ...publicInfo } = user;
 console.log(publicInfo);
+
 </solution>
 </codeblock>

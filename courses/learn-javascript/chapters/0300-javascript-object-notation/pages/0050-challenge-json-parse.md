@@ -2,6 +2,13 @@ Use `JSON.parse()` to convert
 the JSON string `adminDetailsJSON`
 into an object.
 
+For example:
+```js
+Input: {"name": "Sam", "age": 40, "isAdmin": false}
+
+Output: {name: "Sam", age: 40, isAdmin: false}
+```
+
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const adminDetailsJSON = '{"name":"Adam","age":32,"isAdmin":true}';

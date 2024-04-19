@@ -5,6 +5,19 @@ Add optional chaining to `car2.engine.start()`
 so that the `start` method
 is only invoked if it exists.
 
+For example:
+```js
+Input:
+car = {
+  brand: "Toyota",
+  engine: {
+    start: () => console.log("Engine started"),
+  }
+}
+
+Output:
+"Engine started"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const car1 = {

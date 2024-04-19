@@ -1,5 +1,14 @@
 In the code give below, the statement `console.log("Order processing completed.");` is repeated in both the `then` and `catch` methods. Please rewrite the code using the `finally` method to avoid repetition of the statement.
 
+```js
+Output:
+// This will be displayed after 5 seconds
+"Order placed."
+"Order#1 will be dispatched soon"
+"Order processing completed."
+"Minimum 5 items required."
+"Order processing completed."
+```
 <codeblock type="exercise" language="javascript" evaluateAsync="true" timeOut="2000" testMode="fixedInput">
 <code>
 const placeOrder = noOfItems =>

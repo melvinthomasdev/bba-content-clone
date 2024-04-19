@@ -1,5 +1,12 @@
 Modify the below `placeholder` function in such a way that the promise should be rejected if the `noOfItems` is less than 5 with the message "Minimum 5 items required." and it should be logged using `console.log` in the `catch` method.
 
+```js
+Output:
+// This will be displayed after 5 seconds
+"Order placed."
+"Order#1 will be dispatched soon"
+"Minimum 5 items required."
+```
 <codeblock type="exercise" language="javascript" evaluateAsync="true" timeOut="2000" testMode="fixedInput">
 <code>
 const placeOrder = noOfItems =>
