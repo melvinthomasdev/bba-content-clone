@@ -8,7 +8,7 @@ Given an input `count`, increment the same by 1 and add it to itself. Continue t
 ( ie, for (count = 2, maxCount = 12): 2 + 1 = 3; 2 + 3 = 5;)
 ```
 
-<codeblock language="javascript" type="exercise" testMode="multipleInput">
+<codeblock language="javascript" type="exercise" testMode="multipleInput" showSolution="false">
 <code>
 const incrementCount = ({ count, maximumCount }) => {
   // your code here
