@@ -1,6 +1,6 @@
 Add `position` as **sticky**
 and
-`bottom` as **20px** to the
+`bottom` as **10px** to the
 `div` element with class `footer`.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
@@ -85,7 +85,7 @@ body {
 .footer {
   box-sizing: border-box;
   color: #f4f4f4;
-  padding: 20px;
+  padding: 10px;
   background: blueviolet;
   text-align: center;
   font-weight: bold;
