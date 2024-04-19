@@ -95,6 +95,15 @@
 - title: Challenge 2 - Get Object Keys and Values - Object.entries()
   slug: challenge-2-get-keys-and-values-of-object
   page_type: exercise
+- title: Remove property from object
+  slug: remove-property-from-object
+  page_type: lesson
+- title: Challenge - Remove property from object
+  slug: challenge-remove-property-from-object
+  page_type: exercise
+- title: Challenge 2 - Remove property from object
+  slug: challenge-2-remove-property-from-object
+  page_type: exercise
 - title: Object Property Shorthand
   slug: object-property-shorthand
   page_type: lesson
