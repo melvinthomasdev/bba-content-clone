@@ -46,5 +46,3 @@ displayIceCreamOrder("Chocolate");
 </solution>
 </codeblock>
 ​
-
-​

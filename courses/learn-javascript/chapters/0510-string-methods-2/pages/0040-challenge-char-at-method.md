@@ -4,6 +4,12 @@ stored in the `greetings` variable.
 
 Use `console.log` to show the output.
 
+For example:
+```js
+Input: greetings = "Good morning!"
+Output: "o"
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const greetings = "Welcome to JavaScript!";

@@ -7,6 +7,11 @@ an integer.
 Use `console.log`
 to show the result.
 
+For example:
+```js
+Input: octalNumber = "377"
+Output: 255
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const octalNumber = "173";
