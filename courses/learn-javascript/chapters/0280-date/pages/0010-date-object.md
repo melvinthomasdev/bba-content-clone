@@ -30,7 +30,7 @@ console.log(startDate2021);
 In the example given above,
 the time is not specified.
 In such cases,
-the time is defaulted to `00:00:00`.
+the time is defaulted to `00:00:00 UTC` (Your browser will convert it to your local timezone).
 
 You can change the argument from
 **"2021-01-01"** to **"December 02, 2021 23:45:01"**
