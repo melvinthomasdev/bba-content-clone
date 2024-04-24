@@ -8,9 +8,20 @@ in the following manner:
 `Product: [Product Name], Price: $[Product Price]`
 
 Calculate the total price of all
-products and log it to the console
-in the following manner:
-`Total Price: $[Total Price]`
+products and log it to the console.
+
+For example:
+```js
+Input:
+products = [
+  { id: 1, name: "Watch", price: 50 },
+  { id: 2, name: "Pen", price: 10 },
+  { id: 3, name: "Notebook", price: 20 }
+];
+
+Output:
+"Total Price: $80"
+```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>

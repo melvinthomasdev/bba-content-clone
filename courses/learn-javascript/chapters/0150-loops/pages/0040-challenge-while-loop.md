@@ -5,6 +5,12 @@ in a **while loop**,
 such that it displays **"Hello, World!"**
 `3` times.
 
+```js
+Output:
+"Hello, World!"
+"Hello, World!"
+"Hello, World!"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 console.log("Hello, World!");

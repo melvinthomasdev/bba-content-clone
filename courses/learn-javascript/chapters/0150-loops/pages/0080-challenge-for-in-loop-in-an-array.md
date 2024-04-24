@@ -4,6 +4,12 @@ in the `people` array.
 
 Use `console.log` to show the output.
 
+```js
+Output:
+"Adam"
+"Eve"
+"Sam"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const people = ["Adam", "Eve", "Sam"];

@@ -18,6 +18,15 @@ following properties:
 Finally, display the full name
 of the user to the console.
 
+For example:
+```js
+Input:
+personFirstName = "Sam";
+personLastName = "Smith";
+
+Output:
+"Sam Smith"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const personFirstName = "Eve";

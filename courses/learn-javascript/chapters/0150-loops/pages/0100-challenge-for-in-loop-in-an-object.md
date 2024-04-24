@@ -5,6 +5,12 @@ of the `person` object.
 
 Use `console.log` to print the output.
 
+```js
+Output:
+"Adam Smith"
+37
+true
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const person = {

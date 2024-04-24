@@ -13,6 +13,12 @@ following numbers:
 - 6
 - 8
 
+For example:
+```js
+Input: firstNumber = 8, secondNumber = 10
+
+Output: 18
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 // Write code below

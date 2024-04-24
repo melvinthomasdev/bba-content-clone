@@ -18,6 +18,10 @@ and
 Call the function without
 any parameters.
 
+```js
+Output:
+"Your package #0001 is to be dispatched"
+```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 // Write code below

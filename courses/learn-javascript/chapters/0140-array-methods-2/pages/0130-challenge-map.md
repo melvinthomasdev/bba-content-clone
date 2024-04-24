@@ -6,6 +6,13 @@ multiplied by **2**.
 
 Log the resulting array to the
 console.
+
+For example:
+```js
+Input: [6, 7, 8, 9, 10]
+
+Output: [12, 14, 16, 18, 20]
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const numbers = [1, 2, 3, 4, 5];

@@ -4,6 +4,13 @@ Enclose the `console.log` statement
 in a **for loop**,
 such that it displays **Welcome** `3` times.
 
+```js
+Output:
+"Welcome"
+"Welcome"
+"Welcome"
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 console.log("Welcome");

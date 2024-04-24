@@ -3,6 +3,12 @@ all the **values** of the `fruits` array.
 
 Use `console.log` to print the output.
 
+```js
+Output:
+"Apple"
+"Orange"
+"Banana"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const fruits = [

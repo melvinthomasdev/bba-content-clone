@@ -9,6 +9,12 @@ does not return an array
 with the transformed elements,
 replace it with the `map` method.
 
+For example:
+```js
+Input: [60, 90, 100]
+
+Output: ["Rs. 60", "Rs. 90", "Rs. 100"]
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const prices = [230, 420, 600];

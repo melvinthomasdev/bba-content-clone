@@ -6,6 +6,12 @@ in the loop such that
 **"Banana"** and all the
 following elements are not displayed.
 
+```js
+Output:
+"Apple"
+"Kiwi"
+"Mango"
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const fruits = ["Apple", "Kiwi", "Mango", "Banana", "Orange", "Watermelon"];
