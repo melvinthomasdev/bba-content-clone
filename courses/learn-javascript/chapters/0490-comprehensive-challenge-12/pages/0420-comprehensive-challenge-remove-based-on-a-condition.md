@@ -1,5 +1,16 @@
 For a list of participants, and a given condition, we should find a list of only those who pass the given condition.
 
+For example:
+```js
+Input:
+// Names with a vowel present
+const participants = ["Sam", "Lao", "Linh", "Bryn"];
+const condition = name =>  (name.match(/[aeiou]/ig));
+
+Output:
+['Sam', 'Lao', 'Linh', 'Bryn']
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const removeUnMatched = ({ participants, condition }) => {

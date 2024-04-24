@@ -6,6 +6,14 @@ A pangram is a string that contains every letter of the alphabet at least once.
 2. Consider pangram in the lowercase English alphabet only.
 3. If the given string is a pangram print "Pangram" else print "Not a pangram"
 
+For example:
+```js
+Input:
+const str = "Brown jars prevented the mixture from freezing too quickly";
+
+Output:
+Not a pangram
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const isPangram = str => {

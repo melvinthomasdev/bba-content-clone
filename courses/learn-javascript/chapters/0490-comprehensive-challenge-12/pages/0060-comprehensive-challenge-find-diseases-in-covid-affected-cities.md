@@ -4,6 +4,35 @@ For research purposes, a team of doctors are looking to find the list of disease
 2. Not all cities are affected by `COVID-19`
 3. The term used will always be `COVID-19`
 
+```js
+Input:
+locations =  [
+  {
+    "id": '1',
+    "name": "Olympus",
+    "diseases": ['Disease-M', 'Disease-N', 'Disease-O']
+  },
+  {
+    "id": 2,
+    "name": "Avalon",
+    "diseases": ['Disease-D', 'Disease-E', 'Disease-F']
+  },
+  {
+    "id": 3,
+    "name": "Wakanda",
+    "diseases": ['Disease-G', 'Disease-H', 'Disease-I']
+  },
+  {
+    "id": 4,
+    "name": "Neverland",
+    "diseases": ['COVID-19', 'Disease-X', 'Disease-Y']
+  }
+];
+
+Output:
+[Disease-D, Disease-E, Disease-F, Disease-G, Disease-H, Disease-I, Disease-M, Disease-N, Disease-O]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const findOtherDiseases = locations => {

@@ -2,6 +2,15 @@ The function `orderBySum` should convert the array of arrays that contain only n
 
 - Return stringified object.
 
+For example:
+```js
+Input:
+const arr = [[1,7], [11,10], [2,1]];
+
+Output:
+[[11,10],[1,7],[2,1]]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const orderBySum = arr => {

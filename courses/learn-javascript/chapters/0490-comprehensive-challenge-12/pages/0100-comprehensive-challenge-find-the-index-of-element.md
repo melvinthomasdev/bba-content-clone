@@ -1,5 +1,15 @@
 Find the index of the element in the given array. Return the index if the element is present. Otherwise, return `Not found`.
 
+For example:
+```js
+Input:
+list = ["Soyuz", "SpaceShuttle", "Vostok", "Gemini", "Apollo"];
+value = "Voskhod";
+
+Output:
+Not found
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getIndex = ({ list, value }) => // write your code here

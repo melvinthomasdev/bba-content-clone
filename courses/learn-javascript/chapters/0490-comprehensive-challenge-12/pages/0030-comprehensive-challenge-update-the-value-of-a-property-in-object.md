@@ -6,6 +6,25 @@ add the given property.
 2. You must use two spaces in the output JSON string
 for readability purposes.
 
+For example:
+```js
+Input:
+obj = {
+  id: 1,
+  userName: "sam_Smith",
+  name: "Oliver Smith",
+};
+property = "name";
+value = "Sam Smith";
+
+Output:
+{
+  id: 1,
+  userName: "sam_Smith",
+  name: "Sam Smith",
+}
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const updateObject = ({ obj, property, value }) => {

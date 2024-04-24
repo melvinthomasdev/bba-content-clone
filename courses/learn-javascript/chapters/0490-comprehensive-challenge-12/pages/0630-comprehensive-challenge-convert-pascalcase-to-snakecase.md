@@ -1,5 +1,13 @@
 The function `toSnakeCase` should convert the input string from `PascalCase` to `snake_case`.
 
+For example:
+```js
+Input:
+const str = "RubyOnRails";
+
+Output:
+"ruby_on_rails"
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const toSnakeCase = str => {

@@ -3,6 +3,57 @@ Sort the list of users by the number of clicks.
 1. Each user will have a field `clicks` which will be a number.
 2. Return list sorted by field `clicks` in ascending order.
 
+For example:
+```js
+Input:
+users = [
+  {
+    user: "Eva",
+    clicks: 20,
+  },
+  {
+    user: "Mark",
+    clicks: 120,
+  },
+  {
+    user: "Sophie",
+    clicks: 50,
+  },
+  {
+    user: "James",
+    clicks: 28,
+  },
+  {
+    user: "Olivia",
+    clicks: 80,
+  },
+];
+
+Output:
+[
+  {
+    "user": "Eva",
+    "clicks": 20
+  },
+  {
+    "user": "James",
+    "clicks": 28
+  },
+  {
+    "user": "Sophie",
+    "clicks": 50
+  },
+  {
+    "user": "Olivia",
+    "clicks": 80
+  },
+  {
+    "user": "Mark",
+    "clicks": 120
+  }
+]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const sortUsers = users => {
@@ -16,7 +67,7 @@ const sortUsers = users =>
     if (userA.clicks < userB.clicks) return -1;
 
     if (userA.clicks > userB.clicks) return 1;
-    
+
     return 0;
   });
 </solution>

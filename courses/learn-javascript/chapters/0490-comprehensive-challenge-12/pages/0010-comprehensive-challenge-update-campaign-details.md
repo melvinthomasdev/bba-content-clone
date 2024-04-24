@@ -1,5 +1,54 @@
 Update the locations where the marketing campaigns have already run, based on the list of location Ids. Also add a few new locations which were missed earlier, right after the second location in the list.
 
+For example:
+```js
+Input:
+completedLocationIds = [1, 2, 3];
+campaignDetails = [
+  {
+    id: 1,
+    name: "London",
+    state: "England",
+    completed: false,
+  },
+  {
+    id: 2,
+    name: "Paris",
+    state: "France",
+    completed: false,
+  },
+  {
+    id: 3,
+    name: "Rome",
+    state: "Italy",
+    completed: false,
+  },
+];
+newLocations = [];
+
+Output:
+[
+  {
+    id: 1,
+    name: "London",
+    state: "England",
+    completed: true,
+  },
+  {
+    id: 2,
+    name: "Paris",
+    state: "France",
+    completed: true,
+  },
+  {
+    id: 3,
+    name: "Rome",
+    state: "Italy",
+    completed: true,
+  },
+]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const updateCampaignDetails = ({ campaignDetails, completedLocationIds, newLocations }) => {

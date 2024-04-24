@@ -2,6 +2,35 @@ Declare a function `macbookUsers` to
 list all users who have MacBook as their device model.
 There will be a key `device` that contains the device model.
 
+For example:
+```js
+Input:
+users = [
+  {
+    user: "Alice",
+    device: "MacBook Air",
+  },
+  {
+    user: "Bob",
+    device: "Lenovo ThinkPad",
+  },
+  {
+    user: "Charlie",
+    device: "MacBook Pro",
+  },
+  {
+    user: "Diana",
+    device: "Surface Laptop",
+  },
+  {
+    user: "Eva",
+    device: "MacBook Air",
+  }
+];
+
+Output:
+["Charlie", "Eva"]
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const macbookUsers = users =>

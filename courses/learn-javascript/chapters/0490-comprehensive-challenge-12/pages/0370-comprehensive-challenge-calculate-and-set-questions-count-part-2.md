@@ -2,6 +2,52 @@ We have the latest details of the number of respondents for a Practice Question 
 
 1. The count of sections in each input may vary.
 
+For example:
+```js
+Input:
+let respondentDetails = [
+  {
+    html: 30,
+    css: 27
+  },
+  {
+    html: 29,
+    css: 24,
+    javascript: 17,
+  },
+  {
+    html: 30,
+    css: 15,
+    javascript: 19,
+    ruby: 19,
+    sql: 25
+  },
+];
+
+Output:
+[
+  {
+    "html": 30,
+    "css": 27,
+    "totalCount": 57
+  },
+  {
+    "html": 29,
+    "css": 24,
+    "javascript": 17,
+    "totalCount": 70
+  },
+  {
+    "html": 30,
+    "css": 15,
+    "javascript": 19,
+    "ruby": 19,
+    "sql": 25,
+    "totalCount": 108
+  }
+]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const setTotalCount = respondentDetails => {

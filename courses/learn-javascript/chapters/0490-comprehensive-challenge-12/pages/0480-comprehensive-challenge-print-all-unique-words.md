@@ -1,5 +1,15 @@
 Given two sentences, return a list with all the unique words.
 
+For example:
+```js
+Input:
+const s1 = "John likes Icecream";
+const s2 = "Everyone likes Icecream";
+
+Output:
+['John', 'likes', 'Icecream', 'Everyone']
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const uniqueWords = ({ s1,s2 }) => {

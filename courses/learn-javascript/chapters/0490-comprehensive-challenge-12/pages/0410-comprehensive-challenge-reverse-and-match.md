@@ -3,6 +3,16 @@ From a list of words, find the word that matches the given input when any of the
 1. Return the matched word as it is.
 2. If no match is found, return `false`.
 
+For example:
+```js
+Input:
+const list = ["Knits", "Desserts", "Sports", "Star"];
+const word = "stressed";
+
+Output:
+'Desserts'
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const reverseAndMatch = ({ word, list }) => {

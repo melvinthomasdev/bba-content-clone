@@ -2,6 +2,15 @@ The function `accumulatingArray` should return an array of the accumulating sum.
 
 1. Example: [1, 2, 3, 4] ➞ [1, 3, 6, 10]
 
+For example:
+```js
+Input:
+const arr = [1, 2, 3, 4];
+
+Output:
+[1,3,6,10]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const accumulatingArray = arr => {

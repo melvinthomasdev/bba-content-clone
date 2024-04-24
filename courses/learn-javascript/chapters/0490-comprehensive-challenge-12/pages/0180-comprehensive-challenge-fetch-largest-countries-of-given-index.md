@@ -16,6 +16,20 @@ Given an array of countries, sorted according to their land area. Complete the d
 1. The strings `i` & `j` will be of the format (1st, 2nd, 3rd etc)
 2. The countries' array will be constant for all test cases.
 
+For example:
+```js
+Input:
+const countries = ['Russia', 'Canada', 'China', 'United States', 'Brazil', 'Australia', 'India', 'Argentina', 'Kazakhstan', 'Algeria'];
+const i = '2nd';
+const j = '9th';
+
+Output:
+{
+  "newList": ["Canada", "China", "United States", "Brazil", "Australia", "India", "Argentina", "Kazakhstan"],
+  "countries": ["Russia", "Canada", "China", "United States", "Brazil", "Australia", "India", "Argentina", "Kazakhstan", "Algeria"]
+}
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getCountries = ({ countries, i, j }) => {

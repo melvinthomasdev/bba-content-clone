@@ -9,6 +9,23 @@ Create a reminder function, which adds the given reminder to the specific day th
 7. The week starts on Sunday.
 8. Try out the question on Saturday, and make sure your solution works!
 
+For example:
+```js
+Input:
+messageArray = ['remind to water the plants everyday', 'remind me to call mom today'];
+
+Output:
+[
+  ["Sunday", ["Water the plants"]],
+  ["Monday", ["Water the plants", "Call mom"]],
+  ["Tuesday", ["Water the plants"]],
+  ["Wednesday", ["Water the plants"]],
+  ["Thursday", ["Water the plants"]],
+  ["Friday", ["Water the plants"]],
+  ["Saturday", ["Water the plants"]]
+]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const setReminder = ({ messageArray, extractReminderText }) => {

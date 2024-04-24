@@ -2,6 +2,18 @@ Given a list of integers, calculate the ratios of its elements that are positive
 
 1. Print decimal value with 4 digits.
 
+For example:
+```js
+Input:
+const arr = [4, -5, 6, -4, 0, 8, 0, -3];
+
+Output:
+{
+  positive: '0.5000',
+  negative: '0.3750',
+  zero: '0.1250'
+}
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const integerRatios = arr => {

@@ -5,6 +5,15 @@ Convert the given 2D array of numbers to an array of sums by replacing each nest
 3. Calculate the sum of numbers in each nested array.
 4. Return an array that has the sum of elements of the nested array at the same index.
 
+For example:
+```js
+Input:
+const list = [[19, 12], [34, 545, 65, 654], [43, 98, 90]];
+
+Output:
+[31, 1298, 231]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const sum = list =>

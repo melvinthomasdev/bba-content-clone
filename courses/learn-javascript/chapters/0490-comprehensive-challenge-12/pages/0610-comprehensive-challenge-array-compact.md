@@ -1,5 +1,14 @@
 The function `compactArray` should clear the array from all unnecessary elements, like `false`, `undefined`, empty strings, `0`, and `null`.
 
+For example:
+```js
+Input:
+const arr = [1, null, "", 1, false, 1];
+
+Output:
+[1,1,1]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const compactArray = arr => {

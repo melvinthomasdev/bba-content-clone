@@ -4,6 +4,44 @@ Check whether all the users in the given list have a credit card.
 2. The user object will contain name of the user and a key `creditCard`.
 3. Return `true` if all the users have `creditCard` field as `true`, `false` otherwise.
 
+For example:
+```js
+Input:
+users = [
+  {
+    name: "Amy",
+    creditCard: true
+  },
+  {
+    name: "Bandon",
+    creditCard: true
+  },
+  {
+    name: "Maria",
+    creditCard: true
+  },
+  {
+    name: "Rachel",
+    creditCard: true
+  },
+  {
+    name: "Chuck",
+    creditCard: true
+  },
+  {
+    name: "Peter",
+    creditCard: true
+  },
+  {
+    name: "Thomas",
+    creditCard: true
+  }
+];
+
+Output:
+true
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const doesAllUsersHaveCreditCard = users =>

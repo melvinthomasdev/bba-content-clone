@@ -6,6 +6,14 @@ updated version of these details with the following modifications,
   - Increment the **experience** property by 1.
   - If the **experience** property is initially absent, add it with a starting value of 1.
 
+For example:
+```js
+Input:
+const list = [[19, 12], [34, 545, 65, 654], [43, 98, 90]];
+
+Output: [31, 1298, 231]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const updatedEmployeeDetails = employeeDetailsAtJoining => {

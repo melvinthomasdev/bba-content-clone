@@ -2,6 +2,63 @@ Declare a function `filterIssues`
 to list all the issues with the specified `severity`.
 Every issue will contain the key `severity`.
 
+For example:
+```js
+Input:
+issues = [
+  {
+    title: "View is not symmetric",
+    severity: "low",
+    assignee: "Eric"
+  },
+  {
+    title: "Title color is not as per design",
+    severity: "medium",
+    assignee: "John"
+  },
+  {
+    title: "Oliver is not able to login",
+    severity: "high",
+    assignee: "Eric"
+  },
+  {
+    title: "Database connection failure",
+    severity: "critical",
+    assignee: "Bob"
+  },
+  {
+    title: "Submit button is disabled",
+    severity: "high",
+    assignee: "John"
+  },
+  {
+    title: "Table content overflowing",
+    severity: "medium",
+    assignee: "John"
+  },
+  {
+    title: "Login button not working",
+    severity: "critical",
+    assignee: "Sam"
+  }
+];
+severity = "critical";
+
+Output:
+[
+  {
+    "title": "Database connection failure",
+    "severity": "critical",
+    "assignee": "Bob"
+  },
+  {
+    "title": "Login button not working",
+    "severity": "critical",
+    "assignee": "Sam"
+  }
+]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const filterIssues = ({ issues, severity }) => // write your code here

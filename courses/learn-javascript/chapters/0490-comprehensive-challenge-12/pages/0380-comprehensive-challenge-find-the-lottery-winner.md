@@ -2,6 +2,28 @@ For a lucky draw, choose the winner whose ticket number is divisible by 113. If 
 
 1. Assuming there will always be one winner ticket ID that matches the above mentioned logic.
 
+For example:
+```js
+Input:
+const ticketLot = [
+  {
+    id: 6006,
+    name: 'Lao Xun',
+  },
+  {
+    id: 1034,
+    name: 'Linh Tran',
+  },
+  {
+    id: 01,
+    name: 'Chinua Achebe',
+  }
+];
+
+Output:
+6006
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const chooseWinner = ticketLot => {

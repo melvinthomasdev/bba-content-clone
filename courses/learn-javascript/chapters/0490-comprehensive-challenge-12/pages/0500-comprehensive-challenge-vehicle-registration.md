@@ -3,6 +3,14 @@ Print the Registration Details
 1. Modify the caller function to achieve the desired output.
 2. Do not rename `callerFn`.
 
+For example:
+```js
+Input:
+const str = "Sam";
+
+Output:
+Sam, this is your car: LAX1234 Ford
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const car = {

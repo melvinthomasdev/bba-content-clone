@@ -2,6 +2,15 @@ The function `rangeSum` should return the sum of all the numbers between and inc
 
 1. Return stringified object.
 
+For example:
+```js
+Input:
+const arr = [2,10];
+
+Output:
+"54"
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const rangeSum = arr => {

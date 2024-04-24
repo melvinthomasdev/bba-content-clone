@@ -1,5 +1,14 @@
 The function `orderBySum` should convert the array of arrays that contain only numeric values by the ascending order of the sum of the elements within each subarray.
 
+For example:
+```js
+Input:
+const arr = [[11,13], [4,12], [2,1]];
+
+Output:
+[[2,1],[4,12],[11,13]]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const orderBySum = arr => {

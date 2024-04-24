@@ -4,6 +4,14 @@ Given a full name, shuffle the same.
 2. Do not rename any of the functions given below.
 3. Function `shuffleNames` should shuffle `Person` object's name property.
 
+For example:
+```js
+Input:
+const str = "Stephan Carlos";
+
+Output:
+"Carlos Stephan"
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 class Person {

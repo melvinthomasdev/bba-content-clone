@@ -1,5 +1,31 @@
 A group of people was asked to tell the name of the latest Indian movie that they really loved. From the given list of survey answers, find an alphabetically sorted unique list of these movie names.
 
+For example:
+```js
+Input:
+let surveyAnswers = [
+  {
+    name: "Rohit",
+    favouriteIndianMovie: "Utharam",
+  },
+  {
+    name: "Ismail",
+    favouriteIndianMovie: "Ratsasan",
+  },
+  {
+    name: "Peter",
+    favouriteIndianMovie: "Ratsasan",
+  },
+  {
+    name: "Roy",
+    favouriteIndianMovie: "Psycho",
+  },
+];
+
+Output:
+["Psycho", "Ratsasan", "Utharam"]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getIndianMovies = surveyAnswers => {

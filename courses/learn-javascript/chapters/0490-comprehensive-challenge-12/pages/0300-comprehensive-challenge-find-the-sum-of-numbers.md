@@ -4,6 +4,15 @@ Find the sum of all the numbers that are input to the function.
 2. Find out the sum of the numbers that are input.
 3. The length of the arguments will vary.
 
+For example:
+```js
+Input:
+numbers = [322, 788, 764, 34, 546, 98, 65];
+
+Output:
+2617
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const sum = () => {

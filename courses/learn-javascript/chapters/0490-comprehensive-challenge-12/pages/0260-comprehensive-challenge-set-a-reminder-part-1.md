@@ -2,6 +2,15 @@ Create a reminder function, which returns a reminder text from the message passe
 
 1. Go through the test cases, to get an idea of expected keywords.
 
+For example:
+```js
+Input:
+message = `Set Remind Game Night at Joe's place`;
+
+Output:
+"Game Night at Joe's place"
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const extractReminderText = message => {

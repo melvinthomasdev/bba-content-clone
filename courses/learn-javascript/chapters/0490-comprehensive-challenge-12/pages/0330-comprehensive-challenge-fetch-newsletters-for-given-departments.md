@@ -12,6 +12,21 @@ const departmentNewsletterObject = {
 1. The `departmentNewsletterList` may not have all the department names given in `departmentNamesList`.
 2. If none of the departments specified in departmentNamesList is present in departmentNewsletterList, then return false.
 
+For example:
+```js
+Input:
+const departmentNewsletterObject = {
+  Programming: ['frontend', 'backend', 'database', 'javascript', 'ruby'],
+  QA: ['unit testing', 'regression testing', 'alpha testing', 'beta testing'],
+  Marketing: ['outbound', 'inbound', 'digital', 'content', 'video'],
+  Sales: ['inside', 'outside', 'client services', 'lead generation']
+};
+const departmentNewsletterList = new Map(Object.entries(departmentNewsletterObject));
+const departmentNamesList = ['Programming', 'QA'];
+
+Output:
+['alpha testing', 'backend', 'beta testing', 'database', 'frontend', 'javascript', 'regression testing', 'ruby', 'unit testing']
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getNewsletterList = ({ departmentNewsletterList, departmentNamesList }) => {

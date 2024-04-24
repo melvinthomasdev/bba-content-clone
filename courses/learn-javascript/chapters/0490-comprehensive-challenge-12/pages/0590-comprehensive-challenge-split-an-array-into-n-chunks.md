@@ -2,6 +2,16 @@ The function `splitArray` should return sub-arrays, where each of their maximum 
 
 1. Do **not** use any loop. Only higher order functions like `map`, `filter` etc are allowed.
 
+For example:
+```js
+Input:
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+const maxlen = 4;
+
+Output:
+[[1,2,3,4],[5,6,7,8],[9,10,11]]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const splitArray = ({ arr, maxlen }) => {

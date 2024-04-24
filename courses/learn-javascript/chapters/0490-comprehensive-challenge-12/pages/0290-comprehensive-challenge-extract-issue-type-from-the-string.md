@@ -4,6 +4,13 @@ Extract the issue `type` from the given string.
 2. String will start with the issue type.
 3. Issue name will be separated by a colon(:).
 
+For example:
+```js
+Input:
+title = "feature:facebook-sso";
+
+Output: 'feature'
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getIssueType = title =>

@@ -2,6 +2,15 @@ Given a sentence, find the longest word in it.
 
 1. If one or more words have the same length, return the first occurring word of the same length.
 
+For example:
+```js
+Input:
+const str = "Evenly Sized";
+
+Output:
+'Evenly'
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const longestWord = str => {

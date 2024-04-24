@@ -2,6 +2,27 @@ From a given list of teams and the points scored in each round, find the team wi
 
 1. Assuming there won't be a tie.
 
+For example:
+```js
+Input:
+const teams = [
+    {
+        name: 'Tigers',
+        points: [76, 46, 28, 39, 20]
+    },
+    {
+        name: 'Lions',
+        points: [23, 93, 88, 92, 83]
+    },
+    {
+        name: 'Pumas',
+        points: [65, 21, 26, 22, 53]
+    }
+]
+
+Output:
+{ name: 'Lions', totalPoints: 379 }
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const findWinningTeam = teams => {

@@ -2,6 +2,14 @@ Given a sentence as input, remove all vowels from it.
 
 1. Return string without vowels
 
+For example:
+```js
+Input:
+const str = "The weather is good";
+
+Output:
+'Th wthrs gd'
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const removeVowels = str => {

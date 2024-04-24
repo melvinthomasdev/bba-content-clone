@@ -2,6 +2,15 @@ Given some credit card numbers as input, return it with only the last 4 digits d
 
 1. The length of the returned value should be the same as the `cardNumber` digits.
 
+For example:
+```js
+Input:
+cardNumber = '4111 1111 1111 1111';
+
+Output:
+'************1111'
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const maskCreditCardNumber = cardNumber => {

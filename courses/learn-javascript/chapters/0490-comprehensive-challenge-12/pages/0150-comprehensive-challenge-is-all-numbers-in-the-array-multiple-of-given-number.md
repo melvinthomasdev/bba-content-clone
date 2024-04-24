@@ -4,6 +4,15 @@ Check whether all numbers in the given array are a multiple of the given number.
 2. The array will be a plain array with numbers.
 3. Return `true` if all the numbers in the array are a multiple of the given number.
 
+For example:
+```js
+Input:
+list = [9, 27, 3, 18, 72, 102];
+divisor = 3;
+
+Output:
+true
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const areElementsDivisible = ({ list, divisor }) => // write your code here

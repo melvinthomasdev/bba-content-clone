@@ -10,6 +10,16 @@ Some of the users in the application are yet to do some major security updates, 
 1. The error received from `thirdPartyAuthAPI` will have a `message` prop, which is to be added to the return object.
 2. No need to alter the return statement already given in the function.
 
+For example:
+```js
+Input:
+userId = 195;
+userName = 'Sherlock';
+
+Output:
+524053736
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const authUser = ({ userId, userName, thirdPartyAuthAPI }) => {

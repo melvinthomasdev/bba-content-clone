@@ -4,6 +4,34 @@ List the pincodes of all the users.
 2. Each user will have a field `pincode`.
 3. Return an array of pincodes of all the users of the list.
 
+For example:
+```js
+Input:
+list = [
+  {
+    user: 'Michael',
+    pincode: '12345'
+  },
+  {
+    user: 'Emma',
+    pincode: '54321'
+  },
+  {
+    user: 'Daniel',
+    pincode: null
+  },
+  {
+    user: 'Sophia',
+  },
+  {
+    user: 'James',
+    pincode: undefined
+  }
+]
+
+Output:
+['12345', '54321']
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getPincodes = list =>

@@ -4,6 +4,32 @@ Check whether there are any unpaid items in the cart.
 2. Each item will have a field `paymentStatus`.
 3. Return true if at least one item in the cart has `paymentStatus` as `false`.
 
+For example:
+```js
+Input:
+cart = [
+  {
+    item: "Laptop",
+    paymentStatus: false
+  },
+  {
+    item: "Headphones",
+    paymentStatus: false
+  },
+  {
+    item: "Mouse",
+    paymentStatus: false
+  },
+  {
+    item: "Charger",
+    paymentStatus: false
+  }
+];
+
+Output:
+true
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const checkCart = cart => {

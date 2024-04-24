@@ -1,5 +1,21 @@
 The function `sortCapitals` should return an alphabetically sorted list based on the capitals of each state.
 
+For example:
+```js
+Input:
+const states = [
+    { state: "Maharashtra", capital: "Mumbai", official_Language: 'Marathi' },
+    { state: "Gujarat", capital: "Gandhinagar", official_Language: 'Gujarati' },
+    { state: "Rajasthan", capital: "Jaipur", official_Language: 'Hindi' }
+  ];
+
+Output:
+[
+  { state: 'Gujarat', capital: 'Gandhinagar', official_Language: 'Gujarati' },
+  { state: 'Maharashtra', capital: 'Mumbai', official_Language: 'Marathi' },
+  { state: 'Rajasthan', capital: 'Jaipur', official_Language: 'Hindi' }
+]
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const sortCapitals = states => {

@@ -2,6 +2,17 @@ Find the curried sum
 
 1. The `sum` function accepts parameters `a`, `b`, `c`, and `d` in the form of `fn(a)(b)(c)(d)`.
 
+For example:
+```js
+Input:
+const a = 10;
+const b = 20;
+const c = 30;
+const d = 40;
+
+Output:
+100
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const sum = () => {

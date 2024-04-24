@@ -2,6 +2,15 @@ Given two sentences, determine if one is an anagram of another.
 
 An anagram is a word, phrase, or name formed by rearranging the letters of another. For example "spar" can be rearranged to form "rasp" so "spar" and "rasp" are anagrams.
 
+For example:
+```js
+Input:
+const s1 = 'Coins kept';
+const s2 = 'In Pockets';
+
+Output:
+true
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const isAnagram = ({ s1,s2 }) => {

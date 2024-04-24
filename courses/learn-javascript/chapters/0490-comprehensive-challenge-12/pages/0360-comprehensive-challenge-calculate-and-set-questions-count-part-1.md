@@ -2,6 +2,56 @@ We have the latest details of the number of respondents for a Practice Question 
 
 1. The section properties will have values at all times.
 
+For example:
+```js
+Input:
+let respondentDetails = [
+  {
+    name: "Sam",
+    html: 21,
+    css: 18,
+    javascript: 29,
+  },
+  {
+    name: "Renu",
+    html: 11,
+    css: 22,
+    javascript: 33,
+  },
+  {
+    name: "Eve",
+    html: 12,
+    css: 34,
+    javascript: 45,
+  },
+];
+
+Output:
+[
+  {
+    "name": "Sam",
+    "html": 21,
+    "css": 18,
+    "javascript": 29,
+    "totalCount": 68
+  },
+  {
+    "name": "Renu",
+    "html": 11,
+    "css": 22,
+    "javascript": 33,
+    "totalCount": 66
+  },
+  {
+    "name": "Eve",
+    "html": 12,
+    "css": 34,
+    "javascript": 45,
+    "totalCount": 91
+  }
+]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const setTotalCount = respondentDetails => {

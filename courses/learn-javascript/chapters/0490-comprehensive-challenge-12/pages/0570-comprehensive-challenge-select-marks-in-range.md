@@ -2,6 +2,22 @@ The function `marksInRange` should return the object that satisfies the upper an
 
 1. Return stringified object.
 
+For example:
+```js
+Input:
+const marksArr = [
+  { student: "Frodo", marks: 31 },
+  { student: "Sam", marks: 51 },
+  { student: "Oliver", marks: 71 },
+  { student: "Pippin", marks: 91 },
+];
+const lowerLimit = 32;
+const upperLimit = 50;
+
+Output:
+[{"student":"Sam","marks":51}]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const marksInRange = ({ marksArr,upperLimit,lowerLimit }) => {

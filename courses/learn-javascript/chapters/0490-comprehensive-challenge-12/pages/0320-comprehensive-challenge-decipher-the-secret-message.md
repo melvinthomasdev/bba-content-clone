@@ -1,5 +1,15 @@
 Given a coded message and a key, the real message is hidden inside it, and we need to crack the code and return it. Each word in the message will have a number as a prefix. If a word's prefix number is perfectly divisible by the given `key`, then the word following it will be part of the decoded message.
 
+For example:
+```js
+Input:
+key = 6;
+message = `12Exploring 180the 90beauty 120of 48nature 70brings 14peace 65to 77my 40soul. 110Hiking 105in 15the 40mountains 36is 18my 30favorite 36weekend 30activity.`;
+
+Output:
+'Exploring the beauty of nature brings peace to my soul. Hiking in the mountains is my favorite weekend activity.'
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const enigmaFunction = ({ message, key }) => {

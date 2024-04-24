@@ -3,6 +3,16 @@ The function `solveJumbledWords` should return the solution to the jumbled words
 1. The 'sampleDictionary' might or might not contain the correct word.
 2. If the solution is not present in 'sampleDictionary', then return false
 
+For example:
+```js
+Input:
+word = 'AEBUMRCNSSL'
+sampleDictionary = ['Personality', 'Quadrillion', 'Abandonedly', 'Unscrambles', 'Abashedness']
+
+Output:
+'Unscrambles'
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const solveJumbledWords = ({ word, sampleDictionary }) => {

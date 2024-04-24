@@ -4,6 +4,36 @@ Given an array of objects with all the departments & their specific count in an 
 
 1. `count` property of `departmentCount` object will always be of the type `integer`.
 
+For example:
+```js
+Input:
+const departmentCount = [
+  {
+    department: "Development",
+    count: 31
+  },
+  {
+    department: "QA",
+    count: 29
+  },
+  {
+    department: "Sales",
+    count: 10
+  },
+  {
+    department: "Design",
+    count: 4
+  },
+  {
+    department: "HR",
+    count: 3
+  }
+];
+
+Output:
+77
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getOfficeStrength = departmentCount => {

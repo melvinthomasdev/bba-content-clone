@@ -1,6 +1,16 @@
 Insert the given user name at the specified position in the array.
 The list of users will be given as input.
 
+```js
+Input:
+users = ["John", "Jeff", "Adrian", "Alex", "Andrew", "Lisa"];
+user = "Eric";
+index = 4;
+
+Output:
+["John", "Jeff", "Adrian", "Alex", "Eric", "Andrew", "Lisa"]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const insertUser = ({ users, user, index }) => {

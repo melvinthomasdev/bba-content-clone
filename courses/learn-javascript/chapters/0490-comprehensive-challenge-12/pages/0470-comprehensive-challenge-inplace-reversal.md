@@ -1,5 +1,14 @@
 Given an input sentence, perform an in-place reversal for all words in the string.
 
+For example:
+```js
+Input:
+const str = "lmtH si ysae";
+
+Output:
+'Html is easy'
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const inPlaceReversal = str => {

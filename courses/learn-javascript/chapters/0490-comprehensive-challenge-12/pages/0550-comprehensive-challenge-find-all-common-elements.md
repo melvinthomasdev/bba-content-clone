@@ -2,6 +2,16 @@ The function `commonElements` should return the common elements.
 
 1. If either one of the arrays is empty, return the non-empty array.
 
+For example:
+```js
+Input:
+const arr1 = ["miami", "pune", "kochi"];
+const arr2 = [];
+
+Output:
+["miami", "pune", "kochi"]
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const commonElements = ({ arr1, arr2 }) => {

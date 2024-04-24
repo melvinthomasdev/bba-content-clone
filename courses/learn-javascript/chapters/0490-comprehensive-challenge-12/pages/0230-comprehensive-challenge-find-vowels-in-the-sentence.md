@@ -4,6 +4,14 @@ The function `findVowels` should return the vowels found in the given sentence.
 2. Returned vowels should be alphabetically sorted and in lower case.
 3. If no vowels are present return an empty array.
 
+For example:
+```js
+Input:
+sentence = `The quick brown fox jumps over the lazy dog.`
+
+Output: ['a', 'e', 'i', 'o', 'u']
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const findVowels = sentence => {

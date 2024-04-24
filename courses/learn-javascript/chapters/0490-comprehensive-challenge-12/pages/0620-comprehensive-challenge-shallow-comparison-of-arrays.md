@@ -1,5 +1,14 @@
 The function `compareArray` should do a shallow comparison of two arrays `arr1`, `arr2` and return `true` if they are identical.
 
+For example:
+```js
+Input:
+const arr1 = [1, 2, 3, 4];
+const arr2 = [1, 2, 3, 4];
+
+Output:
+true
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const compareArray = ({ arr1, arr2 })  => {

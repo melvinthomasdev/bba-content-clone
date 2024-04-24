@@ -2,6 +2,15 @@ The function `mostCommonCharacter` should return the most commonly occurring cha
 
 1. If there are 2 or more such characters, then return the character which comes first alphabetically.
 
+For example:
+```js
+Input:
+const str = "KABBAB";
+
+Output:
+"A"
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const mostCommonCharacter = str => {

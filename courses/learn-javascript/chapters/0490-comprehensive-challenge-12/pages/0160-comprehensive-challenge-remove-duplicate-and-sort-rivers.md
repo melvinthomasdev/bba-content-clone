@@ -2,6 +2,19 @@ The function `removeDuplicateAndSort` should remove duplicate river names and so
 
 1. In case of an empty array return `false`
 
+For example:
+```js
+Input:
+rivers = ['Ghaghara', 'Ganga', 'Yamuna', 'Jhelum', 'Ghaghara', 'Ganga', 'Jhelum'];
+
+Output:
+[
+  'Ganga',
+  'Ghaghara',
+  'Jhelum',
+  'Yamuna'
+]
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const removeDuplicateAndSort = rivers =>

@@ -4,6 +4,32 @@ Get all the user's phone numbers.
 2. Each user will have a field `phone`.
 3. Return the phone numbers of all users.
 
+For example:
+```js
+Input:
+users = [
+  {
+    user: "Sam",
+    phone: "202-555-0445"
+  },
+  {
+    user: "Renu",
+    phone: "202-555-0198"
+  },
+  {
+    user: "John",
+    phone: "202-555-0164"
+  },
+  {
+    user: "Rachel",
+    phone: "202-555-6767"
+  }
+];
+
+Output:
+"202-555-0445, 202-555-0198, 202-555-0164, 202-555-6767"
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getPhoneNumbers = users =>

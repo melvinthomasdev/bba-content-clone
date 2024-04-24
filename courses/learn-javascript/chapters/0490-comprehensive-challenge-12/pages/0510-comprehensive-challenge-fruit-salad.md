@@ -1,5 +1,14 @@
 The function `fruitSalad` should slice each name of the fruit in half, sort each chunk alphabetically and join them together to make a string.
 
+For example:
+```js
+Input:
+const str = ["apple", "pear", "grapes"];
+
+Output:
+aelpparegpars
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const fruitSalad = words => {

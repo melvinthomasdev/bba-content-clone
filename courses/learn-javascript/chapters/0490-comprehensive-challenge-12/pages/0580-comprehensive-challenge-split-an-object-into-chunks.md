@@ -1,5 +1,20 @@
 The function `keysAndValues` should return the keys and values as separate arrays.
 
+For example:
+```js
+Input:
+const obj = {
+  Sam: 33,
+  Eve: 45,
+  Lao: 56,
+  Linh: 69,
+  Chinua: 88,
+  Renu: 100,
+};
+
+Output:
+[["Sam","Eve","Lao","Linh","Chinua","Renu"],[33,45,56,69,88,100]]
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const keysAndValues = obj => {

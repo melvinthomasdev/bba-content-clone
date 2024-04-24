@@ -3,6 +3,15 @@ Given an alphanumerical value as input, return the sum of all its digits.
 1. If present, non-numerical values will only be a suffix to all the digits.
 2. If no numerical value is present, return false
 
+For example:
+```js
+Input:
+alphaNumeric = 'JamesBond';
+
+Output:
+false
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const findSumOfDigits = alphaNumeric => {

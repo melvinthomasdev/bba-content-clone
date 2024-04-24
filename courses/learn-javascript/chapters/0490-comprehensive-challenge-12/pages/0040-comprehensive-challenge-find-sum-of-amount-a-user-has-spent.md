@@ -1,5 +1,34 @@
 Find the sum of the amount spent by the given user from the given expense details.
 
+For example:
+```js
+Input:
+expenses = [
+  {
+    spentOn: "Coffee",
+    amount: 120
+  },
+  {
+    spentOn: "Mobile Bill",
+    amount: 600
+  },
+  {
+    spentOn: "Gym Membership",
+    amount: 1500
+  },
+  {
+    spentOn: "Travel",
+    amount: 1000
+  },
+  {
+    spentOn: "Home Utilities",
+    amount: 2500
+  }
+];
+
+Output:
+6720
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const totalExpenses = expenses => // write your code here

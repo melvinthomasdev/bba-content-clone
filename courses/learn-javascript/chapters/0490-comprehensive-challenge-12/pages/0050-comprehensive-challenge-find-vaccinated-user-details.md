@@ -1,6 +1,34 @@
 Declare a function `vaccinatedUsers` to return the names of the users who are vaccinated.
 If none of the users are vaccinated, it should return the message **No user is vaccinated**.
 
+```js
+Input:
+users = [
+  {
+    name: "Sam",
+    vaccinated: false,
+  },
+  {
+    name: "Ann",
+    vaccinated: true,
+  },
+  {
+    name: "Oliver",
+    vaccinated: true,
+  },
+  {
+    name: "Smith",
+    vaccinated: false,
+  },
+  {
+    name: "Sam Smith",
+  }
+];
+
+Output:
+Ann, Oliver
+```
+
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const vaccinatedUsers = users => {
