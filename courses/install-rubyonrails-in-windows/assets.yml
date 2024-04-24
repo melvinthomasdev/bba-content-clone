@@ -1,0 +1,22 @@
+---
+images:
+  - ruby-on-rails.svg
+  - confirm-clone-success.png
+  - connect-to-wsl.png
+  - localhost-granite.png
+  - msixbundle-latest-version.png
+  - oh-my-zsh-install.png
+  - postgres-create-user.png
+  - powershell-install.png
+  - roles-list-postgres.png
+  - run-as-admin.png
+  - ubuntu-start-menu.png
+  - unix-username-password.png
+  - vscode-open-granite-playwright.png
+  - webpack-dev-server-windows.png
+  - wsl-already-installed.png
+  - wsl-extension-vscode.png
+  - wsl-kernel-error.png
+  - wsl-tag-vscode.png
+  - zshrc-plugins.png
+databases: []

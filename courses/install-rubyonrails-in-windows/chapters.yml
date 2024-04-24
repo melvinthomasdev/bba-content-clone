@@ -1,0 +1,13 @@
+---
+- slug: setting-up-your-development-environment
+  name: Setting Up Your Development Environment
+  has_pages: false
+- slug: configuring-your-shell-environment
+  name: Configuring Your Shell Environment
+  has_pages: false
+- slug: installing-essential-development-tools
+  name: Installing Essential Development Tools
+  has_pages: false
+- slug: project-setup-and-troubleshooting
+  name: Project Setup and Troubleshooting
+  has_pages: false

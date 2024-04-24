@@ -1042,7 +1042,27 @@
     "wthrs",
     "aelpparegpars",
     "Curvv",
-    "uzumymw"
+    "uzumymw",
+    "distro",
+    "kernal",
+    "systeminfo",
+    "dism",
+    "featurename",
+    "norestart",
+    "userenv",
+    "msixbundle",
+    "Msixbundle",
+    "libreadline",
+    "libcurl",
+    "newuser",
+    "libz",
+    "libpq",
+    "createuser",
+    "pwprompt",
+    "dearmor",
+    "keyrings",
+    "tempfiles",
+    "Traveller"
   ],
   // flagWords - list of words to be always considered incorrect
   // This is useful for offensive words and common spelling errors.
