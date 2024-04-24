@@ -3,7 +3,7 @@ table of 6.
 
 The output should look like this:
 
-```
+```js
 6 * 1 = 6
 6 * 2 = 12
 6 * 3 = 18

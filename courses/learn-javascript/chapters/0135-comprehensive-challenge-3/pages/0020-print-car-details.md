@@ -16,10 +16,26 @@ Write code that takes in these car details to perform the following actions:
 * If not: `The country of origin is [Name of the country].`
 * If the car's colour is black: `The car's colour is metallic black.`
 * If it is white: `The car's colour is snow blush.`
-* If it is neither black nor white: `This car is neither black nor white.`
+* If it is neither black nor white: `This car is [colour of the car].`
 
 Make sure your code is flexible enough to work with any value of the `carDetails` variable that meets these requirements.
 
+For example:
+```js
+Input:
+carDetails = {
+	name: "Tata Nexon",
+	manufacturer: "Tata",
+	countryOfOrigin: "India",
+	colour: "blue",
+	supportElectricOption: true
+}
+
+Output:
+"Electric cars are the future! The car we are presenting now is called Tata Nexon."
+"This car is made in India."
+"This car is blue."
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const displayCarDetails = (carDetails) => {
@@ -45,7 +61,7 @@ const displayCarDetails = (carDetails) => {
   } else if (carDetails.colour === "white") {
     console.log(`The car's colour is snow blush.`);
   } else {
-    console.log(`This car is neither black nor white.`);
+    console.log(`This car is ${carDetails.colour}.`);
   };
 }
 </solution>

@@ -6,6 +6,12 @@ Find the sum of all odd numbers from `1` to `n`.
 -  Do **NOT** use `do..while` or any other looping constructs.
 Use higher-order functions like `map`, `filter`, etc.
 
+For example:
+```js
+Input: number = 25
+
+Output: 144
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const sumOfOddNumbers = n => {

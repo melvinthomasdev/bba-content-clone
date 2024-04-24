@@ -4,24 +4,37 @@ If the details of a book are provided in the below format:
 |--|--|
 |title |Malgudi Days |
 |author |R. K. Narayan |
-|alreadyRead |true |
+|"alreadyRead" |true |
 |isAvailable |true|
 
 Write a code that takes in these book details to perform the following actions:
 
 * For each book, print the book title and book author in the format:
-   `[Book Name] by [Author Name]`.
+  `[Book Name] by [Author Name]`.
 
 * You need to print these additional statements to the console based on the provided conditions:
 
 	* If the user has read it: `You have already read [Book Name] by [Author Name]`.
- 
+
 	* If the user has not yet read it and it is available.": `Since [Book Name] by [Author Name] is available, you can read it next`
 
 	* If the user has not yet read it, but it is not available: `Currently, $[Book Name] by [Author Name] is unavailable. You can plan to read it next once it becomes available.`
 
 Make sure your code is flexible enough to work with any value of the `bookDetails` variable that meets these requirements.
 
+For example:
+```js
+const bookDetails = {
+	"title": "Malgudi Days",
+	"author": "R. K. Narayan",
+	"alreadyRead": true,
+	"isAvailable": true
+}
+
+Output:
+"Malgudi Days by R. K. Narayan"
+"You have already read Malgudi Days by R. K. Narayan"
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -53,7 +66,7 @@ findTheNextBook(bookDetails);
 const bookDetails = {
 	"title": "Malgudi Days",
 	"author": "R. K. Narayan",
-	alreadyRead: true,
+	"alreadyRead": true,
 	"isAvailable": true
 }
 </i>
@@ -63,7 +76,7 @@ const bookDetails = {
 const bookDetails = {
 	"title": "Wings of Fire",
 	"author": "A. P. J. Abdul Kalam",
-	alreadyRead: false,
+	"alreadyRead": false,
 	"isAvailable": true
 }
 </i>
@@ -73,7 +86,7 @@ const bookDetails = {
 const bookDetails = {
 	"title": "Harry Potter",
 	"author": "J.K. Rowling",
-	alreadyRead: false,
+	"alreadyRead": false,
 	"isAvailable": true
 }
 </i>
@@ -83,7 +96,7 @@ const bookDetails = {
 const bookDetails = {
 	"title": "Sherlock Holmes",
 	"author": "Arthur Conan Doyle",
-	alreadyRead: false,
+	"alreadyRead": false,
 	"isAvailable": false
 }
 </i>

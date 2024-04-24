@@ -8,7 +8,11 @@ You need to find out how long does it take before the person starts shivering.
 
 `[name] will start shivering in [hoursRemainingForShivering] hours.`
 
+```js
+Input: personName = "Eve", shiveringTemperature = 20, currentTemperature = 40, hourlyTemperatureDecrease = 4
 
+Output: "Eve will start shivering in 5 hours."
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const personName = "Sam";

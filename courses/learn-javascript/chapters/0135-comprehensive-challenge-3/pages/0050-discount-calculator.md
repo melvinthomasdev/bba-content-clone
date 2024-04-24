@@ -15,10 +15,16 @@ The function should apply the following discounts,
 
 The function should return the final discounted price based on the original price and the applicable discounts.
 
+For example:
+```js
+Input: originalPrice = 100, isMember = true, hasCoupon = false
+
+Output: 70
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const getDiscountedPrice = (originalPrice, isMember, hasCoupon) => {
-    // write your code here
+  // write your code here
 }
 </code>
 

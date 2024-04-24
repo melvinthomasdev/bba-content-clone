@@ -1,23 +1,21 @@
-Given below is information about a
-certain person:
-
-|Key       |Value           |
-|--|--|
-|name      |john vanderbilt |
-|city name |salt lake city  |
-|country   |usa             |
-|zip code  |84103           |
-
 Write a program which will
-print the information
-as shown below:
+print information about the
+provided person as shown below:
 
-```
+For example:
+```js
+Input:
+person = {
+  "name": "john vanderbilt",
+  "city_name": "salt lake city",
+  "country": "usa",
+  "zip_code": "84103"
+}
+
+Output:
 John Vanderbilt
 Salt Lake City, USA 84103
 ```
-
-
 
 <codeblock language="javascript" type="exercise" caseSensitiveOutput="true" testMode="fixedInput">
 <code>

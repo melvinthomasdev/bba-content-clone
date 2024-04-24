@@ -11,7 +11,7 @@ Write a code that takes in the above country details to perform the following ac
 
 - You need to print the population density of the country in the following format:
   - `The population density of [Country Name] is [Population Density].`
-  - [Population Density]] = population / area in square kilometer.
+  - [Population Density] = population / area in square kilometer.
 - You need to print the total number of years the country has won the FIFA Football World Cup based on `worldCupWinningYears` in the format:
 - `[Country Name] has won [total number of years won] FIFA World Cups.`
 

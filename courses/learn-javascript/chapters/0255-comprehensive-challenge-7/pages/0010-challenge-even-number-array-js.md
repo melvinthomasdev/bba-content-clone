@@ -6,7 +6,12 @@ creates a new array from it which only has
 strings whose length is even and logs it
 to the console.
 
+For example:
+```js
+Input: testStringArray = ["Ragdoll", "Persian", "Sphynx", "Dalmatian", "German Shepherd", "Pitbull"];
 
+Output: ['Sphynx']
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 // Write code here

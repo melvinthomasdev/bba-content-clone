@@ -7,9 +7,13 @@ The average speed of each of them are given in the variables
 Store the average speed to a variable called `averageSpeed`,
 and then log it to the console in the format:
 
-`The Average speed of Team India was [Average Speed] feet per second.`
+`The Average speed of Team India was [Average Speed] meters per second.`
 
+```js
+Input: averageSpeedEve = 39, averageSpeedSam = 40, averageSpeedRenu = 41
 
+Output: "The Average speed of Team India was 40 meters per second."
+```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const averageSpeedEve = 42;
@@ -26,6 +30,6 @@ const averageSpeedRenu = 39;
 
 const averageSpeed = (averageSpeedEve + averageSpeedSam + averageSpeedRenu)/3;
 
-console.log(`The Average speed of Team India was ${averageSpeed} feet per second.`);
+console.log(`The Average speed of Team India was ${averageSpeed} meters per second.`);
 </solution>
 </codeblock>

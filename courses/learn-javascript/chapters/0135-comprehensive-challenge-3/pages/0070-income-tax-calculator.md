@@ -21,36 +21,43 @@ For individuals aged above 60 years,
 
 The function should return a string indicating the tax amount based on the salary and age, for example, **"Tax amount is ₹X"**, where X is the calculated tax.
 
+For example:
+```js
+Input:  salary = 400000, age = 30
+
+Output: 'Tax amount is ₹7500'
+```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const calculateIncomeTax = (salary, age) => {
-    // write your code here
+  // write your code here
 }
 </code>
 
 <solution>
 const calculateIncomeTax = (salary, age) => {
-    let taxRate = 0;
-    let taxAmount = 0;
+  // write your code here
+  let taxRate = 0;
+  let taxAmount = 0;
 
-    if (age <= 60) {
-        if (salary > 250000 && salary <= 500000) {
-            taxRate = 0.05;
-        } else if (salary > 500000) {
-            taxRate = 0.10;
-        }
-    } else {
-        if (salary > 300000 && salary <= 500000) {
-            taxRate = 0.05;
-        } else if (salary > 500000) {
-            taxRate = 0.10;
-        }
+  if (age <= 60) {
+    if (salary > 250000 && salary <= 500000) {
+      taxRate = 0.05;
+    } else if (salary > 500000) {
+      taxRate = 0.10;
     }
+  } else {
+    if (salary > 300000 && salary <= 500000) {
+      taxRate = 0.05;
+    } else if (salary > 500000) {
+      taxRate = 0.10;
+    }
+  }
 
-    taxAmount = (salary - (age <= 60 ? 250000 : 300000)) * taxRate;
-    taxAmount = taxAmount > 0 ? taxAmount : 0; // Ensuring tax amount is not negative
+  taxAmount = (salary - (age <= 60 ? 250000 : 300000)) * taxRate;
+  taxAmount = taxAmount > 0 ? taxAmount : 0; // Ensuring tax amount is not negative
 
-    return `Tax amount is ₹${taxAmount}`;
+  return `Tax amount is ₹${taxAmount}`;
 }
 
 </solution>
