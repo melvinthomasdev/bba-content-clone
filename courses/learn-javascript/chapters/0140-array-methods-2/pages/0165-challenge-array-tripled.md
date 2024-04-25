@@ -5,7 +5,8 @@ For example:
 Input: `"5678"`
 
 Output: `[ 15, 18, 21, 24 ]`
-``
+```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const convertToArrayAndTriple = (string) => {
