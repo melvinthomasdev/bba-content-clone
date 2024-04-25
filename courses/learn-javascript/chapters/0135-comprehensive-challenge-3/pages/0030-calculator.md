@@ -23,20 +23,20 @@ const calculateAndLogValue = (valueOne, valueTwo, operator) => {
 <solution>
 const calculateAndLogValue = (valueOne, valueTwo, operator) => {
   switch (operator) {
-    case '+':
-      result = valueOne + valueTwo;
-      break;
-    case '-':
-      result = valueOne - valueTwo;
-      break;
-    case '*':
-      result = valueOne * valueTwo;
-      break;
-    case '/':
-      result = valueOne / valueTwo;
-      break;
-    default:
-      result = 'Invalid operator';
+      case '+':
+        result = valueOne + valueTwo;
+        break;
+      case '-':
+        result = valueOne - valueTwo;
+        break;
+      case '*':
+        result = valueOne * valueTwo;
+        break;
+      case '/':
+        result = valueOne / valueTwo;
+        break;
+      default:
+        result = 'Invalid Operator';
   }
   console.log(result);
 }

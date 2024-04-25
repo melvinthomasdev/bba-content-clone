@@ -1,7 +1,6 @@
-`Infinity` is a positive value 
-is a positive value used to 
-denote a number that is greater 
-than any other number represented 
+`Infinity` is a positive value
+used to denote a number that is greater
+than any other number represented
 in JavaScript.
 
 <codeblock language="javascript" type="lesson">

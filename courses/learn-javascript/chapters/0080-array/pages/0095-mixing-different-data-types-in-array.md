@@ -1,5 +1,5 @@
-In the first lesson on Creating Arrays,
-we learnt that arrays can hold different
+In the first lesson about creating arrays,
+we learned that arrays can hold different
 kinds of data types,
 which makes them  very flexible.
 
