@@ -4,7 +4,7 @@ the following requirements:
 - Fix all issues in the code below
 by applying the best practices learnt
 so far.
-- Make sure all the lists are numbered 
+- Make sure all the lists are numbered
 and links are functional.
 - Use proper table caption, heading and
 body elements.
@@ -95,7 +95,7 @@ button[type="reset"] {
   </ol>
 
   <a href="https://www.google.com">Link to Google</a>
-  <img src="https://images.unsplas.com/photo-1672078857105-a1229a7033b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" width = "300px" alt="a burger split in two"/>
+  <img src="https://images.unsplas.com/photo-1672078857105-a1229a7033b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" width = "300px" alt="A burger split in two"/>
 
   <ol>
     <li>Pizza</li>
@@ -106,8 +106,10 @@ button[type="reset"] {
   <table>
     <caption>Office Address</caption>
     <thead>
-      <th>Address Line 1</th>
-      <th>Address Line 2</th>
+      <tr>
+        <th>Address Line 1</th>
+        <th>Address Line 2</th>
+      </tr>
     </thead>
     <tbody>
       <tr>
