@@ -54,7 +54,7 @@ If this property has **four values**:
 - The first value is for the top-left corner.
 - The second value is for the top-right corner.
 - The third value is for the bottom-right corner.
-- The fourth value is for the bottom-left corner.the 
+- The fourth value is for the bottom-left corner.
 
 Values get assigned in the clockwise direction starting from top-left.
 

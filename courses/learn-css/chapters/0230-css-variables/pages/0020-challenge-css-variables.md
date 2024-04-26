@@ -14,7 +14,7 @@ the scope of *div* element.
 
 
 div > h1 {
-  color: var(--font-color)
+  color: var(--font-color);
 }
 </panel>
 </code>

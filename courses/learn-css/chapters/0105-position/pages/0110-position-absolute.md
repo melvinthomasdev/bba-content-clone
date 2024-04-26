@@ -56,7 +56,7 @@ div {
 </codeblock>
 
 In the above code, we can observe
-that the element with **id** set
+that the element with **position** set
 as **absolute** gets placed at the
 top right corner of the element
-with **id** set as **relative**.
+with **position** set as **relative**.

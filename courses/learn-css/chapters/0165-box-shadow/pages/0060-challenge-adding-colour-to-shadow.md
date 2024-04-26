@@ -1,6 +1,11 @@
-Apply color **#AA7788** to the box-shadow property of elements with class **rose-brown**.
+Right now, the box-shadow for both 
+the boxes is black in colour.
 
-Apply color **#98FB98** to the box-shadow property of elements with class **pale-green**.
+Add color **#AA7788** to the box-shadow property
+of elements with class **rose-brown-shadow**.
+
+Add color **#98FB98** to the box-shadow property
+of elements with class **pale-green-shadow**.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
@@ -27,6 +32,14 @@ Apply color **#98FB98** to the box-shadow property of elements with class **pale
 }
 
 /*Write your code here*/
+
+.rose-brown-shadow {
+  box-shadow: 20px 30px;
+}
+
+.pale-green-shadow {
+  box-shadow: 50px 30px;
+}
 </panel>
 </code>
 

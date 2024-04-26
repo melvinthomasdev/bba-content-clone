@@ -25,6 +25,7 @@ div {
   color: lightblue;
   border: solid 20px darkgreen;
   margin: 30px;
+  box-sizing: border-box
 }
 </panel>
 </code>

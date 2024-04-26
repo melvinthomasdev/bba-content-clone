@@ -42,7 +42,7 @@ class **box**.
   margin: 50px;
   border-radius: 10px;
   background-color: coral;
-  box-shadow: 20px -20px 0px 30px #85a3ff;
+  box-shadow: 20px -20px 0px 20px #85a3ff;
 }
 </solution>
 </codeblock>

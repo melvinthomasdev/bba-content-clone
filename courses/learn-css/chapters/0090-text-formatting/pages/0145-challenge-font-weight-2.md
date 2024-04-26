@@ -1,7 +1,7 @@
 Apply the following font weights:
 
 1. `font-weight: 800;` to the `.header-title` class.
-2. `font-weight: 600;` to the `.main-link` class.
+2. `font-weight: 600;` to the `.nav-link` class.
 3. `font-weight: 500;` to the `.section-title` class.
 4. `font-weight: 300;` to the `.footer-text` class.
 
