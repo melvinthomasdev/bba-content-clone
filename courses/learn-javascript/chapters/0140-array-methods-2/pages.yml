@@ -38,3 +38,12 @@
 - title: Challenge - Text Processing
   slug: challenge-text-processing
   page_type: exercise
+- title: isArray() method
+  slug: isarray-method
+  page_type: lesson
+- title: Challenge - isArray() method
+  slug: challenge-isarray-method
+  page_type: exercise
+- title: Challenge 2 - Nested Array check
+  slug: challenge-2-nested-array-check
+  page_type: exercise
