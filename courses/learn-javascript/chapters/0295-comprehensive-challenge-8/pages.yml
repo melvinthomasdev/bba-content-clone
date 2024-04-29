@@ -2,15 +2,15 @@
 - title: About
   slug: about-comprehensive-challenge
   page_type: lesson
-- title: Comprehensive Challenge - Properly Format Person Information
-  slug: challenge-properly-format-person-information-js
+- title: Properly Format Person Information
+  slug: properly-format-person-information
   page_type: assessment
-- title: Comprehensive Challenge - Print the Shorter Version of the Name
-  slug: comprehensive-challenge-print-the-shorter-version-of-the-name-js
+- title: Print the Shorter Version of the Name
+  slug: print-the-shorter-version-of-the-name
   page_type: assessment
-- title: Comprehensive Challenge - Multiplication Table
-  slug: challenge-multiplication-table-js
+- title: Multiplication Table
+  slug: multiplication-table
   page_type: assessment
-- title: Comprehensive Challenge - Find Cities With the Highest Amount of Rain
-  slug: challenge-find-cities-with-highest-rain-js
+- title: Find Cities With the Highest Amount of Rain
+  slug: find-cities-with-highest-rain
   page_type: assessment

@@ -2,126 +2,126 @@
 - title: About
   slug: about-comprehensive-challenge
   page_type: lesson
-- title: Comprehensive Challenge - Find Positive Numbers
-  slug: challenge-find-positive-numbers-js
+- title: Find Positive Numbers
+  slug: find-positive-numbers-js
   page_type: assessment
-- title: Comprehensive Challenge - Calculate Grade
-  slug: challenge-calculate-grade-js
+- title: Calculate Grade
+  slug: calculate-grade-js
   page_type: assessment
-- title: Comprehensive Challenge - Build Pizza Price Calculator
-  slug: challenge-build-pizza-price-calculator-js
+- title: Build Pizza Price Calculator
+  slug: build-pizza-price-calculator-js
   page_type: assessment
-- title: Comprehensive Challenge - Greetings
-  slug: challenge-greetings-js
+- title: Greetings
+  slug: greetings-js
   page_type: assessment
-- title: Comprehensive Challenge - Addition in Array
-  slug: challenge-addition-in-array-js
+- title: Addition in Array
+  slug: addition-in-array-js
   page_type: assessment
-- title: Comprehensive Challenge - Find Sum of First and Last Elements of an Array
-  slug: comprehensive-challenge-sum-first-last-array
+- title: Find Sum of First and Last Elements of an Array
+  slug: sum-first-last-array
   page_type: assessment
-- title: Comprehensive Challenge - Get Full Name
-  slug: comprehensive-challenge-get-full-name
+- title: Get Full Name
+  slug: get-full-name
   page_type: assessment
-- title: Comprehensive Challenge - Add Two Numbers
-  slug: comprehensive-challenge-add-two-numbers
+- title: Add Two Numbers
+  slug: add-two-numbers
   page_type: assessment
-- title: Comprehensive Challenge - Convert Celsius to Fahrenheit
-  slug: comprehensive-challenge-celsius-to-fahrenheit
+- title: Convert Celsius to Fahrenheit
+  slug: celsius-to-fahrenheit
   page_type: assessment
-- title: Comprehensive Challenge - Check the Numbers and Add
-  slug: comprehensive-challenge-check-the-numbers-and-add
+- title: Check the Numbers and Add
+  slug: check-the-numbers-and-add
   page_type: assessment
-- title: Comprehensive Challenge - Increment a Number and Divide It
-  slug: comprehensive-challenge-increment-a-number-and-divide-it
+- title: Increment a Number and Divide It
+  slug: increment-a-number-and-divide-it
   page_type: assessment
-- title: Comprehensive Challenge - Product of two Numbers
-  slug: comprehensive-challenge-product-of-two-numbers
+- title: Product of two Numbers
+  slug: product-of-two-numbers
   page_type: assessment
-- title: Comprehensive Challenge - Pass or Fail
-  slug: comprehensive-challenge-pass-or-fail
+- title: Pass or Fail
+  slug: pass-or-fail
   page_type: assessment
-- title: Comprehensive Challenge - Check Whether the Number is Divisible by 6
-  slug: comprehensive-challenge-check-whether-number-is-divisible-by-6
+- title: Check Whether the Number is Divisible by 6
+  slug: check-whether-number-is-divisible-by-6
   page_type: assessment
-- title: Comprehensive Challenge - Get a Property From an Object
-  slug: comprehensive-challenge-get-property-from-object
+- title: Get a Property From an Object
+  slug: get-property-from-object
   page_type: assessment
-- title: Comprehensive Challenge - Assign Non-Empty Value to Object Key
-  slug: comprehensive-challenge-assign-value-to-key-if-empty
+- title: Assign Non-Empty Value to Object Key
+  slug: assign-value-to-key-if-empty
   page_type: assessment
-- title: Comprehensive Challenge - Create an Empty Array With Length > 0
-  slug: comprehensive-challenge-empty-array-with-length-greater-than-0
+- title: Create an Empty Array With Length > 0
+  slug: empty-array-with-length-greater-than-0
   page_type: assessment
-- title: Comprehensive Challenge - Adding Suffixes
-  slug: comprehensive-challenge-adding-suffixes
+- title: Adding Suffixes
+  slug: adding-suffixes
   page_type: assessment
-- title: Comprehensive Challenge - Split an Array Into Odd and Even Chunks
-  slug: comprehensive-challenge-split-an-array-into-odd-and-even-chunks
+- title: Split an Array Into Odd and Even Chunks
+  slug: split-an-array-into-odd-and-even-chunks
   page_type: assessment
-- title: Comprehensive Challenge - Check Ice Cream Price
-  slug: comprehensive-challenge-check-ice-cream-price
+- title: Check Ice Cream Price
+  slug: check-ice-cream-price
   page_type: assessment
-- title: Comprehensive Challenge - Find Day of the Week
-  slug: comprehensive-challenge-find-day-of-the-week
+- title: Find Day of the Week
+  slug: find-day-of-the-week
   page_type: assessment
-- title: Comprehensive Challenge - Calculating gift coupons
-  slug: comprehensive-challenge-calculating-gift-coupons
+- title: Calculating gift coupons
+  slug: calculating-gift-coupons
   page_type: assessment
-- title: Comprehensive Challenge - Check NOT Divisible
-  slug: comprehensive-challenge-check-not-divisible
+- title: Check NOT Divisible
+  slug: check-not-divisible
   page_type: assessment
-- title: Comprehensive Challenge - Setting Preferred Language
-  slug: comprehensive-challenge-setting-preferred-language
+- title: Setting Preferred Language
+  slug: setting-preferred-language
   page_type: assessment
-- title: Comprehensive Challenge - Sum of Elements of Array
-  slug: comprehensive-challenge-sum-of-elements-of-array
+- title: Sum of Elements of Array
+  slug: sum-of-elements-of-array
   page_type: assessment
-- title: Comprehensive Challenge - Array of Squared Numbers
-  slug: comprehensive-challenge-array-of-squared-numbers
+- title: Array of Squared Numbers
+  slug: array-of-squared-numbers
   page_type: assessment
-- title: Comprehensive Challenge - Extract Positives Numbers
-  slug: comprehensive-challenge-extract-positives-numbers
+- title: Extract Positives Numbers
+  slug: extract-positives-numbers
   page_type: assessment
-- title: Comprehensive Challenge - Find second largest value in Array
-  slug: comprehensive-challenge-find-second-largest-value-in-array
+- title: Find second largest value in Array
+  slug: find-second-largest-value-in-array
   page_type: assessment
-- title: Comprehensive Challenge - Calculate Total Price After Discount
-  slug: comprehensive-challenge-calculate-total-price-after-discount
+- title: Calculate Total Price After Discount
+  slug: calculate-total-price-after-discount
   page_type: assessment
-- title: Comprehensive Challenge - Check Book Availability
-  slug: comprehensive-challenge-check-book-availability
+- title: Check Book Availability
+  slug: check-book-availability
   page_type: assessment
-- title: Comprehensive Challenge - Check Equal to 100
-  slug: comprehensive-challenge-check-equal
+- title: Check Equal to 100
+  slug: check-equal
   page_type: assessment
-- title: Comprehensive Challenge - Count Substrings with Exactly K Distinct Characters
-  slug: comprehensive-challenge-count-number-of-substrings
+- title: Count Substrings with Exactly K Distinct Characters
+  slug: count-number-of-substrings
   page_type: assessment
-- title: Comprehensive Challenge - Count duplicate characters
-  slug: comprehensive-challenge-count-duplicate-characters
+- title: Count duplicate characters
+  slug: count-duplicate-characters
   page_type: assessment
-- title: Comprehensive Challenge - Find unique elements from two arrays
-  slug: comprehensive-challenge-find-unique-elements-from-two-array
+- title: Find unique elements from two arrays
+  slug: find-unique-elements-from-two-array
   page_type: assessment
-- title: Comprehensive Challenge - Count the number of arrays inside an array
-  slug: comprehensive-challenge-count-number-of-arrays-inside-an-array
+- title: Count the number of arrays inside an array
+  slug: count-number-of-arrays-inside-an-array
   page_type: assessment
-- title: Comprehensive Challenge - Find the key with the max value in the object
-  slug: comprehensive-challenge-find-key-with-max-value-in-object
+- title: Find the key with the max value in the object
+  slug: find-key-with-max-value-in-object
   page_type: assessment
-- title: Comprehensive Challenge - Convert an object to the query string
-  slug: comprehensive-challenge-convert-object-to-query-string
+- title: Convert an object to the query string
+  slug: convert-object-to-query-string
   page_type: assessment
-- title: Comprehensive Challenge - Convert camel case to snake case
-  slug: comprehensive-challenge-convert-camel-case-to-snake-case
+- title: Convert camel case to snake case
+  slug: convert-camel-case-to-snake-case
   page_type: assessment
-- title: Comprehensive Challenge - Find the first matching item from an array of objects
-  slug: comprehensive-challenge-find-first-matching-item
+- title: Find the first matching item from an array of objects
+  slug: find-first-matching-item
   page_type: assessment
-- title: Comprehensive Challenge - Anagram Checker
-  slug: comprehensive-challenge-anagram-checker
+- title: Anagram Checker
+  slug: anagram-checker
   page_type: assessment
-- title: Comprehensive Challenge - Cumulative Sum Array Generator
-  slug: comprehensive-challenge-cumulative-sum
+- title: Cumulative Sum Array Generator
+  slug: cumulative-sum
   page_type: assessment

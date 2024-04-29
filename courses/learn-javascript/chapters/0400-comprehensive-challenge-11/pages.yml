@@ -2,12 +2,12 @@
 - title: About
   slug: about-comprehensive-challenge
   page_type: lesson
-- title: Comprehensive Challenge - Strings and Numbers
-  slug: challenge-strings-and-numbers-js
+- title: Strings and Numbers
+  slug: strings-and-numbers
   page_type: assessment
-- title: Comprehensive Challenge - Perfect Square
-  slug: challenge-perfect-square-js
+- title: Perfect Square
+  slug: perfect-square
   page_type: assessment
-- title: Comprehensive Challenge - Biggest Difference
-  slug: challenge-biggest-difference-js
+- title: Biggest Difference
+  slug: biggest-difference
   page_type: assessment

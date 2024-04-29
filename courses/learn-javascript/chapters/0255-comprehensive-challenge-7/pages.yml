@@ -3,12 +3,14 @@
   slug: about-comprehensive-challenge
   page_type: lesson
 - title: Even Number Array
-  slug: challenge-even-number-array-js
+  slug: even-number-array
   page_type: assessment
 - title: Array of Numbers
-  slug: challenge-array-of-numbers-js
+  slug: array-of-numbers
   page_type: assessment
 - title: Find the Sum of all Odd Numbers Until n
-  slug: challenge-find-the-sum-of-all-odd-numbers-until-n
+  slug: find-the-sum-of-all-odd-numbers-until-n
   page_type: assessment
-
+- title: Increment And Add
+  slug: increment-and-add
+  page_type: assessment

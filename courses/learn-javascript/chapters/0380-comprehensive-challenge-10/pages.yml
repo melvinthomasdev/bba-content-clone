@@ -2,15 +2,15 @@
 - title: About
   slug: about-comprehensive-challenge
   page_type: lesson
-- title: Challenge AI commands
-  slug: challenge-ai-commands-js
+- title: AI commands
+  slug: ai-commands
   page_type: assessment
-- title: Challenge 2
-  slug: challenge-2-js
+- title: Security Program
+  slug: security-program
   page_type: assessment
-- title: Challenge - List of Songs
-  slug: challenge-list-of-songs-js
+- title: List of Songs
+  slug: list-of-songs
   page_type: assessment
-- title: Challenge 3
-  slug: challenge-3-js
+- title: String manipulation
+  slug: string-manipulation
   page_type: assessment
