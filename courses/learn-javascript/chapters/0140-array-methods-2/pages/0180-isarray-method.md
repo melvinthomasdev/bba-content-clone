@@ -12,10 +12,10 @@ Array.isArray(value)
 
 <codeblock language="javascript" type="lesson">
 <code>
-Array.isArray([1, 2, 3]);                     // true
-Array.isArray({});                            // false
-Array.isArray("hello");                       // false
-Array.isArray(123);                           // false
-Array.isArray(new Array("a", "b", "c", "d")); //true
+console.log(Array.isArray([1, 2, 3]));                     // true
+console.log(Array.isArray({}));                            // false
+console.log(Array.isArray("hello"));                       // false
+console.log(Array.isArray(123));                           // false
+console.log(Array.isArray(new Array("a", "b", "c", "d"))); //true
 </code>
 </codeblock>
