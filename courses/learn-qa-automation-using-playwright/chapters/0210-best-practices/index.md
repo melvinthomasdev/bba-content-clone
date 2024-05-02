@@ -1,8 +1,8 @@
 In order to make the tests more readable and manageable, we can follow the practices listed below.
 
-## General best practices
+# General best practices
 
-### 1. Make tests behavioral
+## 1. Make tests behavioral
 
 We can test anything on a page from the script execution, the CSS
 properties used or any other technical detail using Playwright. The
@@ -39,7 +39,7 @@ process fails at some point of time, then we won't be able to catch it
 because the tests have already exited due to an assertion error which
 does not even matter to the end user.
 
-### 2. Make tests isolated
+## 2. Make tests isolated
 
 An isolated test is one which is not affected by other tests and will
 not affect the execution of other tests. This means that we should
@@ -107,7 +107,7 @@ Making tests independent can help us to:
 - Prevent flakiness in tests
 - Run tests in parallel.
 
-### 3. Avoid testing third-party dependencies
+## 3. Avoid testing third-party dependencies
 
 Only test what you control. Don't try to test links to external sites
 or third party servers that you do not control. Not only is it time
@@ -121,7 +121,7 @@ In unavoidable cases we can use
 and guarantee the response needed by mocking it so that we
 can safely continue with the rest of the tests.
 
-### 4. Locators
+## 4. Locators
 
 While using locators, we should prefer using them in the following
 order from most preferred to least preferred.
@@ -168,7 +168,7 @@ page.getByTitle("child-element").filter({ hasText: "Child 2" }); // Returns Chil
 We can always use the [Playwright codegen tool](https://playwright.dev/docs/codegen#generating-locators) to find the best
 selector for an element and edit it according to our needs.
 
-### 5. Use web first assertions
+## 5. Use web first assertions
 
 We should try and use [web first assertions](https://playwright.dev/docs/test-assertions)
 as much as possible instead of asserting the
@@ -194,7 +194,7 @@ message did not render when the locator was initialized, the
 assertion fails. So we should always prefer web first assertions to
 prevent unwanted failures in tests.
 
-### 6. Add assertions to each test
+## 6. Add assertions to each test
 
 When writing a test block, we should have at least one assertion in
 it. This is because writing a test without asserting anything
@@ -217,27 +217,27 @@ test("test without assertion", async ({ page }) => {
 });
 ```
 
-### 7. Avoid too many nested describe, test and step blocks
+## 7. Avoid too many nested describe, test and step blocks
 
 Playwright provides us with the ability to define as many nested
 describe or test blocks as we want. While this is useful in some
 cases, abusing this feature can make the code unreadable. Limit the
 maximum nesting of blocks to `two`.
 
-### 8. Beware of missing await
+## 8. Beware of missing await
 
 Most of the methods in Playwright return a promise. This means that
 we should properly await them when writing the tests. Failing to do
 so can lead to flaky tests and even unexplainable errors.
 
-### 9. Avoid conditional logic within tests
+## 9. Avoid conditional logic within tests
 
 Conditional logic in tests is usually an indication that a test is
 attempting to cover too much, and not testing the logic it intends
 to. Each branch of code executing within a conditional statement will
 usually be better served by a test devoted to it.
 
-### 10. Avoid using element handles
+## 10. Avoid using element handles
 
 Playwright page provides the element handles (`page.$` and `page.$$`)
 which returns the DOM element directly instead of returning a locator
@@ -256,7 +256,7 @@ const buttonLocator = page.locator("button");
 await buttonLocator.click();
 ```
 
-### 11. Avoid using { force: true }
+## 11. Avoid using { force: true }
 
 In some cases, the element we are trying to interact with might not
 be interactable. In such cases, we might have a urge to use
@@ -268,7 +268,7 @@ by another element or even if it is disabled. This can lead to false
 positives in tests where the tests might be passing but the feature
 might be failing for an end-user.
 
-### 12. Avoid waiting for networkidle
+## 12. Avoid waiting for networkidle
 
 In cases when we wait for a page to load in we should not use the
 `networkidle` option as shown below.
@@ -286,7 +286,7 @@ for at least 500 ms. This is not realistic since we can have web
 sockets or background APIs in applications and this can cause the
 tests to remain idle indefinitely.
 
-### 13. Avoid using nth-methods
+## 13. Avoid using nth-methods
 
 ```ts
 // Avoid
@@ -301,7 +301,7 @@ using them in tests since DOM updates can trigger re-ordering of
 elements causing the tests to fail or become flaky. We can instead
 use filters and chaining to find an element.
 
-### 14. Double check before using negative assertions
+## 14. Double check before using negative assertions
 
 Consider an example where we want to check whether an element is not
 visible on the screen. We may write the test like this.
@@ -340,14 +340,14 @@ If no element if present on the screen both the assertions pass. But
 if more than one element is present on the screen, then the first
 assertion passes, throwing a false positive, and the second one fails.
 
-### 15. Avoid waitForTimeout
+## 15. Avoid waitForTimeout
 
 We should avoid hard timeouts wherever possible as it delays the test
 execution unnecessarily. We can use web first assertions to check for
 some other dependent factor for continuing with our tests so that we
 can move along with the test as soon as a dependency is resolved.
 
-### 16. Prefer strict equality assertions
+## 16. Prefer strict equality assertions
 
 ```ts
 // Incorrect
@@ -365,7 +365,7 @@ value of a key to undefined evaluates the object to not have that
 key). Instead Using the `toStrictEqual` operator can catch the
 differences in the object shapes much more reliably.
 
-### 17. No need of common assertions for actionable elements before performing actions
+## 17. No need of common assertions for actionable elements before performing actions
 
 Playwright makes sure that an element is actionable before performing a user event on it. So we can avoid code like:
 
@@ -380,9 +380,9 @@ await locator.click();
 await locator.click();
 ```
 
-## BigBinary best practices
+# BigBinary best practices
 
-### 1. Use proper step blocks
+## 1. Use proper step blocks
 
 We should try and use proper `step` blocks to describe what a group of
 statements do in a step. We should prefix the step description
@@ -402,7 +402,7 @@ test("should be able to place an order", ({ page, loginPage, ordersPage }) => {
 });
 ```
 
-### 2. Wait for the API responses
+## 2. Wait for the API responses
 
 In a case that we have an API request associated with a user event,
 we should wait for the API response to arrive before moving on with
@@ -426,7 +426,7 @@ await page.getByTestId("submit-order-button").click();
 await fetchOrders;
 ```
 
-### 3. Use utils and methods from neeto-playwright-commons
+## 3. Use utils and methods from neeto-playwright-commons
 
 We have a set of utils and helper methods which have been defined in
 [neeto-playwright-commons](https://github.com/bigbinary/neeto-playwright-commons) npm package.
@@ -434,7 +434,7 @@ We should try and reuse this existing logic instead of repeating it,
 in each application. If a logic is applicable to multiple products we
 should extract it to the package as well.
 
-### 4. Use i18n locales when asserting texts
+## 4. Use i18n locales when asserting texts
 
 In BigBinary, we have setup i18n in Playwright using the same
 translation strings that are being used in the products. When asserting
@@ -471,7 +471,7 @@ fail requiring intervention from the automation team whereas
 the second approach using i18n will take this change into
 account automatically.
 
-### 5. Avoid redundant awaits when nesting async methods
+## 5. Avoid redundant awaits when nesting async methods
 
 Consider you have an asynchronous POM method called `createNewUser` in the `userPage` fixture which creates a new user. This can be called likewise.
 
@@ -541,7 +541,7 @@ test("should create new user", async ({ page, userPage }) => {
 });
 ```
 
-### 6. Avoid adding sensitive data into git tracked env files
+## 6. Avoid adding sensitive data into git tracked env files
 
 In BigBinary, we deal with a lot of automation tests involving
 integrations and logins. For these tests we need access to sensitive
@@ -562,7 +562,7 @@ to merge all the env variables with the variables defined in the
 products and we can add any sensitive information we need to add for
 local testing in this file.
 
-### 7. Avoid destructuring fixtures in tests
+## 7. Avoid destructuring fixtures in tests
 
 Consider a case where we have a POM fixture call `loginPage` and it
 has the method `loginNewUser()` to login a new user. When writing the
@@ -644,7 +644,7 @@ test("should login a new user", async ({ productsPage, ordersPage }) => {
 });
 ```
 
-### 8. Move hardcoded selectors and texts to respective constant folders.
+## 8. Move hardcoded selectors and texts to respective constant folders.
 
 It's a good practice to centralize constants like selectors and texts in dedicated folders or files.
 This approach offers several benefits:
@@ -655,28 +655,77 @@ This approach offers several benefits:
 
 - Readability: Using meaningful names for constants improves code readability. It's easier to understand what the code is doing without needing to decipher hardcoded values.
 
-```ts
-// Incorrect
+We frequently encounter different types of constants in our code, including routes, hardcoded strings, links, and selectors. Organizing these constants properly within a project is essential for maintainability and clarity.
 
-test("should login a new user", async ({ page }) => {
+- Routes: Store all route related constants in a file named `constants/routes.ts`.
+
+```ts
+test("should navigate to admin URL", async ({ page }) => {
+  await page.goto(ADMIN_URL);
   // ...
-  await page.getByRole("button").toHaveText("Save changes");
-  await page.getByTestId("save-changes-button")click();
- // ....
 });
+
+// constants/routes.ts
+export const ROUTES = { ADMIN_URL: "/admin" };
 ```
+
+- Hardcoded strings: Place hardcoded string constants in individual files within a directory named `constants/texts`. For example, we could have files like `home.ts`, `about.ts`, etc within this directory, each containing strings specific to that page.
+
+```ts
+test("should verify save changes button", async ({ page }) => {
+  await page.getByRole("button").toHaveText(HOME_TEXTS.saveChanges);
+});
+
+// constants/texts/buttons.ts
+export const HOME_TEXTS = { saveChanges: "Save changes" };
+```
+
+If certain texts are shared among different pages, we can add them to a file named `constants/texts/common.ts`.
+
+- Links: Store link constants in a file named `constants/links.ts`.
+
+```ts
+test("should verify save changes button", async ({ page }) => {
+  // ....
+  await expect(page.getByTestId(EXAMPLE_SELECTORS.saveChanges)).toHaveAttribute(
+    "href",
+    LINKS.example
+  );
+});
+
+// constants/links.ts
+export const LINKS = { example: "https://example.com" };
+```
+
+- Selectors: Place selector constants in individual files within the `constants/selectors` directory. Similar to hardcoded strings, we can have files named after specific pages or features, such as `home.ts`, `about.ts` etc within this directory, each containing selectors specific to that page.
+
+```ts
+test("should verify save changes button", async ({ page }) => {
+ await page.getByTestId(HOME_SELECTORS.saveChanges)click();
+});
+
+// constants/selectors/buttons.ts
+export const HOME_SELECTORS = { saveChanges: "save-changes-button" }
+```
+
+If certain selectors are shared among different pages, we can add them to a file named `constants/selectors/common.ts`.
+
+Grouping related constants within a single object provides clarity and organization. It makes it clear that these constants are all related to a specific page or feature, which can be especially helpful when working with large codebases.
 
 ```ts
 // Correct
 
-test("should verify save changes button", async ({ page }) => {
- await page.getByRole("button").toHaveText(BUTTON_TEXTS.saveChanges);
- await page.getByTestId(BUTTON_SELECTORS.saveChanges)click();
-});
+//constants/texts/buttons.ts
+export const HOME_TEXTS = {
+  saveChanges: "Save changes",
+  cancelButton: "Cancel button",
+};
 
-// constants/selectors/buttons.ts
-export const BUTTON_SELECTORS = { saveChanges: "save-changes-button" }
+// Incorrect
 
-// constants/texts/buttons.ts
-export const BUTTON_TEXTS = { saveChanges: "Save changes" }
+//constants/texts/buttons.ts
+export const saveChanges = "Save changes";
+export const cancelButton = "Cancel button";
 ```
+
+This structured approach not only keeps our constants organized but also makes it easier to locate and manage them as our project grows.
