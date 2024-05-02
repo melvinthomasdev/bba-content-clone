@@ -162,7 +162,7 @@ element using both these approaches.
 
 ```ts
 page.getByTestId("parent-one").getByTitle("child-element"); // Returns Child 1
-page.getByTitle("child-element").filter({ hasText: "Product 2" }); // Returns Child 1
+page.getByTitle("child-element").filter({ hasText: "Child 2" }); // Returns Child 1
 ```
 
 We can always use the [Playwright codegen tool](https://playwright.dev/docs/codegen#generating-locators) to find the best
