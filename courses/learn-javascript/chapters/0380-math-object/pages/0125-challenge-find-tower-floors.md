@@ -16,7 +16,7 @@ You have the following tasks:
 ```js
 Output:
 `Total floors: 53.333333333333336`
-`Rounded floors: 54`
+`Ceiled floors: 54`
 `Floored floors: 53`
 ```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
