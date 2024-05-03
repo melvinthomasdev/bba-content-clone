@@ -71,6 +71,15 @@
 - title: Challenge - Selecting Elements Using dataset
   slug: challenge-selecting-elements-using-dataset
   page_type: exercise
+- title: nodeList
+  slug: node-list
+  page_type: lesson
+- title: HTMLCollection
+  slug: html-collection
+  page_type: lesson
+- title: nodeList/HTMLCollection are not arrays
+  slug: nodelist-html-collection-are-not-arrays
+  page_type: lesson
 - title: Assessment - HTML DOM Selection
   slug: assessment-html-dom-selection
   page_type: exercise

@@ -50,12 +50,3 @@
 - title: Challenge - Set Attributes for an Element
   slug: challenge-set-attributes-for-an-element
   page_type: exercise
-- title: nodeList
-  slug: node-list
-  page_type: lesson
-- title: HTMLCollection
-  slug: html-collection
-  page_type: lesson
-- title: nodeList/HTMLCollection are not arrays
-  slug: nodelist-html-collection-are-not-arrays
-  page_type: lesson
