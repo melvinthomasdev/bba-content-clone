@@ -65,3 +65,27 @@
 - title: Folding a Piece of Paper
   slug: folding-a-piece-of-paper
   page_type: assessment
+- title: Comprehensive Challenge - Implement email validation
+  slug: comprehensive-challenge-email-validation
+  page_type: assessment
+- title: Comprehensive Challenge - Implement Debounce
+  slug: comprehensive-challenge-debounce
+  page_type: assessment
+- title: Comprehensive Challenge - Flatten multidimensional array
+  slug: comprehensive-challenge-flatten-multidimensional-array
+  page_type: assessment
+- title: Comprehensive Challenge - Omit keys
+  slug: comprehensive-challenge-omit-keys
+  page_type: assessment
+- title: Comprehensive Challenge - Transpose two dimensional array
+  slug: comprehensive-challenge-transpose-array
+  page_type: assessment
+- title: Comprehensive Challenge - Single sorted array
+  slug: comprehensive-challenge-single-sorted-array
+  page_type: assessment
+- title: Comprehensive Challenge - Convert milliseconds to human-readable time format
+  slug: comprehensive-challenge-generate-human-readable-time
+  page_type: assessment
+- title: Comprehensive Challenge - Series of asynchronous operations
+  slug: comprehensive-challenge-series-of-async-operations
+  page_type: assessment
