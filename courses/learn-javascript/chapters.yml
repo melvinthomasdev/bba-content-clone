@@ -129,3 +129,5 @@
   slug: call-apply-bind
 - name: instanceof
   slug: instanceof
+- name: Regular Expressions
+  slug: regular-expressions
