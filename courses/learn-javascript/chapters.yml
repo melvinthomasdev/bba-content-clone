@@ -9,8 +9,8 @@
   slug: string
 - name: Number
   slug: number
-- name: Comprehensive Challenge 1
-  slug: comprehensive-challenge-1
+- name: Challenges Set 1
+  slug: challenges-set-1
 - name: undefined and null
   slug: undefined-and-null
 - name: Object
@@ -19,8 +19,8 @@
   slug: array
 - name: Array Methods 1
   slug: array-methods-1
-- name: Comprehensive Challenge 2
-  slug: comprehensive-challenge-2
+- name: Challenges Set 2
+  slug: challenges-set-2
 - name: Conditionals
   slug: conditionals
 - name: Logical Operations
@@ -29,14 +29,14 @@
   slug: type-conversions
 - name: Functions
   slug: functions
-- name: Comprehensive Challenge 3
-  slug: comprehensive-challenge-3
+- name: Challenges Set 3
+  slug: challenges-set-3
 - name: Array Methods 2
   slug: array-methods-2
 - name: Loops
   slug: loops
-- name: Comprehensive Challenge 4
-  slug: comprehensive-challenge-4
+- name: Challenges Set 4
+  slug: challenges-set-4
 - name: Document Object Model
   slug: document-object-model
 - name: Selecting DOM Elements
@@ -45,12 +45,12 @@
   slug: manipulating-dom-elements-part-1
 - name: Manipulating DOM Elements Part 2
   slug: manipulating-dom-elements-part-2
-- name: Comprehensive Challenge 5
-  slug: comprehensive-challenge-5
+- name: Challenges Set 5
+  slug: challenges-set-5
 - name: Browser Events
   slug: browser-events
-- name: Comprehensive Challenge 6
-  slug: comprehensive-challenge-6
+- name: Challenges Set 6
+  slug: challenges-set-6
 - name: Projects 1
   slug: projects-1
 - name: Single and Multiple line comments
@@ -59,8 +59,8 @@
   slug: array-methods-3
 - name: Rest and Spread
   slug: rest-and-spread
-- name: Comprehensive Challenge 7
-  slug: comprehensive-challenge-7
+- name: Challenges Set 7
+  slug: challenges-set-7
 - name: Scope
   slug: scope
 - name: Timeouts and Intervals
@@ -69,8 +69,8 @@
   slug: date
 - name: LocalStorage and sessionStorage
   slug: local-and-session-storage
-- name: Comprehensive Challenge 8
-  slug: comprehensive-challenge-8
+- name: Challenges Set 8
+  slug: challenges-set-8
 - name: JavaScript Object Notation
   slug: javascript-object-notation
 - name: Array Destructuring
@@ -87,18 +87,18 @@
   slug: api
 - name: Projects 2
   slug: projects-2
-- name: Comprehensive Challenge 9
-  slug: comprehensive-challenge-9
+- name: Challenges Set 9
+  slug: challenges-set-9
 - name: String Methods
   slug: string-methods
-- name: Comprehensive Challenge 10
-  slug: comprehensive-challenge-10
+- name: Challenges Set 10
+  slug: challenges-set-10
 - name: Math Object
   slug: math-object
 - name: Number Methods
   slug: number-methods
-- name: Comprehensive Challenge 11
-  slug: comprehensive-challenge-11
+- name: Challenges Set 11
+  slug: challenges-set-11
 - name: this on Objects
   slug: this-on-objects
 - name: Closure
@@ -115,8 +115,8 @@
   slug: debugging-in-javascript
 - name: Mutation
   slug: mutation
-- name: Comprehensive Challenge 12
-  slug: comprehensive-challenge-12
+- name: Challenges Set 12
+  slug: challenges-set-12
 - name: Read Before Moving Forward
   slug: read-before-moving-forward
 - name: Number Methods 2

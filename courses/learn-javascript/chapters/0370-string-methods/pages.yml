@@ -134,6 +134,6 @@
 - title:  toString() method - Null/Undefined limitation
   slug: tostring-method-null-undefined-limitation
   page_type: lesson
-- title: JS Assessment - String methods
-  slug: js-assessment-string-methods
+- title: Assessment - String methods
+  slug: assessment-string-methods
   page_type: assessment
