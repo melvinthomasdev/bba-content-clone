@@ -17,7 +17,7 @@ Output:
 ```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
-const removeDuplicateAndSort = rivers =>
+const removeDuplicateAndSort = rivers => {
   // your code here
 }
 </code>
