@@ -29,14 +29,14 @@
 - title: Challenge 2 - Properties & Values
   slug: challenge-2-properties-values
   page_type: exercise
-- title: CSS Comments
-  slug: css-comments
+- title: Comments
+  slug: comments
   page_type: lesson
-- title: Challenge - CSS Comments
-  slug: challenge-css-comments
+- title: Challenge - Comments
+  slug: challenge-comments
   page_type: exercise
-- title: Challenge 2 - CSS Comments
-  slug: challenge-2-css-comments
+- title: Challenge 2 - Comments
+  slug: challenge-2-comments
   page_type: exercise
 - title: Inline Style
   slug: inline-style

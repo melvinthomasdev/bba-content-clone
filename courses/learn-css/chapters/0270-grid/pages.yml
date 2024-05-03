@@ -1,8 +1,8 @@
-- title: CSS Grid
-  slug: css-grid
+- title: Grid
+  slug: grid
   page_type: lesson
-- title: Exercise - CSS Grid
-  slug: exercise-css-grid
+- title: Exercise - Grid
+  slug: exercise-grid
   page_type: exercise
 - title: Grid Container
   slug: grid-container

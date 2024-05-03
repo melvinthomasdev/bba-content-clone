@@ -1,0 +1,15 @@
+- title: Variables
+  slug: variables
+  page_type: lesson
+- title: Challenge - Variables
+  slug: challenge-variables
+  page_type: exercise
+- title: CSS- :root
+  slug: root
+  page_type: lesson
+- title: Challenge - :root
+  slug: challenge-root
+  page_type: exercise
+- title: Variables - Specificity
+  slug: variables-specificity
+  page_type: lesson

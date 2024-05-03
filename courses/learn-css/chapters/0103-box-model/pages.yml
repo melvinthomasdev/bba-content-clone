@@ -1,9 +1,9 @@
 ---
-- title: CSS Box Model
-  slug: css-box-model
+- title: Box Model
+  slug: box-model
   page_type: lesson
-- title: Challenge - CSS Box Model
-  slug: challenge-css-box-model
+- title: Challenge - Box Model
+  slug: challenge-box-model
   page_type: exercise
 - title: Box Sizing
   slug: box-sizing
@@ -17,6 +17,6 @@
 - title: Challenge - Box Sizing Property for Forms
   slug: challenge-box-sizing-property-for-forms
   page_type: exercise
-- title: CSS Box Model Assessment
-  slug: box-model-assessment
+- title: Assessment - Box Model
+  slug: assessment-box-model
   page_type: exercise

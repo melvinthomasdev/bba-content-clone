@@ -2,12 +2,12 @@
 - title: Browser Default Styles
   slug: browser-default-styles
   page_type: lesson
-- title: CSS Reset
-  slug: css-reset
+- title: Reset
+  slug: reset
   page_type: lesson
-- title: CSS Reset Complete Code
-  slug: css-reset-complete-code
+- title: Reset Complete Code
+  slug: reset-complete-code
   page_type: lesson
-- title: Challenge - CSS Reset
-  slug: challenge-css-reset
+- title: Challenge - Reset
+  slug: challenge-reset
   page_type: exercise

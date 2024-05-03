@@ -3,56 +3,56 @@
   slug: getting-started
 - name: Jump into CSS
   slug: jump-into-css
-- name: CSS Selectors
-  slug: css-selectors
+- name: Selectors
+  slug: selectors
 - name: Colors
   slug: colors
 - name: Div Element
   slug: div-element
-- name: CSS Quiz
-  slug: css-quiz-01
+- name: Quiz
+  slug: quiz-01
 - name: Dimensions and Units
   slug: dimensions-and-units
 - name: Debugging with CSS
   slug: debugging-with-css
 - name: Restricting Height and Width
   slug: restricting-height-and-width
-- name: Comprehensive Exercise 01
-  slug: css-comprehensive-exercise-01
+- name: Challenges Set 01
+  slug: challenges-set-01
 - name: Spacing
   slug: spacing
-- name: CSS Quiz
-  slug: css-quiz-02
+- name: Quiz
+  slug: quiz-02
 - name: Text Formatting
   slug: text-formatting
-- name: Comprehensive Exercise 02
-  slug: css-comprehensive-exercise-02
+- name: Challenges Set 02
+  slug: challenges-set-02
 - name: Borders
   slug: borders
 - name: Backgrounds
   slug: backgrounds
-- name: CSS Quiz
-  slug: css-quiz-03
+- name: Quiz
+  slug: quiz-03
 - name: Display
   slug: display
-- name: CSS Box Model
-  slug: css-box-model
-- name: Comprehensive Exercise 03
-  slug: css-comprehensive-exercise-03
+- name: Box Model
+  slug: box-model
+- name: Challenges Set 03
+  slug: challenges-set-03
 - name: Position
   slug: position
 - name: Flexbox
   slug: flexbox
 - name: Styling Links
   slug: styling-links
-- name: Comprehensive Exercise 04
-  slug: css-comprehensive-exercise-04
-- name: CSS Quiz
-  slug: css-quiz-04
+- name: Challenges Set 04
+  slug: challenges-set-04
+- name: Quiz
+  slug: quiz-04
 - name: Styling Lists
   slug: styling-lists
-- name: Comprehensive Exercise 05
-  slug: css-comprehensive-exercise-05
+- name: Challenges Set 05
+  slug: challenges-set-05
 - name: Opacity
   slug: opacity
 - name: Box Shadow
@@ -69,27 +69,27 @@
   slug: pseudo-elements
 - name: Cascade and Specificity
   slug: cascade-and-specificity
-- name: CSS Variables
-  slug: css-variables
-- name: CSS Nesting
-  slug: css-nesting
+- name: Variables
+  slug: variables
+- name: Nesting
+  slug: nesting
 - name: Web Page Layouts
   slug: web-page-layouts
 - name: Responsive Web Design
   slug: responsive-web-design
-- name: CSS Grid
-  slug: css-grid
+- name: Grid
+  slug: grid
 - name: CSS Reset
   slug: css-reset
-- name: CSS Default Values
-  slug: css-default-values
-- name: Resolving CSS errors
-  slug: resolving-css-errors
+- name: Default Values
+  slug: default-values
+- name: Resolving errors
+  slug: resolving-errors
 - name: Styling Tables
   slug: styling-tables
 - name: Projects 2
   slug: projects-2
-- name: CSS Functions
-  slug: css-functions
+- name: Functions
+  slug: functions
 - name: Float
   slug: float
