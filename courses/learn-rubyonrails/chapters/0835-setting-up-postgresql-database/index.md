@@ -182,7 +182,7 @@ The `config/database.yml` file for the `Postgres.app` should be like this:
 <% branch_name = `git symbolic-ref HEAD 2>/dev/null`.chomp.sub('refs/heads/', '') %>
 <% repository_name = `git rev-parse --show-toplevel`.split('/').last.strip %>
 
-# Check https://gist.github.com/neerajdotname/b9d53f8a234da9d8c007de5e3d98bc21 to see
+# Check https://gist.github.com/neerajsingh0101/b9d53f8a234da9d8c007de5e3d98bc21 to see
 # details about the restriction on database name
 
 # If you prefer to have branch name in the database name then use following
