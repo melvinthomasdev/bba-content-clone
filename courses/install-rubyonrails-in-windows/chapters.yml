@@ -5,6 +5,9 @@
 - slug: configuring-your-shell-environment
   name: Configuring Your Shell Environment
   has_pages: false
+- slug: installing-node-js
+  name: Installing Node.js
+  has_pages: false
 - slug: installing-essential-development-tools
   name: Installing Essential Development Tools
   has_pages: false

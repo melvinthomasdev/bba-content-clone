@@ -2,7 +2,7 @@
 name: Installing Ruby on Rails on a Windows machine
 subheading: Learn how to install Ruby on Rails on a Windows machine
 slug: install-rubyonrails-in-windows
-published: false
+published: true
 custom_data:
   courseType: lesson
 home_logo: ruby-on-rails.svg
