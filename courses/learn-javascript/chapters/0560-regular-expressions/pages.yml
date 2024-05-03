@@ -8,3 +8,9 @@
 - title: Challenge - Matching Exact Characters
   slug: challenge-matching-exact-characters
   page_type: exercise
+- title: Case Sensitivity
+  slug: case-sensitivity
+  page_type: lesson
+- title: Challenge - Case Sensitivity
+  slug: challenge-case-sensitivity
+  page_type: exercise
