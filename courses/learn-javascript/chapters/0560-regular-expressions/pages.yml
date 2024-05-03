@@ -2,3 +2,9 @@
 - title: Introduction to Regular expressions
   slug: introduction-to-regular-expressions
   page_type: lesson
+- title: Matching Exact Characters
+  slug: matching-exact-characters
+  page_type: lesson
+- title: Challenge - Matching Exact Characters
+  slug: challenge-matching-exact-characters
+  page_type: exercise
