@@ -5,7 +5,7 @@ of the array
 
 ```js
 Output:
-["Salsa", "Hip-hop", "Samba"]
+["Salsa", "Ballet", "Hip-hop"]
 ```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>

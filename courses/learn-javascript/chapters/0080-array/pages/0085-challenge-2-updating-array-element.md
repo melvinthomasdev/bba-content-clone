@@ -7,7 +7,7 @@ Log the value of `danceForms`
 to the console.
 ```js
 Output:
-["Salsa", "tapDance", "Samba"]
+["Salsa",  "Ballet", "tapDance"]
 ```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
