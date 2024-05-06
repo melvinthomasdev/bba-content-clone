@@ -471,7 +471,41 @@ fail requiring intervention from the automation team whereas
 the second approach using i18n will take this change into
 account automatically.
 
-## 5. Avoid redundant awaits when nesting async methods
+## 5. Avoid string interpolation with translations
+
+Suppose we have a sentence - I have a {color} car. If we try to asssert this text on the UI with interpolation of translations as shown below, we will get flaky results:
+
+```js
+await expect(page.getByTestId(HOME_SELECTORS.header)).toHaveText(
+  `${t("common.iHaveA")} ${color} ${t("comon.car")}`
+);
+```
+
+This arrangement can be problematic when translating from one language to another because the order of words may change. For example, if the variable color has the value red and we are translating the corresponding sentence into Spanish keeping the same word order, it will be Tengo un rojo coche. However, this translation is incorrect since the adjective rojo (red) precedes the noun coche (car), which goes against the usual word order in Spanish. Adjectives in Spanish typically come after the noun whereas in English, they typically come before the noun.
+
+Therefore we should stick to using a single translated string which inturn contains the interpolation.
+
+```js
+await expect(page.getByTestId(HOME_SELECTORS.header)).toHaveText(
+  t("common.iHaveAColorCar", { color: t("common.red") })
+);
+```
+
+```js
+// English
+// en.json
+{
+  "iHaveACar": "I have a {{color}} car"
+}
+
+// Spanish
+//es.json
+{
+  "iHaveACar": "Tengo un coche {{color}}"
+}
+```
+
+## 6. Avoid redundant awaits when nesting async methods
 
 Consider you have an asynchronous POM method called `createNewUser` in the `userPage` fixture which creates a new user. This can be called likewise.
 
@@ -541,7 +575,7 @@ test("should create new user", async ({ page, userPage }) => {
 });
 ```
 
-## 6. Avoid adding sensitive data into git tracked env files
+## 7. Avoid adding sensitive data into git tracked env files
 
 In BigBinary, we deal with a lot of automation tests involving
 integrations and logins. For these tests we need access to sensitive
@@ -562,7 +596,7 @@ to merge all the env variables with the variables defined in the
 products and we can add any sensitive information we need to add for
 local testing in this file.
 
-## 7. Avoid destructuring fixtures in tests
+## 8. Avoid destructuring fixtures in tests
 
 Consider a case where we have a POM fixture call `loginPage` and it
 has the method `loginNewUser()` to login a new user. When writing the
@@ -644,7 +678,7 @@ test("should login a new user", async ({ productsPage, ordersPage }) => {
 });
 ```
 
-## 8. Move hardcoded selectors and texts to respective constant folders.
+## 9. Move hardcoded selectors and texts to respective constant folders.
 
 It's a good practice to centralize constants like selectors and texts in dedicated folders or files.
 This approach offers several benefits:
