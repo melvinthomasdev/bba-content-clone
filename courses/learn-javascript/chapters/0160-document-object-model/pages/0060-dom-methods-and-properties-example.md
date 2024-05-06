@@ -2,15 +2,15 @@ In the example given below,
 right now,
 the text inside
 the `h2` is **Lightpink**.
-Try changing it to
+Change the text to
 the name of any
 common colour of your choice,
 like **blue**,
 **green**,
 or
-**steelblue**.
+**steelblue**. 
 
-<codeblock language="javascript" type="exercise" testMode="fixedInput">
+<codeblock language="javascript" type="lesson" testMode="fixedInput">
 <code>
 <panel language="html">
 <h2 id="title-text">Lightpink</h2>
@@ -33,3 +33,13 @@ titleText.style.color = titleText.innerText;
 </panel>
 </code>
 </codeblock>
+
+When you change the text 
+in the heading, notice that 
+the colour of the heading text 
+changes too. Even though you 
+only changed the text in HTML, 
+still somehow the text colour 
+changed. This isn't done 
+using HTML or CSS. 
+This is JavaScript!

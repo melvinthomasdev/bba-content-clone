@@ -17,9 +17,9 @@
 - title: DOM Methods and Properties
   slug: dom-methods-and-properties
   page_type: lesson
-- title: Challenge - DOM Methods and Properties
-  slug: challenge-dom-methods-and-properties
-  page_type: exercise
+- title: DOM Methods and Properties - Example
+  slug: dom-methods-and-properties-example
+  page_type: lesson
 - title: Document is the Root of the DOM Tree
   slug: document-is-the-root-of-the-dom-tree
   page_type: lesson
