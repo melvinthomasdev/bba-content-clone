@@ -1,4 +1,6 @@
-Set the padding of the `<p>` tag to be twice its font size, using `em` units.
+Set the width of the `<p>` tag 
+to be twenty times its font size, 
+using `em` units.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
@@ -24,7 +26,7 @@ h1 {
 p {
   font-size: 1em;
   line-height: 1.6;
-  background: ghostwhite;
+  background-color: lightgray;
 }
 </panel>
 </code>
@@ -43,8 +45,8 @@ h1 {
 p {
   font-size: 1em;
   line-height: 1.6;
-  background: ghostwhite;
-  padding: 2em;
+  background-color: lightgray;
+  width: 20em;
 }
 </solution>
 </codeblock>
