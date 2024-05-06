@@ -1,8 +1,8 @@
 ## Installing system packages
 
-IMPORTANT NOTE: From here on we will be executing all the commands in the WSL shell and not the Windows shells like Powershell or CMD. The WSL shell is the Ubuntu terminal in our case.
+IMPORTANT NOTE: From here on, we will be executing all the commands in the WSL shell and not the Windows shells like Powershell or CMD. The WSL shell is the Ubuntu terminal in our case.
 
-To get started with Ruby on Rails, first we need to install all the dependent system packages on the WSL. For this execute the following command within the WSL shell:
+To get started with Ruby on Rails, first of all, we need to install all the dependent system packages on the WSL. For this execute the following command within the WSL shell:
 
 ```bash
 sudo apt-get update
@@ -11,7 +11,7 @@ sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-
 
 ## Installing zsh
 
-We will be using ZSH as our default shell. To install and set ZSH as our default shell, follow these steps:
+We will now be using ZSH as our default shell. To install and set ZSH as our default shell, follow these steps:
 
 ```bash
 sudo apt install zsh -y
