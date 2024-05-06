@@ -1,9 +1,8 @@
 Avoid using the following
 HTML elements directly inside
 a `<form>`:
-- p
-- h1 to h6
-- a
+- p, h1-h6: It's best to avoid these elements directly inside `<form>`. They can cause accessibility issues and make form submission unclear.
+- a: It is generally discouraged to have `<a>` elements directly inside a form for submit buttons, it can be acceptable for links within the form content, like "Forgot password?" or additional information links.
 
 Let us take a look at an
 incorrect form structure example:
