@@ -53,11 +53,11 @@
 - title: Challenge - Sort the Array
   slug: challenge-sort
   page_type: exercise
-- title: Every() method
-  slug: every-method
+- title: Check a condition for Every Element in Array
+  slug: check-condition-for-every-element-in-array
   page_type: lesson
-- title: Challenge - Every() method
-  slug: challenge-every-method
+- title: Challenge - Check if all number in Array are positive
+  slug: challenge-check-all-numbers-in-array-are-positive
   page_type: exercise
 - title: Challenge - Validate Student Information
   slug: challenge-validate-student-information
