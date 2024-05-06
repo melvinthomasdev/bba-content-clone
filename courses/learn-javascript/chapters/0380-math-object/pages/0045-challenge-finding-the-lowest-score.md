@@ -1,5 +1,5 @@
-We have the scores of math
-test obtained by `Sam`, `Eve`,
+We have the scores of the math
+test taken by `Sam`, `Eve`,
 `Renu`
 and `Lao` in an array.
 
@@ -8,11 +8,12 @@ which takes this array as an argument
 and
 finds the minimum value.
 
-Create a detailed output that includes
-the the minimum value,
+The output should include
+the minimum value,
 and
-the index of the minimum value in the array
-and log it to the console.
+the index of the minimum 
+value in the array.
+Log the output to the console.
 
 ```js
 Output:
