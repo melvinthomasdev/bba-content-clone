@@ -1,8 +1,8 @@
 Make the following changes:
-- `solid` border to `.solid-border` class.
-- `dashed` border to `.dashed-border` class.
-- `dotted` border to `.dotted-border` class.
-- `double` border to `.double-border` class.
+- Add `solid` border to `.solid-border` class.
+- Add `dashed` border to `.dashed-border` class.
+- Add `dotted` border to `.dotted-border` class.
+- Add `double` border to `.double-border` class.
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
@@ -111,16 +111,16 @@ body {
 /* Write code below */
 
 .solid-border {
-  border: solid;
+  border-style: solid;
 }
 .dashed-border {
-  border: dashed;
+  border-style: dashed;
 }
 .dotted-border {
-  border: dotted;
+  border-style: dotted;
 }
 .double-border {
-  border: double;
+  border-style: double;
 }
 </solution>
 </codeblock>
