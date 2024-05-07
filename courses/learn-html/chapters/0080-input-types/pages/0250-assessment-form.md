@@ -31,6 +31,8 @@ Inside this **div** element, add two **Button** elements. The first one, upon cl
 
 You need to ensure that if we click any of the labels, the input element associated with it should be highlighted.
 
+Don't add any unnecessary `id` or `class` attribute. 
+
 <codeblock language="html" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 <panel language="html">
@@ -122,16 +124,16 @@ button[type="reset"] {
 <h2>Personal Details</h2>
 <form class="personal-details-form">
   <label for="username">Username</label>
-  <input type="text" id="username" placeholder="Renu Sen">
+  <input type="text" placeholder="Renu Sen">
 
   <label for="password">Password</label>
-  <input type="password" id="password">
+  <input type="password">
 
   <label for="address">Address</label>
-  <textarea rows="4" cols="50" placeholder="World Trade Center, Kharadi, Pune, Maharashtra 41101" id="address"></textarea>
+  <textarea rows="4" cols="50" placeholder="World Trade Center, Kharadi, Pune, Maharashtra 41101"></textarea>
 
   <label for="flavour">Favourite Ice Cream Flavour</label>
-  <select id="flavour">
+  <select>
     <option value="chocolate">Chocolate</option>
     <option value="vanilla">Vanilla</option>
     <option value="strawberry">Strawberry</option>
@@ -140,7 +142,7 @@ button[type="reset"] {
   </select>
 
   <label for="phone-number">Phone Number</label>
-  <input type="tel" placeholder="+911234567890" id="+911234567890">
+  <input type="tel" placeholder="+911234567890">
 
   <div class="button-container">
     <button type="reset">Reset</button>
