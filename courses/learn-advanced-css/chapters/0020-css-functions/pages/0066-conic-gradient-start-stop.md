@@ -24,7 +24,7 @@ Let's look at an example:
 
 In this example, the colours are
 assigned specific positions around
-the circle by the the start and end
+the circle by the start and end
 percentages. For instance, the colour
 `red` spans from 0% to 25%,
 corresponding to the first 90 degrees

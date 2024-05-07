@@ -20,7 +20,7 @@ if sky == "cloudy" and weather == "humid":
 
 ## or
 
-The `or` keyword is used to ensure that any one of the conditions should pass for the print statement to execute. If both conditions fail, the the print statement is skipped.
+The `or` keyword is used to ensure that any one of the conditions should pass for the print statement to execute. If both conditions fail, the print statement is skipped.
 
 <codeblock language="python" type="lesson">
 <code>

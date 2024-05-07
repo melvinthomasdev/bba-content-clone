@@ -32,7 +32,7 @@ In the locator tool, go to the url [localhost:3000](http://localhost:3000). This
 
 ## Find selectors using the browser DevTools `Inspect` tool
 
-In case the Playwright plugin cannot be used, we can use the browser devtools to find the element
+In case the Playwright plugin cannot be used, we can use the browser devtools to find the element.
 
 **Step 1: Open the site in a browser**
 
@@ -40,7 +40,7 @@ Open a new browser tab and visit [localhost:3000](http://localhost:3000). This o
 
 **Step 2: Open the DevTools window**
 
-Right click on the the element and choose the `Inspect element` option. On the DevTools inspect window find the tag of the element we want the selector for.
+Right click on the element and choose the `Inspect element` option. On the DevTools inspect window find the tag of the element we want the selector for.
 
 **Step 3: Use the labels to find the best selector**
 

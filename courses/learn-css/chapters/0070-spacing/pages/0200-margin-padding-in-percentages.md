@@ -35,7 +35,7 @@ The margin value for the **child-element** is calculated as
 **10%** of **150px** is **15px**.
 So, `margin: 10%` will mean here, `margin: 15px`.
 
-The same reasoning applies to the the `padding` property:
+The same reasoning applies to the `padding` property:
 
 <codeblock language="css" type="lesson">
 <code>

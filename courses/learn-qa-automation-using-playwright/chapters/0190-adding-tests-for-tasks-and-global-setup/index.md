@@ -515,7 +515,7 @@ node_modules/
 
 To summarize, if we have a common task we need to execute before the tests, like logging into the application, we can use the global setup using dependencies to execute the specs in order. But just executing a test doesn't mean that the subsequent tests will be logged in because of the exclusive page contexts in Playwright. To restore the session we received during login in all the subsequent tests, we need to use the `storageState` functionality, which saves the session details into a file for it to be restored in the upcoming tests.
 
-We will add the tests for the rest of the the scenarios in the tasks page in the upcoming chapters.
+We will add the tests for the rest of the scenarios in the tasks page in the upcoming chapters.
 
 Let's commit these changes.
 
