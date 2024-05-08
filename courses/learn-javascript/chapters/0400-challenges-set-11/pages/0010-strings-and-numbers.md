@@ -36,7 +36,7 @@ function numberManipulation(input) {
   const squared = rounded ** 2;
   console.log(`Square of the rounded number is ${squared}`)
 
-  const reversedNumber = parseInt(squared.toString().split("").reverse().join(""));
+  const reversedNumber = squared.toString().split("").reverse().join("");
   console.log(`Reverse of the squared number is ${reversedNumber}`)
 }
 </solution>
