@@ -39,9 +39,9 @@ const phoneNumber = "98725";
 const zipCode = "770";
 const socialSecurityNumber = "967045";
 
-const paddedPhoneNumber = phoneNumber.padEnd(10, "_");
-const paddedZipCode = zipCode.padEnd(7, "_");
-const paddedSocialSecurityNumber = socialSecurityNumber.padEnd(16, "\*");
+const paddedPhoneNumber = phoneNumber.padEnd(10, "*");
+const paddedZipCode = zipCode.padEnd(7, "*");
+const paddedSocialSecurityNumber = socialSecurityNumber.padEnd(16, "*");
 
 console.log(paddedPhoneNumber);
 console.log(paddedZipCode);
