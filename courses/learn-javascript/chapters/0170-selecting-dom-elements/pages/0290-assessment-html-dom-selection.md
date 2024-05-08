@@ -4,14 +4,15 @@ perform the following actions:
   in a variable named `mainHeading`.
 - Save the heading with id `punchline`
   in a variable named `punchline`.
-- Save all the headings in a variable
-  named `allHeadings`.
+- Save all the `h2` tags in a variable
+  named `headings` as an Array.
 - Log `mainHeading`, `punchline` and
-  `allHeadings` to the console.
+  `headings` to the console.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 <panel language="html">
+<h1>Quotes</h1>
 <div class="page">
   <h2 id="welcome">Welcomes are hard too!</h2>
   <h2 id="punchline">Punchlines are sweet!</h2>
@@ -20,14 +21,14 @@ perform the following actions:
 <panel language="javascript">
 let mainHeading = "";
 let punchline = "";
-let allHeadings = "";
+let headings = "";
 
 </panel>
 </code>
 <solution>
 let mainHeading = document.getElementById('welcome');
 let punchline = document.getElementById('punchline');
-let allHeadings = document.querySelectorAll('h2');
+let allHeadings = Array.from(document.getElementsByTagName('h2'));
 
 console.log(mainHeading);
 console.log(punchline);
