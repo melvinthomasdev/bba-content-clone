@@ -14,3 +14,9 @@
 - title: Challenge - Case Sensitivity
   slug: challenge-case-sensitivity
   page_type: exercise
+- title: Negating Characters
+  slug: negating-character-classes
+  page_type: lesson
+- title: Challenge - Negating Characters
+  slug: challenge-negating-character-classes
+  page_type: lesson
