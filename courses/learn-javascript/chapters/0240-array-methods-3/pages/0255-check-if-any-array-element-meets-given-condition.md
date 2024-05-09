@@ -1,6 +1,4 @@
-The `.some()` method allows us to check
-if at least one element in an array passes
-a specified test.
+The `.some()` method allows us to check if at least one element in an array passes a specified test.
 
 Syntax:
 ```js
@@ -17,7 +15,7 @@ otherwise, it returns **false**.
 
 <codeblock language="javascript" type="lesson">
 <code>
-const numberSet1 = [1, 2, 3, 4, 5];
+const numberSet1 = [1, 2, 3, 5, 7];
 const numberSet2 = [3, 5, 7, 9];
 
 const hasEvenNumber = numberSet1.some(num => num % 2 === 0);
@@ -27,21 +25,7 @@ console.log(hasZero); // Output: false
 </code>
 </codeblock>
 
-In this example, we have passed a function
-that checks if at least one number in the
-`numberSet1` array is even to `.some()`.
+In this example, we have passed a function to `.some()` method that checks if the given number is even. Since **2** is an even number in the `numberSet1` array, the callback function returns **true** for it
+and thus `.some()` method returns **true**.
 
-Since **2** is an even number in `numberSet1` array,
-the callback function returns **true** once
-for it
-and
-thus `.some()` method returns **true**
-which is stored as a value for `hasEvenNumber`
-variable.
-
-Similarly, there is no zero in `numberSet2`
-array, which is why the callback function returns
-**false** every single time
-and
-`.some()` method returns **false** which is
-stored as a value for `hasZero` variable.
+In the second example as there are no zeros in the `numberSet2` array, the callback function returns **false** every single time and thus the `.some()` method returns **false**.

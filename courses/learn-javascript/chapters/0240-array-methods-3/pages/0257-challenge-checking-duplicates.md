@@ -1,45 +1,30 @@
-Define a function `hasDuplicates()`
-that takes an array `arr` as input.
+Create a function `hasInternationalStudents()` that takes in as input an array of objects **studentDetails** with **name** and **country** as properties and checks if there are any students from countries other than India.
 
-Inside the function, iterate over each
-element in the array
-and
-check if there exists another element
-in the array that is equal to the current element,
-**excluding** itself.
-
-If such a duplicate element is found, return **true**.
-If no duplicate elements are found after iterating
-over the entire array, return **false**.
+If there exist a student who is from a country other than India, return **true** else return **false**.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
-const array1 = [1, 2, 3, 4, 5, 3];
-const array2 = ["apple", "banana", "orange", "apple"];
-const array3 = [1, 2, 3, 4, 5];
+const studentDetails = [
+  { name: "Sam", country: "India" },
+  { name: "Eve", country: "USA" },
+  { name: "Renu", country: "India" },
+  { name: "Lao", country: "Canada" },
+  { name: "Carlos", country: "Germany" }
+];
 
-// Write code below this line
-
-console.log(hasDuplicates(array1));
-console.log(hasDuplicates(array2));
-console.log(hasDuplicates(array3));
+console.log(hasInternationalStudents(studentDetails));
 </code>
 <solution>
-const array1 = [1, 2, 3, 4, 5, 3];
-const array2 = ["apple", "banana", "orange", "apple"];
-const array3 = [1, 2, 3, 4, 5];
+const studentDetails = [
+  { name: "Sam", country: "India" },
+  { name: "Eve", country: "USA" },
+  { name: "Renu", country: "India" },
+  { name: "Lao", country: "Canada" },
+  { name: "Carlos", country: "Germany" }
+];
 
-// Write code below this line
-const hasDuplicates = (arr) => {
-  return arr.some((element, index) => {
-    return arr.some((otherElement, otherIndex) => {
-      return otherIndex !== index && otherElement === element;
-    });
-  });
-};
+const hasInternationalStudents = studentDetails => studentDetails.some(student => student.country !== "India");
 
-console.log(hasDuplicates(array1));
-console.log(hasDuplicates(array2));
-console.log(hasDuplicates(array3));
+console.log(hasInternationalStudents(studentDetails));
 </solution>
 </codeblock>
