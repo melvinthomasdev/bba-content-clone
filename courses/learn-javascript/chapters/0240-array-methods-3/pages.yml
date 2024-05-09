@@ -68,6 +68,15 @@
 - title: Challenge - Execute a Function and Get a Single Value
   slug: challenge-reduce
   page_type: exercise
+- title: Check if any Array Element Meets given Condition
+  slug: check-if-any-array-element-meets-given-condition
+  page_type: lesson
+- title: Challenge - Checking for Positive Numbers
+  slug: challenge-checking-for-positive-numbers
+  page_type: exercise
+- title: Challenge - Checking duplicates
+  slug: challenge-checking-duplicates
+  page_type: exercise
 - title: Usage of Underscore in Functions
   slug: usage-of-underscore
   page_type: lesson
