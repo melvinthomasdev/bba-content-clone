@@ -32,10 +32,12 @@ p {
 </code>
 
 <solution>
-let allDivs = document.getElementsByTagName('div');
-for (let div of allDivs) {
+let allDivs = Array.from(document.getElementsByTagName('div'));
+
+allDivs.forEach(div => {
   div.style.width = "100px";
   div.innerText = "Look here";
-}
+});
+
 </solution>
 </codeblock>
