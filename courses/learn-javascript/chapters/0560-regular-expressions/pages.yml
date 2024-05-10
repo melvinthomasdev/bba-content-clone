@@ -62,3 +62,9 @@
 - title: Challenge - Negating Characters
   slug: challenge-negating-character-classes
   page_type: lesson
+- title: Matching any Character
+  slug: matching-any-character
+  page_type: lesson
+- title: Challenge - Matching any Character
+  slug: challenge-matching-any-character
+  page_type: exercise
