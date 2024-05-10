@@ -12,7 +12,7 @@ return the `lastName` as the full name.
 return the `firstName` as the full name.
 
 3. If both `firstName` and `lastName` are not present,
-return `" "` as the full name.
+return `""` as the full name.
 
 ```js
 Input: person = { firstName: "Sam" }
