@@ -26,11 +26,11 @@ For example:
 
 ```js
 Input:
-["Golmaal", "sukiyaki", "Hotel California", "Beat it", "Thriller"]
+["Golmaal", "Sukiyaki", "Hotel California", "Beat it", "Thriller"]
 Output:
 Longest name: "Hotel California"
 Lengths array: [7, 8, 16, 7, 8]
-Names with vowel: ["sukiyaki", "Hotel California", "Beat it"]
+Names with vowel: ["Sukiyaki", "Hotel California", "Beat it"]
 Names without first vowel: ["Golmaal", "Hotel California", "Beat it", "Thriller"]
 ```
 
@@ -48,7 +48,8 @@ const songNameLength = songNames.map(name => name.length);
 
 let songNamesWithVowel = songNames.filter((songName) => {
 songName = songName.toLowerCase();
-if (songName.includes('a' || 'e' || 'i' || 'o' || 'u')) {
+if (songName.includes('a') || songName.includes('e') || songName.includes('i') || songName.includes('o') || songName.includes('u')
+) {
 return true;
 } else {
 return false
@@ -56,7 +57,8 @@ return false
 });
 
 let namesWithoutFirstVowel = songNames.filter((word)=>{
-if ( word.startsWith("a" || "e" || "i" || "o" || "u")) {
+if ( word.startsWith("a") || word.startsWith("e") || word.startsWith("i") || word.startsWith("o") || word.startsWith("u")
+) {
 return false
 } else {
 return true
@@ -77,22 +79,22 @@ songNameOperations(testSongNames);
 <testcase>
 <i>
 const testSongNames = [
-  "bailando",
-  "alejandro",
-  "california",
-  "juicy",
-  "whistle"
+  "Bailando",
+  "Alejandro",
+  "California",
+  "Juicy",
+  "Whistle"
 ]
 </i>
 </testcase>
 <testcase>
 <i>
 const testSongNames = [
-  "bailamos",
-  "astronaut",
-  "stan",
-  "fastlane",
-  "sukiyaki"
+  "Bailamos",
+  "Astronaut",
+  "Stan",
+  "Fastlane",
+  "Sukiyaki"
 ]
 </i>
 </testcase>
@@ -100,7 +102,7 @@ const testSongNames = [
 <i>
 const testSongNames = [
   "Golmaal",
-  "sukiyaki",
+  "Sukiyaki",
   "Hotel California",
   "Beat it",
   "Thriller"
