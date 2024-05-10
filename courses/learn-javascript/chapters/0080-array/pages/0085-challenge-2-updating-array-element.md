@@ -9,6 +9,7 @@ to the console.
 Output:
 ["Salsa",  "Ballet", "tapDance"]
 ```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const danceForms = ["Salsa", "Ballet", "Samba"];
