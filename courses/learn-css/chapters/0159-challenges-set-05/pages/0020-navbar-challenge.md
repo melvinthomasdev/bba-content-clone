@@ -39,7 +39,7 @@ For completing this challenge, we need to complete the following tasks:
 **Menu Styles:**
 
 - Remove default list styling from elements with the class **menu**.
-- Set padding of `0px` to elements with the class **menu**.
+- Remove the padding of elements with the class **menu**.
 - Display list items horizontally with a margin-right of `20px`.
 - Remove the underline from links within elements with the class **menu**.
 - Set the text colour of links within elements with the class **menu** to `#FDFEFE`.
@@ -48,7 +48,7 @@ For completing this challenge, we need to complete the following tasks:
 **Actions Styles:**
 
 - Remove default list styling from elements with the class **actions**.
-- Set padding of `0px` to elements with the class **actions**.
+- Remove the padding from elements with the class **actions**.
 - Display list items horizontally with a margin-right of `20px`.
 - Remove the underline from links within elements with the class **actions**.
 - Set the text colour of links within elements with the class **actions** to `#FDFEFE`.
@@ -71,7 +71,7 @@ For completing this challenge, we need to complete the following tasks:
 
 - Set the background size of elements with the class **hero** to cover.
 - Center the text within elements with the class **hero**.
-- Apply padding of 100px from the top and bottom to elements with the class **hero**.
+- Apply padding of **100px** from the top and bottom and **0** from left and right to elements with the class **hero**.
 - Set the text colour of elements with the class **hero** to `#FDFEFE`.
 - Set the height of elements with the class **hero** to `65%` of the viewport height.
 - Add a margin of `50px` from the top to elements with the class **hero**.
@@ -79,6 +79,7 @@ For completing this challenge, we need to complete the following tasks:
 **Hero Content Styles:**
 
 - Display elements with the class **hero-content** as a flex container.
+- Display items in this container in a column.
 - Align items to center and justify content to center.
 - Set the height of elements with the class **hero-content** to `65%` of the viewport height.
 
@@ -207,142 +208,141 @@ body {
 }
 
 .header {
-background-color: #1B4F72;
-color: #FDFEFE;
-padding: 10px 0;
-position: fixed;
-top: 0px;
-width: 100%;
+  background-color: #1B4F72;
+  color: #FDFEFE;
+  padding: 10px 0;
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 
 .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-max-width: 1200px;
-margin: 0 auto;
-padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .logo a {
-text-decoration: none;
-color: #FDFEFE;
-font-size: 24px;
+  text-decoration: none;
+  color: #FDFEFE;
+  font-size: 24px;
 }
 
 .menu ul {
-list-style: none;
-padding: 0;
-display: flex;
+  list-style: none;
+  padding: 0;
+  display: flex;
 }
 
 .menu li {
-margin-right: 20px;
+  margin-right: 20px;
 }
 
 .menu a {
-text-decoration: none;
-color: #FDFEFE;
-font-size: 18px;
+  text-decoration: none;
+  color: #FDFEFE;
+  font-size: 18px;
 }
 
 .actions ul {
-list-style: none;
-padding: 0;
-display: flex;
+  list-style: none;
+  padding: 0;
+  display: flex;
 }
 
 .actions li {
-margin-right: 20px;
+  margin-right: 20px;
 }
 
 .actions a {
-text-decoration: none;
-color: #FDFEFE;
+  text-decoration: none;
+  color: #FDFEFE;
 }
 
 .cta-button {
-background-color: #3498DB;
-color: #FDFEFE;
-padding: 10px 20px;
-text-decoration: none;
-border-radius: 5px;
-font-weight: bold;
-transition: background-color 0.3s ease;
+  background-color: #3498DB;
+  color: #FDFEFE;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-background-color: #2980B9;
+  background-color: #2980B9;
 }
 
 .hero {
-background-size: cover;
-text-align: center;
-padding: 100px 0;
-color: #FDFEFE;
-height: 65vh;
-margin-top: 50px;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+  color: #FDFEFE;
+  height: 65vh;
+  margin-top: 50px;
 }
 
 .hero-content {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
 }
 
 .hero-image-container {
-width: 600px;
+  width: 600px;
 }
 
 .hero-image {
-width: 100%;
-margin: 10px;
+  width: 100%;
+  margin: 10px;
 }
 
 .hero h1 {
-font-size: 2rem;
+  font-size: 2rem;
 }
 
 .hero p {
-font-size: 1.5rem;
-// margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .hero .cta-button {
-background-color: #3498DB;
-color: #FDFEFE;
-padding: 10px 20px;
-text-decoration: none;
-border-radius: 5px;
-font-weight: bold;
+  background-color: #3498DB;
+  color: #FDFEFE;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .hero .cta-button:hover {
-background-color: #2980B9;
+  background-color: #2980B9;
 }
 
 .about, .services, .contact {
-color: #FDFEFE;
-max-width: 800px;
-margin: 0 auto;
-padding: 40px;
-background-color: #4A8AB7;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-margin-bottom: 20px;
+  color: #FDFEFE;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #4A8AB7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 .about h2, .services h2, .contact h2 {
-font-size: 24px;
-margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 footer {
-background-color: #1B4F72;
-color: #FDFEFE;
-text-align: center;
-padding: 10px 0;
+  background-color: #1B4F72;
+  color: #FDFEFE;
+  text-align: center;
+  padding: 10px 0;
 }
 
 </solution>

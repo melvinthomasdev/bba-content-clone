@@ -124,7 +124,7 @@ The above code displays **This is the admin.** because the value of the `name` v
 
 <codeblock language="javascript" type="lesson">
 <code>
-const name = "Sam";
+const name = "Renu";
 
 switch(name) {
   case "Eve":

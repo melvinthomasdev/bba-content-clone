@@ -83,6 +83,7 @@ Apply the following colours to the text:
 .heading {
   font-size: 36px;
   margin-bottom: 10px;
+  color: red;
 }
 
 .main-content {
