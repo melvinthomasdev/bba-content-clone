@@ -394,7 +394,8 @@ that even people unfamiliar with Playwright can read.
 test("should be able to place an order", ({ page, loginPage, ordersPage }) => {
   await test.step("Step 1: Login to the application", loginPage.loginViaUI);
   await test.step("Step 2: Create new order", () =>
-    ordersPage.createOrders({ item: "Smartphone" }));
+    ordersPage.createOrders({ item: "Smartphone" })
+  );
   await test.step("Step 3: Assert a new order was created", async () => {
     const orders = page.getByTestId("order");
     await expect(orders).toHaveCount(1);
@@ -548,6 +549,11 @@ test("should create new user", async ({ page, userPage }) => {
 });
 ```
 
+In the example given above, we are calling a method `createNewUser` from the step block which
+accepts no parameters. Since the second parameter of the step block has to be a function type,
+instead of defining an [IIFE](https://courses.bigbinaryacademy.com/learn-javascript/immediately-invoked-function-expression/iife/)
+we can directly pass the `createNewUser` method into the step block.
+
 ```ts
 // Incorrect
 
@@ -560,9 +566,17 @@ test("should create new user", async ({ page, userPage }) => {
 // Correct
 test("should create new user", async ({ page, userPage }) => {
   await test.step("Step 1: Create new user", () =>
-    userPage.createNewUser({ name: "Oliver Smith" }));
+    userPage.createNewUser({ name: "Oliver Smith" })
+  );
 });
 ```
+
+In the example given above, we are calling an async method called `createNewUser`
+which expects an argument to be passed in. Since we cannot specify the arguments if
+we directly pass the method as the second parameter of the step block, we have to wrap
+it in an IIFE. But instead of making the IIFE an async method and awaiting the promise
+within it, we can return the called method from the IIFE which would give us the same
+result avoiding the redundant awaits.
 
 ```ts
 // Correct
@@ -574,6 +588,51 @@ test("should create new user", async ({ page, userPage }) => {
   });
 });
 ```
+
+In the example above, we are dealing with two promises which need to be executed in
+order. The profile icon will only be visible if the user was created. So we have to wait
+till the first promise has completed execution before we begin the second one, hence
+the need for two await statements.
+
+```ts
+// Incorrect
+
+test("should create new user", async ({ page, userPage }) => {
+  await test.step("Step 1: Create new user", async () => {
+    await expect(page.getByTestId("user-profile-icon")).toBeVisible();
+    await expect(page.getByTestId("user-name")).toHaveText("Oliver Smith");
+  });
+});
+```
+
+```ts
+// Correct
+
+test("should create new user", async ({ page, userPage }) => {
+  await test.step("Step 1: Create new user", async () =>
+    Promise.all([
+      expect(page.getByTestId("user-profile-icon")).toBeVisible(),
+      expect(page.getByTestId("user-name")).toHaveText("Oliver Smith"),
+    ])
+  );
+});
+```
+
+In the above example, we have two promises which are independent of each
+other. This means the order of execution of statements does not matter.
+In such cases, instead of awaiting for each promise to complete execution
+before moving to the next, we can use the `Promise.all` method to execute
+both the Promises in parallel and move forward when both of them finish
+execution. `Promise.all` method accepts an array of promises and returns
+a promise itself which is resolved when all the promises in the array are
+resolved and rejected if any of the promises are rejected.
+
+Doing this makes sure that we are not unnecessarily waiting for the completion
+of a Promise to move on with the next one which increases the performance.
+This also allows us to remove redundant awaits making the code cleaner.
+
+Checkout this [video](https://s-varun.neetorecord.com/watch/2b4d390a-2df2-4661-881d-a46f8a0a0a5d)
+demonstrating how we can avoid redundant awaits.
 
 ## 7. Avoid adding sensitive data into git tracked env files
 
