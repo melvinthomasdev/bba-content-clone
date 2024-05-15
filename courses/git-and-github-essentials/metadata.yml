@@ -1,0 +1,12 @@
+---
+name: Git and GitHub Essentials
+subheading: Learn the basics of Git and GitHub
+slug: git-and-github-essentials
+published: false
+custom_data:
+  type: git
+  courseType: lesson
+  upcoming: true
+home_logo: git-and-github.png
+position: 29
+introduction: This lesson will guide you through the basics of Git and GitHub.
