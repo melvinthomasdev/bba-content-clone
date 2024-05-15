@@ -102,7 +102,7 @@ Now the tests should pass in all the runs.
 
 ## Introducing POMs
 
-If we observe the test for register, we see that the last five steps are the same as the steps in the login spec. We should try and uphold the Do not Repeat Yourself (DRY) convention as much as possible. This is where Page Objects Models come into play. Lets extract the logic for the login spec into a POM.
+If we observe the test for register, we see that the last five steps are the same as the steps in the login spec. We should try and uphold the Do not Repeat Yourself ([DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)) convention as much as possible. This is where Page Objects Models come into play. Lets extract the logic for the login spec into a POM.
 
 For this create a new directory called `poms` and add a `login.ts` file in it.
 

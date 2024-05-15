@@ -1,3 +1,6 @@
+This chapter is very long as compared to the rest. This is because we deal with some of the most important core concepts of Playwright here and all
+these concepts are dependent on each other. Please try to go through this chapter patiently and carefully.
+
 ## Adding tests for the tasks page
 
 Let's continue with our project and add the tests for the tasks page. In the tasks page we need to add the tests for the following operations.
@@ -216,13 +219,100 @@ test.describe("Tasks page", () => {
 });
 ```
 
-Now, if we look at the code, we are repeating the login step at the beginning of each test. Since DRY methodology prevents us from doing so, we can extract this to the `beforeEach` block. But all the tests except the login and register tests will want the login action to be performed before executing the rest of the tests. What will we do in that case? Repeating the login process in the `beforeEach` block before each test is also against the DRY convention. This is where global setup and teardown comes into play.
+Now, if we look at the code, we are repeating the login step at the beginning of each test. Since [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) methodology prevents us from doing so, we can extract this to the `beforeEach` block. But all the tests except the login and register tests will want the login action to be performed before executing the rest of the tests. What will we do in that case? Repeating the login process in the `beforeEach` block before each test is also against the DRY convention. This is where global setup and teardown comes into play.
 
 With the global setup, we can have the login test to be a dependency which executes before each test without having to specify them repeatedly. Global teardown helps us to do some cleanup functions after all the tests have been executed.
 
 ## Configuring global setup for the login action
 
 To configure the login action using global setup, we need to group our tests based on the need for login and and add the login spec as a dependency before executing each of them. Let's see what changes we need to make to the configuration file to execute the login test before the dependent tests.
+
+```ts
+// playwright.config.ts
+
+import { defineConfig, devices } from "@playwright/test";
+
+export default defineConfig({
+  testDir: "./e2e",
+  fullyParallel: true,
+  forbidOnly: !!process.env.CI,
+  retries: process.env.CI ? 2 : 0,
+  workers: process.env.CI ? 1 : undefined,
+  reporter: "html",
+  use: {
+    trace: "on-first-retry",
+  },
+
+  projects: [
+    {
+      name: "login",
+      use: { ...devices["Desktop Chrome"] },
+      testMatch: "**/login.spec.ts",
+    },
+    {
+      name: "Logged In tests",
+      use: { ...devices["Desktop Chrome"] },
+      dependencies: ["login"],
+      testMatch: "**/*.spec.ts",
+      testIgnore: "**/register.spec.ts",
+    },
+    {
+      name: "Logged out tests",
+      use: { ...devices["Desktop Chrome"] },
+      testMatch: "**/register.spec.ts",
+    },
+  ],
+});
+```
+
+Here's, what we have added in the configuration.
+
+1. A new project for the login spec.
+2. A new project for all the specs except the register spec and named it `Logged in tests` and added the login project as a dependency.
+3. A new project for the register spec and named it `Logged out tests`.
+
+What it does is that it makes sure that the dependent login spec runs before all the other specs are executed. Now we can remove the login steps from the tests in the `Logged in tests` project.
+
+## Configuring the Base URL
+
+Consider the granite application we are working with. We access the application by visiting the site `http://localhost:3000`.
+From here we can access the various pages of the application by visiting the various subdirectories of the URL. For example,
+visiting `http://localhost:3000/login` will allow us to access the login page and visiting `http://localhost:3000/signup` will allow us to access 
+the sign up page and we can see all the tasks by visiting `http://localhost:3000/tasks`.
+
+Now we can see a common pattern in all these URLs. They all start with `http://localhost:3000`. This is known as the **Base URL** of the
+application. All the other URLs of the site is derived from this base URL of the site. 
+
+Similar to many other frameworks, Playwright gives us the option to configure a base URL so that we use the relative paths to navigate to
+the different parts of the application. A relative path is the URL relative to the Base URL. This means we don't have to repeat the entire
+URL (absolute path) each time we want to navigate to a different part of an application. Let's see a few examples of absolute path versus 
+relative path in the granite application.
+
+<table>
+  <tr>
+    <td>Absolute path</td>
+    <td>Relative path (with http://localhost:3000 as the base URL)</td>
+  </tr>
+  <tr>
+    <td>http://localhost:3000</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td>http://localhost:3000/login</td>
+    <td>/login</td>
+  </tr>
+  <tr>
+    <td>http://localhost:3000/signup</td>
+    <td>/signup</td>
+  </tr>
+  <tr>
+    <td>http://localhost:3000/tasks</td>
+    <td>/tasks</td>
+  </tr>
+</table>
+
+From the table above its clear that configuring the base URL can improve our coding experience a lot and allows us to uphold the Do Not Repeat 
+Yourself (DRY) convention. Let's see how to set it up in Playwright. In our Playwright configuration, we need to add the baseURL in the use block.
 
 ```ts
 // playwright.config.ts
@@ -263,14 +353,12 @@ export default defineConfig({
 });
 ```
 
-Here's, what we have added in the configuration.
+Now we can replace all the instances of absolute paths in our tests with the relative paths.
 
-1. A `baseURL` so that we don't have to type in the full URL each time we use the `page.goto()` command.
-2. A new project for the login spec.
-3. A new project for all the specs except the register spec and named it `Logged in tests` and added the login project as a dependency.
-4. A new project for the register spec and named it `Logged out tests`.
+## Refactoring our tests with the changes in configuration
 
-What it does is that it makes sure that the dependent login spec runs before all the other specs are executed. Now let's remove the login steps from the `Logged in tests group`.
+Now that we have separated out the logic for logging into the application to a global setup, let's refactor
+our tasks tests.
 
 ```ts
 // tasks.spec.ts
@@ -284,13 +372,13 @@ test.describe("Tasks page", () => {
 
   test.beforeEach(() => {
     taskName = faker.word.words({ count: 5 });
+    await page.goto("/");
   });
 
   test("should create a new task with creator as the assignee", async ({
     page,
     taskPage,
   }) => {
-    await page.goto("/");
     await taskPage.createTaskAndVerify({ taskName });
   });
 
@@ -298,7 +386,6 @@ test.describe("Tasks page", () => {
     page,
     taskPage,
   }) => {
-    await page.goto("/");
     await taskPage.createTaskAndVerify({ taskName });
     await page
       .getByTestId("tasks-pending-table")
@@ -314,7 +401,10 @@ test.describe("Tasks page", () => {
 });
 ```
 
-We see that we have added in a `page.goto("/")` command instead of the login steps. This is necessary because each test in Playwright runs in its own page context(similar to a new tab on a browser). This means that each test doesn't know at which page, the previous test ended. The `page.goto("/")` command makes the page visit the baseURL at the beginning of the test. Note that we cannot extract this logic to a `beforeEach` block either since the `beforeEach` block also has different page context from the tests.
+We see that we have added in a `page.goto("/")` command instead of the login steps in the beforeEach block. This is necessary because each test in
+Playwright runs in its own page context(similar to a new tab on a browser). This means that each test doesn't know at which page, the previous test
+ended. The `page.goto("/")` command makes the page visit the baseURL at the beginning of the test. Note that we cannot extract this logic to a 
+`beforeEach` block either since the `beforeEach` block also has different page context from the tests.
 
 Now let's execute these tests.
 
@@ -322,30 +412,77 @@ Now let's execute these tests.
 yarn playwright test --headed
 ```
 
-We can observe that the login spec executed before the execution of the tasks spec. But all the tests except the login and register spec are failing, stuck at the login page. If the login spec was executed before the tests, why wasn't the user logged in before tasks specs?
+We can observe that the login spec was executed before the execution of the tasks spec. But all the tests except the login and register spec are
+failing, by being stuck at the login page. If the login spec was executed before the tests, why wasn't the user logged in before tasks specs?
 
 ## Adding a `storageState`
 
-The reason why the dependent tests were not logged in even though the login spec was executed before them, is again because of the exclusive page contexts per test. The user logged in during the login spec but that context is not available for the rest of the specs. So we need to find a way to share the context between specs. This is where we can use the `storageState` method provided by Playwright.
+The reason why the dependent tests were not logged in, even though the login spec was executed before them, is again due to the exclusive
+browser contexts.
 
-`storageState` saves the current session details from a page into a file. We can then use this stored details to restore the session before each test so that we can avoid logging in each time. For this, let's define the path where we want to save the storage state and configure it in our Playwright configuration.
+In most web applications, when a user logs in, the user's session details are stored inside the local storage or session storage or as cookies for
+the site in the browser. These are non-volatile and are persisted between sessions. This is why a user can log into an application once and access 
+the site in the future from the same browser without having to login again.
 
-Before doing this though, we will rename our `login.spec.ts` file into `login.setup.ts` because of two reason.
+In our Playwright script, the user is logged in during the login spec but that context is not available for the rest of the tests. This means the 
+session details are lost in between tests. To avoid this, we need to find a way to share the context between tests. This is where we can use the 
+`storageState` method provided by Playwright.
 
-1. Semantic reason: We're no longer just testing the application using the login spec, we're also setting up the base for all the tests that come after that.
-2. Technical reason: We have add the global pattern of `**/*.spec.ts` to our `Logged in tests` group and we should rename the login spec to exclude it from this group.
+`storageState` saves the current session details from a page into a file in the JSON format. The session details include the local storage, session 
+storage and the cookies available to the browser context at the point of calling the method. We can then use this stored details to restore the 
+session before each test so that we can avoid logging in each time. For this, let's define the path of the JSON file where we want to save the 
+storage state and configure it in our Playwright configuration.
+
+Before doing this though, we will rename our `login.spec.ts` file into `login.setup.ts` because of two reasons.
+
+1. Semantic reason: We're no longer just testing the application using the login spec, we're also setting up the base for the rest of the tests that 
+come after it.
+
+2. Technical reason: We have added the global pattern of `**/*.spec.ts` to our `Logged in tests` group and we should rename the login spec to 
+exclude it from this group.
+
+To rename the file execute the following command from the terminal.
 
 ```bash
 mv ./e2e/tests/login.spec.ts ./e2e/tests/login.setup.ts
 ```
 
-Now we can add the `storageState` to our Playwright configuration
+Now let's add the steps to save the session details into a JSON file in the `login.setup.ts` file.
+
+```ts
+// login.setup.ts
+
+import { STORAGE_STATE } from "../../playwright.config"; // STORAGE_STATE = "./auth/session.json"
+import { test } from "../fixtures";
+
+test.describe("Login page", () => {
+  test("should login with the correct credentials", async ({
+    page,
+    loginPage,
+  }) => {
+    await page.goto("http://localhost:3000");
+    await loginPage.loginAndVerifyUser({
+      email: "oliver@example.com",
+      password: "welcome",
+      username: "Oliver Smith",
+    });
+    await page.context().storageState({ path: STORAGE_STATE });
+  });
+});
+```
+
+By doing this change, we take the session details of the browser context after logging into the application and save it inside the file path 
+mentioned in the `STORAGE_STATE` constant. So all the local storage, session storage and cookies in the browser context after logging in are 
+saved inside the JSON file in the path `/playwright-tests/auth/session.json`.
+
+Now we can add the `storageState` configuration to our "Logged In tests" project inside the Playwright configuration.
 
 ```ts
 // playwright.config.ts
 
 import { defineConfig, devices } from "@playwright/test";
 
+/* This is the path to the JSON file where we want to store the session details. */
 export const STORAGE_STATE = "./auth/session.json";
 
 export default defineConfig({
@@ -382,29 +519,8 @@ export default defineConfig({
 });
 ```
 
-Now let's add the steps to save the session details into the `storageState` in the `login.setup.ts` file.
-
-```ts
-// login.setup.ts
-
-import { STORAGE_STATE } from "../../playwright.config";
-import { test } from "../fixtures";
-
-test.describe("Login page", () => {
-  test("should login with the correct credentials", async ({
-    page,
-    loginPage,
-  }) => {
-    await page.goto("http://localhost:3000");
-    await loginPage.loginAndVerifyUser({
-      email: "oliver@example.com",
-      password: "welcome",
-      username: "Oliver Smith",
-    });
-    await page.context().storageState({ path: STORAGE_STATE });
-  });
-});
-```
+This configuration change directs Playwright to restore the session details of the browser context with the details stored in the `session.json` 
+file for all the tests coming under the `Logged In tests` project.
 
 We can now execute the tests again.
 
