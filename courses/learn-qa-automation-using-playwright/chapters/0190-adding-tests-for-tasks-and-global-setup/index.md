@@ -430,10 +430,14 @@ session details are lost in between tests. To avoid this, we need to find a way 
 
 `storageState` saves the current session details from a page into a file in the JSON format. The session details include the local storage, session 
 storage and the cookies available to the browser context at the point of calling the method. We can then use this stored details to restore the 
-session before each test so that we can avoid logging in each time. For this, let's define the path of the JSON file where we want to save the 
-storage state and configure it in our Playwright configuration.
+session before each test so that we can avoid logging in each time. In our case let's save the session details in a file called called 
+`session.json` in the `auth` directory. To do this let's create a new directory called `auth` by executing the following command in the terminal.
 
-Before doing this though, we will rename our `login.spec.ts` file into `login.setup.ts` because of two reasons.
+```bash
+mkdir auth
+```
+
+Before continuing with the rest of the steps, we will rename our `login.spec.ts` file into `login.setup.ts` because of two reasons.
 
 1. Semantic reason: We're no longer just testing the application using the login spec, we're also setting up the base for the rest of the tests that 
 come after it.
@@ -447,7 +451,7 @@ To rename the file execute the following command from the terminal.
 mv ./e2e/tests/login.spec.ts ./e2e/tests/login.setup.ts
 ```
 
-Now let's add the steps to save the session details into a JSON file in the `login.setup.ts` file.
+Now let's add the steps to save the session details into a JSON file at the end of login tests.
 
 ```ts
 // login.setup.ts
@@ -616,7 +620,24 @@ yarn playwright test --headed
 
 All the tests should be passing and additionally, the `user/session.json` file should be deleted after all the tests were executed.
 
-Before we commit the changes, let's add the newly created `auth` directory into `.gitignore` file so that the changes made in the directory are not committed.
+## Why should we not commit the storage state file?
+
+We mentioned in the global teardown section that the `auth/session.json` file is unwanted and we even wrote the code to delete the file at the end of each test run. Why did we do that?
+
+There are two reasons for this:
+
+1. Committing the session.json file means that we are sharing our session details with someone else when collaborating with someone else. This
+won't work out in most cases since a person's login details are usually dependent on the system from which they were logged in.
+
+2. The contents inside the session.json file are sensitive data related to your login information. Sharing this by committing it into a collaborated
+git repository is a security concern.
+
+For the reasons mentioned above, we refrain from retaining the session details between runs. This is the reason why we configured the global teardown to delete the storage state files after each test run.
+
+But doing this will not always work. The global teardown is executed only once at the end of all the other tests. Due to this reason, if we interrupt
+the test execution in between, then the storage state files will be retained and  will have a high probability to get committed into our codebase. 
+To avoid this let's add the newly created `auth` directory into the `.gitignore` file so that the changes made in this directory are not tracked by 
+git.
 
 ```
 # .gitignore
