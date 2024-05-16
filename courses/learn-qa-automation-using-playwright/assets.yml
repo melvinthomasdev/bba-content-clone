@@ -11,4 +11,5 @@ images:
   - playwright-find-selector-using-devtools.png
   - playwright-granite-signup-page.png
   - playwright-granite-comments-section.png
+  - playwright-project-cluttered-dashboard.png
 databases: []

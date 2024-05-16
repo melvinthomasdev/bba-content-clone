@@ -59,6 +59,9 @@
 - slug: completing-the-tests-for-the-tasks-page
   name: Completing the tests for the tasks page
   has_pages: false
+- slug: importance-of-proper-cleanup-after-tests
+  name: Importance of proper cleanup after tests
+  has_pages: false
 - slug: best-practices
   name: Best practices
   has_pages: false
