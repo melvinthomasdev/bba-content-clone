@@ -1,3 +1,5 @@
 ---
 - name: Getting started
   slug: getting-started
+- name: What is git?
+  slug: what-is-git

@@ -7,6 +7,6 @@ custom_data:
   type: git
   courseType: lesson
   upcoming: true
-home_logo: git-and-github.png
+home_logo: git-and-github-logo.png
 position: 29
 introduction: This lesson will guide you through the basics of Git and GitHub.
