@@ -23,7 +23,7 @@ body elements.
   </ol>
 
   <a href="https://www.google.com>Link to Google</a>
-  <img src="https://images.unsplas.com/photo-1672078857105-a1229a7033b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" width = "300px" alt="a burger split in two"/>
+  <img src="https://images.unsplash.com/photo-1672078857105-a1229a7033b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" width = "300px" alt="a burger split in two"/>
 
   <li>Pizza</li>
   <li>Sandwich</li>
@@ -95,7 +95,7 @@ button[type="reset"] {
   </ol>
 
   <a href="https://www.google.com">Link to Google</a>
-  <img src="https://images.unsplas.com/photo-1672078857105-a1229a7033b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" width = "300px" alt="A burger split in two"/>
+  <img src="https://images.unsplash.com/photo-1672078857105-a1229a7033b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" width = "300px" alt="A burger split in two"/>
 
   <ol>
     <li>Pizza</li>
