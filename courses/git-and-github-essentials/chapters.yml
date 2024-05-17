@@ -3,3 +3,5 @@
   slug: getting-started
 - name: What is git?
   slug: what-is-git
+- name: Installing git
+  slug: installing-git
