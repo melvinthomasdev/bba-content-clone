@@ -1,0 +1,40 @@
+---
+- title: Iterables
+  slug: iterables
+  page_type: lesson
+- title: Spread Operator
+  slug: spread-operator
+  page_type: lesson
+- title: Challenge - Spread Operator
+  slug: challenge-spread-operator
+  page_type: exercise
+- title: Spread Operator and Arrays
+  slug: spread-operator-and-arrays
+  page_type: lesson
+- title: Challenge - Spread Operator and Arrays
+  slug: challenge-spread-operator-and-arrays
+  page_type: exercise
+- title: Spread Operator and Objects
+  slug: spread-operator-and-objects
+  page_type: lesson
+- title: Challenge - Spread Operator and Objects
+  slug: challenge-spread-operator-and-objects
+  page_type: exercise
+- title: Overriding Properties with Spread Operator
+  slug: overriding-properties-with-spread-operator
+  page_type: lesson
+- title: Challenge - Overriding Properties with Spread Operator
+  slug: challenge-overriding-properties-with-spread-operator
+  page_type: exercise
+- title: Use Spread Operator to Split Strings
+  slug: use-spread-operator-to-split-strings
+  page_type: lesson
+- title: Challenge - Use Spread Operator to Split Strings
+  slug: challenge-use-spread-operator-to-split-strings
+  page_type: exercise
+- title: Rest Parameter
+  slug: rest-parameter
+  page_type: lesson
+- title: Challenge - Rest Parameter
+  slug: challenge-rest-parameter
+  page_type: exercise

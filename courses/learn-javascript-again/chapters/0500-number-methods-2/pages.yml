@@ -1,0 +1,13 @@
+---
+- title: Shorten a number
+  slug: shorten-a-number
+  page_type: lesson
+- title: Challenge - Shorten a number
+  slug: challenge-shorten-a-number
+  page_type: exercise
+- title: Using parseInt with arguments
+  slug: parse-int-with-arguments
+  page_type: lesson
+- title: Challenge - Using parseInt with arguments
+  slug: challenge-parse-int-with-arguments
+  page_type: exercise

@@ -1,0 +1,73 @@
+---
+- title: Truthy and Falsy Values
+  slug: truthy-and-falsy-values
+  page_type: lesson
+- title: if Statement
+  slug: if-statement
+  page_type: lesson
+- title: Challenge - if Statement
+  slug: challenge-if-statement
+  page_type: exercise
+- title: Challenge 2 - if Statement
+  slug: challenge-2-if-statement
+  page_type: exercise
+- title: if statement condition
+  slug: if-statement-condition
+  page_type: lesson
+- title: Challenge - if statement condition
+  slug: challenge-if-statement-condition
+  page_type: exercise
+- title: Challenge 2 - if statement condition
+  slug: challenge-2-if-statement-condition
+  page_type: exercise
+- title: else statement
+  slug: else-statement
+  page_type: lesson
+- title: Challenge - else Statement
+  slug: challenge-else-statement
+  page_type: exercise
+- title: Challenge 2 - else Statement
+  slug: challenge-2-else-statement
+  page_type: exercise
+- title: else if Statement
+  slug: else-if-statement
+  page_type: lesson
+- title: Challenge - else if Statement
+  slug: challenge-else-if-statement
+  page_type: exercise
+- title: Challenge 2 - else if Statement
+  slug: challenge-2-else-if-statement
+  page_type: exercise
+- title: switch Statement
+  slug: switch-statement
+  page_type: lesson
+- title: Challenge - switch Statement
+  slug: challenge-switch-statement
+  page_type: exercise
+- title: Challenge 2 - switch Statement
+  slug: challenge-2-switch-statement
+  page_type: exercise
+- title: switch statement fall through method
+  slug: switch-statement-fall-through-method
+  page_type: lesson
+- title: Ternary Operator
+  slug: ternary-operator
+  page_type: lesson
+- title: Challenge - Ternary Operator
+  slug: challenge-ternary-operator
+  page_type: exercise
+- title: Challenge - Positive or Negative number
+  slug: challenge-positive-or-negative-number
+  page_type: exercise
+- title: Challenge - Find Maximum Number
+  slug: challenge-find-maximum-number
+  page_type: exercise
+- title: Assessment- Array methods and Conditionals Part 1
+  slug: assessment-array-methods-conditionals
+  page_type: exercise
+- title: Assessment- Array methods and Conditionals Part 2
+  slug: assessment-array-methods-conditionals-part-2
+  page_type: exercise
+- title: Assessment- Array methods and Conditionals Part 3
+  slug: assessment-array-methods-conditionals-part-3
+  page_type: exercise

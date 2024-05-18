@@ -1,0 +1,25 @@
+---
+- title: Are HTML and CSS enough
+  slug: are-html-and-css-enough
+  page_type: lesson
+- title: DOM
+  slug: dom
+  page_type: lesson
+- title: HTML Element - Object Representation
+  slug: html-element-object-representation
+  page_type: lesson
+- title: Challenge - HTML Element - Object Representation
+  slug: challenge-html-element-object-representation
+  page_type: exercise
+- title: DOM Tree
+  slug: dom-tree
+  page_type: lesson
+- title: DOM Methods and Properties
+  slug: dom-methods-and-properties
+  page_type: lesson
+- title: DOM Methods and Properties - Example
+  slug: dom-methods-and-properties-example
+  page_type: lesson
+- title: Document is the Root of the DOM Tree
+  slug: document-is-the-root-of-the-dom-tree
+  page_type: lesson

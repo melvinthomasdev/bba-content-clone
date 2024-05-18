@@ -1,0 +1,40 @@
+---
+- title: Avoid Mutation
+  slug: avoid-mutation
+  page_type: lesson
+- title: Mutating vs Reassigning
+  slug: mutating-vs-reassigning
+  page_type: lesson
+- title: Challenge - Avoid Mutation with `.sort()`
+  slug: challenge-avoid-mutation-with-sort
+  page_type: exercise
+- title: Challenge 2 - Avoid Mutation with `.sort()`
+  slug: challenge-2-avoid-mutation-with-sort
+  page_type: exercise
+- title: Challenge - Avoid Mutation While Removing Array Elements
+  slug: challenge-avoid-mutation-while-removing-array-elements
+  page_type: exercise
+- title: Challenge 2 - Avoid Mutation While Removing Array Elements
+  slug: challenge-2-avoid-mutation-while-removing-array-elements
+  page_type: exercise
+- title: Challenge - Avoid Mutation While Adding Array Elements
+  slug: challenge-avoid-mutation-while-adding-array-elements
+  page_type: exercise
+- title: Challenge 2 - Avoid Mutation While Adding Array Elements
+  slug: challenge-2-avoid-mutation-while-adding-array-elements
+  page_type: exercise
+- title: Challenge - Avoid Mutation While Updating an Array
+  slug: challenge-avoid-mutation-while-updating-an-array
+  page_type: exercise
+- title: Challenge 2 - Avoid Mutation While Updating an Array
+  slug: challenge-2-avoid-mutation-while-updating-an-array
+  page_type: exercise
+- title: Challenge - Avoid Mutation while Updating Properties
+  slug: challenge-avoid-mutation-while-updating-properties
+  page_type: exercise
+- title: Challenge 2 - Avoid Mutation while Updating Properties
+  slug: challenge-2-avoid-mutation-while-updating-properties
+  page_type: exercise
+- title: Assessment Mutation
+  slug: assessment-mutation
+  page_type: exercise

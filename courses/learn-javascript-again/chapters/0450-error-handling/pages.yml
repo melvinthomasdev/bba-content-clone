@@ -1,0 +1,37 @@
+---
+- title: Catch Errors Using try...catch
+  slug: try-catch
+  page_type: lesson
+- title: Challenge - Catch Errors Using try...catch
+  slug: challenge-error-handling-try-catch
+  page_type: exercise
+- title: Synchronous Working of try...catch
+  slug: synchronous-working-of-try-catch
+  page_type: lesson
+- title: Challenge - Synchronous Working of try...catch
+  slug: challenge-synchronous-working-of-try-catch
+  page_type: exercise
+- title: Error Object in try...catch
+  slug: error-object-in-try-catch
+  page_type: lesson
+- title: Challenge - Error Object in try...catch
+  slug: challenge-error-object-in-try-catch
+  page_type: exercise
+- title: The importance of `throw`
+  slug: throw
+  page_type: lesson
+- title: Challenge - The Importance of `throw`
+  slug: challenge-the-importance-of-throw
+  page_type: exercise
+- title: Rethrow Errors
+  slug: rethrow-errors
+  page_type: lesson
+- title: Challenge - Rethrow Errors
+  slug: challenge-rethrow-errors
+  page_type: exercise
+- title: Using try...catch...finally
+  slug: try-catch-finally
+  page_type: lesson
+- title: Challenge - Using try...catch...finally
+  slug: challenge-try-catch-finally
+  page_type: exercise

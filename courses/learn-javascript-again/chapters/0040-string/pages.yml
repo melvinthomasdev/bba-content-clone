@@ -1,0 +1,46 @@
+---
+- title: Create String
+  slug: create-string
+  page_type: lesson
+- title: Challenge - Create String
+  slug: challenge-create-string
+  page_type: exercise
+- title: Challenge 2 - Create string
+  slug: challenge-2-create-string
+  page_type: exercise
+- title: Joining Strings
+  slug: joining-strings
+  page_type: lesson
+- title: Challenge - Joining Strings
+  slug: challenge-joining-strings
+  page_type: exercise
+- title: Challenge 2 - Joining Strings
+  slug: challenge-2-joining-strings
+  page_type: exercise
+- title: Template Strings
+  slug: template-strings
+  page_type: lesson
+- title: Challenge - Template Strings
+  slug: challenge-template-strings
+  page_type: exercise
+- title: Challenge 2 - Template Strings
+  slug: challenge-2-template-strings
+  page_type: exercise
+- title: String Interpolation
+  slug: string-interpolation
+  page_type: lesson
+- title: Challenge - String Interpolation
+  slug: challenge-string-interpolation
+  page_type: exercise
+- title: Challenge 2 - String Interpolation
+  slug: challenge-2-string-interpolation
+  page_type: exercise
+- title: Multi-line Template Strings
+  slug: multiline-template-strings
+  page_type: lesson
+- title: Challenge - Multi-line Template Strings
+  slug: challenge-multiline-template-strings
+  page_type: exercise
+- title: Challenge 2 - Multi-line Template Strings
+  slug: challenge-2-multiline-template-strings
+  page_type: exercise

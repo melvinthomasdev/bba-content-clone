@@ -1,0 +1,127 @@
+---
+- title: About
+  slug: about-comprehensive-challenge
+  page_type: lesson
+- title: Find Positive Numbers
+  slug: find-positive-numbers-js
+  page_type: assessment
+- title: Calculate Grade
+  slug: calculate-grade-js
+  page_type: assessment
+- title: Build Pizza Price Calculator
+  slug: build-pizza-price-calculator-js
+  page_type: assessment
+- title: Greetings
+  slug: greetings-js
+  page_type: assessment
+- title: Addition in Array
+  slug: addition-in-array-js
+  page_type: assessment
+- title: Find Sum of First and Last Elements of an Array
+  slug: sum-first-last-array
+  page_type: assessment
+- title: Get Full Name
+  slug: get-full-name
+  page_type: assessment
+- title: Add Two Numbers
+  slug: add-two-numbers
+  page_type: assessment
+- title: Convert Celsius to Fahrenheit
+  slug: celsius-to-fahrenheit
+  page_type: assessment
+- title: Check the Numbers and Add
+  slug: check-the-numbers-and-add
+  page_type: assessment
+- title: Increment a Number and Divide It
+  slug: increment-a-number-and-divide-it
+  page_type: assessment
+- title: Product of two Numbers
+  slug: product-of-two-numbers
+  page_type: assessment
+- title: Pass or Fail
+  slug: pass-or-fail
+  page_type: assessment
+- title: Check Whether the Number is Divisible by 6
+  slug: check-whether-number-is-divisible-by-6
+  page_type: assessment
+- title: Get a Property From an Object
+  slug: get-property-from-object
+  page_type: assessment
+- title: Assign Non-Empty Value to Object Key
+  slug: assign-value-to-key-if-empty
+  page_type: assessment
+- title: Create an Empty Array With Length > 0
+  slug: empty-array-with-length-greater-than-0
+  page_type: assessment
+- title: Adding Suffixes
+  slug: adding-suffixes
+  page_type: assessment
+- title: Split an Array Into Odd and Even Chunks
+  slug: split-an-array-into-odd-and-even-chunks
+  page_type: assessment
+- title: Check Ice Cream Price
+  slug: check-ice-cream-price
+  page_type: assessment
+- title: Find Day of the Week
+  slug: find-day-of-the-week
+  page_type: assessment
+- title: Calculating gift coupons
+  slug: calculating-gift-coupons
+  page_type: assessment
+- title: Check NOT Divisible
+  slug: check-not-divisible
+  page_type: assessment
+- title: Setting Preferred Language
+  slug: setting-preferred-language
+  page_type: assessment
+- title: Sum of Elements of Array
+  slug: sum-of-elements-of-array
+  page_type: assessment
+- title: Array of Squared Numbers
+  slug: array-of-squared-numbers
+  page_type: assessment
+- title: Extract Positives Numbers
+  slug: extract-positives-numbers
+  page_type: assessment
+- title: Find second largest value in Array
+  slug: find-second-largest-value-in-array
+  page_type: assessment
+- title: Calculate Total Price After Discount
+  slug: calculate-total-price-after-discount
+  page_type: assessment
+- title: Check Book Availability
+  slug: check-book-availability
+  page_type: assessment
+- title: Check Equal to 100
+  slug: check-equal
+  page_type: assessment
+- title: Count Substrings with Exactly K Distinct Characters
+  slug: count-number-of-substrings
+  page_type: assessment
+- title: Count duplicate characters
+  slug: count-duplicate-characters
+  page_type: assessment
+- title: Find unique elements from two arrays
+  slug: find-unique-elements-from-two-array
+  page_type: assessment
+- title: Count the number of arrays inside an array
+  slug: count-number-of-arrays-inside-an-array
+  page_type: assessment
+- title: Find the key with the max value in the object
+  slug: find-key-with-max-value-in-object
+  page_type: assessment
+- title: Convert an object to the query string
+  slug: convert-object-to-query-string
+  page_type: assessment
+- title: Convert camel case to snake case
+  slug: convert-camel-case-to-snake-case
+  page_type: assessment
+- title: Find the first matching item from an array of objects
+  slug: find-first-matching-item
+  page_type: assessment
+- title: Anagram Checker
+  slug: anagram-checker
+  page_type: assessment
+- title: Cumulative Sum Array Generator
+  slug: cumulative-sum
+  page_type: assessment

@@ -1,0 +1,82 @@
+---
+- title: Get Index of an Element
+  slug: indexof-and-lastindexof
+  page_type: lesson
+- title: Challenge - Get Index of an Element
+  slug: challenge-indexof
+  page_type: exercise
+- title: Challenge - Get Index of an Element
+  slug: challenge-lastindexof
+  page_type: exercise
+- title: Check for Inclusion of an Element
+  slug: includes
+  page_type: lesson
+- title: Challenge - Search for an element
+  slug: challenge-includes
+  page_type: exercise
+- title: Slice an Array
+  slug: slice
+  page_type: lesson
+- title: Challenge - Copy a Portion of an Array
+  slug: challenge-slice-1
+  page_type: exercise
+- title: Challenge - Copy a Portion of an Array
+  slug: challenge-slice-2
+  page_type: exercise
+- title: Modify an Array
+  slug: splice
+  page_type: lesson
+- title: Challenge - Modify an Array
+  slug: challenge-splice
+  page_type: exercise
+- title: Concatenate Elements Into New Array
+  slug: concat
+  page_type: lesson
+- title: Challenge - Copy Elements Into New Array
+  slug: challenge-concat
+  page_type: exercise
+- title: Join all Elements
+  slug: join
+  page_type: lesson
+- title: Challenge - Join all Elements
+  slug: challenge-join
+  page_type: exercise
+- title: Find element of an Array
+  slug: find
+  page_type: lesson
+- title: Challenge - Find element of an Array
+  slug: challenge-find
+  page_type: exercise
+- title: Sort the Array
+  slug: sort
+  page_type: lesson
+- title: Challenge - Sort the Array
+  slug: challenge-sort
+  page_type: exercise
+- title: Check a condition for Every Element in Array
+  slug: check-condition-for-every-element-in-array
+  page_type: lesson
+- title: Challenge - Check if all number in Array are positive
+  slug: challenge-check-all-numbers-in-array-are-positive
+  page_type: exercise
+- title: Challenge - Validate Student Information
+  slug: challenge-validate-student-information
+  page_type: exercise
+- title: Reduce an Array into a Single Value
+  slug: reduce
+  page_type: lesson
+- title: Challenge - Execute a Function and Get a Single Value
+  slug: challenge-reduce
+  page_type: exercise
+- title: Check if any Array Element Meets given Condition
+  slug: check-if-any-array-element-meets-given-condition
+  page_type: lesson
+- title: Challenge - Checking for Positive Numbers
+  slug: challenge-checking-for-positive-numbers
+  page_type: exercise
+- title: Challenge - Checking duplicates
+  slug: challenge-checking-duplicates
+  page_type: exercise
+- title: Usage of Underscore in Functions
+  slug: usage-of-underscore
+  page_type: lesson

@@ -1,0 +1,19 @@
+---
+- title: Open in neetoCode
+  slug: open-in-neeto-code
+  page_type: lesson
+- title: Show Message in console
+  slug: console
+  page_type: lesson
+- title: Challenge 1 - Show Message in console
+  slug: challenge-1-console
+  page_type: exercise
+- title: Challenge 2 - Show Message in console
+  slug: challenge-2-console
+  page_type: exercise
+- title: Console - Logging multiple values
+  slug: console-logging-multiple-values
+  page_type: lesson
+- title: Challenge - Logging multiple values
+  slug: challenge-logging-multiple-values
+  page_type: exercise

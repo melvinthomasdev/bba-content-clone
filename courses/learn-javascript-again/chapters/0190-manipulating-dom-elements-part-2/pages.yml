@@ -1,0 +1,52 @@
+---
+- title: Creating Elements Using CreateElement
+  slug: creating-html-elements-using-createelement
+  page_type: lesson
+- title: Challenge - Creating Elements Using CreateElement
+  slug: challenge-creating-html-elements-using-createelement
+  page_type: exercise
+- title: Append HTML Element
+  slug: append-html-element
+  page_type: lesson
+- title: Challenge - Append HTML Element
+  slug: challenge-append-html-element
+  page_type: exercise
+- title: Challenge - Append HTML Element
+  slug: challenge-append-html-element-2
+  page_type: exercise
+- title: Insert HTML Element Using InsertBefore
+  slug: insert-html-element-using-insertbefore
+  page_type: lesson
+- title: Challenge - Insert HTML Element Using InsertBefore
+  slug: challenge-insert-html-element-using-insertbefore
+  page_type: exercise
+- title: Remove HTML Element
+  slug: remove-html-element
+  page_type: lesson
+- title: Challenge - Remove HTML Element
+  slug: challenge-remove-html-element
+  page_type: exercise
+- title: Changing Page Styles
+  slug: changing-page-styles
+  page_type: lesson
+- title: Challenge - Changing Page Styles
+  slug: challenge-changing-page-styles
+  page_type: exercise
+- title: Changing Multiple Page Styles
+  slug: changing-multiple-page-styles
+  page_type: lesson
+- title: Challenge - Changing Multiple Page Styles
+  slug: challenge-changing-multiple-page-styles
+  page_type: exercise
+- title: Get Attributes for an Element
+  slug: get-attributes-for-an-element
+  page_type: lesson
+- title: Challenge - Get Attributes for an Element
+  slug: challenge-get-attributes-for-an-element
+  page_type: exercise
+- title: Set Attributes for an Element
+  slug: set-attributes-for-an-element
+  page_type: lesson
+- title: Challenge - Set Attributes for an Element
+  slug: challenge-set-attributes-for-an-element
+  page_type: exercise

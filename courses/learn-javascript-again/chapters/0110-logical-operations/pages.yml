@@ -1,0 +1,43 @@
+---
+- title: OR
+  slug: logical-or
+  page_type: lesson
+- title: Example - OR
+  slug: example-logical-or
+  page_type: lesson
+- title: Challenge - OR
+  slug: challenge-logical-or
+  page_type: exercise
+- title: Challenge 2 - OR
+  slug: challenge-2-logical-or
+  page_type: exercise
+- title: AND
+  slug: logical-and
+  page_type: lesson
+- title: Challenge - AND
+  slug: challenge-logical-and
+  page_type: exercise
+- title: Challenge 2 - AND
+  slug: challenge-2-logical-and
+  page_type: exercise
+- title: Comprehensive Challenge - Logical operations (AND/OR)
+  slug: comprehensive-challenge-logical-operations-and-or
+  page_type: exercise
+- title: NOT
+  slug: logical-not
+  page_type: lesson
+- title: Challenge - NOT
+  slug: challenge-logical-not
+  page_type: exercise
+- title: Challenge 2 - NOT
+  slug: challenge-2-logical-not
+  page_type: exercise
+- title: NOT vs Inequality Operators
+  slug: logical-not-vs-inequality
+  page_type: lesson
+- title: Nullish Coalescing Operator
+  slug: nullish-coalescing-operator
+  page_type: lesson
+- title: Challenge - Nullish Coalescing Operator
+  slug: challenge-nullish-coalescing-operator
+  page_type: exercise

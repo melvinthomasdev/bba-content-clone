@@ -1,0 +1,31 @@
+---
+- title: Shallow Copy
+  slug: shallow-copy
+  page_type: lesson
+- title: Challenge - Shallow Copy
+  slug: challenge-shallow-copy
+  page_type: exercise
+- title: Comparing Objects
+  slug: comparing-objects
+  page_type: lesson
+- title: Challenge - Comparing Objects
+  slug: challenge-comparing-objects
+  page_type: exercise
+- title: Deep Copy
+  slug: deep-copy
+  page_type: lesson
+- title: Challenge - Deep Copy
+  slug: challenge-deep-copy
+  page_type: exercise
+- title: Copy Nested Objects
+  slug: copy-nested-objects
+  page_type: lesson
+- title: Challenge - Copy Nested Objects
+  slug: challenge-copy-nested-objects
+  page_type: exercise
+- title: Structured Clone
+  slug: structured-clone
+  page_type: lesson
+- title: Challenge - Structured Clone
+  slug: challenge-structured-clone
+  page_type: exercise

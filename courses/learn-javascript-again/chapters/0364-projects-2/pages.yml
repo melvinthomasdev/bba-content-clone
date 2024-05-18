@@ -1,0 +1,11 @@
+---
+- title: Currency Converter
+  slug: currency-converter
+  page_type: lesson
+- title: Password Generator
+  slug: password-generator
+  page_type: lesson
+- title: News Explorer
+  slug: news-explorer
+  page_type: lesson
+

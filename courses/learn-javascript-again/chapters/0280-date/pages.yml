@@ -1,0 +1,37 @@
+---
+- title: Date Object
+  slug: date-object
+  page_type: lesson
+- title: Challenge - Date Object
+  slug: challenge-date-object
+  page_type: exercise
+- title: Challenge 2 - Date Object
+  slug: challenge-2-date-object
+  page_type: exercise
+- title: Convert Date into String
+  slug: convert-date-into-string
+  page_type: lesson
+- title: Challenge - Convert Date into String
+  slug: challenge-convert-date-into-string
+  page_type: exercise
+- title: Challenge 2 - Convert Date into String
+  slug: challenge-2-convert-date-into-string
+  page_type: exercise
+- title: Get Time Values
+  slug: get-time-values
+  page_type: lesson
+- title: Challenge - Get Time Values
+  slug: challenge-get-time-values
+  page_type: exercise
+- title: Challenge 2 - Get Time Values
+  slug: challenge-2-get-time-values
+  page_type: exercise
+- title: Set Time Values
+  slug: set-time-values
+  page_type: lesson
+- title: Challenge - Set Time Values
+  slug: challenge-set-time-values
+  page_type: exercise
+- title: Challenge 2 - Set Time Values
+  slug: challenge-2-set-time-values
+  page_type: exercise

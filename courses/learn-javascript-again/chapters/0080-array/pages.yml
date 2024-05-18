@@ -1,0 +1,49 @@
+---
+- title: Create Array
+  slug: create-array
+  page_type: lesson
+- title: Challenge - Create Array
+  slug: challenge-create-array
+  page_type: exercise
+- title: Challenge 2 - Create Array
+  page_type: exercise
+  slug: challenge-2-create-array
+- title: Reading from Array
+  slug: reading-from-array
+  page_type: lesson
+- title: Challenge - Reading from Array
+  slug: challenge-reading-from-array
+  page_type: exercise
+- title: Challenge 2 - Reading from Array
+  slug: challenge-2-reading-from-array
+  page_type: exercise
+- title: Adding to Array
+  slug: adding-to-array
+  page_type: lesson
+- title: Challenge - Adding to Array
+  slug: challenge-adding-to-array
+  page_type: exercise
+- title: Challenge 2 - Adding to Array
+  slug: challenge-2-adding-to-array
+  page_type: exercise
+- title: Updating Array Element
+  slug: updating-array-element
+  page_type: lesson
+- title: Challenge - Updating Array Element
+  slug: challenge-updating-array-element
+  page_type: exercise
+- title: Challenge 2 - Updating Array Element
+  slug: challenge-2-updating-array-element
+  page_type: exercise
+- title: Array Indexes
+  slug: array-indexes
+  page_type: lesson
+- title: Mixing Different Data Types in Array
+  slug: mixing-different-data-types-in-array
+  page_type: lesson
+- title: Array Naming Conventions
+  slug: array-naming-conventions
+  page_type: lesson
+- title: Assessment - Object and Array
+  slug: assessment-object-array
+  page_type: exercise

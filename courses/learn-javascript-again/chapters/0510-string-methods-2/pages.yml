@@ -1,0 +1,13 @@
+---
+- title: Joining Strings Using concat
+  slug: joining-strings-using-concat
+  page_type: lesson
+- title: Challenge - Joining Strings Using concat
+  slug: challenge-joining-strings-using-concat
+  page_type: exercise
+- title: charAt method
+  slug: char-at-method
+  page_type: lesson
+- title: Challenge - charAt method
+  slug: challenge-char-at-method
+  page_type: exercise

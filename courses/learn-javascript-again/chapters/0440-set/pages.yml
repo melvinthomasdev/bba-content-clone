@@ -1,0 +1,37 @@
+---
+- title: Creating a Set
+  slug: creating-a-set
+  page_type: lesson
+- title: Challenge - Creating a Set
+  slug: challenge-creating-a-set
+  page_type: exercise
+- title: Adding Values to Set
+  slug: adding-values-to-set
+  page_type: lesson
+- title: Challenge - Adding Values to a Set
+  slug: challenge-adding-values-to-a-set
+  page_type: exercise
+- title: Checking if Value Exists in Set
+  slug: checking-if-value-exists-in-set
+  page_type: lesson
+- title: Challenge - Checking if Value Exists in Set
+  slug: challenge-checking-if-value-exists-in-set
+  page_type: exercise
+- title: Checking Number of Elements in Set
+  slug: checking-number-of-elements-in-set
+  page_type: lesson
+- title: Challenge - size property
+  slug: challenge-set-size
+  page_type: exercise
+- title: Deleting Values From a Set
+  slug: deleting-values-from-a-set
+  page_type: lesson
+- title: Challenge - Deleting Values From a Set
+  slug: challenge-deleting-values-from-a-set
+  page_type: exercise
+- title: Deleting All Values From a Set
+  slug: deleting-all-values-from-a-set
+  page_type: lesson
+- title: Challenge - Deleting All Values From a Set
+  slug: challenge-deleting-all-values-from-a-set
+  page_type: exercise
