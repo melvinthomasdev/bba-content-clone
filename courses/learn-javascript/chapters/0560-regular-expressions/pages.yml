@@ -68,3 +68,12 @@
 - title: Challenge - Matching any Character
   slug: challenge-matching-any-character
   page_type: exercise
+- title: Matching Digits
+  slug: matching-digits
+  page_type: lesson
+- title: Challenge - Matching Digits in a string
+  slug: challenge-matching-digits-in-a-string
+  page_type: exercise
+- title: Challenge 2 - Matching Digits in a string
+  slug: challenge-2-matching-digits-in-a-string
+  page_type: exercise
