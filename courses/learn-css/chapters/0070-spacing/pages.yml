@@ -50,6 +50,9 @@
 - title: Challenge 2 - Auto Margins with Width
   slug: challenge-2-auto-margins-with-width
   page_type: exercise
+- title: Margin collapse
+  slug: margin-collapse
+  page_type: lesson
 - title: Padding
   slug: padding
   page_type: lesson
