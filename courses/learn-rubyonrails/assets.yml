@@ -76,4 +76,5 @@ images:
   - withdraw-without-lock.png
   - withdraw-with-optimistic-lock.png
   - withdraw-with-pessimistic-lock.png
+  - learn-ruby-on-rails-certificate.png
 databases: []

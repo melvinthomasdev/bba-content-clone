@@ -6,6 +6,7 @@ images:
 - courses-table.png
 - students-ID-table.png
 - relationship-table.png
+- learn-sql-certificate.png
 databases:
 - students1.db
 - clean-slate.db

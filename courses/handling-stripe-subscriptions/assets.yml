@@ -50,4 +50,5 @@ images:
 - stripe-developer-digest-newsletter.png
 - create-payment-link.png
 - customize-payment-link.png
+- handling-stripe-subscriptions-certificate.png
 databases: []

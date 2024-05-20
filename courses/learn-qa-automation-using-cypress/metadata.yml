@@ -10,3 +10,23 @@ home_logo: qa-automation-using-cypress-logo.png
 logo: qa-automation-using-cypress-logo.png
 show_reset_button: false
 position: 27
+certificate_configuration:
+  enabled: true
+  share_text: "I am excited to share that I've completed the {{course_name}} course by Bigbinary Academy. Here is a link to my course completion certificate. {{certificate_url}}\n\nThe course structure made me practice coding a lot. The emphasis on learning to code by actually coding for every concept was very helpful.\n\n I'd recommend the course for anyone looking for a place to practice coding while also learning.\n\nTake this course here: {{course_url}}\nExplore other courses here: {{home_url}}\n\n#BigbinaryAcademy"
+  share_image_title: "Course completion certificate - Bigbinary Academy"
+  template: learn-qa-automation-using-cypress-certificate.png
+  design_data:
+    - fill: "#212121"
+      font: SF-Pro-Display-Bold
+      method: consumer_name
+      pointsize: 48
+      coordinates:
+        x: 160
+        y: 600
+    - fill: "#989898"
+      font: SF-Pro-Display-Semibold
+      method: current_date
+      pointsize: 28
+      coordinates:
+        x: 1640
+        y: 1144
