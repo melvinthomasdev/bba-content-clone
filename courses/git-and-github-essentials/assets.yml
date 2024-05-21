@@ -2,4 +2,6 @@
 images:
   - git-and-github-logo.png
   - git-basic-workflow.png
+  - git-branches.png
+  - git-branch-command.png
 databases: []

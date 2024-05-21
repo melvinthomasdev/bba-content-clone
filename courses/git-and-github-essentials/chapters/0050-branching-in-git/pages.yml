@@ -1,0 +1,25 @@
+---
+- title: What is branching?
+  slug: what-is-branching
+  page_type: lesson
+- title: Create and switch branches
+  slug: create-and-switch-branches
+  page_type: lesson
+- title: Exercise - create branches
+  slug: exercise-create-branches
+  page_type: exercise
+- title: Exercise - switch branches
+  slug: exercise-switch-branches
+  page_type: exercise
+- title: Renaming branches
+  slug: renaming-branches
+  page_type: lesson
+- title: Exercise - renaming branches
+  slug: exercise-renaming-branches
+  page_type: exercise
+- title: Deleting branches
+  slug: deleting-branches
+  page_type: lesson
+- title: Exercise - deleting branches
+  slug: exercise-deleting-branches
+  page_type: exercise

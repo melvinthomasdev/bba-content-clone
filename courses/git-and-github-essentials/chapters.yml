@@ -7,3 +7,5 @@
   slug: installing-git
 - name: Initializing git
   slug: initializing-git
+- name: Branching in git
+  slug: branching-in-git
