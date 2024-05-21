@@ -12,5 +12,7 @@ images:
   - playwright-granite-signup-page.png
   - playwright-granite-comments-section.png
   - playwright-project-cluttered-dashboard.png
+  - playwright-button-with-dom-structure.png
+  - playwright-button-with-dom-structure-without-test-id.png
   - learn-qa-automation-using-playwright-certificate.png
 databases: []

@@ -65,6 +65,9 @@
 - slug: best-practices
   name: Best practices
   has_pages: false
+- slug: selectors-texts-and-locators
+  name: Selectors, Texts and Locators
+  has_pages: false
 - slug: automating-the-comments-feature
   name: Automating the comments feature
   has_pages: false
