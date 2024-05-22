@@ -12,6 +12,7 @@ show_reset_button: false
 position: 24
 certificate_configuration:
   enabled: true
+  message: This is a self issued certificate. Bigbinary Academy is not conducting any test before issuing. You are here to learn so you should have strong morals to post this certificate to the public only when you have finished the course.
   share_text: "I am excited to share that I've completed the {{course_name}} course by Bigbinary Academy. Here is a link to my course completion certificate. {{certificate_url}}\n\nThe course structure made me practice coding a lot. The emphasis on learning to code by actually coding for every concept was very helpful.\n\n I'd recommend the course for anyone looking for a place to practice coding while also learning.\n\nTake this course here: {{course_url}}\nExplore other courses here: {{home_url}}\n\n#BigbinaryAcademy"
   share_image_title: "Course completion certificate - Bigbinary Academy"
   template: handling-stripe-subscriptions-certificate.png
