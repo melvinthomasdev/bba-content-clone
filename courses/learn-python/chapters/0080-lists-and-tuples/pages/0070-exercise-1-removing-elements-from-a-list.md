@@ -4,7 +4,7 @@ Help Chef Roberto by removing `carrot` from the List variable `ingredients`.
 
 <codeblock language="python" type="exercise" testMode="fixedInput">
 <code>
-# Append the string `tomato` to the `ingredients`
+# Remove the string `carrot` from the list `ingredients`
 ingredients = ["spaghetti", "onions", "spinach", "carrot"]
 </code>
 
