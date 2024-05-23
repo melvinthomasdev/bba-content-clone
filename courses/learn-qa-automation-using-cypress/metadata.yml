@@ -6,8 +6,8 @@ published: true
 custom_data:
   type: misc
   courseType: lesson
-home_logo: qa-automation-using-cypress-logo.png
-logo: qa-automation-using-cypress-logo.png
+home_logo: qa-automation-using-cypress-header-image.png
+logo: qa-automation-using-cypress.png
 show_reset_button: false
 position: 27
 certificate_configuration:

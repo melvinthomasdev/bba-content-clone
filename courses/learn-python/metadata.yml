@@ -9,8 +9,8 @@ custom_data:
   upcoming: false
   newCourse: true
   courseColor: border-gray-600
-home_logo: python.svg
-logo: python-header-image.png
+home_logo: python-header-image.png
+logo: python.png
 position: 21
 certificate_configuration:
   enabled: true

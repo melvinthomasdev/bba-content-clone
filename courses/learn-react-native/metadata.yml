@@ -6,8 +6,8 @@ published: true
 custom_data:
   type: misc
   courseType: lesson
-home_logo: learn-react-native.png
-logo: learn-react-native.png
+home_logo: reactjs-header-image.png
+logo: react.png
 show_reset_button: false
 position: 28
 certificate_configuration:

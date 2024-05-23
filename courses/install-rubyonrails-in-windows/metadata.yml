@@ -6,7 +6,8 @@ published: true
 custom_data:
   type: misc
   courseType: lesson
-home_logo: ruby-on-rails.svg
+home_logo: ruby-on-rails-header-image.png
+logo: ruby-on-rails.png
 position: 23
 introduction: This lesson will guide you through the process of installing Ruby on Rails on a Windows machine.
 certificate_configuration:

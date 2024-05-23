@@ -1,13 +1,13 @@
 ---
 images:
-- ruby.svg
-- ruby-header-image.png
-- basket.jpg
-- ball.jpg
-- america.jpg
-- inheritance.png
-- classes.png
-- inheritance_example_2.png
-- open-neeto-code.png
-- learn-ruby-certificate.png
+  - ruby.png
+  - ruby-header-image.png
+  - basket.jpg
+  - ball.jpg
+  - america.jpg
+  - inheritance.png
+  - classes.png
+  - inheritance_example_2.png
+  - open-neeto-code.png
+  - learn-ruby-certificate.png
 databases: []

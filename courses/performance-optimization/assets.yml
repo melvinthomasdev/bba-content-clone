@@ -1,12 +1,13 @@
 ---
 images:
-- performance-optimization.png
-- SymbolProc-vs-blocks.png
-- active-support-memoizable.png
-- caching-data-class-vars.png
-- caching-data-instance-vars.png
-- constants-for-db-data.png
-- find_each-vs-each.png
-- general-caching-practice-example.png
-- overload-vs-push-benchmark.png
-- performance-optimization-certificate.png
+  - performance-optimization.png
+  - performance-optimization-header-image.png
+  - SymbolProc-vs-blocks.png
+  - active-support-memoizable.png
+  - caching-data-class-vars.png
+  - caching-data-instance-vars.png
+  - constants-for-db-data.png
+  - find_each-vs-each.png
+  - general-caching-practice-example.png
+  - overload-vs-push-benchmark.png
+  - performance-optimization-certificate.png

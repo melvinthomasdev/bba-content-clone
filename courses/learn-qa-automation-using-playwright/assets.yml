@@ -1,6 +1,7 @@
 ---
 images:
-  - qa-automation-using-playwright-logo.png
+  - qa-automation-using-playwright.png
+  - qa-automation-using-playwright-header-image.png
   - playwright-ui-mode.png
   - playwright-debug-mode.png
   - playwright-headless-mode.png

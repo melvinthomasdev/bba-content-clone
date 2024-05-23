@@ -9,8 +9,8 @@ custom_data:
   upcoming: false
   newCourse: false
   courseColor: border-gray-600
-home_logo: ruby.svg
-logo: ruby-header-image.png
+home_logo: ruby-header-image.png
+logo: ruby.png
 position: 17
 introduction: Join this course to learn the fundamentals of this beginner-friendly language. Start with understanding topics like Arrays, Hashes and Symbols and reach topics like Enumerables, Modules and Singletons in the same course. 💎
 certificate_configuration:

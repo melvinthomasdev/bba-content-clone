@@ -1,5 +1,6 @@
 ---
 images:
-- ramda-logo.svg
-- learn-ramdajs-certificate.png
+  - ramda-header-image.png
+  - ramda.png
+  - learn-ramdajs-certificate.png
 databases: []

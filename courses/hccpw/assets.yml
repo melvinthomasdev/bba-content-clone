@@ -1,9 +1,10 @@
 ---
 images:
-- how-credit-card-processing-works.png
-- credit-card-processor.jpg
-- interchange-plus-1.jpg
-- interchange-plus-2.jpg
-- braintree.jpg
-- how-credit-card-processing-works-certificate.png
+  - how-credit-card-processing-works.png
+  - how-credit-card-processing-works-header-image.png
+  - credit-card-processor.jpg
+  - interchange-plus-1.jpg
+  - interchange-plus-2.jpg
+  - braintree.jpg
+  - how-credit-card-processing-works-certificate.png
 databases: []

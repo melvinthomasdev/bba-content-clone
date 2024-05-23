@@ -9,7 +9,7 @@ custom_data:
   upcoming: false
   newCourse: false
   courseColor: border-gray-600
-home_logo: css.svg
+home_logo: css.png
 logo: css-header-image.png
 chapter_completion_image: celebration_css.gif
 position: 5

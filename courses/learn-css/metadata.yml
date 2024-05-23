@@ -9,8 +9,8 @@ custom_data:
   upcoming: false
   newCourse: false
   courseColor: border-gray-600
-home_logo: css.svg
-logo: css-header-image.png
+home_logo: css-header-image.png
+logo: css.png
 chapter_completion_image: celebration_css.gif
 position: 193
 introduction: In this course, you'll learn how to add styles to your HTML pages to make them presentable. From colors and fonts to positions and formatting, you'll have the tools to create stylish websites. 🎉

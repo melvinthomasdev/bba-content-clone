@@ -9,8 +9,8 @@ custom_data:
   upcoming: false
   newCourse: true
   courseColor: border-gray-600
-home_logo: ramda-logo.svg
-logo: ramda-logo.svg
+home_logo: ramda-header-image.png
+logo: ramda.png
 position: 22
 certificate_configuration:
   enabled: true

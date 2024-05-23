@@ -1,6 +1,7 @@
 ---
 images:
-  - qa-automation-using-cypress-logo.png
+  - qa-automation-using-cypress.png
+  - qa-automation-using-cypress-header-image.png
   - cypress-test-window.png
   - custom-commands-functional.png
   - use-visible-instead-of-exist.png

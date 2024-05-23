@@ -9,8 +9,8 @@ custom_data:
   upcoming: false
   newCourse: false
   courseColor: border-gray-600
-home_logo: javascript.svg
-logo: javascript-header-image.png
+home_logo: javascript-header-image.png
+logo: javascript.png
 chapter_completion_image: celebration_javascript.gif
 position: 100
 introduction: In this course, you'll dive into the fundamentals and learn how to create interactive web pages. Throughout this course, you'll learn beginner topics like variables, conditionals, logical operations and move upwards to master advanced concepts like destructuring, closure and mutation.

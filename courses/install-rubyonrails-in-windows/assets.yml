@@ -1,6 +1,7 @@
 ---
 images:
-  - ruby-on-rails.svg
+  - ruby-on-rails.png
+  - ruby-on-rails-header-image.png
   - confirm-clone-success.png
   - connect-to-wsl.png
   - localhost-granite.png

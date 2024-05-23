@@ -1,15 +1,12 @@
 ---
 images:
-- html5.svg
-- html-header-image.png
-- open-neeto-code.png
-- html-movie-project.gif
-- celebration_html.gif
-- learn-html-certificate.png
+  - html5.png
+  - html-header-image.png
+  - open-neeto-code.png
+  - html-movie-project.gif
+  - celebration_html.gif
+  - learn-html-certificate.png
 audios:
-- birds-chirping.mp3
-- birds-chirping.wav
+  - birds-chirping.mp3
+  - birds-chirping.wav
 databases: []
-
-
-
