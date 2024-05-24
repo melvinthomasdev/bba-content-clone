@@ -9,3 +9,7 @@
   slug: initializing-git
 - name: Branching in git
   slug: branching-in-git
+- name: Staging files in git
+  slug: staging-files-in-git
+- name: Ignoring files in git
+  slug: ignoring-files-in-git

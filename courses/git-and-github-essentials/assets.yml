@@ -4,4 +4,5 @@ images:
   - git-basic-workflow.png
   - git-branches.png
   - git-branch-command.png
+  - git-stage-exercise.png
 databases: []
