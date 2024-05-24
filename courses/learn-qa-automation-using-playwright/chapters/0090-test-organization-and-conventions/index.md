@@ -37,3 +37,10 @@ The asynchronous function receives a context object as its parameter. This objec
 - **Test names:** Choose descriptive names for tests that clearly indicate what aspect of the application is being tested. Ensure these names are in lowercase. It can optionally begin with a should or must. The idea is that when reading the suite name and test name together, it should be meaningful. In the above example it would be read as `Manage customers should verify member operations`.
 
 - **Organizing Tests:** Organize the tests hierarchically. Group related tests together to improve readability and maintainability.
+
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```

@@ -54,3 +54,10 @@ In BigBinary we have defined custom scripts for executing the tests in each of t
 - **Headed mode:** `yarn playwright:headed`
 - **UI mode:** `yarn playwright:ui`
 - **Debug mode:** `yarn playwright:debug`
+
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```

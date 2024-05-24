@@ -17,6 +17,9 @@
 - slug: initializing-playwright
   name: Initializing Playwright
   has_pages: false
+- slug: environment-variables
+  name: Environment Variables
+  has_pages: false
 - slug: test-configuration
   name: Test configuration
   has_pages: false
@@ -29,11 +32,11 @@
 - slug: locators
   name: Locators
   has_pages: false
-- slug: playwright-hooks
-  name: Playwright hooks
-  has_pages: false
 - slug: writing-our-first-playwright-test
   name: Writing our first Playwright test
+  has_pages: false
+- slug: playwright-hooks
+  name: Playwright hooks
   has_pages: false
 - slug: page-object-models
   name: Page Object Models

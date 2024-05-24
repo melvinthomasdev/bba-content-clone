@@ -55,3 +55,5 @@ We can commit these changes now.
 git add -A
 git commit -m "Added Playwright configuration"
 ```
+
+Now let's see how we can configure Playwright according to our needs.

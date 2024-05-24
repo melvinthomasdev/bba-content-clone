@@ -822,3 +822,10 @@ export const cancelButton = "Cancel button";
 ```
 
 This structured approach not only keeps our constants organized but also makes it easier to locate and manage them as our project grows.
+
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```

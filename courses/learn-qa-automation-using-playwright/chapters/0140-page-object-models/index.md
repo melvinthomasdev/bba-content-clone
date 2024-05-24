@@ -32,3 +32,10 @@ loginPage.login({ email: "oliver@example.com", password: "welcome" });
 **Enhanced Readability:** Test scripts become more readable and expressive, as high-level actions are represented by method calls on Page Objects.
 
 **Easy Maintenance:** Changes in the UI are isolated to the corresponding Page Object, reducing the effort required to update the test code.
+
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```

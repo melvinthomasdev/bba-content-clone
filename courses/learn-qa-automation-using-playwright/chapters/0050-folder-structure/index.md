@@ -40,3 +40,10 @@ $ tree
 - **poms:** These contain the page object models, which are classes representing various components or sections of our application.
 
 - **tsconfig.json:** This file is a TypeScript configuration file, used to specify compiler options. This is where we allow creating custom aliases instead of specifying the entire relative path.
+
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```

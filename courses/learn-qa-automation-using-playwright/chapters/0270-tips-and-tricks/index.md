@@ -110,3 +110,10 @@ failed. Note that we are able to use web-first assertions without any
 issues within the expect block. If any of the assertions within the
 code block fails, the execution of the block is stopped and it is
 retried.
+
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```

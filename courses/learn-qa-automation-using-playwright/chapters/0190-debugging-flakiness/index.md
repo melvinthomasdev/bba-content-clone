@@ -26,3 +26,10 @@ await fetchUsers; // wait until promises are resolved
 ```
 
 `interceptMultipleResponses` is a custom command we've implemented, designed to wait for the API response with the specified path for the specified number of requests.
+
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```

@@ -10,10 +10,23 @@ To start with this course, clone this repository to your local system.
 git clone https://github.com/VarunSriram99/granite-playwright
 ```
 
+## Setting up the development environment
+
 Setup Ruby on Rails and NodeJS if not done already by following the instructions on:
 
-- https://courses.bigbinaryacademy.com/learn-rubyonrails/setting-up-workspace
-- https://courses.bigbinaryacademy.com/learn-rubyonrails/installing-ruby-on-rails/
+### Mac
+
+- [Setting up the workspace](https://courses.bigbinaryacademy.com/learn-rubyonrails/setting-up-workspace)
+- [Installing Ruby on Rails](https://courses.bigbinaryacademy.com/learn-rubyonrails/installing-ruby-on-rails/)
+- [Installing PostgreSQL](https://courses.bigbinaryacademy.com/learn-rubyonrails/setting-up-postgresql-database/)
+- [Installing Redis](https://courses.bigbinaryacademy.com/learn-rubyonrails/background-job-processing-using-sidekiq/?searchTerms%5B0%5D=redis#code_snippet-0)
+
+### Windows
+
+We have a dedicated guide to setup NodeJS and Ruby on Rails on a Windows machine using WSL. Please checkout the book
+[Installing Ruby on Rails on a Windows machine](https://courses.bigbinaryacademy.com/install-rubyonrails-in-windows/).
+
+****
 
 Setup the project in the local machine.
 

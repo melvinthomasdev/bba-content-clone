@@ -76,3 +76,10 @@ await fetchOrders;
 In the above example, we have initialized a new variable trackedResponses with an empty array, intended to store unique identifiers (request IDs) of resolved APIs. It checks if the URL includes the substring /orders/ and also whether the request ID has not already been tracked in trackedResponses array. If both conditions are satisfied, it adds the request ID to trackedResponses array and returns true, indicating that we should wait for the response. This approach prevents the monitoring of the same response more than once.
 
 In BigBinary, we have extracted out the above logic to `interceptMultipleResponses` available in [neeto-playwright-commons](https://github.com/bigbinary/neeto-playwright-commons).
+
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```

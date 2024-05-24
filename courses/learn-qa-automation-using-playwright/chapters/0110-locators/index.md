@@ -67,3 +67,10 @@ If we absolutely must use CSS locators in the absence of `data-cy` attributes, w
 ```js
 const parentElement = page.locator("#parent");
 ```
+
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```

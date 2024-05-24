@@ -167,3 +167,10 @@ export const test = base.extend<Poms>({
 Hence, to employ the todo page methods in our test, we can effortlessly import the test function from `fixture.ts`.
 
 Note that custom fixture names should start with a letter or underscore, and can contain only letters, numbers and underscores.
+
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```

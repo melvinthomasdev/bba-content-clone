@@ -131,4 +131,9 @@ test("slow in WebKit", async ({ page, browserName }) => {
 test.slow(({ browserName }) => browserName === "webkit");
 ```
 
-At BigBinary, we've set the timeout to zero, eliminating any maximum limit on the execution time of the test.
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```

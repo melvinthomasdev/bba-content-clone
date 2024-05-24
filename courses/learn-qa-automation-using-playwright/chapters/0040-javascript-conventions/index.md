@@ -77,3 +77,10 @@ const listUsers = ({ projectId, includeInactive = true, withContactInfo }) => {
   // rest of the code
 };
 ```
+
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+following command.
+
+```bash
+git clean -fd
+```
