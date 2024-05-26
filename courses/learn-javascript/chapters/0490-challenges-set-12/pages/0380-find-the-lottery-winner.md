@@ -106,16 +106,20 @@ const ticketLot = [
 <i>
 const ticketLot = [
   {
+    id: 2263,
+    name: 'Chinua Achebe',
+  },
+  {
+    id: 251,
+    name: 'Linh Tran',
+  },
+  {
     id: 1212,
     name: 'Sam Smith',
   },
   {
     id: 3145,
     name: 'Eve Smith',
-  },
-  {
-    id: 1991,
-    name: 'Renu Sen',
   }
 ];
 </i>
@@ -131,6 +135,10 @@ const ticketLot = [
     id: 1034,
     name: 'Linh Tran',
   },
+  {
+    id: 113,
+    name: 'Sam Smith'
+  }
   {
     id: 01,
     name: 'Chinua Achebe',

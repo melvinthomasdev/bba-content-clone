@@ -25,7 +25,7 @@ For example:
 ```js
 Input:  salary = 400000, age = 30
 
-Output: 'Tax amount is ₹7500'
+Output: 'Tax amount is ₹20000'
 ```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -54,8 +54,7 @@ const calculateIncomeTax = (salary, age) => {
     }
   }
 
-  taxAmount = (salary - (age <= 60 ? 250000 : 300000)) * taxRate;
-  taxAmount = taxAmount > 0 ? taxAmount : 0; // Ensuring tax amount is not negative
+  taxAmount = salary * taxRate;
 
   return `Tax amount is ₹${taxAmount}`;
 }

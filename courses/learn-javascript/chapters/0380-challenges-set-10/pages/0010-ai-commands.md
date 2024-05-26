@@ -1,15 +1,15 @@
 - Create a function `getTaskFromCommand`
-which accepts 2 parameters, `keyword`
-and `command`.
-- The keyword will be present only ONCE
-in the command string.
+which accepts 2 parameters, `command`
+and `keyword`.
 - Return the task in `command` string
 which follows the `keyword`.
+- The keyword will be present only ONCE
+in the command string.
 
 For example:
 ```js
-Keyword = "Hey Buzz"
-String = "Hey Buzz remind me to go to infinity and beyond"
+keyword = "Hey Buzz"
+command = "Hey Buzz remind me to go to infinity and beyond"
 
 Output:
 `remind me to go to infinity and beyond`.
