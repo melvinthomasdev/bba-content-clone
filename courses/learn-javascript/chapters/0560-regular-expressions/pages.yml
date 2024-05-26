@@ -92,3 +92,12 @@
 - title: Challenge 2 - Matching Digits in a string
   slug: challenge-2-matching-digits-in-a-string
   page_type: exercise
+- title: Global Matches
+  slug: global-matches
+  page_type: lesson
+- title: Challenge - Global Matches
+  slug: challenge-global-matches
+  page_type: exercise
+- title: Challenge 2 - Global Matches
+  slug: challenge-2-global-matches
+  page_type: exercise
