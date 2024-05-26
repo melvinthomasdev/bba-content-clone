@@ -4,13 +4,12 @@ gained so far, do the following:
 1. Make the paragraph text with id `first` 3 times that of the heading text.
 **Hint:** Assume that the heading text is of size **2em**.
 
-2. Cut out the text with id `second`.
+2. Add a strike through for the element with id `second`.
 
-3. Make the text with id `third` go away.
+3. Hide the element with the id `third` using CSS. The text should remain in the HTML but not be visible on the screen..
 
-4. Make text with id `fourth` difficult to read by making the letters appear close together.
+4. Make the text in the element with id `fourth` difficult to read by making the letters appear close together.
 **Hint:** Reduce the space between letters by three pixels.
-
 5. Add a cool font **Poor Story** to the text with id `fifth`, using [Google Fonts](https://fonts.google.com/specimen/Poor+Story).
 
 <codeblock language="css" type="exercise" testMode="fixedInput" showSolution="false">

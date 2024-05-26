@@ -18,9 +18,7 @@ const findBiggestDifference = (inputArray) => {
   }, -Infinity);
 
   return biggestDifference;
-}
-
-findBiggestDifference(array);
+};
 </solution>
 <testcases>
 <caller>

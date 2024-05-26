@@ -12,7 +12,7 @@ the left side is same
 as the value on the right
 side.
 
-It is used in a lot in 
+It is used quite frequently in
 `if else` conditions.
 
 <codeblock language="ruby" type="lesson">
