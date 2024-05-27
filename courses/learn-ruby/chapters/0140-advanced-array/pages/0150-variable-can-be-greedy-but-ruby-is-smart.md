@@ -9,8 +9,8 @@ a, *b, c = array
 # b = [2]
 # c = 3
 puts a
-puts b
 puts c
+puts b
 </code>
 </codeblock>
 
@@ -38,8 +38,8 @@ a, *b, c = array
 # b = [2,3,4]
 # c = 5
 puts a
-puts b
 puts c
+puts b
 </code>
 </codeblock>
 
