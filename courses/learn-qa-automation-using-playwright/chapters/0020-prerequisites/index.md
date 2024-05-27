@@ -2,7 +2,7 @@ Before continuing with this course, we are expecting that the reader is familiar
 
 ## Reading materials
 
-1. [BigBinary Academy - JavaScript Course](https://courses.bigbinaryacademy.com/courses/javascript/)
+1. [BigBinary Academy - JavaScript Course](https://courses.bigbinaryacademy.com/learn-javascript/)
 2. [FreeCodeCamp - Classes in JavaScript](https://www.freecodecamp.org/news/javascript-classes-how-they-work-with-use-case/)
 3. [Functional programming course](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#functional-programming)
 4. [JavaScript naming conventions: do's and don'ts](https://www.freecodecamp.org/news/javascript-naming-conventions-dos-and-don-ts-99c0e2fdd78a/)

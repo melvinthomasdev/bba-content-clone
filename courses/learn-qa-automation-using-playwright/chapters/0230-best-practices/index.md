@@ -380,6 +380,39 @@ await locator.click();
 await locator.click();
 ```
 
+## 18. Prefer `{exact: true}` for locator matching
+
+When using locator methods such as `getByRole`, we usually use an additional parameter such as name for matching the
+elements with precision.
+
+Eg: `page.getByRole("button", {name: "Submit"});`
+
+While this narrows down the locators significantly, it still is not perfect since it matches the substring of the name
+we provide by default. This means that if we use the method above to match a button in a page containing two buttons
+having texts `Submit Answer` and `Submit Quiz` respectively, it will resolve to two elements instead of one resulting in test
+failure. To avoid this, we can pass in the `{exact: true}` option which will only consider the elements that
+exactly match the criteria we specify.
+
+```ts
+// Incorrect
+page.getByRole("button", { name: "Submit" }); // Resolves to "Submit Answer" and "Submit Quiz" buttons
+
+// Correct
+page.getByRole("button", { name: "Submit Answer", exact: true }); // Resolves only to "Submit Answer"
+```
+
+Consider an orders page in an application. It might contain the elements to place a new order, show the history of
+delivered orders and much more. In such cases using exact matching helps us resolve to the desired element easily.
+
+```ts
+// Incorrect
+page.getByText("Order"); // Resolves to all texts containing the term Order, Orders, New Orders, Delivered Orders etc.
+
+// Correct
+
+page.getByText("Order", { exact: true }); // Resolves only to texts containing the exact term Order.
+```
+
 # BigBinary best practices
 
 ## 1. Use proper step blocks
@@ -394,8 +427,7 @@ that even people unfamiliar with Playwright can read.
 test("should be able to place an order", ({ page, loginPage, ordersPage }) => {
   await test.step("Step 1: Login to the application", loginPage.loginViaUI);
   await test.step("Step 2: Create new order", () =>
-    ordersPage.createOrders({ item: "Smartphone" })
-  );
+    ordersPage.createOrders({ item: "Smartphone" }));
   await test.step("Step 3: Assert a new order was created", async () => {
     const orders = page.getByTestId("order");
     await expect(orders).toHaveCount(1);
@@ -566,8 +598,7 @@ test("should create new user", async ({ page, userPage }) => {
 // Correct
 test("should create new user", async ({ page, userPage }) => {
   await test.step("Step 1: Create new user", () =>
-    userPage.createNewUser({ name: "Oliver Smith" })
-  );
+    userPage.createNewUser({ name: "Oliver Smith" }));
 });
 ```
 
@@ -613,8 +644,7 @@ test("should create new user", async ({ page, userPage }) => {
     Promise.all([
       expect(page.getByTestId("user-profile-icon")).toBeVisible(),
       expect(page.getByTestId("user-name")).toHaveText("Oliver Smith"),
-    ])
-  );
+    ]));
 });
 ```
 
@@ -823,7 +853,7 @@ export const cancelButton = "Cancel button";
 
 This structured approach not only keeps our constants organized but also makes it easier to locate and manage them as our project grows.
 
-This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the
 following command.
 
 ```bash

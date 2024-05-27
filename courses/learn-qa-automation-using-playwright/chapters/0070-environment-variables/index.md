@@ -77,7 +77,7 @@ console.log(process.env);
 }
 ```
 
-We can access the values in the the process.env object anywhere in our codebase by calling `process.env.ENV_VARIABLE_NAME`. For example, to access the values of the `ENV_VARIABLE_ONE`, we can call, `process.env.ENV_VARIABLE_ONE`.
+We can access the values in the process.env object anywhere in our codebase by calling `process.env.ENV_VARIABLE_NAME`. For example, to access the values of the `ENV_VARIABLE_ONE`, we can call, `process.env.ENV_VARIABLE_ONE`.
 
 We saw how we can define environment variables dynamically and how we can retain them between sessions using the `.env` file. But our current
 implementation works exactly same as defining a constant in JavaScript. If we use a `.env` file, how can we change the variable definitions

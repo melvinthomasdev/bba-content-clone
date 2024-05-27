@@ -718,6 +718,71 @@ yarn playwright test --headed
 
 Great! All our tests are passing and we have reduced code repetition as much as possible.
 
+## When to use `beforeAll` and `afterAll` and when not to use them
+
+Note: This section is theoretical and is not part of the application we are building. The code in this section should not
+be committed.
+
+In all the examples given above, we used the `beforeEach` and `afterEach` hooks. This makes us question
+the use-case of the `beforeAll` and `afterAll` hooks. The short answer is that 90% of the time they might
+not be needed. This is because they come with a set of disadvantages.
+Since Playwright provides context isolation, i.e. the page and browser context is not shared between multiple
+tests, we are not able to access any of the context-based fixtures in the `beforeAll` and `afterAll` hooks.
+Consider this example.
+
+```ts
+import { test, expect } from "@playwright/test";
+
+test.describe("Dashboard", () => {
+  test.beforeAll(async ({ page }) => {
+    await page.goto("/");
+  });
+
+  test("should navigate to proper URL", async ({ page }) => {
+    await expect(page).toHaveURL("/dashboard");
+  });
+});
+```
+
+Executing this test will throw the following error.
+
+```
+Error: "context" and "page" fixtures are not supported in beforeAll. Use browser.newContext() instead.
+```
+
+Loosing access to the `page` and `context` fixtures closes the doors to most of the things we can do with Playwright.
+This is why we usually go with `beforeEach` and `afterEach` hooks. Does this mean that there is no use-case for
+the `beforeAll` and `afterAll` hooks?
+
+There are some cases where it is necessary to use these hooks. Consider a spec where there are multiple tests
+where, in each test we login as the same user to test the features. In this case we can use the `beforeAll` hook to
+generate a unique email for all the tests and log the user into the application in the `beforeEach` hook.
+
+```ts
+import { test, expect } from "@playwright/test";
+import { faker } from "@faker-js/faker";
+
+test.describe("Dashboard", () => {
+  let email: string;
+
+  test.beforeAll(({}) => {
+    email = faker.internet.email();
+  });
+
+  test.beforeEach(async ({ loginPage }) => {
+    await loginPage.loginWithEmail(email);
+  });
+
+  test("should navigate to proper URL", async ({ page }) => {
+    await expect(page).toHaveURL("/dashboard");
+  });
+});
+```
+
+As seen in the example, there are some cases where we need to execute the some methods only during
+the entire test. In those niche cases, `beforeAll` and `afterAll` can be very effective for setup
+and teardown respectively.
+
 Let's commit these changes now.
 
 ```bash
