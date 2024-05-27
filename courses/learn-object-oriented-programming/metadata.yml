@@ -6,7 +6,7 @@ published: true
 custom_data:
   type: misc
   courseType: lesson
-home_logo: learn-oopc.png
+home_logo: learn-oopc-header-image.png
 logo: learn-oopc.png
 show_reset_button: false
 position: 26
