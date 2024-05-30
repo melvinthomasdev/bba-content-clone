@@ -506,7 +506,7 @@ account automatically.
 
 ## 5. Avoid string interpolation with translations
 
-Suppose we have a sentence - I have a {color} car. If we try to asssert this text on the UI with interpolation of translations as shown below, we will get flaky results:
+Suppose we have a sentence - I have a {color} car. If we try to assert this text on the UI with interpolation of translations as shown below, we will get flaky results:
 
 ```js
 await expect(page.getByTestId(HOME_SELECTORS.header)).toHaveText(

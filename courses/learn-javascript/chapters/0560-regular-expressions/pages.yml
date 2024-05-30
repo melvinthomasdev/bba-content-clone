@@ -56,10 +56,10 @@
 - title: Challenge - Grouping metacharacter
   slug: challenge-grouping-metacharacter
   page_type: exercise
-- title: Negating Characters
+- title: Negating Character Classes
   slug: negating-character-classes
   page_type: lesson
-- title: Challenge - Negating Characters
+- title: Challenge - Negating Character Classes
   slug: challenge-negating-character-classes
   page_type: lesson
 - title: Matching any Character
@@ -73,6 +73,12 @@
   page_type: lesson
 - title: Challenge - Matching one or more Character Occurrences
   slug: challenge-matching-one-or-more-character-occurrences
+  page_type: exercise
+- title: Matching Zero or more Character Occurrences
+  slug: matching-zero-or-more-character-occurrences
+  page_type: lesson
+- title: Challenge - Matching Zero or more Character Occurrences
+  slug: challenge-matching-zero-or-more-character-occurrences
   page_type: exercise
 - title: Range operations in regular expressions
   slug: range-operations-in-regular-expressions
