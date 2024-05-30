@@ -22,7 +22,7 @@ string = "hi";
 boolean = true;
 ```
 
-<codeblock language="javascript" type="exercise" testMode="multipleInput">
+<codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // For the below values, the code should print true.
 const givenNumber = 10;
