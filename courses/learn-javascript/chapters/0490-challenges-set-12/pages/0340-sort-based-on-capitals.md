@@ -3,17 +3,17 @@ The function `sortCapitals` should return an alphabetically sorted list based on
 For example:
 ```js
 Input:
-const states = [
-    { state: "Maharashtra", capital: "Mumbai", official_Language: 'Marathi' },
-    { state: "Gujarat", capital: "Gandhinagar", official_Language: 'Gujarati' },
-    { state: "Rajasthan", capital: "Jaipur", official_Language: 'Hindi' }
+states = [
+    { state: "Maharashtra", capital: "Mumbai", official_language: "Marathi" },
+    { state: "Gujarat", capital: "Gandhinagar", official_language: "Gujarati" },
+    { state: "Rajasthan", capital: "Jaipur", official_language: "Hindi" }
   ];
 
 Output:
-[
-  { state: 'Gujarat', capital: 'Gandhinagar', official_Language: 'Gujarati' },
-  { state: 'Maharashtra', capital: 'Mumbai', official_Language: 'Marathi' },
-  { state: 'Rajasthan', capital: 'Jaipur', official_Language: 'Hindi' }
+states = [
+  { state: "Gujarat", capital: "Gandhinagar", official_language: "Gujarati" },
+  { state: "Rajasthan", capital: "Jaipur", official_language: "Hindi" },
+  { state: "Maharashtra", capital: "Mumbai", official_language: "Marathi" }
 ]
 ```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
@@ -43,36 +43,37 @@ console.log(sortCapitals(states));
 <testcase>
 <i>
 const states = [
-    { state: "Manipur", capital: "Imphal", official_Language: 'Meiteilon' },
-    { state: "Assam", capital: "Dispur", official_Language: 'Assamese' },
-    { state: "Meghalaya	", capital: "Shillong", official_Language: 'English' }
+    { state: "Manipur", capital: "Imphal", official_language: 'Meiteilon' },
+    { state: "Assam", capital: "Dispur", official_language: 'Assamese' },
+    { state: "Meghalaya	", capital: "Shillong", official_language: 'English' }
   ];
 </i>
 </testcase>
 <testcase>
 <i>
 const states = [
-    { state: "Chhattisgarh", capital: "Naya Raipur", official_Language: 'Chhattisgarhi' },
-    { state: "Goa", capital: "Panaji", official_Language: 'Konkani' },
-    { state: "Odisha", capital: "Bhubaneswar", official_Language: 'Oriya' }
+    { state: "Chhattisgarh", capital: "Naya Raipur", official_language: 'Chhattisgarhi' },
+    { state: "Goa", capital: "Panaji", official_language: 'Konkani' },
+    { state: "Odisha", capital: "Bhubaneswar", official_language: 'Oriya' }
   ];
 </i>
 </testcase>
 <testcase>
 <i>
 const states = [
-    { state: "Karnataka", capital: "Bengaluru", official_Language: 'Kannada' },
-    { state: "Kerala", capital: "Thiruvananthapuram", official_Language: 'Malayalam' },
-    { state: "Tamil Nadu", capital: "Chennai", official_Language: 'Assamese' }
+    { state: "Karnataka", capital: "Bengaluru", official_language: 'Kannada' },
+    { state: "Kerala", capital: "Thiruvananthapuram", official_language: 'Malayalam' },
+    { state: "Tamil Nadu", capital: "Chennai", official_language: 'Assamese' }
   ];
 </i>
 </testcase>
 <testcase>
 <i>
 const states = [
-    { state: "Maharashtra", capital: "Mumbai", official_Language: 'Marathi' },
-    { state: "Gujarat", capital: "Gandhinagar", official_Language: 'Gujarati' },
-    { state: "Rajasthan", capital: "Jaipur", official_Language: 'Hindi' }
+    { state: "West Bengal", capital: "Kolkata", official_language: "Bengali" },
+    { state: "Punjab", capital: "Chandigarh", official_language: "Punjabi" }
+    { state: "Kerala", capital: "Thiruvananthapuram", official_language: "Malayalam" },
+    { state: "Chhattisgarh", capital: "Naya Raipur", official_language: 'Chhattisgarhi' }
   ];
 </i>
 </testcase>

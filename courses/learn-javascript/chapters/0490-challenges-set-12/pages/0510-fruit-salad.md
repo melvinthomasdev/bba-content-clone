@@ -1,12 +1,20 @@
-The function `fruitSalad` should slice each name of the fruit in half, sort each chunk alphabetically and join them together to make a string.
+The function `fruitSalad` should slice
+each name of the fruit in half,
+sort each chunk alphabetically
+and
+join them together to make a string.
+
+If the length of the fruit name is
+odd, the first chunk can have an extra
+letter.
 
 For example:
 ```js
 Input:
-const str = ["apple", "pear", "grapes"];
+const arr = ["apple", "pineapple", "orange"];
 
 Output:
-aelpparegpars
+appelaeinpelppaoregn
 ```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
@@ -20,35 +28,36 @@ const fruitSalad = words => {
 const fruitSalad = words => {
   const chunks = [];
   words.forEach((word) => {
-    chunks.push(word.slice(0, word.length / 2));
-    chunks.push(word.slice(word.length / 2, word.length));
+    const middle = Math.ceil(word.length/2);
+    chunks.push([...word.slice(0, middle)].sort().join(""));
+    chunks.push([...word.slice(middle)].sort().join(""));
   })
-  return chunks.sort().join("");
+  return chunks.join("");
 };
 </solution>
 
 <testcases>
 <caller>
-console.log(fruitSalad(str));
+console.log(fruitSalad(arr));
 </caller>
 <testcase>
 <i>
-const str = ["apple", "pear", "grapes"];
+const arr = ["apple", "pear", "grapes"];
 </i>
 </testcase>
 <testcase>
 <i>
-const str = ["raspberries", "mango"];
+const arr = ["raspberries", "mango"];
 </i>
 </testcase>
 <testcase>
 <i>
-const str = ["banana"];
+const arr = ["banana"];
 </i>
 </testcase>
 <testcase>
 <i>
-const str = ["orange", "pomegranate", "pineapple", "kiwi"];
+const arr = ["orange", "pomegranate", "pineapple", "kiwi"];
 </i>
 </testcase>
 </testcases>

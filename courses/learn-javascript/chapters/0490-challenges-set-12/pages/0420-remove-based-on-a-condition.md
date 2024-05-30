@@ -4,11 +4,11 @@ For example:
 ```js
 Input:
 // Names with a vowel present
-const participants = ["Sam", "Lao", "Linh", "Bryn"];
+const participants = ["Sam", "Gwynyth", "Carlos", "Tywyn"];
 const condition = name =>  (name.match(/[aeiou]/ig));
 
 Output:
-['Sam', 'Lao', 'Linh', 'Bryn']
+['Sam', 'Linh']
 ```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">

@@ -9,9 +9,29 @@ updated version of these details with the following modifications,
 For example:
 ```js
 Input:
-const list = [[19, 12], [34, 545, 65, 654], [43, 98, 90]];
+const employeeDetailsAtJoining = {
+  userId: 1,
+  fullName: "Linh Tran",
+  firstName: "Linh",
+  lastName: "Tran",
+  experience: 4,
+  yearOfBirth: 1990,
+  phoneNumber: 203354,
+  emailAddress: "linh.tran@example.com",
+};
 
-Output: [31, 1298, 231]
+Output:
+{
+  "userId": 1,
+  "fullName": "Linh Tran",
+  "firstName": "Linh",
+  "lastName": "Tran",
+  "experience": 5,
+  "yearOfBirth": 1990,
+  "phoneNumber": 203354,
+  "emailAddress": "linh.tran@example.com",
+  "age": 34
+}
 ```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
