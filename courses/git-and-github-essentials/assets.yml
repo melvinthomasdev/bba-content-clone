@@ -1,8 +1,9 @@
 ---
 images:
-  - git-and-github-logo.png
   - git-basic-workflow.png
   - git-branches.png
   - git-branch-command.png
   - git-stage-exercise.png
+  - git-and-github-essentials-header-image.png
+  - git-and-github-essentials.png
 databases: []
