@@ -80,3 +80,9 @@
 - title: Usage of Underscore in Functions
   slug: usage-of-underscore
   page_type: lesson
+- title: Reverse elements in array
+  slug: reverse-elements-in-array
+  page_type: lesson
+- title: Challenge - Reverse Words in a String
+  slug: challenge-reverse-words-in-a-string
+  page_type: exercise
