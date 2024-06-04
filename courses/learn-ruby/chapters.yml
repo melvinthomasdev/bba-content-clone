@@ -27,8 +27,8 @@
   slug: symbol
 - name: Advanced Array
   slug: advanced-array
-- name: Hash
-  slug: hash-2
+- name: More about Hashes
+  slug: more-about-hashes
 - name: Comments
   slug: comments
 - name: Regular expressions
