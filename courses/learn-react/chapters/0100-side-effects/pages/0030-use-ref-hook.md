@@ -116,6 +116,8 @@ const Carousel = () => {
 };
 ```
 
+Sometimes you may wonder why we don't call the `resetTimer` function inside `handleNext` instead of calling it separately on right click. The reason is that `handleNext` is also used in the `useEffect` for automatic image scrolling. If we call the `resetTimer` inside `handleNext`, it will reset the timer every time the timer is executed.
+
 This is how the image transition works after integrating `Ref`:
 
 <image>carousel-with-ref-hook.gif</image>
