@@ -110,10 +110,16 @@ const fetchCartProducts = async () => {
 
 We will incorporate this same logic within the `onSuccess` callback of the `useQueries` option. This callback will be invoked upon the successful API call, and it will receive the fetched data as an argument.
 
-```js {7-16}
+```js {1-3, 7-8, 13-20}
+import { useTranslation } from "react-i18next";
+import useCartItemsStore from "stores/useCartItemsStore";
+import { Toastr } from "neetoui";
 // ...
 
 export const useFetchCartProducts = slugs => {
+  const { t } = useTranslation();
+  const { cartItems, setSelectedQuantity } = useCartItemsStore();
+
   const responses = useQueries(
     slugs.map(slug => ({
       // ...
