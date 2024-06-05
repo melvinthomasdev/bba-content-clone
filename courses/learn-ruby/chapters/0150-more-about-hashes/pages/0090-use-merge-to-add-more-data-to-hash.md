@@ -7,11 +7,15 @@ hash =  { USA: "Washington D.C.",
           England: "London",
           France: "Paris" }
 
-hash2 = hash.merge({ Italy: "Rome"})
+hash2 = {
+  Italy: "Rome"
+}
+
+hash3 = hash.merge(hash2)
 
 puts hash
-
 puts hash2
+puts hash3
 </code>
 </codeblock>
 
