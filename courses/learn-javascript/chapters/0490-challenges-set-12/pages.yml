@@ -176,7 +176,7 @@
 - title: Split an Object into Chunks
   slug: split-an-object-into-chunks
   page_type: assessment
-- title:  Split an Array into N Chunks
+- title: Split an Array into N Chunks
   slug: split-an-array-into-n-chunks
   page_type: assessment
 - title: Accumulating Array
@@ -199,4 +199,28 @@
   page_type: assessment
 - title: Most Commonly Occurring Character
   slug: most-commonly-occurring-character
+  page_type: assessment
+- title: Comprehensive Challenge - Integer to reverse binary
+  slug: comprehensive-challenge-integer-to-reverse-binary
+  page_type: assessment
+- title: Comprehensive Challenge - Remove the first occurrence
+  slug: comprehensive-exercise-remove-first-occurence-of-given-search-string
+  page_type: assessment
+- title: Comprehensive Challenge - Rearrange a string to become a palindrome
+  slug: comprehensive-challenge-rearrange-to-become-palindrome
+  page_type: assessment
+- title: Comprehensive Challenge - Power of three
+  slug: comprehensive-challenge-power-of-three
+  page_type: assessment
+- title: Comprehensive Challenge - Longest Valid Brackets
+  slug: comprehensive-challenge-longest-valid-brackets
+  page_type: assessment
+- title: Comprehensive Challenge - Merge Overlapping Intervals
+  slug: comprehensive-challenge-merge-intervals
+  page_type: assessment
+- title: Comprehensive Challenge - Simplify Path
+  slug: comprehensive-challenge-simplify-path
+  page_type: assessment
+- title: Comprehensive Challenge - H-Index
+  slug: comprehensive-challenge-h-index
   page_type: assessment
