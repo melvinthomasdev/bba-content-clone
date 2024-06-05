@@ -72,7 +72,7 @@ Refer [the documentation](https://github.com/bigbinary/babel-preset-neeto/blob/m
     yarn add @bigbinary/babel-preset-neeto@1.0.7
     ```
 
-2. Add the preset to babel presets in the `package.json` file:
+2. Add `bigbinary/neeto` preset to babel presets in the `package.json` file:
 
     ```js {6}
     {

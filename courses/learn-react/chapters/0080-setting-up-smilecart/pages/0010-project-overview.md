@@ -30,6 +30,8 @@ The SmileCart application consists of the following pages:
 - **Checkout page**: Collects the contact information and shipping address from the user. Additionally, the page will display the total bill amount, and users will be able to place their order by clicking the **_Confirm order_** button.
   <image>smile-cart-checkout-page.png</image>
 
+# Fork the template repo
+
 To get started with the project, we've set up a React app with the necessary packages and configurations for you. You can fork the [smile-cart](https://github.com/bigbinary/smile-cart-frontend) repository to begin working on the project.
 
 # Backend APIs
