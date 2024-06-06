@@ -2,7 +2,7 @@ In the code snippet given below, the constant named `BOOKS` holds the details of
 
 The output should look like the image given below.
 
-<image>filtering-exercise-output.png</image>
+<image>array-filtering-exercise-output.png</image>
 
 <codeblock language="reactjs" foldLines="1-22" type="exercise" testMode="fixedInput">
 <code>
@@ -33,6 +33,15 @@ const Books = () => (
   null // Remove this null and implement your logic here.
 );
 
+const Book = ({ title, author }) => (
+  <div
+    style={{ borderBottom: "1px solid black" }}
+  >
+    <p>Book title: {title}</p>
+    <p>Author: {author}</p>
+  </div>
+);
+
 export default Books;
 </code>
 <solution>
@@ -51,13 +60,7 @@ const Books = () =>
 
 const Book = ({ title, author }) => (
   <div
-    style={{
-      border: "1px solid blue",
-      borderRadius: 5,
-      padding: 8,
-      marginBottom: 5,
-      backgroundColor: "azure",
-    }}
+    style={{ borderBottom: "1px solid black" }}
   >
     <p>Book title: {title}</p>
     <p>Author: {author}</p>

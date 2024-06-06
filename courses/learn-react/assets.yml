@@ -9,8 +9,8 @@ images:
   - ide-suggestions-for-boolean.png
   - ide-suggestions-for-array.png
   - ide-support-props.gif
-  - mapping-exercise-output.png
-  - filtering-exercise-output.png
+  - array-mapping-exercise-output.png
+  - array-filtering-exercise-output.png
   - regular-spaces.gif
   - non-breaking-space.gif
   - showing-browser-console.gif
