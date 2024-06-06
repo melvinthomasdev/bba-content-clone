@@ -3,7 +3,7 @@ In this exercise, you are given the `Status` component, which receives the `isOn
 <codeblock language="reactjs" type="exercise" testMode="fixedInput">
 <code>
 // Replace STATUS with desired value
-const Status = ({ name, isOnline }) => <p> {name} is STATUS </p>;
+const Status = ({ name, isOnline }) => <p>{name} is STATUS</p>;
 
 const UserStatusList = () => (
   <div>
