@@ -76,7 +76,7 @@ export const IMAGE_URLS = [
   "https://ik.imagekit.io/d9mvewbju/SmileCart/thumbnail_61_7PaLfb.jpg",
   "https://ik.imagekit.io/d9mvewbju/SmileCart/1_yuRfcETI5.jpg",
   "https://ik.imagekit.io/d9mvewbju/SmileCart/2_HoKD2OblW.png",
-  "https://ik.imagekit.io/d9mvewbju/SmileCart/3_-6sHqwicC.png"
+  "https://ik.imagekit.io/d9mvewbju/SmileCart/3_-6sHqwicC.png",
 ];
 ```
 
@@ -152,8 +152,8 @@ export default Carousel;
 
 There are a couple of rules that we need to follow while using `hooks`:
 
- - Hooks should only be called within React components. It is not valid to call hooks outside components.
- - Hooks should be called at the top level of the React component, before any early returns. This means that hooks cannot be called inside loops, conditions, or nested functions.
+- Hooks should only be called within React components. It is not valid to call hooks outside components.
+- Hooks should be called at the top level of the React component, before any early returns. This means that hooks cannot be called inside loops, conditions, or nested functions.
 
 ## Event handling
 
@@ -164,7 +164,7 @@ const button = document.getElementById("buttonId");
 
 const handleClick = () => {
   // code to be executed on button click
-}
+};
 
 button.addEventListener("click", handleClick);
 ```
@@ -177,8 +177,8 @@ HTML offers another way to handle events using event attributes:
 
 React follows a pattern similar to HTML for event handling, but there are two key distinctions:
 
- - React event handler props are named using **camelCase** instead of lowercase like, `onClick`, `onChange`, `onKeyDown`, etc.
- - With JSX, we pass the **function reference** as the event handler instead of a string.
+- React event handler props are named using **camelCase** instead of lowercase like, `onClick`, `onChange`, `onKeyDown`, etc.
+- With JSX, we pass the **function reference** as the event handler instead of a string.
 
 Here is an example of handling an event in React:
 
@@ -186,10 +186,10 @@ Here is an example of handling an event in React:
 const Component = () => {
   const handleClick = () => {
     // code to be executed on button click
-  }
+  };
 
-  return <button onClick={handleClick}>Click</button>
-}
+  return <button onClick={handleClick}>Click</button>;
+};
 ```
 
 Let's jump into adding event handlers for the buttons in the `Carousel` component.
@@ -203,12 +203,12 @@ const Carousel = ({ imageUrls, title }) => {
   const handleNext = () => {
     const nextIndex = (currentIndex + 1) % imageUrls.length;
     setCurrentIndex(nextIndex);
-  }
+  };
 
   const handlePrevious = () => {
     const previousIndex = (currentIndex - 1 + imageUrls.length) % imageUrls.length;
     setCurrentIndex(previousIndex);
-  }
+  };
 
   return (
     <div className="flex items-center">
@@ -258,89 +258,89 @@ Let’s see how we can add the dot indicator to our `Carousel` component.
 
 1. First, we will map over the `imageUrls` array to display a set of dots. Note that here, we have passed the index as the key. In this case, it is okay to pass the index as key since the `imageUrls` is a constant array that won't ever change.
 
-    ```jsx
-    // remaining code
-    return (
-      <div className="flex flex-col items-center">
-        {/* previous JSX returned by Carousel component as it is */}
-        <div className="flex space-x-1">
-          {imageUrls.map((_, index) => (
-            <span
-              className="neeto-ui-border-black neeto-ui-rounded-full h-3 w-3 cursor-pointer border"
-              key={index}
-            />
-          ))}
-        </div>
-      </div>
-    );
-    ```
+```jsx
+// remaining code
+return (
+  <div className="flex flex-col items-center">
+    {/* previous JSX returned by Carousel component as it is */}
+    <div className="flex space-x-1">
+      {imageUrls.map((_, index) => (
+        <span
+          className="neeto-ui-border-black neeto-ui-rounded-full h-3 w-3 cursor-pointer border"
+          key={index}
+        />
+      ))}
+    </div>
+  </div>
+);
+```
 
 2. Next, we will add an `onClick` handler for each dot. We can pass the index of the corresponding dot as a parameter to the `setCurrentIndex` function. Here, as we need to pass the index parameter to the event handler, we need to define the event handler as an inline function.
 
-    ```jsx {6}
-    // remaining code
-    {imageUrls.map((_, index) => (
-      <span
-        className="neeto-ui-border-black neeto-ui-rounded-full h-3 w-3 cursor-pointer border"
-        key={index}
-        onClick={() => setCurrentIndex(index)}
-      />
-    ))}
-    ```
+```jsx {6}
+// remaining code
+{imageUrls.map((_, index) => (
+  <span
+    className="neeto-ui-border-black neeto-ui-rounded-full h-3 w-3 cursor-pointer border"
+    key={index}
+    onClick={() => setCurrentIndex(index)}
+  />
+))}
+```
 
 3. Finally, to highlight the position of the current image, we'll set a black background for the selected dot. We can achieve this by comparing the state variable `currentIndex` with the index of each dot and applying the class name `neeto-ui-bg-black` conditionally:
 
-    ```jsx {3-10, 13}
-    // Conditionally adding classnames without using "classNames" package
-    {imageUrls.map((_, index) => {
-      const defaultClasses =
-        "neeto-ui-border-black neeto-ui-rounded-full h-3 w-3 cursor-pointer border";
+```jsx {3-10, 13}
+// Conditionally adding classnames without using "classNames" package
+{imageUrls.map((_, index) => {
+  const defaultClasses =
+    "neeto-ui-border-black neeto-ui-rounded-full h-3 w-3 cursor-pointer border";
 
-      const dotClassNames =
-        index === currentIndex
-          ? defaultClasses.concat(" neeto-ui-bg-black")
-          : defaultClasses;
+  const dotClassNames =
+    index === currentIndex
+      ? defaultClasses.concat(" neeto-ui-bg-black")
+      : defaultClasses;
 
-      return (
-        <span
-          className={dotClassNames}
-          key={index}
-          onClick={() => setCurrentIndex(index)}
-        />
-      );
-    })}
-    ```
+  return (
+    <span
+      className={dotClassNames}
+      key={index}
+      onClick={() => setCurrentIndex(index)}
+    />
+  );
+})}
+```
 
-    However, we can avoid the hassle of writing the conditions as above by leveraging the [classNames](https://www.npmjs.com/package/classnames) package to apply classnames conditionally. This package provides a function called `classNames` that facilitates the conditional joining of class names.
+However, we can avoid the hassle of writing the conditions as above by leveraging the [classNames](https://www.npmjs.com/package/classnames) package to apply classnames conditionally. This package provides a function called `classNames` that facilitates the conditional joining of class names.
 
-    To install `classnames`, run the following command:
+To install `classnames`, run the following command:
 
-    ```bash
-    yarn add classnames@2.3.1
-    ```
+```bash
+yarn add classnames@2.3.1
+```
 
-    With the `classNames` function, we pass the classnames to include and the corresponding conditions as an object. In addition, the class names that should always be present are passed as a string.
+With the `classNames` function, we pass the classnames to include and the corresponding conditions as an object. In addition, the class names that should always be present are passed as a string.
 
-    Here is what the code will look like with the `classNames` package. Much better, right?
+Here is what the code will look like with the `classNames` package. Much better, right?
 
-    ```jsx {1, 6-9}
-    import classNames from "classnames";
+```jsx {1, 6-9}
+import classNames from "classnames";
 
-    // Conditionally adding classNames using "classnames" package
-    // remaining code
-    {imageUrls.map((_, index) => (
-      <span
-        key={index}
-        className={classNames(
-          "neeto-ui-border-black neeto-ui-rounded-full h-3 w-3 cursor-pointer border",
-          { "neeto-ui-bg-black": index === currentIndex }
-        )}
-        onClick={() => {
-          setCurrentIndex(index);
-        }}
-      />
-    ))}
-    ```
+// Conditionally adding classNames using "classnames" package
+// remaining code
+{imageUrls.map((_, index) => (
+  <span
+    key={index}
+    className={classNames(
+      "neeto-ui-border-black neeto-ui-rounded-full h-3 w-3 cursor-pointer border",
+      { "neeto-ui-bg-black": index === currentIndex }
+    )}
+    onClick={() => {
+      setCurrentIndex(index);
+    }}
+  />
+))}
+```
 
 Hooray 🎉 ! We have learned the concepts of state and event handling in React and implemented a simple `Carousel` component.
 
@@ -351,4 +351,4 @@ git add -A
 git commit -m "Added Carousel component"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/1a5cb2b595319754f8bef9b2daaa3258c5f86dcf).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/18364d267d55ac038535e30a83993adb9689a6ef).
