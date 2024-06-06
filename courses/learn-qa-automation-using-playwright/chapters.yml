@@ -80,3 +80,5 @@
 - slug: tips-and-tricks
   name: Tips and tricks
   has_pages: false
+- slug: refactoring-the-existing-code-based-on-best-practices
+  name: Refactoring the existing code based on the best practices

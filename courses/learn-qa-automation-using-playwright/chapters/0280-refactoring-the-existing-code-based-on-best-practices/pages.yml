@@ -1,0 +1,25 @@
+---
+- title: Refactoring the code based on best practices
+  slug: refactoring-the-code-based-on-best-practices
+  page_type: lesson
+- title: Refactoring the login POM
+  slug: refactoring-the-login-pom
+  page_type: lesson
+- title: Refactoring the tasks POM
+  slug: refactoring-the-tasks-pom
+  page_type: lesson
+- title: Refactoring the global teardown
+  slug: refactoring-the-global-teardown
+  page_type: lesson
+- title: Refactoring the global setup
+  slug: refactoring-the-global-setup
+  page_type: lesson
+- title: Refactoring the register spec
+  slug: refactoring-the-register-spec
+  page_type: lesson
+- title: Refactoring the tasks spec
+  slug: refactoring-the-tasks-spec
+  page_type: lesson
+- title: Conclusion
+  slug: conclusion
+  page_type: lesson

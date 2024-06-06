@@ -15,5 +15,6 @@ images:
   - playwright-project-cluttered-dashboard.png
   - playwright-button-with-dom-structure.png
   - playwright-button-with-dom-structure-without-test-id.png
+  - playwright-performance-comparison.png
   - learn-qa-automation-using-playwright-certificate.png
 databases: []
