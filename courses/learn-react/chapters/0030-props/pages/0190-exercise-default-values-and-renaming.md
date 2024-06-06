@@ -23,7 +23,6 @@ const App = ({ username = "Guest", age: userAge = 25 }) => (
       Username: {username}
       <br />
       Age: {userAge}
-      <br />
     </p>
   </div>
 );
