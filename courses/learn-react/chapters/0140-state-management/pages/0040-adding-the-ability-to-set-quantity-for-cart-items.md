@@ -23,7 +23,7 @@ const useCartItemsStore = create(set => ({
 export default useCartItemsStore;
 ```
 
-Since we have made `cartItems` an object, we should take the length of keys of the object to get the cart items count in `Header`:
+Since we have made `cartItems` an object, we should take the length of keys of the object to get the cart items count in `Header` component:
 
 ```jsx {1, 5-7}
 import { keys } from "ramda";
@@ -63,7 +63,7 @@ const ProductQuantity = ({ slug }) => {
   );
 
   return (
-    <div className="neeto-ui-border-black neeto-ui-rounded flex items-center border">
+    <div className="neeto-ui-border-black neeto-ui-rounded inline-flex flex-row items-center border">
       <Button
         className="focus-within:ring-0"
         label="-"
@@ -184,10 +184,60 @@ const useSelectedQuantity = slug => {
 export default useSelectedQuantity;
 ```
 
-Now, you can invoke the `useSelectedQuantity` hook from both the `AddToCart` and `ProductQuantity` components instead of directly using the `useCartItemsStore` hook. Additionally, there's no need to pass `slug` to the `setSelectedQuantity` function:
+Now, you can invoke the `useSelectedQuantity` hook from both the `AddToCart` and `ProductQuantity` components instead of directly using the `useCartItemsStore` hook. Additionally, there's no need to pass `slug` to the `setSelectedQuantity` function.
 
-```js
-const { selectedQuantity, setSelectedQuantity } = useSelectedQuantity(slug);
+Now, lets update `AddToCart` component.
+
+```jsx {1, 4-5, 10}
+import useSelectedQuantity from "components/hooks/useSelectedQuantity";
+//...
+
+const AddToCart = ({ slug, availableQuantity }) => {
+  const { selectedQuantity, setSelectedQuantity } = useSelectedQuantity(slug);
+
+  const handleClick = e => {
+    e.stopPropagation();
+    e.preventDefault();
+    setSelectedQuantity(1);
+  };
+
+  //...
+}
+```
+
+Similarly, update the `ProductQuantity` component as well.
+
+```jsx {1, 7, 16, 24}
+import useSelectedQuantity from "components/hooks/useSelectedQuantity";
+//...
+
+const ProductQuantity = ({ slug, availableQuantity }) => {
+  // ...
+
+  const { selectedQuantity, setSelectedQuantity } = useSelectedQuantity(slug);
+
+  //...
+  return (
+    <div className="neeto-ui-border-black neeto-ui-rounded inline-flex flex-row items-center border">
+    <Button
+      // ...
+      onClick={e => {
+        preventNavigation(e);
+        setSelectedQuantity(selectedQuantity - 1);
+      }}
+    />
+    {selectedQuantity}
+    <Button
+      //...
+      onClick={e => {
+        preventNavigation(e);
+        setSelectedQuantity(selectedQuantity + 1);
+      }}
+    />
+    </div>
+  )
+
+}
 ```
 
 At this stage, upon clicking the "Add to Cart" button, you should be able to view the `ProductQuantity` component and subsequently update the quantity as needed.
@@ -257,7 +307,7 @@ const ProductQuantity = ({ slug, availableQuantity }) => {
   };
 
   return (
-    <div className="neeto-ui-border-black neeto-ui-rounded flex items-center border">
+    <div className="neeto-ui-border-black neeto-ui-rounded inline-flex flex-row items-center border">
       {/* remaining JSX */}
       <Button
         className="focus-within:ring-0"
@@ -299,37 +349,65 @@ const TooltipWrapper = ({ showTooltip, children, ...tooltipProps }) => {
 export default TooltipWrapper;
 ```
 
-Now, we can show a tooltip by enclosing the `+` button with `TooltipWrapper` and providing the required props. As we only want the tooltip to appear when the button is disabled, we'll set the `showTooltip` prop to `isNotValidQuantity`:
+Now export the `TooltipWrapper` component from the `commons` folder. Add the following line to the `commons/index.js` file.
 
-```jsx
-<TooltipWrapper
-  content="Reached maximum units"
-  position="top"
-  showTooltip={isNotValidQuantity}
->
-  <Button
-    className="focus-within:ring-0"
-    disabled={isNotValidQuantity}
-    label="+"
-    style="text"
-    onClick={e => {
-      preventNavigation(e);
-      setSelectedQuantity(selectedQuantity + 1);
-    }}
-  />
-</TooltipWrapper>
+```js {5, 7}
+import AddToCart from "./AddToCart";
+import Header from "./Header";
+import PageLoader from "./PageLoader";
+import PageNotFound from "./PageNotFound";
+import TooltipWrapper from "./TooltipWrapper";
+
+export { Header, PageNotFound, PageLoader, AddToCart, TooltipWrapper };
+```
+
+Now, in the `ProductQuantity` component we can show a tooltip by enclosing the `+` button with `TooltipWrapper` and providing the required props. As we only want the tooltip to appear when the button is disabled, we'll set the `showTooltip` prop to `isNotValidQuantity`:
+
+```jsx {1, 10-25}
+import { TooltipWrapper } from "components/commons";
+//...
+
+const ProductQuantity = ({ slug, availableQuantity }) => {
+  //...
+  return (
+    <div className="neeto-ui-border-black neeto-ui-rounded inline-flex flex-row items-center border">
+      {/* remaining JSX */}
+
+      <TooltipWrapper
+        content="Reached maximum units"
+        position="top"
+        showTooltip={isNotValidQuantity}
+      >
+        <Button
+          className="focus-within:ring-0"
+          disabled={isNotValidQuantity}
+          label="+"
+          style="text"
+          onClick={e => {
+            preventNavigation(e);
+            setSelectedQuantity(selectedQuantity + 1);
+          }}
+        />
+      </TooltipWrapper>
+    </div>
+  );
+};
+
+export default ProductQuantity;
 ```
 
 Verify if the tooltip is being displayed when the selected quantity equals the available quantity.
 
 To further improve the user experience, instead of displaying the selected quantity as text, we will turn it into an input component. This allows users to directly input the desired quantity without repeatedly clicking the `+` button. We will use the [Input](https://neeto-ui.neeto.com/?path=/docs/components-input--docs) component from neeto-ui. We will pass the `preventNavigation` function as its click handler.
 
-```jsx {15-21}
+```jsx {1, 17-23}
+import { Input } from "neetoui";
+
 const ProductQuantity = ({ slug, availableQuantity }) => {
   // remaining code
 
   return (
-    <div className="neeto-ui-border-black neeto-ui-rounded flex items-center border">
+    <div className="neeto-ui-border-black neeto-ui-rounded inline-flex flex-row items-center border">
       <Button
         className="focus-within:ring-0"
         label="-"
@@ -392,19 +470,45 @@ root.render(
 );
 ```
 
-Now, let's define a change handler for the Input component to implement logic to parse and validate user input as discussed above:
+Now, let's define a change handler for the `Input` component in the `ProductQuantity` component to implement logic to parse and validate user input as discussed above:
 
-```js
-const handleSetCount = event => {
-  const { value } = event.target;
-  const isNotValidInputQuantity = parseInt(value) > availableQuantity;
+```jsx {1, 9-19, 32}
+import { Toastr } from "neetoui";
+import useSelectedQuantity from "components/hooks/useSelectedQuantity";
+//...
 
-  if (isNotValidInputQuantity) {
-    Toastr.error(`Only ${availableQuantity} units are available`, { autoClose: 2000 });
-    setSelectedQuantity(availableQuantity);
-  } else {
-  setSelectedQuantity(value);
-  }
+const ProductQuantity = ({ slug, availableQuantity }) => {
+  const { selectedQuantity, setSelectedQuantity } = useSelectedQuantity(slug);
+  //...
+
+  const handleSetCount = event => {
+    const { value } = event.target;
+    const isNotValidInputQuantity = parseInt(value) > availableQuantity;
+
+    if (isNotValidInputQuantity) {
+      Toastr.error(`Only ${availableQuantity} units are available`, { autoClose: 2000 });
+      setSelectedQuantity(availableQuantity);
+    } else {
+    setSelectedQuantity(value);
+    }
+  };
+
+  //...
+
+  return (
+    {/* remaining JSX */}
+
+    <Input
+      nakedInput
+      className="ml-2"
+      contentSize="2"
+      value={selectedQuantity}
+      onClick={preventNavigation}
+      onChange={handleSetCount}
+    />
+
+    {/* remaining JSX */}
+  );
 };
 ```
 
@@ -433,9 +537,13 @@ const handleSetCount = event => {
 
 To prevent input from the user after entering a quantity outside the limit, we will shift the focus away from the input component by triggering the `onBlur` event. This can be accomplished by using the `useRef` hook to reference the `Input` component.
 
-```jsx {2, 11, 26}
+```jsx {1, 5, 15, 30}
+import { useRef } from "react";
+// ...
+
 const ProductQuantity = ({ slug, availableQuantity }) => {
   const countInputFocus = useRef(null);
+  // ...
 
   const handleSetCount = event => {
     const { value } = event.target;
@@ -453,7 +561,7 @@ const ProductQuantity = ({ slug, availableQuantity }) => {
   // ...
 
   return (
-    <div className="neeto-ui-border-black neeto-ui-rounded flex items-center border">
+    <div className="neeto-ui-border-black neeto-ui-rounded inline-flex flex-row items-center border">
       {/* remaining JSX */}
       <Input
         nakedInput
@@ -464,6 +572,7 @@ const ProductQuantity = ({ slug, availableQuantity }) => {
         onChange={handleSetCount}
         onClick={preventNavigation}
       />
+      {/* remaining JSX */}
     </div>
   );
 };
@@ -498,7 +607,7 @@ Great job! You've successfully added the ability to set the quantity of cart ite
 
 Finally, we will store the cart items and quantity details in [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to persist data after a reload. This ensures that users can view the products added to the cart on their next visit. Zustand provides the [persist middleware](https://github.com/pmndrs/zustand/blob/main/docs/integrations/persisting-store-data.md) to store the Zustand state in storage. Let's utilize this middleware to persist the cart items store in local storage:
 
-```js {5, 17-18}
+```js {2, 5, 17-18}
 // remaining imports
 import { persist } from "zustand/middleware";
 
