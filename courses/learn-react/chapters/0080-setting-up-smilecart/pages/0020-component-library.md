@@ -51,3 +51,5 @@ export default App;
 That’s it! We have learned how to use the neetoUI component library. We'll be using the neetoUI component library to build our project.
 
 You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/a02fec0c9c5244feb7475fe2d69edcb8f11ea680).
+
+To learn why `neetoUI` is not imported as `@bigbinary/neetoui` but used as `neetoui`, please refer to [Path aliases](https://courses.bigbinaryacademy.com/learn-react/miscellaneous/setting-up-template-repository/#path-aliases).
