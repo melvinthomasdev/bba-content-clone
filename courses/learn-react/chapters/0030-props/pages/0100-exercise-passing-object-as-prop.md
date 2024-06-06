@@ -1,4 +1,4 @@
-Add a prop with the name `details` to the Book component. Here `details` is an object which includes the title, author and genre. Pass the following details to the Book component.
+Add a prop with the name `details` to the Book component and display the details of the book. Here `details` is an object which includes the title, author and genre. Pass the following details to the Book component.
 
 |         **Key**          |             **Value**                     |
 |--------------------------|-------------------------------------------|
@@ -9,7 +9,13 @@ Add a prop with the name `details` to the Book component. Here `details` is an o
 
 <codeblock language="reactjs" type="exercise" testMode="fixedInput">
 <code>
-const Book = () => <div>Display the details of the book.</div>;
+const Book = () => (
+  <div>
+    <h2>title</h2>
+    <p>Author: {replace with author name}</p>
+    <p>Genre: {replace with genre}</p>
+  </div>
+);
 
 const App = () => (
   <div>
