@@ -43,24 +43,26 @@
   slug: position
 - name: Flexbox
   slug: flexbox
-- name: Styling Links
-  slug: styling-links
 - name: Challenges Set 04
   slug: challenges-set-04
 - name: Quiz
   slug: quiz-04
-- name: Styling Lists
-  slug: styling-lists
 - name: Challenges Set 05
   slug: challenges-set-05
 - name: Opacity
   slug: opacity
 - name: Box Shadow
   slug: box-shadow
-- name: Styling Forms
-  slug: styling-forms
 - name: Projects 1
   slug: projects-1
+- name: CSS Reset
+  slug: css-reset
+- name: Styling Links
+  slug: styling-links
+- name: Styling Lists
+  slug: styling-lists
+- name: Styling Forms
+  slug: styling-forms
 - name: Combinators
   slug: combinators
 - name: Pseudo-classes
@@ -79,8 +81,6 @@
   slug: responsive-web-design
 - name: Grid
   slug: grid
-- name: CSS Reset
-  slug: css-reset
 - name: Default Values
   slug: default-values
 - name: Resolving errors
