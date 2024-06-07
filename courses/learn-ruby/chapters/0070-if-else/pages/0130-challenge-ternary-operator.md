@@ -1,7 +1,7 @@
 If the length of **name** is
 more than 4 letters,
-then print **long name**.
-Otherwise, print **small name**.
+then print **Long name**.
+Otherwise, print **Small name**.
 Use ternary operator to
 solve this problem.
 
@@ -12,6 +12,6 @@ name = "Mary"
 
 <solution>
 name = "Mary"
-puts name.length > 4 ? "long name" : "small name"
+puts name.length > 4 ? "Long name" : "Small name"
 </solution>
 </codeblock>

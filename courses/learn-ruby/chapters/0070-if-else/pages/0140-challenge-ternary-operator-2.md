@@ -1,7 +1,7 @@
 If the driving speed
 is below 50, then print
-**safe speed**.
-Otherwise, print **high speed**.
+**Safe speed**.
+Otherwise, print **High speed**.
 Use the ternary operator
 to solve this problem.
 
@@ -12,6 +12,6 @@ speed = 32
 
 <solution>
 speed = 32
-puts speed < 50  ? "safe speed" : "high speed"
+puts speed < 50  ? "Safe speed" : "High speed"
 </solution>
 </codeblock>

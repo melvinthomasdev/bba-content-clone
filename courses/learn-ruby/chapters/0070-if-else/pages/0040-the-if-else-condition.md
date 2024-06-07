@@ -15,7 +15,7 @@ food = "pizza"
 if food == "pizza"
   puts "You like pizza"
 else
-  puts "you do not like pizza"
+  puts "You do not like pizza"
 end
 </code>
 </codeblock>
@@ -32,7 +32,7 @@ food = "soup"
 if food == "pizza"
   puts "You like pizza"
 else
-  puts "you do not like pizza"
+  puts "You do not like pizza"
 end
 </code>
 </codeblock>

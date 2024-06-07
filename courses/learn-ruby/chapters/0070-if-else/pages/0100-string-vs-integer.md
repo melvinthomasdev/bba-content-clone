@@ -5,9 +5,9 @@ They are not the same.
 <codeblock language="ruby" type="lesson">
 <code>
 if "12" == 12
-  puts "they are equal"
+  puts "They are equal"
 else
-  puts "they are not equal"
+  puts "They are not equal"
 end
 </code>
 </codeblock>

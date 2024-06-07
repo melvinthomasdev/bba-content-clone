@@ -13,6 +13,8 @@ puts result
 </code>
 </codeblock>
 
+As expected, we see nothing in the console.
+
 There is no 10th element in the array.
 So, the array returns `nil`.
 It means the 10th element is `nothing`.

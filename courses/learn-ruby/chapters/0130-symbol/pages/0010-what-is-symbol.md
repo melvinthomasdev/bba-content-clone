@@ -1,12 +1,17 @@
 In the example given below,
 both the variables
-`hello` and `name`
-contain different string values:
+`hello`
+and
+`name` contain different
+string values:
 
 <codeblock language="ruby" type="lesson">
 <code>
 hello = "Hello World"
 name = "John Smith"
+
+puts hello
+puts name
 </code>
 </codeblock>
 
@@ -19,6 +24,10 @@ the same value.
 hello1 = "Hello"
 hello2 = "Hello"
 hello3 = "Hello"
+
+puts hello1
+puts hello2
+puts hello3
 </code>
 </codeblock>
 
@@ -42,6 +51,10 @@ That's where symbol comes in picture.
 hello1 = :hello
 hello2 = :hello
 hello3 = :hello
+
+puts hello1
+puts hello2
+puts hello3
 </code>
 </codeblock>
 
