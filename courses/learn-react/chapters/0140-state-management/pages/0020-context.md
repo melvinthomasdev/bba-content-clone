@@ -55,6 +55,7 @@ Now, we can use the `cartItems` state and `setCartItems` function from any compo
 Let's remove the `cartItemsCount` prop from the `Header` component. Instead, we can get the `cartItems` from the context and find its length:
 
 ```jsx
+import { useContext } from "react";
 import CartItemsContext from "src/contexts/CartItemsContext";
 
 const Header = ({ title, actionBlock, shouldShowBackButton = true }) => {
@@ -67,7 +68,7 @@ const Header = ({ title, actionBlock, shouldShowBackButton = true }) => {
 
 Next, we can remove the props `isInCart` and `toggleIsInCart` of the `AddToCart` component. Instead, we can pass the `slug` of the product from the `ProductList` and `Product` components to `AddToCart` and use it along with the `CartItemsContext` to check whether a product is in the cart and update the cart accordingly.
 
-```jsx {7-8, 13-17, 22}
+```jsx {1, 3, 5, 7-8, 13-17, 22}
 import { useContext } from "react";
 
 import CartItemsContext from "src/contexts/CartItemsContext";

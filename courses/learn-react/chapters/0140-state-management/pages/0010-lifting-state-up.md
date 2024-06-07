@@ -6,11 +6,15 @@ Let's get started by adding a button to add and remove products in the cart from
 
 <image>add-to-cart-button.gif</image>
 
-We can achieve this by creating a component named `AddToCart` that renders a button and toggles a state `isInCart` on button click, as shown:
+We can achieve this by creating a component named `AddToCart` that renders a button and toggles a state `isInCart` on button click.
+
+Run the below command to create `AddToCart` component.
+
+```bash
+touch src/components/AddToCart.jsx
+```
 
 ```jsx
-// src/components/ProductList/AddToCart.jsx
-
 import { useState } from "react";
 
 import { Button } from "neetoui";
@@ -169,6 +173,8 @@ Next, we will pass a boolean prop called `isInCart` from the `ProductList` compo
 We can then define a function, `toggleIsInCart`, within the `ProductList` component. This function will add and remove items from the cart based on whether the product is already present.
 
 ```jsx
+import { without } from "ramda";
+
 const toggleIsInCart = slug =>
   setCartItems(prevCartItems =>
     prevCartItems.includes(slug)

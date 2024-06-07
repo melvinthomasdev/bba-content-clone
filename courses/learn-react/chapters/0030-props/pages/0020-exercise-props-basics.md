@@ -1,4 +1,4 @@
-Define a component `MyHobby` and use it inside the App component. `MyHobby` should display the text `My Hobby is coding` when we pass `"coding"` to the `hobby` attribute.
+Define a component `MyHobby` similar to `Introduction` and use it inside the App component. `MyHobby` should display the text `My Hobby is coding.` when we pass `"coding"` to the `hobby` attribute.
 
 <codeblock language="reactjs" type="exercise" testMode="fixedInput">
 <code>

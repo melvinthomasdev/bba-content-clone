@@ -87,7 +87,7 @@ The `get` function retrieves the current state value. In our case, we are solely
 
 We will utilize the `set` function to update `cartItems` within the `toggleIsInCart` function. Since the `set` function receives the complete state, we will destructure the `cartItems`.
 
-```js {4, 6-13}
+```js {1, 4, 6-13}
 import { without } from "ramda";
 import { create } from "zustand";
 
