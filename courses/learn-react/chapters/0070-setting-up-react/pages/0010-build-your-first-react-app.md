@@ -1,4 +1,4 @@
-We assume that you have already set up your PC with Node.js and npm. If you haven't installed them yet, please visit the official [Node.js](https://nodejs.org/en/download) website and download Node.js by selecting your operating system. It's worth noting that Node version 18.17.0 includes npm by default, so if you are installing Node version 18.17.0 or higher, you don't need to install npm separately.
+We assume that you have already set up your PC with Node.js and npm. If you haven't installed them yet, please visit the official [Node.js](https://nodejs.org/en/download) website and download Node.js version `18.12` by selecting your operating system.
 
 Once you have `npm` installed, open your terminal and run the following command to install `yarn`. We will be using `yarn` as our package manager.
 

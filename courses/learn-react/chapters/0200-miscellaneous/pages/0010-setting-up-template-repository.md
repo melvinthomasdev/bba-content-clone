@@ -26,11 +26,81 @@ After ejecting CRA, we copied the essential configurations related to React from
 
 ## EditorConfig
 
-EditorConfig is a tool that helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs. Refer to the section on [Adding .editorconfig](https://courses.bigbinaryacademy.com/learn-rubyonrails/linting-and-formatting-code/#adding-editorconfig) from LRRB and copy the `.editorconfig` file to specify editor configuration for our project.
+EditorConfig is a tool that helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
+
+Run the following command from the project root to create `editorconfig`:
+
+```bash
+touch .editorconfig
+```
+
+Then, add the following lines to the file.
+
+```text
+# VScode respects this. More info at editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+```
+
+VSCode will automatically detect this configuration, and will strictly adhere to the rules mentioned in it.
 
 ## ESLint
 
-ESLint is a widely adopted JavaScript linter that analyzes and enforces coding rules and guidelines. Refer to the [section on ESLint](https://courses.bigbinaryacademy.com/learn-rubyonrails/linting-and-formatting-code/#eslint) to add ESLint configurations.
+ESLint is a widely adopted JavaScript linter that analyzes and enforces coding rules and guidelines. Most of the problems ESLint finds can be automatically fixed.
+
+### Add the modules
+
+To install the required ESLint plugins, run the following command from the terminal:
+
+```bash
+yarn add -D eslint@^8.45.0 \
+@babel/eslint-parser@^7.22.9 \
+eslint-plugin-cypress@^2.13.3 \
+eslint-plugin-react-hooks@^4.6.0 \
+eslint-plugin-import@^2.28.0 \
+eslint-config-prettier@^8.9.0 \
+eslint-plugin-prettier@4.0.0 \
+eslint-plugin-json@^3.1.0 \
+eslint-plugin-react@^7.33.0 \
+eslint-plugin-promise@^6.1.1 \
+eslint-plugin-jam3@^0.2.3 \
+eslint-plugin-unused-imports@^3.0.0
+```
+
+Prettier is a code formatter that can be integrated with linters. To integrate prettier with ESLint, we added `eslint-config-prettier` as well as `eslint-plugin-prettier` modules.
+
+### Add the config
+
+Run the following command to fetch the required ESlint configs from `wheel`:
+
+```bash
+raw_base_url="https://raw.githubusercontent.com/bigbinary/wheel/main"
+declare -a configs=(
+  ".eslintrc.js"
+  ".eslintignore"
+  ".eslint-rules/helpers/index.js"
+  ".eslint-rules/imports/enforced.js"
+  ".eslint-rules/imports/order.js"
+  ".eslint-rules/globals.js"
+  ".eslint-rules/overrides.js"
+  ".eslint-rules/promise.js"
+  ".eslint-rules/react.js"
+)
+for config in "${configs[@]}"; do
+  echo "Downloading ${config}..."
+  curl --create-dirs -o "${config}" "${raw_base_url}/${config}"
+done
+cat << 'EOF' > .eslint-rules/custom.js
+module.exports = {};
+EOF
+```
 
 Inorder for the ESLint to understand and analyze code written with Babel's syntax extensions, we need to specify the parser in `eslintConfig` in `package.json`:
 
@@ -119,7 +189,29 @@ curl -o ".gitignore" "https://raw.githubusercontent.com/bigbinary/smile-cart-fro
 
 ## Prettier
 
-Prettier is a code formatter that makes code visually appealing by enforcing a consistent and standardized style. Refer to [this documentation](https://courses.bigbinaryacademy.com/learn-rubyonrails/linting-and-formatting-code/#prettier) to configure prettier.
+Prettier is a code formatter that makes code visually appealing by enforcing a consistent and standardized style.
+
+### Add the module
+
+Run the following command to install `prettier`:
+
+```bash
+yarn add -D prettier@2.6.2
+```
+
+Also add the prettier plugin for tailwind using the following command:
+
+```bash
+yarn add -D prettier-plugin-tailwindcss@^0.4.1
+```
+
+### Add the config
+
+Run the following from the terminal to fetch the Prettier config from `wheel`:
+
+```bash
+curl -o ".prettierrc.js" "https://raw.githubusercontent.com/bigbinary/wheel/main/.prettierrc.js"
+```
 
 We have excluded the following line from `.prettierrc.js` from the template repository since we are configuring the Tailwind CSS as part of the course itself:
 
@@ -181,7 +273,7 @@ Additionally, we have saved the following VSCode settings to automatically forma
 First, add `lint-staged` to devDependencies:
 
 ```bash
-yarn add -D lint-staged
+yarn add -D lint-staged@^13.2.3
 ```
 
 We specified `lint-staged` as a devDependency since we only need this tool for development purposes.
@@ -335,7 +427,7 @@ At last, we have fixed the ESLint errors in the files contained in `src` directo
 
 ```bash
 npx prettier --write "./src/**/*.{js,jsx,json}"
-npx eslint --fix ".src/**/*.{js,jsx,json}"
+npx eslint --fix "./src/**/*.{js,jsx,json}"
 ```
 
 You may need to manually fix or disable the non-auto-fixable errors.
