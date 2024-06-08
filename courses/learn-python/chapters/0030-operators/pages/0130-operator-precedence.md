@@ -6,7 +6,7 @@ In simple terms, if we give an expression such as `3 + 4 / 2` the expression sho
 - 3 + (4/2)
 - 3 + 2 = 5
 
-This is due to the properties of the mathematical operators, which prioritize the multiplicative and divisive operators over the additive and subtractive operators. Hence the result of the above expression will be `0`.
+This is due to the properties of the mathematical operators, which prioritize the multiplicative and divisive operators over the additive and subtractive operators. Hence the result of the above expression will be `5`.
 
 We can also visualize this operation as a tree.
 
