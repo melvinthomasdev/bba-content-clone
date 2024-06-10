@@ -13,3 +13,13 @@
   slug: staging-files-in-git
 - name: Ignoring files in git
   slug: ignoring-files-in-git
+- name: Committing changes in git
+  slug: committing-changes-in-git
+- name: Remote repositories
+  slug: remote-repositories
+- name: Setting up a remote repository
+  slug: setting-up-a-remote-repository
+- name: The remote command
+  slug: the-remote-command
+- name: GitHub features
+  slug: github-features

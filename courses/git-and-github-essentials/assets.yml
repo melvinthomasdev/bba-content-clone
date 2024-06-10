@@ -4,6 +4,10 @@ images:
   - git-branches.png
   - git-branch-command.png
   - git-stage-exercise.png
+  - github-issues.png
   - git-and-github-essentials-header-image.png
   - git-and-github-essentials.png
+  - new-repository-button.png
+  - repository-name-and-description.png
+  - initialize-repository-options.png
 databases: []

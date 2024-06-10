@@ -2,7 +2,7 @@ Consider you are currently working on a project and have made changes to multipl
 
 <image alt="Git staging exercise">git-stage-exercise.png</image>
 
-<codeblock language="html" type="exercise" testMode="fixedInput">
+<codeblock language="bash" type="exercise" testMode="fixedInput" matchSolutionCode="true">
   <code></code>
 
 <solution>
