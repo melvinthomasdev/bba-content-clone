@@ -25,10 +25,7 @@ const Carousel = ({ imageUrls }) => (
       icon={Left}
       style="text"
     />
-    <img
-      className="max-w-56 h-56 max-h-56 w-56"
-      src={imageUrls[0]}
-    />
+    <img className="max-w-56 h-56 max-h-56 w-56" src={imageUrls[0]} />
     <Button
       className="shrink-0 focus-within:ring-0 hover:bg-transparent"
       icon={Right}
@@ -206,7 +203,8 @@ const Carousel = ({ imageUrls, title }) => {
   };
 
   const handlePrevious = () => {
-    const previousIndex = (currentIndex - 1 + imageUrls.length) % imageUrls.length;
+    const previousIndex =
+      (currentIndex - 1 + imageUrls.length) % imageUrls.length;
     setCurrentIndex(previousIndex);
   };
 

@@ -68,106 +68,108 @@ Refer [the documentation](https://github.com/bigbinary/babel-preset-neeto/blob/m
 
 1. Install `babel-preset-neeto`:
 
-    ```bash
-    yarn add @bigbinary/babel-preset-neeto@1.0.7
-    ```
+```bash
+yarn add @bigbinary/babel-preset-neeto@1.0.7
+```
 
 2. Add `bigbinary/neeto` preset to babel presets in the `package.json` file:
 
-    ```js {6}
-    {
-      // ...
-      "babel": {
-        "presets": [
-          "react-app",
-          "@bigbinary/neeto"
-        ]
-      }
-    }
-    ```
+```js {6}
+{
+  // ...
+  "babel": {
+    "presets": [
+      "react-app",
+      "@bigbinary/neeto"
+    ]
+  }
+}
+```
 
-    The presets array will include the [`"react-app"`](https://www.npmjs.com/package/babel-preset-react-app) preset, which was added during the app setup. This preset encompasses the plugin to transform `JSX` into plain JavaScript, along with other language features required by React.
+The presets array will include the [`"react-app"`](https://www.npmjs.com/package/babel-preset-react-app) preset, which was added during the app setup. This preset encompasses the plugin to transform `JSX` into plain JavaScript, along with other language features required by React.
 
-    The presets are executed in reverse order, from last to first, in the presets array. Therefore, we should insert our Babel preset, `"@bigbinary/neeto"`, towards the end of the presets array in `package.json`. This ensures that the code transformations are applied directly to the source code written by developers.
-
+The presets are executed in reverse order, from last to first, in the presets array. Therefore, we should insert our Babel preset, `"@bigbinary/neeto"`, towards the end of the presets array in `package.json`. This ensures that the code transformations are applied directly to the source code written by developers.
 
 3. Go through each of the `useCartItemsStore` usages and check whether we can utilize the Zustand transformers from `babel-preset-neeto`:
 
-    -  **src/components/utils.js**
+- **src/components/utils.js**
 
-        ```js
-        const { cartItems } = useCartItemsStore.getState();
-        ```
+```js
+const { cartItems } = useCartItemsStore.getState();
+```
 
-        Looking at the above code, you might think that we can use `pickFrom` since we need to access a single property from Zustand as shown below:
+   Looking at the above code, you might think that we can use `pickFrom` since we need to access a single property from Zustand as shown below:
 
-        ```js
-        const cartItems = useCartItemsStore.pickFrom();
-        ```
+```js
+const cartItems = useCartItemsStore.pickFrom();
+```
 
-        Here is how the above code will get transpiled:
+   Here is how the above code will get transpiled:
 
-        ```js
-        const cartItems = useCartItemsStore(store => store.cartItems);
-        ```
+```js
+const cartItems = useCartItemsStore(store => store.cartItems);
+```
 
-        However, this is not the requirement in `cartTotalOf` function. We specifically need to use the `getState` method to access the Zustand store outside components and hooks. Moreover, the `getState` function is used to access the state in a non-reactive way; it doesn't listen to changes in the Zustand store. Therefore, there is no chance of having boilerplate code to select and compare store values. Due to these reasons, we don't need to use transformers here.
+   However, this is not the requirement in `cartTotalOf` function. We specifically need to use the `getState` method to access the Zustand store outside components and hooks. Moreover, the `getState` function is used to access the state in a non-reactive way; it doesn't listen to changes in the Zustand store. Therefore, there is no chance of having boilerplate code to select and compare store values. Due to these reasons, we don't need to use transformers here.
 
-    -  **Cart/index.jsx**
+   **Cart/index.jsx**
 
-        ```js
-        const { cartItems, setSelectedQuantity } = useCartItemsStore();
-        ```
+```js
+const { cartItems, setSelectedQuantity } = useCartItemsStore();
+```
 
-        In addition to the above properties, the cart items store has another property, `removeCartItem`. Therefore, we should use selector and comparator functions as shown:
+   In addition to the above properties, the cart items store has another property, `removeCartItem`. Therefore, we should use selector and comparator functions as shown:
 
-        ```js
-        import { shallow } from "zustand/shallow";
+```js
+import { shallow } from "zustand/shallow";
 
-        const { cartItems, setSelectedQuantity } = useCartItemsStore(store => ({
-          cartItems: store.cartItems,
-          setSelectedQuantity: store.setSelectedQuantity
-        }), shallow);
-        ```
+const { cartItems, setSelectedQuantity } = useCartItemsStore(
+  store => ({
+    cartItems: store.cartItems,
+    setSelectedQuantity: store.setSelectedQuantity,
+  }),
+  shallow
+);
+```
 
-        With the transformer, we can simplify the above boilerplate code as shown:
+   With the transformer, we can simplify the above boilerplate code as shown:
 
-        ```js
-        const { cartItems, setSelectedQuantity } = useCartItemsStore.pick();
-        ```
+```js
+const { cartItems, setSelectedQuantity } = useCartItemsStore.pick();
+```
 
-    -  **Cart/ProductCard.jsx**
+   **Cart/ProductCard.jsx**
 
-        ```js
-        const removeCartItem = useCartItemsStore(prop("removeCartItem"));
-        ```
+```js
+const removeCartItem = useCartItemsStore(prop("removeCartItem"));
+```
 
-        Here we can use the `pickFrom` transformer to pick the `removeCartItem` property as shown:
+   Here we can use the `pickFrom` transformer to pick the `removeCartItem` property as shown:
 
-        ```js
-        const removeCartItem = useCartItemsStore.pickFrom();
-        ```
+```js
+const removeCartItem = useCartItemsStore.pickFrom();
+```
 
-    -  **Header.jsx**
+   **Header.jsx**
 
-        ```js
-        const cartItemsCount = useCartItemsStore(
-          store => keys(store.cartItems).length
-        );
-        ```
+```js
+const cartItemsCount = useCartItemsStore(
+  store => keys(store.cartItems).length
+);
+```
 
-        In this case, we can't use a transformer since the transformers doesn't accept an expression as an argument. Therefore, we can keep the above usage as it is.
+   In this case, we can't use a transformer since the transformers doesn't accept an expression as an argument. Therefore, we can keep the above usage as it is.
 
-    -  **useSelectedQuantity.js**
+   **useSelectedQuantity.js**
 
-        ```js
-        const [selectedQuantity, setSelectedQuantity] = useCartItemsStore(
-          paths([["cartItems", slug], ["setSelectedQuantity"]]),
-          shallow
-        );
-        ```
+```js
+const [selectedQuantity, setSelectedQuantity] = useCartItemsStore(
+  paths([["cartItems", slug], ["setSelectedQuantity"]]),
+  shallow
+);
+```
 
-        Here also, we can't use the transformer for the Zustand store usage, as the `pick` method only allows us to extract multiple properties at the same level of nesting. We will keep this Zustand store usage as it is.
+   Here also, we can't use the transformer for the Zustand store usage, as the `pick` method only allows us to extract multiple properties at the same level of nesting. We will keep this Zustand store usage as it is.
 
 Let's commit the new changes:
 
