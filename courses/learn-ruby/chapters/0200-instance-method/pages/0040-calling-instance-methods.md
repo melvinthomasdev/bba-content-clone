@@ -48,5 +48,5 @@ eat
 
 The error message is `undefined method eat for main`.
 
-In summary first we need to define a method and then we need to call that method to put that method to use.
+In summary, first we need to define a method and then we need to call that method to put that method to use.
 Just defining the method means that method is ready and waiting for someone to call it to do something.
