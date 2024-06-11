@@ -8,6 +8,7 @@ Computers skip all the comments and do not even look at them.
 <code>
 # This is a comment
 greet = "Hello world"
+puts greet
 # This line will not be executed
 </code>
 </codeblock>
@@ -20,6 +21,7 @@ A comment can start midway too:
 <codeblock language="ruby" type="lesson">
 <code>
 greet = "Hello world" # this greeting is not personalized
+puts greet
 </code>
 </codeblock>
 
@@ -36,6 +38,8 @@ will not ignore it.
 <codeblock language="ruby" type="lesson">
 <code>
 hello = "Good evening #--- Mr. Bezos"
+
+puts hello
 </code>
 </codeblock>
 

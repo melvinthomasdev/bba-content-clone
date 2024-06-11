@@ -31,6 +31,12 @@ is an empty array:
 <code>
 array = [1,2,3]
 a, b, c, *d = array
+
 # a = 1; b = 2; c = 3; d = []
+
+puts a
+puts b
+puts c
+puts d
 </code>
 </codeblock>

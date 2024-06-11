@@ -10,11 +10,20 @@ the remaining values.
 array = [1,2,3]
 
 a, *b = array
-# a = 1
+
 # b = [2,3]
+# a = 1
+
+
+puts b
+puts a
 </code>
 </codeblock>
 
 In the case given above, variable `b`
 takes up both the values
-**2** & **3** and puts them in an array.
+**2**
+and
+**3**
+and
+puts them in an array.

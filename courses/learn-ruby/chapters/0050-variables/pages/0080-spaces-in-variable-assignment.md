@@ -5,10 +5,12 @@ The second style has one space before and after `=`.
 <codeblock language="ruby" type="lesson">
 <code>
 # style 1
-name="John Smith"
+first_name="John Smith"
+puts first_name
 
 # style 2
-name = "John Smith"
+last_name = "John Smith"
+puts last_name
 </code>
 </codeblock>
 

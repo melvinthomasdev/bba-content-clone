@@ -10,5 +10,7 @@ strings, use `%w`:
 <codeblock language="ruby" type="lesson">
 <code>
 array_of_strings = %w[green red blue]
+
+puts array_of_strings
 </code>
 </codeblock>
