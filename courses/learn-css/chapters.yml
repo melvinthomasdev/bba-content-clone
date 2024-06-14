@@ -9,7 +9,7 @@
   slug: colors
 - name: Div Element
   slug: div-element
-- name: Quiz
+- name: Quiz 1
   slug: quiz-01
 - name: Dimensions and Units
   slug: dimensions-and-units
@@ -21,7 +21,7 @@
   slug: challenges-set-01
 - name: Spacing
   slug: spacing
-- name: Quiz
+- name: Quiz 2
   slug: quiz-02
 - name: Text Formatting
   slug: text-formatting
@@ -31,7 +31,7 @@
   slug: borders
 - name: Backgrounds
   slug: backgrounds
-- name: Quiz
+- name: Quiz 3
   slug: quiz-03
 - name: Display
   slug: display
@@ -45,7 +45,7 @@
   slug: flexbox
 - name: Challenges Set 04
   slug: challenges-set-04
-- name: Quiz
+- name: Quiz 4
   slug: quiz-04
 - name: Challenges Set 05
   slug: challenges-set-05
