@@ -1,0 +1,16 @@
+---
+- title: How to push changes
+  slug: how-to-push-changes
+  page_type: lesson
+- title: Exercise - Pushing changes
+  slug: exercise-pushing-changes
+  page_type: exercise
+- title: How to pull changes
+  slug: how-to-pull-changes
+  page_type: lesson
+- title: Exercise - Pulling changes
+  slug: exercise-pulling-changes
+  page_type: exercise
+- title: Git and GitHub project - Task 3
+  slug: git-github-project-task-3
+  page_type: lesson

@@ -21,5 +21,13 @@
   slug: setting-up-a-remote-repository
 - name: The remote command
   slug: the-remote-command
+- name: Pushing and pulling changes
+  slug: pushing-and-pulling-changes
 - name: GitHub features
   slug: github-features
+- name: GitHub UI
+  slug: github-ui
+- name: Advanced branching concepts
+  slug: advanced-branching-concepts
+- name: Collaborating on GitHub
+  slug: collaborating-on-github

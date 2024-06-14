@@ -10,4 +10,7 @@ images:
   - new-repository-button.png
   - repository-name-and-description.png
   - initialize-repository-options.png
+  - recent-pull-request.png
+  - assign-pull-requests.png
+  - collaborators-settings-page-github.png
 databases: []
