@@ -25,7 +25,6 @@ images:
   - htmldom-sectional-project-tic-tac-toe.gif
   - movie-list-ex.png
   - sticky-notes.gif
-  - personal-resume.png
   - currency-convertor.png
   - password-generator-project.png
   - news-explorer-app-demo-view.png
@@ -38,4 +37,5 @@ images:
   - surface-area.png
   - debounce-function-new.gif
   - learn-javascript-certificate.png
+  - to-do-list.png
 databases: []

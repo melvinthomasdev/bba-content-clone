@@ -1,4 +1,7 @@
 ---
-- title: Login Form
-  slug: login-form
+- title: Personal Resume
+  slug: personal-resume
+  page_type: lesson
+- title: Shopping Cart
+  slug: shopping-cart
   page_type: lesson

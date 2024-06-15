@@ -1,6 +1,3 @@
-- title: To Do List
-  slug: to-do-list
-  page_type: lesson
-- title: Shopping Cart
-  slug: shopping-cart
+- title: Login Form
+  slug: login-form
   page_type: lesson
