@@ -1,8 +1,4 @@
-Regular expressions are case sensitive
-by default, meaning that uppercase
-and
-lowercase letters are treated as different
-characters.
+Regular expressions are case sensitive by default, meaning that uppercase and lowercase letters are treated as different characters.
 
 <codeblock language="javascript" type="lesson">
 <code>

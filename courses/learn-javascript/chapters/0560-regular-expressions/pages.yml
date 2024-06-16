@@ -2,17 +2,29 @@
 - title: Introduction to Regular expressions
   slug: introduction-to-regular-expressions
   page_type: lesson
-- title: Matching Exact Characters
-  slug: matching-exact-characters
-  page_type: lesson
 - title: Challenge - Matching Exact Characters
   slug: challenge-matching-exact-characters
+  page_type: exercise
+- title: Challenge 2 - Matching Exact Characters
+  slug: challenge-2-matching-exact-characters
+  page_type: exercise
+- title: Challenge 3 - Matching Exact Characters
+  slug: challenge-3-matching-exact-characters
   page_type: exercise
 - title: Case Sensitivity
   slug: case-sensitivity
   page_type: lesson
 - title: Challenge - Case Sensitivity
   slug: challenge-case-sensitivity
+  page_type: exercise
+- title: Global Matches
+  slug: global-matches
+  page_type: lesson
+- title: Challenge - Global Matches
+  slug: challenge-global-matches
+  page_type: exercise
+- title: Challenge 2 - Global Matches
+  slug: challenge-2-global-matches
   page_type: exercise
 - title: Dot metacharacter
   slug: dot-metacharacter
@@ -97,13 +109,4 @@
   page_type: exercise
 - title: Challenge 2 - Matching Digits in a string
   slug: challenge-2-matching-digits-in-a-string
-  page_type: exercise
-- title: Global Matches
-  slug: global-matches
-  page_type: lesson
-- title: Challenge - Global Matches
-  slug: challenge-global-matches
-  page_type: exercise
-- title: Challenge 2 - Global Matches
-  slug: challenge-2-global-matches
   page_type: exercise

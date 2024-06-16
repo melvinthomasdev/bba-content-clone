@@ -1,4 +1,4 @@
-The dot character, `.`, matches any single character
+The dot character `.` matches any single character
 except newline characters.
 
 <codeblock language="javascript" type="lesson">
