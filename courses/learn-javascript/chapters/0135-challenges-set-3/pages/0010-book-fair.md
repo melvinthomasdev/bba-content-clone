@@ -7,18 +7,17 @@ If the details of a book are provided in the below format:
 |"alreadyRead" |true |
 |isAvailable |true|
 
-Write a code that takes in these book details to perform the following actions:
+Write code that takes in these book details to perform the following actions:
 
-* For each book, print the book title and book author in the format:
-  `[Book Name] by [Author Name]`.
+* For each book, use the format, `[Book Name] by [Author Name]` and print the book title and book author. 
 
 * You need to print these additional statements to the console based on the provided conditions:
 
-	* If the user has read it: `You have already read [Book Name] by [Author Name]`.
+	* If the user has read the book: `You have already read [Book Name] by [Author Name].`
 
-	* If the user has not yet read it and it is available.": `Since [Book Name] by [Author Name] is available, you can read it next`
+	* If the user has not yet read the book and it is available.": `Since [Book Name] by [Author Name] is available, you can read it next.`
 
-	* If the user has not yet read it, but it is not available: `Currently, $[Book Name] by [Author Name] is unavailable. You can plan to read it next once it becomes available.`
+	* If the user has not yet read the book, but it is not available: `Currently, $[Book Name] by [Author Name] is unavailable. You can plan to read it next once it becomes available.`
 
 Make sure your code is flexible enough to work with any value of the `bookDetails` variable that meets these requirements.
 
@@ -33,7 +32,7 @@ const bookDetails = {
 
 Output:
 "Malgudi Days by R. K. Narayan"
-"You have already read Malgudi Days by R. K. Narayan"
+"You have already read Malgudi Days by R. K. Narayan."
 ```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
@@ -45,14 +44,15 @@ const findTheNextBook = () => {
 
 <solution>
 const findTheNextBook = (bookDetails) => {
-	console.log(`${bookDetails.title} by ${bookDetails.author}.`);
+	console.log(`${bookDetails.title} by ${bookDetails.author}`);
+
 	if (bookDetails.alreadyRead) {
 		console.log(`You have already read ${bookDetails.title} by ${bookDetails.author}.`);
 	} else {
 		if (!bookDetails.isAvailable) {
 			console.log(`Currently, ${bookDetails.title} by ${bookDetails.author} is unavailable. You can plan to read it next once it becomes available.`);
 		} else {
-			console.log(`Since ${bookDetails.title} by ${bookDetails.author} is available, you can read it next`);
+			console.log(`Since ${bookDetails.title} by ${bookDetails.author} is available, you can read it next.`);
 		}
 	}
 }
