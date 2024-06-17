@@ -12,7 +12,7 @@ custom_data:
 home_logo: ruby-header-image.png
 logo: ruby.png
 position: 17
-introduction: Join this course to learn the fundamentals of this beginner-friendly language. Start with understanding topics like Arrays, Hashes and Symbols and reach topics like Enumerables, Modules and Singletons in the same course. 💎
+introduction: Join this course to learn the fundamentals of this beginner-friendly language. Start with understanding topics like Arrays, Hashes and Symbols and reach topics like Enumerables, Modules and Singletons in the same course.
 certificate_configuration:
   enabled: true
   message: This is a self issued certificate. Bigbinary Academy is not conducting any test before issuing. You are here to learn so you should have strong morals to post this certificate to the public only when you have finished the course.
