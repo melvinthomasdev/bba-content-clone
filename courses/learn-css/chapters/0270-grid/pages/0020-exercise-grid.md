@@ -3,7 +3,7 @@ add the following properties
 to the **photo-gallery**:
 
 - `display: grid`
-- `grid-template-columns: 90px 90px 90px`
+- `grid-template-columns: 200px 200px 200px`
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
