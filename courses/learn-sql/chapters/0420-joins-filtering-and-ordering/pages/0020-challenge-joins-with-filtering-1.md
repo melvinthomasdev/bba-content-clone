@@ -18,8 +18,8 @@ SELECT  books.name AS bookName,
         courses.name AS courseName,
         authors.name AS authorName
 FROM    books JOIN courses JOIN authors
-ON      books.authorId = authors.id AND
-        books.courseId = courses.id
+ON      books.authorID = authors.id AND
+        books.courseID = courses.id
 WHERE   gender = 'F' AND
         price BETWEEN 100 AND 600 AND
         courses.name in ('Java', 'PHP')
