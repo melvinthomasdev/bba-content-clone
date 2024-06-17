@@ -13,7 +13,7 @@ home_logo: html-header-image.png
 logo: html5.png
 chapter_completion_image: celebration_html.gif
 position: 173
-introduction: In this HTML course, you'll learn the basics including the essential elements and tags used to structure your web pages. You'll cover topics like headings, paragraphs, lists, links, and images. As you progress, you'll understand advanced topics like semantic markup, forms and multimedia integration.
+introduction: This course is your first step to learning web development. Learn to use the building blocks of the web. 🎨
 certificate_configuration:
   enabled: true
   message: This is a self issued certificate. Bigbinary Academy is not conducting any test before issuing. You are here to learn so you should have strong morals to post this certificate to the public only when you have finished the course.

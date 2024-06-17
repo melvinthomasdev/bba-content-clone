@@ -12,7 +12,7 @@ custom_data:
 home_logo: sql-header-image.png
 logo: learn-sql.png
 position: 20
-introduction: This course teaches you how to retrieve the right data from the tables. Beyond that, you will learn about joining tables, unions, primary keys, table constraints, foreign keys, views, subqueries, and more. All this without installing anything on your laptop.
+introduction: This course teaches you how to retrieve the right data from the tables. Beyond that, you will learn about joining tables, unions, primary keys, table constraints, foreign keys, views, subqueries, and more. All this without installing anything on your laptop. 📊
 certificate_configuration:
   enabled: true
   message: This is a self issued certificate. Bigbinary Academy is not conducting any test before issuing. You are here to learn so you should have strong morals to post this certificate to the public only when you have finished the course.

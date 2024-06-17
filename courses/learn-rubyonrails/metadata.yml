@@ -11,7 +11,7 @@ logo: ruby-on-rails.png
 show_google_login: false
 show_reset_button: false
 position: 19
-introduction: In this course, you'll learn how to set up your development environment and build robust web applications using the Ruby on Rails framework. From MVC architecture to database management, you'll cover all the essentials.
+introduction: This course teaches you the popular framework that powers some of the most successful web applications. From MVC architecture to database integration, you'll build dynamic web applications. 🚂
 certificate_configuration:
   enabled: true
   message: This is a self issued certificate. Bigbinary Academy is not conducting any test before issuing. You are here to learn so you should have strong morals to post this certificate to the public only when you have finished the course.
