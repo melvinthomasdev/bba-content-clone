@@ -9,7 +9,7 @@ The element with a lower `z-index`
 value goes behind the one with a
 higher `z-index`:
 
-<codeblock language="css" type="exercise" testMode="fixedInput">
+<codeblock language="css" type="lesson">
 <code>
 <panel language="html">
 <div id="one">
