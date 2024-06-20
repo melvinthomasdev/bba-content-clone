@@ -2,11 +2,10 @@
 name: Git and GitHub Essentials
 subheading: Learn the basics of Git and GitHub
 slug: git-and-github-essentials
-published: false
+published: true
 custom_data:
   type: git
   courseType: lesson
-  upcoming: true
 home_logo: git-and-github-essentials-header-image.png
 logo: git-and-github-essentials.png
 position: 29

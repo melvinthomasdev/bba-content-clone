@@ -1,6 +1,6 @@
 Rename the current branch to `admin-login-feature`.
 
-<codeblock language="html" type="exercise" testMode="fixedInput">
+<codeblock language="bash" type="exercise" testMode="fixedInput" matchSolutionCode="true">
   <code></code>
 
 <solution>

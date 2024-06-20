@@ -1,6 +1,6 @@
 Create a new branch named `fix-header-issue`.
 
-<codeblock language="html" type="exercise" testMode="fixedInput">
+<codeblock language="bash" type="exercise" testMode="fixedInput" matchSolutionCode="true">
   <code></code>
 
 <solution>
