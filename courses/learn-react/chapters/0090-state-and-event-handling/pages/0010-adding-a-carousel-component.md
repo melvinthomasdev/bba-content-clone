@@ -193,7 +193,7 @@ Let's jump into adding event handlers for the buttons in the `Carousel` componen
 
 We need to increment the `currentIndex` when the user clicks the right arrow button and decrement it when clicking the left arrow. To ensure that the value of `currentIndex` stays within the array index range, we should take the modulus with the array length. We can utilize the `setCurrentIndex` function to update the currentIndex:
 
-```jsx {4-7, 9-12, 20, 31}
+```jsx {4-7, 9-13, 21, 32}
 const Carousel = ({ imageUrls, title }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
