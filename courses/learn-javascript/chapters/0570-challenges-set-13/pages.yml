@@ -1,0 +1,12 @@
+- title: About
+  slug: about-challenges-set
+  page_type: lesson
+- title: Hashtag extractor
+  slug: hashtag-extractor
+  page_type: exercise
+- title: Codebreaker Challenge
+  slug: codebreaker-challenge
+  page_type: exercise
+- title: Password Checker
+  slug: password-checker
+  page_type: exercise
