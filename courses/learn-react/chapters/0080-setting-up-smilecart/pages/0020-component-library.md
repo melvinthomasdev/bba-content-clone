@@ -14,7 +14,7 @@ You can explore the neetoUI components on its [official website](https://neeto-u
 
 ## Setup neetoUI
 
-Step 1. Install neetoUI and its peer dependencies using the following commands:
+Step 1. Navigate to the root of the `smile-cart-frontend` directory and install neetoUI and its peer dependencies using the following commands:
 
 ```
 yarn add @bigbinary/neetoui@5.2.41
