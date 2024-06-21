@@ -4,7 +4,7 @@ subheading: Learn the basics of Git and GitHub
 slug: git-and-github-essentials
 published: true
 custom_data:
-  type: git
+  type: misc
   courseType: lesson
 home_logo: git-and-github-essentials-header-image.png
 logo: git-and-github-essentials.png
