@@ -61,7 +61,6 @@ For completing this challenge, we need to complete the following tasks:
 - Set the text decoration of elements with the class **cta-button** to none.
 - Apply a border-radius of `5px` to elements with the class **cta-button**.
 - Add a bold font weight to elements with the class **cta-button**.
-- Create a transition effect on the background colour with a duration of **0.3 seconds** and ease timing function.
 
 **Hover Effect for CTA Button:**
 
@@ -269,7 +268,6 @@ body {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
