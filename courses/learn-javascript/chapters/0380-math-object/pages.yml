@@ -77,3 +77,12 @@
 - title: Challenge - Calculate absolute value
   slug: challenge-calculate-absolute-value
   page_type: exercise
+- title: Getting Natural Log of a Number
+  slug: getting-natural-log-of-a-number
+  page_type: lesson
+- title: Challenge - Getting Natural Log of a Number
+  slug: challenge-getting-natural-log-of-a-number
+  page_type: exercise
+- title: Challenge 2 - Getting Natural Log of a Number
+  slug: challenge-2-getting-natural-log-of-a-number
+  page_type: exercise
