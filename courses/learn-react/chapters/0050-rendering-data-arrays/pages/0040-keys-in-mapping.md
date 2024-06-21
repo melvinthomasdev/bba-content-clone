@@ -23,7 +23,7 @@ In React, when we use the map method to generate an array of JSX, we need to pro
 - If you don’t specify a key at all, React will use item index in the array as its key.
 
 Let's use `keys` to resolve the above-mentioned warning.
-<codeblock language="reactjs" type="lesson">
+<codeblock language="reactjs" type="lesson" showConsole="true">
 <code>
 // Added an unique `id` key in books objects, so that it can be used as keys.
 const BOOKS = [
