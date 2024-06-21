@@ -168,7 +168,7 @@ export default Product;
 
 Now, let's take a look at a few TailwindCSS classes that we have used to build this page:
 
-- `gap-6`: Sets a gap of 1.5rem(24px) between flex items.
+- `gap-4`: Sets a gap of 1rem(16px) between flex items.
 - `space-y-4`: Adds vertical spacing of 1rem(16px) between direct child elements in a stack.
 
 You can refer to the TailwindCSS official [documentation](https://v2.tailwindcss.com/docs) or https://tailwind.build/classes for a more comprehensive list of classes.
