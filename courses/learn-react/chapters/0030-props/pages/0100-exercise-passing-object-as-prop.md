@@ -11,7 +11,7 @@ Add a prop with the name `details` to the Book component and display the details
 <code>
 const Book = () => (
   <div>
-    <h2>title</h2>
+    <h2>{replace with title}</h2>
     <p>Author: {replace with author name}</p>
     <p>Genre: {replace with genre}</p>
   </div>
