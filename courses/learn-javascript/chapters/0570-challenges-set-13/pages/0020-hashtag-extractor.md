@@ -1,11 +1,22 @@
 
-Write a function called `extractHashtags` that accepts a single string parameter, tweet.
+Create a function called `extractHashtags` that accepts a single string parameter, **tweet**.
 
-1. The function should find all hashtags in the tweet. A hashtag is defined as a # symbol followed by one or more word characters (letters, numbers, and underscores).
+1. The function should find all hashtags in the tweet. A hashtag is defined as a **#** symbol followed by one or more word characters (letters, numbers, and underscores).
 
-2. Each found hashtag should be added to an array.
+2. Each found hashtag should be added to an array without the hashtag symbol **#**.
 
 3. Finally, the function should display the array of hashtags to the console.
+
+
+For example,
+```js
+Input:
+
+const tweet = "Hey, check out our #new #JavaScript lesson";
+
+Output:
+["new", "JavaScript"]
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -15,9 +26,13 @@ Write a function called `extractHashtags` that accepts a single string parameter
 <solution>
 // Write code below this line
 const extractHashtags = (tweet) => {
-  const pattern = /#\w+/g;
-  const hashtags = tweet.match(pattern);
-  console.log(hashtags || []);
+  const regex = /#(\w+)/g;
+  const hashtags = [];
+  const matches = tweet.match(regex);
+  if (matches) {
+    matches.forEach(match => hashtags.push(match.substring(1)));
+  }
+  console.log(hashtags);
 };
 </solution>
 <testcases>
@@ -39,22 +54,12 @@ const inputTweet = "No hashtags here!";
 </testcase>
 <testcase>
 <i>
-const inputTweet = "#SingleHashtag at the start.";
+const inputTweet = "Today's weather is perfect. #SunnyDay";
 </i>
 </testcase>
 <testcase>
 <i>
 const inputTweet = "Multiple hashtags in one #tweet, including #numbers123 and #underscores_are_fun!";
-</i>
-</testcase>
-<testcase>
-<i>
-const inputTweet = "Edge cases: #, ##, and #!";
-</i>
-</testcase>
-<testcase>
-<i>
-const inputTweet = "Special #characters? #are #not #part #of #hashtags!";
 </i>
 </testcase>
 </testcases>

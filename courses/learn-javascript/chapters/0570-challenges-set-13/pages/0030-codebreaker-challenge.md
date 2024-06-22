@@ -1,12 +1,26 @@
-Write a function decipherMessage that takes a single string parameter, codedMessage.
+Create a function`decipherMessage` that takes a single string parameter, **codedMessage**. The function should follow these steps,
 
-1. Find all words in the coded message that start with 'XC' and end with 'QT'.
+  1. Find all words in the coded message that start with *'XC'* and end with *'QT'* and has exactly 3 numbers in it.
+  2. Find all words in the codedMessage that:
+    - Start with the prefix ‘XC’.
+	  - End with the suffix ‘QT’.
+	  - Contain exactly 3 digits anywhere in the word.
+  4. For each word that matches the criteria:
+    - Remove the ‘XC’ prefix.
+	  - Remove the ‘QT’ suffix.
+	  - Remove all digits.
+  3. Join the transformed words together to form a new sentence, with each word separated by a space.
+  4. Display the resulting sentence on the console.
 
-2. Remove the 'XC' prefix and 'QT' suffix from each matching word.
+For example,
+```js
+Input:
 
-3. Recreate the original sentence by joining these words with spaces.
+const codedMessage = "XCL1e23tQT over and XCm1e23QT XCintroduce456QT XQt1o2jkl3TQ XQ1t2oQT XCJava1Scr2ipt3QT XCprogramming345QT";
 
-4. Display the resulting sentence on the console.
+Output:
+"Let me introduce JavaScript programming"
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -15,41 +29,47 @@ Write a function decipherMessage that takes a single string parameter, codedMess
 <solution>
 // Write code below this line
 const decipherMessage = (codedMessage) => {
-  const pattern = /XC(\w*)QT/g;
 
-  const originalSentence = codedMessage.replace(pattern, (match, word) => word);
-
-  console.log(originalSentence);
-};
+  const words = codedMessage.split(' ');
+  const transformedWords = [];
+  words.forEach(word => {
+    if (word.startsWith('XC') && word.endsWith('QT')) {
+      const middlePart = word.slice(2, -2);
+      const digitCount = (middlePart.match(/\d/g) || []).length;
+      if (digitCount === 3) {
+        const transformedWord = middlePart.replace(/\d/g, '');
+        transformedWords.push(transformedWord);
+      }
+    }
+  });
+  const resultSentence = transformedWords.join(' ');
+  console.log(resultSentence);
+}
 
 </solution>
 <testcases>
 <caller>
-decipherMessage(inputMessage);
+decipherMessage(codedMessage);
 </caller>
 <testcase>
 <i>
-const inputMessage = "This is a XCbrownQT XCdogQT XCjumpsQT over the XCquickQT XClazyQT XCfoxQT.";
+const codedMessage = "XCM1e2e3tQT world XCm456eQT XCa1t24QT message XCce12n2terQT XCs3q1ua3reQT";
 </i>
 </testcase>
 <testcase>
 <i>
-const inputMessage = "XChelloQT world XCbyeQT XCagainQT";
+const codedMessage = "XCplease123QT XCm1e3QT XCtake456QT XDce12n2terCQT XCme789QT XC1to12QT XCyour456QT XCb3a4s5eQT";
 </i>
 </testcase>
 <testcase>
 <i>
-const inputMessage = "No words match the pattern here.";
+const codedMessage = "No words match the pattern here.";
 </i>
 </testcase>
 <testcase>
 <i>
-const inputMessage = "Testing some XCatQT the beginning XCmiddleQT and end of XCstringsQT";
-</i>
-</testcase>
-<testcase>
-<i>
-const inputMessage = "XConlyQT XCwordsQT XCmatchesQT intended.";
+const codedMessage = "XCCom2ple3ted4QT XQandQT XQALLQT XC1and3QL XC1suc1cess2fullyQT";
+
 </i>
 </testcase>
 </testcases>

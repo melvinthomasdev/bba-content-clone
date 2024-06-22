@@ -1,16 +1,27 @@
-Write a function named `verifyPassword` that takes a single string parameter, password, and verifies if it meets the following criteria:
+Create a function named `verifyPassword` that takes a single string parameter, **password**, and verifies if it meets the following criteria,
 
-1. Contains at least one uppercase letter (A-Z).
-2. Contains at least one lowercase letter (a-z).
-3. Contains at least one digit (0-9).
-4. Contains at least one special character from the set: !@#$%^&*()_+\-=[]{};':"\\|,.<>/?.
+  1. Contains at least one uppercase letter (A-Z).
+  **Error Message:** The password needs at least one uppercase letter
+  2. Contains at least one lowercase letter (a-z).
+  **Error Message:** The password needs at least one lowercase letter
+  3. Contains at least one digit (0-9).
+  **Error Message:** The password needs at least one digit
+  4. Contains at least one special character from the set: !@#$%^&*()_+\-=[]{};':"\\|,.<>/?.
+  **Error Message:** The password needs at least one special character
 
-The function should return a boolean value:
+- For a valid password, the function logs: **"The password is valid."** 
+- For an invalid password, the function logs: **“The password is invalid.”**, followed on the next line by all the required error messages specifying the unmet criteria, joined by a comma (**,**).
 
-- `true` if the password meets all the criteria.
-- `false` if the password does not meet one or more of the criteria.
+For example,
+```js
+Input:
 
-Additionally, the function should log detailed messages to the console indicating whether the password is valid or invalid, and if invalid, specifying which criteria were not met.
+const password = "helloworld123";
+
+Output:
+"The password is invalid."
+"The password needs at least one uppercase letter,The password needs at least one special character"
+```
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
@@ -29,26 +40,27 @@ const verifyPassword = (password) => {
 
   const isValid = hasUpperCase && hasLowerCase && hasDigit && hasSpecialChar;
 
-  let message = "";
+  let message = [];
 
   if (isValid) {
     message = "The password is valid."
+    console.log("The password is valid.");
   } else {
     console.log("The password is invalid.");
     if (!hasUpperCase) {
-      message = "The password needs at least one uppercase letter";
+      message.push("The password needs at least one uppercase letter");
     }
     if (!hasLowerCase) {
-      message = "The password needs at least one lowercase letter";
+      message.push("The password needs at least one lowercase letter");
     }
     if (!hasDigit) {
-      message =  "The password needs at least one digit";
+      message.push( "The password needs at least one digit");
     }
     if (!hasSpecialChar) {
-      message = "The password needs at least one special character";
+      message.push("The password needs at least one special character");
     }
+    console.log(message.join(","));  
   }
-  console.log(message);
 };
 </solution>
 <testcases>
@@ -57,7 +69,7 @@ verifyPassword(password);
 </caller>
 <testcase>
 <i>
-const password = "Password123!";
+const password = "KWer123!MEQ";
 </i>
 </testcase>
 <testcase>
@@ -67,7 +79,7 @@ const password = "password123!";
 </testcase>
 <testcase>
 <i>
-const password = "PASSWORD123!";
+const password = "password";
 </i>
 </testcase>
 <testcase>
@@ -77,7 +89,7 @@ const password = "Password!";
 </testcase>
 <testcase>
 <i>
-const password = "Password123";
+const password = "MQ";
 </i>
 </testcase>
 <testcase>
