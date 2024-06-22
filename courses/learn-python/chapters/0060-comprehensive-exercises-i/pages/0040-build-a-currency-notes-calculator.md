@@ -1,5 +1,5 @@
 Monica has to pay her monthly rent to the landlord. She currently only has 10 rupee notes, 50 rupee notes and 100 rupee notes.
-Given the amount, help her calculate the number of 10 rupee notes, 50 rupee notes and 100 rupee notes she will need to pay to her landlord.
+Given the amount, help her calculate the number of 10 rupee notes, 50 rupee notes and 100 rupee notes she will need to pay to her landlord using the minimum number of notes.
 
 
 **Example**
@@ -8,7 +8,7 @@ Rent: ₹7890
 
 Monica will require:
 
-- 7 x ₹100 notes
+- 78 x ₹100 notes
 - 1 x ₹50 notes
 - 4 x ₹10 notes
 
