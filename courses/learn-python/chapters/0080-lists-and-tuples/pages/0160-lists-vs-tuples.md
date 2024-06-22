@@ -1,8 +1,8 @@
-Tuples are similar to Lists except that they cannot be modified. We cannot add or remove elements from a tuple once declared.
+Tuples are similar to Lists except that they cannot be modified. We cannot add or remove elements from a tuple once it is declared.
 
 Tuples are read-only and can only be accessed or searched for elements.
 
-We can declare a tuple using the `()` branckets.
+We can declare a tuple using the `()` brackets.
 
 <codeblock language="python" type="lesson">
 <code>
