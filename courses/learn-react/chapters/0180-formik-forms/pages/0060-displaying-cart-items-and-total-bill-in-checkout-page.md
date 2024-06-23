@@ -125,6 +125,17 @@ const Items = ({ isSubmitDisabled }) => {
 export default Items;
 ```
 
+Add the translation keys `subtotal`, `deliveryCharges` and `totalPayablePrice` to the `en.json` file.
+
+```json
+{
+  //...
+  "subtotal": "Subtotal <span>${{totalPrice}}</span>",
+  "totalPayablePrice": "Total Payable <span>${{totalPrice}}</span>",
+  "deliveryCharges": "Delivery charges <span>FREE</span>"
+}
+```
+
 To enhance the user experience, we will relocate the submit button from `index.jsx` to `Items.jsx`.
 
 ```jsx
