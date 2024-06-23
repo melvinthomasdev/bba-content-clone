@@ -46,6 +46,7 @@ const ProductList = () => {
     <div className="flex h-screen flex-col">
       <Header
         title="Smile cart"
+        shouldShowBackButton={false}
         actionBlock={
           <Input
             placeholder="Search products"
@@ -70,9 +71,10 @@ const [searchKey, setSearchKey] = useState("");
 
 We will use this state to control the input field. We will set the `searchKey` as its value. Also, we can use the input field's `onChange` handler to update the state. Now, let's see this in action:
 
-```jsx {8-9}
+```jsx {9-10}
 <Header
   title="Smile cart"
+  shouldShowBackButton={false}
   actionBlock={
     <Input
       placeholder="Search products"
