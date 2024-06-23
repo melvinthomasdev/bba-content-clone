@@ -344,7 +344,7 @@ However, we are writing the same JSX in the `ProductList` and `Product` componen
 ```jsx
 import { LeftArrow } from "neetoicons";
 import { Typography } from "neetoui";
-import { useParams, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Header = ({ title, shouldShowBackButton = true }) => {
   const history = useHistory();
