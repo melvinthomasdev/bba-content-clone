@@ -13,7 +13,7 @@ The `useCallback` hook in React accepts two parameters.
 const memoizedCallback = useCallback(functionToCache, dependencies);
 ```
 
-### Usage of useMemo hook
+### Usage of useCallback hook
 
 Let's consider an example where a button is rendered in both parent and child components which increments a counter when clicked. The function to increment the child counter is passed as a prop to the child from the parent. Additionally, we have memoized the child component.
 
