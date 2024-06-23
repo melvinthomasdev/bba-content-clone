@@ -66,7 +66,7 @@ React Query internally uses context to manage the API calls data. Therefore, wra
 
 The `QueryClientProvider` component takes a single prop, `client`, which should be an instance of `QueryClient`. In our case, we will be adding it in the `src/index.jsx` file. Now, let's see this in action.
 
-```jsx {8,12}
+```jsx {8,13}
 import { QueryClientProvider } from "react-query";
 import queryClient from "utils/queryClient";
 // rest of the imports
@@ -76,6 +76,7 @@ root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
+        <ToastContainer />
         <App />
       </BrowserRouter>
     </QueryClientProvider>
