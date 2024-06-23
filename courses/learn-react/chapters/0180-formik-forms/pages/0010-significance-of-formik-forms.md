@@ -257,7 +257,7 @@ const ContactForm = () => {
     });
     setErrors(newErrors);
 
-    const isValid = Object.values(errors).every(error => error === "");
+    const isValid = Object.values(newErrors).every(error => error === "");
 
     if (isValid) {
       // Perform form submission logic here
