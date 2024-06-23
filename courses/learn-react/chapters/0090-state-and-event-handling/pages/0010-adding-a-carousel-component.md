@@ -333,9 +333,7 @@ import classNames from "classnames";
       "neeto-ui-border-black neeto-ui-rounded-full h-3 w-3 cursor-pointer border",
       { "neeto-ui-bg-black": index === currentIndex }
     )}
-    onClick={() => {
-      setCurrentIndex(index);
-    }}
+    onClick={() => setCurrentIndex(index)}
   />
 ))}
 ```
