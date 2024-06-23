@@ -192,16 +192,19 @@ export default PageNotFound;
 Next, to render this component when the user navigates to a route other than the root URL or product URL, we only need to add a `Route` component to the end of the `Switch` block with the path as "*" and the component as `PageNotFound`. It's that simple.
 
 
-```jsx {1, 8}
+```jsx {1, 10}
 import PageNotFound from "./components/PageNotFound";
 // remaining imports
 
 const App = () => (
-  <Switch>
-    <Route exact component={Home} path="/" />
-    <Route exact component={Product} path="/product" />
-    <Route component={PageNotFound} path="*" />
-  </Switch>
+  <>
+    {/* remaining code */}
+    <Switch>
+      <Route exact component={Home} path="/" />
+      <Route exact component={Product} path="/product" />
+      <Route component={PageNotFound} path="*" />
+    </Switch>
+  </>
 );
 ```
 
