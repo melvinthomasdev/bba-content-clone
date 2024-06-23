@@ -16,7 +16,7 @@ It is very important to always prefix custom hooks with the `use` keyword, follo
 
 We will create a custom hook called `useDebounce`. It will accept an argument `value`, which is the user search input. It will debounce the changes and keep returning the previous `value` till the user stops typing. In short, we will use it as follows:
 
-```jsx{3}
+```jsx {3}
 const ProductList = () => {
   const [searchKey, setSearchKey] = useState("");
   const debouncedSearchKey = useDebounce(searchKey);
