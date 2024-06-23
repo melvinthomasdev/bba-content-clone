@@ -5,19 +5,31 @@ In the previous chapter, we have successfully created the product listing page. 
 However, since the search input is only needed on the product listing page, we'll make our `Header` component more flexible by adding a prop that allows us to pass additional components for rendering when needed. We will create an optional prop named `actionBlock` which can accept any React element.
 
 ```jsx
-const Header = ({ title, shouldShowBackButton = true, actionBlock }) => (
-  <div className="m-2">
-    <div className="mx-6 mb-2 mt-6 flex items-end justify-between">
-      <div className="flex items-center">
-        <Typography style="h1" weight="semibold">
-          {title}
-        </Typography>
+// imports
+
+const Header = ({ title, shouldShowBackButton = true, actionBlock }) => {
+  const history = useHistory();
+
+  return (
+    <div className="m-2">
+      <div className="mx-6 mb-2 mt-6 flex items-end justify-between">
+        <div className="flex items-center">
+          {shouldShowBackButton && (
+            <LeftArrow
+              className="hover:neeto-ui-bg-gray-400 neeto-ui-rounded-full mr-6"
+              onClick={history.goBack}
+            />
+          )}
+          <Typography style="h1" weight="semibold">
+            {title}
+          </Typography>
+        </div>
+        <div className="flex items-end space-x-4">{actionBlock}</div>
       </div>
-      <div className="flex items-end space-x-4">{actionBlock}</div>
+      <hr className="neeto-ui-bg-black h-1" />
     </div>
-    <hr className="neeto-ui-bg-black h-1" />
-  </div>
-);
+  );
+};
 ```
 
 Now, let's modify the `Header` component in the `ProductList/index.jsx` file to pass the input element to the `actionBlock` prop for rendering. We will use [Input](https://neeto-ui.neeto.com/?path=/docs/components-input--default) component from `neetoUI` with a search icon from [neetoIcons](https://neeto-icons.neeto.com) as the prefix.
