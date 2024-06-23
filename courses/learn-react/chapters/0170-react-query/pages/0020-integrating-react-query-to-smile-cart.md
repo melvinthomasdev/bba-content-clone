@@ -150,9 +150,10 @@ const Product = () => {
 
 Then, go to the `Product/Carousel.jsx` and call the `useShowProduct` hook. This hook expects the `slug` as an argument. To access the `slug` from the URL parameter, we can use the `useParams` hook from `react-router-dom`.
 
-```jsx {7, 11}
+```jsx {1-3, 8, 12-13, 15}
 import { useShowProduct } from "hooks/reactQuery/useProductsApi";
 import { useParams } from "react-router-dom";
+import { append } from "ramda";
 // ...
 
 const Carousel = () => {
@@ -161,7 +162,10 @@ const Carousel = () => {
 
   const timerRef = useRef(null);
 
-  const { data: { imageUrl, imageUrls, title } = {} } = useShowProduct(slug);
+  const { data: { imageUrl, imageUrls: partialImageUrls, title } = {} } =
+    useShowProduct(slug);
+
+  const imageUrls = append(imageUrl, partialImageUrls);
 
   // rest of the code
 };
