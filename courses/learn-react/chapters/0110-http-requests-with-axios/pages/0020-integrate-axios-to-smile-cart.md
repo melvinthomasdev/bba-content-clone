@@ -202,7 +202,7 @@ const Product = () => {
 )};
 ```
 
-> `toFixed()` method rounds to a specified number of decimals.
+> [toFixed()](https://courses.bigbinaryacademy.com/learn-javascript/number-methods/to-fixed) method rounds to a specified number of decimals.
 
 Next, we will replace the hardcoded product image URLs passed to the `Carousel.jsx` component with the image URLs from the product APIs. To accomplish this, we need to extract two variables from the `product` state: `image_urls`, which contains a list of product image URLs, and `image_url`, which contains the URL of the default product image. We will then use the `append` function from `ramda.js` to append the `image_urls` and `image_url` together. Finally, we will pass the combined URLs as a prop to the `Carousel.jsx` component.
 
@@ -240,7 +240,7 @@ const Product = () => {
 We need to render the `Carousel` component only if the `image_urls` is not null. Otherwise, we will show the default product image. We can use the `isNotNil` function from `ramda.js` to conditionally render the `Carousel` component.
 
 ```jsx {1, 12-16}
-import { isNotNil } from "ramda";
+import { isNotNil, append } from "ramda";
 // ...
 
 const Product = () => {
