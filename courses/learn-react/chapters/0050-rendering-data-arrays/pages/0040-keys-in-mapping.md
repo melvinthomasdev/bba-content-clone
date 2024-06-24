@@ -186,16 +186,3 @@ Using indexes for keys in React is not recommended if the order of items may cha
   ```
 
   So, if you need to access the same value as the key for some other purpose inside the component, you should pass it as a different prop with a distinct name.
-
-- If we are using fragments as wrappers, we need to use the long form to add keys, as demonstrated in the example below:
-
-  ```jsx {3-3, 6-6}
-  <div>
-    {users.map(user => (
-      <Fragment key={user.id}>
-        <p>User's first name is {user.firstName}</p>
-        <p>User's last name is {user.lastName}</p>
-      </Fragment>
-    ))}
-  </div>
-  ```
