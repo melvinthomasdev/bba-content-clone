@@ -97,4 +97,4 @@ We also don't want to leave you stuck, so if you feel
 you have tried enough and are still unable to solve
 this challenge, feel free to ask in our **community**.
 
-[Here is the link](https://join.slack.com/t/bigbinaryacademy/shared_invite/zt-2d8ias5ud-ywkjF1xRyV9Nbne1_sGQag) to join the community.
+[Here is the link](https://join.slack.com/t/bigbinaryacademy/shared_invite/zt-2kj86untg-wCGh2GPBA2I3iWZk4ke~tg) to join the community.
