@@ -17,9 +17,6 @@
 - title: ComprehensiveExercise - Display Tabular Data 2
   slug: comprehensive-exercise-display-tabular-data-2
   page_type: assessment
-- title: ComprehensiveExercise - State updates on an unmounted component
-  slug: comprehensive-exercise-state-updates-on-unmounted-component
-  page_type: assessment
 - title: ComprehensiveExercise - Fix cursor position
   slug: comprehensive-exercise-fix-cursor-position
   page_type: assessment
