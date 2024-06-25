@@ -2,6 +2,9 @@ Create a function `add`
 which logs to the console,
 the value of `2 + 4`.
 
+After defining the function, 
+execute the function too.
+
 ```js
 Output: 6
 ```
