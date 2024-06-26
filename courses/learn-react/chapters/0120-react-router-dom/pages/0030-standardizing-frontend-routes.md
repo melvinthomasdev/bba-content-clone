@@ -84,7 +84,7 @@ const { show, index } = routes.products
 
 Instead, we've used the complete object path. This choice is deliberate because our aim is to enhance the searchability of route usages, requiring the full object path.
 
-Now that we have replaced all the hardcoded paths in the `<Route>` components, we should also replace the template string passed as a prop to the `Link` component. However, we should not store the template string ``` `/products/$slug` ``` into the `route.js` file.
+Now that we have replaced all the hardcoded paths in the `<Route>` components, we should also replace the template string passed as a prop to the `Link` component. However, we should not store the template string ``` `/products/${slug}` ``` into the `route.js` file.
 
 Instead, we will create a utility function `buildUrl` to generate a URL from a string like "products/:slug" and an object containing dynamic values in a URL like `{ slug: "mens-cotton" }`. We will pass the routes object path to this function. We should be able to use the `buildUrl` function in our `ProductListItem` component as shown below:
 
