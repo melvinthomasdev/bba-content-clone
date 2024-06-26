@@ -12,7 +12,7 @@ return the `lastName` as the full name.
 return the `firstName` as the full name.
 
 3. If both `firstName` and `lastName` are not present,
-return `""` as the full name.
+return an empty string, `""`, as the full name.
 
 ```js
 Input: person = { firstName: "Sam" }
@@ -28,15 +28,14 @@ const getFullName = person => {
 
 <solution>
 const getFullName = person => {
-  const { firstName, lastName } = person;
 
-  if (!firstName && !lastName)
-    return " ";
+  if (!person.firstName && !person.lastName)
+    return "";
 
-  if (firstName && lastName)
-    return `${firstName} ${lastName}`;
+  if (person.firstName && person.lastName)
+    return `${person.firstName} ${person.lastName}`;
 
-  return `${firstName || lastName}`;
+  return `${person.firstName || person.lastName}`;
 }
 </solution>
 
