@@ -5,4 +5,4 @@ Let's see how you handle the game logic.
 
 <image>htmldom-sectional-project-tic-tac-toe.gif</image>
 
-<!-- Visit the [Tic-Tac-Toe Game Page](https://courses.bigbinaryacademy.com/projects/battleship-game/) to read more and start building. -->
+Visit the [Tic-Tac-Toe Game Page](https://courses.bigbinaryacademy.com/projects/tic-tac-toe/) to read more and start building.
