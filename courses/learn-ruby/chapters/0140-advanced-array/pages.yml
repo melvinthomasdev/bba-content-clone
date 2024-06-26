@@ -20,15 +20,27 @@
 - title: Add an Item to an Array Using Double Arrows
   slug: add-an-item-to-an-array-using-double-arrows
   page_type: lesson
+- title: Challenge - Add an Item to an Array Using Double Arrows
+  slug: challenge-add-an-item-to-an-array-using-double-arrows
+  page_type: exercise
 - title: Joining Arrays
   slug: joining-arrays
   page_type: lesson
+- title: Challenge - Joining Arrays
+  slug: challenge-joining-arrays
+  page_type: exercise
 - title: Remove All Nil Elements
   slug: remove-all-nil-elements
   page_type: lesson
+- title: Challenge - Remove All Nil Elements
+  slug: challenge-remove-all-nil-elements
+  page_type: exercise
 - title: Remove All Duplicate Elements
   slug: remove-all-duplicate-elements
   page_type: lesson
+- title: Challenge - Remove All Duplicate Elements
+  slug: challenge-remove-all-duplicate-elements
+  page_type: exercise
 - title: Remove All Nested Arrays
   slug: remove-all-nested-arrays
   page_type: lesson
