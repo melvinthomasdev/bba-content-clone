@@ -1,5 +1,7 @@
 Use `each` and `do end`
-to print each value in **sports_i_like**.
+to print each value in **sports_i_like**
+in the following way:
+`I like [Sport Name]`
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>

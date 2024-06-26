@@ -5,7 +5,7 @@ Find the count of how
 many times each number
 is repeated.
 
-Display it as a hash
+Display this data
 on the screen.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
