@@ -5,8 +5,7 @@ following requirements:
 - Ensure that all five images are
   correctly loaded and displayed
   on the screen.
-- Add this link to the fourth picture:
-  `https://en.wikipedia.org/wiki/Ferrari`
+- Wrap the fourth picture using a link element with the following source: `https://en.wikipedia.org/wiki/Ferrari`
 - Add the following as alt text to the images accordingly:
   - HTML logo
   - CSS logo

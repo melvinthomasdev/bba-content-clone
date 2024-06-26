@@ -19,8 +19,8 @@ then the variables who did
 not get any value are assigned
 `nil` value by Ruby.
 
-If a variable is using `*`,
-then it always get an array.
+If a variable uses the `*` operator,
+then it always gets an array.
 
 If there is no value for
 the greedy variable,

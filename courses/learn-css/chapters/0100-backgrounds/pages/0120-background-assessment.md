@@ -5,7 +5,7 @@ gained so far, write CSS to do the following:
 
 2. Stop the crazy repeating background images.
 
-3. Now, let's make the background color match that of the image.
+3. Add **black** as background color.
 
 4. Let's center the background image.
 

@@ -20,10 +20,10 @@ are nested deeper inside the `nav`:
   <ul>
     <li>
       <a href="#">Home</a>
-    <li>
+    </li>
     <li>
       <a href="#">About</a>
-    <li>
+    </li>
     <li id="dropdown">
       <ul>
         <li>
@@ -33,7 +33,7 @@ are nested deeper inside the `nav`:
           <a href="#">Twitter</a>
         </li>
       </ul>
-    <li>
+    </li>
   </ul>
 </nav>
 </panel>
