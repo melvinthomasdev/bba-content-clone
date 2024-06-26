@@ -21,5 +21,6 @@ and
   account, with the lesson name added as the project name.
 - Go through the page and familiarize yourself with the HTML Tab view.
 -->
+<h1>Welcome to BigBinary Academy</h1>
 </code>
 </codeblock>
