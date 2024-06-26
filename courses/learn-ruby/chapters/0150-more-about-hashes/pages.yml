@@ -2,6 +2,9 @@
 - title: Use New to Create a Hash
   slug: use-new-to-create-a-hash
   page_type: lesson
+- title: Challenge - Create New Hash
+  slug: challenge-create-new-hash
+  page_type: exercise
 - title: Select Some Elements of the Hash
   slug: select-some-elements-of-the-hash
   page_type: lesson

@@ -47,9 +47,15 @@
 - title: Removing Elements From Array Using Minus Sign
   slug: removing-elements-from-array-using-minus-sign
   page_type: lesson
+- title: Challenge - Removing Elements From Array Using Minus Sign
+  slug: challenge-removing-elements-from-array-using-minus-sign
+  page_type: exercise
 - title: Destructuring
   slug: destructuring
   page_type: lesson
+- title: Challenge - Destructure Array
+  slug: challenge-destructure-array
+  page_type: exercise
 - title: Destructuring Using Greedy Variables
   slug: destructuring-using-greedy-variables
   page_type: lesson
