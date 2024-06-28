@@ -13,4 +13,6 @@ images:
   - recent-pull-request.png
   - assign-pull-requests.png
   - collaborators-settings-page-github.png
+  - git-merge-visualization.png
+  - git-rebase-visualization.svg
 databases: []

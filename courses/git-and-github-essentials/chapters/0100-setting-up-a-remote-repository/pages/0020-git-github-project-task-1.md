@@ -8,6 +8,6 @@ Create a remote repository on GitHub with the following details:
 - **Description**: `Source code for my personal blog`
 - **Visibility**: `Private`
 
-Note: Don't initialize the repository with a README file, a `.gitignore` file, or a license. You'll add these files later.
+**Important**: Do not initialize the repository with a README file, a `.gitignore` file, or a license at this stage. These files will be added later in the project. This step is crucial to avoid confusion with the `README.md` file that you will be creating and adding to your repository in a later task.
 
 Once you've created the repository, you'll see the repository page with the README file. This is the remote repository where you'll push your local changes.

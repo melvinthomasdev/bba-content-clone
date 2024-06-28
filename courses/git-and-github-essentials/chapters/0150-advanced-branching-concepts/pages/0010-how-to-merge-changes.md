@@ -1,4 +1,8 @@
-Git merge is a command that allows us to integrate changes from one branch into another. Here's a simple example of how to merge changes.
+Git merge is a command that allows us to integrate changes from one branch into another.
+
+<image alt="Git merge visualization">git-merge-visualization.png</image>
+
+Here's a simple example of how to merge changes.
 
 Let's consider two feature branches: `feature-login` and `feature-signup`. We've made changes in both branches and want to merge them into the `main` branch.
 

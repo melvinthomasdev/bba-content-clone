@@ -1,4 +1,8 @@
-Git rebase is a command that allows us to move or combine a sequence of commits to a new base commit. Here's a simple example of how to rebase changes.
+Git rebase is a command that allows us to move or combine a sequence of commits to a new base commit.
+
+<image alt="Git rebase visualization">git-rebase-visualization.svg</image>
+
+Here's a simple example of how to rebase changes.
 
 Let's consider the same branches: `feature-login` and `feature-signup`. We've made changes in both branches and want to rebase them onto the `main` branch.
 
