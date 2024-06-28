@@ -20,7 +20,6 @@ arrayTwo = [nil, "hello"]
 
 # Write code below this line
 
-# Write code above this line
 </code>
 <solution>
 arrayOne = [true, false]
@@ -29,6 +28,5 @@ arrayTwo = [nil, "hello"]
 # Write code below this line
 puts arrayOne + arrayTwo
 
-# Write code above this line
 </solution>
 </codeblock>

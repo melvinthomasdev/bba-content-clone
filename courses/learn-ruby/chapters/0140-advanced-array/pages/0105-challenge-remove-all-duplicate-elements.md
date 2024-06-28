@@ -1,5 +1,7 @@
-Display a new array with all the duplicate
-elements removed.
+We have three arrays. Remove the 
+duplicate elements from each array, 
+and display the updated arrays on 
+the screen in the same order.
 
 For example:
 ```ruby
@@ -18,7 +20,6 @@ input_array3 = []
 
 # Write code below this line
 
-# Write code above this line
 </code>
 <solution>
 input_array1 = ["apple", "banana", "apple", "cherry", "banana"]
@@ -31,6 +32,5 @@ puts input_array1.uniq
 puts input_array2.uniq
 puts input_array3.uniq
 
-# Write code above this line
 </solution>
 </codeblock>

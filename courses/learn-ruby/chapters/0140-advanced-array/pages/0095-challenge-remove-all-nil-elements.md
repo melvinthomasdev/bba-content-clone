@@ -1,4 +1,4 @@
-We have three arrays. Remove the 'nil' 
+We have three arrays. Remove the **nil** 
 elements from each of these arrays. Also, 
 display these arrays on the screen.
 
@@ -19,7 +19,7 @@ input_array3 = [nil, "hello", nil, "world", nil]
 
 # Write code below this line
 
-# Write code above this line
+
 </code>
 <solution>
 input_array1 = [1, nil, 2, nil, 3, 4, nil, 5]
@@ -31,6 +31,6 @@ puts input_array1.compact
 puts input_array2.compact
 puts input_array3.compact
 
-# Write code above this line
+
 </solution>
 </codeblock>

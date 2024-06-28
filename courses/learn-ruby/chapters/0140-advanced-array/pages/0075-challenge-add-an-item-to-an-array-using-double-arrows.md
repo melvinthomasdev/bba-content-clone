@@ -1,8 +1,13 @@
-In the code given below, add the second array
-to the first array using double
-arrows.
+In the code given below, we 
+have four arrays.
+Using double arrows, add **array2** to 
+**array1**. Similarly, using double 
+arrows, add **elements2** array to 
+**elements1** array. 
 
-Display the modified first array on the screen.
+Display the updated **array1** and 
+**elements1** arrays on the screen, 
+in that order.
 
 ```ruby
 Input:
@@ -37,8 +42,11 @@ elements2 = ["c", "d", "e"]
 
 # Write code below this line
 
-puts array1 << array2
-puts elements1<< elements2
+array1 << array2
+elements1 << elements2
+
+puts array1
+puts elements1
 # Write code above this line
 </solution>
 </codeblock>
