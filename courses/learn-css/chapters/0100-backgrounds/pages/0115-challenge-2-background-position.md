@@ -1,6 +1,6 @@
 Apply the following background size properties to the specified divs:
 
-1. Apply `top left` to the div with the ID `#image-cover`.
+1. Apply `top left` to the div with the ID `#image-top-left`.
 2. Apply `top center` to the div with the ID `#image-top-center`.
 3. Apply `top right` to the div with the ID `#image-top-right`.
 4. Apply `center left` to the div with the ID `#image-center-left`.

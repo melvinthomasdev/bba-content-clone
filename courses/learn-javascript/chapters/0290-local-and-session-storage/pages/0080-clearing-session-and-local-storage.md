@@ -32,17 +32,14 @@ method is used to remove all previously stored key-value pairs.
 
 Let's understand the impact of using `clear()` in localStorage:
 
-<codeblock language="javascript" type="lesson" showRunCodeButton="false">
-<code>
+```js
 localStorage.setItem('sport', 'tennis');
 localStorage.setItem('username', 'Eve Smith');
 
 localStorage.clear();
-</code>
-</codeblock>
+```
 
-We have intentionally hidden the **Run Code** button
-in the above code block.
+We have intentionally put the above code block in a snippet so that you do not accidentally run it.
 
 Please exercise **caution** and refrain from running
 `localStorage.clear()` in the code block

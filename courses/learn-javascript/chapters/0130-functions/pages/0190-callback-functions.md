@@ -27,4 +27,4 @@ validateSolution(solution, statusMessage);
 In the above code we see **2** functions `validateSolution` and  `statusMessage`.
 `statusMessage` is passed as an argument to `validateSolution`, this makes `statusMessage` a callback function.
 
-This example showcases the use of a callback function `successMessage` to handle and display the success or error message based on the result of the validation process done in the `validateSolution` function.
+This example showcases the use of a callback function `statusMessage` to handle and display the success or error status based on the result of the validation process done in the `validateSolution` function.
