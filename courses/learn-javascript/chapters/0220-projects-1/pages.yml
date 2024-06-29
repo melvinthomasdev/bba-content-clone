@@ -5,4 +5,7 @@
 - title: Tic Tac Toe
   slug: tic-tac-toe
   page_type: lesson
+- title: Wordle Game
+  slug: wordle-game
+  page_type: lesson
 
