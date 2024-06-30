@@ -6,7 +6,7 @@ is the parent of
 all other objects
 in the DOM tree.
 
-No other node object
+No other DOM object
 can exist outside
 the `document` object.
 

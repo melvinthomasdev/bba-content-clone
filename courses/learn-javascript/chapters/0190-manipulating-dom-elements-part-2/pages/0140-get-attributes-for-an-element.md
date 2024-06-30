@@ -41,4 +41,4 @@ In the example given above, we
 simply looked up the value
 of the `type` and
 `value` properties on each of the input
-node objects.
+DOM objects.

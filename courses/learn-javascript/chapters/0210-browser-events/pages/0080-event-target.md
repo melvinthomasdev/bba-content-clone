@@ -1,4 +1,4 @@
-Every Node object in our DOM can
+Every object in our DOM can
 trigger an event. The object that
 triggers our particular event
 is called the **target**:
