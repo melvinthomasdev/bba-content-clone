@@ -19,7 +19,7 @@ method to achieve this.
 
 <solution>
 let clickStatus = document.querySelector('h2');
-clickStatus.addEventListener("click", (e) => clickStatus.textContent = "This text was clicked ✅");
+clickStatus.addEventListener("click", () => clickStatus.textContent = "This text was clicked ✅");
 </solution>
 
 <domtestevents>
