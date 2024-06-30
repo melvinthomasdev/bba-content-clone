@@ -14,7 +14,7 @@ pElement.addEventListener("mouseover", (event) => {
     event.target.style.color = "orangered";
 });
 pElement.addEventListener("mouseout", (event) => {
-    event.target.style.color = "inherit";
+    event.target.style.color = "black";
 });
 </panel>
 </code>
