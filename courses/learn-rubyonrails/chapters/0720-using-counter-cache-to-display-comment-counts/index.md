@@ -270,6 +270,9 @@ Here's how it works:
   `comments_count` column on the new task and decrement the `comments_count`
   column on the old task.
 
+- It's important to note that the counter cache only updates during create, update
+  and destroy actions; therefore simply saving the entity will not trigger a counter update.
+
 Since `comments_count` always keeps track of the number of comments, a separate
 query to `comments` table is avoided when we need to access the count.
 
