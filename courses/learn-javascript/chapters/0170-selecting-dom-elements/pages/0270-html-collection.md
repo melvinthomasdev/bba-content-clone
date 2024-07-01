@@ -6,9 +6,9 @@ and
 <code>
 <panel language="html">
 <div class="container">
-  <p>Paragraph 1</p>
-  <p>Paragraph 2</p>
-  <p>Paragraph 3</p>
+  <p class="paragraph">Paragraph 1</p>
+  <p class="paragraph">Paragraph 2</p>
+  <p class="paragraph">Paragraph 3</p>
 </div>
 </panel>
 <panel language="javascript">
