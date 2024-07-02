@@ -1,10 +1,10 @@
 ---
-- title: Installing Git in Mac
-  slug: installing-git-in-mac
+- title: Installing Git on Mac
+  slug: installing-git-on-mac
   page_type: lesson
-- title: Installing Git in Windows
-  slug: installing-git-in-windows
+- title: Installing Git on Windows
+  slug: installing-git-on-windows
   page_type: lesson
-- title: Installing Git in Linux
-  slug: installing-git-in-linux
+- title: Installing Git on Linux
+  slug: installing-git-on-linux
   page_type: lesson

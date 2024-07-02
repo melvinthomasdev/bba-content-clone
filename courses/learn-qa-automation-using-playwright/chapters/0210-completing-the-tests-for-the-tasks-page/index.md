@@ -294,7 +294,7 @@ test.describe("Tasks page", () => {
   });
 
   test("should be able to star a pending task", async ({ page, taskPage }) => {
-    page.goto("/");
+    await page.goto("/");
     await taskPage.createTaskAndVerify({ taskName });
     await taskPage.starTaskAndVerify({ taskName });
   });
@@ -303,7 +303,7 @@ test.describe("Tasks page", () => {
     page,
     taskPage,
   }) => {
-    page.goto("/");
+    await page.goto("/");
     await taskPage.createTaskAndVerify({ taskName });
     await taskPage.starTaskAndVerify({ taskName });
     const starIcon = page
@@ -400,7 +400,7 @@ test.describe("Tasks page", () => {
       page,
       taskPage,
     }) => {
-      page.goto("/");
+      await page.goto("/");
       await taskPage.createTaskAndVerify({ taskName });
       await taskPage.starTaskAndVerify({ taskName });
     });
@@ -409,7 +409,7 @@ test.describe("Tasks page", () => {
       page,
       taskPage,
     }) => {
-      page.goto("/");
+      await page.goto("/");
       await taskPage.createTaskAndVerify({ taskName });
       await taskPage.starTaskAndVerify({ taskName });
       const starIcon = page
@@ -574,7 +574,7 @@ test.describe("Tasks page", () => {
       page,
       taskPage,
     }) => {
-      page.goto("/");
+      await page.goto("/");
       await taskPage.createTaskAndVerify({ taskName });
       await taskPage.starTaskAndVerify({ taskName });
     });
@@ -583,7 +583,7 @@ test.describe("Tasks page", () => {
       page,
       taskPage,
     }) => {
-      page.goto("/");
+      await page.goto("/");
       await taskPage.createTaskAndVerify({ taskName });
       await taskPage.starTaskAndVerify({ taskName });
       const starIcon = page

@@ -22,7 +22,7 @@ test("Verify members", async ({ page, context, browser }) => {
 });
 ```
 
-It is important to note that fixtures can only be used by destructuring them. This is because the lifecycle of the fixtures start when we destructure them in a test. 
+It is important to note that fixtures can only be used by destructuring them. This is because the lifecycle of the fixtures start when we destructure them in a test.
 If we use fixtures without destructuring them, Playwright throws an error.
 
 ```ts
@@ -47,10 +47,9 @@ directly from `@playwright/test`.
 The lifecycle of a fixture can be classified into three steps. The setup, usage and teardown step. To understand it better consider the following sample fixture.
 
 ```ts
-
 import { test } from "@playwright/test";
 
-interface {
+interface SampleFixture {
   customValue: string;
 }
 
@@ -65,14 +64,14 @@ const sampleFixture = test.extend<customValue>({
     /* Teardown starts */
     console.log("Tearing down customValue fixture");
     /* Teardown ends */
-  }
-})
+  },
+});
 
 sampleFixture(async ({ customValue }) => {
   console.log("Test begins");
   console.log(customValue);
-  console.log("Test ends")
-})
+  console.log("Test ends");
+});
 ```
 
 The output when executing the above tests will be as follows.
@@ -90,19 +89,19 @@ Tearing down customValue fixture
 
 As seen from the output above, the fixture lifecycle is dependent on the test lifecycle. The lifecycle is as follows.
 
-1. Setup: Here we can write all the logic to setup our custom fixture. Some common usage includes initializing a POM and 
-setting up the page for using the fixture. This step takes place before the test begins. Playwright goes through all the 
-fixtures we have destructred in a test and sets them up.
+1. Setup: Here we can write all the logic to setup our custom fixture. Some common usage includes initializing a POM and
+   setting up the page for using the fixture. This step takes place before the test begins. Playwright goes through all the
+   fixtures we have destructred in a test and sets them up.
 
 2. Usage: This is the step where we actually use the fixture. In the fixture we can provide any useful data or helper to
-the tests through the `use` command. Doing this replaces all the occurrences of the fixture name
-in the tests with the value we pass in the `use` command.
+   the tests through the `use` command. Doing this replaces all the occurrences of the fixture name
+   in the tests with the value we pass in the `use` command.
 
-3. Teardown: This is the final step in the fixture lifecycle which can be used to execute some cleanup actions. This can 
-be used to do something like cleaning up the test data from a site after testing in it. The teardown of a fixture is 
-executed only after the dependent test has completed execution.
+3. Teardown: This is the final step in the fixture lifecycle which can be used to execute some cleanup actions. This can
+   be used to do something like cleaning up the test data from a site after testing in it. The teardown of a fixture is
+   executed only after the dependent test has completed execution.
 
-This approach spares us from the need to include the repeating logic within individual tests, promoting cleaner and 
+This approach spares us from the need to include the repeating logic within individual tests, promoting cleaner and
 more efficient test code.
 
 ## Page Object Models as fixtures
@@ -168,7 +167,7 @@ Hence, to employ the todo page methods in our test, we can effortlessly import t
 
 Note that custom fixture names should start with a letter or underscore, and can contain only letters, numbers and underscores.
 
-This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the 
+This is a theoretical chapter. There is nothing to commit in here. If you have made some changes to the project, clean them up by executing the
 following command.
 
 ```bash

@@ -58,7 +58,7 @@ import { faker } from "@faker-js/faker";
 test.describe("Register page", () => {
   let username: string, email: string, password: string;
 
-  test.beforeEach(async () => {
+  test.beforeEach(() => {
     username = faker.person.fullName();
     email = faker.internet.email();
     password = faker.internet.password();
@@ -81,8 +81,7 @@ test.describe("Register page", () => {
     });
 
     await test.step("Step 3: Verify newly created user", () =>
-      loginPage.loginAndVerifyUser({ email, password, username })
-    );
+      loginPage.loginAndVerifyUser({ email, password, username }));
   });
 });
 ```
