@@ -50,9 +50,6 @@
 - title: em - II
   slug: em-ii
   page_type: lesson
-- title: em Practical Use
-  slug: em-practical-use
-  page_type: lesson
 - title: Challenge - em
   slug: challenge-em
   page_type: exercise
@@ -65,9 +62,6 @@
 - title: rem
   slug: rem
   page_type: lesson
-- title: rem Practical Use
-  slug: rem-practical-use
-  page_type: lesson
 - title: Challenge - rem
   slug: challenge-rem
   page_type: exercise
@@ -79,9 +73,6 @@
   page_type: lesson
 - title: vh
   slug: vh
-  page_type: lesson
-- title: vh Practical Use
-  slug: vh-practical-use
   page_type: lesson
 - title: Challenge - vh
   slug: challenge-vh

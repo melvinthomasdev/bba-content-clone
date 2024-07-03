@@ -15,27 +15,42 @@ Take a look at the example given below:
 </div>
 </panel>
 <panel language="javascript">
-let h1 = document.querySelector('h1');
-let nextElementSiblingOfh1 = h1.nextElementSibling;
-let prevElementSiblingOfh1 = h1.previousElementSibling;
+const h1 = document.querySelector('h1');
+const nextElementSiblingOfh1 = h1.nextElementSibling;
+const prevElementSiblingOfh1 = h1.previousElementSibling;
 console.log(`Previous Sibling of the h1 element: ${prevElementSiblingOfh1.nodeName.toLowerCase()}`);
 console.log(`Next Sibling of the h1 element: ${nextElementSiblingOfh1.nodeName.toLowerCase()}`);
 </panel>
 </code>
 </codeblock>
 
-As can be seen, the next sibling
-element of `h1` is
-the `strong` element and the previous
-sibling element of `h1` is the `a` element.
+As can be seen, the next sibling element of `h1` is the `strong` element and the previous sibling element of `h1` is the `a` element.
 
 Let's take a look at another example:
 <codeblock language="javascript" type="lesson">
+<code>
 <panel language="html">
-<section>
-  <a href="https://www.wikipedia.org/">A link to wikipedia.</a>
-  <span> The Free Encyclopedia </span>
-  <strong> A lot to learn here.</strong>
-</section>
+<div>
+  <h1>BigBinary Academy Courses</h1>
+  <ul class="course-list">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React</li>
+    <li>Ruby</li>
+    <li>Ruby on Rails</li>
+  </ul>
+  <p>Learn coding by actually coding.</p>
+</div>
 </panel>
+<panel language="javascript">
+const ul = document.querySelector('.course-list');
+const nextElementSiblingOfUl = ul.nextElementSibling;
+const prevElementSiblingOfUl = ul.previousElementSibling;
+console.log(`Previous Sibling of the ul element: ${prevElementSiblingOfUl.nodeName.toLowerCase()}`);
+console.log(`Next Sibling of the ul element: ${nextElementSiblingOfUl.nodeName.toLowerCase()}`);
+</panel>
+</code>
 </codeblock>
+
+As can be seen, the next sibling element of `ul` is the `p` element and the previous sibling element of `ul` is the `h1` element.

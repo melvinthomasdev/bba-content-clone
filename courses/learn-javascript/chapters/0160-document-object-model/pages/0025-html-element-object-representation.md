@@ -8,12 +8,12 @@ in the console
 and
 look at the number of properties
 that the browser attaches
-to the object:
+to the object.
 
 <codeblock language="javascript" type="lesson">
 <code>
 <panel language="html">
-<p>This is a diversion.</p>
+<p id="details">This is a diversion.</p>
 </panel>
 <panel language="javascript">
 /*
@@ -21,10 +21,10 @@ to the object:
   Right now, simply look at it and move on to understanding the concept.
 */
 
-// Selects the first `p` tag and assigns it to the variable `paragraph`.
-const paragraph = document.getElementsByTagName('p');
+// Selects the element with the ID 'details' and assigns it to the variable 'paragraph'.
+const paragraph = document.getElementById('details');
 
-console.log(paragraph);
+console.dir(paragraph);
 </panel>
 </code>
 </codeblock>

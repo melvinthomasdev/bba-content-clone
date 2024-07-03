@@ -1,4 +1,4 @@
-Create a regex pattern to match any string that contains a literal comma , in the provided inputs.
+Create a regex pattern to match any string that contains a literal comma `,` in the provided inputs.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
