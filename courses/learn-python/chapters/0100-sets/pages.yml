@@ -5,6 +5,12 @@
 - title: Exercise 1 - Creating a Set
   slug: exercise-1-creating-a-set
   page_type: exercise
+- title: The sorted function
+  slug: the-sorted-function
+  page_type: lesson
+- title: Exercise 1 - The sorted function
+  slug: exercise-1-the-sorted-function
+  page_type: exercise
 - title: Adding values to a Set
   slug: adding-values-to-a-set
   page_type: lesson
