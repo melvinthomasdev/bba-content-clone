@@ -9,7 +9,7 @@ the `Close` button is clicked.
 <panel language="html">
 <button id="submit-button">Submit</button>
 <dialog id="dialog-box">
-  <img src="https://ucarecdn.com/f6bf72be-74d6-4c06-b163-5d5bd04a3b0c/">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/tick_VC6ck9B0G.png">
   <h2>Thank You!</h2>
   <p>Your details have been saved successfully!</p>
   <button id="close-button">Close</button>

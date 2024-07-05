@@ -2,7 +2,7 @@ The `<img>` element is used to display an image. Let us try to display an image:
 
 <codeblock language="html" type="lesson">
 <code>
-<img src="https://ucarecdn.com/b9721aee-1c09-4d0c-9bcb-8969afe2751e/-/resize/400x/">
+<img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/download_d1dKbP6V8.avif?updatedAt=1719948686640">
 </code>
 </codeblock>
 

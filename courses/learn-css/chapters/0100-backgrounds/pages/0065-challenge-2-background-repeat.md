@@ -42,7 +42,7 @@ h1::before {
   align-items: center;
 }
 .image {
-  background-image: url('https://ucarecdn.com/e9915d5f-c16a-41be-8672-e14b560ef413/');
+  background-image: url('https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/butterflies-bg-pattern_oVY9C5YmS.jpeg');
   width: 250px;
   height: 250px;
   margin: 10px;
@@ -76,7 +76,7 @@ h1::before {
   align-items: center;
 }
 .image {
-  background-image: url('https://ucarecdn.com/e9915d5f-c16a-41be-8672-e14b560ef413/');
+  background-image: url('https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/butterflies-bg-pattern_oVY9C5YmS.jpeg');
   width: 250px;
   height: 250px;
   margin: 10px;

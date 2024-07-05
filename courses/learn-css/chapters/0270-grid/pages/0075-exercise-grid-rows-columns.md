@@ -16,7 +16,7 @@ spanning both columns.
 </header>
 
 <section class="blog-content">
-  <img src="https://ucarecdn.com/55b63247-f656-40c6-bc5d-a21deb8ce149/" alt="Mountain Trek">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/har-ki-doon-valley-uttarakhand_tJ6flaLSZ.jpg" alt="Mountain Trek">
   <p>
     Trekking in the mountains is an exhilarating experience that offers a perfect blend of adventure, breathtaking landscapes, and a sense of accomplishment. Whether you are an avid trekker or a novice seeking a new challenge, the mountains have something magical to offer. In this blog post, we'll explore the beauty and thrill of a recent trekking adventure through the majestic peaks.
   </p>

@@ -3,7 +3,7 @@ There are many ways to select an element.
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
-<img src="https://ucarecdn.com/fc228388-6c3c-4ee8-ad3e-591ae79d0fdb/">
+<img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/CSS3_7dax2FGGb.svg">
 <h2>CSS is easy!</h2>
 <hr>
 <p class="paragraph" id="para">

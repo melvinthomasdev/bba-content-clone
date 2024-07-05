@@ -8,7 +8,7 @@ A **bad** `alt` text lacks information,
 duplicates existing text, or provides
 inaccurate or unrelated descriptions.
 
-Let's look at some examples of good and 
+Let's look at some examples of good and
 bad `alt` text:
 
 <codeblock language="html" type="lesson">
@@ -38,7 +38,7 @@ Bad
 <br>
 
 <!--Image 3-->
-<img src="https://ucarecdn.com/ef793589-6678-4b55-b0b3-8346dfcfea44/" width="10%">
+<img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/page_not_found_404_zhbqPVvdY.png" width="10%">
 <!--
 Good
   alt="Page not found"
@@ -46,7 +46,7 @@ Bad
   alt="404"
 -->
 <!--Above example with a no image link and alt text added-->
-<img src="#"  alt="https://ucarecdn.com/ef793589-6678-4b55-b0b3-8346dfcfea44/" width="10%">
+<img src="#"  alt="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/page_not_found_404_zhbqPVvdY.png" width="10%">
 </code>
 </codeblock>
 

@@ -16,7 +16,7 @@ Then, create the following:
    - Create basic setup
    - Code the website using basic HTML
 3. Insert a line break after the ordered list.
-4. Insert an image with the source as **https://ucarecdn.com/4f018f4c-5f28-45f5-87dc-dd477c00517c/-/preview/500x700/**
+4. Insert an image with the source as **https://ik.imagekit.io/d9mvewbju/tr:w-700,h-500/Course/BigbinaryAcademy/boat-in-kerala_ZXULCG1h_.avif**
    and add the following alternative text, **A houseboat on a river in Kerala.**
 5. Create a table with the caption **Monthly Expenses** and add the following content to it,
 
@@ -61,7 +61,7 @@ text:
   <li>Code the website using basic HTML</li>
 </ol>
 <br>
-<img src="https://ucarecdn.com/4f018f4c-5f28-45f5-87dc-dd477c00517c/-/preview/500x700/" alt="A houseboat on a river in Kerala.">
+<img src="https://ik.imagekit.io/d9mvewbju/tr:w-700,h-500/Course/BigbinaryAcademy/boat-in-kerala_ZXULCG1h_.avif" alt="A houseboat on a river in Kerala.">
 <table>
   <caption>Monthly Expenses</caption>
   <thead>

@@ -9,7 +9,7 @@ attributes:
 
 <codeblock language="html" type="lesson">
 <code>
-<img src="https://ucarecdn.com/6b775097-118c-4cd9-80a2-a5b144e3aa86/-/resize/400x" alt="JavaScript Logo">
+<img src="https://ik.imagekit.io/d9mvewbju/tr:w-400,h-400/Course/BigbinaryAcademy/Unofficial_JavaScript_logo_2_bWpcbL-2Ko.svg" alt="JavaScript Logo">
 </code>
 </codeblock>
 

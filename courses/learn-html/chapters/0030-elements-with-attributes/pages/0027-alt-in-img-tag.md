@@ -2,7 +2,7 @@ The `img` tag has something important called `alt`. We use alt in an img tag to 
 
 <codeblock language="html" type="lesson">
 <code>
-<img src="https://ucarecdn.com/b9721aee-1c09-4d0c-9bcb-8969afe2751e/-/resize/400x/" alt="The view from a balcony">
+<img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/download_d1dKbP6V8.avif" alt="The view from a balcony">
 <img src="broken-link.jpg" alt="The view from a plane">
 </code>
 </codeblock>

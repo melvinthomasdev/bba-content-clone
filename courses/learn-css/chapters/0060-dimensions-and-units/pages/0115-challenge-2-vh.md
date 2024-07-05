@@ -13,7 +13,7 @@ Set the height of the `.hero` class to `100vh`.
 </panel>
 <panel language="css">
 .hero {
-  background: url(https://ucarecdn.com/1a120e75-10ba-48a4-8d3e-1bc7c4ce5ab6/) center;
+  background: url(https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/explore-now_NaO4g2Dfg.jpg) center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -48,7 +48,7 @@ p {
 <solution>
 .hero {
   height: 100vh;
-  background: url(https://ucarecdn.com/1a120e75-10ba-48a4-8d3e-1bc7c4ce5ab6/) center;
+  background: url(https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/explore-now_NaO4g2Dfg.jpg) center;
   background-size: cover;
   display: flex;
   align-items: center;

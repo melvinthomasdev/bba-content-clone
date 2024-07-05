@@ -9,22 +9,22 @@ Make the following changes:
 <panel language="html">
 <div class="container">
   <div class="profile-card solid-border">
-    <img src="https://ucarecdn.com/2fe9b5bf-5012-4854-8cd8-587f84b03334/" alt="Profile 1">
+    <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/men-avatar%20(1)_VJe2C64nS.jpeg" alt="Profile 1">
     <h2>Steph Curry</h2>
     <p>Web Developer</p>
   </div>
   <div class="profile-card dashed-border">
-    <img src="https://ucarecdn.com/dbe695df-f170-4b4a-873f-2f1a36e76870/" alt="Profile 2">
+    <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/gentlemen-avatar_xmq1EJDwU.png" alt="Profile 2">
     <h2>Lebron James</h2>
     <p>Graphic Designer</p>
   </div>
   <div class="profile-card dotted-border">
-    <img src="https://ucarecdn.com/dbe695df-f170-4b4a-873f-2f1a36e76870/" alt="Profile 3">
+    <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/gentlemen-avatar_xmq1EJDwU.png" alt="Profile 3">
     <h2>Klay Thompson</h2>
     <p>Software Engineer</p>
   </div>
   <div class="profile-card double-border">
-    <img src="https://ucarecdn.com/2fe9b5bf-5012-4854-8cd8-587f84b03334/" alt="Profile 4">
+    <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/men-avatar%20(1)_VJe2C64nS.jpeg" alt="Profile 4">
     <h2>Kobe Bryant</h2>
     <p>UI/UX Designer</p>
   </div>

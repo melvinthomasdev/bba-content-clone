@@ -45,7 +45,7 @@ Let us have a look at an example:
   <br>
 
   <button type="submit">
-    <img src="https://ucarecdn.com/5a920084-5779-494d-9ee2-533bbb6d6c97/-/resize/60x60/">
+    <img src="https://ik.imagekit.io/d9mvewbju/tr:w-60,h-60/Course/BigbinaryAcademy/like_QjxRuLga9o.png">
   </button>
 </form>
 </code>

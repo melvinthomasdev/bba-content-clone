@@ -12,7 +12,7 @@ classes on the console.
 <code>
 <panel language="html">
 <div>
-  <img id="image" class="rounded-corner" src="https://ucarecdn.com/a29f134d-6b1e-4d95-a2d3-0f57c34f4259/-/resize/400x350/">
+  <img id="image" class="rounded-corner" src="https://ik.imagekit.io/d9mvewbju/tr:w-400,h-350/Course/BigbinaryAcademy/new-york-city_5gBb-QRzNV.jpg">
 </div>
 </panel>
 <panel language="css">

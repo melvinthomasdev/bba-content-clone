@@ -6,7 +6,7 @@ Make the image responsive:
 <h1>
   The Waterfall
 </h1>
-  <img src="https://ucarecdn.com/e589a9db-3e4a-427f-b580-be77f0d5d60b/" alt="Waterfall">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/waterfall_oKIDF4G6S.jpg" alt="Waterfall">
   <p>
     A waterfall is a point in a river or stream where water flows over a vertical drop or a series of steep drops. Waterfalls also occur where meltwater drops over the edge of a tabular iceberg or ice shelf.
   </p>

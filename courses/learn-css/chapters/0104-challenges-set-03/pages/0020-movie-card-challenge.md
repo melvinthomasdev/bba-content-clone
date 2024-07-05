@@ -1,10 +1,10 @@
 In this challenge, we will build a page about some popular movies. Our page will look good on all screen sizes. When it is completed, try opening it on a mobile as well as on a laptop. It should work properly on both.
 
 <video width="700" controls>
-  <source src="https://ucarecdn.com/a5590332-5db7-49e7-b5cc-acc6d79b5cd4/" type="video/mp4">
+  <source src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/Movie%20(1)_oiPTTWisa.mp4" type="video/mp4">
 </video>
 
-<img width="700" src="https://ucarecdn.com/3e40f6fa-7980-4711-bf92-6264b14d2e22/" alt="movie card challenge image">
+<img width="700" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/MovieCardChallengeImage_jSZIsxan-.png" alt="movie card challenge image">
 
 
 For completing this challenge, we need to complete the following tasks:
@@ -86,7 +86,7 @@ Remove the underline from links within elements with the class **card**.
     <div class="card-list">
         <div class="card">
             <a href="#">
-                <img class="poster" src="https://ucarecdn.com/9f4ce2b9-0add-4364-8273-7db3103eef46/" alt="Movie Poster">
+                <img class="poster" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/movie-card-image_dvylM7uXod.avif" alt="Movie Poster">
             </a>
             <a href="#">
                 <p class="movie-name">Movie 1</p>
@@ -95,7 +95,7 @@ Remove the underline from links within elements with the class **card**.
         </div>
         <div class="card">
             <a href="#">
-                <img class="poster" src="https://ucarecdn.com/9f4ce2b9-0add-4364-8273-7db3103eef46/" alt="Movie Poster">
+                <img class="poster" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/movie-card-image_dvylM7uXod.avif" alt="Movie Poster">
             </a>
             <a href="#">
                 <p class="movie-name">Movie 2</p>
@@ -104,7 +104,7 @@ Remove the underline from links within elements with the class **card**.
         </div>
         <div class="card">
             <a href="#">
-                <img class="poster" src="https://ucarecdn.com/9f4ce2b9-0add-4364-8273-7db3103eef46/" alt="Movie Poster">
+                <img class="poster" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/movie-card-image_dvylM7uXod.avif" alt="Movie Poster">
             </a>
             <a href="#">
                 <p class="movie-name">Movie 3</p>

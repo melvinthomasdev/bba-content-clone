@@ -4,7 +4,7 @@ On hover, change the card's opacity to `1` and its background color to `#ffffff`
 <code>
 <panel language="html">
 <div class="card">
-  <img src="https://ucarecdn.com/a29f134d-6b1e-4d95-a2d3-0f57c34f4259/" alt="Image 1">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/new-york-city_5gBb-QRzNV.jpg" alt="Image 1">
   <div class="content">
     <h3>New York City</h3>
     <p>Experience the vibrant culture and iconic landmarks of the Big Apple.</p>
@@ -12,7 +12,7 @@ On hover, change the card's opacity to `1` and its background color to `#ffffff`
 </div>
 
 <div class="card">
-  <img src="https://ucarecdn.com/5b78bbeb-d28a-4d97-8744-0f8dc8b53a05/" alt="Image 2">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/eiffel-tower-paris_-HBdDvLUA.jpg" alt="Image 2">
   <div class="content">
     <h3>Paris, France</h3>
     <p>Indulge in the romance and beauty of the City of Love.</p>

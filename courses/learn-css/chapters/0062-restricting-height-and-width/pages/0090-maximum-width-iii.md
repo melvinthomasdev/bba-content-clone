@@ -4,7 +4,7 @@ restricts the width of the element, even if
 the `width` property suggests a larger width
 for the element.
 
-![max width](https://ucarecdn.com/4040dc15-45bd-4d78-9095-2ca33764b4b2/)
+![max width](https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/maxwidth-1_lNa92nOFI.gif)
 
 In the above example, the first container **Div 1**
 has a width of 50%, while the second container **Div 2**

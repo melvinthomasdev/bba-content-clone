@@ -2,7 +2,7 @@ In this challenge, we will be testing
 the positioning skills we have learnt so far.
 
 <video width="700" controls>
-  <source src="https://ucarecdn.com/a555f887-03e3-4da2-8778-0716c9b5c4dc/" type="video/mp4">
+  <source src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/Navbar%20Challenge%20video_CjBTtHDPs.mp4" type="video/mp4">
 </video>
 
 For completing this challenge, we need to complete the following tasks:
@@ -11,7 +11,7 @@ For completing this challenge, we need to complete the following tasks:
 
 - Set the font family for the body element to **Arial, sans-serif**.
 - Remove the default margin and padding from the body.
-- Set the background image of the body using the following URL: `https://ucarecdn.com/3281a6ac-abe7-4655-a8f1-881e87ea9386/`.
+- Set the background image of the body using the following URL: `https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/navbar-challenge-hero-background-image_kk5lYdC5H.jpg`.
 
 **Header Styles:**
 
@@ -203,7 +203,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('https://ucarecdn.com/3281a6ac-abe7-4655-a8f1-881e87ea9386/');
+  background-image: url('https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/navbar-challenge-hero-background-image_kk5lYdC5H.jpg');
 }
 
 .header {

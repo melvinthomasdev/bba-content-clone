@@ -11,7 +11,7 @@ an array is **indexed**.
 The image below conveys how the
 array indexes are associated.
 
-![fruits array](https://ucarecdn.com/94143b5c-0919-4ad6-8f37-0ece2c2e7692/)
+![fruits array](https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/arraylesson_EYRb6cPza.png)
 
 We can access an element by
 specifying its index

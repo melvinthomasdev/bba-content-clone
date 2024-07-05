@@ -5,7 +5,7 @@ and the `left` property:
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<img src="https://ucarecdn.com/96cdd519-8f8f-4609-80e2-7e0dbae38b6b/" alt="Munnar Kerala">
+<img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/munnar-kerala-06_F2-gpq7yc.jpg" alt="Munnar Kerala">
 </panel>
 <panel language="css">
 img {

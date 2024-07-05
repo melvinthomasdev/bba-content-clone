@@ -4,7 +4,7 @@ element.
 
 The button should display an
 image with the following source:
-`https://ucarecdn.com/8b4a9a74-3de8-46cb-b394-ad767f8b4d58/-/resize/150x100/`
+`https://ik.imagekit.io/d9mvewbju/tr:w-150,h-100/Course/BigbinaryAcademy/Spiderman_ho8aL7B9f.webp`
 
 <codeblock language="html" type="exercise" testMode="fixedInput" defaultCSS="form {max-width: 300px; margin: 10px auto; font-family: Lato; border-radius: 10px; padding: 1rem; box-shadow: 0px 0px 4px; background-color: snow; font-size: 1.2rem; } form * { margin: 0.5rem; } button , input[type=`button`] { padding: 0.2rem 1rem; font-size: 1.1rem; font-weight: 700; margin: 1rem 0; }">
 <code>
@@ -27,7 +27,7 @@ image with the following source:
 
   <!-- Write code below -->
   <button type="submit">
-    <img src="https://ucarecdn.com/8b4a9a74-3de8-46cb-b394-ad767f8b4d58/-/resize/150x100/">
+    <img src="https://ik.imagekit.io/d9mvewbju/tr:w-150,h-100/Course/BigbinaryAcademy/Spiderman_ho8aL7B9f.webp">
   </button>
 </form>
 </solution>

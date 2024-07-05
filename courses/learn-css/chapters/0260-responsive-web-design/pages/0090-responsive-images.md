@@ -16,7 +16,7 @@ smaller than the original image width.
 <codeblock language="css" type="lesson">
 <code>
 <panel language="html">
-<img src="https://ucarecdn.com/e2eb3032-ba00-4896-ae03-87d75ab63871/">
+<img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/mumbai-02_SCFPBqDVsn.jpg">
 </panel>
 <panel language="css">
 img {

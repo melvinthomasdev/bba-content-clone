@@ -9,12 +9,12 @@ Apply the following padding values to the `img` elements using the `padding` sho
 <code>
 <panel language="html">
 <div class="image-gallery">
-  <img src="https://ucarecdn.com/3692f446-53a0-40ff-8819-81193d395a80/" alt="BMW">
-  <img src="https://ucarecdn.com/6b9f30ee-f973-4a97-a447-6a9c2f3b05a5/" alt="Lamborghini">
-  <img src="https://ucarecdn.com/2e79f4f6-bae7-4406-a83c-0a6e0ac24c58/" alt="Infinity">
-  <img src="https://ucarecdn.com/99b3030a-6620-4a18-a405-954e15c85627/" alt="Mercedes Benz">
-  <img src="https://ucarecdn.com/cb8a0bf8-27ab-47da-a253-5ce244f4d9c6/" alt="Isuzu D-max">
-  <img src="https://ucarecdn.com/ef18da2a-8243-49f9-9cf5-f35db55d906f/" alt="Maserati">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/bmw_yuDvqfcM-.jpg" alt="BMW">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/lambo_CPCbQmsxW.jpg" alt="Lamborghini">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/mazda_OqP8oBu-Y.jpg" alt="Infinity">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/benz_0uwhxzP20.jpg" alt="Mercedes Benz">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/isuzu-dmax_RtvT4Md5kW.jpg" alt="Isuzu D-max">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/maserati_yijfJG5iOw.jpg" alt="Maserati">
 </div>
 </panel>
 <panel language="css">

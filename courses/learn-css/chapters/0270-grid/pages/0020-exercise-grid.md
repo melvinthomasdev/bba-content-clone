@@ -11,22 +11,22 @@ to the **photo-gallery**:
 <h1 class="heading">Photo Gallery</h1>
 <div class="photo-gallery">
   <div>
-    <img class="image" src="https://ucarecdn.com/a29f134d-6b1e-4d95-a2d3-0f57c34f4259/" alt="New York City">
+    <img class="image" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/new-york-city_5gBb-QRzNV.jpg" alt="New York City">
   </div>
   <div>
-    <img class="image" src="https://ucarecdn.com/5b78bbeb-d28a-4d97-8744-0f8dc8b53a05/" alt="Eiffel Tower Paris">
+    <img class="image" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/eiffel-tower-paris_-HBdDvLUA.jpg" alt="Eiffel Tower Paris">
   </div>
   <div>
-    <img class="image" src="https://ucarecdn.com/b0de0c9f-705d-41f8-8e4f-57266e93aaf8/" alt="Fort Kochi Beach Square">
+    <img class="image" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/fort-kochi-beach-square_TlUcZ6rQP.jpg" alt="Fort Kochi Beach Square">
   </div>
   <div>
-    <img class="image" src="https://ucarecdn.com/96cdd519-8f8f-4609-80e2-7e0dbae38b6b/" alt="Munnar Kerala">
+    <img class="image" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/munnar-kerala-06_F2-gpq7yc.jpg" alt="Munnar Kerala">
   </div>
   <div>
-    <img class="image" src="https://ucarecdn.com/2b2cbeb7-8d93-467e-8b53-022b51071c6e/" alt="Zanskar River Ladakh">
+    <img class="image" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/zanskar-river-ladakh_Y-rL9FsDb.jpg" alt="Zanskar River Ladakh">
   </div>
   <div>
-    <img class="image" src="https://ucarecdn.com/55b63247-f656-40c6-bc5d-a21deb8ce149/" alt="Har Ki Doon Valley Uttarakhand">
+    <img class="image" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/har-ki-doon-valley-uttarakhand_tJ6flaLSZ.jpg" alt="Har Ki Doon Valley Uttarakhand">
   </div>
 </div>
 </panel>

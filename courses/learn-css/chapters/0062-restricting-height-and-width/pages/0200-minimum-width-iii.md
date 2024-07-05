@@ -4,7 +4,7 @@ enforces a minimum width for the element, even if
 the `width` property suggests a smaller width
 for the element.
 
-![Min width](https://ucarecdn.com/327ea24f-9c9f-4278-bf03-ac6895080b78/)
+![Min width](https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/minwidth-gif_ubjQ4zVm2.gif)
 
 In the above example, the first container **Div 1**
 has a width of 50%, while the second container **Div 2**

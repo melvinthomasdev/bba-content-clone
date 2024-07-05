@@ -14,7 +14,7 @@ The `img` element uses the `src` attribute to find where the image is located.
 
 <codeblock language="html" type="lesson">
 <code>
-<img src="https://ucarecdn.com/b9721aee-1c09-4d0c-9bcb-8969afe2751e/">
+<img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/download_d1dKbP6V8.avif">
 </code>
 </codeblock>
 

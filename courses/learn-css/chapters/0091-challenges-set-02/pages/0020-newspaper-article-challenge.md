@@ -5,7 +5,7 @@ as well as on a laptop.
 It should work properly on both.
 
 <video width="700" controls>
-  <source src="https://ucarecdn.com/fcb4e904-fdf2-467d-b8c1-8205f6bf7120/" type="video/mp4">
+  <source src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/Newspaper%20Challenge%20Video_1ylFlc8ie.mp4" type="video/mp4">
 </video>
 
 
@@ -50,7 +50,7 @@ For completing this challenge, we need to complete the following tasks:
   <p class="sub-heading">A Tale of Community and Discovery</p>
 </div>
 <div class="image-container">
-  <img class="reference-image" src="https://ucarecdn.com/cde0ef8b-7517-49df-a18e-ffaee8b93dae/" alt="Children setting up a community library in a sunny park.">
+  <img class="reference-image" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/newspaper-challenge-kids-library_njqtPqqwT.webp" alt="Children setting up a community library in a sunny park.">
 </div>
 <div class="description">
   <p>

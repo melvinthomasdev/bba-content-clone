@@ -38,7 +38,7 @@ body {
   background: lightcyan;
 }
 .background-image {
-  background-image: url('https://ucarecdn.com/1b522908-e0d8-424b-aaa4-c008e850eca2/');
+  background-image: url('https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/men-avatar_dMCyM-LPh.jpeg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -89,7 +89,7 @@ body {
   background: lightcyan;
 }
 .background-image {
-  background-image: url('https://ucarecdn.com/1b522908-e0d8-424b-aaa4-c008e850eca2/');
+  background-image: url('https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/men-avatar_dMCyM-LPh.jpeg');
   background-size: cover;
   background-position: center;
   width: 100%;

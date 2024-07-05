@@ -43,14 +43,14 @@ browsers, so we could provide image in multiple formats.
 <code>
 <picture>
   <img
-  src="https://ucarecdn.com/8d92c6f9-2eae-4447-90c9-85eb59e2c8c7/"
+  src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/cat-image_UWjT0OwWf.jpg"
   alt="a cat lying"
   width="300"
   height="200"
   loading="lazy"
   decoding="async">
-  <source srcset="https://ucarecdn.com/1683b866-404c-42e1-90a2-08c5d1ce49bb/" type="image/avif">
-  <source srcset="https://ucarecdn.com/e2ea0fba-3d3c-44eb-9afc-9b5f0d9bbfad/" type="image/webp">
+  <source srcset="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/cat-image_6-z1w9nxo.avif" type="image/avif">
+  <source srcset="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/cat-image_NIqIHsSKg.webp" type="image/webp">
 </picture>
 </code>
 </codeblock>

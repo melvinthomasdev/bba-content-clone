@@ -5,7 +5,7 @@ the paragraph element.
 
 In the `aside` element, add an image
 with the following source:
-`https://ucarecdn.com/8b4a9a74-3de8-46cb-b394-ad767f8b4d58/-/resize/250x/`
+`https://ik.imagekit.io/d9mvewbju/tr:w-250,h-250/Course/BigbinaryAcademy/Spiderman_ho8aL7B9f.webp`
 
 <codeblock language="html" type="exercise" testMode="fixedInput">
 <code>
@@ -50,7 +50,7 @@ p {
 <main>
   <!-- Write code below -->
   <aside>
-    <img src="https://ucarecdn.com/8b4a9a74-3de8-46cb-b394-ad767f8b4d58/-/resize/250x/">
+    <img src="https://ik.imagekit.io/d9mvewbju/tr:w-250,h-250/Course/BigbinaryAcademy/Spiderman_ho8aL7B9f.webp">
   </aside>
   <p>"With great power, comes great responsibility"</p>
   <p>- Uncle Ben</p>

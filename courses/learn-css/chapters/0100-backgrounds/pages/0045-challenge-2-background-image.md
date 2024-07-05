@@ -1,4 +1,4 @@
-Set the following image URL as the background image for the `.header` class: https://ucarecdn.com/1a120e75-10ba-48a4-8d3e-1bc7c4ce5ab6/
+Set the following image URL as the background image for the `.header` class: https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/explore-now_NaO4g2Dfg.jpg
 
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
@@ -70,7 +70,7 @@ p {
 
 <solution>
 .header {
-  background-image: url("https://ucarecdn.com/1a120e75-10ba-48a4-8d3e-1bc7c4ce5ab6/");
+  background-image: url("https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/explore-now_NaO4g2Dfg.jpg");
   background-size: cover;
   background-position: center;
   height: 400px;

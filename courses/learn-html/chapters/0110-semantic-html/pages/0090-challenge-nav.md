@@ -7,7 +7,7 @@ around list items in
 <code>
 <panel language="html">
 <header>
-  <img src="https://ucarecdn.com/f0c4b07d-25f4-44a6-96cb-5b2ccb460389/">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/whale_hhbvKh3v1.jpeg">
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
@@ -116,7 +116,7 @@ footer p {
 
 <solution>
 <header>
-  <img src="https://ucarecdn.com/f0c4b07d-25f4-44a6-96cb-5b2ccb460389/">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/whale_hhbvKh3v1.jpeg">
 
   <nav>
     <ul>

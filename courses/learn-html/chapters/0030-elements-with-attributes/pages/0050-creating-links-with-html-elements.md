@@ -24,7 +24,7 @@ turned into links:
 <!-- Using Images as a Link -->
 <p> Click on the below Gift Image to see more Gift photos at Unsplash</p>
 <a href="https://unsplash.com/s/photos/gift">
-  <img src="https://ucarecdn.com/4f830bbe-376b-4caa-9fb4-2bea143444c0/-/preview/300x111/">
+  <img src="https://ik.imagekit.io/d9mvewbju/tr:w-300,h-111/Course/BigbinaryAcademy/Floral%20Gift%20Boxes_JB1W__1vs.jpg">
 </a>
 <!-- Using links inside an unordered list -->
 <p> Here are the 2022, 2018 and 2014 FIFA World Cup Winners </p>

@@ -7,7 +7,7 @@ look at an example of a **Image:**
 <codeblock language="html" type="lesson">
 <code>
 <figure>
-  <img src="https://ucarecdn.com/3ae9bc03-fe7e-427d-8962-d3e831e43531/" alt="A white peacock" style="width:100%">
+  <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/white-peacock_xvHGCPI-H.jpg" alt="A white peacock" style="width:100%">
   <p>Fig.1 - A white peacock.</p>
 </figure>
 </code>

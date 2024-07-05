@@ -34,7 +34,7 @@ h1 {
   min-height: 100vh;
 }
 .image {
-  background-image: url('https://ucarecdn.com/38730ed4-c800-4fbd-8b33-b406a6406771/');
+  background-image: url('https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/nature_F55HkPWpq.jpg');
   width: 300px;
   height: 200px;
   margin: 10px;
@@ -64,7 +64,7 @@ h1 {
   min-height: 100vh;
 }
 .image {
-  background-image: url('https://ucarecdn.com/38730ed4-c800-4fbd-8b33-b406a6406771/');
+  background-image: url('https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/nature_F55HkPWpq.jpg');
   width: 300px;
   height: 200px;
   margin: 10px;
