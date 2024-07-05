@@ -1,0 +1,21 @@
+- title: Canvas Element
+  slug: canvas-element
+  page_type: lesson
+- title: Challenge - Canvas Element
+  slug: challenge-canvas-element
+  page_type: exercise
+- title: Width and Height in Canvas
+  slug: canvas-width-and-height
+  page_type: lesson
+- title: Width and Height in Canvas - Part 02
+  slug: canvas-width-and-height-02
+  page_type: lesson
+- title: Challenge - Width and Height in Canvas
+  slug: challenge-canvas-width-and-height
+  page_type: exercise
+- title: Context
+  slug: context
+  page_type: lesson
+- title: Challenge - Context
+  slug: challenge-context
+  page_type: exercise
