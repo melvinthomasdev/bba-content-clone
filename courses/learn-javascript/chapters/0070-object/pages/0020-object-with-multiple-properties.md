@@ -54,8 +54,8 @@ separate variables.
 </code>
 </codeblock>
 
-Moving forward, in the Academy,
-we will be preferring to use
+Moving forward, in the BigBinary Academy,
+we would prefer to use
 objects to store values of
 data that are related
 rather than
