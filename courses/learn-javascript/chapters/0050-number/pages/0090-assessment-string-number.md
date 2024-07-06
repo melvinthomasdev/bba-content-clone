@@ -9,12 +9,6 @@ Mumbai in kilometers.
 Display the value of `distanceInKM`
 to the console.
 
-For example:
-```js
-Input: distanceInKM = 1000
-
-Output: 1000
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 // Write your code below
