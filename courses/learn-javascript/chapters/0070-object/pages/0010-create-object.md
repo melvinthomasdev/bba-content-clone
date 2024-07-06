@@ -11,11 +11,6 @@ In JavaScript, we can use
 the `Object` type to store such values
 that are related.
 
-Take a look at the below image to see
-what an **object** looks like.
-
-![javaScript object](https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/jsbestpractices_lKFTCoA06.png)
-
 In the example given below,
 we are storing the **fuelType** of a car
 in an object named `car`.
@@ -27,6 +22,5 @@ const car = {
 };
 
 console.log(car);
-
 </code>
 </codeblock>
