@@ -1,3 +1,6 @@
 - title: Login Form
   slug: login-form
   page_type: lesson
+- title: Chess Board
+  slug: chess-board
+  page_type: lesson
