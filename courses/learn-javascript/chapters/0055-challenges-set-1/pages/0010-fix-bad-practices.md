@@ -1,9 +1,10 @@
 In the three code examples given below,
-fix all the bad practices we have learnt so far.
+fix all the bad practices we have learned so far.
 
-Since we are testing here for good/bad coding practices which are subjective, some of these questions can have more than one right answer.
+Since we are testing here for good/bad coding practices, which are subjective, some of these questions can have more than one right answer.
 
-**Please refer the comment attached with the solution to get more details on our approach.**
+**Even if you get the right solution, you should check out the proposed solution, and over there, you should read the comments to educate yourself.**
+
 
 **Code Example 1**
 
@@ -15,7 +16,7 @@ numberOfVotesCast = 6;
 </code>
 <solution>
 /* 
-The variable `totalNumberOfVoters` can be declared using `const` as it is NOT updated anywhere in 3 lines given.
+The variable `totalNumberOfVoters` can be declared using `const` as it is NOT updated anywhere in the 3 lines given.
 Declare a variable with `let` only if you need to update the value later, like here for example, `numberOfPeople`.
 */
 const totalNumberOfVoters = 19;
