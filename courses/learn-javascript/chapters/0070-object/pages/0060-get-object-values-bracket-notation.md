@@ -16,13 +16,13 @@ console.log(person.12);
 </code>
 </codeblock>
 
-This is because,
+This is because
 the dot operator needs the key name
 to be a proper variable name.
 In JavaScript,
 you can not have a variable name
 that starts with a number.
-This is why,
+This is why
 our code results in an error.
 
 Now, to access the value of
@@ -88,25 +88,3 @@ In the example given above,
 the **key** name `project-lead`
 from the `project` object
 is stored inside a variable `keyName`.
-
-We can also use expressions
-to access the value of properties
-using the bracket notation.
-
-<codeblock language="javascript" type="lesson">
-<code>
-const person = {
-  12: "Adam",
-  13: "Samantha"
-};
-
-console.log(person[3 * 4]); // Same as console.log(project[12]);
-</code>
-</codeblock>
-
-In the example given above,
-the expression `3 * 4` evaluates to `12`.
-Hence, `person[3 * 4]` is effectively, `person[12]`.
-This is known as a **computed object property**
-since the property `person[12]`
-was evaluated or computed from `person[3 * 4]`.
