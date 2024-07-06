@@ -1,8 +1,6 @@
-We have an object `person` in the editor.
-
-Let's try to add the value `"Engineer"` to
-the `profession` key in the object
-using **dot notation**.
+We have `person` object. This person's profession is "Engineer".
+Let's add key `profession` and the value will be "Engineer".
+We'll add this key using dot notation.
 
 <codeblock language="javascript" type="lesson">
 <code>
