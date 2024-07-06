@@ -1,12 +1,5 @@
-Store the product of
-`length` and `width` in `area`.
 
-For example
-```js
-Input: length = 5, width = 20
-
-Output: 100
-```
+Multiply `length` and `width` and store the result in `area`.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
