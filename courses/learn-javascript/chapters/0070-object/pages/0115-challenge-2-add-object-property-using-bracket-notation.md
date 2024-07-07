@@ -1,7 +1,6 @@
 Create an object `menu`
-with one property `burger`
-and it's value should
-be **40**
+with property `burger`
+and value **40**.
 
 Add additional properties
 given in the table below
