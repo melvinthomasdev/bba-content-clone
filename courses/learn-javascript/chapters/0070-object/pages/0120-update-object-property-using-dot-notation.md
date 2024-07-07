@@ -1,5 +1,4 @@
-Let's assume we have an object `person`
-as shown in the editor.
+We have an object `person`.
 
 Let's update the `age` property
 to `23` using **dot notation**.
