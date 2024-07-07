@@ -14,7 +14,7 @@ const order = {
   }
 };
 
-// Vanilla JS - modifies original object
+// Vanilla JavaScript - modifies original object
 order.quantity+=1;
 
 // Without modifying original object

@@ -33,7 +33,7 @@ because we want the text size to change
 proportionally with the change in the width
 of the viewport.
 
-Open this code in a new neetoCode and
+Open this code in a new NeetoCode and
 drag to change the width. You'll see that
 the size of the text increases properly
 with the change in the width of the viewport.

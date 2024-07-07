@@ -15,7 +15,7 @@ const order = {
   }
 };
 
-// Vanilla JS without modifying original object
+// Vanilla JavaScript without modifying original object
 const newOrder = {
   ...order,
   customer: {

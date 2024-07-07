@@ -31,7 +31,7 @@ const fetchProduct = async () => {
 
 `axios.get` function will send a `GET` request to the product details endpoint and return a Promise. We use the `await` keyword to pause the execution until this Promise is resolved or rejected. `fetchProduct` is declared as an async function to indicate that it involves asynchronous operations.
 
-When you use Axios to make an HTTP request, the response is a JS object having the following attributes:
+When you use Axios to make an HTTP request, the response is a JavaScript object having the following attributes:
 
 - `data`: It's an object representing the actual server response data. Axios automatically deserializes the data if it is in `JSON` format.
 - `status`: It's a number representing the status code returned by the server.

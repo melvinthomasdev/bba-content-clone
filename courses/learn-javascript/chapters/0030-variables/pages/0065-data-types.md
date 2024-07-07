@@ -1,4 +1,4 @@
-In JavaScript, you can create different types of information or data such as a phone number, your name, or even a list of your favorite football players. Different types of these data that JS or any other programming language offers can be called data-types.
+In JavaScript, you can create different types of information or data such as a phone number, your name, or even a list of your favorite football players. Different types of these data that JavaScript or any other programming language offers can be called data-types.
 
 Consider the following example:
 

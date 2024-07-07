@@ -3,7 +3,7 @@ there are certain rules
 we need to follow for
 the name of the variable:
 
-<h3>The name should either start with an alphabet or an underscore, i.e., `_`.</h3>
+**The name should either start with an alphabet or an underscore, i.e., `_`.**
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -27,7 +27,7 @@ You can comment out the last
 two lines in the example given above
 to run the code without errors.
 
-<h3>The rest of the name can only contain alphabets, numbers and underscores.</h3>
+**The rest of the name can only contain alphabets, numbers and underscores.**
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -45,12 +45,7 @@ In the example given above,
 is not a valid variable name
 because the name contains `-`.
 
-<h3>A reserved keyword cannot be used
-as a variable name.
-For example, `let` is a keyword
-used to declare variables.
-We cannot declare a variable
-with the name `let`.</h3>
+**A reserved keyword cannot be used as a variable name. For example, `let` is a keyword used to declare variables.We cannot declare a variable with the name `let`.**
 
 <codeblock language="javascript" type="lesson">
 <code>

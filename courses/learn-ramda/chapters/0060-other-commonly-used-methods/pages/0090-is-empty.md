@@ -1,7 +1,7 @@
 The `isEmpty` function checks if an array or object is empty.
 
 For example, let assume we are in a profile page, and when user click 'Update profile' we want
-to call update api only if some data is changed. Using plain JS we can achieve it like this
+to call update api only if some data is changed. Using plain JavaScript we can achieve it like this
 
 ```js
 const updateProfile = async profile => {

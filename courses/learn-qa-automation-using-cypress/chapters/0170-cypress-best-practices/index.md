@@ -20,7 +20,7 @@ change or be removed. We must use selectors that are resilient to changes.
 
 - **Anti-Pattern:** Using highly brittle selectors that are subject to change.
 - **Best Practice:** Use data-cy attributes to provide context to the selectors
-  and isolate them from CSS or JS changes.
+  and isolate them from CSS or JavaScript changes.
 
 The
 [Selector Playground](https://docs.cypress.io/guides/core-concepts/test-runner#Selector-Playground)

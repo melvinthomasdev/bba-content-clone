@@ -4,7 +4,7 @@ change. We may swap out the element, refactor CSS and update IDs, or add or remo
 Instead, adding the `data-cy` attribute to the element gives us a targeted
 selector that's only used for testing.
 
-The `data-cy` attribute will not change any CSS style or a JS behavior, meaning
+The `data-cy` attribute will not change any CSS style or a JavaScript behavior, meaning
 it's not coupled to the behavior or styling of an element.
 
 Additionally, it makes it clear to everyone that this element is used directly

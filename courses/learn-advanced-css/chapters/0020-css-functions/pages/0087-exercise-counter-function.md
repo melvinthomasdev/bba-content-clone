@@ -14,7 +14,7 @@ This is an example of how the numbering should look like:
 <codeblock language="css" type="exercise" testMode="fixedInput">
 <code>
 <panel language="html">
-<h1>JS Frameworks:</h1>
+<h1>JavaScript Frameworks:</h1>
 
 <div class="framework-list">
   <h2>Vue</h2>

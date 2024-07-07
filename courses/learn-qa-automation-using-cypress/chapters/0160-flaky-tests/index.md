@@ -17,7 +17,7 @@ This DOM element likely became detached somewhere between the previous and curre
 
 Common situations why this happens:
 
-1. JS framework re-rendered asynchronously.
+1. JavaScript framework re-rendered asynchronously.
 2. App code reacted to an event firing and removed the element.
 
 We typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.

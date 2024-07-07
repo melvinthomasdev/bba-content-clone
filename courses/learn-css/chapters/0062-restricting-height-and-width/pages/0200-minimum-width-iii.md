@@ -72,4 +72,4 @@ even if the content inside it is smaller.
 </code>
 </codeblock>
 
-You can play around with this code by opening it in the **neetoCode** editor.
+You can play around with this code by opening it in the **NeetoCode** editor.

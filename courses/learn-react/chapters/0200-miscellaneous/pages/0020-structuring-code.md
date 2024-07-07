@@ -615,7 +615,7 @@ return <Button label="Single component" />;
 
 ## Keep code DRY
 
-Try to reduce duplication of code as much as possible using basic JS techniques. Consider the following example
+Try to reduce duplication of code as much as possible using basic JavaScript techniques. Consider the following example
 
 ```jsx
 const transformResponseKeysToCamelCase = response => {
@@ -654,7 +654,7 @@ const transformErrorKeysToCamelCase = error =>
   transformResponseKeysToCamelCase(error.response);
 ```
 
-## Remove JS code from JSX
+## Remove JavaScript code from JSX
 
 As a good practice, keep the logic inside render to an absolute minimum.
 

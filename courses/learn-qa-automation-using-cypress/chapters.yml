@@ -3,7 +3,7 @@
   name: Software Testing Introduction
   has_pages: false
 - slug: js-and-file-naming-conventions
-  name: JS and File Naming Conventions
+  name: JavaScript and File Naming Conventions
   has_pages: false
 - slug: introduction-to-cypress
   name: Introduction to Cypress

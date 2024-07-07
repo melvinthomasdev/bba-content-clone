@@ -20,7 +20,7 @@ JavaScript is a programming language that was designed to run in the browser. Wi
 
 [https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b96b7360-bda5-4ba8-9cb5-2c3009f470fd/ezgif-7-b2a02680c1d6.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b96b7360-bda5-4ba8-9cb5-2c3009f470fd/ezgif-7-b2a02680c1d6.gif)
 
-Notice how the suggestions under the search bar changes according to your search inputs? This is achieved by using Javascript! Javascript or JS is gives us enormous flexibility in building applications of various scales. From simple todo applications to complex analytical applications, Javascript can do it all!
+Notice how the suggestions under the search bar changes according to your search inputs? This is achieved by using Javascript! It gives us enormous flexibility in building applications of various scales. From simple todo applications to complex analytical applications, Javascript can do it all!
 
 ## Front-end frameworks
 

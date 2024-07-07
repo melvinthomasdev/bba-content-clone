@@ -21,7 +21,7 @@ const WelcomeText = () => {
 When you need to insert a comment into JSX, using `<!– –>` to write comments as
 you did with HTML will not work.
 
-We can instead use the same syntax we use to write comments in JS by embedding
+We can instead use the same syntax we use to write comments in JavaScript by embedding
 it with `{}` tags.
 
 ```jsx

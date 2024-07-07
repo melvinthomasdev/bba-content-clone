@@ -11,13 +11,13 @@ Output: false
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const filename = "index.js";
-const isJSFile = ;
-console.log(isJSFile);
+const isJavaScriptFile = ;
+console.log(isJavaScriptFile);
 </code>
 
 <solution>
 const filename = "index.js";
-const isJSFile = filename.endsWith(".js");
-console.log(isJSFile);
+const isJavaScriptFile = filename.endsWith(".js");
+console.log(isJavaScriptFile);
 </solution>
 </codeblock>

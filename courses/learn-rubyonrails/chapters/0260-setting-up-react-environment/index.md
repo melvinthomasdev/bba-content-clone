@@ -148,7 +148,7 @@ const { setAuthHeaders } = require("apis/axios");
 setAuthHeaders();
 ```
 
-## JS Logger
+## JavScript Logger
 
 Our `ESlint` config does not allow us to use `console.log` inside of our app.
 You can read more about why we should avoid `console.log` in general over

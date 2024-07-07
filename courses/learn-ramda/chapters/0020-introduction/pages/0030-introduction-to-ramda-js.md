@@ -10,7 +10,7 @@ const users = [
   { id: 3, name: "Sally" },
 ];
 ```
-We need to sort the above array based on the name attribute. In vanilla JS we would write as follows:
+We need to sort the above array based on the name attribute. In vanilla JavaScript we would write as follows:
 ```js
 const sortedUsers = users.sort((a, b) => {
   if ( a.name < b.name ) {
@@ -30,7 +30,7 @@ const sortedUsers = R.sortBy(R.prop("name"), users)
 
 We can already see the declarative style in action here. Instead of telling how to sort the array, we are asking it to sort by the `name` key and return the result.
 
-The above vanilla JS also mutates the `users` array while the Ramda code returns a new array with the sorted values.
+The above vanilla JavaScript also mutates the `users` array while the Ramda code returns a new array with the sorted values.
 
 Trying to learn and use the full set of methods provided by Ramda will be a big overhead and much too time-consuming. Thus we will only be advocating making use of the cherry-picked methods we have covered in this book.
 
