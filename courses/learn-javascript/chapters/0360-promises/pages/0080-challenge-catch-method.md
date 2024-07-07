@@ -1,4 +1,4 @@
-Modify the below `placeholder` function in such a way that the promise should be rejected if the `noOfItems` is less than 5 with the message "Minimum 5 items required." and it should be logged using `console.log` in the `catch` method.
+Modify the below `placeOrder` function in such a way that the promise should be rejected if the `noOfItems` is less than 5 with the message "Minimum 5 items required." and it should be logged using `console.log` in the `catch` method.
 
 ```js
 Output:
