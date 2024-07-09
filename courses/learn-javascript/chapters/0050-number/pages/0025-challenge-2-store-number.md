@@ -1,10 +1,17 @@
-Create a variable named `phoneNumber` and store the number **0123456789** as the value and another variable named pinCode to store the value **2255**.
+Create a variable named `phoneNumber` 
+and 
+store the number **1234567890** as 
+the value. Create another variable 
+named `pinCode` 
+and 
+store the value **2255** in it.
 
-At the end, print the values of both variables to the console.
+At the end, put the values of 
+both variables in the console.
 
 ```js
 Output:
-0123456789
+1234567890
 2255
 ```
 
@@ -13,7 +20,7 @@ Output:
 // Write your code here
 </code>
 <solution>
-const phoneNumber = 0123456789;
+const phoneNumber = 1234567890;
 const pinCode = 2255;
 
 console.log(phoneNumber);
