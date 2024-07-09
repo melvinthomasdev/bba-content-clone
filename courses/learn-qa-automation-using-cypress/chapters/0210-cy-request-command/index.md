@@ -99,7 +99,7 @@ Cypress.Commands.add("apiRequest", options =>
 ```
 
 - To use this properly, post every login we need to get headers from any
-  request and set it's alias as `requestHeaders` as shown below
+  request and set its alias as `requestHeaders` as shown below
 
 ```javascript
 cy.wait("@fetchInitialData").then(({ request }) =>

@@ -109,7 +109,7 @@ In the above example:
   both `invalidFieldName` and `additionalMessage`
   will receive `undefined`.
   Since `invalidFieldName` does not have a default value,
-  it's value will remain as `undefined`.
+  its value will remain as `undefined`.
   However, `additionalMessage` will be assigned the default value `""`.
 
 - `displayValidationError("name", null)` -

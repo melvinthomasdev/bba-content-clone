@@ -411,7 +411,7 @@ both the `inline!` as well as `fake!` modes. So let's create a test in the `inli
 ```
 
 The above test ensures that our new log message/entry is added to the `Log`
-table and thus it's `count` is incremented when we perform the `TaskLoggerJob`.
+table and thus its `count` is incremented when we perform the `TaskLoggerJob`.
 
 The final test file should look like this:
 

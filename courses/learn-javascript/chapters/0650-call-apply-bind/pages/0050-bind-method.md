@@ -109,9 +109,9 @@ displayClientMeeting("10PM, today");
 </code>
 </codeblock>In the example above:
 
-- `displayProjectMeeting` has both it's arguments passed by the `bind` method.
+- `displayProjectMeeting` has both its arguments passed by the `bind` method.
 
 - `displayBudgetMeeting` needs both arguments to be passed on invocation.
 
-- `displayClientMeeting` has it's first argument passed by the `bind` method,
+- `displayClientMeeting` has its first argument passed by the `bind` method,
   and needs the second argument to be passed on invocation.

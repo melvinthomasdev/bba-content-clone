@@ -73,5 +73,5 @@ to object happens.
   added to `objectWithRandomProps`.
   But since a property with that key
   `"[object Object]"` was already added,
-  it's value in `objectWithRandomProps`
+  its value in `objectWithRandomProps`
   will be updated to `"Property with object key"`.

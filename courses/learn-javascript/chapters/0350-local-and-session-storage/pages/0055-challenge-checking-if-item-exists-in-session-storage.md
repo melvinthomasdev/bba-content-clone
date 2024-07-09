@@ -1,6 +1,6 @@
 Use `sessionStorage` to store the
 value **en-US** for the key **language**,
-and then log to the console by retrieving it's value from
+and then log to the console by retrieving its value from
 `sessionStorage` using the key **language**.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">

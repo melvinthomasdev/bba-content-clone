@@ -27,7 +27,7 @@ it("should change articles state", () => {
 });
 ```
 
-2. Sometimes the tests can be quite large and long-winded that it's actual
+2. Sometimes the tests can be quite large and long-winded that its actual
    function and use is not quite so apparent from the code itself. In such cases
    adding a comment describing the same would improve code readability vastly.
 3. When writing a comment we must ensure that it is meaningful and we must

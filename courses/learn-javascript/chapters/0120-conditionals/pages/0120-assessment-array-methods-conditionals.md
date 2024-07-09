@@ -7,7 +7,7 @@ these 5 players from team A.
 - Linh Tran
 
 Assign this value to a variable
-named `playerList` and it's value
+named `playerList` and its value
 should be an appropriate datatype
 of your choice.
 

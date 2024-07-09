@@ -9,7 +9,7 @@ and
 The method returns index of the
 the first occurrence of the **substring**
 by searching the main string from
-it's last index to it's first.
+it's last index to its first.
 In other words,
 the method returns the index of the
 last occurrence of the **substring**.

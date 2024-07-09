@@ -1,7 +1,7 @@
 Create a variable `lyrics`
 and store the string
 `Party rock is in the house tonight!`
-as it's value.
+as its value.
 
 Later replace the word
 `tonight` with `tomorrow`

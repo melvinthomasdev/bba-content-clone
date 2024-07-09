@@ -409,7 +409,7 @@ Negative test cases allow us to make sure that the actions fail and send
 appropriate responses for invalid parameters.
 
 In the above test case, we are making sure that the validation from the comments
-model is working it's magic.
+model is working its magic.
 
 In `test_shouldnt_create_comment_without_task` we are testing that no comment is
 being created in case a valid task doesn't exist and a proper error is being

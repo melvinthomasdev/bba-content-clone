@@ -1,5 +1,5 @@
 - Java runtime environment is an installation package that provides an environment to only run the program. 
-- This means we cannot create, modify or delete program or it's contents.
+- This means we cannot create, modify or delete program or its contents.
 - It consists of :-
 
   * Deployment technologies.

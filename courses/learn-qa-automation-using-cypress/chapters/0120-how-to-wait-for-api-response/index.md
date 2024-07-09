@@ -206,9 +206,9 @@ attaches itself to the 3rd request which we were intending to skip. This happens
 because the search request itself isn't triggered soon after the command since
 it is debounced and hence the intercept considers the 3rd request as the latest
 matching request. Now since we aren't waiting for the search request response,
-the rest of the test loses it's integrity making the test flaky or failing. We issue intercepts only when we need them to avoid such ordering issues. This
+the rest of the test loses its integrity making the test flaky or failing. We issue intercepts only when we need them to avoid such ordering issues. This
 technique has the added advantage of helping us keep track of all the requests
-and it's routes.
+and its routes.
 
 ### Handling multiple requests
 
@@ -302,7 +302,7 @@ using a particular URL for each intercept then we would first need intimate
 knowledge of the API calls and their routing, we would also repeat the code for
 each request. In such cases using the glob pattern to match all such API calls
 is a smart decision because we could use the same intercept (specifying the no
-of times a request is triggered) to wait for all it's attached requests, keeping
+of times a request is triggered) to wait for all its attached requests, keeping
 the code dry. Using glob patterns we can make intercepts a one-stop store for
 all spying/waiting for several API calls.
 

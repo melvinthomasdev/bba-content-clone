@@ -24,11 +24,11 @@ Since the value of the `number` variable
 is `0`:
 
 - The `if` condition results
-  in `false`, so it's code block
+  in `false`, so its code block
   is not executed.
 
 - The `else if` condition results
-  in `true`, so it's code block
+  in `true`, so its code block
   gets executed.
 
 Hence the output will be **"The number is 0."**.
@@ -51,11 +51,11 @@ If we change the value of the `number` variable
 to `-1`:
 
 - The `if` condition results
-  in `false`, so it's code block
+  in `false`, so its code block
   is not executed.
 
 - The `else if` condition results
-  in `false`, so it's code block
+  in `false`, so its code block
   is not executed.
 
 - Since all the above conditions
@@ -81,7 +81,7 @@ if (number > 0) {
 If we change the value of the
 `number` variable to `7`,
 the `if` condition results in `true`,
-so it's code block gets executed.
+so its code block gets executed.
 
 Hence the output will be **"The number is positive."**.
 

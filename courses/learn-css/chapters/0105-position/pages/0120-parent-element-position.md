@@ -1,6 +1,6 @@
 An `absolute` element's location changes with respect to its parent element. This works only if the parent element has its own `position` set to a value other than `static`.
 
-If this is not so, the `absolute` element looks for the nearest parent whose `position` is set to a value other than `static`. If no such parent element is found, it's location changes with respect to the `body` itself:
+If this is not so, the `absolute` element looks for the nearest parent whose `position` is set to a value other than `static`. If no such parent element is found, its location changes with respect to the `body` itself:
 
 <codeblock language="css" type="lesson">
 <code>

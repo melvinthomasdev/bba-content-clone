@@ -132,7 +132,7 @@ resources :users, only: %i[create index]
 ```
 
 All requests for creating a user on the `users` route will instantiate the
-`UsersController` model and call it's `create` action.
+`UsersController` model and call its `create` action.
 
 ## Naming conventions for routes
 

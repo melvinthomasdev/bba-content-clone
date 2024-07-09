@@ -6,7 +6,7 @@
     extension is a Java file. This code will not run directly on the system since it is
     written in Java, it needs to be converted to the language system understands (0s
     and 1s).
-  <p>Following is an example of Java file `Example.java` and it's contents:</p>
+  <p>Following is an example of Java file `Example.java` and its contents:</p>
   <codeblock language="java" type="lesson">
     <code>
       public class Main {

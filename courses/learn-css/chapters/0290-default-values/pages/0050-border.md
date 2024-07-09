@@ -30,7 +30,7 @@ p {
 
 Now, let's try removing these properties one by one:
 
-Removing the value  `thin` makes the border width `medium`, which is it's default value.
+Removing the value  `thin` makes the border width `medium`, which is its default value.
 
 <codeblock language="css" type="lesson">
 <code>
@@ -48,7 +48,7 @@ p {
 </codeblock>
 
 Let's remove the border color property `red`.
-The color goes back to it's default value which is the color of the text of the element.
+The color goes back to its default value which is the color of the text of the element.
 
 <codeblock language="css" type="lesson">
 <code>

@@ -526,7 +526,7 @@ Sometimes we want to trigger a particular event without actually going through
 the entire process of invoking that event.
 
 Stripe can take care of some of the intermediatory steps and send the particular
-event that we triggered and also it's associated events to our backend endpoint.
+event that we triggered and also its associated events to our backend endpoint.
 
 This is an example of how we can fake a `checkout.session.completed` event to
 test locally:

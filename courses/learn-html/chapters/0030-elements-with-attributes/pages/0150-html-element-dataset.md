@@ -18,7 +18,7 @@ in HTML:
 As we can see, in the above
 code we are defining `data`,
 the data property is called
-`fruit-name` and it's value
+`fruit-name` and its value
 is `orange`.
 
 The usage of the same will be

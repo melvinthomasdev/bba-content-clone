@@ -180,7 +180,7 @@ environment.
 
 But we will be running the rake task only in the staging environment. The reason
 is that `staging` environment is where we test out stuff and thus it acts as a
-simulated production environment. While testing it's useful for us to have some
+simulated production environment. While testing, it's useful for us to have some
 defaults like the default user logins.
 
 Update the `setup.rake` file with the following lines of code:

@@ -32,7 +32,7 @@ We want to temporarily sort the array
 and
 display the sorted array.
 Then we want to display the array
-in it's original order.
+in its original order.
 
 <codeblock language="javascript" type="lesson">
 <code>
@@ -71,7 +71,7 @@ In the example given above:
   `printSortedList(fruits)`,
   we get the sorted array,
   even though our intention is to show
-  the list in it's original order.
+  the list in its original order.
 
 To prevent such unwanted outputs,
 it is a good practice to avoid using

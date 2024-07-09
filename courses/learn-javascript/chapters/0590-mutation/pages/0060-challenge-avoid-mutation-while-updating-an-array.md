@@ -1,7 +1,7 @@
 In the code below,
 the `forEach` method is used to
 convert the sizes in the `sizesInCentimeters` array
-to it's equivalent size in `meters`.
+to its equivalent size in `meters`.
 
 This is bad code since,
 it not only mutates the `sizesInCentimeters` array

@@ -1,7 +1,7 @@
 ​
 Define `displayOrder` to display
 the `name` and `price` of `foodItem`,
-along with it's flavor.
+along with its flavor.
 The `foodItem` will be bound to
 `displayOrder` using the `bind` method.
 `displayOrder` should accept

@@ -36,7 +36,7 @@ beforeEach(() => {
 
 When writing tests, figure out the basic functionalities of the feature to be
 tested and ensure that the tests account for all these functionalities. Since we
-are testing a **Form** component existing within a **Pane**, it's basic
+are testing a **Form** component existing within a **Pane**, its basic
 functions would be
 
 - Creating a tag

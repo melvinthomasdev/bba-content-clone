@@ -488,7 +488,7 @@ end
 ```
 
 We have created a private method called `set_slug` which we can call for each
-task and set it's slug.
+task and set its slug.
 
 `set_slug` method is setting slug attribute as a parameterized version of the
 title. When doing so, if the same slug already exists in the database, we use an
@@ -745,7 +745,7 @@ end
 ```
 
 `before_create` callback will invoke the `set_slug` method once for each task
-before it's creation.
+before its creation.
 
 ## Making slug immutable
 

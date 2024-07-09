@@ -572,7 +572,7 @@ to combine the state of `textarea` with the React state which will make React's
 state the `single source of truth`.
 
 This way, React handles the responsibility of rendering the `textarea` element
-and controlling it's value thus making `textarea` a `controlled component`.
+and controlling its value thus making `textarea` a `controlled component`.
 
 To do so, we have passed the value of `newComment` from `showTask` component's
 state to `textarea` element's value prop and `setNewComment` function as a

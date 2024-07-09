@@ -1,4 +1,4 @@
-The accessibility of a variable is determined by it's scope.
+The accessibility of a variable is determined by its scope.
 Broadly speaking,
 **Global Scope** and **Local Scope**
 are the two kinds of scope in JavaScript.

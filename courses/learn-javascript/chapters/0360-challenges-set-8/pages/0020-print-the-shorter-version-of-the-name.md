@@ -1,5 +1,5 @@
 Write a program which will
-print the provided name in it's
+print the provided name in its
 abbreviated form.
 
 For example:

@@ -2,7 +2,7 @@
 a timer created using the `setTimeout()` method.
 
 The `setTimeout()` method returns a number value
-or it's identifier value.
+or its identifier value.
 The `clearTimeout()` method accepts only that value as argument.
 
 <codeblock language="javascript" type="lesson">

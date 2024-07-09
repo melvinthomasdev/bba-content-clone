@@ -821,7 +821,7 @@ user's preference.
 We need to provide an `Input` component from where the user can set their
 preferred time for mail delivery.
 
-We have to constraint the values that this component can accept, when it's
+We have to constraint the values that this component can accept, when its
 `type` is set to be `number`.
 
 Thus let's update our reusable `Input` component to provide this functionality:

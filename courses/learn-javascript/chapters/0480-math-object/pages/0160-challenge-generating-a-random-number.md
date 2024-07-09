@@ -1,4 +1,4 @@
-Using `Math.random()` assign a random number to the variable **randomNumber** and console log it's value.
+Using `Math.random()` assign a random number to the variable **randomNumber** and console log its value.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" matchSolutionCode="true" >
 <code>

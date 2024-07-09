@@ -22,7 +22,7 @@ export default BookList;
 </codeblock>
 
 
-In the example above, we conditionally render the star based on the value of the `isFavorite` prop. If `isFavorite` is `true`, the item is rendered with a star; otherwise, it's rendered without the star.
+In the example above, we conditionally render the star based on the value of the `isFavorite` prop. If `isFavorite` is `true`, the item is rendered with a star; otherwise, its rendered without the star.
 
 
 Conditional rendering allows you to control what gets displayed based on specific conditions, making your React components more dynamic and flexible.

@@ -80,7 +80,7 @@ If the element lies outside the re-rendering DOM or results in a new view being
 rendered for e.g. `submit` button, we should use `click` command. The `cy.click`
 is not retried.
 
-When we need to fire the click element irrespective of it's state e.g. whether
+When we need to fire the click element irrespective of its state e.g. whether
 it is disabled/enabled, we should use `click({force: true})`.
 
 ### Incorrect logic handling

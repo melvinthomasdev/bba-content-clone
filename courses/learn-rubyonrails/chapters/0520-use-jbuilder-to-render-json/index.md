@@ -47,7 +47,7 @@ declaring JSONs inline which we will see in the coming sections of this chapter.
 ## Features
 
 - We will separate the job of fetching a task and responding with a JSON of task
-  details, between the `show` action of `TasksController` and it's corresponding
+  details, between the `show` action of `TasksController` and its corresponding
   view template.
 
 - Fetched task details should be passed on to the view template using instance
@@ -195,7 +195,7 @@ The above JSON structure example shows how `Jbuilder` allows us to declare
 meaningful JSON structures with ease.
 
 By now you should be getting a picture of how `Jbuilder` works. You can read
-more about `Jbuilder` and it's features from the
+more about `Jbuilder` and its features from the
 [official Jbuilder page](https://github.com/rails/jbuilder).
 
 ## Using extract! method
@@ -270,7 +270,7 @@ and because we haven't mentioned a response format, Rails will fallback to the
 default response format and look for `text/html` data to respond with.
 
 This will cause Rails to throw an exception for missing template because we have
-a template that responds with JSON data and Rails, because of it's default
+a template that responds with JSON data and Rails, because of its default
 response format will require `text/html` data to respond with.
 
 We can fix this by adding a default response format in our routes config file.

@@ -161,9 +161,9 @@ already has been installed. Otherwise, it downloads `foreman` for the current
 Ruby version and uses the same.
 
 Running `bundle exec` and `Bundler.require` at the same time is not a problem.
-Thus it's safe to use `bundle exec` with all commands, even when not needed as
+Thus, it's safe to use `bundle exec` with all commands, even when not needed as
 long as there's a Gemfile in that directory, it won't activate the gems twice.
-If there are any performance differences between the two invocations, then it's
+If there are any performance differences between the two invocations, then it is
 negligible.
 
 We advocate to use `bundle exec` at all times. It's a good practice and can save

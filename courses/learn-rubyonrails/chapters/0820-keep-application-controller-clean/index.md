@@ -152,7 +152,7 @@ There are a couple of key points to note here:
 
   In the above code, when a class includes the `ApiExceptions` class, the
   `rescue_from` callbacks will be executed within the scope of that class.
-  Whenever an exception occurs inside that class or it's child class, the
+  Whenever an exception occurs inside that class or its child class, the
   `rescue_from` callback will be called.
 
   The `included` block usually contains code like callbacks and macros.

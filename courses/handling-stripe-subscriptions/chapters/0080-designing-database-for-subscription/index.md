@@ -47,7 +47,7 @@ Rest of the stripe related data should belong in `metadata`.
 
 In most applications, the most straightforward way to allow access to our
 product, would be to check the `status` field of a user's subscription, and
-verify whether it's value is `active` or not.
+verify whether its value is `active` or not.
 
 The importance of `current_period_start` and `current_period_end` comes up if we
 decide to show notifications to user when their subscription period will end and

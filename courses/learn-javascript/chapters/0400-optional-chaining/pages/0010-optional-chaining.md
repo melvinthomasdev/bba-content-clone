@@ -67,7 +67,7 @@ contains one solution to
 our edge case.
 We can check if `user`
 is **truthy** before accessing
-any of it's properties.
+any of its properties.
 
 But the cleaner way of doing this
 is to use **optional chaining**.

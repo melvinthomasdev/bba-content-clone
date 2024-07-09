@@ -108,5 +108,5 @@ we added a property `window["full name"]`
 to the `window` object.
 We can only access this property
 using the bracket notation
-because `full name` on it's own
+because `full name` on its own
 is not a valid variable name.

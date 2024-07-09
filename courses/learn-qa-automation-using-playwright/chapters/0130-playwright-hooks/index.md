@@ -64,7 +64,7 @@ test.describe("Test suite", () => {
 });
 ```
 
-Alternatively, the above hooks can also accept hook title as it's first parameter. The following example demonstrates this approach.
+Alternatively, the above hooks can also accept hook title as its first parameter. The following example demonstrates this approach.
 
 ```js
 test.describe("Test suite", () => {

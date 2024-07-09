@@ -452,7 +452,7 @@ database.
 
 Hence our assertion will fail.
 
-That's why it's a good practice to use `@user.reload.name` instead of
+That's why, it's a good practice to use `@user.reload.name` instead of
 `@user.name` to check the updated column values, like this:
 
 ```ruby
@@ -1158,7 +1158,7 @@ end
 
 In the above example, we are updating the env variable only in one test case.
 But that may not be the case in an actual code base. There might be many tests
-that have similar logic. So it's possible that we modify the env variable, but
+that have similar logic. So, it's possible that we modify the env variable, but
 forget to revert it back to its original state. To avoid such cases, using the
 `stub` method from `minitest` is the best solution. This method updates the
 variable only for a block. Outside the `stub` block, all the variables are

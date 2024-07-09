@@ -60,7 +60,7 @@ method.
 
 <codeblock language="javascript" type="lesson">
 <code>
-// Variable which holds a string as it's value
+// Variable which holds a string as its value
 const statementOne = "I like ice-cream.";
 console.log(statementOne);
 

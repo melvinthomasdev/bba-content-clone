@@ -155,7 +155,7 @@ end
 ```
 
 `has_secure_password` auto-magically adds validations for presence of password
-on create and also ensures confirmation of password (by default it's
+on create and also ensures confirmation of password (by default its
 `password_confirmation` attribute).
 
 The `confirmation` validation creates a virtual attribute whose name is the name
