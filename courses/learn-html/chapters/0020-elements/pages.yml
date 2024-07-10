@@ -53,6 +53,12 @@
 - title: Challenge 2 - Elements allowed inside list items
   slug: challenge-2-elements-allowed-inside-list-items
   page_type: exercise
+- title: Div Element
+  slug: div-element
+  page_type: lesson
+- title: Challenge 1 - Div Element
+  slug: challenge-1-div-element
+  page_type: exercise
 - title: Line Break
   slug: line-break
   page_type: lesson
