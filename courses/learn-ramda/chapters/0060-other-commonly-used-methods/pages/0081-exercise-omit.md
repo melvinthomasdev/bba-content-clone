@@ -40,7 +40,7 @@ const person = {
     "phone": "+1 (899) 555-2563",
 }
 
-const newPerson = R.omit(['isAcitve','balance','picture'], person);
+const newPerson = R.omit(['isActive','balance','picture'], person);
 console.log(newPerson);
 
 </solution>
