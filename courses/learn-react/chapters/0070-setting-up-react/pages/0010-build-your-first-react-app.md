@@ -1,4 +1,4 @@
-We assume that you have already set up your PC with Node.js and npm. If you haven't installed them yet, please refer the [Node version manager](https://courses.bigbinaryacademy.com/learn-rubyonrails/setting-up-workspace/#installing-node-js) or the official [Node.js](https://nodejs.org/en/download) website and download Node.js version `18.12` by selecting your operating system.
+We assume that you have already set up your PC with Node.js and npm. If you haven't installed them yet, please refer to the [Prerequisites](https://courses.bigbinaryacademy.com/learn-react/getting-started/prerequisites/) lesson.
 
 Once you have `npm` installed, open your terminal and run the following command to install `yarn`. We will be using `yarn` as our package manager.
 

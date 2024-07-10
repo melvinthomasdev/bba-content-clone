@@ -9,4 +9,10 @@ We expect that you are familiar with the new JavaScript features introduced in E
 
 It is highly recommended to have a personal computer equipped with a modern Integrated Development Environment (IDE), a browser,`Node.js` and `npm` installed for local development.
 
-You can install Node.js and npm using either a [Node version manager](https://courses.bigbinaryacademy.com/learn-rubyonrails/setting-up-workspace/#installing-node-js) or a [Node installer](https://nodejs.org/en/download). It is recommenced to install node version `18.12`.
+### Installing Node.js on Linux/Mac
+
+You can install Node.js and npm by referring to the [Installing Node.js](https://courses.bigbinaryacademy.com/learn-rubyonrails/setting-up-workspace/#installing-node-js) section or using the [Node installer](https://nodejs.org/en/download). It is recommended to install node version `18.12`.
+
+### Installing Node.js on Windows
+
+If you are using Windows, it is expected to have WSL to setup. You can set up WSL by following the instructions in the [Installing WSL](https://courses.bigbinaryacademy.com/install-rubyonrails-in-windows/setting-up-your-development-environment/#installing-wsl) section of this document and then install Node.js and npm by referring to the [Installing Node.js](https://courses.bigbinaryacademy.com/learn-rubyonrails/setting-up-workspace/#installing-node-js) section. It is recommended to install Node.js version `18.12`.
