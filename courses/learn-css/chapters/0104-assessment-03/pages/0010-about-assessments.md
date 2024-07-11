@@ -1,4 +1,4 @@
-Comprehensive Exercises are designed to provide
+Assessments are designed to provide
 you a well-rounded learning experience.
 
 These questions test your knowledge on the topics you have already covered.

@@ -71,6 +71,9 @@
 - title: Default rem Value
   slug: default-rem-value
   page_type: lesson
+- title: rem Practical Use
+  slug: rem-practical-use
+  page_type: lesson
 - title: vh
   slug: vh
   page_type: lesson
