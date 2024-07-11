@@ -108,7 +108,7 @@ export default App;
 </code>
 </codeblock>
 
-Our next task is to add validations. At BigBinary, we prefer [eager validation](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fa9ldtg9kx0371.gif) since it provides immediate feedback to users as they interact with the form.
+Our next task is to add validations. At BigBinary, we prefer [eager validation](https://ik.imagekit.io/d9mvewbju/Course/formik-validation_WdyCWfYOa) since it provides immediate feedback to users as they interact with the form.
 
 We will validate the form fields using the `validateField` function whenever the user inputs data into the fields or navigates away from them. It will check if the required fields are empty and if the `email` field follows a valid format using a simple regex check. When validation fails for any field, an error message will be stored in the `errors` state object corresponding to that field. Error messages will be displayed against each input field if there are validation errors. Additionally, we'll include `noValidate` in the `form` element to bypass default HTML form validations during submission.
 
