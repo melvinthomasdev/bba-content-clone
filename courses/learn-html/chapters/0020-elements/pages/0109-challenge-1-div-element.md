@@ -1,4 +1,4 @@
-You have the following content about BigBinary Academy Meetup. Your task is to structure this content using `<div>` elements as per the below instructions,
+You have the following content about the BigBinary Academy Meetup. Your task is to structure this content using `<div>` elements as per the below instructions,
 
 - Use one outer `<div>` to wrap the entire content.
 - Inside the outer `<div>`, use additional `<div>` elements to group related sections such as,

@@ -26,7 +26,7 @@ on the right, the items only
 occupy as much space as needed.
 Sometimes, you might want
 one or all of the items to
-occupy the full space
+occupy this extra space
 available. That's when you can
 use the `flex-grow` property
 on individual flex items to
@@ -37,7 +37,7 @@ which is why the items occupy
 only as much space as required.
 When the value is more than **0**
 for some items, the extra space
-is divided proportionally among those items:
+is divided proportionally among those items.
 
 <codeblock language="css" type="lesson">
 <code>

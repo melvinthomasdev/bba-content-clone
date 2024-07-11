@@ -29,6 +29,9 @@
 - title: Challenge - Justify Content - Column Direction
   slug: challenge-justify-content-column
   page_type: exercise
+- title: Flex Direction Practical Use
+  slug: flex-direction-practical-use
+  page_type: lesson
 - title: Align Items
   slug: align-items
   page_type: lesson
@@ -46,6 +49,9 @@
   page_type: exercise
 - title: Flex Grow
   slug: flex-grow
+  page_type: lesson
+- title: More Examples on Flex Grow
+  slug: more-examples-on-flex-grow
   page_type: lesson
 - title: Challenge - Flex Grow
   slug: challenge-flex-grow
