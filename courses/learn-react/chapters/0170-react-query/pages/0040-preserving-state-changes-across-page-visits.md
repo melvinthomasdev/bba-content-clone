@@ -17,9 +17,15 @@ Currently the path for `ProductList` component is `/products`. Let's outline the
 
 To fulfill the initial requirement, we'll create a new function called `handlePageNavigation`. This function will be assigned to the `navigate` prop within the `Pagination` component. It will add the new page number and the default page size to the URL when the user navigates to a different page.
 
-```jsx {3-6, 14}
+```jsx {1, 6, 9-12, 20}
+import { useHistory } from "react-router-dom";
+//...
+
 const ProductList = () => {
   // ...
+  const history = useHistory();
+  // ...
+
   const handlePageNavigation = page =>
     history.replace(
       buildUrl(routes.products.index, { page, pageSize: DEFAULT_PAGE_SIZE })
