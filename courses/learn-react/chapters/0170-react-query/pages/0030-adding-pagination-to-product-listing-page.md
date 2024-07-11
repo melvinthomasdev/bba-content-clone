@@ -123,13 +123,13 @@ const ProductList = () => {
 };
 ```
 
-Finally, we will pass the `currentPage` state to the `pageNo` prop and `DEFAULT_PAGE_SIZE` to the `pageSize` prop to specify the current page number and to specify the default number of records on a single page.
+Finally, we will pass the `currentPage` state to the `pageNo` prop to specify the current page number, and set `DEFAULT_PAGE_INDEX` as its fallback. Additionally, we will set `DEFAULT_PAGE_SIZE` to the `pageSize` prop to specify the default number of records on a single page.
 
 ```jsx {4-5}
 <Pagination
   navigate={page => setCurrentPage(page)}
   count={totalProductsCount}
-  pageNo={currentPage}
+  pageNo={currentPage || DEFAULT_PAGE_INDEX}
   pageSize={DEFAULT_PAGE_SIZE}
 />
 ```
