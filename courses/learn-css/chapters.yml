@@ -17,16 +17,16 @@
   slug: debugging-with-css
 - name: Restricting Height and Width
   slug: restricting-height-and-width
-- name: Challenges Set 01
-  slug: challenges-set-01
+- name: Assessment 1
+  slug: assessment-01
 - name: Spacing
   slug: spacing
 - name: Quiz 2
   slug: quiz-02
 - name: Text Formatting
   slug: text-formatting
-- name: Challenges Set 02
-  slug: challenges-set-02
+- name: Assessment 2
+  slug: assessment-02
 - name: Borders
   slug: borders
 - name: Backgrounds
@@ -37,18 +37,18 @@
   slug: display
 - name: Box Model
   slug: box-model
-- name: Challenges Set 03
-  slug: challenges-set-03
+- name: Assessment 3
+  slug: assessment-03
 - name: Position
   slug: position
 - name: Flexbox
   slug: flexbox
-- name: Challenges Set 04
-  slug: challenges-set-04
+- name: Assessment 4
+  slug: assessment-04
 - name: Quiz 4
   slug: quiz-04
-- name: Challenges Set 05
-  slug: challenges-set-05
+- name: Assessment 5
+  slug: assessment-05
 - name: Opacity
   slug: opacity
 - name: Box Shadow
