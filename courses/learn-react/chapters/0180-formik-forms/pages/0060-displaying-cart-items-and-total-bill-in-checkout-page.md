@@ -280,7 +280,7 @@ During form submission, when the checkbox is marked, the form data is preserved 
 If there is previously stored data in local storage for the checkout form, the `getFromLocalStorage` function retrieves this data, holding it in the `checkoutFormData` variable. This retrieved data is then employed as the initial values for the checkout form. The purpose of `checkoutFormData` is to ensure that if a user has previously completed the checkout form and chosen to save that information, the form will load with their saved data upon revisiting the page.
 
 
-```jsx {1, 3, 7, 14, 17, 22, 26, 29, 43, 53-56}
+```jsx {1, 3, 7, 14, 17, 22, 29, 43, 53-56}
 import { Typography, Checkbox } from "neetoui";
 // ...
 import { setToLocalStorage, getFromLocalStorage } from "utils/storage";
@@ -306,7 +306,7 @@ const Checkout = () => {
     setIsSubmitDisabled(true);
 
     createOrder(
-      { payload: dataToPersist },
+      { payload: values },
       {
         onSuccess: () => {
           setToLocalStorage(CHECKOUT_LOCAL_STORAGE_KEY, dataToPersist);
@@ -365,4 +365,4 @@ git add -A
 git commit -m "Added component to display cart items and total cost"
 ```
 
-You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/4c6297f009189d799fb0fe220583c1460073e192).
+You can verify the changes [here](https://github.com/bigbinary/smile-cart-frontend/commit/456e4b145888bbf3eb8dd96490dc31eac0885aa5).
