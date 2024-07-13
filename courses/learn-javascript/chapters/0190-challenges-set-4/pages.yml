@@ -32,11 +32,11 @@
 - title: Check the Numbers and Add
   slug: check-the-numbers-and-add
   page_type: assessment
-- title: Increment a Number and Divide It
-  slug: increment-a-number-and-divide-it
-  page_type: assessment
 - title: Product of two Numbers
   slug: product-of-two-numbers
+  page_type: assessment
+- title: Increment a Number and Divide It
+  slug: increment-a-number-and-divide-it
   page_type: assessment
 - title: Pass or Fail
   slug: pass-or-fail

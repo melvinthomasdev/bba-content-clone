@@ -1,7 +1,5 @@
-Congratulations for having reached the end of
-your HTML DOM learning. If you've come this far, we are
-so happy for you 😃. Let's put all this knowledge
-to test!
+Let's build a project that tests 
+our logic. Let's build a battelship game! 
 
 <image>htmldom-sectional-project-battleship.gif</image>
 
