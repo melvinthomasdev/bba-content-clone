@@ -1,27 +1,22 @@
-Create a function `sumOrProduct` that accepts **4** arguments:
+Create a function `sumOrProduct` that accepts **4** arguments,
 
 - **2** numbers.
-- A string, value of which will
-  either be "sum" or "product".
-- A callback function `printResult`
-  Based on the string value, `sumOrProduct` function will either **add** the numbers received as arguments, or **multiply** them and store
-  their result.
-- If the string is neither "sum" or "product",
-  log to the console "Invalid parameter"
+- A string, the value of which will either be "sum" or "product".
+- A callback function `printResult`.
 
-Create a second function `printResult` that accepts **2** arguments.
+Based on the string value, the `sumOrProduct` function will either add the numbers received as arguments or multiply them and store their result. If the string is neither "sum" nor "product", the function should log to the console **"Invalid parameter"**.
 
-- string, this will be the same
-  string passed to `sumOrProduct`.
-- result
-  `printResult` logs the result to the console.
+Also, we need to create a second function `printResult` that accepts 2 arguments,
+
+- A string, which will be the same string passed to `sumOrProduct`.
+- The result.
 
 For example:
 
 ```js
-Input: 3, 4, "division";
+Input: 1, 2, "sum", printResult;
 
-Output: `Invalid parameter`;
+Output: "The solution to the sum is 3.";
 ```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
