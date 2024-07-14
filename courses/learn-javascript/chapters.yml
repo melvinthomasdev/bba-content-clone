@@ -123,8 +123,6 @@
   slug: read-before-moving-forward
 - name: Number Methods 2
   slug: number-methods-2
-- name: String Methods 2
-  slug: string-methods-2
 - name: Immediately Invoked Function Expression
   slug: immediately-invoked-function-expression
 - name: call, apply and bind

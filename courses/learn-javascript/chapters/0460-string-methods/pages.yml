@@ -125,6 +125,12 @@
 - title: Challenge 2 - String Split Method
   slug: challenge-2-string-split-method
   page_type: exercise
+- title: charAt method
+  slug: char-at-method
+  page_type: lesson
+- title: Challenge - charAt method
+  slug: challenge-char-at-method
+  page_type: exercise
 - title: toString() vs String() method
   slug: tostring-vs-string-method
   page_type: lesson
