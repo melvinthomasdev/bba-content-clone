@@ -17,6 +17,33 @@
 - title: Use the Arrow Function
   slug: use-the-arrow-function
   page_type: lesson
+- title: Parameters and Arguments 01
+  slug: parameters-and-arguments-01
+  page_type: lesson
+- title: Challenge - Parameters and Arguments 01
+  slug: challenge-01-parameters-and-arguments-01
+  page_type: exercise
+- title: Challenge 2 - Parameters and Arguments 01
+  slug: challenge-02-parameters-and-arguments-01
+  page_type: exercise
+- title: Parameters and Arguments 02
+  slug: parameters-and-arguments-02
+  page_type: lesson
+- title: Challenge - Parameters and Arguments 02
+  slug: challenge-01-parameters-and-arguments-02
+  page_type: exercise
+- title: Challenge 2 - Parameters and Arguments 02
+  slug: challenge-02-parameters-and-arguments-02
+  page_type: exercise
+- title: Parameters and Arguments 03
+  slug: parameters-and-arguments-03
+  page_type: lesson
+- title: Challenge - Parameters and Arguments 03
+  slug: challenge-01-parameters-and-arguments-03
+  page_type: exercise
+- title: Challenge 2 - Parameters and Arguments 03
+  slug: challenge-02-parameters-and-arguments-03
+  page_type: exercise
 - title: Parameters and Arguments
   slug: parameters-and-arguments
   page_type: lesson
