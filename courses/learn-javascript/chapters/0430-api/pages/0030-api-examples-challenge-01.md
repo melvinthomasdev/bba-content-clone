@@ -1,13 +1,6 @@
-We are getting bored and need
-a random activity to pursue.
-In the code given below, get a
-random activity from the database at
-the BoredAPI website.
+We are feeling bored and need a specific activity to pursue. In the code given below, we will fetch an activity by its key from the database at the BoredAPI website.
 
-Read the documentation of boredAPI
-at `http://www.boredapi.com/documentation`. Find
-the correct way to get the random activity.
-**Only update the value inside `fetch('')`.**
+Read the documentation of boredAPI at [https://bored.api.lewagon.com/documentation](https://bored.api.lewagon.com/documentation). Find the correct way to get an activity by its key. Let us use the key `5881028`. **Only update the value inside `fetch('')`.**
 
 <codeblock type="exercise" language="javascript" evaluateAsync="true" timeOut="2000" testMode="fixedInput">
 <code>
@@ -18,7 +11,7 @@ fetch('')
 </code>
 
 <solution>
-fetch('https://www.boredapi.com/api/activity')
+fetch('https://bored.api.lewagon.com/api/activity?key=5881028')
   .then(response => response.json())
   .then(data => console.log(data.activity))
   .catch(error => console.error('Error:', error));
