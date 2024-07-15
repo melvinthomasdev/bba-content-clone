@@ -2,6 +2,9 @@
 - title: About
   slug: about-comprehensive-challenge
   page_type: lesson
-- title: Comprehensive Challenge 1
-  slug: htmldom-comprehensive-challenge-1
+- title: Add Movie to the List.
+  slug: add-movie-to-the-list
+  page_type: exercise
+- title: Click Logging Challenge
+  slug: click-logging-challenge
   page_type: exercise
