@@ -4,13 +4,11 @@ gained so far, do the following:
 1. Make the paragraph text with id `first` 3 times that of the heading text.
 **Hint:** Assume that the heading text is of size **2em**.
 
-2. Add a strike through for the element with id `second`.
+2. Add a strikethrough for the element with id `second`.
 
-3. Hide the element with the id `third` using CSS. The text should remain in the HTML but not be visible on the screen..
-
-4. Make the text in the element with id `fourth` difficult to read by making the letters appear close together.
+3. Make the text in the element with id `third` difficult to read by making the letters appear close together.
 **Hint:** Reduce the space between letters by three pixels.
-5. Add a cool font **Poor Story** to the text with id `fifth`, using [Google Fonts](https://fonts.google.com/specimen/Poor+Story).
+4. Add a cool font **Poor Story** to the text with id `fourth`, using [Google Fonts](https://fonts.google.com/specimen/Poor+Story).
 
 <codeblock language="css" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
@@ -31,13 +29,11 @@ gained so far, do the following:
     Cut out the <span id="second">boring</span> or <span>interesting</span> part.
   </p>
 
-  <p id="third">Bad text</p>
-
-  <p id="fourth">
+  <p id="third">
     The ocean (also the sea or the world ocean) is the body of salt water that covers approximate 8% of the surface of Earth and contains 97% of Earth's water. An ocean can also refer to any of the large bodies of water into which the world ocean is conventionally divided.Separate names are used to identify five different areas of the ocean: Pacific (the largest), Atlantic, Indian, Southern (Antarctic), and Arctic(the smallest). Seawater covers approximately 361,000,000 km2 (139,000,000 sq mi) of the planet. Russian oceanographer Yuly Shokalsky to refer to the continuous ocean that covers and encircles most of Earth.
   </p>
 
-  <p id="fifth">Steve Rogers: I can do this all day</p>
+  <p id="fourth">Steve Rogers: I can do this all day</p>
 </body>
 </panel>
 <panel language="css">
@@ -62,13 +58,11 @@ gained so far, do the following:
     Cut out the <span id="second">boring</span> or <span>interesting</span> part.
   </p>
 
-  <p id="third">Bad text</p>
-
-  <p id="fourth">
+  <p id="third">
     The ocean (also the sea or the world ocean) is the body of salt water that covers approximate 8% of the surface of Earth and contains 97% of Earth's water. An ocean can also refer to any of the large bodies of water into which the world ocean is conventionally divided.Separate names are used to identify five different areas of the ocean: Pacific (the largest), Atlantic, Indian, Southern (Antarctic), and Arctic(the smallest). Seawater covers approximately 361,000,000 km2 (139,000,000 sq mi) of the planet. Russian oceanographer Yuly Shokalsky to refer to the continuous ocean that covers and encircles most of Earth.
   </p>
 
-  <p id="fifth">Steve Rogers: I can do this all day</p>
+  <p id="fourth">Steve Rogers: I can do this all day</p>
 </body>
 </panel>
 <panel language="css">
@@ -81,14 +75,10 @@ gained so far, do the following:
 }
 
 #third {
-  font-size: 0;
-}
-
-#fourth {
   letter-spacing: -3px;
 }
 
-#fifth {
+#fourth {
   font-family: "Poor Story";
 }
 </panel>
