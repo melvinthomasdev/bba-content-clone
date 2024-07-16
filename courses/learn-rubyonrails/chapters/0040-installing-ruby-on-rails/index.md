@@ -108,11 +108,9 @@ gem install bundler
 
 At [BigBinary](https://bigbinary.com) we use Mac.
 
-Thus, we won't be documenting on how to install Ruby and Ruby on Rails on
-Windows/Linux.
+Thus, we have covered installation and setup for Mac within this course.
 
-There are plenty of good materials on the internet and on YouTube about
-installing Ruby on Rails and setting up the work environment on Windows/Linux.
+For instructions on installing Ruby on Rails and setting up the work environment on Windows, check out this [link](https://courses.bigbinaryacademy.com/install-rubyonrails-in-windows/). For Linux, you can find many good resources on the internet and YouTube.
 
 ## TypeError for Rails project in M1 Mac
 

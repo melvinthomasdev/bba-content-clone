@@ -8,9 +8,6 @@
 - slug: setting-up-vscode
   name: Setting up VSCode
   has_pages: false
-- slug: setting-up-workspace
-  name: Setting up workspace
-  has_pages: false
 - slug: installing-ruby-on-rails
   name: Installing Ruby on Rails
   has_pages: false
@@ -245,11 +242,11 @@
 - slug: keep-application-controller-clean
   name: Keep application controller clean
   has_pages: false
-- slug: using-bang-method
-  name: Using bang method
-  has_pages: false
 - slug: setting-up-postgresql-database
   name: Setting up PostgreSQL database
+  has_pages: false
+- slug: using-bang-method
+  name: Using bang method
   has_pages: false
 - slug: deploying-the-application-on-heroku
   name: Deploying the application on Heroku
