@@ -687,13 +687,7 @@ the request headers as `X-Auth-Token` and `X-Auth-Email` respectively, with all
 the API requests which needs to be authenticated.
 
 Calling the `presence` method on `request.headers["X-Auth-Email"]` will return
-the value of `X-Auth-Email` if it is not nil otherwise it will return `nil`. The
-`to_s` method returns a string equivalent of the value it is called upon if the
-value is present. If `to_s` is called on `nil` then it returns an empty string.
-
-We are checking if the `auth_token` is present using the `to_s` method because,
-the `presence` method would return `nil` if `request.headers["X-Auth-Token"]` is
-not present and that will cause `secure_compare` method to throw an error.
+the value of `X-Auth-Email` if it is not nil otherwise it will return `nil`. 
 
 When the method `authenticate_user_using_x_auth_token` is invoked, at first the
 user is retrieved from database based on the `email_id` passed in the header. We
