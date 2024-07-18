@@ -82,3 +82,5 @@
   has_pages: false
 - slug: refactoring-the-existing-code-based-on-best-practices
   name: Refactoring the existing code based on the best practices
+- slug: practice-questions
+  name: Practice questions
