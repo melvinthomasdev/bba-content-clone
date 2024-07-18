@@ -1,4 +1,4 @@
-## Enable Rosetta for Terminal on M1 Mac
+## Enabling Rosetta for Terminal on M1 Mac
 
 If `Rosetta 2` is not installed by default in your M1 Mac, then open the
 pre-installed `Terminal` app and run the following command:
@@ -49,7 +49,7 @@ If you still do not see `i386` in the terminal then please restart the laptop.
 **Moving forward, all commands we ask you to execute should be done in Rosetta
 enabled terminal.**
 
-## Install Xcode command line tools
+## Installing Xcode command line tools
 
 Check the version of your operating system. If your version number is 10.9 or
 higher, follow the next step. If your OS X version is less than 10.9, you should
@@ -66,7 +66,7 @@ We can install Xcode command line developer tools like this:
 xcode-select --install
 ```
 
-## Uninstall arm64 brew
+## Uninstalling arm64 brew
 
 If you have installed brew in the past from the native terminal, it is likely
 that you have an arm64 build of brew. Having two different builds of brew can
@@ -96,7 +96,7 @@ from the native terminal:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
 ```
 
-## Install Intel brew
+## Installing Intel brew
 
 Install [Homebrew](https://brew.sh), which is the package manager:
 
@@ -119,7 +119,7 @@ which brew
 
 The command should output `/usr/local/bin/brew`, which is the expected path.
 
-## Ensure ZSH is the default shell
+## Ensuring ZSH is the default shell
 
 Before going forward, please make sure `zsh` is your default terminal shell. To
 check that execute the following command.
@@ -152,7 +152,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 Now restart your terminal.
 
-### Add OMZ plugins
+## Adding OMZ plugins
 
 To add a new plugin, type the names shown in parentheses below to `plugins` key,
 making sure to include a space between each name.
@@ -168,7 +168,7 @@ Restart the terminal for zsh to auto install all the specified plugins.
 If you ever feel that your `SHELL` is slow in starting, then removing few of
 these plugins is a good step.
 
-## Install fonts
+## Installing fonts
 
 Now if you restart your terminal, zsh will auto install all the plugins.
 
