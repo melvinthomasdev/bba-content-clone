@@ -160,7 +160,7 @@ making sure to include a space between each name.
 Add the following at the top of your `.zshrc`:
 
 ```sh
-plugins=(git ruby rails yarn bundler docker docker-compose brew macos z node)
+plugins=(git ruby rails yarn bundler brew macos z node)
 ```
 
 Restart the terminal for zsh to auto install all the specified plugins.
@@ -201,92 +201,29 @@ Now restart your terminal and you should be seeing a beautiful prompt!
 
 ## Installing z for jumping around
 
-The idea behind `z` is that it builds a list of your most frequent and recent —
-"Frecent" — folders.
-
-It allows you to jump to them quickly in one command, rather than having to tab
+z allows you to jump to folders quickly in one command, rather than having to tab
 through a nested folder structure.
 
-To install it, make sure `z` is included in the plugins list as mentioned in OMZ
-plugins section.
+In the plugins section we included `z`. That should work for most of people. First
+let's see if that works for you or not. Open terminal and just type `z`. If you don't see
+`command not found` then you are all set. You can skip to the last part of this section where
+we have mentioned a YouTube video for to watch to learn how to use `z` effectively.
 
-While adding it in OMZ plugins section works for most, some users have trouble
-getting it to work.
-
-If that is the case, download `z` and put it in your home directory so that it’s
-located at `~/z.sh`, like this:
+To install `z` execute the following command.
 
 ```bash
 curl -o "${HOME}/z.sh" "https://raw.githubusercontent.com/rupa/z/master/z.sh"
 ```
 
-Then, in your `.zshrc` file, after listing the plugins, include the following
-and then restart your terminal:
+Open `~/.zshrc` file and include the following line at the very bottom and then restart your terminal:
 
 ```bash
 . ~/z.sh
 ```
 
-It's time for what you’ve been waiting for. Time to jump around!
+Now open a new terminal and type `z` on the command line. You should see some output.
 
-If you type just `z` in your terminal, it should now show you the locations
-you’ve visited, along with the `Frecency` score.
-
-But let's say that you're using a new laptop/terminal where you haven't
-traversed to many folders yet. Then there won't be any "frecency" score that `z`
-can show.
-
-Let's do an example to understand how `z` comes in handy.
-
-Run the following from your terminal:
-
-```bash
-cd ~/.oh-my-zsh/plugins
-```
-
-Now the current directory in your terminal should be `plugins`.
-
-You can verify your current working directory by running the following command:
-
-```bash
-pwd
-```
-
-Let's say that everyday as part of your work you need to change pwd into this
-`plugins` directory.
-
-So rather than running the `cd ~/.oh-my-zsh/plugins` command each time, you
-could run the following:
-
-```bash
-z plug
-```
-
-Now your `pwd` should be `~/.oh-my-zsh/plugins` folder.
-
-Using `z` we have used one substring part of the path where we wanted to
-traverse and we've reached that folder.
-
-In a daily work environment this comes in super handy!
-
-Note that you may not be able to run the following commands given that your `cd`
-history and folders specified may not exist.
-
-As an example, based on my jumping history, I can do the following.
-
-```bash
-# Takes me to /var/www/mysite/wp-content/themes
-z themes
-
-# Takes me to /var/www/staging/wp-content/themes
-z staging themes
-
-# Takes me to /var/www/mysite/wp-content/plugins
-z plu
-
-# Lists all the paths including "themes" in them.
-z themes -l
-```
+Watch [this YouTube video](https://www.youtube.com/watch?v=qbNn5zJLZU0) to learn how to use command `z`.
 
 ## Installing ripgrep
 
