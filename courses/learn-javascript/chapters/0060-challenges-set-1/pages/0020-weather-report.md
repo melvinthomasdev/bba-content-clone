@@ -1,18 +1,14 @@
-You need to find out how long does it take before the person starts shivering.
+You are given the following variables,
 
-* You are given variables, `personName`, `currentTemperature` and the `shiveringTemperature` (temperature at which the person will start shivering)
+- `personName`
+- `currentTemperature`
+- `shiveringTemperature` (the temperature at which the person will start shivering.)
+- `hourlyTemperatureDecrease` (the amount by which the temperature drops every hour.)
 
-* And every hour temperature drops by certain degree provided by `hourlyTemperatureDecrease` variable.
+Your task is to calculate how many hours it will take before the person starts shivering, store the result in a variable called `hoursRemainingForShivering`, and log it to the console in the following format:
 
-* Find out how many hours will it take before the person starts shivering, store it to a variable called `hoursRemainingForShivering` and then log it to the console in the format:
+`[personName] will start shivering in [hoursRemainingForShivering] hours.`
 
-`[name] will start shivering in [hoursRemainingForShivering] hours.`
-
-```js
-Input: personName = "Eve", shiveringTemperature = 20, currentTemperature = 40, hourlyTemperatureDecrease = 4
-
-Output: "Eve will start shivering in 5 hours."
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const personName = "Sam";

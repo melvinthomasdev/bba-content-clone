@@ -9,12 +9,6 @@ store the value **2255** in it.
 At the end, put the values of 
 both variables in the console.
 
-```js
-Output:
-1234567890
-2255
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here

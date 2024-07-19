@@ -10,12 +10,6 @@
 - The default value of `status`
   should be **"to be dispatched"**.
 
-For example:
-```js
-Input: orderID = "A312R"
-
-Output: "Your package #A312R is to be dispatched"
-```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const displayPackageInfo = () => {

@@ -13,9 +13,6 @@ Marvel franchise.
 - Make sure they are added in the **alphabetical order**.
 - Log the second movie from the list to the console.
 
-```js
-Output: "Captain Marvel"
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 // Write code here

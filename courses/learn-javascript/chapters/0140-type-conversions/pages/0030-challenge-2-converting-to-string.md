@@ -7,12 +7,6 @@ to a string
 and
 display the output to the console.
 
-For example:
-```js
-Input: numberOfPeople = 10
-
-Output: "10"
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const numberOfPeople = 15;

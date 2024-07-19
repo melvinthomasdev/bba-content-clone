@@ -11,13 +11,6 @@ should get executed.
 Otherwise, the `else` code block
 should get executed.
 
-For example:
-```js
-Input: personName = "Sam", isAdmin = true
-
-Output: "Your coupon's value is: 50"
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const name = "Sam Smith";

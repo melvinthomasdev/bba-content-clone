@@ -20,12 +20,6 @@ in the `message` variable,
 if the value of the `number` variable
 is equal to `3`.
 
-For example:
-```js
-Input: number = 4
-
-Output: "Number is greater than 3"
-```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const number = 3;

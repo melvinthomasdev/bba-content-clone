@@ -2,17 +2,6 @@ Given is data of three employees. Update the code in such a way that it logs to 
 has admin access, in the following manner:
 `X has admin access.`
 
-For example:
-```js
-Input:
-employeeOne = {
-  name: "Tommy",
-  isAdmin: true
-}
-
-Output: "Tommy has admin access."
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const employeeOne = {

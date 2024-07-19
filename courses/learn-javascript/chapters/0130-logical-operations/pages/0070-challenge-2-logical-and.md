@@ -18,9 +18,7 @@ Your task is to write code that checks the user's login status, role, plan, and 
   - If the user's role is Standard, log: "Access denied."
 
 Use the provided user object for this exercise.
-```js
-Output: "Displaying the Admin Panel with all the admin features."
-```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const user = {

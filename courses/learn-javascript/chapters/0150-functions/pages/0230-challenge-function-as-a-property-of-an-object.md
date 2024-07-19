@@ -1,11 +1,6 @@
 Add a method `makeSound` to the object `bird`.
 The method should display **"Hoot hoot"** on invocation.
 
-```js
-Output:
-"Hoot hoot"
-```
-
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const bird = {

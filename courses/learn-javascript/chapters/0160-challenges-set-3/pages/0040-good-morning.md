@@ -1,11 +1,5 @@
 Update the function, **goodMorning**, to make sure it returns **Good** if the given number is divisible by 3, **Morning** if divisible by 5, **Good Morning** if divisible by both, else return the number itself.
 
-For example:
-```js
-Input: number = 15
-
-Output: "Good Morning"
-```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const goodMorning = (number) => {

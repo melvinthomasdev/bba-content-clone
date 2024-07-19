@@ -3,17 +3,6 @@ and the string has a length greater than
 or equal to **5**, or if the boolean is **true**,
 log `true` to the console, else log `false`.
 
-For example:
-```
-Input:
-number = 5
-string = "hello"
-boolean = false
-
-Output:
-true
-```
-
 Use the following to test the code:
 
 ```js

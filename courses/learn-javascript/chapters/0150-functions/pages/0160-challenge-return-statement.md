@@ -6,12 +6,6 @@ the result of subtracting both
 the values of `expense` and `tax`
 from the value of `income`.
 
-For example:
-```js
-Input: income = 500000, expense = 25000, tax = 25000
-
-Output: 450000
-```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const calculateBalance = ;

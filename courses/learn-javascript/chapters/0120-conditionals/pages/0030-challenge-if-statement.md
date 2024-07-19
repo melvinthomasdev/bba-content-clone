@@ -8,11 +8,6 @@ If the condition is `true`,
 store `"Number is greater than 3"`
 in the `message` variable.
 
-```js
-Input: number = 6
-
-Output: "Number is greater than 3"
-```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const number = 4;

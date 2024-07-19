@@ -19,11 +19,6 @@ Log to the console an array with all the
 details of the movie. In
 a way that only values are printed.
 
-```js
-Output:
-["Unbelievable", ["Crime", "Drama"], ["Lisa Cholodenko", "Michael Dinner", "Susannah Grant", "Merritt Wever"], 10]
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 // Write your code here

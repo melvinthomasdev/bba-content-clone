@@ -21,20 +21,6 @@ Write code that takes in these book details to perform the following actions:
 
 Make sure your code is flexible enough to work with any value of the `bookDetails` variable that meets these requirements.
 
-For example:
-```js
-const bookDetails = {
-	"title": "Malgudi Days",
-	"author": "R. K. Narayan",
-	"alreadyRead": true,
-	"isAvailable": true
-}
-
-Output:
-"Malgudi Days by R. K. Narayan"
-"You have already read Malgudi Days by R. K. Narayan."
-```
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const findTheNextBook = () => {

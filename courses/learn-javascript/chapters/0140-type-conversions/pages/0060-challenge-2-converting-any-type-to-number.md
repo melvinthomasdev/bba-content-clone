@@ -3,12 +3,6 @@ to a number
 and
 display the output to the console.
 
-For example:
-```js
-Input: isAdmin = true
-
-Output: 1
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const isAdmin = false;

@@ -4,10 +4,6 @@ the variable `number` stores `"1234"`.
 
 Use `+` to join both the strings.
 
-```js
-Output:
-"house1234"
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const word = ;

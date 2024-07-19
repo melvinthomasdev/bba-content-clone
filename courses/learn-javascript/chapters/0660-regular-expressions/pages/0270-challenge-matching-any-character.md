@@ -6,14 +6,6 @@ Test your regular expression against the
 provided strings and verify if it matches
 the expected results.
 
-```js
-Expected Output:
-String 1: true
-String 2: true
-String 3: true
-String 4: true
-String 5: true
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const strings = [

@@ -1,10 +1,6 @@
 Store the number `246`
 in the variable `myInteger`.
 
-```js
-Output:
-246
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const myInteger = ;

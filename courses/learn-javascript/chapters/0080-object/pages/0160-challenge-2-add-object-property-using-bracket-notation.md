@@ -14,14 +14,7 @@ to the `menu` object using
 
 Log the value of `menu` to
 the console.
-```js
-Output:
-{
-  burger: 40,
-  french-fries: 30,
-  veg-pizza: 60
-}
-```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code below

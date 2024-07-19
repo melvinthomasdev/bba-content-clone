@@ -12,17 +12,6 @@ Create a function named `verifyPassword` that takes a single string parameter, *
 - For a valid password, the function logs: **"The password is valid."** 
 - For an invalid password, the function logs: **“The password is invalid.”**, followed on the next line by all the required error messages specifying the unmet criteria, joined by a comma (**,**).
 
-For example,
-```js
-Input:
-
-const password = "helloworld123";
-
-Output:
-"The password is invalid."
-"The password needs at least one uppercase letter,The password needs at least one special character"
-```
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 // Write code below this line

@@ -16,12 +16,6 @@ with the following values:
 Log the value of both arrays
 to the console.
 
-```js
-Output:
-[1, 2, 3, 4, 5]
-["apple", "banana", "cherry", "watermelon"]
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code below

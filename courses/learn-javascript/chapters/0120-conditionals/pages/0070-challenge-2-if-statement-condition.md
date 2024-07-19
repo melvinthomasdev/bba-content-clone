@@ -6,16 +6,6 @@ than **30** years,
 in the following manner:
 `[Person Name] is younger than 30 years.`
 
-```js
-Input:
-personOne = {
-  name: "Alice",
-  age: 25
-}
-
-Output: "Alice is younger than 30 years."
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const personOne = {

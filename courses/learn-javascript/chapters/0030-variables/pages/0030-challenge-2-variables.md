@@ -8,14 +8,6 @@ Assign `morningWish` a value of
 
 At the end, display on the screen the values of `morningWish` and `otherWishes`, in that order.
 
-For example:
-```js
-Input: morningWish = "Bonjour!", otherWishes = "How are you?"
-
-Output:
-"Bonjour!"
-"How are you?"
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code here

@@ -8,14 +8,6 @@ Use **bracket notation** to update the object.
 | "can fly"         | false |
 | "number-of-claws" | 3     |
 
-```js
-Output:
-{
-  type: "owl",
-  "can fly": false,
-  "number-of-claws": 3
-}
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const bird = {

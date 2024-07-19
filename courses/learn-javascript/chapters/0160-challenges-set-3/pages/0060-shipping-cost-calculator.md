@@ -15,12 +15,6 @@ The function should return a string indicating the shipping cost based on the we
 - If the weight of the package is 5 kilograms or less, the function should return **"Shipping cost is ₹X"**, where X is the total shipping cost.
 - If the weight of the package exceeds 5 kilograms, the function should return **"Shipping cost is ₹Y"**, where Y is the total shipping cost including the additional charge for weight above 5 kilograms.
 
-For example:
-```js
-Input:  weight = 9, destination = "Maharashtra"
-
-Output: 'Shipping cost is ₹90'
-```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const calculateShippingCostIndia = (weight, destination) => {

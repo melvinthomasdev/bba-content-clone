@@ -7,17 +7,6 @@ log to the console:
 If not, log to the console:
 `[User name] has standard privileges.`
 
-For example:
-```js
-Input:
-user = {
-  name: "Eve",
-  isAdmin: true,
-  isModerator: false
-}
-
-Output: "Eve has special privileges."
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const user = {

@@ -1,10 +1,6 @@
 Add the element `"potato"` to
 the end of the `vegetables` array.
 
-```js
-Output:
-["corn", "carrot", "onion", "beetroot", "potato"]
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const vegetables = ["corn", "carrot", "onion", "beetroot"];

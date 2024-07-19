@@ -10,13 +10,6 @@ among the three numbers
 and
 log it to the console.
 
-For Example:
-```js
-Input: 5, 12, 8
-
-Output: 12
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 function findMaxOfThree(a, b, c) {

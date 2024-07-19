@@ -2,10 +2,6 @@ Read the value of the `102` property
 from the `subjects` object
 using the **bracket notation**.
 
-```js
-Output:
-"Biology"
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const subjects = {

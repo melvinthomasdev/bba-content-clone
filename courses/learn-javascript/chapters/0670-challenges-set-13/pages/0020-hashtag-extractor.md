@@ -7,17 +7,6 @@ Create a function called `extractHashtags` that accepts a single string paramete
 
 3. Finally, the function should display the array of hashtags to the console.
 
-
-For example,
-```js
-Input:
-
-const tweet = "Hey, check out our #new #JavaScript lesson";
-
-Output:
-["new", "JavaScript"]
-```
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 // Write code below this line

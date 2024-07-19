@@ -12,13 +12,6 @@ the function should display
 **"Hello, Oliver Smith!"**
 using a template string.
 
-For example:
-```js
-Input: firstName = "Sam", lastName = "Smith"
-
-Output: "Hello, Sam Smith!"
-```
-
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const displayGreeting = () => {

@@ -9,12 +9,6 @@ to the console:
 
 `The provided number is positive.`
 
-For example:
-```js
-Input: number = 3
-
-Output: "The provided number is positive."
-```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const number = 5;

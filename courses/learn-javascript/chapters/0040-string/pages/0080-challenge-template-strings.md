@@ -2,14 +2,6 @@ Update the console log
 statements to display the
 values accordingly:
 
-```js
-Output:
-Employee ID: "012345"
-Name: "Eve Smith"
-Department: "Marketing"
-Full-Time: true
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const employeeName = "Eve Smith";

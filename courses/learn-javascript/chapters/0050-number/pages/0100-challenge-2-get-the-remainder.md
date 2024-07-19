@@ -6,10 +6,6 @@ Display the remainder
 of division of `number`
 by **2**.
 
-```js
-Output:
-1
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here

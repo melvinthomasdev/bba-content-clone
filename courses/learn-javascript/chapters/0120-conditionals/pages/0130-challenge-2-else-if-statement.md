@@ -8,16 +8,6 @@ it logs the following to the console:
 - Else log the following:
 `[Participant Name] has access to public area.`
 
-For example:
-```js
-Input:
-participant = {
-  name: "Eve",
-  role: "admin"
-}
-
-Output: "Eve has access to admin area."
-```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const participant = {

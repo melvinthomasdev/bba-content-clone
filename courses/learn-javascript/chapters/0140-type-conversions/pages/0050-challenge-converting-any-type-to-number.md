@@ -4,12 +4,6 @@ using the `Number()` method
 and
 display the output.
 
-For example:
-```js
-Input: houseNo = "50"
-
-Output: 50
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const houseNo = "42";

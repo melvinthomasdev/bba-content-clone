@@ -3,10 +3,6 @@ the third element
 of the array
 `danceForms` to `"Hip-hop"`.
 
-```js
-Output:
-["Salsa", "Ballet", "Hip-hop"]
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const danceForms = ["Salsa", "Ballet", "Samba"];

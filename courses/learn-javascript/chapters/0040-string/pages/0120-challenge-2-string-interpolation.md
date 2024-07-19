@@ -4,11 +4,6 @@ and
 another variable `secondNumber`
 with a value of **17**.
 
-```js
-Output:
-`Product of the two numbers is [product].`
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code below this line

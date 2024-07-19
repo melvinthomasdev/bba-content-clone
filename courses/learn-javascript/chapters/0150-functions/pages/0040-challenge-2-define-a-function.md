@@ -5,9 +5,6 @@ the value of `2 + 4`.
 After defining the function, 
 execute the function too.
 
-```js
-Output: 6
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code below this line

@@ -16,12 +16,6 @@ messages to be displayed for each case:
 If none of the cases match,
 display **"Not sure about this day type."**.
 
-For example:
-```js
-Input: dayType = "Weekday"
-
-Output: "It's a regular workday. Time to hustle!"
-```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const dayType = "Weekend";

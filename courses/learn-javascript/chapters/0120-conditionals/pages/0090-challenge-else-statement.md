@@ -12,12 +12,6 @@ Add an `else` statement,
 which stores `"Number is not greater than 3"`
 in the `message` variable.
 
-For example:
-```js
-Input: number = 6
-
-Output: "Number is greater than 3"
-```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const number = 2;

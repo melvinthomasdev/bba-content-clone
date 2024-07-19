@@ -7,15 +7,6 @@ each sub-array represents a range of numbers.
 If a single number is present without a range,
 it should be returned as a single-element array.
 
-For example:
-```js
-Input:
-"2-4, 7, 10-12, 15"
-
-Output:
-[[2, 3, 4], [7], [10, 11, 12], [15]]
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code below

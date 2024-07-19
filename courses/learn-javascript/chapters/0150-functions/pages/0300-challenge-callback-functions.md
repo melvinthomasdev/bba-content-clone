@@ -11,14 +11,6 @@ Also, we need to create a second function `printResult` that accepts 2 arguments
 - A string, which will be the same string passed to `sumOrProduct`.
 - The result.
 
-For example:
-
-```js
-Input: 1, 2, "sum", printResult;
-
-Output: "The solution to the sum is 3.";
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here

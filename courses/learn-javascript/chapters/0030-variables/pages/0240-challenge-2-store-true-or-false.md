@@ -5,12 +5,6 @@ Later change the value of `hasAccess` to **true**.
 
 At the end, print the values of both variables to the console.
 
-```js
-Output:
-true
-true
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code here

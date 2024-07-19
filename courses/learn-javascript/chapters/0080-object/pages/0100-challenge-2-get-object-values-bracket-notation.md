@@ -18,12 +18,6 @@ from the `results` object
 using the **bracket notation**
 and log it to the console.
 
-```js
-Output:
-51
-65
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write your code here

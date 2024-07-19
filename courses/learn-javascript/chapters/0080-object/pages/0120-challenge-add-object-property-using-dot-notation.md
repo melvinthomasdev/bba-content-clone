@@ -9,14 +9,6 @@ Use **dot notation** to add the properties.
 | canFly        | true  |
 | numberOfClaws | 4     |
 
-```js
-Output:
-{
-  type: "owl",
-  canFly: true,
-  numberOfClaws: 4
-}
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const bird = {

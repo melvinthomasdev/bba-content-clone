@@ -15,12 +15,6 @@ Otherwise, if the number is negative,
 log to the console,
 `The provided number is negative.`
 
-For example
-```js
-Input: number = -7
-
-Output: "The provided number is negative."
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const positiveNumber = 5;

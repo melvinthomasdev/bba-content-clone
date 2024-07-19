@@ -9,12 +9,6 @@ in the `status` variable.
 Use `console.log` to show
 the value of the `status` variable.
 
-For example:
-```js
-Input: age = 20
-
-Output: "Adult"
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const age = 17;

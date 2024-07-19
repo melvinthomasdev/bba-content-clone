@@ -21,12 +21,6 @@ For individuals aged above 60 years,
 
 The function should return a string indicating the tax amount based on the salary and age, for example, **"Tax amount is ₹X"**, where X is the calculated tax.
 
-For example:
-```js
-Input:  salary = 400000, age = 30
-
-Output: 'Tax amount is ₹20000'
-```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const calculateIncomeTax = (salary, age) => {

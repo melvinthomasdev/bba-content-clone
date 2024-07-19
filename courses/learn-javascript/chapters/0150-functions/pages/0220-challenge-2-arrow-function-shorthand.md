@@ -7,11 +7,6 @@ the values of `expense` and `tax`
 from the value of `income`.
 Use the arrow function shorthand.
 
-```js
-Input: 500000, 25000, 25000
-
-Output: 450000
-```
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const calculateBalance = ;

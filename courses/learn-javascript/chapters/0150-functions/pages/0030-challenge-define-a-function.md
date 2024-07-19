@@ -1,9 +1,6 @@
 Create a function `displayMessage`
 which logs to the console, `Good Morning`.
 
-```js
-Output: "Good Morning"
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code below

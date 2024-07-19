@@ -7,15 +7,6 @@ also the word `regex` itself.
 Test your regular expression against
 the provided strings.
 
-```js
-Expected Output:
-String 1: regex
-String 2: regex123
-String 3: regexsuffix
-String 4: null
-String 5: regexPattern
-```
-
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const strings = [

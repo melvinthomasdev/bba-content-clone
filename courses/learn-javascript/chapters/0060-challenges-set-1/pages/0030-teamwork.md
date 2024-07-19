@@ -9,11 +9,6 @@ and then log it to the console in the format:
 
 `The Average speed of Team India was [Average Speed] meters per second.`
 
-```js
-Input: averageSpeedEve = 39, averageSpeedSam = 40, averageSpeedRenu = 41
-
-Output: "The Average speed of Team India was 40 meters per second."
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const averageSpeedEve = 42;

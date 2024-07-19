@@ -1,10 +1,6 @@
 Find and display the second element
 of the `fruits` array.
 
-```js
-Output:
-"Banana"
-```
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 const fruits = ["Apple", "Banana", "Mango", "Kiwi"];

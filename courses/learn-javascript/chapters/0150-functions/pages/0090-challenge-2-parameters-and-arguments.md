@@ -6,12 +6,6 @@ which takes 2 parameters
 It should display the addition
 of both numbers to the console.
 
-For example:
-```js
-Input: firstNumber = 10, secondNumber = 12
-
-Output: 22
-```
 Call the function using the following
 numbers:
 - 6

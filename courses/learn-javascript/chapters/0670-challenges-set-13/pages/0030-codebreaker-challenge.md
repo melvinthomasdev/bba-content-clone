@@ -12,16 +12,6 @@ Create a function`decipherMessage` that takes a single string parameter, **coded
   3. Join the transformed words together to form a new sentence, with each word separated by a space.
   4. Display the resulting sentence on the console.
 
-For example,
-```js
-Input:
-
-const codedMessage = "XCL1e23tQT over and XCm1e23QT XCintroduce456QT XQt1o2jkl3TQ XQ1t2oQT XCJava1Scr2ipt3QT XCprogramming345QT";
-
-Output:
-"Let me introduce JavaScript programming"
-```
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 // Write code below this line

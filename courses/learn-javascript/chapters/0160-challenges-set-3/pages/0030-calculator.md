@@ -8,11 +8,6 @@ Write a code to print the result obtained from the calculation of the provided t
 
 Make sure your code is flexible enough to work with any value of the `valueOne`, `valueTwo` and `operator` variable that meets these requirements.
 
-```js
-Input: valueOne 10, valueTwo = 6, operator = '-'
-
-Output: 4
-```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const calculateAndLogValue = (valueOne, valueTwo, operator) => {

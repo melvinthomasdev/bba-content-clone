@@ -9,25 +9,6 @@ increment the value of `eligibleUsersCount`.
 Otherwise, if the value is less than **18**,
 display **You are not eligible** in the console.
 
-For example:
-```js
-Input:
-user1 = {
-  name: "Oliver Smith",
-  age: 40,
-}
-
-user2 = {
-  name: "Sam Smith",
-  age: 20,
-}
-
-Output:
-"You are eligible"
-"You are eligible"
-2
-```
-
 <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 let eligibleUsersCount = 0;

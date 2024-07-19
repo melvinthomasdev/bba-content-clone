@@ -13,10 +13,7 @@ get all the **keys** from
 the `identity` object.
 
 Use `console.log` to show the keys.
-```js
-Output:
-['name', 'age', 'city', 'email']
-```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>
 // Write code below

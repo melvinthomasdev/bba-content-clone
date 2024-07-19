@@ -20,22 +20,6 @@ Write code that takes in these car details to perform the following actions:
 
 Make sure your code is flexible enough to work with any value of the `carDetails` variable that meets these requirements.
 
-For example:
-```js
-Input:
-carDetails = {
-	name: "Tata Nexon",
-	manufacturer: "Tata",
-	countryOfOrigin: "India",
-	colour: "blue",
-	supportElectricOption: true
-}
-
-Output:
-"Electric cars are the future! The car we are presenting now is called Tata Nexon."
-"This car is made in India."
-"This car is blue."
-```
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const displayCarDetails = (carDetails) => {
