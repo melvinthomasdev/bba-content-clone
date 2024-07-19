@@ -8,7 +8,7 @@ France and the capital city provided is
 Paris, the statement of the screen will 
 be **Paris is the capital of France.**
 
-Run the function once and provide it 
+Call the function once and provide it 
 the country name as **New Zealand** and 
 the capital city as **Wellington**.
 
@@ -28,6 +28,6 @@ const showCapitalCity = (countryName, capitalName) => {
   console.log(`${capitalName} is the capital of ${countryName}.`);
 }
 
-showFullName("New Zealand", "Wellington");
+showCapitalCity("New Zealand", "Wellington");
 </solution>
 </codeblock>
