@@ -1,28 +1,28 @@
 Create a variable
-`statesOfIndia`, value
+`countries`, value
 of which is an object with
 each key representing a
-state and value will be the
+country and value will be the
 primary language spoken.
 
 Properties of the object are
 as follows:
 
-| Key         | Value     |
-| ----------- | --------- |
-| punjab      | "Punjabi" |
-| gujarat     | "Gujarati"|
-| maharashtra | "Marathi" |
-| karnataka   | "Kannada"  |
-| tamilNadu   | "Tamil"   |
+| Key         | Value      |
+| ----------- | ---------- |
+| germany     | "German"   |
+| spain       | "Spanish"  |
+| france      | "French"   |
+| japan       | "Japanese" |
+| italy       | "Italian"  |
 
 Later, add another property
-`kerala` value of which should
-be `Malayalam`.
+`brazil` value of which should
+be `Portuguese`.
 
 Make sure to add this property
 using dot notation.
-Log the value of `statesOfIndia`
+Log the value of `countries`
 to the console.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
@@ -30,15 +30,16 @@ to the console.
 // Write your code here
 </code>
 <solution>
-const statesOfIndia ={
-  punjab: "Punjabi",
-  gujarat: "Gujarati",
-  maharashtra: "Marathi",
-  karnataka: "Kannada",
-  tamilNadu: "Tamil"
+const countries = {
+  germany: "German",
+  spain: "Spanish",
+  france: "French",
+  japan: "Japanese",
+  italy: "Italian"
 };
-statesOfIndia.kerala = "Malayalam";
 
-console.log(statesOfIndia);
+countries.brazil = "Portuguese";
+
+console.log(countries);
 </solution>
 </codeblock>
