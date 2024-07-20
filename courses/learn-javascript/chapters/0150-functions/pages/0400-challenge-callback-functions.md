@@ -1,6 +1,7 @@
-Create a function `sumOrProduct` that accepts **4** arguments,
+Create a function `sumOrProduct` that accepts the following four arguments.
 
-- **2** numbers.
+- A number.
+- Another number.
 - A string, the value of which will either be "sum" or "product".
 - A callback function `printResult`.
 

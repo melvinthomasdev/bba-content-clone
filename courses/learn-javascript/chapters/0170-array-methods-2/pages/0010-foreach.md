@@ -61,7 +61,8 @@ each fruit in the array:
 const fruits = ["apple", "banana", "mango", "orange"];
 // In this case, the element is a single fruit
 fruits.forEach((fruit, index, array) =>
-  console.log(`${fruit} is a fruit. It is at index ${index} in the array: ${array}.`)
+  const result = `${fruit} is a fruit. It is at index ${index} in the array: ${array}.`;
+  console.log(result)
 );
 </code>
 </codeblock>

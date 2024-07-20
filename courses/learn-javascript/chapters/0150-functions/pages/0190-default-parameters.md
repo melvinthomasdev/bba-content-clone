@@ -5,7 +5,8 @@ from the previous chapter:
 <codeblock language="javascript" type="lesson">
 <code>
 const displayValidationError = (invalidFieldName, additionalMessage) => {
-  console.log(`The user ${invalidFieldName} is not valid. ${additionalMessage}`);
+  const result = `The user ${invalidFieldName} is not valid. ${additionalMessage}`;
+  console.log(result);
 }
 
 displayValidationError("name", "Please provide a valid name.");
@@ -22,7 +23,8 @@ function.
 <codeblock language="javascript" type="lesson">
 <code>
 const displayValidationError = (invalidFieldName, additionalMessage) => {
-  console.log(`The user ${invalidFieldName} is not valid. ${additionalMessage}`);
+  const result = `The user ${invalidFieldName} is not valid. ${additionalMessage}`;
+  console.log(result);
 }
 
 displayValidationError("name");
@@ -65,7 +67,8 @@ is `undefined`.
 <codeblock language="javascript" type="lesson">
 <code>
 const displayValidationError = (invalidFieldName, additionalMessage = "") => {
-  console.log(`The user ${invalidFieldName} is not valid. ${additionalMessage}`);
+  const result = `The user ${invalidFieldName} is not valid. ${additionalMessage}`;
+  console.log(result);
 }
 
 displayValidationError("name");

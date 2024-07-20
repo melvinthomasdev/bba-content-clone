@@ -10,7 +10,8 @@ with parameters this time.
 <codeblock language="javascript" type="lesson">
 <code>
 const displayValidationError = (invalidFieldName, additionalMessage) => {
-  console.log(`The user ${invalidFieldName} is not valid. ${additionalMessage}`);
+  const result = `The user ${invalidFieldName} is not valid. ${additionalMessage}`;
+  console.log(result);
 }
 </code>
 </codeblock>
@@ -33,7 +34,8 @@ These are called **arguments**.
 <codeblock language="javascript" type="lesson">
 <code>
 const displayValidationError = (invalidFieldName, additionalMessage) => { // parameters
-  console.log(`The user ${invalidFieldName} is not valid. ${additionalMessage}`);
+  const result = `The user ${invalidFieldName} is not valid. ${additionalMessage}`;
+  console.log(result);
 }
 
 displayValidationError("name", "Please provide a valid name."); // arguments
@@ -64,7 +66,8 @@ const user = {
 };
 
 const displayValidationError = (invalidFieldName, additionalMessage) => {
-  console.log(`The user ${invalidFieldName} is not valid. ${additionalMessage}`);
+  const result = `The user ${invalidFieldName} is not valid. ${additionalMessage}`;
+  console.log(result);
 }
 
 if (!user.name) {
