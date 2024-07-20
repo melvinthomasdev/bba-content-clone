@@ -13,7 +13,8 @@ const person = {
   isAdmin: true
 };
 
-console.log(Object.entries(person));
+const result = Object.entries(person);
+console.log(result);
 </code>
 </codeblock>
 

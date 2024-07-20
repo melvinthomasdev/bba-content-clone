@@ -29,7 +29,8 @@ const totalCost =
   bananas.price * bananas.quantity +
   milk.price * milk.quantity;
 
-console.log(`Total Cost: ${totalCost}`);
+const result = `Total Cost: ${totalCost}`;
+console.log(result);
 </code>
 </codeblock>
 
@@ -65,7 +66,8 @@ const totalCost =
   calculateItemCost(bananas) +
   calculateItemCost(milk);
 
-console.log(`Total Cost: ${totalCost}`);
+const result = `Total Cost: ${totalCost}`;
+console.log(result);
 </code>
 </codeblock>
 

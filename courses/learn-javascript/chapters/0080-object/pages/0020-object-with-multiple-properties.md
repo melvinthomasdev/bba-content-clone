@@ -48,9 +48,9 @@ separate variables.
 
 <codeblock language="javascript" type="lesson">
 <code>
-  const carModel = 2011;
-  const carFuelType = "diesel";
-  console.log(`It is a ${carModel} car that runs on ${carFuelType}`);
+const carModel = 2011;
+const carFuelType = "diesel";
+console.log(`It is a ${carModel} car that runs on ${carFuelType}`);
 </code>
 </codeblock>
 
@@ -86,8 +86,8 @@ const car = {
   seatingCapacity: noOfSeats,
   fuelType: "petrol"
 };
-
-console.log(`It is a ${car.model} model car that runs on ${car.fuelType} and has ${car.seatingCapacity} seats.`);
+const result = `It is a ${car.model} model car that runs on ${car.fuelType} and has ${car.seatingCapacity} seats.`
+console.log(result);
 </code>
 </codeblock>
 

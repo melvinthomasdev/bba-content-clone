@@ -15,6 +15,7 @@ const person = {
   isAdmin: true
 };
 
-console.log(Object.values(person));
+const result = Object.values(person);
+console.log(result);
 </code>
 </codeblock>

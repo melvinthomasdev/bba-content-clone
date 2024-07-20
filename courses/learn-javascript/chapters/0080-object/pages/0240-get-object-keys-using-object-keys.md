@@ -15,6 +15,7 @@ const person = {
   isAdmin: true
 };
 
-console.log(Object.keys(person));
+const result = Object.keys(person);
+console.log(result);
 </code>
 </codeblock>

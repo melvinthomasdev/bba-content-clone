@@ -39,6 +39,7 @@ at the index `1`.
 <code>
 const fruits = ["Apple", "Orange", "Banana", "Mango", "Cherry"];
 
-console.log(`Second fruit is ${fruits[1]}`);
+const result = `Second fruit is ${fruits[1]}`;
+console.log(result);
 </code>
 </codeblock>
