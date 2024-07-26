@@ -1,19 +1,28 @@
-Write a function `findPerfectSquare` that takes the given number as input and returns "true" if the number is a perfect square, and "false" otherwise.
+Write a function `findPerfectSquare` that 
+takes a number as input and returns 
+`true` if the number is a perfect square. 
+Otherwise, it should return `false`.
 
-Note: A perfect square is a number that can be expressed as the product of an integer with itself (e.g. 4 = 2 * 2, 9 = 3 * 3, 16 = 4 * 4, etc.).
+A perfect square is a number 
+that can be expressed as the product 
+of an integer with itself. 
+
+For example, 
+`4 = 2 * 2, 9 = 3 * 3, 100 = 10 * 10`. Here, 
+**4**, **9** and **100** are perfect squares.
 
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
-const givenNumber = 81;
-// Write code here
+// Write code below this line
 </code>
 <solution>
-const givenNumber = 81;
+// Write code below this line
+
 function findPerfectSquare(n) {
-  let isPerfectSquare = Math.sqrt(n) % 1 === 0 ? "true" : "false";
+  const isPerfectSquare = (Math.sqrt(n) % 1 === 0)
   return isPerfectSquare;
 }
-findPerfectSquare(givenNumber);
+
 </solution>
 <testcases>
 <caller>
