@@ -125,3 +125,6 @@
 - title: Cumulative Sum Array Generator
   slug: cumulative-sum
   page_type: assessment
+- title: Nested Array Check
+  slug: nested-array-check
+  page_type: assessment

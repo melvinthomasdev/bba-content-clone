@@ -2,9 +2,6 @@
 - title: About
   slug: about-comprehensive-challenge
   page_type: lesson
-- title: Convert time format
-  slug: convert-given-seconds-to-hours-minutes-and-seconds
-  page_type: assessment
 - title: Extract book name by the borrower
   slug: extract-book-name-by-borrower
   page_type: assessment
@@ -29,20 +26,11 @@
 - title: Access code in inner function
   slug: access-code-in-inne-function
   page_type: assessment
-- title: Add and Round the Floating Point Numbers
-  slug: add-and-round-floating-point-numbers
-  page_type: assessment
 - title: Add Vacation Start Date, if missing
   slug: add-date-property-if-missing
   page_type: assessment
 - title: Convert from UTF-16
   slug: convert-utf-16-to-string
-  page_type: assessment
-- title: Convert the bases
-  slug: convert-the-bases
-  page_type: assessment
-- title: Find the Highest Score
-  slug: find-the-highest-score
   page_type: assessment
 - title: Make it Ordinal
   slug: make-it-ordinal

@@ -22,12 +22,9 @@ const sumOfOddNumbers = n => {
 
 <solution>
 const sumOfOddNumbers = n => {
-  // Refer: https://stackoverflow.com/a/20066663
-  // write your code here
-  const oddNumbersTillLimit = Array.apply(null, { length: n })
-    .map(Number.call, num => Number(num))
-    .filter(num => num % 2);
-  return oddNumbersTillLimit.reduce((partialSum, num) => partialSum + num, 0);
+  return Array.from({ length: n - 1 }, (val, i) => i + 1)
+    .filter(num => num % 2 !== 0)
+    .reduce((sum, currentNumber) => sum + currentNumber, 0);
 }
 </solution>
 

@@ -11,3 +11,15 @@
 - title: Biggest Difference
   slug: biggest-difference
   page_type: assessment
+- title: Convert the bases
+  slug: convert-the-bases
+  page_type: assessment
+- title: Find the Highest Score
+  slug: find-the-highest-score
+  page_type: assessment
+- title: Add and Round the Floating Point Numbers
+  slug: add-and-round-floating-point-numbers
+  page_type: assessment
+- title: Convert time format
+  slug: convert-given-seconds-to-hours-minutes-and-seconds
+  page_type: assessment
