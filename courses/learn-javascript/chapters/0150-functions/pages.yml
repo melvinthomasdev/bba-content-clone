@@ -116,6 +116,18 @@
 - title: Callback Functions
   slug: callback-functions
   page_type: lesson
-- title: challenge- Callback Functions
+- title: Challenge- Callback Functions
   slug: challenge-callback-functions
+  page_type: exercise
+- title: Anonymous Functions
+  slug: anonymous-functions
+  page_type: lesson
+- title: Challenge- Anonymous Functions
+  slug: challenge-anonymous-functions
+  page_type: exercise
+- title: Use of Anonymous Functions
+  slug: use-of-anonymous-functions
+  page_type: lesson
+- title: Challenge- Use of Anonymous Functions
+  slug: challenge-use-of-anonymous-functions
   page_type: exercise
