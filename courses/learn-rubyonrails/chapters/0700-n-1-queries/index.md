@@ -276,3 +276,114 @@ associations because `joins` method does not load the association data.
 For example, if you have to filter out movie records based on reviews, then use
 `joins` and if you have to access the reviews and render them then you should
 use `includes`.
+
+## Common pitfalls leading to N+1 Queries
+
+### 1. Accessing associated records in view templates
+
+Let’s say you have a Post model that belongs to a Author:
+
+```ruby
+class Author < ApplicationRecord
+    has_many :posts
+end
+
+class Post < ApplicationRecord
+    belongs_to :author
+end
+```
+
+And you have a view that displays a list of posts, along with the author’s name for each post:
+
+```ruby
+<% @posts.each  do |post| %>
+  <div class="post">
+    <h2><%= post.title %></h2>
+    <p>By <%= post.author.name %></p>
+    <p><%= post.body %></p>
+  </div>
+<% end %>
+```
+
+If you load the posts using a simple `@posts = Post.all` query in your controller, this will result in an **N+1** query issue. This means one query is executed to load all the posts, and **N** additional queries are executed to load the author's name for each post. This issue can be easily overlooked because the associated records are being accessed in the view template.
+
+The same consideration should be taken when **rendering partials** or usage of **helper methods** that access associated records, especially when the code is separated across different architectural layers.
+
+### 2. Using delegates can hide N+1 queries.
+
+```ruby
+class Post < ApplicationRecord
+  belongs_to :user
+  delegate :name, to: :user, prefix: true
+end
+
+<% @posts.each do |recipe| %>
+  <%= post.user_name %>
+<% end %>
+```
+
+By looking at the code in this example, it appears to be perfectly fine, with no obvious issues. However, behind the scenes, Rails’s delegate method calls `user` on each post individually, leading to another N+1 query problem.
+
+
+### 3. Using methods that do not return an `ActiveRecord::Relation` within loops
+
+```ruby
+class Post
+  has_many :comments
+  def latest_comment
+    comments.order(:created_at).last
+  end
+end
+
+# When fetching a single post, no problem arises
+post = Post.find(id)
+puts post.latest_comment
+
+# However, fetching a list of posts causes N+1 queries even though we have added .includes(:comments)
+Post.includes(:comments).each do |post|
+  puts post.latest_comment
+end
+```
+
+Active Record implements "method chaining" which allow us to use multiple Active Record methods together. You can chain methods in a statement when the previous method returns an  `ActiveRecord::Relation`, like `all`, `where`, `includes`, `joins` and `order`. You can’t chain Active Record methods, after a method that does not return an `ActiveRecord::Relation`, like `to_a`, `find` or `last`. You need to put those methods at the end of the statement.
+
+If you try each link of the chain, you will see that just the call to last does not return an `ActiveRecord::Relation`.
+
+```ruby
+relation = ActiveRecord::Relation
+comments = Post.find(id).comments
+puts comments.is_a?(relation) #=> true
+puts comments.order(:id).is_a?(relation) #=> true
+puts comments.order(:id).last.is_a?(relation) #=> false
+```
+
+This is what happens when you try to fetch the list:
+
+```ruby
+# When "each" is called, active record will execute 2 queries
+# - 1 to fetch the post
+# - And 1 to fetch the comments
+Post.includes(:comments).each do |post|
+  # As it is really:
+  # comments.order(:created_at).last
+  #
+  # With the "order" it builds a new query and execute it
+  # on "last", and it will do it for each post
+  puts post.latest_comment
+end
+```
+
+At the moment you call each on the `ActiveRecord::Relation`, it will execute the query. But then for each post it will execute a new query, because although you already have the comments loaded, with the code `order(:created_at).last` you are building a new query to fetch the latest comment with a different order.
+
+This is why when you try to fetch a list of posts, the method seems to ignore the `includes`, and runs a query for each post to get the `latest_comment` resulting in N+1 query.
+
+## How to detect N+1 queries ?
+
+### 1. Use the bullet gem
+The [bullet gem](https://github.com/flyerhzm/bullet) can automatically detect and alert you to N+1 queries in your application.
+
+### 2. Usage of `strict_loading`
+By default, Rails will not raise an error if you try to access an association that has not been loaded. However, you can manually use the `strict_loading` option to cause an error to be raised if you try to access an unloaded association. This can help prevent N+1 queries by alerting you about cases where you accidentally executed unnecessary queries. You can read more about it in this [blog](https://www.bigbinary.com/blog/rails-6-1-adds-strict_loading-to-warn-lazy-loading-associations).
+
+### 3. Using performance monitoring tools
+Leverage performance monitoring tools like [New Relic](https://newrelic.com/) to assess your application's performance and identify N+1 queries. Additionally, you can use tools such as [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler) and [stackprof](https://github.com/tmm1/stackprof) locally to generate flame graphs, which can help you detect N+1 queries.
