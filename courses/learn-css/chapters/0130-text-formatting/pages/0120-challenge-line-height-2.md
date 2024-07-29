@@ -19,7 +19,7 @@ Apply the following line-heights:
   </div>
 
   <div class="image">
-    <img src="https://ucarecdn.com/52ec812a-e5eb-49c9-9ed4-600421b23e31/" alt="Magic Forest">
+    <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/pexels-aditya-agarwal-1420505_ncHvNudAaw.jpg" alt="Magic Forest">
   </div>
 </div>
 </panel>
