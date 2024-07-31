@@ -2,11 +2,11 @@ All buttons and links should have accessible names. Without a proper label, assi
 
 ```html
 <!-- Bad -->
-<button className="bookingButton"></button>
-<button className="bookingButton">Add</button>
+<button class="bookingButton"></button>
+<button class="bookingButton">Add</button>
 
 <!-- Good -->
-<button className="bookingButton">Add new booking</button>
+<button class="bookingButton">Add new booking</button>
 ```
 
 Always add alternative texts in images. If the image fails to load, the alt text is used as a placeholder and the reader will get the info about it.
