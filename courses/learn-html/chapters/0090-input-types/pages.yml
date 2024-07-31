@@ -89,8 +89,14 @@
 - title: Input Type - Datetime
   slug: input-type-datetime
   page_type: lesson
-- title: Exercise - Input Type - Datetime
-  slug: exercise-input-type-datetime
+- title: Challenge - Input Type - Datetime
+  slug: challenge-input-type-datetime
+  page_type: exercise
+- title: Input Type - Color
+  slug: input-type-color
+  page_type: lesson
+- title: Challenge - Input Type - Color
+  slug: challenge-input-type-color
   page_type: exercise
 - title: Assessment - Form
   slug: assessment-form
