@@ -1,0 +1,10 @@
+---
+- title: Ruby methods
+  slug: ruby-methods
+  page_type: lesson
+- title: Return statement
+  slug: return-statement
+  page_type: lesson
+- title: Challenge - Calculate discount
+  slug: challenge-calculate-discount
+  page_type: exercise
