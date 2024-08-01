@@ -7,6 +7,7 @@ what is the class of
 hello = "Hello BigBinary Academy"
 
 puts hello.class
+
 </code>
 </codeblock>
 
@@ -23,9 +24,10 @@ thing on an integer.
 age = 18
 
 puts age.class
+
 </code>
 </codeblock>
 
-The output is `Number`.
+The output is `Integer`.
 It means all the integers are
-instances of the class `Number`.
+instances of the class `Integer`.
