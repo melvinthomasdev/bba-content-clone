@@ -1,4 +1,7 @@
 ---
+- title: Calculator
+  slug: calculator
+  page_type: lesson
 - title: Currency Converter
   slug: currency-converter
   page_type: lesson
