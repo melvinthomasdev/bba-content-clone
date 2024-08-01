@@ -113,3 +113,9 @@
 - title: Challenge - Replace strings within a string
   slug: challenge-replace-strings-within-a-string
   page_type: exercise
+- title: String length
+  slug: string-length
+  page_type: lesson
+- title: Challenge - String length
+  slug: challenge-string-length
+  page_type: exercise
