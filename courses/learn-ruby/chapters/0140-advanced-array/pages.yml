@@ -68,9 +68,6 @@
 - title: Destructuring With Not Enough Elements In An Array
   slug: destructuring-with-not-enough-elements-in-array
   page_type: lesson
-- title: Creating New Array Using %w
-  slug: creating-new-array-using-percentage-syntax
-  page_type: lesson
 - title: Loop Over Array Using Index
   slug: loop-over-items-using-index
   page_type: lesson
