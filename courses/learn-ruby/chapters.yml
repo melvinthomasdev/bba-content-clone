@@ -61,6 +61,8 @@
   slug: encapsulation
 - name: Module
   slug: module
+- name: Deep dive on Object Oriented Programming
+  slug: deep-dive-on-object-oriented-programming
 - name: Enumerable
   slug: enumerable
 - name: Singletons in ruby

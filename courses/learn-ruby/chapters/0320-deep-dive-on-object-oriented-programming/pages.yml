@@ -1,0 +1,16 @@
+---
+- title: Procedural code vs Object Oriented code
+  slug: procedural-code-vs-object-oriented-code
+  page_type: lesson
+- title: Behavior and State
+  slug: behavior-and-state
+  page_type: lesson
+- title: Converting procedural style code to Object Oriented Code
+  slug: converting-procedural-style-code-to-object-oriented-code
+  page_type: lesson
+- title: Extract statements into methods for clarity
+  slug: extract-statements-into-methods-for-clarity
+  page_type: lesson
+- title: Don't use instance variables as global variables
+  slug: don-t-use-instance-variables-as-global-variables
+  page_type: lesson
