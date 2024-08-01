@@ -5,7 +5,7 @@ The method should convert the given string `value` that is provided in a specifi
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def convert_base(value, current_base, new_base)
- # write your code here
+ # Write your code here
 end
 </code>
 

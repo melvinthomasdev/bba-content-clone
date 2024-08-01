@@ -5,7 +5,7 @@ Given an alphanumeric value `alphanumeric` as input, the method should return wi
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def sum_of_digits(alphanumeric)
-  # write your code here
+  # Write your code here
 end
 </code>
 

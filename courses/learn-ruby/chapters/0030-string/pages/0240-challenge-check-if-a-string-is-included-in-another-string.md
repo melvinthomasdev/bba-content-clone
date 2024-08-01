@@ -4,6 +4,7 @@ includes **ttle**:
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 name = "Seattle"
+# Write your code here
 </code>
 
 <solution>

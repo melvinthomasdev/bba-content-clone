@@ -14,7 +14,7 @@ Complete the method definition given below.
 <codeblock language="ruby" type="exercise" testMode="multipleInput" cache="false">
 <code>
 def set_reminder(messages, extract_reminder_text)
- # write your code here
+ # Write your code here
 end
 </code>
 

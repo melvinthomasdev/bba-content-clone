@@ -7,7 +7,7 @@ Given `users`, the method should return `true` if all users have a credit card, 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def do_all_users_have_credit_card(users)
-  # write your code here
+  # Write your code here
 end
 </code>
 

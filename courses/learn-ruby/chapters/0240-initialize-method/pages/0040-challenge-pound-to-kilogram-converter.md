@@ -8,7 +8,10 @@ kilogram = pound * 0.4536
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 class Converter
+  # Write your code here
 end
+
+# Write your code here
 </code>
 
 <solution>

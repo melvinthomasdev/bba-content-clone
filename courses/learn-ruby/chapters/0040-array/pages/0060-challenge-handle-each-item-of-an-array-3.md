@@ -6,6 +6,7 @@ then print that number.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 numbers = [5,19,38,72]
+# Write your code here
 </code>
 
 <solution>

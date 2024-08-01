@@ -9,7 +9,7 @@ If the user's device contains the string MacBook, (case insensitive), then the u
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def macbook_users(users)
-  # write your code here
+  # Write your code here
 end
 </code>
 

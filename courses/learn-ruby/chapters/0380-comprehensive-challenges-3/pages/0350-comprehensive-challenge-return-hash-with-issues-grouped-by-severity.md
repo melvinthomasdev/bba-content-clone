@@ -7,7 +7,7 @@ Given `issues`, the method should return a hash with the keys as unique values o
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def group_by_severity(issues)
-  # write your code here
+  # Write your code here
 end
 </code>
 

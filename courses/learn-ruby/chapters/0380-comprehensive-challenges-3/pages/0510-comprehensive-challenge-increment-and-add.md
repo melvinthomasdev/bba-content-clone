@@ -15,7 +15,7 @@ Note:
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def increment_count(count, maximum_count)
-  # write your code here
+  # Write your code here
 end
 </code>
 

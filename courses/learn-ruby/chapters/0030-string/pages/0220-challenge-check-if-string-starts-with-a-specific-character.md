@@ -4,6 +4,7 @@ starts with **Go** or not.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 word = "Good morning"
+# Write your code here
 </code>
 
 <solution>

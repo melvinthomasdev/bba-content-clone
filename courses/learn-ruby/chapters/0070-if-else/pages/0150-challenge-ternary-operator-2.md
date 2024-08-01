@@ -8,6 +8,7 @@ to solve this problem.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 speed = 32
+# Write your code here
 </code>
 
 <solution>

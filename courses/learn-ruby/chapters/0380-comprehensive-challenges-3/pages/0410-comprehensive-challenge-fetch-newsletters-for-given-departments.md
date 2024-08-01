@@ -7,7 +7,7 @@ If none of departments specified in `department_names_list` are present in `depa
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def newsletter_list(department_newsletter_list, department_names_list)
-  # write your code here
+  # Write your code here
 end
 </code>
 

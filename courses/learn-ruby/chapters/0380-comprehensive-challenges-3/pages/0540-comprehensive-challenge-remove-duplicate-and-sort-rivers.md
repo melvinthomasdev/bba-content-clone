@@ -5,7 +5,7 @@ Given an array of river names `rivers`, the method should remove duplicate names
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def remove_duplicate_and_sort(rivers)
-  # write your code here
+  # Write your code here
 end
 </code>
 

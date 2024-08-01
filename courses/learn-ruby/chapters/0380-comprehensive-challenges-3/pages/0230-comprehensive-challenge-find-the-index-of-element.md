@@ -6,7 +6,7 @@ Given an array `list` and a value, the method should return the index of given v
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def get_index(list, value)
-  # write your code here
+  # Write your code here
 end
 </code>
 

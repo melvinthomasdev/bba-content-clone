@@ -30,6 +30,7 @@ data = {
   Boston: 126,
   Dallas: 81
 }
+# Write your code here
 </code>
 
 <solution>

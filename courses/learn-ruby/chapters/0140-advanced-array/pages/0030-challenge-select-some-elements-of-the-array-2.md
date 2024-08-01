@@ -6,14 +6,11 @@ display them to the console.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 names = ["Mary", "Kevin", "John", "Philip"]
-
-# Write code below this line
+# Write your code here
 </code>
 
 <solution>
 names = ["Mary", "Kevin", "John", "Philip"]
-
-# Write code below this line
 
 longer_names = names.select do |item|
   item.length > 4

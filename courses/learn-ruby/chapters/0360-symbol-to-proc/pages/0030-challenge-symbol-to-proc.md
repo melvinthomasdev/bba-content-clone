@@ -4,6 +4,7 @@ using "Symbol to Proc" style of programming.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 string = "Today is a wonderful day"
+# Write your code here
 </code>
 
 <solution>

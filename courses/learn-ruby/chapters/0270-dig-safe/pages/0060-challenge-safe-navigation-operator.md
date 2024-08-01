@@ -13,7 +13,7 @@ end
 
 liquid1 = Liquid.new('milk')
 
-# Write your code below this
+# Write your code here
 </code>
 
 <solution>
@@ -25,8 +25,6 @@ class Liquid
 end
 
 liquid1 = Liquid.new('milk')
-
-# Write your code below this
 
 if liquid1&.name
   puts "Milk is energy"

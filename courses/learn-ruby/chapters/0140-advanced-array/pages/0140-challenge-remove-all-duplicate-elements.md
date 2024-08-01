@@ -1,6 +1,6 @@
-We have three arrays. Remove the 
-duplicate elements from each array, 
-and display the updated arrays on 
+We have three arrays. Remove the
+duplicate elements from each array,
+and display the updated arrays on
 the screen in the same order.
 
 For example:
@@ -18,15 +18,12 @@ input_array1 = ["apple", "banana", "apple", "cherry", "banana"]
 input_array2 = [false, true, true, false, nil, nil]
 input_array3 = []
 
-# Write code below this line
-
+# Write your code here
 </code>
 <solution>
 input_array1 = ["apple", "banana", "apple", "cherry", "banana"]
 input_array2 = [false, true, true, false, nil, nil]
 input_array3 = []
-
-# Write code below this line
 
 puts input_array1.uniq
 puts input_array2.uniq

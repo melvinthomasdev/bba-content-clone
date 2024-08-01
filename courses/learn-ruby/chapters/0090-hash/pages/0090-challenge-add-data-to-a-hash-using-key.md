@@ -9,6 +9,7 @@ hash = {
   last_name: "Smith",
   age: 25
 }
+# Write your code here
 </code>
 
 <solution>

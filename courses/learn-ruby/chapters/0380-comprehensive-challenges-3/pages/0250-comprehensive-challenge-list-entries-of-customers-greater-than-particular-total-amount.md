@@ -7,7 +7,7 @@ Given `customers` and a certain `amount`, the method should return a list of all
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def get_entries(customers, amount)
-  # write your code here
+  # Write your code here
 end
 </code>
 

@@ -7,6 +7,7 @@ is **basketball**, then print
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 sports = "basketball"
+# Write your code here
 </code>
 
 <solution>

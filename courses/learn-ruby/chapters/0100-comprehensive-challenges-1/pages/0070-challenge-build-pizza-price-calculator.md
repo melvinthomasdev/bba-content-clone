@@ -23,7 +23,7 @@ Total cost of your order is xxxxx.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
-# Build Pizza Price Calculator
+# Write your code here
 </code>
 
 <solution>

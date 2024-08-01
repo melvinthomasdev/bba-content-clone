@@ -11,8 +11,7 @@ then print **Small number**.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 number = 11
-
-# Write code below this line
+# Write your code here
 </code>
 
 <solution>

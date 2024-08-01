@@ -7,7 +7,7 @@ Go through the test cases, to get an idea of expected keywords to parse, remove 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def extract_reminder_text(message)
- # write your code here
+ # Write your code here
 end
 </code>
 

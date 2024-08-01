@@ -7,7 +7,7 @@ In order to solve this problem you would need to use `rjust`. To see how `rjust`
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def mask_credit_card_number(card_number)
-  # write your code here
+  # Write your code here
 end
 </code>
 

@@ -5,6 +5,7 @@ than 4 letters.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 names = ["Mary", "Kevin", "John", "Philip"]
+# Write your code here
 </code>
 
 <solution>

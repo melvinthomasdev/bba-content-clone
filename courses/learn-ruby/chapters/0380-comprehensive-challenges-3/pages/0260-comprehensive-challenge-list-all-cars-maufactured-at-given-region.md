@@ -7,7 +7,7 @@ Given `manufacturers` and a `region`, the method should filter the manufacturers
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def cars_by_region(manufacturers, region)
-  # write your code here
+  # Write your code here
 end
 </code>
 

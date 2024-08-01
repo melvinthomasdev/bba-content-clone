@@ -8,7 +8,7 @@ Non existing pincodes (like `nil`) should be ignored.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def pincodes(list)
-  # write your code here
+  # Write your code here
 end
 </code>
 

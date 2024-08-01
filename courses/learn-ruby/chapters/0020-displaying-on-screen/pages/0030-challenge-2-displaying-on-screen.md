@@ -5,10 +5,9 @@ in the result.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
-# Write code below this line
+# Write your code here
 </code>
 <solution>
-# Write code below this line
 puts "Sunrises are beautiful!"
 </solution>
 </codeblock>

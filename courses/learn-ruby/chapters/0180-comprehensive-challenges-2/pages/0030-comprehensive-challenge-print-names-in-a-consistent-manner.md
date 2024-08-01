@@ -18,7 +18,7 @@ names << "carlos alberti "
 names << "lao xun"
 names << " renu sen"
 
-# write your code here
+# Write your code here
 </code>
 
 <solution>

@@ -10,10 +10,8 @@ display it on the console.
 numbers = [3,8,13]
 double_numbers = []
 
-# Write code below this line
+# Write your code here
 
-
-# Write code above this line
 puts double_numbers
 </code>
 
@@ -21,12 +19,10 @@ puts double_numbers
 numbers = [3,8,13]
 double_numbers = []
 
-# Write code below this line
 numbers.each do |number|
   double_numbers.push(number * 2)
 end
 
-# Write code above this line
 puts double_numbers
 </solution>
 </codeblock>

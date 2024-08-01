@@ -17,6 +17,7 @@ Use `if` and **range** conditions to solve this problem.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 score = 28
+# Write your code here
 </code>
 
 <solution>

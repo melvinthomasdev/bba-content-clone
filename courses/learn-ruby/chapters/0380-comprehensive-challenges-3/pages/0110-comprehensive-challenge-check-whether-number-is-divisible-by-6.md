@@ -7,7 +7,7 @@ Return `true` if the number is divisible by 6 and `false` if not.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def is_divisible(number)
-  # write your code here
+  # Write your code here
 end
 </code>
 

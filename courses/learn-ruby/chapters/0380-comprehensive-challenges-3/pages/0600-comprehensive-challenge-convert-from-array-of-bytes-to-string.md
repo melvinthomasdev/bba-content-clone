@@ -5,7 +5,7 @@ Finish the method definition below.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def convert_to_string(codes)
- # write your code here
+ # Write your code here
 end
 </code>
 

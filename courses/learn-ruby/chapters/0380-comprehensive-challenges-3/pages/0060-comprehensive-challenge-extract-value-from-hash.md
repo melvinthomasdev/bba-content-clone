@@ -5,7 +5,7 @@ Given a hash `obj` and a key `k`, the method `property` should return the value 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def property(obj, k)
-  # write your code here
+  # Write your code here
 end
 </code>
 

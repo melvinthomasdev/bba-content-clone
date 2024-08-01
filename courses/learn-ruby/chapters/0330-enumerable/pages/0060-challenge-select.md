@@ -8,6 +8,7 @@ then this word should be included in the result
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 def selector(array)
+  # Write your code here
 end
 
 array = ["iphone 6", "iPhone 10x max", "apple watch", "iPhone 13 Pro", "Mac laptop"]

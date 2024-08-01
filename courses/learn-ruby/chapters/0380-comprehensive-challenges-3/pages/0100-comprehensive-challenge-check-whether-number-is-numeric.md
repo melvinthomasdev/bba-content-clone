@@ -7,7 +7,7 @@ If both or either one of the inputs is not a number, `add` should return `Invali
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def add(x, y)
-  # write your code here
+  # Write your code here
 end
 </code>
 

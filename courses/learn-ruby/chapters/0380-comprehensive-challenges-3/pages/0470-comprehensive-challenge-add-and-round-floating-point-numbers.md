@@ -5,7 +5,7 @@ Given two inputs `a` and `b`, the method should convert `a` and `b` to floating 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def add(a, b)
-  # write your code here
+  # Write your code here
 end
 </code>
 

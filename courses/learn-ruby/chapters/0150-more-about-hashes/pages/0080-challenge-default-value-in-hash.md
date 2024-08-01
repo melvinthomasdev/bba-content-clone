@@ -12,6 +12,7 @@ pink color.
 hash = { red: 50,
          yellow: 40
          }
+# Write your code here
 
 point_for_pink = hash[:pink]
 puts point_for_pink
@@ -21,7 +22,7 @@ puts point_for_pink
 hash = { red: 50,
          yellow: 40
          }
-         
+
 hash.default = 30
 point_for_pink = hash[:pink]
 puts point_for_pink

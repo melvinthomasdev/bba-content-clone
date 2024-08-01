@@ -19,9 +19,7 @@ colour_theme = {
     ]
 }
 
-# Write your code below this
-
-puts
+# Write your code here
 </code>
 
 <solution>
@@ -40,8 +38,6 @@ colour_theme = {
       "snow", "gold", "teal"
     ]
 }
-
-# Write your code below this
 
 puts colour_theme.dig(:primary_choice, 1, :hex_value)
 </solution>

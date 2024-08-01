@@ -5,6 +5,7 @@ Solve this problem using `map`.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 def adder(array)
+  # Write your code here
 end
 
 puts adder([5,8,3,8,9])

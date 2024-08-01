@@ -8,7 +8,10 @@ meter = yard * 0.9144
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 class Converter
+  # Write your code here
 end
+
+# Write your code here
 </code>
 
 <solution>

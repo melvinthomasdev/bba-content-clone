@@ -3,7 +3,7 @@ in capital letters.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
-# print "I love ice cream" in capital letter
+# Write your code here
 </code>
 
 <solution>

@@ -18,6 +18,7 @@ hotel = {
   "202" => "Mary Gold",
   "203" => "Kevin Kelly"
 }
+# Write your code here
 </code>
 
 <solution>

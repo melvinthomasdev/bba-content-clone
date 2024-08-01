@@ -7,7 +7,7 @@ The method should then return the updated hash.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def update_data(data, key, value)
-  # write your code here
+  # Write your code here
 end
 </code>
 

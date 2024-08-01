@@ -8,6 +8,7 @@ the middle name of the city.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 city_name = "Salt Lake City"
+# Write your code here
 </code>
 
 <solution>

@@ -16,6 +16,7 @@ P.T.Anderson
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 name = "Paul Thomas Anderson"
+# Write your code here
 </code>
 
 <solution>
@@ -31,4 +32,3 @@ puts short_name
 </codeblock>
 
 <!--  -->
-

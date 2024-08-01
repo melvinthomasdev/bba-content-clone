@@ -15,6 +15,7 @@ line separated by commas.
 <codeblock language="ruby" type="exercise" caseSensitiveOutput="true" testMode="fixedInput">
 <code>
 cities = "chicago, miami, seattle"
+# Write your code here
 </code>
 
 <solution>

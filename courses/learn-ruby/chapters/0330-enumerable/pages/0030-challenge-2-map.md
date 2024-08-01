@@ -6,6 +6,7 @@ Don't use `puts` inside the method `greet`.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 def greet(array)
+  # Write your code here
 end
 
 puts greet(["John", "Mary", "Peter", "Bob"])

@@ -8,7 +8,7 @@ The method `marks_in_range` should filter and return the hash with only those st
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def marks_in_range(marks, upper_limit, lower_limit)
-  # write your code here
+  # Write your code here
 end
 </code>
 

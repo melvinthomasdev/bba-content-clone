@@ -33,10 +33,9 @@ their items on screen.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
-# Write code here
+# Write your code here
 </code>
 <solution>
-# Write code here
 menu = {
   appetizer: {
     spring_roll: 50,

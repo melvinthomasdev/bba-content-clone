@@ -10,6 +10,7 @@ You need to use four return statements to accomplish this task.
 <code>
 class GradeAssigner
   def grade(score)
+    # Write your code here
   end
 end
 

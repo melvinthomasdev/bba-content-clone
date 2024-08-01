@@ -11,7 +11,7 @@ Given a coded message `message` and a key, the method should decipher the code a
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def enigma_function(message, key)
-  # write your code here
+  # Write your code here
 end
 </code>
 

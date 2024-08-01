@@ -7,7 +7,7 @@ Each hash in the array `expenses` has two keys "spent_on" and "amount".
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def total_expense(expenses)
-  # write your code here
+  # Write your code here
 end
 </code>
 

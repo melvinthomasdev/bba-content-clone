@@ -7,7 +7,7 @@ Note: If `arr` does not contain any element, the method should return `0`.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def sum_extremes(arr)
-  # write your code here
+  # Write your code here
 end
 </code>
 

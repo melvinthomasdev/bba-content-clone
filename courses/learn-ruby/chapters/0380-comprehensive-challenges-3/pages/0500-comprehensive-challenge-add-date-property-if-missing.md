@@ -9,7 +9,7 @@ Note: Try using Logical nullish assignment.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def add_missing_property(vacation_details, day, year)
-  # write your code here
+  # Write your code here
 end
 </code>
 

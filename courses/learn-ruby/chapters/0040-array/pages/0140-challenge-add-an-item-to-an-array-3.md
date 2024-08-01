@@ -7,7 +7,7 @@ the uppercase version of these strings.
 names = ["john", "mary", "michael"]
 upcased_names = []
 
-# write your code here
+# Write your code here
 
 puts upcased_names
 </code>

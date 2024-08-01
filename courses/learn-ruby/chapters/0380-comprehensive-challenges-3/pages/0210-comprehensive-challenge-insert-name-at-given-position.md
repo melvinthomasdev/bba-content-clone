@@ -7,7 +7,7 @@ The method should return the updated array.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def insert_user(users, user, index)
-  # write your code here
+  # Write your code here
 end
 </code>
 

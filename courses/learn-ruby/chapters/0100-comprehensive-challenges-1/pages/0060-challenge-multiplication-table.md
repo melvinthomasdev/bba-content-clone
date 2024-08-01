@@ -20,7 +20,7 @@ You are allowed to have only one `puts` in the whole program.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
-# Print multiplication table of 6
+# Write your code here
 </code>
 
 <solution>

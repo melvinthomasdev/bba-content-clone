@@ -5,7 +5,7 @@ print each value.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
-# Create a range from 35 to 45 and print each value
+# Write your code here
 </code>
 
 <solution>

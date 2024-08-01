@@ -7,7 +7,7 @@ For example, given `3670` as input, the output should be `1:1:10`. This is becau
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def format_elapsed_seconds(elapsed_seconds)
-  # write your code here
+  # Write your code here
 end
 </code>
 

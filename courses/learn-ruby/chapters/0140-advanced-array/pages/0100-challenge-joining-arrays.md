@@ -17,15 +17,12 @@ Output:
 <code>
 arrayOne = [true, false]
 arrayTwo = [nil, "hello"]
-
-# Write code below this line
-
+# Write your code here
 </code>
 <solution>
 arrayOne = [true, false]
 arrayTwo = [nil, "hello"]
 
-# Write code below this line
 puts arrayOne + arrayTwo
 
 </solution>

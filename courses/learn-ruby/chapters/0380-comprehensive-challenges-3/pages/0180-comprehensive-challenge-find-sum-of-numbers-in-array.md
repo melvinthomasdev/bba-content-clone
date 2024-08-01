@@ -5,7 +5,7 @@ The method should return the sum of numbers in the array `list`. If the array `l
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def sum(list)
-  # write your code here
+  # Write your code here
 end
 </code>
 

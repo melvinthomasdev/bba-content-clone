@@ -9,7 +9,7 @@ Given `locations`, the method should return a unique list of disease names that 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def other_diseases(locations)
-  # write your code here
+  # Write your code here
 end
 </code>
 

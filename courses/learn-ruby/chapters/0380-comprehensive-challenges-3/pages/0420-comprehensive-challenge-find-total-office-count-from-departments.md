@@ -8,7 +8,7 @@ Given `department_count`, the method should return the total number of people in
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def office_strength(department_count)
-  # write your code here
+  # Write your code here
 end
 </code>
 

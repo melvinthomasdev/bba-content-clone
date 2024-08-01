@@ -14,6 +14,7 @@ The result should look like this:
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 cities = %w(Boston Chicago Seattle)
+# Write your code here
 </code>
 
 <solution>

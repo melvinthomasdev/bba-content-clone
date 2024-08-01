@@ -5,7 +5,7 @@ Check whether a given key `property` does exist in the hash `obj` and return `tr
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def property_exists?(obj, property)
-  # write your code here
+  # Write your code here
 end
 </code>
 

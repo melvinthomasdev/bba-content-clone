@@ -6,6 +6,7 @@ in the following way:
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 sports_i_like = ["basketball", "tennis", "hockey"]
+# Write your code here
 </code>
 
 <solution>

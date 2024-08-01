@@ -13,7 +13,7 @@ Note:
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def full_name(person)
-  # write your code here
+  # Write your code here
 end
 </code>
 

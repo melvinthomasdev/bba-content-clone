@@ -4,6 +4,7 @@ From this array, get the 4th item.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 alphabets = ["A", "B", "F", "K", "L", "O", "T"]
+# Write your code here
 </code>
 
 <solution>

@@ -5,7 +5,7 @@ Finish the method definition below.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def get_property(object, property)
-  # write your code here
+  # Write your code here
 end
 </code>
 

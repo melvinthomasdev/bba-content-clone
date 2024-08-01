@@ -3,7 +3,7 @@ You are allowed to use `puts` only once.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
-# Print “I love sports” 4 times.
+# Write your code here
 </code>
 
 <solution>

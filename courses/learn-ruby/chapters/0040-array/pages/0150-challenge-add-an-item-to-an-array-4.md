@@ -7,7 +7,7 @@ reverse of each of these strings.
 names = ["john", "mary", "michael"]
 reversed_names = []
 
-# write your code here
+# Write your code here
 
 puts reversed_names
 </code>

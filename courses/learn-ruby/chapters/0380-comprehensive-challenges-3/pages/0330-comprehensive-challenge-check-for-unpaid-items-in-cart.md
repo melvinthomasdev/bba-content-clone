@@ -6,7 +6,7 @@ Finish the method definition below.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def check_cart(cart)
-  # write your code here
+  # Write your code here
 end
 </code>
 

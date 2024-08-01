@@ -5,7 +5,7 @@ Given a number `n`, the method should return the sum of all odd numbers from 1 t
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def sum_of_odd_numbers(n)
-  # write your code here
+  # Write your code here
 end
 </code>
 

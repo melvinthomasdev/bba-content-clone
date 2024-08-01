@@ -16,7 +16,7 @@ Note:
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def find_type(parameter_one, parameter_two)
-  # write your code here
+  # Write your code here
 end
 </code>
 

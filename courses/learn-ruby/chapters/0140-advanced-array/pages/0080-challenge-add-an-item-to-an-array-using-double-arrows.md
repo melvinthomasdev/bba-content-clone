@@ -1,12 +1,12 @@
-In the code given below, we 
+In the code given below, we
 have four arrays.
-Using double arrows, add **array2** to 
-**array1**. Similarly, using double 
-arrows, add **elements2** array to 
-**elements1** array. 
+Using double arrows, add **array2** to
+**array1**. Similarly, using double
+arrows, add **elements2** array to
+**elements1** array.
 
-Display the updated **array1** and 
-**elements1** arrays on the screen, 
+Display the updated **array1** and
+**elements1** arrays on the screen,
 in that order.
 
 ```ruby
@@ -28,10 +28,7 @@ array2 = [4, 5, 6]
 
 elements1 = ["a", "b"]
 elements2 = ["c", "d", "e"]
-
-# Write code below this line
-
-# Write code above this line
+# Write your code here
 </code>
 <solution>
 array1 = [1, 2, 3]
@@ -40,13 +37,10 @@ array2 = [4, 5, 6]
 elements1 = ["a", "b"]
 elements2 = ["c", "d", "e"]
 
-# Write code below this line
-
 array1 << array2
 elements1 << elements2
 
 puts array1
 puts elements1
-# Write code above this line
 </solution>
 </codeblock>

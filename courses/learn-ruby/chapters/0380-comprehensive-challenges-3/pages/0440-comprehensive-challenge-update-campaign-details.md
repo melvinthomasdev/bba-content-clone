@@ -7,7 +7,7 @@ Given `campaign_details`, `new_locations` and `completed_location_id`, the metho
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def update_campaign_details(campaign_details, completed_locations_id, new_locations)
-  # write your code here
+  # Write your code here
 end
 </code>
 

@@ -5,7 +5,7 @@ The method should return the sum of all the numbers that are passed as input to 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def sum()
-  # write your code here
+  # Write your code here
 end
 </code>
 

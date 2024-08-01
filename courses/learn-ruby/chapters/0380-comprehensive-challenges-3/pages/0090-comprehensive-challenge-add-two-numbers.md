@@ -8,7 +8,7 @@ Note: `add` should return the result even if the inputs passed are strings.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def add(x, y)
-  # write your code here
+  # Write your code here
 end
 </code>
 

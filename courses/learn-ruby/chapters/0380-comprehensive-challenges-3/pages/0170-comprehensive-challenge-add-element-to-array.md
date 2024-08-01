@@ -5,7 +5,7 @@ Add the given element `value` to array `list` only if it doesn't already exist i
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def add_to_list(list, value)
-  # write your code here
+  # Write your code here
 end
 </code>
 

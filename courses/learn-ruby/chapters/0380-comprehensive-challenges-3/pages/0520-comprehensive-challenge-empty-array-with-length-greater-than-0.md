@@ -5,7 +5,7 @@ Return an array without any values, but of a given length `length`.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def create_array(length)
-  # write your code here
+  # Write your code here
 end
 </code>
 

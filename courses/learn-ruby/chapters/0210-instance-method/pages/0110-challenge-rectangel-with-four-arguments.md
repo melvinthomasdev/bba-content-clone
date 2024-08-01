@@ -10,7 +10,7 @@ class Rectangle
 end
 
 rectangle = Rectangle.new
-rectangle.info(10,20,30, 32)
+rectangle.info(10,20,30,32)
 </code>
 
 <solution>

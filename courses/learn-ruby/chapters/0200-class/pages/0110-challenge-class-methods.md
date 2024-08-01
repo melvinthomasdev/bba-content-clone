@@ -11,10 +11,9 @@ output on the screen.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
-# Write code here
+# Write your code here
 </code>
 <solution>
-# Write code here
 class Number
   def self.addition (num1, num2)
     num1 + num2

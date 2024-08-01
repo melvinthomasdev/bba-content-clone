@@ -7,7 +7,7 @@ Note: if value of `marker` is not provided, `split_string` should return `str` s
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def split_string(str, marker = nil)
-  # write your code here
+  # Write your code here
 end
 </code>
 

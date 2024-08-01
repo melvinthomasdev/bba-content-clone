@@ -23,7 +23,7 @@ The method should then return a new hash containing both `employee_details_at_jo
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def update_employee_details(employee_details_at_joining)
- # write your code here
+ # Write your code here
 end
 </code>
 

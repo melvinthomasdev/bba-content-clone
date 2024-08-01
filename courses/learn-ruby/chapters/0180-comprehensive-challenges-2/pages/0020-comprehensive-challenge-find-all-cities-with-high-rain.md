@@ -16,8 +16,8 @@ find names of all the cities
 where it rained for more
 than 100 days.
 
-Then, display the result 
-on the screen. 
+Then, display the result
+on the screen.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
@@ -29,6 +29,7 @@ data = {
   Boston: 126,
   Dallas: 81
 }
+# Write your code here
 </code>
 
 <solution>

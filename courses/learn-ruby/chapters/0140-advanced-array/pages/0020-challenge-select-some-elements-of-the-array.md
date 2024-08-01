@@ -4,6 +4,7 @@ city names that start with "L".
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 cities = ["Paris", "London", "Los Angeles", "Chicago"]
+# Write your code here
 </code>
 
 <solution>

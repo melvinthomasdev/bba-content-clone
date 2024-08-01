@@ -7,7 +7,7 @@ Given `word` and `sample_dictionary`, the method should return the original word
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def solve_jumble_words(word, sample_dictionary)
-  # write your code here
+  # Write your code here
 end
 </code>
 

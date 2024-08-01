@@ -6,7 +6,7 @@ Given an array of numbers `list`, and another number `divisor`, the method shoul
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def elements_divisible?(list, divisor)
-  # write your code here
+  # Write your code here
 end
 </code>
 

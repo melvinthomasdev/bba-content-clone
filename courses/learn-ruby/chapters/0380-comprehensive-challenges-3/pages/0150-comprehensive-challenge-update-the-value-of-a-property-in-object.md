@@ -5,7 +5,7 @@ Update the `value` of given key `property` in the hash `obj`. Add the key and va
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def update_object(obj, property, value)
-  # write your code here
+  # Write your code here
 end
 </code>
 

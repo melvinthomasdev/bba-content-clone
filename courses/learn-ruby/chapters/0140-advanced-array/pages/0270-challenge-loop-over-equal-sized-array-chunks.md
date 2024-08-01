@@ -1,6 +1,6 @@
-Write a program to calculate the sum of elements in 
-each slice of an array. Use the `each_slice` method to 
-iterate over the array in groups of 3. 
+Write a program to calculate the sum of elements in
+each slice of an array. Use the `each_slice` method to
+iterate over the array in groups of 3.
 
 Display the results as follows:
 ```
@@ -12,6 +12,7 @@ Slice 3: Sum = 240
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# Write your code here
 </code>
 
 <solution>

@@ -9,6 +9,7 @@ less than 80, then print
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 score = 65
+# Write your code here
 </code>
 
 <solution>

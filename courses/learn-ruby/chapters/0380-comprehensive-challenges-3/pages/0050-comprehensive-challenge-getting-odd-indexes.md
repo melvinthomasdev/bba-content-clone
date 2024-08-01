@@ -8,7 +8,7 @@ the "Expected Output".
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def odd_indexes(arr)
-  # write your code here
+  # Write your code here
 end
 </code>
 

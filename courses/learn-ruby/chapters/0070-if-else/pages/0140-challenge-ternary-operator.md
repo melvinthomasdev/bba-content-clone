@@ -8,6 +8,7 @@ solve this problem.
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
 name = "Mary"
+# Write your code here
 </code>
 
 <solution>

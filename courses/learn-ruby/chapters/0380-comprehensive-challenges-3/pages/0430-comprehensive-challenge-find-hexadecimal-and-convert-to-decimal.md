@@ -5,7 +5,7 @@ Finish the method definition below.
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def find_hex_number(value)
-  # write your code here
+  # Write your code here
 end
 </code>
 

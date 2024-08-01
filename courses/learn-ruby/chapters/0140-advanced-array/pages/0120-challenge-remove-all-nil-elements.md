@@ -1,5 +1,5 @@
-We have three arrays. Remove the **nil** 
-elements from each of these arrays. Also, 
+We have three arrays. Remove the **nil**
+elements from each of these arrays. Also,
 display these arrays on the screen.
 
 For example:
@@ -16,21 +16,15 @@ Output:
 input_array1 = [1, nil, 2, nil, 3, 4, nil, 5]
 input_array2 = [nil, nil, nil, 10, 20, 30]
 input_array3 = [nil, "hello", nil, "world", nil]
-
-# Write code below this line
-
-
+# Write your code here
 </code>
 <solution>
 input_array1 = [1, nil, 2, nil, 3, 4, nil, 5]
 input_array2 = [nil, nil, nil, 10, 20, 30]
 input_array3 = [nil, "hello", nil, "world", nil]
 
-# Write code below this line
 puts input_array1.compact
 puts input_array2.compact
 puts input_array3.compact
-
-
 </solution>
 </codeblock>

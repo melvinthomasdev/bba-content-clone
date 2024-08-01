@@ -6,7 +6,7 @@ range of 60 to 90.
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
-# find if value 78 is within the range of 60 to 90.
+# Write your code here
 </code>
 
 <solution>

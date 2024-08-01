@@ -5,7 +5,7 @@ Given a string `sentence`, the method should return an array of all the unique v
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def find_vowels(sentence)
- # write your code here
+ # Write your code here
 end
 </code>
 

@@ -6,7 +6,7 @@ Each items in the list `users` is a hash with two keys: "name" and "vaccinated" 
 <codeblock language="ruby" type="exercise" testMode="multipleInput">
 <code>
 def vaccinated_users(users)
-  # write your code here
+  # Write your code here
 end
 </code>
 

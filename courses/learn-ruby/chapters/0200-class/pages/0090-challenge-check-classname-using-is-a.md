@@ -6,6 +6,7 @@ class Biscuitproducer
 end
 
 biscuit1 = Biscuitproducer.new
+# Write your code here
 </code>
 
 <solution>
