@@ -9,6 +9,10 @@ By pressing the **ESC** key, you can take the focus out of the editor, and using
 
 Now try running the code given below **without** using the mouse.
 
+If you are using Windows, then use **Ctrl + Shift + i** to format the code
+
+If you are using Mac, then use **Cmd + Shift + i** to format the code
+
 <codeblock language="sql" dbName="students1.db" type="lesson">
 <code>
 SELECT *
