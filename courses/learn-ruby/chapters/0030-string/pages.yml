@@ -26,8 +26,8 @@
 - title: Remove Extra Spaces in String
   slug: remove-extra-spaces-in-string
   page_type: lesson
-- title: Convert a Number Into a String
-  slug: convert-a-number-into-a-string
+- title: Convert Numbers and Arrays Into a String
+  slug: convert-numbers-and-arrays-into-a-string
   page_type: lesson
 - title: Challenge - Convert a Number into a String
   slug: challenge-convert-a-number-into-a-string
