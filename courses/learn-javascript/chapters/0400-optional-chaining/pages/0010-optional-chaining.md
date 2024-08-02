@@ -105,7 +105,7 @@ const candidate2 = {
   name: "Sam Smith"
 }
 
-const checkEligibility = candidate => candidate.education?.gpa > 8 ? true : false;
+const checkEligibility = candidate => candidate.education?.gpa > 8;
 
 console.log(checkEligibility(candidate1));
 console.log(checkEligibility(candidate2));
@@ -138,7 +138,7 @@ const candidate2 = {
 
 const candidate3 = null;
 
-const checkEligibility = candidate => candidate?.education?.gpa > 8 ? true : false;
+const checkEligibility = candidate => candidate?.education?.gpa > 8;
 
 console.log(checkEligibility(candidate1));
 console.log(checkEligibility(candidate2));

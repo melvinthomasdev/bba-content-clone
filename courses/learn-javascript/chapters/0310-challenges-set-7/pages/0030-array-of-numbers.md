@@ -32,7 +32,7 @@ const arrayOperationsNumber = arrayOfNumbers => {
 
   const evenNumbersArray = arrayOfNumbers.filter(number => number % 2 === 0);
 
-  const oddEvenArray = arrayOfNumbers.map((num) => num % 2 === 0 ? true : false);
+  const oddEvenArray = arrayOfNumbers.map((num) => num % 2 === 0);
 
   console.log(sum);
   console.log(arrayofMultiplesOfThree);
