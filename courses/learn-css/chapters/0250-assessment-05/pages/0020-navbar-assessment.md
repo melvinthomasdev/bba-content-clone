@@ -4,7 +4,7 @@ In this challenge, your task is to style a basic webpage to match the design sho
   <source src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/Navbar%20Challenge%20video_CjBTtHDPs.mp4" type="video/mp4">
 </video>
 
-<codeblock language="css" type="exercise" testMode="fixedInput" showRunCodeButton="false" >
+<codeblock language="css" type="lesson">
 <code>
 <panel language="html" >
 <div class="header">

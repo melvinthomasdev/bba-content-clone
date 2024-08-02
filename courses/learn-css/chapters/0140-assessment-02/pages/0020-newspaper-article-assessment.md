@@ -4,7 +4,7 @@ In this challenge, your task is to style the news article webpage provided below
   <source src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/Newspaper%20Challenge%20Video_1ylFlc8ie.mp4" type="video/mp4">
 </video>
 
-<codeblock language="css" type="exercise" testMode="fixedInput" showRunCodeButton="false" >
+<codeblock language="css" type="lesson">
 <code>
 <panel language="html" >
 <div class="header">

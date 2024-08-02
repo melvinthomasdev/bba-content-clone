@@ -30,11 +30,9 @@ to call it by writing the
 function's name followed
 by the `()` parentheses:
 
-<codeblock language="javascript" type="lesson" showRunCodeButton="false">
-<code>
+```javascript
 displayValidationError()
-</code>
-</codeblock>
+```
 
 This `displayValidationError()` is called
 function call or function invocation.

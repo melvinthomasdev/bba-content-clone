@@ -10,7 +10,7 @@ You will need to use this [Google font](https://fonts.google.com/specimen/Lato?p
 
 You can use the below codeblock to create the challenge:
 
-<codeblock language="css" type="exercise" testMode="fixedInput" showRunCodeButton="false" >
+<codeblock language="css" type="lesson">
 <code>
 <panel language="html" >
 <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/dog-image_X63RHWucP.png" width="400">

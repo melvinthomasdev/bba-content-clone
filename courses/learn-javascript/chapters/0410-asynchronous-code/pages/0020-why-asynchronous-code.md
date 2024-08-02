@@ -1,12 +1,10 @@
 Let's look at an example:
 
-<codeblock language="javascript" type="lesson" showRunCodeButton="false">
-<code>
+```javascript
 console.log("Hello");
 searchOnGoogle("Learn Javascript");
 console.log("Hi");
-</code>
-</codeblock>
+```
 
 This is what happens in the example given above:
 

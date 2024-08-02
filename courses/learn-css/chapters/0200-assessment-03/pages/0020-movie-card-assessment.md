@@ -7,7 +7,7 @@ In this challenge, your task is to style the movie showcase webpage provided bel
 <img width="700" src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/MovieCardChallengeImage_jSZIsxan-.png" alt="movie card challenge image">
 
 
-<codeblock language="css" type="exercise" testMode="fixedInput" showRunCodeButton="false" >
+<codeblock language="css" type="lesson">
 <code>
 <panel language="html" >
 <div class="container">
