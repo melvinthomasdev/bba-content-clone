@@ -1,29 +1,44 @@
-Given an input `count`, increment the same by 1 and add it to itself. Continue the same till the count value reaches the maximum count. The function should return the final sum.
+We have a function **incrementCount**.
+It takes two arguments, **count**
+and **maximumCount**.
 
-1. The count should increment at least once irrespective of the maximum count.
-2. Do **NOT** use `do..while` or any other looping constructs. Use higher-order functions like `map`, `filter`, etc.
-3. Order matters: You need to first increment count, and then get the sum.
+Increment the **count** value by 1
+and add it to itself.
 
-```
-( ie, for (count = 2, maxCount = 12): 2 + 1 = 3; 2 + 3 = 5;)
-```
+Keep doing this as many
+times as possible, ensuring that
+the value of **count** stays smaller
+than **maximumCount**.
+The function should
+return the final sum.
 
-<codeblock language="javascript" type="exercise" testMode="multipleInput" showSolution="false">
+1. The **count** should
+increment at least once
+irrespective of the
+**maximumCount** value.
+
+2. Do **NOT** use loops.
+Use higher-order functions
+like `map`, `filter`, etc.
+
+3. **Order matters**: You need
+to first increment the value of count,
+and
+then add it to itself.
+
+<codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 const incrementCount = ({ count, maximumCount }) => {
-  // your code here
-  // Refer: https://stackoverflow.com/a/20066663
+  // Write code below this line
 }
 </code>
 
 <solution>
-// Refer: https://stackoverflow.com/a/20066663
 const incrementCount = ({ count, maximumCount }) => {
-  const iterations = Math.max(maximumCount - count, 1);
-  return Array.apply(null, { length: iterations }).reduce(totalSum => {
-    count++;
-    return totalSum + count;
-  }, 0);
+  // Write code below this line
+  const numberOfIncrements = Math.max(maximumCount - count, 1);
+  const incrementedValues = Array.from({ length: numberOfIncrements }, (val, index) => count + index + 1);
+  return incrementedValues.reduce((sum, value) => sum + value, 0);
 };
 </solution>
 
