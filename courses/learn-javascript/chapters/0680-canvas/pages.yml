@@ -19,3 +19,45 @@
 - title: Challenge - Context
   slug: challenge-context
   page_type: exercise
+- title: Create a Filled Rectangle
+  slug: create-a-filled-rectangle
+  page_type: lesson
+- title: Challenge - Create a Filled Rectangle
+  slug: challenge-create-a-filled-rectangle
+  page_type: exercise
+- title: Add Color to a Filled Rectangle
+  slug: add-color-to-a-filled-rectangle
+  page_type: lesson
+- title: Challenge - Create a Filled Rectangle
+  slug: challenge-02-create-a-filled-rectangle
+  page_type: exercise
+- title: Challenge - Create a Filled Rectangle
+  slug: challenge-03-create-a-filled-rectangle
+  page_type: exercise
+- title: Create An Empty Rectangle
+  slug: create-an-empty-rectangle
+  page_type: lesson
+- title: Challenge - Create an Empty Rectangle
+  slug: challenge-create-an-empty-rectangle
+  page_type: exercise
+- title: Challenge - Create an Empty Rectangle
+  slug: challenge-02-create-an-empty-rectangle
+  page_type: exercise
+- title: Challenge - Create an Empty Rectangle
+  slug: challenge-03-create-an-empty-rectangle
+  page_type: exercise
+- title: Remove a Rectangle
+  slug: remove-a-rectangle
+  page_type: lesson
+- title: Challenge - Remove A Rectangle
+  slug: challenge-remove-a-rectangle
+  page_type: exercise
+- title: Remove a Rectangle
+  slug: remove-a-rectangle-02
+  page_type: lesson
+- title: Challenge - Remove A Rectangle
+  slug: challenge-02-remove-a-rectangle
+  page_type: exercise
+- title: Challenge - Remove A Rectangle
+  slug: challenge-03-remove-a-rectangle
+  page_type: exercise
