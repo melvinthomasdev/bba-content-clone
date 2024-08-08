@@ -25,8 +25,8 @@
 - title: Challenge - Create a Filled Rectangle
   slug: challenge-create-a-filled-rectangle
   page_type: exercise
-- title: Add Color to a Filled Rectangle
-  slug: add-color-to-a-filled-rectangle
+- title: Add Colour to a Filled Rectangle
+  slug: add-colour-to-a-filled-rectangle
   page_type: lesson
 - title: Challenge - Create a Filled Rectangle
   slug: challenge-02-create-a-filled-rectangle
@@ -60,4 +60,58 @@
   page_type: exercise
 - title: Challenge - Remove A Rectangle
   slug: challenge-03-remove-a-rectangle
+  page_type: exercise
+- title: Create a Line
+  slug: create-a-line
+  page_type: lesson
+- title: Begin a Path
+  slug: begin-a-path
+  page_type: lesson
+- title: moveTo
+  slug: move-to
+  page_type: lesson
+- title: lineTo
+  slug: line-to
+  page_type: lesson
+- title: Create A Stroke
+  slug: create-a-stroke
+  page_type: lesson
+- title: Challenge - Create a Line
+  slug: challenge-create-a-line
+  page_type: exercise
+- title: Challenge - Create a Line
+  slug: challenge-02-create-a-line
+  page_type: exercise
+- title: Add a Separate Line
+  slug: add-a-separate-line
+  page_type: lesson
+- title: Challenge - Add a Separate Line
+  slug: challenge-add-a-separate-line
+  page_type: exercise
+- title: Challenge - Add a Separate Line
+  slug: challenge-02-add-a-separate-line
+  page_type: exercise
+- title: Add a Connecting Line
+  slug: add-a-connecting-line
+  page_type: lesson
+- title: Challenge - Add a Connecting Line
+  slug: challenge-add-a-connecting-line
+  page_type: exercise
+- title: Challenge - Add a Connecting Line
+  slug: challenge-02-add-a-connecting-line
+  page_type: exercise
+- title: Add a Fill
+  slug: add-a-fill
+  page_type: lesson
+- title: Challenge - Add a Fill
+  slug: challenge-add-a-fill
+  page_type: exercise
+- title: Challenge - Add a Fill
+  slug: challenge-02-add-a-fill
+  page_type: exercise
+- title: Close a Path
+  slug: close-a-path
+  page_type: lesson
+- title: Challenge - Close a Path
+  slug: challenge-close-a-path
   page_type: exercise
