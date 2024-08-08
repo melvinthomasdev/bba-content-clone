@@ -86,3 +86,18 @@
 - title: Challenge - Reverse Words in a String
   slug: challenge-reverse-words-in-a-string
   page_type: exercise
+- title: Fill Array with Elements
+  slug: fill-array-with-elements
+  page_type: lesson
+- title: Challenge - Fill Array with Elements
+  slug: challenge-fill-array-with-elements
+  page_type: exercise
+- title: Challenge - Fill Array with Elements
+  slug: challenge-02-fill-array-with-elements
+  page_type: exercise
+- title: Fill Part of the Array with Elements
+  slug: fill-part-of-array-with-elements
+  page_type: lesson
+- title: Challenge - Fill Part of the Array with Elements
+  slug: challenge-fill-part-of-array-with-elements
+  page_type: exercise
