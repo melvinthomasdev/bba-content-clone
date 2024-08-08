@@ -53,6 +53,18 @@
 - title: Challenge - Preventing Default Behaviour
   slug: challenge-preventing-default-behaviour
   page_type: exercise
+- title: Stop Listening to Events
+  slug: stop-listening-to-events
+  page_type: lesson
+- title: Challenge - Stop Listening to Events
+  slug: challenge-stop-listening-to-events
+  page_type: exercise
+- title: Stop Listening to Events
+  slug: stop-listening-to-events-02
+  page_type: lesson
+- title: Challenge - Stop Listening to Events
+  slug: challenge-stop-listening-to-events-02
+  page_type: exercise
 - title: Assessment - HTML DOM Manipulation
   slug: assessment-html-dom-manipulation
   page_type: exercise
