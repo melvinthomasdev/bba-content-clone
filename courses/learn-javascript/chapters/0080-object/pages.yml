@@ -20,15 +20,6 @@
 - title: Challenge 2 - Get Object Values - Dot Notation
   slug: challenge-2-get-object-values-dot-notation
   page_type: exercise
-- title: Get Object Values - Bracket Notation
-  slug: get-object-values-bracket-notation
-  page_type: lesson
-- title: Challenge - Get Object Values - Bracket Notation
-  slug: challenge-get-object-values-bracket-notation
-  page_type: exercise
-- title: Challenge 2 - Get Object Values - Bracket Notation
-  slug: challenge-2-get-object-values-bracket-notation
-  page_type: exercise
 - title: Add Object Property using Dot Notation
   slug: add-object-property-using-dot-notation
   page_type: lesson
@@ -38,15 +29,6 @@
 - title: Challenge 2 - Add Object Property using Dot Notation
   slug: challenge-2-add-object-property-using-dot-notation
   page_type: exercise
-- title: Add Object Property using Bracket Notation
-  slug: add-object-property-using-bracket-notation
-  page_type: lesson
-- title: Challenge - Add Object Property using Bracket Notation
-  slug: challenge-add-object-property-using-bracket-notation
-  page_type: exercise
-- title: Challenge 2 - Add Object Property using Bracket Notation
-  slug: challenge-2-add-object-property-using-bracket-notation
-  page_type: exercise
 - title: Update Object Property using Dot Notation
   slug: update-object-property-using-dot-notation
   page_type: lesson
@@ -55,6 +37,24 @@
   page_type: exercise
 - title: Challenge 2 - Update Object Property using Dot Notation
   slug: challenge-2-update-object-property-using-dot-notation
+  page_type: exercise
+- title: Get Object Values - Bracket Notation
+  slug: get-object-values-bracket-notation
+  page_type: lesson
+- title: Challenge - Get Object Values - Bracket Notation
+  slug: challenge-get-object-values-bracket-notation
+  page_type: exercise
+- title: Challenge 2 - Get Object Values - Bracket Notation
+  slug: challenge-2-get-object-values-bracket-notation
+  page_type: exercise
+- title: Add Object Property using Bracket Notation
+  slug: add-object-property-using-bracket-notation
+  page_type: lesson
+- title: Challenge - Add Object Property using Bracket Notation
+  slug: challenge-add-object-property-using-bracket-notation
+  page_type: exercise
+- title: Challenge 2 - Add Object Property using Bracket Notation
+  slug: challenge-2-add-object-property-using-bracket-notation
   page_type: exercise
 - title: Update Object Property using Bracket Notation
   slug: update-object-property-using-bracket-notation
