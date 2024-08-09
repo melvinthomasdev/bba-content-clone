@@ -50,3 +50,18 @@
 - title: Challenge - nth of Type
   slug: challenge-nth-of-type
   page_type: exercise
+- title: Not() Pseudo Class
+  slug: not-pseudo-class
+  page_type: lesson
+- title: Challenge - Not() Pseudo Class
+  slug: challenge-not-pseudo-class
+  page_type: exercise
+- title: Difference Between Pseudo-class & Pseudo-element
+  slug: pseudo-class-pseudo-element-difference
+  page_type: lesson
+- title: Difference Between Pseudo-class & Pseudo-element
+  slug: pseudo-class-pseudo-element-difference-02
+  page_type: lesson
+- title: Difference Between Pseudo-class & Pseudo-element
+  slug: pseudo-class-pseudo-element-difference-03
+  page_type: lesson
