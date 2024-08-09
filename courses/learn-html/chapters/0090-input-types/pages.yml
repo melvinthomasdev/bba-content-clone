@@ -98,6 +98,12 @@
 - title: Challenge - Input Type - Color
   slug: challenge-input-type-color
   page_type: exercise
+- title: Input For Attribute
+  slug: input-for-attribute
+  page_type: lesson
+- title: Challenge - Input For Attribute
+  slug: challenge-input-for-attribute
+  page_type: exercise
 - title: Assessment - Form
   slug: assessment-form
   page_type: exercise
