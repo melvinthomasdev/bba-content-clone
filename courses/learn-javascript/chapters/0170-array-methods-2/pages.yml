@@ -35,6 +35,21 @@
 - title: Challenge - Array Tripled
   slug: challenge-array-tripled
   page_type: exercise
+- title: Create Arrays from array-like objects
+  slug: array-from-array-like-objects
+  page_type: lesson
+- title: Create Arrays from array-like objects
+  slug: array-from-array-like-objects-02
+  page_type: lesson
+- title: Create Arrays from array-like objects
+  slug: array-from-array-like-objects-03
+  page_type: lesson
+- title: Create Arrays from array-like objects
+  slug: array-from-array-like-objects-04
+  page_type: lesson
+- title: Challenge - Create Arrays from array-like objects
+  slug: challenge-array-from-array-like-objects
+  page_type: exercise
 - title: Challenge - Text Processing
   slug: challenge-text-processing
   page_type: exercise
