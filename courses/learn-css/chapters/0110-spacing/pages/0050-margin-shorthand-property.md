@@ -13,10 +13,13 @@ separated by spaces:
 margin: 10px 20px 30px 40px;
 ```
 
-`10px` is top margin
-`20px` is right margin
-`30px` is bottom margin
-`40px` is left margin
+`10px` is top margin.
+
+`20px` is right margin.
+
+`30px` is bottom margin.
+
+`40px` is left margin.
 
 Values get assigned in the clockwise direction starting from the top.
 
@@ -47,9 +50,11 @@ If this property has three values:
 margin: 10px 20px 30px;
 ```
 
-`10px` is top margin<br>
-`20px` is right margin as well as the left margin<br>
-`30px` is bottom margin
+`10px` is top margin.
+
+`20px` is right margin as well as the left margin.
+
+`30px` is bottom margin.
 
 <codeblock language="css" type="lesson">
 <code>
@@ -78,8 +83,9 @@ If this property has two values:
 margin: 10px 20px;
 ```
 
-`10px` is top and bottom margin<br>
-`20px` is right and left margin
+`10px` is top and bottom margin.
+
+`20px` is right and left margin.
 
 <codeblock language="css" type="lesson">
 <code>

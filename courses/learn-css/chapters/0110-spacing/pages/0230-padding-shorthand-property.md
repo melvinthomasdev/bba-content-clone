@@ -13,10 +13,13 @@ separated by spaces:
 padding: 10px 20px 30px 40px;
 ```
 
-`10px` is top padding
-`20px` is right padding
-`30px` is bottom padding
-`40px` is left padding
+`10px` is top padding.
+
+`20px` is right padding.
+
+`30px` is bottom padding.
+
+`40px` is left padding.
 
 The values get assigned in clockwise direction starting from the top.
 
@@ -44,9 +47,11 @@ If this property has three values:
 padding: 10px 20px 30px;
 ```
 
-`10px` is top padding
-`20px` is right and left padding
-`30px` is bottom padding
+`10px` is top padding.
+
+`20px` is right and left padding.
+
+`30px` is bottom padding.
 
 <codeblock language="css" type="lesson">
 <code>
@@ -100,7 +105,7 @@ If this property has only one value:
 padding: 10px;
 ```
 
-All four padding values are `10px`
+All four padding values are `10px`.
 
 <codeblock language="css" type="lesson">
 <code>
