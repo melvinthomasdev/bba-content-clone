@@ -1,5 +1,9 @@
-Use the `slice()` method to extract a substring from index **4** to **10** of the value of `email`,
+Use the `slice()` method
+to extract a substring from
+index **4** to **12** of
+the value of `email`,
 both inclusive.
+
 Store the substring in `organization`.
 
 For example:
