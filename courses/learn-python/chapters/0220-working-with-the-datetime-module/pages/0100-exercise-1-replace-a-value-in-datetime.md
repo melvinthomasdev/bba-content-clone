@@ -5,7 +5,7 @@ Help him add this functionality using `datetime.replace()`.
 The value to be changed is given in `updated_year`.
 
 
-<codeblock language="python" type="exercise" testMode="fixedInput">
+<codeblock language="python" type="exercise" testMode="fixedInput" cache="false">
 <code>
 # Update the year of independence_day
 # Print the text given above once done.

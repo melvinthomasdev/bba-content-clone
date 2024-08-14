@@ -7,14 +7,14 @@ Example: The current date is 24 Feb 2022 and the time is 09:22 AM**.**
 Use formatting codes to implement the same.
 
 
-<codeblock language="python" type="exercise" testMode="fixedInput">
+<codeblock language="python" type="exercise" testMode="fixedInput"  cache="false">
 <code>
 # Print the current date and time in the format **The current date is dd MMM yyyy and the time is hh:mm AM/PM.** using format codes
 
 from datetime import datetime
 today = datetime.now()
 
-# change the following line to accomodate format codes
+# change the following line to accommodate format codes
 print(f"The current date is dd MMM yyyy and the time is hh:mm AM/PM.")
 </code>
 
@@ -45,8 +45,3 @@ These are some of the format codes present in Python:
 | %M   | minute of the hour     | 30       |
 | %S   | second of the minute   | 40       |
 | %p   | AM/PM                  | PM       |
-
-
-
-
-

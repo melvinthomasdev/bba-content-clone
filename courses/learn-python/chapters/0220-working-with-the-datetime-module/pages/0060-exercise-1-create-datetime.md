@@ -5,7 +5,7 @@ Help him create a `datetime` object with the given date and time so that he can 
 Example: Setting the travel destination date to 15 August 1947.
 
 
-<codeblock language="python" type="exercise" testMode="fixedInput">
+<codeblock language="python" type="exercise" testMode="fixedInput" cache="false">
 <code>
 # Create datetime object using the following details
 # Print the text given above with the datetime object
