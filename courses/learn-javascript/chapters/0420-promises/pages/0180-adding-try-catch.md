@@ -69,7 +69,7 @@ initiateRocketLaunch();
 
 In the above example, we've wrapped the code inside the async function in a `try...catch` block. If any of the promises inside the async function reject, the error will be caught by the `catch` block and logged to the console.
 
-Remember the `finally` method we learned about in the [finally lesson](https://courses.bigbinaryacademy.com/learn-intermediate-javascript/promises/finally-method)? Similarly, in `try...catch` we have `finally` block. The `finally` block will run regardless of whether the promises inside the async function are fulfilled or rejected. Let's add `finally` block to the code above.
+Remember the `finally` method we learned about in the [finally lesson](https://courses.bigbinaryacademy.com/learn-javascript/promises/finally-method/)? Similarly, in `try...catch` we have `finally` block. The `finally` block will run regardless of whether the promises inside the async function are fulfilled or rejected. Let's add `finally` block to the code above.
 
 <codeblock language="javascript" type="lesson" foldLines="1-44">
 <code>
@@ -105,7 +105,7 @@ const performPreLaunchChecks = () =>
     }, 1000);
   });
 
-const launchRocket = () =>  
+const launchRocket = () =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
       const launchSuccess = false;

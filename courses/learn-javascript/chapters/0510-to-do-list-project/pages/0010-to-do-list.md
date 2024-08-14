@@ -1,7 +1,4 @@
-Congratulations for having reached the end of
-our Intermediate CSS course.
-
-If you've come this far, we are
+Congratulations for having reached this far, we are
 so happy for you 😃. Let's put all this knowledge
 to test and build a to-do list.
 

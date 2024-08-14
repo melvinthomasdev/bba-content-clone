@@ -32,7 +32,7 @@ console.log(getTaskFromCommand(testCommand, testKeyword));
 </caller>
 <testcase>
 <i>
-let testCommand = "Yeah, let me set the reminder. Hey Google remind me to create the JavaScript Intermediate Challenge.";
+let testCommand = "Yeah, let me set the reminder. Hey Google remind me to create the Intermediate JavaScript Challenge.";
 let testKeyword = "Hey Google";
 </i>
 </testcase>

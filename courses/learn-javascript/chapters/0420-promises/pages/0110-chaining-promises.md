@@ -1,6 +1,6 @@
-In the last lesson we learned how to handle promises once they're fulfilled or rejected. In this lesson we'll learn how to chain promises together.
+In the last lesson, we learned how to handle promises once they're fulfilled or rejected. In this lesson, we'll learn how to chain promises together.
 
-For this lets take the same example of launching a rocket. We'll use the same functions we created in the [callback hell lesson](https://courses.bigbinaryacademy.com/learn-intermediate-javascript/promises/callback-hell), but this time we'll wrap them in promises and chain them together instead of using callbacks.
+For this, let's take the same example of launching a rocket. We'll use the same functions we created in the [callback hell lesson](https://courses.bigbinaryacademy.com/learn-javascript/promises/callback-hell/). But this time, we'll wrap them in promises and chain them together instead of using callbacks.
 
 <codeblock language="javascript" type="lesson">
 <code>
