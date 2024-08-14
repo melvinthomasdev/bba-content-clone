@@ -15,10 +15,10 @@ Take a look at this example:
   <canvas id="new-canvas" width="400px" height="100px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-    const canvas = document.getElementById('new-canvas');
-    const canvasContext = canvas.getContext('2d');
-    canvasContext.fillStyle = 'crimson';
-    canvasContext.fillRect(10, 10, 380, 80);
+const canvas = document.getElementById('new-canvas');
+const canvasContext = canvas.getContext('2d');
+canvasContext.fillStyle = 'crimson';
+canvasContext.fillRect(10, 10, 380, 80);
 </panel>
 </code>
 </codeblock>

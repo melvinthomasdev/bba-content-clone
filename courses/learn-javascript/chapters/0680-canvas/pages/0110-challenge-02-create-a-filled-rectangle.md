@@ -19,21 +19,21 @@ details:
   <canvas id="new-canvas" width="400px" height="100px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-    const freshCanvas = document.getElementById('new-canvas');
-    const newContext = freshCanvas.getContext('2d');
-    newContext.fillStyle = 'darkseagreen';
-    // Write your code below this line
+const freshCanvas = document.getElementById('new-canvas');
+const newContext = freshCanvas.getContext('2d');
+newContext.fillStyle = 'darkseagreen';
+// Write your code below this line
 
 </panel>
 </code>
 
 <solution>
-    const freshCanvas = document.getElementById('new-canvas');
-    const newContext = freshCanvas.getContext('2d');
-    newContext.fillStyle = 'darkseagreen';
-    // Write your code below this line
+const freshCanvas = document.getElementById('new-canvas');
+const newContext = freshCanvas.getContext('2d');
+newContext.fillStyle = 'darkseagreen';
+// Write your code below this line
 
-    newContext.fillRect(10, 50, 100, 100);
-    newContext.fillRect(5, 5, 25, 25);
+newContext.fillRect(10, 50, 100, 100);
+newContext.fillRect(5, 5, 25, 25);
 </solution>
 </codeblock>

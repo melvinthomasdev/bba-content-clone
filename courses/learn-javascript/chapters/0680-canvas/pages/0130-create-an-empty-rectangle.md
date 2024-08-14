@@ -10,10 +10,10 @@ Take a look at this example:
   <canvas id="new-canvas" width="400px" height="100px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-    const canvas = document.getElementById('new-canvas');
-    const canvasContext = canvas.getContext('2d');
+const canvas = document.getElementById('new-canvas');
+const canvasContext = canvas.getContext('2d');
 
-    canvasContext.strokeRect(30, 25, 50, 100);
+canvasContext.strokeRect(30, 25, 50, 100);
 
 </panel>
 </code>

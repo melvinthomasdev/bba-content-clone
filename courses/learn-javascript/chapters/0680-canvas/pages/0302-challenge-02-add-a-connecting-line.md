@@ -17,29 +17,29 @@ Line 3
   <canvas id="new-canvas" width="400px" height="300px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-  const newCanvas = document.getElementById('new-canvas');
-  const newContext = newCanvas.getContext('2d');
-  newContext.fillStyle = 'peachpuff';
-  newContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
-  // Write your code below this line
+const newCanvas = document.getElementById('new-canvas');
+const newContext = newCanvas.getContext('2d');
+newContext.fillStyle = 'peachpuff';
+newContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
+// Write your code below this line
 
 </panel>
 </code>
 
 <solution>
-  const newCanvas = document.getElementById('new-canvas');
-  const newContext = newCanvas.getContext('2d');
-  newContext.fillStyle = 'peachpuff';
-  newContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
-  // Write your code below this line
+const newCanvas = document.getElementById('new-canvas');
+const newContext = newCanvas.getContext('2d');
+newContext.fillStyle = 'peachpuff';
+newContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
+// Write your code below this line
 
-  newContext.beginPath();
+newContext.beginPath();
 
-  newContext.moveTo(30, 60);
-  newContext.lineTo(180, 90);
-  newContext.lineTo(120, 200);
-  newContext.lineTo(220, 200);
+newContext.moveTo(30, 60);
+newContext.lineTo(180, 90);
+newContext.lineTo(120, 200);
+newContext.lineTo(220, 200);
 
-  newContext.stroke();
+newContext.stroke();
 </solution>
 </codeblock>

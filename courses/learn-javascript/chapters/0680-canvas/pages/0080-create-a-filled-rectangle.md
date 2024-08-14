@@ -9,10 +9,10 @@ Take a look at this example:
   <canvas id="new-canvas" width="400px" height="100px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-  const canvas = document.getElementById('new-canvas');
-  const canvasContext = canvas.getContext('2d');
+const canvas = document.getElementById('new-canvas');
+const canvasContext = canvas.getContext('2d');
 
-  canvasContext.fillRect(10, 10, 300, 50);
+canvasContext.fillRect(10, 10, 300, 50);
 </panel>
 </code>
 </codeblock>

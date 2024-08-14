@@ -13,16 +13,16 @@ we are creating a shape.
   <canvas id="new-canvas" width="400px" height="100px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-  const canvas = document.getElementById('new-canvas');
-  const canvasContext = canvas.getContext('2d');
+const canvas = document.getElementById('new-canvas');
+const canvasContext = canvas.getContext('2d');
 
-  canvasContext.beginPath();
+canvasContext.beginPath();
 
-  canvasContext.moveTo(20, 20);
-  canvasContext.lineTo(200, 50);
-  canvasContext.lineTo(325, 10);
+canvasContext.moveTo(20, 20);
+canvasContext.lineTo(200, 50);
+canvasContext.lineTo(325, 10);
 
-  canvasContext.stroke();
+canvasContext.stroke();
 </panel>
 </code>
 </codeblock>
@@ -43,18 +43,18 @@ a closed shape.
   <canvas id="new-canvas" width="400px" height="100px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-  const canvas = document.getElementById('new-canvas');
-  const canvasContext = canvas.getContext('2d');
+const canvas = document.getElementById('new-canvas');
+const canvasContext = canvas.getContext('2d');
 
-  canvasContext.beginPath();
+canvasContext.beginPath();
 
-  canvasContext.moveTo(0, 0);
-  canvasContext.lineTo(100, 50);
-  canvasContext.lineTo(300, 90);
-  canvasContext.lineTo(150, 5);
-  canvasContext.lineTo(10, 5);
+canvasContext.moveTo(0, 0);
+canvasContext.lineTo(100, 50);
+canvasContext.lineTo(300, 90);
+canvasContext.lineTo(150, 5);
+canvasContext.lineTo(10, 5);
 
-  canvasContext.stroke();
+canvasContext.stroke();
 </panel>
 </code>
 </codeblock>

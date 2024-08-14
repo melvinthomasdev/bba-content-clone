@@ -9,18 +9,18 @@ to the shape. Take a look:
   <canvas id="new-canvas" width="400px" height="100px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-  const canvas = document.getElementById('new-canvas');
-  const canvasContext = canvas.getContext('2d');
+const canvas = document.getElementById('new-canvas');
+const canvasContext = canvas.getContext('2d');
 
-  canvasContext.beginPath();
+canvasContext.beginPath();
 
-  canvasContext.moveTo(0, 0);
-  canvasContext.lineTo(400, 15);
-  canvasContext.lineTo(300, 90);
-  canvasContext.lineTo(250, 55);
-  canvasContext.lineTo(100, 95);
+canvasContext.moveTo(0, 0);
+canvasContext.lineTo(400, 15);
+canvasContext.lineTo(300, 90);
+canvasContext.lineTo(250, 55);
+canvasContext.lineTo(100, 95);
 
-  canvasContext.fill();
+canvasContext.fill();
 </panel>
 </code>
 </codeblock>
@@ -39,20 +39,20 @@ a shape, once created with
   <canvas id="new-canvas" width="400px" height="100px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-  const canvas = document.getElementById('new-canvas');
-  const canvasContext = canvas.getContext('2d');
+const canvas = document.getElementById('new-canvas');
+const canvasContext = canvas.getContext('2d');
 
-  canvasContext.beginPath();
-  canvasContext.moveTo(250, 10);
-  canvasContext.lineTo(330, 15);
-  canvasContext.lineTo(320, 90);
-  canvasContext.fill();
+canvasContext.beginPath();
+canvasContext.moveTo(250, 10);
+canvasContext.lineTo(330, 15);
+canvasContext.lineTo(320, 90);
+canvasContext.fill();
 
-  canvasContext.beginPath();
-  canvasContext.moveTo(50, 10);
-  canvasContext.lineTo(130, 15);
-  canvasContext.lineTo(120, 90);
-  canvasContext.stroke();
+canvasContext.beginPath();
+canvasContext.moveTo(50, 10);
+canvasContext.lineTo(130, 15);
+canvasContext.lineTo(120, 90);
+canvasContext.stroke();
 </panel>
 </code>
 </codeblock>

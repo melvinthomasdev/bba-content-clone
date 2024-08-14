@@ -9,17 +9,17 @@ start of the path. Take a look:
   <canvas id="new-canvas" width="400px" height="100px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-  const canvas = document.getElementById('new-canvas');
-  const canvasContext = canvas.getContext('2d');
+const canvas = document.getElementById('new-canvas');
+const canvasContext = canvas.getContext('2d');
 
-  canvasContext.beginPath();
+canvasContext.beginPath();
 
-  canvasContext.moveTo(10, 10);
-  canvasContext.lineTo(180, 10);
-  canvasContext.lineTo(380, 90);
+canvasContext.moveTo(10, 10);
+canvasContext.lineTo(180, 10);
+canvasContext.lineTo(380, 90);
 
-  canvasContext.closePath();
-  canvasContext.stroke();
+canvasContext.closePath();
+canvasContext.stroke();
 </panel>
 </code>
 </codeblock>

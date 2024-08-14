@@ -8,36 +8,36 @@ lines. Give it a black background colour.
   <canvas id="new-canvas" width="400px" height="300px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-  const newCanvas = document.getElementById('new-canvas');
-  const newContext = newCanvas.getContext('2d');
+const newCanvas = document.getElementById('new-canvas');
+const newContext = newCanvas.getContext('2d');
 
-  newContext.beginPath();
-  newContext.moveTo(30, 40);
-  newContext.lineTo(200, 60);
-  newContext.lineTo(250, 180);
-  newContext.lineTo(80, 250);
-  newContext.lineTo(30, 40);
-  newContext.stroke();
+newContext.beginPath();
+newContext.moveTo(30, 40);
+newContext.lineTo(200, 60);
+newContext.lineTo(250, 180);
+newContext.lineTo(80, 250);
+newContext.lineTo(30, 40);
+newContext.stroke();
 
-  // Write your code below this line
+// Write your code below this line
 
 </panel>
 </code>
 
 <solution>
-  const newCanvas = document.getElementById('new-canvas');
-  const newContext = newCanvas.getContext('2d');
+const newCanvas = document.getElementById('new-canvas');
+const newContext = newCanvas.getContext('2d');
 
-  newContext.beginPath();
-  newContext.moveTo(30, 40);
-  newContext.lineTo(200, 60);
-  newContext.lineTo(250, 180);
-  newContext.lineTo(80, 250);
-  newContext.lineTo(30, 40);
-  newContext.stroke();
+newContext.beginPath();
+newContext.moveTo(30, 40);
+newContext.lineTo(200, 60);
+newContext.lineTo(250, 180);
+newContext.lineTo(80, 250);
+newContext.lineTo(30, 40);
+newContext.stroke();
 
-  // Write your code below this line
+// Write your code below this line
 
-  newContext.fill();
+newContext.fill();
 </solution>
 </codeblock>

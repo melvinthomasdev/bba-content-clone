@@ -14,17 +14,17 @@ canvas.
   <canvas id="new-canvas" width="400px" height="100px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-  const canvas = document.getElementById('new-canvas');
-  const canvasContext = canvas.getContext('2d');
+const canvas = document.getElementById('new-canvas');
+const canvasContext = canvas.getContext('2d');
 
-  canvasContext.beginPath();
+canvasContext.beginPath();
 
-  canvasContext.moveTo(200, 10);
-  canvasContext.lineTo(50, 50);
-  canvasContext.moveTo(300, 10);
-  canvasContext.lineTo(310, 90);
+canvasContext.moveTo(200, 10);
+canvasContext.lineTo(50, 50);
+canvasContext.moveTo(300, 10);
+canvasContext.lineTo(310, 90);
 
-  canvasContext.stroke();
+canvasContext.stroke();
 </panel>
 </code>
 </codeblock>

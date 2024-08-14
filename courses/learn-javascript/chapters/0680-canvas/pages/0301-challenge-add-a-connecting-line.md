@@ -14,26 +14,26 @@ ends. The second line should end at
   <canvas id="new-canvas" width="400px" height="200px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-  const newCanvas = document.getElementById('new-canvas');
-  const newContext = newCanvas.getContext('2d');
-  newContext.fillStyle = 'peachpuff';
-  newContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
-  // Write your code below this line
+const newCanvas = document.getElementById('new-canvas');
+const newContext = newCanvas.getContext('2d');
+newContext.fillStyle = 'peachpuff';
+newContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
+// Write your code below this line
 
 </panel>
 </code>
 
 <solution>
-  const newCanvas = document.getElementById('new-canvas');
-  const newContext = newCanvas.getContext('2d');
-  newContext.fillStyle = 'peachpuff';
-  newContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
-  // Write your code below this line
+const newCanvas = document.getElementById('new-canvas');
+const newContext = newCanvas.getContext('2d');
+newContext.fillStyle = 'peachpuff';
+newContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
+// Write your code below this line
 
-  newContext.beginPath();
-  newContext.moveTo(0, 0);
-  newContext.lineTo(120, 155);
-  newContext.lineTo(50, 155);
-  newContext.stroke();
+newContext.beginPath();
+newContext.moveTo(0, 0);
+newContext.lineTo(120, 155);
+newContext.lineTo(50, 155);
+newContext.stroke();
 </solution>
 </codeblock>

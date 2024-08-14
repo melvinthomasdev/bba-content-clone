@@ -10,20 +10,20 @@ the `height` for this space will be **35**.
   <canvas id="new-canvas" width="400px" height="100px" style="border: 3px solid midnightblue;"></canvas>
 </panel>
 <panel language="javascript">
-  const newCanvas = document.getElementById('new-canvas');
-  const newCanvasContext = newCanvas.getContext('2d');
-  newCanvasContext.fillStyle = "olivedrab";
-  newCanvasContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
-  // Write your code below this line
+const newCanvas = document.getElementById('new-canvas');
+const newCanvasContext = newCanvas.getContext('2d');
+newCanvasContext.fillStyle = "olivedrab";
+newCanvasContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
+// Write your code below this line
 </panel>
 </code>
 
 <solution>
-  const newCanvas = document.getElementById('new-canvas');
-  const newCanvasContext = newCanvas.getContext('2d');
-  newCanvasContext.fillStyle = "olivedrab";
-  newCanvasContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
-  // Write your code below this line
-  newCanvasContext.clearRect(200, 50, 150, 35);
+const newCanvas = document.getElementById('new-canvas');
+const newCanvasContext = newCanvas.getContext('2d');
+newCanvasContext.fillStyle = "olivedrab";
+newCanvasContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
+// Write your code below this line
+newCanvasContext.clearRect(200, 50, 150, 35);
 </solution>
 </codeblock>
