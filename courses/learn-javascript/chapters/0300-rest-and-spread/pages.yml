@@ -41,3 +41,6 @@
 - title: Difference Between Rest & Spread
   slug: rest-spread-difference
   page_type: lesson
+- title: Assessment - Rest and Spread Operator
+  slug: assessment-rest-and-spread-operator
+  page_type: exercise
