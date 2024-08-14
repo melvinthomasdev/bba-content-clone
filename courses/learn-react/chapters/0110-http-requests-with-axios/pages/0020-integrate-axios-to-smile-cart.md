@@ -3,7 +3,7 @@ In this lesson, we will see how to fetch the product details using Axios in our 
 We can utilize the following API endpoint to fetch the details of a product by its slug.
 
 ```plaintext
-https://smile-cart-backend-staging.neetodeployapp.com/products/:product_slug
+https://smile-cart-backend-staging.neetodeployapp.net/products/:product_slug
 ```
 
 Throughout this lesson, we will be using `infinix-inbook-2` as `product_slug`.
@@ -23,7 +23,7 @@ We will define an async function named `fetchProduct` that will be responsible f
 ```js
 const fetchProduct = async () => {
   const response = await axios.get(
-    "https://smile-cart-backend-staging.neetodeployapp.com/products/infinix-inbook-2"
+    "https://smile-cart-backend-staging.neetodeployapp.net/products/infinix-inbook-2"
   );
   console.log("Api response", response);
 };
@@ -75,7 +75,7 @@ Here's how you can modify the `fetchProduct` to include the `try/catch` block:
 const fetchProduct = async () => {
   try {
     const response = await axios.get(
-      "https://smile-cart-backend-staging.neetodeployapp.com/products/infinix-inbook-2"
+      "https://smile-cart-backend-staging.neetodeployapp.net/products/infinix-inbook-2"
     );
     console.log("Api response", response);
   } catch (error) {
@@ -122,7 +122,7 @@ To update the `product` state with the response `data`, you can modify the `fetc
 const fetchProduct = async () => {
   try {
     const response = await axios.get(
-      "https://smile-cart-backend-staging.neetodeployapp.com/products/infinix-inbook-2"
+      "https://smile-cart-backend-staging.neetodeployapp.net/products/infinix-inbook-2"
     );
     setProduct(response.data);
   } catch (error) {
@@ -297,7 +297,7 @@ The initial value of `isLoading` is set to `true`, indicating that the product c
 const fetchProduct = async () => {
   try {
     const response = await axios.get(
-      "https://smile-cart-backend-staging.neetodeployapp.com/products/infinix-inbook-2"
+      "https://smile-cart-backend-staging.neetodeployapp.net/products/infinix-inbook-2"
     );
     setProduct(response.data);
   } catch (error) {

@@ -36,7 +36,7 @@ To get started with the project, we've set up a React app with the necessary pac
 
 # Backend APIs
 
-Given that this is a frontend course focusing on React, we've provided a set of APIs available through https://smile-cart-backend-staging.neetodeployapp.com as the backend. It supports the following endpoints:
+Given that this is a frontend course focusing on React, we've provided a set of APIs available through https://smile-cart-backend-staging.neetodeployapp.net as the backend. It supports the following endpoints:
 
 ## List products
 
@@ -44,13 +44,13 @@ To get a list of products, make a `GET` request to `/products`. By default, this
 
 The API supports searching and pagination. To search for a specific product by name, you can use the `search_term` parameter. For pagination, utilize the `page` and `page_size` parameters.
 
-Here is an example with search and pagination parameters: https://smile-cart-backend-staging.neetodeployapp.com/products?search_term=shirt&page=1&page_size=10.
+Here is an example with search and pagination parameters: https://smile-cart-backend-staging.neetodeployapp.net/products?search_term=shirt&page=1&page_size=10.
 
 ## Get product details
 
 To retrieve the details of a specific product by its slug, make a `GET` request to `/products/:slug`.
 
-Example: https://smile-cart-backend-staging.neetodeployapp.com/products/infinix-inbook-2.
+Example: https://smile-cart-backend-staging.neetodeployapp.net/products/infinix-inbook-2.
 
 ## Place an order
 
@@ -66,4 +66,4 @@ To get an array of country objects with their names and codes, make a `GET` requ
 
 To get an array of state objects with their names and codes for a selected country, make a `GET` request to `/states` with `country_code` as the request parameter. You can obtain `country_code` by looking into the response of the `/countries` API.
 
-For example, to get a list of states of India, make a `GET` request to https://smile-cart-backend-staging.neetodeployapp.com/states?country_code=IN.
+For example, to get a list of states of India, make a `GET` request to https://smile-cart-backend-staging.neetodeployapp.net/states?country_code=IN.

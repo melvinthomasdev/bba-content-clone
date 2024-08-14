@@ -129,14 +129,7 @@ After:
 Now, we can use the response without the need to rename the keys into `camelCase`:
 
 ```js
-const {
-  name,
-  description,
-  mrp,
-  offerPrice,
-  imageUrls,
-  imageUrl,
-} = product;
+const { name, description, mrp, offerPrice, imageUrls, imageUrl } = product;
 ```
 
 ### Setting default HTTP headers
@@ -162,13 +155,13 @@ Headers defined inside `axios.defaults.headers` will be attached to every API re
 
 ### Setting default baseURL
 
-As our project continues, we'll be making multiple API requests. In all the cases, we will be making requests to the same API backend, `https://smile-cart-backend-staging.neetodeployapp.com`.
+As our project continues, we'll be making multiple API requests. In all the cases, we will be making requests to the same API backend, `https://smile-cart-backend-staging.neetodeployapp.net`.
 
 To avoid the repetition of specifying this URL in every request in the codebase, Axios provides a convenient feature that allows us to set a default `baseURL`, which can be achieved like this:
 
 ```js
 axios.defaults.baseURL =
-  "https://smile-cart-backend-staging.neetodeployapp.com/";
+  "https://smile-cart-backend-staging.neetodeployapp.net/";
 ```
 
 Now, remove the existing default export for the `responseInterceptors` function and create a new default export function called `initializeAxios`, which sets the default `baseURL` and calls two functions, `setHttpHeaders()` and `responseInterceptors()`.
@@ -176,7 +169,7 @@ Now, remove the existing default export for the `responseInterceptors` function 
 ```js
 export default function initializeAxios() {
   axios.defaults.baseURL =
-    "https://smile-cart-backend-staging.neetodeployapp.com/";
+    "https://smile-cart-backend-staging.neetodeployapp.net/";
   setHttpHeaders();
   responseInterceptors();
 }

@@ -37,7 +37,7 @@ import axios from "axios";
 
 const show = () =>
   axios.get(
-    "https://smile-cart-backend-staging.neetodeployapp.com/products/infinix-inbook-2"
+    "https://smile-cart-backend-staging.neetodeployapp.net/products/infinix-inbook-2"
   );
 ```
 

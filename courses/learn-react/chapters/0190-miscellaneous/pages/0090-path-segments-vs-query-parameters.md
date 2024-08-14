@@ -4,7 +4,7 @@ While handling routing or sending requests, we may need to pass dynamic data as 
 
 Path segments are the parts of a URL that come after the domain name and are separated by slashes. Path segments can be static or dynamic.
 
-For example, when retrieving product details in SmileCart, we use a URL like this: `https://smile-cart-backend-staging.neetodeployapp.com/products/:slug`. Here, `products` is the static path segment and `slug` is the dynamic path segment. The `slug` can take any string value.
+For example, when retrieving product details in SmileCart, we use a URL like this: `https://smile-cart-backend-staging.neetodeployapp.net/products/:slug`. Here, `products` is the static path segment and `slug` is the dynamic path segment. The `slug` can take any string value.
 
 <image>path-segments-example.png</image>
 
@@ -19,7 +19,7 @@ Query parameters are key-value pairs added to the end of a URL. They are separat
 
 For example, to fetch the product list we use a URL like this:
 
-`https://smile-cart-backend-staging.neetodeployapp.com/products?search_term=mac&page=1&page_size=8`
+`https://smile-cart-backend-staging.neetodeployapp.net/products?search_term=mac&page=1&page_size=8`
 
 Here, the keys are `search_term`, `page`, and `page_size`, and the values are `mac`, `1`, and `8`, respectively.
 
