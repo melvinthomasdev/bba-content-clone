@@ -49,8 +49,14 @@
   slug: challenges-set-5
 - name: Browser Events
   slug: browser-events
-- name: Projects 1
-  slug: projects-1
+- name: Sticky Notes Project
+  slug: sticky-notes-project
+- name: Battleship Project
+  slug: battleship-project
+- name: Tic-Tac-Toe Project
+  slug: tic-tac-toe-project
+- name: Wordle Project
+  slug: wordle-project
 - name: Single and Multiple line comments
   slug: single-and-multiple-line-comments
 - name: Array Methods 3
@@ -83,8 +89,14 @@
   slug: promises
 - name: API
   slug: api
-- name: Projects 2
-  slug: projects-2
+- name: Calculator Project
+  slug: calculator-project
+- name: Currency Converter Project
+  slug: currency-converter-project
+- name: Password Generator Project
+  slug: password-generator-project
+- name: News Explorer Project
+  slug: news-explorer-project
 - name: Challenges Set 9
   slug: challenges-set-9
 - name: String Methods
@@ -97,8 +109,8 @@
   slug: number-methods
 - name: Challenges Set 11
   slug: challenges-set-11
-- name: Projects 3
-  slug: projects-3
+- name: To Do List Project
+  slug: to-do-list-project
 - name: this on Objects
   slug: this-on-objects
 - name: Closure
