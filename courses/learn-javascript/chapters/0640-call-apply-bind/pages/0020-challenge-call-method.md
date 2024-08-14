@@ -4,6 +4,7 @@ such that the `this` keyword refers to `product`.
 Pass `0.12` to the parameter `discount`
 of the `displayDiscountedPrice` function on invocation.
 ​
+
 For example:
 
 ```js
@@ -25,7 +26,7 @@ const product = {
 };
 
 const displayDiscountedPrice = function (discount) {
-const discountedPrice = this.price - this.price \* discount;
+const discountedPrice = this.price - (this.price * discount);
 console.log(`${this.name} is now available for ${discountedPrice}`);
 }
 
@@ -38,7 +39,7 @@ const product = {
 };
 
 const displayDiscountedPrice = function (discount) {
-const discountedPrice = this.price - this.price \* discount;
+const discountedPrice = this.price - (this.price * discount);
 console.log(`${this.name} is now available for ${discountedPrice}`);
 }
 
