@@ -8,8 +8,8 @@
 - title: Limitations of JSX
   slug: limitations-of-jsx
   page_type: lesson
-- title: Exercise - Converting HTML to JSX
-  slug: exercise-converting-html-to-jsx
+- title: Challenge - Converting HTML to JSX
+  slug: challenge-converting-html-to-jsx
   page_type: lesson
 - title: How JSX is converted to JavaScript
   slug: how-jsx-is-converted-to-js

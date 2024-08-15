@@ -2,14 +2,14 @@
 - title: Mapping
   slug: mapping
   page_type: lesson
-- title: Exercise - Mapping
-  slug: exercise-mapping
+- title: Challenge - Mapping
+  slug: challenge-mapping
   page_type: exercise
 - title: Filtering
   slug: filtering
   page_type: lesson
-- title: Exercise - Filtering
-  slug: exercise-filtering
+- title: Challenge - Filtering
+  slug: challenge-filtering
   page_type: exercise
 - title: Keys in mapping
   slug: keys-in-mapping

@@ -2,306 +2,306 @@
 - title: About
   slug: about-comprehensive-challenge
   page_type: lesson
-- title: ComprehensiveExercise - Configure Vehicles
+- title: Challenge - Configure Vehicles
   slug: comprehensive-challenge-configure-vehicles
   page_type: assessment
-- title: ComprehensiveExercise - Select Marks in range
+- title: Challenge - Select Marks in range
   slug: comprehensive-challenge-select-marks-in-range
   page_type: assessment
-- title: ComprehensiveExercise - Split string by marker
+- title: Challenge - Split string by marker
   slug: comprehensive-challenge-split-string-by-marker
   page_type: assessment
-- title: ComprehensiveExercise - Getting odd indexes
+- title: Challenge - Getting odd indexes
   slug: comprehensive-challenge-getting-odd-indexes
   page_type: assessment
-- title: ComprehensiveExercise - Extract value from hash
+- title: Challenge - Extract value from hash
   slug: comprehensive-challenge-extract-value-from-hash
   page_type: assessment
-- title: ComprehensiveExercise - Return sum of first and last element of array
+- title: Challenge - Return sum of first and last element of array
   slug: comprehensive-challenge-sum-first-last-array
   page_type: assessment
-- title: ComprehensiveExercise - Get full name
+- title: Challenge - Get full name
   slug: comprehensive-challenge-get-full-name
   page_type: assessment
-- title: ComprehensiveExercise - Add two numbers
+- title: Challenge - Add two numbers
   slug: comprehensive-challenge-add-two-numbers
   page_type: assessment
-- title: ComprehensiveExercise - Check whether the number is Numeric
+- title: Challenge - Check whether the number is Numeric
   slug: comprehensive-challenge-check-whether-number-is-numeric
   page_type: assessment
-- title: ComprehensiveExercise - Check whether the number is divisible by 6
+- title: Challenge - Check whether the number is divisible by 6
   slug: comprehensive-challenge-check-whether-number-is-divisible-by-6
   page_type: assessment
-- title: ComprehensiveExercise - Convert time format
+- title: Challenge - Convert time format
   slug: comprehensive-challenge-convert-given-seconds-to-hours-minutes-and-seconds
   page_type: assessment
-- title: ComprehensiveExercise - Extract given property from given object
+- title: Challenge - Extract given property from given object
   slug: comprehensive-challenge-extract-property-from-given-object
   page_type: assessment
-- title: ComprehensiveExercise - Extract book name by the borrower
+- title: Challenge - Extract book name by the borrower
   slug: comprehensive-challenge-extract-book-name-by-borrower
   page_type: assessment
-- title: ComprehensiveExercise - Update the value of a property in object
+- title: Challenge - Update the value of a property in object
   slug: comprehensive-challenge-update-the-value-of-a-property-in-object
   page_type: assessment
-- title: ComprehensiveExercise - Check whether the property exists in the hash
+- title: Challenge - Check whether the property exists in the hash
   slug: comprehensive-challenge-check-whether-the-property-exist-in-hash
   page_type: assessment
-- title: ComprehensiveExercise - Add an element to array
+- title: Challenge - Add an element to array
   slug: comprehensive-challenge-add-element-to-array
   page_type: assessment
-- title: ComprehensiveExercise - Find sum of numbers in the array
+- title: Challenge - Find sum of numbers in the array
   slug: comprehensive-challenge-find-sum-of-numbers-in-array
   page_type: assessment
-- title: ComprehensiveExercise - Find the total amount a user has spent
+- title: Challenge - Find the total amount a user has spent
   slug: comprehensive-challenge-find-total-amount-a-user-has-spent
   page_type: assessment
-- title: ComprehensiveExercise - Find the vaccinated user details
+- title: Challenge - Find the vaccinated user details
   slug: comprehensive-challenge-find-vaccinated-user-details
   page_type: assessment
-- title: ComprehensiveExercise - Insert the user's name at given position
+- title: Challenge - Insert the user's name at given position
   slug: comprehensive-challenge-insert-name-at-given-position
   page_type: assessment
-- title: ComprehensiveExercise - List all users who have MacBook
+- title: Challenge - List all users who have MacBook
   slug: comprehensive-challenge-list-all-users-who-have-macbook
   page_type: assessment
-- title: ComprehensiveExercise - Find the index of the given element in the array
+- title: Challenge - Find the index of the given element in the array
   slug: comprehensive-challenge-find-the-index-of-element
   page_type: assessment
-- title: ComprehensiveExercise - Find the issues with given severity
+- title: Challenge - Find the issues with given severity
   slug: comprehensive-challenge-find-issues-with-given-severity
   page_type: assessment
-- title: ComprehensiveExercise - List debt entries of customers
+- title: Challenge - List debt entries of customers
   slug: comprehensive-challenge-list-entries-of-customers-greater-than-particular-total-amount
   page_type: assessment
-- title: ComprehensiveExercise - List all cars made in the given region
+- title: Challenge - List all cars made in the given region
   slug: comprehensive-challenge-list-all-cars-maufactured-at-given-region
   page_type: assessment
-- title: ComprehensiveExercise - Check if array values are multiples of a number
+- title: Challenge - Check if array values are multiples of a number
   slug: comprehensive-challenge-is-all-numbers-in-the-array-multiple-of-given-number
   page_type: assessment
-- title: ComprehensiveExercise - Check if all users have credit card
+- title: Challenge - Check if all users have credit card
   slug: comprehensive-challenge-check-all-users-have-credit-card
   page_type: assessment
-- title: ComprehensiveExercise - Convert array of numbers to array of sums
+- title: Challenge - Convert array of numbers to array of sums
   slug: comprehensive-challenge-convert-array-of-array-of-numbers-array-of-sum
   page_type: assessment
-- title: ComprehensiveExercise - List pincodes of all users
+- title: Challenge - List pincodes of all users
   slug: comprehensive-challenge-list-pincodes-of-given-users
   page_type: assessment
-- title: ComprehensiveExercise - Sort user list by number of clicks
+- title: Challenge - Sort user list by number of clicks
   slug: comprehensive-challenge-sort-user-list-by-number-of-clicks
   page_type: assessment
-- title: ComprehensiveExercise - Print users phone numbers
+- title: Challenge - Print users phone numbers
   slug: comprehensive-challenge-get-users-phone-numbers
   page_type: assessment
-- title: ComprehensiveExercise - Check for Unpaid items in cart
+- title: Challenge - Check for Unpaid items in cart
   slug: comprehensive-challenge-check-for-unpaid-items-in-cart
   page_type: assessment
-- title: ComprehensiveExercise - Assign non-empty value to hash key
+- title: Challenge - Assign non-empty value to hash key
   slug: comprehensive-challenge-assign-value-to-key-if-empty
   page_type: assessment
-- title: ComprehensiveExercise - Return hash with issues grouped by severity
+- title: Challenge - Return hash with issues grouped by severity
   slug: comprehensive-challenge-return-hash-with-issues-grouped-by-severity
   page_type: assessment
-- title: ComprehensiveExercise - Find the sum of all odd numbers until n
+- title: Challenge - Find the sum of all odd numbers until n
   slug: comprehensive-challenge-find-the-sum-of-all-odd-numbers-until-n
   page_type: assessment
-- title: ComprehensiveExercise - Extract the issue type from the string
+- title: Challenge - Extract the issue type from the string
   slug: comprehensive-challenge-extract-issue-type-from-the-string
   page_type: assessment
-- title: ComprehensiveExercise - Find the sum of numbers
+- title: Challenge - Find the sum of numbers
   slug: comprehensive-challenge-find-the-sum-of-numbers
   page_type: assessment
-- title: ComprehensiveExercise - Mask Credit Card Numbers
+- title: Challenge - Mask Credit Card Numbers
   slug: comprehensive-challenge-mask-credit-card-numbers
   page_type: assessment
-- title: ComprehensiveExercise - Decipher the Message
+- title: Challenge - Decipher the Message
   slug: comprehensive-challenge-decipher-the-secret-message
   page_type: assessment
-- title: ComprehensiveExercise - Fetch newsletters for given departments
+- title: Challenge - Fetch newsletters for given departments
   slug: comprehensive-challenge-fetch-newsletters-for-given-departments
   page_type: assessment
-- title: ComprehensiveExercise - Find total office count from departments
+- title: Challenge - Find total office count from departments
   slug: comprehensive-challenge-find-total-office-count-from-departments
   page_type: assessment
-- title: ComprehensiveExercise - Find Hexadecimal And Convert to Decimal
+- title: Challenge - Find Hexadecimal And Convert to Decimal
   slug: comprehensive-challenge-find-hexadecimal-and-convert-to-decimal
   page_type: assessment
-- title: ComprehensiveExercise - Update Campaign Details
+- title: Challenge - Update Campaign Details
   slug: comprehensive-challenge-update-campaign-details
   page_type: assessment
-- title: ComprehensiveExercise - Jumbled Word Solver
+- title: Challenge - Jumbled Word Solver
   slug: comprehensive-challenge-jumbled-word-solver
   page_type: assessment
-- title: ComprehensiveExercise - Find the Type of Parameter
+- title: Challenge - Find the Type of Parameter
   slug: comprehensive-challenge-find-type-of-parameter-passed
   page_type: assessment
-- title: ComprehensiveExercise - Add and Round the Floating Point Numbers
+- title: Challenge - Add and Round the Floating Point Numbers
   slug: comprehensive-challenge-add-and-round-floating-point-numbers
   page_type: assessment
-- title: ComprehensiveExercise - List diseases spreading in Covid-19 zones
+- title: Challenge - List diseases spreading in Covid-19 zones
   slug: comprehensive-challenge-find-diseases-in-covid-affected-cities
   page_type: assessment
-- title: ComprehensiveExercise - Handle User Authentication API Error
+- title: Challenge - Handle User Authentication API Error
   slug: comprehensive-challenge-handle-user-authentication-api-error
   page_type: assessment
-- title: ComprehensiveExercise - Add Vacation Start Date, if missing
+- title: Challenge - Add Vacation Start Date, if missing
   slug: comprehensive-challenge-add-date-property-if-missing
   page_type: assessment
-- title: ComprehensiveExercise - Increment And Add
+- title: Challenge - Increment And Add
   slug: comprehensive-challenge-increment-and-add
   page_type: assessment
-- title: ComprehensiveExercise - Create an empty array with length > 0
+- title: Challenge - Create an empty array with length > 0
   slug: comprehensive-challenge-empty-array-with-length-greater-than-0
   page_type: assessment
-- title: ComprehensiveExercise - Add the digits of a given Alphanumerical value
+- title: Challenge - Add the digits of a given Alphanumerical value
   slug: comprehensive-challenge-add-digits-of-alphanumerical
   page_type: assessment
-- title: ComprehensiveExercise - Remove Duplicate And Sort Rivers
+- title: Challenge - Remove Duplicate And Sort Rivers
   slug: comprehensive-challenge-remove-duplicate-and-sort-rivers
   page_type: assessment
-- title: ComprehensiveExercise - Fetch largest countries for given index
+- title: Challenge - Fetch largest countries for given index
   slug: comprehensive-challenge-fetch-largest-countries-of-given-index
   page_type: assessment
-- title: ComprehensiveExercise - Update the Employee Details
+- title: Challenge - Update the Employee Details
   slug: comprehensive-challenge-update-employee-details
   page_type: assessment
-- title: ComprehensiveExercise - Find vowels in the given sentence
+- title: Challenge - Find vowels in the given sentence
   slug: comprehensive-challenge-find-vowels-in-the-sentence
   page_type: assessment
-- title: ComprehensiveExercise - Reminder AI (Part 1) - Extract reminder text
+- title: Challenge - Reminder AI (Part 1) - Extract reminder text
   slug: comprehensive-challenge-set-a-reminder-part-1
   page_type: assessment
-- title: ComprehensiveExercise - Reminder AI (Part 2) - Extract day.
+- title: Challenge - Reminder AI (Part 2) - Extract day.
   slug: comprehensive-challenge-set-a-reminder-part-2
   page_type: assessment
-- title: ComprehensiveExercise - Convert from bytes array to string.
+- title: Challenge - Convert from bytes array to string.
   slug: comprehensive-challenge-convert-from-array-of-bytes-to-string
   page_type: assessment
-- title: ComprehensiveExercise - Convert the bases
+- title: Challenge - Convert the bases
   slug: comprehensive-challenge-convert-the-bases
   page_type: assessment
-- title: ComprehensiveExercise - Find the highest score
+- title: Challenge - Find the highest score
   slug: comprehensive-challenge-find-the-highest-score
   page_type: assessment
-- title: ComprehensiveExercise - Make it Ordinal
+- title: Challenge - Make it Ordinal
   slug: comprehensive-challenge-make-it-ordinal
   page_type: assessment
-- title: ComprehensiveExercise - Sort Capital cities
+- title: Challenge - Sort Capital cities
   slug: comprehensive-challenge-sort-based-on-capitals
   page_type: assessment
-- title: ComprehensiveExercise - Get number of days in a month
+- title: Challenge - Get number of days in a month
   slug: comprehensive-challenge-get-number-of-days-in-month
   page_type: assessment
-- title: ComprehensiveExercise - Prepare a Movie list based on Survey
+- title: Challenge - Prepare a Movie list based on Survey
   slug: comprehensive-challenge-prepare-favorite-movie-list
   page_type: assessment
-- title: ComprehensiveExercise - Calculate and Set count (Part 1)
+- title: Challenge - Calculate and Set count (Part 1)
   slug: comprehensive-challenge-calculate-and-set-questions-count-part-1
   page_type: assessment
-- title: ComprehensiveExercise - Calculate and Set count (Part 2)
+- title: Challenge - Calculate and Set count (Part 2)
   slug: comprehensive-challenge-calculate-and-set-questions-count-part-2
   page_type: assessment
-- title: ComprehensiveExercise - Find the lottery winner
+- title: Challenge - Find the lottery winner
   slug: comprehensive-challenge-find-the-lottery-winner
   page_type: assessment
-- title: ComprehensiveExercise - Find the best bowling average
+- title: Challenge - Find the best bowling average
   slug: comprehensive-challenge-find-the-best-bowling-average
   page_type: assessment
-- title: ComprehensiveExercise - Find winning team
+- title: Challenge - Find winning team
   slug: comprehensive-challenge-find-winning-team
   page_type: assessment
-- title: ComprehensiveExercise - Reverse and Match
+- title: Challenge - Reverse and Match
   slug: comprehensive-challenge-reverse-and-match
   page_type: assessment
-- title: ComprehensiveExercise - Remove Names based on a condition
+- title: Challenge - Remove Names based on a condition
   slug: comprehensive-challenge-remove-based-on-a-condition
   page_type: assessment
-- title: ComprehensiveExercise - Longest Word in String
+- title: Challenge - Longest Word in String
   slug: comprehensive-challenge-longest-word-in-string
   page_type: assessment
-- title: ComprehensiveExercise - String Anagrams (Part 1)
+- title: Challenge - String Anagrams (Part 1)
   slug: comprehensive-challenge-string-anagrams-part-1
   page_type: assessment
-- title: ComprehensiveExercise - String Anagrams (Part 2)
+- title: Challenge - String Anagrams (Part 2)
   slug: comprehensive-challenge-string-anagrams-part-2
   page_type: assessment
-- title: ComprehensiveExercise - Remove Vowels from String
+- title: Challenge - Remove Vowels from String
   slug: comprehensive-challenge-remove-vowels-from-string
   page_type: assessment
-- title: ComprehensiveExercise - In-Place Reversal
+- title: Challenge - In-Place Reversal
   slug: comprehensive-challenge-inplace-reversal
   page_type: assessment
-- title: ComprehensiveExercise - Print all Unique Words
+- title: Challenge - Print all Unique Words
   slug: comprehensive-challenge-print-all-unique-words
   page_type: assessment
-- title: ComprehensiveExercise - Flatten the Array
+- title: Challenge - Flatten the Array
   slug: comprehensive-challenge-flatten-the-array
   page_type: assessment
-- title: ComprehensiveExercise - String Pangram
+- title: Challenge - String Pangram
   slug: comprehensive-challenge-string-pangram
   page_type: assessment
-- title: ComprehensiveExercise - Integer Ratios
+- title: Challenge - Integer Ratios
   slug: comprehensive-challenge-integer-ratios
   page_type: assessment
-- title: ComprehensiveExercise - Shuffle Names
+- title: Challenge - Shuffle Names
   slug: comprehensive-challenge-shuffle-names
   page_type: assessment
-- title: ComprehensiveExercise - Find all common elements
+- title: Challenge - Find all common elements
   slug: comprehensive-challenge-find-all-common-elements
   page_type: assessment
-- title: ComprehensiveExercise - Find the sum of a range
+- title: Challenge - Find the sum of a range
   slug: comprehensive-challenge-find-the-sum-in-the-given-range
   page_type: assessment
-- title: ComprehensiveExercise - Select names starting with given character
+- title: Challenge - Select names starting with given character
   slug: comprehensive-challenge-select-starting-with-given-character
   page_type: assessment
-- title: ComprehensiveExercise - Finding Nemo
+- title: Challenge - Finding Nemo
   slug: comprehensive-challenge-finding-nemo
   page_type: assessment
-- title: ComprehensiveExercise - Folding a Piece of Paper
+- title: Challenge - Folding a Piece of Paper
   slug: comprehensive-challenge-folding-a-piece-of-paper
   page_type: assessment
-- title: ComprehensiveExercise - Fruit Salad
+- title: Challenge - Fruit Salad
   slug: comprehensive-challenge-fruit-salad
   page_type: assessment
-- title: ComprehensiveExercise - Split a hash into keys and values
+- title: Challenge - Split a hash into keys and values
   slug: comprehensive-challenge-split-a-hash-into-keys-and-values
   page_type: assessment
-- title: ComprehensiveExercise -  Split an Array into N Chunks
+- title: Challenge -  Split an Array into N Chunks
   slug: comprehensive-challenge-split-an-array-into-n-chunks
   page_type: assessment
-- title: ComprehensiveExercise - Convert PascalCase to snake_case
+- title: Challenge - Convert PascalCase to snake_case
   slug: comprehensive-challenge-convert-pascalcase-to-snakecase
   page_type: assessment
-- title: ComprehensiveExercise - Order by Subarray Sum (Part 1)
+- title: Challenge - Order by Subarray Sum (Part 1)
   slug: comprehensive-challenge-order-by-subarray-sum-part-1
   page_type: assessment
-- title: ComprehensiveExercise - Order by Subarray Sum (Part 2)
+- title: Challenge - Order by Subarray Sum (Part 2)
   slug: comprehensive-challenge-order-by-subarray-sum-part-2
   page_type: assessment
-- title: ComprehensiveExercise - Split an Array into Odd and Even Chunks
+- title: Challenge - Split an Array into Odd and Even Chunks
   slug: comprehensive-challenge-split-an-array-into-odd-and-even-chunks
   page_type: assessment
-- title: ComprehensiveExercise - Most Commonly Occurring Character
+- title: Challenge - Most Commonly Occurring Character
   slug: comprehensive-challenge-most-commonly-occurring-character
   page_type: assessment
-- title: ComprehensiveExercise - East or West
+- title: Challenge - East or West
   slug: comprehensive-challenge-east-or-west
   page_type: assessment
-- title: ComprehensiveExercise - Sherlock's Valid string
+- title: Challenge - Sherlock's Valid string
   slug: comprehensive-challenge-sherlocks-valid-string
   page_type: assessment
-- title: ComprehensiveExercise - Product of digits of sum
+- title: Challenge - Product of digits of sum
   slug: comprehensive-challenge-product-of-digits-of-sum
   page_type: assessment
-- title: ComprehensiveExercise - Digit occurrences
+- title: Challenge - Digit occurrences
   slug: comprehensive-challenge-digit-occurrences
   page_type: assessment
-- title: ComprehensiveExercise - Reverse a string but with a catch
+- title: Challenge - Reverse a string but with a catch
   slug: comprehensive-challenge-reverse-a-string-but-with-a-catch
   page_type: assessment
-- title: ComprehensiveExercise - RNA complement
+- title: Challenge - RNA complement
   slug: comprehensive-challenge-rna-complement
   page_type: assessment

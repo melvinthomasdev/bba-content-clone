@@ -2,54 +2,54 @@
 - title: Pipe and Compose
   slug: pipe-and-compose
   page_type: lesson
-- title: Exercise - Pipe and Compose
-  slug: exercise-pipe-and-compose
+- title: Challenge - Pipe and Compose
+  slug: challenge-pipe-and-compose
   page_type: exercise
 - title: Gap Operator (__)
   slug: gap-operator
   page_type: lesson
-- title: Exercise - Gap Operator
-  slug: exercise-gap-operator
+- title: Challenge - Gap Operator
+  slug: challenge-gap-operator
   page_type: exercise
 - title: fromPairs and toPairs
   slug: from-pairs-and-to-pairs
   page_type: lesson
-- title: Exercise - fromPairs and toPairs
-  slug: exercise-from-pairs-and-to-pairs
+- title: Challenge - fromPairs and toPairs
+  slug: challenge-from-pairs-and-to-pairs
   page_type: exercise
 - title: Equals
   slug: equals
   page_type: lesson
-- title: Exercise - Equals
-  slug: exercise-equals
+- title: Challenge - Equals
+  slug: challenge-equals
   page_type: exercise
 - title: Clone
   slug: clone
   page_type: lesson
-- title: Exercise - Clone
-  slug: exercise-clone
+- title: Challenge - Clone
+  slug: challenge-clone
   page_type: exercise
 - title: Keys and Values
   slug: keys-and-values
   page_type: lesson
-- title: Exercise - Keys and Values
-  slug: exercise-keys-and-values
+- title: Challenge - Keys and Values
+  slug: challenge-keys-and-values
   page_type: exercise
 - title: Pluck
   slug: pluck
   page_type: lesson
-- title: Exercise - Pluck
-  slug: exercise-pluck
+- title: Challenge - Pluck
+  slug: challenge-pluck
   page_type: exercise
 - title: Omit
   slug: omit
   page_type: lesson
-- title: Exercise - Omit
-  slug: exercise-omit
+- title: Challenge - Omit
+  slug: challenge-omit
   page_type: exercise
 - title: IsEmpty
   slug: is-empty
   page_type: lesson
-- title: Exercise - IsEmpty
-  slug: exercise-is-empty
+- title: Challenge - IsEmpty
+  slug: challenge-is-empty
   page_type: exercise

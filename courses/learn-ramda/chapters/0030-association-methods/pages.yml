@@ -2,12 +2,12 @@
 - title: Assoc
   slug: assoc
   page_type: lesson
-- title: Exercise - Assoc
-  slug: exercise-assoc
+- title: Challenge - Assoc
+  slug: challenge-assoc
   page_type: exercise
 - title: assocPath
   slug: assoc-path
   page_type: lesson
-- title: Exercise - assocPath
-  slug: exercise-assoc-path
+- title: Challenge - assocPath
+  slug: challenge-assoc-path
   page_type: exercise

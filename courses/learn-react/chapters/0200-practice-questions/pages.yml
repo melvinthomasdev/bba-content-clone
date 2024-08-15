@@ -1,22 +1,22 @@
 ---
-- title: ComprehensiveExercise - Create a useLocalStorage hook
-  slug: comprehensive-exercise-use-localstorage-hook
+- title: Challenge - Create a useLocalStorage hook
+  slug: challenge-use-localstorage-hook
   page_type: assessment
-- title: ComprehensiveExercise - Create a useInterval hook
-  slug: comprehensive-exercise-use-interval-hook
+- title: Challenge - Create a useInterval hook
+  slug: challenge-use-interval-hook
   page_type: assessment
-- title: ComprehensiveExercise - Fetch and display data 1
-  slug: comprehensive-exercise-fetch-and-display-data
+- title: Challenge - Fetch and display data 1
+  slug: challenge-fetch-and-display-data
   page_type: assessment
-- title: ComprehensiveExercise - Fetch and display data 2
-  slug: comprehensive-exercise-fetch-and-display-data-2
+- title: Challenge - Fetch and display data 2
+  slug: challenge-fetch-and-display-data-2
   page_type: assessment
-- title: ComprehensiveExercise - Display Tabular Data 1
-  slug: comprehensive-exercise-display-tabular-data-1
+- title: Challenge - Display Tabular Data 1
+  slug: challenge-display-tabular-data-1
   page_type: assessment
-- title: ComprehensiveExercise - Display Tabular Data 2
-  slug: comprehensive-exercise-display-tabular-data-2
+- title: Challenge - Display Tabular Data 2
+  slug: challenge-display-tabular-data-2
   page_type: assessment
-- title: ComprehensiveExercise - Fix cursor position
-  slug: comprehensive-exercise-fix-cursor-position
+- title: Challenge - Fix cursor position
+  slug: challenge-fix-cursor-position
   page_type: assessment

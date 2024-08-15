@@ -2,50 +2,50 @@
 - title: Props Basics
   slug: props-basics
   page_type: lesson
-- title: Exercise - Props basics
-  slug: exercise-props-basics
+- title: Challenge - Props basics
+  slug: challenge-props-basics
   page_type: exercise
 - title: Passing numbers as prop
   slug: passing-numbers-as-prop
   page_type: lesson
-- title: Exercise - Passing numbers as prop
-  slug: exercise-passing-numbers-as-prop
+- title: Challenge - Passing numbers as prop
+  slug: challenge-passing-numbers-as-prop
   page_type: exercise
 - title: Passing expressions as prop
   slug: passing-expressions-as-prop
   page_type: lesson
-- title: Exercise - Passing expressions as prop
-  slug: exercise-passing-expressions-as-prop
+- title: Challenge - Passing expressions as prop
+  slug: challenge-passing-expressions-as-prop
   page_type: exercise
 - title: Boolean props
   slug: boolean-props
   page_type: lesson
-- title: Exercise - Boolean props
-  slug: exercise-boolean-props
+- title: Challenge - Boolean props
+  slug: challenge-boolean-props
   page_type: exercise
 - title: Passing object as prop
   slug: passing-object-as-prop
   page_type: lesson
-- title: Exercise - Passing object as prop
-  slug: exercise-passing-object-as-prop
+- title: Challenge - Passing object as prop
+  slug: challenge-passing-object-as-prop
   page_type: exercise
 - title: The Children prop
   slug: the-children-prop
   page_type: lesson
-- title: Exercise - The Children prop
-  slug: exercise-the-children-prop
+- title: Challenge - The Children prop
+  slug: challenge-the-children-prop
   page_type: exercise
 - title: Spread props
   slug: spread-props
   page_type: lesson
-- title: Exercise - Spread props
-  slug: exercise-spread-props
+- title: Challenge - Spread props
+  slug: challenge-spread-props
   page_type: exercise
 - title: Rest props
   slug: rest-props
   page_type: lesson
-- title: Exercise - Rest props
-  slug: exercise-rest-props
+- title: Challenge - Rest props
+  slug: challenge-rest-props
   page_type: exercise
 - title: Ordering spread props
   slug: ordering-spread-props
@@ -53,9 +53,9 @@
 - title: Default values and Renaming
   slug: default-values-and-renaming
   page_type: lesson
-- title: Exercise - Default values and Renaming
-  slug: exercise-default-values-and-renaming
+- title: Challenge - Default values and Renaming
+  slug: challenge-default-values-and-renaming
   page_type: exercise
-- title: Props Comprehensive Exercise
-  slug: props-comprehensive-exercise
+- title: Challenge - Props
+  slug: challenge-props
   page_type: exercise

@@ -2,18 +2,18 @@
 - title: Modify
   slug: modify
   page_type: lesson
-- title: Exercise - Modify
-  slug: exercise-modify
+- title: Challenge - Modify
+  slug: challenge-modify
   page_type: exercise
 - title: modifyPath
   slug: modifypath
   page_type: lesson
-- title: Exercise - modifyPath
-  slug: exercise-modifypath
+- title: Challenge - modifyPath
+  slug: challenge-modifypath
   page_type: exercise
 - title: Evolve
   slug: evolve
   page_type: lesson
-- title: Exercise - Evolve
-  slug: exercise-evolve
+- title: Challenge - Evolve
+  slug: challenge-evolve
   page_type: exercise

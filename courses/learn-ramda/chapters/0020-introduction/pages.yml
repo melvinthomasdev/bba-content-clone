@@ -11,8 +11,8 @@
 - title: Attempting the exercises
   slug: attempting-the-exercises
   page_type: lesson
-- title: Exercise - Currying
-  slug: exercise-currying
+- title: Challenge - Currying
+  slug: challenge-currying
   page_type: exercise
 - title: Function Composition in Ramda
   slug: function-composition-in-ramda
