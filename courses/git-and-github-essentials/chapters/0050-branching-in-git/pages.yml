@@ -5,21 +5,21 @@
 - title: Create and switch branches
   slug: create-and-switch-branches
   page_type: lesson
-- title: Exercise - create branches
-  slug: exercise-create-branches
+- title: Challenge - create branches
+  slug: challenge-create-branches
   page_type: exercise
-- title: Exercise - switch branches
-  slug: exercise-switch-branches
+- title: Challenge - switch branches
+  slug: challenge-switch-branches
   page_type: exercise
 - title: Renaming branches
   slug: renaming-branches
   page_type: lesson
-- title: Exercise - renaming branches
-  slug: exercise-renaming-branches
+- title: Challenge - renaming branches
+  slug: challenge-renaming-branches
   page_type: exercise
 - title: Deleting branches
   slug: deleting-branches
   page_type: lesson
-- title: Exercise - deleting branches
-  slug: exercise-deleting-branches
+- title: Challenge - deleting branches
+  slug: challenge-deleting-branches
   page_type: exercise

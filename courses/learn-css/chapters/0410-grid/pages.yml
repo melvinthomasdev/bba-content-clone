@@ -1,14 +1,14 @@
 - title: Grid
   slug: grid
   page_type: lesson
-- title: Exercise - Grid
-  slug: exercise-grid
+- title: Challenge - Grid
+  slug: challenge-grid
   page_type: exercise
 - title: Grid Container
   slug: grid-container
   page_type: lesson
-- title: Exercise - Grid Container
-  slug: exercise-grid-container
+- title: Challenge - Grid Container
+  slug: challenge-grid-container
   page_type: exercise
 - title: Grid Lines
   slug: grid-lines
@@ -22,8 +22,8 @@
 - title: Grid Row and Grid Column
   slug: grid-rows-columns
   page_type: lesson
-- title: Exercise - Grid Row and Grid Column
-  slug: exercise-grid-rows-columns
+- title: Challenge - Grid Row and Grid Column
+  slug: challenge-grid-rows-columns
   page_type: exercise
 - title: Grid Item
   slug: grid-item
@@ -31,14 +31,14 @@
 - title: Grid Template Columns
   slug: grid-template-columns
   page_type: lesson
-- title: Exercise - Grid Template Columns
-  slug: exercise-grid-template-columns
+- title: Challenge - Grid Template Columns
+  slug: challenge-grid-template-columns
   page_type: exercise
 - title: Grid Template Rows
   slug: grid-template-rows
   page_type: lesson
-- title: Exercise - Grid Template Rows
-  slug: exercise-grid-template-rows
+- title: Challenge - Grid Template Rows
+  slug: challenge-grid-template-rows
   page_type: exercise
 - title: Grid Template Areas
   slug: grid-template-areas
