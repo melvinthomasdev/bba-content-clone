@@ -59,7 +59,7 @@ to perform the following tasks:
 </p>
 <p class="message">
   <span class="author">Tony</span>: I am able to do it without any issues.
-  Completed the first 2 exercises. I'll do the rest too ☺️
+  Completed the first 2 challenges. I'll do the rest too ☺️
 </p>
 <button>Misty Everywhere</button>
 </panel>
@@ -77,26 +77,27 @@ welcomeHeading[0].style.fontSize = "64px";
 const firstSectionDetails = document.querySelectorAll(".first-section-details");
 
 firstSectionDetails.forEach(section => {
-  section.style.color = "snow";
-  section.style.backgroundColor = "cadetblue";
+section.style.color = "snow";
+section.style.backgroundColor = "cadetblue";
 });
 
 const joinWorkshopBtn = document.getElementsByTagName("button")[0];
 joinWorkshopBtn.addEventListener("click", function() {
-  welcomeHeading[0].textContent = "I joined the workshop";
+welcomeHeading[0].textContent = "I joined the workshop";
 });
 
 const mistyEverywhereBtn = document.getElementsByTagName("button")[1];
 mistyEverywhereBtn.addEventListener("click", function() {
-  const authors = document.querySelectorAll(".author");
-  for (let author of authors) {
-    author.textContent = "Misty";
-  };
+const authors = document.querySelectorAll(".author");
+for (let author of authors) {
+author.textContent = "Misty";
+};
 });
+
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

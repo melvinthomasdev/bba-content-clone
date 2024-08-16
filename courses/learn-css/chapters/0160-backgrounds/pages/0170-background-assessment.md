@@ -23,6 +23,7 @@ gained so far, write CSS to do the following:
   /* Write your code here */
 
 }
+
 </panel>
 </code>
 <solution>
@@ -44,7 +45,7 @@ gained so far, write CSS to do the following:
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

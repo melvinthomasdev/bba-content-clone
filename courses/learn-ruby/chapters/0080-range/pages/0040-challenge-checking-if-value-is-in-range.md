@@ -1,8 +1,6 @@
-In this exercise, find
+In this challenge, find
 if 78 is within the
 range of 60 to 90.
-
-
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>

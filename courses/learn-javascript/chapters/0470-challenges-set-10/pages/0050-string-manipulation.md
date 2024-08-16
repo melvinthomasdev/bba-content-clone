@@ -1,6 +1,6 @@
 Given a variable `message` a string value, as an argument.
 
-Create a program `comprehensiveExercise`
+Create a program `comprehensiveChallenge`
 which takes `message`  as a parameter
 and does the following operations:
 
@@ -27,11 +27,11 @@ and does the following operations:
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 // Write your code here.
-const comprehensiveExercise = () => {}
+const comprehensiveChallenge = () => {}
 </code>
 
 <solution>
-const comprehensiveExercise = (message) => {
+const comprehensiveChallenge = (message) => {
 	console.log(`The length of ${message} is ${message.length}`);
 
 	console.log(`The first character of ${message} is ${message.charAt(0)}`);
@@ -71,7 +71,7 @@ const comprehensiveExercise = (message) => {
 </solution>
 <testcases>
 <caller>
-comprehensiveExercise(testMessage);
+comprehensiveChallenge(testMessage);
 </caller>
 <testcase>
 <i>

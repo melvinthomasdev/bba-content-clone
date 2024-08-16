@@ -51,72 +51,73 @@ You need to perform the following tasks:
 }
 
 body {
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #5b83ce;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+background-color: #5b83ce;
+color: #fff;
+text-align: center;
+padding: 20px;
 }
 
 header h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 44px;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  padding: 20px;
+font-family: 'Pacifico', cursive;
+font-size: 44px;
+color: #fff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+padding: 20px;
 }
 
 main {
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: #c19696;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+max-width: 800px;
+margin: 20px auto;
+background-color: #c19696;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .movie-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+list-style: none;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+padding: 20px;
 }
 
 .movie {
-  width: calc(33.33% - 20px);
-  background-color: #f2f2f2;;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
+width: calc(33.33% - 20px);
+background-color: #f2f2f2;;
+border-radius: 5px;
+padding: 10px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease-in-out;
 }
 
 .movie:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
 
 .movie img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
+width: 100%;
+height: auto;
+border-radius: 5px;
+margin-bottom: 10px;
 }
 
 .movie h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: rgb(3, 77, 227);
+font-size: 18px;
+margin-bottom: 5px;
+color: rgb(3, 77, 227);
 }
 
 .movie p {
-  font-size: 14px;
-  color: #1d0075;
+font-size: 14px;
+color: #1d0075;
 }
+
 </panel>
 <panel language="javascript">
 const title = "Avatar";
@@ -124,6 +125,7 @@ const description = "Jake, who is paraplegic, replaces his twin on the Na'vi inh
 const imageUrl = "https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg";
 
 // Write code here
+
 </panel>
 </code>
 <solution>
@@ -151,10 +153,11 @@ newMovie.appendChild(movieDescription);
 
 const movieList = document.querySelector(".movie-list");
 movieList.appendChild(newMovie);
+
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

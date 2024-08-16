@@ -5,30 +5,30 @@
 - title: Counting items with Counter
   slug: counting-items-with-counter
   page_type: lesson
-- title: Exercise 1 - Counting items with Counter
-  slug: exercise-1-counting-items-with-counter
+- title: Challenge 1 - Counting items with Counter
+  slug: challenge-1-counting-items-with-counter
   page_type: exercise
 - title: Default Dictionary
   slug: default-dictionary
   page_type: lesson
-- title: Exercise 1 - Default Dictionary
-  slug: exercise-1-default-dictionary
+- title: Challenge 1 - Default Dictionary
+  slug: challenge-1-default-dictionary
   page_type: exercise
 - title: Storing items with Ordered Dictionary
   slug: storing-items-with-ordered-dictionary
   page_type: lesson
-- title: Exercise 1 - Storing items with Ordered Dictionary
-  slug: exercise-1-storing-items-with-ordered-dictionary
+- title: Challenge 1 - Storing items with Ordered Dictionary
+  slug: challenge-1-storing-items-with-ordered-dictionary
   page_type: exercise
 - title: Tuples with names
   slug: tuples-with-names
   page_type: lesson
-- title: Exercise 1 - Tuples with names
-  slug: exercise-1-tuples-with-names
+- title: Challenge 1 - Tuples with names
+  slug: challenge-1-tuples-with-names
   page_type: exercise
 - title: Deque
   slug: deque
   page_type: lesson
-- title: Exercise 1 - Deque
-  slug: exercise-1-deque
+- title: Challenge 1 - Deque
+  slug: challenge-1-deque
   page_type: exercise

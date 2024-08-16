@@ -12,7 +12,7 @@ which opens your code in the NeetoCode code editor.
 - Sign in with the same Google account
   on both BB Academy and NeetoCode.
 
-- Navigate to any lesson or exercise and locate the
+- Navigate to any lesson or challenge and locate the
   arrow icon in the top right corner of the code block.
 
 - Click on the arrow icon to open the code snippets as a new project in

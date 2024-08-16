@@ -1,0 +1,16 @@
+---
+- title: About
+  slug: about-comprehensive-challenges
+  page_type: lesson
+- title: Challenge - Display report card remarks using if else
+  slug: display-report-card-remarks-using-if-else
+  page_type: assessment
+- title: Challenge - Calculate electricity bill using if else
+  slug: calculate-electricity-bill-using-if-else
+  page_type: assessment
+- title: Challenge - Build a currency converter
+  slug: build-a-currency-converter
+  page_type: assessment
+- title: Challenge - Build a currency notes calculator
+  slug: build-a-currency-notes-calculator
+  page_type: assessment

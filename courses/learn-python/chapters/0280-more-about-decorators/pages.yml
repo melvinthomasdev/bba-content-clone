@@ -2,24 +2,24 @@
 - title: Passing arguments to decorators
   slug: passing-arguments-to-decorators
   page_type: lesson
-- title: Exercise 1 - Passing arguments to decorators
-  slug: exercise-1-passing-arguments-to-decorators
+- title: Challenge 1 - Passing arguments to decorators
+  slug: challenge-1-passing-arguments-to-decorators
   page_type: exercise
 - title: Modify methods of a class using decorators
   slug: modify-methods-of-a-class-using-decorators
   page_type: lesson
-- title: Exercise 1 - Modify methods of a class using decorators
-  slug: exercise-1-modify-methods-of-a-class-using-decorators
+- title: Challenge 1 - Modify methods of a class using decorators
+  slug: challenge-1-modify-methods-of-a-class-using-decorators
   page_type: exercise
 - title: Using a class as a Decorator
   slug: using-a-class-as-a-decorator
   page_type: lesson
-- title: Exercise 1 - Using a class as a Decorator
-  slug: exercise-1-using-a-class-as-a-decorator
+- title: Challenge 1 - Using a class as a Decorator
+  slug: challenge-1-using-a-class-as-a-decorator
   page_type: exercise
 - title: Passing arguments to a class  decorator
   slug: passing-arguments-to-a-class-decorator
   page_type: lesson
-- title: Exercise 1 - Passing arguments to a class  decorator
-  slug: exercise-1-passing-arguments-to-a-class-decorator
+- title: Challenge 1 - Passing arguments to a class  decorator
+  slug: challenge-1-passing-arguments-to-a-class-decorator
   page_type: exercise

@@ -5,8 +5,8 @@
 - title: Creating Objects
   slug: creating-objects
   page_type: lesson
-- title: Exercise 1 - Creating Objects
-  slug: exercise-1-creating-objects
+- title: Challenge 1 - Creating Objects
+  slug: challenge-1-creating-objects
   page_type: exercise
 - title: The init method
   slug: the-init-method
@@ -14,14 +14,14 @@
 - title: What is self?
   slug: what-is-self
   page_type: lesson
-- title: Exercise 1 - What is self?
-  slug: exercise-1-what-is-self
+- title: Challenge 1 - What is self?
+  slug: challenge-1-what-is-self
   page_type: exercise
 - title: Class attributes
   slug: class-attributes
   page_type: lesson
-- title: Exercise 1 - Class attributes
-  slug: exercise-1-class-attributes
+- title: Challenge 1 - Class attributes
+  slug: challenge-1-class-attributes
   page_type: exercise
 - title: Find the class of an object
   slug: find-the-class-of-an-object

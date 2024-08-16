@@ -1,8 +1,8 @@
 ---
 - title: About
-  slug: about-comprehensive-exercise
+  slug: about-comprehensive-challenge
   page_type: lesson
-- title: ComprehensiveExercise - Find popular people from the place
+- title: Challenge - Find popular people from the place
   slug: find-popular-people-from-the-place
   page_type: assessment
 - title: Check attendees

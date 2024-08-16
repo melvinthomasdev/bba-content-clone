@@ -1,4 +1,4 @@
-In this exercise, split
+In this challenge, split
 the names of cities into an array.
 The array should contain
 only the names of the
@@ -15,6 +15,7 @@ cities = "Chicago | Miami | Seattle"
 array =
 
 puts array
+
 </code>
 
 <solution>
@@ -23,5 +24,6 @@ cities = "Chicago | Miami | Seattle"
 array = cities.split(" | ")
 
 puts array
+
 </solution>
 </codeblock>

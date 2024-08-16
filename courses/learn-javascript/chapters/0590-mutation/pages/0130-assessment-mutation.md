@@ -1,10 +1,11 @@
 Update the function `arrayOfSquares` in a way that it should return a new array containing the squares of each number in the input array passed to it.
 
 For example:
-```js
-Input: [1,2,3]
 
-Output: [1,4,9]
+```js
+Input: [1, 2, 3];
+
+Output: [1, 4, 9];
 ```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
@@ -25,10 +26,11 @@ console.log(arrayOfSquares([-1, -2, -3]));
 Update the function `updateAsAscending` that accepts an array of numbers as a parameter to return a new array such that the numbers are in ascending order.
 
 For example:
-```js
-Input: numbers = [20, 15, 35, 10, 25]
 
-Output: [10, 15, 20, 25, 35]
+```js
+Input: numbers = [20, 15, 35, 10, 25];
+
+Output: [10, 15, 20, 25, 35];
 ```
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
@@ -44,10 +46,11 @@ function updateAsAscending(numbers) {
 };
 
 console.log(updateAsAscending([42, 48, 49, 111, 222, 333, 0, 5]));
+
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

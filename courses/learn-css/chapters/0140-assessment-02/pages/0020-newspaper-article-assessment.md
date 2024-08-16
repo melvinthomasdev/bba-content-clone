@@ -35,7 +35,7 @@ In this challenge, your task is to style the news article webpage provided below
 </code>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

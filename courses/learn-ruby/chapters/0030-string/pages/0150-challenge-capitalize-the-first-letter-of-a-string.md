@@ -1,4 +1,4 @@
-In this exercise, the
+In this challenge, the
 goal is to print **Basketball**.
 Notice that the first letter in **Basketball**
 is capital. Print the string

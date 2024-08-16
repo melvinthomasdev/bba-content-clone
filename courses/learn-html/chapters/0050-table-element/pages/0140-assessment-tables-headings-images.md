@@ -2,12 +2,12 @@ Update the code below to match
 the following requirements:
 
 - Fix all issues in the code below
-by applying the best practices learnt
-so far.
+  by applying the best practices learnt
+  so far.
 - Make sure all the lists are numbered
-and links are functional.
+  and links are functional.
 - Use proper table caption, heading and
-body elements.
+  body elements.
 
 <codeblock language="html" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
@@ -25,9 +25,10 @@ body elements.
   <a href="https://www.google.com>Link to Google</a>
   <img src="https://images.unsplash.com/photo-1672078857105-a1229a7033b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" alt="A burger split in two"/>
 
-  <li>Pizza</li>
-  <li>Sandwich</li>
-  <li>Burger</li>
+{" "}
+<li>Pizza</li>
+<li>Sandwich</li>
+<li>Burger</li>
 
   <table>
     <tbody>
@@ -57,34 +58,35 @@ form {
   width: 60%;
 }
 
-form * {
-  margin: 0.5rem;
+form \* {
+margin: 0.5rem;
 }
 
 button {
-  border: none;
-  width: 40%;
-  margin: 1;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  box-shadow: 0px 0px 1px black;
-  border-radius: 2px;
+border: none;
+width: 40%;
+margin: 1;
+padding: 0.5rem;
+font-size: 1.2rem;
+font-weight: 700;
+box-shadow: 0px 0px 1px black;
+border-radius: 2px;
 }
 
 button[type="submit"] {
-  background-color: royalblue;
-  color: white;
+background-color: royalblue;
+color: white;
 }
 
 button[type="reset"] {
-  background-color: tomato;
-  color: white;
+background-color: tomato;
+color: white;
 }
 
 img {
-  width: "300px"
+width: "300px"
 }
+
 </panel>
 </code>
 <solution>
@@ -98,14 +100,19 @@ img {
     <li>Chocolate Chip Cookie Dough</li>
   </ol>
 
-  <a href="https://www.google.com">Link to Google</a>
-  <img src="https://images.unsplash.com/photo-1672078857105-a1229a7033b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"  alt="A burger split in two"/>
+{" "}
+<a href="https://www.google.com">Link to Google</a>
+<img
+  src="https://images.unsplash.com/photo-1672078857105-a1229a7033b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+  alt="A burger split in two"
+/>
 
-  <ol>
-    <li>Pizza</li>
-    <li>Sandwich</li>
-    <li>Burger</li>
-  </ol>
+{" "}
+<ol>
+  <li>Pizza</li>
+  <li>Sandwich</li>
+  <li>Burger</li>
+</ol>
 
   <table>
     <caption>Office Address</caption>
@@ -126,7 +133,7 @@ img {
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

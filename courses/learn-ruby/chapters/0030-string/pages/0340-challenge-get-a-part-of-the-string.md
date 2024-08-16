@@ -1,4 +1,4 @@
-In this exercise, the goal
+In this challenge, the goal
 is to print the name of
 the city which is **Chicago**.
 

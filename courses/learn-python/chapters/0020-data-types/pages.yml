@@ -2,39 +2,39 @@
 - title: Introduction to Numbers
   slug: introduction-to-numbers
   page_type: lesson
-- title: Exercise 1 - Introduction to Numbers
-  slug: exercise-1-introduction-to-numbers
+- title: Challenge 1 - Introduction to Numbers
+  slug: challenge-1-introduction-to-numbers
   page_type: exercise
-- title: Exercise 2 - Introduction to Numbers
-  slug: exercise-2-introduction-to-numbers
+- title: Challenge 2 - Introduction to Numbers
+  slug: challenge-2-introduction-to-numbers
   page_type: exercise
 - title: Decimal Numbers
   slug: decimal-numbers
   page_type: lesson
-- title: Exercise - Decimal Numbers
-  slug: exercise-decimal-numbers
+- title: Challenge - Decimal Numbers
+  slug: challenge-decimal-numbers
   page_type: exercise
 - title: Booleans
   slug: booleans
   page_type: lesson
-- title: Exercise - Booleans
-  slug: exercise-booleans
+- title: Challenge - Booleans
+  slug: challenge-booleans
   page_type: exercise
 - title: None
   slug: none
   page_type: lesson
-- title: Exercise - None
-  slug: exercise-none
+- title: Challenge - None
+  slug: challenge-none
   page_type: exercise
 - title: Strings
   slug: strings
   page_type: lesson
-- title: Exercise 1 - Strings
-  slug: exercise-1-strings
+- title: Challenge 1 - Strings
+  slug: challenge-1-strings
   page_type: exercise
-- title: Exercise 2 - Strings
-  slug: exercise-2-strings
+- title: Challenge 2 - Strings
+  slug: challenge-2-strings
   page_type: exercise
-- title: Exercise 3 - Strings
-  slug: exercise-3-strings
+- title: Challenge 3 - Strings
+  slug: challenge-3-strings
   page_type: exercise

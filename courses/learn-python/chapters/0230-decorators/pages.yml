@@ -5,8 +5,8 @@
 - title: What are decorators?
   slug: what-are-decorators
   page_type: lesson
-- title: Exercise 1 - What are decorators?
-  slug: exercise-1-what-are-decorators
+- title: Challenge 1 - What are decorators?
+  slug: challenge-1-what-are-decorators
   page_type: exercise
 - title: Decorators as annotations
   slug: decorators-as-annotations
@@ -17,18 +17,18 @@
 - title: Using Nested Functions in decorators
   slug: using-nested-functions-in-decorators
   page_type: lesson
-- title: Exercise 1 - Using Nested Functions in decorators
-  slug: exercise-1-using-nested-functions-in-decorators
+- title: Challenge 1 - Using Nested Functions in decorators
+  slug: challenge-1-using-nested-functions-in-decorators
   page_type: exercise
 - title: Decorating functions with arguments
   slug: decorating-functions-with-arguments
   page_type: lesson
-- title: Exercise 1 - Decorating functions with arguments
-  slug: exercise-1-decorating-functions-with-arguments
+- title: Challenge 1 - Decorating functions with arguments
+  slug: challenge-1-decorating-functions-with-arguments
   page_type: exercise
 - title: Using multiple decorators on one function
   slug: using-multiple-decorators-on-one-function
   page_type: lesson
-- title: Exercise 1 - Using multiple decorators on one function
-  slug: exercise-1-using-multiple-decorators-on-one-function
+- title: Challenge 1 - Using multiple decorators on one function
+  slug: challenge-1-using-multiple-decorators-on-one-function
   page_type: exercise

@@ -1,6 +1,7 @@
 Create a list with
 these 5 movies from the
 Marvel franchise.
+
 ```js
   Iron Man
   Thor
@@ -8,6 +9,7 @@ Marvel franchise.
   Captain Marvel
   Guardians of the Galaxy Vol. 1
 ```
+
 - Use an appropriate datatype of your choice.
 - Assign this value to a variable that is properly named.
 - Make sure they are added in the **alphabetical order**.
@@ -27,10 +29,11 @@ const marvelCharacters = [
 ];
 
 console.log(marvelCharacters[1]);
+
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

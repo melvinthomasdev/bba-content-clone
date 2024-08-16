@@ -31,38 +31,39 @@ gained so far, do the following:
 }
 
 .card_name {
-  font-size: 32px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 32px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .card_img {
-  width: 100%;
+width: 100%;
 }
 
 .card_details {
-  text-align: left;
+text-align: left;
 }
 
 .card {
-  width: 300px;
-  padding: 16px;
-  min-height: 400px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0px 0px 4px gray;
+width: 300px;
+padding: 16px;
+min-height: 400px;
+border-radius: 10px;
+text-align: center;
+box-shadow: 0px 0px 4px gray;
 }
 
 .honda_city {
-  background-color: peachpuff;
-  /* Add padding property here */
+background-color: peachpuff;
+/_ Add padding property here _/
 
 }
 
 .skoda_slavia {
-  background-color: blanchedalmond;
-  /* Add border property here */
+background-color: blanchedalmond;
+/_ Add border property here _/
 
 }
+
 </panel>
 </code>
 
@@ -73,46 +74,46 @@ gained so far, do the following:
 }
 
 .card_name {
-  font-size: 32px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 32px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .card_img {
-  width: 100%;
+width: 100%;
 }
 
 .card_details {
-  text-align: left;
+text-align: left;
 }
 
 .card {
-  width: 300px;
-  padding: 16px;
-  min-height: 400px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0px 0px 4px gray;
+width: 300px;
+padding: 16px;
+min-height: 400px;
+border-radius: 10px;
+text-align: center;
+box-shadow: 0px 0px 4px gray;
 }
 
 .honda_city {
-  background-color: peachpuff;
-  /* Add padding property here */
-  padding: 20px;
+background-color: peachpuff;
+/_ Add padding property here _/
+padding: 20px;
 }
 
 .skoda_slavia {
-  background-color: blanchedalmond;
-  /* Add border property here */
-  border: 3px solid goldenrod;
+background-color: blanchedalmond;
+/_ Add border property here _/
+border: 3px solid goldenrod;
 }
 
-* {
+- {
   box-sizing: border-box;
-}
-</solution>
+  }
+  </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

@@ -63,7 +63,7 @@ If you're not able to get this output, try reloading zsh by executing the comman
 
 ## Installing Rails
 
-Now that we have Ruby up and running, its time to install Rails. For this, we will be using the gem command. Note that for this exercise, we will be installing Rails version 7.0.5. Execute this command:
+Now that we have Ruby up and running, its time to install Rails. For this, we will be using the gem command. Note that for this challenge, we will be installing Rails version 7.0.5. Execute this command:
 
 ```bash
 gem install rails --no-document -v 7.0.5

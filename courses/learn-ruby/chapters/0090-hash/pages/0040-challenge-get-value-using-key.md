@@ -1,4 +1,4 @@
-In this exercise,
+In this challenge,
 print the age of the person.
 
 Get the age of the
@@ -22,5 +22,6 @@ hash = {
 }
 
 puts hash[:age]
+
 </solution>
 </codeblock>

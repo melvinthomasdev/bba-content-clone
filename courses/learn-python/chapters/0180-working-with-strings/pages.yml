@@ -2,54 +2,54 @@
 - title: Separating Strings by character
   slug: separating-strings-by-character
   page_type: lesson
-- title: Exercise 1 - Separating Strings by character
-  slug: exercise-1-separating-strings-by-character
+- title: Challenge 1 - Separating Strings by character
+  slug: challenge-1-separating-strings-by-character
   page_type: exercise
 - title: Joining Strings by character
   slug: joining-strings-by-character
   page_type: lesson
-- title: Exercise 1 - Joining Strings by character
-  slug: exercise-1-joining-strings-by-character
+- title: Challenge 1 - Joining Strings by character
+  slug: challenge-1-joining-strings-by-character
   page_type: exercise
 - title: Convert lowercase to uppercase
   slug: convert-lowercase-to-uppercase
   page_type: lesson
-- title: Exercise 1 - Convert lowercase to uppercase
-  slug: exercise-1-convert-lowercase-to-uppercase
+- title: Challenge 1 - Convert lowercase to uppercase
+  slug: challenge-1-convert-lowercase-to-uppercase
   page_type: exercise
 - title: Capitalize the first letter
   slug: capitalize-the-first-letter
   page_type: lesson
-- title: Exercise 1 - Capitalize the first letter
-  slug: exercise-1-capitalize-the-first-letter
+- title: Challenge 1 - Capitalize the first letter
+  slug: challenge-1-capitalize-the-first-letter
   page_type: exercise
 - title: Remove extra spaces from text
   slug: remove-extra-spaces-from-text
   page_type: lesson
-- title: Exercise 1 - Remove extra spaces from text
-  slug: exercise-1-remove-extra-spaces-from-text
+- title: Challenge 1 - Remove extra spaces from text
+  slug: challenge-1-remove-extra-spaces-from-text
   page_type: exercise
 - title: Find the index of a word
   slug: find-the-index-of-a-word
   page_type: lesson
-- title: Exercise 1 - Find the index of a word
-  slug: exercise-1-find-the-index-of-a-word
+- title: Challenge 1 - Find the index of a word
+  slug: challenge-1-find-the-index-of-a-word
   page_type: exercise
 - title: Replace a word
   slug: replace-a-word
   page_type: lesson
-- title: Exercise 1 - Replace a word
-  slug: exercise-1-replace-a-word
+- title: Challenge 1 - Replace a word
+  slug: challenge-1-replace-a-word
   page_type: exercise
 - title: Find whether a string is a digit
   slug: find-whether-a-string-is-a-digit
   page_type: lesson
-- title: Exercise 1 - Find whether a string is a digit
-  slug: exercise-1-find-whether-a-string-is-a-digit
+- title: Challenge 1 - Find whether a string is a digit
+  slug: challenge-1-find-whether-a-string-is-a-digit
   page_type: exercise
 - title: Selecting a subset of a string
   slug: selecting-a-subset-of-a-string
   page_type: lesson
-- title: Exercise 1 - Selecting a subset of a string
-  slug: exercise-1-selecting-a-subset-of-a-string
+- title: Challenge 1 - Selecting a subset of a string
+  slug: challenge-1-selecting-a-subset-of-a-string
   page_type: exercise

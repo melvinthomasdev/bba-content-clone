@@ -1,4 +1,4 @@
-In the exercise given below,
+In the challenge given below,
 modify the function `calculateSum`
 to accept any number of arguments,
 and

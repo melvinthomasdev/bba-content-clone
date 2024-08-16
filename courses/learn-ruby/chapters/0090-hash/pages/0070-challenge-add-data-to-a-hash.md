@@ -1,4 +1,4 @@
-In this exercise,
+In this challenge,
 add a new key
 **height** to the hash.
 
@@ -26,5 +26,6 @@ hash = {
 hash.merge!({ height: "6 ft"})
 
 puts hash
+
 </solution>
 </codeblock>

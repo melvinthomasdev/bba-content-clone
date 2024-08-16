@@ -1,5 +1,6 @@
 Create a list containing
 these 5 players from team A.
+
 - Eve Smith
 - Sam Smith
 - Renu Sen
@@ -29,10 +30,11 @@ playerList.pop();
 playerList.push("Chinua Achebe");
 
 console.log(playerList);
+
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

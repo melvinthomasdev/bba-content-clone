@@ -2,18 +2,18 @@
 - title: Delaying code execution using sleep
   slug: delaying-code-execution-using-sleep
   page_type: lesson
-- title: Exercise 1 - Delaying code execution using sleep
-  slug: exercise-1-delaying-code-execution-using-sleep
+- title: Challenge 1 - Delaying code execution using sleep
+  slug: challenge-1-delaying-code-execution-using-sleep
   page_type: exercise
 - title: Measuring code with Performance Counter
   slug: measuring-code-with-performance-counter
   page_type: lesson
-- title: Exercise 1 - Measuring code with Performance Counter
-  slug: exercise-1-measuring-code-with-performance-counter
+- title: Challenge 1 - Measuring code with Performance Counter
+  slug: challenge-1-measuring-code-with-performance-counter
   page_type: exercise
 - title: Analyzing code runtime with timeit
   slug: analyzing-code-runtime-with-timeit
   page_type: lesson
-- title: Exercise 1 - Analyzing code runtime with timeit
-  slug: exercise-1-analyzing-code-runtime-with-timeit
+- title: Challenge 1 - Analyzing code runtime with timeit
+  slug: challenge-1-analyzing-code-runtime-with-timeit
   page_type: exercise

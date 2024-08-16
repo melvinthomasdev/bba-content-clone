@@ -2,8 +2,8 @@
 - title: What are iterators?
   slug: what-are-iterators
   page_type: lesson
-- title: Exercise 1 - What are iterators?
-  slug: exercise-1-what-are-iterators
+- title: Challenge 1 - What are iterators?
+  slug: challenge-1-what-are-iterators
   page_type: exercise
 - title: Iterators vs Generators
   slug: iterators-vs-generators
@@ -11,8 +11,8 @@
 - title: Creating an Iterator
   slug: creating-an-iterator
   page_type: lesson
-- title: Exercise 1 - Creating an Iterator
-  slug: exercise-1-creating-an-iterator
+- title: Challenge 1 - Creating an Iterator
+  slug: challenge-1-creating-an-iterator
   page_type: exercise
 - title: Examples of Iterators
   slug: examples-of-iterators

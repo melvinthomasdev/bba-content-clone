@@ -1,10 +1,11 @@
 ## Challenge 1
+
 Update the function `maskCardNumber` to return the `cardNumber` with only the last 4 digits displayed and the rest replaced with `*`. The length of the card number can vary.
 
 ```js
-Output:
-"**** **** **** 4444"
+Output: "**** **** **** 4444";
 ```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 const maskCardNumber = (cardNumber) => {
@@ -31,29 +32,31 @@ It should be written `JavaScript` and not `javascript`.
 Update the function `fixJavaScript` to return the fixed version of the below excerpt from an interview with Brendan Eich, the founder of JavaScript before he sees it.
 
 ```js
-Output:
-`InfoWorld: As I understand it, JavaScript started out as Mocha, then became LiveScript and then became JavaScript when Netscape and Sun got together. But it actually has nothing to do with Java or not much to do with it, correct?
-Eich: That's right. It was all within six months from May till December (1995) that it was Mocha and then LiveScript. And then in early December, Netscape and Sun did a license agreement and it became JavaScript. And the idea was to make it a complementary scripting language to go with Java, with the compiled language.`
+Output: `InfoWorld: As I understand it, JavaScript started out as Mocha, then became LiveScript and then became JavaScript when Netscape and Sun got together. But it actually has nothing to do with Java or not much to do with it, correct?
+Eich: That's right. It was all within six months from May till December (1995) that it was Mocha and then LiveScript. And then in early December, Netscape and Sun did a license agreement and it became JavaScript. And the idea was to make it a complementary scripting language to go with Java, with the compiled language.`;
 ```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 const interviewExcerpt = `InfoWorld: As I understand it, javascript started out as Mocha, then became LiveScript and then became javascript when Netscape and Sun got together. But it actually has nothing to do with Java or not much to do with it, correct?
 Eich: That's right. It was all within six months from May till December (1995) that it was Mocha and then LiveScript. And then in early December, Netscape and Sun did a license agreement and it became javascript. And the idea was to make it a complementary scripting language to go with Java, with the compiled language.`;
 
 const fixJavaScript = (interviewExcerpt) => {
-  // Write your code here
+// Write your code here
 };
 console.log(fixJavaScript(interviewExcerpt));
+
 </code>
 <solution>
 const interviewExcerpt = `InfoWorld: As I understand it, javascript started out as Mocha, then became LiveScript and then became javascript when Netscape and Sun got together. But it actually has nothing to do with Java or not much to do with it, correct?
 Eich: That's right. It was all within six months from May till December (1995) that it was Mocha and then LiveScript. And then in early December, Netscape and Sun did a license agreement and it became javascript. And the idea was to make it a complementary scripting language to go with Java, with the compiled language.`;
 
 const fixJavaScript = (interviewExcerpt) => {
-  return interviewExcerpt.replaceAll("javascript", "JavaScript");
+return interviewExcerpt.replaceAll("javascript", "JavaScript");
 };
 
 console.log(fixJavaScript(interviewExcerpt));
+
 </solution>
 </codeblock>
 
@@ -63,9 +66,9 @@ Update function `trimUnits` such that it clears out the unit mentioned (`px`, `e
 For example: `4px` should return 4. The length of all units will be given as `unitLength`.
 
 ```js
-Output:
-12
+Output: 12;
 ```
+
 <codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
 const unitValue = "12rem";
@@ -86,23 +89,25 @@ console.log(trimUnits(unitValue, unitLength));
 </codeblock>
 
 ## Challenge 4
+
 Fix the error in the code below
 by using the correct method:
 
 ```js
-Output:
-"undefined"
+Output: "undefined";
 ```
-<codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
-<code>
-console.log(undefined.toString());
-</code>
-<solution>
-console.log(String(undefined));
-</solution>
+
+<codeblock
+  language="javascript"
+  type="exercise"
+  testMode="fixedInput"
+  showSolution="false"
+>
+  <code>console.log(undefined.toString());</code>
+  <solution>console.log(String(undefined));</solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

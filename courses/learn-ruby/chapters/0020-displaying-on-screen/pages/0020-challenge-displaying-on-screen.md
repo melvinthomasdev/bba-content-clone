@@ -1,7 +1,7 @@
 Run the code shown below.
 You will see the message **I love ice cream**.
 
-In this exercise, you need
+In this challenge, you need
 to change the message in the
 code editor, so that when the
 code runs, it prints **I love chocolate**.

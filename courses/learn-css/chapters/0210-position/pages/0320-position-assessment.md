@@ -50,59 +50,60 @@ gained so far, do the following:
 }
 
 body {
-  background-color: oldlace;
-  font-family: Raleway, sans-serif;
+background-color: oldlace;
+font-family: Raleway, sans-serif;
 }
 
 .page {
-  position: relative;
+position: relative;
 }
 
 h1 {
-  background-color: bisque;
-  margin-top: 1rem;
-  padding: 1rem;
-  box-shadow: 4px 4px 4px peachpuff;
+background-color: bisque;
+margin-top: 1rem;
+padding: 1rem;
+box-shadow: 4px 4px 4px peachpuff;
 }
 
 p {
-  background-color: mediumvioletred;
-  color: white;
-  margin-top: 0.5rem;
-  font-family: Roboto, sans-serif;
-  padding: 0.5rem;
+background-color: mediumvioletred;
+color: white;
+margin-top: 0.5rem;
+font-family: Roboto, sans-serif;
+padding: 0.5rem;
 }
 
 #pineapple-heading {
-  background-color: yellow;
-  padding: 1rem;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  /* Write your code here */
+background-color: yellow;
+padding: 1rem;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+/_ Write your code here _/
 
 }
 
 #apple-heading {
-  background-color: mediumpurple;
-  padding: 1rem;
-  z-index: 1;
-  /* Write your code here */
+background-color: mediumpurple;
+padding: 1rem;
+z-index: 1;
+/_ Write your code here _/
 
 }
 
 #mango-heading {
-  background-color: tomato;
-  padding: 1rem;
-  cursor: pointer;
-  /* Write your code here */
+background-color: tomato;
+padding: 1rem;
+cursor: pointer;
+/_ Write your code here _/
 
 }
 
 #pineapple-paragraph {
-  background-color: orange;
-  padding: 0.5rem;
-  /* Write your code here */
+background-color: orange;
+padding: 0.5rem;
+/_ Write your code here _/
 
 }
+
 </panel>
 </code>
 
@@ -113,66 +114,67 @@ p {
 }
 
 body {
-  background-color: oldlace;
-  font-family: Raleway, sans-serif;
+background-color: oldlace;
+font-family: Raleway, sans-serif;
 }
 
 .page {
-  position: relative;
+position: relative;
 }
 
 h1 {
-  background-color: bisque;
-  margin-top: 1rem;
-  padding: 1rem;
-  box-shadow: 4px 4px 4px peachpuff;
+background-color: bisque;
+margin-top: 1rem;
+padding: 1rem;
+box-shadow: 4px 4px 4px peachpuff;
 }
 
 p {
-  background-color: mediumvioletred;
-  color: white;
-  margin-top: 0.5rem;
-  font-family: Roboto, sans-serif;
-  padding: 0.5rem;
+background-color: mediumvioletred;
+color: white;
+margin-top: 0.5rem;
+font-family: Roboto, sans-serif;
+padding: 0.5rem;
 }
 
 #pineapple-heading {
-  background-color: yellow;
-  padding: 1rem;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 2rem;
+background-color: yellow;
+padding: 1rem;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+position: sticky;
+top: 2rem;
 }
 
 #apple-heading {
-  background-color: mediumpurple;
-  padding: 1rem;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
+background-color: mediumpurple;
+padding: 1rem;
+z-index: 1;
+position: absolute;
+top: 0;
+left: 0;
 }
 
 #mango-heading {
-  background-color: tomato;
-  padding: 1rem;
-  cursor: pointer;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
+background-color: tomato;
+padding: 1rem;
+cursor: pointer;
+position: fixed;
+bottom: 0;
+right: 0;
+z-index: 2;
 }
 
 #pineapple-paragraph {
-  background-color: orange;
-  padding: 0.5rem;
-  position: sticky;
-  bottom: 0;
+background-color: orange;
+padding: 0.5rem;
+position: sticky;
+bottom: 0;
 }
+
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

@@ -7,7 +7,6 @@ The first argument passed to the function will always be the person's name, foll
 Modify the `calculateAverage` function to accept an array of grades and log the average grade.
 Ensure that you can pass the grades as separate arguments when calling the function.
 
-
 <codeblock language="javascript" type="exercise" testMode="multipleInput">
 <code>
 <panel language="javascript">
@@ -22,6 +21,7 @@ const logMessages = () => {
 const calculateAverage = () => {
 
 };
+
 </panel>
 </code>
 
@@ -35,10 +35,11 @@ const logMessages = (name, ...messages) => {
 };
 
 const calculateAverage = (...grades) => {
-  const total = grades.reduce((sum, grade) => sum + grade, 0);
-  const average = total / grades.length;
-  console.log(`The average grade is: ${average.toFixed(2)}`);
+const total = grades.reduce((sum, grade) => sum + grade, 0);
+const average = total / grades.length;
+console.log(`The average grade is: ${average.toFixed(2)}`);
 };
+
 </solution>
 
 <testcases>
@@ -77,7 +78,7 @@ const grades = [88, 92, 84, 91];
 </testcases>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

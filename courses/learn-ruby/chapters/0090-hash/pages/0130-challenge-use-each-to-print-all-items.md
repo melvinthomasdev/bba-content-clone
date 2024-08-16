@@ -1,4 +1,4 @@
-In this exercise,
+In this challenge,
 using `each do`,
 print who is staying
 in which room number. Here, you can use hash-rocket syntax because the newer syntax doesn't automatically convert integer keys to symbols. You can keep the keys as integers or strings.
@@ -29,7 +29,8 @@ hotel = {
 }
 
 hotel.each do | room, name |
-  puts name + " is staying in " + room
+puts name + " is staying in " + room
 end
+
 </solution>
 </codeblock>

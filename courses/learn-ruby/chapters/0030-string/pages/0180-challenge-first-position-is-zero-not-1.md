@@ -1,4 +1,4 @@
-In this exercise, the goal
+In this challenge, the goal
 is to display the 4th
 letter of the word **Paris**.
 

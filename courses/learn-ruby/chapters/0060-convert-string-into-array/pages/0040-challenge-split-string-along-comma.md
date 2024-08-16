@@ -1,4 +1,4 @@
-In this exercise, split
+In this challenge, split
 the names of fruits into
 an array.
 
@@ -10,9 +10,10 @@ three items.
 <code>
 fruits = "banana, apple, grapes"
 
-array = 
+array =
 
 puts array
+
 </code>
 
 <solution>
@@ -21,5 +22,6 @@ fruits = "banana, apple, grapes"
 array = fruits.split(",")
 
 puts array
+
 </solution>
 </codeblock>

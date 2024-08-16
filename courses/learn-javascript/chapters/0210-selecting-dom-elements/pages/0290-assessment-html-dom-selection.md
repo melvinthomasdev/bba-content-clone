@@ -1,5 +1,6 @@
 Update the provided code to
 perform the following actions:
+
 - Save the heading with id `welcome`
   in a variable named `mainHeading`.
 - Save the heading with id `punchline`
@@ -33,10 +34,11 @@ let allHeadings = Array.from(document.getElementsByTagName('h2'));
 console.log(mainHeading);
 console.log(punchline);
 console.log(allHeadings);
+
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

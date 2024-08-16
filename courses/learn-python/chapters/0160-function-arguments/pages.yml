@@ -2,14 +2,14 @@
 - title: Default Arguments
   slug: default-arguments
   page_type: lesson
-- title: Exercise 1 - Default Arguments
-  slug: exercise-1-default-arguments
+- title: Challenge 1 - Default Arguments
+  slug: challenge-1-default-arguments
   page_type: exercise
 - title: Keyword Arguments
   slug: keyword-arguments
   page_type: lesson
-- title: Exercise 1 - Keyword Arguments
-  slug: exercise-1-keyword-arguments
+- title: Challenge 1 - Keyword Arguments
+  slug: challenge-1-keyword-arguments
   page_type: exercise
 - title: Variable Arguments
   slug: variable-arguments
@@ -20,6 +20,6 @@
 - title: Using Variable Arguments
   slug: using-variable-arguments
   page_type: lesson
-- title: Exercise 1 - Variable Arguments
-  slug: exercise-1-variable-arguments
+- title: Challenge 1 - Variable Arguments
+  slug: challenge-1-variable-arguments
   page_type: exercise

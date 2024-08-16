@@ -27,12 +27,13 @@ gained so far, do the following:
     <li>Pista</li>
   </ol>
 
-  <ul class="sports">
-    <li>Football</li>
-    <li>Hockey</li>
-    <li>Volleyball</li>
-    <li>Basketball</li>
-  </ul>
+{" "}
+<ul class="sports">
+  <li>Football</li>
+  <li>Hockey</li>
+  <li>Volleyball</li>
+  <li>Basketball</li>
+</ul>
 
   <ul class="footer">
     <li><a href="#">Contact Us</a></li>
@@ -48,16 +49,17 @@ gained so far, do the following:
 }
 
 .sports {
-  /* Write your code here */
+/_ Write your code here _/
 
 }
 
 .footer {
-  border-top: 1px solid grey;
-  text-align: center;
-  /* Write your code here */
+border-top: 1px solid grey;
+text-align: center;
+/_ Write your code here _/
 
 }
+
 </panel>
 </code>
 <solution>
@@ -68,20 +70,21 @@ gained so far, do the following:
 }
 
 .sports {
-  /* Write your code here */
-  list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif');
+/_ Write your code here _/
+list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif');
 }
 
 .footer {
-  border-top: 1px solid grey;
-  text-align: center;
-  /* Write your code here */
-  list-style-type: none;
+border-top: 1px solid grey;
+text-align: center;
+/_ Write your code here _/
+list-style-type: none;
 }
+
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

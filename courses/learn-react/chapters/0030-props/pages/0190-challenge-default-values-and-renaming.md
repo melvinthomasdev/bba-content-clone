@@ -1,4 +1,4 @@
-In this exercise, your task is to rename the `age` attribute to `userAge` and set the default value of `username` to `Guest` and default value of `userAge` to `25`.
+In this challenge, your task is to rename the `age` attribute to `userAge` and set the default value of `username` to `Guest` and default value of `userAge` to `25`.
 
 <codeblock language="reactjs" type="exercise" testMode="fixedInput">
 <code>

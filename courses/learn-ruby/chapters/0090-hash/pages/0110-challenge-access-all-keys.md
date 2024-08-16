@@ -1,4 +1,4 @@
-In this exercise,
+In this challenge,
 print all the keys of
 the hash.
 
@@ -22,5 +22,6 @@ hash = {
 all_keys = hash.keys
 
 puts all_keys
+
 </solution>
 </codeblock>

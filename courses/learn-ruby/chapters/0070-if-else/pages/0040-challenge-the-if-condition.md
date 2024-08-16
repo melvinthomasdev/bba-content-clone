@@ -1,8 +1,6 @@
-In this exercise, if sports
+In this challenge, if sports
 is **basketball**, then print
 **You like basketball**.
-
-
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
 <code>
@@ -14,7 +12,8 @@ sports = "basketball"
 sports = "basketball"
 
 if sports == "basketball"
-  puts "You like basketball"
+puts "You like basketball"
 end
+
 </solution>
 </codeblock>

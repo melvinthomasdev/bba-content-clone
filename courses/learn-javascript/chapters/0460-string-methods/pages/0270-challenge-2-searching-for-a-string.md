@@ -7,7 +7,7 @@ the words **happy** and **day** in the **message**.
 
 - Fill in the condition
   inside the **if** statement to
-  complete the exercise.
+  complete the challenge.
 
 ```js
 Output:

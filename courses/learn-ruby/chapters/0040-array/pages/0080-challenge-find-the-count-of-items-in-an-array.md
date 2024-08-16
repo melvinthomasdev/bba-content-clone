@@ -1,4 +1,4 @@
-In this exercise, print the
+In this challenge, print the
 number of sports I like:
 
 <codeblock language="ruby" type="exercise" testMode="fixedInput">
@@ -11,5 +11,6 @@ sports_i_like = ["basketball", "tennis", "hockey"]
 sports_i_like = ["basketball", "tennis", "hockey"]
 
 puts sports_i_like.length
+
 </solution>
 </codeblock>

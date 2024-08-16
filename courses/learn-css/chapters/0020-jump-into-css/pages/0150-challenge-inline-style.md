@@ -8,9 +8,9 @@ of `background-color: red`,
 
 <codeblock type="exercise" language="html" testMode="fixedInput">
 <code>
-<h1>Inline style exercise.</h1>
+<h1>Inline style challenge.</h1>
 </code>
 <solution>
-<h1 style="background-color: red; font-size: 20px; color: teal">Inline style exercise.</h1>
+<h1 style="background-color: red; font-size: 20px; color: teal">Inline style challenge.</h1>
 </solution>
 </codeblock>

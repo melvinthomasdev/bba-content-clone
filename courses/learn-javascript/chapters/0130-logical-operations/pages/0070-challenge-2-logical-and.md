@@ -17,7 +17,7 @@ Your task is to write code that checks the user's login status, role, plan, and 
   - If the user's role is Admin and they are on the Free plan, log: "Displaying the Admin Panel with limited admin features."
   - If the user's role is Standard, log: "Access denied."
 
-Use the provided user object for this exercise.
+Use the provided user object for this challenge.
 
 <codeblock language="javascript" type="exercise" testMode="fixedInput">
 <code>

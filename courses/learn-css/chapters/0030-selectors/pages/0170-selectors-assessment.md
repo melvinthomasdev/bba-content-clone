@@ -48,7 +48,8 @@ body * {
   margin: 1rem;
 }
 
-/* Write your code here */
+/_ Write your code here _/
+
 </panel>
 </code>
 <solution>
@@ -85,36 +86,37 @@ body * {
   margin: 1rem;
 }
 
-/* Write your code here */
+/_ Write your code here _/
 
-* {
+- {
   color: green;
-}
+  }
 
 h1 {
-  color: red;
+color: red;
 }
 
 p {
-  color: blue;
+color: blue;
 }
 
 .heading-pink {
-  color: pink;
+color: pink;
 }
 
 #heading-brown {
-  color: brown;
+color: brown;
 }
 
 .background-gold {
-  background-color: gold;
+background-color: gold;
 }
+
 </panel>
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

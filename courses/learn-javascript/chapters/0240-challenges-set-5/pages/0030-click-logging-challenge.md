@@ -5,7 +5,7 @@ Create a dynamic webpage with styled sections and interactive features focused o
 **Create Section Divs**
 
 Inside the `div` with the class "container", using JavaScript dynamically create three `<div>` elements with the class `section` and an additional class named `section-one`, `section-two`, and `section-three` respectively. Applying these classes will take care of the styling.
-  
+
 **Add Click Log Section**
 
 Inside the `div` with the class "log-section", create another `<div>` element with the class `click-log` and a `<h2>` heading with the text **"Click Log"** using JavaScript.
@@ -21,7 +21,6 @@ Implement functionality such that when a user clicks on any section `<div>`, dyn
 **Clear Button**
 
 Inside the `div` with the class "log-section" itself, at the bottom of the `click-log` section, create a `<button>` with JavaScript that clears all entries from the log when clicked.
-
 
 Make sure all tasks are completed using JavaScript for element creation, event handling, and DOM manipulation to improve user interaction and logging functionality. Use the `sectionDetails` array of objects provided in the code to construct the challenge.
 
@@ -51,32 +50,32 @@ Make sure all tasks are accomplished using JavaScript for element creation, even
 }
 
 .section {
-    width: 80%;
-    margin: 10px 0;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 80%;
+margin: 10px 0;
+padding: 20px;
+border-radius: 8px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .click-log {
-    margin-top: 20px;
-    width: 100%;
-    text-align: left;
+margin-top: 20px;
+width: 100%;
+text-align: left;
 }
 
-
 .section-one {
-	background-color: #ffcccc;
+background-color: #ffcccc;
 }
 
 .section-two {
-	background-color: #ccffcc;
+background-color: #ccffcc;
 }
 
 .section-three {
-	background-color: #ccccff;
+background-color: #ccccff;
 }
+
 </panel>
 <panel language="javascript">
 const sectionDetails = [
@@ -96,7 +95,7 @@ const sectionDetails = [
     backgroundColor: "#ccccff"
   }
 ];
-// Write code below 
+// Write code below
 
 </panel>
 </code>
@@ -119,33 +118,33 @@ const sectionDetails = [
   }
 ];
 
-// Write code below 
+// Write code below
 
 const containerSection = document.querySelector('.container');
 const logSection = document.querySelector('.log-section');
 
 sectionDetails.forEach(({ id, className }) => {
-  const section = document.createElement('div');
-  section.classList.add('section', className);
-  section.textContent = `Section ${id}`;
-  containerSection.appendChild(section);
+const section = document.createElement('div');
+section.classList.add('section', className);
+section.textContent = `Section ${id}`;
+containerSection.appendChild(section);
 
-  section.addEventListener('mouseover', () => {
-    section.style.backgroundColor = 'red';
-  });
+section.addEventListener('mouseover', () => {
+section.style.backgroundColor = 'red';
+});
 
-  section.addEventListener('mouseout', () => {
-    const sectionDetail = sectionDetails.find(detail => section.classList.contains(detail.className));
-    if (sectionDetail) {
-      section.style.backgroundColor = sectionDetail.backgroundColor;
-    }
-  });
+section.addEventListener('mouseout', () => {
+const sectionDetail = sectionDetails.find(detail => section.classList.contains(detail.className));
+if (sectionDetail) {
+section.style.backgroundColor = sectionDetail.backgroundColor;
+}
+});
 
-  section.addEventListener('click', () => {
-    const paragraph = document.createElement('p');
-    paragraph.textContent = `Clicked on div ${id}`;
-    clickLog.appendChild(paragraph);
-  });
+section.addEventListener('click', () => {
+const paragraph = document.createElement('p');
+paragraph.textContent = `Clicked on div ${id}`;
+clickLog.appendChild(paragraph);
+});
 });
 
 const clickLogDiv = document.createElement('div');
@@ -164,14 +163,14 @@ logSection.appendChild(clearLogButton);
 const clickLog = document.querySelector('.click-log');
 
 clearLogButton.addEventListener('click', () => {
-  clickLog.innerHTML = '';
-  clickLog.appendChild(headingElement);
+clickLog.innerHTML = '';
+clickLog.appendChild(headingElement);
 });
 
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

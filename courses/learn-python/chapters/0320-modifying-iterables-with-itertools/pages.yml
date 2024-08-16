@@ -5,36 +5,36 @@
 - title: Zip Longest
   slug: zip-longest
   page_type: lesson
-- title: Exercise 1 - Zip Longest
-  slug: exercise-1-zip-longest
+- title: Challenge 1 - Zip Longest
+  slug: challenge-1-zip-longest
   page_type: exercise
 - title: Cycle
   slug: cycle
   page_type: lesson
-- title: Exercise 1 - Cycle
-  slug: exercise-1-cycle
+- title: Challenge 1 - Cycle
+  slug: challenge-1-cycle
   page_type: exercise
 - title: Chain
   slug: chain
   page_type: lesson
-- title: Exercise 1 - Chain
-  slug: exercise-1-chain
+- title: Challenge 1 - Chain
+  slug: challenge-1-chain
   page_type: exercise
 - title: Compress
   slug: compress
   page_type: lesson
-- title: Exercise 1 - Compress
-  slug: exercise-1-compress
+- title: Challenge 1 - Compress
+  slug: challenge-1-compress
   page_type: exercise
 - title: Groupby
   slug: groupby
   page_type: lesson
-- title: Exercise 1 - Groupby
-  slug: exercise-1-groupby
+- title: Challenge 1 - Groupby
+  slug: challenge-1-groupby
   page_type: exercise
 - title: Starmap
   slug: starmap
   page_type: lesson
-- title: Exercise 1 - Starmap
-  slug: exercise-1-starmap
+- title: Challenge 1 - Starmap
+  slug: challenge-1-starmap
   page_type: exercise

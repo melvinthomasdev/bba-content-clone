@@ -43,20 +43,20 @@ body {
 }
 
 #main-heading {
-  text-align: center;
-  color: rgb(66, 64, 219) !important;
+text-align: center;
+color: rgb(66, 64, 219) !important;
 }
 
 img {
-  display: block;
-  width: 150px;
-  padding: 20px;
+display: block;
+width: 150px;
+padding: 20px;
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 </panel>
@@ -85,7 +85,7 @@ img {
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

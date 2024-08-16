@@ -6,16 +6,18 @@ with two parameters:
 
 The displayTotalCount function should execute
 the following tasks:
+
 - Adds the string to the array.
 - Display the total count of elements in the
   updated array by logging it to the console.
-<codeblock type="exercise" language="javascript" testMode="fixedInput">
+    <codeblock type="exercise" language="javascript" testMode="fixedInput">
 <code>
 const teamMembers = ["Ajith", "Vaishnavi", "Nilopher", "Ritika", "Shristi", "Manjunath"];
 const newTeamMember = "Peter";
 // Write your code below this line
 
 displayTotalCount(teamMembers, newTeamMember);
+
 </code>
 
 <solution>
@@ -28,6 +30,7 @@ const displayTotalCount = (list, newElement) => {
 };
 
 displayTotalCount(teamMembers, newTeamMember);
+
 </solution>
 </codeblock>
 
@@ -36,6 +39,7 @@ that takes an array of strings as a parameter.
 
 The `removeLastMember` function should
 perform the following steps:
+
 - Removes the last element from the array.
 - Display the updated array by logging
   it to the console.
@@ -46,6 +50,7 @@ const pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
 // Write your code below this line
 
 removeLastMember(pets);
+
 </code>
 
 <solution>
@@ -57,6 +62,7 @@ const removeLastMember = (list) => {
 };
 
 removeLastMember(pets);
+
 </solution>
 </codeblock>
 
@@ -72,6 +78,7 @@ const pets = ["dog", "fish", "parrot", "tortoise", "lizard", "cat"];
 // Write your code below this line
 
 calculateTotal(teamMembers, pets);
+
 </code>
 
 <solution>
@@ -81,13 +88,14 @@ let total = 0;
 // Write your code below this line
 
 const calculateTotal = (firstArray, secondArray) => {
-  console.log(firstArray.length + secondArray.length);
+console.log(firstArray.length + secondArray.length);
 };
 calculateTotal(teamMembers, pets);
+
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

@@ -2,23 +2,23 @@
 - title: Introduction to Variables
   slug: introduction-to-variables
   page_type: lesson
-- title: Exercise 1 - Introduction to Variables
-  slug: exercise-1-introduction-to-variables
+- title: Challenge 1 - Introduction to Variables
+  slug: challenge-1-introduction-to-variables
   page_type: exercise
-- title: Exercise 2 - Introduction to Variables
-  slug: exercise-2-introduction-to-variables
+- title: Challenge 2 - Introduction to Variables
+  slug: challenge-2-introduction-to-variables
   page_type: exercise
-- title: Exercise 3 - Introduction to Variables
-  slug: exercise-3-introduction-to-variables
+- title: Challenge 3 - Introduction to Variables
+  slug: challenge-3-introduction-to-variables
   page_type: exercise
 - title: More About Variables
   slug: more-about-variables
   page_type: lesson
-- title: Exercise 1 - More about Variables
-  slug: exercise-1-more-about-variables
+- title: Challenge 1 - More about Variables
+  slug: challenge-1-more-about-variables
   page_type: exercise
-- title: Exercise 2 - More about Variables
-  slug: exercise-2-more-about-variables
+- title: Challenge 2 - More about Variables
+  slug: challenge-2-more-about-variables
   page_type: exercise
 - title: Variable Naming Tip 1
   slug: variable-naming-tip-1

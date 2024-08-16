@@ -2,39 +2,39 @@
 - title: If Condition
   slug: if-condition
   page_type: lesson
-- title: Exercise 1 - If Condition
-  slug: exercise-1-if-condition
+- title: Challenge 1 - If Condition
+  slug: challenge-1-if-condition
   page_type: exercise
 - title: If not Condition
   slug: if-not-condition
   page_type: lesson
-- title: Exercise 1 - If not Condition
-  slug: exercise-1-if-not-condition
+- title: Challenge 1 - If not Condition
+  slug: challenge-1-if-not-condition
   page_type: exercise
 - title: If Else Condition
   slug: if-else-condition
   page_type: lesson
-- title: Exercise 1 - If Else Condition
-  slug: exercise-1-if-else-condition
+- title: Challenge 1 - If Else Condition
+  slug: challenge-1-if-else-condition
   page_type: exercise
 - title: Elif Condition
   slug: elif-condition
   page_type: lesson
-- title: Exercise 1 - Elif Condition
-  slug: exercise-1-elif-condition
+- title: Challenge 1 - Elif Condition
+  slug: challenge-1-elif-condition
   page_type: exercise
 - title: Multiple Conditions
   slug: multiple-conditions
   page_type: lesson
-- title: Exercise 1 - Multiple Conditions
-  slug: exercise-1-multiple-conditions
+- title: Challenge 1 - Multiple Conditions
+  slug: challenge-1-multiple-conditions
   page_type: exercise
-- title: Exercise 2 - Multiple Conditions
-  slug: exercise-2-multiple-conditions
+- title: Challenge 2 - Multiple Conditions
+  slug: challenge-2-multiple-conditions
   page_type: exercise
 - title: Inline If Else
   slug: inline-if-else
   page_type: lesson
-- title: Exercise 1 - Inline If Else
-  slug: exercise-1-inline-if-else
+- title: Challenge 1 - Inline If Else
+  slug: challenge-1-inline-if-else
   page_type: exercise

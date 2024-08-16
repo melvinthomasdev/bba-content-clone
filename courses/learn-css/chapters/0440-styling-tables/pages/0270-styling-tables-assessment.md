@@ -1,16 +1,16 @@
 Using the **Styling Tables** knowledge that you have
 gained so far, do the following:
 
-  1. Add a background color of `#FF7F50` to header row.
-  
-  2. Add a background color of `#FFFACD` to `even` rows.
+1. Add a background color of `#FF7F50` to header row.
 
-  3. Add a black solid border of `1px` to the whole table,
-  and the cells and ensure no double borders.
+2. Add a background color of `#FFFACD` to `even` rows.
 
-  4. Apply padding of `10px` to the table cells.
+3. Add a black solid border of `1px` to the whole table,
+   and the cells and ensure no double borders.
 
-  5. Center the text in the cells both vertically as well as horizontally.
+4. Apply padding of `10px` to the table cells.
+
+5. Center the text in the cells both vertically as well as horizontally.
 
 <codeblock language="css" type="exercise" testMode="fixedInput" showSolution="false">
 <code>
@@ -31,29 +31,32 @@ gained so far, do the following:
     <td>a42df34s</td>
   </tr>
 
-  <tr>
-    <td>2</td>
-    <td>Priya</td>
-    <td>Sen</td>
-    <td>priyasen@gmail.com</td>
-    <td>54#NASD232</td>
-  </tr>
+{" "}
+<tr>
+  <td>2</td>
+  <td>Priya</td>
+  <td>Sen</td>
+  <td>priyasen@gmail.com</td>
+  <td>54#NASD232</td>
+</tr>
 
-  <tr>
-    <td>3</td>
-    <td>Mazahir</td>
-    <td>H</td>
-    <td>mazahirh1999 @gmail.com</td>
-    <td>NASDAQ23@#</td>
-  </tr>
+{" "}
+<tr>
+  <td>3</td>
+  <td>Mazahir</td>
+  <td>H</td>
+  <td>mazahirh1999 @gmail.com</td>
+  <td>NASDAQ23@#</td>
+</tr>
 
-  <tr>
-    <td>4</td>
-    <td>Chirag</td>
-    <td>Gautham</td>
-    <td>chiraggautham@bigbinary.com</td>
-    <td>86rfghju#%</td>
-  </tr>
+{" "}
+<tr>
+  <td>4</td>
+  <td>Chirag</td>
+  <td>Gautham</td>
+  <td>chiraggautham@bigbinary.com</td>
+  <td>86rfghju#%</td>
+</tr>
 
   <tr>
     <td>5</td>
@@ -69,7 +72,8 @@ body{
   background-color:#DEB887;
 }
 
-/* Write your code here */
+/_ Write your code here _/
+
 </panel>
 </code>
 <solution>
@@ -78,30 +82,31 @@ body{
 }
 
 th {
-  background-color: #FF7F50;
+background-color: #FF7F50;
 }
 
 tr:nth-child(even) {
-  background-color: #FFFACD;
+background-color: #FFFACD;
 }
 
 table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+border: 1px solid black;
+border-collapse: collapse;
 }
 
 th, td {
-  padding: 10px;
+padding: 10px;
 }
 
 th, td {
-  vertical-align: middle;
-  text-align: center;
+vertical-align: middle;
+text-align: center;
 }
+
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

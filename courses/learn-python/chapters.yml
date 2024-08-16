@@ -9,8 +9,8 @@
   slug: variables
 - name: If Else statements
   slug: if-else-statements
-- name: Comprehensive Exercises I
-  slug: comprehensive-exercises-i
+- name: Comprehensive Challenges I
+  slug: comprehensive-challenges-i
 - name: String formatting
   slug: string-formatting
 - name: Lists and Tuples
@@ -23,8 +23,8 @@
   slug: dictionaries
 - name: While Loop
   slug: while-loop
-- name: Comprehensive Exercises II
-  slug: comprehensive-exercises-ii
+- name: Comprehensive Challenges II
+  slug: comprehensive-challenges-ii
 - name: Comments
   slug: comments
 - name: Functions

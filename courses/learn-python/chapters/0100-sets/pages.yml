@@ -2,48 +2,48 @@
 - title: Creating a Set
   slug: creating-a-set
   page_type: lesson
-- title: Exercise 1 - Creating a Set
-  slug: exercise-1-creating-a-set
+- title: Challenge 1 - Creating a Set
+  slug: challenge-1-creating-a-set
   page_type: exercise
 - title: The sorted function
   slug: the-sorted-function
   page_type: lesson
-- title: Exercise 1 - The sorted function
-  slug: exercise-1-the-sorted-function
+- title: Challenge 1 - The sorted function
+  slug: challenge-1-the-sorted-function
   page_type: exercise
 - title: Adding values to a Set
   slug: adding-values-to-a-set
   page_type: lesson
-- title: Exercise 1 - Adding values to a Set
-  slug: exercise-1-adding-values-to-a-set
+- title: Challenge 1 - Adding values to a Set
+  slug: challenge-1-adding-values-to-a-set
   page_type: exercise
 - title: Removing values from a Set
   slug: removing-values-from-a-set
   page_type: lesson
-- title: Exercise 1 - Removing values from a Set
-  slug: exercise-1-removing-values-from-a-set
+- title: Challenge 1 - Removing values from a Set
+  slug: challenge-1-removing-values-from-a-set
   page_type: exercise
 - title: Finding common values among Sets
   slug: finding-common-values-among-sets
   page_type: lesson
-- title: Exercise 1 - Finding common values among Sets
-  slug: exercise-1-finding-common-values-among-sets
+- title: Challenge 1 - Finding common values among Sets
+  slug: challenge-1-finding-common-values-among-sets
   page_type: exercise
 - title: Difference between Sets
   slug: difference-between-sets
   page_type: lesson
-- title: Exercise 1 - Difference between Sets
-  slug: exercise-1-difference-between-sets
+- title: Challenge 1 - Difference between Sets
+  slug: challenge-1-difference-between-sets
   page_type: exercise
 - title: Combining Sets
   slug: combining-sets
   page_type: lesson
-- title: Exercise 1 - Combining Sets
-  slug: exercise-1-combining-sets
+- title: Challenge 1 - Combining Sets
+  slug: challenge-1-combining-sets
   page_type: exercise
 - title: Subsets
   slug: subsets
   page_type: lesson
-- title: Exercise 1 - Subsets
-  slug: exercise-1-subsets
+- title: Challenge 1 - Subsets
+  slug: challenge-1-subsets
   page_type: exercise

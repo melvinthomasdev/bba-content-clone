@@ -8,18 +8,19 @@ Add a **label** element with text **Username** with a **for** attribute set as *
 
 Below that, add a **label** element with the text **Password** with a **for** attribute set as **password**. Below that, add an input element to allow user to enter their password.
 
-Below that, add a **label** element with the text **Address** with a **for** attribute set as **address**.  Below that, add an input element with the **placeholder** attribute set as **World Trade Center, Kharadi, Pune, Maharashtra 41101** to allow user to enter their full address.
+Below that, add a **label** element with the text **Address** with a **for** attribute set as **address**. Below that, add an input element with the **placeholder** attribute set as **World Trade Center, Kharadi, Pune, Maharashtra 41101** to allow user to enter their full address.
 Make sure the element has 4 rows and 50 columns.
 
 Below that, add a **label** element with the text **Favourite Ice Cream Flavour** with a **for** attribute set as **flavour**.
 
 Below that, add a dropdown menu for the users to select their favorite ice cream flavours.
 Selections should have options for the following flavours:
-  1. Chocolate
-  2. Vanilla
-  3. Strawberry
-  4. Pista
-  5. Butterscotch
+
+1. Chocolate
+2. Vanilla
+3. Strawberry
+4. Pista
+5. Butterscotch
 
 The option value should match the flavor, but in lowercase.
 
@@ -55,33 +56,33 @@ Don't add any unnecessary `id`, `name` or `class` attribute.
   flex-direction: column;
 }
 
-.personal-details-form * {
-  margin: 0.5rem;
+.personal-details-form \* {
+margin: 0.5rem;
 }
 
 input[type="text"],
 input[type="password"],
 input[type="tel"] {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  width: 60%; /* Reduced width for text, password, and tel inputs */
-  box-sizing: border-box;
+padding: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 1rem;
+width: 60%; /_ Reduced width for text, password, and tel inputs _/
+box-sizing: border-box;
 }
 
 textarea,
 select {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  width: 70%;
-  box-sizing: border-box;
+padding: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 1rem;
+width: 70%;
+box-sizing: border-box;
 }
 
 select {
-  width: 30%;
+width: 30%;
 }
 
 input[type="text"]:focus,
@@ -89,39 +90,40 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus,
 input[type="tel"]:focus {
-  outline: none;
-  border-color: royalblue;
+outline: none;
+border-color: royalblue;
 }
 
 .button-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
+display: flex;
+align-items: center;
+width: 100%;
 }
 
 button {
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  box-shadow: 0px 0px 1px black;
-  border-radius: 2px;
-  width: 17%;
-  min-width: 110px;
+padding: 0.5rem;
+font-size: 1.2rem;
+font-weight: 700;
+box-shadow: 0px 0px 1px black;
+border-radius: 2px;
+width: 17%;
+min-width: 110px;
 }
 
 button:hover {
-  box-shadow: 2px 2px lightgray;
+box-shadow: 2px 2px lightgray;
 }
 
 button[type="submit"] {
-  background-color: royalblue;
-  color: white;
+background-color: royalblue;
+color: white;
 }
 
 button[type="reset"] {
-  background-color: tomato;
-  color: white;
+background-color: tomato;
+color: white;
 }
+
 </panel>
 </code>
 <solution>
@@ -134,17 +136,24 @@ button[type="reset"] {
   <label for="password">Password</label>
   <input id="password" type="password">
 
-  <label for="address">Address</label>
-  <textarea id="address" rows="4" cols="50" placeholder="World Trade Center, Kharadi, Pune, Maharashtra 41101"></textarea>
+{" "}
+<label for="address">Address</label>
+<textarea
+  id="address"
+  rows="4"
+  cols="50"
+  placeholder="World Trade Center, Kharadi, Pune, Maharashtra 41101"
+></textarea>
 
-  <label for="flavour">Favourite Ice Cream Flavour</label>
-  <select id="flavour">
-    <option value="chocolate">Chocolate</option>
-    <option value="vanilla">Vanilla</option>
-    <option value="strawberry">Strawberry</option>
-    <option value="pista">Pista</option>
-    <option value="butterscotch">Butterscotch</option>
-  </select>
+{" "}
+<label for="flavour">Favourite Ice Cream Flavour</label>
+<select id="flavour">
+  <option value="chocolate">Chocolate</option>
+  <option value="vanilla">Vanilla</option>
+  <option value="strawberry">Strawberry</option>
+  <option value="pista">Pista</option>
+  <option value="butterscotch">Butterscotch</option>
+</select>
 
   <label for="phone-number">Phone Number</label>
   <input id="phone-number" type="tel" placeholder="+911234567890">
@@ -157,7 +166,7 @@ button[type="reset"] {
 </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

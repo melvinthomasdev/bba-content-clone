@@ -1,4 +1,4 @@
-In this exercise, add to the
+In this challenge, add to the
 hash, a key of **height** and
 a value **6 ft**.
 
@@ -22,5 +22,6 @@ hash = {
 hash[:height] = "6 ft"
 
 puts hash
+
 </solution>
 </codeblock>

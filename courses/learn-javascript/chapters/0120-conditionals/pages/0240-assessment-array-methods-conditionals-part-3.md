@@ -15,46 +15,29 @@ list of movies.
 **Note:** Do not hardcode
 the movie name in the sentence.
 
-<codeblock language="javascript" type="exercise" testMode="fixedInput" showSolution="false">
-<code>
-const malayalamMovies = [
-  'Kumbalangi Nights',
-  'Koodi',
-  'Drishyam',
-  'Vettam',
-  'Lucifer',
-  'Uyare',
-  'Premam',
-  'Maheshinte Prathikaram',
-  'Bangalore Days',
-  'Charlie',
-  'Ayyappanum Koshiyum',
-  'Njan Prakashan'
-];
-// Write your code here
-</code>
-<solution>
-const malayalamMovies = [
-  'Kumbalangi Nights',
-  'Koodi',
-  'Drishyam',
-  'Vettam',
-  'Lucifer',
-  'Uyare',
-  'Premam',
-  'Maheshinte Prathikaram',
-  'Bangalore Days',
-  'Charlie',
-  'Ayyappanum Koshiyum',
-  'Njan Prakashan'
-];
-console.log(malayalamMovies.length);
-malayalamMovies.push("Vichithram");
-console.log(`My favorite movie from the list above is ${malayalamMovies[2]}.`);
-</solution>
+<codeblock
+  language="javascript"
+  type="exercise"
+  testMode="fixedInput"
+  showSolution="false"
+>
+  <code>
+    const malayalamMovies = [ 'Kumbalangi Nights', 'Koodi', 'Drishyam',
+    'Vettam', 'Lucifer', 'Uyare', 'Premam', 'Maheshinte Prathikaram', 'Bangalore
+    Days', 'Charlie', 'Ayyappanum Koshiyum', 'Njan Prakashan' ]; // Write your
+    code here
+  </code>
+  <solution>
+    const malayalamMovies = [ 'Kumbalangi Nights', 'Koodi', 'Drishyam',
+    'Vettam', 'Lucifer', 'Uyare', 'Premam', 'Maheshinte Prathikaram', 'Bangalore
+    Days', 'Charlie', 'Ayyappanum Koshiyum', 'Njan Prakashan' ];
+    console.log(malayalamMovies.length); malayalamMovies.push("Vichithram");
+    console.log(`My favorite movie from the list above is ${malayalamMovies[2]}
+    .`);
+  </solution>
 </codeblock>
 
-We are not displaying answer to this exercise.
+We are not displaying the answer for this challenge.
 
 We do this because we want you to challenge yourself
 and

@@ -5,8 +5,8 @@
 - title: Direction of Car
   slug: direction-of-car
   page_type: lesson
-- title: Challenge - instance-variable-exercise
-  slug: challenge-instance-variable-exercise
+- title: Challenge - Instance Variable
+  slug: challenge-instance-variable
   page_type: exercise
 - title: Class level instance variable
   slug: class-level-instance-variable
