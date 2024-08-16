@@ -12,7 +12,7 @@ Your task is to modify the codeblock based on the above requirements.
 
 The output should look like the image given below.
 
-<image>props-comprehensive-exercise-output.png</image>
+<image>props-challenge-output.png</image>
 
 <codeblock language="reactjs" type="exercise" testMode="fixedInput">
 <code>

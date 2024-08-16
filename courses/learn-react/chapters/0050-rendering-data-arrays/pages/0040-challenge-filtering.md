@@ -2,7 +2,7 @@ In the code snippet given below, the constant named `BOOKS` holds the details of
 
 The output should look like the image given below.
 
-<image>array-filtering-exercise-output.png</image>
+<image>array-filtering-challenge-output.png</image>
 
 <codeblock language="reactjs" foldLines="1-22" type="exercise" testMode="fixedInput">
 <code>

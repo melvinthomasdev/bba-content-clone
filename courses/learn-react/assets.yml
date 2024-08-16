@@ -9,8 +9,8 @@ images:
   - ide-suggestions-for-boolean.png
   - ide-suggestions-for-array.png
   - ide-support-props.gif
-  - array-mapping-exercise-output.png
-  - array-filtering-exercise-output.png
+  - array-mapping-challenge-output.png
+  - array-filtering-challenge-output.png
   - regular-spaces.gif
   - non-breaking-space.gif
   - showing-browser-console.gif
@@ -102,7 +102,7 @@ images:
   - buy-now-price-card.png
   - buy-now-product-page.png
   - price-card.png
-  - props-comprehensive-exercise-output.png
+  - props-challenge-output.png
   - longest-bar.png
   - profile-before-memoization.png
   - profile-after-memoization.png
