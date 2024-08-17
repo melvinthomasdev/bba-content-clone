@@ -30,3 +30,5 @@ clicking on **Run**.
 puts "Today is a wonderful day"
 </code>
 </codeblock>
+
+Here's a [video](https://youtu.be/g9mViC96RYQ?feature=shared) explaining the same process.

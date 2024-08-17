@@ -19,3 +19,5 @@ Now try running the code given below **without** clicking on the **Run code** bu
 console.log("Today is a wonderful day")
 </code>
 </codeblock>
+
+Here's a [video](https://youtu.be/g9mViC96RYQ?feature=shared) explaining the same process.

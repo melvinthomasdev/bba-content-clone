@@ -28,3 +28,5 @@ const App = () => (
 export default App;
 </code>
 </codeblock>
+
+Here's a [video](https://youtu.be/g9mViC96RYQ?feature=shared) explaining the same process.
