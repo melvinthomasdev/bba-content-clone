@@ -43,12 +43,14 @@
   slug: position
 - name: Flexbox
   slug: flexbox
-- name: Assessment 4
-  slug: assessment-04
+- name: Combinators
+  slug: combinators
+- name: Pseudo-classes 1
+  slug: pseudo-classes-1
 - name: Quiz 4
   slug: quiz-04
-- name: Assessment 5
-  slug: assessment-05
+- name: Assessment 4
+  slug: assessment-04
 - name: Opacity
   slug: opacity
 - name: Box Shadow
@@ -63,10 +65,8 @@
   slug: styling-lists
 - name: Styling Forms
   slug: styling-forms
-- name: Combinators
-  slug: combinators
-- name: Pseudo-classes
-  slug: pseudo-classes
+- name: Pseudo-classes 2
+  slug: pseudo-classes-2
 - name: Pseudo-elements
   slug: pseudo-elements
 - name: Cascade and Specificity

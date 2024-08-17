@@ -1,25 +1,3 @@
----
-- title: Pseudo-classes
-  slug: pseudo-classes
-  page_type: lesson
-- title: Hover
-  slug: hover
-  page_type: lesson
-- title: Challenge - Hover
-  slug: challenge-hover
-  page_type: exercise
-- title: Focus
-  slug: focus
-  page_type: lesson
-- title: Challenge - Focus
-  slug: challenge-focus
-  page_type: exercise
-- title: Active
-  slug: active
-  page_type: lesson
-- title: Challenge - Active
-  slug: challenge-active
-  page_type: exercise
 - title: Styling Links with Pseudo-classes
   slug: styling-links-with-pseudo-classes
   page_type: lesson

@@ -1,6 +1,10 @@
+---
 - title: About
   slug: about-assessments
   page_type: lesson
+- title: Profile Card Assessment
+  slug: profile-card-assessment
+  page_type: exercise
 - title: Navbar Assessment
   slug: navbar-assessment
   page_type: exercise
