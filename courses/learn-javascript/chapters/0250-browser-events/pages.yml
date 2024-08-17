@@ -65,6 +65,12 @@
 - title: Challenge - Stop Listening to Events
   slug: challenge-stop-listening-to-events-02
   page_type: exercise
+- title: Controlling Dialog element using JavaScript
+  slug: controlling-dialog-element-using-javascript
+  page_type: lesson
+- title: Challenge - Controlling Dialog element using JavaScript
+  slug: challenge-controlling-dialog-element-using-javascript
+  page_type: exercise
 - title: Assessment - HTML DOM Manipulation
   slug: assessment-html-dom-manipulation
   page_type: exercise
