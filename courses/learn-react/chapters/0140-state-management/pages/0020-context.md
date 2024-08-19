@@ -113,7 +113,7 @@ After making the above changes, you should be able to add and remove a product f
 Since the `AddToCart` component is now used by both the `ProductListItem` and `Product` components, let's move the `AddToCart` component to the `commons` directory:
 
 ```bash
-mv src/components/ProductList/AddToCart.jsx src/components/commons/AddToCart.jsx
+mv src/components/AddToCart.jsx src/components/commons/AddToCart.jsx
 ```
 
 Make sure to update the imports. Let's commit the new changes:
