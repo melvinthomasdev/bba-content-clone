@@ -17,3 +17,7 @@ You can install Node.js and npm by referring to the [Installing Node.js](https:/
 ### Installing Node.js on Windows
 
 If you are using Windows, it is expected to have WSL to setup. You can set up WSL by following the instructions in the [Installing WSL](https://courses.bigbinaryacademy.com/install-rubyonrails-in-windows/setting-up-your-development-environment/#installing-wsl) section of this document and then install Node.js and npm by referring to the [Installing Node.js](https://courses.bigbinaryacademy.com/learn-rubyonrails/setting-up-macos/#installing-node-js) section. It is recommended to install Node.js version `18.12`.
+
+### Code Editor
+
+It's recommended to use Visual Studio Code as the code editor. You can download and install Visual Studio Code from their [official website](https://code.visualstudio.com/download). If you want to try out other code editors, you can explore options like Sublime Text, Atom, WebStorm etc.
